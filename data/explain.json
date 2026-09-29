@@ -5133,5 +5133,410 @@
    "In a terminal, run `curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh`.",
    "Create a sandbox with openshell sandbox create --name demo, then follow the Run Your First Agent guide."
   ]
+ },
+ "Human-Agent-Society/reef": {
+  "cat": "frameworks",
+  "kind": "Self-Improving Agent Infrastructure",
+  "what": "Reef is an open-source infrastructure platform that connects agent inference, feedback, learning, and versioned delivery to continually improve AI models or harnesses.",
+  "why": "It solves the problem of manually updating and training agents by automatically processing interaction feedback into weight updates or harness improvements. Reach for it when building self-improving agent systems.",
+  "level": "setup",
+  "start": "git lfs install && git clone https://github.com/Human-Agent-Society/reef.git",
+  "caution": "Requires Git LFS for artifact tracking and a suitable GPU setup for weight-training configurations. The repository was pushed recently, but model training workloads carry inherent infrastructure complexity.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph",
+   "microsoft/autogen"
+  ],
+  "packages": [
+   "reef-infra"
+  ],
+  "plain": "Infrastructure for AI agents that automatically learns and improves from user feedback and interactions over time.",
+  "tags": [
+   "code",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Train model weights using runtime interaction feedback",
+   "Refine agent prompts, rules, and skills automatically",
+   "Serve OpenAI-compatible agent requests with version management"
+  ],
+  "steps": [
+   "Create and activate a virtual environment using uv, then install the package.",
+   "Start Reef as a pure inference server using `uv run reef serve --inference.model-path Qwen/Qwen2.5-1.5B-Instruct`.",
+   "Send inference requests to the endpoint and report feedback to trigger learning cycles."
+  ],
+  "repo": "Human-Agent-Society/reef",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "jev-chat/jev-chat-jarvis": {
+  "cat": "coding",
+  "kind": "Android chat copilot",
+  "what": "An Android app that reads chat screens locally using accessibility services and OCR, analyzes conversations with AI, and generates suggested replies.",
+  "why": "To get real-time conversation suggestions and intent analysis across messaging apps without modifying apps or risking automated sending.",
+  "level": "easy",
+  "start": "adb install -r apk/jev-assistant-v1.4-release.apk",
+  "caution": "Requires granting Android Accessibility and Overlay permissions, and relying on third-party API keys means your conversation context is sent to the configured AI model provider.",
+  "alts": [],
+  "packages": [],
+  "plain": "An Android assistant that reads your chats on screen, analyzes them with AI, and suggests replies.",
+  "tags": [
+   "code",
+   "private",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate AI reply suggestions inside supported messaging apps",
+   "Analyze chat intent and risk levels on your screen",
+   "Fill reply suggestions into text boxes without auto-sending"
+  ],
+  "steps": [
+   "Download and install the APK on an Android 11+ ARM64 device.",
+   "Open the app settings and enter your AI provider API key.",
+   "Enable Accessibility and Overlay permissions when prompted.",
+   "Open a supported chat app and use the floating overlay to view AI suggestions."
+  ],
+  "repo": "jev-chat/jev-chat-jarvis",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "TencentCloud/Octop": {
+  "cat": "coding",
+  "kind": "Self-hosted AI Assistant",
+  "what": "Octop is a self-hosted, multi-user, multi-agent AI assistant platform designed to run locally on your machine.",
+  "why": "It solves the need for a private, customizable assistant suite that connects to messaging apps, handles scheduled tasks, and manages multiple specialized AI agents under one roof.",
+  "level": "setup",
+  "start": "pip install octop",
+  "caution": "Requires Python 3.12+ and managing local configurations; depending on the chosen model providers, it may involve external API keys or local resource usage.",
+  "alts": [
+   "open-webui/open-webui",
+   "Mintplex-Labs/anything-llm",
+   "LibreChat-AI/LibreChat"
+  ],
+  "packages": [
+   "octop"
+  ],
+  "plain": "A private, self-hosted AI assistant with multiple specialized agents, team collaboration features, and messaging app integrations.",
+  "tags": [
+   "private",
+   "connect",
+   "automate"
+  ],
+  "useFor": [
+   "Chat with personal and team AI experts via a web dashboard",
+   "Automate tasks using scheduled cron jobs and messaging integrations",
+   "Manage documents and search files using a private knowledge base"
+  ],
+  "steps": [
+   "Install the package using pip install octop",
+   "Run the initialization command to set up your environment",
+   "Start the single-process server to access the dashboard and tools"
+  ],
+  "repo": "TencentCloud/Octop",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "PrismML-Eng/Bonsai-demo": {
+  "cat": "local",
+  "kind": "local model demo",
+  "what": "Run the Bonsai 2 27B reasoning model locally on your own computer with support for vision and tool calling.",
+  "why": "When you want to run a powerful open reasoning model locally on your own hardware without sending data to external cloud providers.",
+  "level": "setup",
+  "start": "./setup.sh",
+  "caution": "Requires custom binaries from a fork rather than stock llama.cpp, and processing large models locally requires substantial RAM or a capable GPU.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Run the Bonsai reasoning model locally on your own hardware.",
+  "tags": [
+   "private",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Run reasoning models locally",
+   "Analyze images and PDFs privately",
+   "Test local tool calling"
+  ],
+  "steps": [
+   "Clone the repository using git clone",
+   "Run `./setup.sh` to download the model and dependencies",
+   "Start the local server with `./scripts/start_llama_server.sh`",
+   "Open http://localhost:8080 in your browser to chat"
+  ],
+  "repo": "PrismML-Eng/Bonsai-demo",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "mvschwarz/openrig": {
+  "cat": "harness",
+  "kind": "multi-agent coding harness",
+  "what": "A multi-agent harness that runs Claude Code and Codex together as a coordinated team within your terminal.",
+  "why": "It organizes multiple AI coding assistants to handle complex tasks together instead of requiring manual orchestration across separate terminal windows. Reach for this when you want specialized agents collaborating on repository changes.",
+  "level": "setup",
+  "start": "npm install -g @openrig/cli\nrig setup --dry-run",
+  "caution": "Reuses existing Claude and Codex consumer subscription logins as an API, which may break the provider's terms and risk your account. Requires Node.js 22 or 24 and tmux on macOS or Linux.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [
+   "@openrig/cli"
+  ],
+  "plain": "Run Claude Code and Codex together as a coordinated team managed from a single dashboard.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Run Claude and Codex agents simultaneously on your codebase",
+   "Coordinate lead agents and specialist reviewers for code changes",
+   "Monitor agent progress using an integrated terminal dashboard"
+  ],
+  "steps": [
+   "Install the CLI globally using npm by running `npm install -g @openrig/cli`.",
+   "Preview the setup configuration by running `rig setup --dry-run`.",
+   "Start your selected agent rig configuration using `rig up \"first-project\" --cwd .`.",
+   "Open the shared terminal dashboard with `rig tui --shared`."
+  ],
+  "repo": "mvschwarz/openrig",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "volotat/mini-AGI": {
+  "cat": "local",
+  "kind": "Continual learning model",
+  "what": "A byte-level language model designed to train from scratch and learn continually on an 8GB VRAM consumer GPU.",
+  "why": "Allows training and continual learning on modest local hardware without catastrophic forgetting, avoiding frozen pre-trained model limitations.",
+  "level": "setup",
+  "start": "",
+  "caution": "The repository explicitly notes this is a small toy-level model with experimental capabilities. Weights are not yet published.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "A tiny experimental language model that learns continually on an ordinary home computer.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Train a language model locally on consumer hardware",
+   "Experiment with continual learning without forgetting",
+   "Explore byte-level language modeling on disk-paged weights"
+  ],
+  "steps": [],
+  "repo": "volotat/mini-AGI",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "TokenRhythm/NeoHorse": {
+  "cat": "local",
+  "kind": "Open-weight agent models",
+  "what": "NeoHorse is a family of open-weight language models and decision models designed for agent workflows, tool use, and structured routing.",
+  "why": "Developers looking to run specialized open-weight models for agent routing and decision-making on their own hardware can use NeoHorse for local inference.",
+  "level": "setup",
+  "start": "pip install transformers",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "huggingface/smolagents"
+  ],
+  "packages": [],
+  "plain": "Run open-weight AI models locally for agent tasks and structured decision-making.",
+  "tags": [
+   "private",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Run local 4B or 9B agent models",
+   "Make structured application decisions with Jev",
+   "Execute tool-use and coding workflows"
+  ],
+  "steps": [
+   "Download the model weights from Hugging Face or ModelScope.",
+   "Set up your local inference environment using compatible frameworks.",
+   "Load the model using standard text generation pipelines."
+  ],
+  "repo": "TokenRhythm/NeoHorse",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "awlevin/typesafe-computer-use": {
+  "cat": "coding",
+  "kind": "Mac computer use agent",
+  "what": "Drives a Mac toward a goal using a fast classifier instead of expensive vision models.",
+  "why": "When you want computer automation that is much faster and cheaper than standard vision-based agents.",
+  "level": "setup",
+  "start": "git clone https://github.com/awlevin/typesafe-computer-use",
+  "caution": "It drives your real mouse and keyboard; start with a dry run.",
+  "alts": [
+   "browser-use/browser-use",
+   "openinterpreter/openinterpreter",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Control your Mac using cheap, fast classification instead of expensive visual AI models.",
+  "tags": [
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Automate repetitive Mac desktop tasks",
+   "Test user interfaces automatically",
+   "Navigate desktop apps via text goals"
+  ],
+  "steps": [
+   "Clone the repository and move into its folder",
+   "Install dependencies using uv",
+   "Fill in your API keys in the .env file",
+   "Run a dry run with a goal in plain English"
+  ],
+  "repo": "awlevin/typesafe-computer-use",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "incoai/splash": {
+  "cat": "local",
+  "kind": "Apple Silicon Inference",
+  "what": "A local AI inference engine optimized for Apple Silicon Macs.",
+  "why": "Runs large language models locally on macOS with high performance for coding agents and API clients. Reach for this when you want fast local AI inference on Apple hardware.",
+  "level": "setup",
+  "start": "brew install incoai/tap/splash",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "jmorganca/ollama"
+  ],
+  "packages": [],
+  "plain": "Run large AI models locally on your Mac with high speed and low overhead.",
+  "tags": [
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Run local language models on Apple Silicon",
+   "Power local coding agents and chat apps",
+   "Serve OpenAI-compatible APIs locally"
+  ],
+  "steps": [
+   "Install the engine using Homebrew by running `brew install incoai/tap/splash` in your terminal.",
+   "Start the local server with a model using `splash serve --model unsloth/Qwen3.8-27B-GGUF:UD-Q4_K_M`.",
+   "Open http://127.0.0.1:8000 in your browser or connect a compatible coding agent."
+  ],
+  "repo": "incoai/splash",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "aru-labs/lossless-memory": {
+  "cat": "memory",
+  "kind": "AI Memory Layer",
+  "what": "Lossless long-term memory system for personal AI assistants that stores raw conversation logs with timestamps instead of summarizing them.",
+  "why": "Standard memory systems summarize conversations, which loses exact details, exact phrasing, and temporal context. Use this when you want your AI assistant to reliably recall exact past statements by time and context without losing fidelity.",
+  "level": "setup",
+  "start": "git clone https://github.com/aru-labs/lossless-memory",
+  "caution": "Designed strictly for single-user, single-machine operation. Supports English and Japanese time expressions only.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "A local memory system for AI that keeps every single chat line verbatim and indexes them by time.",
+  "tags": [
+   "knowledge",
+   "private"
+  ],
+  "useFor": [
+   "Store unsummarized daily conversation logs",
+   "Search past AI interactions by time and keywords",
+   "Maintain topic continuity across AI context windows"
+  ],
+  "steps": [
+   "Clone the repository and install it locally using pip.",
+   "Copy the example configuration file to config.json.",
+   "Run the ingestion and query examples to test the system."
+  ],
+  "repo": "aru-labs/lossless-memory",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "nokia-applied-research/AnyJev": {
+  "cat": "frameworks",
+  "kind": "Decision Model Layer",
+  "what": "Turn any LLM into a calibrated decision model with typed choices and real probabilities without training.",
+  "why": "Raw LLM outputs are uncalibrated and change answers when you reorder options. Use AnyJev to get trustworthy probabilities so you can automate routing and decisions safely.",
+  "level": "setup",
+  "start": "pip install \"anyjev[hf]\"",
+  "caution": "",
+  "alts": [],
+  "packages": [
+   "anyjev"
+  ],
+  "plain": "Convert open-source AI models into reliable decision-makers that output exact probabilities instead of guessing words.",
+  "tags": [
+   "automate",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Route customer support tickets to the right team automatically",
+   "Calculate real probabilities for multiple-choice questions",
+   "Get calibrated decision scores from local open-source LLMs"
+  ],
+  "steps": [
+   "Install the library with Hugging Face support using `pip install \"anyjev[hf]\"`",
+   "Truncate your chosen model blocks for decision-making using the python module",
+   "Serve the model using vLLM",
+   "Fit a decision head and run predictions using the Python Decider class"
+  ],
+  "repo": "nokia-applied-research/AnyJev",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Clearailhc/clearai-dsh": {
+  "cat": "harness",
+  "kind": "Research ontology plugin",
+  "what": "Adds an epistemic seven-stage loop and ontology discovery platform to DeepSeek Harness.",
+  "why": "When you need your research sessions to build a growing, verified knowledge structure rather than an ordinary chat transcript.",
+  "level": "easy",
+  "start": "dsh plugin --profile web add clearai-dsh@0.3.1",
+  "caution": "Relies on DeepSeek Harness.",
+  "alts": [],
+  "packages": [
+   "clearai-dsh"
+  ],
+  "plain": "Adds a structured scientific research loop and knowledge graph builder to your DeepSeek AI sessions.",
+  "tags": [
+   "research",
+   "knowledge",
+   "docs"
+  ],
+  "useFor": [
+   "Build verified domain ontologies from research",
+   "Track hypotheses and evidence chains",
+   "Surface contradictory conclusions automatically"
+  ],
+  "steps": [
+   "Open your terminal and run the DSH plugin command to add ClearAI",
+   "Restart the DSH web application",
+   "Start a new session and pick ClearAI from the mode preset picker at the top",
+   "Ask your research question to begin the epistemic loop"
+  ],
+  "repo": "Clearailhc/clearai-dsh",
+  "at": "2026-09-29",
+  "source": "trending"
  }
 }

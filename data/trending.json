@@ -1,186 +1,9 @@
 {
- "updated": "2026-09-29T11:03:31.328Z",
+ "updated": "2026-09-29T18:07:26.280Z",
  "items": [
   {
-   "repo": "paperclipai/paperclip",
-   "stars": 93871,
-   "desc": "The open-source app everyone uses to manage agents at work",
-   "created": "2026-03-02T15:01:51Z",
-   "topics": [],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "stablyai/orca",
-   "stars": 81181,
-   "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-   "created": "2026-03-17T03:28:57Z",
-   "topics": [
-    "ade",
-    "agent-ide",
-    "ai-agents",
-    "claude-code"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "HKUDS/CLI-Anything",
-   "stars": 50958,
-   "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-   "created": "2026-03-08T13:52:57Z",
-   "topics": [],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "debpalash/VoiceStudio",
-   "stars": 46168,
-   "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-   "created": "2026-04-09T21:40:26Z",
-   "topics": [
-    "ai",
-    "audiobook",
-    "cuda",
-    "dubbing"
-   ],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "vectorize-io/hindsight",
-   "stars": 41913,
-   "desc": "Hindsight: Agent Memory That Learns",
-   "created": "2025-10-30T11:49:48Z",
-   "topics": [
-    "agentic-ai",
-    "agents",
-    "ai-memory",
-    "memory"
-   ],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "VectifyAI/PageIndex",
-   "stars": 36706,
-   "desc": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
-   "created": "2025-04-01T10:53:54Z",
-   "topics": [
-    "agentic-ai",
-    "agents",
-    "ai",
-    "ai-agents"
-   ],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "Tencent/WeKnora",
-   "stars": 31151,
-   "desc": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-   "created": "2025-07-22T08:01:23Z",
-   "topics": [
-    "agent",
-    "agentic",
-    "ai",
-    "chatbot"
-   ],
-   "lang": "Go",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "trycua/cua",
-   "stars": 27033,
-   "desc": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
-   "created": "2025-01-31T15:02:49Z",
-   "topics": [
-    "agent",
-    "ai-agent",
-    "apple",
-    "computer-use"
-   ],
-   "lang": "HTML",
-   "sources": [
-    "GitHub Trending (weekly)",
-    "Show HN"
-   ],
-   "hn": {
-    "points": 95,
-    "url": "https://news.ycombinator.com/item?id=49767564"
-   }
-  },
-  {
-   "repo": "cloudflare/security-audit-skill",
-   "stars": 22960,
-   "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-   "created": "2026-06-18T14:08:44Z",
-   "topics": [],
-   "lang": "JavaScript",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "t8y2/dbx",
-   "stars": 21615,
-   "desc": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
-   "created": "2026-04-29T03:00:36Z",
-   "topics": [
-    "ai",
-    "cli",
-    "clickhouse",
-    "database"
-   ],
-   "lang": "Rust",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "dream-num/univer",
-   "stars": 21582,
-   "desc": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
-   "created": "2022-09-29T12:09:14Z",
-   "topics": [
-    "board",
-    "collaboration",
-    "data-table",
-    "doc"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "NVIDIA/OpenShell",
-   "stars": 9860,
-   "desc": "OpenShell is the safe, private runtime for autonomous AI agents.",
-   "created": "2026-02-24T22:52:22Z",
-   "topics": [],
-   "lang": "Rust",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
    "repo": "Human-Agent-Society/reef",
-   "stars": 7170,
+   "stars": 7317,
    "desc": "Infrastructure for continually self‑improving agents",
    "created": "2026-08-31T01:39:18Z",
    "topics": [
@@ -196,14 +19,14 @@
   },
   {
    "repo": "jev-chat/jev-chat-jarvis",
-   "stars": 7063,
+   "stars": 7095,
    "desc": "装在手机上的对话副驾：在 QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。",
    "created": "2026-09-21T11:12:53Z",
    "topics": [
     "accessibility-service",
+    "ai-assistant",
     "android",
-    "chat-assistant",
-    "llm"
+    "chat-assistant"
    ],
    "lang": "Kotlin",
    "sources": [
@@ -212,7 +35,7 @@
   },
   {
    "repo": "TencentCloud/Octop",
-   "stars": 5662,
+   "stars": 5763,
    "desc": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
    "created": "2026-07-08T12:54:20Z",
    "topics": [
@@ -228,7 +51,7 @@
   },
   {
    "repo": "PrismML-Eng/Bonsai-demo",
-   "stars": 3191,
+   "stars": 3205,
    "desc": "Bonsai Demo",
    "created": "2026-03-25T19:25:09Z",
    "topics": [
@@ -243,23 +66,8 @@
    ]
   },
   {
-   "repo": "volotat/mini-AGI",
-   "stars": 798,
-   "desc": "Continual learning model trained from scratch on 8GB VRAM laptop with batch-1 stream of data.",
-   "created": "2026-09-19T00:25:59Z",
-   "topics": [],
-   "lang": "Python",
-   "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 277,
-    "url": "https://news.ycombinator.com/item?id=49783133"
-   }
-  },
-  {
    "repo": "mvschwarz/openrig",
-   "stars": 2045,
+   "stars": 2254,
    "desc": "Multi-agent harness that runs Claude Code and Codex together as one system",
    "created": "2026-04-01T06:22:40Z",
    "topics": [
@@ -274,24 +82,23 @@
    ]
   },
   {
-   "repo": "yibie/awesome-jev",
-   "stars": 1955,
-   "desc": "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions.",
-   "created": "2026-09-17T14:23:21Z",
-   "topics": [
-    "awesome",
-    "awesome-list",
-    "jev",
-    "llm"
-   ],
+   "repo": "volotat/mini-AGI",
+   "stars": 801,
+   "desc": "Continual learning model trained from scratch on 8GB VRAM laptop with batch-1 stream of data.",
+   "created": "2026-09-19T00:25:59Z",
+   "topics": [],
    "lang": "Python",
    "sources": [
-    "new on GitHub"
-   ]
+    "Show HN"
+   ],
+   "hn": {
+    "points": 277,
+    "url": "https://news.ycombinator.com/item?id=49783133"
+   }
   },
   {
    "repo": "TokenRhythm/NeoHorse",
-   "stars": 1252,
+   "stars": 1265,
    "desc": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
    "created": "2026-09-04T08:34:54Z",
    "topics": [
@@ -301,6 +108,213 @@
     "post-training"
    ],
    "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "awlevin/typesafe-computer-use",
+   "stars": 1088,
+   "desc": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS.",
+   "created": "2026-09-16T17:48:45Z",
+   "topics": [
+    "ai-agents",
+    "automation",
+    "computer-use",
+    "macos"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "incoai/splash",
+   "stars": 987,
+   "desc": "A local inference engine for Apple silicon, built around the model.",
+   "created": "2026-09-18T20:01:48Z",
+   "topics": [
+    "apple-silicon",
+    "coding-agents",
+    "llm-inference",
+    "macos"
+   ],
+   "lang": "C++",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "aru-labs/lossless-memory",
+   "stars": 133,
+   "desc": "Lossless long-term memory for a personal AI: never summarize, keep every line, put a timestamp on everything.",
+   "created": "2026-09-04T21:25:17Z",
+   "topics": [
+    "ai-memory",
+    "conversational-ai",
+    "fts5",
+    "llm-memory"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub",
+    "Show HN"
+   ],
+   "hn": {
+    "points": 67,
+    "url": "https://news.ycombinator.com/item?id=49786419"
+   }
+  },
+  {
+   "repo": "nokia-applied-research/AnyJev",
+   "stars": 948,
+   "desc": "Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request)",
+   "created": "2026-09-21T05:55:40Z",
+   "topics": [
+    "calibration",
+    "decision-model",
+    "jev",
+    "jev-model"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Clearailhc/clearai-dsh",
+   "stars": 853,
+   "desc": "ClearAI is a native DSH plugin that brings the Epistemic Loop to DeepSeek Harness.",
+   "created": "2026-09-12T12:58:44Z",
+   "topics": [
+    "agent-preset",
+    "ai-agents",
+    "deepseek-harness",
+    "dsh"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "ARahim3/kaggle-tpu-lab",
+   "stars": 546,
+   "desc": "Frontier-class open models on a free Kaggle TPU v5e-8: GLM-5.3-Flash 320B MoE (~64 tok/s, our own JAX engine) and Qwen3.8-27B bf16 (~130 tok/s), 262k context, prefix caching. Works with Claude Code, Codex, opencode and pi.",
+   "created": "2026-08-31T18:01:42Z",
+   "topics": [
+    "anthropic-api",
+    "claude-code",
+    "coding-agents",
+    "free-gpu"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "punkpeye/awesome-remote-mcp-servers",
+   "stars": 529,
+   "desc": "A collection of remote MCP servers.",
+   "created": "2026-09-08T00:43:30Z",
+   "topics": [
+    "mcp"
+   ],
+   "lang": null,
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Nehanth/pooled",
+   "stars": 529,
+   "desc": "Peer-to-peer LLM inference in the browser: pool your devices to run big open models, for chat and coding agents.",
+   "created": "2026-09-01T00:05:54Z",
+   "topics": [
+    "browser",
+    "distributed-inference",
+    "inference",
+    "llm"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Oldcircle/geo-sleuth",
+   "stars": 513,
+   "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
+   "created": "2026-09-18T08:51:34Z",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "claude-code",
+    "codex"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "HRuiCcc/RuiC-card-skill",
+   "stars": 443,
+   "desc": "全息闪卡通用 Agent Skill：多模态模型都能用，不挑宿主——一句话生成可拖转、会流光、带层次景深的 3D 闪卡网页，附可编辑 Blender 工程",
+   "created": "2026-09-07T07:56:58Z",
+   "topics": [
+    "agent-skill",
+    "agent-skills",
+    "blender",
+    "collectible-card"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "brumar/chess-postmortem-skills",
+   "stars": 65,
+   "desc": "Claude Code skills for chess post-mortems: Stockfish-backed annotated PGN, HTML viewer, narrated video",
+   "created": "2026-09-25T20:52:19Z",
+   "topics": [],
+   "lang": "Python",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 75,
+    "url": "https://news.ycombinator.com/item?id=49857528"
+   }
+  },
+  {
+   "repo": "Qiuner/QCode",
+   "stars": 347,
+   "desc": "An explorable island world to learn AI coding and build real projects with AI agents. Powered by DeepSeek Harness.",
+   "created": "2026-09-14T10:50:30Z",
+   "topics": [
+    "ai-agents",
+    "ai-coding",
+    "deepseek",
+    "developer-tools"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "itsmostafa/system-one-connector",
+   "stars": 333,
+   "desc": "System One MCP connector to evaluate anything fast and cheap. Give your AI agent direct access to models like: Jev, CLM and Laya",
+   "created": "2026-09-17T05:23:34Z",
+   "topics": [
+    "mcp",
+    "mcp-tools"
+   ],
+   "lang": "Go",
    "sources": [
     "new on GitHub"
    ]
