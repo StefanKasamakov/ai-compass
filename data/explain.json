@@ -1059,7 +1059,7 @@
   "why": "It bridges multiple CLI accounts and proprietary provider interfaces into standard OpenAI/Gemini/Claude-compatible endpoints so you can access them from any client or SDK.",
   "level": "intermediate",
   "start": "",
-  "caution": "",
+  "caution": "It works by signing in with your CLI or subscription accounts (OAuth) and re-exposing them as an API. Check each provider's terms first: using a consumer subscription as a general-purpose API may not be allowed and can get the account limited. The README also contains affiliate links.",
   "alts": [
    "router-for-me/CLIProxyAPI",
    "BerriAI/litellm",

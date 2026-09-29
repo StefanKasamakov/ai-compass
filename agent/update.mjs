@@ -235,6 +235,7 @@ async function explainRepos(trendingItems) {
         "No marketing words. If the README makes big claims, present them as the project's claims and add an honest caution. " +
         "kind: 2-4 word label. what: one sentence. why: the problem it solves and when to reach for it (1-2 sentences). " +
         "start: the first command or step from the README, or empty. caution: privacy, maturity, complexity, license or maintenance caveat (pushed_at over 4 months ago = say so), or empty. " +
+        "Always add a caution when the tool reuses consumer subscription logins (Claude, ChatGPT, Gemini, Copilot apps) as an API or pools free tiers: that may break the provider's terms and risk the account. Mention affiliate links if present. " +
         "packages: npm or PyPI package names the README tells people to install (e.g. from npx, npm i, pip install, uvx), or empty. " +
         "alts: up to 3 related repos as owner/name, preferring ones in this list: " + [...new Set([...seeds, ...Object.keys(known)])].join(" ") +
         "\nCategories: " + categories.map((c) => `${c.id} = ${c.name}: ${c.what}`).join(" | "),
@@ -287,8 +288,20 @@ async function findPackages(repo, hints = []) {
   return out;
 }
 
+// pypistats.org rate-limits hard: retry with backoff, return null (not 0) when it still refuses
+async function pypiMonth(pkg) {
+  for (let i = 0; i < 4; i++) {
+    const r = await fetch(`https://pypistats.org/api/packages/${pkg.toLowerCase()}/recent`, { headers: UA }).catch(() => null);
+    if (r?.ok) return (await r.json())?.data?.last_month ?? 0;
+    if (r && r.status === 404) return 0;
+    await pause(4000 * 2 ** i);
+  }
+  return null;
+}
+
 async function downloads(repos, explained) {
   const known = await read("data/packages.json", {});
+  const prev = (await read("data/downloads.json", { repos: {} })).repos;
   const out = {};
   for (const repo of repos) {
     if (!known[repo] || known[repo].at < day(daysAgo(30))) {
@@ -301,7 +314,11 @@ async function downloads(repos, explained) {
     // one package per registry (the biggest), so sub-packages of the same project aren't double-counted
     const n = Math.max(0, ...(await Promise.all(npm.map((p) => json(`https://api.npmjs.org/downloads/point/last-month/${p}`).then((j) => j?.downloads ?? 0)))));
     let py = 0;
-    for (const p of pypi) { py = Math.max(py, (await json(`https://pypistats.org/api/packages/${p.toLowerCase()}/recent`))?.data?.last_month ?? 0); await pause(250); }
+    for (const p of pypi) {
+      const m = await pypiMonth(p);
+      py = Math.max(py, m ?? prev[repo]?.pypi ?? 0); // keep last known value if the API refused
+      await pause(1200);
+    }
     if (n + py > 0) out[repo] = { npm: n, pypi: py, total: n + py, packages: [...npm.map((p) => `npm:${p}`), ...pypi.map((p) => `pypi:${p}`)] };
   }
   await write("data/packages.json", known);
