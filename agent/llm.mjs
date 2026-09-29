@@ -19,7 +19,7 @@ export const provider = process.env.GEMINI_API_KEY ? "gemini" : process.env.ANTH
 export async function askJSON({ system, user, schema, hard = false }) {
   if (provider === "gemini") {
     const { GoogleGenAI } = await import("@google/genai");
-    const ai = new GoogleGenAI({}); // reads GEMINI_API_KEY
+    const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY.trim() }); // secrets pasted on Windows can carry a trailing newline
     const { $schema, ...jsonSchema } = geminiSafe(z.toJSONSchema(schema));
     // busy (503) or rate-limited (429): wait and retry, then fall back to the previous Flash models
     let lastErr;

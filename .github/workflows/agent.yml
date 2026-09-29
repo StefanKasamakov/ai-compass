@@ -50,6 +50,7 @@ jobs:
           git diff --cached --quiet || { git commit -m "agent: refresh data" && git push; }
 
       - name: Model watch (AI → pull request)
+        continue-on-error: true   # a failed model check must never block publishing fresh data
         if: (env.GEMINI_API_KEY != '' || env.ANTHROPIC_API_KEY != '') && (github.event.schedule == '41 4 * * *' || github.event_name == 'workflow_dispatch')
         env: { PR_BODY: pr-body.md, GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
