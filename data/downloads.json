@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T08:52:57.092Z",
+ "updated": "2026-09-29T08:58:23.339Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -124,14 +124,6 @@
     "npm:@openhands/agent-canvas"
    ]
   },
-  "Aider-AI/aider": {
-   "npm": 0,
-   "pypi": 267521,
-   "total": 267521,
-   "packages": [
-    "pypi:aider-chat"
-   ]
-  },
   "langchain-ai/langgraph": {
    "npm": 0,
    "pypi": 43651931,
@@ -154,14 +146,6 @@
    "total": 12074423,
    "packages": [
     "pypi:openai-agents"
-   ]
-  },
-  "anthropics/claude-agent-sdk-python": {
-   "npm": 0,
-   "pypi": 28944305,
-   "total": 28944305,
-   "packages": [
-    "pypi:claude-agent-sdk"
    ]
   },
   "vercel/ai": {
@@ -202,6 +186,14 @@
    "total": 608917,
    "packages": [
     "pypi:graphiti-core"
+   ]
+  },
+  "Graphify-Labs/graphify": {
+   "npm": 0,
+   "pypi": 1630865,
+   "total": 1630865,
+   "packages": [
+    "pypi:graphifyy"
    ]
   },
   "run-llama/llama_index": {
@@ -433,14 +425,6 @@
     "pypi:firecrawl"
    ]
   },
-  "topoteretes/cognee": {
-   "npm": 0,
-   "pypi": 87864,
-   "total": 87864,
-   "packages": [
-    "pypi:cognee"
-   ]
-  },
   "langflow-ai/langflow": {
    "npm": 0,
    "pypi": 40142,
@@ -475,8 +459,8 @@
   },
   "comet-ml/opik": {
    "npm": 142908,
-   "pypi": 1720480,
-   "total": 1863388,
+   "pypi": 0,
+   "total": 142908,
    "packages": [
     "npm:opik",
     "pypi:opik"
@@ -484,8 +468,8 @@
   },
   "confident-ai/deepeval": {
    "npm": 61382,
-   "pypi": 0,
-   "total": 61382,
+   "pypi": 2462143,
+   "total": 2523525,
    "packages": [
     "npm:deepeval",
     "pypi:deepeval"
@@ -507,14 +491,6 @@
     "pypi:faster-whisper"
    ]
   },
-  "resemble-ai/chatterbox": {
-   "npm": 0,
-   "pypi": 112869,
-   "total": 112869,
-   "packages": [
-    "pypi:chatterbox-tts"
-   ]
-  },
   "invoke-ai/InvokeAI": {
    "npm": 0,
    "pypi": 23263,
@@ -522,6 +498,14 @@
    "packages": [
     "pypi:InvokeAI",
     "pypi:invokeai"
+   ]
+  },
+  "coqui-ai/TTS": {
+   "npm": 0,
+   "pypi": 55832,
+   "total": 55832,
+   "packages": [
+    "pypi:tts"
    ]
   }
  }
