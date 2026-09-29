@@ -1,197 +1,309 @@
 {
- "updated": "2026-09-29T10:30:00.593Z",
+ "updated": "2026-09-29T11:03:31.328Z",
  "items": [
   {
-   "repo": "dmoshehun-prog/learn-from-materials",
-   "stars": 727,
-   "desc": "Turn PDFs, books and papers into interactive learning webpages｜将复杂材料转化为可追溯、可测验、可做笔记的学习网页",
-   "created": "2026-09-08T07:48:21Z",
+   "repo": "paperclipai/paperclip",
+   "stars": 93871,
+   "desc": "The open-source app everyone uses to manage agents at work",
+   "created": "2026-03-02T15:01:51Z",
+   "topics": [],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "stablyai/orca",
+   "stars": 81181,
+   "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+   "created": "2026-03-17T03:28:57Z",
    "topics": [
-    "agent-skills",
+    "ade",
+    "agent-ide",
+    "ai-agents",
+    "claude-code"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "HKUDS/CLI-Anything",
+   "stars": 50958,
+   "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+   "created": "2026-03-08T13:52:57Z",
+   "topics": [],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "debpalash/VoiceStudio",
+   "stars": 46168,
+   "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+   "created": "2026-04-09T21:40:26Z",
+   "topics": [
+    "ai",
+    "audiobook",
+    "cuda",
+    "dubbing"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "vectorize-io/hindsight",
+   "stars": 41913,
+   "desc": "Hindsight: Agent Memory That Learns",
+   "created": "2025-10-30T11:49:48Z",
+   "topics": [
+    "agentic-ai",
+    "agents",
+    "ai-memory",
+    "memory"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "VectifyAI/PageIndex",
+   "stars": 36706,
+   "desc": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
+   "created": "2025-04-01T10:53:54Z",
+   "topics": [
+    "agentic-ai",
+    "agents",
+    "ai",
+    "ai-agents"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "Tencent/WeKnora",
+   "stars": 31151,
+   "desc": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+   "created": "2025-07-22T08:01:23Z",
+   "topics": [
+    "agent",
+    "agentic",
+    "ai",
+    "chatbot"
+   ],
+   "lang": "Go",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "trycua/cua",
+   "stars": 27033,
+   "desc": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
+   "created": "2025-01-31T15:02:49Z",
+   "topics": [
+    "agent",
     "ai-agent",
-    "book",
-    "claude-code"
+    "apple",
+    "computer-use"
    ],
-   "lang": "Python"
+   "lang": "HTML",
+   "sources": [
+    "GitHub Trending (weekly)",
+    "Show HN"
+   ],
+   "hn": {
+    "points": 95,
+    "url": "https://news.ycombinator.com/item?id=49767564"
+   }
   },
   {
-   "repo": "mizzlelover/gongwen-gbt9704-skill",
-   "stars": 726,
-   "desc": "信息安全提醒：请勿上传企业禁止对外公开的文件；可在本地或企业内网部署大模型后使用。中文公文排版 Skill：按 GB/T 9704-2012 生成可编辑 DOCX。配套 CEB：https://github.com/mizzlelover/CEB",
-   "created": "2026-09-09T10:04:14Z",
-   "topics": [
-    "ai-skill",
-    "ceb",
-    "chinese-official-document",
-    "claude-code"
-   ],
-   "lang": "JavaScript"
+   "repo": "cloudflare/security-audit-skill",
+   "stars": 22960,
+   "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+   "created": "2026-06-18T14:08:44Z",
+   "topics": [],
+   "lang": "JavaScript",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
   },
   {
-   "repo": "ethanplusai/astra-flash-orchestrator",
-   "stars": 706,
-   "desc": "Astra plans and reviews; DeepSeek Flash builds. A native Codex workflow with phased tasks, verification, safe installation and reversible setup.",
-   "created": "2026-09-17T05:42:31Z",
+   "repo": "t8y2/dbx",
+   "stars": 21615,
+   "desc": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
+   "created": "2026-04-29T03:00:36Z",
    "topics": [
-    "agent-orchestration",
+    "ai",
+    "cli",
+    "clickhouse",
+    "database"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "dream-num/univer",
+   "stars": 21582,
+   "desc": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
+   "created": "2022-09-29T12:09:14Z",
+   "topics": [
+    "board",
+    "collaboration",
+    "data-table",
+    "doc"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "NVIDIA/OpenShell",
+   "stars": 9860,
+   "desc": "OpenShell is the safe, private runtime for autonomous AI agents.",
+   "created": "2026-02-24T22:52:22Z",
+   "topics": [],
+   "lang": "Rust",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "Human-Agent-Society/reef",
+   "stars": 7170,
+   "desc": "Infrastructure for continually self‑improving agents",
+   "created": "2026-08-31T01:39:18Z",
+   "topics": [
+    "agent-infrastructure",
     "ai-agents",
-    "codex",
-    "codex-skills"
+    "continual-learning",
+    "inference"
    ],
-   "lang": "Python"
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
   },
   {
-   "repo": "alexgreensh/anidoodle",
-   "stars": 675,
-   "desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
-   "created": "2026-09-22T11:20:47Z",
+   "repo": "jev-chat/jev-chat-jarvis",
+   "stars": 7063,
+   "desc": "装在手机上的对话副驾：在 QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。",
+   "created": "2026-09-21T11:12:53Z",
    "topics": [
-    "agent-skills",
-    "animation",
-    "canvas",
-    "claude-code"
+    "accessibility-service",
+    "android",
+    "chat-assistant",
+    "llm"
    ],
-   "lang": "TypeScript"
+   "lang": "Kotlin",
+   "sources": [
+    "new on GitHub"
+   ]
   },
   {
-   "repo": "LockedinLabs-AI/agent-console",
-   "stars": 668,
-   "desc": "Local-first observability for AI coding agents. Every Claude Code and Codex session's tokens, cache, models and cost, on this machine and every machine you connect through a self-hosted team hub. Presenting mode, policy hooks, Apple-signed and notarized macOS builds, attested releases. MIT.",
-   "created": "2026-09-20T17:55:58Z",
-   "topics": [
-    "ai-agents",
-    "anthropic",
-    "claude-code",
-    "codex"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "kaankiziltug/logo-design-skill",
-   "stars": 624,
-   "desc": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.",
-   "created": "2026-09-26T08:23:34Z",
-   "topics": [
-    "agent-skills",
-    "branding",
-    "claude",
-    "claude-skills"
-   ],
-   "lang": "HTML"
-  },
-  {
-   "repo": "jianruntech/geo-score",
-   "stars": 615,
-   "desc": "Can AI engines cite your site, and do they? Free 0–100 readiness score on an open GEO rubric, plus citation tracking via the OpenAI, Perplexity, Gemini and Claude APIs with your own keys. Zero dependencies, MCP server.",
-   "created": "2026-09-08T05:03:27Z",
-   "topics": [
-    "aeo",
-    "ai-search",
-    "ai-visibility",
-    "answer-engine-optimization"
-   ],
-   "lang": "Python"
-  },
-  {
-   "repo": "viettranx/3dviz-pro-max",
-   "stars": 589,
-   "desc": "Agent skill for creative 3D visualization: turn an idea into a Three.js/Blender scene worth exploring. Claude Code + Codex plugin, 223 recipes, 440 knowledge records, 22 proved kits, 37 runnable studies.",
-   "created": "2026-09-10T01:42:59Z",
-   "topics": [
-    "3d",
-    "agent-skill",
-    "blender",
-    "claude-code"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "op7418/guizang-product-video-skill",
-   "stars": 587,
-   "desc": "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
-   "created": "2026-09-18T04:22:37Z",
-   "topics": [
-    "agent-skills",
-    "claude-code",
-    "codepilot",
-    "codex"
-   ],
-   "lang": "Python"
-  },
-  {
-   "repo": "lemomo-ai/lemo-opuscar",
-   "stars": 577,
-   "desc": "39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5. Pick a style, bring your own story, and let your agent direct. | Opus5.5 x 39 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南",
-   "created": "2026-09-26T10:10:41Z",
-   "topics": [
-    "ai-agents",
-    "ai-video",
-    "animation",
-    "canvas"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "AbdelStark/awesome-typesafe-jev",
-   "stars": 540,
-   "desc": "Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live demos, agent tools, and independent evaluations.",
-   "created": "2026-09-17T06:56:37Z",
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "awesome",
-    "awesome-jev"
-   ],
-   "lang": "HTML"
-  },
-  {
-   "repo": "ruc-datalab/EvoOntology",
-   "stars": 522,
-   "desc": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
-   "created": "2026-09-15T01:57:40Z",
+   "repo": "TencentCloud/Octop",
+   "stars": 5662,
+   "desc": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
+   "created": "2026-07-08T12:54:20Z",
    "topics": [
     "agent",
     "agentic-ai",
-    "claude-code",
-    "codex"
+    "ai",
+    "ai-agent"
    ],
-   "lang": "Python"
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
   },
   {
-   "repo": "punkpeye/awesome-remote-mcp-servers",
-   "stars": 512,
-   "desc": "A collection of remote MCP servers.",
-   "created": "2026-09-08T00:43:30Z",
+   "repo": "PrismML-Eng/Bonsai-demo",
+   "stars": 3191,
+   "desc": "Bonsai Demo",
+   "created": "2026-03-25T19:25:09Z",
    "topics": [
-    "mcp"
+    "bonsai",
+    "llamacpp",
+    "llm",
+    "mlx"
    ],
-   "lang": null
+   "lang": "Shell",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
   },
   {
-   "repo": "Oldcircle/geo-sleuth",
-   "stars": 508,
-   "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
-   "created": "2026-09-18T08:51:34Z",
+   "repo": "volotat/mini-AGI",
+   "stars": 798,
+   "desc": "Continual learning model trained from scratch on 8GB VRAM laptop with batch-1 stream of data.",
+   "created": "2026-09-19T00:25:59Z",
+   "topics": [],
+   "lang": "Python",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 277,
+    "url": "https://news.ycombinator.com/item?id=49783133"
+   }
+  },
+  {
+   "repo": "mvschwarz/openrig",
+   "stars": 2045,
+   "desc": "Multi-agent harness that runs Claude Code and Codex together as one system",
+   "created": "2026-04-01T06:22:40Z",
    "topics": [
+    "agent-harness",
+    "agent-orchestration",
     "agent-skills",
-    "ai-agents",
-    "claude-code",
-    "codex"
+    "ai-coding"
    ],
-   "lang": "Python"
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
   },
   {
-   "repo": "shinthink/blitzstrike",
-   "stars": 493,
-   "desc": "Blitz Strike — a universal MCP security-audit toolbelt. Reconnaissance at speed. Analysis in depth. Validation before report.",
-   "created": "2026-09-12T12:13:09Z",
+   "repo": "yibie/awesome-jev",
+   "stars": 1955,
+   "desc": "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions.",
+   "created": "2026-09-17T14:23:21Z",
    "topics": [
-    "active-directory",
-    "blue-team",
-    "bug-bounty",
-    "cve"
+    "awesome",
+    "awesome-list",
+    "jev",
+    "llm"
    ],
-   "lang": "TypeScript"
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "TokenRhythm/NeoHorse",
+   "stars": 1252,
+   "desc": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
+   "created": "2026-09-04T08:34:54Z",
+   "topics": [
+    "agent",
+    "large-language-models",
+    "llm",
+    "post-training"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
   }
  ]
 }

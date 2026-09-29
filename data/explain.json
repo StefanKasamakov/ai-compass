@@ -2592,5 +2592,223 @@
   "repo": "ruc-datalab/EvoOntology",
   "at": "2026-09-29",
   "source": "trending"
+ },
+ "paperclipai/paperclip": {
+  "cat": "frameworks",
+  "kind": "AI Agent Orchestration",
+  "what": "An open-source server and React UI that coordinates teams of AI agents using org charts, budgets, governance, and goal alignment.",
+  "why": "It solves the chaos of running multiple disparate coding agents or automation bots simultaneously, allowing you to manage them like a structured company with tasks, roles, and budgets instead of scattered terminal tabs.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "The repository has not been updated recently (pushed over 4 months ago), and orchestrating multiple autonomous agents with live code access and provider tokens carries inherent security risks and potential for runaway costs.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "OpenHands/OpenHands",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "repo": "paperclipai/paperclip",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "stablyai/orca": {
+  "cat": "coding",
+  "kind": "Parallel Agent IDE",
+  "what": "An agent development environment designed for running and managing multiple parallel coding agents across isolated git worktrees.",
+  "why": "It solves the chaos of juggling multiple terminal sessions when running concurrent AI coding tasks, helping you orchestrate prompts across several agents at once. Reach for it when you want to compare outputs from different agents side-by-side in separate worktrees.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "Using third-party interfaces to drive consumer subscription services like Claude, ChatGPT, or Copilot may violate their provider terms and risk account suspension.",
+  "alts": [
+   "anthropics/claude-code",
+   "RooCodeInc/Roo-Code",
+   "cline/cline"
+  ],
+  "packages": [],
+  "repo": "stablyai/orca",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "HKUDS/CLI-Anything": {
+  "cat": "harness",
+  "kind": "CLI-Anything software wrappers",
+  "what": "CLI-Anything makes desktop and web software agent-native by providing community-built command-line interface harnesses and a central registry.",
+  "why": "It bridges the gap between AI coding agents and complex software packages that lack native agent support, making it useful when you need an agent to automate apps like CAD tools, editors, or databases.",
+  "level": "intermediate",
+  "start": "pip install cli-anything-hub\ncli-hub install <name>",
+  "caution": "The repository has not been updated in over four months.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [
+   "cli-anything-hub"
+  ],
+  "repo": "HKUDS/CLI-Anything",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "debpalash/VoiceStudio": {
+  "cat": "media",
+  "kind": "local voice studio",
+  "what": "VoiceStudio is an open-source, fully-local voice cloning, text-to-speech, transcription, and video dubbing tool.",
+  "why": "It is designed for performing audio generation and voice cloning locally without relying on paid cloud services. Reach for it when you want open-source voice design, dictation, and audiobook creation.",
+  "level": "intermediate",
+  "start": "curl -fsSL https://voicestudio.sh/install | sh",
+  "caution": "Running large local models requires significant hardware resources such as a compatible GPU.",
+  "alts": [],
+  "packages": [],
+  "repo": "debpalash/VoiceStudio",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "vectorize-io/hindsight": {
+  "cat": "memory",
+  "kind": "agent memory system",
+  "what": "An agent memory system designed to help AI agents learn over time rather than just recall conversation history.",
+  "why": "Use this when you want your AI agents to maintain long-term memory, learn from experiences, and avoid the limitations of traditional RAG and knowledge graphs.",
+  "level": "intermediate",
+  "start": "docker run -it --pull always --name hindsight --restart unless-stopped -p 8888:8888 -p 9999:9999 -e HINDSIGHT_API_LLM_API_KEY=$OPENAI_API_KEY ghcr.io/vectorize-io/hindsight:latest",
+  "caution": "Reuses consumer subscription logins (such as ChatGPT/Claude/Cursor/Copilot apps) as an API or pools free tiers, which may break the provider's terms and risk the account.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "run-llama/llama_index"
+  ],
+  "packages": [
+   "hindsight-api",
+   "hindsight-client",
+   "@vectorize-io/hindsight-client",
+   "hindsight-all"
+  ],
+  "repo": "vectorize-io/hindsight",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "VectifyAI/PageIndex": {
+  "cat": "memory",
+  "kind": "vectorless reasoning rag",
+  "what": "A vectorless, reasoning-based RAG engine that uses hierarchical tree indexes and LLM reasoning for traceable document retrieval without vector databases or chunking.",
+  "why": "Traditional vector similarity search often retrieves irrelevant context or misses facts in long, complex professional documents. Reach for PageIndex when you need precise, explainable retrieval over legal, financial, or technical PDFs.",
+  "level": "intermediate",
+  "start": "pip install -U pageindex",
+  "caution": "Requires external API keys (such as OpenAI) to build indexes and run queries.",
+  "alts": [
+   "infiniflow/ragflow",
+   "HKUDS/LightRAG",
+   "microsoft/graphrag"
+  ],
+  "packages": [
+   "pageindex"
+  ],
+  "repo": "VectifyAI/PageIndex",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Tencent/WeKnora": {
+  "cat": "memory",
+  "kind": "Knowledge RAG Platform",
+  "what": "Tencent's open-source knowledge platform turns raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+  "why": "Teams need a central hub to ingest multi-format documents, auto-sync from external wikis, and let users chat or run agentic tasks over verified internal knowledge.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/Tencent/WeKnora.git",
+  "caution": "Requires running multiple backend containers via Docker Compose and configuring external LLM providers or local Ollama instances.",
+  "alts": [
+   "infiniflow/ragflow",
+   "Mintplex-Labs/anything-llm",
+   "dify-ai/dify"
+  ],
+  "packages": [
+   "@wxg-prc-cpg/dsh-weknora"
+  ],
+  "repo": "Tencent/WeKnora",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "trycua/cua": {
+  "cat": "coding",
+  "kind": "desktop automation harness",
+  "what": "Cua provides open-source desktop automation, isolated cloud desktops, local macOS VMs, specialist decision models, and benchmarks for evaluating computer-use agents.",
+  "why": "It lets AI agents interact with graphical operating systems, desktop applications, and browsers across macOS, Windows, and Linux. Reach for it when building or evaluating autonomous computer-use agents.",
+  "level": "intermediate",
+  "start": "/bin/bash -c \"$(curl -fsSL https://cua.ai/driver/install.sh)\"",
+  "caution": "Granting an AI agent direct control over your computer's native apps and desktop can lead to unintended actions or accidental file modifications if not properly sandboxed.",
+  "alts": [
+   "browser-use/browser-use",
+   "Skyvern-AI/skyvern",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "repo": "trycua/cua",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "cloudflare/security-audit-skill": {
+  "cat": "harness",
+  "kind": "Security Audit Skill",
+  "what": "A coding-agent skill that coordinates multi-phase security audits with isolated hunting and independent verification.",
+  "why": "Automates thorough, multi-stage vulnerability discovery and reporting in codebases when you want structured security assessments from your coding agent.",
+  "level": "advanced",
+  "start": "npx skills add https://github.com/cloudflare/security-audit-skill --skill security-audit",
+  "caution": "Requires an OS-enforced sandbox to safely handle target-controlled builds, tests, and fuzzers; running untrusted code without one carries significant risk.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "repo": "cloudflare/security-audit-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "t8y2/dbx": {
+  "cat": "coding",
+  "kind": "database management client",
+  "what": "A lightweight cross-platform database client supporting over 100 databases with built-in AI, MCP server, CLI, desktop app, and Docker.",
+  "why": "It provides a single compact tool to connect to and manage numerous database systems ranging from MySQL and PostgreSQL to SQLite, Redis, and MongoDB. Reach for it when you need a fast, multi-database manager with AI assistance and MCP server capabilities.",
+  "level": "beginner",
+  "start": "",
+  "caution": "",
+  "alts": [],
+  "packages": [],
+  "repo": "t8y2/dbx",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "dream-num/univer": {
+  "cat": "harness",
+  "kind": "Office SDK & Harness",
+  "what": "Univer is a high-performance open-source Office SDK and harness designed for embedding customizable spreadsheets, documents, and presentations into applications and AI workflows.",
+  "why": "It provides a unified runtime and Facade API that works both in the browser and in Node.js, allowing developers and AI agents to programmatically create, edit, and collaborate on Office documents.",
+  "level": "advanced",
+  "start": "",
+  "caution": "Integrates complex canvas rendering and plugin architecture which requires a steep learning curve and careful dependency management.",
+  "alts": [
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "repo": "dream-num/univer",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "NVIDIA/OpenShell": {
+  "cat": "coding",
+  "kind": "agent runtime sandbox",
+  "what": "OpenShell is a safe, private runtime for autonomous AI agents that enforces kernel-level file, network, and system call policies.",
+  "why": "It lets you give autonomous agents the file access, package installation, and API capabilities they need while restricting them from accessing unauthorized data, secrets, or networks through formal verification and isolated sandboxes.",
+  "level": "advanced",
+  "start": "curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh",
+  "caution": "",
+  "alts": [
+   "OpenHands/OpenHands",
+   "anomalyco/opencode"
+  ],
+  "packages": [
+   "openshell"
+  ],
+  "repo": "NVIDIA/OpenShell",
+  "at": "2026-09-29",
+  "source": "trending"
  }
 }

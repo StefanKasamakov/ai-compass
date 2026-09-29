@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T10:30:00.593Z",
+ "updated": "2026-09-29T11:03:31.328Z",
  "items": [
   {
    "source": "GitHub release",
@@ -10,6 +10,45 @@
    "tags": [],
    "big": false,
    "ai": false
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] AMD buys World Labs for $8.2B, as Atlas solves sparse reconstruction problem for robotics, design and more",
+   "url": "https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b",
+   "date": "2026-09-29T02:55:27.000Z",
+   "summary": "AMD acquired World Labs, and Atlas released a sparse reconstruction solution for robotics and design.",
+   "tags": [
+    "business",
+    "models",
+    "research"
+   ],
+   "big": true,
+   "ai": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Opus 5.5 is good at explainer videos",
+   "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
+   "date": "2026-09-29T02:44:29.000Z",
+   "summary": "Latent Space discussed Claude Opus 5.5's strong performance at generating explainer videos.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Claude Code’s Next Era — Thariq Shihipar, Anthropic",
+   "url": "https://www.latent.space/p/thariq",
+   "date": "2026-09-29T01:48:18.000Z",
+   "summary": "Anthropic's Thariq Shihipar discussed Claude Code updates including new models, mods, and plugins.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true
   },
   {
    "source": "Simon Willison",
@@ -40,6 +79,19 @@
    "tags": [],
    "big": false,
    "ai": false
+  },
+  {
+   "source": "GitHub",
+   "title": "Claude Sonnet 5.5 in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
+   "date": "2026-09-28T18:03:57.000Z",
+   "summary": "Anthropic's Claude Sonnet 5.5 is now generally available in GitHub Copilot for everyday coding tasks.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true
   },
   {
    "source": "GitHub release",
@@ -74,6 +126,19 @@
    "summary": "A discussion arguing that the main challenge with AI-generated code is a lack of understanding of system architecture rather than the code itself.",
    "tags": [
     "coding"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Holo4: powering generalist computer-use agents",
+   "url": "https://huggingface.co/blog/Hcompany/holo4",
+   "date": "2026-09-28T09:44:05.000Z",
+   "summary": "Hugging Face highlighted Holo4 for powering generalist computer-use agents.",
+   "tags": [
+    "agents",
+    "models"
    ],
    "big": false,
    "ai": true
@@ -183,6 +248,19 @@
    "ai": false
   },
   {
+   "source": "GitHub",
+   "title": "Agentic autofix now uses Copilot Memory",
+   "url": "https://github.blog/changelog/2026-09-25-agentic-autofix-now-uses-copilot-memory",
+   "date": "2026-09-25T17:25:50.000Z",
+   "summary": "GitHub's agentic autofix feature now utilizes Copilot Memory to provide better security alert context.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
    "source": "Simon Willison",
    "title": "Quoting John Gruber",
    "url": "https://simonwillison.net/2026/Sep/25/john-gruber/",
@@ -191,6 +269,33 @@
    "tags": [],
    "big": false,
    "ai": false
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot weekly releases — September 21",
+   "url": "https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21",
+   "date": "2026-09-25T16:42:48.000Z",
+   "summary": "GitHub Copilot updates added new models, local app sandboxing, and IDE integration updates.",
+   "tags": [
+    "coding",
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+   "url": "https://www.latent.space/p/runway",
+   "date": "2026-09-25T01:30:57.000Z",
+   "summary": "Runway's WorldPrompt uses persistent context to generate real-time video and audio worlds.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true
   },
   {
    "source": "Simon Willison",
@@ -226,6 +331,31 @@
    "ai": false
   },
   {
+   "source": "Latent Space",
+   "title": "Foundries vs Navigators: Lowering the Cost of Science",
+   "url": "https://www.latent.space/p/foundries-vs-navigators-lowering",
+   "date": "2026-09-24T15:03:16.000Z",
+   "summary": "An essay explored how cheaper AI reasoning is changing the economics of scientific research.",
+   "tags": [
+    "research",
+    "business"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
+   "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+   "date": "2026-09-24T14:08:57.000Z",
+   "summary": "Hugging Face introduced improvements for accelerating vision-language models.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
    "source": "GitHub release",
    "title": "Gemini CLI v0.61.0",
    "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0",
@@ -255,6 +385,19 @@
    "tags": [],
    "big": false,
    "ai": false
+  },
+  {
+   "source": "Hugging Face",
+   "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+   "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+   "date": "2026-09-23T18:41:40.000Z",
+   "summary": "Hugging Face published a guide on using NVIDIA Warp to accelerate robotics simulations.",
+   "tags": [
+    "research",
+    "coding"
+   ],
+   "big": false,
+   "ai": true
   },
   {
    "source": "Hacker News",
@@ -333,6 +476,19 @@
    "ai": false
   },
   {
+   "source": "Latent Space",
+   "title": "🔬Bio-security is an AI Arms Race - Eric Nguyen (CEO, Radical Numerics)",
+   "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
+   "date": "2026-09-23T13:27:18.000Z",
+   "summary": "Radical Numerics is using biological chain-of-thought AI to advance biosecurity and genome design.",
+   "tags": [
+    "safety",
+    "research"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
    "source": "OpenAI",
    "title": "OpenAI extends cyber access to Ukraine for civilian defense",
    "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
@@ -404,6 +560,19 @@
     "safety"
    ],
    "big": false,
+   "ai": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+   "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+   "date": "2026-09-23T06:41:41.000Z",
+   "summary": "Claude Opus 5.5 launched as a new default model while several labs cut API prices by 40-50%.",
+   "tags": [
+    "models",
+    "business"
+   ],
+   "big": true,
    "ai": true
   },
   {
@@ -572,6 +741,31 @@
    "ai": false
   },
   {
+   "source": "Latent Space",
+   "title": "[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M",
+   "url": "https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b",
+   "date": "2026-09-22T06:30:56.000Z",
+   "summary": "Xiaomi released MiMo-V2.6-Pro, a top-performing open weights model trained on a budget.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Transformers now runs llama.cpp quants",
+   "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+   "date": "2026-09-22T00:00:00.000Z",
+   "summary": "Hugging Face's Transformers library now supports running llama.cpp quantized models.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
    "source": "OpenAI",
    "title": "Priorities and principles for effective third party assessments",
    "url": "https://openai.com/index/priorities-principles-third-party-assessments",
@@ -592,6 +786,18 @@
    "ai": false
   },
   {
+   "source": "Latent Space",
+   "title": "Jev: System One models for Prod, not God — with Diogo Almeida, CEO, TypeSafe AI",
+   "url": "https://www.latent.space/p/jev",
+   "date": "2026-09-21T22:13:49.000Z",
+   "summary": "A podcast featured the creator of Jev, a system-one model designed for production routing and classification.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
    "source": "Hacker News",
    "title": "Turn off and restrict access to Apple Intelligence features on Mac",
    "url": "https://support.apple.com/guide/mac-help/turn-restrict-access-apple-intelligence-mchlb2e44f94/mac",
@@ -601,6 +807,19 @@
    "tags": [
     "models",
     "product"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Pruning LLMs Like a Physicist: Block Removal as an Ising Optimization Problem",
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+   "date": "2026-09-21T13:44:34.000Z",
+   "summary": "A new research method allows pruning LLMs by framing block removal as an optimization problem.",
+   "tags": [
+    "research",
+    "models"
    ],
    "big": false,
    "ai": true
@@ -657,185 +876,16 @@
    "ai": false
   },
   {
-   "source": "OpenAI",
-   "title": "V7 cuts costs 78% while boosting accuracy with GPT-5.6 Luna",
-   "url": "https://openai.com/index/v7",
+   "source": "Hugging Face",
+   "title": "tokenizers v1: encode, decode and scaling, measured",
+   "url": "https://huggingface.co/blog/tokenizers-v1",
    "date": "2026-09-21T00:00:00.000Z",
-   "summary": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
-   "tags": [],
+   "summary": "Hugging Face released tokenizers v1 with performance measurements for encoding and decoding.",
+   "tags": [
+    "coding"
+   ],
    "big": false,
-   "ai": false
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting voxium",
-   "url": "https://simonwillison.net/2026/Sep/20/voxium/",
-   "date": "2026-09-20T21:06:43.000Z",
-   "summary": "It has been half a month since I started a new role at a big company. Nobody knows anything here. The specs, code, tests, PRDs, tickets, resolution of those tickets, reports, etc., everything is made by Claude Code. Nobody on my team likes this. They are being forced to ship as much as they can. I have heard multiple times from higher management that pushing code is not a bottleneck, so why are we",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Simon Willison",
-   "title": "MCP was always a bad idea?",
-   "url": "https://simonwillison.net/2026/Sep/20/hn-49779718/",
-   "date": "2026-09-20T20:24:41.000Z",
-   "summary": "My comment on MCP was always a bad idea? &mdash; Hacker News. This article entirely misses the value that MCP brings today. Sure, there's almost no reason to use MCPs if you are running a full-blown terminal agent (Claude Code, Codex, Meta Muse, OpenClaw etc) with unfettered internet access - just let it call APIs directly. If you want to operate something that's less YOLO than that, you'll find y",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Hacker News",
-   "title": "MCP was always a bad idea?",
-   "url": "https://maharship.com/blog/why-mcp-was-always-a-bad-idea/",
-   "date": "2026-09-20T19:44:40Z",
-   "discuss": "https://news.ycombinator.com/item?id=49779329",
-   "summary": "334 points, 330 comments",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-keys-ui 0.1",
-   "url": "https://simonwillison.net/2026/Sep/20/llm-keys-ui/",
-   "date": "2026-09-20T19:22:19.000Z",
-   "summary": "Release: llm-keys-ui 0.1 This plugin solves a very specific problem. I've started using Codex Remote to run coding agents on various machines while controlling them from my phone. Sometimes I use those machines to hack on LLM projects, and occasionally that means I need to configure an API key. I don't like pasting API keys into agent sessions, so I wanted a way to get those keys onto a machine wi",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-auth-github 1.0",
-   "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github/",
-   "date": "2026-09-19T19:52:02.000Z",
-   "summary": "Release: datasette-auth-github 1.0 I run this GitHub login plugin on the agent.datasette.io demo site and I noticed that my authenticated sessions weren't lasting very long. It turned out that the plugin was setting cookies without a Max-Age parameter, so they were expiring at the end of a browser session (which in Mobile Safari seems to happen pretty often, independently of how you are using the ",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
-   "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
-   "date": "2026-09-18T23:57:57.000Z",
-   "summary": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI Gemini finally caught up on Felony Bench ! The hacks, which the company confirmed on Friday, occurred in May as part of a test run by the company Irregular, which was also involved in similar incidents disclosed by OpenAI, Anthropic and Meta. In one of the cases, the model guessed passwords until it gained access to a protected s",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
-   "date": "2026-09-18T16:00:00.000Z",
-   "title": "Partnering with Accenture on embedded evaluation",
-   "summary": "We’re partnering with Accenture on independent evaluation of frontier AI—part of our recent commitment to embed evaluators at Anthropic. Both we and Accenture expect to invest at least $1 billion to build capacity in this area over the next five years.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing the Australian Youth Safety Blueprint",
-   "url": "https://openai.com/index/australian-youth-safety-blueprint",
-   "date": "2026-09-18T12:00:00.000Z",
-   "summary": "OpenAI introduces the Australian Youth Safety Blueprint, a six-pillar roadmap for safer AI experiences that protect and empower young people.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/life-sciences-verification-program",
-   "date": "2026-09-17T15:56:00.000Z",
-   "title": "Introducing the Life Sciences Verification Program",
-   "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Cooley is accelerating IPO work with ChatGPT",
-   "url": "https://openai.com/index/cooley-gopublic",
-   "date": "2026-09-17T12:00:00.000Z",
-   "summary": "Cooley built GO Public with ChatGPT Work to bring intelligence to the IPO process, helping lawyers surface issues earlier and focus judgment where it matters most.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing Astra for Law",
-   "url": "https://openai.com/index/astra-for-law",
-   "date": "2026-09-17T00:00:00.000Z",
-   "summary": "OpenAI for Law brings frontier intelligence for law, custom firm workflows, connected legal data sources, and legal-grade controls for confidential client work.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Our framework for reporting model misalignment",
-   "url": "https://openai.com/index/model-misalignment-reporting-framework",
-   "date": "2026-09-16T17:00:00.000Z",
-   "summary": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Helping older adults use AI in everyday life",
-   "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
-   "date": "2026-09-16T16:00:00.000Z",
-   "summary": "OpenAI and AARP are bringing free, hands-on ChatGPT workshops to 1,000 older adults across 10 U.S. cities to build practical AI skills safely.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Reimagining advertising with AI",
-   "url": "https://openai.com/index/reimagining-advertising-with-ai",
-   "date": "2026-09-16T13:00:00.000Z",
-   "summary": "Explore new AI-powered advertising experiences from OpenAI, including Sponsored Agents, tools for marketers, and integrations with HubSpot and Shopify.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Hex turns complex analysis into visual reports with GPT‑6 Astra",
-   "url": "https://openai.com/index/hex-gpt-6-astra",
-   "date": "2026-09-16T12:00:00.000Z",
-   "summary": "GPT-6 Astra helps Hex’s data agents turn answers into interactive visualizations that employees are proud to share.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "How to connect AI usage to business value",
-   "url": "https://openai.com/index/how-to-connect-ai-usage-to-business-value",
-   "date": "2026-09-16T12:00:00.000Z",
-   "summary": "Learn how ChatGPT Work and Codex analytics help teams understand AI usage and spend, identify training needs, and connect adoption to business outcomes.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "How workers are unlocking new ways of working",
-   "url": "https://openai.com/index/unlocking-new-ways-of-working",
-   "date": "2026-09-16T09:00:00.000Z",
-   "summary": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-   "tags": [],
-   "big": false,
-   "ai": false
+   "ai": true
   }
  ]
 }

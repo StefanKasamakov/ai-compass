@@ -1,0 +1,136 @@
+{
+ "date": "2026-09-29",
+ "subject": "Claude Opus 5.5 and Sonnet 5.5 launch with price cuts",
+ "intro": "Anthropic released new flagship models alongside broad industry price drops of forty to fifty percent. Meanwhile, AMD acquired World Labs and GitHub integrated the new models into Copilot.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "[AINews] Claude Opus 5.5, the new default model for AINews — and everybody cuts prices 40-50%",
+     "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+     "blurb": "Claude Opus 5.5 launched as a new default model while several labs cut API prices by 40-50%.",
+     "meta": "Latent Space"
+    },
+    {
+     "title": "Sonnet 5.5",
+     "url": "https://www.anthropic.com/claude-sonnet-5-5",
+     "blurb": "Hacker News discussed Sonnet 5.5, a major new AI model release for coding and general tasks.",
+     "meta": "Hacker News"
+    },
+    {
+     "title": "[AINews] AMD buys World Labs for $8.2B, as Atlas solves sparse reconstruction problem for robotics, design and more",
+     "url": "https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b",
+     "blurb": "AMD acquired World Labs, and Atlas released a sparse reconstruction solution for robotics and design.",
+     "meta": "Latent Space"
+    },
+    {
+     "title": "Claude Sonnet 5.5 in GitHub Copilot",
+     "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
+     "blurb": "Anthropic's Claude Sonnet 5.5 is now generally available in GitHub Copilot for everyday coding tasks.",
+     "meta": "GitHub"
+    },
+    {
+     "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+     "url": "https://www.latent.space/p/runway",
+     "blurb": "Runway's WorldPrompt uses persistent context to generate real-time video and audio worlds.",
+     "meta": "Latent Space"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Claude Opus 5.5",
+     "url": "https://stefankasamakov.github.io/ai-compass/models.html#m-opus",
+     "blurb": "Anthropic's recommended default. Coding (it powers Claude Code), long tasks, documents.",
+     "meta": "$4 / $20 per 1M tokens"
+    },
+    {
+     "title": "Claude Sonnet 5.5",
+     "url": "https://stefankasamakov.github.io/ai-compass/models.html#m-sonnet",
+     "blurb": "Fast and smart: writing, bug fixes, polished docs, slides and spreadsheets, high-volume apps. New 28 Sep: 30% faster than Sonnet 5, same price. Haiku 5.5 is announced for the coming weeks.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "GPT-6 Sol",
+     "url": "https://stefankasamakov.github.io/ai-compass/models.html#m-sol",
+     "blurb": "Strong reasoning for complex professional work at a mid-tier price. In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "GPT-6 Luna",
+     "url": "https://stefankasamakov.github.io/ai-compass/models.html#m-luna",
+     "blurb": "Extremely cheap. Routine tasks and huge volumes. The model free ChatGPT users get. 'Luna Pro' = same model, pro reasoning mode.",
+     "meta": "$0.1 / $0.5 per 1M tokens"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "KKKKhazix/AIHOT",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#KKKKhazix/AIHOT",
+     "blurb": "A self-hosted web framework that automatically aggregates sources, uses LLMs to filter, score, and cluster news, and generates daily industry briefings. Heads-up: The documentation is primarily in Chinese, and setup requires an OpenAI-compatible LLM API key and Docker.",
+     "meta": "AI news framework"
+    },
+    {
+     "title": "Vincentwei1021/anything2explainer",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#Vincentwei1021/anything2explainer",
+     "blurb": "Turns any topic into a motion-graphics explainer video with text-to-speech voiceover and subtitles using Remotion and Claude Code or Codex. Heads-up: The repository has no explicit license specified. Requires external dependencies like ffmpeg, espeak-ng, and Python virtual environments, and takes 1 to 3 hours of wall clock time to fully render videos.",
+     "meta": "Claude Code Skill"
+    },
+    {
+     "title": "yetone/magpie",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#yetone/magpie",
+     "blurb": "Manage AI models and configure multiple coding agents from a single menu bar interface and local gateway. Heads-up: The project was last pushed in September 2026, which may indicate it is unmaintained.",
+     "meta": "menu bar model router"
+    },
+    {
+     "title": "tigerless-labs/agent-memory",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#tigerless-labs/agent-memory",
+     "blurb": "Long-term memory runtime for AI agents that uses plain Markdown files as the source of truth, local ranked retrieval, and a sleep-time manage layer. Heads-up: Requires Python 3.12 or higher and uv, and is not currently published on PyPI.",
+     "meta": "long-term memory runtime"
+    },
+    {
+     "title": "dzhng/jevgrep",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#dzhng/jevgrep",
+     "blurb": "Finds code by asking what it does, helping coding agents discover relevant files and source context. Heads-up: Searches send eligible source content to third-party AI gateway providers, so avoid pointing it at codebases with sensitive unredacted data if those privacy terms are unsuitable.",
+     "meta": "coding agent helper"
+    },
+    {
+     "title": "adtexterry-lgtm/unigit-ecosystem",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#adtexterry-lgtm/unigit-ecosystem",
+     "blurb": "UNIGIT is an AI workbench ecosystem hub designed to bring models, tools, files, and project context into one environment for real work. Heads-up: This repository is only a public brand, vision, and ecosystem hub; it does not contain the proprietary product source code or runtime.",
+     "meta": "AI workbench hub"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "219.0M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "92.0M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "BerriAI/litellm",
+     "url": "https://stefankasamakov.github.io/ai-compass/explore.html#BerriAI/litellm",
+     "blurb": "LiteLLM is a Python library and a self-hosted proxy server that lets you call 100+ AI model providers (OpenAI, Anthropic, Gemini, Bedrock, Azure and others) through one OpenAI-style interface.",
+     "meta": "89.4M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}
