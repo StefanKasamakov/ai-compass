@@ -272,3 +272,4 @@ footer.foot a:hover { color: var(--fg); }
 .story h3, .mini-feed b { overflow-wrap: anywhere; }
 .feed, .board, .picks, .mini-feed { grid-template-columns: minmax(0, 1fr); }
 .story p { overflow-wrap: anywhere; }
+@media (max-width: 1200px) { .search-btn { min-width: 40px; } .search-btn span, .search-btn kbd { display: none; } }

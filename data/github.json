@@ -1,10 +1,10 @@
 {
- "updated": "2026-09-29T07:36:48.805Z",
+ "updated": "2026-09-29T07:52:01.975Z",
  "repos": {
   "anthropics/claude-code": {
    "stars": 148521,
    "week": null,
-   "pushed": "2026-09-29T07:07:30Z",
+   "pushed": "2026-09-29T07:38:17Z",
    "desc": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
    "archived": false,
    "release": {
@@ -14,7 +14,7 @@
    }
   },
   "openai/codex": {
-   "stars": 127041,
+   "stars": 127042,
    "week": null,
    "pushed": "2026-09-29T06:52:07Z",
    "desc": "Lightweight coding agent that runs in your terminal",
@@ -26,7 +26,7 @@
    }
   },
   "google-gemini/gemini-cli": {
-   "stars": 107184,
+   "stars": 107183,
    "week": null,
    "pushed": "2026-09-29T01:19:34Z",
    "desc": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
@@ -55,23 +55,15 @@
    "pushed": "2026-09-28T23:19:44Z",
    "desc": "Playwright MCP server",
    "archived": false,
-   "release": {
-    "tag": "v0.0.83",
-    "date": "2026-09-28T23:17:11Z",
-    "url": "https://github.com/microsoft/playwright-mcp/releases/tag/v0.0.83"
-   }
+   "release": null
   },
   "ChromeDevTools/chrome-devtools-mcp": {
    "stars": 52715,
    "week": null,
-   "pushed": "2026-09-29T07:32:47Z",
+   "pushed": "2026-09-29T07:46:41Z",
    "desc": "Chrome DevTools for coding agents",
    "archived": false,
-   "release": {
-    "tag": "chrome-devtools-mcp-v1.10.1",
-    "date": "2026-09-23T10:37:16Z",
-    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases/tag/chrome-devtools-mcp-v1.10.1"
-   }
+   "release": null
   },
   "upstash/context7": {
    "stars": 62509,
@@ -79,11 +71,7 @@
    "pushed": "2026-09-29T07:27:35Z",
    "desc": "Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors",
    "archived": false,
-   "release": {
-    "tag": "@upstash/context7-sdk@0.5.0",
-    "date": "2026-09-22T21:04:48Z",
-    "url": "https://github.com/upstash/context7/releases/tag/%40upstash/context7-sdk%400.5.0"
-   }
+   "release": null
   },
   "github/github-mcp-server": {
    "stars": 33267,
@@ -91,11 +79,7 @@
    "pushed": "2026-09-28T16:25:06Z",
    "desc": "GitHub's official MCP Server",
    "archived": false,
-   "release": {
-    "tag": "v1.12.2",
-    "date": "2026-09-16T10:58:24Z",
-    "url": "https://github.com/github/github-mcp-server/releases/tag/v1.12.2"
-   }
+   "release": null
   },
   "makenotion/notion-mcp-server": {
    "stars": 4651,
@@ -103,11 +87,7 @@
    "pushed": "2026-09-20T23:09:02Z",
    "desc": "Official Notion MCP Server",
    "archived": false,
-   "release": {
-    "tag": "v2.1.0",
-    "date": "2026-01-31T18:27:31Z",
-    "url": "https://github.com/makenotion/notion-mcp-server/releases/tag/v2.1.0"
-   }
+   "release": null
   },
   "supabase/mcp": {
    "stars": 2925,
@@ -115,11 +95,7 @@
    "pushed": "2026-09-28T02:40:09Z",
    "desc": "Connect Supabase to your AI assistants",
    "archived": false,
-   "release": {
-    "tag": "mcp-server-supabase-v0.13.0",
-    "date": "2026-09-17T13:36:57Z",
-    "url": "https://github.com/supabase/mcp/releases/tag/mcp-server-supabase-v0.13.0"
-   }
+   "release": null
   },
   "getsentry/sentry-mcp": {
    "stars": 868,
@@ -127,11 +103,7 @@
    "pushed": "2026-09-28T20:29:09Z",
    "desc": "An MCP server for interacting with Sentry via LLMs.",
    "archived": false,
-   "release": {
-    "tag": "0.42.0",
-    "date": "2026-09-25T14:43:49Z",
-    "url": "https://github.com/getsentry/sentry-mcp/releases/tag/0.42.0"
-   }
+   "release": null
   },
   "exa-labs/exa-mcp-server": {
    "stars": 5057,
@@ -147,23 +119,15 @@
    "pushed": "2026-09-29T03:33:18Z",
    "desc": "🔥 Official Firecrawl MCP Server - Adds powerful web scraping and search to Cursor, Claude and any other LLM clients.",
    "archived": false,
-   "release": {
-    "tag": "v3.2.1",
-    "date": "2025-09-26T07:31:17Z",
-    "url": "https://github.com/firecrawl/firecrawl-mcp-server/releases/tag/v3.2.1"
-   }
+   "release": null
   },
   "GLips/Figma-Context-MCP": {
-   "stars": 15928,
+   "stars": 15929,
    "week": null,
    "pushed": "2026-09-18T03:44:15Z",
    "desc": "MCP server to provide Figma layout information to AI coding agents like Cursor",
    "archived": false,
-   "release": {
-    "tag": "v0.13.2",
-    "date": "2026-06-18T16:38:25Z",
-    "url": "https://github.com/GLips/Figma-Context-MCP/releases/tag/v0.13.2"
-   }
+   "release": null
   },
   "modelcontextprotocol/servers": {
    "stars": 90655,
@@ -171,11 +135,7 @@
    "pushed": "2026-09-29T06:43:12Z",
    "desc": "Model Context Protocol Servers",
    "archived": false,
-   "release": {
-    "tag": "2026.8.31",
-    "date": "2026-08-31T20:34:32Z",
-    "url": "https://github.com/modelcontextprotocol/servers/releases/tag/2026.8.31"
-   }
+   "release": null
   },
   "anthropics/skills": {
    "stars": 178888,
@@ -186,16 +146,12 @@
    "release": null
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "stars": 131355,
+   "stars": 131358,
    "week": null,
    "pushed": "2026-09-27T11:30:41Z",
    "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
    "archived": false,
-   "release": {
-    "tag": "v2.15.0",
-    "date": "2026-08-13T17:10:40Z",
-    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill/releases/tag/v2.15.0"
-   }
+   "release": null
   },
   "openai/skills": {
    "stars": 27798,
@@ -206,31 +162,23 @@
    "release": null
   },
   "obra/superpowers": {
-   "stars": 292613,
+   "stars": 292618,
    "week": null,
    "pushed": "2026-09-27T02:37:47Z",
    "desc": "An agentic skills framework & software development methodology that works.",
    "archived": false,
-   "release": {
-    "tag": "v6.4.2",
-    "date": "2026-09-25T18:08:09Z",
-    "url": "https://github.com/obra/superpowers/releases/tag/v6.4.2"
-   }
+   "release": null
   },
   "addyosmani/agent-skills": {
-   "stars": 99745,
+   "stars": 99746,
    "week": null,
    "pushed": "2026-09-26T04:19:38Z",
    "desc": "Production-grade engineering skills for AI coding agents.",
    "archived": false,
-   "release": {
-    "tag": "0.6.11",
-    "date": "2026-09-26T04:19:39Z",
-    "url": "https://github.com/addyosmani/agent-skills/releases/tag/0.6.11"
-   }
+   "release": null
   },
   "anthropics/claude-plugins-official": {
-   "stars": 37172,
+   "stars": 37174,
    "week": null,
    "pushed": "2026-09-29T06:25:47Z",
    "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
@@ -266,6 +214,358 @@
    "week": null,
    "pushed": "2026-09-18T07:16:11Z",
    "desc": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+   "archived": false,
+   "release": null
+  },
+  "ruvnet/ruflo": {
+   "stars": 73464,
+   "week": null,
+   "pushed": "2026-09-29T06:35:54Z",
+   "desc": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+   "archived": false,
+   "release": null
+  },
+  "diegosouzapw/OmniRoute": {
+   "stars": 71171,
+   "week": null,
+   "pushed": "2026-09-29T07:16:19Z",
+   "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 359 providers (150+ free), 1200+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by hundreds of contributors",
+   "archived": false,
+   "release": null
+  },
+  "BerriAI/litellm": {
+   "stars": 59828,
+   "week": null,
+   "pushed": "2026-09-29T07:28:20Z",
+   "desc": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
+   "archived": false,
+   "release": null
+  },
+  "musistudio/claude-code-router": {
+   "stars": 37472,
+   "week": null,
+   "pushed": "2026-09-26T15:00:04Z",
+   "desc": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.",
+   "archived": false,
+   "release": null
+  },
+  "Portkey-AI/gateway": {
+   "stars": 13105,
+   "week": null,
+   "pushed": "2026-05-25T13:54:51Z",
+   "desc": "A blazing fast AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API.",
+   "archived": false,
+   "release": null
+  },
+  "JuliusBrussee/caveman": {
+   "stars": 108259,
+   "week": null,
+   "pushed": "2026-09-29T07:44:17Z",
+   "desc": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+   "archived": false,
+   "release": null
+  },
+  "headroomlabs-ai/headroom": {
+   "stars": 74046,
+   "week": null,
+   "pushed": "2026-09-29T05:55:43Z",
+   "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+   "archived": false,
+   "release": null
+  },
+  "DietrichGebert/ponytail": {
+   "stars": 147761,
+   "week": null,
+   "pushed": "2026-09-14T14:34:56Z",
+   "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+   "archived": false,
+   "release": null
+  },
+  "ccusage/ccusage": {
+   "stars": 18789,
+   "week": null,
+   "pushed": "2026-09-29T07:29:18Z",
+   "desc": "npx ccusage",
+   "archived": false,
+   "release": null
+  },
+  "gsd-build/get-shit-done": {
+   "stars": 64438,
+   "week": null,
+   "pushed": "2026-05-31T17:46:54Z",
+   "desc": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+   "archived": true,
+   "release": null
+  },
+  "SuperClaude-Org/SuperClaude_Framework": {
+   "stars": 23909,
+   "week": null,
+   "pushed": "2026-09-27T12:50:32Z",
+   "desc": "A configuration framework that enhances Claude Code with specialized commands, cognitive personas, and development methodologies.",
+   "archived": false,
+   "release": null
+  },
+  "wshobson/agents": {
+   "stars": 40070,
+   "week": null,
+   "pushed": "2026-09-29T00:45:29Z",
+   "desc": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
+   "archived": false,
+   "release": null
+  },
+  "davila7/claude-code-templates": {
+   "stars": 32118,
+   "week": null,
+   "pushed": "2026-09-29T03:07:28Z",
+   "desc": "CLI tool for configuring and monitoring Claude Code",
+   "archived": false,
+   "release": null
+  },
+  "NousResearch/hermes-agent": {
+   "stars": 249897,
+   "week": null,
+   "pushed": "2026-09-29T07:49:44Z",
+   "desc": "The agent that grows with you",
+   "archived": false,
+   "release": null
+  },
+  "anomalyco/opencode": {
+   "stars": 210705,
+   "week": null,
+   "pushed": "2026-09-29T07:32:15Z",
+   "desc": "The open source coding agent.",
+   "archived": false,
+   "release": null
+  },
+  "cline/cline": {
+   "stars": 69525,
+   "week": null,
+   "pushed": "2026-09-29T07:47:05Z",
+   "desc": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
+   "archived": false,
+   "release": null
+  },
+  "OpenHands/OpenHands": {
+   "stars": 89455,
+   "week": null,
+   "pushed": "2026-09-29T07:02:31Z",
+   "desc": "🙌 OpenHands: AI-Driven Development",
+   "archived": false,
+   "release": null
+  },
+  "Aider-AI/aider": {
+   "stars": 49259,
+   "week": null,
+   "pushed": "2026-05-22T14:02:20Z",
+   "desc": "aider is AI pair programming in your terminal",
+   "archived": false,
+   "release": null
+  },
+  "aaif-goose/goose": {
+   "stars": 54755,
+   "week": null,
+   "pushed": "2026-09-29T02:59:10Z",
+   "desc": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+   "archived": false,
+   "release": null
+  },
+  "continuedev/continue": {
+   "stars": 36053,
+   "week": null,
+   "pushed": "2026-09-28T17:28:38Z",
+   "desc": "open-source coding agent",
+   "archived": false,
+   "release": null
+  },
+  "RooCodeInc/Roo-Code": {
+   "stars": 24291,
+   "week": null,
+   "pushed": "2026-05-15T18:08:47Z",
+   "desc": "Roo Code gives you a whole dev team of AI agents in your code editor.",
+   "archived": true,
+   "release": null
+  },
+  "langchain-ai/langgraph": {
+   "stars": 42446,
+   "week": null,
+   "pushed": "2026-09-29T00:01:03Z",
+   "desc": "Build resilient agents.",
+   "archived": false,
+   "release": null
+  },
+  "crewAIInc/crewAI": {
+   "stars": 59157,
+   "week": null,
+   "pushed": "2026-09-29T07:40:06Z",
+   "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+   "archived": false,
+   "release": null
+  },
+  "openai/openai-agents-python": {
+   "stars": 29754,
+   "week": null,
+   "pushed": "2026-09-29T05:08:56Z",
+   "desc": "A lightweight, powerful framework for multi-agent workflows",
+   "archived": false,
+   "release": null
+  },
+  "anthropics/claude-agent-sdk-python": {
+   "stars": 8185,
+   "week": null,
+   "pushed": "2026-09-29T00:47:57Z",
+   "desc": null,
+   "archived": false,
+   "release": null
+  },
+  "microsoft/autogen": {
+   "stars": 61214,
+   "week": null,
+   "pushed": "2026-04-15T11:59:09Z",
+   "desc": "A programming framework for agentic AI",
+   "archived": false,
+   "release": null
+  },
+  "vercel/ai": {
+   "stars": 27025,
+   "week": null,
+   "pushed": "2026-09-29T07:47:46Z",
+   "desc": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
+   "archived": false,
+   "release": null
+  },
+  "browser-use/browser-use": {
+   "stars": 116666,
+   "week": null,
+   "pushed": "2026-09-26T07:29:35Z",
+   "desc": "Agents that use the browser.",
+   "archived": false,
+   "release": null
+  },
+  "ollama/ollama": {
+   "stars": 181894,
+   "week": null,
+   "pushed": "2026-09-29T01:43:26Z",
+   "desc": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+   "archived": false,
+   "release": null
+  },
+  "ggml-org/llama.cpp": {
+   "stars": 129836,
+   "week": null,
+   "pushed": "2026-09-29T07:40:28Z",
+   "desc": "LLM inference in C/C++",
+   "archived": false,
+   "release": null
+  },
+  "open-webui/open-webui": {
+   "stars": 153487,
+   "week": null,
+   "pushed": "2026-09-28T03:59:54Z",
+   "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+   "archived": false,
+   "release": null
+  },
+  "vllm-project/vllm": {
+   "stars": 92916,
+   "week": null,
+   "pushed": "2026-09-29T07:31:30Z",
+   "desc": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+   "archived": false,
+   "release": null
+  },
+  "mudler/LocalAI": {
+   "stars": 49315,
+   "week": null,
+   "pushed": "2026-09-29T06:16:50Z",
+   "desc": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
+   "archived": false,
+   "release": null
+  },
+  "Mintplex-Labs/anything-llm": {
+   "stars": 66573,
+   "week": null,
+   "pushed": "2026-09-28T22:05:18Z",
+   "desc": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
+   "archived": false,
+   "release": null
+  },
+  "mem0ai/mem0": {
+   "stars": 66270,
+   "week": null,
+   "pushed": "2026-09-25T17:36:35Z",
+   "desc": "The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.",
+   "archived": false,
+   "release": null
+  },
+  "getzep/graphiti": {
+   "stars": 31292,
+   "week": null,
+   "pushed": "2026-09-28T23:15:30Z",
+   "desc": "Build Real-Time Knowledge Graphs for AI Agents",
+   "archived": false,
+   "release": null
+  },
+  "Graphify-Labs/graphify": {
+   "stars": 122224,
+   "week": null,
+   "pushed": "2026-09-28T08:28:51Z",
+   "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+   "archived": false,
+   "release": null
+  },
+  "run-llama/llama_index": {
+   "stars": 52343,
+   "week": null,
+   "pushed": "2026-09-29T04:49:06Z",
+   "desc": "LlamaIndex is the document processing platform for AI",
+   "archived": false,
+   "release": null
+  },
+  "infiniflow/ragflow": {
+   "stars": 91467,
+   "week": null,
+   "pushed": "2026-09-29T07:50:08Z",
+   "desc": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+   "archived": false,
+   "release": null
+  },
+  "microsoft/markitdown": {
+   "stars": 187525,
+   "week": null,
+   "pushed": "2026-09-21T21:03:34Z",
+   "desc": "Python tool for converting files and office documents to Markdown.",
+   "archived": false,
+   "release": null
+  },
+  "n8n-io/n8n": {
+   "stars": 206240,
+   "week": null,
+   "pushed": "2026-09-29T07:50:46Z",
+   "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+   "archived": false,
+   "release": null
+  },
+  "langgenius/dify": {
+   "stars": 157464,
+   "week": null,
+   "pushed": "2026-09-29T07:51:52Z",
+   "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+   "archived": false,
+   "release": null
+  },
+  "FlowiseAI/Flowise": {
+   "stars": 55489,
+   "week": null,
+   "pushed": "2026-08-13T12:38:19Z",
+   "desc": "Build AI Agents, Visually",
+   "archived": true,
+   "release": null
+  },
+  "lobehub/lobehub": {
+   "stars": 82882,
+   "week": null,
+   "pushed": "2026-09-29T07:46:44Z",
+   "desc": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
    "archived": false,
    "release": null
   }

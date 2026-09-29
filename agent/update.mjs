@@ -1,13 +1,13 @@
 // The AI Compass agent. Runs in GitHub Actions every few hours:
 //   1. GitHub stats (stars, weekly growth, latest release) for every tracked repo
 //   2. Trending new repos (MCP servers, skills, Claude Code tools)
-//   3. News from official blogs + Hacker News, summarized by Claude (if ANTHROPIC_API_KEY is set)
-//   4. Votes (👍 on "Vote:" issues) -> tool leaderboard + people leaderboard
+//   3. News from official blogs + Hacker News, summarized by AI (GEMINI_API_KEY or ANTHROPIC_API_KEY)
+//   4. Repo explainer: plain-English "what is this repo for" for curated, trending and requested repos
+//   5. Votes (👍 on "Vote:" issues) -> tool leaderboard + people leaderboard
 // Everything lands in data/*.json; the site reads those files.
 import fs from "node:fs/promises";
-import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
-import { zodOutputFormat } from "@anthropic-ai/sdk/helpers/zod";
+import { askJSON, provider } from "./llm.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const read = (f, fallback) => fs.readFile(new URL(f, ROOT), "utf8").then(JSON.parse, () => fallback);
@@ -42,15 +42,14 @@ const safe = async (label, fn, fallback) => {
 };
 
 // ---------- 1. GitHub stats ----------
-async function githubStats(tools) {
-  const repos = [...new Set(tools.map((t) => t.repo).filter(Boolean))];
+async function githubStats(repos, withReleases) {
   const history = await read("data/history.json", {});
   const prev = await read("data/github.json", { repos: {} });
   const out = {};
   for (const repo of repos) {
     const r = await safe(repo, () => gh(`repos/${repo}`));
     if (!r) { if (prev.repos[repo]) out[repo] = prev.repos[repo]; continue; }
-    const rel = await gh(`repos/${repo}/releases/latest`).catch(() => null); // many repos have no releases
+    const rel = withReleases.has(repo) ? await gh(`repos/${repo}/releases/latest`).catch(() => null) : null;
     const h = (history[repo] ??= {});
     h[day(NOW)] = r.stargazers_count;
     for (const d of Object.keys(h)) if (d < day(daysAgo(35))) delete h[d];
@@ -158,22 +157,18 @@ const NewsNotes = z.object({
 });
 
 async function summarize(items) {
-  if (!process.env.ANTHROPIC_API_KEY || !items.length) return null;
-  const client = new Anthropic();
+  if (!items.length) return null;
   const list = items.map((it, id) => ({ id, source: it.source, title: it.title, snippet: it.snippet }));
-  const res = await client.messages.parse({
-    model: "claude-opus-5-5",
-    max_tokens: 16000,
-    output_config: { effort: "low", format: zodOutputFormat(NewsNotes) },
+  const res = await askJSON({
+    schema: NewsNotes,
     system:
       "You curate news for AI Compass, a site that helps non-experts understand AI models, MCP servers, agent skills and AI coding tools. " +
       "For each item: relevant = true only if it matters to people choosing or using AI models/tools (new models, pricing, MCP, skills, agents, coding tools, major product changes). " +
       "summary = one or two plain-English sentences saying what happened and why a regular user should care; no hype, no marketing words. " +
       "big = true only for major launches (new frontier model, big price change, protocol release).",
-    messages: [{ role: "user", content: JSON.stringify(list) }],
+    user: JSON.stringify(list),
   });
-  if (res.stop_reason === "refusal" || !res.parsed_output) return null;
-  return res.parsed_output.items;
+  return res?.items ?? null;
 }
 
 async function news(stats, tools) {
@@ -187,7 +182,7 @@ async function news(stats, tools) {
   ].filter((i) => i.url && i.title && !known.has(i.url) && new Date(i.date) > daysAgo(21));
   const unique = [...new Map(fresh.map((i) => [i.url, i])).values()];
 
-  const notes = await safe("Claude summaries", () => summarize(unique), null);
+  const notes = await safe("AI summaries", () => summarize(unique), null);
   const added = unique.flatMap((it, i) => {
     const n = notes?.find((x) => x.id === i);
     if (n && !n.relevant) return [];
@@ -196,18 +191,70 @@ async function news(stats, tools) {
     return [{ ...rest, summary: n?.summary ?? snippet, tags: n?.tags ?? [], big: n?.big ?? false, ai: !!n }];
   });
   const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 80);
-  console.log(`news: +${added.length} (${notes ? "Claude-summarized" : "no AI summaries"})`);
+  console.log(`news: +${added.length} (${notes ? `summarized by ${provider}` : "no AI summaries"})`);
   return items;
 }
 
-// ---------- 4. Votes & leaderboard ----------
+// ---------- 4. Repo explainer ----------
+const LEVELS = ["beginner", "intermediate", "advanced"];
+const MAX_EXPLAIN_PER_RUN = 12;
+const SITE = `https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}`;
+const repoFrom = (text = "") => text.match(/github\.com\/([\w.-]+\/[\w.-]+)/)?.[1]?.replace(/\.git$/, "") ?? text.match(/\b([\w.-]+\/[\w.-]+)\b/)?.[1];
+
+async function explainRepos(trendingItems) {
+  const { categories, repos: seeds } = await read("data/repos.json", { categories: [], repos: [] });
+  const known = await read("data/explain.json", {});
+  const Explanation = z.object({
+    cat: z.enum(categories.map((c) => c.id)), kind: z.string(), what: z.string(), why: z.string(),
+    level: z.enum(LEVELS), start: z.string(), caution: z.string(), alts: z.array(z.string()),
+  });
+
+  // what needs explaining: reader requests first, then curated seeds, then this month's trending repos
+  const requests = TOKEN ? await safe("explain requests", () => ghAll(`repos/${REPO}/issues?labels=explain&state=open`), []) : [];
+  const queue = [
+    ...requests.map((i) => ({ repo: repoFrom(`${i.title} ${i.body}`), issue: i.number, by: i.user?.login })),
+    ...seeds.map((repo) => ({ repo, source: "curated" })),
+    ...trendingItems.map((t) => ({ repo: t.repo, source: "trending" })),
+  ].filter((q) => q.repo && (q.issue || !known[q.repo]));
+  const reply = (n, body) => gh(`repos/${REPO}/issues/${n}/comments`, { method: "POST", body: JSON.stringify({ body }) })
+    .then(() => gh(`repos/${REPO}/issues/${n}`, { method: "PATCH", body: JSON.stringify({ state: "closed" }) }));
+
+  let done = 0;
+  for (const q of queue) {
+    if (done >= MAX_EXPLAIN_PER_RUN || !provider) break;
+    if (q.issue && known[q.repo]) { await safe("reply", () => reply(q.issue, `Already explained: ${SITE}/explore.html#${q.repo}`)); continue; }
+    const meta = await gh(`repos/${q.repo}`).catch(() => null);
+    if (!meta) { if (q.issue) await safe("reply", () => reply(q.issue, `Couldn't find \`${q.repo}\` on GitHub. Check the link and open a new request.`)); continue; }
+    const readme = await gh(`repos/${meta.full_name}/readme`).then((r) => Buffer.from(r.content, "base64").toString("utf8").slice(0, 9000)).catch(() => "");
+    const ex = await safe(`explain ${meta.full_name}`, () => askJSON({
+      schema: Explanation,
+      system:
+        "You explain GitHub repositories to non-experts for AI Compass. Base every claim on the README and metadata given; never invent features. " +
+        "No marketing words. If the README makes big claims, present them as the project's claims and add an honest caution. " +
+        "kind: 2-4 word label. what: one sentence. why: the problem it solves and when to reach for it (1-2 sentences). " +
+        "start: the first command or step from the README, or empty. caution: privacy, maturity, complexity, license or maintenance caveat (pushed_at over 4 months ago = say so), or empty. " +
+        "alts: up to 3 related repos as owner/name, preferring ones in this list: " + [...new Set([...seeds, ...Object.keys(known)])].join(" ") +
+        "\nCategories: " + categories.map((c) => `${c.id} = ${c.name}: ${c.what}`).join(" | "),
+      user: JSON.stringify({ repo: meta.full_name, description: meta.description, topics: meta.topics, license: meta.license?.spdx_id, pushed_at: meta.pushed_at, stars: meta.stargazers_count, readme }),
+    }), null);
+    if (!ex) continue;
+    done++;
+    known[meta.full_name] = { ...ex, repo: meta.full_name, at: day(NOW), source: q.issue ? "request" : q.source, ...(q.by && { by: q.by }) };
+    if (q.issue) await safe("reply", () => reply(q.issue, `**${meta.full_name}**: ${ex.kind}\n\n${ex.what}\n\n**Why:** ${ex.why}${ex.caution ? `\n\n**Heads-up:** ${ex.caution}` : ""}\n\nAdded to the [Repo Explainer](${SITE}/explore.html#${meta.full_name}). +2 points for @${q.by} on the leaderboard. Thanks!`));
+  }
+  console.log(`explain: +${done} (${provider ?? "no AI key"}), ${Math.max(0, queue.length - done)} waiting`);
+  await write("data/explain.json", known);
+  return known;
+}
+
+// ---------- 5. Votes & leaderboard ----------
 async function ensureLabels() {
   const have = new Set((await ghAll(`repos/${REPO}/labels`)).map((l) => l.name));
-  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for AI Compass"], ["accepted", "a855f7", "Submission accepted: +10 points"]])
+  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for AI Compass"], ["accepted", "a855f7", "Submission accepted: +10 points"], ["explain", "f59e0b", "Ask the agent to explain a repo: +2 points"]])
     if (!have.has(name)) await gh(`repos/${REPO}/labels`, { method: "POST", body: JSON.stringify({ name, color, description }) });
 }
 
-async function leaderboard(tools) {
+async function leaderboard(tools, explained) {
   const votable = tools.filter((t) => t.type !== "client");
   const issues = await read("data/votes.json", {});
   if (process.env.CREATE_VOTE_ISSUES && TOKEN) {
@@ -226,7 +273,7 @@ async function leaderboard(tools) {
   const people = new Map();
   const person = (u) => {
     if (!u || u.type === "Bot" || u.login.endsWith("[bot]")) return null;
-    if (!people.has(u.login)) people.set(u.login, { login: u.login, avatar: u.avatar_url, votes: 0, submissions: 0, prs: 0 });
+    if (!people.has(u.login)) people.set(u.login, { login: u.login, avatar: u.avatar_url ?? `https://github.com/${u.login}.png?`, votes: 0, submissions: 0, prs: 0, requests: 0 });
     return people.get(u.login);
   };
   const toolVotes = [];
@@ -241,17 +288,23 @@ async function leaderboard(tools) {
   accepted.forEach((i) => { const p = person(i.user); if (p) p.submissions++; });
   const prs = await safe("prs", () => gh(`search/issues?q=${encodeURIComponent(`repo:${REPO} is:pr is:merged`)}&per_page=100`), { items: [] });
   prs.items.forEach((i) => { const p = person(i.user); if (p) p.prs++; });
+  Object.values(explained).forEach((e) => { const p = e.by && person({ login: e.by }); if (p) p.requests++; });
 
-  const ranked = [...people.values()].map((p) => ({ ...p, points: p.votes + p.submissions * 10 + p.prs * 5 })).sort((a, b) => b.points - a.points).slice(0, 100);
-  return { tools: toolVotes.sort((a, b) => b.votes - a.votes), people: ranked, rules: { vote: 1, submission: 10, pr: 5 } };
+  const ranked = [...people.values()].map((p) => ({ ...p, points: p.votes + p.submissions * 10 + p.prs * 5 + p.requests * 2 })).sort((a, b) => b.points - a.points).slice(0, 100);
+  return { tools: toolVotes.sort((a, b) => b.votes - a.votes), people: ranked, rules: { vote: 1, submission: 10, pr: 5, request: 2 } };
 }
 
 // ---------- run ----------
 const tools = await read("data/tools.json", []);
-const stats = await githubStats(tools);
+const { repos: seeds } = await read("data/repos.json", { repos: [] });
+const explainedBefore = await read("data/explain.json", {});
+const tracked = [...new Set([...tools.map((t) => t.repo), ...seeds, ...Object.keys(explainedBefore)].filter(Boolean))];
+const stats = await githubStats(tracked, new Set(tools.filter((t) => t.type === "client").map((t) => t.repo)));
 const updated = NOW.toISOString();
 await write("data/github.json", { updated, repos: stats });
-await write("data/trending.json", { updated, items: await trending(new Set(Object.keys(stats))) });
+const trend = await trending(new Set(Object.keys(stats)));
+await write("data/trending.json", { updated, items: trend });
 await write("data/news.json", { updated, items: await news(stats, tools) });
-await write("data/leaderboard.json", { updated, ...(await leaderboard(tools)) });
+const explained = await explainRepos(trend);
+await write("data/leaderboard.json", { updated, ...(await leaderboard(tools, explained)) });
 console.log(`done: ${Object.keys(stats).length} repos`);

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo Explainer · AI Compass</title>
+<meta name="description" content="Ruflo, OmniRoute, LiteLLM, Ollama, OpenCode… Popular AI repos explained in plain English: what each one is, when to use it, and what to watch out for.">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="explore">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Repo Explainer</div>
+    <h1>What is this repo actually for?</h1>
+    <p class="lead">Ruflo, OmniRoute, LiteLLM, Ollama, OpenCode… AI repos pile up 50k+ stars and READMEs full of buzzwords. Here's each one in plain English: what it is, when you'd use it, and what to watch out for. Written by an AI agent from each README, refreshed as new repos trend.</p>
+    <div class="row">
+      <a class="btn primary" href="https://github.com/StefanKasamakov/ai-compass/issues/new?template=explain-repo.yml" target="_blank" rel="noopener"><i data-i="bot"></i>Ask the agent to explain a repo</a>
+      <span class="muted" style="font-size:.9rem">+2 leaderboard points when it's added</span>
+    </div>
+  </div></header>
+
+  <section><div class="wrap">
+    <div class="spread" style="align-items:center">
+      <label class="sr" for="repoQ">Search repos</label>
+      <input id="repoQ" class="hero-search" style="height:48px;max-width:420px" type="search" placeholder="Search: ruflo, gateway, local, memory…">
+      <div class="chips" id="sortChips" style="margin:0" aria-label="Sort"></div>
+    </div>
+    <div class="chips" id="repoCats" aria-label="Category"></div>
+    <div id="catWhat"></div>
+    <div class="grid two" id="repoGrid"></div>
+  </div></section>
+</main>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

@@ -41,6 +41,7 @@ const P = {
   clock: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
   fork: '<circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/>',
   folder: '<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>',
+  zap: '<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/>',
   tag: '<path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5"/>',
 };
 const icon = (n, label) => `<svg class="i" viewBox="0 0 24 24" ${label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"'}>${P[n] || ""}</svg>`;
@@ -48,6 +49,7 @@ const icon = (n, label) => `<svg class="i" viewBox="0 0 24 24" ${label ? `role="
 // ---------- helpers ----------
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const md = (s) => esc(s).replace(/`([^`]+)`/g, "<code>$1</code>"); // inline `code` only
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const num = (n) => (n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? (n / 1e3).toFixed(n >= 1e4 ? 0 : 1) + "k" : String(n ?? 0));
 const ago = (d) => {
@@ -60,10 +62,12 @@ const load = (n) => (cache[n] ??= fetch(`data/${n}.json`).then((r) => (r.ok ? r.
 const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
 const repoUrl = (t) => (t.path ? `https://github.com/${t.repo}/tree/main/${t.path}` : `https://github.com/${t.repo}`);
 const price = (m) => (m.in != null ? `$${m.in} / $${m.out}` : m.price || "—");
+const isNew = (m) => m.released && Date.now() - new Date(m.released) < 14 * 864e5;
+const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["index", "Home", "./"], ["models", "Models", "models.html"], ["mcp", "MCP", "mcp.html"], ["skills", "Skills", "skills.html"],
+  ["index", "Home", "./"], ["models", "Models", "models.html"], ["explore", "Repos", "explore.html"], ["mcp", "MCP", "mcp.html"], ["skills", "Skills", "skills.html"],
   ["github", "GitHub 101", "github.html"], ["news", "News", "news.html"], ["leaderboard", "Leaderboard", "leaderboard.html"],
 ];
 function shell() {
@@ -120,16 +124,18 @@ function shell() {
 }
 
 async function searchIndex() {
-  const [m, tools, tasks, n] = await Promise.all([load("models"), load("tools"), load("tasks"), load("news")]);
+  const [m, tools, tasks, n, ex] = await Promise.all([load("models"), load("tools"), load("tasks"), load("news"), load("explain")]);
   return [
     ...NAV.map(([, label, href]) => ({ t: label, sub: "Page", href, k: "page", ic: "arrow" })),
     { t: "What is MCP?", sub: "Guide", href: "mcp.html#what", k: "guide", ic: "book" },
     { t: "Add an MCP server to your app", sub: "Config generator", href: "mcp.html#setup", k: "guide", ic: "terminal" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
+    { t: "Explain a GitHub repo for me", sub: "Repo Explainer", href: "explore.html", k: "guide", ic: "bot" },
     { t: "How to judge a GitHub repo", sub: "Guide", href: "github.html#judge", k: "guide", ic: "book" },
     ...(tasks || []).map((t) => ({ t: `I want to: ${t.label}`, sub: "Model picker", href: `models.html#task=${t.id}`, k: "task", ic: t.icon })),
     ...(m?.models || []).map((x) => ({ t: x.name, sub: `${m.providers[x.p].name} · ${x.tier}`, href: `models.html#m-${x.id}`, k: "model", ic: "cpu" })),
     ...(tools || []).map((x) => ({ t: x.name, sub: `${x.type === "mcp" ? "MCP server" : x.type} · ${x.by}`, href: x.type === "mcp" ? `mcp.html#setup=${x.id}` : repoUrl(x), k: x.type, ic: x.type === "mcp" ? "plug" : x.type === "skill" ? "puzzle" : "github", extra: x.d })),
+    ...Object.values(ex || {}).map((x) => ({ t: x.repo, sub: x.kind, href: `explore.html#${x.repo}`, k: "repo", ic: "github", extra: `${x.what} ${x.cat}` })),
     ...(n?.items || []).slice(0, 30).map((x) => ({ t: x.title, sub: x.source, href: x.url, k: "news", ic: "news" })),
   ];
 }
@@ -175,7 +181,7 @@ async function picker(chipsEl, outEl, start) {
     outEl.innerHTML = t.picks.filter(([mid]) => byId[mid]).map(([mid, why], i) => {
       const x = byId[mid];
       return `<div class="pick p-${x.p}"><span class="rank">${i ? `ALT` : `BEST`}</span>
-        <span class="name"><span class="dot"></span>${esc(x.name)}</span>
+        <span class="name"><span class="dot"></span>${esc(x.name)}${newTag(x)}</span>
         <span class="price">${esc(price(x))}<br>${esc(m.providers[x.p].app)}</span>
         <span class="why">${esc(why)}</span></div>`;
     }).join("");
@@ -193,6 +199,9 @@ const pages = {
     picker($("#taskChips"), $("#taskOut"), "code");
     $("#homeNews").innerHTML = (n?.items || []).slice(0, 6).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.title)}</b><small>${esc(x.source)} · ${ago(x.date)}</small></a>`).join("") || `<p class="muted">The agent hasn't collected news yet.</p>`;
     $("#homeTrend").innerHTML = (t?.items || []).slice(0, 5).map((x) => `<a href="https://github.com/${esc(x.repo)}" target="_blank" rel="noopener"><b>${esc(x.repo)}</b><small>★ ${num(x.stars)} · new ${ago(x.created)} · ${esc((x.desc || "").slice(0, 70))}</small></a>`).join("");
+    const ex = await load("explain");
+    $("#homeRepos").innerHTML = ["ruvnet/ruflo", "diegosouzapw/OmniRoute", "ollama/ollama", "JuliusBrussee/caveman"].filter((r) => ex?.[r]).map((r) => `<a class="card link" href="explore.html#${r}" style="text-decoration:none;color:inherit;background:var(--bg-2)">
+      <div class="head"><h3 class="mono">${esc(r.split("/")[1])}</h3><span class="tag">${esc(ex[r].kind)}</span></div><p>${esc(ex[r].what)}</p></a>`).join("");
     const byId = Object.fromEntries(tools.map((x) => [x.id, x]));
     const top = (b?.tools || []).filter((x) => x.votes > 0).slice(0, 5);
     $("#homeBoard").innerHTML = top.length
@@ -207,8 +216,8 @@ const pages = {
     const body = $("#modelRows");
     chips($("#provChips"), [["all", "All"], ...Object.entries(m.providers).map(([k, p]) => [k, p.name])], (p) => {
       body.innerHTML = m.models.filter((x) => p === "all" || x.p === p).map((x) => `<tr id="m-${x.id}" class="p-${x.p}">
-        <td><span class="mname"><span class="dot"></span>${esc(x.name)}</span><small class="muted mono">${esc(m.providers[x.p].app)}</small></td>
-        <td><span class="tag">${esc(x.tier)}</span></td><td class="why">${esc(x.best)}</td>
+        <td><span class="mname"><span class="dot"></span>${esc(x.name)}${newTag(x)}</span><small class="muted mono">${esc(m.providers[x.p].app)}</small></td>
+        <td><span class="tag">${esc(x.tier)}</span></td><td class="why">${esc(x.best)}${x.note ? `<br><small style="color:var(--accent)">${esc(x.note)}</small>` : ""}</td>
         <td class="num">${x.in != null ? "$" + x.in : "—"}</td><td class="num">${x.out != null ? "$" + x.out : esc(x.price || "—")}</td><td class="num">${esc(x.ctx || "—")}</td></tr>`).join("");
     }, "all", "filter");
     $("#modelsUpdated").textContent = m.updated;
@@ -293,7 +302,7 @@ const pages = {
         <span class="pos">${i + 1}</span><div class="who"><span class="dot" style="--c:var(--accent)"></span><div><b>${esc(t.name)}</b><small>${TYPE[t.type]} · ${esc(t.by)} ${g?.repos?.[t.repo] ? `· ★ ${num(g.repos[t.repo].stars)}` : ""}</small></div></div>
         <div class="row"><div class="score">${x.votes}<small>votes</small></div><a class="btn sm" href="${GH}/issues/${x.issue}" target="_blank" rel="noopener">${icon("thumb")}Vote</a></div></div>`; }),
       people: () => (b?.people || []).map((p, i) => `<div class="card entry">
-        <span class="pos">${i + 1}</span><div class="who"><img src="${esc(p.avatar)}&s=72" alt="" width="36" height="36" loading="lazy"><div><b>${esc(p.login)}</b><small>${p.votes} votes · ${p.submissions} tools added · ${p.prs} PRs</small></div></div>
+        <span class="pos">${i + 1}</span><div class="who"><img src="${esc(p.avatar)}&s=72" alt="" width="36" height="36" loading="lazy"><div><b>${esc(p.login)}</b><small>${p.votes} votes · ${p.submissions} tools added · ${p.requests || 0} explained · ${p.prs} PRs</small></div></div>
         <div class="score">${p.points}<small>points</small></div></div>`),
     };
     chips($("#boardTabs"), [["tools", "Top tools", "trophy"], ["people", "Top people", "users"]], (v) => {
@@ -301,6 +310,52 @@ const pages = {
       $("#board").innerHTML = rows.length ? rows.join("") : `<div class="empty">No ${v === "tools" ? "votes" : "players"} yet. Be the first: vote on a tool below and you'll appear here after the next agent run.</div>`;
     }, location.hash === "#people" ? "people" : "tools");
   },
+};
+
+pages.explore = async () => {
+  const [repos, ex, g] = await Promise.all([load("repos"), load("explain"), load("github")]);
+  const cats = Object.fromEntries(repos.categories.map((c) => [c.id, c]));
+  const all = [...new Set([...repos.repos, ...Object.keys(ex || {})])].map((repo) => {
+    const e = ex?.[repo], s = g?.repos?.[repo];
+    return { repo, e, s, cat: e?.cat, stars: s?.stars ?? 0, week: s?.week ?? 0 };
+  });
+  let cat = "all", sort = "stars";
+  const q = $("#repoQ");
+  const LV = { beginner: "ok", intermediate: "", advanced: "warn" };
+  const card = ({ repo, e, s }) => {
+    const [owner, name] = repo.split("/");
+    return `<article class="card" id="${esc(repo)}">
+      <div class="head"><div style="min-width:0"><small class="mono muted">${esc(owner)} /</small><h3 class="mono" style="overflow-wrap:anywhere">${esc(name)}</h3></div>
+        <div class="row" style="justify-content:end">${e ? `<span class="tag">${esc(e.kind)}</span><span class="tag ${LV[e.level]}">${esc(e.level)}</span>` : `<span class="tag">explanation pending</span>`}</div></div>
+      ${e ? `<p style="color:var(--fg);margin-bottom:.5rem">${md(e.what)}</p><p>${md(e.why)}</p>` : `<p>${esc(s?.desc || "")}</p>`}
+      ${e?.caution ? `<div class="callout" style="margin-top:.9rem;font-size:.88rem;padding:.7rem .9rem">${icon("alert")}<div>${md(e.caution)}</div></div>` : ""}
+      ${e?.start ? `<div class="term" style="margin-top:.9rem"><div class="term-bar"><i></i><i></i><i></i><span>try it</span><button class="copy" data-copy="${esc(e.start.replace(/`/g, ""))}">${icon("copy")}copy</button></div><pre><code>${esc(e.start.replace(/`/g, ""))}</code></pre></div>` : ""}
+      ${e?.alts?.length ? `<p style="margin-top:.9rem;font-size:.86rem">Similar: ${e.alts.map((a) => `<a class="mono" href="#${esc(a)}" data-jump="${esc(a)}">${esc(a.split("/")[1] || a)}</a>`).join(" · ")}</p>` : ""}
+      <div class="foot">${s ? `<span class="stars">${icon("star")}${num(s.stars)}</span>${s.week > 0 ? `<span class="delta">+${num(s.week)}/wk</span>` : ""}<span>updated ${ago(s.pushed)}</span>` : ""}
+        ${e?.source === "trending" ? `<span class="tag ok">trending</span>` : ""}${e?.by ? `<span>asked by @${esc(e.by)}</span>` : ""}
+        <a style="margin-left:auto" href="https://github.com/${esc(repo)}" target="_blank" rel="noopener">GitHub ${icon("external")}</a></div></article>`;
+  };
+  const draw = () => {
+    const words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+    const list = all
+      .filter((r) => cat === "all" || r.cat === cat)
+      .filter((r) => words.every((w) => `${r.repo} ${r.e?.kind} ${r.e?.what} ${r.e?.why} ${cats[r.cat]?.name} ${r.s?.desc}`.toLowerCase().includes(w)))
+      .sort((a, b) => (sort === "rising" ? b.week - a.week : b.stars - a.stars));
+    $("#catWhat").innerHTML = cat !== "all" ? `<div class="callout ok" style="margin-bottom:1.2rem">${icon(cats[cat].icon)}<div><b>${esc(cats[cat].name)}.</b> ${esc(cats[cat].what)}</div></div>` : "";
+    $("#repoGrid").innerHTML = list.map(card).join("") || `<div class="empty">No repo matches. <a href="https://github.com/${REPO}/issues/new?template=explain-repo.yml">Ask the agent to explain it →</a></div>`;
+  };
+  const count = (id) => all.filter((r) => r.cat === id).length;
+  chips($("#repoCats"), [["all", `All ${all.length}`], ...repos.categories.map((c) => [c.id, `${c.name} ${count(c.id)}`, c.icon])], (c) => { cat = c; draw(); }, "all", "filter");
+  chips($("#sortChips"), [["stars", "Most stars"], ["rising", "Rising this week", "trend"]], (v) => { sort = v; draw(); }, "stars", "filter");
+  q.oninput = draw;
+  const jump = (repo) => {
+    q.value = repo; cat = "all";
+    $$("#repoCats .chip").forEach((c) => c.setAttribute("aria-pressed", c.dataset.v === "all"));
+    draw(); $("#repoGrid").scrollIntoView({ behavior: "smooth" });
+  };
+  document.addEventListener("click", (e) => { const a = e.target.closest("[data-jump]"); if (a) { e.preventDefault(); history.replaceState(null, "", `#${a.dataset.jump}`); jump(a.dataset.jump); } });
+  const hash = decodeURIComponent(location.hash.slice(1));
+  if (hash.includes("/")) jump(hash);
 };
 
 function renderCollections(el, tools, g, b) {

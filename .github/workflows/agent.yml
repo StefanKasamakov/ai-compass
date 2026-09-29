@@ -27,6 +27,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -44,8 +45,8 @@ jobs:
           git add data
           git diff --cached --quiet || { git commit -m "agent: refresh data" && git push; }
 
-      - name: Model watch (Claude → pull request)
-        if: env.ANTHROPIC_API_KEY != '' && (github.event.schedule == '41 4 * * *' || github.event_name == 'workflow_dispatch')
+      - name: Model watch (AI → pull request)
+        if: (env.GEMINI_API_KEY != '' || env.ANTHROPIC_API_KEY != '') && (github.event.schedule == '41 4 * * *' || github.event_name == 'workflow_dispatch')
         env: { PR_BODY: pr-body.md, GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
           node agent/models-watch.mjs

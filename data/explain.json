@@ -1,0 +1,563 @@
+{
+ "anthropics/claude-code": {
+  "repo": "anthropics/claude-code",
+  "cat": "coding",
+  "kind": "Terminal coding agent",
+  "what": "Anthropic's official coding assistant that runs in your terminal (and in IDEs or via @claude on GitHub) and reads, edits and runs code in your project from plain-language requests.",
+  "why": "Use it when you want an AI to do hands-on work in a real codebase, such as making changes across files, explaining unfamiliar code or handling git tasks, instead of copy-pasting into a chat window.",
+  "level": "beginner",
+  "start": "curl -fsSL https://claude.ai/install.sh | bash   (Windows: irm https://claude.ai/install.ps1 | iex), then run `claude` inside your project folder",
+  "caution": "Not open source: this repo holds docs, plugins and the issue tracker, and GitHub shows no license. It needs a paid Claude plan or API key. The README says Anthropic collects usage and conversation data as feedback; read the data-usage policy. It can edit files and run commands, so review what it does.",
+  "alts": [
+   "openai/codex",
+   "google-gemini/gemini-cli",
+   "anomalyco/opencode"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "openai/codex": {
+  "repo": "openai/codex",
+  "cat": "coding",
+  "kind": "Terminal coding agent",
+  "what": "Codex CLI is OpenAI's coding agent that runs locally in your terminal. It is also available as an IDE extension and a desktop app.",
+  "why": "Use it if you already pay for ChatGPT and want an agent that reads and changes code on your computer. The README recommends signing in with a ChatGPT Plus, Pro, Business, Edu or Enterprise account.",
+  "level": "beginner",
+  "start": "npm install -g @openai/codex, then run `codex` and choose Sign in with ChatGPT",
+  "caution": "Usage counts against your ChatGPT plan, or you can bill an API key, which needs extra setup. The CLI is Apache-2.0 open source, but the models run on OpenAI's servers, so your code is sent there.",
+  "alts": [
+   "anthropics/claude-code",
+   "google-gemini/gemini-cli",
+   "anomalyco/opencode"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "google-gemini/gemini-cli": {
+  "repo": "google-gemini/gemini-cli",
+  "cat": "coding",
+  "kind": "Terminal coding agent",
+  "what": "Google's open-source (Apache-2.0) AI agent for the terminal. It uses Gemini models and can work with files, run shell commands, search Google and fetch web pages.",
+  "why": "It is a low-cost way to try a terminal agent. The README lists a free tier of 60 requests per minute and 1,000 per day when you sign in with a personal Google account, and it can also run non-interactively in scripts and GitHub workflows.",
+  "level": "beginner",
+  "start": "npx @google/gemini-cli",
+  "caution": "The free-tier limits and model access come from Google's terms and can change. Prompts and code go to Google's servers. Preview and nightly releases are described as not fully vetted, so stay on the stable (latest) tag.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "anomalyco/opencode"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "anomalyco/opencode": {
+  "repo": "anomalyco/opencode",
+  "cat": "coding",
+  "kind": "Open-source coding agent",
+  "what": "An MIT-licensed AI coding agent with a terminal interface and a beta desktop app. It comes with a full-access 'build' agent and a read-only 'plan' agent that you switch between with Tab.",
+  "why": "Use it if you want an open-source alternative to vendor coding CLIs. The read-only plan mode is useful for exploring an unfamiliar codebase before letting the AI change anything.",
+  "level": "intermediate",
+  "start": "npm i -g opencode-ai@latest",
+  "caution": "The desktop app is labeled beta. The README says little about model setup; you still need your own model provider or account, which is covered in the external docs.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "Aider-AI/aider"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "cline/cline": {
+  "repo": "cline/cline",
+  "cat": "coding",
+  "kind": "Editor coding agent",
+  "what": "An open-source coding agent that runs as a VS Code extension, a JetBrains plugin, a CLI and a desktop app. It edits files and runs terminal commands, asking for your approval on each step by default.",
+  "why": "Use it when you want an agent inside your editor that shows every change as a reviewable diff, works with many model providers (including local ones via Ollama or LM Studio), and has a Plan mode for agreeing on an approach first.",
+  "level": "beginner",
+  "start": "Install the Cline extension from the VS Code Marketplace (or run npm i -g cline for the CLI)",
+  "caution": "You pay your chosen model provider directly, and long agent sessions can use a lot of tokens. Auto-approve lets it run commands unattended, so use it with care. The JetBrains plugin is not open source.",
+  "alts": [
+   "RooCodeInc/Roo-Code",
+   "continuedev/continue",
+   "anomalyco/opencode"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "OpenHands/OpenHands": {
+  "repo": "OpenHands/OpenHands",
+  "cat": "coding",
+  "kind": "Self-hosted agent control center",
+  "what": "OpenHands Agent Canvas is a self-hosted web app for running and managing coding agents: its own OpenHands agent, or Claude Code, Codex and Gemini through the ACP protocol. Agents can run locally, in Docker, on VMs or in the cloud.",
+  "why": "Use it to run coding agents as an always-on service, for example scheduled reports to Slack or turning GitHub issues into tasks, rather than one person chatting in a terminal.",
+  "level": "advanced",
+  "start": "npm install -g @openhands/agent-canvas, then run `agent-canvas` and open http://localhost:8000",
+  "caution": "The README warns that the non-Docker install gives the agent full access to your filesystem; use the Docker sandbox option if you are unsure. Server setup needs care with network exposure and security hardening (see SELF_HOSTING.md). The repo has recently been refocused as 'Agent Canvas', so older guides may not match.",
+  "alts": [
+   "anthropics/claude-code",
+   "aaif-goose/goose",
+   "cline/cline"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Aider-AI/aider": {
+  "repo": "Aider-AI/aider",
+  "cat": "coding",
+  "kind": "Terminal pair programmer",
+  "what": "An open-source (Apache-2.0) tool for pair programming with an AI in your terminal. It maps your codebase, edits files and commits each change to git automatically.",
+  "why": "Use it if you want a coding assistant that works with almost any model, including local ones, and that commits every AI edit to git so you can inspect or undo it with normal git tools.",
+  "level": "intermediate",
+  "start": "python -m pip install aider-install && aider-install, then in your project: aider --model sonnet --api-key anthropic=<key>",
+  "caution": "Last push was 22 May 2026, more than four months ago, so development may have slowed. The README's recommended models (Claude 3.7 Sonnet, GPT-4o, o3-mini) are out of date. You need your own API key, and costs depend on the model you pick.",
+  "alts": [
+   "anomalyco/opencode",
+   "anthropics/claude-code",
+   "cline/cline"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "aaif-goose/goose": {
+  "repo": "aaif-goose/goose",
+  "cat": "coding",
+  "kind": "General-purpose local agent",
+  "what": "An open-source (Apache-2.0) AI agent written in Rust that runs on your machine as a desktop app, CLI or API. It is for coding and also for research, writing and automation.",
+  "why": "Use it if you want a general assistant that is not limited to code, can use 15+ model providers or an existing Claude, ChatGPT or Gemini subscription, and connects to external tools through MCP extensions.",
+  "level": "intermediate",
+  "start": "Download the desktop app from goose-docs.ai, or run: curl -fsSL https://github.com/aaif-goose/goose/releases/download/stable/download_cli.sh | bash",
+  "caution": "The README is short, so most setup details are in external docs. An agent that can run commands and use many extensions can change things on your computer; only add extensions you trust.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "NousResearch/hermes-agent",
+   "anthropics/claude-code"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "continuedev/continue": {
+  "repo": "continuedev/continue",
+  "cat": "coding",
+  "kind": "Editor coding agent (archived)",
+  "what": "Continue is an open-source coding agent for VS Code, JetBrains and the command line. Its makers have stopped developing it after a final 2.0.0 release.",
+  "why": "It was one of the early open-source AI assistants inside the editor. Today it is mainly useful as a finished, frozen tool or as a codebase for others to build on.",
+  "level": "intermediate",
+  "start": "Install 'Continue' from the VS Code Marketplace",
+  "caution": "The README says the repo is no longer actively maintained and is read-only, so no bug fixes or new model support are coming. For new users, an actively maintained alternative is safer. The final release removed telemetry and built-in authentication.",
+  "alts": [
+   "cline/cline",
+   "anomalyco/opencode",
+   "Aider-AI/aider"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "RooCodeInc/Roo-Code": {
+  "repo": "RooCodeInc/Roo-Code",
+  "cat": "coding",
+  "kind": "Editor coding agent (shut down)",
+  "what": "Roo Code was a VS Code extension, forked from Cline, that offered AI agents in modes such as Code, Architect, Ask and Debug. The README says the extension was shut down on 15 May 2026 and the repository is archived.",
+  "why": "It is listed here only for context. Former users are pointed to the community fork ZooCode or back to Cline.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "Discontinued: the product was shut down on 15 May 2026, and the repo is archived with no updates since then. Do not start new work with it.",
+  "alts": [
+   "cline/cline",
+   "continuedev/continue",
+   "anomalyco/opencode"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "langchain-ai/langgraph": {
+  "repo": "langchain-ai/langgraph",
+  "cat": "frameworks",
+  "kind": "Agent orchestration library",
+  "what": "A low-level Python library (with a JS version) from LangChain Inc for building long-running, stateful AI agents as graphs of steps.",
+  "why": "Use it when you are writing code for an agent that has to survive crashes and resume where it stopped, pause for human approval, or keep memory across sessions. For a quicker start, the README points to its higher-level 'Deep Agents' package.",
+  "level": "advanced",
+  "start": "pip install -U langgraph",
+  "caution": "It is intentionally low-level, so expect a learning curve. The README steers you toward LangChain's paid LangSmith tracing and deployment services, but the MIT-licensed library works without them.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "openai/openai-agents-python",
+   "microsoft/autogen"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "crewAIInc/crewAI": {
+  "repo": "crewAIInc/crewAI",
+  "cat": "frameworks",
+  "kind": "Multi-agent Python framework",
+  "what": "An open-source (MIT) Python framework for building teams of AI agents with roles (Crews) and step-by-step, event-driven workflows (Flows).",
+  "why": "Use it when a task splits naturally into roles, such as a researcher, a writer and a reviewer, and you want those agents to cooperate in code. It includes a CLI that scaffolds a project for you.",
+  "level": "intermediate",
+  "start": "uv tool install crewai, then crewai create crew <project_name>",
+  "caution": "You need Python between 3.10 and 3.13 and your own model API keys. Anonymous telemetry is on by default; set OTEL_SDK_DISABLED=true to turn it off. The README also promotes a paid enterprise suite (AMP). Its 'becoming the standard' claim is the project's own.",
+  "alts": [
+   "langchain-ai/langgraph",
+   "microsoft/autogen",
+   "openai/openai-agents-python"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "openai/openai-agents-python": {
+  "repo": "openai/openai-agents-python",
+  "cat": "frameworks",
+  "kind": "Agent-building SDK",
+  "what": "OpenAI's MIT-licensed Python SDK for building agents and multi-agent workflows, with tools, handoffs between agents, guardrails, sessions, tracing, and voice or realtime agents.",
+  "why": "Use it when you are writing Python and want a fairly small, official toolkit to build agents. The README says it also works with 100+ non-OpenAI models, not only OpenAI's.",
+  "level": "advanced",
+  "start": "pip install openai-agents (Python 3.10+), then set OPENAI_API_KEY",
+  "caution": "It is a library for developers, not an app. The sandbox example's local client works only on macOS and Linux; Windows needs Docker or a hosted sandbox. Although it is provider-agnostic, it is designed around OpenAI's APIs first.",
+  "alts": [
+   "anthropics/claude-agent-sdk-python",
+   "langchain-ai/langgraph",
+   "vercel/ai"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "anthropics/claude-agent-sdk-python": {
+  "repo": "anthropics/claude-agent-sdk-python",
+  "cat": "frameworks",
+  "kind": "Claude agent SDK",
+  "what": "Anthropic's MIT-licensed Python SDK that lets your own program drive Claude Code, with its file, edit and shell tools, plus custom tools and hooks that you write in Python.",
+  "why": "Use it when you want to build your own agent or automation on the same engine as Claude Code, for example a bot that edits files in a repo, without building the agent loop yourself.",
+  "level": "advanced",
+  "start": "pip install claude-agent-sdk",
+  "caution": "By default the agent has the full Claude Code toolset, including Bash and file writes, so set allowed_tools and permission_mode deliberately. It bundles the Claude Code CLI and needs Claude access, which is billed. Some options require specific CLI versions.",
+  "alts": [
+   "openai/openai-agents-python",
+   "anthropics/claude-code",
+   "langchain-ai/langgraph"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "microsoft/autogen": {
+  "repo": "microsoft/autogen",
+  "cat": "frameworks",
+  "kind": "Multi-agent framework (maintenance)",
+  "what": "Microsoft's Python framework for building multi-agent AI applications. It includes AutoGen Studio, a no-code GUI.",
+  "why": "It was a popular early framework for agents that talk to each other. Microsoft now tells new users to start with its successor, Microsoft Agent Framework, and existing users to migrate.",
+  "level": "advanced",
+  "start": "pip install -U \"autogen-agentchat\" \"autogen-ext[openai]\"",
+  "caution": "In maintenance mode: no new features, and it is community-managed. The last push was 15 April 2026, more than four months ago. GitHub lists the repository license as CC-BY-4.0. The README warns that MCP servers can run commands on your machine, so connect only to trusted ones.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph",
+   "openai/openai-agents-python"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "vercel/ai": {
+  "repo": "vercel/ai",
+  "cat": "frameworks",
+  "kind": "TypeScript AI toolkit",
+  "what": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+  "why": "Use it if you build JavaScript or TypeScript web apps and want to generate text, structured data or tool-using agents without writing separate code for each AI provider.",
+  "level": "intermediate",
+  "start": "npm install ai",
+  "caution": "By default, model strings are routed through Vercel's AI Gateway, a Vercel service. Install the provider packages (such as @ai-sdk/openai) to call providers directly. It needs Node.js 22+. The LICENSE file is Apache-2.0, although GitHub does not detect it.",
+  "alts": [
+   "openai/openai-agents-python",
+   "langchain-ai/langgraph",
+   "BerriAI/litellm"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "browser-use/browser-use": {
+  "repo": "browser-use/browser-use",
+  "cat": "frameworks",
+  "kind": "Browser automation agent",
+  "what": "An open-source (MIT) Python library and CLI that lets an AI agent operate a web browser: clicking, filling in forms and navigating sites to finish a task you describe in words. The company also sells a hosted cloud version.",
+  "why": "Use it to automate web tasks that have no API, such as looking something up across sites or filling in forms, by describing the goal instead of writing browser scripts.",
+  "level": "intermediate",
+  "start": "uv add browser-use (Python 3.11+), add OPENAI_API_KEY to .env, then run the README's agent.py example",
+  "caution": "An agent acting in a browser that is logged into your accounts can take real actions, so supervise it and avoid sensitive sessions. The README shows it solving CAPTCHAs, which may break some websites' terms. Cloud browsers and the BU2 model are paid services.",
+  "alts": [
+   "openai/openai-agents-python",
+   "aaif-goose/goose",
+   "microsoft/autogen"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "ollama/ollama": {
+  "repo": "ollama/ollama",
+  "cat": "local",
+  "kind": "Local model runner",
+  "what": "A desktop app and command-line tool that downloads open-weight AI models (Gemma, Qwen, DeepSeek, gpt-oss and others) and runs them on your own computer.",
+  "why": "Use it when you want to chat with an AI model offline or privately, or give other apps a local model through its built-in API on localhost:11434. It can also launch tools like Claude Code or Codex pointed at a local model with `ollama launch`.",
+  "level": "beginner",
+  "start": "Install from ollama.com/download, then run `ollama run gemma4`",
+  "caution": "Local models are usually less capable than top cloud models, and larger ones need a lot of RAM or GPU memory. The quick-install command pipes a script from the internet into your shell; use the manual installer if you prefer to check first.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "mudler/LocalAI",
+   "open-webui/open-webui"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "ggml-org/llama.cpp": {
+  "repo": "ggml-org/llama.cpp",
+  "cat": "local",
+  "kind": "Model inference engine",
+  "what": "A C/C++ program that runs AI language and vision models on ordinary hardware (CPU, Apple Silicon, NVIDIA/AMD/Intel GPUs) and is the engine many other local-AI tools build on.",
+  "why": "Reach for it when you want direct, fine-grained control over running a model locally, or a lightweight OpenAI-compatible server with a built-in web UI (`llama serve`). Its compressed (quantized) model formats let larger models fit in less memory.",
+  "level": "intermediate",
+  "start": "llama cli -hf ggml-org/Qwen3.5-0.8B-GGUF",
+  "caution": "Lower-level than Ollama: you pick model files and settings yourself, and getting the best GPU speed may require the right build or compiling from source.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "open-webui/open-webui": {
+  "repo": "open-webui/open-webui",
+  "cat": "builders",
+  "kind": "Self-hosted chat interface",
+  "what": "A ChatGPT-style web interface you host yourself, connecting to local models via Ollama or to any OpenAI-compatible API.",
+  "why": "Use it when you want one browser-based chat app for local and cloud models, with extras like document chat (RAG), web search, voice, multiple users and permissions. Common pairing: Ollama for the models, Open WebUI for the interface.",
+  "level": "intermediate",
+  "start": "pip install open-webui, then run `open-webui serve`",
+  "caution": "Not a standard open-source license: current code is under the 'Open WebUI License', which requires keeping the Open WebUI branding (GitHub lists it as unclassified). The feature list is very large, so expect a lot of settings; secure it properly before exposing it to the internet.",
+  "alts": [
+   "lobehub/lobehub",
+   "Mintplex-Labs/anything-llm",
+   "ollama/ollama"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "vllm-project/vllm": {
+  "repo": "vllm-project/vllm",
+  "cat": "local",
+  "kind": "GPU model serving engine",
+  "what": "A Python library and server from UC Berkeley's Sky Computing Lab for running open-weight models at high speed on GPUs, serving many requests at once through an OpenAI-compatible API.",
+  "why": "Reach for it when you need to serve a model to many users or apps from your own GPU servers and care about throughput and memory efficiency. It is aimed at production serving rather than casual desktop chatting.",
+  "level": "advanced",
+  "start": "uv pip install vllm",
+  "caution": "Built for server-grade GPUs and Python environments; it is not a point-and-click app. For a single user on a laptop, Ollama or llama.cpp are simpler.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "mudler/LocalAI"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "mudler/LocalAI": {
+  "repo": "mudler/LocalAI",
+  "cat": "local",
+  "kind": "Self-hosted AI API server",
+  "what": "A self-hosted server that runs text, image, voice and video models on your own hardware and exposes them through APIs compatible with OpenAI, Anthropic and ElevenLabs.",
+  "why": "Use it when you want a single local stand-in for cloud AI APIs so existing apps can switch to self-hosted models. It downloads the right engine (llama.cpp, vLLM, whisper.cpp, etc.) only when a model needs it, and it also works without a GPU.",
+  "level": "intermediate",
+  "start": "docker run -ti --name local-ai -p 8080:8080 localai/localai:latest",
+  "caution": "Docker is the main install route. The macOS app is not signed by Apple (the README gives a workaround command). The built-in terminal agent can read files and run commands on your machine, but asks for approval before changing anything.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Mintplex-Labs/anything-llm": {
+  "repo": "Mintplex-Labs/anything-llm",
+  "cat": "builders",
+  "kind": "All-in-one AI chat app",
+  "what": "A desktop and Docker app for chatting with your documents and running AI agents, using either local models or cloud providers like OpenAI or Anthropic.",
+  "why": "Use it when you want a private 'ChatGPT over my files' without assembling the parts yourself: it includes document ingestion, a built-in vector database, agents, MCP support and multi-user workspaces. The desktop download makes it one of the easier ways to start.",
+  "level": "beginner",
+  "start": "Download the desktop app from anythingllm.com/download",
+  "caution": "Anonymous telemetry is on by default; turn it off in Settings > Privacy or with DISABLE_TELEMETRY=true. Multi-user and the embeddable website widget are Docker-only. Claims such as 'up to 80% fewer tokens' come from the project and have not been independently checked.",
+  "alts": [
+   "open-webui/open-webui",
+   "lobehub/lobehub",
+   "infiniflow/ragflow"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "mem0ai/mem0": {
+  "repo": "mem0ai/mem0",
+  "cat": "memory",
+  "kind": "Agent memory layer",
+  "what": "A library, self-hosted server and paid cloud service that gives AI assistants long-term memory, storing facts about users and sessions and finding the relevant ones later.",
+  "why": "Reach for it when you are building a chatbot or agent that should remember preferences and history across conversations instead of starting fresh every time. It is available for Python and JavaScript, plus a command-line tool.",
+  "level": "intermediate",
+  "start": "pip install mem0ai",
+  "caution": "The headline benchmark scores come from Mem0's managed cloud platform, which the README says includes proprietary optimizations not in the open-source version. By default it uses OpenAI models, so your data is sent to OpenAI unless you configure a different provider. The 'sign up as an agent' quickstart creates a cloud account.",
+  "alts": [
+   "getzep/graphiti",
+   "run-llama/llama_index",
+   "Graphify-Labs/graphify"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "getzep/graphiti": {
+  "repo": "getzep/graphiti",
+  "cat": "memory",
+  "kind": "Temporal knowledge graph",
+  "what": "A Python framework that builds a knowledge graph from conversations and data, recording facts as connections between people, things and ideas, along with when each fact was true.",
+  "why": "Use it when an agent needs memory that handles changing facts (for example, 'lived in Paris until 2025') and can trace each fact back to its source, rather than just searching text chunks. It is the open-source core of Zep's commercial product.",
+  "level": "advanced",
+  "start": "pip install graphiti-core",
+  "caution": "You must run a graph database yourself (Neo4j, FalkorDB or Amazon Neptune) and supply an LLM API key. The README notes that production features like dashboards, user management and tuned performance are in the paid Zep service. The speed comparisons with GraphRAG are the project's own.",
+  "alts": [
+   "mem0ai/mem0",
+   "Graphify-Labs/graphify",
+   "run-llama/llama_index"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Graphify-Labs/graphify": {
+  "repo": "Graphify-Labs/graphify",
+  "cat": "memory",
+  "kind": "Codebase knowledge graph",
+  "what": "A command-line tool and /graphify skill for AI coding assistants that turns a project's code, docs, PDFs and media into a clickable, queryable knowledge graph.",
+  "why": "Use it when you or your coding assistant need to understand a large or unfamiliar codebase: it maps which parts call and import each other and lets you ask questions or trace how two things connect, instead of searching file by file. It works with Claude Code, Cursor, Codex, Gemini CLI and others.",
+  "level": "intermediate",
+  "start": "uv tool install graphifyy, then run `graphify install`, then type `/graphify .` in your AI assistant",
+  "caution": "The package name is 'graphifyy' (two y's), so type it carefully. Code is parsed locally, but docs, PDFs, images and video go to your assistant's model or a configured API. The company is building a paid hosted platform, and its benchmark figures are self-reported.",
+  "alts": [
+   "getzep/graphiti",
+   "run-llama/llama_index",
+   "microsoft/markitdown"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "run-llama/llama_index": {
+  "repo": "run-llama/llama_index",
+  "cat": "memory",
+  "kind": "RAG data framework",
+  "what": "A Python framework for connecting AI models to your own data (PDFs, databases, APIs) so they can search it and answer from it, a technique called RAG, and for building agents on top.",
+  "why": "Reach for it when you are writing code for an app that answers questions over private documents and want ready-made pieces for loading, indexing and retrieval. It offers 300+ integration packages for different models and vector databases.",
+  "level": "intermediate",
+  "start": "pip install llama-index",
+  "caution": "The README says the company's main focus has moved to its paid LlamaParse cloud platform; the open-source framework is still available, but the README is updated less often than the docs. Picking among hundreds of integration packages can be confusing.",
+  "alts": [
+   "infiniflow/ragflow",
+   "langchain-ai/langgraph",
+   "mem0ai/mem0"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "infiniflow/ragflow": {
+  "repo": "infiniflow/ragflow",
+  "cat": "memory",
+  "kind": "Self-hosted RAG engine",
+  "what": "A self-hosted platform that ingests documents (Word, Excel, slides, scans, web pages), splits and indexes them, and lets AI answer questions with citations back to the source.",
+  "why": "Use it when an organization wants a full 'chat with our documents' system that handles hard-to-read files through its own layout analysis, OCR and table recognition, and shows which passages each answer came from. A hosted cloud version is also offered.",
+  "level": "advanced",
+  "start": "git clone https://github.com/infiniflow/ragflow.git, then in ragflow/docker run `docker compose -f docker-compose.yml up -d`",
+  "caution": "Heavy setup: the README recommends 4 CPU cores, 16 GB RAM, 50 GB disk and Docker. Version 1.0.0 is at release-candidate stage (rc1, September 2026). Words like 'leading' and 'superior' are the project's own description.",
+  "alts": [
+   "langgenius/dify",
+   "Mintplex-Labs/anything-llm",
+   "run-llama/llama_index"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "microsoft/markitdown": {
+  "repo": "microsoft/markitdown",
+  "cat": "memory",
+  "kind": "Document-to-Markdown converter",
+  "what": "A Python tool from Microsoft that converts PDFs, Word, PowerPoint, Excel, HTML, images, audio and more into Markdown text that AI models can read easily.",
+  "why": "Use it when you need to feed documents to an AI or a RAG pipeline and want clean text that keeps headings, lists and tables. It runs from the command line (`markitdown file.pdf -o file.md`) or from Python.",
+  "level": "intermediate",
+  "start": "pip install 'markitdown[all]'",
+  "caution": "It reads files and URLs with your user's full permissions, so the README warns to sanitize inputs in untrusted settings. Built-in converters are basic for scanned PDFs, images and video; better results need the OCR plugin (which calls an LLM) or paid Azure services.",
+  "alts": [
+   "run-llama/llama_index",
+   "infiniflow/ragflow",
+   "Graphify-Labs/graphify"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "n8n-io/n8n": {
+  "repo": "n8n-io/n8n",
+  "cat": "builders",
+  "kind": "Workflow automation platform",
+  "what": "A visual workflow builder, similar to Zapier, that connects apps and services (1500+ integrations) and can include AI models and agents as steps, run self-hosted or in n8n's cloud.",
+  "why": "Reach for it when you want to automate business processes, such as 'when an email arrives, summarize it with AI and post it to Slack', by dragging nodes on a canvas, with optional JavaScript or Python for custom logic.",
+  "level": "intermediate",
+  "start": "curl -fsSL https://get.n8n.io | sh (requires Docker)",
+  "caution": "Not open source in the OSI sense: it is 'fair-code' under the Sustainable Use License, which limits some commercial uses (for example, reselling it as a hosted service), and some features need a paid Enterprise License. Read the license before building a business on it.",
+  "alts": [
+   "langgenius/dify",
+   "FlowiseAI/Flowise",
+   "crewAIInc/crewAI"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "langgenius/dify": {
+  "repo": "langgenius/dify",
+  "cat": "builders",
+  "kind": "Visual AI app builder",
+  "what": "A web platform for building AI apps (chatbots, agents, document-search assistants and multi-step workflows) on a visual canvas, run in Dify's cloud or self-hosted with Docker.",
+  "why": "Use it when a team wants to prototype and ship AI apps without writing all the plumbing: it bundles workflows, RAG over your documents, a prompt editor, logs and monitoring, and an API for each app. It supports hundreds of models from many providers.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/langgenius/dify.git, then in dify/docker run `cp .env.example .env` and `docker compose up -d`",
+  "caution": "The license is the 'Dify Open Source License', which is Apache 2.0 with additional conditions, not plain Apache; check it before offering Dify as a service. Self-hosting needs Docker and at least 2 CPU cores and 4 GB RAM.",
+  "alts": [
+   "n8n-io/n8n",
+   "FlowiseAI/Flowise",
+   "infiniflow/ragflow"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "FlowiseAI/Flowise": {
+  "repo": "FlowiseAI/Flowise",
+  "cat": "builders",
+  "kind": "Visual agent builder",
+  "what": "A drag-and-drop tool for building AI chatbots, agents and RAG flows by connecting blocks on a canvas, built on LangChain components.",
+  "why": "People used it to build AI assistants visually and expose them as an API or website chat widget without much coding. It installs with npm or Docker.",
+  "level": "intermediate",
+  "start": "npm install -g flowise, then run `npx flowise start`",
+  "caution": "The repository has been archived by its maintainers (read-only, no further updates); see the 'Future of Flowise' discussion. Avoid it for new projects and look at maintained alternatives. The code is Apache 2.0.",
+  "alts": [
+   "langgenius/dify",
+   "n8n-io/n8n",
+   "langchain-ai/langgraph"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "lobehub/lobehub": {
+  "repo": "lobehub/lobehub",
+  "cat": "builders",
+  "kind": "Agent workspace and chat UI",
+  "what": "A self-hostable web app for chatting with many AI models and organizing multiple AI 'agents' into teams that can run on schedules, share context and use plugins and MCP tools.",
+  "why": "Use it when you want a polished chat interface for several model providers, plus features such as scheduled agent runs, group agents, personal memory and a plugin library, either on its hosted service or on your own server.",
+  "level": "intermediate",
+  "start": "bash <(curl -fsSL https://lobe.li/setup.sh), then `docker compose up -d`",
+  "caution": "It is under the 'LobeHub Community License', which GitHub cannot classify as a standard open-source license (the badge says Apache 2.0, but the README text names the custom license), so check the terms before commercial use. The README says it is under active development. Phrases like 'Chief Agent Operator' and '10,000+ skills' are the project's own marketing.",
+  "alts": [
+   "open-webui/open-webui",
+   "Mintplex-Labs/anything-llm",
+   "langgenius/dify"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ }
+}
