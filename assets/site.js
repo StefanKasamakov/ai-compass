@@ -318,7 +318,7 @@ const pages = {
         <div class="score">${p.points}<small>points</small></div></div>`),
     };
     const note = {
-      downloads: `Real installs from npm and PyPI in the last 30 days (${esc(dl?.window || "")}). Only packages whose registry page links back to the repo are counted. Apps shipped as installers or Docker images (Ollama, ComfyUI…) aren't measurable this way, so they're missing here: see Most starred.`,
+      downloads: `Real installs from npm and PyPI in the last 30 days. Only packages whose registry page links back to the repo are counted. Apps shipped as installers or Docker images (Ollama, ComfyUI…) aren't measurable this way, so they're missing here: see Most starred.`,
       stars: "GitHub stars: a bookmark count. Good for popularity, easy to inflate.",
       rising: "Stars gained in the last 7 days. The agent keeps daily snapshots, so this fills in after a week of runs.",
       tools: "Community votes: 👍 on each tool's GitHub issue.", people: "Points for voting, suggesting tools, asking for explanations and fixing data.",
