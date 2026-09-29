@@ -12,7 +12,9 @@ const geminiSafe = (node) => {
   return out;
 };
 
-const GEMINI_MODELS = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash"];
+// best first; free-tier daily quotas are per model, so falling back spreads the load
+const GEMINI_MODELS = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"];
+const exhausted = new Set(); // models whose daily quota ran out during this run
 
 export const provider = process.env.GEMINI_API_KEY ? "gemini" : process.env.ANTHROPIC_API_KEY ? "claude" : null;
 
@@ -23,7 +25,7 @@ export async function askJSON({ system, user, schema, hard = false }) {
     const { $schema, ...jsonSchema } = geminiSafe(z.toJSONSchema(schema));
     // busy (503) or rate-limited (429): wait and retry, then fall back to the previous Flash models
     let lastErr;
-    for (const model of GEMINI_MODELS) for (let attempt = 0; attempt < 3; attempt++) {
+    for (const model of GEMINI_MODELS.filter((m) => !exhausted.has(m))) for (let attempt = 0; attempt < 2; attempt++) {
       try {
         const res = await ai.models.generateContent({
           model,
@@ -33,10 +35,14 @@ export async function askJSON({ system, user, schema, hard = false }) {
         return schema.parse(JSON.parse(res.text));
       } catch (e) {
         lastErr = e;
+        const msg = String(e.message);
+        if (e.status === 429 && /PerDay/.test(msg)) { exhausted.add(model); break; } // done for today, next model
         if (![429, 500, 503].includes(e.status)) throw e;
-        await new Promise((r) => setTimeout(r, 2000 * 2 ** attempt));
+        const wait = +msg.match(/retry in ([\d.]+)s/)?.[1] || 3 * 2 ** attempt;
+        await new Promise((r) => setTimeout(r, Math.min(wait, 65) * 1000));
       }
     }
+    if (exhausted.size === GEMINI_MODELS.length) lastErr = new Error("Gemini free-tier daily quota used up on every model; the rest waits for the next run");
     throw lastErr;
   }
   if (provider === "claude") {
