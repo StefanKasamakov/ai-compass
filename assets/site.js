@@ -58,7 +58,7 @@ const ago = (d) => {
   return "just now";
 };
 const cache = {};
-const load = (n) => (cache[n] ??= fetch(`data/${n}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+const load = (n) => (cache[n] ??= fetch(`data/${n}.json`, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null));
 const store = { get: (k) => { try { return localStorage.getItem(k); } catch { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch {} } };
 const repoUrl = (t) => (t.path ? `https://github.com/${t.repo}/tree/main/${t.path}` : `https://github.com/${t.repo}`);
 const price = (m) => (m.in != null ? `$${m.in} / $${m.out}` : m.price || "—");
@@ -131,6 +131,7 @@ async function searchIndex() {
     { t: "Add an MCP server to your app", sub: "Config generator", href: "mcp.html#setup", k: "guide", ic: "terminal" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
     { t: "Explain a GitHub repo for me", sub: "Repo Explainer", href: "explore.html", k: "guide", ic: "bot" },
+    { t: "Benchmarks: what each model is good at", sub: "Heatmap, rankings, price vs smarts", href: "models.html#bench", k: "guide", ic: "trend" },
     { t: "How to judge a GitHub repo", sub: "Guide", href: "github.html#judge", k: "guide", ic: "book" },
     ...(tasks || []).map((t) => ({ t: `I want to: ${t.label}`, sub: "Model picker", href: `models.html#task=${t.id}`, k: "task", ic: t.icon })),
     ...(m?.models || []).map((x) => ({ t: x.name, sub: `${m.providers[x.p].name} · ${x.tier}`, href: `models.html#m-${x.id}`, k: "model", ic: "cpu" })),
@@ -177,7 +178,7 @@ async function picker(chipsEl, outEl, start) {
   const byId = Object.fromEntries(m.models.map((x) => [x.id, x]));
   chips(chipsEl, tasks.map((t) => [t.id, t.label, t.icon]), (id) => {
     const t = tasks.find((x) => x.id === id);
-    if (page === "models") history.replaceState(null, "", `#task=${id}`);
+    if (page === "models" && id !== start) history.replaceState(null, "", `#task=${id}`);
     outEl.innerHTML = t.picks.filter(([mid]) => byId[mid]).map(([mid, why], i) => {
       const x = byId[mid];
       return `<div class="pick p-${x.p}"><span class="rank">${i ? `ALT` : `BEST`}</span>
@@ -221,6 +222,7 @@ const pages = {
         <td class="num">${x.in != null ? "$" + x.in : "—"}</td><td class="num">${x.out != null ? "$" + x.out : esc(x.price || "—")}</td><td class="num">${esc(x.ctx || "—")}</td></tr>`).join("");
     }, "all", "filter");
     $("#modelsUpdated").textContent = m.updated;
+    benchmarks(m);
   },
 
   async mcp() {
@@ -357,6 +359,85 @@ pages.explore = async () => {
   const hash = decodeURIComponent(location.hash.slice(1));
   if (hash.includes("/")) jump(hash);
 };
+
+// ---------- benchmarks: heatmap, ranked bars, value scatter ----------
+const tip = () => $("#tip") || (document.body.insertAdjacentHTML("beforeend", `<div class="tip" id="tip" role="tooltip"></div>`), $("#tip"));
+document.addEventListener("pointerover", (e) => {
+  const el = e.target.closest("[data-tip]"); const t = tip();
+  if (!el) return t.classList.remove("on");
+  t.innerHTML = el.dataset.tip; t.classList.add("on");
+});
+document.addEventListener("pointermove", (e) => {
+  const t = $("#tip"); if (!t?.classList.contains("on")) return;
+  const x = Math.min(e.clientX + 14, innerWidth - t.offsetWidth - 8), y = e.clientY + 16 + t.offsetHeight > innerHeight ? e.clientY - t.offsetHeight - 12 : e.clientY + 16;
+  t.style.left = `${x}px`; t.style.top = `${y}px`;
+});
+
+// nudge labels that would overlap: same side, closer than 14px vertically, similar x
+const placeLabels = (pts) => {
+  const placed = [];
+  for (const p of [...pts].sort((a, c) => a.cy - c.cy)) {
+    let ly = p.cy;
+    for (const q of placed) if (q.right === p.right && Math.abs(q.cx - p.cx) < 150 && Math.abs(q.ly - ly) < 14) ly = q.ly + 14;
+    placed.push({ ...p, ly });
+  }
+  return placed;
+};
+
+async function benchmarks(m) {
+  const b = await load("benchmarks");
+  if (!b) return;
+  const byId = Object.fromEntries(m.models.map((x) => [x.id, x]));
+  const rows = Object.keys(b.scores).filter((id) => byId[id]);
+  b.metrics = b.metrics.filter((met) => rows.some((id) => b.scores[id][met.id])); // never show an empty column or chip
+  const fmt = (met, v) => (met.unit === "%" ? `${+v.toFixed(1)}%` : String(Math.round(v)));
+  const tipFor = (x, met, sc) => esc(`<b>${x.name}</b><br>${met.name}: ${fmt(met, sc.v)}${sc.note ? `<br><small>${sc.note}</small>` : ""}`);
+
+  // heatmap: shade by rank within each column (tests use different scales, and top scores bunch together)
+  const range = Object.fromEntries(b.metrics.map((met) => {
+    const vs = [...new Set(rows.map((id) => b.scores[id][met.id]?.v).filter((v) => v != null))].sort((x, y) => y - x);
+    return [met.id, vs];
+  }));
+  $("#heat").innerHTML = `<thead><tr><th scope="col">Model</th>${b.metrics.map((met) => `<th scope="col" data-tip="${esc(`<b>${met.name}</b><br>${met.what}`)}">${esc(met.skill)}<small>${esc(met.short)}</small></th>`).join("")}</tr></thead>
+    <tbody>${rows.map((id) => { const x = byId[id]; return `<tr class="p-${x.p}"><th scope="row" class="mcol"><span class="row" style="gap:.45rem;flex-wrap:nowrap"><span class="dot"></span>${esc(x.name)}</span></th>${b.metrics.map((met) => {
+      const sc = b.scores[id][met.id];
+      if (!sc) return `<td class="cell na" aria-label="not published">—</td>`;
+      const vs = range[met.id], t = vs.length > 1 ? 1 - vs.indexOf(sc.v) / (vs.length - 1) : 1;
+      return `<td class="cell${sc.v === vs[0] ? " top" : ""}" style="background:color-mix(in srgb, var(--seq) ${Math.round(8 + t * 72)}%, var(--card))" data-tip="${tipFor(x, met, sc)}"><a href="${esc(sc.src)}" target="_blank" rel="noopener">${fmt(met, sc.v)}</a></td>`;
+    }).join("")}</tr>`; }).join("")}</tbody>`;
+
+  // ranked bars for one metric (percent and 0-100 index metrics only: bars must start at zero)
+  const barMetrics = b.metrics.filter((met) => met.max === 100);
+  $("#provLegend").innerHTML = $("#scatterLegend").innerHTML = Object.entries(m.providers).map(([k, p]) => `<span class="p-${k}"><i></i>${esc(p.name)}</span>`).join("");
+  chips($("#benchChips"), barMetrics.map((met) => [met.id, met.skill]), (mid) => {
+    const met = b.metrics.find((x) => x.id === mid);
+    $("#benchWhat").innerHTML = `<b style="color:var(--fg)">${esc(met.name)}.</b> ${esc(met.what)}`;
+    const list = rows.filter((id) => b.scores[id][mid]).sort((a, c) => b.scores[c][mid].v - b.scores[a][mid].v);
+    $("#bars").innerHTML = list.map((id) => { const x = byId[id], sc = b.scores[id][mid]; return `<a class="bar-row p-${x.p}" href="${esc(sc.src)}" target="_blank" rel="noopener" data-tip="${tipFor(x, met, sc)}">
+      <span class="lbl"><span class="dot"></span>${esc(x.name)}</span>
+      <span class="bar-track"><span class="bar" style="display:block;width:${sc.v}%"></span><span class="bar-val" style="left:${sc.v}%">${fmt(met, sc.v)}</span></span></a>`; }).join("")
+      + (rows.length > list.length ? `<p class="muted" style="font-size:.85rem;margin-top:.4rem">Not published for this test: ${rows.filter((id) => !b.scores[id][mid]).map((id) => esc(byId[id].name)).join(", ")}.</p>` : "");
+  }, barMetrics[0].id, "filter");
+
+  // value scatter: AA index vs blended price (3 input : 1 output), log x
+  const priceOf = (id) => (byId[id].in != null ? byId[id] : b.hosted?.[id]);
+  const pts = rows.filter((id) => b.scores[id].aa && priceOf(id)).map((id) => ({ x: byId[id], v: b.scores[id].aa.v, price: (3 * priceOf(id).in + priceOf(id).out) / 4, via: b.hosted?.[id]?.note }));
+  const W = 900, H = 460, L = 56, R = 24, T = 16, B = 46;
+  const px = (p) => L + (Math.log10(p) - Math.log10(0.1)) / (Math.log10(30) - Math.log10(0.1)) * (W - L - R);
+  const vs = pts.map((p) => p.v), y0 = Math.floor(Math.min(...vs) / 10) * 10, y1 = Math.ceil(Math.max(...vs) / 10) * 10;
+  const py = (v) => T + (1 - (v - y0) / (y1 - y0)) * (H - T - B);
+  const yt = []; for (let v = y0; v <= y1; v += 10) yt.push(v);
+  $("#scatter").innerHTML = `
+    ${yt.map((v) => `<line class="grid-l" x1="${L}" x2="${W - R}" y1="${py(v)}" y2="${py(v)}"/><text class="ax" x="${L - 10}" y="${py(v) + 4}" text-anchor="end">${v}</text>`).join("")}
+    ${[0.1, 0.3, 1, 3, 10, 30].map((p) => `<text class="ax" x="${px(p)}" y="${H - B + 22}" text-anchor="middle">$${p}</text>`).join("")}
+    <text class="ax" x="${W - R}" y="${H - 6}" text-anchor="end">price per 1M tokens →</text>
+    <text class="ax" x="${L}" y="${T - 4}">↑ intelligence index</text>
+    ${placeLabels(pts.map((p) => ({ ...p, cx: px(p.price), cy: py(p.v), right: px(p.price) > W - 190 }))).map((p) => `<g class="p-${p.x.p}" data-tip="${esc(`<b>${p.x.name}</b><br>Index ${p.v.toFixed(1)} · $${p.price.toFixed(2)} blended${p.via ? `<br><small>${p.via}</small>` : ""}`)}" tabindex="0">
+      <circle class="pt" cx="${p.cx}" cy="${p.cy}" r="8" fill="var(--c)"/>
+      <text class="pl" x="${p.cx + (p.right ? -13 : 13)}" y="${p.ly + 4}" text-anchor="${p.right ? "end" : "start"}">${esc(p.x.name.replace(/^Claude |^Gemini /, "").replace(/ \(.*\)$/, ""))}</text></g>`).join("")}`;
+
+  $("#benchSources").innerHTML = `Checked ${esc(b.updated)}. Overall index: <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a> (highest-effort setting of each model). Other scores: each model's official launch post or model card, or the benchmark's own leaderboard; click any number for its source. Vendors test with their own setups, so small gaps (1–2 points) aren't meaningful.`;
+}
 
 function renderCollections(el, tools, g, b) {
   el.innerHTML = tools.filter((x) => x.type === "collection").map((c) => `<article class="card link">

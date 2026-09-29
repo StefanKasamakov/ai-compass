@@ -5,7 +5,7 @@ A plain-English map of AI models, MCP servers and agent skills, kept fresh by an
 **Live:** https://stefankasamakov.github.io/ai-compass/
 
 - **Repo Explainer**: ruflo, OmniRoute, LiteLLM, Ollama… each popular AI repo in plain English (what, when, caveats, alternatives). Ask for any repo via an issue
-- **Model picker**: tell it the job, get the model (Claude, GPT-6, Gemini, open-weight)
+- **Model picker + benchmarks**: tell it the job, get the model; heatmap of 9 benchmarks, per-skill rankings, smarts-vs-price chart (`data/benchmarks.json`, every number linked to its source)
 - **MCP guide + config generator**: exact setup for Claude Code, Claude Desktop, claude.ai, ChatGPT, Codex, Cursor, VS Code, Gemini CLI
 - **Skills**: what `SKILL.md` is, how to install, a curated list
 - **GitHub 101**: read a repo, judge if it's safe, install from it
