@@ -1,6 +1,58 @@
 {
- "updated": "2026-09-29T18:07:26.280Z",
+ "updated": "2026-09-29T22:21:13.734Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Anthropic Frontier Red Team",
+   "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
+   "date": "2026-09-29T22:20:28.000Z",
+   "summary": "Anthropic's red-teaming evaluation showed that new models like Claude Mythos Preview can achieve control flow hijacks on binary exploitation tasks.",
+   "tags": [
+    "models",
+    "safety",
+    "coding"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.62.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0",
+   "date": "2026-09-29T21:17:07Z",
+   "summary": "Gemini CLI released version v0.62.0 for developers working with Gemini models from the command line.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.159.1",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.1",
+   "date": "2026-09-29T20:32:34Z",
+   "summary": "Codex CLI released version rust-v0.159.1 with updates for developers using terminal coding tools.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.285",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
+   "date": "2026-09-29T19:27:30Z",
+   "summary": "Claude Code released version 2.1.285 with routine updates for its coding assistant tool.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true
+  },
   {
    "source": "Hacker News",
    "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
@@ -37,6 +89,19 @@
    "tags": [
     "models",
     "research"
+   ],
+   "big": false,
+   "ai": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "Claude partial outage",
+   "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
+   "date": "2026-09-29T14:25:41Z",
+   "discuss": "https://news.ycombinator.com/item?id=49893876",
+   "summary": "Claude experienced a partial service outage affecting users.",
+   "tags": [
+    "product"
    ],
    "big": false,
    "ai": true
@@ -847,64 +912,6 @@
    "date": "2026-09-22T13:01:03Z",
    "discuss": "https://news.ycombinator.com/item?id=49800574",
    "summary": "151 points, 39 comments",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "OpenAI",
-   "title": "Parallel cut research time and cost in half with GPT‑6 Astra",
-   "url": "https://openai.com/index/parallel-cuts-time-and-cost-with-astra",
-   "date": "2026-09-22T12:00:00.000Z",
-   "summary": "GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.",
-   "tags": [],
-   "big": false,
-   "ai": false
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Xiaomi MiMo-V2.6-Pro 1T-A42B: the new top Open Weights model, trained for $3M",
-   "url": "https://www.latent.space/p/ainews-xiaomi-mimo-v26-pro-1t-a42b",
-   "date": "2026-09-22T06:30:56.000Z",
-   "summary": "Xiaomi released MiMo-V2.6-Pro, a top-performing open weights model trained on a budget.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community",
-   "url": "https://huggingface.co/blog/omlx",
-   "date": "2026-09-22T00:00:00.000Z",
-   "summary": "Jun Kim joined Hugging Face to support the open-source MLX machine learning community.",
-   "tags": [
-    "models",
-    "business"
-   ],
-   "big": false,
-   "ai": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Transformers now runs llama.cpp quants",
-   "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
-   "date": "2026-09-22T00:00:00.000Z",
-   "summary": "Hugging Face's Transformers library now supports running llama.cpp quantized models.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Priorities and principles for effective third party assessments",
-   "url": "https://openai.com/index/priorities-principles-third-party-assessments",
-   "date": "2026-09-22T00:00:00.000Z",
-   "summary": "OpenAI outlines priorities and principles for rigorous, secure, and independent third-party AI safety assessments of frontier models and safeguards.",
    "tags": [],
    "big": false,
    "ai": false

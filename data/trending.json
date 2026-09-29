@@ -1,48 +1,16 @@
 {
- "updated": "2026-09-29T18:07:26.280Z",
+ "updated": "2026-09-29T22:21:13.734Z",
  "items": [
   {
-   "repo": "Human-Agent-Society/reef",
-   "stars": 7317,
-   "desc": "Infrastructure for continually self‑improving agents",
-   "created": "2026-08-31T01:39:18Z",
+   "repo": "pytorch/pytorch",
+   "stars": 103527,
+   "desc": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+   "created": "2016-08-13T05:26:41Z",
    "topics": [
-    "agent-infrastructure",
-    "ai-agents",
-    "continual-learning",
-    "inference"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "jev-chat/jev-chat-jarvis",
-   "stars": 7095,
-   "desc": "装在手机上的对话副驾：在 QQ / X / 飞书里读懂对方、给出候选回复、一键填入输入框，发不发由你。非侵入，只读屏幕，不 hook 不改包。",
-   "created": "2026-09-21T11:12:53Z",
-   "topics": [
-    "accessibility-service",
-    "ai-assistant",
-    "android",
-    "chat-assistant"
-   ],
-   "lang": "Kotlin",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "TencentCloud/Octop",
-   "stars": 5763,
-   "desc": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
-   "created": "2026-07-08T12:54:20Z",
-   "topics": [
-    "agent",
-    "agentic-ai",
-    "ai",
-    "ai-agent"
+    "autograd",
+    "deep-learning",
+    "gpu",
+    "machine-learning"
    ],
    "lang": "Python",
    "sources": [
@@ -50,156 +18,19 @@
    ]
   },
   {
-   "repo": "PrismML-Eng/Bonsai-demo",
-   "stars": 3205,
-   "desc": "Bonsai Demo",
-   "created": "2026-03-25T19:25:09Z",
-   "topics": [
-    "bonsai",
-    "llamacpp",
-    "llm",
-    "mlx"
-   ],
-   "lang": "Shell",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "mvschwarz/openrig",
-   "stars": 2254,
-   "desc": "Multi-agent harness that runs Claude Code and Codex together as one system",
-   "created": "2026-04-01T06:22:40Z",
-   "topics": [
-    "agent-harness",
-    "agent-orchestration",
-    "agent-skills",
-    "ai-coding"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "volotat/mini-AGI",
-   "stars": 801,
-   "desc": "Continual learning model trained from scratch on 8GB VRAM laptop with batch-1 stream of data.",
-   "created": "2026-09-19T00:25:59Z",
+   "repo": "pbakaus/impeccable",
+   "stars": 72533,
+   "desc": "The design language that makes your AI harness better at design.",
+   "created": "2025-11-16T01:52:04Z",
    "topics": [],
-   "lang": "Python",
-   "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 277,
-    "url": "https://news.ycombinator.com/item?id=49783133"
-   }
-  },
-  {
-   "repo": "TokenRhythm/NeoHorse",
-   "stars": 1265,
-   "desc": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness.",
-   "created": "2026-09-04T08:34:54Z",
-   "topics": [
-    "agent",
-    "large-language-models",
-    "llm",
-    "post-training"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "awlevin/typesafe-computer-use",
-   "stars": 1088,
-   "desc": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS.",
-   "created": "2026-09-16T17:48:45Z",
-   "topics": [
-    "ai-agents",
-    "automation",
-    "computer-use",
-    "macos"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "incoai/splash",
-   "stars": 987,
-   "desc": "A local inference engine for Apple silicon, built around the model.",
-   "created": "2026-09-18T20:01:48Z",
-   "topics": [
-    "apple-silicon",
-    "coding-agents",
-    "llm-inference",
-    "macos"
-   ],
-   "lang": "C++",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "aru-labs/lossless-memory",
-   "stars": 133,
-   "desc": "Lossless long-term memory for a personal AI: never summarize, keep every line, put a timestamp on everything.",
-   "created": "2026-09-04T21:25:17Z",
-   "topics": [
-    "ai-memory",
-    "conversational-ai",
-    "fts5",
-    "llm-memory"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub",
-    "Show HN"
-   ],
-   "hn": {
-    "points": 67,
-    "url": "https://news.ycombinator.com/item?id=49786419"
-   }
-  },
-  {
-   "repo": "nokia-applied-research/AnyJev",
-   "stars": 948,
-   "desc": "Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request)",
-   "created": "2026-09-21T05:55:40Z",
-   "topics": [
-    "calibration",
-    "decision-model",
-    "jev",
-    "jev-model"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Clearailhc/clearai-dsh",
-   "stars": 853,
-   "desc": "ClearAI is a native DSH plugin that brings the Epistemic Loop to DeepSeek Harness.",
-   "created": "2026-09-12T12:58:44Z",
-   "topics": [
-    "agent-preset",
-    "ai-agents",
-    "deepseek-harness",
-    "dsh"
-   ],
    "lang": "JavaScript",
    "sources": [
-    "new on GitHub"
+    "GitHub Trending (weekly)"
    ]
   },
   {
    "repo": "ARahim3/kaggle-tpu-lab",
-   "stars": 546,
+   "stars": 547,
    "desc": "Frontier-class open models on a free Kaggle TPU v5e-8: GLM-5.3-Flash 320B MoE (~64 tok/s, our own JAX engine) and Qwen3.8-27B bf16 (~130 tok/s), 262k context, prefix caching. Works with Claude Code, Codex, opencode and pi.",
    "created": "2026-08-31T18:01:42Z",
    "topics": [
@@ -214,21 +45,8 @@
    ]
   },
   {
-   "repo": "punkpeye/awesome-remote-mcp-servers",
-   "stars": 529,
-   "desc": "A collection of remote MCP servers.",
-   "created": "2026-09-08T00:43:30Z",
-   "topics": [
-    "mcp"
-   ],
-   "lang": null,
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
    "repo": "Nehanth/pooled",
-   "stars": 529,
+   "stars": 536,
    "desc": "Peer-to-peer LLM inference in the browser: pool your devices to run big open models, for chat and coding agents.",
    "created": "2026-09-01T00:05:54Z",
    "topics": [
@@ -244,7 +62,7 @@
   },
   {
    "repo": "Oldcircle/geo-sleuth",
-   "stars": 513,
+   "stars": 516,
    "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
    "created": "2026-09-18T08:51:34Z",
    "topics": [
@@ -254,6 +72,22 @@
     "codex"
    ],
    "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "shinthink/blitzstrike",
+   "stars": 488,
+   "desc": "Blitz Strike — a universal MCP security-audit toolbelt. Reconnaissance at speed. Analysis in depth. Validation before report.",
+   "created": "2026-09-12T12:13:09Z",
+   "topics": [
+    "active-directory",
+    "blue-team",
+    "bug-bounty",
+    "cve"
+   ],
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]
@@ -290,6 +124,42 @@
    }
   },
   {
+   "repo": "ZeroDayEvil/ai-security-tool",
+   "stars": 413,
+   "desc": "🛡️ Free open-source AI-powered security terminal & vulnerability scanner (CVE, SBOM). Supports SSH, SFTP, RDP, VNC, Serial, and 12+ autonomous AI agents (DeepSeek, OpenAI) for automated security workflows, CTF & DevSecOps. Cross-platform & Web UI.",
+   "created": "2026-09-10T09:38:49Z",
+   "topics": [
+    "ai-hacking",
+    "ai-security-tool",
+    "cve-scanner",
+    "cybersecurity"
+   ],
+   "lang": "HTML",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "hsfzxjy/npunlock",
+   "stars": 62,
+   "desc": "Write and run custom C kernels for Intel Core Ultra NPUs",
+   "created": "2026-09-20T14:05:47Z",
+   "topics": [
+    "intel",
+    "npu",
+    "npu-acceleration",
+    "openvino"
+   ],
+   "lang": "C",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 67,
+    "url": "https://news.ycombinator.com/item?id=49800513"
+   }
+  },
+  {
    "repo": "Qiuner/QCode",
    "stars": 347,
    "desc": "An explorable island world to learn AI coding and build real projects with AI agents. Powered by DeepSeek Harness.",
@@ -307,7 +177,7 @@
   },
   {
    "repo": "itsmostafa/system-one-connector",
-   "stars": 333,
+   "stars": 336,
    "desc": "System One MCP connector to evaluate anything fast and cheap. Give your AI agent direct access to models like: Jev, CLM and Laya",
    "created": "2026-09-17T05:23:34Z",
    "topics": [
@@ -315,6 +185,134 @@
     "mcp-tools"
    ],
    "lang": "Go",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "emma-sue/AegisOps",
+   "stars": 326,
+   "desc": "AegisOps企业信息系统智能运维平台：自动巡检、Agent 故障排查、证据工单与审批处置。LangGraph · Deep Agents · MCP；附可复现实测记录。",
+   "created": "2026-09-10T13:08:41Z",
+   "topics": [
+    "ai-agent",
+    "aiops",
+    "deepagents",
+    "langgraph"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "MichaelKinsy/PiG",
+   "stars": 325,
+   "desc": "PiG (Pi in Go) is a faithful Go port of upstream Pi, the TypeScript codebase behind the Pi coding agent. It is a parity-bound translation, not a rewrite: upstream behavior is the contract, and Go is the implementation language.",
+   "created": "2026-09-17T15:52:38Z",
+   "topics": [
+    "ai-agent",
+    "ai-coding",
+    "ai-tools",
+    "go"
+   ],
+   "lang": "Go",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "fidetolabs/qanat",
+   "stars": 269,
+   "desc": "An MCP server for quant factor processing and backtesting. Connect it to your agent and ask.",
+   "created": "2026-09-05T14:43:40Z",
+   "topics": [
+    "alpha-research",
+    "backtesting",
+    "duckdb",
+    "mcp"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "noskillish/bankmcp",
+   "stars": 266,
+   "desc": "BankMCP™: your AI can now read your bank. Self-hosted, read-only MCP server for your own bank accounts via open banking (Enable Banking). Standard MCP; tested with Claude and Ollama.",
+   "created": "2026-09-07T09:06:03Z",
+   "topics": [
+    "chatgpt",
+    "claude",
+    "enable-banking",
+    "mcp"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "surya-koritala/Glyd",
+   "stars": 240,
+   "desc": "Lossless AI compression: 33% less GPU memory, bit for bit.",
+   "created": "2026-09-19T03:34:15Z",
+   "topics": [
+    "benchmark",
+    "c-abi",
+    "cli",
+    "compression"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "hsandhu/mobilecode",
+   "stars": 239,
+   "desc": "mobilecode is a fork of opencode that builds and previews iOS and Android projects",
+   "created": "2026-09-05T03:26:31Z",
+   "topics": [
+    "ai-agents",
+    "ai-coding",
+    "ai-tools",
+    "androidstudio"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "edison-land/paragravity",
+   "stars": 220,
+   "desc": "Native, non-invasive parallel multi-account & sandbox manager for Google Antigravity",
+   "created": "2026-09-22T09:51:33Z",
+   "topics": [
+    "ai-coding",
+    "antigravity",
+    "cli",
+    "developer-tools"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "himovo/movo",
+   "stars": 193,
+   "desc": "Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research, content generation, vibe coding, browser automation, governance, and admin controls.",
+   "created": "2026-09-01T08:46:57Z",
+   "topics": [
+    "agent",
+    "ai-agents",
+    "brower-automation",
+    "dsh-plugin"
+   ],
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]

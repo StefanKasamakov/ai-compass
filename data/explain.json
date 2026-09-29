@@ -5538,5 +5538,392 @@
   "repo": "Clearailhc/clearai-dsh",
   "at": "2026-09-29",
   "source": "trending"
+ },
+ "pytorch/pytorch": {
+  "cat": "frameworks",
+  "kind": "Neural Network Framework",
+  "what": "Python library for tensor computation and deep learning with GPU acceleration.",
+  "why": "It provides flexible dynamic neural networks and efficient tensor math, making it the standard choice for machine learning research and development.",
+  "level": "dev",
+  "start": "pip install torch",
+  "caution": "",
+  "alts": [],
+  "packages": [
+   "torch"
+  ],
+  "plain": "A Python library for building and training artificial intelligence models using graphics cards.",
+  "tags": [
+   "code"
+  ],
+  "useFor": [
+   "Train deep learning models on GPUs",
+   "Perform fast multi-dimensional math computations",
+   "Build custom neural network layers"
+  ],
+  "steps": [
+   "Check installation options for your specific operating system and hardware on the PyTorch website.",
+   "Install the package using your preferred package manager like pip or conda.",
+   "Import torch in your Python script to start building tensors and networks."
+  ],
+  "repo": "pytorch/pytorch",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "pbakaus/impeccable": {
+  "cat": "harness",
+  "kind": "Design skill pack",
+  "what": "Adds design guidance, commands, and rules to AI coding harnesses for better frontend development.",
+  "why": "AI coding tools tend to generate repetitive, generic SaaS templates with overused fonts and styles. Use this when you want your coding agent to produce more polished, professional frontend designs.",
+  "level": "setup",
+  "start": "npx impeccable install",
+  "caution": "",
+  "alts": [],
+  "packages": [
+   "impeccable"
+  ],
+  "plain": "Adds design instructions and commands to AI coding assistants so they build better-looking websites.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Audit frontend code for accessibility and quality",
+   "Run design reviews on landing pages",
+   "Polish styling and layout before shipping"
+  ],
+  "steps": [
+   "Run `npx impeccable install` from your project root.",
+   "Choose your AI coding tool and scope during the setup prompt.",
+   "Run `/impeccable init` inside your AI coding tool to set up product context."
+  ],
+  "repo": "pbakaus/impeccable",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "ARahim3/kaggle-tpu-lab": {
+  "cat": "local",
+  "kind": "Free TPU inference",
+  "what": "Run open models like Qwen and GLM on Kaggle's free TPU v5e-8 and get a public OpenAI- and Anthropic-compatible API endpoint.",
+  "why": "Avoid high cloud bills and GPU hardware costs by leveraging free Kaggle TPU hours to self-host large open models for coding agents.",
+  "level": "setup",
+  "start": "python launch.py serve",
+  "caution": "Sessions are limited to just under nine hours, after which you must restart the notebook to get a new URL.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "jan-hq/jan"
+  ],
+  "packages": [],
+  "plain": "Run large AI models for free on cloud TPUs and connect them to your coding assistant.",
+  "tags": [
+   "code",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Host open-source LLMs for free",
+   "Connect Claude Code to custom endpoints",
+   "Run inference on Kaggle TPUs"
+  ],
+  "steps": [
+   "Ensure you have a phone-verified Kaggle account with free TPU quota.",
+   "Clone the repository to your local machine.",
+   "Run python launch.py serve to push the kernel and start the server."
+  ],
+  "repo": "ARahim3/kaggle-tpu-lab",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Nehanth/pooled": {
+  "cat": "local",
+  "kind": "Browser P2P Inference",
+  "what": "Peer-to-peer LLM inference in the browser, allowing multiple devices to pool resources and run large open models together.",
+  "why": "Enables users to run models that require more memory than any single device has by splitting layers across connected phones, laptops, and desktops over WebRTC.",
+  "level": "setup",
+  "start": "git clone https://github.com/Nehanth/pooled && cd pooled\nnpx -y serve -l 8080 .",
+  "caution": "Requires WebGPU-compatible browsers and devices. Pushed to GitHub over 4 months ago.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "exo-explore/exo"
+  ],
+  "packages": [
+   "@pooled/cli"
+  ],
+  "plain": "Run big open-source AI models across your phone, tablet, and laptop browser tabs together.",
+  "tags": [
+   "private",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Run large open-source models across multiple local devices",
+   "Chat with shared models in browser rooms",
+   "Build and test mini applications using Code mode"
+  ],
+  "steps": [
+   "Clone the repository to your local machine",
+   "Run a local static server like `npx -y serve -l 8080 .`",
+   "Open http://localhost:8080/room in your browser to start a room"
+  ],
+  "repo": "Nehanth/pooled",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Oldcircle/geo-sleuth": {
+  "cat": "harness",
+  "kind": "photo geolocation skill",
+  "what": "An agent skill that finds where a photo was taken using OpenStreetMap geometry, elevation skylines, satellite imagery, and street view.",
+  "why": "It gives coding and chat agents the ability to perform rigorous geographic OSINT and photo geolocation without guessing. Reach for it when you need precise camera coordinates and visual evidence from a single image.",
+  "level": "easy",
+  "start": "npx skills add Oldcircle/geo-sleuth",
+  "caution": "Complex geographic computations can be resource-intensive and take significant time to run.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "An add-on skill for AI coding assistants that pinpoints the exact geographic location where a photo was taken.",
+  "tags": [
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Find where a photo was taken",
+   "Analyze elevation skylines and satellite imagery",
+   "Generate precise coordinate estimates and evidence images"
+  ],
+  "steps": [
+   "Add the skill using `npx skills add Oldcircle/geo-sleuth`",
+   "Pick your preferred AI agent when prompted",
+   "Hand your agent a photo and ask it to find where the photo was taken"
+  ],
+  "repo": "Oldcircle/geo-sleuth",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "shinthink/blitzstrike": {
+  "cat": "harness",
+  "kind": "MCP Security Toolbelt",
+  "what": "Blitz Strike is a Model Context Protocol server that packages a three-tier security-audit methodology into callable tools for AI coding agents.",
+  "why": "It solves the problem of false positives and unverified findings in automated security scans by enforcing live verification before reporting.",
+  "level": "setup",
+  "start": "npx -y blitzstrike install",
+  "caution": "This tool performs security scanning, reconnaissance, and exploitation checks. Ensure you have explicit authorization before scanning any target to avoid legal and security liabilities.",
+  "alts": [
+   "anthropic/claude-code"
+  ],
+  "packages": [
+   "blitzstrike"
+  ],
+  "plain": "A security-audit toolbelt for AI agents that maps attack surfaces, traces code paths, and verifies findings live.",
+  "tags": [
+   "code",
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Audit source code for unauthenticated entry points and dangerous sinks",
+   "Perform live HTTP verification of potential security vulnerabilities",
+   "Run automated multi-tier security engagements via AI agents"
+  ],
+  "steps": [
+   "Run `npx -y blitzstrike doctor` to verify your local environment.",
+   "Run `npx -y blitzstrike install` to auto-register the tool with your detected AI agent CLI.",
+   "Restart your AI agent and invoke the engagement tools."
+  ],
+  "repo": "shinthink/blitzstrike",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "HRuiCcc/RuiC-card-skill": {
+  "cat": "harness",
+  "kind": "Card Skill Addon",
+  "what": "An agent skill that turns a text prompt or reference image into an interactive 3D holographic trading card web page and editable Blender project.",
+  "why": "It automates the tedious process of multi-layer image generation, 3D scene setup, and Three.js packaging when you want to create custom collectible cards with holographic depth effects.",
+  "level": "setup",
+  "start": "python scripts/run_pipeline.py",
+  "caution": "Requires Python 3.9+, Node.js, and downloads a portable Blender binary with SHA-256 validation into your local directory.",
+  "alts": [
+   "SuperClaude-Org/SuperClaude_Framework",
+   "thedotmack/claude-mem"
+  ],
+  "packages": [],
+  "plain": "Create interactive 3D holographic cards with depth and shine directly from text prompts.",
+  "tags": [
+   "media",
+   "apps"
+  ],
+  "useFor": [
+   "Generate 3D holographic collectible cards from text or images",
+   "Export editable Blender projects with layered card scenes",
+   "Test and verify interactive web card viewers locally"
+  ],
+  "steps": [
+   "Place the skill directory into your AI agent's skills folder.",
+   "Run the pipeline script with your card description or reference image."
+  ],
+  "repo": "HRuiCcc/RuiC-card-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "brumar/chess-postmortem-skills": {
+  "cat": "harness",
+  "kind": "chess analysis skills",
+  "what": "Claude Code skills that turn chess games into plain-language post-mortems checked by Stockfish, complete with HTML viewers and narrated videos.",
+  "why": "Stockfish analysis gives numbers and lines rather than explaining why a move was a mistake. Use this when you want deep, human-readable feedback on your chess games.",
+  "level": "setup",
+  "start": "git clone https://github.com/brumar/chess-postmortem-skills",
+  "caution": "Requires running local helper tools like Stockfish, FFmpeg, and optional whisper.cpp, plus uses Claude Code which consumes subscription logins.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Claude Code add-on that analyzes chess games using Stockfish, creates HTML viewers, and generates narrated review videos.",
+  "tags": [
+   "code",
+   "media"
+  ],
+  "useFor": [
+   "Analyze a chess game using Stockfish and Claude Code",
+   "Generate a narrated review video of your chess match",
+   "Study a single chess position or play a game against Claude"
+  ],
+  "steps": [
+   "Clone this repository onto your computer.",
+   "Copy or symlink the skill folders into your project's .claude/skills/ directory or ~/.claude/skills/.",
+   "Ask Claude Code to analyze a game by providing a Lichess link or PGN."
+  ],
+  "repo": "brumar/chess-postmortem-skills",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "ZeroDayEvil/ai-security-tool": {
+  "cat": "coding",
+  "kind": "AI Security Terminal",
+  "what": "An AI-powered security terminal and vulnerability scanner combining remote access protocols with autonomous AI agents.",
+  "why": "It replaces multiple standalone administrative and auditing utilities during penetration testing, CTF challenges, and system administration.",
+  "level": "easy",
+  "start": "",
+  "caution": "Security auditing tools and automated exploitation agents carry significant risk; misuse against unauthorized targets can violate laws and terms of service.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Aider-AI/aider",
+   "continuedev/continue"
+  ],
+  "packages": [],
+  "plain": "A secure remote connection tool equipped with AI assistants to run vulnerability scans and automate security workflows.",
+  "tags": [
+   "code",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Manage remote servers via SSH, RDP, or VNC",
+   "Scan software supply chains and CVE vulnerabilities",
+   "Automate security audits with integrated AI agents"
+  ],
+  "steps": [
+   "Download the application build for your operating system from the official downloads page.",
+   "Launch the desktop application or web interface.",
+   "Configure your remote connections or target parameters for security analysis."
+  ],
+  "repo": "ZeroDayEvil/ai-security-tool",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "hsfzxjy/npunlock": {
+  "cat": "local",
+  "kind": "Intel NPU Custom Kernels",
+  "what": "Write and run custom C kernels for Intel Core Ultra NPUs.",
+  "why": "Intel's standard NPU stack only allows graph-level programming and does not let you supply custom C implementations. Reach for this when you need to run custom C math or activation kernels directly on Intel NPU hardware.",
+  "level": "setup",
+  "start": "python -m pip install .",
+  "caution": "Experimental software restricted to Windows x64 and Meteor Lake / NPU3720 hardware, requiring an external proprietary MoviTools toolchain.",
+  "alts": [],
+  "packages": [],
+  "plain": "Write and run custom C code directly on Intel Core Ultra NPU processors.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Write custom C kernels for Intel NPUs",
+   "Run mixed-precision activation graphs on NPU hardware",
+   "Compile C code into ACT-SHAVE machine code"
+  ],
+  "steps": [
+   "Install the package from source using pip.",
+   "Obtain and extract the required MoviTools dependency package.",
+   "Set the environment variable pointing to the MoviTools directory.",
+   "Run one of the bundled Python examples."
+  ],
+  "repo": "hsfzxjy/npunlock",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Qiuner/QCode": {
+  "cat": "coding",
+  "kind": "gamified ai coding",
+  "what": "An explorable island world to learn AI coding and build real projects with AI agents.",
+  "why": "It turns abstract AI coding tasks and chat boxes into an interactive island environment to make building software less intimidating for beginners.",
+  "level": "setup",
+  "start": "corepack enable",
+  "caution": "Early development software with experimental features and unsigned preview releases.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [],
+  "plain": "Explore an island world where AI companions help you build and learn coding through real projects.",
+  "tags": [
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Build real projects with AI companions",
+   "Learn coding inside an interactive island world",
+   "Manage files and tasks through virtual residents"
+  ],
+  "steps": [
+   "Enable corepack in your terminal",
+   "Install project dependencies with yarn",
+   "Start the local web development server",
+   "Open the local URL in your browser to configure your model"
+  ],
+  "repo": "Qiuner/QCode",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "itsmostafa/system-one-connector": {
+  "cat": "harness",
+  "kind": "AI Judgment Connector",
+  "what": "Connects AI coding assistants to specialized judgment models to return structured probabilities instead of text prose.",
+  "why": "AI agents normally return prose that is hard for code to use in if-statements, making it difficult to automate branching decisions reliably.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/itsmostafa/system-one-connector/main/install.sh | sh",
+  "caution": "Requires external API keys and relies on external subscription or usage tiers from TypeSafe or OpenRouter.",
+  "alts": [],
+  "packages": [],
+  "plain": "Gives AI agents precise numerical probabilities and choices instead of unstructured chat paragraphs.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Evaluate user requests for urgency or sentiment programmatically",
+   "Route customer service tickets to the correct department automatically",
+   "Run judgment checks on large datasets in single calls"
+  ],
+  "steps": [
+   "Install the connector binary using the installation curl command in your terminal.",
+   "Configure your API key using the TYPESAFE_API_KEY environment variable.",
+   "Run `evaluate setup mcp` to automatically register the connector with your AI assistants."
+  ],
+  "repo": "itsmostafa/system-one-connector",
+  "at": "2026-09-29",
+  "source": "trending"
  }
 }
