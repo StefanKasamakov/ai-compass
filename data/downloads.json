@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T08:47:00.099Z",
+ "updated": "2026-09-29T08:52:57.092Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -25,6 +25,14 @@
    "total": 89385344,
    "packages": [
     "pypi:litellm"
+   ]
+  },
+  "musistudio/claude-code-router": {
+   "npm": 206878,
+   "pypi": 0,
+   "total": 206878,
+   "packages": [
+    "npm:@musistudio/claude-code-router"
    ]
   },
   "Portkey-AI/gateway": {
@@ -84,6 +92,22 @@
     "npm:claude-code"
    ]
   },
+  "openai/codex": {
+   "npm": 82707380,
+   "pypi": 0,
+   "total": 82707380,
+   "packages": [
+    "npm:@openai/codex"
+   ]
+  },
+  "google-gemini/gemini-cli": {
+   "npm": 1457710,
+   "pypi": 0,
+   "total": 1457710,
+   "packages": [
+    "npm:@google/gemini-cli"
+   ]
+  },
   "cline/cline": {
    "npm": 276058,
    "pypi": 0,
@@ -98,6 +122,14 @@
    "total": 15343,
    "packages": [
     "npm:@openhands/agent-canvas"
+   ]
+  },
+  "Aider-AI/aider": {
+   "npm": 0,
+   "pypi": 267521,
+   "total": 267521,
+   "packages": [
+    "pypi:aider-chat"
    ]
   },
   "langchain-ai/langgraph": {
@@ -156,20 +188,20 @@
     "pypi:vllm"
    ]
   },
+  "mem0ai/mem0": {
+   "npm": 471512,
+   "pypi": 0,
+   "total": 471512,
+   "packages": [
+    "npm:mem0ai"
+   ]
+  },
   "getzep/graphiti": {
    "npm": 0,
    "pypi": 608917,
    "total": 608917,
    "packages": [
     "pypi:graphiti-core"
-   ]
-  },
-  "Graphify-Labs/graphify": {
-   "npm": 0,
-   "pypi": 1630865,
-   "total": 1630865,
-   "packages": [
-    "pypi:graphifyy"
    ]
   },
   "run-llama/llama_index": {
@@ -237,6 +269,14 @@
     "npm:claude-mem"
    ]
   },
+  "microsoft/LLMLingua": {
+   "npm": 0,
+   "pypi": 47028,
+   "total": 47028,
+   "packages": [
+    "pypi:llmlingua"
+   ]
+  },
   "Maciek-roboblog/Claude-Code-Usage-Monitor": {
    "npm": 0,
    "pypi": 8623,
@@ -251,6 +291,14 @@
    "total": 544,
    "packages": [
     "npm:qwen-code"
+   ]
+  },
+  "microsoft/agent-framework": {
+   "npm": 0,
+   "pypi": 166265,
+   "total": 166265,
+   "packages": [
+    "pypi:agent-framework"
    ]
   },
   "pydantic/pydantic-ai": {
@@ -277,6 +325,14 @@
     "npm:mastra"
    ]
   },
+  "google/adk-python": {
+   "npm": 0,
+   "pypi": 9898178,
+   "total": 9898178,
+   "packages": [
+    "pypi:google-adk"
+   ]
+  },
   "modelcontextprotocol/python-sdk": {
    "npm": 0,
    "pypi": 219043071,
@@ -301,10 +357,18 @@
     "pypi:stagehand"
    ]
   },
+  "sgl-project/sglang": {
+   "npm": 0,
+   "pypi": 2556024,
+   "total": 2556024,
+   "packages": [
+    "pypi:sglang"
+   ]
+  },
   "nomic-ai/gpt4all": {
    "npm": 606,
-   "pypi": 0,
-   "total": 606,
+   "pypi": 42584,
+   "total": 43190,
    "packages": [
     "npm:gpt4all",
     "pypi:gpt4all"
@@ -334,6 +398,14 @@
     "pypi:lightrag-hku"
    ]
   },
+  "microsoft/graphrag": {
+   "npm": 0,
+   "pypi": 47564,
+   "total": 47564,
+   "packages": [
+    "pypi:graphrag"
+   ]
+  },
   "docling-project/docling": {
    "npm": 0,
    "pypi": 2743116,
@@ -359,6 +431,22 @@
    "packages": [
     "npm:firecrawl",
     "pypi:firecrawl"
+   ]
+  },
+  "topoteretes/cognee": {
+   "npm": 0,
+   "pypi": 87864,
+   "total": 87864,
+   "packages": [
+    "pypi:cognee"
+   ]
+  },
+  "langflow-ai/langflow": {
+   "npm": 0,
+   "pypi": 40142,
+   "total": 40142,
+   "packages": [
+    "pypi:langflow"
    ]
   },
   "langfuse/langfuse": {
@@ -396,8 +484,8 @@
   },
   "confident-ai/deepeval": {
    "npm": 61382,
-   "pypi": 2462143,
-   "total": 2523525,
+   "pypi": 0,
+   "total": 61382,
    "packages": [
     "npm:deepeval",
     "pypi:deepeval"
@@ -434,14 +522,6 @@
    "packages": [
     "pypi:InvokeAI",
     "pypi:invokeai"
-   ]
-  },
-  "coqui-ai/TTS": {
-   "npm": 0,
-   "pypi": 55832,
-   "total": 55832,
-   "packages": [
-    "pypi:tts"
    ]
   }
  }
