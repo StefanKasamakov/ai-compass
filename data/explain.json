@@ -831,5 +831,80 @@
   ],
   "at": "2026-09-29",
   "source": "curated"
+ },
+ "github/spec-kit": {
+  "cat": "harness",
+  "kind": "Agent workflow harness",
+  "what": "An open-source toolkit that provides structured templates, workflows, and agent slash commands to guide AI coding assistants through software development and bug fixing.",
+  "why": "AI agents often generate code without proper planning, leading to architectural mess and skipped testing. Reach for this when you want to force your AI assistant to follow systematic steps for specifications, technical planning, and verification.",
+  "level": "intermediate",
+  "start": "uv tool install specify-cli && specify init my-project --integration copilot",
+  "caution": "It requires Python 3.11+, the uv installer, and a supported external AI coding agent (like GitHub Copilot) to actually interpret and run the slash commands.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [
+   "specify-cli"
+  ],
+  "repo": "github/spec-kit",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "smtg-ai/claude-squad": {
+  "cat": "harness",
+  "kind": "Agent workspace manager",
+  "what": "Claude Squad is a terminal application that lets you manage and run multiple AI coding agents simultaneously in isolated environments.",
+  "why": "It prevents conflicts when running multiple AI tasks at once by orchestrating agents inside separate tmux sessions and isolated git worktrees. Use it when you need to run parallel background coding tasks with tools like Claude Code or Aider.",
+  "level": "intermediate",
+  "start": "brew install claude-squad",
+  "caution": "Requires external system dependencies including tmux and the GitHub CLI (gh) to function, and is distributed under the AGPL-3.0 license.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "repo": "smtg-ai/claude-squad",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "winfunc/opcode": {
+  "cat": "harness",
+  "kind": "Claude Code desktop GUI",
+  "what": "A Tauri-based desktop interface for Claude Code that manages projects, session history, custom agents, and MCP servers.",
+  "why": "It replaces terminal-only session juggling with a visual dashboard for checkpoints, token usage tracking, and CLAUDE.md management. Reach for it when you want visual navigation and session branching over Claude Code CLI.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/getAsterisk/opcode.git && cd opcode && bun install && bun run tauri dev",
+  "caution": "Prebuilt binary releases are not yet provided, so running the app requires compiling from source with Rust, Bun, and platform-specific C/system dependencies. AGPL-3.0 licensed.",
+  "alts": [
+   "siteboon/claudecodeui",
+   "smtg-ai/claude-squad",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "repo": "winfunc/opcode",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "siteboon/claudecodeui": {
+  "cat": "harness",
+  "kind": "web and mobile UI",
+  "what": "CloudCLI is an open-source web and mobile user interface for interacting with and managing Claude Code, Cursor CLI, and Codex sessions.",
+  "why": "It provides a graphical interface with integrated file navigation, Git controls, and terminal access to manage coding agent sessions locally or remotely without being tied to a command-line interface.",
+  "level": "intermediate",
+  "start": "npx @cloudcli-ai/cloudcli",
+  "caution": "Self-hosting exposes terminal and file system controls over a network port; requires Node.js v22 or higher, and agent execution tools are disabled by default to prevent unintended actions.",
+  "alts": [
+   "anthropics/claude-code",
+   "winfunc/opcode",
+   "smtg-ai/claude-squad"
+  ],
+  "packages": [
+   "@cloudcli-ai/cloudcli"
+  ],
+  "repo": "siteboon/claudecodeui",
+  "at": "2026-09-29",
+  "source": "curated"
  }
 }
