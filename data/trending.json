@@ -1,52 +1,179 @@
 {
- "updated": "2026-09-29T10:20:18.230Z",
+ "updated": "2026-09-29T10:30:00.593Z",
  "items": [
   {
-   "repo": "KKKKhazix/AIHOT",
-   "stars": 2280,
-   "desc": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
-   "created": "2026-09-28T23:40:05Z",
-   "topics": [
-    "ai",
-    "llm",
-    "mcp",
-    "news-aggregator"
-   ],
-   "lang": "TypeScript"
-  },
-  {
-   "repo": "Vincentwei1021/anything2explainer",
-   "stars": 2158,
-   "desc": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
-   "created": "2026-09-08T17:19:54Z",
+   "repo": "dmoshehun-prog/learn-from-materials",
+   "stars": 727,
+   "desc": "Turn PDFs, books and papers into interactive learning webpages｜将复杂材料转化为可追溯、可测验、可做笔记的学习网页",
+   "created": "2026-09-08T07:48:21Z",
    "topics": [
     "agent-skills",
+    "ai-agent",
+    "book",
+    "claude-code"
+   ],
+   "lang": "Python"
+  },
+  {
+   "repo": "mizzlelover/gongwen-gbt9704-skill",
+   "stars": 726,
+   "desc": "信息安全提醒：请勿上传企业禁止对外公开的文件；可在本地或企业内网部署大模型后使用。中文公文排版 Skill：按 GB/T 9704-2012 生成可编辑 DOCX。配套 CEB：https://github.com/mizzlelover/CEB",
+   "created": "2026-09-09T10:04:14Z",
+   "topics": [
+    "ai-skill",
+    "ceb",
+    "chinese-official-document",
+    "claude-code"
+   ],
+   "lang": "JavaScript"
+  },
+  {
+   "repo": "ethanplusai/astra-flash-orchestrator",
+   "stars": 706,
+   "desc": "Astra plans and reviews; DeepSeek Flash builds. A native Codex workflow with phased tasks, verification, safe installation and reversible setup.",
+   "created": "2026-09-17T05:42:31Z",
+   "topics": [
+    "agent-orchestration",
     "ai-agents",
-    "ai-video",
+    "codex",
+    "codex-skills"
+   ],
+   "lang": "Python"
+  },
+  {
+   "repo": "alexgreensh/anidoodle",
+   "stars": 675,
+   "desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
+   "created": "2026-09-22T11:20:47Z",
+   "topics": [
+    "agent-skills",
+    "animation",
+    "canvas",
     "claude-code"
    ],
    "lang": "TypeScript"
   },
   {
-   "repo": "yetone/magpie",
-   "stars": 1828,
-   "desc": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-   "created": "2026-09-23T16:22:35Z",
+   "repo": "LockedinLabs-AI/agent-console",
+   "stars": 668,
+   "desc": "Local-first observability for AI coding agents. Every Claude Code and Codex session's tokens, cache, models and cost, on this machine and every machine you connect through a self-hosted team hub. Presenting mode, policy hooks, Apple-signed and notarized macOS builds, attested releases. MIT.",
+   "created": "2026-09-20T17:55:58Z",
    "topics": [
+    "ai-agents",
+    "anthropic",
     "claude-code",
-    "codex",
-    "deepseek",
-    "gemini-cli"
+    "codex"
    ],
-   "lang": "Go"
+   "lang": "JavaScript"
   },
   {
-   "repo": "tigerless-labs/agent-memory",
-   "stars": 1656,
-   "desc": "Long-term memory runtime for AI agents — plain Markdown as the source of truth, local ranked retrieval, and an independent sleep-time Manage layer. Claude Code and Codex share one store. No API key.",
-   "created": "2026-09-01T21:52:29Z",
+   "repo": "kaankiziltug/logo-design-skill",
+   "stars": 624,
+   "desc": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.",
+   "created": "2026-09-26T08:23:34Z",
    "topics": [
-    "agent-memory",
+    "agent-skills",
+    "branding",
+    "claude",
+    "claude-skills"
+   ],
+   "lang": "HTML"
+  },
+  {
+   "repo": "jianruntech/geo-score",
+   "stars": 615,
+   "desc": "Can AI engines cite your site, and do they? Free 0–100 readiness score on an open GEO rubric, plus citation tracking via the OpenAI, Perplexity, Gemini and Claude APIs with your own keys. Zero dependencies, MCP server.",
+   "created": "2026-09-08T05:03:27Z",
+   "topics": [
+    "aeo",
+    "ai-search",
+    "ai-visibility",
+    "answer-engine-optimization"
+   ],
+   "lang": "Python"
+  },
+  {
+   "repo": "viettranx/3dviz-pro-max",
+   "stars": 589,
+   "desc": "Agent skill for creative 3D visualization: turn an idea into a Three.js/Blender scene worth exploring. Claude Code + Codex plugin, 223 recipes, 440 knowledge records, 22 proved kits, 37 runnable studies.",
+   "created": "2026-09-10T01:42:59Z",
+   "topics": [
+    "3d",
+    "agent-skill",
+    "blender",
+    "claude-code"
+   ],
+   "lang": "JavaScript"
+  },
+  {
+   "repo": "op7418/guizang-product-video-skill",
+   "stars": 587,
+   "desc": "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
+   "created": "2026-09-18T04:22:37Z",
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "codepilot",
+    "codex"
+   ],
+   "lang": "Python"
+  },
+  {
+   "repo": "lemomo-ai/lemo-opuscar",
+   "stars": 577,
+   "desc": "39 film styles, each a reusable style prompt plus a short film made entirely in code by Claude Opus 5.5. Pick a style, bring your own story, and let your agent direct. | Opus5.5 x 39 种影片风格：风格提示词 + 纯代码样片 + 导演与技术指南",
+   "created": "2026-09-26T10:10:41Z",
+   "topics": [
+    "ai-agents",
+    "ai-video",
+    "animation",
+    "canvas"
+   ],
+   "lang": "JavaScript"
+  },
+  {
+   "repo": "AbdelStark/awesome-typesafe-jev",
+   "stars": 540,
+   "desc": "Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live demos, agent tools, and independent evaluations.",
+   "created": "2026-09-17T06:56:37Z",
+   "topics": [
+    "agent-skills",
+    "ai-agents",
+    "awesome",
+    "awesome-jev"
+   ],
+   "lang": "HTML"
+  },
+  {
+   "repo": "ruc-datalab/EvoOntology",
+   "stars": 522,
+   "desc": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
+   "created": "2026-09-15T01:57:40Z",
+   "topics": [
+    "agent",
+    "agentic-ai",
+    "claude-code",
+    "codex"
+   ],
+   "lang": "Python"
+  },
+  {
+   "repo": "punkpeye/awesome-remote-mcp-servers",
+   "stars": 512,
+   "desc": "A collection of remote MCP servers.",
+   "created": "2026-09-08T00:43:30Z",
+   "topics": [
+    "mcp"
+   ],
+   "lang": null
+  },
+  {
+   "repo": "Oldcircle/geo-sleuth",
+   "stars": 508,
+   "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
+   "created": "2026-09-18T08:51:34Z",
+   "topics": [
+    "agent-skills",
     "ai-agents",
     "claude-code",
     "codex"
@@ -54,147 +181,17 @@
    "lang": "Python"
   },
   {
-   "repo": "dzhng/jevgrep",
-   "stars": 1585,
-   "desc": "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
-   "created": "2026-09-26T04:06:56Z",
+   "repo": "shinthink/blitzstrike",
+   "stars": 493,
+   "desc": "Blitz Strike — a universal MCP security-audit toolbelt. Reconnaissance at speed. Analysis in depth. Validation before report.",
+   "created": "2026-09-12T12:13:09Z",
    "topics": [
-    "ai-sdk",
-    "claude-code",
-    "cli",
-    "code-search"
+    "active-directory",
+    "blue-team",
+    "bug-bounty",
+    "cve"
    ],
    "lang": "TypeScript"
-  },
-  {
-   "repo": "adtexterry-lgtm/unigit-ecosystem",
-   "stars": 1318,
-   "desc": "UNIGIT public brand and ecosystem hub — AI should work for everyone.",
-   "created": "2026-09-02T10:08:01Z",
-   "topics": [
-    "agentic-ai",
-    "ai-tools",
-    "ai-workbench",
-    "ecosystem"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "2akouwu/reverify",
-   "stars": 1250,
-   "desc": "Stop your AI from making things up — it proposes, deterministic tools decide, every claim checked against ground truth with evidence. Grounded facts and context survive resets. Reverse engineering is the proving ground. MCP server + CLI.",
-   "created": "2026-08-31T01:02:18Z",
-   "topics": [
-    "ai",
-    "ai-agents",
-    "ai-coding",
-    "anti-hallucination"
-   ],
-   "lang": "Python"
-  },
-  {
-   "repo": "To3akaRin/mac-computer-use",
-   "stars": 1129,
-   "desc": "Enable any LLM to control your computer with cross-platform support, featuring 3D modeling examples and live demos.",
-   "created": "2026-09-08T09:09:24Z",
-   "topics": [
-    "agent-skills",
-    "cdp",
-    "codex",
-    "computer-use"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "mikehasa/golive-skill",
-   "stars": 1081,
-   "desc": "Take your agent-built product live: hosting, database, domain, email, payments — on your own accounts. Open-source Agent Skill + zero-dependency Node CLI: detect → plan → approve → apply → verify. No GoLive account, backend or telemetry.",
-   "created": "2026-09-23T13:37:26Z",
-   "topics": [
-    "agent-skill",
-    "agent-skills",
-    "ai-agents",
-    "claude-code"
-   ],
-   "lang": "TypeScript"
-  },
-  {
-   "repo": "qiz029/dscode",
-   "stars": 861,
-   "desc": "A DeepSeek coding agent harness: persistent shell, Ultra subagents, auto approval, Chrome MCP and session telemetry",
-   "created": "2026-09-11T09:40:02Z",
-   "topics": [
-    "agentic",
-    "ai-agent",
-    "cli",
-    "code-review"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "eternityspring/reelbench-skills",
-   "stars": 848,
-   "desc": "Learning notes and tooling skills for AI video - AI 视频相关的学习与工具 skill",
-   "created": "2026-09-11T04:55:49Z",
-   "topics": [
-    "ai-video",
-    "claude-skills",
-    "ffmpeg",
-    "shot-analysis"
-   ],
-   "lang": "JavaScript"
-  },
-  {
-   "repo": "Jakeschincariol/linkedin-agent-skill",
-   "stars": 839,
-   "desc": "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.",
-   "created": "2026-09-07T22:58:16Z",
-   "topics": [
-    "agent-skills",
-    "ai-humanizer",
-    "claude",
-    "claude-code"
-   ],
-   "lang": "Python"
-  },
-  {
-   "repo": "undefined-ui/second-brain-os",
-   "stars": 801,
-   "desc": "An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.",
-   "created": "2026-09-07T15:08:13Z",
-   "topics": [
-    "agent-skills",
-    "ai-agents",
-    "claude",
-    "claude-code"
-   ],
-   "lang": "HTML"
-  },
-  {
-   "repo": "okf-memory/okf-agent-memory",
-   "stars": 738,
-   "desc": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go.",
-   "created": "2026-09-05T21:26:04Z",
-   "topics": [
-    "agent-memory",
-    "ai-agents",
-    "bm25",
-    "coding-agents"
-   ],
-   "lang": "Go"
-  },
-  {
-   "repo": "aimeoa/hanshuang-codex",
-   "stars": 735,
-   "desc": "针对GPT 6.0,workbuddyV4.1flash的破甲实验项目",
-   "created": "2026-09-06T08:42:57Z",
-   "topics": [
-    "ai",
-    "codex",
-    "codex-cli",
-    "desktop-app"
-   ],
-   "lang": "Python"
   }
  ]
 }

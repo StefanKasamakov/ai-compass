@@ -2395,5 +2395,202 @@
   "repo": "aimeoa/hanshuang-codex",
   "at": "2026-09-29",
   "source": "trending"
+ },
+ "dmoshehun-prog/learn-from-materials": {
+  "cat": "harness",
+  "kind": "study page generator",
+  "what": "Turn books, PDFs, slides, and web pages into traceable knowledge bases and interactive learning web pages.",
+  "why": "It solves the problem of digesting complex, long-form reading material by automatically extracting structured methodologies, quizzes, and relationship maps for coding agents to process.",
+  "level": "intermediate",
+  "start": "python -m venv venv",
+  "caution": "Requires an external agent environment like Claude Code, Codex, or WorkBuddy with file system and Python execution access to function.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "coleam00/Archon"
+  ],
+  "packages": [],
+  "repo": "dmoshehun-prog/learn-from-materials",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "mizzlelover/gongwen-gbt9704-skill": {
+  "cat": "harness",
+  "kind": "Chinese Official Document Formatter",
+  "what": "Generates editable DOCX documents adhering to the GB/T 9704-2012 Chinese official document standard across multiple AI coding tools and platforms.",
+  "why": "Ensures official and administrative documents comply with strict government standards (margins, typography, headers, and page numbers) rather than relying on generic AI styling. Reach for it when you need to format structured Chinese official documents for delivery via Word or WPS.",
+  "level": "beginner",
+  "start": "node scripts/generate_gongwen_docx.mjs --input tests/fixture.md --output /tmp/gongwen.docx --format ordinary --title \"公文格式回归测试\"",
+  "caution": "Requires proper system fonts (such as XiaoBiaoSong and FangSong) for exact compliance; missing standard fonts will trigger fallback warnings or require explicit flags.",
+  "alts": [],
+  "packages": [],
+  "repo": "mizzlelover/gongwen-gbt9704-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "ethanplusai/astra-flash-orchestrator": {
+  "cat": "harness",
+  "kind": "Astra and Flash orchestrator",
+  "what": "A Codex skill that orchestrates tasks by having an Astra model plan and review while delegating heavy implementation and testing work to DeepSeek Flash.",
+  "why": "To dramatically lower token usage and API costs during large coding tasks without sacrificing the architectural judgment of a more capable primary model.",
+  "level": "advanced",
+  "start": "python3 -B install.py",
+  "caution": "Early release project. Requires manual prerequisite configuration of Codex, Python 3.11+, and an external router for DeepSeek.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "diegosouzapw/OmniRoute"
+  ],
+  "packages": [],
+  "repo": "ethanplusai/astra-flash-orchestrator",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "alexgreensh/anidoodle": {
+  "cat": "harness",
+  "kind": "coding agent skill",
+  "what": "Generates hand-drawn art, animations, interactive web graphics, and scored launch films entirely through code.",
+  "why": "Used to produce deterministic, code-based illustrations and motion graphics in 31 different artistic styles inside coding agents.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "Requires Claude Code, Codex, or another compatible agent harness to function.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "repo": "alexgreensh/anidoodle",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "LockedinLabs-AI/agent-console": {
+  "cat": "tokens",
+  "kind": "agent token monitor",
+  "what": "Local-first observability tool for tracking token usage, cache performance, and estimated costs of Claude Code and Codex sessions.",
+  "why": "Helps developers and teams monitor AI coding agent expenses and session activity locally or across a self-hosted team hub. Reach for it when you want to audit token consumption and cost burn rates without sending your code or prompts to a third-party service.",
+  "level": "beginner",
+  "start": "git clone https://github.com/LockedinLabs-AI/agent-console.git\ncd agent-console\nnode bin/agent-console.mjs --open",
+  "caution": "Requires Node.js 22 or newer. Windows executables are not code-signed.",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "ccusage/ccusage",
+   "BerriAI/litellm"
+  ],
+  "packages": [],
+  "repo": "LockedinLabs-AI/agent-console",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "kaankiziltug/logo-design-skill": {
+  "cat": "harness",
+  "kind": "logo design skill",
+  "what": "A comprehensive logo-design skill for Claude and other AI agents that manages discovery, SVG crafting, testing, and client presentation boards.",
+  "why": "It brings structured, disciplined brand design workflows directly to AI coding assistants when creating or iterating on brand assets.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "Complex multi-step workflow that relies heavily on agent adherence to structural instructions.",
+  "alts": [
+   "anthropic/claude-code",
+   "obra/superpowers",
+   "codename-one/codex"
+  ],
+  "packages": [],
+  "repo": "kaankiziltug/logo-design-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "jianruntech/geo-score": {
+  "cat": "harness",
+  "kind": "AI search readiness",
+  "what": "It provides an open rubric and CLI tool to audit websites for AI engine visibility and track citations via LLM APIs.",
+  "why": "It helps developers and site owners understand how well generative search engines like ChatGPT and Perplexity can crawl, understand, and cite their content.",
+  "level": "beginner",
+  "start": "curl -sL https://raw.githubusercontent.com/jianruntech/geo-score/v1.4.0/cli/geo_score.py | python3 - stripe.com --brief",
+  "caution": "Using API features requires providing your own paid provider keys, which will incur API usage costs.",
+  "alts": [],
+  "packages": [],
+  "repo": "jianruntech/geo-score",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "viettranx/3dviz-pro-max": {
+  "cat": "harness",
+  "kind": "3D visualization skill",
+  "what": "An agent skill for Claude Code and Codex that turns ideas into interactive Three.js and Blender 3D scenes using built-in recipes and knowledge records.",
+  "why": "Helps coding agents generate visual 3D scenes, animations, and diagrams without requiring manual renderer setup.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "Project is maintained as an agent skill; verify output compatibility with your target environment.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "repo": "viettranx/3dviz-pro-max",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "op7418/guizang-product-video-skill": {
+  "cat": "harness",
+  "kind": "Product Video Skill",
+  "what": "An agent skill that uses code, real product components, and design systems to create software release and update videos with scripts, music, sound effects, and rendering.",
+  "why": "It bridges the gap between raw codebase updates and polished promotional videos by automating storyboarding, component mounting, and animation using Claude Code or Codex.",
+  "level": "intermediate",
+  "start": "npx skills add https://github.com/op7418/guizang-product-video-skill --skill guizang-product-video-skill",
+  "caution": "This repository has an AGPL-3.0 license and some fallback assets use a Business Source License 1.1. Review all asset and component licensing before commercial distribution.",
+  "alts": [],
+  "packages": [],
+  "repo": "op7418/guizang-product-video-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "lemomo-ai/lemo-opuscar": {
+  "cat": "harness",
+  "kind": "Film style harness",
+  "what": "Adds 39 reusable film styles and a coding-agent directing workflow to Claude Code for generating short films entirely in code.",
+  "why": "Provides ready-to-use style prompts and director instructions so a coding agent can build frame-by-frame canvas or WebGL animations with narration and music.",
+  "level": "intermediate",
+  "start": "claude plugin marketplace add lemomo-ai/lemo-opuscar\nclaude plugin install lemo-opuscar@lemolab",
+  "caution": "Requires Claude Code, significant token usage per film, Node 20+, ffmpeg, and Python 3.11+. Reuses a consumer subscription login (Claude), which may breach provider terms.",
+  "alts": [
+   "anthropics/claude-code",
+   "gsd-build/get-shit-done",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "repo": "lemomo-ai/lemo-opuscar",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "AbdelStark/awesome-typesafe-jev": {
+  "cat": "harness",
+  "kind": "curated resource list",
+  "what": "A community field guide to TypeSafe's System One model, with SDKs, live demos, agent tools, and independent evaluations.",
+  "why": "To help developers explore TypeSafe's Jev model for typed judgments, structured outputs, and semantic routing while keeping application code in control.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "This repository is an independent community project and is not affiliated with or endorsed by TypeSafe AI.",
+  "alts": [],
+  "packages": [],
+  "repo": "AbdelStark/awesome-typesafe-jev",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "ruc-datalab/EvoOntology": {
+  "cat": "harness",
+  "kind": "self-evolving ontology layer",
+  "what": "An agent plugin that builds and continuously evolves a versioned semantic ontology layer for data agents over heterogeneous tables and databases.",
+  "why": "Raw data lacks explicit business definitions, causing agents to make semantic errors and repeatedly explore the same data. It is useful when you need data agents to maintain a consistent, workload-grounded knowledge layer that adapts over time.",
+  "level": "intermediate",
+  "start": "claude plugin marketplace add ruc-datalab/EvoOntology",
+  "caution": "The repository is a research prototype from Renmin University of China. It integrates directly with coding agent plugins like Claude Code and Codex, which may interact with your local environment or external APIs.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [],
+  "repo": "ruc-datalab/EvoOntology",
+  "at": "2026-09-29",
+  "source": "trending"
  }
 }
