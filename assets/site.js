@@ -89,7 +89,7 @@ function shell() {
       <p style="max-width:44ch">A plain-English map of AI models, MCP servers and agent skills. Kept fresh by an agent that checks GitHub and the official blogs every few hours.</p></div>
     <div class="row" style="align-items:start;gap:2.5rem">
       <div><div class="field-label">Contribute</div>
-        <p><a href="${GH}/issues/new?template=submit-tool.yml">Suggest a tool</a><br><a href="leaderboard.html#how">How points work</a><br><a href="${GH}/blob/main/data">Edit the data</a></p></div>
+        <p><a href="newsletter.html">Weekly newsletter</a> · <a href="feed.xml">RSS</a><br><a href="${GH}/issues/new?template=submit-tool.yml">Suggest a tool</a><br><a href="leaderboard.html#how">How points work</a><br><a href="${GH}/blob/main/data">Edit the data</a></p></div>
       <div><div class="field-label">Project</div>
         <p><a href="${GH}">Source on GitHub</a><br><a href="${GH}/actions">Agent runs</a><br><span id="footUpdated"></span></p></div>
     </div>
@@ -131,6 +131,7 @@ async function searchIndex() {
     { t: "Add an MCP server to your app", sub: "Config generator", href: "mcp.html#setup", k: "guide", ic: "terminal" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
     { t: "Explain a GitHub repo for me", sub: "Repo Explainer", href: "explore.html", k: "guide", ic: "bot" },
+    { t: "Weekly newsletter", sub: "Subscribe or read past issues", href: "newsletter.html", k: "page", ic: "news" },
     { t: "Benchmarks: what each model is good at", sub: "Heatmap, rankings, price vs smarts", href: "models.html#bench", k: "guide", ic: "trend" },
     { t: "How to judge a GitHub repo", sub: "Guide", href: "github.html#judge", k: "guide", ic: "book" },
     ...(tasks || []).map((t) => ({ t: `I want to: ${t.label}`, sub: "Model picker", href: `models.html#task=${t.id}`, k: "task", ic: t.icon })),
@@ -265,7 +266,7 @@ const pages = {
   async github() {
     const [t, tools, g, b] = await Promise.all([load("trending"), load("tools"), load("github"), load("leaderboard")]);
     $("#trendGrid").innerHTML = (t?.items || []).map((x) => `<article class="card link">
-      <div class="head"><h3 class="mono" style="overflow-wrap:anywhere">${esc(x.repo)}</h3><span class="tag ok">new</span></div>
+      <div class="head"><h3 class="mono" style="overflow-wrap:anywhere">${esc(x.repo)}</h3><span class="tag ok">${esc((x.sources || ["new"])[0])}</span></div>
       <p>${esc(x.desc || "No description.")}</p>
       <div class="foot"><span class="stars">${icon("star")}${num(x.stars)}</span><span>${ago(x.created)}</span>${x.lang ? `<span>${esc(x.lang)}</span>` : ""}</div>
       <a class="cover" href="https://github.com/${esc(x.repo)}" target="_blank" rel="noopener" aria-label="${esc(x.repo)} on GitHub"></a></article>`).join("") || `<div class="empty">Trending list appears after the agent's first run.</div>`;
@@ -455,6 +456,30 @@ async function benchmarks(m) {
 
   $("#benchSources").innerHTML = `Checked ${esc(b.updated)}. Overall index: <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a> (highest-effort setting of each model). Other scores: each model's official launch post or model card, or the benchmark's own leaderboard; click any number for its source. Vendors test with their own setups, so small gaps (1–2 points) aren't meaningful.`;
 }
+
+pages.newsletter = async () => {
+  const [idx, site] = await Promise.all([load("newsletter"), load("site")]);
+  const issues = idx?.issues || [];
+  $("#subscribe").innerHTML = site?.buttondown
+    ? `<form class="row" action="https://buttondown.com/api/emails/embed-subscribe/${esc(site.buttondown)}" method="post" target="_blank" style="max-width:560px">
+        <label class="sr" for="nlEmail">Email address</label>
+        <input id="nlEmail" class="hero-search" style="height:48px;flex:1;min-width:220px" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
+        <button class="btn primary" type="submit">${icon("news")}Subscribe</button></form>
+       <p class="muted" style="font-size:.85rem;margin-top:.6rem">Free. One email on Mondays. Unsubscribe with one click. Or follow the <a href="feed.xml">RSS feed</a>.</p>`
+    : `<div class="row"><a class="btn primary" href="feed.xml">${icon("news")}Follow via RSS</a><span class="muted" style="font-size:.9rem">Email sign-up opens soon.</span></div>`;
+  $("#issues").innerHTML = issues.map((i) => `<a href="?issue=${esc(i.date)}" data-issue="${esc(i.date)}"><b>${esc(i.subject)}</b><small>${esc(new Date(i.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }))}</small></a>`).join("") || `<p class="muted">First issue lands on Monday.</p>`;
+  const show = async (date) => {
+    const x = date && (await load(`newsletter/${date}`));
+    if (!x) { $("#issue").innerHTML = `<div class="empty">No issue yet. The agent writes the first one on Monday morning.</div>`; return; }
+    $("#issue").innerHTML = `<p class="field-label">${esc(new Date(x.date).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", year: "numeric" }))}</p>
+      <h2>${esc(x.subject)}</h2><p class="lead">${esc(x.intro)}</p>
+      ${x.sections.map((sec) => `<h3 style="margin-top:2.2rem">${esc(sec.title)}</h3><div class="feed">${sec.items.map((i) => `<div class="card" style="padding:1rem 1.2rem">
+        <div class="head" style="margin-bottom:.3rem"><h3 style="font:600 1rem var(--sans);margin:0"><a href="${esc(i.url)}" style="color:inherit" target="_blank" rel="noopener">${esc(i.title)}</a></h3>${i.meta ? `<span class="tag">${esc(i.meta)}</span>` : ""}</div>
+        <p>${md(i.blurb)}</p></div>`).join("")}</div>`).join("")}`;
+    $$("#issues a").forEach((a) => a.setAttribute("aria-current", a.dataset.issue === x.date ? "true" : "false"));
+  };
+  show(new URLSearchParams(location.search).get("issue") || issues[0]?.date);
+};
 
 function renderCollections(el, tools, g, b) {
   el.innerHTML = tools.filter((x) => x.type === "collection").map((c) => `<article class="card link">

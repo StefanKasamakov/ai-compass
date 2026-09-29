@@ -69,18 +69,45 @@ async function githubStats(repos, withReleases) {
 }
 
 // ---------- 2. Trending new repos ----------
+// Candidates come from three places, then one AI call keeps only the AI-related ones:
+//   GitHub topic search (new repos), GitHub Trending (daily + weekly), and Show HN posts that link a repo.
+const TOPICS = ["mcp-server", "mcp", "claude-skills", "agent-skills", "claude-code", "codex", "ai-agents", "llm", "rag", "local-llm", "ai-coding", "llm-inference"];
+const AI_WORDS = /\b(ai|llm|gpt|claude|gemini|agent|mcp|rag|model|inference|prompt|embedding|codex|copilot|diffusion|whisper|tts|ollama)\b/i;
+const Relevance = z.object({ items: z.array(z.object({ repo: z.string(), relevant: z.boolean() })) });
+
 async function trending(tracked) {
   const since = day(daysAgo(30));
-  const queries = ["topic:mcp-server", "topic:mcp", "topic:claude-skills", "topic:agent-skills", "topic:claude-code", "topic:codex"];
-  const seen = new Map();
-  for (const q of queries) {
-    const res = await safe(q, () => gh(`search/repositories?q=${encodeURIComponent(`${q} created:>${since}`)}&sort=stars&order=desc&per_page=15`), { items: [] });
-    for (const r of res.items) {
-      if (tracked.has(r.full_name) || r.fork || r.stargazers_count < 20) continue;
-      seen.set(r.full_name, { repo: r.full_name, stars: r.stargazers_count, desc: r.description, created: r.created_at, topics: r.topics?.slice(0, 4) ?? [], lang: r.language });
-    }
+  const found = new Map();
+  const add = (r, source, extra = {}) => {
+    if (!r || tracked.has(r.full_name) || r.fork || r.archived) return;
+    const cur = found.get(r.full_name);
+    found.set(r.full_name, { repo: r.full_name, stars: r.stargazers_count, desc: r.description, created: r.created_at, topics: r.topics?.slice(0, 4) ?? [], lang: r.language, sources: [...new Set([...(cur?.sources ?? []), source])], ...cur?.extra, ...extra });
+  };
+  for (const t of TOPICS) {
+    const res = await safe(t, () => gh(`search/repositories?q=${encodeURIComponent(`topic:${t} created:>${since}`)}&sort=stars&order=desc&per_page=12`), { items: [] });
+    res.items.filter((r) => r.stargazers_count >= 40).forEach((r) => add(r, "new on GitHub"));
   }
-  return [...seen.values()].sort((a, b) => b.stars - a.stars).slice(0, 15);
+  for (const range of ["daily", "weekly"]) {
+    const html = await safe(`trending ${range}`, () => text(`https://github.com/trending?since=${range}`), "");
+    const names = [...new Set([...html.matchAll(/href="\/([\w.-]+\/[\w.-]+)\/stargazers"/g)].map((m) => m[1]))];
+    for (const n of names.filter((n) => !found.has(n) && !tracked.has(n))) add(await gh(`repos/${n}`).catch(() => null), `GitHub Trending (${range})`);
+  }
+  const hn = await safe("Show HN", async () => (await fetch(`https://hn.algolia.com/api/v1/search?tags=show_hn&numericFilters=${encodeURIComponent(`points>60,created_at_i>${Math.floor(daysAgo(10) / 1000)}`)}&hitsPerPage=60`)).json(), { hits: [] });
+  for (const h of hn.hits) {
+    const n = repoFrom(h.url || "");
+    if (!n || !/github\.com/.test(h.url || "")) continue;
+    add(await gh(`repos/${n}`).catch(() => null), "Show HN", { hn: { points: h.points, url: `https://news.ycombinator.com/item?id=${h.objectID}` } });
+  }
+
+  let items = [...found.values()];
+  const verdict = await safe("AI relevance", () => askJSON({
+    schema: Relevance,
+    system: "You filter GitHub repos for AI Compass, a guide to AI models, agents, MCP servers, skills, AI coding tools, local LLMs, RAG and AI media tools. relevant = true only if the repo's main purpose is AI/LLM tooling that such a reader would use or want to know about. General dev tools, games, dotfiles, tutorials, spam and link lists are not relevant.",
+    user: JSON.stringify(items.map(({ repo, desc, topics }) => ({ repo, desc, topics }))),
+  }), null);
+  items = verdict ? items.filter((i) => verdict.items.find((v) => v.repo === i.repo)?.relevant) : items.filter((i) => AI_WORDS.test(`${i.desc} ${i.topics.join(" ")}`));
+  const score = (i) => i.stars + (i.hn?.points ?? 0) * 5 + (i.sources.length - 1) * 500;
+  return items.sort((a, b) => score(b) - score(a)).slice(0, 20);
 }
 
 // ---------- 3. News ----------
@@ -89,6 +116,10 @@ const FEEDS = [
   { source: "Google", url: "https://blog.google/technology/ai/rss/" },
   { source: "DeepMind", url: "https://deepmind.google/blog/rss.xml" },
   { source: "Simon Willison", url: "https://simonwillison.net/atom/everything/", filter: true },
+  { source: "Hugging Face", url: "https://huggingface.co/blog/feed.xml" },
+  { source: "GitHub", url: "https://github.blog/changelog/feed/", filter: true },
+  { source: "Latent Space", url: "https://www.latent.space/feed" },
+  { source: "LangChain", url: "https://blog.langchain.com/rss/", filter: true },
 ];
 const RELEVANT = /claude|anthropic|gpt|openai|chatgpt|codex|gemini|mcp|model context protocol|agent|skill|llm|model/i;
 const decode = (s) => s.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#x?27;|&#39;|&apos;/g, "'").replace(/&#8217;/g, "’").replace(/&amp;/g, "&");

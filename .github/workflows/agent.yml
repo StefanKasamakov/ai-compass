@@ -4,7 +4,8 @@ name: agent
 on:
   schedule:
     - cron: "17 */6 * * *"   # data refresh (GitHub stats, trending, news, votes)
-    - cron: "41 4 * * *"     # daily model watch (Claude opens a PR if models changed)
+    - cron: "41 4 * * *"     # daily model watch (AI opens a PR if models changed)
+    - cron: "7 7 * * 1"      # Monday: weekly newsletter
   push:
     branches: [main]
   workflow_dispatch:
@@ -12,6 +13,10 @@ on:
       explain_limit:
         description: "Max repos to explain this run (raise for a one-off backfill)"
         default: "12"
+      newsletter:
+        description: "Also build this week's newsletter now"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -32,6 +37,7 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -42,11 +48,16 @@ jobs:
         run: node agent/update.mjs
         env: { CREATE_VOTE_ISSUES: "1", EXPLAIN_LIMIT: "${{ inputs.explain_limit || '12' }}" }
 
+      - name: Newsletter (Mondays, or on demand)
+        if: github.event.schedule == '7 7 * * 1' || inputs.newsletter
+        continue-on-error: true
+        run: node agent/newsletter.mjs
+
       - name: Commit data
         run: |
           git config user.name "ai-compass-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add data feed.xml 2>/dev/null || git add data
           git diff --cached --quiet || { git commit -m "agent: refresh data" && git push; }
 
       - name: Model watch (AI → pull request)
@@ -74,7 +85,7 @@ jobs:
       - uses: actions/checkout@v5
         with: { ref: main }
       - name: Build site folder
-        run: mkdir _site && cp -r *.html assets data _site/
+        run: mkdir _site && cp -r *.html assets data _site/ && (cp feed.xml _site/ 2>/dev/null || true)
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with: { path: _site }

@@ -304,3 +304,7 @@ a.bar-row { color: inherit; text-decoration: none; }
 .tip.on { opacity: 1; }
 .tip b { font-family: var(--mono); }
 @media (max-width: 600px) { .bar-row { grid-template-columns: 110px 1fr; } }
+
+.nl-layout { grid-template-columns: 260px minmax(0, 1fr); }
+@media (max-width: 860px) { .nl-layout { grid-template-columns: 1fr; } }
+.mini-feed a[aria-current="true"] b { color: var(--accent); }
