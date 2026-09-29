@@ -3,7 +3,8 @@
 //   2. Trending new repos (MCP servers, skills, Claude Code tools)
 //   3. News from official blogs + Hacker News, summarized by AI (GEMINI_API_KEY or ANTHROPIC_API_KEY)
 //   4. Repo explainer: plain-English "what is this repo for" for curated, trending and requested repos
-//   5. Votes (👍 on "Vote:" issues) -> tool leaderboard + people leaderboard
+//   5. Downloads: npm + PyPI installs in the last 30 days, for repos whose package verifiably points back to them
+//   6. Votes (👍 on "Vote:" issues) -> tool leaderboard + people leaderboard
 // Everything lands in data/*.json; the site reads those files.
 import fs from "node:fs/promises";
 import { z } from "zod";
@@ -197,7 +198,7 @@ async function news(stats, tools) {
 
 // ---------- 4. Repo explainer ----------
 const LEVELS = ["beginner", "intermediate", "advanced"];
-const MAX_EXPLAIN_PER_RUN = 12;
+const MAX_EXPLAIN_PER_RUN = +process.env.EXPLAIN_LIMIT || 12; // raise for a one-off backfill
 const SITE = `https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}`;
 const repoFrom = (text = "") => text.match(/github\.com\/([\w.-]+\/[\w.-]+)/)?.[1]?.replace(/\.git$/, "") ?? text.match(/\b([\w.-]+\/[\w.-]+)\b/)?.[1];
 
@@ -207,6 +208,7 @@ async function explainRepos(trendingItems) {
   const Explanation = z.object({
     cat: z.enum(categories.map((c) => c.id)), kind: z.string(), what: z.string(), why: z.string(),
     level: z.enum(LEVELS), start: z.string(), caution: z.string(), alts: z.array(z.string()),
+    packages: z.array(z.string()),
   });
 
   // what needs explaining: reader requests first, then curated seeds, then this month's trending repos
@@ -233,6 +235,7 @@ async function explainRepos(trendingItems) {
         "No marketing words. If the README makes big claims, present them as the project's claims and add an honest caution. " +
         "kind: 2-4 word label. what: one sentence. why: the problem it solves and when to reach for it (1-2 sentences). " +
         "start: the first command or step from the README, or empty. caution: privacy, maturity, complexity, license or maintenance caveat (pushed_at over 4 months ago = say so), or empty. " +
+        "packages: npm or PyPI package names the README tells people to install (e.g. from npx, npm i, pip install, uvx), or empty. " +
         "alts: up to 3 related repos as owner/name, preferring ones in this list: " + [...new Set([...seeds, ...Object.keys(known)])].join(" ") +
         "\nCategories: " + categories.map((c) => `${c.id} = ${c.name}: ${c.what}`).join(" | "),
       user: JSON.stringify({ repo: meta.full_name, description: meta.description, topics: meta.topics, license: meta.license?.spdx_id, pushed_at: meta.pushed_at, stars: meta.stargazers_count, readme }),
@@ -247,7 +250,66 @@ async function explainRepos(trendingItems) {
   return known;
 }
 
-// ---------- 5. Votes & leaderboard ----------
+// ---------- 5. Downloads ----------
+// A package only counts if its registry entry links back to the same GitHub repo (stops look-alike names).
+const ghRepoOf = (u) => String(u ?? "").match(/github\.com[/:]([\w.-]+\/[\w.-]+?)(?:\.git)?(?:[/#?]|$)/i)?.[1];
+const renamed = new Map();
+// true if any URL names this exact repo, following GitHub renames (e.g. ruvnet/claude-flow -> ruvnet/ruflo)
+async function pointsTo(repo, ...urls) {
+  for (const r of [...new Set(urls.flat().map(ghRepoOf).filter(Boolean))]) {
+    if (r.toLowerCase() === repo.toLowerCase()) return true;
+    if (!renamed.has(r)) renamed.set(r, await gh(`repos/${r}`).then((x) => x.full_name, () => r));
+    if (renamed.get(r).toLowerCase() === repo.toLowerCase()) return true;
+  }
+  return false;
+}
+const json = (url) => fetch(url, { headers: UA }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function findPackages(repo, hints = []) {
+  const file = (path) => gh(`repos/${repo}/contents/${path}`).then((r) => Buffer.from(r.content, "base64").toString("utf8")).catch(() => "");
+  const [pkg, pyproject, setup] = await Promise.all([file("package.json"), file("pyproject.toml"), file("setup.py")]);
+  const npmName = (() => { try { const j = JSON.parse(pkg); return j.private ? null : j.name; } catch { return null; } })();
+  const pyName = pyproject.match(/^\[project\][\s\S]*?^name\s*=\s*["']([^"']+)/m)?.[1] ?? setup.match(/name\s*=\s*["']([^"']+)/)?.[1];
+  const base = repo.split("/")[1].toLowerCase();
+  const clean = (n) => n?.trim().replace(/@latest$|\[.*\]$/g, "");
+  const npmCands = [...new Set([npmName, ...hints, base].map(clean).filter(Boolean))];
+  const pyCands = [...new Set([pyName, ...hints, base].map(clean).filter((n) => n && !n.startsWith("@")))];
+  const out = { npm: [], pypi: [] };
+  for (const n of npmCands) {
+    const j = await json(`https://registry.npmjs.org/${n.replace("/", "%2F")}`);
+    if (j && (await pointsTo(repo, j.repository?.url, j.homepage, j.bugs?.url))) out.npm.push(n);
+  }
+  for (const n of pyCands) {
+    const j = await json(`https://pypi.org/pypi/${n}/json`);
+    if (j && (await pointsTo(repo, j.info?.home_page, Object.values(j.info?.project_urls ?? {})))) out.pypi.push(n);
+  }
+  return out;
+}
+
+async function downloads(repos, explained) {
+  const known = await read("data/packages.json", {});
+  const out = {};
+  for (const repo of repos) {
+    if (!known[repo] || known[repo].at < day(daysAgo(30))) {
+      const e = explained[repo];
+      const fromStart = [...(e?.start ?? "").matchAll(/(?:npx(?: -y)?|npm (?:i|install)(?: -g)?|pnpm add|bun add|pip install(?: -U)?|uvx|pipx install)\s+([@\w./-]+)/g)].map((m) => m[1]);
+      known[repo] = { ...(await safe(`packages ${repo}`, () => findPackages(repo, [...(e?.packages ?? []), ...fromStart]), { npm: [], pypi: [] })), at: day(NOW) };
+    }
+    const { npm, pypi } = known[repo];
+    if (!npm.length && !pypi.length) continue;
+    // one package per registry (the biggest), so sub-packages of the same project aren't double-counted
+    const n = Math.max(0, ...(await Promise.all(npm.map((p) => json(`https://api.npmjs.org/downloads/point/last-month/${p}`).then((j) => j?.downloads ?? 0)))));
+    let py = 0;
+    for (const p of pypi) { py = Math.max(py, (await json(`https://pypistats.org/api/packages/${p.toLowerCase()}/recent`))?.data?.last_month ?? 0); await pause(250); }
+    if (n + py > 0) out[repo] = { npm: n, pypi: py, total: n + py, packages: [...npm.map((p) => `npm:${p}`), ...pypi.map((p) => `pypi:${p}`)] };
+  }
+  await write("data/packages.json", known);
+  console.log(`downloads: ${Object.keys(out).length} repos with npm/PyPI packages`);
+  return out;
+}
+
+// ---------- 6. Votes & leaderboard ----------
 async function ensureLabels() {
   const have = new Set((await ghAll(`repos/${REPO}/labels`)).map((l) => l.name));
   for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for AI Compass"], ["accepted", "a855f7", "Submission accepted: +10 points"], ["explain", "f59e0b", "Ask the agent to explain a repo: +2 points"]])
@@ -306,5 +368,6 @@ const trend = await trending(new Set(Object.keys(stats)));
 await write("data/trending.json", { updated, items: trend });
 await write("data/news.json", { updated, items: await news(stats, tools) });
 const explained = await explainRepos(trend);
+await write("data/downloads.json", { updated, window: "last 30 days", repos: await downloads([...new Set([...seeds, ...Object.keys(explained)])], explained) });
 await write("data/leaderboard.json", { updated, ...(await leaderboard(tools, explained)) });
 console.log(`done: ${Object.keys(stats).length} repos`);

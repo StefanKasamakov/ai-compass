@@ -12,6 +12,8 @@ const geminiSafe = (node) => {
   return out;
 };
 
+const GEMINI_MODELS = ["gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.5-flash"];
+
 export const provider = process.env.GEMINI_API_KEY ? "gemini" : process.env.ANTHROPIC_API_KEY ? "claude" : null;
 
 export async function askJSON({ system, user, schema, hard = false }) {
@@ -19,12 +21,23 @@ export async function askJSON({ system, user, schema, hard = false }) {
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({}); // reads GEMINI_API_KEY
     const { $schema, ...jsonSchema } = geminiSafe(z.toJSONSchema(schema));
-    const res = await ai.models.generateContent({
-      model: "gemini-3.8-flash",
-      contents: user,
-      config: { systemInstruction: system, responseMimeType: "application/json", responseJsonSchema: jsonSchema },
-    });
-    return schema.parse(JSON.parse(res.text));
+    // busy (503) or rate-limited (429): wait and retry, then fall back to the previous Flash models
+    let lastErr;
+    for (const model of GEMINI_MODELS) for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await ai.models.generateContent({
+          model,
+          contents: user,
+          config: { systemInstruction: system, responseMimeType: "application/json", responseJsonSchema: jsonSchema },
+        });
+        return schema.parse(JSON.parse(res.text));
+      } catch (e) {
+        lastErr = e;
+        if (![429, 500, 503].includes(e.status)) throw e;
+        await new Promise((r) => setTimeout(r, 2000 * 2 ** attempt));
+      }
+    }
+    throw lastErr;
   }
   if (provider === "claude") {
     const { default: Anthropic } = await import("@anthropic-ai/sdk");

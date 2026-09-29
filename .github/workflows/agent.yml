@@ -8,6 +8,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      explain_limit:
+        description: "Max repos to explain this run (raise for a one-off backfill)"
+        default: "12"
 
 permissions:
   contents: write
@@ -36,7 +40,7 @@ jobs:
 
       - name: Refresh data
         run: node agent/update.mjs
-        env: { CREATE_VOTE_ISSUES: "1" }
+        env: { CREATE_VOTE_ISSUES: "1", EXPLAIN_LIMIT: "${{ inputs.explain_limit || '12' }}" }
 
       - name: Commit data
         run: |

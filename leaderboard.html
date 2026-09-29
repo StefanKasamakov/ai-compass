@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=5">
+<link rel="stylesheet" href="assets/site.css?v=6">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="leaderboard">
@@ -16,12 +16,13 @@
   <header class="page-head"><div class="wrap">
     <div class="kicker">Leaderboard</div>
     <h1>What people actually use.</h1>
-    <p class="lead">Stars tell you what's popular to bookmark. Votes here tell you what people run every day. Vote with your GitHub account, suggest tools, climb the board.</p>
+    <p class="lead">Installs tell you what people actually run. Stars tell you what they bookmark. Votes tell you what they'd recommend. All three, refreshed by the agent every few hours.</p>
     <p class="mono muted" style="font-size:.82rem">updated <span id="boardUpdated"></span> · counts refresh every few hours</p>
   </div></header>
 
   <section><div class="wrap">
     <div class="chips" id="boardTabs" aria-label="Leaderboard"></div>
+    <p class="muted" id="boardNote" style="max-width:75ch;font-size:.92rem"></p>
     <div class="board" id="board" aria-live="polite"></div>
   </div></section>
 
@@ -43,6 +44,6 @@
     </ol>
   </div></section>
 </main>
-<script src="assets/site.js?v=5" defer></script>
+<script src="assets/site.js?v=6" defer></script>
 </body>
 </html>

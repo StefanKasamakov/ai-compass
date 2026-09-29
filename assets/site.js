@@ -272,7 +272,7 @@ const pages = {
     const clients = tools.filter((x) => x.type === "client");
     $("#clientGrid").innerHTML = clients.map((c) => { const s = g?.repos?.[c.repo]; return `<article class="card link">
       <div class="head"><h3>${esc(c.name)}</h3>${s?.release ? `<span class="tag ok">${esc(s.release.tag)}</span>` : ""}</div><p>${esc(c.d)}</p>
-      <div class="foot">${starLine(g, c.repo)}${s?.release ? `<span>released ${ago(s.release.date)}</span>` : s ? `<span>updated ${ago(s.pushed)}</span>` : ""}</div>
+      <div class="foot">${starLine(g, c.repo)}${s?.release ? `<span>released ${ago(s.release.date)}</span>` : s ? `${d ? `<span title="npm + PyPI installs, last 30 days">${icon("trend")}${num(d)}/mo</span>` : ""}<span>updated ${ago(s.pushed)}</span>` : ""}</div>
       <a class="cover" href="https://github.com/${c.repo}" target="_blank" rel="noopener" aria-label="${esc(c.name)} on GitHub"></a></article>`; }).join("");
   },
 
@@ -295,11 +295,21 @@ const pages = {
   },
 
   async leaderboard() {
-    const [b, tools, g] = await Promise.all([load("leaderboard"), load("tools"), load("github")]);
+    const [b, tools, g, repos, ex, dl] = await Promise.all([load("leaderboard"), load("tools"), load("github"), load("repos"), load("explain"), load("downloads")]);
+    const cats = Object.fromEntries((repos?.categories || []).map((c) => [c.id, c.name]));
+    const allRepos = [...new Set([...(repos?.repos || []), ...Object.keys(ex || {})])].filter((r) => g?.repos?.[r]);
+    const repoRow = (r, i, score, unit, extra = "") => { const e = ex?.[r]; return `<a class="card entry link" href="explore.html#${esc(r)}" style="text-decoration:none;color:inherit">
+        <span class="pos">${i + 1}</span><div class="who"><span class="dot" style="--c:var(--accent)"></span><div><b>${esc(r)}</b><small>${esc(e?.kind || g.repos[r].desc?.slice(0, 60) || "")}${e ? ` · ${esc(cats[e.cat] || "")}` : ""}${extra}</small></div></div>
+        <div class="score">${score}<small>${unit}</small></div></a>`; };
+    const topBy = (f) => allRepos.map((r) => [r, f(r)]).filter(([, v]) => v > 0).sort((a, c) => c[1] - a[1]).slice(0, 50);
     const byId = Object.fromEntries(tools.map((x) => [x.id, x]));
     $("#boardUpdated").textContent = b ? ago(b.updated) : "—";
     const TYPE = { mcp: "MCP server", skill: "Skill", collection: "Collection" };
     const views = {
+      downloads: () => Object.entries(dl?.repos || {}).sort((a, c) => c[1].total - a[1].total).slice(0, 50)
+        .map(([r, d], i) => repoRow(r, i, num(d.total), "installs / 30 days", ` · ${d.packages.map((p) => esc(p)).join(", ")}`)),
+      stars: () => topBy((r) => g.repos[r].stars).map(([r, v], i) => repoRow(r, i, num(v), "stars")),
+      rising: () => topBy((r) => g.repos[r].week ?? 0).map(([r, v], i) => repoRow(r, i, "+" + num(v), "stars this week", ` · ${num(g.repos[r].stars)} total`)),
       tools: () => (b?.tools || []).filter((x) => byId[x.id]).map((x, i) => { const t = byId[x.id]; return `<div class="card entry">
         <span class="pos">${i + 1}</span><div class="who"><span class="dot" style="--c:var(--accent)"></span><div><b>${esc(t.name)}</b><small>${TYPE[t.type]} · ${esc(t.by)} ${g?.repos?.[t.repo] ? `· ★ ${num(g.repos[t.repo].stars)}` : ""}</small></div></div>
         <div class="row"><div class="score">${x.votes}<small>votes</small></div><a class="btn sm" href="${GH}/issues/${x.issue}" target="_blank" rel="noopener">${icon("thumb")}Vote</a></div></div>`; }),
@@ -307,24 +317,31 @@ const pages = {
         <span class="pos">${i + 1}</span><div class="who"><img src="${esc(p.avatar)}&s=72" alt="" width="36" height="36" loading="lazy"><div><b>${esc(p.login)}</b><small>${p.votes} votes · ${p.submissions} tools added · ${p.requests || 0} explained · ${p.prs} PRs</small></div></div>
         <div class="score">${p.points}<small>points</small></div></div>`),
     };
-    chips($("#boardTabs"), [["tools", "Top tools", "trophy"], ["people", "Top people", "users"]], (v) => {
+    const note = {
+      downloads: `Real installs from npm and PyPI in the last 30 days (${esc(dl?.window || "")}). Only packages whose registry page links back to the repo are counted. Apps shipped as installers or Docker images (Ollama, ComfyUI…) aren't measurable this way, so they're missing here: see Most starred.`,
+      stars: "GitHub stars: a bookmark count. Good for popularity, easy to inflate.",
+      rising: "Stars gained in the last 7 days. The agent keeps daily snapshots, so this fills in after a week of runs.",
+      tools: "Community votes: 👍 on each tool's GitHub issue.", people: "Points for voting, suggesting tools, asking for explanations and fixing data.",
+    };
+    chips($("#boardTabs"), [["downloads", "Most downloaded", "trend"], ["stars", "Most starred", "star"], ["rising", "Rising this week", "zap"], ["tools", "Top tools (votes)", "trophy"], ["people", "Top people", "users"]], (v) => {
+      $("#boardNote").innerHTML = note[v];
       const rows = views[v]();
-      $("#board").innerHTML = rows.length ? rows.join("") : `<div class="empty">No ${v === "tools" ? "votes" : "players"} yet. Be the first: vote on a tool below and you'll appear here after the next agent run.</div>`;
-    }, location.hash === "#people" ? "people" : "tools");
+      $("#board").innerHTML = rows.length ? rows.join("") : `<div class="empty">${v === "tools" || v === "people" ? `No ${v === "tools" ? "votes" : "players"} yet. Be the first: vote on a tool below and you'll appear here after the next agent run.` : "The agent is still collecting this data. Check back after the next run."}</div>`;
+    }, ["people", "tools", "stars", "rising"].find((t) => location.hash === `#${t}`) || "downloads");
   },
 };
 
 pages.explore = async () => {
-  const [repos, ex, g] = await Promise.all([load("repos"), load("explain"), load("github")]);
+  const [repos, ex, g, dl] = await Promise.all([load("repos"), load("explain"), load("github"), load("downloads")]);
   const cats = Object.fromEntries(repos.categories.map((c) => [c.id, c]));
   const all = [...new Set([...repos.repos, ...Object.keys(ex || {})])].map((repo) => {
     const e = ex?.[repo], s = g?.repos?.[repo];
-    return { repo, e, s, cat: e?.cat, stars: s?.stars ?? 0, week: s?.week ?? 0 };
+    return { repo, e, s, cat: e?.cat, stars: s?.stars ?? 0, week: s?.week ?? 0, dl: dl?.repos?.[repo]?.total ?? 0 };
   });
   let cat = "all", sort = "stars";
   const q = $("#repoQ");
   const LV = { beginner: "ok", intermediate: "", advanced: "warn" };
-  const card = ({ repo, e, s }) => {
+  const card = ({ repo, e, s, dl: d }) => {
     const [owner, name] = repo.split("/");
     return `<article class="card" id="${esc(repo)}">
       <div class="head"><div style="min-width:0"><small class="mono muted">${esc(owner)} /</small><h3 class="mono" style="overflow-wrap:anywhere">${esc(name)}</h3></div>
@@ -342,13 +359,13 @@ pages.explore = async () => {
     const list = all
       .filter((r) => cat === "all" || r.cat === cat)
       .filter((r) => words.every((w) => `${r.repo} ${r.e?.kind} ${r.e?.what} ${r.e?.why} ${cats[r.cat]?.name} ${r.s?.desc}`.toLowerCase().includes(w)))
-      .sort((a, b) => (sort === "rising" ? b.week - a.week : b.stars - a.stars));
+      .sort((a, b) => (sort === "rising" ? b.week - a.week : sort === "dl" ? b.dl - a.dl : b.stars - a.stars));
     $("#catWhat").innerHTML = cat !== "all" ? `<div class="callout ok" style="margin-bottom:1.2rem">${icon(cats[cat].icon)}<div><b>${esc(cats[cat].name)}.</b> ${esc(cats[cat].what)}</div></div>` : "";
     $("#repoGrid").innerHTML = list.map(card).join("") || `<div class="empty">No repo matches. <a href="https://github.com/${REPO}/issues/new?template=explain-repo.yml">Ask the agent to explain it →</a></div>`;
   };
   const count = (id) => all.filter((r) => r.cat === id).length;
   chips($("#repoCats"), [["all", `All ${all.length}`], ...repos.categories.map((c) => [c.id, `${c.name} ${count(c.id)}`, c.icon])], (c) => { cat = c; draw(); }, "all", "filter");
-  chips($("#sortChips"), [["stars", "Most stars"], ["rising", "Rising this week", "trend"]], (v) => { sort = v; draw(); }, "stars", "filter");
+  chips($("#sortChips"), [["stars", "Most stars"], ["dl", "Most installs"], ["rising", "Rising this week", "trend"]], (v) => { sort = v; draw(); }, "stars", "filter");
   q.oninput = draw;
   const jump = (repo) => {
     q.value = repo; cat = "all";
