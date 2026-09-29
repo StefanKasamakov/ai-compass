@@ -1,4 +1,276 @@
 {
+ "ruvnet/ruflo": {
+  "repo": "ruvnet/ruflo",
+  "cat": "harness",
+  "kind": "Agent swarm harness",
+  "what": "Ruflo (formerly Claude Flow) is an add-on layer for Claude Code and Codex that installs many predefined agents, slash commands, hooks, a memory database and an MCP server so that several AI agents can work on a task as a coordinated 'swarm'.",
+  "why": "It aims to turn a single coding assistant into a team of specialised agents that plan, remember past sessions and hand work to each other. People reach for it when they want multi-agent orchestration inside Claude Code without building it themselves.",
+  "level": "advanced",
+  "start": "npx ruflo init (or, lighter: /plugin marketplace add ruvnet/ruflo in Claude Code)",
+  "caution": "Very large surface area: the README itself mentions 314 MCP tools, 35 plugins and ~100 agents, and the full install writes .claude/, .claude-flow/, CLAUDE.md, hooks and a background daemon into your project. Claims about 'self-learning' and 'swarm intelligence' are the project's own; start with a single plugin before the full install, and expect more token use when many agents run.",
+  "alts": [
+   "obra/superpowers",
+   "wshobson/agents",
+   "gsd-build/get-shit-done"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "diegosouzapw/OmniRoute": {
+  "repo": "diegosouzapw/OmniRoute",
+  "cat": "gateway",
+  "kind": "Free-tier AI gateway",
+  "what": "OmniRoute is a self-hosted gateway that gives coding tools one local OpenAI-compatible address (localhost:20128) and forwards requests to hundreds of AI providers, with a focus on combining free tiers and falling back automatically when one runs out.",
+  "why": "It is for people who want to keep Claude Code, Cursor, Cline or Codex running on free or cheap model quotas without juggling many API keys and rate limits by hand. It also adds prompt compression, a dashboard and quota tracking.",
+  "level": "intermediate",
+  "start": "npm install -g omniroute, then point your tool at http://localhost:20128/v1",
+  "caution": "The headline figures (350+ providers, ~1.6B free tokens/month, 15-95% token savings) are the project's own claims, and the README notes the free-tier numbers change as providers change their terms. Routing your code through many third-party free providers has privacy implications, and some providers' terms may not allow this kind of pooling; check what each provider does with your data.",
+  "alts": [
+   "musistudio/claude-code-router",
+   "BerriAI/litellm",
+   "Portkey-AI/gateway"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "BerriAI/litellm": {
+  "repo": "BerriAI/litellm",
+  "cat": "gateway",
+  "kind": "LLM gateway and SDK",
+  "what": "LiteLLM is a Python library and a self-hosted proxy server that lets you call 100+ AI model providers (OpenAI, Anthropic, Gemini, Bedrock, Azure and others) through one OpenAI-style interface.",
+  "why": "It removes the need to learn a different SDK and request format for every provider, and the proxy adds team features such as virtual API keys, spend tracking, load balancing and guardrails. Developers and platform teams use it when an app or an organisation needs to switch between or share many models.",
+  "level": "intermediate",
+  "start": "uv tool install 'litellm[proxy]' then litellm --model gpt-4o",
+  "caution": "Aimed at developers and ops teams, not end users. Most of the code is open source, but some features are under a separate LiteLLM commercial/enterprise license (GitHub shows the license as NOASSERTION), so check which features you need before relying on them.",
+  "alts": [
+   "Portkey-AI/gateway",
+   "musistudio/claude-code-router",
+   "diegosouzapw/OmniRoute"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "musistudio/claude-code-router": {
+  "repo": "musistudio/claude-code-router",
+  "cat": "gateway",
+  "kind": "Coding-agent model router",
+  "what": "Claude Code Router (CCR) is a desktop app and CLI that runs a local gateway so Claude Code, Codex, OpenCode and other coding agents can use models from providers you choose (DeepSeek, OpenRouter, Kimi, Gemini, etc.) through one local endpoint.",
+  "why": "It lets you keep your usual coding agent but swap or mix the model behind it, with retries, fallback models, key rotation and request/cost logs. People reach for it to use cheaper or different models inside Claude Code, or to manage several agents' model settings in one place.",
+  "level": "intermediate",
+  "start": "Download the desktop app from the Releases page, or: npm install -g @musistudio/claude-code-router && ccr ui",
+  "caution": "The project is sponsored by Kimi and the README includes affiliate links. Using Claude Code with non-Anthropic models can behave differently than with Claude, and you still pay the providers you route to.",
+  "alts": [
+   "diegosouzapw/OmniRoute",
+   "BerriAI/litellm",
+   "Portkey-AI/gateway"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Portkey-AI/gateway": {
+  "repo": "Portkey-AI/gateway",
+  "cat": "gateway",
+  "kind": "AI gateway with guardrails",
+  "what": "Portkey AI Gateway is an open-source server that routes requests from your app to many AI model providers through one OpenAI-compatible API, with retries, fallbacks, load balancing and configurable guardrails.",
+  "why": "Developers use it to make AI apps more reliable (automatic retries and fallbacks) and to enforce rules on inputs and outputs without writing that logic themselves. It also includes a local log console and an MCP gateway.",
+  "level": "intermediate",
+  "start": "npx @portkey-ai/gateway",
+  "caution": "Speed and scale figures (<1ms latency, 10B tokens/day) are the company's claims. Portkey is a commercial company; some features (org management, governance) are in the paid enterprise version, and the README says a 2.0 release is in pre-release on a separate branch, while the main branch was last pushed in May 2026.",
+  "alts": [
+   "BerriAI/litellm",
+   "diegosouzapw/OmniRoute",
+   "musistudio/claude-code-router"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "JuliusBrussee/caveman": {
+  "repo": "JuliusBrussee/caveman",
+  "cat": "tokens",
+  "kind": "Terse-output token saver",
+  "what": "Caveman is a skill (a rule file) that makes AI coding agents answer in very short 'caveman' sentences, plus an optional local proxy and middleware that shrink logs, test output and other text before the agent reads it.",
+  "why": "AI usage is billed per token, and agents often write long explanations and read large tool outputs. Caveman targets both sides to lower cost and reading time, while leaving code, commands and error messages unchanged.",
+  "level": "beginner",
+  "start": "npx skills add JuliusBrussee/caveman -g",
+  "caution": "The repo description's '65% of tokens' and the savings figures are the project's claims; its own README says it can cost more than it saves on short Q&A (the rule file adds ~1,000 input tokens per call) and does not help if you are billed per request. The skill is MIT, but the proxy runtime is under BSL-1.1 (not fully open source). Measure on your own workload.",
+  "alts": [
+   "headroomlabs-ai/headroom",
+   "DietrichGebert/ponytail",
+   "ccusage/ccusage"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "headroomlabs-ai/headroom": {
+  "repo": "headroomlabs-ai/headroom",
+  "cat": "tokens",
+  "kind": "Context compression proxy",
+  "what": "Headroom compresses what an AI agent reads (tool outputs, logs, JSON, files, retrieved documents) on your own machine before it is sent to the model, and is available as a Python/TypeScript library, a local proxy, an MCP server, or a one-command wrapper for coding agents.",
+  "why": "Long tool outputs fill the context window and cost money; Headroom shrinks them and keeps the originals locally so the model can fetch the full text when it needs it. People use it when agents work with large logs, search results or JSON.",
+  "level": "intermediate",
+  "start": "uv tool install --python 3.13 \"headroom-ai[all]\" then headroom wrap claude",
+  "caution": "Savings depend heavily on content: the README's own benchmarks show about 21-57% on realistic agent tasks and 90%+ only on very repetitive JSON/logs, with little gain on prose. 'headroom wrap' also installs the Serena MCP server at user scope, which stays until you run 'headroom unwrap'.",
+  "alts": [
+   "JuliusBrussee/caveman",
+   "ccusage/ccusage",
+   "diegosouzapw/OmniRoute"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "DietrichGebert/ponytail": {
+  "repo": "DietrichGebert/ponytail",
+  "cat": "harness",
+  "kind": "Minimal-code agent skill",
+  "what": "Ponytail is a skill/plugin for Claude Code, Codex, Copilot CLI and Cursor that tells the agent to write the least code that works: reuse existing code, the standard library or built-in platform features before adding new code or dependencies.",
+  "why": "AI agents tend to over-build (extra libraries, wrappers, boilerplate). Ponytail is for people who want smaller diffs that are easier to review, while keeping validation, error handling, security and accessibility.",
+  "level": "beginner",
+  "start": "In Claude Code: /plugin marketplace add DietrichGebert/ponytail, then /plugin install ponytail@ponytail (as two separate prompts)",
+  "caution": "The -54% code / -20% cost numbers come from the author's own benchmark (12 tasks, one model, n=4); the README notes earlier, larger numbers were partly a measurement artifact. It is a prompt instruction, so results vary by model and task, and the always-on hooks need Node.js on your PATH.",
+  "alts": [
+   "JuliusBrussee/caveman",
+   "addyosmani/agent-skills",
+   "obra/superpowers"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "ccusage/ccusage": {
+  "repo": "ccusage/ccusage",
+  "cat": "tokens",
+  "kind": "Usage and cost tracker",
+  "what": "ccusage is a command-line tool that reads the usage logs that coding agents store on your computer (Claude Code, Codex, Gemini CLI, OpenCode, Copilot CLI and others) and shows tokens and estimated cost by day, week, month or session.",
+  "why": "It answers 'how much am I actually using and what would it cost?' without sending anything to a service. It also shows Claude Code's 5-hour usage windows and can feed a status line.",
+  "level": "beginner",
+  "start": "npx ccusage@latest",
+  "caution": "Costs are estimates calculated from local logs and published prices, not your actual bill; on flat-rate subscriptions the dollar figure is what the usage would have cost at API prices.",
+  "alts": [
+   "headroomlabs-ai/headroom",
+   "JuliusBrussee/caveman",
+   "davila7/claude-code-templates"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "gsd-build/get-shit-done": {
+  "repo": "gsd-build/get-shit-done",
+  "cat": "harness",
+  "kind": "Spec-driven workflow system",
+  "what": "Get Shit Done (GSD) is a set of commands and agents that drive Claude Code and other coding agents through a fixed loop of discuss, plan, execute, verify and ship, one project phase at a time; this repository is archived and development continues as GSD Core in open-gsd/gsd-core.",
+  "why": "It targets 'context rot', where an agent's quality drops as a long session fills its context, by splitting work into planned phases that each run with a fresh context. People use it for multi-step projects where they want structure rather than one long chat.",
+  "level": "intermediate",
+  "start": "npx @opengsd/gsd-core@latest (the maintained successor), then /gsd-new-project",
+  "caution": "This repo is archived and read-only; use open-gsd/gsd-core for current code, issues and releases. The phase loop adds ceremony that may be overkill for small changes.",
+  "alts": [
+   "obra/superpowers",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "addyosmani/agent-skills"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "SuperClaude-Org/SuperClaude_Framework": {
+  "repo": "SuperClaude-Org/SuperClaude_Framework",
+  "cat": "harness",
+  "kind": "Claude Code command pack",
+  "what": "SuperClaude is a configuration framework that installs about 30 '/sc:' slash commands, 20 agent personas and behaviour modes into Claude Code, covering tasks like brainstorming, research, implementation, testing and project management.",
+  "why": "It gives Claude Code a ready-made set of structured workflows so you do not have to write your own prompts for common development steps. People reach for it when they want a menu of commands rather than free-form prompting.",
+  "level": "intermediate",
+  "start": "pipx install superclaude then superclaude install",
+  "caution": "Not affiliated with Anthropic. The '2-3x faster, 30-50% fewer tokens' figures for optional MCP servers are the project's claims without shown measurements. The README says a plugin-based v5 is in development with no ETA, so older docs describing plugin install do not apply yet.",
+  "alts": [
+   "obra/superpowers",
+   "wshobson/agents",
+   "gsd-build/get-shit-done"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "wshobson/agents": {
+  "repo": "wshobson/agents",
+  "cat": "harness",
+  "kind": "Agent plugin marketplace",
+  "what": "A large catalogue of installable plugins for Claude Code (also generated for Codex, Cursor, OpenCode, Copilot, Antigravity and Pi) containing about 200 specialist sub-agents, 184 skills and 105 slash commands across programming languages, infrastructure, security and more.",
+  "why": "Instead of writing your own specialist agents and commands, you install only the plugins you need (for example Python development), and only those load into the agent's context. It suits people who want domain-specific helpers on demand.",
+  "level": "intermediate",
+  "start": "In Claude Code: /plugin marketplace add wshobson/agents, then /plugin install python-development",
+  "caution": "Quality varies across so many components; the repo's own LLM-judge quality scoring is marked experimental. Some agents are configured for premium models (Opus, and an opt-in top tier), which can raise costs.",
+  "alts": [
+   "davila7/claude-code-templates",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "addyosmani/agent-skills"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "davila7/claude-code-templates": {
+  "repo": "davila7/claude-code-templates",
+  "cat": "harness",
+  "kind": "Config and template installer",
+  "what": "Claude Code Templates is a CLI (with a browsable website, aitmpl.com) that installs ready-made agents, slash commands, hooks, settings, MCP integrations and skills into Claude Code, and also includes usage analytics, a conversation monitor and a health check.",
+  "why": "It saves you from hand-writing Claude Code configuration: you pick components from a catalogue and install them with one command. It is useful when you want to try many community add-ons quickly or see what your Claude Code sessions are doing.",
+  "level": "beginner",
+  "start": "npx claude-code-templates@latest",
+  "caution": "Many components are collected from other repositories and third parties, each with its own license and quality; review agents, hooks and MCP servers before installing, since hooks run commands on your machine. The '--chats --tunnel' option exposes your conversations remotely through Cloudflare, so use it carefully.",
+  "alts": [
+   "wshobson/agents",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "ccusage/ccusage"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "obra/superpowers": {
+  "repo": "obra/superpowers",
+  "cat": "harness",
+  "kind": "Development methodology skills",
+  "what": "Superpowers is a set of skills for coding agents (Claude Code, Codex, Cursor, Gemini CLI and many others) that makes the agent follow a fixed method: brainstorm and agree a design with you, write a detailed plan, then implement it with test-driven development and sub-agents that review each task.",
+  "why": "It stops the agent from jumping straight into code and makes it clarify what you want and plan first, which helps on larger features. The skills trigger automatically, so you use your agent as usual.",
+  "level": "beginner",
+  "start": "In Claude Code: /plugin install superpowers@claude-plugins-official",
+  "caution": "The structured process (questions, design docs, plans, TDD, sub-agents) takes more time and tokens than a direct request and can feel heavy for small fixes. The README mentions long autonomous runs; keep an eye on usage.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "gsd-build/get-shit-done",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "NousResearch/hermes-agent": {
+  "repo": "NousResearch/hermes-agent",
+  "cat": "coding",
+  "kind": "Self-improving personal agent",
+  "what": "Hermes Agent is a general-purpose AI agent from Nous Research that runs in your terminal (and can connect to chat apps like Telegram or Discord), works with many model providers, and saves reusable skills and memories from past conversations.",
+  "why": "It is for people who want one personal assistant agent that remembers across sessions and gets tools like web search, browsing and messaging, without being tied to a single model vendor. You can switch models with one command.",
+  "level": "intermediate",
+  "start": "curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash (Windows: iex (irm https://hermes-agent.nousresearch.com/install.ps1)), then run hermes",
+  "caution": "The README's claim that it is 'the only agent with a built-in learning loop' is the project's own. The installer pulls in Python, Node.js and other tools, and the README notes some antivirus tools flag its bundled uv.exe as a false positive. It keeps memory of your conversations locally and gets broad tool access, so review what you enable; the optional Nous Portal is a paid subscription.",
+  "alts": [
+   "anthropics/claude-code",
+   "aaif-goose/goose",
+   "OpenHands/OpenHands"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "addyosmani/agent-skills": {
+  "repo": "addyosmani/agent-skills",
+  "cat": "harness",
+  "kind": "Engineering workflow skills",
+  "what": "Agent Skills is a collection of 25 skills and 9 slash commands (/spec, /plan, /build, /test, /review, /ship and others) that package common senior-engineer practices for AI coding agents such as Claude Code, Cursor, Codex and Gemini CLI.",
+  "why": "It makes an agent follow a consistent process across the whole development cycle: writing a spec first, small tasks, tests, code review and a pre-launch checklist. People use it to get more disciplined output from an agent without writing these instructions themselves.",
+  "level": "beginner",
+  "start": "npx skills add addyosmani/agent-skills",
+  "caution": "Skills are plain Markdown instructions, so how closely they are followed depends on the agent and model. The README notes that installing a single skill leaves out shared reference checklists, and that the Claude Code marketplace install can fail without GitHub SSH keys (an HTTPS workaround is given).",
+  "alts": [
+   "obra/superpowers",
+   "gsd-build/get-shit-done",
+   "wshobson/agents"
+  ],
+  "at": "2026-09-29",
+  "source": "curated"
+ },
  "anthropics/claude-code": {
   "repo": "anthropics/claude-code",
   "cat": "coding",
