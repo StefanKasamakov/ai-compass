@@ -1,48 +1,1141 @@
 [
- { "id": "claude-code", "type": "client", "name": "Claude Code", "repo": "anthropics/claude-code", "by": "Anthropic", "official": true, "d": "Anthropic's coding agent for the terminal and IDE." },
- { "id": "codex", "type": "client", "name": "Codex CLI", "repo": "openai/codex", "by": "OpenAI", "official": true, "d": "OpenAI's coding agent for the terminal." },
- { "id": "gemini-cli", "type": "client", "name": "Gemini CLI", "repo": "google-gemini/gemini-cli", "by": "Google", "official": true, "d": "Google's open-source agent for the terminal." },
- { "id": "mcp-spec", "type": "client", "name": "MCP specification", "repo": "modelcontextprotocol/modelcontextprotocol", "by": "MCP", "official": true, "d": "The protocol itself." },
-
- { "id": "playwright-mcp", "type": "mcp", "name": "Playwright", "repo": "microsoft/playwright-mcp", "by": "Microsoft", "official": true, "cat": "Browser", "d": "Lets the AI drive a real browser: click, type, read pages, take screenshots.", "stdio": ["npx", "@playwright/mcp@latest"] },
- { "id": "chrome-devtools-mcp", "type": "mcp", "name": "Chrome DevTools", "repo": "ChromeDevTools/chrome-devtools-mcp", "by": "Google Chrome", "official": true, "cat": "Browser", "d": "Debug a live Chrome: console, network, performance traces.", "stdio": ["npx", "-y", "chrome-devtools-mcp@latest"] },
- { "id": "context7", "type": "mcp", "name": "Context7", "repo": "upstash/context7", "by": "Upstash", "official": true, "cat": "Docs", "d": "Feeds up-to-date library docs to the AI so it stops using outdated APIs.", "remote": "https://mcp.context7.com/mcp" },
- { "id": "github-mcp", "type": "mcp", "name": "GitHub", "repo": "github/github-mcp-server", "by": "GitHub", "official": true, "cat": "Dev", "d": "Read and manage repos, issues, pull requests and Actions.", "remote": "https://api.githubcopilot.com/mcp/", "auth": "GitHub login (OAuth) or a personal access token" },
- { "id": "notion-mcp", "type": "mcp", "name": "Notion", "repo": "makenotion/notion-mcp-server", "by": "Notion", "official": true, "cat": "Productivity", "d": "Search, read and write your Notion workspace.", "remote": "https://mcp.notion.com/mcp", "auth": "Notion login (OAuth)" },
- { "id": "supabase-mcp", "type": "mcp", "name": "Supabase", "repo": "supabase/mcp", "by": "Supabase", "official": true, "cat": "Data", "d": "Query and manage your Supabase database, tables and migrations.", "remote": "https://mcp.supabase.com/mcp", "auth": "Supabase login (OAuth)" },
- { "id": "sentry-mcp", "type": "mcp", "name": "Sentry", "repo": "getsentry/sentry-mcp", "by": "Sentry", "official": true, "cat": "Dev", "d": "Pull real production errors into the AI and fix them.", "remote": "https://mcp.sentry.dev/mcp", "auth": "Sentry login (OAuth)" },
- { "id": "exa-mcp", "type": "mcp", "name": "Exa Search", "repo": "exa-labs/exa-mcp-server", "by": "Exa", "official": true, "cat": "Web", "d": "Web search built for AI agents.", "remote": "https://mcp.exa.ai/mcp" },
- { "id": "firecrawl-mcp", "type": "mcp", "name": "Firecrawl", "repo": "firecrawl/firecrawl-mcp-server", "by": "Firecrawl", "official": true, "cat": "Web", "d": "Scrape and crawl websites into clean text.", "stdio": ["npx", "-y", "firecrawl-mcp"], "env": { "FIRECRAWL_API_KEY": "your-key" } },
- { "id": "figma-context-mcp", "type": "mcp", "name": "Figma (Framelink)", "repo": "GLips/Figma-Context-MCP", "by": "Framelink", "official": false, "cat": "Design", "d": "Give the AI your Figma layouts so it can build them in code.", "stdio": ["npx", "-y", "figma-developer-mcp", "--figma-api-key=YOUR-KEY", "--stdio"] },
- { "id": "filesystem-mcp", "type": "mcp", "name": "Filesystem", "repo": "modelcontextprotocol/servers", "by": "MCP team", "official": true, "cat": "Local", "d": "Read and write files in folders you allow. Great first server to try.", "stdio": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/path/to/folder"] },
- { "id": "memory-mcp", "type": "mcp", "name": "Memory", "repo": "modelcontextprotocol/servers", "by": "MCP team", "official": true, "cat": "Local", "d": "A simple knowledge graph so the AI remembers facts between chats.", "stdio": ["npx", "-y", "@modelcontextprotocol/server-memory"] },
-
- { "id": "docx", "type": "skill", "name": "docx", "repo": "anthropics/skills", "path": "skills/docx", "by": "Anthropic", "official": true, "cat": "Documents", "plat": "claude", "d": "Create and edit Word documents with formatting, tables and comments." },
- { "id": "xlsx", "type": "skill", "name": "xlsx", "repo": "anthropics/skills", "path": "skills/xlsx", "by": "Anthropic", "official": true, "cat": "Documents", "plat": "claude", "d": "Excel: formulas, tables, charts, data analysis." },
- { "id": "pptx", "type": "skill", "name": "pptx", "repo": "anthropics/skills", "path": "skills/pptx", "by": "Anthropic", "official": true, "cat": "Documents", "plat": "claude", "d": "PowerPoint decks from scratch or from a template." },
- { "id": "pdf", "type": "skill", "name": "pdf", "repo": "anthropics/skills", "path": "skills/pdf", "by": "Anthropic", "official": true, "cat": "Documents", "plat": "claude", "d": "Read, fill forms, merge and split PDFs." },
- { "id": "doc-coauthoring", "type": "skill", "name": "doc-coauthoring", "repo": "anthropics/skills", "path": "skills/doc-coauthoring", "by": "Anthropic", "official": true, "cat": "Documents", "plat": "claude", "d": "Write a document together with you, section by section." },
- { "id": "frontend-design", "type": "skill", "name": "frontend-design", "repo": "anthropics/skills", "path": "skills/frontend-design", "by": "Anthropic", "official": true, "cat": "Design", "plat": "claude", "d": "Sites and UIs that don't look like generic AI output." },
- { "id": "canvas-design", "type": "skill", "name": "canvas-design", "repo": "anthropics/skills", "path": "skills/canvas-design", "by": "Anthropic", "official": true, "cat": "Design", "plat": "claude", "d": "Posters and visual pieces as PNG/PDF." },
- { "id": "theme-factory", "type": "skill", "name": "theme-factory", "repo": "anthropics/skills", "path": "skills/theme-factory", "by": "Anthropic", "official": true, "cat": "Design", "plat": "claude", "d": "Ready-made color and font themes for docs and slides." },
- { "id": "brand-guidelines", "type": "skill", "name": "brand-guidelines", "repo": "anthropics/skills", "path": "skills/brand-guidelines", "by": "Anthropic", "official": true, "cat": "Design", "plat": "claude", "d": "Applies brand colors and fonts. A template for your own brand." },
- { "id": "web-artifacts-builder", "type": "skill", "name": "web-artifacts-builder", "repo": "anthropics/skills", "path": "skills/web-artifacts-builder", "by": "Anthropic", "official": true, "cat": "Dev", "plat": "claude", "d": "Richer web apps (React, Tailwind) bundled into one HTML file." },
- { "id": "webapp-testing", "type": "skill", "name": "webapp-testing", "repo": "anthropics/skills", "path": "skills/webapp-testing", "by": "Anthropic", "official": true, "cat": "Dev", "plat": "claude", "d": "Tests a web app in a real browser with Playwright." },
- { "id": "mcp-builder", "type": "skill", "name": "mcp-builder", "repo": "anthropics/skills", "path": "skills/mcp-builder", "by": "Anthropic", "official": true, "cat": "Dev", "plat": "claude", "d": "Builds MCP servers that connect AI to your own systems." },
- { "id": "skill-creator", "type": "skill", "name": "skill-creator", "repo": "anthropics/skills", "path": "skills/skill-creator", "by": "Anthropic", "official": true, "cat": "Meta", "plat": "any", "d": "A skill that makes skills. Start here for your own." },
- { "id": "ui-ux-pro-max", "type": "skill", "name": "UI UX Pro Max", "repo": "nextlevelbuilder/ui-ux-pro-max-skill", "by": "NextLevelBuilder", "official": false, "cat": "Design", "plat": "any", "d": "Design intelligence: styles, palettes, font pairings, UX rules. This site was designed with it." },
- { "id": "openai-playwright", "type": "skill", "name": "playwright", "repo": "openai/skills", "path": "skills/.curated/playwright", "by": "OpenAI", "official": true, "cat": "Dev", "plat": "codex", "d": "Automates a browser: click, fill, screenshot." },
- { "id": "gh-fix-ci", "type": "skill", "name": "gh-fix-ci", "repo": "openai/skills", "path": "skills/.curated/gh-fix-ci", "by": "OpenAI", "official": true, "cat": "Dev", "plat": "codex", "d": "Finds and fixes failing GitHub Actions checks." },
- { "id": "security-threat-model", "type": "skill", "name": "security-threat-model", "repo": "openai/skills", "path": "skills/.curated/security-threat-model", "by": "OpenAI", "official": true, "cat": "Security", "plat": "codex", "d": "Builds a threat model for your project." },
- { "id": "vercel-deploy", "type": "skill", "name": "vercel-deploy", "repo": "openai/skills", "path": "skills/.curated/vercel-deploy", "by": "OpenAI", "official": true, "cat": "Dev", "plat": "codex", "d": "Ships your site online in one step (Netlify and Cloudflare versions too)." },
-
- { "id": "superpowers", "type": "collection", "name": "Superpowers", "repo": "obra/superpowers", "by": "Jesse Vincent", "official": false, "cat": "Method", "d": "The most-starred skills pack: brainstorm, plan, TDD, debug. Makes the agent work like a senior engineer." },
- { "id": "agent-skills", "type": "collection", "name": "Agent Skills", "repo": "addyosmani/agent-skills", "by": "Addy Osmani", "official": false, "cat": "Method", "d": "Production engineering habits: spec, plan, test, review, ship." },
- { "id": "anthropic-skills", "type": "collection", "name": "anthropics/skills", "repo": "anthropics/skills", "by": "Anthropic", "official": true, "cat": "Official", "d": "Anthropic's official skills repo and plugin marketplace." },
- { "id": "claude-plugins-official", "type": "collection", "name": "Claude plugins (official)", "repo": "anthropics/claude-plugins-official", "by": "Anthropic", "official": true, "cat": "Official", "d": "The official Claude Code plugin marketplace." },
- { "id": "openai-plugins", "type": "collection", "name": "openai/plugins", "repo": "openai/plugins", "by": "OpenAI", "official": true, "cat": "Official", "d": "Where OpenAI's Codex skills live now (openai/skills is deprecated)." },
- { "id": "mcp-servers", "type": "collection", "name": "MCP reference servers", "repo": "modelcontextprotocol/servers", "by": "MCP team", "official": true, "cat": "Official", "d": "Reference MCP servers from the protocol maintainers." },
- { "id": "awesome-mcp", "type": "collection", "name": "awesome-mcp-servers", "repo": "punkpeye/awesome-mcp-servers", "by": "community", "official": false, "cat": "List", "d": "The biggest curated list of MCP servers." },
- { "id": "awesome-claude-code", "type": "collection", "name": "awesome-claude-code", "repo": "hesreallyhim/awesome-claude-code", "by": "community", "official": false, "cat": "List", "d": "Curated Claude Code skills, hooks, commands and workflows." },
- { "id": "awesome-claude-skills", "type": "collection", "name": "awesome-claude-skills", "repo": "ComposioHQ/awesome-claude-skills", "by": "Composio", "official": false, "cat": "List", "d": "Curated list of Claude skills and resources." }
+ {
+  "id": "claude-code",
+  "type": "client",
+  "name": "Claude Code",
+  "repo": "anthropics/claude-code",
+  "by": "Anthropic",
+  "official": true,
+  "d": "Anthropic's coding agent for the terminal and IDE."
+ },
+ {
+  "id": "codex",
+  "type": "client",
+  "name": "Codex CLI",
+  "repo": "openai/codex",
+  "by": "OpenAI",
+  "official": true,
+  "d": "OpenAI's coding agent for the terminal."
+ },
+ {
+  "id": "gemini-cli",
+  "type": "client",
+  "name": "Gemini CLI",
+  "repo": "google-gemini/gemini-cli",
+  "by": "Google",
+  "official": true,
+  "d": "Google's open-source agent for the terminal."
+ },
+ {
+  "id": "mcp-spec",
+  "type": "client",
+  "name": "MCP specification",
+  "repo": "modelcontextprotocol/modelcontextprotocol",
+  "by": "MCP",
+  "official": true,
+  "d": "The protocol itself."
+ },
+ {
+  "id": "playwright-mcp",
+  "type": "mcp",
+  "name": "Playwright",
+  "repo": "microsoft/playwright-mcp",
+  "by": "Microsoft",
+  "official": true,
+  "cat": "Browser",
+  "d": "Lets the AI drive a real browser: click, type, read pages, take screenshots.",
+  "stdio": [
+   "npx",
+   "@playwright/mcp@latest"
+  ],
+  "plain": "Lets your AI open websites, click buttons, fill forms and take screenshots for you.",
+  "tags": [
+   "connect",
+   "automate",
+   "research"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Check a web page and grab a screenshot",
+   "Fill out the same online form many times",
+   "Collect prices or details from several sites"
+  ],
+  "steps": [
+   "Install Node.js from nodejs.org if it is not on your computer yet.",
+   "Open the MCP setup page on this site, pick your app, and copy the config.",
+   "Restart your app so it loads the new server.",
+   "Ask in plain words, for example: open example.com and take a screenshot."
+  ]
+ },
+ {
+  "id": "chrome-devtools-mcp",
+  "type": "mcp",
+  "name": "Chrome DevTools",
+  "repo": "ChromeDevTools/chrome-devtools-mcp",
+  "by": "Google Chrome",
+  "official": true,
+  "cat": "Browser",
+  "d": "Debug a live Chrome: console, network, performance traces.",
+  "stdio": [
+   "npx",
+   "-y",
+   "chrome-devtools-mcp@latest"
+  ],
+  "plain": "Lets your AI look inside a Chrome page to find why it is slow or broken.",
+  "tags": [
+   "code",
+   "apps",
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Find the error behind a broken web page",
+   "See why a page loads slowly",
+   "Check which requests a page sends and receives"
+  ],
+  "steps": [
+   "Install Node.js from nodejs.org if it is not on your computer yet. You also need Google Chrome.",
+   "Open the MCP setup page on this site, pick your app, and copy the config.",
+   "Restart your app so it loads the new server.",
+   "Ask, for example: open my site in Chrome and tell me why it loads slowly."
+  ]
+ },
+ {
+  "id": "context7",
+  "type": "mcp",
+  "name": "Context7",
+  "repo": "upstash/context7",
+  "by": "Upstash",
+  "official": true,
+  "cat": "Docs",
+  "d": "Feeds up-to-date library docs to the AI so it stops using outdated APIs.",
+  "remote": "https://mcp.context7.com/mcp",
+  "plain": "Gives your AI the latest instructions for software tools so its code examples are current.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Get code that matches the newest version of a tool",
+   "Ask how a feature works in a specific library",
+   "Avoid fixes that rely on outdated instructions"
+  ],
+  "steps": [
+   "In claude.ai go to Customize > Connectors > Add custom connector and paste https://mcp.context7.com/mcp",
+   "In Claude Code run: claude mcp add --transport http context7 https://mcp.context7.com/mcp",
+   "Mention the tool you use, for example: using Context7, show how to set up Next.js routing."
+  ]
+ },
+ {
+  "id": "github-mcp",
+  "type": "mcp",
+  "name": "GitHub",
+  "repo": "github/github-mcp-server",
+  "by": "GitHub",
+  "official": true,
+  "cat": "Dev",
+  "d": "Read and manage repos, issues, pull requests and Actions.",
+  "remote": "https://api.githubcopilot.com/mcp/",
+  "auth": "GitHub login (OAuth) or a personal access token",
+  "plain": "Lets your AI read and manage your GitHub projects, issues and pull requests.",
+  "tags": [
+   "connect",
+   "code"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Summarize open issues in a project",
+   "Create an issue from a bug description",
+   "Review what changed in a pull request"
+  ],
+  "steps": [
+   "In claude.ai go to Customize > Connectors > Add custom connector and paste https://api.githubcopilot.com/mcp/",
+   "In Claude Code run: claude mcp add --transport http github https://api.githubcopilot.com/mcp/",
+   "Sign in with GitHub when asked, or use a personal access token if your app requires one.",
+   "Ask, for example: list the open issues in my repo and group them by topic."
+  ]
+ },
+ {
+  "id": "notion-mcp",
+  "type": "mcp",
+  "name": "Notion",
+  "repo": "makenotion/notion-mcp-server",
+  "by": "Notion",
+  "official": true,
+  "cat": "Productivity",
+  "d": "Search, read and write your Notion workspace.",
+  "remote": "https://mcp.notion.com/mcp",
+  "auth": "Notion login (OAuth)",
+  "plain": "Lets your AI search, read and write pages in your Notion workspace.",
+  "tags": [
+   "connect",
+   "knowledge",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Find a note or page without digging through Notion",
+   "Turn meeting notes into a new Notion page",
+   "Update a task list or database in Notion"
+  ],
+  "steps": [
+   "In claude.ai go to Customize > Connectors > Add custom connector and paste https://mcp.notion.com/mcp",
+   "In Claude Code run: claude mcp add --transport http notion https://mcp.notion.com/mcp",
+   "Sign in to your account when the app asks, and allow access.",
+   "Ask, for example: find my notes from last week's planning meeting and summarize them."
+  ]
+ },
+ {
+  "id": "supabase-mcp",
+  "type": "mcp",
+  "name": "Supabase",
+  "repo": "supabase/mcp",
+  "by": "Supabase",
+  "official": true,
+  "cat": "Data",
+  "d": "Query and manage your Supabase database, tables and migrations.",
+  "remote": "https://mcp.supabase.com/mcp",
+  "auth": "Supabase login (OAuth)",
+  "plain": "Lets your AI look at and change your Supabase database for you.",
+  "tags": [
+   "connect",
+   "apps"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Ask questions about the data in your tables",
+   "Create or change a table for your app",
+   "Check what changes were made to your database"
+  ],
+  "steps": [
+   "In claude.ai go to Customize > Connectors > Add custom connector and paste https://mcp.supabase.com/mcp",
+   "In Claude Code run: claude mcp add --transport http supabase https://mcp.supabase.com/mcp",
+   "Sign in to your account when the app asks, and allow access.",
+   "Ask, for example: how many users signed up last week?"
+  ]
+ },
+ {
+  "id": "sentry-mcp",
+  "type": "mcp",
+  "name": "Sentry",
+  "repo": "getsentry/sentry-mcp",
+  "by": "Sentry",
+  "official": true,
+  "cat": "Dev",
+  "d": "Pull real production errors into the AI and fix them.",
+  "remote": "https://mcp.sentry.dev/mcp",
+  "auth": "Sentry login (OAuth)",
+  "plain": "Lets your AI read the real errors your live app reports to Sentry and help fix them.",
+  "tags": [
+   "connect",
+   "code",
+   "monitor"
+  ],
+  "level": "easy",
+  "useFor": [
+   "List the most common errors in your app this week",
+   "Get an explanation of one error in plain words",
+   "Find the code behind an error and suggest a fix"
+  ],
+  "steps": [
+   "In claude.ai go to Customize > Connectors > Add custom connector and paste https://mcp.sentry.dev/mcp",
+   "In Claude Code run: claude mcp add --transport http sentry https://mcp.sentry.dev/mcp",
+   "Sign in to your account when the app asks, and allow access.",
+   "Ask, for example: what are the top errors in my project today?"
+  ]
+ },
+ {
+  "id": "exa-mcp",
+  "type": "mcp",
+  "name": "Exa Search",
+  "repo": "exa-labs/exa-mcp-server",
+  "by": "Exa",
+  "official": true,
+  "cat": "Web",
+  "d": "Web search built for AI agents.",
+  "remote": "https://mcp.exa.ai/mcp",
+  "plain": "Gives your AI a web search tool so it can find current pages and facts.",
+  "tags": [
+   "research",
+   "connect"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Find recent articles on a topic",
+   "Look up companies or people for background research",
+   "Collect sources with links for a report"
+  ],
+  "steps": [
+   "In claude.ai go to Customize > Connectors > Add custom connector and paste https://mcp.exa.ai/mcp",
+   "In Claude Code run: claude mcp add --transport http exa https://mcp.exa.ai/mcp",
+   "Ask, for example: search the web for recent news about electric bikes and list sources."
+  ]
+ },
+ {
+  "id": "firecrawl-mcp",
+  "type": "mcp",
+  "name": "Firecrawl",
+  "repo": "firecrawl/firecrawl-mcp-server",
+  "by": "Firecrawl",
+  "official": true,
+  "cat": "Web",
+  "d": "Scrape and crawl websites into clean text.",
+  "stdio": [
+   "npx",
+   "-y",
+   "firecrawl-mcp"
+  ],
+  "env": {
+   "FIRECRAWL_API_KEY": "your-key"
+  },
+  "plain": "Lets your AI read whole websites and turn their pages into clean text.",
+  "tags": [
+   "research",
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Pull the text of a long article without ads",
+   "Collect every page of a small website",
+   "Gather product details from several pages at once"
+  ],
+  "steps": [
+   "Create a Firecrawl account and copy your API key.",
+   "Install Node.js from nodejs.org if it is not on your computer yet.",
+   "Open the MCP setup page on this site, pick your app, and copy the config. Paste your key where it says FIRECRAWL_API_KEY.",
+   "Restart your app, then ask, for example: read example.com and summarize every page."
+  ]
+ },
+ {
+  "id": "figma-context-mcp",
+  "type": "mcp",
+  "name": "Figma (Framelink)",
+  "repo": "GLips/Figma-Context-MCP",
+  "by": "Framelink",
+  "official": false,
+  "cat": "Design",
+  "d": "Give the AI your Figma layouts so it can build them in code.",
+  "stdio": [
+   "npx",
+   "-y",
+   "figma-developer-mcp",
+   "--figma-api-key=YOUR-KEY",
+   "--stdio"
+  ],
+  "plain": "Lets your AI see your Figma designs so it can turn them into a working page.",
+  "tags": [
+   "apps",
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Turn a Figma screen into a web page",
+   "Match colors and spacing exactly to your design",
+   "Ask questions about a layout's structure"
+  ],
+  "steps": [
+   "In Figma, create a personal access token and copy it.",
+   "Install Node.js from nodejs.org if it is not on your computer yet.",
+   "Open the MCP setup page on this site, pick your app, and copy the config. Paste your token where it says YOUR-KEY.",
+   "Restart your app, paste a Figma link, and ask it to build that screen."
+  ]
+ },
+ {
+  "id": "filesystem-mcp",
+  "type": "mcp",
+  "name": "Filesystem",
+  "repo": "modelcontextprotocol/servers",
+  "by": "MCP team",
+  "official": true,
+  "cat": "Local",
+  "d": "Read and write files in folders you allow. Great first server to try.",
+  "stdio": [
+   "npx",
+   "-y",
+   "@modelcontextprotocol/server-filesystem",
+   "/path/to/folder"
+  ],
+  "plain": "Lets your AI read and save files in folders on your computer that you choose.",
+  "tags": [
+   "knowledge",
+   "connect",
+   "private"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Summarize every document in a folder",
+   "Rename or sort files by a rule you describe",
+   "Search your notes for a specific topic"
+  ],
+  "steps": [
+   "Install Node.js from nodejs.org if it is not on your computer yet.",
+   "Open the MCP setup page on this site, pick your app, and copy the config. Put your folder in place of /path/to/folder.",
+   "Restart your app so it loads the new server.",
+   "Ask, for example: list the files in my folder and summarize the newest one."
+  ]
+ },
+ {
+  "id": "memory-mcp",
+  "type": "mcp",
+  "name": "Memory",
+  "repo": "modelcontextprotocol/servers",
+  "by": "MCP team",
+  "official": true,
+  "cat": "Local",
+  "d": "A simple knowledge graph so the AI remembers facts between chats.",
+  "stdio": [
+   "npx",
+   "-y",
+   "@modelcontextprotocol/server-memory"
+  ],
+  "plain": "Lets your AI remember facts about you and your work from one chat to the next.",
+  "tags": [
+   "supercharge",
+   "private"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Save your preferences so you do not repeat them",
+   "Keep track of people and projects across chats",
+   "Ask what it remembers about a topic"
+  ],
+  "steps": [
+   "Install Node.js from nodejs.org if it is not on your computer yet.",
+   "Open the MCP setup page on this site, pick your app, and copy the config.",
+   "Restart your app so it loads the new server.",
+   "Tell it what to remember, for example: remember that my team meets on Mondays."
+  ]
+ },
+ {
+  "id": "docx",
+  "type": "skill",
+  "name": "docx",
+  "repo": "anthropics/skills",
+  "path": "skills/docx",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Documents",
+  "plat": "claude",
+  "d": "Create and edit Word documents with formatting, tables and comments.",
+  "plain": "Lets Claude create and edit Word documents with proper formatting, tables and comments.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn rough notes into a formatted Word report",
+   "Add a table or comments to an existing document",
+   "Fill a Word template with new details"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install document-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: make a Word report from these notes."
+  ]
+ },
+ {
+  "id": "xlsx",
+  "type": "skill",
+  "name": "xlsx",
+  "repo": "anthropics/skills",
+  "path": "skills/xlsx",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Documents",
+  "plat": "claude",
+  "d": "Excel: formulas, tables, charts, data analysis.",
+  "plain": "Lets Claude build and edit Excel files with formulas, charts and tidy tables.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a messy list into a clean spreadsheet",
+   "Add formulas and totals to a budget",
+   "Make a chart from sales numbers"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install document-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: make an Excel budget with monthly totals and a chart."
+  ]
+ },
+ {
+  "id": "pptx",
+  "type": "skill",
+  "name": "pptx",
+  "repo": "anthropics/skills",
+  "path": "skills/pptx",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Documents",
+  "plat": "claude",
+  "d": "PowerPoint decks from scratch or from a template.",
+  "plain": "Lets Claude make PowerPoint slide decks, from scratch or from your own template.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a document into a short slide deck",
+   "Build slides using your company template",
+   "Update numbers and text in an existing deck"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install document-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: make a 10-slide deck from this report."
+  ]
+ },
+ {
+  "id": "pdf",
+  "type": "skill",
+  "name": "pdf",
+  "repo": "anthropics/skills",
+  "path": "skills/pdf",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Documents",
+  "plat": "claude",
+  "d": "Read, fill forms, merge and split PDFs.",
+  "plain": "Lets Claude read PDFs, fill in PDF forms, and merge or split PDF files.",
+  "tags": [
+   "docs",
+   "knowledge"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Fill in a PDF form from your details",
+   "Combine several PDFs into one file",
+   "Pull tables or text out of a PDF"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install document-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: merge these three PDFs into one file."
+  ]
+ },
+ {
+  "id": "doc-coauthoring",
+  "type": "skill",
+  "name": "doc-coauthoring",
+  "repo": "anthropics/skills",
+  "path": "skills/doc-coauthoring",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Documents",
+  "plat": "claude",
+  "d": "Write a document together with you, section by section.",
+  "plain": "Claude writes a document with you step by step, asking questions and drafting each section.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Draft a proposal together, one section at a time",
+   "Write a project plan with guided questions",
+   "Improve a draft so a reader follows it easily"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: help me write a project proposal, section by section."
+  ]
+ },
+ {
+  "id": "frontend-design",
+  "type": "skill",
+  "name": "frontend-design",
+  "repo": "anthropics/skills",
+  "path": "skills/frontend-design",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Design",
+  "plat": "claude",
+  "d": "Sites and UIs that don't look like generic AI output.",
+  "plain": "Helps Claude design websites and screens that look distinctive instead of generic.",
+  "tags": [
+   "apps"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Design a landing page for a small business",
+   "Give an existing page a fresh, less generic look",
+   "Mock up an app screen to share with others"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: design a landing page for my bakery with a bold, warm style."
+  ]
+ },
+ {
+  "id": "canvas-design",
+  "type": "skill",
+  "name": "canvas-design",
+  "repo": "anthropics/skills",
+  "path": "skills/canvas-design",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Design",
+  "plat": "claude",
+  "d": "Posters and visual pieces as PNG/PDF.",
+  "plain": "Lets Claude create posters and other visual pieces as image or PDF files.",
+  "tags": [
+   "media",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Make a poster for an event",
+   "Create a simple visual for a presentation",
+   "Design a printable flyer as a PDF"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: make a poster for our office summer party as a PDF."
+  ]
+ },
+ {
+  "id": "theme-factory",
+  "type": "skill",
+  "name": "theme-factory",
+  "repo": "anthropics/skills",
+  "path": "skills/theme-factory",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Design",
+  "plat": "claude",
+  "d": "Ready-made color and font themes for docs and slides.",
+  "plain": "Applies ready-made color and font styles to your documents and slides.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Give a slide deck a consistent look",
+   "Try several color styles on one document",
+   "Match a report's style to a presentation"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: apply a modern theme to this slide deck."
+  ]
+ },
+ {
+  "id": "brand-guidelines",
+  "type": "skill",
+  "name": "brand-guidelines",
+  "repo": "anthropics/skills",
+  "path": "skills/brand-guidelines",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Design",
+  "plat": "claude",
+  "d": "Applies brand colors and fonts. A template for your own brand.",
+  "plain": "Applies set brand colors and fonts to what Claude makes; you can copy it for your own brand.",
+  "tags": [
+   "docs",
+   "supercharge"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Keep slides and documents in your brand colors",
+   "Make a custom skill with your own brand rules",
+   "Check a draft against your brand style"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app. The built-in version uses Anthropic's brand.",
+   "For your own brand, copy it, change the colors and fonts, and zip the folder.",
+   "Upload the .zip in Claude under Settings > Capabilities > Skills, then ask for on-brand slides."
+  ]
+ },
+ {
+  "id": "web-artifacts-builder",
+  "type": "skill",
+  "name": "web-artifacts-builder",
+  "repo": "anthropics/skills",
+  "path": "skills/web-artifacts-builder",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Dev",
+  "plat": "claude",
+  "d": "Richer web apps (React, Tailwind) bundled into one HTML file.",
+  "plain": "Lets Claude build richer interactive web tools that fit in a single file you can share.",
+  "tags": [
+   "apps"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Build a small calculator or tracker app",
+   "Make an interactive dashboard from your data",
+   "Create a quiz or form to share"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: build a simple habit tracker app I can open in a browser."
+  ]
+ },
+ {
+  "id": "webapp-testing",
+  "type": "skill",
+  "name": "webapp-testing",
+  "repo": "anthropics/skills",
+  "path": "skills/webapp-testing",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Dev",
+  "plat": "claude",
+  "d": "Tests a web app in a real browser with Playwright.",
+  "plain": "Lets Claude test your web app in a real browser and report what breaks.",
+  "tags": [
+   "code",
+   "apps"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Check that the sign-up page of your app works",
+   "Take screenshots of your app while it runs",
+   "Find buttons or links that do not work"
+  ],
+  "steps": [
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Open Claude Code in the folder of the app you want to test.",
+   "Just ask in plain words, for example: test my app's login page in a browser and tell me what fails."
+  ]
+ },
+ {
+  "id": "mcp-builder",
+  "type": "skill",
+  "name": "mcp-builder",
+  "repo": "anthropics/skills",
+  "path": "skills/mcp-builder",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Dev",
+  "plat": "claude",
+  "d": "Builds MCP servers that connect AI to your own systems.",
+  "plain": "Helps Claude build your own connector so AI can use your company's systems.",
+  "tags": [
+   "connect",
+   "code"
+  ],
+  "level": "dev",
+  "useFor": [
+   "Connect AI to an in-house tool or database",
+   "Turn an existing web API into an AI connector",
+   "Plan which actions your connector should offer"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: help me build an MCP server for our inventory system's API."
+  ]
+ },
+ {
+  "id": "skill-creator",
+  "type": "skill",
+  "name": "skill-creator",
+  "repo": "anthropics/skills",
+  "path": "skills/skill-creator",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Meta",
+  "plat": "any",
+  "d": "A skill that makes skills. Start here for your own.",
+  "plain": "Helps you make your own skill, a saved set of instructions Claude follows for a task.",
+  "tags": [
+   "supercharge"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Save how you like weekly reports written",
+   "Turn a repeated checklist into a reusable skill",
+   "Improve a skill you already made"
+  ],
+  "steps": [
+   "On a paid Claude plan this skill is already built into claude.ai and the desktop app.",
+   "In Claude Code run /plugin marketplace add anthropics/skills, then /plugin install example-skills@anthropic-agent-skills.",
+   "Just ask in plain words, for example: help me create a skill for writing our weekly team update.",
+   "Upload the finished .zip in Claude under Settings > Capabilities > Skills."
+  ]
+ },
+ {
+  "id": "ui-ux-pro-max",
+  "type": "skill",
+  "name": "UI UX Pro Max",
+  "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "by": "NextLevelBuilder",
+  "official": false,
+  "cat": "Design",
+  "plat": "any",
+  "d": "Design intelligence: styles, palettes, font pairings, UX rules. This site was designed with it.",
+  "plain": "Gives your AI design knowledge: styles, color palettes, font pairs and usability rules.",
+  "tags": [
+   "apps",
+   "supercharge"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Pick colors and fonts for a new website",
+   "Get a design style that suits your business type",
+   "Check a page against common usability rules"
+  ],
+  "steps": [
+   "In Claude Code run /plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill",
+   "Then run /plugin install ui-ux-pro-max@ui-ux-pro-max-skill",
+   "For other apps, run npm install -g ui-ux-pro-max-cli, then uipro init --ai plus your app, as the README shows.",
+   "Ask, for example: design a landing page for a dental clinic."
+  ]
+ },
+ {
+  "id": "openai-playwright",
+  "type": "skill",
+  "name": "playwright",
+  "repo": "openai/skills",
+  "path": "skills/.curated/playwright",
+  "by": "OpenAI",
+  "official": true,
+  "cat": "Dev",
+  "plat": "codex",
+  "d": "Automates a browser: click, fill, screenshot.",
+  "plain": "Lets Codex open websites, click, fill forms and take screenshots for you.",
+  "tags": [
+   "automate",
+   "code"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Take screenshots of a web page",
+   "Fill out a web form automatically",
+   "Check that your site's pages load correctly"
+  ],
+  "steps": [
+   "Open Codex and run: $skill-installer playwright",
+   "Restart Codex so it picks up the new skill.",
+   "Ask, for example: open example.com and take a screenshot."
+  ]
+ },
+ {
+  "id": "gh-fix-ci",
+  "type": "skill",
+  "name": "gh-fix-ci",
+  "repo": "openai/skills",
+  "path": "skills/.curated/gh-fix-ci",
+  "by": "OpenAI",
+  "official": true,
+  "cat": "Dev",
+  "plat": "codex",
+  "d": "Finds and fixes failing GitHub Actions checks.",
+  "plain": "Lets Codex find out why automatic checks on your GitHub project fail, and fix them.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Find why a GitHub check turned red",
+   "Get a fix for a failing check",
+   "Get an explanation of a failure log in plain words"
+  ],
+  "steps": [
+   "Open Codex and run: $skill-installer gh-fix-ci",
+   "Restart Codex so it picks up the new skill.",
+   "Open your project in Codex and ask: why are the checks failing on my pull request?"
+  ]
+ },
+ {
+  "id": "security-threat-model",
+  "type": "skill",
+  "name": "security-threat-model",
+  "repo": "openai/skills",
+  "path": "skills/.curated/security-threat-model",
+  "by": "OpenAI",
+  "official": true,
+  "cat": "Security",
+  "plat": "codex",
+  "d": "Builds a threat model for your project.",
+  "plain": "Lets Codex list the ways your project could be attacked and how to protect it.",
+  "tags": [
+   "code"
+  ],
+  "level": "setup",
+  "useFor": [
+   "List security risks in your app before launch",
+   "Decide which risks to fix first",
+   "Write a short security summary for your team"
+  ],
+  "steps": [
+   "Open Codex and run: $skill-installer security-threat-model",
+   "Restart Codex so it picks up the new skill.",
+   "Open your project in Codex and ask: build a threat model for this app."
+  ]
+ },
+ {
+  "id": "vercel-deploy",
+  "type": "skill",
+  "name": "vercel-deploy",
+  "repo": "openai/skills",
+  "path": "skills/.curated/vercel-deploy",
+  "by": "OpenAI",
+  "official": true,
+  "cat": "Dev",
+  "plat": "codex",
+  "d": "Ships your site online in one step (Netlify and Cloudflare versions too).",
+  "plain": "Lets Codex put your website online for you in one step.",
+  "tags": [
+   "apps",
+   "automate"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Publish a site you built so others can visit it",
+   "Share a preview link of your project",
+   "Put a new version of your site online"
+  ],
+  "steps": [
+   "Open Codex and run: $skill-installer vercel-deploy",
+   "Restart Codex so it picks up the new skill.",
+   "Open your project in Codex and ask: deploy this site to Vercel."
+  ]
+ },
+ {
+  "id": "superpowers",
+  "type": "collection",
+  "name": "Superpowers",
+  "repo": "obra/superpowers",
+  "by": "Jesse Vincent",
+  "official": false,
+  "cat": "Method",
+  "d": "The most-starred skills pack: brainstorm, plan, TDD, debug. Makes the agent work like a senior engineer.",
+  "plain": "A set of skills that makes your coding AI plan, test and fix problems more carefully.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Brainstorm and plan a feature before any code",
+   "Have the AI test its work as it builds",
+   "Track down a bug step by step"
+  ],
+  "steps": [
+   "In Claude Code run: /plugin install superpowers@claude-plugins-official",
+   "In the Codex app click Plugins in the sidebar, find Superpowers, and click +.",
+   "For other apps, follow the install section of the README.",
+   "Describe what you want to build; the skills guide the steps."
+  ]
+ },
+ {
+  "id": "agent-skills",
+  "type": "collection",
+  "name": "Agent Skills",
+  "repo": "addyosmani/agent-skills",
+  "by": "Addy Osmani",
+  "official": false,
+  "cat": "Method",
+  "d": "Production engineering habits: spec, plan, test, review, ship.",
+  "plain": "A set of skills that makes your coding AI plan, test, review and ship like a careful engineer.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Write a short spec before building a feature",
+   "Get a code review before you publish",
+   "Run a checklist before launching your app"
+  ],
+  "steps": [
+   "For most AI coding apps run: npx skills add addyosmani/agent-skills",
+   "In Claude Code you can instead run /plugin marketplace add addyosmani/agent-skills",
+   "Then run /plugin install agent-skills@addy-agent-skills",
+   "Ask for the task, for example: review my changes before I publish."
+  ]
+ },
+ {
+  "id": "anthropic-skills",
+  "type": "collection",
+  "name": "anthropics/skills",
+  "repo": "anthropics/skills",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Official",
+  "d": "Anthropic's official skills repo and plugin marketplace.",
+  "plain": "Anthropic's official skills for Word, Excel, slides, PDFs, design and more, in one place.",
+  "tags": [
+   "supercharge",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Create Word, Excel, PowerPoint and PDF files",
+   "Design posters and web pages",
+   "Start your own skill from a working example"
+  ],
+  "steps": [
+   "On a paid Claude plan these skills are already built into claude.ai and the desktop app.",
+   "In Claude Code run: /plugin marketplace add anthropics/skills",
+   "Then /plugin install document-skills@anthropic-agent-skills or example-skills@anthropic-agent-skills.",
+   "Ask for the task in plain words, for example: make a Word report from these notes."
+  ]
+ },
+ {
+  "id": "claude-plugins-official",
+  "type": "collection",
+  "name": "Claude plugins (official)",
+  "repo": "anthropics/claude-plugins-official",
+  "by": "Anthropic",
+  "official": true,
+  "cat": "Official",
+  "d": "The official Claude Code plugin marketplace.",
+  "plain": "Anthropic's official store of add-ons for Claude Code, from Anthropic and partner companies.",
+  "tags": [
+   "supercharge",
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Browse add-ons that extend Claude Code",
+   "Install a partner's connector in one command",
+   "Find skill packs like Superpowers"
+  ],
+  "steps": [
+   "In Claude Code, type /plugin and open Discover to browse.",
+   "Or install directly: /plugin install <plugin-name>@claude-plugins-official",
+   "Check you trust a plugin before installing it; Anthropic does not vouch for third-party ones."
+  ]
+ },
+ {
+  "id": "openai-plugins",
+  "type": "collection",
+  "name": "openai/plugins",
+  "repo": "openai/plugins",
+  "by": "OpenAI",
+  "official": true,
+  "cat": "Official",
+  "d": "Where OpenAI's Codex skills live now (openai/skills is deprecated).",
+  "plain": "OpenAI's official collection of Codex add-ons, where its skills now live.",
+  "tags": [
+   "supercharge",
+   "code"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Browse official add-ons for Codex",
+   "Add skills for building web or mobile apps",
+   "Connect Codex to tools like Figma or Notion"
+  ],
+  "steps": [
+   "In the Codex app, click Plugins in the sidebar and browse.",
+   "In the Codex command line, type /plugins and search by name.",
+   "Pick a plugin and choose install, then ask for the task in plain words."
+  ]
+ },
+ {
+  "id": "mcp-servers",
+  "type": "collection",
+  "name": "MCP reference servers",
+  "repo": "modelcontextprotocol/servers",
+  "by": "MCP team",
+  "official": true,
+  "cat": "Official",
+  "d": "Reference MCP servers from the protocol maintainers.",
+  "plain": "The official example connectors that let AI use files, memory, websites and other tools.",
+  "tags": [
+   "connect",
+   "supercharge"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Let your AI read files in a folder",
+   "Give your AI memory between chats",
+   "Try a simple connector before bigger ones"
+  ],
+  "steps": [
+   "Install Node.js from nodejs.org; some servers need Python and uv instead.",
+   "Pick a server from the README, such as Filesystem or Memory.",
+   "Use the MCP setup page on this site to copy the config, then restart your app."
+  ]
+ },
+ {
+  "id": "awesome-mcp",
+  "type": "collection",
+  "name": "awesome-mcp-servers",
+  "repo": "punkpeye/awesome-mcp-servers",
+  "by": "community",
+  "official": false,
+  "cat": "List",
+  "d": "The biggest curated list of MCP servers.",
+  "plain": "A large community list of connectors that let AI use other apps and services.",
+  "tags": [
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Find a connector for an app you already use",
+   "Compare several connectors for the same service",
+   "Discover new things your AI can connect to"
+  ],
+  "steps": [
+   "Open the list on GitHub and browse by category.",
+   "Open a server's page and read its setup steps.",
+   "Add it with the MCP setup page on this site, or as its README says."
+  ]
+ },
+ {
+  "id": "awesome-claude-code",
+  "type": "collection",
+  "name": "awesome-claude-code",
+  "repo": "hesreallyhim/awesome-claude-code",
+  "by": "community",
+  "official": false,
+  "cat": "List",
+  "d": "Curated Claude Code skills, hooks, commands and workflows.",
+  "plain": "A community list of add-ons, skills, commands and workflows for Claude Code.",
+  "tags": [
+   "supercharge",
+   "code"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Find add-ons others use with Claude Code",
+   "Discover time-saving commands and workflows",
+   "Get ideas for setting up your own Claude Code"
+  ],
+  "steps": [
+   "Open the list on GitHub and browse by section.",
+   "Open an item's own page and follow its install steps.",
+   "Install only items from sources you trust."
+  ]
+ },
+ {
+  "id": "awesome-claude-skills",
+  "type": "collection",
+  "name": "awesome-claude-skills",
+  "repo": "ComposioHQ/awesome-claude-skills",
+  "by": "Composio",
+  "official": false,
+  "cat": "List",
+  "d": "Curated list of Claude skills and resources.",
+  "plain": "A community list of ready-made skills and guides for Claude.",
+  "tags": [
+   "supercharge"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Find a skill for a task you repeat",
+   "See examples of what skills can do",
+   "Learn how others write their own skills"
+  ],
+  "steps": [
+   "Open the list on GitHub and browse by category.",
+   "Open a skill's page and follow its install steps.",
+   "In the Claude apps, upload skill .zip files under Settings > Capabilities > Skills."
+  ]
+ }
 ]

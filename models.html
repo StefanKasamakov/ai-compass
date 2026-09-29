@@ -3,26 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Model Picker · AI Compass</title>
+<title>Which AI Should I Use? · AI Compass</title>
 <meta name="description" content="Which AI model for which job: Claude, GPT-6, Gemini and open-weight models compared in plain English, with prices and context sizes.">
+<link rel="canonical" href="https://stefankasamakov.github.io/ai-compass/models.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Compass">
+<meta property="og:title" content="Which AI Should I Use? · AI Compass">
+<meta property="og:description" content="Which AI model for which job: Claude, GPT-6, Gemini and open-weight models compared in plain English, with prices and context sizes.">
+<meta property="og:url" content="https://stefankasamakov.github.io/ai-compass/models.html">
+<meta property="og:image" content="https://stefankasamakov.github.io/ai-compass/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Which AI Should I Use? · AI Compass">
+<meta name="twitter:description" content="Which AI model for which job: Claude, GPT-6, Gemini and open-weight models compared in plain English, with prices and context sizes.">
+<meta name="twitter:image" content="https://stefankasamakov.github.io/ai-compass/assets/og.png">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=8">
+<link rel="stylesheet" href="assets/site.css?v=11">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="models">
 <main id="main">
   <header class="page-head"><div class="wrap">
-    <div class="kicker">Model picker</div>
-    <h1>Tell us the job. We'll name the model.</h1>
-    <p class="lead">Every company sells the same three tiers: a <b style="color:var(--fg)">frontier</b> model (smartest, priciest), a <b style="color:var(--fg)">balanced</b> one (most work) and a <b style="color:var(--fg)">fast</b> one (cheap, high volume). Start from the job, not the brand.</p>
+    <div class="kicker">Choose an AI</div>
+    <h1>Which AI should you use?</h1>
+    <p class="lead">Answer two questions and get one clear pick, where to use it and what it costs. Every company sells a smartest model, a balanced one and a cheap fast one; the right choice depends on the job, not the brand.</p>
   </div></header>
 
-  <section><div class="wrap">
-    <div class="chips" id="taskChips" aria-label="What do you want to do?"></div>
-    <div class="picks" id="taskOut" aria-live="polite" style="max-width:860px"></div>
-  </div></section>
+  <section><div class="wrap"><div id="picker"></div></div></section>
 
   <section><div class="wrap">
     <div class="spread"><div><div class="kicker">Every model</div><h2>The full lineup</h2></div><span class="muted mono" style="font-size:.8rem">checked <span id="modelsUpdated"></span> · model-watch agent opens a PR on changes</span></div>
@@ -68,6 +78,6 @@
     </dl>
   </div></section>
 </main>
-<script src="assets/site.js?v=8" defer></script>
+<script src="assets/site.js?v=11" defer></script>
 </body>
 </html>

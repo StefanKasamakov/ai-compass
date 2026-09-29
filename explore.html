@@ -3,37 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Repo Explainer · AI Compass</title>
-<meta name="description" content="Ruflo, OmniRoute, LiteLLM, Ollama, OpenCode… Popular AI repos explained in plain English: what each one is, when to use it, and what to watch out for.">
+<title>Find AI Tools · AI Compass</title>
+<meta name="description" content="Find the right AI tool for what you want to do: apps, skills and connectors explained in plain English, with step-by-step setup.">
+<link rel="canonical" href="https://stefankasamakov.github.io/ai-compass/explore.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Compass">
+<meta property="og:title" content="Find AI Tools · AI Compass">
+<meta property="og:description" content="Find the right AI tool for what you want to do: apps, skills and connectors explained in plain English, with step-by-step setup.">
+<meta property="og:url" content="https://stefankasamakov.github.io/ai-compass/explore.html">
+<meta property="og:image" content="https://stefankasamakov.github.io/ai-compass/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Find AI Tools · AI Compass">
+<meta name="twitter:description" content="Find the right AI tool for what you want to do: apps, skills and connectors explained in plain English, with step-by-step setup.">
+<meta name="twitter:image" content="https://stefankasamakov.github.io/ai-compass/assets/og.png">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=8">
+<link rel="stylesheet" href="assets/site.css?v=11">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="explore">
 <main id="main">
   <header class="page-head"><div class="wrap">
-    <div class="kicker">Repo Explainer</div>
-    <h1>What is this repo actually for?</h1>
-    <p class="lead">Ruflo, OmniRoute, LiteLLM, Ollama, OpenCode… AI repos pile up 50k+ stars and READMEs full of buzzwords. Here's each one in plain English: what it is, when you'd use it, and what to watch out for. Written by an AI agent from each README, refreshed as new repos trend.</p>
-    <div class="row">
-      <a class="btn primary" href="https://github.com/StefanKasamakov/ai-compass/issues/new?template=explain-repo.yml" target="_blank" rel="noopener"><i data-i="bot"></i>Ask the agent to explain a repo</a>
-      <span class="muted" style="font-size:.9rem">+2 leaderboard points when it's added</span>
-    </div>
+    <div class="kicker">Find tools</div>
+    <h1>Find the right AI tool for the job.</h1>
+    <p class="lead">Free apps, skills and connectors, each explained in plain English: what it does, what you'd use it for, and how to start. Pick a goal, then click any tool for the steps.</p>
   </div></header>
 
   <section><div class="wrap">
-    <div class="spread" style="align-items:center">
-      <label class="sr" for="repoQ">Search repos</label>
-      <input id="repoQ" class="hero-search" style="height:48px;max-width:420px" type="search" placeholder="Search: ruflo, gateway, local, memory…">
+    <p class="field-label">1 · What do you want to do?</p>
+    <div class="goal-chips" id="goalChips" role="group" aria-label="Goal"></div>
+    <div class="filters">
+      <div><p class="field-label">2 · How comfortable are you with tech?</p><div class="chips" id="levelChips" aria-label="Skill level"></div></div>
+      <div><p class="field-label">Show</p><div class="chips" id="typeChips" aria-label="Type"></div></div>
+    </div>
+    <div class="spread" style="align-items:center;margin-bottom:1rem">
+      <label class="sr" for="repoQ">Search tools</label>
+      <input id="repoQ" class="hero-search" style="height:48px;max-width:420px" type="search" placeholder="Search: excel, pdf, voice, notion…">
       <div class="chips" id="sortChips" style="margin:0" aria-label="Sort"></div>
     </div>
-    <div class="chips" id="repoCats" aria-label="Category"></div>
     <div id="catWhat"></div>
-    <div class="grid two" id="repoGrid"></div>
+    <div class="tool-grid" id="repoGrid"></div>
   </div></section>
+
+  <dialog class="tool-dlg" id="toolDlg" aria-label="Tool details"><div id="toolBody"></div></dialog>
 </main>
-<script src="assets/site.js?v=8" defer></script>
+</main>
+<script src="assets/site.js?v=11" defer></script>
 </body>
 </html>

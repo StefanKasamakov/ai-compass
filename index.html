@@ -5,84 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Compass</title>
 <meta name="description" content="Which AI model to use for what, how MCP servers and agent skills work, and what's new. In plain English, refreshed by an agent every few hours.">
+<link rel="canonical" href="https://stefankasamakov.github.io/ai-compass/">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Compass">
+<meta property="og:title" content="AI Compass">
+<meta property="og:description" content="Which AI model to use for what, how MCP servers and agent skills work, and what's new. In plain English, refreshed by an agent every few hours.">
+<meta property="og:url" content="https://stefankasamakov.github.io/ai-compass/">
+<meta property="og:image" content="https://stefankasamakov.github.io/ai-compass/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Compass">
+<meta name="twitter:description" content="Which AI model to use for what, how MCP servers and agent skills work, and what's new. In plain English, refreshed by an agent every few hours.">
+<meta name="twitter:image" content="https://stefankasamakov.github.io/ai-compass/assets/og.png">
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=8">
+<link rel="stylesheet" href="assets/site.css?v=11">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="index">
 <main id="main">
   <section class="hero"><div class="wrap">
-    <div class="prompt"><b>~/ai-compass</b> $ which-ai --for "whatever you're doing"<span class="cursor" aria-hidden="true"></span></div>
-    <h1>AI got complicated. <em>Here's the map.</em></h1>
-    <p class="lead">Which model to use for what. What MCP servers and skills actually are, and how to install them without guessing. Plain English, no hype, refreshed by an agent that watches GitHub and the official blogs.</p>
-    <button class="hero-search" data-open-search><i data-i="search"></i>Search models, MCP servers, skills…<kbd>Ctrl K</kbd></button>
-    <div class="status" aria-live="polite">
-      <span><i class="live" aria-hidden="true"></i><span id="stAgent">Agent…</span></span>
-      <span><i data-i="github"></i><span id="stTracked">…</span></span>
-      <span><i data-i="news"></i><span id="stNews">…</span></span>
-      <span><i data-i="cpu"></i><span id="stModels">…</span></span>
+    <p class="kicker">A plain-English guide to AI</p>
+    <h1>Tell us what you want to do. <em>We'll show you which AI.</em></h1>
+    <p class="lead">Which AI model to use, which free tools are worth installing, and how to start with each one, step by step. No jargon, updated every few hours.</p>
+    <div class="row">
+      <a class="btn primary" href="models.html"><i data-i="compass"></i>Choose an AI model</a>
+      <a class="btn" href="explore.html"><i data-i="search"></i>Find a tool</a>
     </div>
+    <div class="status" aria-live="polite"><span><i class="live" aria-hidden="true"></i><span id="stAgent">Updating</span></span><span><i data-i="puzzle"></i><span id="stTools">…</span></span></div>
   </div></section>
 
   <section><div class="wrap">
-    <div class="bento">
-      <div class="card b-7 b-rows-2 reveal">
-        <div class="tile-title"><i data-i="compass"></i>Which model should I use? <a href="models.html">All models <i data-i="arrow"></i></a></div>
-        <div class="chips" id="taskChips" aria-label="What do you want to do?"></div>
-        <div class="picks" id="taskOut" aria-live="polite"></div>
-      </div>
-      <div class="card b-5 reveal">
-        <div class="tile-title"><i data-i="news"></i>What's new <a href="news.html">All news <i data-i="arrow"></i></a></div>
-        <div class="mini-feed" id="homeNews"></div>
-      </div>
-      <div class="card b-5 reveal">
-        <div class="tile-title"><i data-i="trophy"></i>Community favourites <a href="leaderboard.html">Leaderboard <i data-i="arrow"></i></a></div>
-        <div class="mini-feed" id="homeBoard"></div>
-      </div>
+    <p class="kicker">Start here</p>
+    <h2>What do you want to do?</h2>
+    <p class="lead">Pick a goal and we'll show the tools for it, easiest first.</p>
+    <div class="goal-tiles" id="goalTiles"></div>
+  </div></section>
 
-      <a class="card link b-4 reveal" href="mcp.html" style="text-decoration:none;color:inherit">
-        <div class="tile-title"><i data-i="plug"></i>MCP in one line</div>
-        <h3 style="font-size:1.25rem">MCP gives AI hands.</h3>
-        <p>A standard plug that lets Claude, ChatGPT or Cursor use your tools: browser, GitHub, Notion, databases. Plus a generator that writes the exact config for your app.</p>
-        <p class="mono" style="margin-top:1rem;color:var(--accent)">Set one up →</p>
-      </a>
-      <a class="card link b-4 reveal" href="skills.html" style="text-decoration:none;color:inherit">
-        <div class="tile-title"><i data-i="puzzle"></i>Skills in one line</div>
-        <h3 style="font-size:1.25rem">Skills give AI know-how.</h3>
-        <p>A folder with a <code>SKILL.md</code> that teaches an agent how to do one job your way. Loaded only when needed, works across Claude, Codex and more.</p>
-        <p class="mono" style="margin-top:1rem;color:var(--accent)">Browse skills →</p>
-      </a>
-      <a class="card link b-4 reveal" href="github.html" style="text-decoration:none;color:inherit">
-        <div class="tile-title"><i data-i="github"></i>GitHub 101</div>
-        <h3 style="font-size:1.25rem">Stars, forks, READMEs?</h3>
-        <p>Every tool lives on GitHub. Learn to read a repo in 60 seconds, spot abandoned or sketchy projects, and install from one safely.</p>
-        <p class="mono" style="margin-top:1rem;color:var(--accent)">Read the guide →</p>
-      </a>
+  <section id="choose"><div class="wrap">
+    <p class="kicker">Choose an AI</p>
+    <h2>Which AI should I use?</h2>
+    <p class="lead">Two questions, one clear answer.</p>
+    <div id="homePicker"></div>
+  </div></section>
 
-      <div class="card reveal">
-        <div class="tile-title"><i data-i="bot"></i>Repo explainer: what is this thing for? <a href="explore.html">All repos <i data-i="arrow"></i></a></div>
-        <div class="grid" id="homeRepos"></div>
-      </div>
+  <section><div class="wrap">
+    <div class="spread"><div><p class="kicker">Popular right now</p><h2>Tools people are talking about</h2></div><a class="btn sm" href="explore.html">See all tools <i data-i="arrow"></i></a></div>
+    <div class="tool-grid" id="homeHot"></div>
+  </div></section>
 
-      <div class="card b-8 reveal">
-        <div class="tile-title"><i data-i="trend"></i>New and rising on GitHub <a href="github.html#trending">More <i data-i="arrow"></i></a></div>
-        <div class="mini-feed" id="homeTrend"></div>
-      </div>
-      <div class="card b-4 reveal" style="display:flex;flex-direction:column">
-        <div class="tile-title"><i data-i="users"></i>Play along</div>
-        <p style="color:var(--fg)">Vote for the tools you actually use, suggest ones we missed, earn points.</p>
-        <p>+1 per vote · +2 per repo explained · +10 per accepted tool · +5 per merged fix</p>
-        <div class="row" style="margin-top:auto;padding-top:1rem">
-          <a class="btn primary sm" href="leaderboard.html"><i data-i="trophy"></i>Leaderboard</a>
-          <a class="btn sm" href="https://github.com/StefanKasamakov/ai-compass/issues/new?template=submit-tool.yml"><i data-i="github"></i>Suggest a tool</a>
-          <a class="btn sm" href="newsletter.html"><i data-i="news"></i>Weekly email</a>
-        </div>
-      </div>
+  <section><div class="wrap split">
+    <div>
+      <p class="kicker">This week</p>
+      <h2>What changed in AI</h2>
+      <div class="mini-feed" id="homeNews"></div>
+      <p style="margin-top:1rem"><a href="news.html">All news <i data-i="arrow"></i></a></p>
+    </div>
+    <div class="card" style="padding:1.6rem">
+      <p class="kicker">Newsletter</p>
+      <h3 style="font-size:1.3rem">One email a week. Only what mattered.</h3>
+      <p>The launches, tools and tips worth your time, in plain English. Every Monday.</p>
+      <a class="btn primary" href="newsletter.html" style="margin-top:1rem"><i data-i="news"></i>Get the weekly email</a>
     </div>
   </div></section>
 </main>
-<script src="assets/site.js?v=8" defer></script>
+</main>
+<script src="assets/site.js?v=11" defer></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+ "goals": [
+  { "id": "docs", "label": "Write & edit documents", "icon": "file", "hint": "Reports, Word, Excel, PDF, slides" },
+  { "id": "code", "label": "Write code faster", "icon": "terminal", "hint": "An AI that edits and fixes code for you" },
+  { "id": "apps", "label": "Build websites & apps", "icon": "layout", "hint": "From idea to a working site or app" },
+  { "id": "automate", "label": "Automate busywork", "icon": "zap", "hint": "Let AI do repetitive tasks on a schedule" },
+  { "id": "research", "label": "Research the web", "icon": "search", "hint": "Search, read pages, collect facts" },
+  { "id": "knowledge", "label": "Chat with your files", "icon": "book", "hint": "Ask questions about your documents and notes" },
+  { "id": "connect", "label": "Connect AI to your apps", "icon": "plug", "hint": "Gmail, Notion, GitHub, databases, browsers" },
+  { "id": "media", "label": "Images, video & voice", "icon": "image", "hint": "Generate pictures, transcribe, make voices" },
+  { "id": "private", "label": "Keep data private", "icon": "lock", "hint": "Runs on your own computer, nothing leaves" },
+  { "id": "save", "label": "Spend less on AI", "icon": "coins", "hint": "Cheaper models, fewer tokens, free tiers" },
+  { "id": "supercharge", "label": "Make your AI assistant smarter", "icon": "bot", "hint": "Skills, memory and add-ons for Claude, ChatGPT, Codex" },
+  { "id": "monitor", "label": "Test & monitor AI apps", "icon": "trend", "hint": "For teams shipping their own AI features" }
+ ],
+ "levels": [
+  { "id": "easy", "label": "No coding", "hint": "Download, click, or paste one line" },
+  { "id": "setup", "label": "Some setup", "hint": "You'll paste a few commands into a terminal" },
+  { "id": "dev", "label": "For developers", "hint": "You'll write code with it" }
+ ]
+}

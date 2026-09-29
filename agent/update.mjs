@@ -102,7 +102,7 @@ async function trending(tracked) {
   let items = [...found.values()];
   const verdict = await safe("AI relevance", () => askJSON({
     schema: Relevance,
-    system: "You filter GitHub repos for AI Compass, a guide to AI models, agents, MCP servers, skills, AI coding tools, local LLMs, RAG and AI media tools. relevant = true only if the repo's main purpose is AI/LLM tooling that such a reader would use or want to know about. General dev tools, games, dotfiles, tutorials, spam and link lists are not relevant.",
+    system: "You filter GitHub repos for AI Compass, a guide to AI models, agents, MCP servers, skills, AI coding tools, local LLMs, RAG and AI media tools. relevant = true only if the repo's main purpose is AI/LLM tooling that such a reader would use or want to know about. General dev tools, games, dotfiles, tutorials, spam and link lists are not relevant. Also NOT relevant: jailbreak or prompt-injection kits, tools for bypassing AI safety or terms of service, and repos with no real product (marketing or vision pages).",
     user: JSON.stringify(items.map(({ repo, desc, topics }) => ({ repo, desc, topics }))),
   }), null);
   items = verdict ? items.filter((i) => verdict.items.find((v) => v.repo === i.repo)?.relevant) : items.filter((i) => AI_WORDS.test(`${i.desc} ${i.topics.join(" ")}`));
@@ -234,30 +234,27 @@ const SITE = `https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split
 const repoFrom = (text = "") => text.match(/github\.com\/([\w.-]+\/[\w.-]+)/)?.[1]?.replace(/\.git$/, "") ?? text.match(/\b([\w.-]+\/[\w.-]+)\b/)?.[1];
 
 async function explainRepos(trendingItems) {
-  const { categories, repos: seeds } = await read("data/repos.json", { categories: [], repos: [] });
+  const { categories, repos: seeds, exclude = [] } = await read("data/repos.json", { categories: [], repos: [] });
+  const { goals, levels } = await read("data/tags.json", { goals: [], levels: [] });
   const known = await read("data/explain.json", {});
   const Explanation = z.object({
     cat: z.enum(categories.map((c) => c.id)), kind: z.string(), what: z.string(), why: z.string(),
-    level: z.enum(LEVELS), start: z.string(), caution: z.string(), alts: z.array(z.string()),
+    level: z.enum(levels.map((l) => l.id)), start: z.string(), caution: z.string(), alts: z.array(z.string()),
     packages: z.array(z.string()),
+    plain: z.string(), tags: z.array(z.enum(goals.map((g) => g.id))), useFor: z.array(z.string()), steps: z.array(z.string()),
   });
 
-  // what needs explaining: reader requests first, then curated seeds, then this month's trending repos
-  const requests = TOKEN ? await safe("explain requests", () => ghAll(`repos/${REPO}/issues?labels=explain&state=open`), []) : [];
+  // what needs explaining: curated seeds first, then this month's trending repos
   const queue = [
-    ...requests.map((i) => ({ repo: repoFrom(`${i.title} ${i.body}`), issue: i.number, by: i.user?.login })),
     ...seeds.map((repo) => ({ repo, source: "curated" })),
     ...trendingItems.map((t) => ({ repo: t.repo, source: "trending" })),
-  ].filter((q) => q.repo && (q.issue || !known[q.repo]));
-  const reply = (n, body) => gh(`repos/${REPO}/issues/${n}/comments`, { method: "POST", body: JSON.stringify({ body }) })
-    .then(() => gh(`repos/${REPO}/issues/${n}`, { method: "PATCH", body: JSON.stringify({ state: "closed" }) }));
+  ].filter((q) => q.repo && !known[q.repo] && !exclude.includes(q.repo));
 
   let done = 0;
   for (const q of queue) {
     if (done >= MAX_EXPLAIN_PER_RUN || !provider) break;
-    if (q.issue && known[q.repo]) { await safe("reply", () => reply(q.issue, `Already explained: ${SITE}/explore.html#${q.repo}`)); continue; }
     const meta = await gh(`repos/${q.repo}`).catch(() => null);
-    if (!meta) { if (q.issue) await safe("reply", () => reply(q.issue, `Couldn't find \`${q.repo}\` on GitHub. Check the link and open a new request.`)); continue; }
+    if (!meta) continue;
     const readme = await gh(`repos/${meta.full_name}/readme`).then((r) => Buffer.from(r.content, "base64").toString("utf8").slice(0, 9000)).catch(() => "");
     const ex = await safe(`explain ${meta.full_name}`, () => askJSON({
       schema: Explanation,
@@ -268,14 +265,17 @@ async function explainRepos(trendingItems) {
         "start: the first command or step from the README, or empty. caution: privacy, maturity, complexity, license or maintenance caveat (pushed_at over 4 months ago = say so), or empty. " +
         "Always add a caution when the tool reuses consumer subscription logins (Claude, ChatGPT, Gemini, Copilot apps) as an API or pools free tiers: that may break the provider's terms and risk the account. Mention affiliate links if present. " +
         "packages: npm or PyPI package names the README tells people to install (e.g. from npx, npm i, pip install, uvx), or empty. " +
+        "The site is for people who DON'T understand AI tooling. plain: one jargon-free sentence, max 20 words. tags: 1-3 goal ids, most relevant first. " +
+        "level: easy = download or one line and use without code; setup = several commands or config but no programming; dev = you write code with it. " +
+        "useFor: 2-3 concrete things a person would do with it, verb first, max 12 words each. steps: 2-4 plain getting-started steps from the README, max 22 words each, at most one command in backticks. No emoji. " +
+        "Goals: " + goals.map((g) => `${g.id} = ${g.label} (${g.hint})`).join("; ") + ". " +
         "alts: up to 3 related repos as owner/name, preferring ones in this list: " + [...new Set([...seeds, ...Object.keys(known)])].join(" ") +
         "\nCategories: " + categories.map((c) => `${c.id} = ${c.name}: ${c.what}`).join(" | "),
       user: JSON.stringify({ repo: meta.full_name, description: meta.description, topics: meta.topics, license: meta.license?.spdx_id, pushed_at: meta.pushed_at, stars: meta.stargazers_count, readme }),
     }), null);
     if (!ex) continue;
     done++;
-    known[meta.full_name] = { ...ex, repo: meta.full_name, at: day(NOW), source: q.issue ? "request" : q.source, ...(q.by && { by: q.by }) };
-    if (q.issue) await safe("reply", () => reply(q.issue, `**${meta.full_name}**: ${ex.kind}\n\n${ex.what}\n\n**Why:** ${ex.why}${ex.caution ? `\n\n**Heads-up:** ${ex.caution}` : ""}\n\nAdded to the [Repo Explainer](${SITE}/explore.html#${meta.full_name}). +2 points for @${q.by} on the leaderboard. Thanks!`));
+    known[meta.full_name] = { ...ex, repo: meta.full_name, at: day(NOW), source: q.source };
   }
   console.log(`explain: +${done} (${provider ?? "no AI key"}), ${Math.max(0, queue.length - done)} waiting`);
   await write("data/explain.json", known);
@@ -360,7 +360,7 @@ async function downloads(repos, explained) {
 // ---------- 6. Votes & leaderboard ----------
 async function ensureLabels() {
   const have = new Set((await ghAll(`repos/${REPO}/labels`)).map((l) => l.name));
-  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for AI Compass"], ["accepted", "a855f7", "Submission accepted: +10 points"], ["explain", "f59e0b", "Ask the agent to explain a repo: +2 points"]])
+  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for AI Compass"], ["accepted", "a855f7", "Submission accepted: +10 points"]])
     if (!have.has(name)) await gh(`repos/${REPO}/labels`, { method: "POST", body: JSON.stringify({ name, color, description }) });
 }
 
@@ -373,7 +373,7 @@ async function leaderboard(tools, explained) {
       const link = t.path ? `https://github.com/${t.repo}/tree/main/${t.path}` : `https://github.com/${t.repo}`;
       const issue = await gh(`repos/${REPO}/issues`, {
         method: "POST",
-        body: JSON.stringify({ title: `Vote: ${t.name}`, labels: ["vote"], body: `**${t.name}** (${t.type}) by ${t.by}\n\n${t.d}\n\n${link}\n\n👍 **React with a thumbs-up to vote** if you use it. Votes show up on the [AI Compass leaderboard](https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}/leaderboard.html) within a few hours.` }),
+        body: JSON.stringify({ title: `Vote: ${t.name}`, labels: ["vote"], body: `**${t.name}** (${t.type}) by ${t.by}\n\n${t.d}\n\n${link}\n\n**React with a thumbs-up to vote** if you use it. Votes show up on the [AI Compass leaderboard](https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}/leaderboard.html) within a few hours.` }),
       });
       issues[t.id] = issue.number;
     }
@@ -398,21 +398,20 @@ async function leaderboard(tools, explained) {
   accepted.forEach((i) => { const p = person(i.user); if (p) p.submissions++; });
   const prs = await safe("prs", () => gh(`search/issues?q=${encodeURIComponent(`repo:${REPO} is:pr is:merged`)}&per_page=100`), { items: [] });
   prs.items.forEach((i) => { const p = person(i.user); if (p) p.prs++; });
-  Object.values(explained).forEach((e) => { const p = e.by && person({ login: e.by }); if (p) p.requests++; });
 
-  const ranked = [...people.values()].map((p) => ({ ...p, points: p.votes + p.submissions * 10 + p.prs * 5 + p.requests * 2 })).sort((a, b) => b.points - a.points).slice(0, 100);
-  return { tools: toolVotes.sort((a, b) => b.votes - a.votes), people: ranked, rules: { vote: 1, submission: 10, pr: 5, request: 2 } };
+  const ranked = [...people.values()].map((p) => ({ ...p, points: p.votes + p.submissions * 10 + p.prs * 5 })).sort((a, b) => b.points - a.points).slice(0, 100);
+  return { tools: toolVotes.sort((a, b) => b.votes - a.votes), people: ranked, rules: { vote: 1, submission: 10, pr: 5 } };
 }
 
 // ---------- run ----------
 const tools = await read("data/tools.json", []);
-const { repos: seeds } = await read("data/repos.json", { repos: [] });
+const { repos: seeds, exclude = [] } = await read("data/repos.json", { repos: [] });
 const explainedBefore = await read("data/explain.json", {});
-const tracked = [...new Set([...tools.map((t) => t.repo), ...seeds, ...Object.keys(explainedBefore)].filter(Boolean))];
+const tracked = [...new Set([...tools.map((t) => t.repo), ...seeds, ...Object.keys(explainedBefore)].filter((r) => r && !exclude.includes(r)))];
 const stats = await githubStats(tracked, new Set(tools.filter((t) => t.type === "client").map((t) => t.repo)));
 const updated = NOW.toISOString();
 await write("data/github.json", { updated, repos: stats });
-const trend = await trending(new Set(Object.keys(stats)));
+const trend = await trending(new Set([...Object.keys(stats), ...exclude]));
 await write("data/trending.json", { updated, items: trend });
 await write("data/news.json", { updated, items: await news(stats, tools) });
 const explained = await explainRepos(trend);

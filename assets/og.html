@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { background: #0a0e17; color: #e8ecf4; font-family: "IBM Plex Sans", sans-serif; position: relative; }
+  body::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(#2c3a58 1.4px, transparent 1.4px); background-size: 28px 28px; -webkit-mask-image: radial-gradient(ellipse 75% 70% at 25% 30%, #000 20%, transparent 75%); opacity: .8; }
+  body::after { content: ""; position: absolute; width: 760px; height: 760px; right: -220px; top: -320px; background: radial-gradient(circle, rgba(34,197,94,.20), transparent 65%); }
+  .in { position: relative; z-index: 1; padding: 70px 80px; }
+  .brand { display: flex; align-items: center; gap: 16px; font: 700 34px "JetBrains Mono", monospace; letter-spacing: -1px; }
+  .brand svg { width: 52px; height: 52px; }
+  h1 { font: 700 72px/1.05 "JetBrains Mono", monospace; letter-spacing: -3px; margin: 56px 0 26px; max-width: 980px; }
+  h1 em { font-style: normal; color: #22c55e; }
+  p { font-size: 30px; color: #9aa6bd; margin: 0; max-width: 900px; }
+  .logos { position: absolute; right: 80px; bottom: 64px; display: flex; gap: 14px; z-index: 1; }
+  .logos span { width: 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; background: #111827; border: 1px solid #2c3a58; }
+  .logos i { width: 34px; height: 34px; display: block; -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; }
+</style></head>
+<body><div class="in">
+  <div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="#22c55e"/></svg>ai-compass</div>
+  <h1>Which AI should you use? <em>In plain English.</em></h1>
+  <p>Pick a goal, get the right model and free tools, with step-by-step setup.</p>
+</div>
+<div class="logos">
+  <span><i style="background:#d95926;-webkit-mask-image:url(logos/claude.svg)"></i></span>
+  <span><i style="background:#199e70;-webkit-mask-image:url(logos/lh-openai.svg)"></i></span>
+  <span><i style="background:#3987e5;-webkit-mask-image:url(logos/googlegemini.svg)"></i></span>
+  <span><i style="background:#c98500;-webkit-mask-image:url(logos/ollama.svg)"></i></span>
+</div>
+</body></html>
