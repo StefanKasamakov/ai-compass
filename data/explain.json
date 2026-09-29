@@ -906,5 +906,1494 @@
   "repo": "siteboon/claudecodeui",
   "at": "2026-09-29",
   "source": "curated"
+ },
+ "bmad-code-org/BMAD-METHOD": {
+  "cat": "harness",
+  "kind": "Agile Development Framework",
+  "what": "Turn ideas into working software using AI-driven development workflows, explicit planning, and structured context.",
+  "why": "It solves the problem of coding assistants making unstated assumptions by keeping decisions explicit and carrying context forward across tasks. Reach for it when you want structured agile workflows and specialized agent perspectives inside your coding assistant.",
+  "level": "intermediate",
+  "start": "npx skills add bmad-code-org/BMAD-METHOD",
+  "caution": "",
+  "alts": [
+   "bmad-code-org/BMAD-METHOD",
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "repo": "bmad-code-org/BMAD-METHOD",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "coleam00/Archon": {
+  "cat": "harness",
+  "kind": "AI workflow engine",
+  "what": "Archon is an open-source harness builder for AI coding agents that lets you define development processes as YAML workflows for deterministic and repeatable execution.",
+  "why": "It solves the unpredictability of AI coding assistants by chaining together planning, execution, testing, and review steps into reliable, isolated pipelines. Reach for it when you want to turn ad-hoc AI interactions into structured software engineering workflows.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/coleam00/Archon\ncd Archon\nbun install\nclaude",
+  "caution": "Requires external dependencies like Bun, Claude Code, and the GitHub CLI to function properly.",
+  "alts": [
+   "anthropics/claude-code",
+   "gsd-build/get-shit-done",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "repo": "coleam00/Archon",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Yeachan-Heo/oh-my-claudecode": {
+  "cat": "harness",
+  "kind": "multi-agent orchestration plugin",
+  "what": "Teams-first multi-agent orchestration and automation plugin for Claude Code.",
+  "why": "It orchestrates multiple sub-agents and automated workflows directly within Claude Code to handle complex, multi-step engineering tasks.",
+  "level": "intermediate",
+  "start": "/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode",
+  "caution": "Named autopilot stage profiles currently require Linux with the flock utility.",
+  "alts": [
+   "anthropic/claude-code",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [
+   "oh-my-claude-sisyphus"
+  ],
+  "repo": "Yeachan-Heo/oh-my-claudecode",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "thedotmack/claude-mem": {
+  "cat": "memory",
+  "kind": "Persistent Agent Memory",
+  "what": "Captures session activity from coding agents, compresses it using AI, and injects relevant context back into future sessions.",
+  "why": "Coding agents frequently forget project history when sessions restart; this tool maintains continuity of knowledge so you do not have to re-explain context.",
+  "level": "beginner",
+  "start": "npx claude-mem install",
+  "caution": "The project claims automatic off-plan observation and free trial periods that automatically fall back to your Anthropic plan, which may have privacy or cost implications depending on your setup.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "thedotmack/claude-mem"
+  ],
+  "packages": [
+   "claude-mem"
+  ],
+  "repo": "thedotmack/claude-mem",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "EveryInc/compound-engineering-plugin": {
+  "cat": "harness",
+  "kind": "coding agent skill pack",
+  "what": "A plugin providing 36 skills for AI coding agents to structure workflows around a brainstorm-plan-build-review-compound loop.",
+  "why": "It prevents technical debt by capturing learnings from each engineering task so future changes start with better context and built-in rules.",
+  "level": "intermediate",
+  "start": "/plugin marketplace add EveryInc/compound-engineering-plugin",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "repo": "EveryInc/compound-engineering-plugin",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "anthropics/claude-code-action": {
+  "cat": "harness",
+  "kind": "GitHub PR Agent",
+  "what": "A general-purpose Claude Code GitHub action that answers questions, reviews code, and implements changes in PRs and issues.",
+  "why": "Automates code reviews, issue triage, and code implementation directly inside GitHub workflows. Reach for it when you want Claude to interact with your pull requests and repository events automatically.",
+  "level": "intermediate",
+  "start": "claude",
+  "caution": "Requires repository admin access to install the GitHub app and configure secrets.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "repo": "anthropics/claude-code-action",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "songquanpeng/one-api": {
+  "cat": "gateway",
+  "kind": "LLM API Gateway",
+  "what": "An LLM API management and key redistribution system that unifies multiple AI providers under a single OpenAI-compatible API.",
+  "why": "To manage multiple large language model providers, handle load balancing, set up user billing or token quotas, and distribute API keys through a single interface.",
+  "level": "intermediate",
+  "start": "docker run --name one-api -d --restart always -p 3000:3000 -e TZ=Asia/Shanghai -v /home/ubuntu/data/one-api:/data justsong/one-api",
+  "caution": "Must change the default root password (123456) immediately upon first login.",
+  "alts": [
+   "diegosouzapw/OmniRoute",
+   "BerriAI/litellm",
+   "songquanpeng/one-api"
+  ],
+  "packages": [],
+  "repo": "songquanpeng/one-api",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "QuantumNous/new-api": {
+  "cat": "gateway",
+  "kind": "AI Model Hub",
+  "what": "A self-hosted AI gateway that aggregates and distributes various LLM services under unified API formats.",
+  "why": "It solves the problem of managing multiple upstream LLM providers and disparate API keys by centralizing routing, access control, usage analytics, and cost accounting. Reach for it when you want to run a private multi-model service or share authorized model access across a team.",
+  "level": "intermediate",
+  "start": "docker run --name new-api -d --restart unless-stopped -p 127.0.0.1:3000:3000 -v \"$(pwd)/data:/data\" calciumion/new-api:latest",
+  "caution": "",
+  "alts": [
+   "diegosouzapw/OmniRoute",
+   "BerriAI/litellm",
+   "Portkey-AI/gateway"
+  ],
+  "packages": [],
+  "repo": "QuantumNous/new-api",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "router-for-me/CLIProxyAPI": {
+  "cat": "gateway",
+  "kind": "API Proxy Server",
+  "what": "CLIProxyAPI provides OpenAI, Gemini, Claude, Codex, and Grok compatible API interfaces for CLI and desktop clients.",
+  "why": "It bridges multiple CLI accounts and proprietary provider interfaces into standard OpenAI/Gemini/Claude-compatible endpoints so you can access them from any client or SDK.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "router-for-me/CLIProxyAPI",
+   "BerriAI/litellm",
+   "songquanpeng/one-api"
+  ],
+  "packages": [],
+  "repo": "router-for-me/CLIProxyAPI",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "rtk-ai/rtk": {
+  "cat": "tokens",
+  "kind": "CLI token optimizer",
+  "what": "High-performance CLI proxy that intercepts and compresses shell command outputs before they reach your coding agent's context window.",
+  "why": "Coding agents often spew thousands of lines of raw terminal output from commands like git status, test suites, and file reads into the LLM context. Reach for RTK to dramatically slash bash output volume, reduce token waste, and speed up agent workflows.",
+  "level": "intermediate",
+  "start": "brew install rtk\nrtk init -g",
+  "caution": "The repository claims up to 90% bash output reduction, but this refers strictly to shell output size, not your total API bill. Token counts are approximated using bytes/4 rather than a precise tokenizer.",
+  "alts": [
+   "rtk-ai/rtk",
+   "Maciek-roboblog/Claude-Code-Usage-Monitor"
+  ],
+  "packages": [
+   "rtk"
+  ],
+  "repo": "rtk-ai/rtk",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "microsoft/LLMLingua": {
+  "cat": "tokens",
+  "kind": "prompt compression library",
+  "what": "It compresses prompts and KV-caches using smaller companion models to reduce token counts and lower API costs.",
+  "why": "It solves the problem of high API costs and context window limits when sending massive prompts to large language models. Reach for it when you want to squeeze longer documents or RAG contexts into fewer tokens without retraining your main model.",
+  "level": "intermediate",
+  "start": "pip install llmlingua",
+  "caution": "",
+  "alts": [
+   "microsoft/LLMLingua"
+  ],
+  "packages": [
+   "llmlingua"
+  ],
+  "repo": "microsoft/LLMLingua",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Maciek-roboblog/Claude-Code-Usage-Monitor": {
+  "cat": "tokens",
+  "kind": "usage monitor",
+  "what": "Real-time Claude Code usage monitor with predictions and warnings.",
+  "why": "It tracks token consumption, message counts, and costs for Claude Code sessions to prevent hitting limits unexpectedly. Reach for it when you need visibility into your active agent token usage and spend.",
+  "level": "beginner",
+  "start": "uv tool install claude-monitor",
+  "caution": "",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor"
+  ],
+  "packages": [
+   "claude-monitor"
+  ],
+  "repo": "Maciek-roboblog/Claude-Code-Usage-Monitor",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Kilo-Org/kilocode": {
+  "cat": "coding",
+  "kind": "Open source coding agent",
+  "what": "Kilo Code is an AI coding agent available in VS Code, JetBrains, and the command line that lets you build and edit code using over 500 different models.",
+  "why": "Use this when you want an open source coding assistant that integrates directly into your editor or terminal and lets you switch between different AI models without paying a markup.",
+  "level": "beginner",
+  "start": "npm install -g @kilocode/cli",
+  "caution": "Autonomous mode (--auto) auto-approves permission prompts and should only be used in trusted environments.",
+  "alts": [
+   "anomalyco/opencode",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [
+   "@kilocode/cli"
+  ],
+  "repo": "Kilo-Org/kilocode",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "zed-industries/zed": {
+  "cat": "coding",
+  "kind": "high performance code editor",
+  "what": "Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+  "why": "Use it when you want a fast, collaborative code editor built for modern development workflows.",
+  "level": "beginner",
+  "start": "Download Zed directly from zed.dev/download or install it via your local package manager on macOS, Linux, or Windows.",
+  "caution": "Source code is licensed primarily under GPL-3.0-or-later with Apache-2.0 components.",
+  "alts": [],
+  "packages": [],
+  "repo": "zed-industries/zed",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "charmbracelet/crush": {
+  "cat": "coding",
+  "kind": "Terminal coding agent",
+  "what": "Crush is an agentic coding assistant that runs in your terminal, connecting your tools, code, and workflows to multiple LLM providers.",
+  "why": "It is used when you want a terminal-based coding partner that supports multiple models with mid-session switching, LSP integration, and MCP capabilities.",
+  "level": "intermediate",
+  "start": "brew install charmbracelet/tap/crush",
+  "caution": "The repository licence is marked as NOASSERTION.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [
+   "@charmland/crush"
+  ],
+  "repo": "charmbracelet/crush",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "QwenLM/qwen-code": {
+  "cat": "coding",
+  "kind": "terminal coding agent",
+  "what": "An open-source AI coding agent that lives in your terminal, editor, desktop, browser, and chat apps.",
+  "why": "It handles complex multi-step coding tasks, repository searches, and terminal workflows. Reach for it when you want an open-source alternative to proprietary coding agents.",
+  "level": "intermediate",
+  "start": "curl -fsSL https://qwen-code-assets.oss-cn-hangzhou.aliyuncs.com/installation/install-qwen-standalone.sh | bash",
+  "caution": "Integrates across multiple desktop, terminal, and web interfaces with various third-party APIs and local models, which may introduce configuration complexity or security considerations.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider",
+   "cline/cline"
+  ],
+  "packages": [
+   "@qwen-code/qwen-code"
+  ],
+  "repo": "QwenLM/qwen-code",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "plandex-ai/plandex": {
+  "cat": "coding",
+  "kind": "terminal coding agent",
+  "what": "Plandex is a terminal-based AI coding agent designed to handle large multi-file tasks and complex codebases.",
+  "why": "Use this when other AI coding tools struggle with the size or complexity of a large codebase, as it features a sandbox for reviewing edits and a 2M token effective context window.",
+  "level": "intermediate",
+  "start": "curl -sL https://plandex.ai/install.sh | bash",
+  "caution": "Plandex Cloud is winding down as of October 2025; users must rely on self-hosted or local mode with their own API keys or supported subscriptions.",
+  "alts": [
+   "anthropics/claude-code",
+   "OpenHands/OpenHands",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "repo": "plandex-ai/plandex",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "openinterpreter/openinterpreter": {
+  "cat": "coding",
+  "kind": "coding agent",
+  "what": "A coding agent optimized for low-cost models with built-in harness emulation and a terminal interface.",
+  "why": "It allows developers to run coding agents using lower-cost or open-weight models while retaining compatibility with multiple agent harnesses and protocols like ACP and Codex.",
+  "level": "intermediate",
+  "start": "curl -fsSL https://www.openinterpreter.com/install | sh",
+  "caution": "",
+  "alts": [
+   "openai/codex",
+   "cline/cline",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "repo": "openinterpreter/openinterpreter",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Significant-Gravitas/AutoGPT": {
+  "cat": "builders",
+  "kind": "Autonomous AI agent platform",
+  "what": "AutoGPT lets you build, deploy, and run autonomous AI agents that carry out complete workflows via a visual builder or plain English.",
+  "why": "It solves the problem of manual multi-step task execution, allowing you to automate repetitive chores by leveraging AI agents. Reach for it when you want to build or run automated workflows connected to hundreds of apps and AI models.",
+  "level": "intermediate",
+  "start": "https://docs.agpt.co/platform/getting-started",
+  "caution": "Self-hosting requires Docker, configuration, and your own model API keys, while the hosted platform is a paid service.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Significant-Gravitas/AutoGPT",
+   "n8n-io/n8n"
+  ],
+  "packages": [],
+  "repo": "Significant-Gravitas/AutoGPT",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "microsoft/agent-framework": {
+  "cat": "frameworks",
+  "kind": "multi-language agent framework",
+  "what": "Microsoft Agent Framework is a multi-language library for building, orchestrating, and deploying production-grade AI agents and multi-agent workflows in Python, .NET, and Go.",
+  "why": "It helps teams move from prototype to production by providing graph-based workflows, durability, human-in-the-loop controls, and OpenTelemetry observability. Reach for it when building complex multi-agent systems that require enterprise governance.",
+  "level": "advanced",
+  "start": "pip install agent-framework",
+  "caution": "",
+  "alts": [
+   "microsoft/autogen",
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph"
+  ],
+  "packages": [
+   "agent-framework"
+  ],
+  "repo": "microsoft/agent-framework",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "pydantic/pydantic-ai": {
+  "cat": "frameworks",
+  "kind": "Python AI SDK",
+  "what": "Pydantic AI is a Python framework for building typed, extensible AI agents with model swapping and built-in capabilities like memory and guardrails.",
+  "why": "Use this when you want to build robust AI agents, data extraction pipelines, or durable workflows in Python with end-to-end type safety.",
+  "level": "intermediate",
+  "start": "uv add pydantic-ai pydantic-ai-harness",
+  "caution": "Complex ecosystem with multiple separate packages for graphs, evals, and observability.",
+  "alts": [
+   "langchain-ai/langgraph",
+   "crewAIInc/crewAI",
+   "pydantic/pydantic-ai"
+  ],
+  "packages": [
+   "pydantic-ai"
+  ],
+  "repo": "pydantic/pydantic-ai",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "huggingface/smolagents": {
+  "cat": "frameworks",
+  "kind": "lightweight code agents library",
+  "what": "A minimalist library for building code-writing agents with minimal abstractions.",
+  "why": "Use this when you want to build custom agents that execute actions by writing Python code rather than structured JSON outputs, keeping your agent logic transparent and easy to debug.",
+  "level": "intermediate",
+  "start": "pip install \"smolagents[toolkit]\"",
+  "caution": "Executing model-generated code can be dangerous unless run inside a sandboxed environment.",
+  "alts": [
+   "langchain-ai/langgraph",
+   "crewAIInc/crewAI",
+   "microsoft/autogen"
+  ],
+  "packages": [
+   "smolagents"
+  ],
+  "repo": "huggingface/smolagents",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "agno-agi/agno": {
+  "cat": "frameworks",
+  "kind": "Agent platform framework",
+  "what": "Agno is a framework and runtime for building, running, and managing custom AI agent platforms.",
+  "why": "It provides developers with a complete stack to build agent applications, serve them via APIs, handle storage, and manage platforms with built-in observability, security, and multi-tenant isolation.",
+  "level": "intermediate",
+  "start": "Clone https://github.com/agno-agi/agentos-railway into a folder called agent-platform, cd in, read the README, and follow the get started guide.",
+  "caution": "Sends telemetry data per agent run by default, which can be disabled via an environment variable.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "repo": "agno-agi/agno",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "mastra-ai/mastra": {
+  "cat": "frameworks",
+  "kind": "TypeScript AI framework",
+  "what": "Mastra is a TypeScript framework for building AI applications, autonomous agents, and multi-step workflows.",
+  "why": "It provides a structured way to handle model routing, graph-based workflows, human-in-the-loop state suspension, and evaluation for web developers building production AI features.",
+  "level": "intermediate",
+  "start": "npm create mastra@latest",
+  "caution": "Dual-licensed with an enterprise license on specific enterprise directories.",
+  "alts": [
+   "langchain-ai/langgraph",
+   "crewAIInc/crewAI",
+   "pydantic/pydantic-ai"
+  ],
+  "packages": [
+   "@mastra/core"
+  ],
+  "repo": "mastra-ai/mastra",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "google/adk-python": {
+  "cat": "frameworks",
+  "kind": "Python Agent Toolkit",
+  "what": "An open-source, code-first Python framework for building, evaluating, and deploying AI agents and multi-agent systems.",
+  "why": "It provides a graph-based workflow runtime, task delegation APIs, and deployment tools so developers can build structured, production-ready AI applications. Reach for it when you need to orchestrate complex agent behaviors beyond simple chat loops.",
+  "level": "intermediate",
+  "start": "pip install google-adk",
+  "caution": "",
+  "alts": [
+   "microsoft/autogen",
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph"
+  ],
+  "packages": [
+   "google-adk"
+  ],
+  "repo": "google/adk-python",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "modelcontextprotocol/typescript-sdk": {
+  "cat": "frameworks",
+  "kind": "typescript mcp sdk",
+  "what": "Official TypeScript SDK for building Model Context Protocol servers and clients across Node.js, Bun, and Deno.",
+  "why": "Provides standardized tools and resources to connect AI models with external data sources and applications. Reach for it when building custom MCP servers or clients in TypeScript.",
+  "level": "intermediate",
+  "start": "npm install @modelcontextprotocol/server",
+  "caution": "",
+  "alts": [
+   "modelcontextprotocol/python-sdk",
+   "PrefectHQ/fastmcp"
+  ],
+  "packages": [
+   "@modelcontextprotocol/server",
+   "@modelcontextprotocol/client",
+   "@modelcontextprotocol/node",
+   "@modelcontextprotocol/express",
+   "@modelcontextprotocol/fastify",
+   "@modelcontextprotocol/hono"
+  ],
+  "repo": "modelcontextprotocol/typescript-sdk",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "modelcontextprotocol/python-sdk": {
+  "cat": "frameworks",
+  "kind": "Python MCP SDK",
+  "what": "The official Python SDK for building Model Context Protocol servers and clients.",
+  "why": "It allows developers to expose data and functionality to LLM applications in a standardized way using Python type hints, without writing manual JSON schemas or request parsing.",
+  "level": "intermediate",
+  "start": "uv add \"mcp[cli]\"",
+  "caution": "Requires Python 3.10+ and uses v2 of the SDK, which includes breaking changes from v1.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [
+   "mcp"
+  ],
+  "repo": "modelcontextprotocol/python-sdk",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "PrefectHQ/fastmcp": {
+  "cat": "frameworks",
+  "kind": "Python MCP Framework",
+  "what": "FastMCP is a framework for building Model Context Protocol (MCP) servers, clients, and interactive apps in Python and TypeScript.",
+  "why": "Building MCP servers manually requires handling protocol lifecycles, schema validation, and transport negotiation, which FastMCP automates so you can turn ordinary functions into LLM tools instantly.",
+  "level": "intermediate",
+  "start": "uv add fastmcp",
+  "caution": "",
+  "alts": [
+   "modelcontextprotocol/python-sdk",
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [
+   "fastmcp",
+   "@prefecthq/fastmcp-ts"
+  ],
+  "repo": "PrefectHQ/fastmcp",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "browserbase/stagehand": {
+  "cat": "coding",
+  "kind": "browser automation sdk",
+  "what": "Stagehand is an SDK for browser agents that extracts data and interacts with websites using natural language commands.",
+  "why": "Use it when building web automation or scraping agents that need to self-heal when site layouts change and extract structured schema-validated data.",
+  "level": "intermediate",
+  "start": "pnpm add @browserbasehq/stagehand 'zod@~4.4.3'",
+  "caution": "Requires a local installation of Google Chrome and a valid LLM API key to process instructions.",
+  "alts": [
+   "browser-use/browser-use",
+   "Skyvern-AI/skyvern",
+   "unclecode/crawl4ai"
+  ],
+  "packages": [
+   "@browserbasehq/stagehand",
+   "stagehand"
+  ],
+  "repo": "browserbase/stagehand",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Skyvern-AI/skyvern": {
+  "cat": "media",
+  "kind": "AI Browser Automation",
+  "what": "Automates browser-based workflows using Vision LLMs and Playwright.",
+  "why": "Traditional browser automation scripts break when website layouts change. Skyvern uses computer vision and LLMs to interact with websites reliably without relying on brittle XPaths or DOM selectors.",
+  "level": "intermediate",
+  "start": "pip install \"skyvern[all]\" && skyvern quickstart",
+  "caution": "Requires external LLM API keys and relies on computer vision models, which can be computationally intensive or prone to occasional visual misinterpretation.",
+  "alts": [
+   "browser-use/browser-use",
+   "Skyvern-AI/skyvern",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [
+   "skyvern"
+  ],
+  "repo": "Skyvern-AI/skyvern",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "exo-explore/exo": {
+  "cat": "local",
+  "kind": "local device clustering",
+  "what": "Connects all your devices into an AI cluster to run models larger than would fit on a single device.",
+  "why": "It lets you distribute large AI models across multiple computers and use device-to-device communication to speed up inference.",
+  "level": "advanced",
+  "start": "uv run exo",
+  "caution": "Linux support currently runs on CPU and GPU support is under active development.",
+  "alts": [
+   "exo-explore/exo",
+   "ollama/ollama",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "repo": "exo-explore/exo",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "sgl-project/sglang": {
+  "cat": "local",
+  "kind": "high-performance serving engine",
+  "what": "SGLang is a high-performance serving framework for large language models and multimodal models designed to deliver low-latency and high-throughput inference.",
+  "why": "It solves the bottleneck of slow and expensive model inference by providing advanced features like RadixAttention prefix caching and prefill-decode disaggregation, making it ideal when you need to serve open-weight models at scale.",
+  "level": "advanced",
+  "start": "pip install sglang",
+  "caution": "Requires dedicated GPU hardware (such as NVIDIA or AMD accelerators) and advanced configuration for distributed clusters.",
+  "alts": [
+   "vllm-project/vllm",
+   "mudler/LocalAI",
+   "ollama/ollama"
+  ],
+  "packages": [
+   "sglang"
+  ],
+  "repo": "sgl-project/sglang",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "janhq/jan": {
+  "cat": "local",
+  "kind": "desktop app",
+  "what": "Jan is an open-source ChatGPT alternative that runs large language models locally and completely offline on your computer.",
+  "why": "It keeps your conversations completely private and under your control without requiring an internet connection or external cloud API. Reach for it when you want to run open-weight models on your own desktop hardware.",
+  "level": "beginner",
+  "start": "git clone https://github.com/janhq/jan && cd jan && make dev",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "repo": "janhq/jan",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "nomic-ai/gpt4all": {
+  "cat": "local",
+  "kind": "local llm runner",
+  "what": "GPT4All runs large language models privately on everyday desktops and laptops without requiring API calls or specialized GPUs.",
+  "why": "It lets you run open-source AI models completely offline for local chat and data privacy, and you should reach for it when you want to experiment with or use LLMs locally.",
+  "level": "beginner",
+  "start": "pip install gpt4all",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "janhq/jan",
+   "lm-sys/sglang"
+  ],
+  "packages": [
+   "gpt4all"
+  ],
+  "repo": "nomic-ai/gpt4all",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "ml-explore/mlx-lm": {
+  "cat": "local",
+  "kind": "Apple Silicon LLM Engine",
+  "what": "MLX LM is a Python package for generating text, fine-tuning, and quantizing large language models specifically on Apple Silicon using the MLX framework.",
+  "why": "It enables running and fine-tuning open-weight models locally on Mac hardware with native optimization. Reach for this when you want to run LLMs privately on Apple Silicon without third-party API dependencies.",
+  "level": "intermediate",
+  "start": "pip install mlx-lm",
+  "caution": "Requires an Apple Silicon Mac, and certain large models or features require macOS 15.0 or higher.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "janhq/jan"
+  ],
+  "packages": [
+   "mlx-lm"
+  ],
+  "repo": "ml-explore/mlx-lm",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "LostRuins/koboldcpp": {
+  "cat": "local",
+  "kind": "GGUF model runner",
+  "what": "KoboldCpp is an easy-to-use AI text-generation software for GGML and GGUF models that features a built-in KoboldAI Lite UI and supports multiple local modalities.",
+  "why": "It provides a self-contained executable to run open-weight AI models locally on your CPU or GPU without complex installations. Reach for it when you want a feature-rich, all-in-one local runner with built-in chat, adventure, and storywriting modes.",
+  "level": "beginner",
+  "start": "curl -fLo koboldcpp https://github.com/LostRuins/koboldcpp/releases/latest/download/koboldcpp-linux-x64-oldpc && chmod +x koboldcpp",
+  "caution": "There are active phishing sites impersonating the download page; ensure you only download binaries from the official GitHub repository releases.",
+  "alts": [
+   "ollama/ollama",
+   "janhq/jan",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "repo": "LostRuins/koboldcpp",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "chroma-core/chroma": {
+  "cat": "memory",
+  "kind": "vector database search",
+  "what": "Chroma is an open-source vector database that stores and searches embeddings for AI applications.",
+  "why": "It provides a simple way to store documents, metadata, and vector embeddings so an AI can search through private data or context. Reach for it when building retrieval-augmented generation (RAG) applications that require similarity search.",
+  "level": "beginner",
+  "start": "pip install chromadb",
+  "caution": "",
+  "alts": [
+   "qdrant/qdrant",
+   "chroma-core/chroma"
+  ],
+  "packages": [
+   "chromadb"
+  ],
+  "repo": "chroma-core/chroma",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "qdrant/qdrant": {
+  "cat": "memory",
+  "kind": "vector database",
+  "what": "High-performance vector search engine and database written in Rust for storing embeddings and filtering payloads.",
+  "why": "Use this when you need to build semantic search engines, recommendation systems, or Retrieval-Augmented Generation (RAG) applications that require fast, scalable vector similarity matching with complex payload filtering.",
+  "level": "intermediate",
+  "start": "docker run -p 6333:6333 qdrant/qdrant",
+  "caution": "Running the default Docker container starts an insecure deployment without authentication; secure your instance before production use.",
+  "alts": [
+   "chroma-core/chroma",
+   "qdrant/qdrant",
+   "milvus-io/milvus"
+  ],
+  "packages": [
+   "qdrant-client"
+  ],
+  "repo": "qdrant/qdrant",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "HKUDS/LightRAG": {
+  "cat": "memory",
+  "kind": "knowledge graph RAG",
+  "what": "LightRAG is a simple and fast retrieval-augmented generation framework that uses dual-level retrieval and knowledge graphs to answer questions from your documents.",
+  "why": "Traditional RAG struggles with complex queries that require connecting multiple pieces of information across large text corpora. Reach for LightRAG when you need an efficient, graph-based RAG system that supports multimodal data parsing, multiple storage backends, and role-specific LLM configurations.",
+  "level": "intermediate",
+  "start": "pip install lightrag-hku",
+  "caution": "The project integrates many external services like MinerU, Docling, and various vector and graph databases, which can add complexity to your setup.",
+  "alts": [
+   "HKUDS/LightRAG",
+   "microsoft/graphrag",
+   "run-llama/llama_index"
+  ],
+  "packages": [
+   "lightrag-hku"
+  ],
+  "repo": "HKUDS/LightRAG",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "microsoft/graphrag": {
+  "cat": "memory",
+  "kind": "Graph-based RAG pipeline",
+  "what": "A data pipeline and transformation suite designed to extract structured data from unstructured text using LLMs to build knowledge graphs for question answering.",
+  "why": "It improves LLM reasoning over private datasets by organizing text into structured knowledge graphs. Reach for it when standard vector search RAG struggles to connect disparate facts across large corpora.",
+  "level": "advanced",
+  "start": "graphrag init --root [path] --force",
+  "caution": "The project is largely in maintenance mode. Indexing can be an expensive operation with high LLM token costs, so start small and read the cost documentation carefully.",
+  "alts": [
+   "HKUDS/LightRAG",
+   "infiniflow/ragflow",
+   "chroma-core/chroma"
+  ],
+  "packages": [
+   "graphrag"
+  ],
+  "repo": "microsoft/graphrag",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "docling-project/docling": {
+  "cat": "memory",
+  "kind": "document parser",
+  "what": "Docling simplifies document processing by parsing diverse formats including advanced PDF understanding and providing integrations with the generative AI ecosystem.",
+  "why": "It solves the difficulty of turning complex, multi-format documents like PDFs, DOCX, and scanned images into structured markdown, JSON, or text for AI applications. Reach for it when building RAG systems or data pipelines that need clean document ingestion.",
+  "level": "intermediate",
+  "start": "pip install docling",
+  "caution": "",
+  "alts": [
+   "microsoft/markitdown",
+   "infiniflow/ragflow"
+  ],
+  "packages": [
+   "docling"
+  ],
+  "repo": "docling-project/docling",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "unclecode/crawl4ai": {
+  "cat": "memory",
+  "kind": "web crawler and scraper",
+  "what": "Crawl4AI turns any website into clean, LLM-ready Markdown for RAG, AI agents, and data pipelines.",
+  "why": "It solves the problem of extracting clean text from messy web pages, helping developers feed up-to-date web content into language models or applications.",
+  "level": "intermediate",
+  "start": "pip install -U crawl4ai",
+  "caution": "Requires installing a headless browser environment via setup commands to handle dynamic JavaScript-heavy web pages.",
+  "alts": [
+   "firecrawl/firecrawl",
+   "unclecode/crawl4ai",
+   "browserbase/stagehand"
+  ],
+  "packages": [
+   "crawl4ai"
+  ],
+  "repo": "unclecode/crawl4ai",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "firecrawl/firecrawl": {
+  "cat": "memory",
+  "kind": "web scraping api",
+  "what": "An API and set of developer tools to search, scrape, crawl, and interact with websites at scale, turning messy HTML into clean Markdown or structured data for AI agents.",
+  "why": "Web scraping is notoriously fragile due to JavaScript-heavy pages, anti-bot protections, and changing layouts; use this when you need reliable web data extracted directly into formats suitable for LLMs without maintaining custom scrapers.",
+  "level": "intermediate",
+  "start": "from firecrawl import Firecrawl\n\napp = Firecrawl(api_key=\"fc-YOUR_API_KEY\")\n\nresult = app.scrape('firecrawl.dev')",
+  "caution": "Requires an API key from firecrawl.dev and relies on a hosted cloud service for its primary functionality.",
+  "alts": [
+   "unclecode/crawl4ai",
+   "firecrawl/firecrawl"
+  ],
+  "packages": [
+   "firecrawl",
+   "firecrawl-cli"
+  ],
+  "repo": "firecrawl/firecrawl",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "letta-ai/letta": {
+  "cat": "memory",
+  "kind": "stateful agent platform",
+  "what": "Letta (formerly MemGPT) is a platform for building stateful AI agents with memory that can learn and self-improve over time.",
+  "why": "It solves the problem of stateless AI by providing advanced memory systems for agents, and you should reach for it when you need agents that retain information and identity across sessions.",
+  "level": "intermediate",
+  "start": "npm install -g @letta-ai/letta-code",
+  "caution": "The current active source code has moved to a separate repository (letta-ai/letta-code).",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti"
+  ],
+  "packages": [
+   "@letta-ai/letta-code"
+  ],
+  "repo": "letta-ai/letta",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "topoteretes/cognee": {
+  "cat": "memory",
+  "kind": "ai memory platform",
+  "what": "Cognee is an open-source AI memory platform that gives AI agents persistent long-term memory across sessions by turning documents, code, and conversations into a knowledge graph.",
+  "why": "It solves the problem of agents forgetting context between runs and helps developers build a shared knowledge base or company brain that agents can search and reuse.",
+  "level": "intermediate",
+  "start": "uv pip install \"cognee[gliner]\"",
+  "caution": "The bundled GLiNER extractor is a demo of the small-model pipeline; production-ready accuracy may require external LLM setup.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "HKUDS/LightRAG"
+  ],
+  "packages": [
+   "cognee"
+  ],
+  "repo": "topoteretes/cognee",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "LibreChat-AI/LibreChat": {
+  "cat": "builders",
+  "kind": "chat-ui & agents",
+  "what": "An open-source ChatGPT clone with multi-user authentication, agent support, sandboxed code execution, and compatibility with dozens of AI providers.",
+  "why": "Provides a self-hostable, customizable web interface to chat with multiple AI models, manage custom agents, and run code securely in one place.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/LibreChat-AI/LibreChat.git",
+  "caution": "Requires configuration of backend services like MongoDB and various API keys to fully unlock all features.",
+  "alts": [
+   "open-webui/open-webui",
+   "ChatGPTNextWeb/NextChat"
+  ],
+  "packages": [],
+  "repo": "LibreChat-AI/LibreChat",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "ChatGPTNextWeb/NextChat": {
+  "cat": "builders",
+  "kind": "AI Chat Client",
+  "what": "A cross-platform AI chat assistant and web application supporting multiple model providers like OpenAI, Claude, Gemini, and DeepSeek.",
+  "why": "Provides a lightweight, customizable user interface that can be self-hosted or run on desktop and mobile devices for chatting with multiple AI models.",
+  "level": "beginner",
+  "start": "Get an OpenAI API Key, then click the Deploy on Vercel button in the README to instantly spin up your own web app.",
+  "caution": "None",
+  "alts": [
+   "ChatGPTNextWeb/NextChat",
+   "ChatGPTNextWeb/NextChat",
+   "ChatGPTNextWeb/NextChat"
+  ],
+  "packages": [],
+  "repo": "ChatGPTNextWeb/NextChat",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "langflow-ai/langflow": {
+  "cat": "builders",
+  "kind": "visual AI builder",
+  "what": "Langflow is a visual platform for building and deploying AI-powered agents and workflows.",
+  "why": "It lets you design complex LLM chains and multi-agent systems visually without writing boilerplate code, and reach for it when you want a drag-and-drop builder with a Python backend.",
+  "level": "beginner",
+  "start": "uv pip install langflow -U",
+  "caution": "",
+  "alts": [
+   "FlowiseAI/Flowise",
+   "n8n-io/n8n",
+   "activepieces/activepieces"
+  ],
+  "packages": [
+   "langflow"
+  ],
+  "repo": "langflow-ai/langflow",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "activepieces/activepieces": {
+  "cat": "builders",
+  "kind": "no-code workflow builder",
+  "what": "An open source, extensible AI workflow automation tool and Zapier alternative with TypeScript-based integration pieces that double as MCP servers.",
+  "why": "Use this tool when you need to automate workflows and connect various APIs, databases, or AI agents using a visual builder. It helps bridge the gap between no-code automation and custom TypeScript development.",
+  "level": "intermediate",
+  "start": "",
+  "caution": "Community Edition is MIT licensed, but enterprise features require a commercial license.",
+  "alts": [
+   "n8n-io/n8n",
+   "FlowiseAI/Flowise",
+   "langgenius/dify"
+  ],
+  "packages": [],
+  "repo": "activepieces/activepieces",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "stackblitz-labs/bolt.diy": {
+  "cat": "builders",
+  "kind": "browser based AI workspace",
+  "what": "Prompt, run, edit, and deploy full-stack web applications using your choice of 19+ LLM providers.",
+  "why": "It provides an open-source, customizable alternative to web-based code generators like Bolt.new, letting you swap between providers like OpenAI, Anthropic, and local models via Ollama.",
+  "level": "intermediate",
+  "start": "npm install -g pnpm",
+  "caution": "",
+  "alts": [
+   "OpenHands/OpenHands",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "repo": "stackblitz-labs/bolt.diy",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "langfuse/langfuse": {
+  "cat": "evals",
+  "kind": "LLM Observability Platform",
+  "what": "Langfuse is an open source LLM engineering platform that helps teams collaboratively trace, evaluate, prompt-manage, and debug AI applications.",
+  "why": "It solves the problem of tracking complex LLM calls, debugging user sessions, and running evaluations without needing to build custom logging infrastructure from scratch. Reach for it when you need production observability or structured test benchmarks for your AI app.",
+  "level": "intermediate",
+  "start": "git clone --depth=1 https://github.com/langfuse/langfuse.git",
+  "caution": "",
+  "alts": [
+   "Arize-ai/phoenix",
+   "comet-ml/opik",
+   "confident-ai/deepeval"
+  ],
+  "packages": [
+   "langfuse"
+  ],
+  "repo": "langfuse/langfuse",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "promptfoo/promptfoo": {
+  "cat": "evals",
+  "kind": "LLM eval tool",
+  "what": "It is a command-line tool and library for testing prompts, agents, and RAG applications, featuring automated evaluations, red teaming, and model comparison.",
+  "why": "It helps developers move away from trial-and-error by providing metrics, security vulnerability scans, and CI/CD checks for LLM applications. Reach for it when you need to rigorously test output quality or pentest an AI app before shipping.",
+  "level": "intermediate",
+  "start": "npm install -g promptfoo",
+  "caution": "The project claims evals run 100% locally, but you must still supply your own LLM API keys which send data to external providers unless using purely local models.",
+  "alts": [
+   "Arize-ai/phoenix",
+   "comet-ml/opik",
+   "confident-ai/deepeval"
+  ],
+  "packages": [
+   "promptfoo"
+  ],
+  "repo": "promptfoo/promptfoo",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Arize-ai/phoenix": {
+  "cat": "evals",
+  "kind": "AI observability platform",
+  "what": "Arize Phoenix provides OpenTelemetry-based tracing, evaluation, dataset management, and experimentation for LLM applications.",
+  "why": "It solves the challenge of debugging and benchmarking complex AI workflows and multi-step agent applications. Reach for it when you need to inspect what your LLM code is doing under the hood, run evals, or manage prompts.",
+  "level": "intermediate",
+  "start": "pip install arize-phoenix",
+  "caution": "",
+  "alts": [
+   "promptfoo",
+   "comet-ml/opik",
+   "confident-ai/deepeval"
+  ],
+  "packages": [
+   "arize-phoenix"
+  ],
+  "repo": "Arize-ai/phoenix",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "comet-ml/opik": {
+  "cat": "evals",
+  "kind": "LLM Observability Platform",
+  "what": "Debug, evaluate, and monitor LLM applications, RAG systems, and agentic workflows with comprehensive tracing and automated evaluations.",
+  "why": "The project solves the need to track, evaluate, and optimize complex multi-step AI agent interactions and LLM calls in production without relying on closed-source SaaS platforms.",
+  "level": "intermediate",
+  "start": "pip install opik",
+  "caution": "Self-hosting the full server platform requires managing backend infrastructure alongside the client SDK.",
+  "alts": [
+   "Arize-ai/phoenix",
+   "comet-ml/opik",
+   "langfuse/langfuse"
+  ],
+  "packages": [
+   "opik"
+  ],
+  "repo": "comet-ml/opik",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "confident-ai/deepeval": {
+  "cat": "evals",
+  "kind": "LLM evaluation framework",
+  "what": "DeepEval is an open-source evaluation framework for unit testing large language model systems, similar to Pytest.",
+  "why": "It solves the problem of testing and measuring the quality of RAG pipelines, agents, and chatbots, helping you catch regressions and compare prompts or models. Reach for it when you need a rigorous testing harness for your LLM application.",
+  "level": "intermediate",
+  "start": "pip install deepeval",
+  "caution": "",
+  "alts": [
+   "Arize-ai/phoenix",
+   "promptfoo/promptfoo",
+   "comet-ml/opik"
+  ],
+  "packages": [
+   "deepeval"
+  ],
+  "repo": "confident-ai/deepeval",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "Comfy-Org/ComfyUI": {
+  "cat": "media",
+  "kind": "Node-based diffusion GUI",
+  "what": "A modular node graph engine and interface for running and chaining local diffusion models to create images, videos, 3D assets, and audio.",
+  "why": "It solves the problem of rigid interfaces by allowing complete control over every parameter and model step in local AI generation pipelines. Reach for it when you need a powerful backend or visual workflow builder for complex local diffusion tasks.",
+  "level": "intermediate",
+  "start": "Download and run the official ComfyUI desktop application or follow the manual installation instructions for your operating system and GPU type.",
+  "caution": "Complex graph configurations and community custom nodes can sometimes break or cause compatibility issues during weekly updates.",
+  "alts": [
+   "AUTOMATIC1111/stable-diffusion-webui",
+   "lllyasviel/Fooocus",
+   "Comfy-Org/ComfyUI"
+  ],
+  "packages": [],
+  "repo": "Comfy-Org/ComfyUI",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "AUTOMATIC1111/stable-diffusion-webui": {
+  "cat": "media",
+  "kind": "image generation interface",
+  "what": "A browser-based user interface for running Stable Diffusion image generation models locally.",
+  "why": "To generate and edit images, upscale photos, and train custom visual styles using local hardware rather than paid cloud services. Reach for it when you want full control over your image generation pipeline.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git",
+  "caution": "Requires a dedicated GPU with sufficient VRAM (NVIDIA recommended) and significant setup for dependencies.",
+  "alts": [
+   "comfyanonymous/ComfyUI",
+   "lllyasviel/Fooocus",
+   "invoke-ai/InvokeAI"
+  ],
+  "packages": [],
+  "repo": "AUTOMATIC1111/stable-diffusion-webui",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "lllyasviel/Fooocus": {
+  "cat": "media",
+  "kind": "image generator software",
+  "what": "Fooocus is an offline image-generating software built on Stable Diffusion XL that focuses on prompting and generation without manual tuning.",
+  "why": "It removes the need for complex parameter tweaking and prompt engineering by combining automated prompt processing, inpainting, and image prompts into a simplified offline tool. Reach for it when you want Midjourney-style ease of use locally on your own GPU.",
+  "level": "beginner",
+  "start": "run.bat",
+  "caution": "The project is in a state of limited long-term support (LTS) with bug fixes only and no plans to migrate to newer architectures like Flux.",
+  "alts": [
+   "lllyasviel/stable-diffusion-webui-forge",
+   "AUTOMATIC1111/stable-diffusion-webui",
+   "comfyanonymous/ComfyUI"
+  ],
+  "packages": [],
+  "repo": "lllyasviel/Fooocus",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "openai/whisper": {
+  "cat": "media",
+  "kind": "speech recognition model",
+  "what": "Whisper is a general-purpose speech recognition model trained on diverse audio to perform multilingual speech recognition, speech translation, and language identification.",
+  "why": "Reach for this when you need to transcribe audio files, translate speech to English, or identify spoken languages locally in your own applications or via the command line.",
+  "level": "intermediate",
+  "start": "pip install -U openai-whisper",
+  "caution": "Requires external dependencies like ffmpeg and Python packaging tools; the repository has not received updates recently.",
+  "alts": [
+   "openai/whisper",
+   "hacksider/Deep-Live-Cam"
+  ],
+  "packages": [
+   "openai-whisper"
+  ],
+  "repo": "openai/whisper",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "SYSTRAN/faster-whisper": {
+  "cat": "media",
+  "kind": "Speech-to-text library",
+  "what": "A reimplementation of OpenAI's Whisper model using CTranslate2 for faster speech recognition and lower memory usage.",
+  "why": "It speeds up transcription significantly and reduces VRAM/RAM consumption compared to the official Whisper implementation, making it ideal for processing audio files quickly.",
+  "level": "intermediate",
+  "start": "pip install faster-whisper",
+  "caution": "Requires specific matching versions of CUDA and cuDNN libraries for GPU acceleration.",
+  "alts": [
+   "openai/whisper",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [
+   "faster-whisper"
+  ],
+  "repo": "SYSTRAN/faster-whisper",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "resemble-ai/chatterbox": {
+  "cat": "media",
+  "kind": "Open-source TTS models",
+  "what": "Chatterbox is a family of state-of-the-art text-to-speech models by Resemble AI supporting multilingual generation, voice cloning, and paralinguistic tags.",
+  "why": "It provides open-source, high-fidelity voice generation and zero-shot voice cloning models ranging from large multilingual checkpoints down to tiny 110M CPU-friendly models, which you should reach for when building local voice agents or localization workflows.",
+  "level": "intermediate",
+  "start": "pip install chatterbox-tts",
+  "caution": "",
+  "alts": [
+   "openai/whisper",
+   "SYSTRAN/faster-whisper",
+   "coqui-ai/TTS"
+  ],
+  "packages": [
+   "chatterbox-tts"
+  ],
+  "repo": "resemble-ai/chatterbox",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "hacksider/Deep-Live-Cam": {
+  "cat": "media",
+  "kind": "Real-time Face Swap",
+  "what": "Real-time face swap and video deepfake tool powered by a single image.",
+  "why": "It lets users perform live face replacement for webcams or video files using just one source image, useful for content creation and character animation. Reach for it when you want real-time face swapping capabilities.",
+  "level": "intermediate",
+  "start": "git clone --depth 1 https://github.com/hacksider/Deep-Live-Cam.git",
+  "caution": "Requires technical skills for manual installation, or downloading pre-built packages. The project includes content checks for inappropriate media, and users are expected to comply with legal and ethical standards regarding consent and deepfakes.",
+  "alts": [
+   "hacksider/Deep-Live-Cam",
+   "hacksider/Deep-Live-Cam"
+  ],
+  "packages": [],
+  "repo": "hacksider/Deep-Live-Cam",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "invoke-ai/InvokeAI": {
+  "cat": "media",
+  "kind": "creative AI engine",
+  "what": "Invoke is a creative engine for Stable Diffusion and Flux models featuring a web-based UI, unified canvas, and node-based workflows for generating visual media.",
+  "why": "It provides a robust canvas environment for artists and professionals to generate, inpaint, outpaint, and build customized visual workflows locally.",
+  "level": "intermediate",
+  "start": "Download the Launcher from https://github.com/invoke-ai/launcher/releases/latest",
+  "caution": "",
+  "alts": [
+   "AUTOMATIC1111/stable-diffusion-webui",
+   "lllyasviel/Fooocus",
+   "Comfy-Org/ComfyUI"
+  ],
+  "packages": [],
+  "repo": "invoke-ai/InvokeAI",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "coqui-ai/TTS": {
+  "cat": "media",
+  "kind": "Text-to-Speech library",
+  "what": "A deep learning toolkit for text-to-speech generation, voice cloning, and training custom voice models.",
+  "why": "It provides pretrained models and training infrastructure to synthesize natural speech or clone voices. Reach for it when you need to add voice generation capabilities to an application or train custom TTS models.",
+  "level": "intermediate",
+  "start": "pip install TTS",
+  "caution": "The repository was last pushed to in August 2024, so maintenance status should be verified.",
+  "alts": [],
+  "packages": [
+   "TTS"
+  ],
+  "repo": "coqui-ai/TTS",
+  "at": "2026-09-29",
+  "source": "curated"
+ },
+ "KKKKhazix/AIHOT": {
+  "cat": "builders",
+  "kind": "AI news framework",
+  "what": "A self-hosted web framework that automatically aggregates sources, uses LLMs to filter, score, and cluster news, and generates daily industry briefings.",
+  "why": "Helps you spin up a dedicated industry news aggregator and briefing site customized for any niche field using your own sources and filtering criteria.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/KKKKhazix/AIHOT.git myhot\ncd myhot\nnode scripts/init-env.ts --llm-key <你的模型 API Key>\ndocker compose up -d --build",
+  "caution": "The documentation is primarily in Chinese, and setup requires an OpenAI-compatible LLM API key and Docker.",
+  "alts": [
+   "open-webui/open-webui",
+   "FlowiseAI/Flowise",
+   "n8n-io/n8n"
+  ],
+  "packages": [],
+  "repo": "KKKKhazix/AIHOT",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Vincentwei1021/anything2explainer": {
+  "cat": "harness",
+  "kind": "Claude Code Skill",
+  "what": "Turns any topic into a motion-graphics explainer video with text-to-speech voiceover and subtitles using Remotion and Claude Code or Codex.",
+  "why": "Automates the multi-agent creation of professional programmatic explainer videos from a single prompt. Reach for it when you need to generate educational or technical videos with code-drawn graphics instead of stock footage.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/Vincentwei1021/anything2explainer.git",
+  "caution": "The repository has no explicit license specified. Requires external dependencies like ffmpeg, espeak-ng, and Python virtual environments, and takes 1 to 3 hours of wall clock time to fully render videos.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "edge-tts",
+   "kokoro",
+   "piper-tts",
+   "kokoro-onnx"
+  ],
+  "repo": "Vincentwei1021/anything2explainer",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "yetone/magpie": {
+  "cat": "gateway",
+  "kind": "menu bar model router",
+  "what": "Manage AI models and configure multiple coding agents from a single menu bar interface and local gateway.",
+  "why": "To easily switch models across different AI coding agents and share vendor credentials or local subscriptions without pasting separate keys into every tool.",
+  "level": "intermediate",
+  "start": "magpie presets",
+  "caution": "The project was last pushed in September 2026, which may indicate it is unmaintained.",
+  "alts": [
+   "anthropic/claude-code",
+   "BerriAI/litellm",
+   "musistudio/claude-code-router"
+  ],
+  "packages": [],
+  "repo": "yetone/magpie",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "tigerless-labs/agent-memory": {
+  "cat": "memory",
+  "kind": "long-term memory runtime",
+  "what": "Long-term memory runtime for AI agents that uses plain Markdown files as the source of truth, local ranked retrieval, and a sleep-time manage layer.",
+  "why": "AI agents forget everything from past sessions when they close, and agent-memory solves this by providing a local, cross-agent memory store that requires no API keys.",
+  "level": "intermediate",
+  "start": "mem init",
+  "caution": "Requires Python 3.12 or higher and uv, and is not currently published on PyPI.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "thedotmack/claude-mem"
+  ],
+  "packages": [],
+  "repo": "tigerless-labs/agent-memory",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "dzhng/jevgrep": {
+  "cat": "harness",
+  "kind": "coding agent helper",
+  "what": "Finds code by asking what it does, helping coding agents discover relevant files and source context.",
+  "why": "Reduces coding agent context discovery costs and token usage when exploring unfamiliar repositories.",
+  "level": "intermediate",
+  "start": "npm install -g @dzhng/jevgrep",
+  "caution": "Searches send eligible source content to third-party AI gateway providers, so avoid pointing it at codebases with sensitive unredacted data if those privacy terms are unsuitable.",
+  "alts": [
+   "anthropics/claude-code",
+   "anomalyco/opencode"
+  ],
+  "packages": [
+   "@dzhng/jevgrep"
+  ],
+  "repo": "dzhng/jevgrep",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "adtexterry-lgtm/unigit-ecosystem": {
+  "cat": "builders",
+  "kind": "AI workbench hub",
+  "what": "UNIGIT is an AI workbench ecosystem hub designed to bring models, tools, files, and project context into one environment for real work.",
+  "why": "It aims to eliminate the configuration and subscription maze of using AI, helping users focus on outcomes rather than model setup. Reach for it when exploring the UNIGIT ecosystem and resources.",
+  "level": "beginner",
+  "start": "",
+  "caution": "This repository is only a public brand, vision, and ecosystem hub; it does not contain the proprietary product source code or runtime.",
+  "alts": [
+   "open-webui/open-webui",
+   "Mintplex-Labs/anything-llm",
+   "LibreChat-AI/LibreChat"
+  ],
+  "packages": [],
+  "repo": "adtexterry-lgtm/unigit-ecosystem",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "2akouwu/reverify": {
+  "cat": "harness",
+  "kind": "anti-hallucination harness",
+  "what": "Forces coding and reverse-engineering agents to check every claim against deterministic tools before accepting it as fact.",
+  "why": "AI models often hallucinate APIs, struct fields, and function behaviors. Reach for this when you need strict ground-truth verification and context preservation during long coding tasks or binary analysis.",
+  "level": "intermediate",
+  "start": "pip install reverify",
+  "caution": "Requires Python and optionally extra native packages like capstone or angr for full functionality.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [
+   "reverify"
+  ],
+  "repo": "2akouwu/reverify",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "To3akaRin/mac-computer-use": {
+  "cat": "harness",
+  "kind": "macOS agent skill",
+  "what": "Mac-computer-use is a skill package for AI agents that provides native desktop control, window observation, and accessibility interactions on macOS.",
+  "why": "Connects AI agents directly to your Mac desktop for tasks requiring window observation, native input, and application automation.",
+  "level": "intermediate",
+  "start": "npx skills add To3akaRin/mac-computer-use",
+  "caution": "Requires macOS 14+, Swift 6 Command Line Tools, Node.js 22.4+, and explicit Accessibility and Screen Recording permissions on your Mac.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "repo": "To3akaRin/mac-computer-use",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "mikehasa/golive-skill": {
+  "cat": "harness",
+  "kind": "agent deployment skill",
+  "what": "An open-source agent skill and Node CLI that helps coding agents take apps live across hosting, databases, domains, email, and payments.",
+  "why": "It bridges the gap between local app development and production deployment by letting agents detect needs, plan changes, apply them with human approval, and verify the setup without needing a proprietary backend.",
+  "level": "intermediate",
+  "start": "npx skills add https://github.com/mikehasa/golive-skill --skill golive --global",
+  "caution": "Early alpha software with limited live validations; uses plaintext storage for credentials at mode 0600.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "golive"
+  ],
+  "repo": "mikehasa/golive-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "qiz029/dscode": {
+  "cat": "harness",
+  "kind": "DeepSeek agent harness",
+  "what": "A terminal coding agent for macOS built on the DeepSeek Harness featuring persistent shell execution, sub-agent delegation, and cross-session communication.",
+  "why": "It solves the isolated nature of standard coding agents by allowing multiple local sessions to communicate, share memory, and review each other's work.",
+  "level": "intermediate",
+  "start": "npm i -g @toddzheng024/dscode",
+  "caution": "Requires macOS 14+ and Node.js 22.19+ or 24+. It integrates with external provider accounts and models.",
+  "alts": [
+   "anthropics/claude-code",
+   "Yeachan-Heo/oh-my-claudecode",
+   "smtg-ai/claude-squad"
+  ],
+  "packages": [
+   "@toddzheng024/dscode"
+  ],
+  "repo": "qiz029/dscode",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "eternityspring/reelbench-skills": {
+  "cat": "harness",
+  "kind": "AI video skills",
+  "what": "A collection of Claude Code and Codex skills for video shot analysis, metadata scrubbing, and storyboard synchronization.",
+  "why": "To perform precise video shot breakdowns, clean metadata tracks, and generate synchronized storyboard reports directly inside your coding agent session. Reach for this when doing AI video workflows that require programmatic inspection or reporting.",
+  "level": "intermediate",
+  "start": "./scripts/install.sh",
+  "caution": "Requires local FFmpeg and Node.js installation. Relies on the host CLI agent for model execution.",
+  "alts": [
+   "wshobson/agents",
+   "addysomani/agent-skills"
+  ],
+  "packages": [],
+  "repo": "eternityspring/reelbench-skills",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "Jakeschincariol/linkedin-agent-skill": {
+  "cat": "harness",
+  "kind": "LinkedIn Claude skills",
+  "what": "Eleven free Claude skills that manage a LinkedIn account by writing posts, comments, replies, and optimizing profiles while removing AI fingerprints.",
+  "why": "Generates professional LinkedIn content and cleans up AI-generated text styles without automating direct posting or risking account bans.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/Jakeschincariol/linkedin-agent-skill.git",
+  "caution": "Requires manual copy-pasting of generated content because automated posting violates LinkedIn's User Agreement.",
+  "alts": [
+   "anthropics/claude-code",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [],
+  "repo": "Jakeschincariol/linkedin-agent-skill",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "undefined-ui/second-brain-os": {
+  "cat": "harness",
+  "kind": "AI Second Brain",
+  "what": "An AI-powered personal knowledge base that organizes itself inside plain markdown files and Obsidian using Claude Code.",
+  "why": "Solves the problem of accumulating unorganized bookmarks and notes by handing off filing and linking to an automated agent.",
+  "level": "intermediate",
+  "start": "git clone https://github.com/undefined-ui/second-brain-os.git",
+  "caution": "Requires external setup of Obsidian and Claude Code. The repository contains extensive guides and templates rather than a standalone packaged application.",
+  "alts": [
+   "anthropics/claude-code",
+   "thedotmack/claude-mem",
+   "Mintplex-Labs/anything-llm"
+  ],
+  "packages": [],
+  "repo": "undefined-ui/second-brain-os",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "okf-memory/okf-agent-memory": {
+  "cat": "memory",
+  "kind": "Git-Native Memory Harness",
+  "what": "Provides a git-native persistent memory system for AI coding agents based on the Google Open Knowledge Format (OKF) v0.2, featuring sub-300 microsecond in-memory BM25 search and an embedded Model Context Protocol (MCP) server.",
+  "why": "Solves context bloat and memory rot in coding agents by separating a compact normative working memory from a semantic pull domain memory. Reach for this when you want persistent, zero-database agent memory that operates entirely via version-controlled plain text.",
+  "level": "intermediate",
+  "start": "make build",
+  "caution": "Requires compiling a Go binary and manually structuring knowledge bundles according to the OKF v0.2 specification.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "letta-ai/letta"
+  ],
+  "packages": [],
+  "repo": "okf-memory/okf-agent-memory",
+  "at": "2026-09-29",
+  "source": "trending"
+ },
+ "aimeoa/hanshuang-codex": {
+  "cat": "harness",
+  "kind": "Prompt injection tool",
+  "what": "A desktop application that provides automated prompt injection and configuration scripts for various AI clients and harnesses.",
+  "why": "It applies custom instructions, system prompts, and memory configurations across multiple AI coding assistants and apps. Reach for it when you want to uniformly customize the behavior or rules of supported AI tools on Windows.",
+  "level": "intermediate",
+  "start": "npm install\nnpm run dev",
+  "caution": "The project description explicitly frames its purpose around prompt injection and jailbreaking experiments. It runs custom PowerShell scripts and modifies local configuration files and cloud sessions for various AI tools.",
+  "alts": [
+   "anthropic/claude-code",
+   "codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "repo": "aimeoa/hanshuang-codex",
+  "at": "2026-09-29",
+  "source": "trending"
  }
 }

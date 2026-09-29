@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29T09:01:38.429Z",
+ "updated": "2026-09-29T10:20:18.230Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -33,6 +33,14 @@
    "total": 1828,
    "packages": [
     "npm:@portkey-ai/gateway"
+   ]
+  },
+  "headroomlabs-ai/headroom": {
+   "npm": 0,
+   "pypi": 246320,
+   "total": 246320,
+   "packages": [
+    "pypi:headroom-ai"
    ]
   },
   "DietrichGebert/ponytail": {
@@ -108,12 +116,20 @@
     "npm:@openhands/agent-canvas"
    ]
   },
-  "langchain-ai/langgraph": {
+  "Aider-AI/aider": {
    "npm": 0,
-   "pypi": 43651931,
-   "total": 43651931,
+   "pypi": 267521,
+   "total": 267521,
    "packages": [
-    "pypi:langgraph"
+    "pypi:aider-chat"
+   ]
+  },
+  "crewAIInc/crewAI": {
+   "npm": 0,
+   "pypi": 2431720,
+   "total": 2431720,
+   "packages": [
+    "pypi:crewai"
    ]
   },
   "openai/openai-agents-python": {
@@ -148,12 +164,28 @@
     "pypi:browser-use"
    ]
   },
+  "vllm-project/vllm": {
+   "npm": 0,
+   "pypi": 1942109,
+   "total": 1942109,
+   "packages": [
+    "pypi:vllm"
+   ]
+  },
   "mem0ai/mem0": {
    "npm": 471512,
    "pypi": 0,
    "total": 471512,
    "packages": [
     "npm:mem0ai"
+   ]
+  },
+  "Graphify-Labs/graphify": {
+   "npm": 0,
+   "pypi": 1630865,
+   "total": 1630865,
+   "packages": [
+    "pypi:graphifyy"
    ]
   },
   "run-llama/llama_index": {
@@ -221,20 +253,20 @@
     "npm:claude-mem"
    ]
   },
-  "Maciek-roboblog/Claude-Code-Usage-Monitor": {
-   "npm": 0,
-   "pypi": 8623,
-   "total": 8623,
-   "packages": [
-    "pypi:claude-monitor"
-   ]
-  },
   "QwenLM/qwen-code": {
    "npm": 544,
    "pypi": 0,
    "total": 544,
    "packages": [
     "npm:qwen-code"
+   ]
+  },
+  "agno-agi/agno": {
+   "npm": 0,
+   "pypi": 1711213,
+   "total": 1711213,
+   "packages": [
+    "pypi:agno"
    ]
   },
   "mastra-ai/mastra": {
@@ -245,30 +277,37 @@
     "npm:mastra"
    ]
   },
-  "google/adk-python": {
+  "browserbase/stagehand": {
    "npm": 0,
-   "pypi": 9898178,
-   "total": 9898178,
+   "pypi": 1140827,
+   "total": 1140827,
    "packages": [
-    "pypi:google-adk"
+    "pypi:stagehand"
    ]
   },
   "nomic-ai/gpt4all": {
    "npm": 606,
-   "pypi": 42584,
-   "total": 43190,
+   "pypi": 0,
+   "total": 606,
    "packages": [
     "npm:gpt4all",
     "pypi:gpt4all"
    ]
   },
-  "unclecode/crawl4ai": {
+  "ml-explore/mlx-lm": {
    "npm": 0,
-   "pypi": 1188206,
-   "total": 1188206,
+   "pypi": 527266,
+   "total": 527266,
    "packages": [
-    "pypi:Crawl4AI",
-    "pypi:crawl4ai"
+    "pypi:mlx-lm"
+   ]
+  },
+  "HKUDS/LightRAG": {
+   "npm": 0,
+   "pypi": 126199,
+   "total": 126199,
+   "packages": [
+    "pypi:lightrag-hku"
    ]
   },
   "firecrawl/firecrawl": {
@@ -280,12 +319,12 @@
     "pypi:firecrawl"
    ]
   },
-  "topoteretes/cognee": {
+  "langflow-ai/langflow": {
    "npm": 0,
-   "pypi": 87864,
-   "total": 87864,
+   "pypi": 40142,
+   "total": 40142,
    "packages": [
-    "pypi:cognee"
+    "pypi:langflow"
    ]
   },
   "promptfoo/promptfoo": {
@@ -312,6 +351,30 @@
    "packages": [
     "npm:deepeval",
     "pypi:deepeval"
+   ]
+  },
+  "dzhng/jevgrep": {
+   "npm": 1412,
+   "pypi": 0,
+   "total": 1412,
+   "packages": [
+    "npm:@dzhng/jevgrep"
+   ]
+  },
+  "mikehasa/golive-skill": {
+   "npm": 753,
+   "pypi": 0,
+   "total": 753,
+   "packages": [
+    "npm:golive"
+   ]
+  },
+  "qiz029/dscode": {
+   "npm": 5825,
+   "pypi": 0,
+   "total": 5825,
+   "packages": [
+    "npm:@toddzheng024/dscode"
    ]
   }
  }
