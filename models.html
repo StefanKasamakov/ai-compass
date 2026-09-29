@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Model Picker · AI Compass</title>
+<meta name="description" content="Which AI model for which job: Claude, GPT-6, Gemini and open-weight models compared in plain English, with prices and context sizes.">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="models">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Model picker</div>
+    <h1>Tell us the job. We'll name the model.</h1>
+    <p class="lead">Every company sells the same three tiers: a <b style="color:var(--fg)">frontier</b> model (smartest, priciest), a <b style="color:var(--fg)">balanced</b> one (most work) and a <b style="color:var(--fg)">fast</b> one (cheap, high volume). Start from the job, not the brand.</p>
+  </div></header>
+
+  <section><div class="wrap">
+    <div class="chips" id="taskChips" aria-label="What do you want to do?"></div>
+    <div class="picks" id="taskOut" aria-live="polite" style="max-width:860px"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="spread"><div><div class="kicker">Every model</div><h2>The full lineup</h2></div><span class="muted mono" style="font-size:.8rem">checked <span id="modelsUpdated"></span> · model-watch agent opens a PR on changes</span></div>
+    <div class="chips" id="provChips" aria-label="Filter by company"></div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Model</th><th>Tier</th><th>Best for</th><th class="num">In $/1M</th><th class="num">Out $/1M</th><th class="num">Context</th></tr></thead>
+      <tbody id="modelRows"></tbody>
+    </table></div>
+    <p class="muted" style="margin-top:1rem;font-size:.9rem">Prices are API prices per 1 million tokens (about 750,000 English words). In the apps (claude.ai, ChatGPT, Gemini) you pay a monthly plan instead. * Open-weight models are free to download; you pay for the hardware or a host like OpenRouter.</p>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="kicker">Vocabulary</div>
+    <h2>Words you'll see everywhere</h2>
+    <dl class="gloss" style="margin-top:1.4rem">
+      <div><dt>Token</dt><dd>A chunk of text, roughly ¾ of an English word. API pricing counts tokens in and out.</dd></div>
+      <div><dt>Context window</dt><dd>How much the model can read at once. 1M tokens is several books or a whole codebase.</dd></div>
+      <div><dt>Thinking / effort</dt><dd>How long the model reasons before answering. More effort: better answers, slower, pricier.</dd></div>
+      <div><dt>API</dt><dd>Using a model from your own code, paying per use instead of a subscription.</dd></div>
+      <div><dt>Open-weight</dt><dd>A model you can download and run yourself. Your data never leaves your machine.</dd></div>
+      <div><dt>Hallucination</dt><dd>When a model confidently makes something up. Check facts, numbers and quotes.</dd></div>
+    </dl>
+  </div></section>
+</main>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

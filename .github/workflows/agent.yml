@@ -1,0 +1,76 @@
+# The AI Compass agent: refreshes data every 6 hours, watches models daily, deploys the site.
+name: agent
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # data refresh (GitHub stats, trending, news, votes)
+    - cron: "41 4 * * *"     # daily model watch (Claude opens a PR if models changed)
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: agent
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 24 }
+      - run: npm ci --prefix agent
+
+      - name: Refresh data
+        run: node agent/update.mjs
+        env: { CREATE_VOTE_ISSUES: "1" }
+
+      - name: Commit data
+        run: |
+          git config user.name "ai-compass-agent"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet || { git commit -m "agent: refresh data" && git push; }
+
+      - name: Model watch (Claude → pull request)
+        if: env.ANTHROPIC_API_KEY != '' && (github.event.schedule == '41 4 * * *' || github.event_name == 'workflow_dispatch')
+        env: { PR_BODY: pr-body.md, GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        run: |
+          node agent/models-watch.mjs
+          git diff --quiet data/models.json && exit 0
+          branch="agent/models-$(date +%F)"
+          git checkout -b "$branch"
+          git add data/models.json
+          git commit -m "agent: model lineup changes"
+          git push -f origin "$branch"
+          gh pr create --title "Model lineup update $(date +%F)" --body-file pr-body.md --base main --head "$branch" || gh pr edit "$branch" --body-file pr-body.md
+
+  deploy:
+    needs: update
+    if: always() && needs.update.result != 'failure'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with: { ref: main }
+      - name: Build site folder
+        run: mkdir _site && cp -r *.html assets data _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with: { path: _site }
+      - id: deployment
+        uses: actions/deploy-pages@v4

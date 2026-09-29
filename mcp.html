@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP Explained · AI Compass</title>
+<meta name="description" content="What MCP servers are, how they work, and the exact config to add one to Claude Code, Claude Desktop, claude.ai, ChatGPT, Codex, Cursor, VS Code or Gemini CLI.">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="mcp">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Model Context Protocol</div>
+    <h1>MCP, explained for busy people.</h1>
+    <p class="lead">MCP is a standard plug between AI apps and the rest of your world. Out of the box an AI can only talk. Plug in an MCP server and it can open your browser, read your GitHub, write to Notion or query your database.</p>
+    <div class="row"><a class="btn primary" href="#setup"><i data-i="terminal"></i>Get the config for my app</a><a class="btn" href="#what">How it works</a></div>
+  </div></header>
+
+  <section id="what"><div class="wrap split">
+    <div>
+      <div class="kicker">The idea</div>
+      <h2>Three pieces, one plug.</h2>
+      <ol class="steps">
+        <li><h3>The app (host)</h3><p>What you already use: Claude, ChatGPT, Cursor, VS Code, Codex. It speaks MCP.</p></li>
+        <li><h3>The server</h3><p>A small program that exposes <b>tools</b> ("click this", "create issue") and <b>data</b> ("this page", "that table"). Someone like GitHub or Notion writes it once.</p></li>
+        <li><h3>You just ask</h3><p>"Open our staging site and screenshot the checkout." The AI picks the right tool, asks your permission, and uses it.</p></li>
+      </ol>
+      <p class="muted" style="margin-top:1.4rem">Before MCP, every AI app needed its own custom integration with every tool. Now one server works in every app, like USB for AI.</p>
+    </div>
+    <figure class="card" style="margin:0;padding:1.4rem">
+      <svg class="diagram" viewBox="0 0 520 330" role="img" aria-label="Diagram: you talk to an AI app, which connects over MCP to servers such as Playwright, GitHub and Notion, which in turn reach a browser, repositories and pages.">
+        <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="var(--accent)"/></marker></defs>
+        <g stroke="var(--line-2)" fill="var(--bg-2)" stroke-width="1.2">
+          <rect x="10" y="125" width="120" height="80" rx="12"/>
+          <rect x="200" y="30" width="130" height="62" rx="12"/><rect x="200" y="134" width="130" height="62" rx="12"/><rect x="200" y="238" width="130" height="62" rx="12"/>
+          <rect x="400" y="30" width="110" height="62" rx="12"/><rect x="400" y="134" width="110" height="62" rx="12"/><rect x="400" y="238" width="110" height="62" rx="12"/>
+        </g>
+        <rect x="10" y="125" width="120" height="80" rx="12" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+        <g stroke="var(--accent)" stroke-width="1.5" fill="none" marker-end="url(#ar)">
+          <path d="M130 150 C165 150 165 61 198 61"/><path d="M130 165 H198"/><path d="M130 180 C165 180 165 269 198 269"/>
+        </g>
+        <g stroke="var(--line-2)" stroke-width="1.5" stroke-dasharray="4 4" fill="none" marker-end="url(#ar)">
+          <path d="M330 61 H398"/><path d="M330 165 H398"/><path d="M330 269 H398"/>
+        </g>
+        <text x="70" y="160" text-anchor="middle" font-size="14" font-weight="700">AI app</text>
+        <text x="70" y="180" text-anchor="middle" class="sub">Claude · ChatGPT</text>
+        <text x="70" y="194" text-anchor="middle" class="sub">Cursor · Codex</text>
+        <text x="163" y="118" text-anchor="middle" class="sub" style="fill:var(--accent)">MCP</text>
+        <text x="265" y="58" text-anchor="middle" font-size="13" font-weight="700">Playwright</text><text x="265" y="76" text-anchor="middle" class="sub">MCP server</text>
+        <text x="265" y="162" text-anchor="middle" font-size="13" font-weight="700">GitHub</text><text x="265" y="180" text-anchor="middle" class="sub">MCP server</text>
+        <text x="265" y="266" text-anchor="middle" font-size="13" font-weight="700">Notion</text><text x="265" y="284" text-anchor="middle" class="sub">MCP server</text>
+        <text x="455" y="66" text-anchor="middle" font-size="12">Browser</text>
+        <text x="455" y="170" text-anchor="middle" font-size="12">Repos</text>
+        <text x="455" y="274" text-anchor="middle" font-size="12">Pages</text>
+      </svg>
+      <figcaption class="muted" style="font-size:.85rem;margin-top:.6rem">One app, many servers. Each server is a separate plug you add or remove.</figcaption>
+    </figure>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="kicker">The one distinction that matters</div>
+    <h2>Local vs remote servers</h2>
+    <div class="grid two" style="margin-top:1.4rem">
+      <div class="card accent-left" style="--c:var(--google)">
+        <div class="head"><h3>Local <span class="muted">(stdio)</span></h3><span class="tag">runs on your computer</span></div>
+        <p>Your app launches it as a small program, usually with <code>npx</code> (needs <a href="https://nodejs.org">Node.js</a>) or <code>uvx</code> (Python). Good for files, your browser, local databases.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Works in:</b> Claude Code, Claude Desktop, Codex, Cursor, VS Code, Gemini CLI. <b style="color:var(--fg)">Not</b> in claude.ai or ChatGPT on the web.</p>
+      </div>
+      <div class="card accent-left" style="--c:var(--accent)">
+        <div class="head"><h3>Remote <span class="muted">(Streamable HTTP)</span></h3><span class="tag ok">just a URL</span></div>
+        <p>Hosted by the company (GitHub, Notion, Sentry…). You paste a URL and sign in with your account. Nothing to install, always up to date.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Works in:</b> everything, including claude.ai and ChatGPT. If a service offers a remote server, prefer it.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="setup"><div class="wrap">
+    <div class="kicker">Config generator</div>
+    <h2>Pick a server, pick your app, copy.</h2>
+    <p class="lead">Every app wants MCP configured slightly differently: a command here, a JSON file there, TOML in Codex. Choose both and get the exact thing to paste.</p>
+    <div class="cfg" style="margin-top:1.6rem">
+      <div><p class="field-label" id="srvLabel">1 · Server</p><div class="cfg-list" id="srvList" role="listbox" aria-labelledby="srvLabel"></div></div>
+      <div><p class="field-label">2 · Your app</p><div class="chips" id="clientChips" aria-label="Your app"></div><div id="cfgOut" aria-live="polite"></div></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="kicker">Traps</div>
+    <h2>Things that trip everyone up</h2>
+    <div class="grid" style="margin-top:1.4rem">
+      <div class="card"><h3>"servers" vs "mcpServers"</h3><p>VS Code's <code>.vscode/mcp.json</code> uses <code>"servers"</code>. Claude, Cursor and Gemini use <code>"mcpServers"</code>. Wrong key = silently nothing.</p></div>
+      <div class="card"><h3>Restart the app</h3><p>Claude Desktop only reads its config on start. Fully quit it (tray icon too), then reopen.</p></div>
+      <div class="card"><h3>Codex speaks TOML</h3><p><code>~/.codex/config.toml</code> uses <code>[mcp_servers.name]</code> blocks, not JSON. Or skip the file: <code>codex mcp add</code>.</p></div>
+      <div class="card"><h3>Web apps = remote only</h3><p>claude.ai and ChatGPT can't start programs on your PC. They need a server with a public URL.</p></div>
+      <div class="card"><h3>Gemini's "url" is SSE</h3><p>In <code>settings.json</code>, <code>"url"</code> means the old SSE transport; use <code>"httpUrl"</code> for modern HTTP servers.</p></div>
+      <div class="card"><h3>SSE is deprecated</h3><p>If a guide says <code>--transport sse</code>, it's outdated. The current spec (2026-07-28) uses stdio and Streamable HTTP.</p></div>
+      <div class="card"><h3>Windows paths</h3><p>Inside JSON, write <code>C:\\Users\\me</code> with double backslashes, or use forward slashes.</p></div>
+      <div class="card"><h3>Too many servers</h3><p>Each server adds tools the AI has to read. Ten servers slow it down and confuse it. Keep what you use.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap split">
+    <div>
+      <div class="kicker">Safety</div>
+      <h2>An MCP server can do what you can do.</h2>
+      <p class="lead">It runs with your permissions and your logins. Treat installing one like installing an app.</p>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="callout ok"><i data-i="shield"></i><div><b>Prefer official servers</b> from the company behind the product (github/, microsoft/, notion…). They're marked "official" below.</div></div>
+      <div class="callout ok"><i data-i="lock"></i><div><b>Give the smallest access.</b> Read-only tokens, one folder for the filesystem server, a test database first.</div></div>
+      <div class="callout"><i data-i="alert"></i><div><b>Watch for prompt injection.</b> A web page or GitHub issue can contain text aimed at your AI ("ignore your instructions and…"). Keep "ask before running tools" on for anything that writes or sends.</div></div>
+      <div class="callout"><i data-i="alert"></i><div><b>Never paste API keys into chats.</b> Put them in the config's <code>env</code> or let the server do OAuth sign-in.</div></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="spread"><div><div class="kicker">Popular servers</div><h2>Start with these</h2></div><a class="btn sm" href="leaderboard.html"><i data-i="trophy"></i>See what people vote for</a></div>
+    <div class="grid" id="srvGrid"></div>
+    <h3 style="margin-top:3rem">Find more</h3>
+    <div class="grid" style="margin-top:1rem">
+      <a class="card link" href="https://registry.modelcontextprotocol.io/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><div class="head"><h3>Official MCP Registry</h3><span class="tag warn">preview</span></div><p>The protocol's own index of public servers. Mostly used by marketplaces, but browsable.</p></a>
+      <a class="card link" href="https://github.com/punkpeye/awesome-mcp-servers" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><div class="head"><h3>awesome-mcp-servers</h3><span class="tag">list</span></div><p>The biggest community list, sorted by category. Quality varies: check the repo first.</p></a>
+      <a class="card link" href="https://modelcontextprotocol.io/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><div class="head"><h3>modelcontextprotocol.io</h3><span class="tag ok">docs</span></div><p>The spec and official guides, if you want to build your own server.</p></a>
+    </div>
+  </div></section>
+</main>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

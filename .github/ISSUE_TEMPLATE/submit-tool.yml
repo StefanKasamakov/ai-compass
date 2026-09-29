@@ -1,0 +1,26 @@
+name: Suggest a tool
+description: A skill, MCP server or collection AI Compass should list. Accepted tools earn you 10 leaderboard points.
+title: "Suggest: "
+labels: [submission]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: What is it?
+      options: [MCP server, Skill, Plugin / collection, Other]
+    validations: { required: true }
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub link
+      placeholder: https://github.com/owner/repo
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it do, in one or two plain sentences?
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Why do you use it? (optional)

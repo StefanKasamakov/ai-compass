@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leaderboard · AI Compass</title>
+<meta name="description" content="The AI tools people actually use, ranked by community votes, and the people who help keep AI Compass up to date.">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="leaderboard">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Leaderboard</div>
+    <h1>What people actually use.</h1>
+    <p class="lead">Stars tell you what's popular to bookmark. Votes here tell you what people run every day. Vote with your GitHub account, suggest tools, climb the board.</p>
+    <p class="mono muted" style="font-size:.82rem">updated <span id="boardUpdated"></span> · counts refresh every few hours</p>
+  </div></header>
+
+  <section><div class="wrap">
+    <div class="chips" id="boardTabs" aria-label="Leaderboard"></div>
+    <div class="board" id="board" aria-live="polite"></div>
+  </div></section>
+
+  <section id="how"><div class="wrap split">
+    <div>
+      <div class="kicker">How it works</div>
+      <h2>Points, votes, and why GitHub</h2>
+      <p class="lead">Every tool has a "Vote:" issue in our GitHub repo. A 👍 reaction there is your vote. Signing in with GitHub keeps it one vote per person and stops bots, and there's no extra account to make.</p>
+      <div class="row" style="margin-top:1.4rem">
+        <a class="btn primary" href="https://github.com/StefanKasamakov/ai-compass/issues?q=is%3Aissue+label%3Avote" target="_blank" rel="noopener"><i data-i="thumb"></i>Vote on GitHub</a>
+        <a class="btn" href="https://github.com/StefanKasamakov/ai-compass/issues/new?template=submit-tool.yml" target="_blank" rel="noopener"><i data-i="github"></i>Suggest a tool</a>
+      </div>
+    </div>
+    <ol class="steps">
+      <li><h3>+1 point per vote</h3><p>React 👍 on a tool's vote issue. Vote for as many as you genuinely use.</p></li>
+      <li><h3>+10 per accepted tool</h3><p>Suggest a skill or MCP server we're missing with the form. If it's accepted, it joins the site and you get the points.</p></li>
+      <li><h3>+5 per merged fix</h3><p>Spotted an outdated price or a broken link? Edit the JSON in <code>data/</code> and open a pull request.</p></li>
+    </ol>
+  </div></section>
+</main>
+<script src="assets/site.js" defer></script>
+</body>
+</html>

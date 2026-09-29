@@ -1,0 +1,33 @@
+{
+ "updated": "2026-09-29",
+ "providers": {
+  "anthropic": { "name": "Anthropic", "app": "Claude", "url": "https://claude.ai" },
+  "openai": { "name": "OpenAI", "app": "ChatGPT", "url": "https://chatgpt.com" },
+  "google": { "name": "Google", "app": "Gemini", "url": "https://gemini.google.com" },
+  "open": { "name": "Open-weight", "app": "Run it yourself", "url": "https://openrouter.ai" }
+ },
+ "models": [
+  { "id": "fable", "p": "anthropic", "name": "Claude Fable 5.1", "tier": "Frontier", "best": "The hardest work: long autonomous agent runs, science, deep analysis. Slow and pricey.", "in": 10, "out": 50, "ctx": "1M" },
+  { "id": "opus", "p": "anthropic", "name": "Claude Opus 5.5", "tier": "Default", "best": "Anthropic's recommended default. Coding (it powers Claude Code), long tasks, documents.", "in": 4, "out": 20, "ctx": "1M" },
+  { "id": "sonnet", "p": "anthropic", "name": "Claude Sonnet 5.5", "tier": "Balanced", "best": "Fast and smart: writing, everyday work, high-volume apps.", "in": 2, "out": 10, "ctx": "1M" },
+  { "id": "haiku", "p": "anthropic", "name": "Claude Haiku 4.5", "tier": "Fast", "best": "Simple tasks at scale: classification, extraction, chatbots.", "in": 1, "out": 5, "ctx": "200K" },
+  { "id": "mythos", "p": "anthropic", "name": "Claude Mythos 5.1", "tier": "Restricted", "best": "Same model as Fable 5.1 with different safeguards, for cyber defense and life sciences. Vetted orgs only.", "in": 10, "out": 50, "ctx": "1M" },
+  { "id": "astra", "p": "openai", "name": "GPT-6 Astra", "tier": "Frontier", "best": "OpenAI's strongest: coding, computer and browser use, science, professional work.", "in": 10, "out": 50, "ctx": "1.05M" },
+  { "id": "sol", "p": "openai", "name": "GPT-6 Sol", "tier": "Balanced", "best": "Strong reasoning for complex professional work at a mid-tier price.", "in": 2, "out": 10, "ctx": "1.05M" },
+  { "id": "luna", "p": "openai", "name": "GPT-6 Luna", "tier": "Fast", "best": "Extremely cheap. Routine tasks and huge volumes.", "in": 0.1, "out": 0.5, "ctx": "1.05M" },
+  { "id": "gptimage", "p": "openai", "name": "GPT Image 2.5", "tier": "Image", "best": "Image generation and editing in ChatGPT, including sketch-to-image.", "price": "in ChatGPT" },
+  { "id": "gpro", "p": "google", "name": "Gemini 3.1 Pro", "tier": "Frontier", "best": "Hard problems and true multimodal input: text, images, video and audio together.", "in": 2, "out": 12, "ctx": "1M" },
+  { "id": "gflash", "p": "google", "name": "Gemini 3.8 Flash", "tier": "Balanced", "best": "Smartest Flash yet: coding, agents, workflows. Great price/performance.", "in": 0.75, "out": 3.75, "ctx": "1M" },
+  { "id": "glite", "p": "google", "name": "Gemini 3.5 Flash-Lite", "tier": "Fast", "best": "Cheapest, fastest Gemini for bulk work.", "in": 0.3, "out": 2.5, "ctx": "1M" },
+  { "id": "nano", "p": "google", "name": "Nano Banana Pro / 2", "tier": "Image", "best": "Image generation and photo editing. Pro does 4K and crisp in-image text.", "price": "~$0.13 / image" },
+  { "id": "veo", "p": "google", "name": "Veo 3.1", "tier": "Video", "best": "Cinematic video with synced audio.", "price": "$0.05–0.60 / sec" },
+  { "id": "omni", "p": "google", "name": "Gemini Omni Flash", "tier": "Video", "best": "Fast conversational video generation and editing.", "price": "API" },
+  { "id": "live", "p": "google", "name": "Gemini 3.8 Live", "tier": "Voice", "best": "Real-time voice conversation and voice agents.", "price": "API" },
+  { "id": "lyria", "p": "google", "name": "Lyria 3.5", "tier": "Music", "best": "Full songs with verse/chorus structure.", "price": "API" },
+  { "id": "qwen", "p": "open", "name": "Qwen3.8 (Max / 27B)", "tier": "Open", "best": "Top open-weight model. The 27B version is the practical pick for one workstation.", "price": "free*" },
+  { "id": "glm", "p": "open", "name": "GLM-5.3", "tier": "Open", "best": "Strongest open-weight model for coding.", "price": "free*" },
+  { "id": "deepseek", "p": "open", "name": "DeepSeek V4 (Pro / Flash)", "tier": "Open", "best": "Near-frontier quality; Flash runs on 2 GPUs.", "price": "free*" },
+  { "id": "kimi", "p": "open", "name": "Kimi K3", "tier": "Open", "best": "Strong all-rounder, good for agents.", "price": "free*" },
+  { "id": "mistral", "p": "open", "name": "Mistral Small 4", "tier": "Open", "best": "European, Apache-2.0, 256K context. Easy on a company server.", "price": "free*", "ctx": "256K" }
+ ]
+}

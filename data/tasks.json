@@ -1,0 +1,44 @@
+[
+ { "id": "code", "icon": "code", "label": "Write code", "picks": [
+  ["opus", "Default in Claude Code. The best balance for real-world code."],
+  ["fable", "When Opus gets stuck: huge refactors, nasty bugs."],
+  ["astra", "If you live in Codex / ChatGPT."],
+  ["glm", "Free and local, when code can't leave your machine."]] },
+ { "id": "write", "icon": "pen", "label": "Write text", "picks": [
+  ["sonnet", "Natural style, fast, cheap."],
+  ["opus", "Long, important pieces: proposals, contracts, articles."],
+  ["sol", "Solid alternative if you use ChatGPT."]] },
+ { "id": "docs", "icon": "file", "label": "Analyze documents", "picks": [
+  ["opus", "1M-token context: whole PDFs, contracts, spreadsheets."],
+  ["gpro", "When there's also video, audio or lots of images."],
+  ["haiku", "Bulk extraction from hundreds of invoices."]] },
+ { "id": "research", "icon": "search", "label": "Research a topic", "picks": [
+  ["astra", "Deep research in ChatGPT: browses and summarizes on its own."],
+  ["gpro", "Gemini Deep Research, strong with Google Search."],
+  ["opus", "Research mode in Claude: detailed, cited reports."]] },
+ { "id": "image", "icon": "image", "label": "Make images", "picks": [
+  ["gptimage", "Easiest in ChatGPT, follows instructions well."],
+  ["nano", "Editing real photos, 4K, text inside images."]] },
+ { "id": "video", "icon": "video", "label": "Make video", "picks": [
+  ["veo", "Highest quality, with sound."],
+  ["omni", "Fast iteration and editing in chat."]] },
+ { "id": "voice", "icon": "mic", "label": "Talk by voice", "picks": [
+  ["live", "Gemini Live: the most natural voice conversation."],
+  ["sol", "Voice mode in the ChatGPT app."]] },
+ { "id": "cheap", "icon": "coins", "label": "Cheap at scale", "picks": [
+  ["luna", "$0.10 per 1M tokens: practically free."],
+  ["glite", "Fast, cheap, 1M context."],
+  ["haiku", "Fastest Claude, reliable on structured data."]] },
+ { "id": "private", "icon": "lock", "label": "Keep data private", "picks": [
+  ["qwen", "Qwen3.8-27B on one workstation. Data never leaves."],
+  ["mistral", "European, permissive license, for a company server."],
+  ["deepseek", "DeepSeek V4 Flash: more power, needs 2 GPUs."]] },
+ { "id": "agent", "icon": "bot", "label": "Run an agent", "picks": [
+  ["fable", "Hours of autonomous work on complex tasks."],
+  ["astra", "Best at driving a computer and browser."],
+  ["gflash", "Cheap agents at scale."]] },
+ { "id": "chat", "icon": "chat", "label": "Just ask things", "picks": [
+  ["sonnet", "Claude's free plan is plenty."],
+  ["sol", "ChatGPT: the most integrations and apps."],
+  ["gflash", "Gemini: built into Gmail, Drive, Android."]] }
+]

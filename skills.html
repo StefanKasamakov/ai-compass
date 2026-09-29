@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Skills · AI Compass</title>
+<meta name="description" content="What agent skills (SKILL.md) are, how they differ from MCP, plugins and prompts, how to install them in Claude and Codex, and a curated list worth your time.">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="skills">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Agent Skills</div>
+    <h1>Skills teach an agent how you work.</h1>
+    <p class="lead">A skill is just a folder with instructions (and sometimes scripts) that an AI agent loads when a task matches. "Make our quarterly report", "write a proposal in our format", "test this web app": each can be a skill.</p>
+  </div></header>
+
+  <section id="what"><div class="wrap split">
+    <div>
+      <div class="kicker">How it works</div>
+      <h2>Only the label is read until needed.</h2>
+      <ol class="steps">
+        <li><h3>The agent sees names and descriptions</h3><p>Of every installed skill. That's a few lines each, so 100 skills barely cost anything.</p></li>
+        <li><h3>A task matches a description</h3><p>You say "turn this into a spreadsheet", it matches the <code>xlsx</code> skill, and only then the full <code>SKILL.md</code> gets loaded.</p></li>
+        <li><h3>It follows the recipe</h3><p>Instructions, templates, and scripts in the folder. Same result every time, in your style.</p></li>
+      </ol>
+      <p class="muted" style="margin-top:1.2rem">Skills are an <a href="https://agentskills.io">open standard</a>: the same folder works in Claude (app, Code, API), ChatGPT and Codex, Cursor and others.</p>
+    </div>
+    <div class="term"><div class="term-bar"><i></i><i></i><i></i><span>quarterly-report/SKILL.md</span></div><pre><code><span class="c">quarterly-report/</span>
+<span class="c">├── SKILL.md       ← required</span>
+<span class="c">├── scripts/       ← optional code</span>
+<span class="c">└── templates/     ← optional files</span>
+
+---
+<span class="k">name</span>: quarterly-report
+<span class="k">description</span>: Builds the quarterly report from the
+  sales export. Use when asked for a "quarterly
+  report", "Q3 numbers" or "board update".
+---
+1. Ask for the sales CSV if it isn't attached.
+2. Run scripts/summarize.py on it.
+3. Fill templates/report.docx, keep our fonts.
+4. End with 3 bullet risks, no fluff.</code></pre></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="kicker">Don't mix them up</div>
+    <h2>Skill vs MCP vs plugin vs prompt</h2>
+    <div class="table-wrap" style="margin-top:1.4rem"><table>
+      <thead><tr><th>Thing</th><th>What it is</th><th>Example</th></tr></thead>
+      <tbody>
+        <tr><td class="mono">Prompt</td><td class="why">A one-off instruction in the chat.</td><td class="why">"Translate this to Spanish."</td></tr>
+        <tr><td class="mono">Project / Custom GPT</td><td class="why">Standing instructions and files for one chat space.</td><td class="why">"Company assistant" with uploaded handbook</td></tr>
+        <tr><td class="mono" style="color:var(--accent)">Skill</td><td class="why"><b style="color:var(--fg)">Know-how</b>: how to do a job. Loaded only when relevant.</td><td class="why">How we write a sales proposal</td></tr>
+        <tr><td class="mono" style="color:var(--accent)">MCP server</td><td class="why"><b style="color:var(--fg)">Access</b>: tools and data from another system.</td><td class="why">Read Gmail, write to Notion, drive a browser</td></tr>
+        <tr><td class="mono">Plugin</td><td class="why">An installable bundle: skills + MCP servers + commands together.</td><td class="why"><code>/plugin install document-skills@anthropic-agent-skills</code></td></tr>
+        <tr><td class="mono">Agent / subagent</td><td class="why">An AI that works through several steps with tools on its own.</td><td class="why">Claude Code, Codex, ChatGPT agent</td></tr>
+      </tbody>
+    </table></div>
+    <p class="lead" style="margin-top:1.2rem"><b style="color:var(--fg)">MCP gives hands, skills give know-how.</b> The best setups use both: a Notion MCP server plus a skill that says how your team writes meeting notes.</p>
+  </div></section>
+
+  <section id="install"><div class="wrap">
+    <div class="kicker">Install</div>
+    <h2>Adding a skill, per app</h2>
+    <div class="grid two" style="margin-top:1.4rem">
+      <div class="card p-anthropic accent-left"><div class="head"><h3>Claude Code</h3><span class="tag">terminal</span></div>
+        <p>Official skills come as plugins:</p>
+        <div class="term" style="margin:.8rem 0"><div class="term-bar"><i></i><i></i><i></i><span>inside Claude Code</span><button class="copy" data-copy="/plugin marketplace add anthropics/skills
+/plugin install document-skills@anthropic-agent-skills">copy</button></div><pre><code>/plugin marketplace add anthropics/skills
+/plugin install document-skills@anthropic-agent-skills</code></pre></div>
+        <p>Your own skill: drop the folder in <code>~/.claude/skills/</code> (every project) or <code>.claude/skills/</code> (this project).</p></div>
+      <div class="card p-anthropic accent-left"><div class="head"><h3>claude.ai &amp; desktop</h3><span class="tag">app</span></div>
+        <p>Anthropic's example skills are already built in on paid plans. For your own: <b style="color:var(--fg)">Settings → Capabilities → Skills</b>, upload the folder as a .zip.</p>
+        <p style="margin-top:.6rem"><a href="https://support.claude.com/en/articles/12512180-using-skills-in-claude" target="_blank" rel="noopener">Official guide →</a></p></div>
+      <div class="card p-openai accent-left"><div class="head"><h3>Codex</h3><span class="tag">terminal</span></div>
+        <div class="term" style="margin:.2rem 0 .8rem"><div class="term-bar"><i></i><i></i><i></i><span>inside Codex</span><button class="copy" data-copy="$skill-installer playwright">copy</button></div><pre><code>$skill-installer playwright</code></pre></div>
+        <p>Or put the folder in <code>.agents/skills/</code>. List them with <code>/skills</code>, restart Codex after installing. New official examples live in <a href="https://github.com/openai/plugins">openai/plugins</a>.</p></div>
+      <div class="card p-openai accent-left"><div class="head"><h3>ChatGPT</h3><span class="tag">app</span></div>
+        <p>Mention a skill with <code>@name</code>, or it kicks in when your request matches its description. Make one with <code>@skill-creator</code>.</p>
+        <p style="margin-top:.6rem"><a href="https://learn.chatgpt.com/docs/build-skills" target="_blank" rel="noopener">Official guide →</a></p></div>
+    </div>
+    <div class="callout" style="margin-top:1.4rem"><i data-i="alert"></i><div><b>Skills can include scripts that run on your machine.</b> Before installing one from a stranger, open its <code>SKILL.md</code> and <code>scripts/</code> folder on GitHub and skim what it does. <a href="github.html#judge">How to judge a repo →</a></div></div>
+  </div></section>
+
+  <section id="catalog"><div class="wrap">
+    <div class="spread"><div><div class="kicker">Curated</div><h2>Skills worth your time</h2></div>
+      <label class="sr" for="skillQ">Search skills</label><input id="skillQ" class="hero-search" style="height:46px;max-width:320px" type="search" placeholder="Filter: excel, design, test…"></div>
+    <div class="chips" id="catChips" aria-label="Category"></div>
+    <div class="grid" id="skillGrid"></div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="kicker">Collections</div>
+    <h2>Big packs and lists</h2>
+    <p class="lead">Installing a whole pack is often easier than picking skills one by one. Star counts refresh every few hours.</p>
+    <div class="grid" id="collGrid" style="margin-top:1.4rem"></div>
+  </div></section>
+</main>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
