@@ -579,3 +579,10 @@ input.note { width: auto; flex: 1; min-width: 200px; padding: .5rem .7rem; font-
   .stack-sm td:first-child { font-weight: 600; color: var(--fg); margin-bottom: .2rem; }
   .stack-sm td:last-child { margin-top: .3rem; font-size: .88rem; color: var(--dim); }
 }
+
+/* ---------- v9: local models ---------- */
+.local-steps { margin: 1.4rem 0 1.8rem; }
+.local-card { display: flex; flex-direction: column; }
+.local-card .foot { margin-top: auto; padding-top: .9rem; justify-content: space-between; }
+.cmd { display: flex; align-items: center; gap: .5rem; padding: .35rem .35rem .35rem .8rem; border: 1px solid var(--line-2); border-radius: 10px; background: var(--bg-2); }
+.cmd code { flex: 1; min-width: 0; overflow-wrap: anywhere; font: .82rem var(--mono); color: var(--fg); background: none; border: 0; padding: 0; }

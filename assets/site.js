@@ -280,6 +280,7 @@ const pages = {
     }, "all", "filter");
     $("#modelsUpdated").textContent = m.updated;
     benchmarks(m);
+    localModels();
   },
 
   async mcp() {
@@ -593,6 +594,31 @@ const placeLabels = (pts) => {
   }
   return placed;
 };
+
+// Local models: choose your computer, get models that fit in its memory, with the command to run them
+async function localModels() {
+  const d = await load("local");
+  if (!d?.models?.length) { $("#local").hidden = true; return; }
+  const USES = { chat: "Everyday chat", writing: "Writing", coding: "Coding", vision: "Reads images", reasoning: "Hard problems", fast: "Fast replies", multilingual: "Many languages", agents: "Agents & tools" };
+  const st = { hw: new URLSearchParams(location.search).get("hw") || d.tiers[1].id, use: "all" };
+  const draw = () => {
+    const tier = d.tiers.find((t) => t.id === st.hw);
+    const list = d.models.filter((x) => x.tier === st.hw && (st.use === "all" || x.good.includes(st.use)));
+    $("#hwHint").textContent = tier.hint;
+    $("#localGrid").innerHTML = list.map((x, i) => `<article class="card local-card">
+        <div class="head"><h3>${esc(x.name)}</h3>${i === 0 && st.use === "all" ? `<span class="tag ok">Start here</span>` : ""}</div>
+        <p class="mono muted" style="font-size:.78rem">${esc(x.by)} · ${x.size_gb} GB download${x.ctx ? ` · ${esc(x.ctx)} context` : ""}</p>
+        <p>${esc(x.plain)}</p>
+        <div class="row" style="gap:.35rem;margin:.7rem 0">${x.good.map((g) => `<span class="tag">${esc(USES[g] || g)}</span>`).join("")}${x.vision && !x.good.includes("vision") ? `<span class="tag">Reads images</span>` : ""}</div>
+        <div class="cmd"><code>ollama run ${esc(x.ollama)}</code><button class="btn sm" data-copy="ollama run ${esc(x.ollama)}">${icon("copy")}copy</button></div>
+        <div class="foot"><span>${esc(x.license)}</span><a class="above" href="${esc(x.url)}" target="_blank" rel="noopener">Model page</a></div></article>`).join("")
+      || `<div class="empty">Nothing for that use at this size. Try "Any use" or a bigger computer.</div>`;
+  };
+  dropdown($("#hwPick"), "My computer", d.tiers.map((t) => [t.id, t.label]), (v) => { st.hw = v; draw(); }, st.hw);
+  dropdown($("#usePick"), "For", [["all", "Any use"], ...Object.entries(USES).filter(([k]) => d.models.some((x) => x.good.includes(k)))], (v) => { st.use = v; draw(); }, "all");
+  $("#localNote").textContent = `Checked ${d.checked} against the Ollama library. Download size is a good guide to how much memory a model needs; leave a few GB free for everything else.`;
+  draw();
+}
 
 async function benchmarks(m) {
   const b = await load("benchmarks");

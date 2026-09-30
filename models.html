@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=24">
+<link rel="stylesheet" href="assets/site.css?v=25">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="models">
@@ -42,6 +42,21 @@
       <tbody id="modelRows"></tbody>
     </table></div>
     <p class="muted" style="margin-top:1rem;font-size:.9rem">Prices are API prices per 1 million tokens (about 750,000 English words). In the apps (claude.ai, ChatGPT, Gemini) you pay a monthly plan instead. * Open-weight models are free to download; you pay for the hardware or a host like OpenRouter.</p>
+  </div></section>
+
+  <section id="local"><div class="wrap">
+    <div class="kicker">Local models</div>
+    <h2>Run AI on your own computer</h2>
+    <p class="lead">Free, works offline, and nothing you type leaves your machine. These are smaller than Claude or ChatGPT, so expect good answers on everyday tasks rather than the very best. Tell us what computer you have and we'll show what runs well on it.</p>
+    <ol class="steps local-steps">
+      <li><h3>Install Ollama</h3><p>A free app for Windows, Mac and Linux that downloads and runs models. Get it from <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com</a>.</p></li>
+      <li><h3>Pick a model below</h3><p>Copy its command and paste it into the Terminal (Mac) or PowerShell (Windows). The first run downloads the model.</p></li>
+      <li><h3>Start chatting</h3><p>Type your question right there, or use the Ollama app window. Prefer buttons to commands? <a href="explore.html?goal=private">See easy apps like LM Studio and Jan</a>.</p></li>
+    </ol>
+    <div class="toolbar"><span id="hwPick" class="main-pick"></span><span id="usePick"></span></div>
+    <p class="muted" id="hwHint" style="margin:-.4rem 0 1rem;font-size:.9rem"></p>
+    <div class="tool-grid" id="localGrid" aria-live="polite"></div>
+    <p class="muted" style="margin-top:1rem;font-size:.85rem" id="localNote"></p>
   </div></section>
 
   <section id="bench"><div class="wrap">
@@ -82,6 +97,6 @@
     </dl>
   </div></section>
 </main>
-<script src="assets/site.js?v=24" defer></script>
+<script src="assets/site.js?v=25" defer></script>
 </body>
 </html>
