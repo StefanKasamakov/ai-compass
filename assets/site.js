@@ -103,7 +103,6 @@ function shell() {
     <div class="top-actions">
       <button class="icon-btn search-btn" data-open-search aria-label="Search">${icon("search")}<span>Search…</span><kbd>Ctrl K</kbd></button>
       <button class="icon-btn" id="themeBtn" aria-label="Toggle light or dark theme"></button>
-      <a class="icon-btn" href="${GH}" aria-label="Which AI Map on GitHub">${icon("github")}</a>
       <button class="icon-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav">${icon("menu")}</button>
     </div>
   </div></header>`);
@@ -113,9 +112,9 @@ function shell() {
       <p style="max-width:44ch">A plain-English guide to AI models and tools, for people who just want to get things done. Kept fresh by an agent that checks GitHub and the official blogs every few hours.</p></div>
     <div class="row" style="align-items:start;gap:2.5rem">
       <div><div class="field-label">Contribute</div>
-        <p><a href="newsletter.html">Weekly newsletter</a> · <a href="feed.xml">RSS</a><br><a href="contribute.html">Suggest a tool or report a mistake</a><br><a href="contribute.html?kind=volunteer">Volunteer as a reviewer</a><br><a href="${GH}/blob/main/data">Edit the data</a></p></div>
+        <p><a href="newsletter.html">Weekly newsletter</a> · <a href="feed.xml">RSS</a><br><a href="contribute.html">Suggest a tool or report a mistake</a><br><a href="contribute.html?kind=volunteer">Volunteer as a reviewer</a></p></div>
       <div><div class="field-label">Project</div>
-        <p><a href="${GH}">Source on GitHub</a><br><a href="${GH}/actions">Agent runs</a><br><span id="footUpdated"></span></p></div>
+        <p><span id="footUpdated"></span></p></div>
     </div>
   </div></footer>
   <dialog class="palette" id="palette" aria-label="Search">
