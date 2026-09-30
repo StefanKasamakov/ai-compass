@@ -5925,5 +5925,409 @@
   "repo": "itsmostafa/system-one-connector",
   "at": "2026-09-29",
   "source": "trending"
+ },
+ "MichaelKinsy/PiG": {
+  "cat": "coding",
+  "kind": "Go coding agent",
+  "what": "PiG is a native Go port of the Pi TypeScript coding agent, running as a single binary with no Node.js requirement.",
+  "why": "It lets developers use the Pi coding agent interface and extensions with faster startup and native Go performance.",
+  "level": "setup",
+  "start": "pig",
+  "caution": "This tool can reuse consumer subscription logins as an API or pool free tiers, which may break provider terms of service and risk your account. It is a pre-stable 0.x release.",
+  "alts": [
+   "anthropics/claude-code",
+   "OpenHands/OpenHands",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A fast, standalone terminal coding agent built in Go that matches the behavior of the Pi TypeScript agent.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Edit files and run commands in your terminal",
+   "Run Pi TypeScript extensions natively without Node.js",
+   "Bundle extensions and skills into custom executables"
+  ],
+  "steps": [
+   "Open your terminal in the directory of the project you want to work on.",
+   "Run pig to launch the coding agent.",
+   "Type /login to connect your subscription or set your provider API key."
+  ],
+  "repo": "MichaelKinsy/PiG",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "emma-sue/AegisOps": {
+  "cat": "coding",
+  "kind": "AI Ops Platform",
+  "what": "An enterprise intelligent IT operations platform featuring automated health checks, agent-based troubleshooting, and evidence-backed ticketing.",
+  "why": "It helps operations teams detect system anomalies, collect evidence from metrics and logs, and manage incident workflows using AI agents.",
+  "level": "setup",
+  "start": "cp .env.example .env",
+  "caution": "The project repository was pushed over 4 months ago. Exercise caution regarding ongoing maintenance and dependency updates.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Aider-AI/aider",
+   "Significant-Gravitas/AutoGPT"
+  ],
+  "packages": [],
+  "plain": "An AI-powered IT operations workspace for investigating system anomalies and managing incident tickets.",
+  "tags": [
+   "automate",
+   "monitor",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run automated system health checks and anomaly detection",
+   "Diagnose server failures using AI agents and logs",
+   "Generate evidence-backed incident tickets and approval workflows"
+  ],
+  "steps": [
+   "Clone the repository and copy the example environment file using `cp .env.example .env`.",
+   "Start the platform services using docker compose or the built-in local make command.",
+   "Access the web workspace in your browser to run diagnostics and manage incident tickets."
+  ],
+  "repo": "emma-sue/AegisOps",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "lotchuazzz-crypto/papergraph-mcp": {
+  "cat": "memory",
+  "kind": "Math Paper MCP",
+  "what": "Turns math papers into evidence-grounded reading maps for AI agents.",
+  "why": "It helps researchers extract results, trace proof evidence, and review external dependencies without guessing or inventing facts, and should be used when analyzing complex academic papers.",
+  "level": "setup",
+  "start": "uvx --from git+https://github.com/lotchuazzz-crypto/papergraph-mcp.git@v1.1.7 papergraph-mcp --version",
+  "caution": "It does not verify proofs, perform semantic theorem matching, or bypass paywalls. Scores are not probabilities and metadata agreement is not independent verification.",
+  "alts": [
+   "infiniflow/ragflow",
+   "run-llama/llama_index",
+   "HKUDS/LightRAG"
+  ],
+  "packages": [],
+  "plain": "Turn math papers into interactive reading maps for AI agents to trace proofs and citations.",
+  "tags": [
+   "knowledge",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Extract theorem results and proof evidence from papers",
+   "Build structured reading paths and queues",
+   "Export Markdown reading reports and cross-paper plans"
+  ],
+  "steps": [
+   "Install uv on your computer.",
+   "Verify the installation using `uvx --from git+https://github.com/lotchuazzz-crypto/papergraph-mcp.git@v1.1.7 papergraph-mcp --version`.",
+   "Add the server configuration to your MCP client JSON config."
+  ],
+  "repo": "lotchuazzz-crypto/papergraph-mcp",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "fidetolabs/qanat": {
+  "cat": "harness",
+  "kind": "Quant factor MCP",
+  "what": "An MCP server for quant factor processing and backtesting.",
+  "why": "Connects your AI agent to local data pipelines and trading strategies so you can test and analyze financial factors.",
+  "level": "setup",
+  "start": "uv tool install qanat-fdtl",
+  "caution": "Financial modeling and backtesting involve inherent market risks. The project is in beta and handles financial data logic.",
+  "alts": [],
+  "packages": [
+   "qanat-fdtl"
+  ],
+  "plain": "An AI add-on that helps you process financial data, build trading strategies, and run backtests.",
+  "tags": [
+   "code",
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Test quantitative trading strategies with an AI agent",
+   "Process and transform financial market data sources",
+   "Run backtests and analyze portfolio performance"
+  ],
+  "steps": [
+   "Install the package using `uv tool install qanat-fdtl` or pip.",
+   "Initialize a demo project using `qanat init my-alpha --demo`.",
+   "Connect the server to your MCP client like Claude.",
+   "Ask your agent questions about your strategies and data."
+  ],
+  "repo": "fidetolabs/qanat",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "noskillish/bankmcp": {
+  "cat": "harness",
+  "kind": "Bank account MCP server",
+  "what": "Allows AI assistants to read your bank account balances and transaction history through open banking.",
+  "why": "Provides a way to query your personal finances using natural language inside AI tools like Claude. Reach for it when you want to analyze spending, check balances, or track invoices without leaving your AI assistant.",
+  "level": "setup",
+  "start": "claude mcp add bankmcp -- npx -y bankmcp",
+  "caution": "Requires a free account with Enable Banking and handles sensitive financial data. Ensure you trust your self-hosted server environment.",
+  "alts": [],
+  "packages": [
+   "bankmcp"
+  ],
+  "plain": "An AI extension that securely reads your bank accounts so you can chat about your spending.",
+  "tags": [
+   "connect",
+   "automate"
+  ],
+  "useFor": [
+   "Check recent bank account balances and transactions",
+   "Find out how much was spent on specific categories",
+   "Track whether specific invoices or bills have been paid"
+  ],
+  "steps": [
+   "Install the package locally using Node 24 or deploy it to a server.",
+   "Set up a free Enable Banking account to access your bank data.",
+   "Add the server as a Model Context Protocol connector in your AI client.",
+   "Ask your assistant to connect your bank and follow the login prompt."
+  ],
+  "repo": "noskillish/bankmcp",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "surya-koritala/Glyd": {
+  "cat": "local",
+  "kind": "AI model compression",
+  "what": "Lossless compression for AI model weights and KV caches to reduce GPU memory usage.",
+  "why": "To run larger AI models on fewer GPUs without losing model accuracy, saving on hardware and cloud compute costs.",
+  "level": "easy",
+  "start": "pip install \"glyd[gpu]\"",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "ggerganov/llama.cpp"
+  ],
+  "packages": [
+   "glyd"
+  ],
+  "plain": "Compresses AI model weights in GPU memory bit-for-bit to use 33% less memory.",
+  "tags": [
+   "private",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Run large language models on fewer GPUs",
+   "Compress AI model checkpoints on disk",
+   "Reduce GPU memory consumption for KV caches"
+  ],
+  "steps": [
+   "Install the package with GPU support using `pip install \"glyd[gpu]\"`.",
+   "Load a pretrained model in Python using `glyd.from_pretrained(\"Qwen/Qwen3-8B\")`.",
+   "Alternatively, pack a saved model file from the command line."
+  ],
+  "repo": "surya-koritala/Glyd",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "hsandhu/mobilecode": {
+  "cat": "coding",
+  "kind": "Mobile coding agent",
+  "what": "An AI coding agent that builds, previews, and debugs iOS and Android mobile projects.",
+  "why": "It lets developers chat with an AI agent that can automatically run mobile emulators, read build logs, and fix errors without manual intervention.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/hsandhu/mobilecode/main/install | bash",
+  "caution": "Requires macOS with Xcode for iOS development and the Android SDK with configured AVDs for Android.",
+  "alts": [
+   "anomalyco/opencode",
+   "cline/cline",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "An AI coding assistant built specifically for mobile app development with built-in simulator previews.",
+  "tags": [
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Build React Native apps with AI",
+   "Preview iOS and Android simulators live",
+   "Fix mobile build errors automatically"
+  ],
+  "steps": [
+   "Run the install script in your terminal using `curl -fsSL https://raw.githubusercontent.com/hsandhu/mobilecode/main/install | bash`.",
+   "Open your iOS or Android project folder in the app.",
+   "Click the play button in the session titlebar to start the simulator and run your app."
+  ],
+  "repo": "hsandhu/mobilecode",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "himovo/movo": {
+  "cat": "builders",
+  "kind": "Enterprise Agent Platform",
+  "what": "Turns the DeepSeek Harness runtime into a self-hosted enterprise agent platform with a user workspace, administration console, and knowledge retrieval.",
+  "why": "Provides an all-in-one product layer around AI agent runtimes for teams that need authentication, knowledge bases, and user management.",
+  "level": "setup",
+  "start": "git clone https://github.com/himovo/movo.git && cd movo && chmod +x movo && ./movo up",
+  "caution": "Requires at least 8 GB of memory and 20 GB of free disk space. Some advanced desktop companion features are distributed separately as proprietary software.",
+  "alts": [
+   "open-webui/open-webui",
+   "FlowiseAI/Flowise",
+   "langgenius/dify"
+  ],
+  "packages": [],
+  "plain": "A self-hosted workspace and admin panel that packages AI agents and document search for enterprise teams.",
+  "tags": [
+   "knowledge",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Run an internal AI workspace for employees",
+   "Search internal documents and public sources",
+   "Manage user accounts and admin controls for AI"
+  ],
+  "steps": [
+   "Clone the repository using Git in your terminal.",
+   "Run the start script to download and launch the Docker services.",
+   "Open the setup URL in your browser to finish configuring the administrator account."
+  ],
+  "repo": "himovo/movo",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "pliablepixels/gap-trap": {
+  "cat": "harness",
+  "kind": "AI coding guardrails",
+  "what": "Adds automated rules, tests, and quality gates to your repository so AI-written code stays correct without line-by-line human review.",
+  "why": "AI coding assistants drift over time, writing duplicate helpers, breaking architectural boundaries, and ignoring instruction files. Reach for this when you want to automate enforcement of code standards for AI agents.",
+  "level": "setup",
+  "start": "npx skills add pliablepixels/gap-trap",
+  "caution": "Requires advancedfrontier coding models (Opus or equivalent high-reasoning setups) and relies on consumer harness tooling.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "obra/superpowers"
+  ],
+  "packages": [],
+  "plain": "Turns AI coding rules into strict automated checks that block bad code before it merges.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Enforce architecture and coding rules on AI-generated code",
+   "Create automated quality gates for agent commits",
+   "Refine project rules and playbooks from commit history"
+  ],
+  "steps": [
+   "Install the skill using the skills CLI with `npx skills add pliablepixels/gap-trap`.",
+   "Navigate to your repository and run `/gap-trap setup`.",
+   "Review the proposed plan of contracts and gates.",
+   "Run `/gap-trap refine` periodically to update rules based on recent changes."
+  ],
+  "repo": "pliablepixels/gap-trap",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "reality-opened/openreality": {
+  "cat": "coding",
+  "kind": "3D Scene AI Tool",
+  "what": "Turns phone videos into AI-queryable 3D scenes via 41 MCP tools for Claude, Codex, and Cursor.",
+  "why": "Allows your AI assistant to measure, navigate, and export scanned physical spaces as robot-training data or 3D models.",
+  "level": "easy",
+  "start": "claude mcp add openreality -- npx -y openreality-mcp serve",
+  "caution": "The 3D reconstruction model downloaded by self-hosted servers is licensed under CC BY-NC 4.0 (non-commercial use only); commercial use requires the hosted service or a separate license.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [
+   "openreality-mcp"
+  ],
+  "plain": "Scan a room with your phone and ask your AI assistant to measure, navigate, and analyze it.",
+  "tags": [
+   "code",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Upload a room video and reconstruct a 3D scene",
+   "Measure distances and objects in the scanned room",
+   "Export a 3D scan as robot-training data"
+  ],
+  "steps": [
+   "Add the MCP tools to your AI assistant using `claude mcp add openreality -- npx -y openreality-mcp serve`.",
+   "Sign in once to your account using `npx -y openreality-mcp login`.",
+   "Ask your AI assistant to upload a video file and reconstruct your room."
+  ],
+  "repo": "reality-opened/openreality",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "Atomburstofficial/geiger": {
+  "cat": "tokens",
+  "kind": "AI Agent Scanner",
+  "what": "Inventories every AI agent, MCP server, plugin, and extension on your machine.",
+  "why": "To audit what agent tooling is installed and what it can access.",
+  "level": "easy",
+  "start": "npx geiger-scan",
+  "caution": "No telemetry or writes are performed, but configuration parsing cannot track runtime behavior.",
+  "alts": [],
+  "packages": [
+   "geiger-scan"
+  ],
+  "plain": "Scan your computer to see all installed AI agents and what files they can touch.",
+  "tags": [
+   "private",
+   "monitor",
+   "code"
+  ],
+  "useFor": [
+   "Scan a machine for installed AI agents and plugins",
+   "Export scan results to HTML or JSON",
+   "Detect new agent tooling with drift comparison"
+  ],
+  "steps": [
+   "Open your terminal application.",
+   "Run `npx geiger-scan` to perform a read-only inventory of AI agents on your machine."
+  ],
+  "repo": "Atomburstofficial/geiger",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "chadhurley25075-png/pd-bridge": {
+  "cat": "local",
+  "kind": "Heterogeneous inference bridge",
+  "what": "Splits large model workloads across NVIDIA GPUs for prefill and Apple Silicon for decode over a network.",
+  "why": "It lets you speed up huge prompts by doing the heavy initial math on an NVIDIA box and generating text on a Mac Studio, solving the mismatch between different AI hardware engines.",
+  "level": "setup",
+  "start": "",
+  "caution": "Complex reference implementation requiring specialized hardware setups (NVIDIA DGX and Mac Studio) and precise configuration across a network link.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Run the heavy part of an AI model on an NVIDIA computer and finish it on a Mac.",
+  "tags": [
+   "private",
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Prefill massive AI prompts using NVIDIA hardware",
+   "Decode AI text generation on Apple Silicon",
+   "Bridge different inference engines over a network"
+  ],
+  "steps": [
+   "Set up your NVIDIA prefill worker with vLLM.",
+   "Configure your Mac Studio decode worker with oMLX.",
+   "Connect the machines over your local network and run the bridge."
+  ],
+  "repo": "chadhurley25075-png/pd-bridge",
+  "at": "2026-09-30",
+  "source": "trending"
  }
 }
