@@ -259,7 +259,8 @@ const pages = {
     $("#ctaLogos").innerHTML = ["anthropic", "openai", "google", "open"].map((p) => `<span class="logo-badge p-${p}">${logo(p === "open" ? "ollama" : LOGOS[p])}</span>`).join("");
     $("#homeNews").innerHTML = (n?.items || []).filter((x) => x.ai).slice(0, 4).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.title)}</b><small>${esc(x.source)} · ${ago(x.date)}${x.summary ? ` · ${esc(x.summary.slice(0, 110))}` : ""}</small></a>`).join("") || `<p class="muted">News is on its way.</p>`;
     const hot = (t?.items || []).filter((x) => ex?.[x.repo]).slice(0, 6);
-    $("#homeHot").innerHTML = hot.map((x) => toolCard(fromRepo(ex[x.repo], g?.repos?.[x.repo]))).join("");
+    $("#homeHot").innerHTML = hot.map((x) => toolCard(fromRepo(ex[x.repo], g?.repos?.[x.repo]), tags)).join("");
+    askBox();
   },
 
   async models() {
@@ -361,7 +362,72 @@ const pages = {
 };
 
 // A repo (from explain.json) or a skill/MCP/collection (from tools.json) in one shape
-const KIND = { repo: "App / project", skill: "Skill", mcp: "Connector (MCP)", collection: "Skill pack" };
+const KIND = { app: "App", repo: "Open-source project", skill: "Skill", mcp: "Connector (MCP)", collection: "Skill pack" };
+const fromApp = (a) => ({ key: a.id, kind: "app", name: a.name, owner: a.by, site: a.site, domain: a.domain, plain: a.plain, what: a.plain, caution: a.caution || "",
+  steps: a.steps || [], useFor: a.useFor || [], tags: a.tags || [], level: a.level || "easy", alts: a.alts || [], stars: 0, week: 0, installs: 0, price: a.price, free: a.free });
+const iconFor = (x, size = 40) => x.kind === "app"
+  ? `<img class="avatar" src="assets/favicons/${esc(x.key)}.png" alt="" width="${size}" height="${size}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'avatar letter',textContent:'${esc(x.name[0])}'}))">`
+  : x.repo ? avatar(x.repo, size) : `<span class="avatar">${icon("puzzle")}</span>`;
+
+// Everything the finder and the home search know about, in one list
+let CATALOG;
+async function catalog() {
+  if (CATALOG) return CATALOG;
+  const [ex, g, dl, tools, tags, tips, apps] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps")]);
+  const inExplain = new Set(Object.keys(ex || {}));
+  const all = [
+    ...(apps || []).map(fromApp),
+    ...Object.values(ex || {}).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
+    ...(tools || []).filter((t) => t.type === "skill" || t.type === "mcp" || (t.type === "collection" && !inExplain.has(t.repo))).map((t) => fromTool(t, g?.repos?.[t.repo])),
+  ];
+  return (CATALOG = { all, tags, tips });
+}
+
+// Plain-words search: prefix matching + goal words, so "summarize pdf reports" finds document tools
+const STOP = new Set(["the", "and", "for", "with", "that", "this", "want", "need", "how", "can", "use", "make", "into", "from", "some", "my", "your", "a", "an", "to", "of", "in", "on", "i", "me", "do", "it", "best", "tool", "tools", "ai", "app", "apps"]);
+const GOAL_WORDS = {
+  docs: "document doc word excel spreadsheet sheet pdf report slide presentation powerpoint deck write writing essay email letter summar translat proofread grammar",
+  code: "code coding program developer bug debug script function refactor",
+  apps: "website site landing web build prototype mvp",
+  automate: "automat workflow repetitive schedul zapier integrat bot",
+  research: "research search source fact paper study academic citation news",
+  knowledge: "notes file knowledge question answer chat pdf book",
+  connect: "gmail notion github slack calendar database connect browser",
+  media: "image picture photo logo design illustrat video clip film voice audio music song podcast transcri meeting subtitle avatar thumbnail edit",
+  private: "private offline local computer laptop confidential privacy secure",
+  save: "cheap cost save budget token price",
+  supercharge: "claude codex agent skill memory assistant",
+  monitor: "test monitor evaluat observab trace",
+};
+const stem = (w) => (w.length > 5 ? w.slice(0, w.length - 2) : w);
+function rank(all, q) {
+  // "without code" means the opposite of coding tools
+  const noCode = /\b(without|no)[\s-]*cod(e|ing)\b/i.test(q);
+  if (noCode) q = q.replace(/\b(without|no)[\s-]*cod(e|ing)\b/gi, " ");
+  const words = q.toLowerCase().replace(/[^a-z0-9\s.+-]/g, " ").split(/\s+/).filter((w) => w.length > 1 && !STOP.has(w));
+  if (!words.length && !noCode) return [];
+  const goalHits = noCode ? { apps: 1 } : {};
+  for (const w of words) for (const [g, list] of Object.entries(GOAL_WORDS)) if (list.split(" ").some((k) => k.startsWith(stem(w)) || stem(w).startsWith(k))) goalHits[g] = (goalHits[g] || 0) + 1;
+  return all.map((x) => {
+    const name = x.name.toLowerCase(), lead = x.plain.toLowerCase(), plain = x.useFor.join(" ").toLowerCase(), more = `${x.what || ""} ${x.why || ""} ${x.owner || ""}`.toLowerCase();
+    let score = 0;
+    for (const w of words) {
+      const st = stem(w);
+      if (name.includes(st)) score += 3;
+      if (lead.includes(st)) score += 2.5;
+      else if (plain.includes(st)) score += 1.5;
+      else if (more.includes(st)) score += 1;
+    }
+    // a goal alone is not a match: "transcribe meetings" should not list every media tool
+    if (!score && words.length) return { x, score: 0 };
+    x.tags.forEach((t, i) => { if (goalHits[t]) score += (i === 0 ? 3 : 1.5) * goalHits[t]; });
+    if (score > 0 && x.level === "easy") score += 0.6;
+    if (score > 0 && x.kind === "app") score += 0.4;
+    if (noCode && (x.tags[0] === "code" || x.level === "dev")) score -= 4;
+    return { x, score };
+  }).filter((r) => r.score >= 2).sort((a, b) => b.score - a.score || b.x.stars - a.x.stars).map((r) => r.x);
+}
+
 const fromRepo = (e, s, d) => ({ key: e.repo, kind: "repo", name: e.repo.split("/")[1], owner: e.repo.split("/")[0], repo: e.repo, plain: e.plain || e.what, what: e.what, why: e.why,
   caution: e.caution, steps: e.steps || (e.start ? [`Start with: \`${e.start.replace(/`/g, "")}\``] : []), useFor: e.useFor || [], tags: e.tags || [], level: e.level && ({ beginner: "easy", intermediate: "setup", advanced: "dev" }[e.level] || e.level),
   alts: e.alts || [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: d ?? 0, updated: s?.pushed, src: e.source });
@@ -372,10 +438,10 @@ const LEVEL = { easy: ["No coding", "ok"], setup: ["Some setup", ""], dev: ["For
 function toolCard(x, tags) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
   return `<button class="tool" data-open="${esc(x.key)}">
-    <span class="tool-head">${x.repo ? avatar(x.repo) : `<span class="avatar">${icon("puzzle")}</span>`}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${esc(x.owner)}` : ""}</small></span></span>
+    <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${esc(x.owner)}` : ""}</small></span></span>
     <span class="tool-plain">${esc(x.plain || "")}</span>
     <span class="tool-foot">${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}
-      <span class="tool-stats">${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}</span></span>
+      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
   </button>`;
 }
 
@@ -383,17 +449,18 @@ function toolDetail(x, all, tags, tips) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
   const link = x.repo ? (x.path ? `https://github.com/${x.repo}/tree/main/${x.path}` : `https://github.com/${x.repo}`) : null;
   const alts = x.alts.map((a) => all.find((y) => y.key === a)).filter(Boolean);
-  return `<div class="dlg-head">${x.repo ? avatar(x.repo, 52) : ""}<div><p class="field-label" style="margin:0">${esc(KIND[x.kind])}${x.official ? " · official" : ""}</p><h2>${esc(x.name)}</h2>${x.owner ? `<small class="muted">by ${esc(x.owner)}</small>` : ""}</div>
+  return `<div class="dlg-head">${iconFor(x, 52)}<div><p class="field-label" style="margin:0">${esc(KIND[x.kind])}${x.official ? " · official" : ""}</p><h2>${esc(x.name)}</h2>${x.owner ? `<small class="muted">by ${esc(x.owner)}</small>` : ""}</div>
       <button class="icon-btn dlg-close" aria-label="Close">${icon("x")}</button></div>
     <p class="lead" style="margin:1rem 0">${md(x.plain || x.what || "")}</p>
     <div class="row" style="margin-bottom:1.4rem">${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0])}</span>` : ""}${x.tags.map((t) => goals[t] ? `<a class="tag" href="explore.html?goal=${t}">${esc(goals[t].label)}</a>` : "").join("")}</div>
+    ${x.price ? `<p class="price-line">${icon("coins")}<span><b>Cost:</b> ${esc(x.price)}</span></p>` : x.kind !== "app" ? `<p class="price-line">${icon("coins")}<span><b>Cost:</b> free and open source${x.kind === "repo" ? "; you may pay for the AI model it uses" : ""}.</span></p>` : ""}
     ${x.useFor.length ? `<h3>Use it to</h3><ul class="ticks">${x.useFor.map((u) => `<li>${icon("check")}<span>${md(u)}</span></li>`).join("")}</ul>` : ""}
     ${x.steps.length ? `<h3 style="margin-top:1.4rem">How to start</h3><ol class="steps compact">${x.steps.map((st) => `<li><p>${md(st)}</p></li>`).join("")}</ol>` : ""}
     ${x.caution ? `<div class="callout" style="margin-top:1.4rem">${icon("alert")}<div><b>Good to know.</b> ${md(x.caution)}</div></div>` : ""}
     ${x.why ? `<details class="more"><summary>More detail</summary><p>${md(x.what)}</p><p>${md(x.why)}</p></details>` : ""}
     ${tips?.[x.key]?.length ? `<h3 style="margin-top:1.4rem">Tips from readers</h3>${tips[x.key].map((t) => `<blockquote class="tip-q"><p>${esc(t.body)}</p><small class="muted">${esc(t.name || "A reader")} · ${ago(t.date)}</small></blockquote>`).join("")}` : ""}
     ${alts.length ? `<h3 style="margin-top:1.4rem">Similar tools</h3><div class="row">${alts.map((a) => `<button class="chip" data-open="${esc(a.key)}">${esc(a.name)}</button>`).join("")}</div>` : ""}
-    <div class="row" style="margin-top:1.6rem">${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
+    <div class="row" style="margin-top:1.6rem">${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">${icon("external")}Open ${esc(x.name)}</a>` : ""}${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
       ${link ? `<a class="btn" href="${link}" target="_blank" rel="noopener">${icon("github")}Open on GitHub</a>` : ""}
       <a class="btn" href="contribute.html?kind=tip&target=${encodeURIComponent(x.key)}">${icon("chat")}Share a tip</a>
       <a class="btn" href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">${icon("alert")}Report a mistake</a>
@@ -401,16 +468,11 @@ function toolDetail(x, all, tags, tips) {
 }
 
 pages.explore = async () => {
-  const [repos, ex, g, dl, tools, tags, tips] = await Promise.all([load("repos"), load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips")]);
-  const inExplain = new Set(Object.keys(ex || {}));
-  const all = [
-    ...Object.values(ex || {}).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
-    ...tools.filter((t) => t.type === "skill" || t.type === "mcp" || (t.type === "collection" && !inExplain.has(t.repo))).map((t) => fromTool(t, g?.repos?.[t.repo])),
-  ];
+  const { all, tags, tips } = await catalog();
   const params = new URLSearchParams(location.search);
-  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "popular" };
+  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "easy" };
   const q = $("#repoQ"); q.value = params.get("q") || "";
-  const TYPES = [["all", "Everything"], ["repo", "Apps & projects"], ["skill", "Skills"], ["mcp", "Connectors (MCP)"]];
+  const TYPES = [["all", "Everything"], ["app", "Ready-made apps"], ["repo", "Open-source projects"], ["skill", "Skills"], ["mcp", "Connectors (MCP)"]];
   const matches = (x) => (st.goal === "all" || x.tags.includes(st.goal)) && (st.level === "all" || x.level === st.level) && (st.type === "all" || x.kind === st.type || (st.type === "skill" && x.kind === "collection"));
   const sync = () => {
     const p = new URLSearchParams();
@@ -419,9 +481,11 @@ pages.explore = async () => {
     history.replaceState(null, "", `${location.pathname}${p.size ? `?${p}` : ""}${location.hash}`);
   };
   const draw = () => {
-    const words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
-    const list = all.filter(matches).filter((x) => words.every((w) => `${x.name} ${x.owner} ${x.plain} ${x.what} ${x.useFor.join(" ")}`.toLowerCase().includes(w)))
-      .sort((a, b) => (st.sort === "rising" ? b.week - a.week : st.sort === "installs" ? b.installs - a.installs : b.stars - a.stars));
+    const LV = { easy: 0, setup: 1, dev: 2 };
+    const pool = q.value.trim() ? rank(all, q.value) : all;
+    const list = pool.filter(matches);
+    if (!q.value.trim() || st.sort !== "easy") list.sort((a, b) => (st.sort === "rising" ? b.week - a.week : st.sort === "installs" ? b.installs - a.installs : st.sort === "popular" ? b.stars - a.stars
+      : (LV[a.level] ?? 1) - (LV[b.level] ?? 1) || (b.kind === "app") - (a.kind === "app") || b.stars - a.stars));
     const goal = tags.goals.find((x) => x.id === st.goal);
     $("#catWhat").innerHTML = goal ? `<div class="callout ok" style="margin-bottom:1.2rem">${icon(goal.icon)}<div><b>${esc(goal.label)}.</b> ${esc(goal.hint)}. ${list.length} tools.</div></div>` : `<p class="muted" style="margin:0 0 1rem">${list.length} tools</p>`;
     $("#repoGrid").innerHTML = list.map((x) => toolCard(x, tags)).join("") || `<div class="empty">Nothing matches yet. Try fewer filters or another word.</div>`;
@@ -433,7 +497,7 @@ pages.explore = async () => {
   $("#goalChips").onclick = (e) => { const b = e.target.closest(".goal-chip"); if (!b) return; st.goal = b.dataset.goal; $$(".goal-chip").forEach((c) => c.setAttribute("aria-pressed", c === b)); draw(); };
   chips($("#levelChips"), [["all", "Any skill level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; draw(); }, st.level, "filter");
   chips($("#typeChips"), TYPES, (v) => { st.type = v; draw(); }, st.type, "filter");
-  chips($("#sortChips"), [["popular", "Popular", "star"], ["rising", "Rising", "zap"], ["installs", "Most installed", "trend"]], (v) => { st.sort = v; draw(); }, "popular", "filter");
+  chips($("#sortChips"), [["easy", "Easiest first", "check"], ["popular", "Most stars", "star"], ["rising", "Rising", "zap"], ["installs", "Most installed", "trend"]], (v) => { st.sort = v; draw(); }, "easy", "filter");
   q.oninput = draw;
 
   const dlg = $("#toolDlg");
@@ -453,6 +517,33 @@ pages.explore = async () => {
   const hash = decodeURIComponent(location.hash.slice(1));
   if (hash) open(hash);
 };
+
+// Home: type what you want to do, get three answers right away
+async function askBox() {
+  const { all, tags } = await catalog();
+  const inp = $("#askQ"), out = $("#askOut");
+  const MODEL_Q = /\b(chatbot|chat gpt|chatgpt|claude|gemini|which ai|which model|model|llm|assistant)\b/i;
+  const draw = () => {
+    const q = inp.value.trim();
+    if (q.length < 3) { out.innerHTML = ""; return; }
+    const hits = rank(all, q);
+    // home visitors are mostly non-technical: a ready-made app near the top beats a skill or repo
+    const best = hits.slice(0, 3).find((x) => x.kind === "app") || hits[0];
+    const easy = hits.slice(0, 8).find((x) => x !== best && x.level === "easy" && x.kind === "app") || hits.find((x) => x !== best && x.level === "easy");
+    const free = hits.find((x) => x !== best && x !== easy && (x.free || x.kind !== "app"));
+    const picks = [[best, "Best match"], [easy, "Easiest to start"], [free, "Free option"]].filter(([x]) => x);
+    out.innerHTML = picks.length
+      ? `<div class="ask-grid">${picks.map(([x, label]) => `<div class="ask-pick"><span class="field-label">${label}</span>${toolCard(x, tags)}</div>`).join("")}</div>
+        <p class="ask-more">${hits.length > picks.length ? `<a href="explore.html?q=${encodeURIComponent(q)}">See all ${hits.length} matches ${icon("arrow")}</a>` : ""}${MODEL_Q.test(q) ? ` <a href="models.html">Choosing a chatbot? Compare Claude, ChatGPT and Gemini ${icon("arrow")}</a>` : ""}</p>`
+      : `<p class="muted ask-more">No match yet. Try other words, or <a href="explore.html">browse all tools</a>.</p>`;
+  };
+  let t;
+  inp.oninput = () => { clearTimeout(t); t = setTimeout(draw, 180); };
+  $("#ask").onsubmit = (e) => { e.preventDefault(); draw(); };
+  $$("[data-ask]").forEach((b) => (b.onclick = () => { inp.value = b.dataset.ask; draw(); inp.focus(); }));
+  const q0 = new URLSearchParams(location.search).get("q");
+  if (q0) { inp.value = q0; draw(); }
+}
 
 // home page cards open the directory
 document.addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o && page !== "explore") location.href = `explore.html#${o.dataset.open}`; });

@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=15">
+<link rel="stylesheet" href="assets/site.css?v=17">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="index">
@@ -30,7 +30,21 @@
     <div class="prompt"><b>~/ai-compass</b> $ which-ai --for "whatever you're doing"<span class="cursor" aria-hidden="true"></span></div>
     <h1>AI got complicated. <em>Here's the map.</em></h1>
     <p class="lead">Which model to use for what. Which free tools are worth installing, and how to start with each one, step by step. Plain English, no hype, refreshed by an agent that watches GitHub and the official blogs.</p>
-    <button class="hero-search" data-open-search><i data-i="search"></i>What do you want to do? Try "excel", "images", "private"…<kbd>Ctrl K</kbd></button>
+    <form class="hero-ask" id="ask" role="search">
+      <label class="sr" for="askQ">What do you want to do?</label>
+      <i data-i="search"></i>
+      <input id="askQ" type="search" autocomplete="off" placeholder="What do you want to do? e.g. summarize long PDF reports">
+      <button class="btn primary sm" type="submit">Show me</button>
+    </form>
+    <div class="ask-chips">
+      <button type="button" class="chip" data-ask="summarize long PDF reports">Summarize PDFs</button>
+      <button type="button" class="chip" data-ask="make a presentation">Make a presentation</button>
+      <button type="button" class="chip" data-ask="transcribe meetings">Transcribe meetings</button>
+      <button type="button" class="chip" data-ask="create images and logos">Create images</button>
+      <button type="button" class="chip" data-ask="build a website without code">Build a website</button>
+      <button type="button" class="chip" data-ask="run AI privately on my computer">Keep it private</button>
+    </div>
+    <div id="askOut" aria-live="polite"></div>
     <div class="status" aria-live="polite">
       <span><i class="live" aria-hidden="true"></i><span id="stAgent">Agent…</span></span>
       <span><i data-i="github"></i><span id="stTracked">…</span></span>
@@ -74,7 +88,6 @@
     </div>
   </div></section>
 </main>
-</main>
-<script src="assets/site.js?v=15" defer></script>
+<script src="assets/site.js?v=17" defer></script>
 </body>
 </html>

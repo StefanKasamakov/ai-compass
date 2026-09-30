@@ -1,0 +1,1437 @@
+[
+ {
+  "id": "chatgpt",
+  "type": "app",
+  "name": "ChatGPT",
+  "by": "OpenAI",
+  "site": "https://chatgpt.com",
+  "domain": "chatgpt.com",
+  "plain": "A chat assistant you type or talk to that writes, explains, answers questions and makes images.",
+  "tags": [
+   "docs",
+   "research",
+   "supercharge"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Draft emails, letters and posts",
+   "Explain a confusing topic in simple words",
+   "Summarize a long document you upload"
+  ],
+  "steps": [
+   "Go to chatgpt.com and sign up with Google, Apple or email.",
+   "Type your question in the box and press Enter.",
+   "Ask follow-up questions to refine the answer."
+  ],
+  "free": true,
+  "price": "Free plan. Go (price varies by country), Plus $20/month, Pro from $100/month.",
+  "priceSrc": "https://chatgpt.com/pricing",
+  "caution": "It can state wrong facts confidently, so check anything important. Your chats can be used to train models unless you opt out in settings. The Go plan may show ads.",
+  "alts": [
+   "claude",
+   "gemini",
+   "copilot"
+  ]
+ },
+ {
+  "id": "claude",
+  "type": "app",
+  "name": "Claude",
+  "by": "Anthropic",
+  "site": "https://claude.ai",
+  "domain": "claude.ai",
+  "plain": "A chat assistant that is strong at writing, reading long documents and helping with code.",
+  "tags": [
+   "docs",
+   "code",
+   "research"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Rewrite a text in a clearer tone",
+   "Ask questions about a long PDF or report",
+   "Get help writing or fixing code"
+  ],
+  "steps": [
+   "Go to claude.ai and sign up with Google or email.",
+   "Type a request or attach a file with the paperclip.",
+   "Ask follow-up questions in the same chat."
+  ],
+  "free": true,
+  "price": "Free plan. Pro $20/month ($17/month billed yearly). Max from $100/month.",
+  "priceSrc": "https://claude.com/pricing",
+  "caution": "It can make mistakes, so check important facts. The free plan has usage limits that reset after a few hours. Check privacy settings to choose whether your chats help train models.",
+  "alts": [
+   "chatgpt",
+   "gemini",
+   "copilot"
+  ]
+ },
+ {
+  "id": "gemini",
+  "type": "app",
+  "name": "Google Gemini",
+  "by": "Google",
+  "site": "https://gemini.google.com",
+  "domain": "gemini.google.com",
+  "plain": "Google's chat assistant that answers questions, writes text and works with Gmail, Docs and Drive.",
+  "tags": [
+   "docs",
+   "research",
+   "connect"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Ask questions and get answers with Google Search",
+   "Summarize emails or files in your Google account",
+   "Plan a trip or a weekly schedule"
+  ],
+  "steps": [
+   "Go to gemini.google.com and sign in with your Google account.",
+   "Type or speak your question.",
+   "Turn on Google apps in settings if you want it to read Gmail or Drive."
+  ],
+  "free": true,
+  "price": "Free plan. Google AI Plus $4.99/month, Google AI Pro $19.99/month, Google AI Ultra from $99.99/month.",
+  "priceSrc": "https://gemini.google/us/subscriptions/",
+  "caution": "Answers can be wrong. Google may keep and review chats to improve its services unless you turn off activity saving, so do not paste sensitive data.",
+  "alts": [
+   "chatgpt",
+   "claude",
+   "copilot"
+  ]
+ },
+ {
+  "id": "copilot",
+  "type": "app",
+  "name": "Microsoft Copilot",
+  "by": "Microsoft",
+  "site": "https://copilot.microsoft.com",
+  "domain": "copilot.microsoft.com",
+  "plain": "Microsoft's chat assistant, built into Windows, Edge and Word, Excel and Outlook with a Microsoft 365 plan.",
+  "tags": [
+   "docs",
+   "supercharge"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Ask quick questions from the Windows taskbar or Edge",
+   "Draft a Word document or summarize a long email thread",
+   "Get help with formulas and charts in Excel"
+  ],
+  "steps": [
+   "Go to copilot.microsoft.com or open the Copilot app in Windows.",
+   "Sign in with your Microsoft account.",
+   "Type or speak your question."
+  ],
+  "free": true,
+  "price": "Free Copilot app. Copilot inside Office apps comes with Microsoft 365 Personal $9.99/month, Family $12.99/month or Premium $19.99/month.",
+  "priceSrc": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals",
+  "caution": "Copilot inside Word, Excel and Outlook needs a paid Microsoft 365 plan, and usage limits differ by plan. Answers can be wrong.",
+  "alts": [
+   "chatgpt",
+   "gemini",
+   "claude"
+  ]
+ },
+ {
+  "id": "perplexity",
+  "type": "app",
+  "name": "Perplexity",
+  "by": "Perplexity AI",
+  "site": "https://www.perplexity.ai",
+  "domain": "perplexity.ai",
+  "plain": "An AI search engine that answers questions in plain words and shows the web sources it used.",
+  "tags": [
+   "research"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Research a question and see linked sources",
+   "Compare products or prices before buying",
+   "Get a quick summary of recent news"
+  ],
+  "steps": [
+   "Go to perplexity.ai and sign in with Google or email.",
+   "Type your question like you would in Google.",
+   "Click the numbered sources to check the facts."
+  ],
+  "free": true,
+  "price": "Free plan. Pro $17/month and Max $167/month when billed yearly.",
+  "priceSrc": "https://www.perplexity.ai/pro",
+  "caution": "It shows sources, but the summary can misread them. Open the sources for anything that matters.",
+  "alts": [
+   "chatgpt",
+   "gemini",
+   "consensus"
+  ]
+ },
+ {
+  "id": "notebooklm",
+  "type": "app",
+  "name": "Gemini Notebook (formerly NotebookLM)",
+  "by": "Google",
+  "site": "https://notebook.google",
+  "domain": "notebook.google",
+  "plain": "Upload your own documents and ask questions about them; answers come only from your files.",
+  "tags": [
+   "knowledge",
+   "research"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Ask questions about your notes, PDFs or course material",
+   "Turn documents into a spoken audio summary",
+   "Make study guides and slides from your sources"
+  ],
+  "steps": [
+   "Go to notebook.google and sign in with your Google account.",
+   "Create a notebook and add PDFs, Google Docs, links or videos.",
+   "Ask questions in the chat and click citations to see the source."
+  ],
+  "free": true,
+  "price": "Free plan. Higher limits come with Google AI Plus, Pro or Ultra subscriptions.",
+  "priceSrc": "https://notebook.google/plans",
+  "caution": "Google renamed NotebookLM to Gemini Notebook in July 2026; it is the same product. The free plan allows up to 50 sources per notebook.",
+  "alts": [
+   "notion-ai",
+   "chatgpt",
+   "claude"
+  ]
+ },
+ {
+  "id": "consensus",
+  "type": "app",
+  "name": "Consensus",
+  "by": "Consensus",
+  "site": "https://consensus.app",
+  "domain": "consensus.app",
+  "plain": "A search engine that answers questions using published scientific studies and cites each one.",
+  "tags": [
+   "research"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Check what studies say about a health or science question",
+   "Find peer-reviewed papers for a school assignment",
+   "Get a short overview of research on a topic"
+  ],
+  "steps": [
+   "Go to consensus.app and sign up with Google or email.",
+   "Ask a yes/no or research question in plain words.",
+   "Open the listed papers to read the original findings."
+  ],
+  "free": true,
+  "price": "Free plan. Pro from $12/month and Deep from $45/month when billed yearly.",
+  "priceSrc": "https://consensus.app/pricing/",
+  "caution": "It only covers published research, and summaries can oversimplify. The free plan gives 10 Pro messages and 3 deep reviews per month.",
+  "alts": [
+   "elicit",
+   "perplexity",
+   "notebooklm"
+  ]
+ },
+ {
+  "id": "elicit",
+  "type": "app",
+  "name": "Elicit",
+  "by": "Elicit",
+  "site": "https://elicit.com",
+  "domain": "elicit.com",
+  "plain": "A research assistant that finds scientific papers, summarizes them and pulls key facts into a table.",
+  "tags": [
+   "research"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Find papers on a research question",
+   "Compare findings across many studies in one table",
+   "Start a literature review for a thesis"
+  ],
+  "steps": [
+   "Go to elicit.com and create a free account.",
+   "Type your research question.",
+   "Pick papers and add columns for the details you want pulled out."
+  ],
+  "free": true,
+  "price": "Free Basic plan. Pro $49/month and Scale $169/month, billed yearly.",
+  "priceSrc": "https://elicit.com/pricing",
+  "caution": "The free plan limits the research agent and reports. Extracted details can be wrong, so check them against the paper.",
+  "alts": [
+   "consensus",
+   "perplexity",
+   "notebooklm"
+  ]
+ },
+ {
+  "id": "grammarly",
+  "type": "app",
+  "name": "Grammarly",
+  "by": "Grammarly",
+  "site": "https://www.grammarly.com",
+  "domain": "grammarly.com",
+  "plain": "Checks spelling, grammar and tone as you type, and can rewrite sentences for you.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Fix spelling and grammar in emails and documents",
+   "Make a message sound more polite or confident",
+   "Rewrite a paragraph to be shorter and clearer"
+  ],
+  "steps": [
+   "Go to grammarly.com and sign up for free.",
+   "Install the browser extension or desktop app.",
+   "Type as usual and click the underlined words to accept fixes."
+  ],
+  "free": true,
+  "price": "Free plan. Pro EUR 12/month (price shown in EU; varies by country).",
+  "priceSrc": "https://www.grammarly.com/plans",
+  "caution": "Once installed it reads the text you type in many apps. Check your employer's rules before using it on confidential documents.",
+  "alts": [
+   "quillbot",
+   "chatgpt",
+   "claude"
+  ]
+ },
+ {
+  "id": "quillbot",
+  "type": "app",
+  "name": "QuillBot",
+  "by": "QuillBot (Learneo)",
+  "site": "https://quillbot.com",
+  "domain": "quillbot.com",
+  "plain": "Rewrites sentences in different words, checks grammar and summarizes text.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Reword a sentence that sounds awkward",
+   "Summarize an article into key points",
+   "Check grammar and generate citations"
+  ],
+  "steps": [
+   "Go to quillbot.com and paste your text into the Paraphraser.",
+   "Pick a writing mode and click Paraphrase.",
+   "Sign up for free to save your work."
+  ],
+  "free": true,
+  "price": "Free plan with limits. Premium plan (price not shown without signing in).",
+  "priceSrc": "https://quillbot.com/upgrade",
+  "caution": "Rewording someone else's text does not make it your own work; schools may treat it as plagiarism. The free plan limits text length and modes.",
+  "alts": [
+   "grammarly",
+   "deepl",
+   "chatgpt"
+  ]
+ },
+ {
+  "id": "deepl",
+  "type": "app",
+  "name": "DeepL",
+  "by": "DeepL SE",
+  "site": "https://www.deepl.com",
+  "domain": "deepl.com",
+  "plain": "Translates text and whole documents between many languages with natural-sounding results.",
+  "tags": [
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Translate an email or web text",
+   "Translate a Word or PDF file and keep its layout",
+   "Polish your writing in another language"
+  ],
+  "steps": [
+   "Go to deepl.com/translator.",
+   "Paste text or drop in a file, then pick the target language.",
+   "Click alternative words to adjust the translation."
+  ],
+  "free": true,
+  "price": "Free plan. Pro Individual EUR 7.49/month billed yearly (price shown in EU).",
+  "priceSrc": "https://www.deepl.com/en/pro",
+  "caution": "The free plan allows 50,000 characters and 1 file per month. Check DeepL's privacy terms before translating confidential text on the free plan.",
+  "alts": [
+   "chatgpt",
+   "gemini",
+   "quillbot"
+  ]
+ },
+ {
+  "id": "notion-ai",
+  "type": "app",
+  "name": "Notion AI",
+  "by": "Notion Labs",
+  "site": "https://www.notion.com/product/ai",
+  "domain": "notion.com",
+  "plain": "AI built into the Notion notes app that writes, summarizes and answers questions about your pages.",
+  "tags": [
+   "knowledge",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Summarize long notes into action points",
+   "Ask questions across your team's pages",
+   "Draft a document or plan from a short prompt"
+  ],
+  "steps": [
+   "Go to notion.com and sign up for free.",
+   "Create a page and press space to ask the AI.",
+   "Upgrade to a paid plan to keep using AI after the trial."
+  ],
+  "free": false,
+  "price": "Free plan includes only an AI trial. Plus EUR 9.50/month and Business EUR 19.50/month include Notion AI (prices shown in EU).",
+  "priceSrc": "https://www.notion.com/pricing",
+  "caution": "Meeting notes and search across other apps need the Business plan or higher. The AI sees the pages you ask it about.",
+  "alts": [
+   "notebooklm",
+   "chatgpt",
+   "claude"
+  ]
+ },
+ {
+  "id": "gamma",
+  "type": "app",
+  "name": "Gamma",
+  "by": "Gamma Tech",
+  "site": "https://gamma.app",
+  "domain": "gamma.app",
+  "plain": "Makes presentations, documents and simple websites from a short description.",
+  "tags": [
+   "docs",
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn an outline into a slide deck",
+   "Convert a PDF or notes into a presentation",
+   "Export slides to PowerPoint or Google Slides"
+  ],
+  "steps": [
+   "Go to gamma.app and sign up for free.",
+   "Click Create and describe the presentation you need.",
+   "Edit the slides, then export or share a link."
+  ],
+  "free": true,
+  "price": "Free plan. Plus $9/month, Pro $18/month, Ultra $90/month when billed yearly.",
+  "priceSrc": "https://gamma.app/pricing",
+  "caution": "The free plan gives 400 credits once at signup, not every month, and adds Gamma branding. Check facts the AI adds to slides.",
+  "alts": [
+   "chatgpt",
+   "copilot",
+   "notion-ai"
+  ]
+ },
+ {
+  "id": "otter",
+  "type": "app",
+  "name": "Otter.ai",
+  "by": "Otter.ai",
+  "site": "https://otter.ai",
+  "domain": "otter.ai",
+  "plain": "Records meetings, writes a transcript and gives you a summary with action items.",
+  "tags": [
+   "knowledge",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Get a written transcript of a Zoom, Meet or Teams call",
+   "Receive a meeting summary with action items",
+   "Search past meetings for what was said"
+  ],
+  "steps": [
+   "Go to otter.ai and sign up with Google or Microsoft.",
+   "Connect your calendar so it can join meetings.",
+   "Open the transcript and summary after the meeting."
+  ],
+  "free": true,
+  "price": "Free plan with 300 minutes/month. Pro $16.99/month ($8.33/month billed yearly). Business $30/month ($19.99/month billed yearly).",
+  "priceSrc": "https://otter.ai/pricing",
+  "caution": "Tell others you are recording; some places require consent. Transcripts can mishear names and technical words.",
+  "alts": [
+   "granola",
+   "notion-ai",
+   "copilot"
+  ]
+ },
+ {
+  "id": "granola",
+  "type": "app",
+  "name": "Granola",
+  "by": "Granola",
+  "site": "https://www.granola.ai",
+  "domain": "granola.ai",
+  "plain": "A meeting notepad that listens on your computer and turns your rough notes into clean meeting notes.",
+  "tags": [
+   "knowledge",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Get tidy notes after a video call",
+   "Ask questions about what was said across meetings",
+   "Share meeting notes with your team"
+  ],
+  "steps": [
+   "Go to granola.ai and download the app.",
+   "Sign in and connect your calendar.",
+   "Start a meeting, jot quick notes, and let Granola fill them in."
+  ],
+  "free": true,
+  "price": "Free Basic plan. Business $14/user/month, Enterprise $35/user/month.",
+  "priceSrc": "https://www.granola.ai/pricing",
+  "caution": "The free plan shows only limited meeting history. Tell others the meeting is being transcribed.",
+  "alts": [
+   "otter",
+   "notion-ai",
+   "copilot"
+  ]
+ },
+ {
+  "id": "midjourney",
+  "type": "app",
+  "name": "Midjourney",
+  "by": "Midjourney, Inc.",
+  "site": "https://www.midjourney.com",
+  "domain": "midjourney.com",
+  "plain": "Type a description and it paints detailed, artistic pictures and short video clips for you.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Create artwork or illustrations from a written description",
+   "Make mood boards and concept images for a project",
+   "Turn a still image into a short animated clip"
+  ],
+  "steps": [
+   "Go to midjourney.com and sign in.",
+   "Pick a subscription plan; there is no free plan.",
+   "Type what you want to see in the prompt box and press Enter."
+  ],
+  "free": false,
+  "price": "No free plan. Basic $10/month, Standard $30, Pro $60, Mega $120; 20% less if paid yearly.",
+  "priceSrc": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+  "caution": "Images are public on the site unless you pay for Pro or Mega (Stealth Mode). Companies earning over $1M a year must use Pro or Mega.",
+  "alts": [
+   "ideogram",
+   "leonardo-ai",
+   "adobe-firefly",
+   "krea"
+  ]
+ },
+ {
+  "id": "canva-ai",
+  "type": "app",
+  "name": "Canva (Magic Studio / Canva AI)",
+  "by": "Canva",
+  "site": "https://www.canva.com",
+  "domain": "canva.com",
+  "plain": "A drag-and-drop design app with built-in AI that drafts, resizes and edits designs for you.",
+  "tags": [
+   "media",
+   "docs"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Design social posts, flyers and presentations from templates",
+   "Remove photo backgrounds or resize a design in one click",
+   "Ask the AI to draft a design or text from a prompt"
+  ],
+  "steps": [
+   "Create a free account at canva.com.",
+   "Pick a template or type what you want to make.",
+   "Use the AI tools in the editor, then download or share."
+  ],
+  "free": true,
+  "price": "Free plan with a small AI allowance. Paid Pro and Business plans; price depends on your country (Pro about EUR 110/year in Europe).",
+  "priceSrc": "https://www.canva.com/pricing/",
+  "caution": "The free plan only includes about 20 AI uses; heavier AI use needs Pro, Business or the paid AI Pass add-on.",
+  "alts": [
+   "adobe-firefly",
+   "capcut"
+  ]
+ },
+ {
+  "id": "adobe-firefly",
+  "type": "app",
+  "name": "Adobe Firefly",
+  "by": "Adobe",
+  "site": "https://www.adobe.com/products/firefly.html",
+  "domain": "adobe.com",
+  "plain": "Adobe's AI tool that makes and edits images, video and audio from text descriptions.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Generate images for marketing or presentations",
+   "Fill in or remove parts of a photo",
+   "Create short video clips or voiceovers from text"
+  ],
+  "steps": [
+   "Go to firefly.adobe.com and sign in with an Adobe account.",
+   "Choose image, video or audio and type a description.",
+   "Download the result or send it to Photoshop or Express."
+  ],
+  "free": true,
+  "price": "Free daily generations with limits. Paid plans: Standard, Pro, Pro Plus, Premium; price depends on your country (Standard about EUR 11/month in Europe).",
+  "priceSrc": "https://www.adobe.com/products/firefly/plans.html",
+  "caution": "Adobe says its own Firefly models are safe for commercial use, but partner models offered in the app may have different terms.",
+  "alts": [
+   "midjourney",
+   "canva-ai",
+   "ideogram",
+   "krea"
+  ]
+ },
+ {
+  "id": "ideogram",
+  "type": "app",
+  "name": "Ideogram",
+  "by": "Ideogram AI",
+  "site": "https://ideogram.ai",
+  "domain": "ideogram.ai",
+  "plain": "Makes images from a description and is especially good at putting readable text into pictures.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Make posters, logos or social graphics with correct lettering",
+   "Create product mockups and ad images",
+   "Keep the same character across several images"
+  ],
+  "steps": [
+   "Sign up free at ideogram.ai.",
+   "Type a description, including any words you want shown.",
+   "Pick the best of the generated images and download it."
+  ],
+  "free": true,
+  "price": "Free plan with weekly slow credits. Paid from $15/month billed yearly ($20 month to month).",
+  "priceSrc": "https://ideogram.ai/pricing",
+  "caution": "On the free plan your images are public; private generation needs a paid plan.",
+  "alts": [
+   "midjourney",
+   "leonardo-ai",
+   "adobe-firefly"
+  ]
+ },
+ {
+  "id": "krea",
+  "type": "app",
+  "name": "Krea",
+  "by": "Krea AI",
+  "site": "https://www.krea.ai",
+  "domain": "krea.ai",
+  "plain": "One site that gives you many image and video AI models, including live drawing that updates as you sketch.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Generate images or videos with different AI models in one place",
+   "Sketch roughly and watch AI turn it into a picture",
+   "Upscale and sharpen low-quality images"
+  ],
+  "steps": [
+   "Sign up free at krea.ai.",
+   "Choose a tool such as Image, Video or Realtime.",
+   "Type a prompt or draw, then download what you like."
+  ],
+  "free": true,
+  "price": "Free plan with a small daily allowance. Paid from $9/month (less if billed yearly).",
+  "priceSrc": "https://www.krea.ai/pricing",
+  "caution": "Check which plan includes the commercial license before using results for work.",
+  "alts": [
+   "leonardo-ai",
+   "midjourney",
+   "runway"
+  ]
+ },
+ {
+  "id": "leonardo-ai",
+  "type": "app",
+  "name": "Leonardo AI",
+  "by": "Leonardo.Ai (Canva)",
+  "site": "https://leonardo.ai",
+  "domain": "leonardo.ai",
+  "plain": "Creates images, designs and short videos from text, with ready-made styles for common looks.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Make game art, characters or product shots",
+   "Pick a style preset and generate images in that look",
+   "Turn an image into a short motion clip"
+  ],
+  "steps": [
+   "Sign up free at leonardo.ai.",
+   "Open the image creator and choose a style preset.",
+   "Type a description, generate, and download."
+  ],
+  "free": true,
+  "price": "Free plan with daily tokens. Paid plans from $12/month.",
+  "priceSrc": "https://leonardo.ai/pricing/",
+  "caution": "Free-plan creations are public; private creations need a paid plan.",
+  "alts": [
+   "midjourney",
+   "ideogram",
+   "krea"
+  ]
+ },
+ {
+  "id": "runway",
+  "type": "app",
+  "name": "Runway",
+  "by": "Runway AI",
+  "site": "https://runwayml.com",
+  "domain": "runwayml.com",
+  "plain": "Makes and edits short videos from text or images using AI.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a photo or description into a short video clip",
+   "Remove or replace objects and backgrounds in video",
+   "Generate music, voice or sound effects for a clip"
+  ],
+  "steps": [
+   "Sign up at runwayml.com; you get a one-time set of free credits.",
+   "Pick a tool such as text-to-video and type a prompt.",
+   "Review the clip and download it."
+  ],
+  "free": false,
+  "price": "125 one-time free credits to try it. Paid from $12/month billed yearly ($15 month to month).",
+  "priceSrc": "https://runwayml.com/pricing",
+  "caution": "Video uses credits fast, so a few seconds of footage can use up a month's allowance.",
+  "alts": [
+   "kling-ai",
+   "krea",
+   "capcut"
+  ]
+ },
+ {
+  "id": "kling-ai",
+  "type": "app",
+  "name": "Kling AI",
+  "by": "Kuaishou",
+  "site": "https://kling.ai",
+  "domain": "kling.ai",
+  "plain": "Turns text or pictures into realistic short videos with sound.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a photo into a moving video clip",
+   "Generate a short scene from a written description",
+   "Copy a person's movement from one video onto a character"
+  ],
+  "steps": [
+   "Sign up at kling.ai.",
+   "Choose video or image creation and upload a picture or type a prompt.",
+   "Wait for the result and download it."
+  ],
+  "free": true,
+  "price": "Free Basic plan with limits. Paid from Standard, listed at $10/month, with first-month discounts.",
+  "priceSrc": "https://kling.ai/app/membership/membership-plan",
+  "caution": "On the free plan videos carry a watermark and are not cleared for commercial use; those need a paid plan.",
+  "alts": [
+   "runway",
+   "krea",
+   "heygen"
+  ]
+ },
+ {
+  "id": "heygen",
+  "type": "app",
+  "name": "HeyGen",
+  "by": "HeyGen",
+  "site": "https://www.heygen.com",
+  "domain": "heygen.com",
+  "plain": "Makes videos of a realistic digital presenter reading your script, in many languages.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Make a training or sales video without filming",
+   "Translate a video into another language with matching lips",
+   "Create a digital version of yourself to present videos"
+  ],
+  "steps": [
+   "Sign up free at heygen.com.",
+   "Pick a stock avatar or create your own, then paste your script.",
+   "Generate the video and download or share it."
+  ],
+  "free": true,
+  "price": "Free plan: 3 videos a month, up to 1 minute. Paid from $24/month billed yearly ($29 month to month).",
+  "priceSrc": "https://www.heygen.com/pricing",
+  "caution": "Free videos have a watermark. Only make an avatar or voice clone of yourself or someone who has clearly agreed.",
+  "alts": [
+   "synthesia",
+   "elevenlabs"
+  ]
+ },
+ {
+  "id": "synthesia",
+  "type": "app",
+  "name": "Synthesia",
+  "by": "Synthesia",
+  "site": "https://www.synthesia.io",
+  "domain": "synthesia.io",
+  "plain": "Turns a written script into a video with a lifelike presenter, aimed at company training and explainers.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a document or slides into a training video",
+   "Update a video by editing the text instead of refilming",
+   "Dub a video into other languages"
+  ],
+  "steps": [
+   "Sign up free at synthesia.io.",
+   "Start from a template, choose an avatar and paste your script.",
+   "Generate the video and share the link or download it."
+  ],
+  "free": true,
+  "price": "Free plan: 10 minutes of video a month. Paid from $18/month billed yearly ($29 month to month).",
+  "priceSrc": "https://www.synthesia.io/pricing",
+  "caution": "Free videos show the Synthesia logo. Personal avatars of real people need a paid plan and that person's consent.",
+  "alts": [
+   "heygen",
+   "descript"
+  ]
+ },
+ {
+  "id": "capcut",
+  "type": "app",
+  "name": "CapCut",
+  "by": "ByteDance",
+  "site": "https://www.capcut.com",
+  "domain": "capcut.com",
+  "plain": "A free video editor for phone and computer with AI tools for captions, effects and quick edits.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Edit short videos for TikTok, Reels or YouTube Shorts",
+   "Add automatic captions to a video",
+   "Remove backgrounds or apply templates and effects"
+  ],
+  "steps": [
+   "Install the CapCut app or open capcut.com in a browser.",
+   "Import your video clips.",
+   "Add captions, music or effects, then export."
+  ],
+  "free": true,
+  "price": "Free to use. Paid Standard and Pro plans; price depends on your country and device.",
+  "priceSrc": "https://www.capcut.com/help/how-much-does-capcut-pro-cost",
+  "caution": "Many AI tools and effects are Pro-only. Owned by ByteDance (TikTok's parent); read the terms before using it for client or business work.",
+  "alts": [
+   "descript",
+   "opus-clip",
+   "runway"
+  ]
+ },
+ {
+  "id": "descript",
+  "type": "app",
+  "name": "Descript",
+  "by": "Descript",
+  "site": "https://www.descript.com",
+  "domain": "descript.com",
+  "plain": "Edit video and podcasts by editing the written transcript, like a text document.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Cut a video or podcast by deleting words from the transcript",
+   "Remove filler words and background noise automatically",
+   "Add captions and export clips for social media"
+  ],
+  "steps": [
+   "Sign up free at descript.com and install the app or use the web version.",
+   "Upload or record audio or video; it writes the transcript.",
+   "Edit the text to edit the media, then export."
+  ],
+  "free": true,
+  "price": "Free plan: 1 hour of media a month, 720p export. Paid from $16/month billed yearly ($24 month to month).",
+  "priceSrc": "https://www.descript.com/pricing",
+  "caution": "Watermark-free export starts with paid plans. Only use voice cloning on your own voice or with clear permission.",
+  "alts": [
+   "capcut",
+   "opus-clip",
+   "elevenlabs"
+  ]
+ },
+ {
+  "id": "opus-clip",
+  "type": "app",
+  "name": "Opus Clip",
+  "by": "OpusClip",
+  "site": "https://www.opus.pro",
+  "domain": "opus.pro",
+  "plain": "Cuts a long video into short, captioned clips ready for social media.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a podcast or webinar into short social clips",
+   "Add animated captions automatically",
+   "Reframe wide videos into vertical format"
+  ],
+  "steps": [
+   "Sign up free at opus.pro.",
+   "Paste a video link or upload a long video.",
+   "Pick the clips you like and download or post them."
+  ],
+  "free": true,
+  "price": "Free plan: 60 credits a month. Paid from $15/month (Starter), Pro $29/month.",
+  "priceSrc": "https://www.opus.pro/pricing",
+  "caution": "Free clips have a watermark, cannot be edited, and can only be exported for 3 days.",
+  "alts": [
+   "capcut",
+   "descript"
+  ]
+ },
+ {
+  "id": "elevenlabs",
+  "type": "app",
+  "name": "ElevenLabs",
+  "by": "ElevenLabs",
+  "site": "https://elevenlabs.io",
+  "domain": "elevenlabs.io",
+  "plain": "Turns written text into natural-sounding speech and can copy a voice from a short recording.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Create a voiceover for a video or presentation",
+   "Turn an article or book into audio",
+   "Dub a recording into another language"
+  ],
+  "steps": [
+   "Sign up free at elevenlabs.io.",
+   "Paste text into Text to Speech and choose a voice.",
+   "Generate the audio and download it."
+  ],
+  "free": true,
+  "price": "Free plan with 10,000 credits a month. Paid from $6/month (Starter).",
+  "priceSrc": "https://elevenlabs.io/pricing",
+  "caution": "The commercial license starts with the paid Starter plan. Only clone your own voice or a voice you have permission to use.",
+  "alts": [
+   "descript",
+   "heygen",
+   "suno"
+  ]
+ },
+ {
+  "id": "suno",
+  "type": "app",
+  "name": "Suno",
+  "by": "Suno",
+  "site": "https://suno.com",
+  "domain": "suno.com",
+  "plain": "Makes complete songs with vocals and music from a short description or your own lyrics.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Create a song for a birthday, video or event",
+   "Turn your own lyrics into a finished track",
+   "Make background music in a chosen style"
+  ],
+  "steps": [
+   "Sign up free at suno.com.",
+   "Describe the song or paste your lyrics and pick a style.",
+   "Listen to the versions and save the one you like."
+  ],
+  "free": true,
+  "price": "Free plan with 50 credits a day. Paid from $8/month billed yearly (Pro); Premier also available.",
+  "priceSrc": "https://suno.com/pricing",
+  "caution": "The free plan has no commercial rights and no monthly song downloads; you need Pro or Premier to use songs commercially.",
+  "alts": [
+   "elevenlabs"
+  ]
+ },
+ {
+  "id": "lovable",
+  "type": "app",
+  "name": "Lovable",
+  "by": "Lovable",
+  "site": "https://lovable.dev",
+  "domain": "lovable.dev",
+  "plain": "Describe an app or website in plain words and it builds a working version you can publish.",
+  "tags": [
+   "apps"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Build a simple website or landing page from a description",
+   "Make a small internal tool, like a booking form",
+   "Turn an idea into a clickable prototype to show others"
+  ],
+  "steps": [
+   "Sign up at lovable.dev with an email or Google account.",
+   "Type what you want to build in the chat box and send it.",
+   "Ask for changes in plain words, then press Publish to get a link."
+  ],
+  "free": true,
+  "price": "Free plan with 5 credits a day (up to 30 a month). Pro 25 EUR/month incl. VAT and Business 50 EUR/month, as shown from Europe.",
+  "priceSrc": "https://lovable.dev/pricing",
+  "caution": "Every message uses credits, and the free ones run out fast on bigger projects. Check the app for security holes before you put real customer data in it.",
+  "alts": [
+   "bolt-new",
+   "v0",
+   "replit"
+  ]
+ },
+ {
+  "id": "bolt-new",
+  "type": "app",
+  "name": "Bolt.new",
+  "by": "StackBlitz",
+  "site": "https://bolt.new",
+  "domain": "bolt.new",
+  "plain": "A chat in your browser that writes, runs and hosts a website or app from your description.",
+  "tags": [
+   "apps"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Build a website or web app by describing it",
+   "Try out an app idea before paying a developer",
+   "Host a finished project online with one click"
+  ],
+  "steps": [
+   "Open bolt.new and sign in.",
+   "Describe the app you want in the prompt box.",
+   "Test it in the preview, ask for fixes, then deploy it."
+  ],
+  "free": true,
+  "price": "Free plan with 1M tokens a month (300K a day). Pro $25/month, Teams $30 per member/month.",
+  "priceSrc": "https://bolt.new/pricing",
+  "caution": "Tokens are used up quickly when the AI gets stuck fixing its own errors. Larger apps usually still need a developer to clean up the code.",
+  "alts": [
+   "lovable",
+   "v0",
+   "replit"
+  ]
+ },
+ {
+  "id": "v0",
+  "type": "app",
+  "name": "v0",
+  "by": "Vercel",
+  "site": "https://v0.app",
+  "domain": "v0.app",
+  "plain": "Describe a web page or app and it designs and codes it, ready to put online.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Design a web page or dashboard from a sentence",
+   "Turn a screenshot or sketch into a working page",
+   "Publish a small web app on Vercel"
+  ],
+  "steps": [
+   "Go to v0.app and sign in.",
+   "Describe the page or app you want, or upload a screenshot.",
+   "Refine it through chat, then click Publish."
+  ],
+  "free": true,
+  "price": "Free plan with $5 of credits a month and 7 messages a day. Plus $30/user/month, Business $100/user/month.",
+  "priceSrc": "https://v0.app/pricing",
+  "caution": "The free message limit is small. The output is real code, so fixing anything beyond simple changes gets technical.",
+  "alts": [
+   "lovable",
+   "bolt-new",
+   "replit"
+  ]
+ },
+ {
+  "id": "replit",
+  "type": "app",
+  "name": "Replit",
+  "by": "Replit",
+  "site": "https://replit.com",
+  "domain": "replit.com",
+  "plain": "An online workspace where an AI agent builds, runs and publishes apps for you.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Build a web app by chatting with the Replit Agent",
+   "Publish an app with its own database online",
+   "Learn to code in the browser without installing anything"
+  ],
+  "steps": [
+   "Create a free account at replit.com.",
+   "Describe your app to the Agent on the home screen.",
+   "Review the result, ask for changes, then publish it."
+  ],
+  "free": true,
+  "price": "Free Starter plan with small daily Agent credits and 1 published app. Core $20/month ($18 yearly), Pro $100/month ($90 yearly).",
+  "priceSrc": "https://replit.com/pricing",
+  "caution": "Agent work is billed by effort, so costs can climb on complex apps. Set a spending limit in your account.",
+  "alts": [
+   "lovable",
+   "bolt-new",
+   "v0"
+  ]
+ },
+ {
+  "id": "cursor",
+  "type": "app",
+  "name": "Cursor",
+  "by": "Anysphere",
+  "site": "https://cursor.com",
+  "domain": "cursor.com",
+  "plain": "A code editor for your computer with an AI that writes and edits code alongside you.",
+  "tags": [
+   "code"
+  ],
+  "level": "dev",
+  "useFor": [
+   "Write or change code by describing what you want",
+   "Ask questions about a large codebase",
+   "Let an agent fix bugs across many files"
+  ],
+  "steps": [
+   "Download Cursor for Windows, Mac or Linux from cursor.com.",
+   "Open a project folder on your computer.",
+   "Open the Agent panel and describe the change you want."
+  ],
+  "free": true,
+  "price": "Free Hobby plan with limited Agent requests. Pro $20/month, Pro+ $60/month, Ultra $200/month, Teams $40/user/month.",
+  "priceSrc": "https://cursor.com/pricing",
+  "caution": "Made for people who can read code; the AI can make confident mistakes. Your code is sent to AI providers unless you turn on privacy mode.",
+  "alts": [
+   "windsurf",
+   "github-copilot"
+  ]
+ },
+ {
+  "id": "windsurf",
+  "type": "app",
+  "name": "Windsurf (now Devin Desktop)",
+  "by": "Cognition",
+  "site": "https://devin.ai/desktop",
+  "domain": "devin.ai",
+  "plain": "An AI code editor, now renamed Devin Desktop, where agents write and fix code for you.",
+  "tags": [
+   "code"
+  ],
+  "level": "dev",
+  "useFor": [
+   "Write and edit code with an AI agent",
+   "Run several coding agents and track them in one place",
+   "Get autocomplete suggestions while you type code"
+  ],
+  "steps": [
+   "Download Devin Desktop from devin.ai/desktop; Windsurf users get it as an update.",
+   "Sign in and open a project folder.",
+   "Describe a task to the agent and review its changes."
+  ],
+  "free": true,
+  "price": "Free plan with a light agent quota and unlimited autocomplete. Pro $20/month, Max $200/month (Devin plans).",
+  "priceSrc": "https://devin.ai/pricing",
+  "caution": "windsurf.com now redirects to Devin, so older guides and screenshots may not match. Meant for people comfortable with code.",
+  "alts": [
+   "cursor",
+   "github-copilot"
+  ]
+ },
+ {
+  "id": "github-copilot",
+  "type": "app",
+  "name": "GitHub Copilot",
+  "by": "GitHub (Microsoft)",
+  "site": "https://github.com/features/copilot",
+  "domain": "github.com",
+  "plain": "An AI helper inside code editors that suggests code and answers programming questions.",
+  "tags": [
+   "code"
+  ],
+  "level": "dev",
+  "useFor": [
+   "Get code suggestions as you type in VS Code",
+   "Ask why code is broken and how to fix it",
+   "Have an agent draft a change and open a pull request"
+  ],
+  "steps": [
+   "Sign in to GitHub and turn on Copilot Free in settings.",
+   "Install the GitHub Copilot extension in VS Code or another editor.",
+   "Start typing code or open Copilot Chat and ask a question."
+  ],
+  "free": true,
+  "price": "Free plan with 2,000 code completions and 50 chat requests a month. Pro $10/month, Pro+ $39/month, Max $100/month.",
+  "priceSrc": "https://github.com/features/copilot/plans",
+  "caution": "Suggestions can look right but be wrong or insecure; always check them. Needs a GitHub account.",
+  "alts": [
+   "cursor",
+   "windsurf"
+  ]
+ },
+ {
+  "id": "zapier",
+  "type": "app",
+  "name": "Zapier",
+  "by": "Zapier",
+  "site": "https://zapier.com",
+  "domain": "zapier.com",
+  "plain": "Connects your apps so routine tasks happen automatically, now with AI helpers and agents.",
+  "tags": [
+   "automate",
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Copy new form answers into a spreadsheet automatically",
+   "Send a Slack message when an important email arrives",
+   "Set up an AI agent that sorts and answers requests"
+  ],
+  "steps": [
+   "Create a free account at zapier.com.",
+   "Describe the task to Copilot or pick a ready template.",
+   "Connect your accounts, test once, then switch it on."
+  ],
+  "free": true,
+  "price": "Free plan with 100 tasks a month and two-step Zaps. Professional from $19.99/month yearly ($29.99 monthly), Team from $69/month yearly.",
+  "priceSrc": "https://zapier.com/pricing",
+  "caution": "Each automated step counts as a task and the cost rises with volume. Zapier gets access to every account you connect.",
+  "alts": [
+   "make",
+   "manus"
+  ]
+ },
+ {
+  "id": "make",
+  "type": "app",
+  "name": "Make",
+  "by": "Make (Celonis)",
+  "site": "https://www.make.com",
+  "domain": "make.com",
+  "plain": "A visual board where you link apps together to build automations and AI agents.",
+  "tags": [
+   "automate",
+   "connect"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Build a flow that moves data between apps on a schedule",
+   "Add AI steps to sort or summarize incoming emails",
+   "Automate reports from spreadsheets and forms"
+  ],
+  "steps": [
+   "Sign up free at make.com.",
+   "Create a new scenario and add the apps you want to connect.",
+   "Run it once to test, then set a schedule."
+  ],
+  "free": true,
+  "price": "Free plan with 1,000 credits a month. Core $9/month yearly ($10.59 monthly), Pro $16/month, Teams $29/month for 10,000 credits.",
+  "priceSrc": "https://www.make.com/en/pricing",
+  "caution": "More flexible than Zapier but takes longer to learn. Every action uses credits, and the AI Agents feature is still in beta.",
+  "alts": [
+   "zapier",
+   "manus"
+  ]
+ },
+ {
+  "id": "manus",
+  "type": "app",
+  "name": "Manus",
+  "by": "Manus AI",
+  "site": "https://manus.im",
+  "domain": "manus.im",
+  "plain": "An AI agent you give a task to, and it researches, browses and produces the result.",
+  "tags": [
+   "research",
+   "automate"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Research a topic and get a written report",
+   "Make slides or a simple website from a request",
+   "Schedule repeating tasks, like a weekly summary"
+  ],
+  "steps": [
+   "Sign up at manus.im.",
+   "Type the task you want done in detail.",
+   "Watch its progress, then download or share the result."
+  ],
+  "free": true,
+  "price": "Free plan with 300 credits a day. Paid plans shown at $20, $40 and $200/month (4,000 to 40,000 credits a month).",
+  "priceSrc": "https://manus.im/pricing",
+  "caution": "Credits go fast on long tasks. In August 2026 Manus split from Meta and deleted some users' data, so keep your own copies of important work.",
+  "alts": [
+   "zapier",
+   "make"
+  ]
+ },
+ {
+  "id": "lm-studio",
+  "type": "app",
+  "name": "LM Studio",
+  "by": "Element Labs",
+  "site": "https://lmstudio.ai",
+  "domain": "lmstudio.ai",
+  "plain": "A free desktop app that runs AI chat models on your own computer, offline.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "level": "setup",
+  "useFor": [
+   "Chat with an AI without sending data to the internet",
+   "Download and try open models like Llama or Qwen",
+   "Run a local AI for other apps to use"
+  ],
+  "steps": [
+   "Download LM Studio for Windows, Mac or Linux from lmstudio.ai.",
+   "Open the model search, pick a model that fits your computer, download it.",
+   "Load the model and start chatting."
+  ],
+  "free": true,
+  "price": "Free to run models on your computer. Optional cloud plans: Bionic+ $20/month, Pro $100/month.",
+  "priceSrc": "https://lmstudio.ai/pricing",
+  "caution": "Models are large downloads and need a reasonably powerful computer; small local models are less capable than ChatGPT or Claude. The optional cloud plans send prompts to US servers.",
+  "alts": []
+ },
+ {
+  "id": "fireflies",
+  "type": "app",
+  "name": "Fireflies.ai",
+  "by": "Fireflies.ai",
+  "site": "https://fireflies.ai",
+  "domain": "fireflies.ai",
+  "plain": "Joins your online meetings, writes down what was said and summarizes it for you.",
+  "tags": [
+   "docs",
+   "knowledge"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Get a transcript and summary of a Zoom or Teams call",
+   "Search past meetings for what was decided",
+   "Share action items with your team after a call"
+  ],
+  "steps": [
+   "Sign up at fireflies.ai with your work Google or Microsoft account.",
+   "Connect your calendar so it can join your meetings.",
+   "After a meeting, open the notes and summary in your dashboard."
+  ],
+  "free": true,
+  "price": "Free plan with transcription, limited AI summaries and 400 minutes of storage. Pro $10/seat/month yearly ($18 monthly), Business $19 yearly ($29 monthly).",
+  "priceSrc": "https://fireflies.ai/pricing",
+  "caution": "A bot joins your calls and recordings are stored on Fireflies' servers; tell participants and check your company rules first.",
+  "alts": []
+ },
+ {
+  "id": "udio",
+  "type": "app",
+  "name": "Udio",
+  "by": "Udio",
+  "site": "https://www.udio.com",
+  "domain": "udio.com",
+  "plain": "Makes full songs with vocals from a short text description of the style and lyrics.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Create a song from a text description",
+   "Write custom lyrics and have them sung",
+   "Extend or remix a song you made"
+  ],
+  "steps": [
+   "Sign up at udio.com.",
+   "Describe the style and topic, or paste your own lyrics.",
+   "Listen to the two versions it makes and extend the one you like."
+  ],
+  "free": true,
+  "price": "Free plan with 10 credits a day (100 a month). Standard $10/month ($8 yearly), Pro $30/month ($24 yearly).",
+  "priceSrc": "https://www.udio.com/pricing",
+  "caution": "Since October 2025 downloads are disabled after Udio's deal with Universal Music, so songs can only be played on Udio.",
+  "alts": []
+ },
+ {
+  "id": "beautiful-ai",
+  "type": "app",
+  "name": "Beautiful.ai",
+  "by": "Beautiful.ai",
+  "site": "https://www.beautiful.ai",
+  "domain": "beautiful.ai",
+  "plain": "Makes presentation slides for you and keeps the layout neat as you add content.",
+  "tags": [
+   "docs",
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Turn a topic or outline into a slide deck",
+   "Keep slides consistent with your company colors",
+   "Export a deck to PowerPoint or share a link"
+  ],
+  "steps": [
+   "Start the 14-day trial at beautiful.ai.",
+   "Describe your presentation or pick a template.",
+   "Edit the text, then present, share a link or export."
+  ],
+  "free": false,
+  "price": "No free plan; 14-day trial needs a card. Pro $14.50/month yearly or $45 for one month, Team $40/user/month yearly.",
+  "priceSrc": "https://www.beautiful.ai/pricing",
+  "caution": "Remember to cancel the trial if you do not want to be charged. Automatic layouts limit how freely you can move things.",
+  "alts": [
+   "microsoft-designer"
+  ]
+ },
+ {
+  "id": "microsoft-designer",
+  "type": "app",
+  "name": "Microsoft Designer",
+  "by": "Microsoft",
+  "site": "https://designer.microsoft.com",
+  "domain": "designer.microsoft.com",
+  "plain": "Makes images, cards, invitations and social posts from a short description, free with a Microsoft account.",
+  "tags": [
+   "media"
+  ],
+  "level": "easy",
+  "useFor": [
+   "Create a birthday card or invitation from a sentence",
+   "Make an image or sticker for social media",
+   "Remove a background or unwanted object from a photo"
+  ],
+  "steps": [
+   "Go to designer.microsoft.com and sign in with a Microsoft account.",
+   "Pick what to make, like an image or card, and describe it.",
+   "Choose a result, edit the text, then download or share."
+  ],
+  "free": true,
+  "price": "Free with monthly AI credits. Microsoft 365 Personal ($9.99/month) and Family ($12.99/month) give higher usage.",
+  "priceSrc": "https://www.microsoft.com/en-us/microsoft-365/microsoft-designer",
+  "caution": "Free credits are limited each month and shared with other Microsoft AI features.",
+  "alts": [
+   "beautiful-ai"
+  ]
+ }
+]
