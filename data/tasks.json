@@ -1,58 +1,420 @@
 {
  "priorities": [
-  { "id": "best", "label": "Best result", "icon": "star", "hint": "Money is not the issue" },
-  { "id": "value", "label": "Best value", "icon": "coins", "hint": "Great results, lower cost" },
-  { "id": "free", "label": "Free", "icon": "check", "hint": "Works on a free plan" },
-  { "id": "private", "label": "Private", "icon": "lock", "hint": "Runs on your own computer" }
+  {
+   "id": "best",
+   "label": "Best result",
+   "icon": "star",
+   "hint": "Money is not the issue"
+  },
+  {
+   "id": "value",
+   "label": "Best value",
+   "icon": "coins",
+   "hint": "Great results, lower cost"
+  },
+  {
+   "id": "free",
+   "label": "Free",
+   "icon": "check",
+   "hint": "Works on a free plan"
+  },
+  {
+   "id": "private",
+   "label": "Private",
+   "icon": "lock",
+   "hint": "Runs on your own computer"
+  }
  ],
  "groups": [
-  { "id": "everyday", "label": "Everyday" },
-  { "id": "create", "label": "Create" },
-  { "id": "work", "label": "Work & build" }
+  {
+   "id": "everyday",
+   "label": "Everyday"
+  },
+  {
+   "id": "create",
+   "label": "Create"
+  },
+  {
+   "id": "work",
+   "label": "Work & build"
+  }
  ],
  "tasks": [
-  { "id": "chat", "group": "everyday", "icon": "chat", "label": "Ask questions & get help", "picks": {
-   "best": [["opus", "The most careful, thoughtful answers of any widely available model."], ["astra", "Just as strong if you already pay for ChatGPT."]],
-   "value": [["sonnet", "Fast, smart and cheaper. Great for almost everything day to day."], ["sol", "ChatGPT's balanced model, also good value."]],
-   "free": [["gflash", "The free Gemini app is generous and built into Google apps."], ["luna", "What free ChatGPT users get."]],
-   "private": [["qwen", "Qwen3.8 27B runs on one good computer. Nothing leaves your machine."], ["mistral", "European, free license, easy to host yourself."]] } },
-  { "id": "write", "group": "everyday", "icon": "pen", "label": "Write & rewrite text", "picks": {
-   "best": [["opus", "Long, important pieces: proposals, contracts, articles."]],
-   "value": [["sonnet", "Natural style, fast, and half the price of Opus."], ["sol", "Solid alternative if you use ChatGPT."]],
-   "free": [["gflash", "Free in the Gemini app, good for drafts and emails."], ["luna", "Free in ChatGPT for quick rewrites."]],
-   "private": [["qwen", "Draft sensitive text without it leaving your computer."]] } },
-  { "id": "docs", "group": "everyday", "icon": "file", "label": "Understand long documents", "picks": {
-   "best": [["opus", "Reads a whole contract, report or spreadsheet at once (1M tokens)."], ["gpro", "Best when there is also video, audio or lots of images."]],
-   "value": [["gflash", "Handles huge files cheaply."], ["sonnet", "Same 1M-token reading as Opus, at half the price."]],
-   "free": [["gflash", "Upload files to the free Gemini app."]],
-   "private": [["qwen", "Keep confidential documents on your own machine."]] } },
-  { "id": "research", "group": "everyday", "icon": "search", "label": "Research a topic", "picks": {
-   "best": [["astra", "ChatGPT deep research browses and writes a report on its own."], ["opus", "Claude's research mode writes detailed, cited reports."]],
-   "value": [["gpro", "Gemini Deep Research, strong with Google Search."]],
-   "free": [["gflash", "The free Gemini app can search Google as it answers."]] } },
-  { "id": "image", "group": "create", "icon": "image", "label": "Make images", "picks": {
-   "best": [["gptimage", "Easiest in ChatGPT and follows instructions closely."], ["nano", "Nano Banana Pro: 4K, clean text inside images, photo edits."]],
-   "value": [["nano", "Great quality for everyday images and photo edits."]],
-   "free": [["nano", "Try it in the free Gemini app."]] } },
-  { "id": "video", "group": "create", "icon": "video", "label": "Make video", "picks": {
-   "best": [["veo", "Highest quality, with matching sound."]],
-   "value": [["omni", "Quicker, cheaper drafts you can edit by chatting."]] } },
-  { "id": "voice", "group": "create", "icon": "mic", "label": "Talk by voice", "picks": {
-   "best": [["live", "Gemini Live: the most natural back-and-forth voice conversation."], ["sol", "Voice mode in the ChatGPT app."]] } },
-  { "id": "music", "group": "create", "icon": "music", "label": "Make music", "picks": {
-   "best": [["lyria", "Full songs with verse and chorus from a text description."]] } },
-  { "id": "code", "group": "work", "icon": "code", "label": "Write code", "picks": {
-   "best": [["opus", "The default in Claude Code. The best balance for real projects."], ["fable", "For the hardest problems, when Opus gets stuck."]],
-   "value": [["sonnet", "Excellent code for half the price of Opus."], ["gflash", "Cheap and strong for everyday coding."]],
-   "free": [["glm", "Strongest free-to-download model for code. Needs a strong computer to run."]],
-   "private": [["glm", "Keep company code on your own hardware."], ["qwen", "Runs on a single workstation."]] } },
-  { "id": "agent", "group": "work", "icon": "bot", "label": "Let AI work on its own", "picks": {
-   "best": [["fable", "Hours of independent work on complex tasks."], ["astra", "Best at driving a computer and a browser."]],
-   "value": [["gflash", "Cheap agents that run at scale."], ["sonnet", "Reliable agent work at a mid price."]],
-   "private": [["kimi", "Strong open model for agents you host yourself."]] } },
-  { "id": "bulk", "group": "work", "icon": "coins", "label": "Process lots of text cheaply", "picks": {
-   "best": [["haiku", "Fast and dependable for sorting and extracting data."]],
-   "value": [["luna", "About $0.10 per million tokens: practically free."], ["glite", "Fast, cheap, and reads huge inputs."]],
-   "private": [["deepseek", "DeepSeek V4 Flash: near-frontier quality on your own GPUs."]] } }
+  {
+   "id": "chat",
+   "group": "everyday",
+   "icon": "chat",
+   "label": "Ask questions & get help",
+   "picks": {
+    "best": [
+     [
+      "opus",
+      "The most careful, thoughtful answers of any widely available model."
+     ],
+     [
+      "astra",
+      "Just as strong if you already pay for ChatGPT."
+     ]
+    ],
+    "value": [
+     [
+      "sonnet",
+      "Fast, smart and cheaper. Great for almost everything day to day."
+     ],
+     [
+      "sol",
+      "ChatGPT's balanced model, also good value."
+     ]
+    ],
+    "free": [
+     [
+      "gflash",
+      "The free Gemini app is generous and built into Google apps."
+     ],
+     [
+      "luna",
+      "What free ChatGPT users get."
+     ]
+    ],
+    "private": [
+     [
+      "qwen",
+      "Qwen3.8 27B runs on one good computer. Nothing leaves your machine."
+     ],
+     [
+      "mistral",
+      "European, free license, easy to host yourself."
+     ]
+    ]
+   },
+   "evidence": [
+    "aa",
+    "arena"
+   ]
+  },
+  {
+   "id": "write",
+   "group": "everyday",
+   "icon": "pen",
+   "label": "Write & rewrite text",
+   "picks": {
+    "best": [
+     [
+      "opus",
+      "Long, important pieces: proposals, contracts, articles."
+     ]
+    ],
+    "value": [
+     [
+      "sonnet",
+      "Natural style, fast, and half the price of Opus."
+     ],
+     [
+      "sol",
+      "Solid alternative if you use ChatGPT."
+     ]
+    ],
+    "free": [
+     [
+      "gflash",
+      "Free in the Gemini app, good for drafts and emails."
+     ],
+     [
+      "luna",
+      "Free in ChatGPT for quick rewrites."
+     ]
+    ],
+    "private": [
+     [
+      "qwen",
+      "Draft sensitive text without it leaving your computer."
+     ]
+    ]
+   },
+   "evidence": [
+    "instruct",
+    "arena"
+   ]
+  },
+  {
+   "id": "docs",
+   "group": "everyday",
+   "icon": "file",
+   "label": "Understand long documents",
+   "picks": {
+    "best": [
+     [
+      "opus",
+      "Reads a whole contract, report or spreadsheet at once (1M tokens)."
+     ],
+     [
+      "gpro",
+      "Best when there is also video, audio or lots of images."
+     ]
+    ],
+    "value": [
+     [
+      "gflash",
+      "Handles huge files cheaply."
+     ],
+     [
+      "sonnet",
+      "Same 1M-token reading as Opus, at half the price."
+     ]
+    ],
+    "free": [
+     [
+      "gflash",
+      "Upload files to the free Gemini app."
+     ]
+    ],
+    "private": [
+     [
+      "qwen",
+      "Keep confidential documents on your own machine."
+     ]
+    ]
+   },
+   "evidence": [
+    "longctx",
+    "mmmu"
+   ]
+  },
+  {
+   "id": "research",
+   "group": "everyday",
+   "icon": "search",
+   "label": "Research a topic",
+   "picks": {
+    "best": [
+     [
+      "astra",
+      "ChatGPT deep research browses and writes a report on its own."
+     ],
+     [
+      "opus",
+      "Claude's research mode writes detailed, cited reports."
+     ]
+    ],
+    "value": [
+     [
+      "gpro",
+      "Gemini Deep Research, strong with Google Search."
+     ]
+    ],
+    "free": [
+     [
+      "gflash",
+      "The free Gemini app can search Google as it answers."
+     ]
+    ]
+   },
+   "evidence": [
+    "hle",
+    "browsecomp"
+   ]
+  },
+  {
+   "id": "image",
+   "group": "create",
+   "icon": "image",
+   "label": "Make images",
+   "picks": {
+    "best": [
+     [
+      "gptimage",
+      "Easiest in ChatGPT and follows instructions closely."
+     ],
+     [
+      "nano",
+      "Nano Banana Pro: 4K, clean text inside images, photo edits."
+     ]
+    ],
+    "value": [
+     [
+      "nano",
+      "Great quality for everyday images and photo edits."
+     ]
+    ],
+    "free": [
+     [
+      "nano",
+      "Try it in the free Gemini app."
+     ]
+    ]
+   }
+  },
+  {
+   "id": "video",
+   "group": "create",
+   "icon": "video",
+   "label": "Make video",
+   "picks": {
+    "best": [
+     [
+      "veo",
+      "Highest quality, with matching sound."
+     ]
+    ],
+    "value": [
+     [
+      "omni",
+      "Quicker, cheaper drafts you can edit by chatting."
+     ]
+    ]
+   }
+  },
+  {
+   "id": "voice",
+   "group": "create",
+   "icon": "mic",
+   "label": "Talk by voice",
+   "picks": {
+    "best": [
+     [
+      "live",
+      "Gemini Live: the most natural back-and-forth voice conversation."
+     ],
+     [
+      "sol",
+      "Voice mode in the ChatGPT app."
+     ]
+    ]
+   }
+  },
+  {
+   "id": "music",
+   "group": "create",
+   "icon": "music",
+   "label": "Make music",
+   "picks": {
+    "best": [
+     [
+      "lyria",
+      "Full songs with verse and chorus from a text description."
+     ]
+    ]
+   }
+  },
+  {
+   "id": "code",
+   "group": "work",
+   "icon": "code",
+   "label": "Write code",
+   "picks": {
+    "best": [
+     [
+      "opus",
+      "The default in Claude Code. The best balance for real projects."
+     ],
+     [
+      "fable",
+      "For the hardest problems, when Opus gets stuck."
+     ]
+    ],
+    "value": [
+     [
+      "sonnet",
+      "Excellent code for half the price of Opus."
+     ],
+     [
+      "gflash",
+      "Cheap and strong for everyday coding."
+     ]
+    ],
+    "free": [
+     [
+      "glm",
+      "Strongest free-to-download model for code. Needs a strong computer to run."
+     ]
+    ],
+    "private": [
+     [
+      "glm",
+      "Keep company code on your own hardware."
+     ],
+     [
+      "qwen",
+      "Runs on a single workstation."
+     ]
+    ]
+   },
+   "evidence": [
+    "terminal",
+    "coding_index"
+   ]
+  },
+  {
+   "id": "agent",
+   "group": "work",
+   "icon": "bot",
+   "label": "Let AI work on its own",
+   "picks": {
+    "best": [
+     [
+      "fable",
+      "Hours of independent work on complex tasks."
+     ],
+     [
+      "astra",
+      "Best at driving a computer and a browser."
+     ]
+    ],
+    "value": [
+     [
+      "gflash",
+      "Cheap agents that run at scale."
+     ],
+     [
+      "sonnet",
+      "Reliable agent work at a mid price."
+     ]
+    ],
+    "private": [
+     [
+      "kimi",
+      "Strong open model for agents you host yourself."
+     ]
+    ]
+   },
+   "evidence": [
+    "agents",
+    "terminal"
+   ]
+  },
+  {
+   "id": "bulk",
+   "group": "work",
+   "icon": "coins",
+   "label": "Process lots of text cheaply",
+   "picks": {
+    "best": [
+     [
+      "haiku",
+      "Fast and dependable for sorting and extracting data."
+     ]
+    ],
+    "value": [
+     [
+      "luna",
+      "About $0.10 per million tokens: practically free."
+     ],
+     [
+      "glite",
+      "Fast, cheap, and reads huge inputs."
+     ]
+    ],
+    "private": [
+     [
+      "deepseek",
+      "DeepSeek V4 Flash: near-frontier quality on your own GPUs."
+     ]
+    ]
+   },
+   "evidence": [
+    "aa",
+    "instruct"
+   ]
+  }
  ]
 }

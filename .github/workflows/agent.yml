@@ -38,6 +38,8 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -52,6 +54,11 @@ jobs:
         if: github.event.schedule == '7 7 * * 1' || inputs.newsletter
         continue-on-error: true
         run: node agent/newsletter.mjs
+
+      - name: Community (apply approved submissions, weekly social drafts)
+        continue-on-error: true
+        run: node agent/community.mjs
+        env: { MAKE_SOCIAL: "${{ (github.event.schedule == '7 7 * * 1' || inputs.newsletter) && '1' || '' }}" }
 
       - name: Commit data
         run: |

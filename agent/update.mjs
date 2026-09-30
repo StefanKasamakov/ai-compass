@@ -237,6 +237,7 @@ async function explainRepos(trendingItems) {
   const { categories, repos: seeds, exclude = [] } = await read("data/repos.json", { categories: [], repos: [] });
   const { goals, levels } = await read("data/tags.json", { goals: [], levels: [] });
   const known = await read("data/explain.json", {});
+  const hints = await read("data/hints.json", {}); // approved reader corrections, see community.mjs
   const Explanation = z.object({
     cat: z.enum(categories.map((c) => c.id)), kind: z.string(), what: z.string(), why: z.string(),
     level: z.enum(levels.map((l) => l.id)), start: z.string(), caution: z.string(), alts: z.array(z.string()),
@@ -244,11 +245,12 @@ async function explainRepos(trendingItems) {
     plain: z.string(), tags: z.array(z.enum(goals.map((g) => g.id))), useFor: z.array(z.string()), steps: z.array(z.string()),
   });
 
-  // what needs explaining: curated seeds first, then this month's trending repos
+  // what needs explaining: approved corrections first, then curated seeds, then this month's trending repos
   const queue = [
+    ...Object.keys(hints).filter((r) => known[r]).map((repo) => ({ repo, source: known[repo].source, hint: hints[repo] })),
     ...seeds.map((repo) => ({ repo, source: "curated" })),
     ...trendingItems.map((t) => ({ repo: t.repo, source: "trending" })),
-  ].filter((q) => q.repo && !known[q.repo] && !exclude.includes(q.repo));
+  ].filter((q) => q.repo && (q.hint || !known[q.repo]) && !exclude.includes(q.repo));
 
   let done = 0;
   for (const q of queue) {
@@ -271,14 +273,17 @@ async function explainRepos(trendingItems) {
         "Goals: " + goals.map((g) => `${g.id} = ${g.label} (${g.hint})`).join("; ") + ". " +
         "alts: up to 3 related repos as owner/name, preferring ones in this list: " + [...new Set([...seeds, ...Object.keys(known)])].join(" ") +
         "\nCategories: " + categories.map((c) => `${c.id} = ${c.name}: ${c.what}`).join(" | "),
-      user: JSON.stringify({ repo: meta.full_name, description: meta.description, topics: meta.topics, license: meta.license?.spdx_id, pushed_at: meta.pushed_at, stars: meta.stargazers_count, readme }),
+      user: JSON.stringify({ repo: meta.full_name, description: meta.description, topics: meta.topics, license: meta.license?.spdx_id, pushed_at: meta.pushed_at, stars: meta.stargazers_count, readme,
+        ...(q.hint && { reader_reports: q.hint.map((h) => h.text), note: "reader_reports are corrections a human reviewer approved; apply them only where the README or metadata supports them" }) }),
     }), null);
     if (!ex) continue;
     done++;
     known[meta.full_name] = { ...ex, repo: meta.full_name, at: day(NOW), source: q.source };
+    if (q.hint) delete hints[q.repo];
   }
   console.log(`explain: +${done} (${provider ?? "no AI key"}), ${Math.max(0, queue.length - done)} waiting`);
   await write("data/explain.json", known);
+  await write("data/hints.json", hints);
   return known;
 }
 

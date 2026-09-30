@@ -89,7 +89,7 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 const NAV = [
   ["index", "Home", "./"], ["models", "Choose AI", "models.html"], ["explore", "Find tools", "explore.html"],
   ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["skills", "Skills", "skills.html"], ["github", "GitHub 101", "github.html"]]],
-  ["news", "News", "news.html"], ["leaderboard", "Rankings", "leaderboard.html"], ["newsletter", "Newsletter", "newsletter.html"],
+  ["news", "News", "news.html"], ["leaderboard", "Rankings", "leaderboard.html"], ["newsletter", "Newsletter", "newsletter.html"], ["contribute", "Contribute", "contribute.html"],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
   ? `<details class="nav-group"${href.some(([sid]) => sid === page) ? " data-current" : ""}><summary>${label}${icon("chevron")}</summary><div class="nav-menu">${href.map(([sid, sl, sh]) => `<a href="${sh}"${sid === page ? ' aria-current="page"' : ""}>${sl}</a>`).join("")}</div></details>`
@@ -113,7 +113,7 @@ function shell() {
       <p style="max-width:44ch">A plain-English guide to AI models and tools, for people who just want to get things done. Kept fresh by an agent that checks GitHub and the official blogs every few hours.</p></div>
     <div class="row" style="align-items:start;gap:2.5rem">
       <div><div class="field-label">Contribute</div>
-        <p><a href="newsletter.html">Weekly newsletter</a> · <a href="feed.xml">RSS</a><br><a href="${GH}/issues/new?template=submit-tool.yml">Suggest a tool</a><br><a href="${GH}/blob/main/data">Edit the data</a></p></div>
+        <p><a href="newsletter.html">Weekly newsletter</a> · <a href="feed.xml">RSS</a><br><a href="contribute.html">Suggest a tool or report a mistake</a><br><a href="contribute.html?kind=volunteer">Volunteer as a reviewer</a><br><a href="${GH}/blob/main/data">Edit the data</a></p></div>
       <div><div class="field-label">Project</div>
         <p><a href="${GH}">Source on GitHub</a><br><a href="${GH}/actions">Agent runs</a><br><span id="footUpdated"></span></p></div>
     </div>
@@ -201,7 +201,14 @@ function voteBtn(board, id) {
 
 // Two-step picker: what do you want to do, then what matters most. One clear recommendation.
 async function picker(host, startTask = "chat") {
-  const [m, t] = await Promise.all([load("models"), load("tasks")]);
+  const [m, t, bench] = await Promise.all([load("models"), load("tasks"), load("benchmarks")]);
+  // "what the tests say": the model's score and rank on the benchmarks that matter for this task
+  const evidence = (task, id) => (task.evidence || []).map((mid) => {
+    const met = bench?.metrics.find((x) => x.id === mid), sc = bench?.scores[id]?.[mid];
+    if (!met || !sc) return "";
+    const all = Object.values(bench.scores).map((s) => s[mid]?.v).filter((v) => v != null).sort((a, b) => b - a);
+    return `<span class="ev"><b>${esc(met.skill)}</b> ${met.unit === "%" ? `${+sc.v.toFixed(1)}%` : Math.round(sc.v)} <small>#${all.indexOf(sc.v) + 1} of ${all.length} (${esc(met.short)})</small></span>`;
+  }).filter(Boolean).join("");
   const byId = Object.fromEntries(m.models.map((x) => [x.id, x]));
   let task = t.tasks.find((x) => x.id === startTask) || t.tasks[0], prio = "best";
   host.innerHTML = `<div class="step"><span class="step-n">1</span><h3>What do you want to do?</h3></div>
@@ -225,7 +232,8 @@ async function picker(host, startTask = "chat") {
         <div><span class="field-label">Where to use it</span>${API_ONLY.has(x.id) ? `<p>Through the API, inside other apps.</p>` : `<a class="btn primary sm" href="${app.url}" target="_blank" rel="noopener">Open ${esc(app.name)} ${icon("external")}</a>`}</div>
         <div><span class="field-label">What it costs</span><p>${esc(cost)}</p></div>
       </div>
-      <p class="muted" style="font-size:.85rem;margin:0">${x.in != null ? `Developers: $${x.in} in / $${x.out} out per 1M tokens · ` : ""}<a href="models.html#bench">How it scores on tests</a></p>
+      ${evidence(task, x.id) ? `<div class="ev-row"><span class="field-label">What the tests say</span><div>${evidence(task, x.id)}</div></div>` : ""}
+      <p class="muted" style="font-size:.85rem;margin:0">${x.in != null ? `Developers: $${x.in} in / $${x.out} out per 1M tokens · ` : ""}<a href="models.html#bench">See all test results</a></p>
     </article>
     ${rest.length ? `<p class="field-label" style="margin-top:1.2rem">Also good</p><div class="alt-row">${rest.map(([id, w]) => { const y = byId[id]; return `<div class="alt p-${y.p}">${modelLogo(y)}<div><b>${esc(y.name)}</b><p>${esc(w)}</p></div></div>`; }).join("")}</div>` : ""}`;
     if (page === "models") history.replaceState(null, "", `#task=${task.id}`);
@@ -242,11 +250,13 @@ async function picker(host, startTask = "chat") {
 // ---------- pages ----------
 const pages = {
   async index() {
-    const [g, n, tags, ex, t] = await Promise.all([load("github"), load("news"), load("tags"), load("explain"), load("trending")]);
-    $("#stAgent").textContent = g ? `Updated ${ago(g.updated)}` : "Updating";
-    $("#stTools").textContent = `${Object.keys(ex || {}).length} tools explained`;
+    const [g, n, tags, ex, t, m] = await Promise.all([load("github"), load("news"), load("tags"), load("explain"), load("trending"), load("models")]);
+    $("#stAgent").textContent = g ? `Agent ran ${ago(g.updated)}` : "Agent pending";
+    $("#stTracked").textContent = `${Object.keys(g?.repos || {}).length} repos tracked`;
+    $("#stNews").textContent = `${n?.items.length ?? 0} stories this month`;
+    $("#stModels").textContent = `${m?.models.length ?? 0} models · ${Object.keys(ex || {}).length} tools explained`;
     $("#goalTiles").innerHTML = (tags?.goals || []).map((x) => `<a class="goal-tile" href="explore.html?goal=${x.id}">${icon(x.icon)}<b>${esc(x.label)}</b><small>${esc(x.hint)}</small></a>`).join("");
-    picker($("#homePicker"), "chat");
+    $("#ctaLogos").innerHTML = ["anthropic", "openai", "google", "open"].map((p) => `<span class="logo-badge p-${p}">${logo(p === "open" ? "ollama" : LOGOS[p])}</span>`).join("");
     $("#homeNews").innerHTML = (n?.items || []).filter((x) => x.ai).slice(0, 4).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.title)}</b><small>${esc(x.source)} · ${ago(x.date)}${x.summary ? ` · ${esc(x.summary.slice(0, 110))}` : ""}</small></a>`).join("") || `<p class="muted">News is on its way.</p>`;
     const hot = (t?.items || []).filter((x) => ex?.[x.repo]).slice(0, 6);
     $("#homeHot").innerHTML = hot.map((x) => toolCard(fromRepo(ex[x.repo], g?.repos?.[x.repo]))).join("");
@@ -369,7 +379,7 @@ function toolCard(x, tags) {
   </button>`;
 }
 
-function toolDetail(x, all, tags) {
+function toolDetail(x, all, tags, tips) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
   const link = x.repo ? (x.path ? `https://github.com/${x.repo}/tree/main/${x.path}` : `https://github.com/${x.repo}`) : null;
   const alts = x.alts.map((a) => all.find((y) => y.key === a)).filter(Boolean);
@@ -381,14 +391,17 @@ function toolDetail(x, all, tags) {
     ${x.steps.length ? `<h3 style="margin-top:1.4rem">How to start</h3><ol class="steps compact">${x.steps.map((st) => `<li><p>${md(st)}</p></li>`).join("")}</ol>` : ""}
     ${x.caution ? `<div class="callout" style="margin-top:1.4rem">${icon("alert")}<div><b>Good to know.</b> ${md(x.caution)}</div></div>` : ""}
     ${x.why ? `<details class="more"><summary>More detail</summary><p>${md(x.what)}</p><p>${md(x.why)}</p></details>` : ""}
+    ${tips?.[x.key]?.length ? `<h3 style="margin-top:1.4rem">Tips from readers</h3>${tips[x.key].map((t) => `<blockquote class="tip-q"><p>${esc(t.body)}</p><small class="muted">${esc(t.name || "A reader")} · ${ago(t.date)}</small></blockquote>`).join("")}` : ""}
     ${alts.length ? `<h3 style="margin-top:1.4rem">Similar tools</h3><div class="row">${alts.map((a) => `<button class="chip" data-open="${esc(a.key)}">${esc(a.name)}</button>`).join("")}</div>` : ""}
     <div class="row" style="margin-top:1.6rem">${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
       ${link ? `<a class="btn" href="${link}" target="_blank" rel="noopener">${icon("github")}Open on GitHub</a>` : ""}
+      <a class="btn" href="contribute.html?kind=tip&target=${encodeURIComponent(x.key)}">${icon("chat")}Share a tip</a>
+      <a class="btn" href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">${icon("alert")}Report a mistake</a>
       <span class="muted mono" style="font-size:.8rem">${x.stars ? `${num(x.stars)} stars` : ""}${x.installs ? ` · ${num(x.installs)} installs/month` : ""}${x.updated ? ` · updated ${ago(x.updated)}` : ""}</span></div>`;
 }
 
 pages.explore = async () => {
-  const [repos, ex, g, dl, tools, tags] = await Promise.all([load("repos"), load("explain"), load("github"), load("downloads"), load("tools"), load("tags")]);
+  const [repos, ex, g, dl, tools, tags, tips] = await Promise.all([load("repos"), load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips")]);
   const inExplain = new Set(Object.keys(ex || {}));
   const all = [
     ...Object.values(ex || {}).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
@@ -426,7 +439,7 @@ pages.explore = async () => {
   const dlg = $("#toolDlg");
   const open = (key) => {
     const x = all.find((y) => y.key === key); if (!x) return;
-    $("#toolBody").innerHTML = toolDetail(x, all, tags);
+    $("#toolBody").innerHTML = toolDetail(x, all, tags, tips);
     if (!dlg.open) dlg.showModal();
     dlg.scrollTop = 0;
     history.replaceState(null, "", `${location.pathname}${location.search}#${key}`);
