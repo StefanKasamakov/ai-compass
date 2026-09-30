@@ -537,3 +537,32 @@ input.note { width: auto; flex: 1; min-width: 200px; padding: .5rem .7rem; font-
 .main-pick .sel select { font-weight: 600; }
 .goal-go { margin-top: 1.2rem; }
 .goal-go .sel { height: 52px; } .goal-go .btn { min-height: 52px; }
+
+/* ---------- v8: phone-friendly model tables ---------- */
+.only-sm { display: none; }
+.rc { display: grid; gap: 6px; }
+.rc-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1rem; align-items: center; padding: .7rem .9rem; border: 1px solid var(--line); border-radius: 12px; background: var(--card); color: var(--fg); text-decoration: none; }
+.rc-row b { display: block; font-weight: 600; font-size: .95rem; }
+.rc-row small { display: block; font: .7rem var(--mono); color: var(--dim); text-transform: uppercase; letter-spacing: .05em; }
+.rc-row .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+.rc-val { text-align: right; font: 700 1.1rem var(--mono); white-space: nowrap; }
+.rc-row.na .rc-val { font: .8rem var(--mono); color: var(--dim); }
+.rc-bar { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--bg-2); overflow: hidden; }
+.rc-bar i { display: block; height: 100%; border-radius: 3px; background: var(--c, var(--seq)); }
+@media (max-width: 720px) {
+  .only-sm { display: block; }
+  .hide-sm { display: none !important; }
+  /* the model lineup becomes one card per model */
+  .cards-sm { border: 0; background: none; overflow: visible; }
+  .cards-sm table, .cards-sm tbody { display: block; }
+  .cards-sm thead { display: none; }
+  .cards-sm tr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem .8rem; padding: 1rem; margin-bottom: 8px; border: 1px solid var(--line); border-radius: var(--r); background: var(--card); }
+  .cards-sm td { display: block; padding: 0; border: 0; text-align: left; min-width: 0; }
+  .cards-sm td:nth-child(1), .cards-sm td:nth-child(3) { grid-column: 1 / -1; }
+  .cards-sm td:nth-child(2) { grid-column: 1 / -1; order: -1; }
+  .cards-sm td.num { font: 600 .92rem var(--mono); }
+  .cards-sm td[data-label]::before { content: attr(data-label); display: block; font: .66rem var(--mono); color: var(--dim); text-transform: uppercase; letter-spacing: .05em; margin-bottom: .15rem; }
+  /* ranked bars: name on its own line so it is never cut off */
+  .bar-row { grid-template-columns: minmax(0, 1fr); gap: .2rem; margin-bottom: .35rem; }
+  .bar-row .lbl { white-space: normal; }
+}

@@ -276,7 +276,7 @@ const pages = {
       body.innerHTML = m.models.filter((x) => p === "all" || x.p === p).map((x) => `<tr id="m-${x.id}" class="p-${x.p}">
         <td><span class="mname">${modelLogo(x)}${esc(x.name)}${newTag(x)}</span><small class="muted mono">${esc(m.providers[x.p].app)}</small></td>
         <td><span class="tag">${esc(x.tier)}</span></td><td class="why">${esc(x.best)}${x.note ? `<br><small style="color:var(--accent)">${esc(x.note)}</small>` : ""}</td>
-        <td class="num">${x.in != null ? "$" + x.in : "—"}</td><td class="num">${x.out != null ? "$" + x.out : esc(x.price || "—")}</td><td class="num">${esc(x.ctx || "—")}</td></tr>`).join("");
+        <td class="num" data-label="Input / 1M">${x.in != null ? "$" + x.in : "—"}</td><td class="num" data-label="Output / 1M">${x.out != null ? "$" + x.out : esc(x.price || "—")}</td><td class="num" data-label="Context">${esc(x.ctx || "—")}</td></tr>`).join("");
     }, "all", "filter");
     $("#modelsUpdated").textContent = m.updated;
     benchmarks(m);
@@ -616,6 +616,19 @@ async function benchmarks(m) {
       return `<td class="cell${sc.v === vs[0] ? " top" : ""}" style="background:color-mix(in srgb, var(--seq) ${Math.round(8 + t * 72)}%, var(--card))" data-tip="${tipFor(x, met, sc)}"><a href="${esc(sc.src)}" target="_blank" rel="noopener">${fmt(met, sc.v)}</a></td>`;
     }).join("")}</tr>`; }).join("")}</tbody>`;
 
+  // phones: a wide grid is unreadable, so show one model's report card at a time
+  dropdown($("#heatPick"), "Model", rows.map((id) => [id, byId[id].name]), (id) => {
+    const x = byId[id];
+    $("#heatCard").innerHTML = b.metrics.map((met) => {
+      const sc = b.scores[id][met.id], vs = range[met.id];
+      if (!sc) return `<div class="rc-row na"><span><b>${esc(met.skill)}</b><small>${esc(met.short)}</small></span><span class="rc-val">not tested</span></div>`;
+      const pos = vs.indexOf(sc.v) + 1, t = vs.length > 1 ? 1 - (pos - 1) / (vs.length - 1) : 1;
+      return `<a class="rc-row p-${x.p}" href="${esc(sc.src)}" target="_blank" rel="noopener"><span><b>${esc(met.skill)}</b><small>${esc(met.short)}</small></span>
+        <span class="rc-val">${fmt(met, sc.v)}<small>${pos === 1 ? "best of" : `#${pos} of`} ${vs.length}</small></span>
+        <span class="rc-bar"><i style="width:${Math.round(6 + t * 94)}%"></i></span></a>`;
+    }).join("");
+  }, rows[0], true);
+
   // ranked bars for one metric (percent and 0-100 index metrics only: bars must start at zero)
   const barMetrics = b.metrics.filter((met) => met.max === 100);
   $("#provLegend").innerHTML = $("#scatterLegend").innerHTML = Object.entries(m.providers).map(([k, p]) => `<span class="p-${k}"><i></i>${esc(p.name)}</span>`).join("");
@@ -645,6 +658,9 @@ async function benchmarks(m) {
     ${placeLabels(pts.map((p) => ({ ...p, cx: px(p.price), cy: py(p.v), right: px(p.price) > W - 190 }))).map((p) => `<g class="p-${p.x.p}" data-tip="${esc(`<b>${p.x.name}</b><br>Index ${p.v.toFixed(1)} · $${p.price.toFixed(2)} blended${p.via ? `<br><small>${p.via}</small>` : ""}`)}" tabindex="0">
       <circle class="pt" cx="${p.cx}" cy="${p.cy}" r="8" fill="var(--c)"/>
       <text class="pl" x="${p.cx + (p.right ? -13 : 13)}" y="${p.ly + 4}" text-anchor="${p.right ? "end" : "start"}">${esc(p.x.name.replace(/^Claude |^Gemini /, "").replace(/ \(.*\)$/, ""))}</text></g>`).join("")}`;
+
+  $("#valueList").innerHTML = [...pts].sort((a, c) => c.v - a.v).map((p) => `<div class="rc-row p-${p.x.p}"><span><b><span class="dot"></span> ${esc(p.x.name)}</b>${p.via ? `<small>${esc(p.via)}</small>` : ""}</span>
+    <span class="rc-val">${Math.round(p.v)}<small>$${p.price < 1 ? p.price.toFixed(2) : p.price.toFixed(1)} / 1M</small></span></div>`).join("");
 
   $("#benchSources").innerHTML = `Checked ${esc(b.updated)}. Most columns come from <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>, which runs the same tests the same way on every model (highest effort setting). New puzzles: <a href="https://arcprize.org/" target="_blank" rel="noopener">ARC Prize</a>. People's choice: <a href="https://arena.ai/leaderboard/text" target="_blank" rel="noopener">Arena</a>. We avoid makers' own scores because each company tests with its own setup. Small gaps (1 to 2 points) aren't meaningful.`;
 }
