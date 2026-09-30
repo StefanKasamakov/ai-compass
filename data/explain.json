@@ -6329,5 +6329,409 @@
   "repo": "chadhurley25075-png/pd-bridge",
   "at": "2026-09-30",
   "source": "trending"
+ },
+ "feder-cr/dots": {
+  "cat": "builders",
+  "kind": "Stealth browser web agent",
+  "what": "An AI-powered web assistant that uses a custom, anti-detect Firefox engine to browse and interact with websites without getting blocked.",
+  "why": "Traditional web agents often fail due to bot detection, CAPTCHAs, or JS-based fingerprinting. Reach for this when you need an AI agent to reliably browse, log in, or scrape protected sites.",
+  "level": "setup",
+  "start": "uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key YOUR_KEY",
+  "caution": "The project claims its custom C++ patched Firefox engine bypasses all modern bot detection, but highly sophisticated anti-bot walls may still block automated interactions.",
+  "alts": [
+   "browser-use/browser-use",
+   "Skyvern-AI/skyvern",
+   "unclecode/crawl4ai"
+  ],
+  "packages": [],
+  "plain": "A chat assistant that controls a stealth web browser to search and complete tasks online.",
+  "tags": [
+   "automate",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Automating online ticket and flight searches",
+   "Navigating and extracting data from bot-protected websites",
+   "Maintaining browser login sessions across multiple automation runs"
+  ],
+  "steps": [
+   "Install uv on your machine using the curl or PowerShell script",
+   "Run `uvx --from git+https://github.com/feder-cr/dots dots --openrouter-key YOUR_KEY` in your terminal",
+   "Open http://127.0.0.1:8765 in your browser to start chatting with the agent"
+  ],
+  "repo": "feder-cr/dots",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "Sreehari05055/thesys-core": {
+  "cat": "memory",
+  "kind": "Research paper workspace",
+  "what": "An open-source workspace for searching, reading, and chatting with academic papers using local document processing and OpenAI.",
+  "why": "It solves the frustration of losing context when reading papers by showing precise visual highlights on the PDF for every AI answer. Use it when you need to search open-access databases, organize a library, and query or compare specific claims across documents.",
+  "level": "setup",
+  "start": "docker compose up --build",
+  "caution": "Requires an OpenAI API key for chat, an email for citations, and a TypeSafe API key to compare papers. Ingestion and local model downloads may be slow on computers without a GPU.",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "An AI-powered reading desk where you can search, chat with, and compare academic papers with exact visual highlights.",
+  "tags": [
+   "research",
+   "knowledge",
+   "docs"
+  ],
+  "useFor": [
+   "Search academic papers across OpenAlex and arXiv directly inside the app",
+   "Chat with PDFs and see exact visual highlights of cited passages",
+   "Compare two papers on a claim to see if they agree"
+  ],
+  "steps": [
+   "Copy backend/.env.example to backend/.env and add your OpenAI API key and email",
+   "Run `docker compose up --build` to start the backend and frontend services",
+   "Open http://127.0.0.1:5000 in your web browser to access the workspace"
+  ],
+  "repo": "Sreehari05055/thesys-core",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "Xu123-Bob/Baize": {
+  "cat": "coding",
+  "kind": "Coding Assistant CLI",
+  "what": "Baize is an open-source AI coding assistant CLI that supports multiple backends like DeepSeek, OpenAI-compatible models, and local Ollama.",
+  "why": "It lets developers interact with AI directly from the terminal to write code, edit files, and execute shell commands using various language models and privacy controls.",
+  "level": "setup",
+  "start": "baize",
+  "caution": "Requires providing your own API keys for commercial providers like DeepSeek or OpenAI.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "An open-source terminal assistant for writing and editing code using various AI backends.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Write Python scripts and automate tasks",
+   "Search and modify codebases across files",
+   "Run local coding models via Ollama"
+  ],
+  "steps": [
+   "Install the package using pip from the repository or local source",
+   "Run `baize` in your terminal to generate configuration files",
+   "Edit `~/.baize/config.toml` to select your preferred model backend",
+   "Add your API key to `~/.baize/.env` and launch `baize` again"
+  ],
+  "repo": "Xu123-Bob/Baize",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "ThinkFlowLab/system1-agents": {
+  "cat": "harness",
+  "kind": "Agent speed booster",
+  "what": "An integration that lets your Claude Code or CLI agents use fast, low-cost System 1 decision models for routing and quick choices.",
+  "why": "The project claims it can run agents up to 6 times faster and 25 times cheaper by offloading simple choice-based decisions to specialized models. Reach for it when your AI agents are running too slowly or costing too much on repetitive tasks.",
+  "level": "setup",
+  "start": "npx skills add ThinkFlowLab/system1-agents",
+  "caution": "Requires external API keys for Jev (via TypeSafe or OpenRouter) to utilize the specialized decision models.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Speeds up your AI agents and lowers costs by letting them make quick choices without full chat models.",
+  "tags": [
+   "save",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Speed up web browser automation tasks",
+   "Route customer support tickets to queues cheaply",
+   "Control desktop applications using fast decision models"
+  ],
+  "steps": [
+   "Install the agent skill using `npx skills add ThinkFlowLab/system1-agents`",
+   "Add the plugin to Claude using the claude plugin marketplace command",
+   "Configure your TypeSafe or OpenRouter API keys in a `.env` file",
+   "Run agent tasks using the s1a command-line tool"
+  ],
+  "repo": "ThinkFlowLab/system1-agents",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "joetawil7/first-pass": {
+  "cat": "harness",
+  "kind": "Agent quality harness",
+  "what": "A plugin and ruleset for AI coding assistants like Claude Code that forces agents to analyze neighboring code and verify changes.",
+  "why": "AI agents often write buggy edits because they only look at the exact lines they change. Use this to force rigorous pre-code checklists and clean-context peer reviews.",
+  "level": "setup",
+  "start": "/plugin marketplace add joetawil7/first-pass",
+  "caution": "Enforcing dual-agent reviews and extensive pre-mortem checks will significantly increase your API token consumption and costs.",
+  "alts": [
+   "anthropics/claude-code-action",
+   "winfunc/opcode",
+   "siteboon/claudecodeui"
+  ],
+  "packages": [],
+  "plain": "Forces your AI coding assistant to double-check neighboring code and prove its work actually works.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Enforce rigorous edge-case checklists before an agent writes code",
+   "Verify changes by running tests that failed before the edit",
+   "Block agents from writing unasked-for functions and bloated code"
+  ],
+  "steps": [
+   "Add the plugin using `/plugin marketplace add joetawil7/first-pass`",
+   "Install the plugin using `/plugin install first-pass@first-pass`",
+   "Run the workspace configuration using `/first-pass:setup-first-pass`"
+  ],
+  "repo": "joetawil7/first-pass",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "aaravshah1311/Agent-2": {
+  "cat": "coding",
+  "kind": "Gemini terminal agent",
+  "what": "An autonomous AI coding and terminal agent powered by Google Gemini with persistent memory.",
+  "why": "To execute coding, file operations, and terminal tasks locally using Gemini models through a command-line or web interface.",
+  "level": "setup",
+  "start": "python run.py",
+  "caution": "Requires your own Google Gemini API key.",
+  "alts": [
+   "anthropics/claude-code",
+   "OpenHands/OpenHands",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A self-hosted coding and terminal assistant driven by Google Gemini that runs on your local machine.",
+  "tags": [
+   "code",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run terminal commands autonomously",
+   "Edit and inspect code files",
+   "Manage local persistent memory and project rules"
+  ],
+  "steps": [
+   "Clone the repository to your local machine",
+   "Run the launcher script using `python run.py`",
+   "Provide your Gemini API key when prompted"
+  ],
+  "repo": "aaravshah1311/Agent-2",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "JakeATX/llamAmpere": {
+  "cat": "local",
+  "kind": "Optimized local LLM runner",
+  "what": "llamAmpere is a high-performance fork of llama.cpp optimized specifically to speed up local model inference on consumer Ampere graphics cards.",
+  "why": "Standard local LLM runners can run slowly with large contexts. This fork uses optimized GPU kernels and custom KV cache options to achieve much higher generation speeds on RTX 3090 and 3090 Ti GPUs.",
+  "level": "setup",
+  "start": "git clone -b v0.4 https://github.com/JakeATX/llamAmpere.git",
+  "caution": "This tool is highly specialized and requires an NVIDIA RTX 3090 or 3090 Ti graphics card on Linux with the CUDA toolkit installed to compile and run.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Run large language models much faster on your home RTX 3090 or 3090 Ti graphics card.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run large language models locally on consumer Ampere GPUs",
+   "Speed up speculative decoding using custom GPU kernels",
+   "Process extremely long text contexts up to 262k tokens"
+  ],
+  "steps": [
+   "Clone the repository using `git clone -b v0.4 https://github.com/JakeATX/llamAmpere.git`",
+   "Build the server binary using CMake with CUDA enabled",
+   "Download and load a compatible Qwen model from Hugging Face",
+   "Launch the server to run your local model"
+  ],
+  "repo": "JakeATX/llamAmpere",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "breakstageaxe61/genspark-claw": {
+  "cat": "harness",
+  "kind": "Agent skill pack",
+  "what": "A command-line tool and skill pack that installs five specialized workflows into personal AI agents like Genspark Claw, OpenClaw, Hermes, Claude Code, and Cursor.",
+  "why": "Personal AI agents often lack pre-built workflows for complex tasks like multi-source research or resilient web browsing. This tool installs five battle-tested instructions into your agent with a single command.",
+  "level": "setup",
+  "start": "mkdir -p 'gensparkclaw' && cd 'gensparkclaw' && npm install github:breakstageaxe61/genspark-claw",
+  "caution": "",
+  "alts": [
+   "NousResearch/hermes-agent",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "github:breakstageaxe61/genspark-claw"
+  ],
+  "plain": "Installs pre-made skills into AI coding assistants and agents to help them research, write, and browse better.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Install deep-research workflows into Claude Code or Cursor",
+   "Add robust browser automation to your self-hosted OpenClaw agent",
+   "Generate structured slide outlines ready for AI slide makers"
+  ],
+  "steps": [
+   "Install Node.js version 18 or higher on your machine",
+   "Run the one-line npm command to install genspark-claw",
+   "Run `npx genspark-claw list` to see all available skills",
+   "Install skills to your agent using `npx genspark-claw install all --target openclaw`"
+  ],
+  "repo": "breakstageaxe61/genspark-claw",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "GetBrew/growth-engineer": {
+  "cat": "harness",
+  "kind": "growth tool catalog",
+  "what": "An open-source catalog of go-to-market tools and workflows written as markdown files that AI agents can run.",
+  "why": "It solves the problem of digging through scattered documentation by providing structured files and an MCP server for sales and marketing automation tasks.",
+  "level": "easy",
+  "start": "claude mcp add --transport http growth-engineer https://www.growth.engineer/mcp",
+  "caution": "",
+  "alts": [],
+  "packages": [],
+  "plain": "A directory of sales workflows and tools that AI agents can read and execute automatically.",
+  "tags": [
+   "automate",
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Run go-to-market workflows with an AI agent",
+   "Search tools and companies via an MCP server",
+   "Fetch markdown guides for sales automation tasks"
+  ],
+  "steps": [
+   "Open your AI assistant settings.",
+   "Add a custom connector or MCP server.",
+   "Paste the growth.engineer MCP URL."
+  ],
+  "repo": "GetBrew/growth-engineer",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "dragonked2/alphacode": {
+  "cat": "coding",
+  "kind": "AI coding agent",
+  "what": "An open-source AI assistant that writes code, runs local terminal tests, and controls a live Firefox browser to automate complex tasks.",
+  "why": "It bridges the gap between text-only suggestions and real system execution. Reach for it when you need an autonomous agent to find and fix bugs, run test suites, or interact with dynamic web pages.",
+  "level": "setup",
+  "start": "",
+  "caution": "The project claims to offer free AI without requiring API keys. Be cautious, as tools that reuse consumer subscriptions or pool free tiers can violate providers' terms of service and risk your accounts.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "An AI assistant that can write code, run commands, and use Firefox to test your websites.",
+  "tags": [
+   "code",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Fix software bugs and run local test suites",
+   "Control a Firefox browser to test web applications",
+   "Perform repetitive browser tasks and capture screenshots"
+  ],
+  "steps": [
+   "Install the AlphaCode Browser Agent extension from Firefox Add-ons",
+   "Download and run the AlphaCode native application",
+   "Provide natural-language instructions to start automated tasks"
+  ],
+  "repo": "dragonked2/alphacode",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "howseen-ai/claude-motion-design": {
+  "cat": "harness",
+  "kind": "Claude Code skill",
+  "what": "A skill for Claude Code that generates motion design videos using HTML, Playwright, and ffmpeg.",
+  "why": "Provides a programmatic approach to motion design without requiring expensive editing software or licenses, letting the AI generate and iterate on videos through code.",
+  "level": "setup",
+  "start": "mkdir -p ~/.claude/skills && cp -r skill/motion-design ~/.claude/skills/",
+  "caution": "This tool reuses consumer subscription logins as an API or pools free tiers: that may break the provider's terms and risk the account.",
+  "alts": [
+   "anthropic/claude-code"
+  ],
+  "packages": [
+   "playwright",
+   "imageio-ffmpeg",
+   "numpy",
+   "pillow"
+  ],
+  "plain": "Create motion design videos using code and Claude Code instead of manual timeline editing.",
+  "tags": [
+   "media",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate motion design videos using code",
+   "Sync video frames and audio to beats",
+   "Remake launch videos from references"
+  ],
+  "steps": [
+   "Copy the skill directory into your Claude skills folder.",
+   "Install the required Python dependencies and Chromium browser.",
+   "Invoke the skill inside Claude Code to create videos."
+  ],
+  "repo": "howseen-ai/claude-motion-design",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "graygnatconsole/mcp-audit-tool": {
+  "cat": "evals",
+  "kind": "security audit cli",
+  "what": "Security audit CLI for Model Context Protocol (MCP) servers.",
+  "why": "Scan your AI agent configurations for tool poisoning, hardcoded secrets, and supply-chain risks before they run on your machine.",
+  "level": "setup",
+  "start": "mcp-audit scan",
+  "caution": "",
+  "alts": [],
+  "packages": [
+   "mcp-audit-tool"
+  ],
+  "plain": "Checks your AI assistant configuration files for dangerous security flaws, hardcoded passwords, and untrusted tools.",
+  "tags": [
+   "code",
+   "monitor",
+   "private"
+  ],
+  "useFor": [
+   "Scan AI tool configurations for exposed API keys",
+   "Find dangerous command execution and unpinned packages",
+   "Export security reports in SARIF format for CI"
+  ],
+  "steps": [
+   "Install the tool using pipx or pip",
+   "Run `mcp-audit scan` to auto-discover local configuration files",
+   "Review terminal reports and remediation advice"
+  ],
+  "repo": "graygnatconsole/mcp-audit-tool",
+  "at": "2026-09-30",
+  "source": "trending"
  }
 }
