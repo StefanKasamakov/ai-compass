@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-09-30",
  "metrics": [
   {
    "id": "aa",
@@ -8,52 +8,70 @@
    "name": "Artificial Analysis Intelligence Index",
    "unit": "",
    "max": 100,
-   "what": "An average of ten hard tests (coding, agents, science, reasoning) run the same way for every model. The best single 'how smart is it' number."
+   "what": "One overall score from ten hard tests (office work, agents, coding, science, long documents), run the same way for every model. The best single 'how smart is it' number."
   },
   {
-   "id": "swe_pro",
-   "skill": "Coding",
-   "short": "SWE-bench Pro",
-   "name": "SWE-bench Pro",
+   "id": "agents",
+   "skill": "Doing tasks in apps",
+   "short": "AutomationBench",
+   "name": "AutomationBench (Artificial Analysis)",
    "unit": "%",
    "max": 100,
-   "what": "Fix real bugs in real open-source projects; the fix only counts if the project's own tests pass. Scores are reported by each maker with their own setup."
+   "what": "Carry out real workflows across business apps (email, CRM, calendars) with tools, without breaking the rules it was given."
   },
   {
-   "id": "terminal",
+   "id": "tb40",
    "skill": "Terminal work",
-   "short": "Terminal-Bench 2",
-   "name": "Terminal-Bench 2",
+   "short": "Terminal-Bench 4",
+   "name": "Terminal-Bench 4.0 (Artificial Analysis)",
    "unit": "%",
    "max": 100,
-   "what": "Finish multi-step jobs in a Linux terminal: set up servers, debug builds, crunch data. All scores from one independent run by Vals AI with the same setup for every model, because makers' own numbers differ by up to 30 points."
+   "what": "Finish long, multi-step jobs in a Linux terminal: set up servers, fix builds, process data. The coding-agent test."
   },
   {
-   "id": "browsecomp",
-   "skill": "Web research",
-   "short": "BrowseComp",
-   "name": "BrowseComp",
+   "id": "longctx",
+   "skill": "Long documents",
+   "short": "AA-LCR",
+   "name": "Long Context Reasoning (Artificial Analysis)",
    "unit": "%",
    "max": 100,
-   "what": "Track down hard-to-find facts by browsing the web over many steps."
-  },
-  {
-   "id": "gpqa",
-   "skill": "Science",
-   "short": "GPQA Diamond",
-   "name": "GPQA Diamond",
-   "unit": "%",
-   "max": 100,
-   "what": "PhD-level biology, chemistry and physics questions you can't just Google. Top models are now near the ceiling, so small gaps mean little."
+   "what": "Answer questions that need facts spread across very long documents, like a stack of reports or contracts."
   },
   {
    "id": "hle",
    "skill": "Hardest questions",
    "short": "Humanity's Last Exam",
-   "name": "Humanity's Last Exam (no tools)",
+   "name": "Humanity's Last Exam, no tools (Artificial Analysis)",
    "unit": "%",
    "max": 100,
-   "what": "Expert questions from 100+ fields, written specifically to stump AI. Answered without tools. Independent Artificial Analysis runs where they exist, otherwise the maker's own number (marked)."
+   "what": "Expert questions from 100+ fields, written to stump AI. Answered from memory, no web search."
+  },
+  {
+   "id": "science",
+   "skill": "Science research",
+   "short": "CritPt",
+   "name": "CritPt (Artificial Analysis)",
+   "unit": "%",
+   "max": 100,
+   "what": "Unpublished, research-level physics problems. Scores are low for everyone; it shows who can do real research reasoning."
+  },
+  {
+   "id": "scicode",
+   "skill": "Scientific coding",
+   "short": "SciCode",
+   "name": "SciCode (Artificial Analysis)",
+   "unit": "%",
+   "max": 100,
+   "what": "Write code that solves real scientific computing problems from papers."
+  },
+  {
+   "id": "mmmu",
+   "skill": "Images & charts",
+   "short": "MMMU-Pro",
+   "name": "MMMU-Pro (Artificial Analysis)",
+   "unit": "%",
+   "max": 100,
+   "what": "College-level questions that require reading images, diagrams and charts. Text-only models can't take it."
   },
   {
    "id": "arc",
@@ -63,15 +81,6 @@
    "unit": "%",
    "max": 100,
    "what": "Visual puzzles the model has never seen. Measures learning on the spot, not memory. Scores verified by the ARC Prize foundation."
-  },
-  {
-   "id": "mmmu",
-   "skill": "Images & charts",
-   "short": "MMMU-Pro",
-   "name": "MMMU-Pro",
-   "unit": "%",
-   "max": 100,
-   "what": "College-level questions that require reading images, diagrams and charts. Independent Artificial Analysis runs only."
   },
   {
    "id": "arena",
@@ -84,90 +93,41 @@
   }
  ],
  "scores": {
-  "opus": {
-   "aa": {
-    "v": 57.6,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
-   },
-   "swe_pro": {
-    "v": 89.9,
-    "src": "https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf",
-    "note": "vendor system card, max effort, avg of 5 trials; subset not stated"
-   },
-   "terminal": {
-    "v": 87.6,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI independent (Terminus 2): 87.64; Anthropic reports only TB 4.0"
-   },
-   "hle": {
-    "v": 61.4,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 64.4"
-   },
-   "arc": {
-    "v": 93.3,
-    "src": "https://arcprize.org/results/anthropic-claude-opus-5-5",
-    "note": "ARC-AGI-2 Semi-Private, High effort (best variant; Max 91.7%, XHigh 92.5%)"
-   },
-   "mmmu": {
-    "v": 87.7,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Artificial Analysis, max effort"
-   },
-   "arena": {
-    "v": 1509,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "claude-opus-5.5-high, text overall (style control), rank 1, only 2,307 votes (preliminary, CI +/-12), snapshot read 2026-09-29"
-   }
-  },
-  "sonnet": {
-   "aa": {
-    "v": 56,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
-   },
-   "swe_pro": {
-    "v": 81.3,
-    "src": "https://www.anthropic.com/claude-sonnet-5-5-system-card",
-    "note": "vendor system card Table 8.1.A, max effort, avg of 5 trials"
-   },
-   "terminal": {
-    "v": 83.1,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI independent (Terminus 2): 83.146"
-   },
-   "hle": {
-    "v": 55,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 56.9"
-   }
-  },
   "fable": {
    "aa": {
     "v": 53.4,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
    },
-   "swe_pro": {
-    "v": 81.2,
-    "src": "https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card",
-    "note": "vendor system card Table 8.1.A, max effort, avg of 5 trials; subset not stated"
+   "agents": {
+    "v": 59.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
    },
-   "terminal": {
-    "v": 85,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI independent (Terminus 2): 85.019. Artificial Analysis TB 2.1 has 91.4 (max effort)"
+   "tb40": {
+    "v": 52,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
    },
-   "gpqa": {
-    "v": 93.7,
-    "src": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-    "note": "Artificial Analysis, max effort. Anthropic's launch post has no GPQA; OpenAI's GPT-6 Astra table also lists Fable 5.1 at 93.7%. Vals AI reports 93.43%."
+   "longctx": {
+    "v": 85.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
    },
    "hle": {
     "v": 59.1,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 60.9"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "science": {
+    "v": 29.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "scicode": {
+    "v": 63.1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Fable 5.1 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
    },
    "arc": {
     "v": 90,
@@ -180,41 +140,192 @@
     "note": "claude-fable-5.1-max, text overall (style control), rank 5, 9,942 votes, snapshot read 2026-09-29"
    }
   },
+  "opus": {
+   "aa": {
+    "v": 57.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "agents": {
+    "v": 69.5,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "tb40": {
+    "v": 59.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "longctx": {
+    "v": 84.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "hle": {
+    "v": 61.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "science": {
+    "v": 31.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "scicode": {
+    "v": 66.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "mmmu": {
+    "v": 87.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Opus 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "arc": {
+    "v": 93.3,
+    "src": "https://arcprize.org/results/anthropic-claude-opus-5-5",
+    "note": "ARC-AGI-2 Semi-Private, High effort (best variant; Max 91.7%, XHigh 92.5%)"
+   },
+   "arena": {
+    "v": 1509,
+    "src": "https://arena.ai/leaderboard/text",
+    "note": "claude-opus-5.5-high, text overall (style control), rank 1, only 2,307 votes (preliminary, CI +/-12), snapshot read 2026-09-29"
+   }
+  },
+  "sonnet": {
+   "aa": {
+    "v": 56,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "agents": {
+    "v": 71.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "tb40": {
+    "v": 63.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "longctx": {
+    "v": 82.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "hle": {
+    "v": 55,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "science": {
+    "v": 31.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   },
+   "scicode": {
+    "v": 61,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude Sonnet 5.5 (Adaptive Reasoning, Max Effort, Default Fallback)\" (max effort)"
+   }
+  },
+  "haiku": {
+   "aa": {
+    "v": 16.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "agents": {
+    "v": 3.2,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "tb40": {
+    "v": 0,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "longctx": {
+    "v": 74.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "hle": {
+    "v": 10.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "science": {
+    "v": 0,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "scicode": {
+    "v": 42.2,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "mmmu": {
+    "v": 58.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "arc": {
+    "v": 4,
+    "src": "https://arcprize.org/leaderboard",
+    "note": "ARC-AGI-2 Semi-Private, Thinking 32K (best variant, 4.03%)"
+   },
+   "arena": {
+    "v": 1414,
+    "src": "https://arena.ai/leaderboard/text",
+    "note": "claude-haiku-4-5-20251001, text overall (style control), rank 137, snapshot read 2026-09-29"
+   }
+  },
   "astra": {
    "aa": {
     "v": 52.7,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
    },
-   "terminal": {
-    "v": 87.3,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI independent (Terminus 2): 87.266. Artificial Analysis TB 2.1: 89.9 (high) / 88.4 (max)"
+   "agents": {
+    "v": 68.5,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
    },
-   "browsecomp": {
-    "v": 91.5,
-    "src": "https://openai.com/index/gpt-6-astra/",
-    "note": "vendor, max score across efforts"
+   "tb40": {
+    "v": 59.1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
    },
-   "gpqa": {
-    "v": 96.1,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 96"
+   "longctx": {
+    "v": 80.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
    },
    "hle": {
     "v": 54.7,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "Artificial Analysis, max, no tools. OpenAI reports only a with-tools score: 57.2%."
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
+   },
+   "science": {
+    "v": 31.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
+   },
+   "scicode": {
+    "v": 56.5,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
+   },
+   "mmmu": {
+    "v": 86.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Astra (max)\" (max effort)"
    },
    "arc": {
     "v": 95,
     "src": "https://arcprize.org/results/openai-gpt-6-astra",
     "note": "ARC-AGI-2 Semi-Private, Max. Matches the OpenAI launch table. It also has ARC-AGI-3 (99.9% with the provider adapter, 62.7% with the standard harness), not mixed in here."
-   },
-   "mmmu": {
-    "v": 86.9,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Artificial Analysis, max"
    },
    "arena": {
     "v": 1478,
@@ -225,28 +336,48 @@
   "sol": {
    "aa": {
     "v": 47.5,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
    },
-   "terminal": {
-    "v": 83.1,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI independent (Terminus 2): 83.146"
+   "agents": {
+    "v": 61.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
+   },
+   "tb40": {
+    "v": 43.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
+   },
+   "longctx": {
+    "v": 83.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
    },
    "hle": {
     "v": 47.9,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "Artificial Analysis, max, no tools"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
+   },
+   "science": {
+    "v": 30.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
+   },
+   "scicode": {
+    "v": 57.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
+   },
+   "mmmu": {
+    "v": 83.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Sol (max)\" (max effort)"
    },
    "arc": {
     "v": 89.6,
     "src": "https://arcprize.org/results/openai-gpt-6-sol",
     "note": "ARC-AGI-2 Semi-Private, Max"
-   },
-   "mmmu": {
-    "v": 83.3,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Artificial Analysis, max"
    },
    "arena": {
     "v": 1457,
@@ -257,28 +388,48 @@
   "luna": {
    "aa": {
     "v": 37.3,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
    },
-   "terminal": {
-    "v": 73,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI independent (Terminus 2): 73.034"
+   "agents": {
+    "v": 53.2,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
+   },
+   "tb40": {
+    "v": 12.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
+   },
+   "longctx": {
+    "v": 83.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
    },
    "hle": {
     "v": 38.5,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "Artificial Analysis, max, no tools"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
+   },
+   "science": {
+    "v": 19.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
+   },
+   "scicode": {
+    "v": 54.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
+   },
+   "mmmu": {
+    "v": 75.5,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GPT-6 Luna (max)\" (max effort)"
    },
    "arc": {
     "v": 59.3,
     "src": "https://arcprize.org/results/openai-gpt-6-luna",
     "note": "ARC-AGI-2 Semi-Private, Max"
-   },
-   "mmmu": {
-    "v": 75.5,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Artificial Analysis, max"
    },
    "arena": {
     "v": 1442,
@@ -286,36 +437,103 @@
     "note": "gpt-6-luna-max, text overall (style control), rank 86, 4,792 votes, snapshot read 2026-09-29"
    }
   },
+  "gpro": {
+   "aa": {
+    "v": 29.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "agents": {
+    "v": 35.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "tb40": {
+    "v": 4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "longctx": {
+    "v": 82,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "hle": {
+    "v": 47,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "science": {
+    "v": 17.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "scicode": {
+    "v": 58.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "mmmu": {
+    "v": 82.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
+   },
+   "arc": {
+    "v": 77.1,
+    "src": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+    "note": "ARC-AGI-2, ARC Prize Verified (the arcprize.org data has 77.08% for Gemini 3.1 Pro Preview)"
+   },
+   "arena": {
+    "v": 1487,
+    "src": "https://arena.ai/leaderboard/text",
+    "note": "gemini-3.1-pro-preview, text overall (style control), rank 17, snapshot read 2026-09-29"
+   }
+  },
   "gflash": {
    "aa": {
     "v": 40.9,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "high effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
    },
-   "terminal": {
+   "agents": {
+    "v": 59.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
+   },
+   "tb40": {
+    "v": 19.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
+   },
+   "longctx": {
     "v": 81.3,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "Vals AI independent run. Maker reports 89.4"
-   },
-   "gpqa": {
-    "v": 95.3,
-    "src": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-    "note": "Artificial Analysis, high. Google's launch reports no GPQA. OpenAI's Astra table also lists 95.3%."
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
    },
    "hle": {
     "v": 47.8,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "Artificial Analysis, high, no tools. Google reports only HLE-Verified (54.9%), which is a different question set."
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
+   },
+   "science": {
+    "v": 18.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
+   },
+   "scicode": {
+    "v": 56.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
+   },
+   "mmmu": {
+    "v": 85.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.8 Flash (high)\" (high effort)"
    },
    "arc": {
     "v": 89.2,
     "src": "https://arcprize.org/results/google-gemini-3-8-flash",
     "note": "ARC-AGI-2 Semi-Private, High"
-   },
-   "mmmu": {
-    "v": 85.6,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Artificial Analysis, high"
    },
    "arena": {
     "v": 1492,
@@ -326,38 +544,48 @@
   "glite": {
    "aa": {
     "v": 22.2,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "high effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
    },
-   "swe_pro": {
-    "v": 54.2,
-    "src": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-5_flash-lite_model_evaluation.pdf",
-    "note": "vendor, SWE-Bench Pro (Public) full public set, internal Antigravity harness"
+   "agents": {
+    "v": 25,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
    },
-   "terminal": {
-    "v": 50.2,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "Vals AI independent run. Maker reports 54"
+   "tb40": {
+    "v": 1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
    },
-   "gpqa": {
-    "v": 83.8,
-    "src": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-    "note": "Artificial Analysis. Google's Flash-Lite table has no GPQA."
+   "longctx": {
+    "v": 76,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
    },
    "hle": {
     "v": 18.8,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "Artificial Analysis, no tools"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
+   },
+   "science": {
+    "v": 0,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
+   },
+   "scicode": {
+    "v": 41.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
+   },
+   "mmmu": {
+    "v": 79,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Gemini 3.5 Flash-Lite\" (high effort)"
    },
    "arc": {
     "v": 10.3,
     "src": "https://arcprize.org/results/gemini-3-5-flash-lite",
     "note": "ARC-AGI-2 Semi-Private, High"
-   },
-   "mmmu": {
-    "v": 79,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Artificial Analysis. A secondary search snippet claimed 83.6%, which I couldn't verify."
    },
    "arena": {
     "v": 1456,
@@ -368,33 +596,43 @@
   "qwen": {
    "aa": {
     "v": 45.4,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "Qwen3.8 Max (0902)"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
    },
-   "swe_pro": {
-    "v": 67.7,
-    "src": "https://qwen.ai/blog?id=qwen3.8",
-    "note": "Qwen3.8-Max; vendor ran Claude Code harness on a Qwen-corrected (refined) task set"
+   "agents": {
+    "v": 56.2,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
    },
-   "terminal": {
-    "v": 67.4,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "Vals AI independent run. Maker reports 86.6"
+   "tb40": {
+    "v": 38.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
    },
-   "gpqa": {
-    "v": 92.8,
-    "src": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-    "note": "Qwen3.8 Max (0902), Artificial Analysis. Secondary sites say Alibaba reported 92.6, but I couldn't open the qwen.ai blog (JS-only), so that figure is unverified."
+   "longctx": {
+    "v": 80.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
    },
    "hle": {
     "v": 43.1,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "Qwen3.8 Max (0902), Artificial Analysis, no tools. Secondary sites say the vendor reported 43.6 (unverified)."
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
+   },
+   "science": {
+    "v": 17.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
+   },
+   "scicode": {
+    "v": 52.1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
    },
    "mmmu": {
     "v": 82.8,
-    "src": "https://artificialanalysis.ai/evaluations/mmmu-pro",
-    "note": "MMMU-Pro, Qwen3.8 Max (0902), Artificial Analysis"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
    },
    "arena": {
     "v": 1479,
@@ -405,23 +643,38 @@
   "glm": {
    "aa": {
     "v": 44.8,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
    },
-   "terminal": {
-    "v": 71.5,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "Vals AI independent run. Maker reports 88.2"
+   "agents": {
+    "v": 62.2,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
    },
-   "gpqa": {
-    "v": 91.7,
-    "src": "https://artificialanalysis.ai/evaluations/gpqa-diamond",
-    "note": "GLM-5.3 (max), Artificial Analysis"
+   "tb40": {
+    "v": 41.9,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
+   },
+   "longctx": {
+    "v": 79.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
    },
    "hle": {
     "v": 42.3,
-    "src": "https://artificialanalysis.ai/evaluations/humanitys-last-exam",
-    "note": "GLM-5.3 (max), Artificial Analysis, no tools. Z.ai's HF card reports only HLE with tools: 62.5%."
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
+   },
+   "science": {
+    "v": 19.1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
+   },
+   "scicode": {
+    "v": 59,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"GLM-5.3 (max)\" (max effort)"
    },
    "arena": {
     "v": 1480,
@@ -431,24 +684,39 @@
   },
   "deepseek": {
    "aa": {
-    "v": 39.5,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "DeepSeek V4.1 Flash"
+    "v": 36,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
    },
-   "terminal": {
-    "v": 54.7,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "V4-Pro-0813. Vals AI independent run. Maker reports 87.9"
+   "agents": {
+    "v": 56.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
    },
-   "gpqa": {
-    "v": 92.8,
-    "src": "https://artificialanalysis.ai/models/deepseek-v4-pro",
-    "note": "DeepSeek V4 Pro 0813 (Reasoning, Max), Artificial Analysis. DeepSeek's HF card has no GPQA."
+   "tb40": {
+    "v": 14.1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
+   },
+   "longctx": {
+    "v": 80.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
    },
    "hle": {
     "v": 41,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 42.7"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
+   },
+   "science": {
+    "v": 18,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
+   },
+   "scicode": {
+    "v": 51,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
    },
    "arc": {
     "v": 61.3,
@@ -464,38 +732,48 @@
   "kimi": {
    "aa": {
     "v": 43.6,
-    "src": "https://artificialanalysis.ai/models",
-    "note": "max effort"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
    },
-   "terminal": {
-    "v": 80.9,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "Vals AI independent run. Maker reports 88.3"
+   "agents": {
+    "v": 58.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
    },
-   "browsecomp": {
-    "v": 91.2,
-    "src": "https://huggingface.co/moonshotai/Kimi-K3",
-    "note": "vendor, context compaction at 300K; 90.4 with full 1M context and no compaction"
+   "tb40": {
+    "v": 12.6,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
    },
-   "gpqa": {
-    "v": 93.5,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 93.5"
+   "longctx": {
+    "v": 88.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
    },
    "hle": {
     "v": 46.9,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 43.5"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
+   },
+   "science": {
+    "v": 23.4,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
+   },
+   "scicode": {
+    "v": 59.5,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
+   },
+   "mmmu": {
+    "v": 80.5,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Kimi K3 (max)\" (max effort)"
    },
    "arc": {
     "v": 60.4,
     "src": "https://arcprize.org/results/moonshot-kimi-k3",
     "note": "ARC-AGI-2 Semi-Private, Max"
-   },
-   "mmmu": {
-    "v": 80.5,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 81.6"
    },
    "arena": {
     "v": 1488,
@@ -503,95 +781,46 @@
     "note": "kimi-k3-max, text overall (style control), rank 16, snapshot read 2026-09-29"
    }
   },
-  "haiku": {
-   "swe_pro": {
-    "v": 39.45,
-    "src": "https://labs.scale.com/leaderboard/swe_bench_pro_public",
-    "note": "Scale AI official SWE-bench Pro public leaderboard (claude-4-5-haiku); Anthropic did not report SWE-bench Pro"
-   },
-   "terminal": {
-    "v": 43.8,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "TB 2.1, Vals AI (thinking variant): 43.82. Vendor's 41.0% (Oct 2025) predates TB 2.0, so not used. Google's Gemini 3.5 Flash-Lite eval self-computed 44.2"
-   },
-   "gpqa": {
-    "v": 73,
-    "src": "https://www.anthropic.com/news/claude-haiku-4-5",
-    "note": "Maker-reported (no independent run). Anthropic launch benchmark table"
-   },
-   "hle": {
-    "v": 10.4,
-    "src": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning",
-    "note": "Artificial Analysis, reasoning variant, no tools"
-   },
-   "arc": {
-    "v": 4,
-    "src": "https://arcprize.org/leaderboard",
-    "note": "ARC-AGI-2 Semi-Private, Thinking 32K (best variant, 4.03%)"
-   },
-   "arena": {
-    "v": 1414,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "claude-haiku-4-5-20251001, text overall (style control), rank 137, snapshot read 2026-09-29"
-   }
-  },
-  "gpro": {
-   "swe_pro": {
-    "v": 54.2,
-    "src": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_pro_model_evaluation.pdf",
-    "note": "vendor, SWE-Bench Pro (Public), single attempt, avg of 5 runs; Scale leaderboard lists 46.10"
-   },
-   "terminal": {
-    "v": 70.8,
-    "src": "https://www.vals.ai/benchmarks/terminal-bench-2-1",
-    "note": "Vals AI independent run. Maker reports 68.5"
-   },
-   "browsecomp": {
-    "v": 85.9,
-    "src": "https://storage.googleapis.com/deepmind-media/gemini/gemini_3-1_pro_model_evaluation.pdf",
-    "note": "vendor, search + python + browse"
-   },
-   "gpqa": {
-    "v": 94.1,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 94.3"
-   },
-   "hle": {
-    "v": 47,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 44.4"
-   },
-   "arc": {
-    "v": 77.1,
-    "src": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
-    "note": "ARC-AGI-2, ARC Prize Verified (the arcprize.org data has 77.08% for Gemini 3.1 Pro Preview)"
-   },
-   "mmmu": {
-    "v": 82.4,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 80.5"
-   },
-   "arena": {
-    "v": 1487,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "gemini-3.1-pro-preview, text overall (style control), rank 17, snapshot read 2026-09-29"
-   }
-  },
   "mistral": {
-   "gpqa": {
-    "v": 76.9,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 71.2"
+   "aa": {
+    "v": 11.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "agents": {
+    "v": 1,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "tb40": {
+    "v": 0,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "longctx": {
+    "v": 49.7,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
    },
    "hle": {
     "v": 9.9,
-    "src": "https://artificialanalysis.ai/models/mistral-small-4",
-    "note": "Artificial Analysis, reasoning, no tools"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "science": {
+    "v": 0.3,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
+   },
+   "scicode": {
+    "v": 38.8,
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
    },
    "mmmu": {
     "v": 56.8,
-    "src": "https://artificialanalysis.ai/evaluations",
-    "note": "Artificial Analysis. Maker reports 60"
+    "src": "https://artificialanalysis.ai/leaderboards/models",
+    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
    }
   }
  },
@@ -607,9 +836,9 @@
    "note": "via OpenRouter"
   },
   "deepseek": {
-   "in": 0.3,
-   "out": 1.2,
-   "note": "V4.1 Flash via OpenRouter"
+   "in": 0.48,
+   "out": 4.2,
+   "note": "V4 Pro 0813 via OpenRouter"
   },
   "kimi": {
    "in": 3,

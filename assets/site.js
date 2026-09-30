@@ -533,7 +533,7 @@ async function benchmarks(m) {
       <circle class="pt" cx="${p.cx}" cy="${p.cy}" r="8" fill="var(--c)"/>
       <text class="pl" x="${p.cx + (p.right ? -13 : 13)}" y="${p.ly + 4}" text-anchor="${p.right ? "end" : "start"}">${esc(p.x.name.replace(/^Claude |^Gemini /, "").replace(/ \(.*\)$/, ""))}</text></g>`).join("")}`;
 
-  $("#benchSources").innerHTML = `Checked ${esc(b.updated)}. Overall index: <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a> (highest-effort setting of each model). Other scores: each model's official launch post or model card, or the benchmark's own leaderboard; click any number for its source. Vendors test with their own setups, so small gaps (1–2 points) aren't meaningful.`;
+  $("#benchSources").innerHTML = `Checked ${esc(b.updated)}. Most columns come from <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a>, which runs the same tests the same way on every model (highest effort setting). New puzzles: <a href="https://arcprize.org/" target="_blank" rel="noopener">ARC Prize</a>. People's choice: <a href="https://arena.ai/leaderboard/text" target="_blank" rel="noopener">Arena</a>. We avoid makers' own scores because each company tests with its own setup. Small gaps (1 to 2 points) aren't meaningful.`;
 }
 
 pages.newsletter = async () => {

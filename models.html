@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=13">
+<link rel="stylesheet" href="assets/site.css?v=14">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="models">
@@ -47,7 +47,7 @@
   <section id="bench"><div class="wrap">
     <div class="kicker">Benchmarks</div>
     <h2>What each model is actually good at</h2>
-    <p class="lead">Published test scores, side by side. Each column is one skill; the brighter the cell, the higher that model ranks among the others on that test. Hover a score for details, click it for the source. "—" means the maker hasn't published that test.</p>
+    <p class="lead">Published test scores, side by side. Each column is one skill; the brighter the cell, the higher that model ranks among the others on that test. Hover a score for details, click it for the source. "—" means the test hasn't been run on that model (text-only models, for example, can't take the image test).</p>
     <div class="legend-row" aria-hidden="true"><span>weaker</span><span style="width:140px;height:12px;border-radius:3px;background:linear-gradient(90deg,color-mix(in srgb,var(--seq) 8%,var(--card)),var(--seq))"></span><span>stronger</span><span style="margin-left:1rem"><i style="--c:transparent;outline:2px solid var(--fg)"></i> best in column</span></div>
     <div class="table-wrap"><table class="heat" id="heat"></table></div>
 
@@ -78,6 +78,6 @@
     </dl>
   </div></section>
 </main>
-<script src="assets/site.js?v=13" defer></script>
+<script src="assets/site.js?v=14" defer></script>
 </body>
 </html>
