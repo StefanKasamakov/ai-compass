@@ -6733,5 +6733,395 @@
   "repo": "graygnatconsole/mcp-audit-tool",
   "at": "2026-09-30",
   "source": "trending"
+ },
+ "openclaw/openclaw": {
+  "cat": "coding",
+  "kind": "AI Assistant Gateway",
+  "what": "An open-source AI assistant that runs on your computer and connects to popular chat platforms and messaging apps.",
+  "why": "Brings your personal or team AI assistant directly into apps like Slack, Discord, and Telegram while keeping your state and credentials on your own hardware.",
+  "level": "setup",
+  "start": "curl -fsSL https://openclaw.ai/install.sh | bash",
+  "caution": "Tools run directly on the host for the main session unless sandboxing is configured. Review the security guide before connecting other users or exposing the gateway remotely.",
+  "alts": [
+   "open-webui/open-webui",
+   "LibreChat-AI/LibreChat",
+   "dify-ai/dify"
+  ],
+  "packages": [
+   "openclaw"
+  ],
+  "plain": "An AI assistant that runs on your computer and talks to you through your normal chat apps.",
+  "tags": [
+   "connect",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Chat with your AI assistant via Telegram or Discord",
+   "Manage local device actions and companion apps",
+   "Coordinate a shared AI assistant for your team"
+  ],
+  "steps": [
+   "Run the installation script in your terminal to provision Node.js and download the tool.",
+   "Complete the onboarding wizard to verify your model access and configure the gateway.",
+   "Run `openclaw dashboard` to open the control UI and confirm the assistant is working."
+  ],
+  "repo": "openclaw/openclaw",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "mattpocock/skills": {
+  "cat": "harness",
+  "kind": "coding agent skills",
+  "what": "A collection of engineering skills and workflows that plug into AI coding agents like Claude Code and Codex.",
+  "why": "Coding agents often misunderstand prompts, write messy code, or skip testing; use this when you want structured planning, test-driven development, and better alignment from your AI assistant.",
+  "level": "setup",
+  "start": "claude plugins install mattpocock-skills",
+  "caution": "Reuses consumer subscription logins or official agent marketplaces which may break provider terms.",
+  "alts": [
+   "anthropic/claude-code",
+   "obra/superpowers",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A set of professional engineering commands and rules that help AI coding assistants write cleaner, more tested code.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Interview your AI agent before starting tasks",
+   "Write test-driven code with automated feedback loops",
+   "Improve codebase architecture and reduce verbosity"
+  ],
+  "steps": [
+   "Install the plugin using `claude plugins install mattpocock-skills` or the skills installer.",
+   "Run `/setup-matt-pocock-skills` once per repository to configure your issue tracker and documentation preferences.",
+   "Use commands like `/grill-me` or `/tdd` during your coding sessions."
+  ],
+  "repo": "mattpocock/skills",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "harry0703/MoneyPrinterTurbo": {
+  "cat": "media",
+  "kind": "AI Video Generator",
+  "what": "Generates HD short videos automatically from a topic or keyword using AI workflows.",
+  "why": "To quickly create short-form video content for social media platforms without manual editing. Reach for this when you need automated video scripting, footage matching, subtitling, and background music generation.",
+  "level": "setup",
+  "start": "git clone https://github.com/harry0703/MoneyPrinterTurbo.git",
+  "caution": "The README contains multiple commercial affiliate links and sponsored API promotions. Requires external API keys for LLMs and media generation services.",
+  "alts": [
+   "AUTOMATIC1111/stable-diffusion-webui",
+   "Comfy-Org/ComfyUI"
+  ],
+  "packages": [],
+  "plain": "An automated tool that turns a simple text topic into a complete short video with scripts and subtitles.",
+  "tags": [
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Create short videos from a keyword",
+   "Generate automated video scripts and subtitles",
+   "Batch produce content for social media"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Install the required Python dependencies and configure your environment.",
+   "Launch the WebUI to start generating videos with your API keys."
+  ],
+  "repo": "harry0703/MoneyPrinterTurbo",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "colbymchenry/codegraph": {
+  "cat": "harness",
+  "kind": "Code Knowledge Graph",
+  "what": "A pre-indexed code knowledge graph that auto-syncs on code changes and integrates with popular AI coding agents.",
+  "why": "It provides surgical context to coding agents to reduce token usage and tool calls.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/colbymchenry/codegraph/main/install.sh | sh",
+  "caution": "The repository was last updated more than four months ago.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "Aider-AI/aider"
+  ],
+  "packages": [
+   "@colbymchenry/codegraph"
+  ],
+  "plain": "An indexing tool that feeds clean code context to AI coding assistants locally.",
+  "tags": [
+   "code",
+   "supercharge",
+   "private"
+  ],
+  "useFor": [
+   "Index project codebases for AI assistants",
+   "Reduce token usage during coding sessions",
+   "Sync code graph updates automatically"
+  ],
+  "steps": [
+   "Install the CLI using the shell script or npm.",
+   "Wire up your agent by running `codegraph install`.",
+   "Initialize your project by running `codegraph init` inside the directory."
+  ],
+  "repo": "colbymchenry/codegraph",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "heygen-com/hyperframes": {
+  "cat": "harness",
+  "kind": "HTML Video Framework",
+  "what": "Framework for turning HTML, CSS, media, and animations into deterministic MP4 videos, complete with agent skills.",
+  "why": "Helps you render videos programmatically or through AI coding agents without dealing with complex video editing software.",
+  "level": "setup",
+  "start": "claude plugin marketplace add heygen-com/hyperframes",
+  "caution": "None",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "hyperframes"
+  ],
+  "plain": "An open-source tool that lets AI agents write HTML and turn it into MP4 videos.",
+  "tags": [
+   "media",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Create a product launch video",
+   "Generate a faceless explainer",
+   "Turn a GitHub pull request into a video"
+  ],
+  "steps": [
+   "Install the plugin using your AI agent command tool like `claude plugin marketplace add heygen-com/hyperframes`.",
+   "Enable the hyperframes marketplace in your plugin settings.",
+   "Ask your AI agent to create a video using the hyperframes router."
+  ],
+  "repo": "heygen-com/hyperframes",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "alirezarezvani/claude-skills": {
+  "cat": "harness",
+  "kind": "Coding Agent Add-on",
+  "what": "A large collection of skills, agent plugins, and commands for coding assistants like Claude Code and Cursor.",
+  "why": "Extends AI coding agents with specialised domain knowledge, frameworks, and workflows across engineering, marketing, and product design.",
+  "level": "setup",
+  "start": "git clone https://github.com/alirezarezvani/claude-skills.git",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "Add hundreds of reusable instruction packs and tools to your AI coding assistant.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Add specialised domain expertise to coding agents",
+   "Run automated security and architecture reviews",
+   "Convert skills to work with Cursor or Aider"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/alirezarezvani/claude-skills.git`",
+   "Navigate into the cloned directory",
+   "Run the installation script for your chosen AI tool"
+  ],
+  "repo": "alirezarezvani/claude-skills",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "mksglu/context-mode": {
+  "cat": "harness",
+  "kind": "Context window optimizer",
+  "what": "Context window optimization for AI coding agents that sandboxes tool output and persists session memory.",
+  "why": "Stops AI coding agents from wasting context window on massive tool outputs and losing track of conversations when compacted.",
+  "level": "easy",
+  "start": "/plugin marketplace add mksglu/context-mode",
+  "caution": "The repository uses a custom source license (ELv2) and lacks an official standard OSI open-source license.",
+  "alts": [
+   "anthropics/claude-code",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "plain": "Saves your AI coding assistant's memory and cuts down wasted context by hiding messy raw tool outputs.",
+  "tags": [
+   "code",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Reduce token waste from large tool outputs",
+   "Preserve session history across conversation compactions",
+   "Execute code snippets to analyze files efficiently"
+  ],
+  "steps": [
+   "Update Claude Code to version 1.0.33 or higher.",
+   "Add the plugin marketplace via `/plugin marketplace add mksglu/context-mode`.",
+   "Install the plugin using `/plugin install context-mode@context-mode`.",
+   "Restart Claude Code and verify setup with `/context-mode:ctx-doctor`."
+  ],
+  "repo": "mksglu/context-mode",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "yibie/awesome-jev": {
+  "cat": "frameworks",
+  "kind": "Curated List",
+  "what": "A curated directory of public projects, integrations, and discussions built on TypeSafe AI's Jev model.",
+  "why": "Helps you discover production workflows, patterns, and open-source integrations built for typed decision-making rather than standard chat.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "yibie/awesome-jev"
+  ],
+  "packages": [],
+  "plain": "A collection of links to tools, code projects, and discussions using Jev for typed decisions.",
+  "tags": [
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Find open-source examples using Jev for classification and routing",
+   "Explore community integrations and SDKs for typed AI decisions",
+   "Browse discussions on real-world Jev usage patterns"
+  ],
+  "steps": [
+   "Browse the categories in the README to find projects matching your interest.",
+   "Click through to external repositories or discussions to inspect code or write-ups."
+  ],
+  "repo": "yibie/awesome-jev",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "youngyangyang04/llm-master": {
+  "cat": "frameworks",
+  "kind": "Full-stack LLM tutorial",
+  "what": "A comprehensive Chinese learning roadmap and tutorial collection covering LLM application development, RAG, agents, fine-tuning, deployment, and interview preparation.",
+  "why": "When you want a structured guide from basic API calls to production-ready RAG systems, agents, and system architecture for backend or full-stack developers.",
+  "level": "easy",
+  "start": "Open docs/roadmap/README.md",
+  "caution": "",
+  "alts": [
+   "ruvnet/ruflo",
+   "microsoft/autogen",
+   "crewAIInc/crewAI"
+  ],
+  "packages": [],
+  "plain": "A complete, structured Chinese tutorial and learning path for developers entering AI and LLM engineering.",
+  "tags": [
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Learn AI application development and prompt engineering",
+   "Build and evaluate RAG knowledge bases",
+   "Design and test AI agents and multi-agent workflows"
+  ],
+  "steps": [
+   "Visit the repository roadmap directory",
+   "Choose your starting skill level or topic",
+   "Follow the markdown guides and project specs"
+  ],
+  "repo": "youngyangyang04/llm-master",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "v-modal/awesome-jev-tools": {
+  "cat": "frameworks",
+  "kind": "Jev Tools List",
+  "what": "A curated directory of public projects, integrations, and decision patterns built using TypeSafe AI's Jev model.",
+  "why": "Helps developers discover real-world examples of Jev being used for typed decisions, classification, routing, and guardrails instead of free-form chat.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "jev-chat/jev-chat-jarvis",
+   "HKUDS/CLI-Anything"
+  ],
+  "packages": [],
+  "plain": "A collection of links and examples showing how developers use Jev for making typed decisions in software.",
+  "tags": [
+   "code",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Browse real-world examples of Jev decision pipelines",
+   "Find routers and verification guardrails for coding agents",
+   "Discover open-source integrations for Jev"
+  ],
+  "steps": [],
+  "repo": "v-modal/awesome-jev-tools",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "logicrw/awesome-jev-projects": {
+  "cat": "memory",
+  "kind": "Awesome Jev Radar",
+  "what": "A community-maintained directory and radar for Jev, highlighting open-source projects with verified code and clear decision architectures.",
+  "why": "Helps developers discover source-backed open-source projects and decision models for fast, typed discrete decisions.",
+  "level": "easy",
+  "start": "npx skills add logicrw/awesome-jev-projects",
+  "caution": "",
+  "alts": [],
+  "packages": [],
+  "plain": "A directory of open-source projects and tools using fast, typed decision architectures for AI agents.",
+  "tags": [
+   "knowledge",
+   "research"
+  ],
+  "useFor": [
+   "Discover open-source decision model projects",
+   "Inspect pinned source code evidence for agent architectures",
+   "Query projects by domain from your terminal"
+  ],
+  "steps": [
+   "Add the skill to your agent or terminal using `npx skills add logicrw/awesome-jev-projects`.",
+   "Browse the live radar and filter projects on the website."
+  ],
+  "repo": "logicrw/awesome-jev-projects",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "punkpeye/awesome-remote-mcp-servers": {
+  "cat": "harness",
+  "kind": "remote server list",
+  "what": "A curated collection of remote Model Context Protocol servers hosted on web endpoints.",
+  "why": "Helps you discover third-party hosted servers that you can connect to via URL without installing anything locally.",
+  "level": "easy",
+  "start": "claude mcp add --transport http linear https://mcp.linear.app/mcp",
+  "caution": "Using remote endpoints operated by third parties may expose private data or prompts to external servers.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk",
+   "modelcontextprotocol/python-sdk"
+  ],
+  "packages": [],
+  "plain": "A directory of online MCP endpoints you can plug straight into your AI client via URL.",
+  "tags": [
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Connect to hosted MCP servers via URL",
+   "Browse a list of remote tool integrations"
+  ],
+  "steps": [
+   "Find a remote MCP server URL from the directory.",
+   "Add the server endpoint to your MCP-compatible client configuration.",
+   "Authenticate via OAuth or API key if required."
+  ],
+  "repo": "punkpeye/awesome-remote-mcp-servers",
+  "at": "2026-09-30",
+  "source": "trending"
  }
 }
