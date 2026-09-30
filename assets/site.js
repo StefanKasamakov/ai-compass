@@ -176,6 +176,11 @@ async function runSearch(q) {
 }
 
 // ---------- shared components ----------
+// a compact native dropdown for secondary filters, so a page never stacks several rows of chips
+function dropdown(el, label, items, onPick, start) {
+  el.innerHTML = `<label class="sel"><span>${esc(label)}</span><select aria-label="${esc(label)}">${items.map(([v, l]) => `<option value="${esc(v)}"${v === start ? " selected" : ""}>${esc(l)}</option>`).join("")}</select></label>`;
+  $("select", el).onchange = (e) => onPick(e.target.value);
+}
 function chips(el, items, onPick, start, role = "tab") {
   el.setAttribute("role", role === "tab" ? "tablist" : "group");
   el.innerHTML = items.map(([v, label, ic]) => `<button class="chip" role="${role === "tab" ? "tab" : "button"}" data-v="${esc(v)}" ${role === "tab" ? "aria-selected" : "aria-pressed"}="${v === start}">${ic ? icon(ic) : ""}${esc(label)}</button>`).join("");
@@ -309,18 +314,34 @@ const pages = {
     const n = await load("news");
     const items = n?.items || [];
     $("#newsUpdated").textContent = n ? ago(n.updated) : "—";
-    let src = "all";
+    const SRC = { OpenAI: ["lh-openai", "openai"], Anthropic: ["claude", "anthropic"], Google: ["googlegemini", "google"], DeepMind: ["googlegemini", "google"], "Hugging Face": ["huggingface", "open"], GitHub: ["github", ""], "GitHub release": ["github", ""] };
+    const day = (d) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+    // the article's own picture; if it is missing or fails to load, a branded placeholder shows through
+    // GitHub's auto-generated release cards are white text sheets, not pictures: show the project's logo instead
+    const pic = (x) => (x.image && !x.image.includes("opengraph.githubassets.com") ? x.image : "");
+    const gh = (x) => x.url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)/)?.[1];
+    const cover = (x) => { const [lg, c] = SRC[x.source] || []; const img = pic(x); if (!img && gh(x)) return `<span class="cover-img">${avatar(gh(x), 72)}</span>`; return `<span class="cover-img${c ? ` p-${c}` : ""}">${lg ? logo(lg) : `<b>${esc(x.source[0])}</b>`}${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`; };
+    const story = (x, lead) => `<article class="card news-card${lead ? " top-story" : ""}">
+        ${cover(x)}
+        <div class="news-body">
+          <div class="news-meta"><span class="src">${esc(x.source)}</span><time datetime="${esc(x.date)}">${day(x.date)} · ${ago(x.date)}</time>${x.big ? `<span class="tag ok">Big launch</span>` : ""}</div>
+          <h3>${esc(x.title)}</h3>
+          ${x.summary ? `<p>${esc(x.summary)}</p>` : ""}
+          <div class="news-foot above">${x.tags.slice(0, 3).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}${x.discuss ? `<a href="${esc(x.discuss)}" target="_blank" rel="noopener">Discussion</a>` : ""}</div>
+        </div>
+        <a class="cover" href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="${esc(x.title)}"></a></article>`;
+    let src = "all", shown = 13;
     const draw = () => {
       const list = items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src));
-      $("#feed").innerHTML = list.map((x) => `<article class="card story${x.big ? " accent-left" : ""}">
-        <time datetime="${esc(x.date)}">${new Date(x.date).toLocaleDateString("en-GB", { day: "numeric", month: "short" })}<br>${ago(x.date)}</time>
-        <div><div class="row" style="margin-bottom:.3rem"><span class="src">${esc(x.source)}</span>${x.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>
-          <h3><a href="${esc(x.url)}" target="_blank" rel="noopener" style="color:inherit">${esc(x.title)}</a></h3>
-          ${x.summary ? `<p>${esc(x.summary)}</p>` : ""}
-          ${x.discuss ? `<p style="margin-top:.4rem"><a href="${esc(x.discuss)}" target="_blank" rel="noopener" class="mono" style="font-size:.8rem">discussion →</a></p>` : ""}</div></article>`).join("") || `<div class="empty">Nothing here yet.</div>`;
+      // lead story: the newest big launch with a picture, else the newest with a picture
+      const lead = list.find((x) => x.big && pic(x)) || list.find((x) => pic(x)) || list[0];
+      const rest = list.filter((x) => x !== lead);
+      $("#feed").innerHTML = lead ? story(lead, true) + rest.slice(0, shown - 1).map((x) => story(x)).join("")
+        + (rest.length > shown - 1 ? `<button class="btn news-more" id="newsMore">Show more news</button>` : "") : `<div class="empty">Nothing here yet.</div>`;
+      const more = $("#newsMore"); if (more) more.onclick = () => { shown += 12; draw(); };
     };
     const sources = [...new Set(items.map((x) => x.source))];
-    chips($("#srcChips"), [["all", "All"], ["big", "Big launches"], ...sources.map((s) => [s, s])], (s) => { src = s; draw(); }, "all", "filter");
+    chips($("#srcChips"), [["all", "All"], ["big", "Big launches"], ...sources.map((s) => [s, s])], (s) => { src = s; shown = 13; draw(); }, "all", "filter");
   },
 
   async leaderboard() {
@@ -328,7 +349,7 @@ const pages = {
     const cats = Object.fromEntries((repos?.categories || []).map((c) => [c.id, c.name]));
     const allRepos = [...new Set([...(repos?.repos || []), ...Object.keys(ex || {})])].filter((r) => g?.repos?.[r]);
     const repoRow = (r, i, score, unit, extra = "") => { const e = ex?.[r]; return `<a class="card entry link" href="explore.html#${esc(r)}" style="text-decoration:none;color:inherit">
-        <span class="pos">${i + 1}</span><div class="who"><span class="dot" style="--c:var(--accent)"></span><div><b>${esc(r)}</b><small>${esc(e?.kind || g.repos[r].desc?.slice(0, 60) || "")}${e ? ` · ${esc(cats[e.cat] || "")}` : ""}${extra}</small></div></div>
+        <span class="pos">${i + 1}</span><div class="who">${avatar(r, 36)}<div><b>${esc(r.split("/")[1])}</b><small>${esc(r.split("/")[0])} · ${esc(e?.kind || g.repos[r].desc?.slice(0, 60) || "")}${e ? ` · ${esc(cats[e.cat] || "")}` : ""}${extra}</small></div></div>
         <div class="score">${score}<small>${unit}</small></div></a>`; };
     const topBy = (f) => allRepos.map((r) => [r, f(r)]).filter(([, v]) => v > 0).sort((a, c) => c[1] - a[1]).slice(0, 50);
     const byId = Object.fromEntries(tools.map((x) => [x.id, x]));
@@ -340,7 +361,7 @@ const pages = {
       stars: () => topBy((r) => g.repos[r].stars).map(([r, v], i) => repoRow(r, i, num(v), "stars")),
       rising: () => topBy((r) => g.repos[r].week ?? 0).map(([r, v], i) => repoRow(r, i, "+" + num(v), "stars this week", ` · ${num(g.repos[r].stars)} total`)),
       tools: () => (b?.tools || []).filter((x) => byId[x.id]).map((x, i) => { const t = byId[x.id]; return `<div class="card entry">
-        <span class="pos">${i + 1}</span><div class="who"><span class="dot" style="--c:var(--accent)"></span><div><b>${esc(t.name)}</b><small>${TYPE[t.type]} · ${esc(t.by)} ${g?.repos?.[t.repo] ? `· ★ ${num(g.repos[t.repo].stars)}` : ""}</small></div></div>
+        <span class="pos">${i + 1}</span><div class="who">${t.repo ? avatar(t.repo, 36) : `<span class="avatar">${icon("puzzle")}</span>`}<div><b>${esc(t.name)}</b><small>${TYPE[t.type]} · ${esc(t.by)} ${g?.repos?.[t.repo] ? `· ★ ${num(g.repos[t.repo].stars)}` : ""}</small></div></div>
         <div class="row"><div class="score">${x.votes}<small>votes</small></div><a class="btn sm" href="${GH}/issues/${x.issue}" target="_blank" rel="noopener">${icon("thumb")}Vote</a></div></div>`; }),
       people: () => (b?.people || []).map((p, i) => `<div class="card entry">
         <span class="pos">${i + 1}</span><div class="who"><img src="${esc(p.avatar)}&s=72" alt="" width="36" height="36" loading="lazy"><div><b>${esc(p.login)}</b><small>${p.votes} votes · ${p.submissions} tools added · ${p.prs} fixes</small></div></div>
@@ -494,9 +515,9 @@ pages.explore = async () => {
   $("#goalChips").innerHTML = `<button class="goal-chip" data-goal="all" aria-pressed="${st.goal === "all"}">${icon("layout")}<span>All goals</span></button>` +
     tags.goals.map((x) => `<button class="goal-chip" data-goal="${x.id}" aria-pressed="${st.goal === x.id}">${icon(x.icon)}<span>${esc(x.label)}</span><small>${counts(x.id)}</small></button>`).join("");
   $("#goalChips").onclick = (e) => { const b = e.target.closest(".goal-chip"); if (!b) return; st.goal = b.dataset.goal; $$(".goal-chip").forEach((c) => c.setAttribute("aria-pressed", c === b)); draw(); };
-  chips($("#levelChips"), [["all", "Any skill level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; draw(); }, st.level, "filter");
-  chips($("#typeChips"), TYPES, (v) => { st.type = v; draw(); }, st.type, "filter");
-  chips($("#sortChips"), [["easy", "Easiest first", "check"], ["popular", "Most stars", "star"], ["rising", "Rising", "zap"], ["installs", "Most installed", "trend"]], (v) => { st.sort = v; draw(); }, "easy", "filter");
+  dropdown($("#levelPick"), "Skill level", [["all", "Any level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; draw(); }, st.level);
+  dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; draw(); }, st.type);
+  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most stars"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; draw(); }, "easy");
   q.oninput = draw;
 
   const dlg = $("#toolDlg");

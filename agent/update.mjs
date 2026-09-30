@@ -203,6 +203,19 @@ async function summarize(items) {
   return res?.items ?? null;
 }
 
+async function coverImage(url) {
+  try {
+    const res = await fetch(url, { headers: { ...UA, accept: "text/html" }, redirect: "follow", signal: AbortSignal.timeout(8000) });
+    if (!res.ok || !/html/.test(res.headers.get("content-type") || "")) return "";
+    const head = (await res.text()).slice(0, 200_000);
+    const m = head.match(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/i)
+      || head.match(/<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["']/i);
+    if (!m) return "";
+    const img = new URL(decode(m[1]), res.url).href;
+    return img.startsWith("https://") ? img : "";
+  } catch { return ""; }
+}
+
 async function news(stats, tools) {
   const prev = await read("data/news.json", { items: [] });
   const known = new Set(prev.items.map((i) => i.url));
@@ -223,6 +236,8 @@ async function news(stats, tools) {
     return [{ ...rest, summary: n?.summary ?? snippet, tags: n?.tags ?? [], big: n?.big ?? false, ai: !!n }];
   });
   const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 80);
+  // cover picture: the article's own social preview image. "" = looked, none found (don't retry).
+  await Promise.all(items.filter((i) => i.image === undefined).map(async (i) => { i.image = await coverImage(i.url); }));
   console.log(`news: +${added.length} (${notes ? `summarized by ${provider}` : "no AI summaries"})`);
   return items;
 }
