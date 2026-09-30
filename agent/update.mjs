@@ -1,4 +1,4 @@
-// The AI Compass agent. Runs in GitHub Actions every few hours:
+// The Which AI Map agent. Runs in GitHub Actions every few hours:
 //   1. GitHub stats (stars, weekly growth, latest release) for every tracked repo
 //   2. Trending new repos (MCP servers, skills, Claude Code tools)
 //   3. News from official blogs + Hacker News, summarized by AI (GEMINI_API_KEY or ANTHROPIC_API_KEY)
@@ -102,7 +102,7 @@ async function trending(tracked) {
   let items = [...found.values()];
   const verdict = await safe("AI relevance", () => askJSON({
     schema: Relevance,
-    system: "You filter GitHub repos for AI Compass, a guide to AI models, agents, MCP servers, skills, AI coding tools, local LLMs, RAG and AI media tools. relevant = true only if the repo's main purpose is AI/LLM tooling that such a reader would use or want to know about. General dev tools, games, dotfiles, tutorials, spam and link lists are not relevant. Also NOT relevant: jailbreak or prompt-injection kits, tools for bypassing AI safety or terms of service, and repos with no real product (marketing or vision pages).",
+    system: "You filter GitHub repos for Which AI Map, a guide to AI models, agents, MCP servers, skills, AI coding tools, local LLMs, RAG and AI media tools. relevant = true only if the repo's main purpose is AI/LLM tooling that such a reader would use or want to know about. General dev tools, games, dotfiles, tutorials, spam and link lists are not relevant. Also NOT relevant: jailbreak or prompt-injection kits, tools for bypassing AI safety or terms of service, and repos with no real product (marketing or vision pages).",
     user: JSON.stringify(items.map(({ repo, desc, topics }) => ({ repo, desc, topics }))),
   }), null);
   items = verdict ? items.filter((i) => verdict.items.find((v) => v.repo === i.repo)?.relevant) : items.filter((i) => AI_WORDS.test(`${i.desc} ${i.topics.join(" ")}`));
@@ -194,7 +194,7 @@ async function summarize(items) {
   const res = await askJSON({
     schema: NewsNotes,
     system:
-      "You curate news for AI Compass, a site that helps non-experts understand AI models, MCP servers, agent skills and AI coding tools. " +
+      "You curate news for Which AI Map, a site that helps non-experts understand AI models, MCP servers, agent skills and AI coding tools. " +
       "For each item: relevant = true only if it matters to people choosing or using AI models/tools (new models, pricing, MCP, skills, agents, coding tools, major product changes). " +
       "summary = one or two plain-English sentences saying what happened and why a regular user should care; no hype, no marketing words. " +
       "big = true only for major launches (new frontier model, big price change, protocol release).",
@@ -230,7 +230,7 @@ async function news(stats, tools) {
 // ---------- 4. Repo explainer ----------
 const LEVELS = ["beginner", "intermediate", "advanced"];
 const MAX_EXPLAIN_PER_RUN = +process.env.EXPLAIN_LIMIT || 12; // raise for a one-off backfill
-const SITE = `https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}`;
+const SITE = process.env.SITE_URL || "https://whichaimap.com";
 const repoFrom = (text = "") => text.match(/github\.com\/([\w.-]+\/[\w.-]+)/)?.[1]?.replace(/\.git$/, "") ?? text.match(/\b([\w.-]+\/[\w.-]+)\b/)?.[1];
 
 async function explainRepos(trendingItems) {
@@ -261,7 +261,7 @@ async function explainRepos(trendingItems) {
     const ex = await safe(`explain ${meta.full_name}`, () => askJSON({
       schema: Explanation,
       system:
-        "You explain GitHub repositories to non-experts for AI Compass. Base every claim on the README and metadata given; never invent features. " +
+        "You explain GitHub repositories to non-experts for Which AI Map. Base every claim on the README and metadata given; never invent features. " +
         "No marketing words. If the README makes big claims, present them as the project's claims and add an honest caution. " +
         "kind: 2-4 word label. what: one sentence. why: the problem it solves and when to reach for it (1-2 sentences). " +
         "start: the first command or step from the README, or empty. caution: privacy, maturity, complexity, license or maintenance caveat (pushed_at over 4 months ago = say so), or empty. " +
@@ -365,7 +365,7 @@ async function downloads(repos, explained) {
 // ---------- 6. Votes & leaderboard ----------
 async function ensureLabels() {
   const have = new Set((await ghAll(`repos/${REPO}/labels`)).map((l) => l.name));
-  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for AI Compass"], ["accepted", "a855f7", "Submission accepted: +10 points"]])
+  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for Which AI Map"], ["accepted", "a855f7", "Submission accepted: +10 points"]])
     if (!have.has(name)) await gh(`repos/${REPO}/labels`, { method: "POST", body: JSON.stringify({ name, color, description }) });
 }
 
@@ -378,7 +378,7 @@ async function leaderboard(tools, explained) {
       const link = t.path ? `https://github.com/${t.repo}/tree/main/${t.path}` : `https://github.com/${t.repo}`;
       const issue = await gh(`repos/${REPO}/issues`, {
         method: "POST",
-        body: JSON.stringify({ title: `Vote: ${t.name}`, labels: ["vote"], body: `**${t.name}** (${t.type}) by ${t.by}\n\n${t.d}\n\n${link}\n\n**React with a thumbs-up to vote** if you use it. Votes show up on the [AI Compass leaderboard](https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}/leaderboard.html) within a few hours.` }),
+        body: JSON.stringify({ title: `Vote: ${t.name}`, labels: ["vote"], body: `**${t.name}** (${t.type}) by ${t.by}\n\n${t.d}\n\n${link}\n\n**React with a thumbs-up to vote** if you use it. Votes show up on the [Which AI Map leaderboard](https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}/leaderboard.html) within a few hours.` }),
       });
       issues[t.id] = issue.number;
     }

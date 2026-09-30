@@ -1,4 +1,4 @@
-// AI Compass — shared shell + page renderers. No framework, no build.
+// Which AI Map — shared shell + page renderers. No framework, no build.
 const REPO = "StefanKasamakov/ai-compass";
 const GH = `https://github.com/${REPO}`;
 const page = document.body.dataset.page;
@@ -98,18 +98,18 @@ function shell() {
   document.body.insertAdjacentHTML("afterbegin", `
   <a class="sr" href="#main">Skip to content</a>
   <header class="top"><div class="wrap">
-    <a class="brand" href="./">${icon("compass")}ai-compass</a>
+    <a class="brand" href="./">${icon("compass")}whichaimap</a>
     <nav class="nav" id="nav" aria-label="Main">${navLinks()}</nav>
     <div class="top-actions">
       <button class="icon-btn search-btn" data-open-search aria-label="Search">${icon("search")}<span>Search…</span><kbd>Ctrl K</kbd></button>
       <button class="icon-btn" id="themeBtn" aria-label="Toggle light or dark theme"></button>
-      <a class="icon-btn" href="${GH}" aria-label="AI Compass on GitHub">${icon("github")}</a>
+      <a class="icon-btn" href="${GH}" aria-label="Which AI Map on GitHub">${icon("github")}</a>
       <button class="icon-btn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav">${icon("menu")}</button>
     </div>
   </div></header>`);
   document.body.insertAdjacentHTML("beforeend", `
   <footer class="foot"><div class="wrap">
-    <div><div class="brand" style="margin-bottom:.6rem">${icon("compass")}ai-compass</div>
+    <div><div class="brand" style="margin-bottom:.6rem">${icon("compass")}whichaimap</div>
       <p style="max-width:44ch">A plain-English guide to AI models and tools, for people who just want to get things done. Kept fresh by an agent that checks GitHub and the official blogs every few hours.</p></div>
     <div class="row" style="align-items:start;gap:2.5rem">
       <div><div class="field-label">Contribute</div>

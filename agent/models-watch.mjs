@@ -29,7 +29,7 @@ const res = await askJSON({
   schema: Result,
   hard: true,
   system:
-    "You maintain the model list of AI Compass, a beginner-friendly guide to which AI model to use for what. " +
+    "You maintain the model list of Which AI Map, a beginner-friendly guide to which AI model to use for what. " +
     "Compare the curated list with the live OpenRouter catalog (prices in USD per 1M tokens). " +
     "Set changed=true only for real, data-backed changes: a new frontier/balanced/fast text model from Anthropic, OpenAI or Google; a leading new open-weight model; a price or context change; a curated model that is clearly superseded (replace it and keep its id if it is the same line, e.g. a new Sonnet replaces the old Sonnet under id 'sonnet'). " +
     "Keep ids stable (tasks reference them), keep media models (image/video/voice/music) untouched unless the catalog proves otherwise, and write 'best' in the same plain, hype-free tone. " +

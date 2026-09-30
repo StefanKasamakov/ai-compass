@@ -9,7 +9,7 @@ const ROOT = new URL("../", import.meta.url);
 const read = (f, fallback) => fs.readFile(new URL(f, ROOT), "utf8").then(JSON.parse, () => fallback);
 const write = (f, d) => fs.writeFile(new URL(f, ROOT), typeof d === "string" ? d : JSON.stringify(d, null, 1) + "\n");
 const REPO = process.env.GITHUB_REPOSITORY || "StefanKasamakov/ai-compass";
-const SITE = `https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}`;
+const SITE = process.env.SITE_URL || "https://whichaimap.com";
 const NOW = new Date();
 const today = NOW.toISOString().slice(0, 10);
 const since = (days) => new Date(NOW - days * 864e5).toISOString();
@@ -41,7 +41,7 @@ const sections = [
 const Framing = z.object({ subject: z.string(), intro: z.string(), top: z.array(z.number()) });
 const framing = await askJSON({
   schema: Framing,
-  system: "You write the weekly AI Compass newsletter for people who use AI tools but aren't experts. " +
+  system: "You write the weekly Which AI Map newsletter for people who use AI tools but aren't experts. " +
     "top: indexes of the 5 most important STORIES for such readers (model launches, pricing, agent/MCP/tooling changes), most important first; drop duplicates of the same event, minor corporate posts and quotes. " +
     "subject: under 70 characters, specific (name the biggest thing), no clickbait, no emoji. intro: 2-3 plain sentences on what mattered this week and why; no hype words.",
   user: JSON.stringify({
@@ -51,7 +51,7 @@ const framing = await askJSON({
 }).catch((e) => { console.warn(`[framing] ${e.message}`); return null; });
 const topSection = sections.find((sec) => sec.title === "Top stories");
 if (framing?.top?.length && topSection) topSection.items = framing.top.filter((i) => pool[i]).slice(0, 5).map((i) => pool[i]).map((s) => ({ title: s.title, url: s.url, blurb: s.summary, meta: s.source }));
-const subject = framing?.subject ?? `AI Compass weekly: ${stories[0]?.title ?? newRepos[0]?.repo}`;
+const subject = framing?.subject ?? `Which AI Map weekly: ${stories[0]?.title ?? newRepos[0]?.repo}`;
 const intro = framing?.intro ?? "Here's what changed in AI models, agents and tools this week.";
 
 const issue = { date: today, subject, intro, sections, by: provider };
@@ -65,7 +65,7 @@ await write("data/newsletter.json", { issues: index.slice(0, 200) });
 const x = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 await write("feed.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
-<title>AI Compass weekly</title><link>${SITE}/newsletter.html</link>
+<title>Which AI Map weekly</title><link>${SITE}/newsletter.html</link>
 <description>What changed in AI models, agents, MCP and tools, minus the hype.</description>
 ${index.slice(0, 30).map((i) => `<item><title>${x(i.subject)}</title><link>${SITE}/newsletter.html?issue=${i.date}</link><guid>${SITE}/newsletter.html?issue=${i.date}</guid><pubDate>${new Date(i.date).toUTCString()}</pubDate><description>${x(i.intro)}</description></item>`).join("\n")}
 </channel></rss>
@@ -74,7 +74,7 @@ ${index.slice(0, 30).map((i) => `<item><title>${x(i.subject)}</title><link>${SIT
 // ---- optional: Buttondown draft (never sends by itself) ----
 if (process.env.BUTTONDOWN_API_KEY) {
   const md = [intro, ...sections.map((s) => `## ${s.title}\n\n${s.items.map((i) => `- **[${i.title}](${i.url})**${i.meta ? ` · ${i.meta}` : ""}\n  ${i.blurb}`).join("\n")}`),
-    `---\n[Read on the web](${SITE}/newsletter.html?issue=${today}) · [AI Compass](${SITE})`].join("\n\n");
+    `---\n[Read on the web](${SITE}/newsletter.html?issue=${today}) · [Which AI Map](${SITE})`].join("\n\n");
   const r = await fetch("https://api.buttondown.com/v1/emails", {
     method: "POST",
     headers: { Authorization: `Token ${process.env.BUTTONDOWN_API_KEY.trim()}`, "Content-Type": "application/json" },

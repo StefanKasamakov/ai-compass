@@ -1,8 +1,8 @@
-# AI Compass
+# Which AI Map
 
 A plain-English map of AI models, MCP servers and agent skills, kept fresh by an agent.
 
-**Live:** https://stefankasamakov.github.io/ai-compass/
+**Live:** https://whichaimap.com/
 
 - **Repo Explainer**: ruflo, OmniRoute, LiteLLM, Ollama… each popular AI repo in plain English (what, when, caveats, alternatives). Ask for any repo via an issue
 - **Model picker + benchmarks**: tell it the job, get the model; heatmap of 9 benchmarks, per-skill rankings, smarts-vs-price chart (`data/benchmarks.json`, every number linked to its source)

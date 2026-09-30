@@ -18,7 +18,7 @@ const ROOT = new URL("../", import.meta.url);
 const read = (f, fallback) => fs.readFile(new URL(f, ROOT), "utf8").then(JSON.parse, () => fallback);
 const write = (f, d) => fs.writeFile(new URL(f, ROOT), JSON.stringify(d, null, 1) + "\n");
 const REPO = process.env.GITHUB_REPOSITORY || "StefanKasamakov/ai-compass";
-const SITE = `https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}`;
+const SITE = process.env.SITE_URL || "https://whichaimap.com";
 const gh = (path, opts = {}) => fetch(`https://api.github.com/${path}`, { ...opts, headers: { accept: "application/vnd.github+json", "user-agent": "ai-compass-agent", ...(GITHUB_TOKEN && { authorization: `Bearer ${GITHUB_TOKEN}` }) } })
   .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`GitHub ${r.status} ${path}`))));
 const repoFrom = (t = "") => t.match(/github\.com\/([\w.-]+\/[\w.-]+)/)?.[1]?.replace(/\.git$/, "") ?? (t.match(/^\s*([\w.-]+\/[\w.-]+)\s*$/)?.[1]);
@@ -78,7 +78,7 @@ if (process.env.MAKE_SOCIAL) {
     });
     const posts = await askJSON({
       schema: Posts,
-      system: "You write social posts for AI Compass, a free plain-English guide to AI models and tools. " +
+      system: "You write social posts for Which AI Map, a free plain-English guide to AI models and tools. " +
         "Reddit: value first. Summarize the 3-4 most useful things from this week's issue in plain words so the post is worth reading on its own; mention the site once at the end as the source, no hype, no emoji, no hashtags, under 1500 characters. Pick the subreddit whose topic fits the top items best; title under 120 characters, not clickbait. " +
         "LinkedIn: 4-7 short lines for professionals, one concrete takeaway, no emoji, max 2 hashtags at the end, under 900 characters. Do not include any URL; it is added separately.",
       user: JSON.stringify({ subject: latest.subject, intro: latest.intro, sections: latest.sections.map((s) => ({ title: s.title, items: s.items.slice(0, 4).map((i) => `${i.title}: ${i.blurb}`) })) }),
