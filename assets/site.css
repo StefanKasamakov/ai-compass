@@ -451,3 +451,7 @@ input.note { width: auto; flex: 1; min-width: 200px; padding: .5rem .7rem; font-
 .sub p { margin: .4rem 0 0; }
 .tip-q { margin: .6rem 0 0; padding: .8rem 1rem; border-left: 3px solid var(--accent); background: var(--bg-2); border-radius: 0 10px 10px 0; }
 .tip-q p { margin: 0 0 .3rem; }
+
+/* keep the model name visible while scrolling the heatmap sideways */
+.heat tbody th.mcol, .heat thead th:first-child { position: sticky; left: 0; z-index: 2; background: var(--card); }
+@media (max-width: 600px) { .heat tbody th.mcol { font-size: .78rem; padding-right: .5rem; } }
