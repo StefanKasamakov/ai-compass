@@ -1,6 +1,88 @@
 {
- "updated": "2026-09-30T12:43:18.390Z",
+ "updated": "2026-09-30T22:21:13.003Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "Gemini 4 Argon",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+   "date": "2026-09-30T20:04:37Z",
+   "discuss": "https://news.ycombinator.com/item?id=49913571",
+   "summary": "Hacker News discusses DeepMind's Gemini 4 Argon frontier model release.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Gemini 4 Argon: our next era of frontier intelligence",
+   "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+   "date": "2026-09-30T20:01:45.000Z",
+   "summary": "DeepMind announces Gemini 4 Argon, marking the next generation of its frontier intelligence models.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.286",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.286",
+   "date": "2026-09-30T19:10:13Z",
+   "summary": "GitHub releases version 2.1.286 of Claude Code with minor updates.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/63ab6386c652173d5afd007352fa2aaa27c9c5ffa50390b0d948e6c403759985/anthropics/claude-code/releases/tag/v2.1.286"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Introducing SynthID Bio",
+   "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+   "date": "2026-09-30T15:03:07.000Z",
+   "summary": "DeepMind introduces SynthID Bio, a watermarking technique for AI-generated proteins.",
+   "tags": [
+    "safety",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "GitHub",
+   "title": "HydraFusion in VS Code and the GitHub Copilot app",
+   "url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
+   "date": "2026-09-30T14:31:19.000Z",
+   "summary": "GitHub expands its HydraFusion research preview into VS Code and the Copilot app.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Disrupting a coordinated model-distillation campaign",
+   "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+   "date": "2026-09-30T10:30:00.000Z",
+   "summary": "OpenAI reports disrupting a campaign attempting to extract model reasoning, highlighting ongoing security efforts around model distillation.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
   {
    "source": "Hacker News",
    "title": "Pi.dev: You Said No MCP",
@@ -30,6 +112,20 @@
    "big": true,
    "ai": true,
    "image": "https://substackcdn.com/image/youtube/w_728,c_limit/GjN3xLDuc8o"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+   "url": "https://huggingface.co/blog/open-tts-leaderboard",
+   "date": "2026-09-30T00:00:00.000Z",
+   "summary": "Hugging Face launches an open leaderboard for scalable multilingual text-to-speech and voice cloning.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/open-tts-leaderboard/thumbnail.png"
   },
   {
    "source": "GitHub release",
@@ -142,6 +238,19 @@
    "big": true,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/09/660743826-cc455d62-b8e2-42b4-a489-ad43b1003d8e.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Photo Scrubber — local face blur & metadata removal",
+   "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
+   "date": "2026-09-29T16:45:27.000Z",
+   "summary": "Simon Willison builds a local photo-scrubbing tool using GPT-6 Astra to automatically blur faces.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
   },
   {
    "source": "Simon Willison",
@@ -317,6 +426,19 @@
    "tags": [],
    "big": false,
    "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Towards safety cases for frontier AI training",
+   "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
+   "date": "2026-09-28T19:00:00.000Z",
+   "summary": "OpenAI shares technical guidelines for safety cases in frontier AI training.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
    "image": ""
   },
   {
@@ -911,106 +1033,6 @@
    "big": true,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!tLrK!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F__ss-rehost__tw-video-preview-13_2102432417352929280.jpg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "SF October 14th: A Birds of a Feather Session on Agentic Engineering",
-   "url": "https://simonwillison.net/2026/Sep/23/bof-agentic-engineering/",
-   "date": "2026-09-23T02:53:19.000Z",
-   "summary": "SF October 14th: A Birds of a Feather Session on Agentic Engineering I'm hosting an evening event with Jesse Vincent in San Francisco on Wednesday 14th October for people who are building weird and interesting things with and on top of coding agents. Think of it as an agentic show-and-tell: ​Compare notes with other builders and experimenters on things you’re trying, what you're learning, and what",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "ChatGPT Ads expands to Southeast Asia and Taiwan",
-   "url": "https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan",
-   "date": "2026-09-23T02:00:00.000Z",
-   "summary": "ChatGPT Ads is expanding to Southeast Asia and Taiwan, giving eligible businesses new ways to reach people across more than 60 countries.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
-   "url": "https://openai.com/index/airbnb-gpt-6-astra",
-   "date": "2026-09-23T01:00:00.000Z",
-   "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
-   "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
-   "date": "2026-09-23T00:00:00.000Z",
-   "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war",
-   "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
-   "date": "2026-09-22T23:46:41.000Z",
-   "summary": "Yesterday was Grok 4.7 ( pelicans ) and MiMo v2.6 Flash/Pro ( more pelicans ). Today Anthropic released Claude Opus 5.5 , and around an hour later OpenAI released GPT-6 Sol and GPT-6 Luna . It's going to take a while to get a good read on all of these new models, but here are my impressions so far. GPT-6 Sol and Luna are half the price of their GPT-5.6 equivalents GPT-5.6 Luna was already my favor",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/gpt-grid-card.jpg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Better prompt caching for GPT-6",
-   "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
-   "date": "2026-09-22T21:00:00.000Z",
-   "summary": "Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm 0.36",
-   "url": "https://simonwillison.net/2026/Sep/22/llm/",
-   "date": "2026-09-22T18:48:37.000Z",
-   "summary": "Release: llm 0.36 New OpenAI models: gpt-6-sol for GPT-6 Sol and gpt-6-luna for GPT-6 Luna . #1702 Model plugins can now declare supports_conversation = False for models that only accept single-turn prompts. LLM raises llm.ConversationNotSupported when these models receive assistant or tool history, and llm chat rejects them before starting a session. See Models that do not support conversations .",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "Hacker News",
-   "title": "GPT-6 Sol and Luna",
-   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
-   "date": "2026-09-22T18:00:34Z",
-   "discuss": "https://news.ycombinator.com/item?id=49805509",
-   "summary": "1776 points, 855 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing GPT-6 Sol and Luna",
-   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
-   "date": "2026-09-22T18:00:00.000Z",
-   "summary": "Meet GPT-6 Sol and Luna, two models that bring frontier intelligence to everyday work with different balances of capability and cost.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
   }
  ]
 }

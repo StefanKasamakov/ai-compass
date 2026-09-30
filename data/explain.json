@@ -7123,5 +7123,379 @@
   "repo": "punkpeye/awesome-remote-mcp-servers",
   "at": "2026-09-30",
   "source": "trending"
+ },
+ "Louis-CFM/coucou": {
+  "cat": "harness",
+  "kind": "Notch companion app",
+  "what": "A tiny animated character that lives in your MacBook notch or at the top of your screen on Windows and monitors your Claude Code sessions.",
+  "why": "It keeps you updated on your AI coding agent's progress and permission requests without needing to constantly stare at the terminal.",
+  "level": "easy",
+  "start": "brew install xcodegen",
+  "caution": "The macOS app requires running unsigned software through your Privacy & Security settings, and the Windows installer is temporarily flagged as a false positive by antivirus software.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "An animated desktop companion that shows Claude Code progress, handles permission requests, and chats right from your screen edge.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Approve Claude Code permission requests from your screen edge",
+   "Chat with Claude directly from the notch or screen top",
+   "Drop files onto the notch to use them as context"
+  ],
+  "steps": [
+   "Download the latest release ZIP from the repository.",
+   "Unzip and move the application to your Applications folder.",
+   "Launch the app and configure Claude Code hooks in settings."
+  ],
+  "repo": "Louis-CFM/coucou",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "rehan-remade/universal-modder": {
+  "cat": "harness",
+  "kind": "Claude Code plugin",
+  "what": "Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own.",
+  "why": "Automates game reverse engineering, asset generation, mod building, testing, and showcase video creation for single-player games you own.",
+  "level": "setup",
+  "start": "/plugin marketplace add rehan-remade/universal-modder",
+  "caution": "Requires external API keys, Python 3.10+, ffmpeg, and Blender.",
+  "alts": [
+   "anthropics/claude-code",
+   "addyosmani/agent-skills",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "plain": "A Claude Code plugin that uses AI to mod PC games and generate assets.",
+  "tags": [
+   "code",
+   "media",
+   "supercharge"
+  ],
+  "useFor": [
+   "Mod PC games using AI commands",
+   "Generate 3D and 2D game assets with fal",
+   "Record game test videos and cut showcases"
+  ],
+  "steps": [
+   "Add the plugin to Claude Code using `/plugin marketplace add rehan-remade/universal-modder`",
+   "Install it using `/plugin install universal-modder@universal-modder`",
+   "Set your fal API key using `export FAL_KEY=...`"
+  ],
+  "repo": "rehan-remade/universal-modder",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "modelscope/ms-cookbook": {
+  "cat": "memory",
+  "kind": "model application cookbook",
+  "what": "An open-source guide and tutorial collection covering open-source model selection, inference, fine-tuning, RAG, and agents.",
+  "why": "Provides practical, hands-on learning resources and code examples for developers wanting to build and evaluate real applications using open-source AI models.",
+  "level": "easy",
+  "start": "git clone https://github.com/modelscope/ms-cookbook.git",
+  "caution": "Some chapters require external compute resources, model downloads, or API credentials.",
+  "alts": [],
+  "packages": [],
+  "plain": "A practical open-source guide for developers building applications with open-source AI models.",
+  "tags": [
+   "docs",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Read chapters on model fine-tuning and evaluation",
+   "Learn how to build RAG and agent systems",
+   "Explore code examples for local model inference"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/modelscope/ms-cookbook.git`",
+   "Navigate into the folder using `cd ms-cookbook`",
+   "Start a local server using `python3 -m http.server 4173 --bind 127.0.0.1`",
+   "Open http://127.0.0.1:4173/#home in your browser to read"
+  ],
+  "repo": "modelscope/ms-cookbook",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "walidboulanouar/awesome-jev-use-cases": {
+  "cat": "harness",
+  "kind": "Jev use cases list",
+  "what": "An awesome list of demos, repositories, limits, and cost examples for TypeSafe AI's Jev model.",
+  "why": "Helps developers discover real-world examples and patterns for building with TypeSafe's typed decision model.",
+  "level": "easy",
+  "start": "",
+  "caution": "This is an unofficial community list and may reference third-party tools or sponsored links.",
+  "alts": [
+   "v-modal/awesome-jev-tools",
+   "logicrw/awesome-jev-projects",
+   "mksglu/context-mode"
+  ],
+  "packages": [],
+  "plain": "A curated list of demos and examples built using TypeSafe's Jev AI model.",
+  "tags": [
+   "code",
+   "research",
+   "automate"
+  ],
+  "useFor": [
+   "Browse popular Jev AI demos and project repos",
+   "Compare limits, costs, and API examples",
+   "Explore typed decision patterns and use cases"
+  ],
+  "steps": [
+   "Visit the repository on GitHub to browse the curated sections",
+   "Check out the top popular demos and links to original posts",
+   "Read the documentation for API quickstarts and limits"
+  ],
+  "repo": "walidboulanouar/awesome-jev-use-cases",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "zhuyansen/awesome-claude-video-skills": {
+  "cat": "harness",
+  "kind": "Video Agent Skills",
+  "what": "Curated collection of open-source toolkits and skills that let coding agents create and edit videos.",
+  "why": "Helps you discover community-made plugins and templates when you want your coding assistant to build motion graphics, promo videos, or animated shorts.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "heygen-com/hyperframes",
+   "harry0703/MoneyPrinterTurbo"
+  ],
+  "packages": [],
+  "plain": "A directory of open-source video tools and plugins built for AI coding assistants.",
+  "tags": [
+   "media",
+   "supercharge"
+  ],
+  "useFor": [
+   "Browse open-source video toolkits for coding agents",
+   "Find AI-powered video editors and motion graphics templates",
+   "Discover skills for generating shorts and explainers"
+  ],
+  "steps": [],
+  "repo": "zhuyansen/awesome-claude-video-skills",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "edison-land/paragravity": {
+  "cat": "harness",
+  "kind": "Antigravity Multi-Account Manager",
+  "what": "Manage multiple Google Antigravity accounts simultaneously in isolated sandboxes.",
+  "why": "Run multiple Google Gemini Pro accounts side-by-side on your computer without constantly logging in and out, keeping separate chats, extensions, and workspaces.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/edison-land/paragravity/main/install.sh | bash",
+  "caution": "Stores Google OAuth tokens as plaintext files inside local profile directories. Exercise caution with file permissions and avoid syncing sandbox folders to cloud storage.",
+  "alts": [],
+  "packages": [],
+  "plain": "Run multiple Google Antigravity accounts at the same time in separate sandboxed windows.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Create isolated sandbox profiles for Google Antigravity",
+   "Launch multiple Google accounts side-by-side in separate windows",
+   "Manage profiles with a web console or floating widget"
+  ],
+  "steps": [
+   "Install the tool using the one-line installation script in your terminal",
+   "Create a new isolated profile by running `pgrav create work`",
+   "Launch your new sandbox profile instantly using `pgrav launch work`"
+  ],
+  "repo": "edison-land/paragravity",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "shtjww/llm-inference-capacity-handbook": {
+  "cat": "frameworks",
+  "kind": "LLM Capacity Handbook",
+  "what": "An open-source handbook for calculating AI inference capacity, GPU hardware requirements, and request query-per-second (QPS) limits.",
+  "why": "Helps engineers and architects plan GPU infrastructure budgets accurately instead of guessing traffic limits or relying on flawed closed-loop benchmarks.",
+  "level": "easy",
+  "start": "",
+  "caution": "The repository provides a handbook and reference formulas rather than executable code.",
+  "alts": [],
+  "packages": [],
+  "plain": "A practical reference guide for calculating how many AI model requests your GPU hardware can handle.",
+  "tags": [
+   "automate",
+   "research",
+   "save"
+  ],
+  "useFor": [
+   "Calculate GPU cluster size requirements for LLM deployment",
+   "Plan P95 latency and request throughput capacity",
+   "Evaluate self-hosted inference costs versus cloud providers"
+  ],
+  "steps": [
+   "Clone the repository to access the markdown chapters.",
+   "Read chapter zero for terminology and foundational formulas.",
+   "Follow the capacity planning steps and test procedures in the handbook."
+  ],
+  "repo": "shtjww/llm-inference-capacity-handbook",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "chenkanglin198904/Personal_External_Brain": {
+  "cat": "memory",
+  "kind": "Local Knowledge Graph",
+  "what": "Turns notes, documents, and media into a verified knowledge graph running entirely on your local machine.",
+  "why": "Traditional note apps lose context and AI tools invent facts when they do not know the answer. Use this when you want an AI workbench that strictly cites original sources and refuses to guess.",
+  "level": "setup",
+  "start": "docker compose up -d --build",
+  "caution": "Requires an API key for LLM and embedding features, and runs as an unauthenticated single-user local server.",
+  "alts": [
+   "infiniflow/ragflow",
+   "run-llama/llama_index",
+   "Mintplex-Labs/anything-llm"
+  ],
+  "packages": [],
+  "plain": "A local knowledge manager that builds a graph from your notes and explicitly refuses to guess unknown answers.",
+  "tags": [
+   "knowledge",
+   "private",
+   "docs",
+   "research"
+  ],
+  "useFor": [
+   "Ingest notes and PDFs into a local graph",
+   "Track decisions and their real-world outcomes",
+   "Query your personal knowledge base with citations"
+  ],
+  "steps": [
+   "Copy your environment variables file and add your API key",
+   "Run docker compose up -d --build to start the application",
+   "Open http://localhost:3000 in your browser to use the workbench"
+  ],
+  "repo": "chenkanglin198904/Personal_External_Brain",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "849879772/recruitops-agent": {
+  "cat": "coding",
+  "kind": "job search agent",
+  "what": "A local Windows desktop software for campus recruitment that finds and screens jobs, matches resumes, and helps with application tracking.",
+  "why": "Managing multiple job applications, tracking portals, matching resumes to job descriptions, and checking emails takes significant manual effort. Reach for this to automate your job search pipeline locally.",
+  "level": "easy",
+  "start": "RecruitOps-Desktop-Preview.exe",
+  "caution": "Requires sharing your DeepSeek API key and personal resume data with the local application.",
+  "alts": [],
+  "packages": [],
+  "plain": "A local Windows desktop app that automates finding campus jobs, matching resumes, filling forms, and tracking applications.",
+  "tags": [
+   "automate",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Find and screen campus job postings",
+   "Match your resume against job descriptions",
+   "Track application statuses and schedules"
+  ],
+  "steps": [
+   "Download the Windows zip release and extract it to a short path",
+   "Double-click RecruitOps-Desktop-Preview.exe to start the app",
+   "Configure your DeepSeek API key and upload your resume in the settings page"
+  ],
+  "repo": "849879772/recruitops-agent",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "nickelsec/bough": {
+  "cat": "tokens",
+  "kind": "History cost viewer",
+  "what": "Reads your Claude Code, OpenAI Codex CLI and Pi session history, draws what you actually built, and prices it.",
+  "why": "Coding agent sessions can run for weeks under a single hash, making it hard to track what individual features cost. Use this to break down spending by task, prompt, and file.",
+  "level": "easy",
+  "start": "bough",
+  "caution": "The pricing figures are calculated estimates based on published API rates and do not reflect flat-rate subscription billing.",
+  "alts": [],
+  "packages": [],
+  "plain": "Visualizes and prices your AI coding sessions locally from your local history files.",
+  "tags": [
+   "code",
+   "save",
+   "private"
+  ],
+  "useFor": [
+   "View a visual breakdown of tasks and prompts",
+   "Calculate the API cost of specific coding sessions",
+   "Inspect local session transcripts in the terminal or browser"
+  ],
+  "steps": [
+   "Open your terminal",
+   "Type `bough` to automatically find your projects and open them in your browser"
+  ],
+  "repo": "nickelsec/bough",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "Jakeschincariol/arena-skill": {
+  "cat": "harness",
+  "kind": "Claude Code Skill",
+  "what": "Spins up a tournament of competing sub-agents to find the best answer for Claude Code.",
+  "why": "When Claude gives a bad answer, running a multi-agent tournament helps find a better solution through rigorous elimination and debate.",
+  "level": "easy",
+  "start": "https://github.com/Jakeschincariol/arena-skill\n\nInstall this skill, then confirm /arena works.",
+  "caution": "Runs many sub-agent calls in a tournament bracket, which can consume a large number of tokens quickly.",
+  "alts": [
+   "anthropic/claude-code",
+   "Jyeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "plain": "Runs 100 AI sub-agents against each other in a tournament bracket to find the single best answer.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Find the best solution through a multi-agent tournament.",
+   "Run prompt battles with different reasoning strategies.",
+   "Fix difficult bugs using automated sub-agent debate."
+  ],
+  "steps": [
+   "Paste the GitHub URL into Claude and ask it to install the skill.",
+   "Type `/arena` in Claude Code to start a tournament on your last request.",
+   "Use flags like `--quick` to run fewer competitors for faster results."
+  ],
+  "repo": "Jakeschincariol/arena-skill",
+  "at": "2026-09-30",
+  "source": "trending"
+ },
+ "mrtinkz/ai-charter": {
+  "cat": "evals",
+  "kind": "AI Governance Registry",
+  "what": "A governance framework and public registry for certifying AI models based on public disclosure.",
+  "why": "It helps organizations disclose model training data, hazard categories, and operational details through a standardized certification registry.",
+  "level": "setup",
+  "start": "npm install",
+  "caution": "",
+  "alts": [],
+  "packages": [],
+  "plain": "A governance framework and public registry for certifying AI models based on public disclosure.",
+  "tags": [
+   "monitor",
+   "docs"
+  ],
+  "useFor": [
+   "Explore the Universal AI Charter governance principles",
+   "Generate and submit model certification JSON files",
+   "Browse the public registry of certified AI models"
+  ],
+  "steps": [
+   "Install project dependencies using `npm install`",
+   "Start the development server using `npm run dev`",
+   "Build the application for production using `npm run build`"
+  ],
+  "repo": "mrtinkz/ai-charter",
+  "at": "2026-09-30",
+  "source": "trending"
  }
 }
