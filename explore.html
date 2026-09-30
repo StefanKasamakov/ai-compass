@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=21">
+<link rel="stylesheet" href="assets/site.css?v=22">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="explore">
@@ -33,9 +33,8 @@
   </div></header>
 
   <section><div class="wrap">
-    <p class="field-label">What do you want to do?</p>
-    <div class="goal-chips" id="goalChips" role="group" aria-label="Goal"></div>
     <div class="toolbar">
+      <span id="goalPick" class="main-pick"></span>
       <label class="sr" for="repoQ">Search tools</label>
       <input id="repoQ" class="hero-search" type="search" placeholder="Search: excel, pdf, voice, notion…">
       <span id="levelPick"></span><span id="typePick"></span><span id="sortPick"></span>
@@ -46,6 +45,6 @@
 
   <dialog class="tool-dlg" id="toolDlg" aria-label="Tool details"><div id="toolBody"></div></dialog>
 </main>
-<script src="assets/site.js?v=21" defer></script>
+<script src="assets/site.js?v=22" defer></script>
 </body>
 </html>

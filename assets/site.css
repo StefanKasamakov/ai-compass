@@ -519,15 +519,11 @@ input.note { width: auto; flex: 1; min-width: 200px; padding: .5rem .7rem; font-
 .goal-chip { min-height: 38px; padding: 0 .8rem; font-size: .88rem; }
 .goal-chips { gap: 6px; margin-bottom: 1rem; }
 @media (max-width: 720px) {
-  /* one swipeable line instead of a wall of wrapped chips */
-  .chips, .goal-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none;
-    -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 36px), transparent); }
-  .chips::-webkit-scrollbar, .goal-chips::-webkit-scrollbar { display: none; }
-  .chips > *, .goal-chips > * { flex: none; }
-  .ask-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
-  .ask-chips > * { flex: none; }
   .toolbar .hero-search { flex-basis: 100%; max-width: none; }
   .toolbar > span { flex: 1 1 0; min-width: 0; }
+  .toolbar > .main-pick { flex-basis: 100%; }
+  .main-pick .sel > span { display: inline; }
+  .goal-go .btn { width: 100%; justify-content: center; }
   .sel { width: 100%; padding: 0 .1rem 0 .5rem; }
   .sel > span { display: none; }
   .sel select { width: 100%; max-width: none; font-size: .84rem; padding-right: 0; }
@@ -536,3 +532,8 @@ input.note { width: auto; flex: 1; min-width: 200px; padding: .5rem .7rem; font-
   .entry .score { font-size: 1rem; }
   .entry .score small { max-width: 10ch; margin-left: auto; white-space: normal; line-height: 1.25; letter-spacing: .04em; }
 }
+.main-pick .sel { border-color: var(--accent-line); background: var(--accent-soft); }
+.main-pick .sel > span { color: var(--accent); }
+.main-pick .sel select { font-weight: 600; }
+.goal-go { margin-top: 1.2rem; }
+.goal-go .sel { height: 52px; } .goal-go .btn { min-height: 52px; }

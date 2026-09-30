@@ -177,9 +177,10 @@ async function runSearch(q) {
 
 // ---------- shared components ----------
 // a compact native dropdown for secondary filters, so a page never stacks several rows of chips
-function dropdown(el, label, items, onPick, start) {
+function dropdown(el, label, items, onPick, start, init) {
   el.innerHTML = `<label class="sel"><span>${esc(label)}</span><select aria-label="${esc(label)}">${items.map(([v, l]) => `<option value="${esc(v)}"${v === start ? " selected" : ""}>${esc(l)}</option>`).join("")}</select></label>`;
   $("select", el).onchange = (e) => onPick(e.target.value);
+  if (init) onPick(start);
 }
 function chips(el, items, onPick, start, role = "tab") {
   el.setAttribute("role", role === "tab" ? "tablist" : "group");
@@ -259,7 +260,7 @@ const pages = {
     $("#stTracked").textContent = `${Object.keys(g?.repos || {}).length} repos tracked`;
     $("#stNews").textContent = `${n?.items.length ?? 0} stories this month`;
     $("#stModels").textContent = `${m?.models.length ?? 0} models · ${Object.keys(ex || {}).length} tools explained`;
-    $("#goalTiles").innerHTML = (tags?.goals || []).map((x) => `<a class="goal-tile" href="explore.html?goal=${x.id}">${icon(x.icon)}<b>${esc(x.label)}</b><small>${esc(x.hint)}</small></a>`).join("");
+    dropdown($("#goalPick"), "I want to", [["", "Choose a goal…"], ...(tags?.goals || []).map((x) => [x.id, x.label])], (v) => { $("#goalGo").href = v ? `explore.html?goal=${v}` : "explore.html"; }, "", true);
     $("#ctaLogos").innerHTML = ["anthropic", "openai", "google", "open"].map((p) => `<span class="logo-badge p-${p}">${logo(p === "open" ? "ollama" : LOGOS[p])}</span>`).join("");
     $("#homeNews").innerHTML = (n?.items || []).filter((x) => x.ai).slice(0, 4).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.title)}</b><small>${esc(x.source)} · ${ago(x.date)}${x.summary ? ` · ${esc(x.summary.slice(0, 110))}` : ""}</small></a>`).join("") || `<p class="muted">News is on its way.</p>`;
     const hot = (t?.items || []).filter((x) => ex?.[x.repo]).slice(0, 6);
@@ -289,7 +290,7 @@ const pages = {
     list.innerHTML = servers.map((s) => `<button class="opt" role="option" data-id="${s.id}" aria-selected="${s === server}">${icon(s.remote ? "plug" : "terminal")}<span>${esc(s.name)}<small>${s.remote ? "remote · http" : "local · stdio"}</small></span></button>`).join("");
     list.onclick = (e) => { const o = e.target.closest(".opt"); if (!o) return; server = servers.find((s) => s.id === o.dataset.id); $$(".opt", list).forEach((x) => x.setAttribute("aria-selected", x === o)); draw(); };
     const draw = () => { $("#cfgOut").innerHTML = configFor(server, client); };
-    chips($("#clientChips"), CLIENTS.map((c) => [c.id, c.name]), (c) => { client = c; draw(); }, client);
+    dropdown($("#clientChips"), "App", CLIENTS.map((c) => [c.id, c.name]), (c) => { client = c; draw(); }, client, true);
     if (location.hash.startsWith("#setup")) $("#setup").scrollIntoView();
 
   },
@@ -332,7 +333,9 @@ const pages = {
         <a class="cover" href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="${esc(x.title)}"></a></article>`;
     let src = "all", shown = 13;
     const draw = () => {
-      const list = items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src));
+      // this week's big launches come first, then everything by date
+      const fresh = (x) => x.big && Date.now() - new Date(x.date) < 7 * 864e5;
+      const list = items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src)).sort((a, b) => fresh(b) - fresh(a));
       // lead story: the newest big launch with a picture, else the newest with a picture
       const lead = list.find((x) => x.big && pic(x)) || list.find((x) => pic(x)) || list[0];
       const rest = list.filter((x) => x !== lead);
@@ -341,7 +344,8 @@ const pages = {
       const more = $("#newsMore"); if (more) more.onclick = () => { shown += 12; draw(); };
     };
     const sources = [...new Set(items.map((x) => x.source))];
-    chips($("#srcChips"), [["all", "All"], ["big", "Big launches"], ...sources.map((s) => [s, s])], (s) => { src = s; shown = 13; draw(); }, "all", "filter");
+    dropdown($("#srcPick"), "Source", [["all", "All sources"], ...sources.map((s) => [s, s])], (s) => { src = s; shown = 13; $$("#srcChips .chip").forEach((c) => c.setAttribute("aria-pressed", s === "all" && c.dataset.v === "all")); draw(); }, "all");
+    chips($("#srcChips"), [["all", "All news"], ["big", "Big launches", "zap"]], (s) => { src = s; shown = 13; $("#srcPick select").value = "all"; draw(); }, "all", "filter");
   },
 
   async leaderboard() {
@@ -512,9 +516,7 @@ pages.explore = async () => {
     sync();
   };
   const counts = (id) => all.filter((x) => x.tags.includes(id)).length;
-  $("#goalChips").innerHTML = `<button class="goal-chip" data-goal="all" aria-pressed="${st.goal === "all"}">${icon("layout")}<span>All goals</span></button>` +
-    tags.goals.map((x) => `<button class="goal-chip" data-goal="${x.id}" aria-pressed="${st.goal === x.id}">${icon(x.icon)}<span>${esc(x.label)}</span><small>${counts(x.id)}</small></button>`).join("");
-  $("#goalChips").onclick = (e) => { const b = e.target.closest(".goal-chip"); if (!b) return; st.goal = b.dataset.goal; $$(".goal-chip").forEach((c) => c.setAttribute("aria-pressed", c === b)); draw(); };
+  dropdown($("#goalPick"), "I want to", [["all", "Anything"], ...tags.goals.map((x) => [x.id, `${x.label} (${counts(x.id)})`])], (v) => { st.goal = v; draw(); }, st.goal);
   dropdown($("#levelPick"), "Skill level", [["all", "Any level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; draw(); }, st.level);
   dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; draw(); }, st.type);
   dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most stars"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; draw(); }, "easy");
@@ -617,7 +619,7 @@ async function benchmarks(m) {
   // ranked bars for one metric (percent and 0-100 index metrics only: bars must start at zero)
   const barMetrics = b.metrics.filter((met) => met.max === 100);
   $("#provLegend").innerHTML = $("#scatterLegend").innerHTML = Object.entries(m.providers).map(([k, p]) => `<span class="p-${k}"><i></i>${esc(p.name)}</span>`).join("");
-  chips($("#benchChips"), barMetrics.map((met) => [met.id, met.skill]), (mid) => {
+  dropdown($("#benchChips"), "Skill", barMetrics.map((met) => [met.id, met.skill]), (mid) => {
     const met = b.metrics.find((x) => x.id === mid);
     $("#benchWhat").innerHTML = `<b style="color:var(--fg)">${esc(met.name)}.</b> ${esc(met.what)}`;
     const list = rows.filter((id) => b.scores[id][mid]).sort((a, c) => b.scores[c][mid].v - b.scores[a][mid].v);
