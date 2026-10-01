@@ -65,7 +65,7 @@ jobs:
           git config user.name "ai-compass-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data feed.xml 2>/dev/null || git add data
-          git diff --cached --quiet || { git commit -m "agent: refresh data" && git push; }
+          git diff --cached --quiet || { git commit -m "agent: refresh data" && git pull --rebase -X theirs && git push; }
 
       - name: Model watch (AI → pull request)
         continue-on-error: true   # a failed model check must never block publishing fresh data
