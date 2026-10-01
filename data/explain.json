@@ -7905,5 +7905,421 @@
   "repo": "vaelkeep/hermes-paper-agent",
   "at": "2026-10-01",
   "source": "trending"
+ },
+ "earendil-works/pi": {
+  "cat": "coding",
+  "kind": "AI agent toolkit",
+  "what": "An AI agent toolkit and interactive coding agent CLI with tool calling and a unified multi-provider LLM API.",
+  "why": "Use this when you want an open, self-extensible coding agent and runtime to interact with your codebase and handle task execution.",
+  "level": "dev",
+  "start": "npm install --ignore-scripts",
+  "caution": "Pi does not include a built-in permission system for restricting filesystem, process, network, or credential access, running with the permissions of the user who launched it.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [
+   "@earendil-works/pi-coding-agent"
+  ],
+  "plain": "An interactive coding agent and runtime toolkit for building and running AI coding assistants.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Execute coding tasks using an interactive CLI agent",
+   "Build custom AI agents using unified LLM provider APIs",
+   "Manage agent runtimes with tool calling and state tracking"
+  ],
+  "steps": [
+   "Run `npm install --ignore-scripts` to install all dependencies.",
+   "Run `npm run build` to refresh model data and build all packages.",
+   "Use the coding agent CLI to interact with your local workspace."
+  ],
+  "repo": "earendil-works/pi",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "cursor/plugins": {
+  "cat": "harness",
+  "kind": "Cursor Plugin Library",
+  "what": "Official collection of plugins, tools, and integrations for the Cursor coding assistant.",
+  "why": "Extends Cursor with workflow packs, developer tools, and connections to popular SaaS and productivity apps when you want your coding agent to interact with external services.",
+  "level": "setup",
+  "start": "Clone the repository and explore the available plugin directories to install them in Cursor.",
+  "caution": "Requires the Cursor editor and may involve third-party API keys or consumer credentials for connected services.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [],
+  "plain": "A collection of official plugins and integrations to add extra capabilities and tools to the Cursor editor.",
+  "tags": [
+   "code",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Connect Cursor to Google Drive, GitHub, and Jira",
+   "Run specialized agent workflows and parallel reviews",
+   "Add developer utilities and practice plans to Cursor"
+  ],
+  "steps": [
+   "Open the Cursor editor.",
+   "Browse the available plugins in the repository manifest.",
+   "Install the desired plugin directory into your Cursor configuration."
+  ],
+  "repo": "cursor/plugins",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "agent-substrate/substrate": {
+  "cat": "frameworks",
+  "kind": "Agent Execution Runtime",
+  "what": "Agent Substrate is a secure-by-default execution runtime engineered to run sandboxed stateful agents at high density.",
+  "why": "It solves the high overhead of running multiple stateful AI agents by multiplexing them across shared resources with fast suspend and resume. Reach for it when deploying autonomous agents at scale on Kubernetes.",
+  "level": "setup",
+  "start": "hack/create-kind-cluster.sh",
+  "caution": "Pre-1.0 software with no backward compatibility guarantees, requiring a Kubernetes cluster and infrastructure setup.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph"
+  ],
+  "packages": [],
+  "plain": "A secure system to run thousands of AI agents efficiently on Kubernetes without wasting resources.",
+  "tags": [
+   "apps",
+   "automate"
+  ],
+  "useFor": [
+   "Run high-density stateful AI agents on Kubernetes",
+   "Suspend and resume agent sessions in under 500ms",
+   "Manage secure sandboxed execution environments"
+  ],
+  "steps": [
+   "Create a local Kubernetes cluster using `hack/create-kind-cluster.sh`.",
+   "Install the system and dependencies using `hack/install-ate-kind.sh --deploy-ate-system`.",
+   "Install the command line tools and create actors as needed."
+  ],
+  "repo": "agent-substrate/substrate",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "androoAGI/starnet": {
+  "cat": "coding",
+  "kind": "Desktop agent harness",
+  "what": "A local-first desktop station where multiple AI agents run concurrently in a pixel-art interface.",
+  "why": "To manage and coordinate multiple autonomous AI workers with visual state, explicit permissions, and local persistence.",
+  "level": "easy",
+  "start": "node sidecar/index.js",
+  "caution": "Early release with limited macOS real-world coverage. Reusing consumer login accounts or third-party APIs risks provider terms of service.",
+  "alts": [
+   "openclaw/openclaw",
+   "NousResearch/hermes-agent",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "Manage and watch multiple AI agents work together inside a pixel-art space station.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Run multiple AI agents simultaneously with separate workspaces",
+   "Connect AI agents to messaging apps like Telegram and Discord",
+   "Automate repetitive tasks with cron schedules and night shifts"
+  ],
+  "steps": [
+   "Download and install the desktop app for your operating system.",
+   "Open the app and connect your AI provider API key or local Ollama model.",
+   "Create your agents and place them in the pixel-art station to begin work."
+  ],
+  "repo": "androoAGI/starnet",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "edenfunf/reelmimic": {
+  "cat": "media",
+  "kind": "AI Video Generator",
+  "what": "Show it a reference video and an idea, and a crew of AI agents plans, builds, and reviews a new 2D animated video in the same style.",
+  "why": "It solves the problem of recreating the style, editing rhythm, and pacing of a reference video without manually storyboarding or animating everything from scratch. Reach for it when you want to produce animated videos, music videos, or narrated comics based on a reference style.",
+  "level": "setup",
+  "start": "./install.sh",
+  "caution": "Reuses consumer subscription logins (Claude Code or Codex apps) as an API, which may break the provider's terms and risk the account. It takes 1 to 3.5 hours to render a 30-60 second video.",
+  "alts": [
+   "heygen-com/hyperframes"
+  ],
+  "packages": [],
+  "plain": "Create new 2D animated videos by copying the style, rhythm, and pacing of a reference video.",
+  "tags": [
+   "media",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Generate 2D animated music videos from a style reference",
+   "Create narrated comic videos with multiple AI drawing engines",
+   "Collaborate with an AI crew to storyboard and review animations"
+  ],
+  "steps": [
+   "Clone the repository and run the install script or batch file.",
+   "Run the start script to launch the local web app.",
+   "Open http://localhost:4318, drop in a reference video, and describe what you want to make.",
+   "Approve the generated plan to let multiple AI agents build and review your video."
+  ],
+  "repo": "edenfunf/reelmimic",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "INSANE0777/Awwwards-mcp": {
+  "cat": "harness",
+  "kind": "Design Inspiration MCP",
+  "what": "Free open-source MCP server that gives AI coding agents design inspiration from award-winning websites.",
+  "why": "Provides AI coding agents with direct access to design references, color palettes, tech stacks, and screenshots so you can build better-looking web interfaces. Reach for it when you want your AI assistant to browse award-winning websites for design ideas.",
+  "level": "setup",
+  "start": "claude mcp add awwwards -- npx -y awwwards-mcp",
+  "caution": "Requires Node 22.13 or higher. Optional features like full-page screen captures or motion recordings require Playwright and ffmpeg.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [
+   "awwwards-mcp"
+  ],
+  "plain": "Gives your AI coding assistant access to a massive library of award-winning website designs and screenshots.",
+  "tags": [
+   "apps",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Search award-winning websites for design inspiration",
+   "Pull color palettes and tech stacks from reference sites",
+   "Capture live screenshots and motion recordings of web pages"
+  ],
+  "steps": [
+   "Ensure you have Node version 22.13 or higher installed.",
+   "Run `claude mcp add awwwards -- npx -y awwwards-mcp` to add the server to Claude Code.",
+   "Ask your coding agent to search for website design inspiration using natural language."
+  ],
+  "repo": "INSANE0777/Awwwards-mcp",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "ArtificialAnalysis/aa-agentperf-local": {
+  "cat": "local",
+  "kind": "AI Agent Benchmark",
+  "what": "Benchmarks local LLM serving speeds by replaying real agent conversations.",
+  "why": "To test how fast your hardware and serving setup run real AI agents, use this tool when comparing local models and inference engines.",
+  "level": "setup",
+  "start": "uv tool install agentperf-local",
+  "caution": "Requires significant hardware resources (such as a 65,536-token context window) to run full official benchmarks.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "ggerganov/llama.cpp"
+  ],
+  "packages": [
+   "agentperf-local"
+  ],
+  "plain": "This tool measures how fast your computer runs local AI agents by playing back recorded conversations.",
+  "tags": [
+   "private",
+   "code",
+   "monitor"
+  ],
+  "useFor": [
+   "Benchmark local LLM servers using recorded agent tasks",
+   "Test inference speed for local models like Llama or Qwen",
+   "Run managed local models and check throughput metrics"
+  ],
+  "steps": [
+   "Install the tool using `uv tool install agentperf-local` or run it directly with `uvx`.",
+   "Start the interactive TUI by running `agentperf-local`.",
+   "Choose a model profile and inference framework to begin benchmarking."
+  ],
+  "repo": "ArtificialAnalysis/aa-agentperf-local",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "zeronezer/bidcraft": {
+  "cat": "coding",
+  "kind": "tender writing agent",
+  "what": "BidCraft is an open-source conversational AI agent designed to help engineers and contractors write construction tender and bid documents.",
+  "why": "It solves the tedious manual labor of copying, pasting, and modifying hundreds of pages of construction proposals by automating the drafting process using your historical project files, saving weeks of work.",
+  "level": "setup",
+  "start": "git clone https://github.com/zeronezer/bidcraft.git",
+  "caution": "Requires external API keys for Alibaba Bailian and MinerU, plus a local MySQL 8 database.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Aider-AI/aider",
+   "cline/cline"
+  ],
+  "packages": [
+   "fastapi",
+   "uvicorn",
+   "python-docx"
+  ],
+  "plain": "An AI assistant that drafts and edits massive construction bid documents by chatting with you.",
+  "tags": [
+   "docs",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Draft construction tender documents",
+   "Analyze project requirements from PDFs",
+   "Generate structured technical proposals"
+  ],
+  "steps": [
+   "Clone the repository using git clone",
+   "Install backend and frontend dependencies",
+   "Configure your MySQL database and API keys in the .env file",
+   "Run the initialization script and start the application"
+  ],
+  "repo": "zeronezer/bidcraft",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "bgts-ai-org/bgts-context-engine": {
+  "cat": "memory",
+  "kind": "Code graph engine",
+  "what": "A deterministic code-graph context engine that indexes repositories into PostgreSQL using Apache AGE and pgvector to provide precise, reproducible context packs for AI coding agents via MCP and REST.",
+  "why": "Standard embedding search over chunked files often returns text that merely sounds like your question rather than code that actively participates in the behavior. Reach for this when you want your coding agent to receive exact symbol graphs, call hierarchies, and blast radius reports instead of guessing with greps and file reads.",
+  "level": "setup",
+  "start": "docker compose -f deploy/docker-compose.yml up -d",
+  "caution": "Requires running a PostgreSQL instance with Apache AGE and pgvector extensions configured.",
+  "alts": [
+   "HKUDS/LightRAG",
+   "microsoft/graphrag",
+   "mem0ai/mem0"
+  ],
+  "packages": [
+   "bgts-context-engine"
+  ],
+  "plain": "A local search engine for your codebase that feeds exact code relationships directly to AI coding assistants.",
+  "tags": [
+   "code",
+   "knowledge",
+   "supercharge"
+  ],
+  "useFor": [
+   "Index repositories into a deterministic code graph",
+   "Serve structural code context to AI coding agents",
+   "Analyze exact symbol calls and change impacts"
+  ],
+  "steps": [
+   "Start PostgreSQL with Apache AGE and pgvector using `docker compose -f deploy/docker-compose.yml up -d`.",
+   "Install the package with pip, copy your environment variables, and run database migrations.",
+   "Index your target repository using `bce index --repo /path/to/your/repo --name my-service`.",
+   "Query the context engine or serve it locally for your editor via REST or MCP."
+  ],
+  "repo": "bgts-ai-org/bgts-context-engine",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "VecSzn/lobes": {
+  "cat": "local",
+  "kind": "multi-model local runtime",
+  "what": "Lobes is an experimental local AI runtime that splits a request across five small, specialized models on a single consumer GPU.",
+  "why": "Running a single large local model is resource-heavy, while a small model is unreliable across diverse tasks. This project routes different parts of a request to smaller models to improve performance on standard benchmarks within an 8 GB VRAM budget.",
+  "level": "setup",
+  "start": "",
+  "caution": "This is an experimental repository with very few stars and no recent updates.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "Run complex tasks locally by splitting them across several small AI models instead of one large one.",
+  "tags": [
+   "private",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Run multiple small local models on an 8GB GPU",
+   "Route reasoning, perception, and tools to specialized models",
+   "Benchmark local LLM performance across coding and math suites"
+  ],
+  "steps": [
+   "Check the configuration in lobes.yaml.",
+   "Follow the setup guide in docs/GUIDE.en.md to run models locally."
+  ],
+  "repo": "VecSzn/lobes",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "lukeckprobierts/Hemmingway-1": {
+  "cat": "local",
+  "kind": "AI Writing Model",
+  "what": "An open-weights AI model designed to write natural-sounding everyday messages and emails without filler commentary.",
+  "why": "Helps you generate human-like everyday text, emails, and difficult messages without the verbose preamble typical of other language models. Reach for it when you want direct answers that sound like a person wrote them.",
+  "level": "dev",
+  "start": "vllm serve Altworld/Hemmingway-1 --max-model-len 262144",
+  "caution": "The repository has not been updated in over four months. Free for non-commercial use only under CC BY-NC 4.0; commercial use requires a separate agreement.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "huggingface/smolagents"
+  ],
+  "packages": [],
+  "plain": "An AI model that writes realistic, human-sounding emails and messages without unnecessary explanations.",
+  "tags": [
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Draft everyday emails and messages",
+   "Write difficult or awkward notes",
+   "Run an open-weight writing model locally"
+  ],
+  "steps": [
+   "Ensure you have vllm installed on your system.",
+   "Run the serving command `vllm serve Altworld/Hemmingway-1 --max-model-len 262144` in your terminal."
+  ],
+  "repo": "lukeckprobierts/Hemmingway-1",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "abacusai/abacusai-bot": {
+  "cat": "coding",
+  "kind": "Desktop personal agent",
+  "what": "An open-source desktop app for running autonomous personal AI agents that connect to messaging apps, tools, and services.",
+  "why": "To hand off recurring tasks, research, communication, and coding work to persistent AI bots that can run on a schedule or via messaging apps.",
+  "level": "easy",
+  "start": "Download the installer from the website and open the app.",
+  "caution": "Bots run with full permissions by default and can execute shell commands or edit local files without approval.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "cline/cline",
+   "n8n-io/n8n"
+  ],
+  "packages": [],
+  "plain": "A free desktop app for creating personal AI bots that automate tasks across your apps and messaging.",
+  "tags": [
+   "automate",
+   "code",
+   "connect"
+  ],
+  "useFor": [
+   "Automate daily briefings and routine tasks",
+   "Write code and fix bugs automatically",
+   "Connect AI to messaging apps like WhatsApp"
+  ],
+  "steps": [
+   "Download the app for your operating system from the website",
+   "Open the app and choose a model provider or use the built-in free tier",
+   "Create a bot, give it instructions, and enable desired connectors"
+  ],
+  "repo": "abacusai/abacusai-bot",
+  "at": "2026-10-01",
+  "source": "trending"
  }
 }

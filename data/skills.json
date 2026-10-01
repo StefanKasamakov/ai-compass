@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-01T12:55:39.601Z",
+ "updated": "2026-10-01T22:51:28.330Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 179250,
+   "stars": 179318,
    "license": null,
    "pushed": "2026-09-29T02:20:07Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 293695,
+   "stars": 293944,
    "license": "MIT",
    "pushed": "2026-09-27T02:37:47Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 100250,
+   "stars": 100335,
    "license": "MIT",
    "pushed": "2026-09-26T04:19:38Z",
    "by": "addyosmani",
@@ -27,7 +27,7 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 273446,
+   "stars": 273845,
    "license": "MIT",
    "pushed": "2026-09-29T12:38:37Z",
    "by": "mattpocock",
@@ -35,7 +35,7 @@
   },
   {
    "repo": "openai/skills",
-   "stars": 27834,
+   "stars": 27839,
    "license": null,
    "pushed": "2026-09-08T20:35:26Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 31788,
+   "stars": 31812,
    "license": null,
    "pushed": "2026-08-28T13:36:31Z",
    "by": "vercel-labs",
@@ -51,15 +51,15 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 37268,
+   "stars": 37288,
    "license": "Apache-2.0",
-   "pushed": "2026-09-30T22:40:08Z",
+   "pushed": "2026-10-01T21:39:47Z",
    "by": "anthropics",
    "count": 33
   },
   {
    "repo": "openai/plugins",
-   "stars": 7249,
+   "stars": 7251,
    "license": null,
    "pushed": "2026-09-28T17:08:10Z",
    "by": "openai",
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 27110,
+   "stars": 27170,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,25 +75,25 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25359,
+   "stars": 25361,
    "license": "MIT",
-   "pushed": "2026-10-01T08:04:14Z",
+   "pushed": "2026-10-01T21:19:30Z",
    "by": "EveryInc",
    "count": 37
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 73303,
+   "stars": 73632,
    "license": "Apache-2.0",
-   "pushed": "2026-10-01T00:06:24Z",
+   "pushed": "2026-10-01T20:56:31Z",
    "by": "pbakaus",
    "count": 20
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40126,
+   "stars": 40139,
    "license": "MIT",
-   "pushed": "2026-09-29T00:45:29Z",
+   "pushed": "2026-10-01T19:08:25Z",
    "by": "wshobson",
    "count": 80
   }
@@ -109,7 +109,13 @@
    "files": 1,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Recommend matching courses and tutorials from Claude Academy to help you learn how to use the platform.",
+   "useFor": [
+    "Find beginner tutorials",
+    "Explore training materials"
+   ],
+   "example": "How do I get started with Claude?"
   },
   {
    "key": "anthropics/skills/algorithmic-art",
@@ -122,7 +128,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Create original algorithmic art using code, flow fields, and particle systems with interactive parameters.",
+   "useFor": [
+    "Generate particle art",
+    "Create algorithmic visuals"
+   ],
+   "example": "Make a piece of generative art using code."
   },
   {
    "key": "brand-guidelines",
@@ -177,7 +189,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Provide technical reference information for the Claude API, including pricing, parameters, and model options.",
+   "useFor": [
+    "Check API pricing",
+    "Review model parameters"
+   ],
+   "example": "What are the current pricing and limits for the Claude API?"
   },
   {
    "key": "anthropics/skills/discernment-nudge",
@@ -191,7 +209,13 @@
     "docs",
     "code",
     "research"
-   ]
+   ],
+   "plain": "Append follow-up questions to your answers to help you check key facts, assumptions, and missing context.",
+   "useFor": [
+    "Verify drafted emails",
+    "Check proposal assumptions"
+   ],
+   "example": "Review this project proposal for potential blind spots."
   },
   {
    "key": "doc-coauthoring",
@@ -263,7 +287,13 @@
    "files": 5,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Write internal company communications such as status reports, project updates, leadership newsletters, and FAQs.",
+   "useFor": [
+    "Draft status reports",
+    "Write team newsletters"
+   ],
+   "example": "Write a status report for my engineering team update."
   },
   {
    "key": "mcp-builder",
@@ -358,7 +388,13 @@
    "tags": [
     "media",
     "connect"
-   ]
+   ],
+   "plain": "Create animated graphics optimized specifically for sharing and viewing inside Slack channels.",
+   "useFor": [
+    "Make custom GIFs",
+    "Create Slack animations"
+   ],
+   "example": "Make me a GIF of a cat typing for Slack."
   },
   {
    "key": "theme-factory",
@@ -451,7 +487,13 @@
    "files": 7,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Explore your intent, requirements, and design choices before you start any creative coding or implementation work.",
+   "useFor": [
+    "Plan new features",
+    "Discuss design choices"
+   ],
+   "example": "Let's brainstorm a new feature for the dashboard."
   },
   {
    "key": "obra/superpowers/diagnosing-superpowers",
@@ -464,7 +506,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Diagnose issues when a session goes wrong, helps find stumbles, and assists in building bug reports.",
+   "useFor": [
+    "Troubleshoot session errors",
+    "Create bug reports"
+   ],
+   "example": "Why did that last task take so long and fail?"
   },
   {
    "key": "obra/superpowers/dispatching-parallel-agents",
@@ -474,7 +522,13 @@
    "desc": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Handle two or more independent tasks that do not share state or rely on sequential steps.",
+   "useFor": [
+    "Run independent tasks",
+    "Process separate requests"
+   ],
+   "example": "Work on these two unrelated files at the same time."
   },
   {
    "key": "obra/superpowers/executing-plans",
@@ -484,7 +538,13 @@
    "desc": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Execute an implementation plan directly in your current session as the main implementer.",
+   "useFor": [
+    "Follow step-by-step plans",
+    "Execute code changes"
+   ],
+   "example": "Execute this implementation plan step by step."
   },
   {
    "key": "obra/superpowers/finishing-a-development-branch",
@@ -494,7 +554,13 @@
    "desc": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Decide how to integrate your completed work once all tests pass and implementation finishes.",
+   "useFor": [
+    "Integrate completed code",
+    "Finalize development"
+   ],
+   "example": "All tests pass, how should we integrate this branch?"
   },
   {
    "key": "obra/superpowers/receiving-code-review",
@@ -506,7 +572,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Review feedback critically with technical rigor and verification before implementing suggested changes.",
+   "useFor": [
+    "Evaluate code feedback",
+    "Verify review comments"
+   ],
+   "example": "Review this feedback before we apply the changes."
   },
   {
    "key": "obra/superpowers/requesting-code-review",
@@ -518,7 +590,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Verify that your completed work meets all requirements before merging or finishing tasks.",
+   "useFor": [
+    "Check finished work",
+    "Verify requirements"
+   ],
+   "example": "Check if my changes meet all project requirements."
   },
   {
    "key": "obra/superpowers/subagent-driven-development",
@@ -528,7 +606,13 @@
    "desc": "Use when executing implementation plans with independent tasks in the current session",
    "scripts": false,
    "files": 6,
-   "tags": []
+   "tags": [],
+   "plain": "Execute implementation plans containing independent tasks within your current working session.",
+   "useFor": [
+    "Run implementation tasks",
+    "Process plan steps"
+   ],
+   "example": "Execute this plan using subtasks."
   },
   {
    "key": "obra/superpowers/systematic-debugging",
@@ -540,7 +624,13 @@
    "files": 10,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Investigate bugs, test failures, and unexpected behaviors systematically before proposing fixes.",
+   "useFor": [
+    "Debug test failures",
+    "Investigate system errors"
+   ],
+   "example": "Why is this test failing every time we run it?"
   },
   {
    "key": "obra/superpowers/test-driven-development",
@@ -553,7 +643,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Write tests before implementing new features or bug fixes to ensure proper verification.",
+   "useFor": [
+    "Write failing tests",
+    "Setup test-driven fixes"
+   ],
+   "example": "Write a test for this bug before we fix the code."
   },
   {
    "key": "obra/superpowers/using-git-worktrees",
@@ -565,7 +661,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Ensure an isolated workspace exists using native tools or git worktrees before starting feature work.",
+   "useFor": [
+    "Isolate workspaces",
+    "Setup git worktrees"
+   ],
+   "example": "Create an isolated workspace for this new feature branch."
   },
   {
    "key": "obra/superpowers/using-superpowers",
@@ -575,7 +677,13 @@
    "desc": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
    "scripts": false,
    "files": 7,
-   "tags": []
+   "tags": [],
+   "plain": "Establish how to find and use available skills at the start of any conversation.",
+   "useFor": [
+    "Initialize skills",
+    "Start new conversations"
+   ],
+   "example": "Start the session and check available skills."
   },
   {
    "key": "obra/superpowers/verification-before-completion",
@@ -585,7 +693,13 @@
    "desc": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Run verification commands and confirm outputs before claiming that any work is complete or passing.",
+   "useFor": [
+    "Verify test outputs",
+    "Confirm work completion"
+   ],
+   "example": "Run all verification commands before we open a pull request."
   },
   {
    "key": "obra/superpowers/writing-plans",
@@ -598,7 +712,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Create a structured plan from specifications or requirements for multi-step tasks before touching code.",
+   "useFor": [
+    "Draft implementation steps",
+    "Plan multi-step tasks"
+   ],
+   "example": "Write a step-by-step plan for this specification."
   },
   {
    "key": "obra/superpowers/writing-skills",
@@ -610,7 +730,13 @@
    "files": 6,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Create, edit, and verify assistant instructions before you use them.",
+   "useFor": [
+    "Create a new instruction",
+    "Verify instruction files work"
+   ],
+   "example": "Please verify this new skill file works properly."
   },
   {
    "key": "addyosmani/agent-skills/api-and-interface-design",
@@ -624,7 +750,13 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Design stable digital connections and system boundaries for your software components.",
+   "useFor": [
+    "Design a new API endpoint",
+    "Define type contracts between modules"
+   ],
+   "example": "Help me design a new REST API endpoint."
   },
   {
    "key": "addyosmani/agent-skills/browser-testing-with-devtools",
@@ -638,7 +770,13 @@
     "media",
     "code",
     "research"
-   ]
+   ],
+   "plain": "Test web pages inside real browsers to inspect elements and catch errors.",
+   "useFor": [
+    "Inspect the webpage DOM",
+    "Capture browser console errors"
+   ],
+   "example": "Check the browser console for errors on our login page."
   },
   {
    "key": "addyosmani/agent-skills/ci-cd-and-automation",
@@ -651,7 +789,13 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Automate your build and deployment pipelines to publish software smoothly.",
+   "useFor": [
+    "Set up deployment pipelines",
+    "Configure automated test runners"
+   ],
+   "example": "Set up a new automated deployment pipeline."
   },
   {
    "key": "addyosmani/agent-skills/code-review-and-quality",
@@ -663,7 +807,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Review your code across multiple quality dimensions before saving changes.",
+   "useFor": [
+    "Review a pull request",
+    "Assess code quality dimensions"
+   ],
+   "example": "Review this code diff before I merge it."
   },
   {
    "key": "addyosmani/agent-skills/code-simplification",
@@ -675,7 +825,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Simplify complex code to make it easier to read and maintain.",
+   "useFor": [
+    "Refactor messy code",
+    "Remove unnecessary code complexity"
+   ],
+   "example": "Please simplify this messy function without changing its behavior."
   },
   {
    "key": "addyosmani/agent-skills/constraint-driven-development",
@@ -687,7 +843,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Establish strict project quality standards and prevent quality drops over time.",
+   "useFor": [
+    "Define project quality standards",
+    "Set up rules in documents"
+   ],
+   "example": "Define our project quality standards and rules."
   },
   {
    "key": "addyosmani/agent-skills/context-engineering",
@@ -697,7 +859,13 @@
    "desc": "Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Optimize the assistant background setup to keep your project rules organized.",
+   "useFor": [
+    "Configure project rules files",
+    "Start a new session"
+   ],
+   "example": "Configure the rules files for this new project."
   },
   {
    "key": "addyosmani/agent-skills/debugging-and-error-recovery",
@@ -707,7 +875,13 @@
    "desc": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why — a systematic approach to finding and fixing the root cause rather than guessing.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Find and fix the root cause of unexpected errors systematically.",
+   "useFor": [
+    "Fix broken builds",
+    "Find root cause of bugs"
+   ],
+   "example": "Help me find why this test is failing."
   },
   {
    "key": "addyosmani/agent-skills/deprecation-and-migration",
@@ -719,7 +893,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Safely manage the removal of old features and migrate your data.",
+   "useFor": [
+    "Remove old system features",
+    "Migrate a database schema"
+   ],
+   "example": "Plan the database column migration without causing downtime."
   },
   {
    "key": "addyosmani/agent-skills/documentation-and-adrs",
@@ -733,7 +913,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Record architectural decisions and document the reasoning behind design choices.",
+   "useFor": [
+    "Document an architecture decision",
+    "Record system design choices"
+   ],
+   "example": "Document our architectural decision for using this database."
   },
   {
    "key": "addyosmani/agent-skills/doubt-driven-development",
@@ -746,7 +932,13 @@
    "tags": [
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Challenge every important decision with a fresh review before moving forward.",
+   "useFor": [
+    "Stress-test a plan",
+    "Review assumptions carefully"
+   ],
+   "example": "Stress-test this security plan for hidden failure modes."
   },
   {
    "key": "addyosmani/agent-skills/frontend-ui-engineering",
@@ -759,7 +951,13 @@
    "tags": [
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Build production-ready, accessible, and responsive user interfaces that look great.",
+   "useFor": [
+    "Create responsive page components",
+    "Meet accessibility requirements"
+   ],
+   "example": "Build an accessible navigation bar component."
   },
   {
    "key": "addyosmani/agent-skills/git-workflow-and-versioning",
@@ -773,7 +971,13 @@
     "docs",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Organize your version control workflow with clean commits and branches.",
+   "useFor": [
+    "Split work into commits",
+    "Manage release tagging"
+   ],
+   "example": "Help me split my messy changes into clean atomic commits."
   },
   {
    "key": "addyosmani/agent-skills/idea-refine",
@@ -785,7 +989,13 @@
    "files": 4,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Transform raw ideas into sharp, actionable concepts through structured thinking.",
+   "useFor": [
+    "Refine a vague idea",
+    "Stress-test project plans"
+   ],
+   "example": "Stress-test my plan for launching the new feature."
   },
   {
    "key": "addyosmani/agent-skills/incremental-implementation",
@@ -798,7 +1008,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Deliver software changes in small, easy-to-verify steps instead of all at once.",
+   "useFor": [
+    "Implement features in slices",
+    "Break down large updates"
+   ],
+   "example": "Implement this feature in small verifiable steps."
   },
   {
    "key": "addyosmani/agent-skills/interview-me",
@@ -810,7 +1026,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Ask clarifying questions one at a time to uncover what you truly need.",
+   "useFor": [
+    "Clarify vague project requests",
+    "Discover underlying intentions"
+   ],
+   "example": "Interview me to figure out what we should build first."
   },
   {
    "key": "addyosmani/agent-skills/observability-and-instrumentation",
@@ -822,7 +1044,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Add tracking and logging so you can see how your code behaves in production.",
+   "useFor": [
+    "Add application logging",
+    "Set up production metrics"
+   ],
+   "example": "Add logging so we can track this feature in production."
   },
   {
    "key": "addyosmani/agent-skills/performance-optimization",
@@ -835,7 +1063,13 @@
    "tags": [
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Improve application speed and fix slow database queries across your system.",
+   "useFor": [
+    "Fix slow database queries",
+    "Improve page load times"
+   ],
+   "example": "Help me fix these slow database queries."
   },
   {
    "key": "addyosmani/agent-skills/planning-and-task-breakdown",
@@ -845,7 +1079,13 @@
    "desc": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Break large projects down into clear, ordered tasks you can easily follow.",
+   "useFor": [
+    "Break specs into tasks",
+    "Estimate project scope"
+   ],
+   "example": "Break this project specification into ordered tasks."
   },
   {
    "key": "addyosmani/agent-skills/security-and-hardening",
@@ -858,7 +1098,14 @@
    "tags": [
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Secure your code against common security threats and compliance rules.",
+   "useFor": [
+    "Audit login flows",
+    "Check data safety",
+    "Review third-party packages"
+   ],
+   "example": "Check if this login form is safe against common security threats."
   },
   {
    "key": "addyosmani/agent-skills/shipping-and-launch",
@@ -870,7 +1117,14 @@
    "files": 0,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Prepare your software releases with deployment checklists and safety plans.",
+   "useFor": [
+    "Create launch checklists",
+    "Plan rollouts",
+    "Set up rollbacks"
+   ],
+   "example": "What steps do we need to take before shipping this update?"
   },
   {
    "key": "addyosmani/agent-skills/source-driven-development",
@@ -883,7 +1137,14 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Check implementation choices against official documentation to ensure correctness.",
+   "useFor": [
+    "Verify technical approaches",
+    "Consult official documentation",
+    "Avoid outdated coding patterns"
+   ],
+   "example": "Check the official documentation for the correct way to use this library."
   },
   {
    "key": "addyosmani/agent-skills/spec-driven-development",
@@ -896,7 +1157,14 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Create detailed project specifications and requirements before writing code.",
+   "useFor": [
+    "Draft requirement documents",
+    "Decompose project modules",
+    "Clarify vague ideas"
+   ],
+   "example": "Write a project specification for our new user dashboard feature."
   },
   {
    "key": "addyosmani/agent-skills/test-driven-development",
@@ -909,7 +1177,14 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Write automated tests to guide development and verify bug fixes.",
+   "useFor": [
+    "Fix reported bugs",
+    "Prove code works",
+    "Change existing behavior safely"
+   ],
+   "example": "Write a test for this bug fix before we change the code."
   },
   {
    "key": "addyosmani/agent-skills/using-agent-skills",
@@ -921,7 +1196,14 @@
    "files": 0,
    "tags": [
     "automate"
-   ]
+   ],
+   "plain": "Find and load the right instructions for your current task.",
+   "useFor": [
+    "Start a session",
+    "Select matching workflows",
+    "Find relevant instructions"
+   ],
+   "example": "What instructions should I load for working on this bug?"
   },
   {
    "key": "mattpocock/skills/ask-matt",
@@ -931,7 +1213,14 @@
    "desc": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Find the correct skill or workflow that fits your current situation.",
+   "useFor": [
+    "Route to skills",
+    "Match tasks to workflows",
+    "Find correct instructions"
+   ],
+   "example": "Which skill should I use for checking my code standards?"
   },
   {
    "key": "mattpocock/skills/code-review",
@@ -943,7 +1232,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Review recent code changes against project standards and specifications.",
+   "useFor": [
+    "Review pull requests",
+    "Check work in progress",
+    "Compare code to specs"
+   ],
+   "example": "Review the code changes made since our last release tag."
   },
   {
    "key": "mattpocock/skills/codebase-design",
@@ -956,7 +1252,14 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Design clear and testable software modules using shared vocabulary.",
+   "useFor": [
+    "Design module interfaces",
+    "Make code testable",
+    "Improve software seams"
+   ],
+   "example": "Help me design a cleaner interface for this database module."
   },
   {
    "key": "mattpocock/skills/diagnosing-bugs",
@@ -968,7 +1271,14 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Investigate and solve difficult bugs or performance slowdowns.",
+   "useFor": [
+    "Debug broken features",
+    "Fix slow performance",
+    "Diagnose error reports"
+   ],
+   "example": "Diagnose why this page load is failing with a server error."
   },
   {
    "key": "mattpocock/skills/domain-modeling",
@@ -981,7 +1291,14 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Build and refine project terminology and decision records.",
+   "useFor": [
+    "Update glossary terms",
+    "Write decision records",
+    "Discuss domain terminology"
+   ],
+   "example": "Update our glossary file with the new payment terminology."
   },
   {
    "key": "mattpocock/skills/grill-with-docs",
@@ -993,7 +1310,14 @@
    "files": 1,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Interview users intensively to sharpen plans while generating documentation.",
+   "useFor": [
+    "Sharpen project plans",
+    "Create decision records",
+    "Interview about designs"
+   ],
+   "example": "Interview me about this architecture plan to sharpen it."
   },
   {
    "key": "mattpocock/skills/implement-spec",
@@ -1005,7 +1329,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Write code based on completed specifications and task tickets.",
+   "useFor": [
+    "Write code from specs",
+    "Build from tickets",
+    "Execute implementation plans"
+   ],
+   "example": "Implement the code for our approved specification tickets."
   },
   {
    "key": "mattpocock/skills/implement",
@@ -1015,7 +1346,14 @@
    "desc": "Implement a piece of work based on a spec or set of tickets.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Build features or fixes following a provided specification or ticket list.",
+   "useFor": [
+    "Implement from tickets",
+    "Build from specs",
+    "Complete assigned tasks"
+   ],
+   "example": "Implement the features listed in this specification document."
   },
   {
    "key": "mattpocock/skills/improve-codebase-architecture",
@@ -1029,7 +1367,14 @@
     "docs",
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Scan your codebase for architecture improvements and present visual reports.",
+   "useFor": [
+    "Scan codebase architecture",
+    "Generate visual reports",
+    "Explore deepening opportunities"
+   ],
+   "example": "Scan our codebase and show me potential architecture improvements."
   },
   {
    "key": "mattpocock/skills/pr",
@@ -1041,7 +1386,14 @@
    "files": 2,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Write clear and descriptive pull request summaries.",
+   "useFor": [
+    "Write pull request bodies",
+    "Summarize code changes",
+    "Describe code updates"
+   ],
+   "example": "Write a pull request summary for my latest branch changes."
   },
   {
    "key": "mattpocock/skills/prototype",
@@ -1053,7 +1405,14 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Build quick throwaway prototypes to test design ideas and user interfaces.",
+   "useFor": [
+    "Test state models",
+    "Explore user interfaces",
+    "Verify design ideas"
+   ],
+   "example": "Build a quick prototype to test if this user interface feels right."
   },
   {
    "key": "mattpocock/skills/research",
@@ -1066,7 +1425,14 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Research topics using reliable primary sources and save findings to a file.",
+   "useFor": [
+    "Gather API facts",
+    "Research technical topics",
+    "Delegate reading tasks"
+   ],
+   "example": "Research the latest authentication standards and save the findings."
   },
   {
    "key": "mattpocock/skills/retro",
@@ -1078,7 +1444,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Review how a coding session went to improve future work.",
+   "useFor": [
+    "Review coding sessions",
+    "Run retrospectives",
+    "Evaluate past work"
+   ],
+   "example": "Run a retrospective on how we handled this coding session."
   },
   {
    "key": "mattpocock/skills/setup-matt-pocock-skills",
@@ -1088,7 +1461,14 @@
    "desc": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
    "scripts": false,
    "files": 6,
-   "tags": []
+   "tags": [],
+   "plain": "Configure your repository with necessary issue tracking and documentation layouts.",
+   "useFor": [
+    "Set up issue trackers",
+    "Configure label vocabularies",
+    "Set up document layouts"
+   ],
+   "example": "Set up this repository for the engineering skills and documentation layout."
   },
   {
    "key": "mattpocock/skills/tdd",
@@ -1101,7 +1481,14 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Write tests before building features or fixing bugs using a test-first approach.",
+   "useFor": [
+    "Write tests before coding",
+    "Fix bugs test-first",
+    "Create integration tests"
+   ],
+   "example": "Let us build this new login feature using test-driven development."
   },
   {
    "key": "mattpocock/skills/to-spec",
@@ -1111,7 +1498,14 @@
    "desc": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Convert our conversation into a formal specification and publish it to the project tracker.",
+   "useFor": [
+    "Publish project specifications",
+    "Turn chats into specs",
+    "Update project tracker"
+   ],
+   "example": "Turn our recent chat into a formal spec and publish it."
   },
   {
    "key": "mattpocock/skills/to-tickets",
@@ -1121,7 +1515,14 @@
    "desc": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Break down a plan or conversation into smaller tracking tickets with defined dependencies.",
+   "useFor": [
+    "Split plans into tickets",
+    "Create blocker tickets",
+    "Generate tracking tasks"
+   ],
+   "example": "Break this conversation into tracker tickets with blocking edges."
   },
   {
    "key": "mattpocock/skills/triage",
@@ -1133,7 +1534,14 @@
    "files": 3,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Organize and review incoming issues and external pull requests through a structured triage process.",
+   "useFor": [
+    "Organize incoming issues",
+    "Review external pull requests",
+    "Create agent-ready briefs"
+   ],
+   "example": "Triage the latest batch of GitHub issues and pull requests."
   },
   {
    "key": "mattpocock/skills/wayfinder",
@@ -1143,7 +1551,14 @@
    "desc": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Plan large multi-session projects as a shared map of decision tickets on your tracker.",
+   "useFor": [
+    "Plan large projects",
+    "Track major decisions",
+    "Manage multi-session work"
+   ],
+   "example": "Create a wayfinder map for this huge multi-week project."
   },
   {
    "key": "mattpocock/skills/wizard",
@@ -1155,7 +1570,14 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Create an interactive script that guides a human through manual setup and configuration steps.",
+   "useFor": [
+    "Provision cloud infrastructure",
+    "Set up secret credentials",
+    "Run system migrations"
+   ],
+   "example": "Generate a wizard script to help me set up my deployment secrets."
   },
   {
    "key": "mattpocock/skills/claude-handoff",
@@ -1165,7 +1587,14 @@
    "desc": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Transfer the current chat session to a fresh background assistant to continue the work.",
+   "useFor": [
+    "Pass work to background agents",
+    "Continue tasks seamlessly",
+    "Hand off current sessions"
+   ],
+   "example": "Hand this conversation off to a fresh background agent."
   },
   {
    "key": "mattpocock/skills/loop-me",
@@ -1175,7 +1604,14 @@
    "desc": "Grill me about specs for the workflows I want to build, within this workspace.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Interview you thoroughly about the specific workflow requirements you want to build.",
+   "useFor": [
+    "Define workflow requirements",
+    "Answer detailed project questions",
+    "Clarify workspace workflows"
+   ],
+   "example": "Loop me with questions about the workflows I want to build."
   },
   {
    "key": "mattpocock/skills/setup-ts-deep-modules",
@@ -1187,7 +1623,14 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Configure a TypeScript repository so that packages use hidden implementations and entry-point files.",
+   "useFor": [
+    "Set up deep modules",
+    "Configure dependency cruiser",
+    "Organize TypeScript packages"
+   ],
+   "example": "Wire dependency-cruiser to enforce deep modules in this repo."
   },
   {
    "key": "mattpocock/skills/writing-beats",
@@ -1199,7 +1642,14 @@
    "files": 1,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Transform raw material into an organized narrative journey with properly grounded terms.",
+   "useFor": [
+    "Organize raw notes",
+    "Assemble story beats",
+    "Structure narrative journeys"
+   ],
+   "example": "Turn these raw notes into an ordered sequence of writing beats."
   },
   {
    "key": "mattpocock/skills/writing-fragments",
@@ -1211,7 +1661,14 @@
    "files": 1,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Collect and organize unstructured writing fragments without imposing a strict structure yet.",
+   "useFor": [
+    "Collect writing fragments",
+    "Explore rough notes",
+    "Brainstorm raw ideas"
+   ],
+   "example": "Mine these raw writing fragments without structuring them yet."
   },
   {
    "key": "mattpocock/skills/writing-shape",
@@ -1223,7 +1680,14 @@
    "files": 1,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Format raw writing material into a polished article paragraph by paragraph.",
+   "useFor": [
+    "Shape raw articles",
+    "Write paragraph by paragraph",
+    "Refine written content"
+   ],
+   "example": "Shape this raw material into an article paragraph by paragraph."
   },
   {
    "key": "mattpocock/skills/git-guardrails-claude-code",
@@ -1235,7 +1699,14 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Configure safety hooks that prevent dangerous git commands from running accidentally.",
+   "useFor": [
+    "Block dangerous git commands",
+    "Add git safety hooks",
+    "Prevent accidental pushes"
+   ],
+   "example": "Set up safety hooks to block dangerous git commands like push or reset."
   },
   {
    "key": "mattpocock/skills/migrate-to-shoehorn",
@@ -1247,7 +1718,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Replace type assertion keywords in test files with the shoehorn library.",
+   "useFor": [
+    "Replace type assertions",
+    "Update test files",
+    "Use shoehorn for partial data"
+   ],
+   "example": "Migrate our test files to use shoehorn instead of type assertions."
   },
   {
    "key": "mattpocock/skills/scaffold-exercises",
@@ -1257,7 +1735,14 @@
    "desc": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Generate structured directories for exercises containing problems, solutions, and explainers.",
+   "useFor": [
+    "Scaffold exercise directories",
+    "Create course problem stubs",
+    "Set up new course sections"
+   ],
+   "example": "Scaffold the exercise structure for this new course section."
   },
   {
    "key": "mattpocock/skills/setup-pre-commit",
@@ -1269,7 +1754,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Configure pre-commit hooks to automatically format, type-check, and test your code before committing.",
+   "useFor": [
+    "Set up pre-commit hooks",
+    "Configure lint-staged",
+    "Add automatic code formatting"
+   ],
+   "example": "Set up Husky pre-commit hooks with lint-staged in this repository."
   },
   {
    "key": "mattpocock/skills/grill-me",
@@ -1281,7 +1773,14 @@
    "files": 1,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Conduct a rigorous interview to evaluate and improve your plan or design.",
+   "useFor": [
+    "Sharpen project plans",
+    "Evaluate design ideas",
+    "Test strategy weaknesses"
+   ],
+   "example": "Grill me hard on this new project plan."
   },
   {
    "key": "mattpocock/skills/grilling",
@@ -1293,7 +1792,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Challenge your plans and ideas through rigorous questioning to test their validity.",
+   "useFor": [
+    "Stress-test ideas",
+    "Challenge project plans",
+    "Examine decision flaws"
+   ],
+   "example": "Grill me relentlessly about this design decision."
   },
   {
    "key": "mattpocock/skills/handoff",
@@ -1305,7 +1811,14 @@
    "files": 1,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Summarize the current discussion into a handoff document for another assistant.",
+   "useFor": [
+    "Summarize chat for handoff",
+    "Create agent handoff notes",
+    "Prepare context for peers"
+   ],
+   "example": "Compact this conversation into a handoff document for another agent."
   },
   {
    "key": "mattpocock/skills/teach",
@@ -1315,7 +1828,14 @@
    "desc": "Teach the user a new skill or concept, within this workspace.",
    "scripts": false,
    "files": 5,
-   "tags": []
+   "tags": [],
+   "plain": "Instruct the user on a new concept or skill directly within the workspace.",
+   "useFor": [
+    "Teach new skills",
+    "Explain complex concepts",
+    "Learn workspace topics"
+   ],
+   "example": "Teach me how this new workspace feature works."
   },
   {
    "key": "mattpocock/skills/to-questionnaire",
@@ -1325,7 +1845,13 @@
    "desc": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Create a questionnaire from an unresolved decision so someone else can fill it out.",
+   "useFor": [
+    "Turn decisions into questionnaires",
+    "Gather input from others"
+   ],
+   "example": "Turn this tricky choice into a questionnaire for my team."
   },
   {
    "key": "mattpocock/skills/wait-what",
@@ -1335,7 +1861,13 @@
    "desc": "Stop. That last message did not land: re-pitch it.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Re-pitch your last message when it does not land well with the user.",
+   "useFor": [
+    "Revise the last message",
+    "Retry an explanation"
+   ],
+   "example": "Stop. That message missed the mark, so re-pitch it."
   },
   {
    "key": "mattpocock/skills/writing-for-agents",
@@ -1347,7 +1879,13 @@
    "files": 2,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Write documents for agents by creating or editing agent instructions and configuration files.",
+   "useFor": [
+    "Create new agent skills",
+    "Edit agent documentation"
+   ],
+   "example": "Update the AGENTS file to include our new workflow rules."
   },
   {
    "key": "openai/skills/aspnet-core",
@@ -1359,7 +1897,13 @@
    "files": 16,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build and manage web applications using official guidelines for .NET web development.",
+   "useFor": [
+    "Build web applications",
+    "Update API code"
+   ],
+   "example": "Help me build a new ASP.NET Core web API."
   },
   {
    "key": "openai/skills/chatgpt-apps",
@@ -1373,7 +1917,13 @@
     "media",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Build and troubleshoot applications that combine server components and widget interfaces.",
+   "useFor": [
+    "Create app components",
+    "Troubleshoot app settings"
+   ],
+   "example": "Help me scaffold a new app with a widget interface."
   },
   {
    "key": "openai/skills/cli-creator",
@@ -1387,7 +1937,13 @@
     "docs",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Create a command-line tool from API documentation, scripts, or existing examples.",
+   "useFor": [
+    "Build command-line tools",
+    "Expose API commands"
+   ],
+   "example": "Create a command-line tool using this API specification."
   },
   {
    "key": "openai/skills/cloudflare-deploy",
@@ -1399,7 +1955,13 @@
    "files": 311,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Deploy applications and infrastructure to the Cloudflare platform using cloud services.",
+   "useFor": [
+    "Deploy web projects",
+    "Set up hosting"
+   ],
+   "example": "Deploy this project to Cloudflare workers."
   },
   {
    "key": "openai/skills/define-goal",
@@ -1409,7 +1971,13 @@
    "desc": "Help the user define a concrete, measurable goal before starting work, especially when they ask to use the goal tool, create a goal, set an objective, clarify success criteria, or turn a fuzzy intention into a quantitative outcome. Use this skill for goal creation and goal refinement only; it does not manage durable snapshots, decision logs, or long-running execution artifacts.",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Define a concrete and measurable goal before you start working on a task.",
+   "useFor": [
+    "Clarify success criteria",
+    "Turn fuzzy goals into outcomes"
+   ],
+   "example": "Help me define a clear goal for this project."
   },
   {
    "key": "openai/skills/figma-code-connect-components",
@@ -1422,7 +1990,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Connect design components in a file to code components using mapping tools.",
+   "useFor": [
+    "Link design to code",
+    "Create component mappings"
+   ],
+   "example": "Connect this design component to our codebase."
   },
   {
    "key": "openai/skills/figma-create-design-system-rules",
@@ -1436,7 +2010,13 @@
     "media",
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Generate custom design system rules and guidelines for your project codebase.",
+   "useFor": [
+    "Generate design rules",
+    "Set project guidelines"
+   ],
+   "example": "Create design system rules for my project."
   },
   {
    "key": "openai/skills/figma-create-new-file",
@@ -1448,7 +2028,13 @@
    "files": 6,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Create a new blank design or whiteboard file.",
+   "useFor": [
+    "Create new design files",
+    "Start a whiteboard"
+   ],
+   "example": "Create a new blank file for my brainstorming session."
   },
   {
    "key": "openai/skills/figma-generate-design",
@@ -1462,7 +2048,13 @@
     "docs",
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Translate application layouts and pages into designs within a design tool.",
+   "useFor": [
+    "Push code to designs",
+    "Build full pages"
+   ],
+   "example": "Take this app page and build it in the design tool."
   },
   {
    "key": "openai/skills/figma-generate-library",
@@ -1476,7 +2068,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Build or update a design system with variables, component libraries, and theming.",
+   "useFor": [
+    "Create design tokens",
+    "Build component libraries"
+   ],
+   "example": "Build a professional design system from our codebase."
   },
   {
    "key": "openai/skills/figma-implement-design",
@@ -1489,7 +2087,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Translate visual designs into production-ready application code with exact visual fidelity.",
+   "useFor": [
+    "Generate code from designs",
+    "Implement visual specs"
+   ],
+   "example": "Implement the code for this design spec."
   },
   {
    "key": "openai/skills/figma-use",
@@ -1503,7 +2107,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Prepare the assistant to run code that edits files, manages variables, or builds components.",
+   "useFor": [
+    "Set up file edits",
+    "Prepare code execution"
+   ],
+   "example": "Modify the auto-layout on this design canvas."
   },
   {
    "key": "openai/skills/figma",
@@ -1517,7 +2127,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Fetch design context, screenshots, and variables to help translate designs into code.",
+   "useFor": [
+    "Fetch design assets",
+    "Inspect file structure"
+   ],
+   "example": "Extract variables and assets from this design URL."
   },
   {
    "key": "openai/skills/gh-address-comments",
@@ -1530,7 +2146,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Address review and issue comments on an open pull request using the command line.",
+   "useFor": [
+    "Review pull request comments",
+    "Address code feedback"
+   ],
+   "example": "Help me address the comments on my open pull request."
   },
   {
    "key": "gh-fix-ci",
@@ -1564,7 +2186,13 @@
    "tags": [
     "media",
     "automate"
-   ]
+   ],
+   "plain": "Create, repair, and package animated character spritesheets from visual references or art.",
+   "useFor": [
+    "Create animated characters",
+    "Package character sprites"
+   ],
+   "example": "Create an animated character sprite from this reference art."
   },
   {
    "key": "openai/skills/jupyter-notebook",
@@ -1574,7 +2202,13 @@
    "desc": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
    "scripts": true,
    "files": 11,
-   "tags": []
+   "tags": [],
+   "plain": "Create, scaffold, or edit notebook files for experiments, explorations, or tutorials.",
+   "useFor": [
+    "Create experiment notebooks",
+    "Edit tutorial notebooks"
+   ],
+   "example": "Create a new notebook file for my data experiment."
   },
   {
    "key": "openai/skills/linear",
@@ -1584,7 +2218,13 @@
    "desc": "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.",
    "scripts": false,
    "files": 4,
-   "tags": []
+   "tags": [],
+   "plain": "Manage issues, projects, and team workflows by reading, creating, and updating tickets.",
+   "useFor": [
+    "Read team tickets",
+    "Create project tasks"
+   ],
+   "example": "Create a new ticket in Linear for this bug."
   },
   {
    "key": "openai/skills/migrate-to-codex",
@@ -1596,7 +2236,13 @@
    "files": 18,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Transfer instruction files, skills, agents, and configuration settings directly into your Codex project and global files.",
+   "useFor": [
+    "Move instruction files to Codex",
+    "Migrate setup into Codex projects"
+   ],
+   "example": "Migrate my custom skills and instructions into my Codex project folder."
   },
   {
    "key": "openai/skills/netlify-deploy",
@@ -1608,7 +2254,13 @@
    "files": 7,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Publish your web projects to Netlify using the command line for fast preview and production deployment.",
+   "useFor": [
+    "Deploy sites to Netlify",
+    "Publish repositories online"
+   ],
+   "example": "Deploy this web project to Netlify."
   },
   {
    "key": "openai/skills/notion-knowledge-capture",
@@ -1620,7 +2272,13 @@
    "files": 17,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Turn your chats and meeting notes into organized Notion pages, wikis, and decision logs.",
+   "useFor": [
+    "Convert chat notes into wikis",
+    "Create structured decision logs"
+   ],
+   "example": "Turn our recent chat into a Notion wiki page."
   },
   {
    "key": "openai/skills/notion-meeting-intelligence",
@@ -1633,7 +2291,13 @@
    "tags": [
     "research",
     "connect"
-   ]
+   ],
+   "plain": "Prepare meeting agendas and pre-read materials by gathering relevant context from Notion and research tools.",
+   "useFor": [
+    "Draft meeting agendas",
+    "Prepare attendee materials"
+   ],
+   "example": "Prepare a meeting brief and agenda based on my Notion notes."
   },
   {
    "key": "openai/skills/notion-research-documentation",
@@ -1646,7 +2310,13 @@
    "tags": [
     "research",
     "connect"
-   ]
+   ],
+   "plain": "Search across multiple Notion pages to synthesize comprehensive briefs, comparisons, and reports with citations.",
+   "useFor": [
+    "Research across Notion pages",
+    "Synthesize Notion reports"
+   ],
+   "example": "Research our product feedback in Notion and write a summary report."
   },
   {
    "key": "openai/skills/notion-spec-to-implementation",
@@ -1658,7 +2328,13 @@
    "files": 18,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Convert product requirement documents and feature specs from Notion into actionable implementation plans and tasks.",
+   "useFor": [
+    "Turn Notion specs into tasks",
+    "Create implementation plans"
+   ],
+   "example": "Turn this Notion feature spec into an actionable development plan."
   },
   {
    "key": "openai/skills/openai-docs",
@@ -1671,7 +2347,13 @@
    "tags": [
     "research",
     "connect"
-   ]
+   ],
+   "plain": "Find official OpenAI documentation, choose the best model, and get prompt upgrade guidance.",
+   "useFor": [
+    "Find OpenAI documentation",
+    "Choose the latest model"
+   ],
+   "example": "Which OpenAI model should I use for my text summarization app?"
   },
   {
    "key": "openai/skills/pdf",
@@ -1685,7 +2367,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Read, create, and review PDF documents while ensuring accurate layout and visual rendering.",
+   "useFor": [
+    "Generate PDF reports",
+    "Extract text from PDFs"
+   ],
+   "example": "Create a formatted PDF report from this text."
   },
   {
    "key": "openai/skills/playwright-interactive",
@@ -1698,7 +2386,13 @@
    "tags": [
     "media",
     "automate"
-   ]
+   ],
+   "plain": "Inspect and debug web user interfaces interactively using a persistent browser connection.",
+   "useFor": [
+    "Debug UI layouts",
+    "Test web interactions"
+   ],
+   "example": "Open this web page in the browser and debug the layout."
   },
   {
    "key": "openai-playwright",
@@ -1731,7 +2425,13 @@
    "files": 20,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Publish applications to the Render cloud platform by generating configuration files and dashboard links.",
+   "useFor": [
+    "Deploy apps to Render",
+    "Configure cloud hosting"
+   ],
+   "example": "Set up this web application to deploy on Render."
   },
   {
    "key": "openai/skills/screenshot",
@@ -1741,7 +2441,13 @@
    "desc": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
    "scripts": true,
    "files": 10,
-   "tags": []
+   "tags": [],
+   "plain": "Capture full-screen or regional screenshots of your desktop system when in-app capture tools are unavailable.",
+   "useFor": [
+    "Capture desktop screenshots",
+    "Take region screen grabs"
+   ],
+   "example": "Take a screenshot of my entire desktop screen."
   },
   {
    "key": "openai/skills/security-best-practices",
@@ -1755,7 +2461,13 @@
     "docs",
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Review supported code languages and frameworks to find security vulnerabilities and suggest best-practice improvements.",
+   "useFor": [
+    "Run security code reviews",
+    "Find security vulnerabilities"
+   ],
+   "example": "Run a security review on my Python code."
   },
   {
    "key": "openai/skills/security-ownership-map",
@@ -1769,7 +2481,13 @@
     "code",
     "research",
     "monitor"
-   ]
+   ],
+   "plain": "Analyze your git repository history to map code ownership, calculate bus factors, and identify sensitive hotspots.",
+   "useFor": [
+    "Analyze code ownership",
+    "Calculate repository bus factor"
+   ],
+   "example": "Analyze my git history to map sensitive code ownership."
   },
   {
    "key": "security-threat-model",
@@ -1799,7 +2517,13 @@
    "desc": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry CLI; perform read-only queries using the `sentry` command.",
    "scripts": false,
    "files": 4,
-   "tags": []
+   "tags": [],
+   "plain": "Inspect recent production errors and check application health metrics using Sentry commands.",
+   "useFor": [
+    "Check Sentry error logs",
+    "Inspect production issues"
+   ],
+   "example": "Show me the most recent production errors from Sentry."
   },
   {
    "key": "openai/skills/speech",
@@ -1812,7 +2536,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Generate realistic text-to-speech narration and voiceover audio files using the OpenAI Audio API.",
+   "useFor": [
+    "Generate speech audio",
+    "Create voiceover narration"
+   ],
+   "example": "Turn this text script into a voiceover audio file."
   },
   {
    "key": "openai/skills/transcribe",
@@ -1824,7 +2554,13 @@
    "files": 6,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Convert audio and video recordings into written text with optional speaker identification and meeting transcripts.",
+   "useFor": [
+    "Transcribe interview audio",
+    "Extract text from recordings"
+   ],
+   "example": "Transcribe this meeting recording into text."
   },
   {
    "key": "vercel-deploy",
@@ -1857,7 +2593,13 @@
    "files": 20,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Bootstrap and design modern desktop applications with C# and the Windows App SDK.",
+   "useFor": [
+    "Build WinUI 3 apps",
+    "Troubleshoot XAML layouts"
+   ],
+   "example": "Set up a new WinUI 3 desktop application project."
   },
   {
    "key": "openai/skills/yeet",
@@ -1870,7 +2612,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Stage your changes, commit them, push the code, and open a GitHub pull request in one quick flow.",
+   "useFor": [
+    "Create GitHub pull requests",
+    "Push and open PRs"
+   ],
+   "example": "Stage my changes and open a GitHub pull request."
   },
   {
    "key": "openai/skills/imagegen",
@@ -1884,7 +2632,13 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Generate or edit raster bitmap images such as photos, illustrations, and mockups using AI.",
+   "useFor": [
+    "Create AI bitmap images",
+    "Generate visual mockups"
+   ],
+   "example": "Generate a realistic photo mockup of a coffee mug."
   },
   {
    "key": "openai/skills/plugin-creator",
@@ -1896,7 +2650,13 @@
    "files": 4,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Create and structure new plugin directories and update marketplace metadata for Codex.",
+   "useFor": [
+    "Scaffold Codex plugins",
+    "Update marketplace metadata"
+   ],
+   "example": "Create a new local plugin structure for Codex."
   },
   {
    "key": "openai/skills/skill-creator",
@@ -3665,9 +4425,9 @@
    "name": "ce-resolve-pr-feedback",
    "repo": "EveryInc/compound-engineering-plugin",
    "path": "skills/ce-resolve-pr-feedback",
-   "desc": "Resolve PR review feedback. Use when addressing feedback already left on a PR. Not for reviewing the code before feedback exists; that is ce-code-review.",
-   "scripts": false,
-   "files": 9,
+   "desc": "Judge PR feedback centrally, apply valid fixes, and complete review conversations with publication verified. Use when addressing feedback already left on a PR, preparing local fixes for a caller to publish, or completing a saved feedback batch. Use ce-code-review for reviewing code before feedback exists.",
+   "scripts": true,
+   "files": 12,
    "tags": [
     "code"
    ]

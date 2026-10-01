@@ -1,95 +1,65 @@
 {
- "updated": "2026-10-01T06:04:41.632Z",
+ "updated": "2026-10-01T22:45:07.891Z",
  "items": [
   {
-   "repo": "nanaism/yomiyasu",
-   "stars": 588,
-   "desc": "AI生成された文章の不自然さを取り除き、人間にとって自然な日本語へ書き直すためのAgent Skill",
-   "created": "2026-09-30T11:49:32Z",
-   "topics": [
-    "agent-skills",
-    "ai-writing",
-    "claude-code",
-    "codex"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Avinash-jetwani/jevmem",
-   "stars": 104,
-   "desc": "Automatic project memory for Claude Code. Also works with Cursor and Codex. Now in Anthropic's Claude plugin directory.",
-   "created": "2026-09-22T11:47:24Z",
-   "topics": [
-    "agent-memory",
-    "ai-memory",
-    "claude",
-    "claude-code"
-   ],
+   "repo": "earendil-works/pi",
+   "stars": 111173,
+   "desc": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+   "created": "2025-08-09T14:03:50Z",
+   "topics": [],
    "lang": "TypeScript",
    "sources": [
-    "new on GitHub"
+    "GitHub Trending (daily)"
    ]
   },
   {
-   "repo": "RectangleStory/Superpowers_Multi_AI",
-   "stars": 100,
-   "desc": "⚡ Modular prompt-engineering framework for AI Agents (Cursor, Claude Code, Copilot). Forces structured SDLC, linear execution, context isolation, and systematic debugging via a standalone Windows launcher. Stop vibe coding, start agentic discipline! 🚀",
-   "created": "2026-09-14T20:11:30Z",
+   "repo": "cursor/plugins",
+   "stars": 9312,
+   "desc": "Cursor plugin specification and official plugins",
+   "created": "2026-01-23T01:57:42Z",
+   "topics": [],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "agent-substrate/substrate",
+   "stars": 4096,
+   "desc": "Agent Substrate: the core system",
+   "created": "2026-05-13T19:02:38Z",
+   "topics": [],
+   "lang": "Go",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "androoAGI/starnet",
+   "stars": 866,
+   "desc": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
+   "created": "2026-06-14T23:11:55Z",
    "topics": [
+    "agent-harness",
     "ai",
-    "ai-agent",
     "ai-agents",
-    "ai-coding"
+    "byok"
    ],
-   "lang": null,
+   "lang": "JavaScript",
    "sources": [
-    "new on GitHub"
+    "GitHub Trending (weekly)"
    ]
   },
   {
-   "repo": "hsj576/virtual-ai-infra-team",
-   "stars": 99,
-   "desc": "An open-source virtual AI Infra team that discovers, benchmarks, and safely upgrades local LLM inference—with independent quality gates, a stable OpenAI-compatible API, and automatic rollback.",
-   "created": "2026-09-08T08:17:47Z",
+   "repo": "edenfunf/reelmimic",
+   "stars": 685,
+   "desc": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
+   "created": "2026-09-28T19:14:59Z",
    "topics": [
-    "llm-inference",
-    "model-serving",
-    "speculative-decoding"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "IvenKooLab/loci",
-   "stars": 98,
-   "desc": "A queryable second brain over your scattered notes and docs - hybrid retrieval (vector + BM25), section-level citations, and an MCP server so AI agents can use it. ~300 lines, no LangChain.",
-   "created": "2026-09-03T16:50:08Z",
-   "topics": [
+    "2d-animation",
     "ai-agents",
-    "bm25",
-    "chromadb",
-    "cross-ide"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "vigorlee/eidra-agent",
-   "stars": 95,
-   "desc": "Persona agents with explicit memory, retrieval, adversarial smoke tests and a practical post-training roadmap.",
-   "created": "2026-09-09T05:21:18Z",
-   "topics": [
-    "adversarial-evaluation",
-    "agent",
-    "llm",
-    "preference-learning"
+    "ai-video",
+    "animation"
    ],
    "lang": "JavaScript",
    "sources": [
@@ -97,47 +67,15 @@
    ]
   },
   {
-   "repo": "architectds/collabosm",
+   "repo": "INSANE0777/Awwwards-mcp",
    "stars": 94,
-   "desc": "A local app that rents a GPU in your own Colab account and serves Qwen3.8 on it: 27B on an A100-40G, or Flash-Next (125B-A6B MoE) on an A100-80G. The cost is shown before it starts; chat with images; Codex or any OpenAI client uses a fixed local /v1. Auto-stop, CU ledger, live prefill/decode. Windows, macOS, Linux.",
-   "created": "2026-09-25T00:46:02Z",
+   "desc": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode…) design inspiration from award-winning websites — search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
+   "created": "2026-09-18T10:57:09Z",
    "topics": [
-    "colab",
-    "exllamav3",
-    "google-colab",
-    "gpu"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Razshy/Wiggle",
-   "stars": 91,
-   "desc": "Wiggle is a sandbox to run code in",
-   "created": "2026-09-04T06:49:23Z",
-   "topics": [
-    "anthropic",
-    "anthropic-ai",
-    "anthropic-claude",
-    "anthropic-skills"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "1173591564/Dynamics-memory",
-   "stars": 81,
-   "desc": "LLM agent 的有界自纠错长期记忆层：把连续、含矛盾的项目交互日志蒸馏成有界、可自更新的记忆库。Bounded, self-correcting long-term memory for LLM agents — candidate pool + value dynamics + tension adjudication + causal-replay evals.",
-   "created": "2026-09-15T11:16:41Z",
-   "topics": [
-    "agent-memory",
-    "agents",
-    "llm",
-    "llm-agents"
+    "ai-agents",
+    "awwwards",
+    "claude-code",
+    "codex"
    ],
    "lang": "TypeScript",
    "sources": [
@@ -145,47 +83,15 @@
    ]
   },
   {
-   "repo": "nirbhay41120003/EchoMind",
-   "stars": 81,
-   "desc": "Local-first voice memory assistant — capture speech, transcribe live, and ask a private RAG chatbot grounded in what you've actually said. No cloud required.",
-   "created": "2026-09-16T17:16:52Z",
-   "topics": [
-    "accessibility",
-    "hearing-assistance",
-    "llama-cpp",
-    "llama-cpp-python"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "bnsd55/jevmlx",
+   "repo": "ArtificialAnalysis/aa-agentperf-local",
    "stars": 69,
-   "desc": "Jev-style parallel constrained decisions for any MLX model on Apple Silicon. Typed, schema-valid JSON in one forward pass.",
-   "created": "2026-09-17T10:20:12Z",
+   "desc": "Benchmark local LLM serving by replaying real agent trajectories",
+   "created": "2026-09-26T03:11:59Z",
    "topics": [
-    "apple-silicon",
-    "jev",
-    "local-llm",
-    "local-models"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "vaelkeep/hermes-paper-agent",
-   "stars": 67,
-   "desc": "A nightly newspaper that writes itself: an agent runs the desks, the figures come from code, and it refuses to publish an edition with marks in it.",
-   "created": "2026-09-03T02:15:43Z",
-   "topics": [
-    "agent",
-    "cron",
-    "daily-briefing",
-    "hermes"
+    "ai-agents",
+    "artificial-analysis",
+    "benchmark",
+    "inference"
    ],
    "lang": "Python",
    "sources": [
@@ -209,22 +115,6 @@
    ]
   },
   {
-   "repo": "ArtificialAnalysis/aa-agentperf-local",
-   "stars": 62,
-   "desc": "Benchmark local LLM serving by replaying real agent trajectories",
-   "created": "2026-09-26T03:11:59Z",
-   "topics": [
-    "ai-agents",
-    "artificial-analysis",
-    "benchmark",
-    "inference"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
    "repo": "bgts-ai-org/bgts-context-engine",
    "stars": 61,
    "desc": "Deterministic code-graph context engine for AI coding agents - PostgreSQL + Apache AGE + pgvector, MCP & REST, no LLM in the loop.",
@@ -241,17 +131,17 @@
    ]
   },
   {
-   "repo": "weekitmo/herdr-pocket",
-   "stars": 45,
-   "desc": "A Flutter client for herdr: a status board and live terminal for the coding agents on your own machines. Over SSH, with no bridge binary to install.",
-   "created": "2026-09-16T01:31:28Z",
+   "repo": "VecSzn/lobes",
+   "stars": 43,
+   "desc": "An experimental local AI runtime. It relays one request through five small models with one job each, on a single 8 GB consumer GPU.",
+   "created": "2026-09-14T07:49:13Z",
    "topics": [
-    "ai-agents",
-    "ai-coding",
-    "android",
-    "claude-code"
+    "consumer-gpu",
+    "gguf",
+    "llama-cpp",
+    "llm-inference"
    ],
-   "lang": "Dart",
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
@@ -268,6 +158,22 @@
     "gguf"
    ],
    "lang": null,
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "abacusai/abacusai-bot",
+   "stars": 41,
+   "desc": "100% free, open-source personal agents for your messaging apps, tools, and services",
+   "created": "2026-09-11T07:04:16Z",
+   "topics": [
+    "agent",
+    "ai",
+    "ai-agents",
+    "android"
+   ],
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]
