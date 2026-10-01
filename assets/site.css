@@ -586,3 +586,8 @@ input.note { width: auto; flex: 1; min-width: 200px; padding: .5rem .7rem; font-
 .local-card .foot { margin-top: auto; padding-top: .9rem; justify-content: space-between; }
 .cmd { display: flex; align-items: center; gap: .5rem; padding: .35rem .35rem .35rem .8rem; border: 1px solid var(--line-2); border-radius: 10px; background: var(--bg-2); }
 .cmd code { flex: 1; min-width: 0; overflow-wrap: anywhere; font: .82rem var(--mono); color: var(--fg); background: none; border: 0; padding: 0; }
+
+/* ---------- v10: audit fixes ---------- */
+.more-row { justify-content: center; align-items: center; gap: 1rem; margin-top: 1.4rem; }
+.card .head { min-width: 0; } .card .head > h3 { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .card .head { flex-wrap: wrap; } .card .head .tag { white-space: normal; line-height: 1.3; } }

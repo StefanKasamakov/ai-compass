@@ -495,7 +495,7 @@ function toolDetail(x, all, tags, tips) {
 pages.explore = async () => {
   const { all, tags, tips } = await catalog();
   const params = new URLSearchParams(location.search);
-  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "easy" };
+  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "easy", shown: 24 };
   const q = $("#repoQ"); q.value = params.get("q") || "";
   const TYPES = [["all", "Everything"], ["app", "Ready-made apps"], ["repo", "Open-source projects"], ["skill", "Skills"], ["mcp", "Connectors (MCP)"]];
   const matches = (x) => (st.goal === "all" || x.tags.includes(st.goal)) && (st.level === "all" || x.level === st.level) && (st.type === "all" || x.kind === st.type || (st.type === "skill" && x.kind === "collection"));
@@ -513,15 +513,17 @@ pages.explore = async () => {
       : (LV[a.level] ?? 1) - (LV[b.level] ?? 1) || (b.kind === "app") - (a.kind === "app") || b.stars - a.stars));
     const goal = tags.goals.find((x) => x.id === st.goal);
     $("#catWhat").innerHTML = goal ? `<div class="callout ok" style="margin-bottom:1.2rem">${icon(goal.icon)}<div><b>${esc(goal.label)}.</b> ${esc(goal.hint)}. ${list.length} tools.</div></div>` : `<p class="muted" style="margin:0 0 1rem">${list.length} tools</p>`;
-    $("#repoGrid").innerHTML = list.map((x) => toolCard(x, tags)).join("") || `<div class="empty">Nothing matches yet. Try fewer filters or another word.</div>`;
+    $("#repoGrid").innerHTML = list.slice(0, st.shown).map((x) => toolCard(x, tags)).join("") || `<div class="empty">Nothing matches yet. Try fewer filters or another word.</div>`;
+    $("#repoMore").innerHTML = list.length > st.shown ? `<button class="btn" id="moreTools">Show ${Math.min(24, list.length - st.shown)} more</button><span class="muted mono" style="font-size:.8rem">${st.shown} of ${list.length}</span>` : "";
+    const more = $("#moreTools"); if (more) more.onclick = () => { st.shown += 24; draw(); };
     sync();
   };
   const counts = (id) => all.filter((x) => x.tags.includes(id)).length;
-  dropdown($("#goalPick"), "I want to", [["all", "Anything"], ...tags.goals.map((x) => [x.id, `${x.label} (${counts(x.id)})`])], (v) => { st.goal = v; draw(); }, st.goal);
-  dropdown($("#levelPick"), "Skill level", [["all", "Any level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; draw(); }, st.level);
-  dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; draw(); }, st.type);
-  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most stars"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; draw(); }, "easy");
-  q.oninput = draw;
+  dropdown($("#goalPick"), "I want to", [["all", "Anything"], ...tags.goals.map((x) => [x.id, `${x.label} (${counts(x.id)})`])], (v) => { st.goal = v; st.shown = 24; draw(); }, st.goal);
+  dropdown($("#levelPick"), "Skill level", [["all", "Any level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; st.shown = 24; draw(); }, st.level);
+  dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; st.shown = 24; draw(); }, st.type);
+  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most stars"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; st.shown = 24; draw(); }, "easy");
+  q.oninput = () => { st.shown = 24; draw(); };
 
   const dlg = $("#toolDlg");
   const open = (key) => {
