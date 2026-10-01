@@ -1,0 +1,96 @@
+[
+ {
+  "a": "chatgpt", "b": "claude",
+  "verdict": "Both are excellent everyday assistants and cost the same. ChatGPT does more kinds of things in one app, including images and voice. Claude is the stronger pick for careful writing, long documents and code.",
+  "pickA": ["You want one app that also makes images and talks by voice", "You like having the widest choice of add-ons and custom assistants", "People around you already use it and share tips"],
+  "pickB": ["Most of your work is writing, editing or reading long reports", "You want help with code, or plan to use Claude Code", "You prefer answers that are careful and say when they are unsure"],
+  "both": "Many people keep both free plans and pay for the one they open more often."
+ },
+ {
+  "a": "chatgpt", "b": "gemini",
+  "verdict": "ChatGPT is the better general assistant on its own. Gemini wins if your email, files and calendar already live in Google, because it can read them and it is included in cheaper Google plans.",
+  "pickA": ["You want the strongest all-round answers for writing and problem solving", "You do not use Gmail or Google Docs much", "You want image creation and voice chat in the same place"],
+  "pickB": ["Your mail and documents are in Gmail, Docs and Drive", "You want a capable assistant at a lower monthly price", "You often need fresh answers backed by Google Search"]
+ },
+ {
+  "a": "claude", "b": "gemini",
+  "verdict": "Claude is the better writer and coder. Gemini is the better helper inside Google's apps and the cheaper way to get a paid plan.",
+  "pickA": ["You write, edit or analyse long documents", "You code or want an AI to work on a software project", "Quality of the answer matters more than price"],
+  "pickB": ["You want AI inside Gmail, Docs and Drive", "You need a low-cost paid plan", "You want answers that draw on Google Search"]
+ },
+ {
+  "a": "chatgpt", "b": "perplexity",
+  "verdict": "These are different tools. ChatGPT is for creating and thinking things through. Perplexity is for looking things up, with links to the sources so you can check them.",
+  "pickA": ["You want to write, rewrite, plan or brainstorm", "You want to upload a file and work on it", "You need images or voice chat"],
+  "pickB": ["You are researching a question and want to see where the answer came from", "You compare products or prices before buying", "You want a quick, sourced summary of recent news"],
+  "both": "A common setup is Perplexity for finding facts and ChatGPT or Claude for turning them into a text."
+ },
+ {
+  "a": "chatgpt", "b": "copilot",
+  "verdict": "Copilot is the convenient choice if you live in Word, Excel and Outlook, because it works inside them with a Microsoft 365 plan. As a standalone assistant, ChatGPT is more capable and more flexible.",
+  "pickA": ["You want the best assistant regardless of which office software you use", "You want images, voice chat and custom assistants", "You do not pay for Microsoft 365"],
+  "pickB": ["Your work happens in Word, Excel, Outlook or Teams", "You already pay for Microsoft 365", "You want quick answers from the Windows taskbar or Edge"]
+ },
+ {
+  "a": "cursor", "b": "github-copilot",
+  "verdict": "Both are for people who write code. GitHub Copilot is the cheaper helper that lives inside the editor you already use. Cursor is a whole editor built around AI and goes further when you want an agent to change many files.",
+  "pickA": ["You want the AI to plan and make changes across a whole project", "You are happy to switch to a new code editor", "You are willing to pay more for heavier use"],
+  "pickB": ["You want to keep VS Code or your current editor", "You mostly want suggestions as you type and a chat for questions", "You want the lowest price, or a useful free plan"]
+ },
+ {
+  "a": "lovable", "b": "bolt-new",
+  "verdict": "Both build a working website or app from a description, with no coding. Lovable is the gentler start for a complete beginner. Bolt.new shows more of the code and hosts the result for you, which helps if a developer will take over later.",
+  "pickA": ["You have never built a website and want the simplest path", "You want a finished-looking result from a short description", "You are making a landing page, a prototype or a small internal tool"],
+  "pickB": ["You want a monthly free allowance to experiment with", "You or a colleague can read code and want to see it", "You want to host the result with one click"],
+  "both": "With either one, have someone check the app for security problems before real customer data goes into it."
+ },
+ {
+  "a": "midjourney", "b": "ideogram",
+  "verdict": "Midjourney makes the most artistic, polished pictures but has no free plan. Ideogram is free to start and is the one to use when the picture must contain readable text, such as a poster or logo.",
+  "pickA": ["You want striking artwork, illustrations or concept images", "Style and mood matter more than exact wording in the picture", "You are fine paying from the first day"],
+  "pickB": ["You need correct lettering in a poster, logo or social graphic", "You want to try for free first", "You need the same character across several images"]
+ },
+ {
+  "a": "zapier", "b": "make",
+  "verdict": "Both connect your apps so routine work happens by itself. Zapier is easier to learn and connects to the most apps. Make is cheaper for the same amount of work and more flexible, but takes longer to learn.",
+  "pickA": ["You are new to automation and want it working in minutes", "You need a less common app that others may not support", "You only automate a handful of simple tasks"],
+  "pickB": ["You run many automations and want to keep the cost down", "Your flows have several branches and conditions", "You are comfortable spending time to learn a visual builder"]
+ },
+ {
+  "a": "gamma", "b": "canva-ai",
+  "verdict": "Gamma is the fastest way from an outline to a finished slide deck. Canva is a full design tool: better when you also need social posts, flyers and brand graphics, and when you want to control the layout yourself.",
+  "pickA": ["You need a presentation quickly and care more about content than design", "You start from notes, an outline or a PDF", "You want to export to PowerPoint or Google Slides"],
+  "pickB": ["You design many kinds of things, not only slides", "You want templates and to move every element yourself", "Your team already keeps its brand colours and logos in Canva"]
+ },
+ {
+  "a": "suno", "b": "udio",
+  "verdict": "Both turn a short description into a full song with vocals. Suno is the practical choice today: Udio no longer lets you download songs, so they can only be played on Udio.",
+  "pickA": ["You want to download the song and use it in a video or at an event", "You want the larger free daily allowance", "You may need commercial rights later, on a paid plan"],
+  "pickB": ["You only want to listen and share inside Udio", "You like extending and remixing songs you made there", "You want to compare how the two sound on the same idea"]
+ },
+ {
+  "a": "otter", "b": "fireflies",
+  "verdict": "Both record a meeting, write the transcript and send a summary. Otter is simple and good for one person. Fireflies suits a team that wants to search past meetings and share what was decided.",
+  "pickA": ["You mainly want transcripts and summaries for yourself", "You want a generous free allowance of meeting minutes", "You want the simplest setup"],
+  "pickB": ["A team needs to search past meetings and share action items", "You want action items sent to the team after each call", "You are fine with a bot joining the call"],
+  "both": "Whichever you use, tell the other people that the meeting is being recorded."
+ },
+ {
+  "a": "runway", "b": "kling-ai",
+  "verdict": "Both make short video clips from text or a picture. Runway is also an editor, so you can remove objects and add sound in the same place. Kling AI focuses on realistic clips and has a free plan to try it.",
+  "pickA": ["You want to edit video as well as generate it", "You need to remove or replace things in existing footage", "You want music, voice and sound effects in one tool"],
+  "pickB": ["You mainly want realistic-looking clips", "You want to try on a free plan first", "You want to copy a person's movement onto a character"]
+ },
+ {
+  "a": "grammarly", "b": "quillbot",
+  "verdict": "Grammarly corrects your writing as you type, in almost every app. QuillBot is for rewording and summarising text you paste in. They solve different problems and many people use both.",
+  "pickA": ["You want mistakes fixed while you write emails and documents", "You want help with tone: more polite, more confident, shorter", "You want it to work everywhere without copying text around"],
+  "pickB": ["You want to say the same thing in different words", "You want an article summarised into key points", "You need citations generated for school work"]
+ },
+ {
+  "a": "heygen", "b": "synthesia",
+  "verdict": "Both make a video of a lifelike presenter reading your script. HeyGen is stronger for marketing and for translating videos with matching lip movement. Synthesia is built for company training and gives more free minutes.",
+  "pickA": ["You make sales, marketing or social videos", "You want to translate an existing video into other languages", "You want a digital version of yourself as the presenter"],
+  "pickB": ["You make training or explainer videos for a company", "You want to turn documents or slides into video", "You want more free video minutes each month"]
+ }
+]

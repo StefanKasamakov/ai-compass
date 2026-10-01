@@ -91,6 +91,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with: { ref: main }
+      - name: Build comparison pages
+        run: node agent/compare.mjs
       - name: Build site folder
         run: mkdir _site && cp -r *.html assets data _site/ && cp sitemap.xml robots.txt CNAME _site/ && (cp feed.xml _site/ 2>/dev/null || true)
       - uses: actions/configure-pages@v5

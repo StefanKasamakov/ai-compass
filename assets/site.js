@@ -86,7 +86,7 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["models", "Choose AI", "models.html"], ["explore", "Find tools", "explore.html"], ["local", "Local models", "local.html"],
+  ["models", "Choose AI", "models.html"], ["explore", "Find tools", "explore.html"], ["compare", "Compare", "compare.html"], ["local", "Local models", "local.html"],
   ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["skills", "Skills", "skills.html"], ["github", "GitHub 101", "github.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
   ["news", "News", "news.html"],
 ];
@@ -111,7 +111,7 @@ function shell() {
       <p style="max-width:40ch">A plain-English guide to AI models and tools, for people who just want to get things done. Independent, no ads.</p>
       <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
     <nav class="foot-cols" aria-label="Footer">
-      <div><div class="field-label">Use AI</div><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
+      <div><div class="field-label">Use AI</div><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
       <div><div class="field-label">Learn</div><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
       <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
       <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
@@ -158,6 +158,7 @@ async function searchIndex() {
     { t: "Connect an app to Claude or ChatGPT", sub: "MCP setup", href: "mcp.html#setup", k: "guide", ic: "plug" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
     { t: "Benchmarks: what each model is good at", sub: "Charts", href: "benchmarks.html", k: "guide", ic: "trend" },
+    { t: "Compare: ChatGPT vs Claude and other match-ups", sub: "Short answers", href: "compare.html", k: "guide", ic: "layout" },
     { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
     { t: "Is this GitHub project safe?", sub: "Guide", href: "github.html#judge", k: "guide", ic: "shield" },
     ...(m?.models || []).map((x) => ({ t: x.name, sub: `${m.providers[x.p].name} · ${x.tier}`, href: `models.html#m-${x.id}`, k: "model", ic: "cpu" })),
@@ -310,6 +311,8 @@ const pages = {
     // the names a newcomer has heard of, not whatever is trending among developers this week
     const START = ["chatgpt", "claude", "gemini", "perplexity", "notebooklm", "gamma"];
     $("#homeHot").innerHTML = START.map((id) => all.find((x) => x.key === id)).filter(Boolean).map((x) => toolCard(x, tags)).join("");
+    const pairs = CATALOG.pairs.slice(0, 6), nm = (id) => shortName(all.find((y) => y.key === id)?.name || id);
+    $("#homeVs").innerHTML = pairs.map((p) => `<a class="chip" href="${p.a}-vs-${p.b}.html">${esc(nm(p.a))} vs ${esc(nm(p.b))}</a>`).join("") + `<a class="chip" href="compare.html">All comparisons ${icon("arrow")}</a>`;
     const news = newsOrder((n?.items || []).filter((x) => x.ai));
     const seen = new Set(); // the same launch often arrives from two sources with the same picture
     $("#feed").innerHTML = [...news.filter(newsPic), ...news.filter((x) => !newsPic(x))].filter((x) => !x.image || (!seen.has(x.image) && seen.add(x.image))).slice(0, 3).map((x) => newsCard(x)).join("") || `<p class="muted">News is on its way.</p>`;
@@ -345,7 +348,6 @@ const pages = {
   async skills() {},
   local: () => localModels(),
   benchmarks: async () => benchmarks(await load("models")),
-  about() {},
 
   async github() {
     const [tools, g] = await Promise.all([load("tools"), load("github")]);
@@ -422,14 +424,14 @@ const iconFor = (x, size = 40) => x.kind === "app"
 let CATALOG;
 async function catalog() {
   if (CATALOG) return CATALOG;
-  const [ex, g, dl, tools, tags, tips, apps] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps")]);
+  const [ex, g, dl, tools, tags, tips, apps, pairs] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps"), load("compare")]);
   const inExplain = new Set(Object.keys(ex || {}));
   const all = [
     ...(apps || []).map(fromApp),
     ...Object.values(ex || {}).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
     ...(tools || []).filter((t) => t.type === "skill" || t.type === "mcp" || (t.type === "collection" && !inExplain.has(t.repo))).map((t) => fromTool(t, g?.repos?.[t.repo])),
   ];
-  return (CATALOG = { all, tags, tips });
+  return (CATALOG = { all, tags, tips, pairs: pairs || [] });
 }
 
 // Plain-words search: prefix matching + goal words, so "summarize pdf reports" finds document tools
@@ -508,6 +510,7 @@ function toolDetail(x, all, tags, tips) {
     ${x.caution ? `<div class="callout" style="margin-top:1.4rem">${icon("alert")}<div><b>Good to know.</b> ${md(x.caution)}</div></div>` : ""}
     ${x.why ? `<details class="more"><summary>More detail</summary><p>${md(x.what)}</p><p>${md(x.why)}</p></details>` : ""}
     ${tips?.[x.key]?.length ? `<h3 style="margin-top:1.4rem">Tips from readers</h3>${tips[x.key].map((t) => `<blockquote class="tip-q"><p>${esc(t.body)}</p><small class="muted">${esc(t.name || "A reader")} · ${ago(t.date)}</small></blockquote>`).join("")}` : ""}
+    ${vsLinks(x, all)}
     ${alts.length ? `<h3 style="margin-top:1.4rem">Similar tools</h3><div class="row">${alts.map((a) => `<button class="chip" data-open="${esc(a.key)}">${esc(a.name)}</button>`).join("")}</div>` : ""}
     <div class="row" style="margin-top:1.6rem">${voteBtn(VOTES, x.key, " Recommend")}${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">${icon("external")}Open ${esc(x.name)}</a>` : ""}${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
       ${link ? `<a class="btn" href="${link}" target="_blank" rel="noopener">${icon("github")}Open on GitHub</a>` : ""}
@@ -566,6 +569,14 @@ pages.explore = async () => {
   const hash = decodeURIComponent(location.hash.slice(1));
   if (hash) open(hash);
 };
+
+const shortName = (n) => n.replace(/\s*\(.*\)$/, "");
+function vsLinks(x, all) {
+  const mine = (CATALOG?.pairs || []).filter((p) => p.a === x.key || p.b === x.key);
+  if (!mine.length) return "";
+  const nm = (id) => shortName(all.find((y) => y.key === id)?.name || id);
+  return `<h3 style="margin-top:1.4rem">Compare</h3><div class="row">${mine.map((p) => `<a class="chip" href="${p.a}-vs-${p.b}.html">${esc(nm(p.a))} vs ${esc(nm(p.b))}</a>`).join("")}</div>`;
+}
 
 // Home: type what you want to do, get three answers right away
 async function askBox() {
