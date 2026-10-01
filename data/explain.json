@@ -7497,5 +7497,413 @@
   "repo": "mrtinkz/ai-charter",
   "at": "2026-09-30",
   "source": "trending"
+ },
+ "nanaism/yomiyasu": {
+  "cat": "harness",
+  "kind": "AI Japanese Editor",
+  "what": "An agent skill that rewrites AI-generated Japanese text to make it natural, readable, and free of typical AI phrasing.",
+  "why": "AI-generated Japanese often suffers from unnatural sentence structures, excessive bullet points, and vague metaphors. Reach for this to automatically polish documentation, technical articles, and business writing in Claude Code or Cursor.",
+  "level": "setup",
+  "start": "npx skills add nanaism/yomiyasu",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [],
+  "plain": "An AI writing helper that removes robotic phrasing from generated Japanese text.",
+  "tags": [
+   "docs",
+   "supercharge"
+  ],
+  "useFor": [
+   "Rewrite AI-generated Japanese to sound natural and human",
+   "Check text for AI-sounding patterns using a built-in linter",
+   "Adjust writing tone for technical articles or business documents"
+  ],
+  "steps": [
+   "Run `npx skills add nanaism/yomiyasu` to install the skill into your coding agent environment.",
+   "Ask your AI agent to rewrite your draft by pasting the text and giving instructions."
+  ],
+  "repo": "nanaism/yomiyasu",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "Avinash-jetwani/jevmem": {
+  "cat": "memory",
+  "kind": "Claude Code memory",
+  "what": "Automatic project memory manager that records decisions, constraints, and dead ends for Claude Code.",
+  "why": "Helps coding agents remember project context and failed approaches across sessions without manual prompt updates.",
+  "level": "setup",
+  "start": "Plugins → Discover → jevmem → Add",
+  "caution": "Reuses consumer subscription logins or plugin directories which may carry maintenance or provider policy caveats.",
+  "alts": [
+   "thedotmack/claude-mem",
+   "mem0ai/mem0",
+   "getzep/graphiti"
+  ],
+  "packages": [
+   "jevmem"
+  ],
+  "plain": "Automatically remembers your Claude Code project decisions and past mistakes so the AI does not repeat them.",
+  "tags": [
+   "knowledge",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Save coding decisions and failed approaches automatically",
+   "Recall relevant project rules during new sessions",
+   "Block restricted commands using guardrails"
+  ],
+  "steps": [
+   "Open the Claude app and navigate to Plugins, then Discover.",
+   "Find jevmem and select Add.",
+   "Follow the on-screen setup instructions to finish installation."
+  ],
+  "repo": "Avinash-jetwani/jevmem",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "RectangleStory/Superpowers_Multi_AI": {
+  "cat": "harness",
+  "kind": "Workflow framework for AI",
+  "what": "A modular prompt-engineering framework that forces coding agents like Claude Code and Cursor to follow a strict software development life cycle.",
+  "why": "Stops AI coding assistants from rushing into chaotic, hallucinating loops by enforcing planning, step-by-step checklists, and structured debugging.",
+  "level": "setup",
+  "start": "Run the executable `run_launcher.exe` file inside your project environment.",
+  "caution": "Requires running an external executable (`run_launcher.exe`) on Windows, and modifies global tool configurations in your project repository.",
+  "alts": [
+   "obra/superpowers",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A modular set of rules that forces AI coding assistants to plan before writing code.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Force AI to brainstorm architectural designs before coding",
+   "Generate strict step-by-step implementation plans",
+   "Execute methodical root cause debugging"
+  ],
+  "steps": [
+   "Download and extract the package into your project's root directory.",
+   "Run `run_launcher.exe` inside your project environment.",
+   "Choose your target AI tool from the interactive menu to generate configuration files."
+  ],
+  "repo": "RectangleStory/Superpowers_Multi_AI",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "hsj576/virtual-ai-infra-team": {
+  "cat": "local",
+  "kind": "local model optimizer",
+  "what": "An open-source virtual AI team that discovers, benchmarks, and safely upgrades local LLM inference on Apple Silicon with independent quality gates and automatic rollback.",
+  "why": "Optimizing local LLM serving stacks and finding better speculative decoding or quantization methods usually requires manual benchmarking, testing, and rollback. Use this when you want an automated loop to test and safely upgrade local model performance without breaking your application's API.",
+  "level": "setup",
+  "start": "./scripts/bootstrap-macos.sh",
+  "caution": "Requires an Apple Silicon Mac with at least 32 GB of unified memory (48 GB recommended) and Python 3.11–3.13. Preview status.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "An automated system for Apple Silicon that tests faster local AI setups and safely switches to them if they pass quality checks.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Benchmark local AI inference performance",
+   "Automatically upgrade local model runtimes safely",
+   "Run local models via an OpenAI-compatible API"
+  ],
+  "steps": [
+   "Clone the repository and enter the folder using `git clone https://github.com/hsj576/virtual-ai-infra-team.git`.",
+   "Run the bootstrap script to create a local environment using `./scripts/bootstrap-macos.sh`.",
+   "Start the local AI service using `./scripts/start-local-ai.sh` and open the dashboard in your browser."
+  ],
+  "repo": "hsj576/virtual-ai-infra-team",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "IvenKooLab/loci": {
+  "cat": "memory",
+  "kind": "Second Brain Search",
+  "what": "A queryable second brain for your notes and docs that provides hybrid retrieval and section-level citations.",
+  "why": "To search across scattered markdown notes, PDFs, Word docs, and chat logs using vector and BM25 search, or let AI agents access them via an MCP server.",
+  "level": "setup",
+  "start": "pip install \"loci-rag[pdf,docx]\"",
+  "caution": "Requires configuring an external OpenAI-compatible API or local model for embeddings and chat responses.",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "HKUDS/LightRAG",
+   "infiniflow/ragflow"
+  ],
+  "packages": [
+   "loci-rag"
+  ],
+  "plain": "Search all your notes, documents, and chat logs at once using hybrid keyword and meaning search.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "research"
+  ],
+  "useFor": [
+   "Search across multiple Obsidian vaults and project directories",
+   "Ask questions over your personal notes and documents",
+   "Connect an AI agent to your personal knowledge base"
+  ],
+  "steps": [
+   "Install the package with `pip install \"loci-rag[pdf,docx]\"`",
+   "Copy the example configuration file using `cp config.example.toml config.toml` and fill in your values",
+   "Index your files by running `loci ingest`",
+   "Ask questions about your notes using `loci ask \"what did I write about X?\"`"
+  ],
+  "repo": "IvenKooLab/loci",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "vigorlee/eidra-agent": {
+  "cat": "coding",
+  "kind": "Persona Agent Prototype",
+  "what": "An engineering prototype for persona agents, adversarial evaluation, and preference data export.",
+  "why": "Explore consistent persona behavior, persistent memory, and preference data generation for AI models without needing heavy dependencies.",
+  "level": "easy",
+  "start": "git clone https://github.com/vigorlee/eidra-agent.git",
+  "caution": "The current release is a runnable v0.1 prototype using a default mock response, and no live inference validation has been performed for this release.",
+  "alts": [
+   "langchain-ai/langgraph",
+   "camel-ai/camel"
+  ],
+  "packages": [],
+  "plain": "A prototype agent that remembers user details, tests its persona against attacks, and exports preference data.",
+  "tags": [
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run persona agents",
+   "Test agent security with adversarial checks",
+   "Export preference data for fine-tuning"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Run `npm test` to verify the setup.",
+   "Run `npm run demo` to see the agent workflow in action."
+  ],
+  "repo": "vigorlee/eidra-agent",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "architectds/collabosm": {
+  "cat": "local",
+  "kind": "Google Colab GPU app",
+  "what": "A local app that rents a GPU in your own Google Colab account to run large AI models like Qwen.",
+  "why": "Lets you run large open-weight models on rented cloud hardware without needing a high-end local GPU or expensive managed API subscriptions.",
+  "level": "setup",
+  "start": "python frontend/server.py",
+  "caution": "Requires a paid Google Colab plan with compute units to run the cloud GPUs. Rented cloud resources incur ongoing costs until explicitly stopped.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "Run large AI models in the cloud using your own Google Colab account while chatting through a simple local app.",
+  "tags": [
+   "private",
+   "media",
+   "code"
+  ],
+  "useFor": [
+   "Chat with large open-weight models using cloud GPUs",
+   "Analyze images using local chat interface",
+   "Access local OpenAI-compatible endpoints for external tools"
+  ],
+  "steps": [
+   "Install Python 3.12 or newer on your computer.",
+   "Download the project files and open a terminal in its folder.",
+   "Run `python frontend/server.py` to start the local server.",
+   "Connect your Google account and start your rented Colab GPU."
+  ],
+  "repo": "architectds/collabosm",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "Razshy/Wiggle": {
+  "cat": "coding",
+  "kind": "Sandbox environment",
+  "what": "A runnable copy of the virtual machine sandbox that Claude uses to execute code and process files.",
+  "why": "Lets you replicate Claude's exact execution environment locally or in custom agent setups to test code, document conversion, and web tools in parity with production.",
+  "level": "setup",
+  "start": "docker build -t wiggle .",
+  "caution": "Contains captured Anthropic artifacts and binaries whose redistribution terms may be restricted; not officially affiliated with Anthropic.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "Run the exact same virtual machine environment that Claude uses to run code, convert documents, and take screenshots.",
+  "tags": [
+   "code",
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Run code in a sandbox matching Claude's environment",
+   "Inspect Claude's internal playbook and skill instructions",
+   "Test document conversion and data science workflows"
+  ],
+  "steps": [
+   "Clone the repository and build the container image using `docker build -t wiggle .`",
+   "Start an interactive session with `docker run -it wiggle bash`",
+   "Explore the pre-installed tools and skills inside the container"
+  ],
+  "repo": "Razshy/Wiggle",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "1173591564/Dynamics-memory": {
+  "cat": "memory",
+  "kind": "Agent Memory Layer",
+  "what": "Distills continuous agent interactions into a bounded, self-correcting long-term memory store.",
+  "why": "LLM agents get expensive and confused when given full logs, while raw vector databases accumulate contradictions. This tool provides a self-updating, budgeted memory layer with causal replay and conflict adjudication.",
+  "level": "setup",
+  "start": "pip install numpy pytest",
+  "caution": "Relies on external API keys (ZAI_API_KEY) and background agent loops. Research preview status with active component development.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "infiniflow/ragflow"
+  ],
+  "packages": [
+   "numpy",
+   "pytest"
+  ],
+  "plain": "A smart, self-cleaning memory layer for AI agents that prevents history overload.",
+  "tags": [
+   "knowledge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Manage long-term agent memory without bloating context",
+   "Resolve contradictions in project history automatically",
+   "Inject relevant past memories into agent sessions"
+  ],
+  "steps": [
+   "Install dependencies and configure environment variables using pip install numpy pytest and copying .env.example to .env",
+   "Run the test suite using python -m pytest tests/",
+   "Start the memory sidecar server using python -m hybrid_memory.server --project <dir>"
+  ],
+  "repo": "1173591564/Dynamics-memory",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "nirbhay41120003/EchoMind": {
+  "cat": "memory",
+  "kind": "Voice memory assistant",
+  "what": "Capture speech, transcribe live, and ask a private RAG chatbot grounded in your spoken conversations.",
+  "why": "Helps you keep track of everyday conversations and spoken information without sending audio data to the cloud.",
+  "level": "setup",
+  "start": "git clone https://github.com/nirbhay41120003/EchoMind.git",
+  "caution": "Requires local model downloads and sufficient hardware to run speech and language models locally on your machine.",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "open-webui/open-webui",
+   "ollama/ollama"
+  ],
+  "packages": [],
+  "plain": "A local voice assistant that records speech, transcribes it, and answers questions about what you said.",
+  "tags": [
+   "knowledge",
+   "private",
+   "media"
+  ],
+  "useFor": [
+   "Transcribe spoken conversations in real time",
+   "Search through past spoken notes and meetings",
+   "Ask questions about things you said previously"
+  ],
+  "steps": [
+   "Clone the repository and enter the project directory",
+   "Create a virtual environment and install the required Python dependencies",
+   "Run the install script for native runtimes",
+   "Start the application server with uvicorn"
+  ],
+  "repo": "nirbhay41120003/EchoMind",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "bnsd55/jevmlx": {
+  "cat": "local",
+  "kind": "Apple Silicon Jev Scorer",
+  "what": "Run parallel constrained decisions for MLX models on Apple Silicon without text generation.",
+  "why": "Avoids structured output retries and hallucinated formats by scoring allowed options from logits in one forward pass.",
+  "level": "setup",
+  "start": "git clone https://github.com/bnsd55/jevmlx && cd jevmlx && ./setup.sh",
+  "caution": "Requires an Apple Silicon Mac (M1+) and Python 3.12+.",
+  "alts": [
+   "mlx-explore/mlx-lm",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Scores classification options directly from model logits on Apple Silicon Macs instead of generating text.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Classify support tickets using local MLX models",
+   "Run structured JSON decisions on Apple Silicon",
+   "Serve low-latency decision endpoints over HTTP"
+  ],
+  "steps": [
+   "Clone the repository and run the setup script using `git clone https://github.com/bnsd55/jevmlx && cd jevmlx && ./setup.sh`",
+   "Run a quick decision test from the command line using presets",
+   "Start the local HTTP server to handle decision requests"
+  ],
+  "repo": "bnsd55/jevmlx",
+  "at": "2026-10-01",
+  "source": "trending"
+ },
+ "vaelkeep/hermes-paper-agent": {
+  "cat": "coding",
+  "kind": "Nightly Newspaper Agent",
+  "what": "An autonomous agent that compiles your notes, feeds, and live data into a formatted daily newspaper.",
+  "why": "It replaces messy morning feeds and newsletters with a finite, well-ordered, self-contained personal daily briefing that prints overnight.",
+  "level": "setup",
+  "start": "./quickstart.sh",
+  "caution": "",
+  "alts": [
+   "NousResearch/hermes-agent"
+  ],
+  "packages": [],
+  "plain": "An automated agent that writes, checks, and publishes a personal newspaper every night.",
+  "tags": [
+   "automate",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Generate a personalized daily newspaper overnight",
+   "Compile calendar, budget, and RSS feeds into a readable broadsheet",
+   "Automate nightly news desk summaries using local data and models"
+  ],
+  "steps": [
+   "Clone the repository to your machine",
+   "Run `./quickstart.sh` to test the engine and generate a sample edition without needing a model"
+  ],
+  "repo": "vaelkeep/hermes-paper-agent",
+  "at": "2026-10-01",
+  "source": "trending"
  }
 }
