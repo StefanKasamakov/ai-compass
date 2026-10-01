@@ -33,6 +33,7 @@ jobs:
   update:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

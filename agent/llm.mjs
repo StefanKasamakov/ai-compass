@@ -18,8 +18,13 @@ const exhausted = new Set(); // models whose daily quota ran out during this run
 
 export const provider = process.env.GEMINI_API_KEY ? "gemini" : process.env.ANTHROPIC_API_KEY ? "claude" : null;
 
+// Once every model has refused in this run, later calls fail at once instead of each waiting minutes again
+// (a run with 30 AI calls used to hang for over an hour when the free tier was busy).
+let gaveUp = false;
+
 export async function askJSON({ system, user, schema, hard = false }) {
   if (provider === "gemini") {
+    if (gaveUp) throw new Error("Gemini unavailable in this run; skipped");
     const { GoogleGenAI } = await import("@google/genai");
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY.trim() }); // secrets pasted on Windows can carry a trailing newline
     const { $schema, ...jsonSchema } = geminiSafe(z.toJSONSchema(schema));
@@ -39,9 +44,10 @@ export async function askJSON({ system, user, schema, hard = false }) {
         if (e.status === 429 && /PerDay/.test(msg)) { exhausted.add(model); break; } // done for today, next model
         if (![429, 500, 503].includes(e.status)) throw e;
         const wait = +msg.match(/retry in ([\d.]+)s/)?.[1] || 3 * 2 ** attempt;
-        await new Promise((r) => setTimeout(r, Math.min(wait, 65) * 1000));
+        await new Promise((r) => setTimeout(r, Math.min(wait, 30) * 1000));
       }
     }
+    gaveUp = true;
     if (exhausted.size === GEMINI_MODELS.length) lastErr = new Error("Gemini free-tier daily quota used up on every model; the rest waits for the next run");
     throw lastErr;
   }
