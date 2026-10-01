@@ -643,3 +643,34 @@ a.chip { text-decoration: none; }
   .vs-names dt { display: none; }
 }
 .vs-link p { display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* ---------- v13: skills directory and trust facts ---------- */
+.trust { list-style: none; margin: .2rem 0 1.4rem; padding: 0; display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+.trust li { display: flex; gap: .7rem; align-items: start; padding: .7rem .85rem; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-2); }
+.trust li svg { flex: none; margin-top: .15rem; color: var(--accent); }
+.trust li.warn { border-color: color-mix(in srgb, var(--warn) 35%, transparent); background: var(--warn-soft); }
+.trust li.warn svg { color: var(--warn); }
+.trust b { display: block; font-size: .92rem; }
+.trust small { display: block; color: var(--muted); font-size: .82rem; line-height: 1.4; margin-top: .1rem; }
+.chk { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); margin-right: .35rem; vertical-align: middle; }
+.chk svg { width: 12px; height: 12px; }
+.src-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); gap: 10px; }
+.src-card { display: flex; gap: .8rem; align-items: center; padding: .9rem 1rem; text-decoration: none; color: var(--fg); }
+.src-card h3 { margin: 0 0 .1rem; font: 700 .98rem var(--mono); overflow-wrap: anywhere; }
+.src-card small svg { width: 12px; height: 12px; vertical-align: -1px; }
+a.goal-chip { text-decoration: none; }
+.goal-chips { flex-wrap: wrap; }
+
+/* ---------- v14: start here ---------- */
+.lesson { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: 2.5rem; align-items: start; }
+.lesson > div:first-child { position: sticky; top: 84px; }
+.lesson h3 { margin: 0 0 .5rem; }
+.lesson .try { margin-top: 1.4rem; }
+.lesson .vs-list li b { font-weight: 600; }
+.vs-list.no li::before { width: .8rem; height: 0; border-left: 0; border-bottom: 2px solid var(--warn); transform: none; translate: 0 .3rem; }
+.ba { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 1.4rem; }
+.ba > div { border: 1px solid var(--line); border-radius: 12px; padding: .9rem 1rem; background: var(--card); }
+.ba > div:last-child { border-color: var(--accent-line); background: var(--accent-soft); }
+.ba p { margin: .3rem 0 0; color: var(--fg); font-size: .94rem; }
+.lesson-nav .chip { min-height: 36px; font-size: .86rem; }
+@media (max-width: 860px) { .lesson { grid-template-columns: minmax(0, 1fr); gap: 1rem; } .lesson > div:first-child { position: static; } .ba { grid-template-columns: minmax(0, 1fr); } }

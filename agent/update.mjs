@@ -58,6 +58,7 @@ async function githubStats(repos, withReleases) {
       stars: r.stargazers_count,
       week: weekAgo ? r.stargazers_count - h[weekAgo] : null,
       pushed: r.pushed_at,
+      license: r.license?.spdx_id && r.license.spdx_id !== "NOASSERTION" ? r.license.spdx_id : null,
       desc: r.description,
       archived: r.archived,
       release: rel && { tag: rel.tag_name, date: rel.published_at, url: rel.html_url },

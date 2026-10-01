@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=28">
+<link rel="stylesheet" href="assets/site.css?v=30">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="index">
@@ -29,7 +29,7 @@
   <section class="hero"><div class="wrap">
     <p class="kicker">A plain-English guide to AI</p>
     <h1>AI got complicated. <em>Here's the map.</em></h1>
-    <p class="lead">Which model to use for what. Which free tools are worth installing, and how to start with each one, step by step. Plain English, no hype, refreshed by an agent that watches GitHub and the official blogs.</p>
+    <p class="lead">AI skills, tools and models explained in plain English: what each one is for, whether you can trust it, and how to start, step by step. For people who are new to this and for people who just want the short answer.</p>
     <form class="hero-ask" id="ask" role="search">
       <label class="sr" for="askQ">What do you want to do?</label>
       <i data-i="search"></i>
@@ -53,6 +53,11 @@
     </div>
   </div></section>
 
+  <section><div class="wrap"><div class="grid door-grid">
+    <a class="card link door" href="start.html"><i data-i="book"></i><div><h3>New to AI? Start here</h3><p>Five short lessons, no jargon: what is what, free or paid, how to ask, staying safe.</p></div><i data-i="arrow"></i></a>
+    <a class="card link door" href="skills.html"><i data-i="puzzle"></i><div><h3>Skills, explained one by one</h3><p><span id="homeSkills">Hundreds of</span> ready-made skills for Claude, Codex and other assistants: what each does and how to add it.</p></div><i data-i="arrow"></i></a>
+  </div></div></section>
+
   <section id="choose"><div class="wrap">
     <a class="cta-band" href="models.html">
       <span class="cta-logos" aria-hidden="true" id="ctaLogos"></span>
@@ -74,6 +79,6 @@
     <p class="muted" style="margin-top:1.4rem">Want it once a week instead? <a href="newsletter.html">Read the Monday digest</a>.</p>
   </div></section>
 </main>
-<script src="assets/site.js?v=28" defer></script>
+<script src="assets/site.js?v=30" defer></script>
 </body>
 </html>

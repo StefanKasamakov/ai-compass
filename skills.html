@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=28">
+<link rel="stylesheet" href="assets/site.css?v=30">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="skills">
@@ -31,6 +31,15 @@
     <h1>Skills teach an agent how you work.</h1>
     <p class="lead">A skill is just a folder with instructions (and sometimes scripts) that an AI agent loads when a task matches. "Make our quarterly report", "write a proposal in our format", "test this web app": each can be a skill.</p>
   </div></header>
+
+  <section id="directory"><div class="wrap">
+    <div class="spread"><div><div class="kicker">The directory</div><h2><span id="skillCount">Hundreds of</span> skills, each explained</h2></div><a class="btn primary" href="explore.html?type=skill"><i data-i="search"></i>Browse all skills</a></div>
+    <p class="lead">Taken one by one from the collections people trust most. For every skill you see what it does, where it comes from, whether it only contains instructions or also runs scripts, and how to add it.</p>
+    <p class="field-label" style="margin-top:1.6rem">Skills by what you want to do</p>
+    <div class="goal-chips" id="skillGoals"></div>
+    <p class="field-label" style="margin-top:1.2rem">The collections they come from</p>
+    <div class="grid src-grid" id="skillSources"></div>
+  </div></section>
 
   <section id="what"><div class="wrap split">
     <div>
@@ -100,13 +109,7 @@
     <div class="callout" style="margin-top:1.4rem"><i data-i="alert"></i><div><b>Skills can include scripts that run on your machine.</b> Before installing one from a stranger, open its <code>SKILL.md</code> and <code>scripts/</code> folder on GitHub and skim what it does. <a href="github.html#judge">How to judge a repo →</a></div></div>
   </div></section>
 
-  <section id="catalog"><div class="wrap">
-    <div class="kicker">Browse</div>
-    <h2>Skills worth your time</h2>
-    <p class="lead">Every skill and skill pack we list, with what it's for and how to install it, lives in the tool finder.</p>
-    <a class="btn primary" href="explore.html?type=skill" style="margin-top:.4rem"><i data-i="puzzle"></i>Browse skills</a>
-  </div></section>
 </main>
-<script src="assets/site.js?v=28" defer></script>
+<script src="assets/site.js?v=30" defer></script>
 </body>
 </html>

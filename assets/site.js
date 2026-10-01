@@ -86,8 +86,8 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["models", "Choose AI", "models.html"], ["explore", "Find tools", "explore.html"], ["compare", "Compare", "compare.html"], ["local", "Local models", "local.html"],
-  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["skills", "Skills", "skills.html"], ["github", "GitHub 101", "github.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
+  ["start", "Start here", "start.html"], ["skills", "Skills", "skills.html"], ["explore", "Find tools", "explore.html"], ["models", "Choose AI", "models.html"], ["compare", "Compare", "compare.html"],
+  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"], ["local", "Local models", "local.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
   ["news", "News", "news.html"],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
@@ -111,7 +111,7 @@ function shell() {
       <p style="max-width:40ch">A plain-English guide to AI models and tools, for people who just want to get things done. Independent, no ads.</p>
       <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
     <nav class="foot-cols" aria-label="Footer">
-      <div><div class="field-label">Use AI</div><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
+      <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
       <div><div class="field-label">Learn</div><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
       <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
       <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
@@ -158,6 +158,7 @@ async function searchIndex() {
     { t: "Connect an app to Claude or ChatGPT", sub: "MCP setup", href: "mcp.html#setup", k: "guide", ic: "plug" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
     { t: "Benchmarks: what each model is good at", sub: "Charts", href: "benchmarks.html", k: "guide", ic: "trend" },
+    { t: "New to AI? Start here", sub: "Five short lessons", href: "start.html", k: "guide", ic: "book" },
     { t: "Compare: ChatGPT vs Claude and other match-ups", sub: "Short answers", href: "compare.html", k: "guide", ic: "layout" },
     { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
     { t: "Is this GitHub project safe?", sub: "Guide", href: "github.html#judge", k: "guide", ic: "shield" },
@@ -311,6 +312,7 @@ const pages = {
     // the names a newcomer has heard of, not whatever is trending among developers this week
     const START = ["chatgpt", "claude", "gemini", "perplexity", "notebooklm", "gamma"];
     $("#homeHot").innerHTML = START.map((id) => all.find((x) => x.key === id)).filter(Boolean).map((x) => toolCard(x, tags)).join("");
+    $("#homeSkills").textContent = all.filter((x) => x.kind === "skill").length;
     const pairs = CATALOG.pairs.slice(0, 6), nm = (id) => shortName(all.find((y) => y.key === id)?.name || id);
     $("#homeVs").innerHTML = pairs.map((p) => `<a class="chip" href="${p.a}-vs-${p.b}.html">${esc(nm(p.a))} vs ${esc(nm(p.b))}</a>`).join("") + `<a class="chip" href="compare.html">All comparisons ${icon("arrow")}</a>`;
     const news = newsOrder((n?.items || []).filter((x) => x.ai));
@@ -345,7 +347,15 @@ const pages = {
 
   },
 
-  async skills() {},
+  async skills() {
+    const { all, tags, skillSources } = await catalog();
+    const skills = all.filter((x) => x.kind === "skill");
+    $("#skillCount").textContent = skills.length;
+    const goals = tags.goals.map((g) => [g, skills.filter((x) => x.tags.includes(g.id)).length]).filter(([, n]) => n > 2).sort((a, b) => b[1] - a[1]);
+    $("#skillGoals").innerHTML = goals.map(([g, n]) => `<a class="goal-chip" href="explore.html?type=skill&goal=${g.id}">${icon(g.icon)}<span>${esc(g.label)}</span><small>${n}</small></a>`).join("");
+    $("#skillSources").innerHTML = skillSources.filter((s) => s.count).sort((a, b) => b.stars - a.stars).map((s) => `<a class="card link src-card" href="explore.html?type=skill&q=${encodeURIComponent(s.repo.split("/")[1])}">
+      ${avatar(s.repo, 40)}<div><h3>${esc(s.repo.split("/")[1])}</h3><small class="muted mono">by ${esc(s.by)} · ${s.count} skills · ${icon("star")}${num(s.stars)}</small></div></a>`).join("");
+  },
   local: () => localModels(),
   benchmarks: async () => benchmarks(await load("models")),
 
@@ -424,14 +434,18 @@ const iconFor = (x, size = 40) => x.kind === "app"
 let CATALOG;
 async function catalog() {
   if (CATALOG) return CATALOG;
-  const [ex, g, dl, tools, tags, tips, apps, pairs] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps"), load("compare")]);
+  const [ex, g, dl, tools, tags, tips, apps, pairs, sk] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps"), load("compare"), load("skills")]);
+  const srcOf = Object.fromEntries((sk?.sources || []).map((s) => [s.repo, s]));
+  const skills = (sk?.skills || []).map((k) => fromSkill(k, srcOf[k.repo]));
+  const indexed = new Set(skills.map((k) => k.key));
   const inExplain = new Set(Object.keys(ex || {}));
   const all = [
     ...(apps || []).map(fromApp),
-    ...Object.values(ex || {}).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
-    ...(tools || []).filter((t) => t.type === "skill" || t.type === "mcp" || (t.type === "collection" && !inExplain.has(t.repo))).map((t) => fromTool(t, g?.repos?.[t.repo])),
+    ...Object.values(ex || {}).filter((e) => keepRepo(e, g?.repos?.[e.repo])).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
+    ...(tools || []).filter((t) => (t.type === "skill" && !indexed.has(t.id)) || t.type === "mcp" || (t.type === "collection" && !inExplain.has(t.repo))).map((t) => ({ ...fromTool(t, g?.repos?.[t.repo]), checked: true, license: g?.repos?.[t.repo]?.license })),
+    ...skills,
   ];
-  return (CATALOG = { all, tags, tips, pairs: pairs || [] });
+  return (CATALOG = { all, tags, tips, pairs: pairs || [], skillSources: sk?.sources || [] });
 }
 
 // Plain-words search: prefix matching + goal words, so "summarize pdf reports" finds document tools
@@ -460,7 +474,7 @@ function rank(all, q) {
   const goalHits = noCode ? { apps: 1 } : {};
   for (const w of words) for (const [g, list] of Object.entries(GOAL_WORDS)) if (list.split(" ").some((k) => k.startsWith(stem(w)) || stem(w).startsWith(k))) goalHits[g] = (goalHits[g] || 0) + 1;
   return all.map((x) => {
-    const name = x.name.toLowerCase(), lead = x.plain.toLowerCase(), plain = x.useFor.join(" ").toLowerCase(), more = `${x.what || ""} ${x.why || ""} ${x.owner || ""}`.toLowerCase();
+    const name = x.name.toLowerCase(), lead = x.plain.toLowerCase(), plain = x.useFor.join(" ").toLowerCase(), more = `${x.what || ""} ${x.why || ""} ${x.owner || ""} ${x.repo || ""}`.toLowerCase();
     let score = 0;
     for (const w of words) {
       const st = stem(w);
@@ -481,7 +495,19 @@ function rank(all, q) {
 
 const fromRepo = (e, s, d) => ({ key: e.repo, kind: "repo", name: e.repo.split("/")[1], owner: e.repo.split("/")[0], repo: e.repo, plain: e.plain || e.what, what: e.what, why: e.why,
   caution: e.caution, steps: e.steps || (e.start ? [`Start with: \`${e.start.replace(/`/g, "")}\``] : []), useFor: e.useFor || [], tags: e.tags || [], level: e.level && ({ beginner: "easy", intermediate: "setup", advanced: "dev" }[e.level] || e.level),
-  alts: e.alts || [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: d ?? 0, updated: s?.pushed, src: e.source });
+  alts: e.alts || [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: d ?? 0, updated: s?.pushed, src: e.source, checked: e.source === "curated", license: s?.license });
+// one skill = one SKILL.md inside a collection we trust. Everything shown comes from that file and its folder.
+const firstSentence = (t = "") => { const m = t.match(/^(.{40,190}?[.!?])(\s|$)/); return m ? m[1] : t.length > 190 ? t.slice(0, 187) + "…" : t; };
+const fromSkill = (k, src) => ({ key: k.key, kind: "skill", name: k.name, owner: k.repo.split("/")[1], repo: k.repo, path: k.path, plain: k.plain || firstSentence(k.desc), what: k.desc, caution: "",
+  useFor: k.useFor || [], tags: k.tags?.length ? k.tags : ["supercharge"], level: k.level || "setup", alts: [], stars: 0, week: 0, installs: 0, updated: src?.pushed, license: src?.license,
+  checked: !!k.checked, scripts: k.scripts, example: k.example, fromPack: true,
+  steps: ["Open the skill's folder on GitHub and skim `SKILL.md`, so you know what it will do.",
+    "Add the folder to your assistant. Claude Code: copy it into `~/.claude/skills/`. Codex: into `.agents/skills/`. Claude app: zip the folder and upload it under Settings, Capabilities, Skills.",
+    `Ask for the task in plain words. The assistant loads the skill by itself when your request matches.${k.example ? ` Try: "${k.example}"` : ""}`] });
+// quality gate for projects: nothing archived or abandoned, and auto-found ones must have real traction
+const CJK = /[\u3040-\u30ff\u4e00-\u9fff]/;
+const keepRepo = (e, s) => !!s && !s.archived && !CJK.test(`${e.plain || ""} ${e.what || ""}`)
+  && (e.source === "curated" || (s.stars >= 300 && Date.now() - new Date(s.pushed) < 183 * 864e5));
 const fromTool = (t, s) => ({ key: t.id, kind: t.type, name: t.name, owner: t.by, repo: t.repo, path: t.path, plain: t.plain || t.d, what: t.d, caution: "", steps: t.steps || [], useFor: t.useFor || [],
   tags: t.tags || [], level: t.level, alts: [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: 0, official: t.official, mcp: t.type === "mcp" });
 const LEVEL = { easy: ["No coding", "ok"], setup: ["Some setup", ""], dev: ["For developers", "warn"] };
@@ -489,22 +515,37 @@ const LEVEL = { easy: ["No coding", "ok"], setup: ["Some setup", ""], dev: ["For
 function toolCard(x, tags) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
   return `<button class="tool" data-open="${esc(x.key)}">
-    <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${esc(x.owner)}` : ""}</small></span></span>
+    <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${x.fromPack ? "from " : ""}${esc(x.owner)}` : ""}</small></span></span>
     <span class="tool-plain">${esc(x.plain || "")}</span>
     <span class="tool-foot">${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}
-      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
+      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
   </button>`;
+}
+
+// What a careful person would check before installing something from GitHub, answered up front
+function trustBox(x) {
+  if (x.kind === "app") return "";
+  const old = x.updated && Date.now() - new Date(x.updated) > 365 * 864e5;
+  const rows = [
+    x.checked ? ["ok", "check", "Checked by a person", "We read what it does before listing it."]
+      : x.fromPack ? ["ok", "check", "From a collection we chose by hand", "The collection is well known; this skill's own text was indexed automatically."] : ["warn", "alert", "Found automatically", `Not reviewed by a person yet. <a href="github.html#judge">Run the 60-second check</a> before installing.`],
+    x.scripts === true ? ["warn", "terminal", "Includes scripts", "It can run programs on your computer. Skim the scripts folder first."] : x.scripts === false ? ["ok", "book", "Instructions only", "A text file the assistant reads. Nothing runs on your computer."] : null,
+    x.license ? ["ok", "check", `License: ${esc(x.license)}`, "You are allowed to use it under these terms."] : x.license === null ? ["warn", "alert", "No license listed", "Fine to try, but you may not have the right to reuse or change it."] : null,
+    x.updated ? [old ? "warn" : "ok", old ? "alert" : "check", `Updated ${ago(x.updated)}`, old ? "Not touched in over a year. It may no longer work." : x.fromPack ? "The collection it belongs to is actively maintained." : "Actively maintained."] : null,
+  ].filter(Boolean);
+  return `<h3>Before you install</h3><ul class="trust">${rows.map(([c, ic, t, d]) => `<li class="${c}">${icon(ic)}<span><b>${t}</b><small>${d}</small></span></li>`).join("")}</ul>`;
 }
 
 function toolDetail(x, all, tags, tips) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
-  const link = x.repo ? (x.path ? `https://github.com/${x.repo}/tree/main/${x.path}` : `https://github.com/${x.repo}`) : null;
+  const link = x.repo ? (x.path ? `https://github.com/${x.repo}/tree/HEAD/${x.path}` : `https://github.com/${x.repo}`) : null;
   const alts = x.alts.map((a) => all.find((y) => y.key === a)).filter(Boolean);
   return `<div class="dlg-head">${iconFor(x, 52)}<div><p class="field-label" style="margin:0">${esc(KIND[x.kind])}${x.official ? " · official" : ""}</p><h2>${esc(x.name)}</h2>${x.owner ? `<small class="muted">by ${esc(x.owner)}</small>` : ""}</div>
       <button class="icon-btn dlg-close" aria-label="Close">${icon("x")}</button></div>
     <p class="lead" style="margin:1rem 0">${md(x.plain || x.what || "")}</p>
     <div class="row" style="margin-bottom:1.4rem">${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0])}</span>` : ""}${x.tags.map((t) => goals[t] ? `<a class="tag" href="explore.html?goal=${t}">${esc(goals[t].label)}</a>` : "").join("")}</div>
     ${x.price ? `<p class="price-line">${icon("coins")}<span><b>Cost:</b> ${esc(x.price)}</span></p>` : x.kind !== "app" ? `<p class="price-line">${icon("coins")}<span><b>Cost:</b> free and open source${x.kind === "repo" ? "; you may pay for the AI model it uses" : ""}.</span></p>` : ""}
+    ${trustBox(x)}
     ${x.useFor.length ? `<h3>Use it to</h3><ul class="ticks">${x.useFor.map((u) => `<li>${icon("check")}<span>${md(u)}</span></li>`).join("")}</ul>` : ""}
     ${x.steps.length ? `<h3 style="margin-top:1.4rem">How to start</h3><ol class="steps compact">${x.steps.map((st) => `<li><p>${md(st)}</p></li>`).join("")}</ol>` : ""}
     ${x.caution ? `<div class="callout" style="margin-top:1.4rem">${icon("alert")}<div><b>Good to know.</b> ${md(x.caution)}</div></div>` : ""}
