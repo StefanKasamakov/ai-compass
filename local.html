@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run AI on Your Own Computer · Which AI Map</title>
+<meta name="description" content="Free AI models you can run on your own computer with Ollama: pick your hardware and get models that fit, with the exact command to start.">
+<link rel="canonical" href="https://whichaimap.com/local.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Which AI Map">
+<meta property="og:title" content="Run AI on Your Own Computer · Which AI Map">
+<meta property="og:description" content="Free AI models you can run on your own computer with Ollama: pick your hardware and get models that fit, with the exact command to start.">
+<meta property="og:url" content="https://whichaimap.com/local.html">
+<meta property="og:image" content="https://whichaimap.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Run AI on Your Own Computer · Which AI Map">
+<meta name="twitter:description" content="Free AI models you can run on your own computer with Ollama: pick your hardware and get models that fit, with the exact command to start.">
+<meta name="twitter:image" content="https://whichaimap.com/assets/og.png">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=27">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="local">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Local models</div>
+    <h1>Run AI on your own computer.</h1>
+    <p class="lead">Free, works offline, and nothing you type leaves your machine. These models are smaller than Claude or ChatGPT, so expect good answers on everyday tasks rather than the very best. Tell us what computer you have and we'll show what runs well on it.</p>
+  </div></header>
+
+  <section id="local"><div class="wrap">
+    <ol class="steps local-steps">
+      <li><h3>Install Ollama</h3><p>A free app for Windows, Mac and Linux that downloads and runs models. Get it from <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com</a>.</p></li>
+      <li><h3>Pick a model below</h3><p>Copy its command and paste it into the Terminal (Mac) or PowerShell (Windows). The first run downloads the model.</p></li>
+      <li><h3>Start chatting</h3><p>Type your question right there, or use the Ollama app window. Prefer buttons to commands? <a href="explore.html?goal=private">See easy apps like LM Studio and Jan</a>.</p></li>
+    </ol>
+    <div class="toolbar"><span id="hwPick" class="main-pick"></span><span id="usePick"></span></div>
+    <p class="muted" id="hwHint" style="margin:-.4rem 0 1rem;font-size:.9rem"></p>
+    <div class="tool-grid" id="localGrid" aria-live="polite"></div>
+    <p class="muted" style="margin-top:1rem;font-size:.85rem" id="localNote"></p>
+  </div></section>
+
+</main>
+<script src="assets/site.js?v=27" defer></script>
+</body>
+</html>

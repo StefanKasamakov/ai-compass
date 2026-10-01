@@ -4,7 +4,6 @@
 //   3. News from official blogs + Hacker News, summarized by AI (GEMINI_API_KEY or ANTHROPIC_API_KEY)
 //   4. Repo explainer: plain-English "what is this repo for" for curated, trending and requested repos
 //   5. Downloads: npm + PyPI installs in the last 30 days, for repos whose package verifiably points back to them
-//   6. Votes (👍 on "Vote:" issues) -> tool leaderboard + people leaderboard
 // Everything lands in data/*.json; the site reads those files.
 import fs from "node:fs/promises";
 import { z } from "zod";
@@ -377,52 +376,6 @@ async function downloads(repos, explained) {
   return out;
 }
 
-// ---------- 6. Votes & leaderboard ----------
-async function ensureLabels() {
-  const have = new Set((await ghAll(`repos/${REPO}/labels`)).map((l) => l.name));
-  for (const [name, color, description] of [["vote", "22c55e", "One issue per tool. React 👍 to vote."], ["submission", "3b82f6", "Suggest a tool for Which AI Map"], ["accepted", "a855f7", "Submission accepted: +10 points"]])
-    if (!have.has(name)) await gh(`repos/${REPO}/labels`, { method: "POST", body: JSON.stringify({ name, color, description }) });
-}
-
-async function leaderboard(tools, explained) {
-  const votable = tools.filter((t) => t.type !== "client");
-  const issues = await read("data/votes.json", {});
-  if (process.env.CREATE_VOTE_ISSUES && TOKEN) {
-    await ensureLabels();
-    for (const t of votable.filter((t) => !issues[t.id])) {
-      const link = t.path ? `https://github.com/${t.repo}/tree/main/${t.path}` : `https://github.com/${t.repo}`;
-      const issue = await gh(`repos/${REPO}/issues`, {
-        method: "POST",
-        body: JSON.stringify({ title: `Vote: ${t.name}`, labels: ["vote"], body: `**${t.name}** (${t.type}) by ${t.by}\n\n${t.d}\n\n${link}\n\n**React with a thumbs-up to vote** if you use it. Votes show up on the [Which AI Map leaderboard](https://${REPO.split("/")[0].toLowerCase()}.github.io/${REPO.split("/")[1]}/leaderboard.html) within a few hours.` }),
-      });
-      issues[t.id] = issue.number;
-    }
-    await write("data/votes.json", issues);
-  }
-
-  const people = new Map();
-  const person = (u) => {
-    if (!u || u.type === "Bot" || u.login.endsWith("[bot]")) return null;
-    if (!people.has(u.login)) people.set(u.login, { login: u.login, avatar: u.avatar_url ?? `https://github.com/${u.login}.png?`, votes: 0, submissions: 0, prs: 0, requests: 0 });
-    return people.get(u.login);
-  };
-  const toolVotes = [];
-  for (const t of votable) {
-    const n = issues[t.id];
-    if (!n) continue;
-    const reactions = await safe(`votes ${t.id}`, () => ghAll(`repos/${REPO}/issues/${n}/reactions?content=%2B1`), []);
-    reactions.forEach((r) => { const p = person(r.user); if (p) p.votes++; });
-    toolVotes.push({ id: t.id, votes: reactions.length, issue: n });
-  }
-  const accepted = await safe("submissions", () => ghAll(`repos/${REPO}/issues?labels=submission,accepted&state=all`), []);
-  accepted.forEach((i) => { const p = person(i.user); if (p) p.submissions++; });
-  const prs = await safe("prs", () => gh(`search/issues?q=${encodeURIComponent(`repo:${REPO} is:pr is:merged`)}&per_page=100`), { items: [] });
-  prs.items.forEach((i) => { const p = person(i.user); if (p) p.prs++; });
-
-  const ranked = [...people.values()].map((p) => ({ ...p, points: p.votes + p.submissions * 10 + p.prs * 5 })).sort((a, b) => b.points - a.points).slice(0, 100);
-  return { tools: toolVotes.sort((a, b) => b.votes - a.votes), people: ranked, rules: { vote: 1, submission: 10, pr: 5 } };
-}
-
 // ---------- run ----------
 const tools = await read("data/tools.json", []);
 const { repos: seeds, exclude = [] } = await read("data/repos.json", { repos: [] });
@@ -436,5 +389,4 @@ await write("data/trending.json", { updated, items: trend });
 await write("data/news.json", { updated, items: await news(stats, tools) });
 const explained = await explainRepos(trend);
 await write("data/downloads.json", { updated, window: "last 30 days", repos: await downloads([...new Set([...seeds, ...Object.keys(explained)])], explained) });
-await write("data/leaderboard.json", { updated, ...(await leaderboard(tools, explained)) });
 console.log(`done: ${Object.keys(stats).length} repos`);

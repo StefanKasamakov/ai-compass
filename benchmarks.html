@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Model Benchmarks · Which AI Map</title>
+<meta name="description" content="Independent benchmark scores for Claude, GPT, Gemini and open models, explained in plain English and compared side by side.">
+<link rel="canonical" href="https://whichaimap.com/benchmarks.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Which AI Map">
+<meta property="og:title" content="AI Model Benchmarks · Which AI Map">
+<meta property="og:description" content="Independent benchmark scores for Claude, GPT, Gemini and open models, explained in plain English and compared side by side.">
+<meta property="og:url" content="https://whichaimap.com/benchmarks.html">
+<meta property="og:image" content="https://whichaimap.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Model Benchmarks · Which AI Map">
+<meta name="twitter:description" content="Independent benchmark scores for Claude, GPT, Gemini and open models, explained in plain English and compared side by side.">
+<meta name="twitter:image" content="https://whichaimap.com/assets/og.png">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=27">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="benchmarks">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Benchmarks</div>
+    <h1>What each model is actually good at.</h1>
+    <p class="lead">Independent test scores for Claude, GPT, Gemini and the open models, side by side. No marketing numbers: every score links to its source.</p>
+  </div></header>
+
+  <section id="bench"><div class="wrap">
+    <p class="lead only-sm">Published test scores from independent labs. Pick a model to see how it ranks on each skill; tap a score for the source.</p>
+    <div class="only-sm"><div class="toolbar"><span id="heatPick" class="main-pick"></span></div><div class="rc" id="heatCard" aria-live="polite"></div></div>
+    <p class="lead hide-sm">Published test scores, side by side. Each column is one skill; the brighter the cell, the higher that model ranks among the others on that test. Hover a score for details, click it for the source. "—" means the test hasn't been run on that model (text-only models, for example, can't take the image test).</p>
+    <div class="legend-row hide-sm" aria-hidden="true"><span>weaker</span><span style="width:140px;height:12px;border-radius:3px;background:linear-gradient(90deg,color-mix(in srgb,var(--seq) 8%,var(--card)),var(--seq))"></span><span>stronger</span><span style="margin-left:1rem"><i style="--c:transparent;outline:2px solid var(--fg)"></i> best in column</span></div>
+    <div class="table-wrap hide-sm"><table class="heat" id="heat"></table></div>
+
+    <h3 style="margin-top:3.5rem">Rank the models on one skill</h3>
+    <div class="chips" id="benchChips" aria-label="Benchmark"></div>
+    <p class="muted" id="benchWhat" style="max-width:70ch"></p>
+    <div class="legend-row" id="provLegend"></div>
+    <div class="bars" id="bars" aria-live="polite"></div>
+
+    <h3 style="margin-top:3.5rem">Smarts vs price</h3>
+    <p class="muted only-sm">Smartest first (Artificial Analysis Intelligence Index), with the blended API price per 1M tokens. A high score with a low price is the best value.</p>
+    <div class="rc only-sm" id="valueList"></div>
+    <p class="muted hide-sm" style="max-width:70ch">Up = smarter overall (Artificial Analysis Intelligence Index). Left = cheaper (blended API price per 1M tokens, log scale). The top-left corner is the best value.</p>
+    <div class="legend-row hide-sm" id="scatterLegend"></div>
+    <div class="card hide-sm" style="padding:1rem"><svg class="scatter" id="scatter" viewBox="0 0 900 460" role="img" aria-label="Scatter plot of intelligence index against price"></svg></div>
+
+    <p class="muted" style="margin-top:1.4rem;font-size:.85rem" id="benchSources"></p>
+  </div></section>
+
+</main>
+<script src="assets/site.js?v=27" defer></script>
+</body>
+</html>

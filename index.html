@@ -21,13 +21,13 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=26">
+<link rel="stylesheet" href="assets/site.css?v=27">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="index">
 <main id="main">
   <section class="hero"><div class="wrap">
-    <div class="prompt"><b>~/whichaimap</b> $ which-ai --for "whatever you're doing"<span class="cursor" aria-hidden="true"></span></div>
+    <p class="kicker">A plain-English guide to AI</p>
     <h1>AI got complicated. <em>Here's the map.</em></h1>
     <p class="lead">Which model to use for what. Which free tools are worth installing, and how to start with each one, step by step. Plain English, no hype, refreshed by an agent that watches GitHub and the official blogs.</p>
     <form class="hero-ask" id="ask" role="search">
@@ -53,13 +53,6 @@
     </div>
   </div></section>
 
-  <section><div class="wrap">
-    <p class="kicker">Start here</p>
-    <h2>What do you want to do?</h2>
-    <p class="lead">Pick a goal and we'll show the tools for it, easiest first.</p>
-    <div class="toolbar goal-go"><span id="goalPick" class="main-pick"></span><a class="btn primary" id="goalGo" href="explore.html">Show tools <i data-i="arrow"></i></a></div>
-  </div></section>
-
   <section id="choose"><div class="wrap">
     <a class="cta-band" href="models.html">
       <span class="cta-logos" aria-hidden="true" id="ctaLogos"></span>
@@ -69,25 +62,16 @@
   </div></section>
 
   <section><div class="wrap">
-    <div class="spread"><div><p class="kicker">Popular right now</p><h2>Tools people are talking about</h2></div><a class="btn sm" href="explore.html">See all tools <i data-i="arrow"></i></a></div>
+    <div class="spread"><div><p class="kicker">Start here</p><h2>The apps most people begin with</h2></div><a class="btn sm" href="explore.html">See all tools <i data-i="arrow"></i></a></div>
     <div class="tool-grid" id="homeHot"></div>
   </div></section>
 
-  <section><div class="wrap split">
-    <div>
-      <p class="kicker">This week</p>
-      <h2>What changed in AI</h2>
-      <div class="mini-feed" id="homeNews"></div>
-      <p style="margin-top:1rem"><a href="news.html">All news <i data-i="arrow"></i></a></p>
-    </div>
-    <div class="card" style="padding:1.6rem">
-      <p class="kicker">Newsletter</p>
-      <h3 style="font-size:1.3rem">One digest a week. Only what mattered.</h3>
-      <p>The launches, tools and tips worth your time, in plain English. A new issue every Monday.</p>
-      <a class="btn primary" href="newsletter.html" style="margin-top:1rem"><i data-i="news"></i>Read this week's issue</a>
-    </div>
+  <section><div class="wrap">
+    <div class="spread"><div><p class="kicker">This week</p><h2>What changed in AI</h2></div><a class="btn sm" href="news.html">All news <i data-i="arrow"></i></a></div>
+    <div class="feed" id="feed"></div>
+    <p class="muted" style="margin-top:1.4rem">Want it once a week instead? <a href="newsletter.html">Read the Monday digest</a>.</p>
   </div></section>
 </main>
-<script src="assets/site.js?v=26" defer></script>
+<script src="assets/site.js?v=27" defer></script>
 </body>
 </html>

@@ -125,3 +125,38 @@ create policy "moderators see drafts" on public.social_posts for select to authe
 drop policy if exists "moderators handle drafts" on public.social_posts;
 create policy "moderators handle drafts" on public.social_posts for update to authenticated using (public.is_moderator()) with check (public.is_moderator());
 grant select, update on public.social_posts to authenticated;
+
+-- ---------- votes: one click, no account ----------
+-- One vote per tool per network address. Visitors never touch the table: they call vote() and vote_counts().
+create table if not exists public.votes (
+  tool text not null check (tool ~ '^[A-Za-z0-9._/-]{1,100}$'),
+  ip_hash text not null,
+  created_at timestamptz not null default now(),
+  primary key (tool, ip_hash)
+);
+create index if not exists votes_ip_idx on public.votes (ip_hash, created_at desc);
+alter table public.votes enable row level security;
+revoke all on public.votes from anon, authenticated;
+
+create or replace function public.vote(tool_id text) returns integer
+language plpgsql security definer set search_path = public as $$
+declare
+  ip text := split_part(coalesce(current_setting('request.headers', true)::json ->> 'x-forwarded-for', ''), ',', 1);
+  h text := encode(extensions.digest(ip || 'ai-compass', 'sha256'), 'hex');
+begin
+  if tool_id !~ '^[A-Za-z0-9._/-]{1,100}$' then raise exception 'Unknown tool'; end if;
+  if (select count(*) from public.votes where ip_hash = h and created_at > now() - interval '1 hour') >= 40 then
+    raise exception 'Too many votes from your network. Please try again later.';
+  end if;
+  insert into public.votes (tool, ip_hash) values (tool_id, h) on conflict do nothing;
+  return (select count(*) from public.votes where tool = tool_id);
+end $$;
+
+create or replace function public.vote_counts() returns table (tool text, votes bigint)
+language sql stable security definer set search_path = public as $$
+  select tool, count(*) from public.votes group by tool;
+$$;
+revoke all on function public.vote(text) from public;
+revoke all on function public.vote_counts() from public;
+grant execute on function public.vote(text) to anon, authenticated;
+grant execute on function public.vote_counts() to anon, authenticated;

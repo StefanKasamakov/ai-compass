@@ -1,6 +1,5 @@
 // Which AI Map — shared shell + page renderers. No framework, no build.
 const REPO = "StefanKasamakov/ai-compass";
-const GH = `https://github.com/${REPO}`;
 const page = document.body.dataset.page;
 
 // ---------- icons (Lucide, ISC license) ----------
@@ -87,9 +86,9 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["index", "Home", "./"], ["models", "Choose AI", "models.html"], ["explore", "Find tools", "explore.html"],
-  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["skills", "Skills", "skills.html"], ["github", "GitHub 101", "github.html"]]],
-  ["news", "News", "news.html"], ["leaderboard", "Rankings", "leaderboard.html"], ["newsletter", "Newsletter", "newsletter.html"], ["contribute", "Contribute", "contribute.html"],
+  ["models", "Choose AI", "models.html"], ["explore", "Find tools", "explore.html"], ["local", "Local models", "local.html"],
+  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["skills", "Skills", "skills.html"], ["github", "GitHub 101", "github.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
+  ["news", "News", "news.html"],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
   ? `<details class="nav-group"${href.some(([sid]) => sid === page) ? " data-current" : ""}><summary>${label}${icon("chevron")}</summary><div class="nav-menu">${href.map(([sid, sl, sh]) => `<a href="${sh}"${sid === page ? ' aria-current="page"' : ""}>${sl}</a>`).join("")}</div></details>`
@@ -109,13 +108,14 @@ function shell() {
   document.body.insertAdjacentHTML("beforeend", `
   <footer class="foot"><div class="wrap">
     <div><div class="brand" style="margin-bottom:.6rem">${icon("compass")}whichaimap</div>
-      <p style="max-width:44ch">A plain-English guide to AI models and tools, for people who just want to get things done. Kept fresh by an agent that checks GitHub and the official blogs every few hours.</p></div>
-    <div class="row" style="align-items:start;gap:2.5rem">
-      <div><div class="field-label">Contribute</div>
-        <p><a href="newsletter.html">Weekly newsletter</a> · <a href="feed.xml">RSS</a><br><a href="contribute.html">Suggest a tool or report a mistake</a><br><a href="contribute.html?kind=volunteer">Volunteer as a reviewer</a></p></div>
-      <div><div class="field-label">Project</div>
-        <p><span id="footUpdated"></span></p></div>
-    </div>
+      <p style="max-width:40ch">A plain-English guide to AI models and tools, for people who just want to get things done. Independent, no ads.</p>
+      <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
+    <nav class="foot-cols" aria-label="Footer">
+      <div><div class="field-label">Use AI</div><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
+      <div><div class="field-label">Learn</div><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
+      <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
+      <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
+    </nav>
   </div></footer>
   <dialog class="palette" id="palette" aria-label="Search">
     <div class="in">${icon("search")}<input id="pq" placeholder="What do you want to do? Try: excel, images, private…" autocomplete="off" aria-label="Search" aria-controls="pres"><kbd>Esc</kbd></div>
@@ -157,7 +157,8 @@ async function searchIndex() {
     { t: "What is MCP?", sub: "Guide", href: "mcp.html#what", k: "guide", ic: "book" },
     { t: "Connect an app to Claude or ChatGPT", sub: "MCP setup", href: "mcp.html#setup", k: "guide", ic: "plug" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
-    { t: "Benchmarks: what each model is good at", sub: "Charts", href: "models.html#bench", k: "guide", ic: "trend" },
+    { t: "Benchmarks: what each model is good at", sub: "Charts", href: "benchmarks.html", k: "guide", ic: "trend" },
+    { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
     { t: "Is this GitHub project safe?", sub: "Guide", href: "github.html#judge", k: "guide", ic: "shield" },
     ...(m?.models || []).map((x) => ({ t: x.name, sub: `${m.providers[x.p].name} · ${x.tier}`, href: `models.html#m-${x.id}`, k: "model", ic: "cpu" })),
     ...(tools || []).filter((x) => x.type !== "client").map((x) => ({ t: x.name, sub: x.plain || x.d, href: `explore.html#${x.id}`, k: x.type, ic: x.type === "mcp" ? "plug" : "puzzle", extra: x.d })),
@@ -198,11 +199,36 @@ function starLine(stats, repo) {
   if (!s) return "";
   return `<span class="stars">${icon("star")}${num(s.stars)}</span>${s.week > 0 ? `<span class="delta">+${num(s.week)}/wk</span>` : ""}`;
 }
-function voteBtn(board, id) {
-  const v = board?.tools?.find((x) => x.id === id);
-  if (!v) return "";
-  return `<a class="btn sm vote" href="${GH}/issues/${v.issue}" target="_blank" rel="noopener" title="Vote with a thumbs-up on GitHub">${icon("thumb")}${v.votes}</a>`;
+// One-click votes, no account: Supabase keeps one vote per tool per network address
+let VOTES;
+const votedSet = () => new Set(JSON.parse(store.get("voted") || "[]"));
+async function votes() {
+  if (VOTES) return VOTES;
+  const cfg = await load("site");
+  if (!cfg?.supabaseUrl) return (VOTES = { counts: {}, off: true });
+  const call = (fn, body = {}) => fetch(`${cfg.supabaseUrl}/rest/v1/rpc/${fn}`, { method: "POST", headers: { apikey: cfg.supabaseAnonKey, "content-type": "application/json" }, body: JSON.stringify(body) })
+    .then((r) => (r.ok ? r.json() : r.json().then((e) => Promise.reject(new Error(e.message || "Vote failed")))));
+  const rows = await call("vote_counts").catch(() => []);
+  return (VOTES = { counts: Object.fromEntries(rows.map((r) => [r.tool, r.votes])), call });
 }
+function voteBtn(v, key, label = "") {
+  if (!v || v.off) return "";
+  const done = votedSet().has(key);
+  return `<button class="btn sm vote" data-vote="${esc(key)}" aria-pressed="${done}" title="${done ? "You voted for this" : "Vote for this tool"}">${icon("thumb")}<span>${v.counts[key] || 0}</span>${label}</button>`;
+}
+document.addEventListener("click", async (e) => {
+  const b = e.target.closest("[data-vote]"); if (!b) return;
+  e.preventDefault(); e.stopPropagation();
+  if (b.getAttribute("aria-pressed") === "true") return;
+  const v = await votes(), key = b.dataset.vote;
+  b.disabled = true;
+  try {
+    v.counts[key] = await v.call("vote", { tool_id: key });
+    store.set("voted", JSON.stringify([...votedSet().add(key)]));
+    $$(`[data-vote="${CSS.escape(key)}"]`).forEach((x) => { x.setAttribute("aria-pressed", "true"); x.querySelector("span").textContent = v.counts[key]; x.title = "You voted for this"; });
+  } catch (err) { b.title = err.message; }
+  b.disabled = false;
+});
 
 // Two-step picker: what do you want to do, then what matters most. One clear recommendation.
 async function picker(host, startTask = "chat") {
@@ -238,7 +264,7 @@ async function picker(host, startTask = "chat") {
         <div><span class="field-label">What it costs</span><p>${esc(cost)}</p></div>
       </div>
       ${evidence(task, x.id) ? `<div class="ev-row"><span class="field-label">What the tests say</span><div>${evidence(task, x.id)}</div></div>` : ""}
-      <p class="muted" style="font-size:.85rem;margin:0">${x.in != null ? `Developers: $${x.in} in / $${x.out} out per 1M tokens · ` : ""}<a href="models.html#bench">See all test results</a></p>
+      <p class="muted" style="font-size:.85rem;margin:0">${x.in != null ? `Developers: $${x.in} in / $${x.out} out per 1M tokens · ` : ""}<a href="benchmarks.html">See all test results</a>${prio === "private" ? ` · <a href="local.html">Which local model fits my computer?</a>` : ""}</p>
     </article>
     ${rest.length ? `<p class="field-label" style="margin-top:1.2rem">Also good</p><div class="alt-row">${rest.map(([id, w]) => { const y = byId[id]; return `<div class="alt p-${y.p}">${modelLogo(y)}<div><b>${esc(y.name)}</b><p>${esc(w)}</p></div></div>`; }).join("")}</div>` : ""}`;
     if (page === "models") history.replaceState(null, "", `#task=${task.id}`);
@@ -252,19 +278,41 @@ async function picker(host, startTask = "chat") {
   draw();
 }
 
+// ---------- news cards ----------
+const NEWS_SRC = { OpenAI: ["lh-openai", "openai"], Anthropic: ["claude", "anthropic"], Google: ["googlegemini", "google"], DeepMind: ["googlegemini", "google"], "Hugging Face": ["huggingface", "open"], GitHub: ["github", ""], "GitHub release": ["github", ""] };
+const newsDay = (d) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+// the article's own picture; if it is missing or fails to load, a branded placeholder shows through
+// GitHub's auto-generated release cards are white text sheets, not pictures: show the project's logo instead
+const newsPic = (x) => (x.image && !x.image.includes("opengraph.githubassets.com") ? x.image : "");
+const newsRepo = (x) => x.url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)/)?.[1];
+const newsCover = (x) => { const [lg, c] = NEWS_SRC[x.source] || []; const img = newsPic(x); if (!img && newsRepo(x)) return `<span class="cover-img">${avatar(newsRepo(x), 72)}</span>`; return `<span class="cover-img${c ? ` p-${c}` : ""}">${lg ? logo(lg) : `<b>${esc(x.source[0])}</b>`}${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`; };
+const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-story" : ""}">
+    ${newsCover(x)}
+    <div class="news-body">
+      <div class="news-meta"><span class="src">${esc(x.source)}</span><time datetime="${esc(x.date)}">${newsDay(x.date)} · ${ago(x.date)}</time>${x.big ? `<span class="tag ok">Big launch</span>` : ""}</div>
+      <h3>${esc(x.title)}</h3>
+      ${x.summary ? `<p>${esc(x.summary)}</p>` : ""}
+      <div class="news-foot above">${x.tags.slice(0, 3).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}${x.discuss ? `<a href="${esc(x.discuss)}" target="_blank" rel="noopener">Discussion</a>` : ""}</div>
+    </div>
+    <a class="cover" href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="${esc(x.title)}"></a></article>`;
+// this week's big launches come first, then everything by date
+const newsOrder = (items) => { const fresh = (x) => x.big && Date.now() - new Date(x.date) < 7 * 864e5; return [...items].sort((a, b) => fresh(b) - fresh(a)); };
+
 // ---------- pages ----------
 const pages = {
   async index() {
-    const [g, n, tags, ex, t, m] = await Promise.all([load("github"), load("news"), load("tags"), load("explain"), load("trending"), load("models")]);
-    $("#stAgent").textContent = g ? `Agent ran ${ago(g.updated)}` : "Agent pending";
-    $("#stTracked").textContent = `${Object.keys(g?.repos || {}).length} repos tracked`;
+    const [g, n, ex, m, { all, tags }] = await Promise.all([load("github"), load("news"), load("explain"), load("models"), catalog()]);
+    $("#stAgent").textContent = g ? `Updated ${ago(g.updated)}` : "Updating";
+    $("#stTracked").textContent = `${all.length} tools explained`;
     $("#stNews").textContent = `${n?.items.length ?? 0} stories this month`;
-    $("#stModels").textContent = `${m?.models.length ?? 0} models · ${Object.keys(ex || {}).length} tools explained`;
-    dropdown($("#goalPick"), "I want to", [["", "Choose a goal…"], ...(tags?.goals || []).map((x) => [x.id, x.label])], (v) => { $("#goalGo").href = v ? `explore.html?goal=${v}` : "explore.html"; }, "", true);
+    $("#stModels").textContent = `${m?.models.length ?? 0} AI models compared`;
     $("#ctaLogos").innerHTML = ["anthropic", "openai", "google", "open"].map((p) => `<span class="logo-badge p-${p}">${logo(p === "open" ? "ollama" : LOGOS[p])}</span>`).join("");
-    $("#homeNews").innerHTML = (n?.items || []).filter((x) => x.ai).slice(0, 4).map((x) => `<a href="${esc(x.url)}" target="_blank" rel="noopener"><b>${esc(x.title)}</b><small>${esc(x.source)} · ${ago(x.date)}${x.summary ? ` · ${esc(x.summary.slice(0, 110))}` : ""}</small></a>`).join("") || `<p class="muted">News is on its way.</p>`;
-    const hot = (t?.items || []).filter((x) => ex?.[x.repo]).slice(0, 6);
-    $("#homeHot").innerHTML = hot.map((x) => toolCard(fromRepo(ex[x.repo], g?.repos?.[x.repo]), tags)).join("");
+    // the names a newcomer has heard of, not whatever is trending among developers this week
+    const START = ["chatgpt", "claude", "gemini", "perplexity", "notebooklm", "gamma"];
+    $("#homeHot").innerHTML = START.map((id) => all.find((x) => x.key === id)).filter(Boolean).map((x) => toolCard(x, tags)).join("");
+    const news = newsOrder((n?.items || []).filter((x) => x.ai));
+    const seen = new Set(); // the same launch often arrives from two sources with the same picture
+    $("#feed").innerHTML = [...news.filter(newsPic), ...news.filter((x) => !newsPic(x))].filter((x) => !x.image || (!seen.has(x.image) && seen.add(x.image))).slice(0, 3).map((x) => newsCard(x)).join("") || `<p class="muted">News is on its way.</p>`;
     askBox();
   },
 
@@ -279,12 +327,10 @@ const pages = {
         <td class="num" data-label="Input / 1M">${x.in != null ? "$" + x.in : "—"}</td><td class="num" data-label="Output / 1M">${x.out != null ? "$" + x.out : esc(x.price || "—")}</td><td class="num" data-label="Context">${esc(x.ctx || "—")}</td></tr>`).join("");
     }, "all", "filter");
     $("#modelsUpdated").textContent = m.updated;
-    benchmarks(m);
-    localModels();
   },
 
   async mcp() {
-    const [tools, g, b] = await Promise.all([load("tools"), load("github"), load("leaderboard")]);
+    const [tools, g, b] = await Promise.all([load("tools"), load("github"), votes()]);
     const servers = tools.filter((x) => x.type === "mcp");
     let server = servers.find((x) => location.hash.includes(x.id)) || servers[0], client = "claude-code";
     const list = $("#srvList");
@@ -297,14 +343,12 @@ const pages = {
   },
 
   async skills() {},
+  local: () => localModels(),
+  benchmarks: async () => benchmarks(await load("models")),
+  about() {},
 
   async github() {
-    const [t, tools, g, b] = await Promise.all([load("trending"), load("tools"), load("github"), load("leaderboard")]);
-    $("#trendGrid").innerHTML = (t?.items || []).map((x) => `<article class="card link">
-      <div class="head"><h3 class="mono" style="overflow-wrap:anywhere">${esc(x.repo)}</h3><span class="tag ok">${esc((x.sources || ["new"])[0])}</span></div>
-      <p>${esc(x.desc || "No description.")}</p>
-      <div class="foot"><span class="stars">${icon("star")}${num(x.stars)}</span><span>${ago(x.created)}</span>${x.lang ? `<span>${esc(x.lang)}</span>` : ""}</div>
-      <a class="cover" href="https://github.com/${esc(x.repo)}" target="_blank" rel="noopener" aria-label="${esc(x.repo)} on GitHub"></a></article>`).join("") || `<div class="empty">Trending list appears after the agent's first run.</div>`;
+    const [tools, g] = await Promise.all([load("tools"), load("github")]);
     const clients = tools.filter((x) => x.type === "client");
     $("#clientGrid").innerHTML = clients.map((c) => { const s = g?.repos?.[c.repo]; return `<article class="card link">
       <div class="head"><h3>${esc(c.name)}</h3>${s?.release ? `<span class="tag ok">${esc(s.release.tag)}</span>` : ""}</div><p>${esc(c.d)}</p>
@@ -316,31 +360,13 @@ const pages = {
     const n = await load("news");
     const items = n?.items || [];
     $("#newsUpdated").textContent = n ? ago(n.updated) : "—";
-    const SRC = { OpenAI: ["lh-openai", "openai"], Anthropic: ["claude", "anthropic"], Google: ["googlegemini", "google"], DeepMind: ["googlegemini", "google"], "Hugging Face": ["huggingface", "open"], GitHub: ["github", ""], "GitHub release": ["github", ""] };
-    const day = (d) => new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
-    // the article's own picture; if it is missing or fails to load, a branded placeholder shows through
-    // GitHub's auto-generated release cards are white text sheets, not pictures: show the project's logo instead
-    const pic = (x) => (x.image && !x.image.includes("opengraph.githubassets.com") ? x.image : "");
-    const gh = (x) => x.url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)/)?.[1];
-    const cover = (x) => { const [lg, c] = SRC[x.source] || []; const img = pic(x); if (!img && gh(x)) return `<span class="cover-img">${avatar(gh(x), 72)}</span>`; return `<span class="cover-img${c ? ` p-${c}` : ""}">${lg ? logo(lg) : `<b>${esc(x.source[0])}</b>`}${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`; };
-    const story = (x, lead) => `<article class="card news-card${lead ? " top-story" : ""}">
-        ${cover(x)}
-        <div class="news-body">
-          <div class="news-meta"><span class="src">${esc(x.source)}</span><time datetime="${esc(x.date)}">${day(x.date)} · ${ago(x.date)}</time>${x.big ? `<span class="tag ok">Big launch</span>` : ""}</div>
-          <h3>${esc(x.title)}</h3>
-          ${x.summary ? `<p>${esc(x.summary)}</p>` : ""}
-          <div class="news-foot above">${x.tags.slice(0, 3).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}${x.discuss ? `<a href="${esc(x.discuss)}" target="_blank" rel="noopener">Discussion</a>` : ""}</div>
-        </div>
-        <a class="cover" href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="${esc(x.title)}"></a></article>`;
     let src = "all", shown = 13;
     const draw = () => {
-      // this week's big launches come first, then everything by date
-      const fresh = (x) => x.big && Date.now() - new Date(x.date) < 7 * 864e5;
-      const list = items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src)).sort((a, b) => fresh(b) - fresh(a));
+      const list = newsOrder(items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src)));
       // lead story: the newest big launch with a picture, else the newest with a picture
-      const lead = list.find((x) => x.big && pic(x)) || list.find((x) => pic(x)) || list[0];
+      const lead = list.find((x) => x.big && newsPic(x)) || list.find((x) => newsPic(x)) || list[0];
       const rest = list.filter((x) => x !== lead);
-      $("#feed").innerHTML = lead ? story(lead, true) + rest.slice(0, shown - 1).map((x) => story(x)).join("")
+      $("#feed").innerHTML = lead ? newsCard(lead, true) + rest.slice(0, shown - 1).map((x) => newsCard(x)).join("")
         + (rest.length > shown - 1 ? `<button class="btn news-more" id="newsMore">Show more news</button>` : "") : `<div class="empty">Nothing here yet.</div>`;
       const more = $("#newsMore"); if (more) more.onclick = () => { shown += 12; draw(); };
     };
@@ -350,39 +376,37 @@ const pages = {
   },
 
   async leaderboard() {
-    const [b, tools, g, repos, ex, dl] = await Promise.all([load("leaderboard"), load("tools"), load("github"), load("repos"), load("explain"), load("downloads")]);
+    const [v, { all }, g, repos, ex, dl] = await Promise.all([votes(), catalog(), load("github"), load("repos"), load("explain"), load("downloads")]);
     const cats = Object.fromEntries((repos?.categories || []).map((c) => [c.id, c.name]));
     const allRepos = [...new Set([...(repos?.repos || []), ...Object.keys(ex || {})])].filter((r) => g?.repos?.[r]);
     const repoRow = (r, i, score, unit, extra = "") => { const e = ex?.[r]; return `<a class="card entry link" href="explore.html#${esc(r)}" style="text-decoration:none;color:inherit">
         <span class="pos">${i + 1}</span><div class="who">${avatar(r, 36)}<div><b>${esc(r.split("/")[1])}</b><small>${esc(r.split("/")[0])} · ${esc(e?.kind || g.repos[r].desc?.slice(0, 60) || "")}${e ? ` · ${esc(cats[e.cat] || "")}` : ""}${extra}</small></div></div>
         <div class="score">${score}<small>${unit}</small></div></a>`; };
     const topBy = (f) => allRepos.map((r) => [r, f(r)]).filter(([, v]) => v > 0).sort((a, c) => c[1] - a[1]).slice(0, 50);
-    const byId = Object.fromEntries(tools.map((x) => [x.id, x]));
-    $("#boardUpdated").textContent = b ? ago(b.updated) : "—";
-    const TYPE = { mcp: "MCP server", skill: "Skill", collection: "Collection" };
+    $("#boardUpdated").textContent = g ? ago(g.updated) : "—";
+    const LV = { easy: 0, setup: 1, dev: 2 };
     const views = {
       downloads: () => Object.entries(dl?.repos || {}).sort((a, c) => c[1].total - a[1].total).slice(0, 50)
         .map(([r, d], i) => repoRow(r, i, num(d.total), "installs / 30 days", ` · ${d.packages.map((p) => esc(p)).join(", ")}`)),
       stars: () => topBy((r) => g.repos[r].stars).map(([r, v], i) => repoRow(r, i, num(v), "stars")),
       rising: () => topBy((r) => g.repos[r].week ?? 0).map(([r, v], i) => repoRow(r, i, "+" + num(v), "stars this week", ` · ${num(g.repos[r].stars)} total`)),
-      tools: () => (b?.tools || []).filter((x) => byId[x.id]).map((x, i) => { const t = byId[x.id]; return `<div class="card entry">
-        <span class="pos">${i + 1}</span><div class="who">${t.repo ? avatar(t.repo, 36) : `<span class="avatar">${icon("puzzle")}</span>`}<div><b>${esc(t.name)}</b><small>${TYPE[t.type]} · ${esc(t.by)} ${g?.repos?.[t.repo] ? `· ★ ${num(g.repos[t.repo].stars)}` : ""}</small></div></div>
-        <div class="row"><div class="score">${x.votes}<small>votes</small></div><a class="btn sm" href="${GH}/issues/${x.issue}" target="_blank" rel="noopener">${icon("thumb")}Vote</a></div></div>`; }),
-      people: () => (b?.people || []).map((p, i) => `<div class="card entry">
-        <span class="pos">${i + 1}</span><div class="who"><img src="${esc(p.avatar)}&s=72" alt="" width="36" height="36" loading="lazy"><div><b>${esc(p.login)}</b><small>${p.votes} votes · ${p.submissions} tools added · ${p.prs} fixes</small></div></div>
-        <div class="score">${p.points}<small>points</small></div></div>`),
+      // most voted first; before anyone has voted, the easiest well-known apps lead
+      tools: () => [...all].sort((a, c) => (v.counts[c.key] || 0) - (v.counts[a.key] || 0) || (c.kind === "app") - (a.kind === "app") || (LV[a.level] ?? 1) - (LV[c.level] ?? 1) || c.stars - a.stars).slice(0, 40)
+        .map((x, i) => `<div class="card entry"><span class="pos">${i + 1}</span>
+          <a class="who" href="explore.html#${esc(x.key)}" style="text-decoration:none;color:inherit">${iconFor(x, 36)}<div><b>${esc(x.name)}</b><small>${esc(KIND[x.kind] || "")} · ${esc(x.owner || "")}</small></div></a>
+          ${voteBtn(v, x.key, " Vote")}</div>`),
     };
     const note = {
       downloads: `Real installs from npm and PyPI in the last 30 days. Only packages whose registry page links back to the repo are counted. Apps shipped as installers or Docker images (Ollama, ComfyUI…) aren't measurable this way, so they're missing here: see Most starred.`,
       stars: "GitHub stars: a bookmark count. Good for popularity, easy to inflate.",
       rising: "Stars gained in the last 7 days. The agent keeps daily snapshots, so this fills in after a week of runs.",
-      tools: "Community votes: a thumbs-up on each tool's GitHub page. Needs a free GitHub account.", people: "Points for voting, suggesting tools and fixing data.",
+      tools: "Votes from visitors of this site. One click, no account. Press the thumbs-up on anything you use and would recommend.",
     };
-    chips($("#boardTabs"), [["downloads", "Most downloaded", "trend"], ["stars", "Most starred", "star"], ["rising", "Rising this week", "zap"], ["tools", "Top tools (votes)", "trophy"], ["people", "Top people", "users"]], (v) => {
-      $("#boardNote").innerHTML = note[v];
-      const rows = views[v]();
-      $("#board").innerHTML = rows.length ? rows.join("") : `<div class="empty">${v === "tools" || v === "people" ? `No ${v === "tools" ? "votes" : "players"} yet. Be the first: vote on a tool below and you'll appear here after the next agent run.` : "The agent is still collecting this data. Check back after the next run."}</div>`;
-    }, ["people", "tools", "stars", "rising"].find((t) => location.hash === `#${t}`) || "downloads");
+    chips($("#boardTabs"), [["tools", "Most voted", "thumb"], ["downloads", "Most downloaded", "trend"], ["stars", "Most starred", "star"], ["rising", "Rising this week", "zap"]], (tab) => {
+      $("#boardNote").innerHTML = note[tab];
+      const rows = views[tab]();
+      $("#board").innerHTML = rows.length ? rows.join("") : `<div class="empty">We are still collecting this data. Check back soon.</div>`;
+    }, ["downloads", "stars", "rising"].find((t) => location.hash === `#${t}`) || "tools");
   },
 };
 
@@ -485,7 +509,7 @@ function toolDetail(x, all, tags, tips) {
     ${x.why ? `<details class="more"><summary>More detail</summary><p>${md(x.what)}</p><p>${md(x.why)}</p></details>` : ""}
     ${tips?.[x.key]?.length ? `<h3 style="margin-top:1.4rem">Tips from readers</h3>${tips[x.key].map((t) => `<blockquote class="tip-q"><p>${esc(t.body)}</p><small class="muted">${esc(t.name || "A reader")} · ${ago(t.date)}</small></blockquote>`).join("")}` : ""}
     ${alts.length ? `<h3 style="margin-top:1.4rem">Similar tools</h3><div class="row">${alts.map((a) => `<button class="chip" data-open="${esc(a.key)}">${esc(a.name)}</button>`).join("")}</div>` : ""}
-    <div class="row" style="margin-top:1.6rem">${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">${icon("external")}Open ${esc(x.name)}</a>` : ""}${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
+    <div class="row" style="margin-top:1.6rem">${voteBtn(VOTES, x.key, " Recommend")}${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">${icon("external")}Open ${esc(x.name)}</a>` : ""}${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
       ${link ? `<a class="btn" href="${link}" target="_blank" rel="noopener">${icon("github")}Open on GitHub</a>` : ""}
       <a class="btn" href="contribute.html?kind=tip&target=${encodeURIComponent(x.key)}">${icon("chat")}Share a tip</a>
       <a class="btn" href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">${icon("alert")}Report a mistake</a>
@@ -493,7 +517,7 @@ function toolDetail(x, all, tags, tips) {
 }
 
 pages.explore = async () => {
-  const { all, tags, tips } = await catalog();
+  const [{ all, tags, tips }] = await Promise.all([catalog(), votes()]);
   const params = new URLSearchParams(location.search);
   const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "easy", shown: 24 };
   const q = $("#repoQ"); q.value = params.get("q") || "";
@@ -717,13 +741,6 @@ pages.newsletter = async () => {
   show(new URLSearchParams(location.search).get("issue") || issues[0]?.date);
 };
 
-function renderCollections(el, tools, g, b) {
-  el.innerHTML = tools.filter((x) => x.type === "collection").map((c) => `<article class="card link">
-    <div class="head"><h3>${esc(c.name)}</h3>${c.official ? `<span class="tag ok">official</span>` : `<span class="tag">${esc(c.cat)}</span>`}</div>
-    <p>${esc(c.d)}</p>
-    <div class="foot">${starLine(g, c.repo)}<span class="above" style="margin-left:auto">${voteBtn(b, c.id)}</span></div>
-    <a class="cover" href="https://github.com/${c.repo}" target="_blank" rel="noopener" aria-label="${esc(c.name)} on GitHub"></a></article>`).join("");
-}
 
 // ---------- MCP config generator ----------
 const CLIENTS = [
