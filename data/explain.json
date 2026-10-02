@@ -8553,5 +8553,135 @@
   "repo": "angel291592/Intent-Router",
   "at": "2026-10-02",
   "source": "trending"
+ },
+ "Panniantong/Agent-Reach": {
+  "cat": "harness",
+  "kind": "Agent web toolset",
+  "what": "An integration layer that connects coding agents like Claude Code or Cursor to social media, video platforms, and search engines.",
+  "why": "Coding agents are typically blind to platforms like Twitter, Reddit, and YouTube. Reach manages scrapers, APIs, and browser cookies so your agent can search and read these sites directly.",
+  "level": "setup",
+  "start": "",
+  "caution": "Using personal session cookies or automated browsers to scrape platforms like Twitter, Reddit, or Instagram can violate their terms of service and risk account suspension.",
+  "alts": [
+   "unclecode/crawl4ai",
+   "browser-use/browser-use",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Gives your coding agent tools to read Twitter, Reddit, YouTube, and other websites.",
+  "tags": [
+   "research",
+   "connect",
+   "automate"
+  ],
+  "useFor": [
+   "Summarize YouTube videos using auto-extracted transcripts",
+   "Search Twitter and Reddit for real-time user feedback",
+   "Read and parse public GitHub repositories or RSS feeds"
+  ],
+  "steps": [
+   "Provide the install.md URL to your AI coding agent",
+   "Allow the agent to run the setup script locally",
+   "Run `agent-reach doctor` in your terminal to verify connected platforms",
+   "Configure optional cookies for restricted platforms like Twitter or Reddit"
+  ],
+  "repo": "Panniantong/Agent-Reach",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "coreyhaines31/marketingskills": {
+  "cat": "harness",
+  "kind": "Marketing skill collection",
+  "what": "A collection of marketing frameworks and instructions for AI coding assistants.",
+  "why": "To help your AI coding assistant write copy, plan SEO, and optimize conversions using established marketing practices.",
+  "level": "setup",
+  "start": "git clone https://github.com/coreyhaines31/marketingskills.git",
+  "caution": "Contains affiliate links and promoted partner tools in the documentation.",
+  "alts": [],
+  "packages": [],
+  "plain": "Add marketing instructions and workflows to AI coding assistants like Claude Code.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Write conversion-focused copywriting and email sequences",
+   "Plan SEO and content strategy frameworks",
+   "Design growth experiments and A/B tests"
+  ],
+  "steps": [
+   "Clone the repository to your local machine",
+   "Copy the desired skill markdown files into your agent's configuration or project folder",
+   "Ask your AI agent to perform marketing tasks using the newly added skills"
+  ],
+  "repo": "coreyhaines31/marketingskills",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "google/skills": {
+  "cat": "harness",
+  "kind": "Google Cloud Skills",
+  "what": "This repository provides agent skills for Google products and technologies, including Google Cloud.",
+  "why": "Use this when you want to equip an AI coding agent with specialized knowledge of Google Cloud services, infrastructure, and developer APIs.",
+  "level": "setup",
+  "start": "npx skills add google/skills",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Adds Google product expertise and best practices directly to your AI coding assistant.",
+  "tags": [
+   "code",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Build Google Cloud architecture with AI assistance",
+   "Manage GKE clusters using coding agents",
+   "Query BigQuery and optimize database configurations"
+  ],
+  "steps": [
+   "Run `npx skills add google/skills` in your terminal",
+   "Select the specific Google Cloud and developer skills you want to install"
+  ],
+  "repo": "google/skills",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "google/ax": {
+  "cat": "frameworks",
+  "kind": "Kubernetes Agent Orchestrator",
+  "what": "Google's open declarative orchestrator for running autonomous agent workloads in a Kubernetes cluster.",
+  "why": "When deploying autonomous agents at scale in production, you need to manage sandboxed environments, pre-wired workspaces, and checkpointing. AX provides Kubernetes-style primitives to declare, monitor, suspend, and scale agent tasks.",
+  "level": "dev",
+  "start": "go install github.com/google/ax/cmd/ax@latest",
+  "caution": "Heavy development phase with frequent breaking changes. Requires an existing Kubernetes cluster with Agent Substrate installed.",
+  "alts": [
+   "agent-substrate/substrate",
+   "OpenHands/OpenHands",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "plain": "An open Google tool to run, manage, and scale AI agent tasks inside a Kubernetes cluster.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Run untrusted agent code in isolated sandboxes",
+   "Pre-wire Git repositories and MCP servers for agents",
+   "Suspend and resume idle agent execution states"
+  ],
+  "steps": [
+   "Install the CLI using `go install github.com/google/ax/cmd/ax@latest`.",
+   "Deploy the control plane to your Kubernetes cluster using `make deploy`.",
+   "Apply your task manifest using `ax apply -f task.yaml`."
+  ],
+  "repo": "google/ax",
+  "at": "2026-10-02",
+  "source": "trending"
  }
 }
