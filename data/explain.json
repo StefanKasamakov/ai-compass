@@ -8321,5 +8321,138 @@
   "repo": "abacusai/abacusai-bot",
   "at": "2026-10-01",
   "source": "trending"
+ },
+ "Vibra-Ingenn/Janus": {
+  "cat": "local",
+  "kind": "Go local server",
+  "what": "Janus runs local AI models on your own machine and exposes an OpenAI-compatible API.",
+  "why": "When you want to run open-weight AI models locally via Vulkan or CPU without installing Python, Docker, or Ollama.",
+  "level": "setup",
+  "start": "git clone https://github.com/Vibra-Ingenn/Janus.git",
+  "caution": "Requires building from source with Go and downloading model files separately.",
+  "alts": [
+   "ollama/ollama",
+   "ggerganov/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "A single file server that runs local AI models on your computer for other apps to use.",
+  "tags": [
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Run open-source GGUF models locally on Windows or Linux",
+   "Connect local AI models to Cursor or Cline",
+   "Query local models using an OpenAI-compatible API"
+  ],
+  "steps": [
+   "Clone the repository and run `.\\build.ps1` on Windows.",
+   "Place a `.gguf` model file inside the `models/` folder.",
+   "Copy `.env.example` to `.env` and configure your model path.",
+   "Run `.\\dist\\janus.exe` to start the local server."
+  ],
+  "repo": "Vibra-Ingenn/Janus",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "PerryLink/jevcore": {
+  "cat": "harness",
+  "kind": "Decision Model Harness Plugin",
+  "what": "Adds typed judgments and decision-making tools to DeepSeek Harness and MCP hosts.",
+  "why": "Provides type-safe yes/no, choice, and score evaluations with offline-by-default egress controls and privacy protections.",
+  "level": "setup",
+  "start": "dsh plugin --profile <profile> add jevcore-dsh",
+  "caution": "Requires Node ^22.19.0 || >=24.0.0 for the DSH plugin. Redaction is best-effort and will not catch unknown secret formats.",
+  "alts": [
+   "deepseek-ai/deepseek-harness"
+  ],
+  "packages": [
+   "jevcore-mcp"
+  ],
+  "plain": "Adds structured, typed decision-making tools to your coding assistant while keeping data offline by default.",
+  "tags": [
+   "supercharge",
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Evaluate choices with calibrated probabilities",
+   "Add safety gates to coding agent workflows",
+   "Connect decision models via MCP"
+  ],
+  "steps": [
+   "Install the plugin using the DeepSeek Harness CLI command.",
+   "Confirm the plugin is active in your plugin list.",
+   "Configure API keys if you want to use the live provider instead of the offline mock."
+  ],
+  "repo": "PerryLink/jevcore",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "MiaoWuNYA/rikkahub-sillytavern-android": {
+  "cat": "builders",
+  "kind": "Android AI Chat App",
+  "what": "An AI chat client for Android with SillyTavern compatibility, caching optimizations, and custom plugins.",
+  "why": "To chat with roleplay characters or manage AI workflows on an Android device without needing a desktop setup.",
+  "level": "easy",
+  "start": "Grab the latest APK from Releases, then configure your API providers in Settings.",
+  "caution": "Reuses consumer or third-party API keys and providers which may risk your account or violate provider terms.",
+  "alts": [],
+  "packages": [],
+  "plain": "A feature-rich Android chat app that runs character cards, saves token costs, and handles memory.",
+  "tags": [
+   "apps",
+   "connect"
+  ],
+  "useFor": [
+   "Chat with AI characters on mobile",
+   "Import SillyTavern character cards and lorebooks",
+   "Run local QuickJS plugins and AI group chats"
+  ],
+  "steps": [
+   "Grab the latest APK from GitHub Releases for your device.",
+   "Open Settings and add your API provider details.",
+   "Import character cards or presets to begin chatting."
+  ],
+  "repo": "MiaoWuNYA/rikkahub-sillytavern-android",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "devilcoolyue/agentbox": {
+  "cat": "builders",
+  "kind": "browser coding workspace",
+  "what": "A self-hosted web workspace for running Claude Code and Codex CLI in isolated Docker containers with file management, terminals, and usage tracking.",
+  "why": "It solves the problem of managing AI coding tools, API keys, and persistent environments across different devices by putting everything behind a secure browser interface. Reach for it when you want a centralized server where you and your team can run AI coding sessions.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/devilcoolyue/agentbox/main/install.sh | sudo bash",
+  "caution": "This tool manages access credentials and consumer AI subscriptions inside a self-hosted server environment, which requires careful security configuration and administrative oversight.",
+  "alts": [
+   "open-webui/open-webui",
+   "LibreChat-AI/LibreChat",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Run Claude Code and Codex in your browser via a self-hosted server with file editors, terminals, and session management.",
+  "tags": [
+   "code",
+   "connect",
+   "knowledge",
+   "private"
+  ],
+  "useFor": [
+   "Manage AI coding sessions in a browser",
+   "Track token costs and API usage centrally",
+   "Edit files and review Git diffs remotely"
+  ],
+  "steps": [
+   "Run the automated installation script on a Linux server using curl.",
+   "Open the web interface in your browser using your server IP and port 8180.",
+   "Sign in with the initial administrator credentials generated during installation.",
+   "Configure your AI model accounts under system settings to start coding."
+  ],
+  "repo": "devilcoolyue/agentbox",
+  "at": "2026-10-02",
+  "source": "trending"
  }
 }

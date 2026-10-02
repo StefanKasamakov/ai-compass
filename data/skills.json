@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-01T22:51:28.330Z",
+ "updated": "2026-10-02T05:54:37.876Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 179318,
+   "stars": 179352,
    "license": null,
    "pushed": "2026-09-29T02:20:07Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 293944,
+   "stars": 294074,
    "license": "MIT",
    "pushed": "2026-09-27T02:37:47Z",
    "by": "obra",
@@ -19,15 +19,15 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 100335,
+   "stars": 100386,
    "license": "MIT",
-   "pushed": "2026-09-26T04:19:38Z",
+   "pushed": "2026-10-02T03:29:29Z",
    "by": "addyosmani",
    "count": 25
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 273845,
+   "stars": 274088,
    "license": "MIT",
    "pushed": "2026-09-29T12:38:37Z",
    "by": "mattpocock",
@@ -35,7 +35,7 @@
   },
   {
    "repo": "openai/skills",
-   "stars": 27839,
+   "stars": 27842,
    "license": null,
    "pushed": "2026-09-08T20:35:26Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 31812,
+   "stars": 31818,
    "license": null,
    "pushed": "2026-08-28T13:36:31Z",
    "by": "vercel-labs",
@@ -51,7 +51,7 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 37288,
+   "stars": 37302,
    "license": "Apache-2.0",
    "pushed": "2026-10-01T21:39:47Z",
    "by": "anthropics",
@@ -59,7 +59,7 @@
   },
   {
    "repo": "openai/plugins",
-   "stars": 7251,
+   "stars": 7253,
    "license": null,
    "pushed": "2026-09-28T17:08:10Z",
    "by": "openai",
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 27170,
+   "stars": 27210,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,23 +75,23 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25361,
+   "stars": 25362,
    "license": "MIT",
-   "pushed": "2026-10-01T21:19:30Z",
+   "pushed": "2026-10-02T04:41:44Z",
    "by": "EveryInc",
    "count": 37
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 73632,
+   "stars": 73823,
    "license": "Apache-2.0",
-   "pushed": "2026-10-01T20:56:31Z",
+   "pushed": "2026-10-02T05:39:01Z",
    "by": "pbakaus",
    "count": 20
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40139,
+   "stars": 40147,
    "license": "MIT",
    "pushed": "2026-10-01T19:08:25Z",
    "by": "wshobson",
@@ -2666,7 +2666,13 @@
    "desc": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
    "scripts": true,
    "files": 6,
-   "tags": []
+   "tags": [],
+   "plain": "Design and build custom skills to extend the assistant with specialized knowledge or workflows.",
+   "useFor": [
+    "Create a new skill",
+    "Update an existing skill"
+   ],
+   "example": "Can you help me create a new skill for custom workflows?"
   },
   {
    "key": "openai/skills/skill-installer",
@@ -2678,7 +2684,13 @@
    "files": 7,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Install new skills from a repository or a curated list into your assistant's environment.",
+   "useFor": [
+    "List installable skills",
+    "Install a curated skill"
+   ],
+   "example": "Install the recommended skill from the repository."
   },
   {
    "key": "vercel-labs/agent-skills/vercel-composition-patterns",
@@ -2691,7 +2703,13 @@
    "tags": [
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Refactor React components using scalable composition patterns and updated API guidelines.",
+   "useFor": [
+    "Refactor component props",
+    "Build flexible component libraries"
+   ],
+   "example": "Refactor these components using compound component patterns."
   },
   {
    "key": "vercel-labs/agent-skills/deploy-to-vercel",
@@ -2703,7 +2721,13 @@
    "files": 3,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Publish applications and websites directly to Vercel with a single command.",
+   "useFor": [
+    "Deploy my app",
+    "Create a preview deployment"
+   ],
+   "example": "Deploy my app and give me the link."
   },
   {
    "key": "vercel-labs/agent-skills/vercel-react-best-practices",
@@ -2717,7 +2741,13 @@
     "docs",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Optimize React and Next.js code performance using guidelines from Vercel engineering.",
+   "useFor": [
+    "Review React code",
+    "Improve data fetching speed"
+   ],
+   "example": "Review this Next.js page for performance issues."
   },
   {
    "key": "vercel-labs/agent-skills/vercel-react-native-skills",
@@ -2729,7 +2759,13 @@
    "files": 41,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Build performant mobile apps using React Native and Expo best practices.",
+   "useFor": [
+    "Optimize list performance",
+    "Implement mobile animations"
+   ],
+   "example": "Optimize this list performance for my React Native app."
   },
   {
    "key": "vercel-labs/agent-skills/vercel-react-view-transitions",
@@ -2743,7 +2779,13 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Implement smooth animations and page transitions using React's View Transition API.",
+   "useFor": [
+    "Add page transitions",
+    "Animate route changes"
+   ],
+   "example": "Add view transitions between these pages."
   },
   {
    "key": "vercel-labs/agent-skills/vercel-cli-with-tokens",
@@ -2755,7 +2797,13 @@
    "files": 0,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Deploy and manage Vercel projects securely using token-based authentication.",
+   "useFor": [
+    "Set up Vercel",
+    "Add environment variables"
+   ],
+   "example": "Deploy to Vercel using my access token."
   },
   {
    "key": "vercel-labs/agent-skills/vercel-optimize",
@@ -2768,7 +2816,13 @@
    "tags": [
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Analyze and reduce Vercel costs and performance bottlenecks on deployed projects.",
+   "useFor": [
+    "Reduce Vercel bills",
+    "Investigate slow routes"
+   ],
+   "example": "How can I reduce my Vercel hosting bill?"
   },
   {
    "key": "vercel-labs/agent-skills/web-design-guidelines",
@@ -2782,7 +2836,13 @@
     "media",
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Review user interface code against established web design and accessibility guidelines.",
+   "useFor": [
+    "Check accessibility",
+    "Audit design and UX"
+   ],
+   "example": "Review my UI code for accessibility issues."
   },
   {
    "key": "vercel-labs/agent-skills/writing-guidelines",
@@ -2796,7 +2856,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Review documents and prose for clarity and adherence to writing guidelines.",
+   "useFor": [
+    "Check writing style",
+    "Audit documentation voice"
+   ],
+   "example": "Review my docs against the writing handbook."
   },
   {
    "key": "anthropics/claude-plugins-official/access",
@@ -2806,7 +2872,13 @@
    "desc": "Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy. Use when the user asks to pair, approve someone, check who's allowed, or change policy for the Discord channel.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Manage Discord channel access by approving pairings and editing allowlists.",
+   "useFor": [
+    "Approve someone",
+    "Check allowed users"
+   ],
+   "example": "Approve this user for the Discord channel."
   },
   {
    "key": "anthropics/claude-plugins-official/configure",
@@ -2818,7 +2890,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Set up your Discord channel by saving bot tokens and reviewing access policies.",
+   "useFor": [
+    "Configure Discord",
+    "Check channel status"
+   ],
+   "example": "How do I set up this Discord bot?"
   },
   {
    "key": "anthropics/claude-plugins-official/claude-automation-recommender",
@@ -2832,7 +2910,13 @@
     "code",
     "research",
     "connect"
-   ]
+   ],
+   "plain": "Analyze your codebase and recommend custom Claude Code automations and workflows.",
+   "useFor": [
+    "Recommend automations",
+    "Optimize Claude setup"
+   ],
+   "example": "What Claude Code features should I use here?"
   },
   {
    "key": "anthropics/claude-plugins-official/claude-md-improver",
@@ -2845,7 +2929,13 @@
    "tags": [
     "docs",
     "monitor"
-   ]
+   ],
+   "plain": "Audit and improve CLAUDE.md files in your repositories for better project memory.",
+   "useFor": [
+    "Audit CLAUDE.md",
+    "Fix project memory"
+   ],
+   "example": "Check and improve the CLAUDE.md file in this repo."
   },
   {
    "key": "anthropics/claude-plugins-official/claude-security",
@@ -2858,7 +2948,13 @@
    "tags": [
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Scan codebases or code changes for security vulnerabilities and suggest targeted patches.",
+   "useFor": [
+    "Scan code for security",
+    "Fix security findings"
+   ],
+   "example": "Scan this branch with Claude Security."
   },
   {
    "key": "anthropics/claude-plugins-official/cardputer-buddy",
@@ -2868,7 +2964,13 @@
    "desc": "Iterate on the Cardputer-Adv MicroPython app bundle (Claude Buddy, Snake, Hello) after the device is already provisioned via m5-onboard. Use when the user wants to add a new app, push a single changed .py without re-flashing, watch device serial logs, or run a one-shot REPL command. Trigger on \"add an app\", \"push to the cardputer\", \"tail the device\", \"run on the device\", or follow-up work after /maker-setup.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Manage and update MicroPython apps on a Cardputer device without re-flashing.",
+   "useFor": [
+    "Add a Cardputer app",
+    "Tail device logs"
+   ],
+   "example": "Push this updated Python script to the Cardputer."
   },
   {
    "key": "anthropics/claude-plugins-official/m5-onboard",
@@ -2878,7 +2980,13 @@
    "desc": "End-to-end onboarding for a freshly-plugged-in M5Stack ESP32 device (Cardputer, Cardputer-Adv, Core, CoreS3, Stick) — detect on USB, flash UIFlow 2.0 firmware, and install the Claude Buddy MicroPython app bundle. Use whenever the user plugs in or wants to flash/provision/reset an M5Stack or ESP32 board, or says \"m5-onboard go\".",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Flash firmware and install app bundles on a freshly connected M5Stack device.",
+   "useFor": [
+    "Flash M5Stack firmware",
+    "Install Claude Buddy bundle"
+   ],
+   "example": "Run the m5-onboard setup for my new device."
   },
   {
    "key": "anthropics/claude-plugins-official/example-command",
@@ -2888,7 +2996,13 @@
    "desc": "An example user-invoked skill that demonstrates frontmatter options and the skills/<name>/SKILL.md layout",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Demonstrate frontmatter options and layout structure for custom user-invoked skills.",
+   "useFor": [
+    "Show skill format",
+    "Test skill layout"
+   ],
+   "example": "Show me an example of a skill layout."
   },
   {
    "key": "anthropics/claude-plugins-official/example-skill",
@@ -2900,7 +3014,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Provide reference templates and guidance for creating plugin skills.",
+   "useFor": [
+    "Demonstrate skills",
+    "Create a skill template"
+   ],
+   "example": "Show me how to create a skill template."
   },
   {
    "key": "anthropics/claude-plugins-official/frontend-design",
@@ -2913,7 +3033,13 @@
    "tags": [
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Design distinct user interfaces with intentional aesthetics, unique typography, and non-templated layouts.",
+   "useFor": [
+    "Design custom user interfaces",
+    "Improve existing visual layouts"
+   ],
+   "example": "Give this web page a more custom and intentional visual design."
   },
   {
    "key": "anthropics/claude-plugins-official/writing-hookify-rules",
@@ -2925,7 +3051,13 @@
    "files": 0,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Create and configure custom hookify rules for your workflows.",
+   "useFor": [
+    "Create a hookify rule",
+    "Configure hookify settings"
+   ],
+   "example": "Create a hookify rule for this project."
   },
   {
    "key": "anthropics/claude-plugins-official/math-olympiad",
@@ -2937,7 +3069,13 @@
    "files": 10,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Solve competition math problems and verify proofs using adversarial reasoning.",
+   "useFor": [
+    "Solve olympiad math problems",
+    "Verify competition proofs"
+   ],
+   "example": "Can you solve this IMO problem?"
   },
   {
    "key": "anthropics/claude-plugins-official/siege",
@@ -2947,7 +3085,13 @@
    "desc": "Work on one hard mathematics problem in rounds: each round a judge writes a few self-contained questions, independent workers answer them, and the judge keeps a ledger of what is proved, refuted and open, until the judge concludes or the rounds run out, and then a proof.md says plainly what is and is not proved. A run takes hours and dozens of worker runs. Usage: /math-proof:siege [NAME=value settings] <the problem, stated in full, or the path of a file holding it>.",
    "scripts": true,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Work through a complex math problem in rounds using automated workers and judges.",
+   "useFor": [
+    "Solve hard math problems",
+    "Generate a verified proof"
+   ],
+   "example": "/math-proof:siege solve the Riemann hypothesis."
   },
   {
    "key": "anthropics/claude-plugins-official/solo",
@@ -2957,7 +3101,13 @@
    "desc": "Work on one hard mathematics problem in this session yourself, with no sub-agents: reason in stages, record each settled step in a notes file so that nothing written is lost if a response is cut off, and end with a self-contained proof.md. Usage: /math-proof:solo <the problem, stated in full, or the path of a file holding it>.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Solve a hard mathematics problem step-by-step in a single session.",
+   "useFor": [
+    "Solve advanced math alone",
+    "Write a math proof"
+   ],
+   "example": "/math-proof:solo prove this geometry theorem."
   },
   {
    "key": "anthropics/claude-plugins-official/build-mcp-app",
@@ -2970,7 +3120,13 @@
    "tags": [
     "media",
     "connect"
-   ]
+   ],
+   "plain": "Build interactive UI components, widgets, and forms for MCP servers.",
+   "useFor": [
+    "Add UI widgets to servers",
+    "Create chat dashboards"
+   ],
+   "example": "Build an interactive UI for this MCP server."
   },
   {
    "key": "anthropics/claude-plugins-official/build-mcp-server",
@@ -2984,7 +3140,13 @@
     "media",
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Build and set up new Model Context Protocol servers.",
+   "useFor": [
+    "Build an MCP server",
+    "Wrap an API for Claude"
+   ],
+   "example": "Help me build an MCP server for this API."
   },
   {
    "key": "anthropics/claude-plugins-official/build-mcpb",
@@ -2997,7 +3159,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Package local Model Context Protocol servers into standalone bundle files.",
+   "useFor": [
+    "Bundle an MCP server",
+    "Ship local MCP servers"
+   ],
+   "example": "How do I package this MCP server into an MCPB file?"
   },
   {
    "key": "anthropics/claude-plugins-official/playground",
@@ -3010,7 +3178,13 @@
    "tags": [
     "docs",
     "apps"
-   ]
+   ],
+   "plain": "Create self-contained interactive HTML explorers with live previews and controls.",
+   "useFor": [
+    "Make an interactive playground",
+    "Build a live explorer"
+   ],
+   "example": "Create an interactive playground for this concept."
   },
   {
    "key": "anthropics/claude-plugins-official/agent-development",
@@ -3023,7 +3197,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Design and structure custom autonomous agents and subagents.",
+   "useFor": [
+    "Create a new agent",
+    "Write agent system prompts"
+   ],
+   "example": "How do I create a custom subagent?"
   },
   {
    "key": "anthropics/claude-plugins-official/command-development",
@@ -3036,7 +3216,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Create custom slash commands with interactive elements and arguments.",
+   "useFor": [
+    "Create a slash command",
+    "Define command arguments"
+   ],
+   "example": "How do I add a custom slash command?"
   },
   {
    "key": "anthropics/claude-plugins-official/hook-development",
@@ -3048,7 +3234,13 @@
    "files": 10,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Set up event-driven automation and validation hooks for tool usage.",
+   "useFor": [
+    "Create a tool use hook",
+    "Block dangerous commands"
+   ],
+   "example": "Add a PreToolUse hook to validate inputs."
   },
   {
    "key": "anthropics/claude-plugins-official/mcp-integration",
@@ -3061,7 +3253,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Connect external Model Context Protocol servers to your plugins.",
+   "useFor": [
+    "Integrate an MCP server",
+    "Connect external services"
+   ],
+   "example": "How do I add an MCP server to my plugin?"
   },
   {
    "key": "anthropics/claude-plugins-official/plugin-settings",
@@ -3071,7 +3269,13 @@
    "desc": "This skill should be used when the user asks about \"plugin settings\", \"store plugin configuration\", \"user-configurable plugin\", \".local.md files\", \"plugin state files\", \"read YAML frontmatter\", \"per-project plugin settings\", or wants to make plugin behavior configurable. Documents the .claude/plugin-name.local.md pattern for storing plugin-specific configuration with YAML frontmatter and markdown content.",
    "scripts": true,
    "files": 7,
-   "tags": []
+   "tags": [],
+   "plain": "Manage user-configurable plugin settings using local files and frontmatter.",
+   "useFor": [
+    "Store plugin configuration",
+    "Make plugins configurable"
+   ],
+   "example": "Where do I store per-project plugin settings?"
   },
   {
    "key": "anthropics/claude-plugins-official/plugin-structure",
@@ -3083,7 +3287,13 @@
    "files": 6,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Scaffold and organize the directory structure for new plugins.",
+   "useFor": [
+    "Create a new plugin",
+    "Understand plugin structure"
+   ],
+   "example": "Help me scaffold a new plugin."
   },
   {
    "key": "anthropics/claude-plugins-official/skill-development",
@@ -3096,7 +3306,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Create and organize custom skills for your plugins.",
+   "useFor": [
+    "Add a new skill",
+    "Organize skill content"
+   ],
+   "example": "How do I add a skill to my plugin?"
   },
   {
    "key": "anthropics/claude-plugins-official/project-artifact",
@@ -3108,7 +3324,13 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Generate and publish shareable project status artifacts with success criteria.",
+   "useFor": [
+    "Publish a status page",
+    "Share project progress"
+   ],
+   "example": "Generate a project status artifact for this work."
   },
   {
    "key": "anthropics/claude-plugins-official/receipts",
@@ -3122,7 +3344,13 @@
     "docs",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Generate a personal impact report and usage history from your session transcripts.",
+   "useFor": [
+    "Show my Claude Code activity",
+    "Prove Claude Code value"
+   ],
+   "example": "Generate my Claude Code usage and impact report."
   },
   {
    "key": "anthropics/claude-plugins-official/session-report",
@@ -3136,7 +3364,13 @@
     "docs",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Generate an explorable HTML report of session usage and performance metrics.",
+   "useFor": [
+    "Analyze session token usage",
+    "Review prompt performance"
+   ],
+   "example": "Generate an HTML report of my session usage."
   },
   {
    "key": "anthropics/claude-plugins-official/skill-creator",
@@ -3149,7 +3383,13 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Create, modify, and optimize skills with performance testing and evals.",
+   "useFor": [
+    "Create a skill from scratch",
+    "Optimize skill descriptions"
+   ],
+   "example": "Help me create and test a new skill."
   },
   {
    "key": "openai/plugins/plugin-creator",
@@ -3161,7 +3401,13 @@
    "files": 3,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build folder structures and configuration files for new software tools.",
+   "useFor": [
+    "Create a new plugin folder",
+    "Update the marketplace file"
+   ],
+   "example": "Set up a new plugin directory for my project"
   },
   {
    "key": "openai/plugins/adobe-batch-edit-photos",
@@ -3173,7 +3419,13 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Apply consistent photo adjustments across a set of images to make them look cohesive.",
+   "useFor": [
+    "Batch edit vacation photos",
+    "Match the style of images"
+   ],
+   "example": "Make all these photos look like they were edited together"
   },
   {
    "key": "openai/plugins/adobe-create-mockups",
@@ -3185,7 +3437,13 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Place your logo or design onto realistic product mockups and scenes.",
+   "useFor": [
+    "Put a logo on mugs",
+    "Visualize designs on t-shirts"
+   ],
+   "example": "Show my logo on a coffee mug mockup"
   },
   {
    "key": "openai/plugins/adobe-create-social-variations",
@@ -3198,7 +3456,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Resize, crop, and export images or videos into platform-ready social media assets.",
+   "useFor": [
+    "Format images for Instagram",
+    "Crop videos for stories"
+   ],
+   "example": "Prepare this image for my Instagram feed"
   },
   {
    "key": "openai/plugins/adobe-design-from-template",
@@ -3211,7 +3475,13 @@
    "tags": [
     "docs",
     "media"
-   ]
+   ],
+   "plain": "Create visual designs using customizable templates for various media formats.",
+   "useFor": [
+    "Design a party flyer",
+    "Make a business card"
+   ],
+   "example": "Design a flyer for an upcoming event"
   },
   {
    "key": "openai/plugins/adobe-edit-quick-cut",
@@ -3223,7 +3493,13 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Cut and trim a video into a short highlight reel of the best parts.",
+   "useFor": [
+    "Make a sizzle reel",
+    "Shorten a video clip"
+   ],
+   "example": "Cut this video down into a highlight reel"
   },
   {
    "key": "openai/plugins/adobe-retouch-portraits",
@@ -3236,7 +3512,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Bulk-retouch a folder of portrait photos using automated adjustments.",
+   "useFor": [
+    "Process wedding photos",
+    "Clean up headshots"
+   ],
+   "example": "Retouch this folder of portrait photos quickly"
   },
   {
    "key": "openai/plugins/airtable-cli",
@@ -3248,7 +3530,13 @@
    "files": 1,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Manage bases, tables, records, and fields in Airtable.",
+   "useFor": [
+    "Read database records",
+    "Search table data"
+   ],
+   "example": "List all the records in my Airtable base"
   },
   {
    "key": "openai/plugins/airtable-filters",
@@ -3258,7 +3546,13 @@
    "desc": "Use this skill when the user wants to find, filter, or narrow down Airtable records by field values, even when they don't explicitly say \"filter.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Find, filter, and narrow down database records by specific field values.",
+   "useFor": [
+    "Filter table records",
+    "Search data by value"
+   ],
+   "example": "Find all records where status is active"
   },
   {
    "key": "openai/plugins/airtable-overview",
@@ -3268,7 +3562,13 @@
    "desc": "Explains what Airtable is and how data is structured — bases, tables, fields, records, views, automations, and interfaces. Use when you need context about the Airtable data model.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Explain how Airtable structures data across bases, tables, and views.",
+   "useFor": [
+    "Learn data structures",
+    "Understand database views"
+   ],
+   "example": "Explain how tables and bases work in Airtable"
   },
   {
    "key": "openai/plugins/boltz-check-status",
@@ -3278,7 +3578,13 @@
    "desc": "Boltz job status and result recovery. Use when listing jobs, checking progress, resuming downloads, recovering results, or downloading an existing job ID. Not for starting new jobs.",
    "scripts": false,
    "files": 3,
-   "tags": []
+   "tags": [],
+   "plain": "Check the status of tasks and recover completed results.",
+   "useFor": [
+    "Check job progress",
+    "Download existing results"
+   ],
+   "example": "Check the status of my running job"
   },
   {
    "key": "openai/plugins/boltz-cli-setup",
@@ -3291,7 +3597,13 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Install, update, and authenticate the command-line tool.",
+   "useFor": [
+    "Fix authentication errors",
+    "Setup the tool configuration"
+   ],
+   "example": "Help me fix my command-line login error"
   },
   {
    "key": "openai/plugins/boltz-protein-design",
@@ -3303,7 +3615,13 @@
    "files": 11,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design custom protein binders and antibodies for specific targets.",
+   "useFor": [
+    "Generate protein candidates",
+    "Design custom peptides"
+   ],
+   "example": "Design a new protein binder for this target"
   },
   {
    "key": "openai/plugins/boltz-protein-screen",
@@ -3313,7 +3631,13 @@
    "desc": "Screen existing protein binders with Boltz. Use when ranking a supplied protein, peptide, antibody, nanobody, or binder library against a target. Not for designing new proteins or screening small molecules.",
    "scripts": false,
    "files": 3,
-   "tags": []
+   "tags": [],
+   "plain": "Screen and rank existing protein binders against a target.",
+   "useFor": [
+    "Rank antibody libraries",
+    "Evaluate protein binders"
+   ],
+   "example": "Screen this list of proteins against the target"
   },
   {
    "key": "openai/plugins/boltz-small-molecule-adme",
@@ -3323,7 +3647,13 @@
    "desc": "Predict Tier-1 ADME/ADMET for small molecules with Boltz from bare SMILES — no target, no docking. Use when the user wants solubility, permeability, or lipophilicity/logD for a molecule or list of molecules. Not for ranking molecules against a protein target (use boltz-small-molecule-screen, which already returns ADME free).",
    "scripts": false,
    "files": 3,
-   "tags": []
+   "tags": [],
+   "plain": "Predict basic properties for small molecules from simple chemical strings.",
+   "useFor": [
+    "Check molecule solubility",
+    "Predict chemical permeability"
+   ],
+   "example": "Predict the solubility for these SMILES strings"
   },
   {
    "key": "openai/plugins/boltz-small-molecule-design",
@@ -3335,7 +3665,13 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design novel small-molecule binders and drug hits for a target.",
+   "useFor": [
+    "Generate new ligands",
+    "Design drug hits"
+   ],
+   "example": "Design new small-molecule binders for the target"
   },
   {
    "key": "openai/plugins/boltz-small-molecule-screen",
@@ -3347,7 +3683,13 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Screen and rank compound libraries against a target while predicting basic properties.",
+   "useFor": [
+    "Dock molecule libraries",
+    "Rank compound hits"
+   ],
+   "example": "Screen this compound library against the target"
   },
   {
    "key": "openai/plugins/boltz-structure-and-binding",
@@ -3359,7 +3701,13 @@
    "files": 3,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Predict structures and binding interactions for molecular complexes.",
+   "useFor": [
+    "Fold protein complexes",
+    "Score molecular binding"
+   ],
+   "example": "Predict the structure for this protein and ligand complex"
   },
   {
    "key": "openai/plugins/ios-app-intents",
@@ -3371,7 +3719,13 @@
    "files": 5,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design system actions and shortcuts for mobile app integration.",
+   "useFor": [
+    "Create app shortcuts",
+    "Design system intents"
+   ],
+   "example": "Design a system shortcut for my app actions"
   },
   {
    "key": "openai/plugins/ios-debugger-agent",
@@ -3384,7 +3738,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Build, run, and debug mobile apps on a simulator.",
+   "useFor": [
+    "Inspect simulator logs",
+    "Diagnose runtime errors"
+   ],
+   "example": "Build and run my mobile app on the simulator"
   },
   {
    "key": "openai/plugins/ios-ettrace-performance",
@@ -3394,7 +3754,13 @@
    "desc": "Capture and interpret iOS Simulator ETTrace profiles. Use when profiling launch or runtime latency, comparing traces, or finding CPU-heavy stacks.",
    "scripts": true,
    "files": 3,
-   "tags": []
+   "tags": [],
+   "plain": "Analyze iOS simulator performance profiles to find slow app loading and heavy CPU tasks.",
+   "useFor": [
+    "Profile launch speed",
+    "Find CPU bottlenecks"
+   ],
+   "example": "Can you check why my app takes so long to launch?"
   },
   {
    "key": "openai/plugins/ios-memgraph-leaks",
@@ -3404,7 +3770,13 @@
    "desc": "Capture and inspect iOS leaks and memgraphs. Use when debugging leaked objects, retain cycles, memory growth, or before/after leak evidence.",
    "scripts": true,
    "files": 3,
-   "tags": []
+   "tags": [],
+   "plain": "Inspect memory reports and check for memory leaks in iOS apps.",
+   "useFor": [
+    "Find memory leaks",
+    "Debug retain cycles"
+   ],
+   "example": "Why is my app running out of memory?"
   },
   {
    "key": "openai/plugins/ios-simulator-browser",
@@ -3417,7 +3789,13 @@
    "tags": [
     "media",
     "automate"
-   ]
+   ],
+   "plain": "View and interact with an iOS simulator inside your browser with live reloading.",
+   "useFor": [
+    "Test apps in browser",
+    "View live SwiftUI previews"
+   ],
+   "example": "Show me my app running in the browser right now."
   },
   {
    "key": "openai/plugins/swiftui-liquid-glass",
@@ -3430,7 +3808,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Build and review modern iOS Liquid Glass user interfaces.",
+   "useFor": [
+    "Adopt Liquid Glass",
+    "Check design correctness"
+   ],
+   "example": "Help me add Liquid Glass styling to my iOS app."
   },
   {
    "key": "openai/plugins/swiftui-performance-audit",
@@ -3443,7 +3827,13 @@
    "tags": [
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Review your SwiftUI code to diagnose slow rendering and lagging scrolling.",
+   "useFor": [
+    "Diagnose slow rendering",
+    "Fix janky scrolling"
+   ],
+   "example": "Why is scrolling so choppy in my SwiftUI list?"
   },
   {
    "key": "openai/plugins/swiftui-ui-patterns",
@@ -3456,7 +3846,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Build and rearrange app screens using standard SwiftUI navigation and layout patterns.",
+   "useFor": [
+    "Shape screen layouts",
+    "Build navigation flows"
+   ],
+   "example": "How should I structure the navigation for my app?"
   },
   {
    "key": "openai/plugins/swiftui-view-refactor",
@@ -3468,7 +3864,13 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Clean up large view files into smaller, testable SwiftUI components.",
+   "useFor": [
+    "Split large views",
+    "Clean up data flow"
+   ],
+   "example": "Can you help me clean up this massive view file?"
   },
   {
    "key": "openai/plugins/appkit-interop",
@@ -3478,7 +3880,13 @@
    "desc": "Bridge macOS SwiftUI into AppKit narrowly. Use when implementing representables, reaching NSWindow or panels, handling menus, or using the responder chain.",
    "scripts": false,
    "files": 5,
-   "tags": []
+   "tags": [],
+   "plain": "Connect macOS SwiftUI views with traditional AppKit components and windows.",
+   "useFor": [
+    "Use AppKit windows",
+    "Bridge to AppKit"
+   ],
+   "example": "How do I reach an NSWindow from my SwiftUI view?"
   },
   {
    "key": "openai/plugins/build-run-debug",
@@ -3490,7 +3898,13 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build, run, and fix macOS apps using command-line Xcode and Swift tools.",
+   "useFor": [
+    "Launch macOS apps",
+    "Diagnose startup failures"
+   ],
+   "example": "Why is my macOS app failing to build?"
   },
   {
    "key": "openai/plugins/liquid-glass",
@@ -3503,7 +3917,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Implement and check macOS Liquid Glass user interface elements.",
+   "useFor": [
+    "Adopt system glass",
+    "Build glass surfaces"
+   ],
+   "example": "How do I add glass surfaces to my Mac app?"
   },
   {
    "key": "openai/plugins/packaging-notarization",
@@ -3513,7 +3933,13 @@
    "desc": "Prepare macOS packaging and notarization workflows. Use when archiving apps, validating bundles, or explaining distribution-only failures.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Prepare your macOS app packages for distribution and notarization.",
+   "useFor": [
+    "Archive app bundles",
+    "Validate app packages"
+   ],
+   "example": "Help me get my Mac app ready for notarization."
   },
   {
    "key": "openai/plugins/signing-entitlements",
@@ -3525,7 +3951,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Fix code signing, app permissions, and security trust issues on macOS.",
+   "useFor": [
+    "Diagnose code signing",
+    "Fix sandbox errors"
+   ],
+   "example": "Why is Gatekeeper blocking my Mac app?"
   },
   {
    "key": "openai/plugins/swiftpm-macos",
@@ -3537,7 +3969,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build, run, and test Swift packages on macOS without an Xcode project.",
+   "useFor": [
+    "Test Swift packages",
+    "Run command-line tools"
+   ],
+   "example": "How do I run this Swift package from the terminal?"
   },
   {
    "key": "openai/plugins/swiftui-patterns",
@@ -3547,7 +3985,13 @@
    "desc": "Build macOS SwiftUI scenes and components with desktop patterns. Use when shaping windows, commands, toolbars, settings, split views, or inspectors.",
    "scripts": false,
    "files": 7,
-   "tags": []
+   "tags": [],
+   "plain": "Design macOS app windows, menus, and toolbars using desktop interface patterns.",
+   "useFor": [
+    "Shape app windows",
+    "Build toolbars and menus"
+   ],
+   "example": "How do I add a settings window to my Mac app?"
   },
   {
    "key": "openai/plugins/telemetry",
@@ -3557,7 +4001,13 @@
    "desc": "Add and verify lightweight macOS runtime telemetry. Use when wiring Logger events or inspecting logs for windows, sidebars, menus, and actions.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Add and check lightweight logging events in your macOS app.",
+   "useFor": [
+    "Wire Logger events",
+    "Inspect app logs"
+   ],
+   "example": "Can you add logging to track my window actions?"
   },
   {
    "key": "openai/plugins/test-triage",
@@ -3569,7 +4019,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Find and explain test failures across Xcode and Swift package manager.",
+   "useFor": [
+    "Narrow test failures",
+    "Explain assertion errors"
+   ],
+   "example": "Why are my unit tests failing on macOS?"
   },
   {
    "key": "openai/plugins/view-refactor",
@@ -3581,7 +4037,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Clean up macOS SwiftUI views and scenes into a reliable structure.",
+   "useFor": [
+    "Split large views",
+    "Tighten scene state"
+   ],
+   "example": "How do I reorganize this messy macOS view?"
   },
   {
    "key": "openai/plugins/window-management",
@@ -3591,7 +4053,13 @@
    "desc": "Customize macOS SwiftUI windows and scene behavior. Use when tuning window chrome, drag regions, placement, restoration, launch behavior, or borderless windows.",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Customize window appearance, behavior, and placement for macOS apps.",
+   "useFor": [
+    "Tune window chrome",
+    "Set launch behavior"
+   ],
+   "example": "How do I make my macOS window borderless?"
   },
   {
    "key": "openai/plugins/frontend-app-builder",
@@ -3605,7 +4073,13 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Build new frontend websites, dashboards, and games from scratch with a clean design.",
+   "useFor": [
+    "Create new dashboards",
+    "Build creative websites"
+   ],
+   "example": "Can you build a modern landing page for my new product?"
   },
   {
    "key": "openai/plugins/frontend-testing-debugging",
@@ -3619,7 +4093,13 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Test and fix visual layout errors, broken interactions, and console bugs in frontend apps.",
+   "useFor": [
+    "Fix visual regressions",
+    "Debug console errors"
+   ],
+   "example": "Why is this button not working on mobile screens?"
   },
   {
    "key": "openai/plugins/react-best-practices",
@@ -3633,7 +4113,14 @@
     "docs",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Optimize your React and Next.js code for better performance and speed.",
+   "useFor": [
+    "Speed up React code",
+    "Optimize Next.js pages",
+    "Fix slow components"
+   ],
+   "example": "Can you help me optimize this slow React component?"
   },
   {
    "key": "openai/plugins/shadcn",
@@ -3645,7 +4132,14 @@
    "files": 12,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Manage and style user interface components using specific component registries.",
+   "useFor": [
+    "Add UI components",
+    "Fix component styles",
+    "Configure projects"
+   ],
+   "example": "How do I add a new button component to my app?"
   },
   {
    "key": "openai/plugins/stripe-best-practices",
@@ -3658,7 +4152,14 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Set up and manage online payment systems and subscription billing models.",
+   "useFor": [
+    "Process online payments",
+    "Set up subscriptions",
+    "Build a marketplace"
+   ],
+   "example": "How do I set up monthly subscriptions with Stripe?"
   },
   {
    "key": "openai/plugins/supabase-postgres-best-practices",
@@ -3670,7 +4171,14 @@
    "files": 37,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Write and optimize database queries and table designs for better performance.",
+   "useFor": [
+    "Optimize database queries",
+    "Design database tables",
+    "Improve query speed"
+   ],
+   "example": "Can you help me make this slow database query faster?"
   },
   {
    "key": "openai/plugins/accessibility-and-inclusive-visualization",
@@ -3684,7 +4192,14 @@
     "media",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Make your charts and data diagrams accessible and inclusive for everyone.",
+   "useFor": [
+    "Review color contrast",
+    "Add text alternatives",
+    "Check keyboard support"
+   ],
+   "example": "How can I make this chart accessible for screen readers?"
   },
   {
    "key": "openai/plugins/canvas2d-data-visualization",
@@ -3698,7 +4213,14 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Render fast data visualizations using direct canvas drawing techniques.",
+   "useFor": [
+    "Draw high mark counts",
+    "Render fast animations",
+    "Build custom charts"
+   ],
+   "example": "Can you render this large scatter plot using Canvas2D?"
   },
   {
    "key": "openai/plugins/d3-data-visualization",
@@ -3710,7 +4232,14 @@
    "files": 6,
    "tags": [
     "automate"
-   ]
+   ],
+   "plain": "Build custom web charts and interactive graphics using code.",
+   "useFor": [
+    "Create SVG charts",
+    "Build custom graphics",
+    "Add chart interactions"
+   ],
+   "example": "Can you build a custom bar chart using D3?"
   },
   {
    "key": "openai/plugins/dashboards-and-real-time-visualization",
@@ -3722,7 +4251,14 @@
    "files": 5,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design live monitoring dashboards and streaming data views.",
+   "useFor": [
+    "Build live dashboards",
+    "Monitor streaming data",
+    "Design monitoring views"
+   ],
+   "example": "How do I design a live dashboard for server metrics?"
   },
   {
    "key": "openai/plugins/data-visualization",
@@ -3736,7 +4272,14 @@
     "media",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Plan and design the right visual layout for your data.",
+   "useFor": [
+    "Choose chart types",
+    "Design data dashboards",
+    "Create visual layouts"
+   ],
+   "example": "What type of chart should I use for survey results?"
   },
   {
    "key": "openai/plugins/gantt-chart-visualization",
@@ -3750,7 +4293,14 @@
     "media",
     "automate",
     "connect"
-   ]
+   ],
+   "plain": "Design and organize project schedules, timelines, and task dependencies.",
+   "useFor": [
+    "Create project schedules",
+    "Manage task dependencies",
+    "Build timeline charts"
+   ],
+   "example": "How do I set up a project timeline chart?"
   },
   {
    "key": "openai/plugins/geospatial-and-cartographic-visualization",
@@ -3762,7 +4312,14 @@
    "files": 10,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Create maps and geospatial visualizations to display location data.",
+   "useFor": [
+    "Build choropleth maps",
+    "Choose map projections",
+    "Display location data"
+   ],
+   "example": "How do I create a map showing store locations?"
   },
   {
    "key": "openai/plugins/grammar-of-graphics-and-declarative-visualization",
@@ -3772,7 +4329,14 @@
    "desc": "Build data visualizations with declarative grammars. Use when the user needs Vega-Lite, Vega, Observable Plot, or grammar-of-graphics reasoning, especially for tabular charts that do not require bespoke rendering.",
    "scripts": false,
    "files": 4,
-   "tags": []
+   "tags": [],
+   "plain": "Build standard charts quickly using declarative grammar rules.",
+   "useFor": [
+    "Create Vega charts",
+    "Build tabular charts",
+    "Design simple graphs"
+   ],
+   "example": "Can you make a simple line chart using Vega-Lite?"
   },
   {
    "key": "openai/plugins/node-link-and-diagram-layout",
@@ -3784,7 +4348,14 @@
    "files": 4,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Arrange connected nodes and diagrams automatically without overlapping lines.",
+   "useFor": [
+    "Organize flow diagrams",
+    "Arrange network nodes",
+    "Build schema diagrams"
+   ],
+   "example": "How do I automatically arrange the boxes in this flowchart?"
   },
   {
    "key": "openai/plugins/react-and-nextjs-data-visualization",
@@ -3798,7 +4369,14 @@
     "media",
     "apps",
     "connect"
-   ]
+   ],
+   "plain": "Add charts and diagrams into React and Next.js web applications.",
+   "useFor": [
+    "Add charts to React",
+    "Build Next.js diagrams",
+    "Render dashboard components"
+   ],
+   "example": "How do I put this chart component into my Next.js page?"
   },
   {
    "key": "openai/plugins/reports-pdfs-and-slide-automation",
@@ -3810,7 +4388,14 @@
    "files": 5,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Export data-rich reports, documents, and slides with embedded graphics.",
+   "useFor": [
+    "Create PDF reports",
+    "Automate slide decks",
+    "Embed charts in documents"
+   ],
+   "example": "How can I export this dashboard into a PDF report?"
   },
   {
    "key": "openai/plugins/scrollytelling-and-parallax-data-visualization",
@@ -3822,7 +4407,14 @@
    "files": 4,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Create scrolling visual stories where graphics change as readers scroll.",
+   "useFor": [
+    "Build scroll stories",
+    "Create sticky graphics",
+    "Design scroll timelines"
+   ],
+   "example": "Can you help me build a scrollytelling story for this article?"
   },
   {
    "key": "openai/plugins/statistical-and-uncertainty-visualization",
@@ -3834,7 +4426,14 @@
    "files": 5,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design statistically accurate charts that clearly display data uncertainty.",
+   "useFor": [
+    "Show data distributions",
+    "Display confidence intervals",
+    "Visualize statistical data"
+   ],
+   "example": "How do I show confidence intervals on this bar chart?"
   },
   {
    "key": "openai/plugins/testing-data-visualizations",
@@ -3847,7 +4446,14 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Test charts, diagrams, and dashboards to ensure they work correctly.",
+   "useFor": [
+    "Test chart components",
+    "Run visual regression",
+    "Verify dashboard data"
+   ],
+   "example": "How do I write tests for this interactive dashboard?"
   },
   {
    "key": "openai/plugins/threejs-data-visualization",
@@ -3859,7 +4465,14 @@
    "files": 9,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Render complex 3D data visualizations using powerful graphics hardware.",
+   "useFor": [
+    "Build 3D data views",
+    "Render 3D graphics",
+    "Create spatial views"
+   ],
+   "example": "Can you create a 3D scatter plot using Three.js?"
   },
   {
    "key": "openai/plugins/typescript-data-visualization-engineering",
@@ -3873,7 +4486,14 @@
     "media",
     "apps",
     "code"
-   ]
+   ],
+   "plain": "Build robust and type-safe data visualizations using a specific programming language.",
+   "useFor": [
+    "Write typed chart code",
+    "Create data models",
+    "Build typed diagrams"
+   ],
+   "example": "Can you write a type-safe chart component in TypeScript?"
   },
   {
    "key": "openai/plugins/uml-and-software-architecture-visualization",
@@ -3887,7 +4507,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Create and read software diagrams like flowcharts and architecture maps.",
+   "useFor": [
+    "Draw system architecture diagrams",
+    "Map database schemas"
+   ],
+   "example": "Draw a sequence diagram for our user login flow."
   },
   {
    "key": "openai/plugins/visualization-strategy-and-critique",
@@ -3899,7 +4525,13 @@
    "files": 5,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design and critique data charts, dashboards, and visual layouts.",
+   "useFor": [
+    "Pick the right chart",
+    "Review dashboard layouts"
+   ],
+   "example": "What kind of chart should I use for this sales data?"
   },
   {
    "key": "openai/plugins/canva-brand-check",
@@ -3913,7 +4545,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Check a Canva design against brand rules to spot errors.",
+   "useFor": [
+    "Review brand colors",
+    "Check font consistency"
+   ],
+   "example": "Is this slide deck on brand?"
   },
   {
    "key": "openai/plugins/canva-branded-presentation",
@@ -3926,7 +4564,13 @@
    "tags": [
     "docs",
     "media"
-   ]
+   ],
+   "plain": "Generate presentation slides in Canva from your notes.",
+   "useFor": [
+    "Turn outlines into slides",
+    "Create branded decks"
+   ],
+   "example": "Turn this text outline into a branded presentation."
   },
   {
    "key": "openai/plugins/canva-bulk-create",
@@ -3940,7 +4584,13 @@
     "docs",
     "media",
     "research"
-   ]
+   ],
+   "plain": "Generate multiple Canva designs at once from spreadsheet data.",
+   "useFor": [
+    "Batch create posters",
+    "Autofill templates from spreadsheets"
+   ],
+   "example": "Bulk create designs from this CSV file."
   },
   {
    "key": "openai/plugins/canva-design-feedback",
@@ -3954,7 +4604,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Review a Canva design and provide clear suggestions for improvement.",
+   "useFor": [
+    "Check visual hierarchy",
+    "Review poster readability"
+   ],
+   "example": "Review my design and give me feedback."
   },
   {
    "key": "openai/plugins/canva-edit-design",
@@ -3967,7 +4623,13 @@
    "tags": [
     "docs",
     "media"
-   ]
+   ],
+   "plain": "Modify text, images, and layout in an existing Canva design.",
+   "useFor": [
+    "Update slide text",
+    "Replace design images"
+   ],
+   "example": "Change the title text on my Canva poster."
   },
   {
    "key": "openai/plugins/canva-implement-feedback",
@@ -3981,7 +4643,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Apply reviewer comments and feedback directly to a Canva design.",
+   "useFor": [
+    "Address reviewer comments",
+    "Fix design feedback"
+   ],
+   "example": "Implement the feedback left on my presentation."
   },
   {
    "key": "openai/plugins/canva-resize-for-social-media",
@@ -3993,7 +4661,13 @@
    "files": 0,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Resize a single Canva design to fit multiple social media platforms.",
+   "useFor": [
+    "Resize for Instagram",
+    "Adapt for Facebook"
+   ],
+   "example": "Resize this design for all social media platforms."
   },
   {
    "key": "openai/plugins/canva-translate-design",
@@ -4006,7 +4680,13 @@
    "tags": [
     "docs",
     "media"
-   ]
+   ],
+   "plain": "Translate all text in a Canva design into another language.",
+   "useFor": [
+    "Translate presentation text",
+    "Create localized designs"
+   ],
+   "example": "Translate my design to Spanish."
   },
   {
    "key": "openai/plugins/connect-chatcut-desktop",
@@ -4018,7 +4698,13 @@
    "files": 1,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Set up and connect the desktop application for easier task execution.",
+   "useFor": [
+    "Install the desktop app",
+    "Repair connection errors"
+   ],
+   "example": "Connect ChatCut Desktop so I can use it."
   },
   {
    "key": "openai/plugins/circleci-builds",
@@ -4030,7 +4716,13 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Diagnose and fix broken software build pipelines quickly and safely.",
+   "useFor": [
+    "Investigate failed jobs",
+    "Fix pipeline errors"
+   ],
+   "example": "Why did my CircleCI build fail today?"
   },
   {
    "key": "openai/plugins/chunk",
@@ -4044,7 +4736,13 @@
     "media",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Manage tasks and troubleshoot builds using specialized workflow tools.",
+   "useFor": [
+    "Set up Chunk",
+    "Run sandbox tasks"
+   ],
+   "example": "Help me set up Chunk for my project."
   },
   {
    "key": "openai/plugins/circleci-cli",
@@ -4056,7 +4754,13 @@
    "files": 1,
    "tags": [
     "automate"
-   ]
+   ],
+   "plain": "Run commands and inspect pipeline statuses using a command line tool.",
+   "useFor": [
+    "Check job status",
+    "Rerun pipelines"
+   ],
+   "example": "Check the status of my recent workflows."
   },
   {
    "key": "openai/plugins/circleci-config",
@@ -4069,7 +4773,13 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Improve build configuration files to make pipelines faster and more reliable.",
+   "useFor": [
+    "Reduce CI runtime",
+    "Optimize caching"
+   ],
+   "example": "How can I speed up my CircleCI configuration file?"
   },
   {
    "key": "openai/plugins/agents-sdk",
@@ -4082,7 +4792,13 @@
    "tags": [
     "apps",
     "connect"
-   ]
+   ],
+   "plain": "Create smart software applications that remember state and run on servers.",
+   "useFor": [
+    "Build chat applications",
+    "Create real-time workflows"
+   ],
+   "example": "Help me build a stateful agent on Cloudflare."
   },
   {
    "key": "openai/plugins/building-ai-agent-on-cloudflare",
@@ -4095,7 +4811,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Build and deploy smart digital assistants directly onto server infrastructure.",
+   "useFor": [
+    "Create chat bots",
+    "Deploy worker tasks"
+   ],
+   "example": "Build an AI agent that runs on Cloudflare Workers."
   },
   {
    "key": "openai/plugins/building-mcp-server-on-cloudflare",
@@ -4108,7 +4830,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Create remote server connections with secure login and tool integration.",
+   "useFor": [
+    "Build server tools",
+    "Configure OAuth logins"
+   ],
+   "example": "Build a remote server on Cloudflare with authentication."
   },
   {
    "key": "openai/plugins/cloudflare",
@@ -4121,7 +4849,13 @@
    "tags": [
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Manage web infrastructure, security settings, databases, and storage options.",
+   "useFor": [
+    "Configure databases",
+    "Set up security rules"
+   ],
+   "example": "Help me set up storage and security on Cloudflare."
   },
   {
    "key": "openai/plugins/durable-objects",
@@ -4134,7 +4868,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Create persistent data storage units that remember information across sessions.",
+   "useFor": [
+    "Build chat rooms",
+    "Create multiplayer games"
+   ],
+   "example": "Create a durable object for a live chat room."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-skill-work",
@@ -4584,7 +5324,7 @@
    "path": ".agent/skills/impeccable",
    "desc": "Use when the user wants to design, redesign, shape, critique, audit, polish, clarify, distill, harden, optimize, adapt, animate, colorize, extract, or otherwise improve a frontend interface. Covers websites, landing pages, dashboards, product UI, app shells, components, forms, settings, onboarding, and empty states. Handles UX review, visual hierarchy, information architecture, cognitive load, accessibility, performance, responsive behavior, theming, anti-patterns, typography, fonts, spacing, layout, alignment, color, motion, micro-interactions, UX copy, error states, edge cases, i18n, and reu",
    "scripts": true,
-   "files": 53,
+   "files": 56,
    "tags": [
     "docs",
     "media",

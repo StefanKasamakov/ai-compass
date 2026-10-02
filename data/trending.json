@@ -1,179 +1,65 @@
 {
- "updated": "2026-10-01T22:45:07.891Z",
+ "updated": "2026-10-02T05:47:32.213Z",
  "items": [
   {
-   "repo": "earendil-works/pi",
-   "stars": 111173,
-   "desc": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
-   "created": "2025-08-09T14:03:50Z",
-   "topics": [],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "cursor/plugins",
-   "stars": 9312,
-   "desc": "Cursor plugin specification and official plugins",
-   "created": "2026-01-23T01:57:42Z",
-   "topics": [],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "agent-substrate/substrate",
-   "stars": 4096,
-   "desc": "Agent Substrate: the core system",
-   "created": "2026-05-13T19:02:38Z",
+   "repo": "Vibra-Ingenn/Janus",
+   "stars": 51,
+   "desc": "Janus is a API router for AI models written in Go and has a Vulkan Model runner",
+   "created": "2026-09-24T06:02:09Z",
    "topics": [],
    "lang": "Go",
    "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "androoAGI/starnet",
-   "stars": 866,
-   "desc": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
-   "created": "2026-06-14T23:11:55Z",
-   "topics": [
-    "agent-harness",
-    "ai",
-    "ai-agents",
-    "byok"
+    "Show HN"
    ],
-   "lang": "JavaScript",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
+   "hn": {
+    "points": 63,
+    "url": "https://news.ycombinator.com/item?id=49926773"
+   }
   },
   {
-   "repo": "edenfunf/reelmimic",
-   "stars": 685,
-   "desc": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
-   "created": "2026-09-28T19:14:59Z",
-   "topics": [
-    "2d-animation",
-    "ai-agents",
-    "ai-video",
-    "animation"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "INSANE0777/Awwwards-mcp",
+   "repo": "PerryLink/jevcore",
    "stars": 94,
-   "desc": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode…) design inspiration from award-winning websites — search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
-   "created": "2026-09-18T10:57:09Z",
+   "desc": "TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default.",
+   "created": "2026-09-20T04:11:31Z",
    "topics": [
     "ai-agents",
-    "awwwards",
+    "cordis",
+    "decision-model",
+    "deepseek"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "MiaoWuNYA/rikkahub-sillytavern-android",
+   "stars": 62,
+   "desc": "安卓AI聊天端:开箱即聊，无损导入酒馆卡，缓存强省用量，Jev 决策，防空回，多维记忆，前端卡支持，高定制主题，QQbot，AI群聊，插件系统，强兼容中转站。手机移动端原生支持，求 Star 收藏⭐Android AI Chatbox: lossless SillyTavern card import, aggressive cache optimization, Jev decisions, multi-dimensional memory, anti-blank-reply, proactive messages, AI group chat, SillyTavern themes, plugin system, Native mobile.RikkaHub",
+   "created": "2026-09-20T03:25:10Z",
+   "topics": [
+    "ai-chat",
+    "ai-client",
+    "android",
+    "character-card"
+   ],
+   "lang": "Kotlin",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "devilcoolyue/agentbox",
+   "stars": 48,
+   "desc": "Self-hosted browser workspace for Claude Code and Codex CLI, with Docker sessions, terminal, files, Git, and usage tracking.",
+   "created": "2026-09-28T03:32:41Z",
+   "topics": [
+    "ai-coding",
     "claude-code",
-    "codex"
+    "codex",
+    "docker"
    ],
-   "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "ArtificialAnalysis/aa-agentperf-local",
-   "stars": 69,
-   "desc": "Benchmark local LLM serving by replaying real agent trajectories",
-   "created": "2026-09-26T03:11:59Z",
-   "topics": [
-    "ai-agents",
-    "artificial-analysis",
-    "benchmark",
-    "inference"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "zeronezer/bidcraft",
-   "stars": 64,
-   "desc": "标书匠 BidCraft · 对话式标书编制系统：AI 智能编制技术标，支持招标文件解析、标段选择、标书编写、知识库提炼与学习对话式改稿。LLM-Wiki 路线，基于LangGraph实现。Open-source AI agent for construction tender & bid documents.",
-   "created": "2026-09-17T03:42:48Z",
-   "topics": [
-    "ai-agent",
-    "ai-document-generator",
-    "ai-writing",
-    "bid"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "bgts-ai-org/bgts-context-engine",
-   "stars": 61,
-   "desc": "Deterministic code-graph context engine for AI coding agents - PostgreSQL + Apache AGE + pgvector, MCP & REST, no LLM in the loop.",
-   "created": "2026-09-08T12:39:07Z",
-   "topics": [
-    "ai-agents",
-    "apache-age",
-    "ast",
-    "code-graph"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "VecSzn/lobes",
-   "stars": 43,
-   "desc": "An experimental local AI runtime. It relays one request through five small models with one job each, on a single 8 GB consumer GPU.",
-   "created": "2026-09-14T07:49:13Z",
-   "topics": [
-    "consumer-gpu",
-    "gguf",
-    "llama-cpp",
-    "llm-inference"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "lukeckprobierts/Hemmingway-1",
-   "stars": 41,
-   "desc": "Hemmingway-1: a 27B model that writes the way a person writes. Open weights, free for non-commercial use (CC BY-NC 4.0); commercial use by agreement.",
-   "created": "2026-09-20T12:05:48Z",
-   "topics": [
-    "ai-writing",
-    "cc-by-nc",
-    "creative-writing",
-    "gguf"
-   ],
-   "lang": null,
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "abacusai/abacusai-bot",
-   "stars": 41,
-   "desc": "100% free, open-source personal agents for your messaging apps, tools, and services",
-   "created": "2026-09-11T07:04:16Z",
-   "topics": [
-    "agent",
-    "ai",
-    "ai-agents",
-    "android"
-   ],
-   "lang": "TypeScript",
+   "lang": "Go",
    "sources": [
     "new on GitHub"
    ]

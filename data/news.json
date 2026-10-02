@@ -1,6 +1,17 @@
 {
- "updated": "2026-10-01T22:45:07.891Z",
+ "updated": "2026-10-02T05:47:32.213Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+   "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
+   "date": "2026-10-02T04:01:31.000Z",
+   "summary": "",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png"
+  },
   {
    "source": "GitHub release",
    "title": "Codex CLI rust-v0.160.0",
@@ -43,6 +54,28 @@
    "image": "https://opengraph.githubassets.com/38e4e37d33c0357b710c8c6038b064ba34ea0050a96834af61ed3857cbbb2480/anthropics/claude-code/releases/tag/v2.1.287"
   },
   {
+   "source": "OpenAI",
+   "title": "How Albertsons Companies is reimagining retail from the inside out",
+   "url": "https://openai.com/index/albertsons-reimagining-retail",
+   "date": "2026-10-01T16:00:00.000Z",
+   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/barclays-scales-claude",
+   "date": "2026-10-01T15:19:00.000Z",
+   "title": "Barclays scales Claude to upgrade operations and improve client experience",
+   "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+  },
+  {
    "source": "Hacker News",
    "title": "Figma restricts MCP access to whitelisted clients, excluding Pi",
    "url": "https://twitter.com/GayaniFigma/status/2105295629941350454",
@@ -83,6 +116,28 @@
    "big": false,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!wmoR!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTfV52SWgAIlX3W.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Matthew Green",
+   "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+   "date": "2026-10-01T06:29:01.000Z",
+   "summary": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and sha",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+   "url": "https://openai.com/index/the-den-family-social",
+   "date": "2026-10-01T00:00:00.000Z",
+   "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
   },
   {
    "source": "GitHub release",
@@ -984,68 +1039,6 @@
    "big": false,
    "ai": false,
    "image": "https://claude.dev/blog/how-we-made-claude-ai-faster/og.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
-   "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
-   "date": "2026-09-23T18:41:40.000Z",
-   "summary": "Hugging Face published a guide on using NVIDIA Warp to accelerate robotics simulations.",
-   "tags": [
-    "research",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6994dc99f850a10f03fd0b21/rQ6tGCJEaH16bQQ8X4M8b.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude discovers a novel enzyme system with CRISPR-like repeats",
-   "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-   "date": "2026-09-23T18:06:47Z",
-   "discuss": "https://news.ycombinator.com/item?id=49820134",
-   "summary": "780 points, 803 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/394de337d8a5d8db93a1c048fa1cb53e16a09625-2048x1240.jpg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Gemini 3.8 TTS Playground",
-   "url": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/",
-   "date": "2026-09-23T17:12:27.000Z",
-   "summary": "Tool: Gemini 3.8 TTS Playground Google released two new Gemini text-to-speech models today - gemini-3.8-flash-tts and gemini-3.8-flash-lite-tts . They come with a library of over 2,000 voices, plus the ability to create a custom voice with \"just a 30-second audio sample of your voice or a voice you have the rights to use\". I vibe coded this bring-your-own-key playground interface with GPT-6 Astra,",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://simonwillison.net/2026/Sep/23/gemini-tts-playground/%EF%BF%BC%EF%BF%BC%20https://static.simonwillison.net/static/2026/tts-playground.webp"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Advancing Private AI Compute with secure, server-side memory",
-   "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-   "date": "2026-09-23T16:00:57.000Z",
-   "summary": "DeepMind introduced private, server-side memory for its Private AI Compute platform to enhance personal AI security.",
-   "tags": [
-    "safety",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Two years of OpenAI Academy",
-   "url": "https://openai.com/index/two-years-of-openai-academy",
-   "date": "2026-09-23T16:00:00.000Z",
-   "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
   }
  ]
 }
