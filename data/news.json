@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-02T12:45:32.506Z",
+ "updated": "2026-10-02T22:18:56.889Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.288",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+   "date": "2026-10-02T20:19:57Z",
+   "summary": "Anthropic released Claude Code v2.1.288, updating its terminal-based coding agent with stability fixes.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/a3be99ac1261695aeb8f3db7799f778ef42e65bf6fbf1a5900f5cf4806632c60/anthropics/claude-code/releases/tag/v2.1.288"
+  },
+  {
+   "source": "GitHub",
+   "title": "Selected models in GitHub Copilot deprecated",
+   "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated",
+   "date": "2026-10-02T18:24:19.000Z",
+   "summary": "GitHub has deprecated several older model variants across all Copilot experiences, including chat, inline edits, and agent modes.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/664219578-1b64ba32-beb4-4ad9-9eb5-63585c9c591e.jpg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "A model guide for the GPT-6 family",
+   "url": "https://openai.com/index/practical-guide-building-gpt-6",
+   "date": "2026-10-02T16:15:00.000Z",
+   "summary": "OpenAI published a configuration guide for GPT-6, detailing how to tune reasoning effort and manage tool coordination in production workflows.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+   "url": "https://huggingface.co/blog/allenai/astabrief",
+   "date": "2026-10-02T15:19:50.000Z",
+   "summary": "Hugging Face has open-sourced AstaBrief, a specialized model optimized for generating quick, structured reports.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AdqLEBgtQnaDXKLdylC3l.png"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Pi 1.0, Pi Durable, and AIE NYC",
@@ -992,55 +1046,6 @@
    "big": false,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!-Em5!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc4f2dad0-1897-4b86-aa39-f4772f76e474_1591x828.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Accelerating vision-language models with LFM2.5-VL-DSpark",
-   "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
-   "date": "2026-09-24T14:08:57.000Z",
-   "summary": "Hugging Face introduced improvements for accelerating vision-language models.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/WgfT8N8Xyb6lBxSif7XLO.gif"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Meta Connect 2026: Muse glasses, voice, video, and Charm",
-   "url": "https://www.latent.space/p/ainews-meta-connect-2026-muse-glasses",
-   "date": "2026-09-24T08:12:59.000Z",
-   "summary": "Meta Connect 2026 showcased new smart glasses, voice features, and updated multimodal models.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/JvyVwlP_nlw"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.61.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.61.0",
-   "date": "2026-09-23T23:59:15Z",
-   "summary": "New release of Gemini CLI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://opengraph.githubassets.com/0e2b4452bc082aa5b2ae94a0a717b0a73fd506688b1ed08ba43b0b9e92cb1f1a/google-gemini/gemini-cli/releases/tag/v0.61.0"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "We just shipped support for the ugliest part of HTTP: Vary",
-   "url": "https://simonwillison.net/2026/Sep/23/hn-49823961/",
-   "date": "2026-09-23T23:14:57.000Z",
-   "summary": "My comment on We just shipped support for the ugliest part of HTTP: Vary &mdash; Hacker News. I've been wanting this from Cloudflare for years . The classic problem here is if you do that thing where user agents that send \"accept: text/html\" get HTML, while user agents that don't get JSON or some other format. This used to be impossible to deploy behind Cloudflare caching, because they ignored the",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
   }
  ]
 }

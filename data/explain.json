@@ -8683,5 +8683,35 @@
   "repo": "google/ax",
   "at": "2026-10-02",
   "source": "trending"
+ },
+ "zouyuxuan122/dsh-our-free-model": {
+  "cat": "harness",
+  "kind": "dsh free model plugin",
+  "what": "This is a free model plugin for dsh that adds frontier models like Muse Spark 1.3 and MiMo V2.6 with zero configuration, no sign-up, and no API keys required.",
+  "why": "It lets dsh users access multiple frontier models for free without managing API keys or paying for upstream subscriptions.",
+  "level": "setup",
+  "start": "dsh plugin --profile web add /absolute/path/to/dsh-our-free-model",
+  "caution": "Using free model pool plugins that bypass authentication or mirror public gateway endpoints may violate upstream terms of service and risk unexpected service blocks.",
+  "alts": [],
+  "packages": [],
+  "plain": "A dsh plugin providing free access to multiple frontier AI models without accounts or API keys.",
+  "tags": [
+   "code",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Access free frontier AI models inside dsh",
+   "Monitor local token usage and speed metrics",
+   "Forward models via an OpenAI-compatible local port"
+  ],
+  "steps": [
+   "Add the plugin to your dsh profile using the command line.",
+   "Restart your dsh application to load the plugin.",
+   "Select the Our Free Model group from the input box model selector."
+  ],
+  "repo": "zouyuxuan122/dsh-our-free-model",
+  "at": "2026-10-02",
+  "source": "trending"
  }
 }
