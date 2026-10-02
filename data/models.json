@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-02",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -94,13 +94,13 @@
   {
    "id": "sol",
    "p": "openai",
-   "name": "GPT-6 Sol",
+   "name": "GPT-6.1 Sol",
    "tier": "Balanced",
    "best": "Strong reasoning for complex professional work at a mid-tier price.",
    "in": 2,
    "out": 10,
    "ctx": "1.05M",
-   "released": "2026-09-22",
+   "released": "2026-09-29",
    "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode."
   },
   {
