@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Thinking Levels Explained: a Cheat Sheet · Which AI Map</title>
+<meta name="description" content="What Low, High, Extended, Instant, Pro and Deep Think mean in Claude, ChatGPT and Gemini, when to use each, and a one-page cheat sheet.">
+<link rel="canonical" href="https://whichaimap.com/thinking.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Which AI Map">
+<meta property="og:title" content="AI Thinking Levels Explained: a Cheat Sheet · Which AI Map">
+<meta property="og:description" content="What Low, High, Extended, Instant, Pro and Deep Think mean in Claude, ChatGPT and Gemini, when to use each, and a one-page cheat sheet.">
+<meta property="og:url" content="https://whichaimap.com/thinking.html">
+<meta property="og:image" content="https://whichaimap.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Thinking Levels Explained: a Cheat Sheet · Which AI Map">
+<meta name="twitter:description" content="What Low, High, Extended, Instant, Pro and Deep Think mean in Claude, ChatGPT and Gemini, when to use each, and a one-page cheat sheet.">
+<meta name="twitter:image" content="https://whichaimap.com/assets/og.png">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=31">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="thinking">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Guide</div>
+    <h1>Thinking levels, explained.</h1>
+    <p class="lead">Every AI app now has a dial for how hard it thinks before it answers, and every company gave it different names. This page explains what the dial does, when to turn it up, and what the names mean in Claude, ChatGPT and Gemini.</p>
+    <div class="row" style="margin-top:1.2rem"><a class="btn primary" href="#sheet"><i data-i="book"></i>Jump to the cheat sheet</a><button class="btn" onclick="window.print()"><i data-i="copy"></i>Print or save as PDF</button></div>
+  </div></header>
+
+  <section id="what"><div class="wrap lesson">
+    <div><div class="kicker">The idea</div><h2>What "thinking" is</h2>
+      <p class="lead">Time to work the problem out before answering.</p></div>
+    <div>
+      <p>Without thinking, a model answers straight away, the way you answer "what is the capital of France". With thinking turned up, it first works in private: breaks the task into steps, tries an approach, checks it, sometimes starts over. Then it writes the answer.</p>
+      <dl class="gloss" style="margin-top:1.2rem">
+        <div><dt>What you gain</dt><dd>Fewer mistakes on tasks with several steps: calculations, plans with many conditions, long documents, code.</dd></div>
+        <div><dt>What it costs</dt><dd>Time (seconds become minutes) and allowance. Higher levels use up your plan's limit faster.</dd></div>
+        <div><dt>What it does not do</dt><dd>It does not know more facts and it does not search the web. A vague question stays vague, however long the model thinks about it.</dd></div>
+      </dl>
+    </div>
+  </div></section>
+
+  <section id="sheet"><div class="wrap">
+    <div class="kicker">The cheat sheet</div>
+    <h2>Which level for which job</h2>
+    <p class="lead">Start in the middle. Turn it up only when the answer was wrong or shallow, and turn it back down afterwards.</p>
+    <div class="grid sheet-grid">
+      <div class="card sheet"><span class="tag">Quick</span><h3>Answer straight away</h3><ul class="vs-list"><li>A fact, a definition, a translation</li><li>Rewording a sentence or fixing grammar</li><li>A short, routine email</li></ul><p class="sheet-foot">Seconds. Uses the least allowance.</p></div>
+      <div class="card sheet"><span class="tag ok">Normal · start here</span><h3>Everyday work</h3><ul class="vs-list"><li>Writing and editing longer text</li><li>Summarising a document</li><li>Planning a trip, a week, a meeting</li></ul><p class="sheet-foot">Right for most requests.</p></div>
+      <div class="card sheet"><span class="tag">Deeper</span><h3>Several steps to get right</h3><ul class="vs-list"><li>Analysing a long report or contract</li><li>Spreadsheet formulas, budgets, comparisons</li><li>Finding a bug, reviewing code</li></ul><p class="sheet-foot">Up to a minute or two. Use when Normal slipped up.</p></div>
+      <div class="card sheet"><span class="tag warn">Deepest</span><h3>Hard problems only</h3><ul class="vs-list"><li>Maths, logic and science problems</li><li>Large code changes across many files</li><li>Decisions with many constraints at once</li></ul><p class="sheet-foot">Minutes. Burns allowance fast; often needs a higher plan.</p></div>
+    </div>
+
+    <h3 style="margin-top:2.4rem">The same four steps, in each app's words</h3>
+    <dl class="vs-table lv-table">
+      <div class="lv-row lv-names"><dt></dt><dd>Claude</dd><dd>ChatGPT</dd><dd>Gemini</dd></div>
+      <div class="lv-row"><dt>Quick<small>answer straight away</small></dt><dd data-app="Claude">Low</dd><dd data-app="ChatGPT">Instant</dd><dd data-app="Gemini">Standard, on Flash or Flash-Lite</dd></div>
+      <div class="lv-row"><dt>Normal<small>everyday work</small></dt><dd data-app="Claude">Medium<small>or the one marked Default</small></dd><dd data-app="ChatGPT">Medium</dd><dd data-app="Gemini">Standard</dd></div>
+      <div class="lv-row"><dt>Deeper<small>several steps</small></dt><dd data-app="Claude">High</dd><dd data-app="ChatGPT">High<small>Free and Go: the Think button</small></dd><dd data-app="Gemini">Extended</dd></div>
+      <div class="lv-row"><dt>Deepest<small>hard problems</small></dt><dd data-app="Claude">Extra high, Max</dd><dd data-app="ChatGPT">Extra High, Pro<small>Pro and Business plans</small></dd><dd data-app="Gemini">Deep Think<small>AI Ultra plan, Pro model</small></dd></div>
+    </dl>
+    <p class="muted" style="font-size:.85rem;margin-top:.8rem">The rows are a rough match, not an exact one: each company sets its levels differently. Names checked on 2 October 2026; they change several times a year.</p>
+  </div></section>
+
+  <section id="apps"><div class="wrap">
+    <div class="kicker">App by app</div>
+    <h2>Where the dial is, and what the options mean</h2>
+    <div class="grid three" style="margin-top:1.4rem">
+      <article class="card p-anthropic accent-left"><div class="head"><h3>Claude</h3><span class="tag">Effort</span></div>
+        <p><b style="color:var(--fg)">Where:</b> click the model name next to the send button, then Effort.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Options:</b> Low, Medium, High, Extra high, Max. One of them is marked Default for the model you chose: use that one for everyday work.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Good to know:</b> on the newest models thinking is always on, so Effort is the only dial. Higher effort reaches your usage limit sooner.</p>
+        <p style="margin-top:.6rem"><a href="https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings" target="_blank" rel="noopener">Official guide</a></p></article>
+      <article class="card p-openai accent-left"><div class="head"><h3>ChatGPT</h3><span class="tag">Thinking</span></div>
+        <p><b style="color:var(--fg)">Where:</b> the model picker. On the Free and Go plans there is a Think button instead, which you press for a single message.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Options:</b> Plus has Instant, Medium and High. Pro and Business add Extra High and Pro; Pro runs a stronger model and takes the longest.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Good to know:</b> on paid plans Instant does not switch itself to a higher level, and writing "think harder" in your message does not change the level either. Pick it in the menu.</p>
+        <p style="margin-top:.6rem"><a href="https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt" target="_blank" rel="noopener">Official guide</a></p></article>
+      <article class="card p-google accent-left"><div class="head"><h3>Gemini</h3><span class="tag">Thinking level</span></div>
+        <p><b style="color:var(--fg)">Where:</b> click the model name at the bottom of the message box. Choose the model first, then Thinking level.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Options:</b> two separate choices. Model: Flash-Lite, Flash or Pro. Thinking level: Standard or Extended. Deep Think is a third level that needs the Pro model and the AI Ultra plan.</p>
+        <p style="margin-top:.6rem"><b style="color:var(--fg)">Good to know:</b> Deep Think usually takes a few minutes. Stronger models and higher levels use more of your allowance.</p>
+        <p style="margin-top:.6rem"><a href="https://support.google.com/gemini/answer/16275805" target="_blank" rel="noopener">Official guide</a></p></article>
+    </div>
+    <details class="more" style="margin-top:1.4rem"><summary>For people who use coding tools</summary>
+      <p><b>Claude Code:</b> type <code>/effort</code> for a slider, or <code>/effort high</code> to set a level directly. Levels are low, medium, high, xhigh and max. Adding the word <code>ultrathink</code> to a message asks for deeper reasoning on that one turn without changing the setting.</p>
+      <p><b>Codex:</b> the setting is called reasoning effort (<code>model_reasoning_effort</code> in the config file), with levels such as low, medium, high and xhigh; which ones exist depends on the model.</p>
+      <p><b>APIs:</b> the same dial is a parameter on each request, so a program can use a low level for routine steps and a high one for the hard step.</p></details>
+  </div></section>
+
+  <section id="mistakes"><div class="wrap lesson">
+    <div><div class="kicker">Avoid these</div><h2>Four common mistakes</h2></div>
+    <div>
+      <ol class="steps">
+        <li><h3>Leaving it on the highest level</h3><p>Simple questions get slower, not better, and you run out of messages halfway through the day. Some models also overcomplicate an easy task when told to think hard.</p></li>
+        <li><h3>Using thinking to fix a vague question</h3><p>More thinking cannot guess what you left out. Say who it is for, give the material, say what you want back. <a href="start.html#l3">How to ask</a> helps more than any level.</p></li>
+        <li><h3>Expecting it to know recent facts</h3><p>Thinking is reasoning, not looking things up. For anything recent, turn on web search or use a search tool such as Perplexity, then check the sources.</p></li>
+        <li><h3>Trusting a long answer because it took long</h3><p>A slow answer can still be wrong. Check numbers, names and quotes exactly as you would at any other level.</p></li>
+      </ol>
+      <div class="callout ok try"><i data-i="zap"></i><div><b>A simple habit.</b> Ask at the normal level first. If the answer is wrong or thin, press retry one level higher instead of rewriting the whole question.</div></div>
+    </div>
+  </div></section>
+</main>
+<script src="assets/site.js?v=31" defer></script>
+</body>
+</html>

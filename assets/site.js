@@ -87,7 +87,7 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 // ---------- shell ----------
 const NAV = [
   ["start", "Start here", "start.html"], ["skills", "Skills", "skills.html"], ["explore", "Find tools", "explore.html"], ["models", "Choose AI", "models.html"], ["compare", "Compare", "compare.html"],
-  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"], ["local", "Local models", "local.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
+  ["guides", "Guides", [["thinking", "Thinking levels", "thinking.html"], ["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"], ["local", "Local models", "local.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
   ["news", "News", "news.html"],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
@@ -112,7 +112,7 @@ function shell() {
       <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
     <nav class="foot-cols" aria-label="Footer">
       <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
-      <div><div class="field-label">Learn</div><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
+      <div><div class="field-label">Learn</div><a href="thinking.html">Thinking levels</a><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
       <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
       <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
     </nav>
@@ -158,6 +158,7 @@ async function searchIndex() {
     { t: "Connect an app to Claude or ChatGPT", sub: "MCP setup", href: "mcp.html#setup", k: "guide", ic: "plug" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
     { t: "Benchmarks: what each model is good at", sub: "Charts", href: "benchmarks.html", k: "guide", ic: "trend" },
+    { t: "Thinking levels: Low, High, Instant, Extended, Deep Think", sub: "Cheat sheet", href: "thinking.html", k: "guide", ic: "zap" },
     { t: "New to AI? Start here", sub: "Five short lessons", href: "start.html", k: "guide", ic: "book" },
     { t: "Compare: ChatGPT vs Claude and other match-ups", sub: "Short answers", href: "compare.html", k: "guide", ic: "layout" },
     { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
