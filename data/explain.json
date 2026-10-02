@@ -8454,5 +8454,104 @@
   "repo": "devilcoolyue/agentbox",
   "at": "2026-10-02",
   "source": "trending"
+ },
+ "tile-ai/tilelang": {
+  "cat": "local",
+  "kind": "GPU Kernel Language",
+  "what": "Tile Language is a domain-specific language designed to streamline the development of high-performance GPU, CPU, and NPU kernels.",
+  "why": "Writing high-performance tensor kernels like FlashAttention or custom matrix multiplications usually requires tedious low-level code, whereas this tool provides a Pythonic syntax on top of TVM to boost productivity without sacrificing performance. Reach for it when you need to write custom, hardware-accelerated kernels for modern GPUs or NPUs.",
+  "level": "dev",
+  "start": "pip install tilelang",
+  "caution": "Requires deep familiarity with GPU programming, hardware architectures, and low-level kernel optimization.",
+  "alts": [
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp",
+   "huggingface/smolagents"
+  ],
+  "packages": [
+   "tilelang"
+  ],
+  "plain": "A Python tool for developers to write fast hardware graphics and processor kernels easily.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Write high-performance GPU kernels",
+   "Optimize matrix multiplication operations",
+   "Build custom FlashAttention layers"
+  ],
+  "steps": [
+   "Install the package using `pip install tilelang`.",
+   "Explore the example kernels provided in the repository to understand syntax.",
+   "Write your custom kernel using TileLang's Pythonic syntax and compile it."
+  ],
+  "repo": "tile-ai/tilelang",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "Friedrich-M/UniMate": {
+  "cat": "media",
+  "kind": "3D motion animation model",
+  "what": "UniMate is a unified machine learning model and dataset pipeline designed to generate text-driven animations across diverse 3D skeletal topologies, from humans and quadrupeds to marine creatures and articulated objects.",
+  "why": "Traditional 3D motion models require dedicated models or rigid retargeting setups for specific skeleton designs. Reach for this project if you need to train or run generative animations across varied creature rigs and mechanical structures using a single framework.",
+  "level": "dev",
+  "start": "conda create -n unimate python=3.10 -y && conda activate unimate",
+  "caution": "Requires significant GPU resources for multi-joint 3D diffusion training and processing large custom dataset features.",
+  "alts": [],
+  "packages": [],
+  "plain": "Generate 3D motion animations from text prompts for many different animal, human, and object skeletons using one unified model.",
+  "tags": [
+   "media"
+  ],
+  "useFor": [
+   "Animate diverse 3D skeleton topologies with text descriptions",
+   "Train unified generative motion models using the UniML3D dataset",
+   "Process and canonicalize custom multi-species animation rigs"
+  ],
+  "steps": [
+   "Create and activate the environment: `conda create -n unimate python=3.10 -y && conda activate unimate`",
+   "Install dependencies: `pip install \"setuptools<81\" && pip install -r requirements.txt --no-build-isolation`",
+   "Download preview checkpoints or dataset clips from the project links on Hugging Face",
+   "Launch training on a GPU using accelerate: `accelerate launch -m unimate.training.train --config configs/uniml3d_60frames_graph_adaln.json`"
+  ],
+  "repo": "Friedrich-M/UniMate",
+  "at": "2026-10-02",
+  "source": "trending"
+ },
+ "angel291592/Intent-Router": {
+  "cat": "harness",
+  "kind": "Agent intent skill",
+  "what": "Intent-Router turns vague coding prompts into typed intent contracts by inspecting your repository files and asking only unresolved questions.",
+  "why": "AI assistants often guess architectural decisions or hallucinate requirements when given ambiguous prompts. Use this to ensure your coding agent verifies constraints and checks its output against a clear specification.",
+  "level": "easy",
+  "start": "npx skills add angel291592/Intent-Router",
+  "caution": "",
+  "alts": [
+   "mattpocock/skills",
+   "github/spec-kit",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "An AI assistant skill that clarifies vague coding requests using your project files before writing code.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Clarify vague coding requests before an agent starts editing files",
+   "Generate structured YAML intent specifications backed by repository evidence",
+   "Verify completed code diffs against original requirements and constraints"
+  ],
+  "steps": [
+   "Install the skill into your coding agent using `npx skills add angel291592/Intent-Router`.",
+   "Prompt your agent normally with any feature request or bug report.",
+   "Answer any critical clarification question prompted by the skill before execution."
+  ],
+  "repo": "angel291592/Intent-Router",
+  "at": "2026-10-02",
+  "source": "trending"
  }
 }

@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-02T05:54:37.876Z",
+ "updated": "2026-10-02T11:03:33.357Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 179352,
+   "stars": 179385,
    "license": null,
    "pushed": "2026-09-29T02:20:07Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 294074,
+   "stars": 294162,
    "license": "MIT",
    "pushed": "2026-09-27T02:37:47Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 100386,
+   "stars": 100425,
    "license": "MIT",
    "pushed": "2026-10-02T03:29:29Z",
    "by": "addyosmani",
@@ -27,7 +27,7 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 274088,
+   "stars": 274282,
    "license": "MIT",
    "pushed": "2026-09-29T12:38:37Z",
    "by": "mattpocock",
@@ -35,7 +35,7 @@
   },
   {
    "repo": "openai/skills",
-   "stars": 27842,
+   "stars": 27846,
    "license": null,
    "pushed": "2026-09-08T20:35:26Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 31818,
+   "stars": 31832,
    "license": null,
    "pushed": "2026-08-28T13:36:31Z",
    "by": "vercel-labs",
@@ -51,15 +51,15 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 37302,
+   "stars": 37308,
    "license": "Apache-2.0",
-   "pushed": "2026-10-01T21:39:47Z",
+   "pushed": "2026-10-02T06:00:09Z",
    "by": "anthropics",
    "count": 33
   },
   {
    "repo": "openai/plugins",
-   "stars": 7253,
+   "stars": 7257,
    "license": null,
    "pushed": "2026-09-28T17:08:10Z",
    "by": "openai",
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 27210,
+   "stars": 27235,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,23 +75,23 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25362,
+   "stars": 25366,
    "license": "MIT",
-   "pushed": "2026-10-02T04:41:44Z",
+   "pushed": "2026-10-02T09:55:48Z",
    "by": "EveryInc",
    "count": 37
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 73823,
+   "stars": 73942,
    "license": "Apache-2.0",
-   "pushed": "2026-10-02T05:39:01Z",
+   "pushed": "2026-10-02T07:05:04Z",
    "by": "pbakaus",
    "count": 20
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40147,
+   "stars": 40155,
    "license": "MIT",
    "pushed": "2026-10-01T19:08:25Z",
    "by": "wshobson",
@@ -4886,7 +4886,13 @@
    "files": 5,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Create, edit, or review assistant instruction files according to project standards.",
+   "useFor": [
+    "Write a new skill folder",
+    "Review an assistant instruction file"
+   ],
+   "example": "Can you review this new instruction file for accuracy?"
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-babysit-pr",
@@ -4899,7 +4905,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Monitor an open GitHub pull request continuously until it becomes ready to merge.",
+   "useFor": [
+    "Watch a pull request",
+    "Track updates until merge ready"
+   ],
+   "example": "Please watch this open pull request until it is ready."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-bakeoff",
@@ -4909,7 +4921,13 @@
    "desc": "Develop independent competing solutions to a defined brief, compare them, and synthesize a winning approach. Use when choosing well requires developing alternatives beyond their current form. Use ce-pov to judge developed material and ce-ideate to discover opportunities.",
    "scripts": false,
    "files": 4,
-   "tags": []
+   "tags": [],
+   "plain": "Develop and compare competing solutions to a brief to choose the best approach.",
+   "useFor": [
+    "Build competing solutions",
+    "Compare different design options"
+   ],
+   "example": "Create two competing solutions for this feature brief."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-brainstorm",
@@ -4919,7 +4937,13 @@
    "desc": "Explore vague or ambitious ideas into a right-sized requirements-only unified plan. Use when the user wants to brainstorm or scope what to build. Not for executing already-specified work. Use ce-pov for a verdict on adopting a named external technology.",
    "scripts": true,
    "files": 25,
-   "tags": []
+   "tags": [],
+   "plain": "Explore vague ideas and turn them into a unified, requirements-only plan.",
+   "useFor": [
+    "Brainstorm a new concept",
+    "Scope out project requirements"
+   ],
+   "example": "Help me brainstorm and scope out this rough idea."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-code-review",
@@ -4931,7 +4955,13 @@
    "files": 39,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Check code changes for bugs, regression risks, missing tests, and standard compliance.",
+   "useFor": [
+    "Review a pull request",
+    "Check code for bugs"
+   ],
+   "example": "Can you review this code diff for any bugs?"
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-commit-push-pr",
@@ -4944,7 +4974,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Save changes, send them to the repository, and open a pull request.",
+   "useFor": [
+    "Open a pull request",
+    "Write a pull request body"
+   ],
+   "example": "Commit these changes and open a pull request."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-commit",
@@ -4956,7 +4992,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Create a git commit with a clear message explaining the changes.",
+   "useFor": [
+    "Save changes with a message",
+    "Commit local file modifications"
+   ],
+   "example": "Commit my staged changes with a clear message."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-compound-refresh",
@@ -4968,7 +5010,13 @@
    "files": 15,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Update captured project learnings so they match the current state of the codebase.",
+   "useFor": [
+    "Audit stale project learnings",
+    "Refresh documented project knowledge"
+   ],
+   "example": "Please refresh our captured learnings against the codebase."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-compound",
@@ -4981,7 +5029,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Document a solved problem as a permanent learning record for the repository.",
+   "useFor": [
+    "Record a solved problem",
+    "Document non-obvious reasoning"
+   ],
+   "example": "Document this solved problem as a permanent repository learning."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-debug",
@@ -4993,7 +5047,13 @@
    "files": 8,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Diagnose and fix failing, slow, or buggy behavior in the system.",
+   "useFor": [
+    "Fix a broken feature",
+    "Debug a slow process"
+   ],
+   "example": "Can you debug why this function is failing?"
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-doc-review",
@@ -5006,7 +5066,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Review project requirements, plans, or specifications using different role perspectives.",
+   "useFor": [
+    "Improve an existing plan",
+    "Review project specifications"
+   ],
+   "example": "Review this planning document and suggest improvements."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-dogfood",
@@ -5019,7 +5085,13 @@
    "tags": [
     "docs",
     "automate"
-   ]
+   ],
+   "plain": "Test user flows in a real browser, fix small issues, and write a quality report.",
+   "useFor": [
+    "Run browser user flows",
+    "Test app quality manually"
+   ],
+   "example": "Run a browser quality check on the active branch."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-explain",
@@ -5029,7 +5101,13 @@
    "desc": "Explain how and why something has its current shape, or what happened over a window of work, grounded in evidence. Use when the user asks for an explanation. Use ce-pov for a judgment or recommendation.",
    "scripts": false,
    "files": 8,
-   "tags": []
+   "tags": [],
+   "plain": "Explain the history, reasoning, or recent events of a task using evidence.",
+   "useFor": [
+    "Explain how something works",
+    "Summarize recent work"
+   ],
+   "example": "Explain why this file has its current structure."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-handoff",
@@ -5041,7 +5119,13 @@
    "files": 2,
    "tags": [
     "research"
-   ]
+   ],
+   "plain": "Create or read session handover notes so work can continue seamlessly.",
+   "useFor": [
+    "Create a handoff note",
+    "Resume work from previous notes"
+   ],
+   "example": "Create a session handoff for the next agent."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-ideate",
@@ -5051,7 +5135,13 @@
    "desc": "Generate and evaluate grounded ideas. Use when the user wants ideas, improvements, or surprising directions before choosing one to develop. Not for refining an idea they already have (ce-brainstorm) or judging one already on the table (ce-pov).",
    "scripts": false,
    "files": 17,
-   "tags": []
+   "tags": [],
+   "plain": "Generate and evaluate creative ideas or improvements before choosing one.",
+   "useFor": [
+    "Generate new ideas",
+    "Brainstorm surprising directions"
+   ],
+   "example": "Give me some ideas for improving this feature."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-noslop",
@@ -5064,7 +5154,13 @@
    "tags": [
     "docs",
     "research"
-   ]
+   ],
+   "plain": "Rewrite text to remove artificial writing styles while keeping all original facts.",
+   "useFor": [
+    "Remove robotic writing tells",
+    "Make draft prose sound plain"
+   ],
+   "example": "Rewrite this text so it sounds more natural."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-optimize",
@@ -5076,7 +5172,13 @@
    "files": 19,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Improve a measured metric by testing variants and keeping the winning changes.",
+   "useFor": [
+    "Optimize a workload cost",
+    "Improve a performance metric"
+   ],
+   "example": "Optimize this function to reduce its runtime cost."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-plan",
@@ -5086,7 +5188,13 @@
    "desc": "Create structured plans for multi-step work, including software and non-software tasks. Use when asked to plan, break down implementation, plan from requirements, or deepen an existing plan; prefer ce-brainstorm for exploratory framing.",
    "scripts": true,
    "files": 35,
-   "tags": []
+   "tags": [],
+   "plain": "Create structured implementation steps for multi-step software and non-software tasks.",
+   "useFor": [
+    "Break down implementation steps",
+    "Create a multi-step plan"
+   ],
+   "example": "Create a structured plan for building this feature."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-polish",
@@ -5099,7 +5207,13 @@
    "tags": [
     "media",
     "automate"
-   ]
+   ],
+   "plain": "Refine a working feature's user experience based on live browser feedback.",
+   "useFor": [
+    "Refine user interface details",
+    "Polish a feature design"
+   ],
+   "example": "Help me polish this feature using browser feedback."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-pov",
@@ -5112,7 +5226,13 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Evaluate a subject against project evidence and constraints to provide a judgment.",
+   "useFor": [
+    "Assess external technology adoption",
+    "Judge a proposed approach"
+   ],
+   "example": "Give me a verdict on adopting this new library."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-product-pulse",
@@ -5122,7 +5242,14 @@
    "desc": "Generate time-windowed product pulse reports from configured signals.",
    "scripts": false,
    "files": 6,
-   "tags": []
+   "tags": [],
+   "plain": "Create product pulse reports covering specific time windows using your configured signals.",
+   "useFor": [
+    "Generating regular product reports",
+    "Tracking signals over time",
+    "Summarizing product activity"
+   ],
+   "example": "Generate a product pulse report for the past two weeks."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-promote",
@@ -5134,7 +5261,14 @@
    "files": 2,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Draft promotional or launch text to announce a newly shipped feature.",
+   "useFor": [
+    "Writing feature launch announcements",
+    "Drafting promotional copy",
+    "Sharing product release news"
+   ],
+   "example": "Draft an announcement post for our newly released export feature."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-proof",
@@ -5146,7 +5280,14 @@
    "files": 2,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Publish, read, comment on, or edit markdown documents within Proof.",
+   "useFor": [
+    "Publishing markdown specs to Proof",
+    "Commenting on shared draft plans",
+    "Reading and editing Proof documents"
+   ],
+   "example": "Publish this project plan markdown to Proof and share the link."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-prototype",
@@ -5158,7 +5299,14 @@
    "files": 9,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Build a disposable prototype to test and clarify how a feature should behave or feel.",
+   "useFor": [
+    "Testing interaction behavior quickly",
+    "Evaluating feel before building",
+    "Answering critical workflow questions"
+   ],
+   "example": "Build a quick throwaway prototype to test how this checkout flow feels."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-resolve-pr-feedback",
@@ -5170,7 +5318,14 @@
    "files": 12,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Evaluate pull request feedback, apply valid code changes, and finish review discussions.",
+   "useFor": [
+    "Addressing PR review comments",
+    "Applying verified feedback fixes",
+    "Closing completed review threads"
+   ],
+   "example": "Resolve the feedback left on my pull request and apply the fixes."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-retune",
@@ -5182,7 +5337,14 @@
    "files": 7,
    "tags": [
     "monitor"
-   ]
+   ],
+   "plain": "Retune an AI skill corpus for a new model using data baselines and benchmark comparisons.",
+   "useFor": [
+    "Adapting skills for new models",
+    "Auditing skill corpora with benchmarks",
+    "Measuring skill performance changes"
+   ],
+   "example": "Retune our skill corpus for the new model using the benchmark harness."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-riffrec-feedback-analysis",
@@ -5195,7 +5357,14 @@
    "tags": [
     "media",
     "research"
-   ]
+   ],
+   "plain": "Analyze recorded screen, voice, or note feedback to identify bugs and product requirements.",
+   "useFor": [
+    "Extracting bug evidence from recordings",
+    "Analyzing user voice feedback",
+    "Setting up Riffrec recording captures"
+   ],
+   "example": "Analyze this Riffrec screen recording to extract bug reports and requirements."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-setup",
@@ -5205,7 +5374,14 @@
    "desc": "Check Compound Engineering health and repo-local config, or scaffold a Compound Pack with `pack:<id>`.",
    "scripts": true,
    "files": 10,
-   "tags": []
+   "tags": [],
+   "plain": "Check Compound Engineering configuration health or set up a new Compound Pack.",
+   "useFor": [
+    "Checking repo setup health",
+    "Scaffolding a new pack",
+    "Verifying engineering configuration"
+   ],
+   "example": "Check the health of my engineering configuration and scaffold pack:core."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-simplify-code",
@@ -5217,7 +5393,14 @@
    "files": 3,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Clean up and simplify recently modified code for better clarity and efficiency without altering behavior.",
+   "useFor": [
+    "Simplifying recent code changes",
+    "Improving code clarity and reuse",
+    "Preparing code for review"
+   ],
+   "example": "Simplify the code I just changed before I send it for review."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-strategy",
@@ -5227,7 +5410,14 @@
    "desc": "Create or update STRATEGY.md. Use when starting a product, adding a strategy doc, or changing direction or roadmap.",
    "scripts": false,
    "files": 4,
-   "tags": []
+   "tags": [],
+   "plain": "Create or update your project STRATEGY.md document when product direction or roadmaps change.",
+   "useFor": [
+    "Creating a strategy document",
+    "Updating product direction",
+    "Documenting roadmap changes"
+   ],
+   "example": "Update our STRATEGY.md file to reflect our new product roadmap."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-sweep",
@@ -5241,7 +5431,14 @@
     "docs",
     "research",
     "connect"
-   ]
+   ],
+   "plain": "Collect feedback from Slack and GitHub Issues, acknowledge sources, and build actionable work plans.",
+   "useFor": [
+    "Sweeping channels for feedback",
+    "Analyzing incoming issue reports",
+    "Generating work plans automatically"
+   ],
+   "example": "Sweep GitHub Issues and Slack for new feedback and create a plan."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-test-browser",
@@ -5254,7 +5451,14 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Run browser tests on web pages modified by your current branch or pull request.",
+   "useFor": [
+    "Testing branch web pages",
+    "Running pull request browser checks",
+    "Verifying web changes locally"
+   ],
+   "example": "Run browser tests for the pages affected by my current branch."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-test-xcode",
@@ -5266,7 +5470,14 @@
    "files": 3,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Run tests on iOS applications inside a simulator using XcodeBuildMCP.",
+   "useFor": [
+    "Testing iOS apps in simulators",
+    "Checking iOS code changes",
+    "Gathering simulator test evidence"
+   ],
+   "example": "Test the iOS app in the simulator to verify my recent changes."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-work",
@@ -5279,7 +5490,14 @@
    "tags": [
     "docs",
     "code"
-   ]
+   ],
+   "plain": "Implement and locally verify a complete work plan or prompt from start to finish.",
+   "useFor": [
+    "Executing written work plans",
+    "Building from specification paths",
+    "Verifying code changes locally"
+   ],
+   "example": "Execute this spec plan and verify the implementation locally."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-worktree",
@@ -5291,7 +5509,14 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Set up isolated git worktrees for new branches or existing commits and pull requests.",
+   "useFor": [
+    "Creating isolated work branches",
+    "Attaching worktrees to pull requests",
+    "Working on separate commits concurrently"
+   ],
+   "example": "Set up an isolated git worktree on a new branch for this task."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/lfg",
@@ -5303,7 +5528,14 @@
    "files": 10,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Complete requests autonomously from start to finish and submit them directly as open pull requests.",
+   "useFor": [
+    "Handling autonomous end-to-end coding",
+    "Pushing ready pull requests hands-off",
+    "Executing tasks without step-by-step review"
+   ],
+   "example": "Run lfg to implement this feature and push a pull request automatically."
   },
   {
    "key": "EveryInc/compound-engineering-plugin/wtf",
@@ -5315,7 +5547,14 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Explain confusing messages, passages, links, or files using clear, simple language.",
+   "useFor": [
+    "Clarifying hard-to-understand messages",
+    "Explaining confusing text passages",
+    "Simplifying difficult shared links"
+   ],
+   "example": "Explain that last message in plain English so I can understand it."
   },
   {
    "key": "pbakaus/impeccable/impeccable",
@@ -5329,7 +5568,14 @@
     "docs",
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Improve, design, review, or polish frontend user interfaces, layouts, interactions, and design components.",
+   "useFor": [
+    "Improving dashboard layout and styling",
+    "Auditing UI accessibility and spacing",
+    "Polishing component interactions and copy"
+   ],
+   "example": "Review and polish the layout, typography, and UX copy of this onboarding form."
   },
   {
    "key": "wshobson/agents/screen-reader-testing",
@@ -5341,7 +5587,14 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Test web applications with screen readers such as VoiceOver, NVDA, and JAWS.",
+   "useFor": [
+    "Checking screen reader compatibility",
+    "Debugging accessibility obstacles",
+    "Testing assistive technology support"
+   ],
+   "example": "Test this web page using VoiceOver and NVDA for accessibility issues."
   },
   {
    "key": "wshobson/agents/wcag-audit-patterns",
@@ -5355,7 +5608,14 @@
     "media",
     "code",
     "monitor"
-   ]
+   ],
+   "plain": "Perform WCAG 2.2 accessibility audits and provide guidance for fixing accessibility violations.",
+   "useFor": [
+    "Auditing websites for WCAG compliance",
+    "Fixing detected accessibility violations",
+    "Implementing accessible design patterns"
+   ],
+   "example": "Conduct a WCAG 2.2 accessibility audit on our website and list fixes."
   },
   {
    "key": "wshobson/agents/multi-reviewer-patterns",
@@ -5367,7 +5627,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Organize parallel code reviews to check quality from multiple angles and combine the results.",
+   "useFor": [
+    "Organizing code reviews",
+    "Combining review results"
+   ],
+   "example": "Can you run a multi-angle code review on this pull request?"
   },
   {
    "key": "wshobson/agents/parallel-debugging",
@@ -5380,7 +5646,13 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Investigate complex problems by testing multiple possible causes at the same time.",
+   "useFor": [
+    "Debugging multi-cause bugs",
+    "Finding root causes"
+   ],
+   "example": "Let us investigate this production bug using parallel hypotheses."
   },
   {
    "key": "wshobson/agents/parallel-feature-development",
@@ -5393,7 +5665,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Split up large features so multiple people or agents can build them at the same time.",
+   "useFor": [
+    "Decomposing features",
+    "Preventing code conflicts"
+   ],
+   "example": "How should we split this large feature into parallel work streams?"
   },
   {
    "key": "wshobson/agents/task-coordination-strategies",
@@ -5405,7 +5683,13 @@
    "files": 2,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Break down large tasks into steps and organize how teams work on them together.",
+   "useFor": [
+    "Breaking down work",
+    "Managing task order"
+   ],
+   "example": "Help me break down this project into tasks for the team."
   },
   {
    "key": "wshobson/agents/team-communication-protocols",
@@ -5418,7 +5702,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Set up clear rules for how team members send messages and coordinate their work.",
+   "useFor": [
+    "Setting communication norms",
+    "Reviewing team plans"
+   ],
+   "example": "What messaging rules should our agent team use for this project?"
   },
   {
    "key": "wshobson/agents/team-composition-patterns",
@@ -5432,7 +5722,13 @@
     "media",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Choose the right number and types of assistants to build an effective working team.",
+   "useFor": [
+    "Choosing team sizes",
+    "Selecting agent types"
+   ],
+   "example": "How many agents do we need for this migration task?"
   },
   {
    "key": "wshobson/agents/fastapi-templates",
@@ -5444,7 +5740,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build backend web applications using fast and modern programming patterns.",
+   "useFor": [
+    "Building backend APIs",
+    "Setting up projects"
+   ],
+   "example": "Create a new backend project with error handling and fast routing."
   },
   {
    "key": "wshobson/agents/avoid-ai-writing",
@@ -5458,7 +5760,13 @@
     "docs",
     "media",
     "monitor"
-   ]
+   ],
+   "plain": "Rewrite writing so it sounds natural and less like it was generated by a machine.",
+   "useFor": [
+    "Removing AI writing styles",
+    "Editing draft posts"
+   ],
+   "example": "Can you rewrite this blog post so it does not sound like AI?"
   },
   {
    "key": "wshobson/agents/api-design-principles",
@@ -5471,7 +5779,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Design clear and scalable application interfaces for developers to use easily.",
+   "useFor": [
+    "Designing new APIs",
+    "Reviewing API standards"
+   ],
+   "example": "Help me design a clean REST API for our user data."
   },
   {
    "key": "wshobson/agents/architecture-patterns",
@@ -5483,7 +5797,13 @@
    "files": 2,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Organize application code into separate layers to keep systems maintainable over time.",
+   "useFor": [
+    "Designing microservices",
+    "Refactoring monoliths"
+   ],
+   "example": "How do I set up clean architecture for this new microservice?"
   },
   {
    "key": "wshobson/agents/cqrs-implementation",
@@ -5495,7 +5815,13 @@
    "files": 1,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Separate read and write actions in your application to handle heavier user traffic.",
+   "useFor": [
+    "Separating data models",
+    "Optimizing data queries"
+   ],
+   "example": "Can we implement command query separation for this data model?"
   },
   {
    "key": "wshobson/agents/event-store-design",
@@ -5507,7 +5833,13 @@
    "files": 1,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Set up storage systems that save every state change as an event over time.",
+   "useFor": [
+    "Building event sourcing",
+    "Saving event history"
+   ],
+   "example": "How should we design the event store for our order system?"
   },
   {
    "key": "wshobson/agents/microservices-patterns",
@@ -5519,7 +5851,13 @@
    "files": 1,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Build distributed systems using separate services that communicate through events.",
+   "useFor": [
+    "Decomposing monoliths",
+    "Building distributed systems"
+   ],
+   "example": "Help me design the service boundaries for our online store."
   },
   {
    "key": "wshobson/agents/projection-patterns",
@@ -5529,7 +5867,13 @@
    "desc": "Build read models and projections from event streams. Use when implementing CQRS read sides, building materialized views, or optimizing query performance in event-sourced systems.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Create read-only views from event histories to make data searches much faster.",
+   "useFor": [
+    "Building materialized views",
+    "Optimizing search queries"
+   ],
+   "example": "How do I build a fast read model from our event stream?"
   },
   {
    "key": "wshobson/agents/saga-orchestration",
@@ -5539,7 +5883,13 @@
    "desc": "Implement saga patterns for distributed transactions and cross-aggregate workflows. Use this skill when implementing distributed transactions across microservices where 2PC is unavailable, designing compensating actions for failed order workflows that span inventory, payment, and shipping services, building event-driven saga coordinators for travel booking systems that must roll back hotel, flight, and car rental reservations atomically, or debugging stuck saga states in production where compensation steps never complete.",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Coordinate multi-step transactions across different services and handle failures safely.",
+   "useFor": [
+    "Handling failed transactions",
+    "Building saga coordinators"
+   ],
+   "example": "How do I set up a saga to handle payment and shipping failures?"
   },
   {
    "key": "wshobson/agents/temporal-python-testing",
@@ -5553,7 +5903,13 @@
     "code",
     "automate",
     "connect"
-   ]
+   ],
+   "plain": "Test and debug automated background workflows using reliable testing tools.",
+   "useFor": [
+    "Testing background workflows",
+    "Debugging test failures"
+   ],
+   "example": "How do I write unit tests for this background workflow?"
   },
   {
    "key": "wshobson/agents/workflow-orchestration-patterns",
@@ -5566,7 +5922,13 @@
    "tags": [
     "media",
     "automate"
-   ]
+   ],
+   "plain": "Build reliable background tasks that can run for a long time without failing.",
+   "useFor": [
+    "Building long processes",
+    "Orchestrating microservices"
+   ],
+   "example": "How do I design a reliable background task for processing payments?"
   },
   {
    "key": "wshobson/agents/before-you-build",
@@ -5580,7 +5942,13 @@
     "apps",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Check your product idea for demand and risks before you start building it.",
+   "useFor": [
+    "Checking product demand",
+    "Reviewing feature risks"
+   ],
+   "example": "Can you review this product idea for demand and adoption risks?"
   },
   {
    "key": "wshobson/agents/block-no-verify-hook",
@@ -5592,7 +5960,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Block automated tools from bypassing quality checks when saving code changes.",
+   "useFor": [
+    "Enforcing commit quality",
+    "Blocking safety bypasses"
+   ],
+   "example": "How do I stop automated tools from skipping pre-commit checks?"
   },
   {
    "key": "wshobson/agents/defi-protocol-templates",
@@ -5602,7 +5976,13 @@
    "desc": "Implement DeFi protocols with production-ready templates for staking, AMMs, governance, and flash loans. Use when building decentralized finance applications or smart contract protocols.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Create decentralized finance applications using ready-to-use smart contract templates.",
+   "useFor": [
+    "Building staking apps",
+    "Creating AMM protocols"
+   ],
+   "example": "Can you provide a template for building a staking application?"
   },
   {
    "key": "wshobson/agents/nft-standards",
@@ -5614,7 +5994,14 @@
    "files": 1,
    "tags": [
     "connect"
-   ]
+   ],
+   "plain": "Create digital asset systems and marketplaces by following proper token standards and metadata rules.",
+   "useFor": [
+    "Create NFT smart contracts",
+    "Build NFT marketplaces",
+    "Implement digital asset systems"
+   ],
+   "example": "Can you help me write an ERC-721 contract for my new digital art collection?"
   },
   {
    "key": "wshobson/agents/solidity-security",
@@ -5627,7 +6014,14 @@
    "tags": [
     "docs",
     "monitor"
-   ]
+   ],
+   "plain": "Write secure smart contracts by applying best practices to prevent common blockchain vulnerabilities.",
+   "useFor": [
+    "Write smart contracts",
+    "Audit existing contracts",
+    "Secure blockchain applications"
+   ],
+   "example": "Please check my smart contract code for any security vulnerabilities before I launch it."
   },
   {
    "key": "wshobson/agents/web3-testing",
@@ -5640,7 +6034,14 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Test smart contracts thoroughly using unit tests, integration tests, and mainnet forking.",
+   "useFor": [
+    "Test Solidity contracts",
+    "Set up test suites",
+    "Validate DeFi protocols"
+   ],
+   "example": "How do I write integration tests for this smart contract using Foundry?"
   },
   {
    "key": "wshobson/agents/brand-landingpage",
@@ -5653,7 +6054,14 @@
    "tags": [
     "media",
     "apps"
-   ]
+   ],
+   "plain": "Design custom landing pages through an identity interview and generate deployment-ready HTML code.",
+   "useFor": [
+    "Create a landing page",
+    "Design a new homepage",
+    "Build a marketing page"
+   ],
+   "example": "I need a brand new landing page for my product and have no design direction yet."
   },
   {
    "key": "wshobson/agents/data-storytelling",
@@ -5663,7 +6071,14 @@
    "desc": "Transform data into compelling narratives using visualization, context, and persuasive structure. Use when presenting analytics to stakeholders, creating data reports, or building executive presentations.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Turn complex data into clear stories using visual design, context, and a persuasive structure.",
+   "useFor": [
+    "Present analytics to stakeholders",
+    "Create data reports",
+    "Build executive presentations"
+   ],
+   "example": "Can you help me turn these sales analytics into a compelling presentation for the board?"
   },
   {
    "key": "wshobson/agents/kpi-dashboard-design",
@@ -5676,7 +6091,14 @@
    "tags": [
     "media",
     "research"
-   ]
+   ],
+   "plain": "Design clear performance dashboards with metric selection, real-time tracking, and visualization guidelines.",
+   "useFor": [
+    "Track SaaS metrics",
+    "Design operations centers",
+    "Create retention analysis views"
+   ],
+   "example": "Can you design a dashboard layout to track our monthly recurring revenue and user churn?"
   },
   {
    "key": "wshobson/agents/deployment-pipeline-design",
@@ -5690,7 +6112,14 @@
     "media",
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Design reliable deployment pipelines featuring approval steps, security checks, and automated staging.",
+   "useFor": [
+    "Design zero-downtime pipelines",
+    "Implement canary rollouts",
+    "Debug failed deployment gates"
+   ],
+   "example": "How can I set up a zero-downtime deployment pipeline with automated approval gates?"
   },
   {
    "key": "wshobson/agents/github-actions-templates",
@@ -5704,7 +6133,14 @@
     "code",
     "automate",
     "connect"
-   ]
+   ],
+   "plain": "Automate your testing, building, and deployment processes using ready-made workflow templates.",
+   "useFor": [
+    "Set up GitHub Actions",
+    "Automate development workflows",
+    "Create reusable templates"
+   ],
+   "example": "Can you create a workflow that automatically runs my tests whenever I push code?"
   },
   {
    "key": "wshobson/agents/gitlab-ci-patterns",
@@ -5717,7 +6153,14 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Build scalable automation pipelines with multi-stage workflows, caching, and distributed runners.",
+   "useFor": [
+    "Implement GitLab pipelines",
+    "Optimize pipeline performance",
+    "Automate testing and deployment"
+   ],
+   "example": "How do I set up a multi-stage pipeline with caching in GitLab?"
   },
   {
    "key": "wshobson/agents/secrets-management",
@@ -5729,7 +6172,14 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Keep your sensitive credentials safe in automated workflows using secure vaults and secret managers.",
+   "useFor": [
+    "Handle sensitive credentials",
+    "Rotate platform secrets",
+    "Secure automation environments"
+   ],
+   "example": "How do I securely load my database password into my deployment pipeline without exposing it?"
   },
   {
    "key": "wshobson/agents/cost-optimization",
@@ -5741,7 +6191,14 @@
    "files": 1,
    "tags": [
     "research"
-   ]
+   ],
+   "plain": "Reduce your cloud spending across major providers through sizing adjustments, reserved instances, and spending analysis.",
+   "useFor": [
+    "Reduce cloud expenses",
+    "Analyze infrastructure costs",
+    "Implement cost governance"
+   ],
+   "example": "Can you review my AWS bill and suggest ways to lower our monthly cloud expenses?"
   },
   {
    "key": "wshobson/agents/hybrid-cloud-networking",
@@ -5751,7 +6208,14 @@
    "desc": "Configure secure, high-performance connectivity between on-premises infrastructure and cloud platforms using VPN and dedicated connections. Use when building hybrid cloud architectures, connecting data centers to cloud, or implementing secure cross-premises networking.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Connect your physical data centers to cloud platforms securely using virtual private networks and dedicated lines.",
+   "useFor": [
+    "Build hybrid cloud architectures",
+    "Connect data centers to cloud",
+    "Implement cross-premises networking"
+   ],
+   "example": "How do I set up a secure VPN connection between our office network and AWS?"
   },
   {
    "key": "wshobson/agents/istio-traffic-management",
@@ -5761,7 +6225,14 @@
    "desc": "Configure Istio traffic management including routing, load balancing, circuit breakers, and canary deployments. Use when implementing service mesh traffic policies, progressive delivery, or resilience patterns.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Control how traffic moves between services with smart routing, load balancing, and resilience tools.",
+   "useFor": [
+    "Implement traffic policies",
+    "Set up progressive delivery",
+    "Configure circuit breakers"
+   ],
+   "example": "How do I route ten percent of my live traffic to a new version of our microservice?"
   },
   {
    "key": "wshobson/agents/linkerd-patterns",
@@ -5773,7 +6244,14 @@
    "files": 0,
    "tags": [
     "monitor"
-   ]
+   ],
+   "plain": "Set up a lightweight, security-focused service mesh to handle your internal application traffic securely.",
+   "useFor": [
+    "Set up Linkerd mesh",
+    "Configure traffic policies",
+    "Implement zero-trust networking"
+   ],
+   "example": "Can you guide me through installing Linkerd for our microservices communication?"
   },
   {
    "key": "wshobson/agents/mtls-configuration",
@@ -5783,7 +6261,14 @@
    "desc": "Configure mutual TLS (mTLS) for zero-trust service-to-service communication. Use when implementing zero-trust networking, certificate management, or securing internal service communication.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Secure your internal service-to-service communication with mutual TLS and strict certificate management.",
+   "useFor": [
+    "Implement zero-trust networking",
+    "Manage security certificates",
+    "Secure internal communication"
+   ],
+   "example": "How do I enable mutual TLS for communication between our internal backend services?"
   },
   {
    "key": "wshobson/agents/multi-cloud-architecture",
@@ -5795,7 +6280,14 @@
    "files": 2,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Build systems that use multiple cloud providers safely by following a structured decision framework.",
+   "useFor": [
+    "Build multi-cloud systems",
+    "Avoid vendor lock-in",
+    "Use best-of-breed services"
+   ],
+   "example": "What framework should I use to decide which parts of my app go to AWS versus Google Cloud?"
   },
   {
    "key": "wshobson/agents/service-mesh-observability",
@@ -5805,7 +6297,14 @@
    "desc": "Implement comprehensive observability for service meshes including distributed tracing, metrics, and visualization. Use when setting up mesh monitoring, debugging latency issues, or implementing SLOs for service communication.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Track communication health across your services using distributed tracing, live metrics, and visual tools.",
+   "useFor": [
+    "Set up mesh monitoring",
+    "Debug latency issues",
+    "Implement service level objectives"
+   ],
+   "example": "How can I trace a slow API request as it travels across our different microservices?"
   },
   {
    "key": "wshobson/agents/terraform-module-library",
@@ -5817,7 +6316,14 @@
    "files": 2,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Create reusable infrastructure modules for major cloud providers following best practices for code.",
+   "useFor": [
+    "Create infrastructure modules",
+    "Standardize cloud provisioning",
+    "Build reusable code components"
+   ],
+   "example": "Can you write a reusable Terraform module to spin up a standard database cluster?"
   },
   {
    "key": "wshobson/agents/context-driven-development",
@@ -5830,7 +6336,14 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Create and update project documentation files while keeping your technical stack and workflows aligned.",
+   "useFor": [
+    "Set up a new project",
+    "Update product documentation",
+    "Manage your tech stack file"
+   ],
+   "example": "Please initialize the project context files for this new repository."
   },
   {
    "key": "wshobson/agents/track-management",
@@ -5840,7 +6353,14 @@
    "desc": "Use this skill when creating, managing, or working with Conductor tracks - the logical work units for features, bugs, and refactors. Applies to spec.md, plan.md, and track lifecycle operations.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Organize and manage your development work units, specifications, and plans throughout their lifecycle.",
+   "useFor": [
+    "Create development tracks",
+    "Manage feature specifications",
+    "Update implementation plans"
+   ],
+   "example": "Can you create a new track for the user profile redesign feature?"
   },
   {
    "key": "wshobson/agents/workflow-patterns",
@@ -5853,7 +6373,13 @@
    "tags": [
     "code",
     "automate"
-   ]
+   ],
+   "plain": "Follow structured testing steps and manage code saves during development tasks.",
+   "useFor": [
+    "Manage test workflows",
+    "Handle code saves"
+   ],
+   "example": "Help me follow the testing steps for this new task."
   },
   {
    "key": "wshobson/agents/airflow-dag-patterns",
@@ -5865,7 +6391,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build reliable data pipelines and schedule automated batch jobs.",
+   "useFor": [
+    "Create data pipelines",
+    "Schedule batch jobs"
+   ],
+   "example": "Build a daily data pipeline using Apache Airflow."
   },
   {
    "key": "wshobson/agents/data-quality-frameworks",
@@ -5875,7 +6407,13 @@
    "desc": "Implement data quality validation with Great Expectations, dbt tests, and data contracts. Use when building data quality pipelines, implementing validation rules, or establishing data contracts.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Validate data quality and implement validation rules and data contracts.",
+   "useFor": [
+    "Validate data quality",
+    "Implement validation rules"
+   ],
+   "example": "Set up data quality checks for our user table."
   },
   {
    "key": "wshobson/agents/dbt-transformation-patterns",
@@ -5887,7 +6425,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build data transformations and create organized analytics models.",
+   "useFor": [
+    "Build data transformations",
+    "Create data models"
+   ],
+   "example": "Organize our analytics models and data transformations."
   },
   {
    "key": "wshobson/agents/spark-optimization",
@@ -5897,7 +6441,13 @@
    "desc": "Optimize Apache Spark jobs with partitioning, caching, shuffle optimization, and memory tuning. Use when improving Spark performance, debugging slow jobs, or scaling data processing pipelines.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Improve performance and scale data processing pipelines.",
+   "useFor": [
+    "Improve Spark performance",
+    "Scale data pipelines"
+   ],
+   "example": "Help me optimize this slow data processing job."
   },
   {
    "key": "wshobson/agents/postgresql-table-design",
@@ -5909,7 +6459,13 @@
    "files": 1,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Design database tables and review schemas for better performance.",
+   "useFor": [
+    "Design database tables",
+    "Review data schemas"
+   ],
+   "example": "Review this PostgreSQL schema for performance issues."
   },
   {
    "key": "wshobson/agents/auth-implementation-patterns",
@@ -5921,7 +6477,13 @@
    "files": 1,
    "tags": [
     "monitor"
-   ]
+   ],
+   "plain": "Build secure access control systems and protect application programming interfaces.",
+   "useFor": [
+    "Secure application programming interfaces",
+    "Build access control"
+   ],
+   "example": "Implement secure user authentication using OAuth2."
   },
   {
    "key": "wshobson/agents/bazel-build-optimization",
@@ -5931,7 +6493,13 @@
    "desc": "Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing remote execution, or optimizing build performance for enterprise codebases.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Optimize build performance for large codebases.",
+   "useFor": [
+    "Optimize build performance",
+    "Configure build tools"
+   ],
+   "example": "Speed up our large-scale codebase builds."
   },
   {
    "key": "wshobson/agents/code-review-excellence",
@@ -5943,7 +6511,13 @@
    "files": 0,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Review pull requests and provide constructive feedback to developers.",
+   "useFor": [
+    "Review pull requests",
+    "Provide developer feedback"
+   ],
+   "example": "Help me review this pull request constructively."
   },
   {
    "key": "wshobson/agents/debugging-strategies",
@@ -5956,7 +6530,13 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Investigate bugs and track down unexpected software behavior.",
+   "useFor": [
+    "Investigate software bugs",
+    "Track down performance issues"
+   ],
+   "example": "Help me debug this unexpected error in my code."
   },
   {
    "key": "wshobson/agents/e2e-testing-patterns",
@@ -5968,7 +6548,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Build reliable end-to-end test suites and fix unstable tests.",
+   "useFor": [
+    "Build end-to-end tests",
+    "Fix unstable tests"
+   ],
+   "example": "Write an end-to-end test suite for our login page."
   },
   {
    "key": "wshobson/agents/error-handling-patterns",
@@ -5978,7 +6564,13 @@
    "desc": "Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applications. Use when implementing error handling, designing APIs, or improving application reliability.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Design application error handling and improve overall system reliability.",
+   "useFor": [
+    "Design error handling",
+    "Improve application reliability"
+   ],
+   "example": "Implement robust error handling for our API endpoints."
   },
   {
    "key": "wshobson/agents/git-advanced-workflows",
@@ -5990,7 +6582,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Manage complex code histories and troubleshoot repository issues.",
+   "useFor": [
+    "Manage code histories",
+    "Troubleshoot repository issues"
+   ],
+   "example": "Help me rebase this branch and clean up history."
   },
   {
    "key": "wshobson/agents/monorepo-management",
@@ -6000,7 +6598,13 @@
    "desc": "Master monorepo management with Turborepo, Nx, and pnpm workspaces to build efficient, scalable multi-package repositories with optimized builds and dependency management. Use when setting up monorepos, optimizing builds, or managing shared dependencies.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Set up multi-package repositories and optimize shared dependency management.",
+   "useFor": [
+    "Set up multi-package repositories",
+    "Optimize shared dependencies"
+   ],
+   "example": "Configure a new monorepo with shared workspace dependencies."
   },
   {
    "key": "wshobson/agents/nx-workspace-patterns",
@@ -6010,7 +6614,13 @@
    "desc": "Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project boundaries, optimizing build caching, or implementing affected commands.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Configure and optimize workspace boundaries and build caching.",
+   "useFor": [
+    "Configure workspace boundaries",
+    "Optimize build caching"
+   ],
+   "example": "Set up build caching for our workspace."
   },
   {
    "key": "wshobson/agents/sql-optimization-patterns",
@@ -6023,7 +6633,13 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Eliminate slow queries and improve database performance.",
+   "useFor": [
+    "Eliminate slow database queries",
+    "Improve database performance"
+   ],
+   "example": "Help me optimize this slow SQL query."
   },
   {
    "key": "wshobson/agents/turborepo-caching",
@@ -6033,7 +6649,13 @@
    "desc": "Configure Turborepo for efficient monorepo builds with local and remote caching. Use when setting up Turborepo, optimizing build pipelines, or implementing distributed caching.",
    "scripts": false,
    "files": 0,
-   "tags": []
+   "tags": [],
+   "plain": "Optimize build pipelines using local and remote caching.",
+   "useFor": [
+    "Optimize build pipelines",
+    "Configure distributed caching"
+   ],
+   "example": "Set up remote caching for faster builds."
   },
   {
    "key": "wshobson/agents/spark-environment-setup",
@@ -6043,7 +6665,13 @@
    "desc": "Set up a working ML training/inference environment on NVIDIA DGX Spark (GB10, aarch64, CUDA 13). Use when installing PyTorch/Unsloth/TRL/vLLM on DGX Spark, hitting libcudart or wheel-ABI errors on aarch64, or choosing between NGC containers and bare pip installs.",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Set up machine learning environments on specialized hardware.",
+   "useFor": [
+    "Set up machine learning environments",
+    "Install specialized hardware tools"
+   ],
+   "example": "Set up PyTorch and Unsloth on our DGX Spark."
   },
   {
    "key": "wshobson/agents/spark-memory-thermal-ops",
@@ -6053,7 +6681,13 @@
    "desc": "Manage unified memory and thermals during long-running ML jobs on NVIDIA DGX Spark. Use when planning memory headroom for a training run on GB10, when a job OOMs on unified memory, or when monitoring temperature and power during multi-hour training.",
    "scripts": true,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Manage memory and monitor hardware temperature during long tasks.",
+   "useFor": [
+    "Manage hardware memory",
+    "Monitor hardware temperature"
+   ],
+   "example": "Check memory headroom and power for our training run."
   },
   {
    "key": "wshobson/agents/spark-training-gotchas",
@@ -6063,7 +6697,13 @@
    "desc": "Preflight and diagnose the ten known failure modes for ML training on NVIDIA DGX Spark. Use when a training run on DGX Spark fails to start, OOMs below the 128GB limit, slows down mid-run, or before any multi-hour training job on GB10.",
    "scripts": true,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Diagnose and prevent known failure modes for machine learning jobs.",
+   "useFor": [
+    "Diagnose machine learning failures",
+    "Prevent training job errors"
+   ],
+   "example": "Preflight check my training job before it starts."
   },
   {
    "key": "wshobson/agents/architecture-decision-records",
@@ -6075,7 +6715,13 @@
    "files": 0,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Write and keep track of technical decision records following established industry best practices.",
+   "useFor": [
+    "Document technical choices",
+    "Review past decisions"
+   ],
+   "example": "Write an architectural decision record for our database migration."
   },
   {
    "key": "wshobson/agents/changelog-automation",
@@ -6087,7 +6733,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Create automated release notes and changelogs directly from your commit history and pull requests.",
+   "useFor": [
+    "Generate release notes",
+    "Standardize commit messages"
+   ],
+   "example": "Generate the changelog for this week's software release."
   },
   {
    "key": "wshobson/agents/openapi-spec-generation",
@@ -6100,7 +6752,13 @@
    "tags": [
     "media",
     "code"
-   ]
+   ],
+   "plain": "Build and maintain OpenAPI specifications to ensure proper API documentation and contract compliance.",
+   "useFor": [
+    "Create API documentation",
+    "Ensure API compliance"
+   ],
+   "example": "Generate an OpenAPI specification for our user service."
   },
   {
    "key": "wshobson/agents/grounded-vault",
@@ -6113,7 +6771,13 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Maintain a structured knowledge base with strict source links for every single claim.",
+   "useFor": [
+    "Track source references",
+    "Check wiki freshness"
+   ],
+   "example": "Create a linked wiki page for our authentication system."
   },
   {
    "key": "wshobson/agents/hads",
@@ -6125,7 +6789,13 @@
    "files": 0,
    "tags": [
     "docs"
-   ]
+   ],
+   "plain": "Format technical documentation so it is easily readable by both humans and AI models.",
+   "useFor": [
+    "Format technical guides",
+    "Optimize for AI reading"
+   ],
+   "example": "Convert this markdown file into a format optimized for AI."
   },
   {
    "key": "wshobson/agents/dotnet-backend-patterns",
@@ -6138,7 +6808,13 @@
    "tags": [
     "code",
     "connect"
-   ]
+   ],
+   "plain": "Build robust backend applications and APIs using modern C# and .NET development patterns.",
+   "useFor": [
+    "Build .NET APIs",
+    "Review C# code"
+   ],
+   "example": "Show me how to set up dependency injection in .NET."
   },
   {
    "key": "wshobson/agents/file-conversion",
@@ -6152,7 +6828,13 @@
     "docs",
     "media",
     "code"
-   ]
+   ],
+   "plain": "Convert files between hundreds of different formats including images, videos, documents, and audio.",
+   "useFor": [
+    "Convert file formats",
+    "Change document types"
+   ],
+   "example": "Convert this PDF file into a Word document."
   },
   {
    "key": "wshobson/agents/angular-migration",
@@ -6164,7 +6846,13 @@
    "files": 1,
    "tags": [
     "code"
-   ]
+   ],
+   "plain": "Upgrade older AngularJS applications to modern Angular using hybrid modes and incremental rewrites.",
+   "useFor": [
+    "Upgrade legacy apps",
+    "Plan framework migration"
+   ],
+   "example": "Help me plan the migration from AngularJS to Angular."
   },
   {
    "key": "wshobson/agents/database-migration",
@@ -6174,7 +6862,13 @@
    "desc": "Execute database migrations across ORMs and platforms with zero-downtime strategies, data transformation, and rollback procedures. Use when migrating databases, changing schemas, performing data transformations, or implementing zero-downtime deployment strategies.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Perform safe database schema migrations and data transformations with zero downtime.",
+   "useFor": [
+    "Migrate databases",
+    "Change database schemas"
+   ],
+   "example": "Write a zero-downtime migration script for the user table."
   },
   {
    "key": "wshobson/agents/dependency-upgrade",
@@ -6187,7 +6881,13 @@
    "tags": [
     "code",
     "research"
-   ]
+   ],
+   "plain": "Manage major software dependency upgrades with compatibility checks and staged rollout planning.",
+   "useFor": [
+    "Upgrade framework versions",
+    "Manage library updates"
+   ],
+   "example": "Help me upgrade all major npm packages safely."
   },
   {
    "key": "wshobson/agents/react-modernization",
@@ -6199,7 +6899,13 @@
    "files": 1,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Upgrade React codebases to the latest versions and migrate class components to modern hooks.",
+   "useFor": [
+    "Modernize React code",
+    "Migrate to hooks"
+   ],
+   "example": "Convert this class component into a functional React hook."
   },
   {
    "key": "wshobson/agents/nextjs-app-router-patterns",
@@ -6211,7 +6917,13 @@
    "files": 1,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Build modern web applications using the Next.js App Router, server components, and streaming.",
+   "useFor": [
+    "Build Next.js apps",
+    "Implement server components"
+   ],
+   "example": "Set up a new page using the Next.js App Router."
   },
   {
    "key": "wshobson/agents/react-native-architecture",
@@ -6223,7 +6935,13 @@
    "files": 1,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Build cross-platform mobile applications with Expo, native modules, and offline sync capabilities.",
+   "useFor": [
+    "Develop mobile apps",
+    "Implement native modules"
+   ],
+   "example": "How do I set up offline data sync in React Native?"
   },
   {
    "key": "wshobson/agents/react-state-management",
@@ -6235,7 +6953,13 @@
    "files": 1,
    "tags": [
     "apps"
-   ]
+   ],
+   "plain": "Manage application state effectively using modern tools like Redux Toolkit, Zustand, or Jotai.",
+   "useFor": [
+    "Set up global state",
+    "Manage server state"
+   ],
+   "example": "Choose a state management library for my React app."
   },
   {
    "key": "wshobson/agents/tailwind-design-system",
@@ -6247,7 +6971,13 @@
    "files": 2,
    "tags": [
     "media"
-   ]
+   ],
+   "plain": "Create scalable design systems and responsive user interfaces using Tailwind CSS.",
+   "useFor": [
+    "Create component libraries",
+    "Standardize UI patterns"
+   ],
+   "example": "Build a responsive button component using Tailwind CSS."
   },
   {
    "key": "wshobson/agents/godot-gdscript-patterns",
@@ -6257,7 +6987,13 @@
    "desc": "Master Godot 4 GDScript patterns including signals, scenes, state machines, and optimization. Use when building Godot games, implementing game systems, or learning GDScript best practices.",
    "scripts": false,
    "files": 2,
-   "tags": []
+   "tags": [],
+   "plain": "Build Godot games using GDScript best practices, signals, scenes, and state machines.",
+   "useFor": [
+    "Build Godot games",
+    "Implement game systems"
+   ],
+   "example": "How do I use signals in Godot 4?"
   },
   {
    "key": "wshobson/agents/unity-ecs-patterns",
@@ -6267,7 +7003,13 @@
    "desc": "Master Unity ECS (Entity Component System) with DOTS, Jobs, and Burst for high-performance game development. Use when building data-oriented games, optimizing performance, or working with large entity counts.",
    "scripts": false,
    "files": 1,
-   "tags": []
+   "tags": [],
+   "plain": "Develop high-performance games in Unity using Entity Component Systems, Jobs, and Burst.",
+   "useFor": [
+    "Build data-oriented games",
+    "Optimize game performance"
+   ],
+   "example": "Set up a basic ECS system in Unity DOTS."
   },
   {
    "key": "wshobson/agents/hermes-tweet",
@@ -6280,7 +7022,13 @@
    "tags": [
     "research",
     "automate"
-   ]
+   ],
+   "plain": "Research X accounts, monitor launch signals, and manage social media operations securely.",
+   "useFor": [
+    "Research X accounts",
+    "Monitor launch signals"
+   ],
+   "example": "Search X for recent mentions of our product launch."
   }
  ]
 }
