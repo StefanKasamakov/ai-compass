@@ -1,16 +1,63 @@
 {
- "updated": "2026-10-02T22:18:56.889Z",
+ "updated": "2026-10-03T05:24:30.211Z",
  "items": [
   {
-   "repo": "zouyuxuan122/dsh-our-free-model",
-   "stars": 695,
-   "desc": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 Muse Spark 1.3、MiMo V2.6 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, Muse Spark 1.3 and MiMo V2.6 among them. Completely free, with no usage cap.",
-   "created": "2026-09-24T16:17:19Z",
+   "repo": "ThinkWatchProject/ThinkWatch-Lite",
+   "stars": 783,
+   "desc": "Local gateway for Claude Code, Codex and other AI clients on macOS, Windows and Linux: switch upstreams without touching clients, keep API keys from relays, cut off malicious tool calls, trace every request.",
+   "created": "2026-09-12T13:48:15Z",
    "topics": [
-    "ai-agents",
-    "deepseek",
-    "deepseek-harness",
-    "developer-tools"
+    "ai-gateway",
+    "anthropic",
+    "claude-code",
+    "codex"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "anteloc/ldraw-nova",
+   "stars": 108,
+   "desc": "Agent tooling for generative LEGO models building, built with Astra and Opus 5.5, powered by Jev",
+   "created": "2026-09-23T18:08:25Z",
+   "topics": [],
+   "lang": "Python",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 89,
+    "url": "https://news.ycombinator.com/item?id=49937916"
+   }
+  },
+  {
+   "repo": "StayLameBro/backburner",
+   "stars": 110,
+   "desc": "Your iPhone helps your Mac run a 27B model: faster prompt reading and more context over a USB-C cable",
+   "created": "2026-10-01T20:59:56Z",
+   "topics": [
+    "apple-silicon",
+    "ios",
+    "iphone",
+    "llama-cpp"
+   ],
+   "lang": "Objective-C++",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Ying-Kai-Liao/jev-browser",
+   "stars": 94,
+   "desc": "Browser automation where an LLM plans and Jev (Typesafe System One) decides. Library, CLI and MCP server.",
+   "created": "2026-09-16T15:13:23Z",
+   "topics": [
+    "browser-automation",
+    "llm-agents",
+    "mcp",
+    "mcp-server"
    ],
    "lang": "JavaScript",
    "sources": [

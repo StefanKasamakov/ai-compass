@@ -8713,5 +8713,138 @@
   "repo": "zouyuxuan122/dsh-our-free-model",
   "at": "2026-10-02",
   "source": "trending"
+ },
+ "ThinkWatchProject/ThinkWatch-Lite": {
+  "cat": "gateway",
+  "kind": "AI Gateway and Shield",
+  "what": "A local gateway for Claude Code, Codex, and other AI clients that switches upstreams, redacts API keys, blocks malicious tool calls, and traces requests.",
+  "why": "Use it when you want to protect your machine from malicious tool calls, hide sensitive keys from untrusted relays, and switch AI providers without reconfiguring your tools.",
+  "level": "easy",
+  "start": "brew install --cask thinkwatchproject/tap/thinkwatch-lite",
+  "caution": "The app is not signed by Apple or Microsoft, so the first launch requires manual security approval.",
+  "alts": [
+   "BerriAI/litellm",
+   "Portkey-AI/gateway",
+   "songquanpeng/one-api"
+  ],
+  "packages": [],
+  "plain": "A local control panel that sits between your AI coding tools and providers to track costs, redact keys, and block dangerous commands.",
+  "tags": [
+   "code",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Switch AI providers without reconfiguring clients",
+   "Block malicious tool calls from untrusted relays",
+   "Track token usage and costs across requests"
+  ],
+  "steps": [
+   "Download and install the application for your operating system.",
+   "Launch the app and point your AI clients to the local gateway.",
+   "Configure your upstreams and view live request traces."
+  ],
+  "repo": "ThinkWatchProject/ThinkWatch-Lite",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "anteloc/ldraw-nova": {
+  "cat": "coding",
+  "kind": "LEGO model agent",
+  "what": "An AI agent system that designs 3D printable LEGO models in LDraw language from text ideas.",
+  "why": "Bridging the gap between LLM spatial limitations and 3D CAD design by having agents write Python generator scripts instead of raw geometry coordinates.",
+  "level": "setup",
+  "start": "git clone --branch v0.6.0 https://github.com/anteloc/ldraw-nova.git",
+  "caution": "Requires running Docker containers, consumes about 5 GB of disk space, and has no built-in login authentication.",
+  "alts": [],
+  "packages": [],
+  "plain": "An AI tool that builds and renders 3D LEGO models from your text descriptions.",
+  "tags": [
+   "code",
+   "media"
+  ],
+  "useFor": [
+   "Design 3D LEGO models from text prompts",
+   "Generate LDraw source files and Blender models",
+   "Build modular Technic structures and vehicles"
+  ],
+  "steps": [
+   "Clone both ldraw-nova and ldraw-nova-docker repositories side by side at the same version tag.",
+   "Change into the docker directory and run docker compose build to set up the container.",
+   "Start the application container by running docker compose up -d.",
+   "Open https://localhost:8443 or http://localhost:8765 in your web browser to use the app."
+  ],
+  "repo": "anteloc/ldraw-nova",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "StayLameBro/backburner": {
+  "cat": "local",
+  "kind": "mac and iphone llm",
+  "what": "Plug an iPhone into a Mac over USB-C to share the workload of running a local 27B AI model.",
+  "why": "Local AI models on a Mac are constrained by memory and speed when processing long prompts. This bridges an iPhone's GPU and memory to speed up reading files and handle much larger contexts without buying a bigger computer.",
+  "level": "setup",
+  "start": "",
+  "caution": "This is a low-level experimental project relying on a custom llama.cpp fork and requires connecting devices over high-speed USB-C.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "exo-explore/exo"
+  ],
+  "packages": [],
+  "plain": "Use your iPhone as a co-processor to make local AI run faster and hold larger documents on your Mac.",
+  "tags": [
+   "private",
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Run large local models with extended context windows",
+   "Speed up file reading for coding agents",
+   "Offload model memory onto an iPhone"
+  ],
+  "steps": [
+   "Connect your iPhone to your MacBook using a 10 Gb/s USB-C cable.",
+   "Install the accompanying Backburner iOS app on your phone.",
+   "Launch the local server script to start sharing the model workload."
+  ],
+  "repo": "StayLameBro/backburner",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "Ying-Kai-Liao/jev-browser": {
+  "cat": "harness",
+  "kind": "Browser MCP Server",
+  "what": "Browser automation plugin for Claude and other MCP clients where an LLM plans goals and Jev (Typesafe System One) executes them using Playwright.",
+  "why": "It reduces token usage and improves browser automation reliability by offloading page evaluation to a specialized API instead of sending full page snapshots to the main LLM.",
+  "level": "setup",
+  "start": "npx playwright install chromium && claude mcp add jev-browser -e TYPESAFE_API_KEY=your-key -- npx -y -p jev-browser jev-browser-mcp",
+  "caution": "Requires a paid third-party API key for Typesafe System One. Pushed over 4 months ago.",
+  "alts": [
+   "browser-use/browser-use",
+   "vercel/ai"
+  ],
+  "packages": [
+   "jev-browser"
+  ],
+  "plain": "Let your AI assistant browse web pages and fill out forms reliably while using fewer tokens.",
+  "tags": [
+   "automate",
+   "connect",
+   "research"
+  ],
+  "useFor": [
+   "Automate website checkouts and form submissions",
+   "Extract and read relevant text from long articles",
+   "Test web applications through natural language commands"
+  ],
+  "steps": [
+   "Install Playwright chromium using `npx playwright install chromium`.",
+   "Add the MCP server to your AI client with your API key.",
+   "Run browser automation tasks by giving natural language goals to your AI client."
+  ],
+  "repo": "Ying-Kai-Liao/jev-browser",
+  "at": "2026-10-03",
+  "source": "trending"
  }
 }
