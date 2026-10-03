@@ -9154,5 +9154,40 @@
   "repo": "gilgameshcc/ai-native-jobhunt",
   "at": "2026-10-03",
   "source": "trending"
+ },
+ "ethanplusai/codex-on-crack": {
+  "cat": "harness",
+  "kind": "Model orchestration harness",
+  "what": "An orchestration plugin for Codex that lets you plan, delegate tasks to different AI models, and review their work.",
+  "why": "Standard coding assistants limit you to a single model at a time. Reach for this when you want a highly capable model to plan your project and faster, cheaper models to execute the code.",
+  "level": "setup",
+  "start": "codex plugin marketplace add \"$PWD\"",
+  "caution": "This tool can orchestrate Claude Code using your consumer subscription. Reusing consumer subscriptions via third-party harnesses may violate provider terms of service and risk account suspension. It is also a preview release.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider",
+   "continuedev/continue"
+  ],
+  "packages": [],
+  "plain": "Let one smart AI plan your coding project and delegate tasks to other models to build it.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Delegate coding assignments to models like Claude and DeepSeek",
+   "Plan and review project steps inside the Codex client",
+   "Track agent handoffs and tool activity in a visual dashboard"
+  ],
+  "steps": [
+   "Ensure Node.js 24.15+ and a plugin-ready Codex client are installed.",
+   "Add the directory with `codex plugin marketplace add \"$PWD\"`.",
+   "Enable the plugin using `codex plugin add codex-on-crack@codex-on-crack`.",
+   "Ask Codex to plan your project and configure available models."
+  ],
+  "repo": "ethanplusai/codex-on-crack",
+  "at": "2026-10-03",
+  "source": "trending"
  }
 }
