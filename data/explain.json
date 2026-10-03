@@ -9189,5 +9189,73 @@
   "repo": "ethanplusai/codex-on-crack",
   "at": "2026-10-03",
   "source": "trending"
+ },
+ "meituan-longcat/LongCat-Video": {
+  "cat": "media",
+  "kind": "video generation model",
+  "what": "LongCat-Video is a foundational video generation model with 13.6B parameters that supports text-to-video, image-to-video, video-continuation, and audio-driven character animation.",
+  "why": "It lets researchers and developers generate high-resolution, long-form videos and audio-driven avatar animations locally on powerful hardware.",
+  "level": "setup",
+  "start": "git clone --single-branch --branch main https://github.com/meituan-longcat/LongCat-Video",
+  "caution": "Requires high-end NVIDIA GPUs with significant VRAM to run local inference.",
+  "alts": [
+   "comfyanonymous/ComfyUI",
+   "AUTOMATIC1111/stable-diffusion-webui"
+  ],
+  "packages": [],
+  "plain": "A large local AI model for generating videos, continuing clips, and animating talking avatars from text and audio.",
+  "tags": [
+   "media",
+   "private"
+  ],
+  "useFor": [
+   "Generate videos from text descriptions",
+   "Animate talking characters from audio",
+   "Extend existing video clips"
+  ],
+  "steps": [
+   "Clone the repository and set up a Python conda environment",
+   "Install PyTorch, FlashAttention-2, and other listed package requirements",
+   "Download the model weights using the Hugging Face command-line tool",
+   "Run single-GPU or multi-GPU inference scripts for your task"
+  ],
+  "repo": "meituan-longcat/LongCat-Video",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "Jakeschincariol/replica-skill": {
+  "cat": "harness",
+  "kind": "App-cloning Claude skills",
+  "what": "A collection of Claude skills that guide you through reverse-engineering, rebuilding, testing, and launching clones of apps.",
+  "why": "Useful for indie hackers and developers who want to systematically recreate app features, fix user complaints from reviews, and launch a polished alternative.",
+  "level": "setup",
+  "start": "git clone https://github.com/Jakeschincariol/replica-skill.git",
+  "caution": "Recreating existing commercial software carries significant legal and copyright risks; review applicable terms of service and consult legal counsel before launching any clone.",
+  "alts": [
+   "Jakeschincariol/arena-skill",
+   "obra/superpowers",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [],
+  "plain": "Eleven Claude skills that step-by-step reverse-engineer and rebuild existing apps into your own branded product.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Reverse engineer app screens, flows, and components",
+   "Plan application database schemas and technical stacks",
+   "Analyze user reviews to find and fix app complaints",
+   "Automatically test and diff your clone against the original"
+  ],
+  "steps": [
+   "Clone the repository to your local machine using git clone",
+   "Copy the skill folders into your local `.claude/skills/` directory",
+   "Run `/replica-recon` with your target app URL inside Claude to begin mapping"
+  ],
+  "repo": "Jakeschincariol/replica-skill",
+  "at": "2026-10-03",
+  "source": "trending"
  }
 }
