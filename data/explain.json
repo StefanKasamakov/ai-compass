@@ -8846,5 +8846,108 @@
   "repo": "Ying-Kai-Liao/jev-browser",
   "at": "2026-10-03",
   "source": "trending"
+ },
+ "AkashPriyadarshii/jev-seo": {
+  "cat": "coding",
+  "kind": "Rust SEO CLI",
+  "what": "A command-line tool and MCP server written in Rust for auditing technical SEO, AI citation readiness, and tracking search rankings.",
+  "why": "Avoids expensive monthly subscriptions by running 58-rule audits and live crawls locally or through coding agents.",
+  "level": "setup",
+  "start": "cargo install jev-seo",
+  "caution": "The repository has low stars and is maintained by an individual developer.",
+  "alts": [
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [
+   "jev-seo"
+  ],
+  "plain": "A free command-line tool to check websites for search engine optimization and AI citation readiness.",
+  "tags": [
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Audit local HTML or Markdown files against 58 SEO rules",
+   "Check web pages for generative engine optimization and AI citations",
+   "Run site crawls and track rank history locally"
+  ],
+  "steps": [
+   "Install the tool from crates.io using Cargo.",
+   "Run an audit command on your project directory.",
+   "Review the generated SEO and GEO compliance report."
+  ],
+  "repo": "AkashPriyadarshii/jev-seo",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "VectifyAI/jev-doc-search": {
+  "cat": "memory",
+  "kind": "Document search tool",
+  "what": "A system that searches extremely long PDF documents by turning them into a hierarchical tree and navigating it using multiple-choice AI decisions.",
+  "why": "It bypasses token limits and the need for vector databases or embeddings. Reach for it when you need precise page-level search across long files without setting up a vector DB.",
+  "level": "setup",
+  "start": "python page_search.py handbook.pdf \"How many vacation days do new employees get?\"",
+  "caution": "Requires active API keys and subscriptions for both the TypeSafe (Jev) API and the PageIndex API.",
+  "alts": [
+   "VectifyAI/PageIndex",
+   "HKUDS/LightRAG",
+   "microsoft/graphrag"
+  ],
+  "packages": [],
+  "plain": "Search through massive PDF documents without using a vector database or embeddings.",
+  "tags": [
+   "knowledge",
+   "research",
+   "save"
+  ],
+  "useFor": [
+   "Search through long corporate annual reports",
+   "Find specific pages answering questions in large PDFs",
+   "Build hierarchical document trees for structured AI navigation"
+  ],
+  "steps": [
+   "Submit your PDF to PageIndex to generate a structural section tree",
+   "Run `python page_search.py handbook.pdf \"your question\"` to find answers",
+   "Let the AI traverse down the tree to locate the exact page"
+  ],
+  "repo": "VectifyAI/jev-doc-search",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "Morrowmake/glm53-flash-cmp170hx-recipe": {
+  "cat": "local",
+  "kind": "Local LLM recipe",
+  "what": "Runs the GLM-5.3-Flash 320B-parameter language model on four NVIDIA CMP 170HX mining GPUs using a custom vLLM fork.",
+  "why": "Upstream vLLM sparse attention requires Hopper GPUs, making high-speed inference on Ampere mining cards difficult. Reach for this to serve large-scale models locally at high speeds using budget CMP 170HX cards.",
+  "level": "setup",
+  "start": "git clone https://github.com/Morrowmake/glm53-flash-cmp170hx-recipe.git",
+  "caution": "Requires very specific hardware (four 64 GB NVIDIA CMP 170HX cards and driver 580+). Additionally, the default DFlash2 drafter model is under a non-commercial CC BY-NC-ND 4.0 license.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "ollama/ollama"
+  ],
+  "packages": [],
+  "plain": "Run a fast 320B AI model locally on four CMP 170HX GPUs through an OpenAI-compatible API.",
+  "tags": [
+   "private",
+   "save",
+   "apps"
+  ],
+  "useFor": [
+   "Serve GLM-5.3-Flash locally through an OpenAI-compatible API endpoint",
+   "Run high-throughput speculative decoding across four CMP 170HX GPUs",
+   "Handle long-context reasoning and code generation tasks privately"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/Morrowmake/glm53-flash-cmp170hx-recipe.git`",
+   "Navigate into the folder and run `./start.sh` to pull the container and start the server",
+   "Run `./start.sh smoke` to verify the chat and tool-calling endpoints",
+   "Send queries via curl to `http://127.0.0.1:8000/v1/chat/completions`"
+  ],
+  "repo": "Morrowmake/glm53-flash-cmp170hx-recipe",
+  "at": "2026-10-03",
+  "source": "trending"
  }
 }
