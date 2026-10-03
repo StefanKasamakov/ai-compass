@@ -8949,5 +8949,210 @@
   "repo": "Morrowmake/glm53-flash-cmp170hx-recipe",
   "at": "2026-10-03",
   "source": "trending"
+ },
+ "affaan-m/ECC": {
+  "cat": "harness",
+  "kind": "coding agent harness",
+  "what": "ECC is an engineering workflow and optimization system that adds planning, memory, testing cycles, and skill persistence to coding agents like Claude Code and Codex.",
+  "why": "AI assistants often generate code without thorough planning, testing, or memory across tasks. Use this when you want your coding agent to follow a structured software engineering lifecycle and retain learned workflows.",
+  "level": "setup",
+  "start": "",
+  "caution": "The README includes commercial sponsorship promotions and affiliate tracking links (such as for Moonshot AI/Kimi).",
+  "alts": [
+   "SuperClaude-Org/SuperClaude_Framework",
+   "obra/superpowers",
+   "davila7/claude-code-templates"
+  ],
+  "packages": [
+   "ecc-universal",
+   "ecc-agentshield"
+  ],
+  "plain": "A toolkit that adds structured planning, testing, memory, and custom skills to AI coding assistants like Claude Code.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Add structured planning and verification cycles to Claude Code tasks",
+   "Retain project context and reusable skills across coding sessions",
+   "Enforce automated reviews and security checks during agent development"
+  ],
+  "steps": [
+   "Choose your installation method using plugin slug ecc@ecc or package `ecc-universal`.",
+   "Configure the harness within your supported agent such as Claude Code or Codex.",
+   "Run tasks using ECC workflows to plan, test, implement, and review code automatically."
+  ],
+  "repo": "affaan-m/ECC",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "pingdotgg/t3code": {
+  "cat": "harness",
+  "kind": "agent control surface",
+  "what": "An open-source desktop, web, and mobile control surface that lets you remotely manage coding agents running on your machine.",
+  "why": "Reach for it when you want a unified UI and mobile app to control local coding agents like Claude Code, Codex, or Cursor from anywhere.",
+  "level": "setup",
+  "start": "curl -fsSL https://t3.codes/install.sh | sh",
+  "caution": "Reuses consumer subscription logins (Claude, Codex, Cursor, Grok, etc.) to drive local agent CLIs, which may break provider terms and risk your account.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "anomalyco/opencode"
+  ],
+  "packages": [],
+  "plain": "A mobile and desktop dashboard to control coding agents running on your computer.",
+  "tags": [
+   "code",
+   "supercharge",
+   "connect"
+  ],
+  "useFor": [
+   "Control coding agents remotely from iOS or Android",
+   "Switch between Claude, Codex, and Cursor in one UI",
+   "Run agent control sessions as a background system service"
+  ],
+  "steps": [
+   "Install and log into an agent CLI like Claude Code or Codex.",
+   "Install T3 Code using `curl -fsSL https://t3.codes/install.sh | sh` or the desktop app.",
+   "Run `t3` to start the local server and launch the control surface."
+  ],
+  "repo": "pingdotgg/t3code",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "cloudflare/cloudflare-os": {
+  "cat": "builders",
+  "kind": "AI workspace platform",
+  "what": "Cloudflare OS is an open-source productivity workspace that lets teams run AI agents to generate custom sandboxed apps and documents with security guardrails.",
+  "why": "It replaces standard SaaS office tools with personalized, AI-generated private web apps (called Gadgets) while keeping enterprise data sandboxed and safe.",
+  "level": "setup",
+  "start": "pnpm run-local",
+  "caution": "The project is explicitly marked as early-access and under heavy development with rough edges.",
+  "alts": [
+   "langgenius/dify",
+   "lobehub/lobehub",
+   "stackblitz-labs/bolt.diy"
+  ],
+  "packages": [],
+  "plain": "A secure AI workspace to build custom mini-apps, documents, and workflows for your company.",
+  "tags": [
+   "apps",
+   "docs",
+   "automate"
+  ],
+  "useFor": [
+   "Generate custom slide decks and documents with AI",
+   "Build private interactive web gadgets from prompts",
+   "Safely automate workflows with capability-based security guardrails"
+  ],
+  "steps": [
+   "Install pnpm on your system",
+   "Run `pnpm run-local` to start wrangler and workerd locally",
+   "Visit http://localhost:8787 in your browser to start prompting agents"
+  ],
+  "repo": "cloudflare/cloudflare-os",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "jamwithai/production-agentic-rag-course": {
+  "cat": "memory",
+  "kind": "RAG engineering course",
+  "what": "A multi-week hands-on course repo building a production-grade academic paper research assistant using hybrid search, LangGraph agentic RAG, and FastAPI.",
+  "why": "Teaches developers how to build end-to-end RAG systems using industry patterns like BM25 search foundations, vector embeddings, Airflow orchestration, and Langfuse tracing.",
+  "level": "setup",
+  "start": "git clone https://github.com/jamwithai/production-agentic-rag-course",
+  "caution": "Requires Docker Compose, at least 8GB RAM, 20GB disk space, and external API keys for Jina embeddings and Langfuse.",
+  "alts": [
+   "run-llama/llama_index",
+   "langchain-ai/langgraph",
+   "infiniflow/ragflow"
+  ],
+  "packages": [
+   "uv"
+  ],
+  "plain": "A step-by-step course and codebase to build a complete AI research assistant for arXiv papers.",
+  "tags": [
+   "knowledge",
+   "research",
+   "apps"
+  ],
+  "useFor": [
+   "Build a production-grade hybrid search RAG pipeline",
+   "Automate academic paper fetching from arXiv using Airflow",
+   "Deploy an agentic research bot connected to Telegram"
+  ],
+  "steps": [
+   "Copy environment settings with `cp .env.example .env` and configure required API keys",
+   "Install dependencies by running `uv sync`",
+   "Spin up the infrastructure with `docker compose up --build -d`",
+   "Verify services at `http://localhost:8000/api/v1/health` or open the Gradio interface"
+  ],
+  "repo": "jamwithai/production-agentic-rag-course",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "justxor/claude-code-pro-course": {
+  "cat": "harness",
+  "kind": "Claude Code course",
+  "what": "A comprehensive practical guide and course in Russian for mastering Claude Code.",
+  "why": "Helps developers and team leads configure Claude Code effectively with custom rules, skills, subagents, and hooks.",
+  "level": "setup",
+  "start": "git clone https://github.com/justxor/claude-code-pro-course.git",
+  "caution": "Requires using the Claude Code command-line tool, which relies on consumer Anthropic API access and can incur token costs.",
+  "alts": [
+   "anthropics/claude-code",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A Russian-language guide with labs and templates for setting up Claude Code commands and workflows.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Learn advanced Claude Code usage",
+   "Set up project onboarding rules and skills",
+   "Automate tasks using subagents and hooks"
+  ],
+  "steps": [
+   "Install Claude Code using the official installer or npm package",
+   "Clone this repository to get the starter kit",
+   "Run the install script to add the starter kit to your project",
+   "Launch Claude Code inside your project directory"
+  ],
+  "repo": "justxor/claude-code-pro-course",
+  "at": "2026-10-03",
+  "source": "trending"
+ },
+ "gilgameshcc/ai-native-jobhunt": {
+  "cat": "harness",
+  "kind": "Job Search Methodology",
+  "what": "A job search methodology written as instruction files for AI coding agents to help you make decisions at every step.",
+  "why": "Helps you evaluate job posts, assess companies, prepare for interviews, review performance, and rank offers using your local files instead of blind mass applications.",
+  "level": "easy",
+  "start": "Open one of the modules, copy its SKILL.md file, and paste it directly into your AI agent along with your details.",
+  "caution": "Methodology is based on a single real-world job search sample and threshold values may need manual calibration.",
+  "alts": [],
+  "packages": [],
+  "plain": "A collection of guides you feed to an AI agent to help you navigate job hunting and career decisions.",
+  "tags": [
+   "automate",
+   "docs",
+   "research"
+  ],
+  "useFor": [
+   "Evaluate job postings before applying",
+   "Prepare strategy and questions before an interview",
+   "Compare and rank job offers with clear trade-offs"
+  ],
+  "steps": [
+   "Pick the situation you are in from the module list in the repository",
+   "Open that module's SKILL.md file and paste it entirely into your AI agent",
+   "Tell the agent what information or documents you have ready"
+  ],
+  "repo": "gilgameshcc/ai-native-jobhunt",
+  "at": "2026-10-03",
+  "source": "trending"
  }
 }
