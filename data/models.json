@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-03",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -66,6 +66,7 @@
    "in": 1,
    "out": 5,
    "ctx": "200K",
+   "released": "2025-10-15",
    "note": "Retires no sooner than 15 Oct 2026; Haiku 5.5 is on the way."
   },
   {
@@ -94,13 +95,13 @@
   {
    "id": "sol",
    "p": "openai",
-   "name": "GPT-6 Sol",
+   "name": "GPT-6.1 Sol",
    "tier": "Balanced",
    "best": "Strong reasoning for complex professional work at a mid-tier price.",
    "in": 2,
    "out": 10,
    "ctx": "1.05M",
-   "released": "2026-09-22",
+   "released": "2026-09-29",
    "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode."
   },
   {
@@ -132,7 +133,8 @@
    "best": "Hard problems and true multimodal input: text, images, video and audio together.",
    "in": 2,
    "out": 12,
-   "ctx": "1M"
+   "ctx": "1M",
+   "released": "2026-02-19"
   },
   {
    "id": "gflash",
@@ -162,7 +164,8 @@
    "name": "Nano Banana Pro / 2",
    "tier": "Image",
    "best": "Image generation and photo editing. Pro does 4K and crisp in-image text.",
-   "price": "~$0.13 / image"
+   "price": "~$0.13 / image",
+   "released": "2026-06-18"
   },
   {
    "id": "veo",
@@ -178,7 +181,8 @@
    "name": "Gemini Omni Flash",
    "tier": "Video",
    "best": "Fast conversational video generation and editing.",
-   "price": "API"
+   "price": "API",
+   "released": "2026-09-21"
   },
   {
    "id": "live",
@@ -194,7 +198,8 @@
    "name": "Lyria 3.5",
    "tier": "Music",
    "best": "Full songs with verse/chorus structure.",
-   "price": "API"
+   "price": "API",
+   "released": "2026-03-30"
   },
   {
    "id": "qwen",
@@ -202,7 +207,9 @@
    "name": "Qwen3.8 (Max / 27B)",
    "tier": "Open",
    "best": "Top open-weight model. The 27B version is the practical pick for one workstation.",
-   "price": "free*"
+   "price": "free*",
+   "ctx": "1M",
+   "released": "2026-08-14"
   },
   {
    "id": "glm",
@@ -210,7 +217,9 @@
    "name": "GLM-5.3",
    "tier": "Open",
    "best": "Strongest open-weight model for coding.",
-   "price": "free*"
+   "price": "free*",
+   "ctx": "1M",
+   "released": "2026-08-18"
   },
   {
    "id": "deepseek",
@@ -218,7 +227,9 @@
    "name": "DeepSeek V4 (Pro / Flash)",
    "tier": "Open",
    "best": "Near-frontier quality; Flash runs on 2 GPUs.",
-   "price": "free*"
+   "price": "free*",
+   "ctx": "1M",
+   "released": "2026-08-12"
   },
   {
    "id": "kimi",
@@ -226,7 +237,9 @@
    "name": "Kimi K3",
    "tier": "Open",
    "best": "Strong all-rounder, good for agents.",
-   "price": "free*"
+   "price": "free*",
+   "ctx": "1M",
+   "released": "2026-07-16"
   },
   {
    "id": "mistral",
@@ -235,7 +248,8 @@
    "tier": "Open",
    "best": "European, Apache-2.0, 256K context. Easy on a company server.",
    "price": "free*",
-   "ctx": "256K"
+   "ctx": "256K",
+   "released": "2026-03-16"
   }
  ]
 }
