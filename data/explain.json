@@ -9353,5 +9353,212 @@
   "repo": "ozynautetu-create/FlowForge-Optima",
   "at": "2026-10-04",
   "source": "trending"
+ },
+ "garrytan/gstack": {
+  "cat": "harness",
+  "kind": "Claude Code workflow pack",
+  "what": "A collection of 23 opinionated slash commands and specialist roles that turn Claude Code into a virtual product, engineering, and QA team.",
+  "why": "Reach for it when you want structured roles (CEO planning, code review, browser QA, security audits) instead of prompting Claude Code from scratch.",
+  "level": "setup",
+  "start": "git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup",
+  "caution": "Requires Git, Bun v1.0+, Claude Code, and optional native build tools (or Docker) for security audit commands.",
+  "alts": [
+   "anthropics/claude-code",
+   "openclaw/openclaw",
+   "obra/superpowers"
+  ],
+  "packages": [],
+  "plain": "Add 23 role-based commands like design review, QA testing, and release planning to Claude Code.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Challenge feature scope using CEO-level planning reviews",
+   "Run automated browser QA on staging URLs or local APIs",
+   "Audit security vulnerabilities with dedicated review slash commands"
+  ],
+  "steps": [
+   "Ensure Claude Code, Git, and Bun v1.0+ are installed on your system.",
+   "Clone the repository into your Claude skills directory and run `./setup`.",
+   "Configure your CLAUDE.md to register available skills such as `/office-hours` and `/review`."
+  ],
+  "repo": "garrytan/gstack",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "calesthio/OpenMontage": {
+  "cat": "harness",
+  "kind": "video production harness",
+  "what": "Turns your AI coding assistant into a full video production studio using production pipelines, skill files, and automated tools.",
+  "why": "When you want to automate research, scripting, asset generation, editing, and final composition for videos using plain language.",
+  "level": "setup",
+  "start": "git clone https://github.com/calesthio/OpenMontage",
+  "caution": "Contains affiliate links. Relies on external AI video, image, and voice generation APIs which may incur significant usage costs.",
+  "alts": [
+   "heygen-com/hyperframes",
+   "harry0703/MoneyPrinterTurbo",
+   "lucidrains/video-diffusion-pytorch"
+  ],
+  "packages": [],
+  "plain": "Turn your AI coding assistant into an automated video production studio that handles everything from scripts to final edits.",
+  "tags": [
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Produce cinematic sci-fi trailers and animated shorts",
+   "Generate video documentaries from stock footage and research",
+   "Automate product showcase films and kinetic typography"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Review the agent guide and provider settings for your chosen AI tools.",
+   "Prompt your AI coding assistant to start a video production pipeline."
+  ],
+  "repo": "calesthio/OpenMontage",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "antirez/ds4": {
+  "cat": "local",
+  "kind": "Local inference engine",
+  "what": "A specialized native C inference engine and server optimized for running DeepSeek V4 and GLM models on consumer hardware, Macs, and CUDA systems.",
+  "why": "General GGUF runners can be slow or lack custom optimizations for specific giant MoE models. Reach for ds4 to run models like DeepSeek V4 Flash or PRO on Apple Silicon Macs, DGX Spark, or multi-GPU CUDA setups.",
+  "level": "setup",
+  "start": "git clone https://github.com/antirez/ds4.git",
+  "caution": "The project is rapidly changing and in beta quality; it is intentionally narrow and requires specific GGUF models produced for this project rather than general GGUF files.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Run high-end DeepSeek and GLM AI models locally on your Mac or multi-GPU PC.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run DeepSeek V4 locally on Apple Silicon or CUDA GPUs",
+   "Host a local OpenAI-compatible server for coding tools",
+   "Run an integrated local coding agent from the command line"
+  ],
+  "steps": [
+   "Clone the repository and enter the directory with `cd ds4`.",
+   "Compile for your hardware using `make`, `make cuda-generic`, or the appropriate target.",
+   "Download a supported model using `./download_model.sh ds4f-q2`.",
+   "Start interacting with the model by running `./ds4` or `./ds4-server`."
+  ],
+  "repo": "antirez/ds4",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "earthtojake/text-to-cad": {
+  "cat": "harness",
+  "kind": "CAD agent skills",
+  "what": "A collection of agent skills and plugins that allow AI coding assistants to generate, inspect, slice, and export 3D CAD files and robotics assets.",
+  "why": "Manual 3D modeling and preparation for CNC, laser cutting, or 3D printing is slow. Reach for this when you want your coding agent to draft STEP files, dimensioned PDF drawings, or robot URDFs directly from prompts.",
+  "level": "setup",
+  "start": "npx skills add earthtojake/text-to-cad",
+  "caution": "Requires Python 3.11+ and Astral uv installed locally on your machine to execute CAD kernel operations and viewers.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "cadgen"
+  ],
+  "plain": "Gives your AI coding assistant the ability to design 3D CAD models, robot files, and 3D prints.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Generate 3D CAD models and export STEP, STL, or DXF files",
+   "Inspect printability, sheet metal rules, and machining constraints",
+   "Slice models to G-code and send jobs to Bambu Lab printers"
+  ],
+  "steps": [
+   "Install the skills into your agent using `npx skills add earthtojake/text-to-cad`.",
+   "Ensure Python 3.11 or newer and Astral `uv` are installed on your system.",
+   "Ask your AI agent to design a part, generate engineering drawings, or slice for 3D printing."
+  ],
+  "repo": "earthtojake/text-to-cad",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "michael-denyer/pstack-claude": {
+  "cat": "harness",
+  "kind": "coding agent skills",
+  "what": "A port of Cursor's pstack skill suite that brings opinionated coding workflows, verification playbooks, and subagent routing to Claude Code, Codex, and Pi.",
+  "why": "Coding agents often write unverified fixes or bloat code. Reach for this to enforce structured debugging, architectural review, and evidence-backed verification before code changes land.",
+  "level": "setup",
+  "start": "/plugin marketplace add michael-denyer/pstack-claude",
+  "caution": "",
+  "alts": [
+   "cursor/plugins",
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "Add structured workflows and verification rules from Cursor into Claude Code and other terminal AI agents.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Reproduce bugs systematically before applying and verifying fixes",
+   "Enforce architectural review on code changes that cross boundaries",
+   "Route coding tasks through specialized playbooks and subagent roles"
+  ],
+  "steps": [
+   "Add the marketplace plugin source with `/plugin marketplace add michael-denyer/pstack-claude` in Claude Code or Codex.",
+   "Install the plugin using `/plugin install pstack@pstack-claude`.",
+   "Run `/pstack:setup-pstack` to configure model defaults, effort levels, and automatic routing.",
+   "Prompt your agent with your goal using `Use poteto-mode to...`."
+  ],
+  "repo": "michael-denyer/pstack-claude",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "QingYunA/answer-me-with-html": {
+  "cat": "harness",
+  "kind": "agent skill visualizer",
+  "what": "Answer me with HTML is an agent skill that turns complex answers into readable, single-page HTML explainers and animated diagrams using lightweight Markdown drafts.",
+  "why": "AI text responses can become overwhelming walls of text, and asking models directly for raw HTML wastes output tokens and waiting time. Use this when you want your coding agent to explain architecture, comparisons, or multi-step concepts visually and quickly.",
+  "level": "setup",
+  "start": "npx skills add QingYunA/answer-me-with-html",
+  "caution": "",
+  "alts": [
+   "Vincentwei1021/anything2explainer",
+   "anthropics/claude-code",
+   "obra/superpowers"
+  ],
+  "packages": [],
+  "plain": "Turns AI answers to complex questions into clean, visual HTML pages and animated explainer videos.",
+  "tags": [
+   "supercharge",
+   "docs",
+   "media"
+  ],
+  "useFor": [
+   "Generate visual architecture diagrams from coding agent answers",
+   "Produce comparison tables and timelines for complex technical topics",
+   "Create 3Blue1Brown-style animated explainer videos with narration"
+  ],
+  "steps": [
+   "Ensure Node.js 20 or newer is installed on your computer.",
+   "Add the skill using `npx skills add QingYunA/answer-me-with-html`.",
+   "Ask your coding agent a complex question or explicitly say 'explain it in HTML'."
+  ],
+  "repo": "QingYunA/answer-me-with-html",
+  "at": "2026-10-04",
+  "source": "trending"
  }
 }
