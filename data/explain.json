@@ -9257,5 +9257,101 @@
   "repo": "Jakeschincariol/replica-skill",
   "at": "2026-10-03",
   "source": "trending"
+ },
+ "SyncSo-Inc/syncso": {
+  "cat": "harness",
+  "kind": "real time local events",
+  "what": "Let your AI assistants understand real-time local events, tickets, and experiences in New York.",
+  "why": "AI models usually only know static guidebooks and cannot answer questions about current local events. Use this tool when you want your assistant to find live gigs, markets, classes, and nightlife with real-time dates, prices, and booking links.",
+  "level": "setup",
+  "start": "claude mcp add --transport http syncso https://rtdb.syncso.com/partner/mcp",
+  "caution": "Reuses consumer subscription logins or service accounts via an MCP connector, which may break provider terms and risk the account.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "Gives your AI assistant real-time access to live events and activities happening across New York City.",
+  "tags": [
+   "research",
+   "supercharge",
+   "connect"
+  ],
+  "useFor": [
+   "Find live music, theater, and nightlife happening tonight in New York",
+   "Get booking links and prices for upcoming local events",
+   "Ask your AI agent what to do on a specific day in the city"
+  ],
+  "steps": [
+   "Open your Claude settings, go to Connectors, and add a custom connector.",
+   "Paste the MCP URL https://rtdb.syncso.com/partner/mcp to connect.",
+   "Sign in once at syncso.com when prompted during your first search."
+  ],
+  "repo": "SyncSo-Inc/syncso",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "GanyuanRan/Autoloom": {
+  "cat": "coding",
+  "kind": "governance coding agent",
+  "what": "Autoloom is an AI coding desktop client with built-in Aegis engineering governance, challenging assumptions and enforcing verification during execution.",
+  "why": "To reduce unproductive agent loops and force the AI to check complexity and verify changes against actual requirements before delivering code.",
+  "level": "easy",
+  "start": "Go to Releases and download the Windows x64 installer, Autoloom-<version>-win-x64.exe.",
+  "caution": "Alpha software with closed-source client code and potential data format changes.",
+  "alts": [
+   "deepseek-ai/deepseek-harness"
+  ],
+  "packages": [],
+  "plain": "An AI coding app that forces the agent to justify its changes and show verification evidence.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Write code with engineering governance checks",
+   "Review execution evidence and test coverage",
+   "Manage local or remote SSH projects"
+  ],
+  "steps": [
+   "Download the Windows x64 installer from GitHub Releases",
+   "Install and open Autoloom on your machine",
+   "Add your model provider API key in settings and pick a default model",
+   "Open a backed-up test project and start a new task"
+  ],
+  "repo": "GanyuanRan/Autoloom",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "ozynautetu-create/FlowForge-Optima": {
+  "cat": "evals",
+  "kind": "Prompt Optimization Tool",
+  "what": "PromptForge automatically tests, mutates, and improves LLM prompts and retrieval strategies over time against held-out evaluation data.",
+  "why": "Manual prompt tuning does not scale when underlying models change or user traffic shifts, so this automates the search for better prompts while keeping humans in the loop.",
+  "level": "setup",
+  "start": "",
+  "caution": "The repository has very few stars and sparse installation instructions in the README.",
+  "alts": [
+   "promptfoo/promptfoo",
+   "Arize-ai/phoenix",
+   "comet-ml/opik"
+  ],
+  "packages": [],
+  "plain": "An automated system that experiments with and improves your AI prompts over time to make them more accurate.",
+  "tags": [
+   "docs",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Optimize prompt instructions automatically",
+   "Evaluate candidate prompts against test datasets",
+   "Track prompt versions and regressions"
+  ],
+  "steps": [],
+  "repo": "ozynautetu-create/FlowForge-Optima",
+  "at": "2026-10-04",
+  "source": "trending"
  }
 }
