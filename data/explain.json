@@ -9560,5 +9560,68 @@
   "repo": "QingYunA/answer-me-with-html",
   "at": "2026-10-04",
   "source": "trending"
+ },
+ "allenv0/SCM": {
+  "cat": "memory",
+  "kind": "local media search app",
+  "what": "A local-first macOS desktop application that indexes and searches photos and video frames using vision models, OCR, and speech transcription.",
+  "why": "Use it when you need to locate specific scenes, on-screen text, or spoken dialogue inside local media folders without uploading files to the cloud.",
+  "level": "easy",
+  "start": "brew install --cask allenv0/scm/scm",
+  "caution": "Runs only on macOS and downloads hundreds of megabytes of model weights to your machine during first use.",
+  "alts": [],
+  "packages": [],
+  "plain": "Search your Mac photos and videos by visual descriptions, spoken dialogue, or on-screen text completely offline.",
+  "tags": [
+   "private",
+   "knowledge",
+   "media"
+  ],
+  "useFor": [
+   "Search video moments by describing scenes in plain text",
+   "Find exact text inside screenshots and photos via OCR",
+   "Locate spoken lines across local video transcripts"
+  ],
+  "steps": [
+   "Install the app via Homebrew using `brew install --cask allenv0/scm/scm`.",
+   "Open the app and choose the local folders you want to index.",
+   "Search across your media using natural descriptions, exact dialogue, or on-screen text."
+  ],
+  "repo": "allenv0/SCM",
+  "at": "2026-10-04",
+  "source": "trending"
+ },
+ "FavioVazquez/showtime": {
+  "cat": "harness",
+  "kind": "Agent video plugin",
+  "what": "A local tool and plugin that enables coding agents to write, direct, and render videos directly on your computer.",
+  "why": "It removes the need for cloud-based video APIs, subscriptions, and data uploads by running rendering tools locally. Use it when you want your coding assistant to build repository walk-throughs, release videos, or motion graphics from plain text prompts.",
+  "level": "setup",
+  "start": "npx skills add FavioVazquez/showtime",
+  "caution": "The initial setup downloads between 0.6 to 0.8 GB of local models and rendering engines, with additional components downloaded when first requested.",
+  "alts": [
+   "anthropics/claude-code-action",
+   "siteboon/claudecodeui"
+  ],
+  "packages": [],
+  "plain": "Gives your AI coding assistant the ability to create and edit videos directly on your computer.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Create animated repository explainer videos",
+   "Generate voice-overs and captions automatically",
+   "Verify video rendering output with QA checks"
+  ],
+  "steps": [
+   "Install the prerequisites Node.js and uv",
+   "Add the plugin using `/plugin marketplace add FavioVazquez/showtime` in Claude Code",
+   "Ask your coding agent to make a video to trigger the local setup"
+  ],
+  "repo": "FavioVazquez/showtime",
+  "at": "2026-10-04",
+  "source": "trending"
  }
 }

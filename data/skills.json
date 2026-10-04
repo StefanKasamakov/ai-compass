@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-04T12:38:32.376Z",
+ "updated": "2026-10-04T21:42:07.967Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 179588,
+   "stars": 179643,
    "license": null,
    "pushed": "2026-10-03T20:38:10Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 295110,
+   "stars": 295263,
    "license": "MIT",
    "pushed": "2026-09-27T02:37:47Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 100995,
+   "stars": 101181,
    "license": "MIT",
    "pushed": "2026-10-03T18:21:11Z",
    "by": "addyosmani",
@@ -27,15 +27,15 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 275700,
+   "stars": 276100,
    "license": "MIT",
-   "pushed": "2026-09-29T12:38:37Z",
+   "pushed": "2026-10-04T13:44:59Z",
    "by": "mattpocock",
    "count": 37
   },
   {
    "repo": "openai/skills",
-   "stars": 27872,
+   "stars": 27877,
    "license": null,
    "pushed": "2026-09-08T20:35:26Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 31907,
+   "stars": 31928,
    "license": null,
    "pushed": "2026-08-28T13:36:31Z",
    "by": "vercel-labs",
@@ -51,7 +51,7 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 37369,
+   "stars": 37389,
    "license": "Apache-2.0",
    "pushed": "2026-10-04T09:30:57Z",
    "by": "anthropics",
@@ -59,7 +59,7 @@
   },
   {
    "repo": "openai/plugins",
-   "stars": 7292,
+   "stars": 7299,
    "license": null,
    "pushed": "2026-09-28T17:08:10Z",
    "by": "openai",
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 27551,
+   "stars": 27594,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,7 +75,7 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25387,
+   "stars": 25390,
    "license": "MIT",
    "pushed": "2026-10-02T09:55:48Z",
    "by": "EveryInc",
@@ -83,17 +83,17 @@
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 75825,
+   "stars": 76215,
    "license": "Apache-2.0",
-   "pushed": "2026-10-04T09:42:55Z",
+   "pushed": "2026-10-04T18:13:24Z",
    "by": "pbakaus",
    "count": 20
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40185,
+   "stars": 40197,
    "license": "MIT",
-   "pushed": "2026-10-04T12:35:34Z",
+   "pushed": "2026-10-04T20:49:16Z",
    "by": "wshobson",
    "count": 80
   }
@@ -6821,20 +6821,20 @@
    "name": "file-conversion",
    "repo": "wshobson/agents",
    "path": "plugins/file-conversion/skills/file-conversion",
-   "desc": "Convert files between formats — PDF to Word, HEIC to JPG, MP4 to MP3, CSV to JSON, EPUB to MOBI, and 999 total routes across images, video, audio, documents, data, fonts, ebooks, and archives. Free via changethisfile.com, no API key or signup. Use when the user needs a file converted to a different format.",
-   "scripts": true,
-   "files": 1,
+   "desc": "Use when the user needs a local file converted between common image, audio, video, document, or data formats. Select installed tools, preserve originals, and verify the output.",
+   "scripts": false,
+   "files": 0,
    "tags": [
     "docs",
-    "media",
-    "code"
+    "media"
    ],
-   "plain": "Convert files between hundreds of different formats including images, videos, documents, and audio.",
+   "plain": "Convert local files between common image, audio, video, document, and data formats while preserving original files.",
    "useFor": [
-    "Convert file formats",
-    "Change document types"
+    "Converting video files to audio formats",
+    "Changing document formats without losing the original",
+    "Switching image files between different formats"
    ],
-   "example": "Convert this PDF file into a Word document."
+   "example": "Can you convert this video file into an MP3 audio file?"
   },
   {
    "key": "wshobson/agents/angular-migration",
