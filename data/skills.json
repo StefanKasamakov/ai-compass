@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-05T05:56:19.233Z",
+ "updated": "2026-10-05T11:58:51.619Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 179678,
+   "stars": 179718,
    "license": null,
    "pushed": "2026-10-03T20:38:10Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 295348,
+   "stars": 295443,
    "license": "MIT",
    "pushed": "2026-09-27T02:37:47Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 101281,
+   "stars": 101370,
    "license": "MIT",
    "pushed": "2026-10-03T18:21:11Z",
    "by": "addyosmani",
@@ -27,11 +27,11 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 276349,
+   "stars": 276615,
    "license": "MIT",
-   "pushed": "2026-10-04T13:44:59Z",
+   "pushed": "2026-10-05T11:17:21Z",
    "by": "mattpocock",
-   "count": 37
+   "count": 38
   },
   {
    "repo": "openai/skills",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 31937,
+   "stars": 31947,
    "license": null,
    "pushed": "2026-08-28T13:36:31Z",
    "by": "vercel-labs",
@@ -51,7 +51,7 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 37398,
+   "stars": 37407,
    "license": "Apache-2.0",
    "pushed": "2026-10-04T09:30:57Z",
    "by": "anthropics",
@@ -59,7 +59,7 @@
   },
   {
    "repo": "openai/plugins",
-   "stars": 7303,
+   "stars": 7306,
    "license": null,
    "pushed": "2026-09-28T17:08:10Z",
    "by": "openai",
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 27619,
+   "stars": 27653,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,23 +75,23 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25392,
+   "stars": 25393,
    "license": "MIT",
-   "pushed": "2026-10-02T09:55:48Z",
+   "pushed": "2026-10-05T07:01:52Z",
    "by": "EveryInc",
    "count": 37
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 76479,
+   "stars": 76760,
    "license": "Apache-2.0",
-   "pushed": "2026-10-05T05:52:37Z",
+   "pushed": "2026-10-05T11:52:46Z",
    "by": "pbakaus",
    "count": 20
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40205,
+   "stars": 40206,
    "license": "MIT",
    "pushed": "2026-10-05T01:07:11Z",
    "by": "wshobson",
@@ -1578,6 +1578,23 @@
     "Run system migrations"
    ],
    "example": "Generate a wizard script to help me set up my deployment secrets."
+  },
+  {
+   "key": "mattpocock/skills/chief-of-staff",
+   "name": "chief-of-staff",
+   "repo": "mattpocock/skills",
+   "path": "skills/in-progress/chief-of-staff",
+   "desc": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+   "scripts": false,
+   "files": 1,
+   "tags": [],
+   "plain": "Manage a complex multi-step goal in one session using helper agents.",
+   "useFor": [
+    "Break down large projects",
+    "Coordinate subtasks together",
+    "Manage long goals"
+   ],
+   "example": "Help me plan and execute my entire website launch today."
   },
   {
    "key": "mattpocock/skills/claude-handoff",

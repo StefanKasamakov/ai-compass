@@ -9689,5 +9689,138 @@
   "repo": "XiaoPuOuO/openchatx-mcp",
   "at": "2026-10-05",
   "source": "trending"
+ },
+ "msitarzewski/agency-agents": {
+  "cat": "harness",
+  "kind": "Agent persona pack",
+  "what": "A collection of specialized AI agent profiles and workflow configurations designed for coding assistants like Claude Code and Cursor.",
+  "why": "Generic AI assistants often lack structured workflows or domain-specific setups. Reach for this to quickly inject defined roles like backend architects, mobile builders, or DevOps automators directly into your coding tools.",
+  "level": "setup",
+  "start": "brew install --cask msitarzewski/agency-agents/agency-agents",
+  "caution": "Some platforms like OpenCode have internal limits and may silently drop agents if you try to import too many at once.",
+  "alts": [
+   "anomalyco/opencode",
+   "anthropics/claude-code",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A collection of ready-to-use expert personalities for your AI coding assistants.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Install specialized expert roles into Claude Code",
+   "Add domain-specific workflows to AI tools like Cursor",
+   "Deploy pre-configured developer personas to accelerate programming tasks"
+  ],
+  "steps": [
+   "Install the desktop app using `brew install --cask msitarzewski/agency-agents/agency-agents`",
+   "Or run `./scripts/convert.sh` to prepare integration files manually",
+   "Execute `./scripts/install.sh` to install selected teams to your tools"
+  ],
+  "repo": "msitarzewski/agency-agents",
+  "at": "2026-10-05",
+  "source": "trending"
+ },
+ "Gaurav-Gosain/tuios": {
+  "cat": "harness",
+  "kind": "Terminal agent multiplexer",
+  "what": "A terminal window manager and multiplexer that tracks coding agent states across panes and collects approvals into a single inbox.",
+  "why": "Running multiple coding agents makes it difficult to know when an agent is blocked or waiting for input. Reach for this to manage, split, and respond to several agent sessions across workspaces and machines.",
+  "level": "setup",
+  "start": "brew install tuios",
+  "caution": "",
+  "alts": [
+   "smtg-ai/claude-squad",
+   "siteboon/claudecodeui",
+   "winfunc/opcode"
+  ],
+  "packages": [],
+  "plain": "A terminal window manager that runs and monitors multiple coding agents with a shared inbox for approvals.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Manage multiple coding agent sessions in tiled terminal panes",
+   "Approve agent tool requests and answers from a unified inbox",
+   "Spawn multi-agent fleets across isolated git worktrees"
+  ],
+  "steps": [
+   "Install TUIOS using `brew install tuios` or the release binaries",
+   "Run `tuios integration install` to wire agent harnesses like Claude Code",
+   "Launch TUIOS to start managing agent workspaces and notifications"
+  ],
+  "repo": "Gaurav-Gosain/tuios",
+  "at": "2026-10-05",
+  "source": "trending"
+ },
+ "penso/herdr-gpui": {
+  "cat": "coding",
+  "kind": "Agent workspace GUI",
+  "what": "A native desktop client for the Herdr developer daemon, built with Rust and GPUI.",
+  "why": "It provides a fast, optimized graphical interface to view terminal cells, split panes, workspaces, and AI agent activities. Reach for it when you want to manage your Herdr sessions without wrapping a text terminal emulator.",
+  "level": "easy",
+  "start": "brew install penso/tap/herdr-gpui",
+  "caution": "This is an unofficial, unaffiliated project. Windows support is experimental, and you must install the Herdr daemon separately.",
+  "alts": [
+   "LockedinLabs-AI/agent-console"
+  ],
+  "packages": [],
+  "plain": "A fast desktop app to view and control your Herdr AI agents and terminal workspaces.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Monitor Herdr AI agent workspaces and terminal cells",
+   "Manage Git worktrees and developer sessions",
+   "Open local browser pages beside terminal panes"
+  ],
+  "steps": [
+   "Install on macOS with `brew install penso/tap/herdr-gpui`",
+   "Launch the application using `open -a Herdr`",
+   "Ensure you have the separate Herdr daemon server running"
+  ],
+  "repo": "penso/herdr-gpui",
+  "at": "2026-10-05",
+  "source": "trending"
+ },
+ "amontlabs/lcu": {
+  "cat": "harness",
+  "kind": "desktop automation harness",
+  "what": "LCU exposes Codex's desktop computer-use runtime to coding harnesses like Claude Code, Pi, and Codex CLI without requiring Codex authentication.",
+  "why": "It lets coding agents directly see windows, click, type, and control desktop apps across macOS and Linux, using your local ChatGPT desktop app runtime.",
+  "level": "setup",
+  "start": "lcu setup --agent claude-code",
+  "caution": "Requires the official ChatGPT desktop app installed locally to supply the runtime. Reusing consumer desktop app runtimes outside the app may break provider terms.",
+  "alts": [
+   "To3akaRin/mac-computer-use",
+   "trycua/cua",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "Lets coding agents like Claude Code click, type, and control desktop apps on your computer.",
+  "tags": [
+   "automate",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Control desktop applications and read windows",
+   "Automate Chrome browser tabs with site approval",
+   "Manage app automation permissions with Touch ID"
+  ],
+  "steps": [
+   "Install the official ChatGPT desktop app and Python 3.12+.",
+   "Download and extract the latest release archive for your OS from GitHub.",
+   "Run `lcu setup --agent claude-code` (or specify your harness) and grant system permissions."
+  ],
+  "repo": "amontlabs/lcu",
+  "at": "2026-10-05",
+  "source": "trending"
  }
 }
