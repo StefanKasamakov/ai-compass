@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-05T11:58:51.619Z",
+ "updated": "2026-10-05T15:03:29.077Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 179718,
+   "stars": 179734,
    "license": null,
-   "pushed": "2026-10-03T20:38:10Z",
+   "pushed": "2026-10-05T13:46:45Z",
    "by": "anthropics",
    "count": 19
   },
   {
    "repo": "obra/superpowers",
-   "stars": 295443,
+   "stars": 295511,
    "license": "MIT",
    "pushed": "2026-09-27T02:37:47Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 101370,
+   "stars": 101431,
    "license": "MIT",
    "pushed": "2026-10-03T18:21:11Z",
    "by": "addyosmani",
@@ -27,15 +27,15 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 276615,
+   "stars": 276783,
    "license": "MIT",
-   "pushed": "2026-10-05T11:17:21Z",
+   "pushed": "2026-10-05T12:04:32Z",
    "by": "mattpocock",
    "count": 38
   },
   {
    "repo": "openai/skills",
-   "stars": 27881,
+   "stars": 27887,
    "license": null,
    "pushed": "2026-09-08T20:35:26Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 31947,
+   "stars": 31952,
    "license": null,
    "pushed": "2026-08-28T13:36:31Z",
    "by": "vercel-labs",
@@ -51,7 +51,7 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 37407,
+   "stars": 37414,
    "license": "Apache-2.0",
    "pushed": "2026-10-04T09:30:57Z",
    "by": "anthropics",
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 27653,
+   "stars": 27661,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,7 +75,7 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25393,
+   "stars": 25395,
    "license": "MIT",
    "pushed": "2026-10-05T07:01:52Z",
    "by": "EveryInc",
@@ -83,15 +83,15 @@
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 76760,
+   "stars": 76871,
    "license": "Apache-2.0",
-   "pushed": "2026-10-05T11:52:46Z",
+   "pushed": "2026-10-05T13:30:47Z",
    "by": "pbakaus",
    "count": 20
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40206,
+   "stars": 40211,
    "license": "MIT",
    "pushed": "2026-10-05T01:07:11Z",
    "by": "wshobson",
@@ -185,7 +185,7 @@
    "path": "skills/claude-api",
    "desc": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent",
    "scripts": true,
-   "files": 80,
+   "files": 91,
    "tags": [
     "code",
     "connect"

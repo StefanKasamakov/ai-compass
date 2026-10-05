@@ -9822,5 +9822,72 @@
   "repo": "amontlabs/lcu",
   "at": "2026-10-05",
   "source": "trending"
+ },
+ "heaven999b/hello-agent-system": {
+  "cat": "frameworks",
+  "kind": "Agent System Course",
+  "what": "A bilingual course and toolkit for learning enterprise AI agent system design by building every production layer from scratch.",
+  "why": "Most agent tutorials only show simple prototypes, leaving developers unprepared for production issues like reliability, security, multi-process execution, and cost control.",
+  "level": "dev",
+  "start": "git clone https://github.com/heaven999b/hello-agent-system.git",
+  "caution": "This is an educational course and reference implementation rather than a managed product, and it requires writing Python code to use.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "plain": "Learn how to build reliable, secure, and production-ready AI agents from scratch using bilingual lessons and exercises.",
+  "tags": [
+   "code",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Build a production-ready agent system layer by layer",
+   "Learn enterprise AI architecture and reliability patterns",
+   "Practice multi-process agent execution and failure handling"
+  ],
+  "steps": [
+   "Clone the repository using git clone https://github.com/heaven999b/hello-agent-system.git",
+   "Run `make setup` to create the virtual environment and install dependencies"
+  ],
+  "repo": "heaven999b/hello-agent-system",
+  "at": "2026-10-05",
+  "source": "trending"
+ },
+ "Btluo1/ccb": {
+  "cat": "gateway",
+  "kind": "Windows setup tool",
+  "what": "This tool automatically configures AI coding apps like Cursor and Trae to use CCB models with a single click.",
+  "why": "It saves you from manually editing configuration files or setting up local proxies for multiple AI coding assistants, making it useful when you want to plug cheaper or alternative models into your favorite editor.",
+  "level": "easy",
+  "start": "npm install",
+  "caution": "This tool pools accounts, handles paid credits via third-party redemption cards, and interacts with proprietary consumer apps. It may violate the terms of service of the official coding applications or providers.",
+  "alts": [
+   "diegosouzapw/OmniRoute",
+   "BerriAI/litellm",
+   "Portkey-AI/gateway"
+  ],
+  "packages": [],
+  "plain": "An app that automatically wires up different AI coding assistants to use your CCB account models on Windows.",
+  "tags": [
+   "code",
+   "save",
+   "connect"
+  ],
+  "useFor": [
+   "Configure multiple AI coding apps instantly",
+   "Switch coding assistants to use CCB models",
+   "Backup and rollback client configurations easily"
+  ],
+  "steps": [
+   "Download and install the desktop app for Windows from the official site.",
+   "Log in to your CCB account and redeem any top-up cards for balance.",
+   "Select your installed coding client in the app and click the setup button."
+  ],
+  "repo": "Btluo1/ccb",
+  "at": "2026-10-05",
+  "source": "trending"
  }
 }
