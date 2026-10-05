@@ -9623,5 +9623,71 @@
   "repo": "FavioVazquez/showtime",
   "at": "2026-10-04",
   "source": "trending"
+ },
+ "Ebony-Vinyl/dsh-our-free-model": {
+  "cat": "harness",
+  "kind": "DeepSeek Harness plugin",
+  "what": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts.",
+  "why": "It eliminates the hassle of managing paid API keys or signing up for multiple accounts when using DeepSeek Harness. Use this when you want to run coding tasks for free with models like Muse Spark and MiMo.",
+  "level": "setup",
+  "start": "dsh plugin --profile web add /path/to/dsh-our-free-model",
+  "caution": "Relies entirely on a free third-party routing gateway (opencode.ai), which may experience downtime, change its terms of service, or stop working unexpectedly.",
+  "alts": [],
+  "packages": [],
+  "plain": "Get free, unlimited access to various AI models inside your DeepSeek Harness workspace without any accounts or keys.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Access free frontier AI models inside DeepSeek Harness without signing up",
+   "Forward free models to other local tools using an OpenAI-compatible API",
+   "Track local token usage and response speeds through an offline dashboard"
+  ],
+  "steps": [
+   "Install the plugin using `dsh plugin --profile web add /path/to/dsh-our-free-model`.",
+   "Restart your DeepSeek Harness application to load the plugin.",
+   "Select a model from the Our Free Model group in the chat box."
+  ],
+  "repo": "Ebony-Vinyl/dsh-our-free-model",
+  "at": "2026-10-05",
+  "source": "trending"
+ },
+ "XiaoPuOuO/openchatx-mcp": {
+  "cat": "coding",
+  "kind": "Desktop App",
+  "what": "Turn ChatGPT into a local agent runtime that can run shell commands, edit files, and control your computer using OpenAI's official secure tunnel.",
+  "why": "Use ChatGPT as an interactive coding and automation agent with access to your local files and custom tools without relying on browser scraping.",
+  "level": "setup",
+  "start": "Download the latest release from GitHub and configure your tunnel ID and runtime API key in the desktop app.",
+  "caution": "Gives an AI agent direct read and write access to your local computer and file system using your user permissions.",
+  "alts": [
+   "cline/cline",
+   "RooCodeInc/Roo-Code",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "Connects ChatGPT to your local computer so it can run commands, edit files, and use local tools safely.",
+  "tags": [
+   "code",
+   "automate",
+   "connect",
+   "knowledge"
+  ],
+  "useFor": [
+   "Control your computer and run shell commands from ChatGPT",
+   "Edit local files and manage coding projects",
+   "Connect local Model Context Protocol servers to ChatGPT"
+  ],
+  "steps": [
+   "Download and install the OpenChatX desktop app for your operating system",
+   "Create a secure tunnel and runtime API key in your OpenAI Platform settings",
+   "Enter your tunnel ID and API key into the OpenChatX desktop app",
+   "Connect the tunnel in ChatGPT and start chatting with local file and shell access"
+  ],
+  "repo": "XiaoPuOuO/openchatx-mcp",
+  "at": "2026-10-05",
+  "source": "trending"
  }
 }
