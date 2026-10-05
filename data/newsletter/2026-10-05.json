@@ -1,0 +1,136 @@
+{
+ "date": "2026-10-05",
+ "subject": "OpenAI DevDay, GPT-6.1 Sol, and Gemini 4 Argon",
+ "intro": "Major new frontier models launched this week, led by OpenAI's DevDay announcements and the debut of GPT-6.1 Sol and Gemini 4 Argon. These updates bring more capable coding agents and pricing adjustments for everyday users.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU",
+     "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+     "blurb": "A news roundup covered major OpenAI DevDay 2026 releases including new models, the Decisions API, and the Agents API.",
+     "meta": "Latent Space"
+    },
+    {
+     "title": "Gemini 4 Argon: our next era of frontier intelligence",
+     "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+     "blurb": "DeepMind announces Gemini 4 Argon, marking the next generation of its frontier intelligence models.",
+     "meta": "DeepMind"
+    },
+    {
+     "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
+     "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
+     "blurb": "Anthropic released Claude Opus 5.5 alongside updates to Claude Code, bringing frontier-class capabilities to coding and agentic workflows.",
+     "meta": "Hacker News"
+    },
+    {
+     "title": "Introducing GPT-6.1 Sol",
+     "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+     "blurb": "OpenAI released GPT-6.1 Sol, offering high-tier coding and computer use capabilities at a much lower price than previous flagship models.",
+     "meta": "OpenAI"
+    },
+    {
+     "title": "Building advertising for the way people use AI",
+     "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+     "blurb": "OpenAI is introducing visual ad formats inside ChatGPT and expanding tracking tools for advertisers, which users should note as ads roll out.",
+     "meta": "OpenAI"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Claude Opus 5.5",
+     "url": "https://whichaimap.com/models.html#m-opus",
+     "blurb": "Anthropic's recommended default. Coding (it powers Claude Code), long tasks, documents.",
+     "meta": "$4 / $20 per 1M tokens"
+    },
+    {
+     "title": "Claude Sonnet 5.5",
+     "url": "https://whichaimap.com/models.html#m-sonnet",
+     "blurb": "Fast and smart: writing, bug fixes, polished docs, slides and spreadsheets, high-volume apps. New 28 Sep: 30% faster than Sonnet 5, same price. Haiku 5.5 is announced for the coming weeks.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "GPT-6 Sol",
+     "url": "https://whichaimap.com/models.html#m-sol",
+     "blurb": "Strong reasoning for complex professional work at a mid-tier price. In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "GPT-6 Luna",
+     "url": "https://whichaimap.com/models.html#m-luna",
+     "blurb": "Extremely cheap. Routine tasks and huge volumes. The model free ChatGPT users get. 'Luna Pro' = same model, pro reasoning mode.",
+     "meta": "$0.1 / $0.5 per 1M tokens"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "KKKKhazix/AIHOT",
+     "url": "https://whichaimap.com/explore.html#KKKKhazix/AIHOT",
+     "blurb": "A self-hosted web framework that automatically aggregates sources, uses LLMs to filter, score, and cluster news, and generates daily industry briefings. Heads-up: The documentation is primarily in Chinese, and setup requires an OpenAI-compatible LLM API key and Docker.",
+     "meta": "AI news framework"
+    },
+    {
+     "title": "Vincentwei1021/anything2explainer",
+     "url": "https://whichaimap.com/explore.html#Vincentwei1021/anything2explainer",
+     "blurb": "Turns any topic into a motion-graphics explainer video with text-to-speech voiceover and subtitles using Remotion and Claude Code or Codex. Heads-up: The repository has no explicit license specified. Requires external dependencies like ffmpeg, espeak-ng, and Python virtual environments, and takes 1 to 3 hours of wall clock time to fully render videos.",
+     "meta": "Claude Code Skill"
+    },
+    {
+     "title": "yetone/magpie",
+     "url": "https://whichaimap.com/explore.html#yetone/magpie",
+     "blurb": "Manage AI models and configure multiple coding agents from a single menu bar interface and local gateway. Heads-up: The project was last pushed in September 2026, which may indicate it is unmaintained.",
+     "meta": "menu bar model router"
+    },
+    {
+     "title": "tigerless-labs/agent-memory",
+     "url": "https://whichaimap.com/explore.html#tigerless-labs/agent-memory",
+     "blurb": "Long-term memory runtime for AI agents that uses plain Markdown files as the source of truth, local ranked retrieval, and a sleep-time manage layer. Heads-up: Requires Python 3.12 or higher and uv, and is not currently published on PyPI.",
+     "meta": "long-term memory runtime"
+    },
+    {
+     "title": "dzhng/jevgrep",
+     "url": "https://whichaimap.com/explore.html#dzhng/jevgrep",
+     "blurb": "Finds code by asking what it does, helping coding agents discover relevant files and source context. Heads-up: Searches send eligible source content to third-party AI gateway providers, so avoid pointing it at codebases with sensitive unredacted data if those privacy terms are unsuitable.",
+     "meta": "coding agent helper"
+    },
+    {
+     "title": "2akouwu/reverify",
+     "url": "https://whichaimap.com/explore.html#2akouwu/reverify",
+     "blurb": "Forces coding and reverse-engineering agents to check every claim against deterministic tools before accepting it as fact. Heads-up: Requires Python and optionally extra native packages like capstone or angr for full functionality.",
+     "meta": "anti-hallucination harness"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://whichaimap.com/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "231.3M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://whichaimap.com/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "110.3M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "openai/codex",
+     "url": "https://whichaimap.com/explore.html#openai/codex",
+     "blurb": "Codex CLI is OpenAI's coding agent that runs locally in your terminal. It is also available as an IDE extension and a desktop app.",
+     "meta": "91.1M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}
