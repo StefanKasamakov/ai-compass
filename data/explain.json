@@ -9990,5 +9990,269 @@
   "repo": "Zhou-Yujing114514/deepseek-harness-linux",
   "at": "2026-10-06",
   "source": "trending"
+ },
+ "ayghri/i-have-adhd": {
+  "cat": "harness",
+  "kind": "ADHD output plugin",
+  "what": "A skill for coding assistants that forces direct, action-first answers without preamble.",
+  "why": "Stops AI assistants from burying answers in long paragraphs, pleasantries, and tangents when you need direct instructions.",
+  "level": "setup",
+  "start": "Install the i-have-adhd skill/plugin from https://github.com/ayghri/i-have-adhd, refer to the repo's AGENTS.md for instructions.",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [],
+  "plain": "Makes your coding assistant give short, direct answers with numbered steps instead of long paragraphs.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Cut conversational filler and pleasantries from your coding assistant",
+   "Get numbered, action-first steps for bug fixes",
+   "Keep AI responses concise and focused on the next step"
+  ],
+  "steps": [
+   "Copy the install command from the README",
+   "Paste it into your CLI prompt",
+   "Follow the instructions in the repo's AGENTS.md file"
+  ],
+  "repo": "ayghri/i-have-adhd",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "cathrynlavery/diagram-design": {
+  "cat": "harness",
+  "kind": "Editorial Diagram Generator",
+  "what": "Generates self-contained editorial HTML and SVG diagrams using AI coding assistants.",
+  "why": "Solves the problem of generic, ugly default diagrams produced by coding assistants when you need clean, publication-ready visuals without fighting design tools.",
+  "level": "setup",
+  "start": "git clone https://github.com/cathrynlavery/diagram-design.git",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "Create clean, professional editorial diagrams and charts inside your coding assistant without opening Figma.",
+  "tags": [
+   "docs",
+   "code"
+  ],
+  "useFor": [
+   "Generate architecture diagrams and flowcharts",
+   "Convert code logic into visual timelines",
+   "Redraw Mermaid or Excalidraw sources"
+  ],
+  "steps": [
+   "Clone the repository to your machine",
+   "Copy the skill files into your assistant's configuration directory",
+   "Ask your coding assistant to create a diagram for your project"
+  ],
+  "repo": "cathrynlavery/diagram-design",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "deepseek-ai/DeepGEMM": {
+  "cat": "local",
+  "kind": "GPU Kernel Library",
+  "what": "DeepGEMM is a high-performance tensor core kernel library providing computation primitives for large language models on NVIDIA GPUs.",
+  "why": "It optimizes matrix multiplication and mixture-of-experts operations to accelerate large language model training and inference on modern hardware.",
+  "level": "setup",
+  "start": "git clone --recursive git@github.com:deepseek-ai/DeepGEMM.git",
+  "caution": "Requires an NVIDIA SM90 or SM100 architecture GPU (such as H800) and specific CUDA toolkit versions.",
+  "alts": [],
+  "packages": [],
+  "plain": "A high-performance library for accelerating AI matrix math on NVIDIA GPUs.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Accelerate tensor core operations on NVIDIA GPUs",
+   "Run FP8 and FP4 large language model computations"
+  ],
+  "steps": [
+   "Clone the repository with submodules using `git clone --recursive git@github.com:deepseek-ai/DeepGEMM.git`.",
+   "Navigate into the DeepGEMM directory.",
+   "Run the development build script via `./develop.sh`."
+  ],
+  "repo": "deepseek-ai/DeepGEMM",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "morluto/rea": {
+  "cat": "coding",
+  "kind": "reverse engineering agent",
+  "what": "Reverse engineer apps, binaries, and websites with AI agents.",
+  "why": "When you need to understand how an app or binary works without its source code so you can rebuild or learn from it. Reach for it when doing security analysis or feature research.",
+  "level": "setup",
+  "start": "npx rea-agents setup",
+  "caution": "Requires external native tools like Hopper or Ghidra for deep binary analysis.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "Aider-AI/aider"
+  ],
+  "packages": [
+   "rea-agents"
+  ],
+  "plain": "Analyze native programs, websites, and app files using an AI assistant.",
+  "tags": [
+   "code",
+   "research",
+   "private"
+  ],
+  "useFor": [
+   "Analyze native binaries without source code",
+   "Inspect JavaScript and Electron applications",
+   "Reverse engineer app features for your projects"
+  ],
+  "steps": [
+   "Run `npx rea-agents setup` to configure REA with your coding agent.",
+   "Select your preferred AI coding assistant during the setup prompts.",
+   "Ask your agent to investigate an app or run `npx -y rea-agents@latest analyze-javascript-application /path/to/app --json`."
+  ],
+  "repo": "morluto/rea",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "bilibili/Index-Translate": {
+  "cat": "local",
+  "kind": "Multilingual Translation Family",
+  "what": "A family of multilingual translation models for text, speech, dubbing, and long documents.",
+  "why": "When you need high-quality machine translation across 150 languages, controlled syllable counts, or speech-to-speech translation running locally.",
+  "level": "setup",
+  "start": "python inference/llm/call_api.py \"Hello, world!\" --target zh",
+  "caution": "Requires significant computing resources or GPU setups to run locally, though a free online API is provided.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "A collection of AI translation models covering 150 languages, speech translation, and long documents.",
+  "tags": [
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Translate text across 150 languages",
+   "Translate speech and generate dubbing",
+   "Translate long documents with passage context"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Install the required dependencies listed in the inference guides.",
+   "Run the provided Python script to test translation via the free API or local models."
+  ],
+  "repo": "bilibili/Index-Translate",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "VoltAgent/official-mcp-servers": {
+  "cat": "harness",
+  "kind": "mcp server directory",
+  "what": "A curated directory of over 280 official Model Context Protocol servers built by the companies behind the products.",
+  "why": "When you want your AI assistant to securely connect to external tools without relying on unofficial or abandoned third-party plugins.",
+  "level": "easy",
+  "start": "",
+  "caution": "Some listed servers grant powerful read-write access to cloud resources and production databases, so review permissions carefully.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk",
+   "modelcontextprotocol/python-sdk"
+  ],
+  "packages": [],
+  "plain": "A trusted list of official tool connectors for your AI assistant.",
+  "tags": [
+   "connect",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Find official MCP servers for databases and cloud platforms",
+   "Connect Claude or ChatGPT securely to external development tools",
+   "Browse verified plugins without risking unofficial forks"
+  ],
+  "steps": [
+   "Visit the GitHub repository",
+   "Browse the categorized directory of tools",
+   "Click on the official link for the tool you want to connect"
+  ],
+  "repo": "VoltAgent/official-mcp-servers",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "alanhuangyoo/OpenJev": {
+  "cat": "local",
+  "kind": "Local System-One AI",
+  "what": "OpenJev provides open-source, local decision models that output typed probabilities instead of generating raw text.",
+  "why": "When you need to make fast, reliable routing, triage, or browser automation decisions on your own hardware without paying per-token API costs.",
+  "level": "setup",
+  "start": "pip install \"wev-ai[serve]\"",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "packages": [
+   "wev-ai"
+  ],
+  "plain": "Run local AI decision models that answer questions with probabilities instead of writing paragraphs.",
+  "tags": [
+   "private",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Run local decision models for routing and triage",
+   "Power browser automation agents with calibrated probabilities",
+   "Serve a local system-one API for agent workflows"
+  ],
+  "steps": [
+   "Install the python package using `pip install \"wev-ai[serve]\"`.",
+   "Load the model in python with wev.load to make typed predictions.",
+   "Start the local server using the command `wev serve --model alanhuangya/OpenJev-4B --port 8009`."
+  ],
+  "repo": "alanhuangyoo/OpenJev",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "sergqwer/strata-nvfp4": {
+  "cat": "local",
+  "kind": "NVFP4 MoE Runner",
+  "what": "Runs a large Qwen hybrid Mixture-of-Experts model locally on a single consumer graphics card and system RAM.",
+  "why": "Runs high-accuracy quantized 125B parameter models locally on modest hardware by offloading experts to system RAM and processing efficiently.",
+  "level": "setup",
+  "start": "python tools/requant.py",
+  "caution": "Requires significant system RAM (64 GB+) alongside a modern GPU, and performance depends heavily on PCIe bandwidth.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Run a massive 125-billion parameter AI model on your own PC using a single graphics card and system RAM.",
+  "tags": [
+   "private",
+   "knowledge",
+   "media"
+  ],
+  "useFor": [
+   "Run large AI models locally",
+   "Process images using a local vision tower",
+   "Generate text and code privately offline"
+  ],
+  "steps": [
+   "Ensure you have at least 64 GB of system RAM and a compatible GPU.",
+   "Download the required NVFP4 checkpoint and expert files.",
+   "Run the engine with your preferred context and hardware flags."
+  ],
+  "repo": "sergqwer/strata-nvfp4",
+  "at": "2026-10-06",
+  "source": "trending"
  }
 }

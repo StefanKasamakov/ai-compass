@@ -1,18 +1,123 @@
 {
- "updated": "2026-10-06T06:28:39.175Z",
+ "updated": "2026-10-06T18:26:57.043Z",
  "items": [
   {
-   "repo": "Zhou-Yujing114514/deepseek-harness-linux",
-   "stars": 116,
-   "desc": "First-class Linux packaging for DeepSeek Harness desktop — AppImage, .deb, .tar.gz for x64/arm64, built by native CI.",
-   "created": "2026-10-03T04:26:57Z",
+   "repo": "ayghri/i-have-adhd",
+   "stars": 54270,
+   "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+   "created": "2026-05-13T20:42:06Z",
    "topics": [
-    "agent",
-    "ai-agent",
-    "ai-assistant",
-    "appimage"
+    "adhd",
+    "claude-",
+    "claude-code-plugin",
+    "claude-skills"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "cathrynlavery/diagram-design",
+   "stars": 43870,
+   "desc": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 42 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+   "created": "2026-04-16T18:01:16Z",
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "data-visualization"
+   ],
+   "lang": "HTML",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "deepseek-ai/DeepGEMM",
+   "stars": 8639,
+   "desc": "DeepGEMM: clean and efficient BLAS kernel library on GPU",
+   "created": "2025-02-13T09:09:21Z",
+   "topics": [],
+   "lang": "Cuda",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "morluto/rea",
+   "stars": 8140,
+   "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+   "created": "2026-04-14T00:51:32Z",
+   "topics": [
+    "agent-skills",
+    "ai-agent-tools",
+    "ai-agents",
+    "binary-analysis"
    ],
    "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "bilibili/Index-Translate",
+   "stars": 839,
+   "desc": "A Multilingual Translation Model Family",
+   "created": "2026-09-15T13:03:42Z",
+   "topics": [
+    "llm",
+    "machine-translation"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "VoltAgent/official-mcp-servers",
+   "stars": 171,
+   "desc": "A curated directory of 280+ official MCP servers from the companies behind the products. No unofficial forks, no abandoned projects.",
+   "created": "2026-10-01T07:30:34Z",
+   "topics": [
+    "ai-tools",
+    "awesome-list",
+    "claude",
+    "claude-code"
+   ],
+   "lang": null,
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "alanhuangyoo/OpenJev",
+   "stars": 56,
+   "desc": "OpenJev: open-source, local alternative to Jev. System-One decision models: typed questions in, calibrated probabilities out; general decisions and browser-agent steps.",
+   "created": "2026-09-22T19:15:31Z",
+   "topics": [
+    "browser-agent",
+    "decision-model",
+    "distillation",
+    "jev"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "sergqwer/strata-nvfp4",
+   "stars": 41,
+   "desc": "Strata fork: Qwen3.8-Flash-Next 125B MoE in ModelOpt NVFP4 on one RTX 20/30/40/50 card (12 GB+, measured on an RTX 5090) + 64 GB of RAM or more. W4A8 prompt path, AVX-512 CPU experts, a low-RAM tier, pictures on the CPU, Cyrillic MTP drafts. Windows / CUDA 13.",
+   "created": "2026-09-29T16:13:33Z",
+   "topics": [
+    "blackwell",
+    "cuda",
+    "llm-inference",
+    "moe"
+   ],
+   "lang": "C++",
    "sources": [
     "new on GitHub"
    ]

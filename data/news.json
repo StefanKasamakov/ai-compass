@@ -1,6 +1,75 @@
 {
- "updated": "2026-10-06T06:28:39.175Z",
+ "updated": "2026-10-06T18:26:57.043Z",
  "items": [
+  {
+   "source": "OpenAI",
+   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+   "url": "https://openai.com/index/atlassian-partnership",
+   "date": "2026-10-06T16:00:00.000Z",
+   "summary": "Atlassian and OpenAI are partnering to integrate frontier AI models into enterprise planning and knowledge tools.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Scrimshaw Jukebox",
+   "url": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/",
+   "date": "2026-10-06T15:17:39.000Z",
+   "summary": "A developer experiment demonstrates using Claude Opus 5.5 to design a text-based music format and build a playable audio artifact.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/scrimshaw-card.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Vibecoding isn't as fun as writing code by hand",
+   "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
+   "date": "2026-10-06T14:45:02Z",
+   "discuss": "https://news.ycombinator.com/item?id=49979306",
+   "summary": "A developer discussion reflecting on the subjective enjoyment and trade-offs of writing code by hand versus using AI coding tools.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www.autodidacts.io/content/images/size/w1200/2026/08/ai-vibecoding-vs-coding-by-hand-thrill-learning-fun-curve-1.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Advancing computer use with Ironclad",
+   "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
+   "date": "2026-10-06T10:00:00.000Z",
+   "summary": "OpenAI and Ironclad are training AI agents to automate complex legal contracting workflows, advancing practical computer use for professional tasks.",
+   "tags": [
+    "agents",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Reflection Beam - 501B-A23B American Open Model",
+   "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
+   "date": "2026-10-06T06:28:43.000Z",
+   "summary": "A review of Reflection Beam, a new American open model release.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/DIu7xA898go"
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.291",
@@ -996,71 +1065,6 @@
    "big": false,
    "ai": true,
    "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "How we will do better for Australia",
-   "url": "https://openai.com/index/how-we-will-do-better-for-australia",
-   "date": "2026-09-28T19:00:00.000Z",
-   "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "GitHub",
-   "title": "Claude Sonnet 5.5 in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot",
-   "date": "2026-09-28T18:03:57.000Z",
-   "summary": "Anthropic's Claude Sonnet 5.5 is now generally available in GitHub Copilot for everyday coding tasks.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/09/659164683-16cc4c4e-74b2-4ea6-b922-474275b8c289.png"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.284",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.284",
-   "date": "2026-09-28T18:02:03Z",
-   "summary": "New release of Claude Code.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://opengraph.githubassets.com/2d93ca5f57632451972a2079931bf08dd481915d57010f99a39fe0c7d544437b/anthropics/claude-code/releases/tag/v2.1.284"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Sonnet 5.5",
-   "url": "https://www.anthropic.com/claude-sonnet-5-5",
-   "date": "2026-09-28T17:58:11Z",
-   "discuss": "https://news.ycombinator.com/item?id=49881850",
-   "summary": "Hacker News discussed Sonnet 5.5, a major new AI model release for coding and general tasks.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/eaa6046f4ae8c88e368c3c530c4c1312f7ff6f2e-1200x630.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "The problem is not AI code, but not knowing about system architecture or intent",
-   "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
-   "date": "2026-09-28T16:11:42Z",
-   "discuss": "https://news.ycombinator.com/item?id=49880312",
-   "summary": "A discussion arguing that the main challenge with AI-generated code is a lack of understanding of system architecture rather than the code itself.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.ssp.sh/brain/_img/feature/gen/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore.webp"
   }
  ]
 }
