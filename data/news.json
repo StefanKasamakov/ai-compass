@@ -1,6 +1,19 @@
 {
- "updated": "2026-10-06T00:07:19.085Z",
+ "updated": "2026-10-06T06:28:39.175Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.291",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+   "date": "2026-10-06T03:55:19Z",
+   "summary": "Anthropic released version 2.1.291 of Claude Code, bringing incremental updates to its command-line coding tool.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/744e936df1d993f3a47bf73cb014d026d7f0a0153f4db83a36a4f13c78e0c79a/anthropics/claude-code/releases/tag/v2.1.291"
+  },
   {
    "source": "Simon Willison",
    "title": "Quoting Felix Rieseberg",
@@ -65,6 +78,29 @@
    "big": false,
    "ai": true,
    "image": ""
+  },
+  {
+   "source": "Hacker News",
+   "title": "Anthropic reported diary entry to police, woman faces felony charge",
+   "url": "https://www.techspot.com/news/114091-florida-woman-used-claude-diary-anthropic-reported-shoot.html",
+   "date": "2026-10-05T05:37:40Z",
+   "discuss": "https://news.ycombinator.com/item?id=49961057",
+   "summary": "672 points, 520 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www.techspot.com/images2/news/bigimage/2026/10/2026-10-04-image-9.jpg"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Qwen3.8 27B addition in words",
+   "url": "https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/",
+   "date": "2026-10-04T23:34:00.000Z",
+   "summary": "Research: Qwen3.8 27B addition in words Colin Frasier posted on Bluesky about an experiment he ran over two years ago using GPT-4o to see how well it could \"compute the sum but return the answer in words\" across increasingly large numbers. Here's the chart he shared of those results: I'm confident GPT-4o didn't cheat and use a calculator, especially since it got so many of the calculations wrong, ",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/qwen-words-no-reasoning.webp"
   },
   {
    "source": "Hacker News",
@@ -335,6 +371,17 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/38e4e37d33c0357b710c8c6038b064ba34ea0050a96834af61ed3857cbbb2480/anthropics/claude-code/releases/tag/v2.1.287"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "pwasm 0.2a0",
+   "url": "https://simonwillison.net/2026/Oct/1/pwasm/",
+   "date": "2026-10-01T17:10:31.000Z",
+   "summary": "Release: pwasm 0.2a0 pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of AI mania . I hadn't touched it since January, so I decided to let Claude Opus 5.5 loose on it and see if it could make any significant improvements: Evaluate current state of pwasm - then consider what it would take to get the MicroPython an",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
   },
   {
    "source": "OpenAI",
@@ -1014,54 +1061,6 @@
    "big": false,
    "ai": true,
    "image": "https://www.ssp.sh/brain/_img/feature/gen/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore.webp"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Holo4: powering generalist computer-use agents",
-   "url": "https://huggingface.co/blog/Hcompany/holo4",
-   "date": "2026-09-28T09:44:05.000Z",
-   "summary": "Hugging Face highlighted Holo4 for powering generalist computer-use agents.",
-   "tags": [
-    "agents",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/69fc7e49052f11ab9931b672/yzjxvlmlZKtjASwAYu6bN.jpeg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Prompting Claude Opus 5.5",
-   "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5",
-   "date": "2026-09-28T07:33:29Z",
-   "discuss": "https://news.ycombinator.com/item?id=49874728",
-   "summary": "201 points, 220 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://platform.claude.com/web-api/og/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5-5?design-rev=2"
-  },
-  {
-   "source": "OpenAI",
-   "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-   "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
-   "date": "2026-09-28T07:00:00.000Z",
-   "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.158.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.158.0",
-   "date": "2026-09-28T05:07:23Z",
-   "summary": "New release of Codex CLI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://opengraph.githubassets.com/afc2ff4249982ec6c55a2a079aa08fc7ddacbc70210712090c0d96cd7a55fe82/openai/codex/releases/tag/rust-v0.158.0"
   }
  ]
 }

@@ -9961,5 +9961,34 @@
   "repo": "qybaihe/mu",
   "at": "2026-10-06",
   "source": "trending"
+ },
+ "Zhou-Yujing114514/deepseek-harness-linux": {
+  "cat": "coding",
+  "kind": "Linux Desktop Packaging",
+  "what": "Provides ready-to-install Linux packages (AppImage, .deb, .tar.gz) for the DeepSeek Harness desktop app.",
+  "why": "Brings the official DeepSeek desktop AI assistant to Linux systems (including Ubuntu, Debian, and ARM64 devices like Raspberry Pi 5) which are otherwise unsupported upstream.",
+  "level": "easy",
+  "start": "sudo apt install libfuse2",
+  "caution": "Community-built binaries are unsigned. Updates rely solely on HTTPS without code signature verification, so users must manually verify SHA256 hashes against official releases.",
+  "alts": [],
+  "packages": [],
+  "plain": "Installs DeepSeek's official AI assistant desktop application on Linux with pre-built packages.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Download DeepSeek desktop on Linux",
+   "Run DeepSeek AI assistant locally",
+   "Install AppImage or .deb packages on Ubuntu"
+  ],
+  "steps": [
+   "Download the AppImage from the releases page.",
+   "Install the required FUSE runtime dependency using sudo apt install libfuse2.",
+   "Make the downloaded file executable with chmod +x and run it."
+  ],
+  "repo": "Zhou-Yujing114514/deepseek-harness-linux",
+  "at": "2026-10-06",
+  "source": "trending"
  }
 }
