@@ -9889,5 +9889,77 @@
   "repo": "Btluo1/ccb",
   "at": "2026-10-05",
   "source": "trending"
+ },
+ "Edwardxlai/easyread": {
+  "cat": "memory",
+  "kind": "Academic paper reader",
+  "what": "Translate and read English research papers in Chinese with side-by-side comparisons, AI chat assistance, and local reference management.",
+  "why": "Reading academic PDFs can be tedious when translation software breaks formatting or mixes up formulas; this tool keeps formatting clean, manages a local library, and lets you query AI about specific sections.",
+  "level": "easy",
+  "start": "pip install git+https://github.com/Edwardxlai/easyread",
+  "caution": "Using consumer subscription apps like Claude Code or Codex CLI as an API backend may break the provider's terms of service and risk your account.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "git+https://github.com/Edwardxlai/easyread"
+  ],
+  "plain": "A local desktop reader that translates English research papers into readable Chinese while preserving layouts and formulas.",
+  "tags": [
+   "docs",
+   "knowledge",
+   "research",
+   "private"
+  ],
+  "useFor": [
+   "Translate research papers with layout and formula preservation",
+   "Chat with AI about specific sections or highlighted text",
+   "Manage and organize a local academic reference library"
+  ],
+  "steps": [
+   "Download the installation package or run via pip",
+   "Open the EasyRead interface in your browser or desktop app",
+   "Drag and drop a PDF or enter an arXiv identifier to begin translation"
+  ],
+  "repo": "Edwardxlai/easyread",
+  "at": "2026-10-06",
+  "source": "trending"
+ },
+ "qybaihe/mu": {
+  "cat": "coding",
+  "kind": "Judgment Kernel Agent",
+  "what": "A coding agent that uses a fast small judge model for routine decisions so the main model focuses on coding work.",
+  "why": "Coding agents make hundreds of non-coding decisions per session that waste tokens and attention. Reach for this when you want an agent that delegates routine checks to a fast judge.",
+  "level": "setup",
+  "start": "npm i -g mu-agent",
+  "caution": "Early development software in pre-release stage. Signing in with consumer AI subscriptions as an API can break provider terms of service and risk your account.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider",
+   "cline/cline"
+  ],
+  "packages": [
+   "mu-agent"
+  ],
+  "plain": "A smart coding assistant that offloads routine checks to a tiny judge model to save time and tokens.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Write code with fewer repetitive decision tokens",
+   "Manage context and tool safety checks automatically",
+   "Run coding sessions via command line or desktop app"
+  ],
+  "steps": [
+   "Install the agent globally using `npm i -g mu-agent`.",
+   "Run setup to connect a model.",
+   "Start a session in your project directory using `mu`."
+  ],
+  "repo": "qybaihe/mu",
+  "at": "2026-10-06",
+  "source": "trending"
  }
 }

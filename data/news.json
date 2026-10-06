@@ -1,6 +1,46 @@
 {
- "updated": "2026-10-05T15:53:31.071Z",
+ "updated": "2026-10-06T00:07:19.085Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Felix Rieseberg",
+   "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
+   "date": "2026-10-05T23:56:47.000Z",
+   "summary": "Cowork updated its architecture to move tool execution away from local VMs, addressing user concerns about local resource and battery usage.",
+   "tags": [
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.290",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
+   "date": "2026-10-05T23:33:17Z",
+   "summary": "Anthropic released Claude Code v2.1.290, updating its official command-line tool for agentic software development.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/2ca36a122ab7f3d21337558d28cc0578e463fce12e959a50538bb3927b02654c/anthropics/claude-code/releases/tag/v2.1.290"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.160.1",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.160.1",
+   "date": "2026-10-05T18:29:37Z",
+   "summary": "Codex CLI released rust-v0.160.1, updating the popular terminal-based developer tool.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/d1da8d15e1ffbf2a3f31d7fe3b1dc33c29af8e971b013acefc19c2686fac97e0/openai/codex/releases/tag/rust-v0.160.1"
+  },
   {
    "source": "OpenAI",
    "title": "Our approach to EU text provenance rules",
@@ -863,6 +903,20 @@
   },
   {
    "source": "Simon Willison",
+   "title": "llm-anthropic 0.30",
+   "url": "https://simonwillison.net/2026/Sep/28/llm-anthropic/",
+   "date": "2026-09-28T23:06:21.000Z",
+   "summary": "The llm-anthropic CLI tool updated to version 0.30, adding dynamic model list refreshing directly from Anthropic's API and support for token counting.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Simon Willison",
    "title": "Claude Sonnet 5.5",
    "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
    "date": "2026-09-28T22:07:38.000Z",
@@ -1008,53 +1062,6 @@
    "big": false,
    "ai": false,
    "image": "https://opengraph.githubassets.com/afc2ff4249982ec6c55a2a079aa08fc7ddacbc70210712090c0d96cd7a55fe82/openai/codex/releases/tag/rust-v0.158.0"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Muse AI Agent",
-   "url": "https://simonwillison.net/2026/Sep/28/muse-ai-agent/",
-   "date": "2026-09-28T04:01:30.000Z",
-   "summary": "Bad news on the MX Keys Mini pickup. Usman showed up at your building around 9:15 and waited, messaged a bunch of times, and nobody came down. He left angry at 9:38 and left a negative rating. Worse, my auto-reply told him \"Yep I'm here!\" at 9:27 when you clearly weren't available, which is on me. That's a bad look and it made the no-show worse. I've sent him an apology from your account owning it",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Welcome RL Environments to the hub",
-   "url": "https://huggingface.co/blog/rl-environments",
-   "date": "2026-09-28T00:00:00.000Z",
-   "summary": "Hugging Face added support for hosting Reinforcement Learning (RL) environments on its hub.",
-   "tags": [
-    "research",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/datasets-filters/thumbnail.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
-   "url": "https://openai.com/index/basis-tax-workbook-with-astra",
-   "date": "2026-09-28T00:00:00.000Z",
-   "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Are you a Codex Original?",
-   "url": "https://openai.com/form/codex-originals",
-   "date": "2026-09-28T00:00:00.000Z",
-   "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
   }
  ]
 }
