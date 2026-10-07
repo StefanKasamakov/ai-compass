@@ -10392,5 +10392,76 @@
   "repo": "feder-cr/invisible_playwright_mcp",
   "at": "2026-10-07",
   "source": "trending"
+ },
+ "openqodex/openqodex": {
+  "cat": "harness",
+  "kind": "AI code review harness",
+  "what": "OpenQodex is an open-source tool that adds local security scanners and an AI review step to Claude Code or Codex to inspect code changes before they are pushed.",
+  "why": "It prevents security flaws, leaked secrets, and bugs from being committed by running target scans and having your AI assistant verify the results. Use it to automate strict pre-push code reviews directly inside your terminal or editor agent.",
+  "level": "setup",
+  "start": "npx openqodex init",
+  "caution": "This tool reuses your active consumer subscription logins (Claude Code or Codex) to run reviews, which consumes your plan's tokens and could potentially violate provider usage policies.",
+  "alts": [
+   "anthropics/claude-code",
+   "siteboon/claudecodeui",
+   "EveryInc/compound-engineering-plugin"
+  ],
+  "packages": [
+   "openqodex"
+  ],
+  "plain": "Checks your code for security flaws and bugs using your AI assistant before you push.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Scan unpushed git changes for secrets, dependencies, and code quality issues",
+   "Have your local Claude Code or Codex session double-check scanner findings",
+   "Block git pushes automatically if the AI review detects severe vulnerabilities"
+  ],
+  "steps": [
+   "Run `npx openqodex init` in your terminal to find agents and write configuration files",
+   "Add the skill to your agent or paste the setup prompt into its chat",
+   "Run `openqodex review` to execute scanners and generate local markdown or JSON reports"
+  ],
+  "repo": "openqodex/openqodex",
+  "at": "2026-10-07",
+  "source": "trending"
+ },
+ "kouhxp/gutsy": {
+  "cat": "local",
+  "kind": "Local decision model",
+  "what": "Gutsy is a small, local language model fine-tuned to return calibrated probability percentages for yes/no, multiple-choice, or scoring decisions.",
+  "why": "It eliminates the cost, latency, and privacy risks of sending text to cloud APIs for structured tasks like classification and routing. Reach for it when you need deterministic, local decisions that run on a standard CPU.",
+  "level": "setup",
+  "start": "git clone https://github.com/kouhxp/gutsy",
+  "caution": "The project notes that the model is weak at date and number arithmetic, struggles with complex multi-step rulebooks, and can be slow on CPU for very long text states.",
+  "alts": [
+   "ollama/ollama",
+   "mudler/LocalAI"
+  ],
+  "packages": [
+   "huggingface_hub"
+  ],
+  "plain": "An AI tool that runs on your computer to answer multiple-choice questions with precise percentage probabilities.",
+  "tags": [
+   "automate",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Triage customer support tickets with confidence scores",
+   "Route user queries to the cheapest capable model",
+   "Run automated local content moderation and fact checking"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/kouhxp/gutsy`.",
+   "Install the requirements and download the model weights from Hugging Face.",
+   "Copy the example configuration file to models.json.",
+   "Start the local prediction server with the gutsy-inference command."
+  ],
+  "repo": "kouhxp/gutsy",
+  "at": "2026-10-07",
+  "source": "trending"
  }
 }

@@ -1,6 +1,126 @@
 {
- "updated": "2026-10-07T13:33:10.450Z",
+ "updated": "2026-10-07T23:09:30.685Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Claude Haiku 5.5",
+   "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+   "date": "2026-10-07T20:56:21.000Z",
+   "summary": "Anthropic released Claude Haiku 5.5, its new lightweight, low-cost model, priced aggressively to match competitors like GPT-6 Luna.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/claude-haiku-5-5-card.webp"
+  },
+  {
+   "source": "GitHub",
+   "title": "Claude Haiku 5.5 in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+   "date": "2026-10-07T20:12:18.000Z",
+   "summary": "Anthropic’s Claude Haiku 5.5 model is now generally available in GitHub Copilot for rapid, high-volume tasks like writing subagents.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/667862135-8b23d51b-0f8b-4642-97bd-f785a7211718.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
+   "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
+   "date": "2026-10-07T18:49:40Z",
+   "discuss": "https://news.ycombinator.com/item?id=49997161",
+   "summary": "Tech giants Meta and Microsoft are restricting employees from using rival Anthropic's Claude AI for internal work.",
+   "tags": [
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn.rswebsols.com/wp-content/uploads/2025/10/otr1by4mkru.jpg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.293",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
+   "date": "2026-10-07T18:10:20Z",
+   "summary": "Anthropic released version 2.1.293 of Claude Code, its terminal-based tool for writing, editing, and running code locally.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/b1fed6c2fe312a54f44918106e83d012a118501f051c017e7a7afe3d4455ee69/anthropics/claude-code/releases/tag/v2.1.293"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Multimodal open d1 decision models for the edge",
+   "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+   "date": "2026-10-07T16:54:33.000Z",
+   "summary": "Hugging Face highlighted new open multimodal d1 decision models designed for on-device edge computing.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.161.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.161.0",
+   "date": "2026-10-07T15:58:45Z",
+   "summary": "OpenAI released version 0.161.0 of the Codex CLI in Rust, updating its developer-facing terminal tool.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/d332783ebec4cec54e4bd595b6f6819bbbe70df2b0885f9a019d0f8a1cdb0879/openai/codex/releases/tag/rust-v0.161.0"
+  },
+  {
+   "source": "GitHub",
+   "title": "Local sandboxing for GitHub Copilot now generally available",
+   "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+   "date": "2026-10-07T15:46:17.000Z",
+   "summary": "GitHub has released local sandboxing for Copilot in its CLI and VS Code to provide a secure environment for running agent-generated code.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "Discover local models in GitHub Copilot CLI",
+   "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+   "date": "2026-10-07T15:46:13.000Z",
+   "summary": "The GitHub Copilot CLI now allows developers to discover and switch to locally running models directly using a command line argument.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-improvements.jpg"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Can a Cloud-Native Harness Make Agents Reliable Beyond the Desktop?",
+   "url": "https://www.latent.space/p/stacklok",
+   "date": "2026-10-07T14:10:45.000Z",
+   "summary": "Industry leaders are designing cloud-native harnesses using Kubernetes to make AI agents more reliable for enterprise and production workflows.",
+   "tags": [
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!r55R!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1c3cd3d-2682-47cb-9be6-74302c1ca8ea_2560x1440.png"
+  },
   {
    "source": "Hugging Face",
    "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
@@ -32,6 +152,20 @@
    "tags": [],
    "big": false,
    "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "GPT-6 and Intelligent UI for everyone",
+   "url": "https://openai.com/index/gpt-6-for-everyone",
+   "date": "2026-10-07T00:00:00.000Z",
+   "summary": "OpenAI has rolled out GPT-6 with a new interactive user interface. Users get faster responses and visual, interactive elements directly in ChatGPT.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": true,
+   "ai": true,
    "image": ""
   },
   {
@@ -897,148 +1031,6 @@
    "tags": [],
    "big": false,
    "ai": false,
-   "image": ""
-  },
-  {
-   "source": "Hacker News",
-   "title": "Pi.dev: You Said No MCP",
-   "url": "https://earendil.com/posts/you-said-no-mcp/",
-   "date": "2026-09-30T09:55:23Z",
-   "discuss": "https://news.ycombinator.com/item?id=49906637",
-   "summary": "A project called Pi.dev launched as an alternative approach that deliberately avoids MCP.",
-   "tags": [
-    "mcp",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://earendil.com/posts/you-said-no-mcp/&#x2f;&#x2f;earendil.com&#x2f;static&#x2f;og&#x2f;posts&#x2f;you-said-no-mcp.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU",
-   "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
-   "date": "2026-09-30T05:53:10.000Z",
-   "summary": "A news roundup covered major OpenAI DevDay 2026 releases including new models, the Decisions API, and the Agents API.",
-   "tags": [
-    "models",
-    "agents",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/GjN3xLDuc8o"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-   "url": "https://huggingface.co/blog/open-tts-leaderboard",
-   "date": "2026-09-30T00:00:00.000Z",
-   "summary": "Hugging Face launches an open leaderboard for scalable multilingual text-to-speech and voice cloning.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/open-tts-leaderboard/thumbnail.png"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.159.2",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.2",
-   "date": "2026-09-29T23:57:16Z",
-   "summary": "A new version of the Codex CLI command-line tool was released on GitHub.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/889060571df84a8910c480211f459b1d00d35b7b2418eeb3e87637af4fb34257/openai/codex/releases/tag/rust-v0.159.2"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: Ledge.sh – Runnable Markdown Notes",
-   "url": "https://ledge.sh",
-   "date": "2026-09-29T23:41:34Z",
-   "discuss": "https://news.ycombinator.com/item?id=49902382",
-   "summary": "Ledge.sh launches as a tool for runnable Markdown notes.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://ledge.sh/og.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Anthropic Frontier Red Team",
-   "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/",
-   "date": "2026-09-29T22:20:28.000Z",
-   "summary": "Anthropic's red-teaming evaluation showed that new models like Claude Mythos Preview can achieve control flow hijacks on binary exploitation tasks.",
-   "tags": [
-    "models",
-    "safety",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.62.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.62.0",
-   "date": "2026-09-29T21:17:07Z",
-   "summary": "Gemini CLI released version v0.62.0 for developers working with Gemini models from the command line.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/a9aeb3962fc9b4a69c497a8fc36cb8989292576bec03a9c4fc0d966310da95d3/google-gemini/gemini-cli/releases/tag/v0.62.0"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.159.1",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.1",
-   "date": "2026-09-29T20:32:34Z",
-   "summary": "Codex CLI released version rust-v0.159.1 with updates for developers using terminal coding tools.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/fa1d0fae4f1af60ed0eb693038f40767e8c94bf7e575b0b64dc039dcd2757228/openai/codex/releases/tag/rust-v0.159.1"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.285",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
-   "date": "2026-09-29T19:27:30Z",
-   "summary": "Claude Code released version 2.1.285 with routine updates for its coding assistant tool.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/7a3cc1333ddfa7e18f6d3de69d88d4ac90393d761996e02ac1e46d711979c467/anthropics/claude-code/releases/tag/v2.1.285"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
-   "url": "https://simonwillison.net/2026/Sep/29/hn-49898129/",
-   "date": "2026-09-29T18:27:48.000Z",
-   "summary": "Simon Willison reviewed OpenAI's GPT 6.1 Sol model, noting it offers near-Astra capabilities at a lower price.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
    "image": ""
   }
  ]

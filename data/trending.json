@@ -1,50 +1,34 @@
 {
- "updated": "2026-10-07T13:33:10.450Z",
+ "updated": "2026-10-07T23:09:30.685Z",
  "items": [
   {
-   "repo": "manaflow-ai/cmux",
-   "stars": 27721,
-   "desc": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
-   "created": "2026-01-28T10:03:24Z",
+   "repo": "openqodex/openqodex",
+   "stars": 227,
+   "desc": "Open source AI code review for Claude Code and Codex, before you push. Scanners (SAST, secrets, dependencies, lint) on the lines you changed, then a separate reviewer process that checks every scanner finding and is given every changed line. No other API key.",
+   "created": "2026-10-02T06:19:06Z",
    "topics": [
-    "amp",
-    "claude-code",
-    "cli",
-    "codex"
+    "agent-skills",
+    "ai-agents",
+    "ai-code-review",
+    "claude-code"
    ],
-   "lang": "Swift",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "feder-cr/invisible_playwright_mcp",
-   "stars": 2642,
-   "desc": "Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer use.",
-   "created": "2026-09-29T23:06:00Z",
-   "topics": [
-    "agentic-ai",
-    "ai-agent",
-    "ai-automation",
-    "autonomous-agents"
-   ],
-   "lang": "Python",
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "atmirrr/persian-motion-director",
-   "stars": 101,
-   "desc": "A Claude skill for pro motion design with correct Persian (Farsi) typography: no slideshows, no broken letters. 8 techniques, HarfBuzz tooling, Remotion examples.",
-   "created": "2026-10-06T12:23:55Z",
+   "repo": "kouhxp/gutsy",
+   "stars": 45,
+   "desc": "Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API.",
+   "created": "2026-10-01T15:42:10Z",
    "topics": [
-    "agent-skills",
-    "claude",
-    "claude-skills",
-    "farsi"
+    "agents",
+    "classifier",
+    "content-moderation",
+    "cpu-inference"
    ],
-   "lang": "JavaScript",
+   "lang": "HTML",
    "sources": [
     "new on GitHub"
    ]
