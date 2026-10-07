@@ -1,6 +1,179 @@
 {
- "updated": "2026-10-06T18:26:57.043Z",
+ "updated": "2026-10-07T06:07:51.471Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
+   "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+   "date": "2026-10-07T04:55:44.000Z",
+   "summary": "Our head hurts.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://substackcdn.com/image/fetch/$s_!3_fH!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf69e441-6f07-47c9-ba4d-3cd64a85fb49_1224x1255.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
+   "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
+   "date": "2026-10-07T00:16:45.000Z",
+   "summary": "OpenAI “rogue” agent activities found on Wikimedia projects Given how tempting a target wikis are for rogue agent swarms, it's not a huge surprise that Wikipedia found evidence of that activity once they went looking: The Wikimedia Foundation conducted its own investigation to see whether Wikimedia websites had been similarly affected by AI agents, focusing on those operated by OpenAI. We can conf",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Victoria Kim",
+   "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
+   "date": "2026-10-06T23:58:56.000Z",
+   "summary": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. &mdash; Victoria Kim , Reporting from the Australian parliament Tags: accidental-cyberattacks , generative-ai , ai-security-research , opena",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "GitHub",
+   "title": "Update your IDE to restore agent activity in Copilot usage metrics",
+   "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
+   "date": "2026-10-06T23:43:00.000Z",
+   "summary": "GitHub released a fix for an issue causing incorrect agent activity metrics in Copilot usage dashboards.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/664302370-ef253fd4-491c-476f-95bb-ab6fd03ed1c1.jpeg"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm-openai-decisions 0.1a0",
+   "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
+   "date": "2026-10-06T23:04:13.000Z",
+   "summary": "A new plugin was built for the LLM tool allowing users to interact with OpenAI's decision API using GPT-6 Luna.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm-mistral 0.16",
+   "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
+   "date": "2026-10-06T21:32:34.000Z",
+   "summary": "The LLM tool updated to support reasoning models like Mistral Large 4.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.63.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.63.0",
+   "date": "2026-10-06T20:38:49Z",
+   "summary": "GitHub released version v0.63.0 of the Gemini CLI tool.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/9d5bdb5054dd3f04a37c070177b1b0d793322a2daa764465ca81ef501b021af8/google-gemini/gemini-cli/releases/tag/v0.63.0"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "EmbeddingGemma 2",
+   "url": "https://simonwillison.net/2026/Oct/6/hn-49983751/",
+   "date": "2026-10-06T20:37:53.000Z",
+   "summary": "EmbeddingGemma 2 was released under an Apache 2.0 license, making it useful for local vector storage applications.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Introducing Mistral Large 4: Le chonk",
+   "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
+   "date": "2026-10-06T20:18:19.000Z",
+   "summary": "Mistral released a preview of Mistral Large 4, a 1-trillion parameter model trained on Grace Blackwell GPUs.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026-10-06/mistral-large-4-pelican.webp"
+  },
+  {
+   "source": "DeepMind",
+   "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+   "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+   "date": "2026-10-06T19:57:04.000Z",
+   "summary": "DeepMind released EmbeddingGemma 2, an open, lightweight multimodal embedding model.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Using Parseable with Datasette for OpenTelemetry traces",
+   "url": "https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/",
+   "date": "2026-10-06T19:07:31.000Z",
+   "summary": "TIL: Using Parseable with Datasette for OpenTelemetry traces I saw Parseable in a Show HN today - it's a new observability platform with both an open source (AGPL) Rust implementation (a single ~180MB binary), an \"Enterprise\" version with extra features and a cloud hosted option. Since Datasette 1.0a41 added OpenTelemetry support (thanks, Alex Garcia), I decided to fire up Codex and have it figure",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://raw.githubusercontent.com/simonw/til/refs/heads/main/datasette/datasette-parsable.webp"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.292",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+   "date": "2026-10-06T18:59:30Z",
+   "summary": "GitHub released version v2.1.292 of the Claude Code coding assistant.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/62ddbc248d3fda7cedceec7966946c6e8487ea9492943545b0c5fccdc33c5438/anthropics/claude-code/releases/tag/v2.1.292"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Mistral Large 4",
+   "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
+   "date": "2026-10-06T18:20:58.000Z",
+   "summary": "My comment on Mistral Large 4 &mdash; Hacker News. wren6991 : The benchmark is saturated. Frontier models are tested with an armadillo in fishnet tights jaywalking on Mars. OK well I couldn't resist this one: llm -m claude-opus-5.5 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars' llm -m gpt-6.1-sol 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars' llm -m ",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "Hacker News",
+   "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+   "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+   "date": "2026-10-06T18:00:34Z",
+   "discuss": "https://news.ycombinator.com/item?id=49981905",
+   "summary": "165 points, 88 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
   {
    "source": "OpenAI",
    "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
@@ -45,6 +218,31 @@
   },
   {
    "source": "OpenAI",
+   "title": "How Jump Trading is scaling quant research with ChatGPT",
+   "url": "https://openai.com/index/jump-trading",
+   "date": "2026-10-06T12:00:00.000Z",
+   "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Sharing AI progress in mathematics",
+   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+   "date": "2026-10-06T12:00:00.000Z",
+   "summary": "OpenAI published new research results from an internal frontier model solving open math problems.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
    "title": "Advancing computer use with Ironclad",
    "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
    "date": "2026-10-06T10:00:00.000Z",
@@ -56,6 +254,17 @@
    "big": false,
    "ai": true,
    "image": ""
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
+   "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+   "date": "2026-10-06T06:44:39.000Z",
+   "summary": "",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/MJHJMYW3O4CkLvXvn7DOp.png"
   },
   {
    "source": "Latent Space",
@@ -831,236 +1040,6 @@
    "tags": [
     "models",
     "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "GitHub",
-   "title": "GPT-6.1 Sol in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
-   "date": "2026-09-29T17:02:27.000Z",
-   "summary": "GitHub announced that OpenAI's GPT-6.1 Sol model is now generally available within GitHub Copilot for agentic coding.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/09/660743826-cc455d62-b8e2-42b4-a489-ad43b1003d8e.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Photo Scrubber — local face blur & metadata removal",
-   "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber/",
-   "date": "2026-09-29T16:45:27.000Z",
-   "summary": "Simon Willison builds a local photo-scrubbing tool using GPT-6 Astra to automatically blur faces.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "Simon Willison",
-   "title": "OpenAI DevDay 2026 live blog",
-   "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-   "date": "2026-09-29T15:55:13.000Z",
-   "summary": "A live blog covered OpenAI DevDay announcements and new tool releases.",
-   "tags": [
-    "models",
-    "agents",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/live-20260929-092441.webp"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "NVIDIA Kumo Tabular Sets a New Accuracy-Efficiency Frontier for Tabular Prediction",
-   "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
-   "date": "2026-09-29T15:30:38.000Z",
-   "summary": "NVIDIA Kumo Tabular was released on Hugging Face, establishing a new efficiency benchmark for tabular data prediction.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/684040a5de1ad7f4fcec9508/HyVlq-3d7EVj_M-m_TfHJ.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude partial outage",
-   "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
-   "date": "2026-09-29T14:25:41Z",
-   "discuss": "https://news.ycombinator.com/item?id=49893876",
-   "summary": "Claude experienced a partial service outage affecting users.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-   "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-   "date": "2026-09-29T13:07:00.000Z",
-   "summary": "Hugging Face published research on source-aware verification methods to improve accuracy in MCP-connected agents.",
-   "tags": [
-    "mcp",
-    "agents",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing GPT-6.1 Sol",
-   "url": "https://openai.com/index/introducing-gpt-6-1-sol",
-   "date": "2026-09-29T10:00:00.000Z",
-   "summary": "OpenAI released GPT-6.1 Sol, offering high-tier coding and computer use capabilities at a much lower price than previous flagship models.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": true,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "DevDay 2026 Recap",
-   "url": "https://openai.com/index/devday-2026-recap",
-   "date": "2026-09-29T10:00:00.000Z",
-   "summary": "OpenAI's DevDay 2026 featured over 20 announcements covering new models like GPT-6 Astra, Codex tools, and updated developer APIs.",
-   "tags": [
-    "models",
-    "product",
-    "coding"
-   ],
-   "big": true,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.159.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.0",
-   "date": "2026-09-29T08:05:42Z",
-   "summary": "New release of Codex CLI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://opengraph.githubassets.com/7a583aaf6cbe15644392fcc01987b829dda42683809b081995b8de83cf1322b3/openai/codex/releases/tag/rust-v0.159.0"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] AMD buys World Labs for $8.2B, as Atlas solves sparse reconstruction problem for robotics, design and more",
-   "url": "https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b",
-   "date": "2026-09-29T02:55:27.000Z",
-   "summary": "AMD acquired World Labs, and Atlas released a sparse reconstruction solution for robotics and design.",
-   "tags": [
-    "business",
-    "models",
-    "research"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/60iW8FZ7MJU"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Opus 5.5 is good at explainer videos",
-   "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
-   "date": "2026-09-29T02:44:29.000Z",
-   "summary": "Latent Space discussed Claude Opus 5.5's strong performance at generating explainer videos.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!aAiz!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTVRIbeagAAvWK1.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Claude Code’s Next Era — Thariq Shihipar, Anthropic",
-   "url": "https://www.latent.space/p/thariq",
-   "date": "2026-09-29T01:48:18.000Z",
-   "summary": "Anthropic's Thariq Shihipar discussed Claude Code updates including new models, mods, and plugins.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!A4NZ!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F217893105%2Fc63d4f50-ca5f-459a-b368-281f73e3765e%2Ftranscoded-1790641303.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing dots",
-   "url": "https://openai.com/index/introducing-dots",
-   "date": "2026-09-29T00:00:00.000Z",
-   "summary": "OpenAI introduced dots, a proactive assistant designed to handle background tasks and multi-step projects across different applications.",
-   "tags": [
-    "agents",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-anthropic 0.30",
-   "url": "https://simonwillison.net/2026/Sep/28/llm-anthropic/",
-   "date": "2026-09-28T23:06:21.000Z",
-   "summary": "The llm-anthropic CLI tool updated to version 0.30, adding dynamic model list refreshing directly from Anthropic's API and support for token counting.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Claude Sonnet 5.5",
-   "url": "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/",
-   "date": "2026-09-28T22:07:38.000Z",
-   "summary": "Claude Sonnet 5.5 New Sonnet model from Anthropic today. They say it \"runs 30%+ faster, and costs up to 30% less for most work\" - it's priced the same as Sonnet 5 but appears to beat it on every benchmark, and should be cheaper to run as well. Here are some pelicans riding bicycles . Sonnet 5.5 suffered from the same bug as Opus 5.5 : the \"max\" thinking effort pelican thought for 128,000 tokens (a",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/claude-sonnet-5.5-pelican-xhigh.webp"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting @joedaroo",
-   "url": "https://simonwillison.net/2026/Sep/28/joedaroo/",
-   "date": "2026-09-28T19:11:42.000Z",
-   "summary": "To say that we were surprised at the jump and suddenness of the capabilities of our models when it came to “cyber” or “swarming” or “message boards” or anything else related to the incidents is an understatement. Security posture takes time to develop. It’s not just about hardening the systems at play; you have to ingrain it in the culture of the company. The literal people themselves in your orga",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Towards safety cases for frontier AI training",
-   "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training",
-   "date": "2026-09-28T19:00:00.000Z",
-   "summary": "OpenAI shares technical guidelines for safety cases in frontier AI training.",
-   "tags": [
-    "safety"
    ],
    "big": false,
    "ai": true,

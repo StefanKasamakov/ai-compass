@@ -10254,5 +10254,72 @@
   "repo": "sergqwer/strata-nvfp4",
   "at": "2026-10-06",
   "source": "trending"
+ },
+ "oil-oil/oil-ui": {
+  "cat": "harness",
+  "kind": "UI Design Skill",
+  "what": "An AI agent skill that explores distinct interface design directions, compares them side by side, and refines them against real screenshots.",
+  "why": "When you want your AI coding agent to generate distinct, polished UI designs rather than generic layouts, you use this skill to compare options and refine the visuals.",
+  "level": "easy",
+  "start": "npx skills add oil-oil/oil-ui",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [],
+  "plain": "A skill for AI coding agents that helps them design better websites and apps by creating distinct style directions to compare.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Explore distinct UI design directions for a new app",
+   "Compare multiple layout and style options side by side",
+   "Refine user interfaces using real screenshots and feedback"
+  ],
+  "steps": [
+   "Give the skill installation instruction to an AI agent that supports skills",
+   "Or run the npx command in your terminal",
+   "Ask your agent to design or explore UI options for your project"
+  ],
+  "repo": "oil-oil/oil-ui",
+  "at": "2026-10-07",
+  "source": "trending"
+ },
+ "fatihaydost/brand-identity-skill": {
+  "cat": "harness",
+  "kind": "Brand identity designer",
+  "what": "A Claude Code skill that designs a complete brand identity—logo, typography, and colour palette—from a single brief.",
+  "why": "Avoids generic AI design clichés by using automated measurements for contrast and font coverage, delivering professional brand guidelines, SVG/PNG assets, and design tokens.",
+  "level": "setup",
+  "start": "/plugin marketplace add fatihaydost/brand-identity-skill",
+  "caution": "Requires Claude Code, Python 3.10+, and a Chromium-based browser. Uses Claude's API/subscription login through Claude Code, which may risk account terms if abused.",
+  "alts": [
+   "anthropics/claude-code",
+   "addyosmani/agent-skills",
+   "bmad-code-org/BMAD-METHOD"
+  ],
+  "packages": [],
+  "plain": "An add-on for Claude Code that designs custom logos, font choices, and color palettes for your projects.",
+  "tags": [
+   "code",
+   "docs",
+   "apps"
+  ],
+  "useFor": [
+   "Design a brand identity from a text brief",
+   "Restyle an existing website's logo and fonts",
+   "Generate a complete brand guidelines PDF and design tokens"
+  ],
+  "steps": [
+   "Install the plugin using `/plugin marketplace add fatihaydost/brand-identity-skill` in Claude Code.",
+   "Install the plugin using `/plugin install brand-identity@brand-identity-skill`.",
+   "Ask Claude Code to design a brand identity using plain words like logo, fonts, and colours for your project."
+  ],
+  "repo": "fatihaydost/brand-identity-skill",
+  "at": "2026-10-07",
+  "source": "trending"
  }
 }
