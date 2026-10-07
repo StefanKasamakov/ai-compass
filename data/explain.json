@@ -10321,5 +10321,76 @@
   "repo": "fatihaydost/brand-identity-skill",
   "at": "2026-10-07",
   "source": "trending"
+ },
+ "manaflow-ai/cmux": {
+  "cat": "harness",
+  "kind": "Agent-optimized terminal",
+  "what": "A native macOS terminal multiplexer built on Ghostty that features vertical tabs, notification rings, and scriptable browsers designed for running AI coding agents.",
+  "why": "When running multiple CLI coding agents in parallel, developers can easily lose track of which session is waiting for input. cmux solves this by showing visual notification rings, workspace metadata, and split-pane controls in a unified sidebar.",
+  "level": "easy",
+  "start": "brew install --cask cmux",
+  "caution": "This application is exclusive to macOS and relies on Apple's native APIs, meaning it cannot run on Windows or Linux.",
+  "alts": [
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A macOS terminal that visually highlights when your background AI coding helpers need your attention.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Run and monitor multiple Claude Code sessions simultaneously",
+   "Control terminal panes and scriptable browsers via a socket API",
+   "Track active ports and git branches in vertical sidebar tabs"
+  ],
+  "steps": [
+   "Install the terminal by running `brew install --cask cmux`.",
+   "Launch cmux and run your preferred CLI coding agents inside it.",
+   "Respond to visual blue ring alerts when an agent requires your attention."
+  ],
+  "repo": "manaflow-ai/cmux",
+  "at": "2026-10-07",
+  "source": "trending"
+ },
+ "feder-cr/invisible_playwright_mcp": {
+  "cat": "harness",
+  "kind": "Stealth browser agent",
+  "what": "An AI web-browsing agent and MCP server designed to avoid anti-bot blocks using a customized Firefox browser setup.",
+  "why": "Standard AI scrapers frequently get blocked by security checks and captchas. Reach for this when you need an AI assistant to navigate and collect data from protected websites.",
+  "level": "setup",
+  "start": "uvx invisible-playwright-mcp ui --openrouter-key sk-or-YOUR_KEY",
+  "caution": "This tool transmits your browsing session contents and screenshots to your configured LLM provider (like OpenRouter). Make sure to comply with the terms of service of the websites you visit.",
+  "alts": [
+   "browser-use/browser-use",
+   "unclecode/crawl4ai",
+   "firecrawl/firecrawl"
+  ],
+  "packages": [
+   "invisible-playwright-mcp"
+  ],
+  "plain": "An AI web browser that lets your assistant visit websites without getting blocked by security checks.",
+  "tags": [
+   "research",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Compare flight prices across multiple dates on booking sites",
+   "Extract data from platforms protected by anti-bot mechanisms",
+   "Control a web browser directly from Claude Code or Codex"
+  ],
+  "steps": [
+   "Install the uv package manager on your system",
+   "Run `uvx invisible-playwright-mcp ui --openrouter-key sk-or-...` to start the standalone interface",
+   "Or install it as a Claude Code plugin using `claude plugin install invisible-playwright-mcp@feder-cr`",
+   "Open the local URL to interact with the agent and view the live browser"
+  ],
+  "repo": "feder-cr/invisible_playwright_mcp",
+  "at": "2026-10-07",
+  "source": "trending"
  }
 }
