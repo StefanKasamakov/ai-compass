@@ -10463,5 +10463,68 @@
   "repo": "kouhxp/gutsy",
   "at": "2026-10-07",
   "source": "trending"
+ },
+ "nano-muse/nanoMuse": {
+  "cat": "coding",
+  "kind": "Cross-device personal agent",
+  "what": "An open-source personal AI assistant that runs across your phone, computer, and browser, controlling screens and running commands to automate tasks.",
+  "why": "It solves the difficulty of cross-device coordination by allowing you to control your desktop from your phone or run background tasks. Reach for it when you want a unified, self-hosted assistant that can interact directly with your physical screens and apps.",
+  "level": "easy",
+  "start": "",
+  "caution": "Reusing your consumer subscription logins (such as ChatGPT, Claude, or Kimi) may violate those providers' terms of service and risk your account being banned.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "plain": "An AI assistant on your phone and computer that can click buttons and run commands across your devices.",
+  "tags": [
+   "automate",
+   "connect",
+   "private"
+  ],
+  "useFor": [
+   "Control computer apps and mobile screens using natural language commands",
+   "Trigger terminal actions on your desktop remotely from your phone",
+   "Run scheduled routines that execute automatically while the app is closed"
+  ],
+  "steps": [
+   "Download the installer for Android, iOS, Windows, macOS, or Linux from the releases page",
+   "Open the app and sign in with your email to link your devices together",
+   "Run your own private connection hub using `bash scripts/self-host.sh --local`"
+  ],
+  "repo": "nano-muse/nanoMuse",
+  "at": "2026-10-08",
+  "source": "trending"
+ },
+ "sgaofen/humanizer-local-model": {
+  "cat": "local",
+  "kind": "Local rewriting tool",
+  "what": "A local 12B AI model and desktop application that rewrites AI drafts to sound natural and human-written while preserving facts.",
+  "why": "AI-generated text often sounds robotic or repetitive. Reach for this tool when you need to humanize emails, essays, or reports offline without sending sensitive data to cloud services.",
+  "level": "easy",
+  "start": "",
+  "caution": "While designed to keep all names, numbers, and dates accurate, the model still occasionally alters details, so always verify the rewritten output before sending it.",
+  "alts": [],
+  "packages": [],
+  "plain": "An app that rewrites robotic AI drafts to sound like a real person, entirely on your computer.",
+  "tags": [
+   "docs",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Rewrite AI-generated drafts to sound natural",
+   "Improve text flow while keeping names and dates accurate",
+   "Process sensitive documents offline to protect your privacy"
+  ],
+  "steps": [
+   "Download the app for macOS or Windows from the Releases page.",
+   "Open the app and let it download the recommended model size.",
+   "Paste your draft into the app to see the rewrite stream in."
+  ],
+  "repo": "sgaofen/humanizer-local-model",
+  "at": "2026-10-08",
+  "source": "trending"
  }
 }

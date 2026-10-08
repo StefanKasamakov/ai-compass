@@ -1,6 +1,19 @@
 {
- "updated": "2026-10-07T23:09:30.685Z",
+ "updated": "2026-10-08T06:13:31.741Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.294",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+   "date": "2026-10-08T05:03:54Z",
+   "summary": "Anthropic rolled out Claude Code v2.1.294, providing stability updates and minor bug fixes to its terminal-based coding assistant.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/62f8ab0478731bfa52166354d960fb94d4683a9c55d9a72f4caf7c6f8271e099/anthropics/claude-code/releases/tag/v2.1.294"
+  },
   {
    "source": "Simon Willison",
    "title": "Claude Haiku 5.5",
@@ -56,6 +69,35 @@
    "image": "https://opengraph.githubassets.com/b1fed6c2fe312a54f44918106e83d012a118501f051c017e7a7afe3d4455ee69/anthropics/claude-code/releases/tag/v2.1.293"
   },
   {
+   "source": "Hacker News",
+   "title": "Claude Haiku 5.5",
+   "url": "https://www.anthropic.com/claude-haiku-5-5",
+   "date": "2026-10-07T18:01:32Z",
+   "discuss": "https://news.ycombinator.com/item?id=49996437",
+   "summary": "Anthropic released Claude Haiku 5.5, bringing updated speed and reasoning capabilities to its fastest and cheapest model tier.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/89e9b0fbfe0181f6ca565d913686ce8e49b5e9c2-1200x630.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "GPT‑6 and Intelligent UI for everyone",
+   "url": "https://openai.com/index/gpt-6-for-everyone/",
+   "date": "2026-10-07T18:00:58Z",
+   "discuss": "https://news.ycombinator.com/item?id=49996425",
+   "summary": "Hacker News users discuss the implications of GPT-6 on user interface design and how AI models will change consumer software interactions.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
    "source": "Hugging Face",
    "title": "Multimodal open d1 decision models for the edge",
    "url": "https://huggingface.co/blog/LiquidAI/open-d1",
@@ -67,6 +109,20 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "Purpose-built model for leaked secret detection",
+   "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+   "date": "2026-10-07T16:13:56.000Z",
+   "summary": "GitHub released a purpose-built model for detecting leaked secrets, designed to scan code written by both human developers and AI agents.",
+   "tags": [
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/667174917-952bbca8-41eb-49ac-a365-d69a03a553ab.jpg"
   },
   {
    "source": "GitHub release",
@@ -980,58 +1036,6 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/b8424f62f6a30a3afc0e566a54562db41b990b5798d963c37f637ad8f5bf9e11/magnitudedev/magnitude"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Introducing SynthID Bio",
-   "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-   "date": "2026-09-30T15:03:07.000Z",
-   "summary": "DeepMind introduces SynthID Bio, a watermarking technique for AI-generated proteins.",
-   "tags": [
-    "safety",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "GitHub",
-   "title": "HydraFusion in VS Code and the GitHub Copilot app",
-   "url": "https://github.blog/changelog/2026-09-30-hydrafusion-in-vs-code-and-the-github-copilot-app",
-   "date": "2026-09-30T14:31:19.000Z",
-   "summary": "GitHub expands its HydraFusion research preview into VS Code and the Copilot app.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Disrupting a coordinated model-distillation campaign",
-   "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-   "date": "2026-09-30T10:30:00.000Z",
-   "summary": "OpenAI reports disrupting a campaign attempting to extract model reasoning, highlighting ongoing security efforts around model distillation.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "Helping small businesses put AI to work",
-   "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-   "date": "2026-09-30T10:00:00.000Z",
-   "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
   }
  ]
 }

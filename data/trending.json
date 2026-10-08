@@ -1,34 +1,34 @@
 {
- "updated": "2026-10-07T23:09:30.685Z",
+ "updated": "2026-10-08T06:13:31.741Z",
  "items": [
   {
-   "repo": "openqodex/openqodex",
-   "stars": 227,
-   "desc": "Open source AI code review for Claude Code and Codex, before you push. Scanners (SAST, secrets, dependencies, lint) on the lines you changed, then a separate reviewer process that checks every scanner finding and is given every changed line. No other API key.",
-   "created": "2026-10-02T06:19:06Z",
+   "repo": "nano-muse/nanoMuse",
+   "stars": 271,
+   "desc": "nanoMuse: an open-source personal agent for every device you own — one agent with a name and a face that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; your phone's screen and your computer as its hands.",
+   "created": "2026-09-23T06:13:06Z",
    "topics": [
     "agent-skills",
-    "ai-agents",
-    "ai-code-review",
-    "claude-code"
+    "ai-agent",
+    "android",
+    "computer-use"
    ],
-   "lang": "TypeScript",
+   "lang": "Swift",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "kouhxp/gutsy",
-   "stars": 45,
-   "desc": "Local decision model with calibrated probabilities: send a state and yes/no, choice or score questions, get a probability for every option. 0.8B GGUF on CPU, Jev-style API.",
-   "created": "2026-10-01T15:42:10Z",
+   "repo": "sgaofen/humanizer-local-model",
+   "stars": 53,
+   "desc": "Rewrites AI drafts so they read like a person wrote them — runs locally, keeps the facts",
+   "created": "2026-09-11T05:00:10Z",
    "topics": [
-    "agents",
-    "classifier",
-    "content-moderation",
-    "cpu-inference"
+    "gguf",
+    "humanizer",
+    "llama-cpp",
+    "llm"
    ],
-   "lang": "HTML",
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
