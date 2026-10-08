@@ -10628,5 +10628,38 @@
   "repo": "JourniOne-ai/JourniOne-Planning-Skills",
   "at": "2026-10-08",
   "source": "trending"
+ },
+ "mcpdelta/mcpdelta": {
+  "cat": "tokens",
+  "kind": "Token optimizer proxy",
+  "what": "A desktop application that routes communication between your AI assistant and its Model Context Protocol (MCP) servers to bundle multi-step tasks into single requests.",
+  "why": "Multi-step agent tasks often consume massive amounts of tokens by repeatedly calling tools one by one. This tool resolves that bottleneck by converting those steps into a single optimized program.",
+  "level": "setup",
+  "start": "",
+  "caution": "The application is currently unreleased ('coming soon') and the source code is closed-source.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk",
+   "modelcontextprotocol/python-sdk"
+  ],
+  "packages": [],
+  "plain": "A free desktop application that groups your AI's tool steps together to save money on tokens.",
+  "tags": [
+   "save",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Reduce token consumption during complex multi-step AI agent tasks",
+   "Track and undo system modifications made by your AI assistants",
+   "Connect multiple AI desktop applications to optimized tool pipelines"
+  ],
+  "steps": [
+   "Download the application once it is officially released",
+   "Open the application to let it scan your existing AI assistant setups",
+   "Click Optimize to automatically configure your tools to route through the proxy"
+  ],
+  "repo": "mcpdelta/mcpdelta",
+  "at": "2026-10-08",
+  "source": "trending"
  }
 }
