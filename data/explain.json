@@ -10594,5 +10594,39 @@
   "repo": "storytold/artcraft",
   "at": "2026-10-08",
   "source": "trending"
+ },
+ "JourniOne-ai/JourniOne-Planning-Skills": {
+  "cat": "harness",
+  "kind": "Travel planning agent skill",
+  "what": "JourniOne-Planning-Skills is an AI agent extension that plans daily travel routes, creates interactive travel journals, and links with hotel and flight options.",
+  "why": "It automates the tedious task of coordinating daily itineraries, maps, and hotel searches. Reach for it when you want to equip your AI agent with travel routing and live hotel-rate comparison features.",
+  "level": "setup",
+  "start": "",
+  "caution": "The tool connects to the external journione.ai service by default and relies on third-party APIs (TourMind and Kiwi.com) to search live bookings.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [],
+  "plain": "An AI tool that helps your digital assistant plan trips, map routes, and find flights or hotels.",
+  "tags": [
+   "automate",
+   "connect",
+   "research"
+  ],
+  "useFor": [
+   "Generate interactive, map-linked travel journals and daily routes",
+   "Compare live hotel rates across multiple booking channels",
+   "Search flights and coordinate them with your travel timeline"
+  ],
+  "steps": [
+   "Import the skill package through your AI client's skill manager",
+   "Ensure your system has Node.js 22 or later installed",
+   "Allow the setup agent to configure the required TourMind and Kiwi MCP dependencies",
+   "Describe your trip requirements to your agent to start planning"
+  ],
+  "repo": "JourniOne-ai/JourniOne-Planning-Skills",
+  "at": "2026-10-08",
+  "source": "trending"
  }
 }
