@@ -10526,5 +10526,73 @@
   "repo": "sgaofen/humanizer-local-model",
   "at": "2026-10-08",
   "source": "trending"
+ },
+ "anthropics/knowledge-work-plugins": {
+  "cat": "harness",
+  "kind": "Claude role plugins",
+  "what": "An open-source collection of role-specific plugins that bundle skills, slash commands, and tool connectors for Claude Cowork and Claude Code.",
+  "why": "Generic AI assistants lack specific company workflows and tool integrations. Reach for these plugins to tailor Claude to specific job functions like sales, legal, finance, support, or data analysis.",
+  "level": "setup",
+  "start": "claude plugin marketplace add anthropics/knowledge-work-plugins",
+  "caution": "Connectors require third-party service credentials and MCP setups, so you must carefully audit what internal company data and permissions each plugin accesses.",
+  "alts": [
+   "anthropics/claude-code",
+   "obra/superpowers",
+   "davila7/claude-code-templates"
+  ],
+  "packages": [],
+  "plain": "Add specialized skills, slash commands, and workplace tool connections to Claude for your job role.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Run role-specific slash commands for tasks like call prep or specs",
+   "Connect Claude to tools like Jira, Notion, Slack, and Snowflake",
+   "Customize workplace workflows using simple markdown and JSON files"
+  ],
+  "steps": [
+   "In Claude Cowork, install plugins directly from claude.com/plugins.",
+   "For Claude Code, register the marketplace by running `claude plugin marketplace add anthropics/knowledge-work-plugins`.",
+   "Install your chosen plugin using `claude plugin install <plugin-name>@knowledge-work-plugins`.",
+   "Configure tool connectors in .mcp.json and run available slash commands in your session."
+  ],
+  "repo": "anthropics/knowledge-work-plugins",
+  "at": "2026-10-08",
+  "source": "trending"
+ },
+ "storytold/artcraft": {
+  "cat": "media",
+  "kind": "creative studio app",
+  "what": "ArtCraft is a visual creation tool that combines 2D canvas editing, 3D scene staging, and AI models for generating images and video.",
+  "why": "Pure text prompting often lacks camera, lighting, and composition control. Reach for ArtCraft when you need to pose characters, block 3D scenes, or composite layers before running image and video generators.",
+  "level": "easy",
+  "start": "Download the prebuilt installer from getartcraft.com or the repository releases page.",
+  "caution": "The repository uses a custom or non-standard license (NOASSERTION). External AI models and cloud provider APIs may require their own keys or subscriptions.",
+  "alts": [
+   "Comfy-Org/ComfyUI",
+   "invoke-ai/InvokeAI",
+   "AUTOMATIC1111/stable-diffusion-webui"
+  ],
+  "packages": [],
+  "plain": "A visual studio for designing 2D and 3D scenes before turning them into AI images and videos.",
+  "tags": [
+   "media",
+   "apps"
+  ],
+  "useFor": [
+   "Block scenes and pose characters in 3D before generation",
+   "Composite 2D layers and remove backgrounds for image generation",
+   "Animate still images into video using multiple AI models"
+  ],
+  "steps": [
+   "Download and install ArtCraft from getartcraft.com or GitHub releases.",
+   "Launch the application to open the 2D canvas and 3D staging workspace.",
+   "Block your scene with 3D mannequins or layers, then select an AI model to render."
+  ],
+  "repo": "storytold/artcraft",
+  "at": "2026-10-08",
+  "source": "trending"
  }
 }
