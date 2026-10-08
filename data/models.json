@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-10-08",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -55,18 +55,18 @@
    "out": 10,
    "ctx": "1M",
    "released": "2026-09-28",
-   "note": "New 28 Sep: 30% faster than Sonnet 5, same price. Haiku 5.5 is announced for the coming weeks."
+   "note": "New 28 Sep: 30% faster than Sonnet 5, same price."
   },
   {
    "id": "haiku",
    "p": "anthropic",
-   "name": "Claude Haiku 4.5",
+   "name": "Claude Haiku 5.5",
    "tier": "Fast",
    "best": "Simple tasks at scale: classification, extraction, chatbots.",
-   "in": 1,
-   "out": 5,
-   "ctx": "200K",
-   "note": "Retires no sooner than 15 Oct 2026; Haiku 5.5 is on the way."
+   "in": 0.1,
+   "out": 0.5,
+   "ctx": "1M",
+   "released": "2026-10-07"
   },
   {
    "id": "mythos",
@@ -94,13 +94,13 @@
   {
    "id": "sol",
    "p": "openai",
-   "name": "GPT-6 Sol",
+   "name": "GPT-6.1 Sol",
    "tier": "Balanced",
    "best": "Strong reasoning for complex professional work at a mid-tier price.",
    "in": 2,
    "out": 10,
    "ctx": "1.05M",
-   "released": "2026-09-22",
+   "released": "2026-09-29",
    "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode."
   },
   {
