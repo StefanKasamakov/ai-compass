@@ -1,0 +1,3123 @@
+{
+ "updated": "2026-10-09T12:51:08.138Z",
+ "scanned": "2026-10-09T09:10:35.513Z",
+ "claudeVersion": "2.1.295",
+ "total": 2957,
+ "categories": [
+  [
+   "builtin",
+   "Built into Claude Code"
+  ],
+  [
+   "sample",
+   "Anthropic's samples"
+  ],
+  [
+   "usage",
+   "Usage and dashboards"
+  ],
+  [
+   "fun",
+   "Fun while you wait"
+  ],
+  [
+   "git",
+   "Git, pull requests and CI"
+  ],
+  [
+   "safety",
+   "Safety and privacy"
+  ],
+  [
+   "memory",
+   "Memory and context"
+  ],
+  [
+   "rendering",
+   "Better-looking replies"
+  ],
+  [
+   "agents",
+   "Agents and workflows"
+  ],
+  [
+   "building",
+   "For people who build mods"
+  ]
+ ],
+ "mods": [
+  {
+   "key": "anthropic/diff",
+   "name": "diff",
+   "cat": "builtin",
+   "repo": "anthropics/claude-code",
+   "by": "Anthropic",
+   "plain": "The /diff pane: review the changes Claude made, with buttons and scrolling.",
+   "url": "https://github.com/anthropics/claude-code/tree/main/mods/diff",
+   "builtin": true,
+   "surfaces": [
+    "Pane"
+   ],
+   "reach": 1
+  },
+  {
+   "key": "anthropic/agents-md",
+   "name": "agents-md",
+   "cat": "builtin",
+   "repo": "anthropics/claude-code",
+   "by": "Anthropic",
+   "plain": "Loads AGENTS.md files as project instructions, the way CLAUDE.md is loaded.",
+   "url": "https://github.com/anthropics/claude-code/tree/main/mods/agents-md",
+   "builtin": true,
+   "surfaces": [],
+   "reach": 1
+  },
+  {
+   "key": "anthropic/sec-default",
+   "name": "sec-default",
+   "cat": "builtin",
+   "repo": "anthropics/claude-code",
+   "by": "Anthropic",
+   "plain": "On Team and Enterprise plans, stops mods you install from overriding your organization's rules.",
+   "url": "https://github.com/anthropics/claude-code/tree/main/mods/sec-default",
+   "builtin": true,
+   "surfaces": [],
+   "reach": 1
+  },
+  {
+   "key": "anthropic/you-should-know",
+   "name": "you-should-know",
+   "cat": "builtin",
+   "repo": "anthropics/claude-code",
+   "by": "Anthropic",
+   "plain": "A side agent that watches longer tasks and shows a note above the prompt when it spots something you might miss. Off by default.",
+   "builtin": true,
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "reach": 2,
+   "enable": "/plugin enable cc-plugin-you-should-know@builtin"
+  },
+  {
+   "key": "anthropic/token-weather",
+   "name": "token-weather",
+   "cat": "sample",
+   "repo": "anthropics/claude-code-playground",
+   "by": "Anthropic",
+   "license": "Apache-2.0",
+   "plain": "A forecast of how full your context window is, drawn above the prompt.",
+   "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/token-weather",
+   "sample": true,
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "reach": 0
+  },
+  {
+   "key": "anthropic/blast-radius",
+   "name": "blast-radius",
+   "cat": "sample",
+   "repo": "anthropics/claude-code-playground",
+   "by": "Anthropic",
+   "license": "Apache-2.0",
+   "plain": "Holds a risky shell command, such as rm -rf or a force push, shows what it would change, and asks you to proceed or cancel.",
+   "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/blast-radius",
+   "sample": true,
+   "surfaces": [
+    "Pane"
+   ],
+   "reach": 2
+  },
+  {
+   "key": "anthropic/replay-theater",
+   "name": "replay-theater",
+   "cat": "sample",
+   "repo": "anthropics/claude-code-playground",
+   "by": "Anthropic",
+   "license": "Apache-2.0",
+   "plain": "Adds /replay, which steps through the file edits Claude made in the last turn, one diff at a time.",
+   "url": "https://github.com/anthropics/claude-code-playground/tree/main/claude-code/mods/replay-theater",
+   "sample": true,
+   "surfaces": [
+    "Pane"
+   ],
+   "reach": 1
+  },
+  {
+   "key": "tomstagl/cctop/cctop",
+   "name": "cctop",
+   "repo": "tomstagl/cctop",
+   "path": "plugin",
+   "url": "https://github.com/tomstagl/cctop",
+   "plain": "A btop-style pane with context fill, tokens, cost, cache hit ratio, rate limits, per-tool latency and subagents.",
+   "cat": "usage",
+   "by": "Thomas Stagl",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "writes the prompt box",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "compaction",
+    "every tool call",
+    "the cctop skill"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 6,
+   "license": "MIT",
+   "pushed": "2026-10-01T18:07:18Z",
+   "marketplace": "cctop",
+   "plugin": "cctop"
+  },
+  {
+   "key": "Arunjay4213/claude-mods/token-ledger",
+   "name": "token-ledger",
+   "repo": "Arunjay4213/claude-mods",
+   "path": "plugins/token-ledger",
+   "url": "https://github.com/Arunjay4213/claude-mods/tree/main/plugins/token-ledger",
+   "plain": "A pinned line with session cost, last-turn tokens and cache hit ratio, plus `/ledger` for the table.",
+   "cat": "usage",
+   "by": "Arunjay",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": null,
+   "pushed": "2026-09-15T19:01:52Z",
+   "marketplace": "claude-mods",
+   "plugin": "token-ledger"
+  },
+  {
+   "key": "Arunjay4213/claude-mods/context-lens",
+   "name": "context-lens",
+   "repo": "Arunjay4213/claude-mods",
+   "path": "plugins/context-lens",
+   "url": "https://github.com/Arunjay4213/claude-mods/tree/main/plugins/context-lens",
+   "plain": "A live `/context` line with window fill and growth per turn, plus a pane with per-category bars.",
+   "cat": "usage",
+   "by": "Arunjay",
+   "reach": 0,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "compaction"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": null,
+   "pushed": "2026-09-15T19:01:52Z",
+   "marketplace": "claude-mods",
+   "plugin": "context-lens"
+  },
+  {
+   "key": "Arunjay4213/claude-mods/quota-meter",
+   "name": "quota-meter",
+   "repo": "Arunjay4213/claude-mods",
+   "path": "plugins/quota-meter",
+   "url": "https://github.com/Arunjay4213/claude-mods/tree/main/plugins/quota-meter",
+   "plain": "The 5-hour and 7-day plan windows as a pinned status line.",
+   "cat": "usage",
+   "by": "Arunjay",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": null,
+   "pushed": "2026-09-15T19:01:52Z",
+   "marketplace": "claude-mods",
+   "plugin": "quota-meter"
+  },
+  {
+   "key": "Charlie0113-T/claude-agent-flow/agent-flow",
+   "name": "agent-flow",
+   "repo": "Charlie0113-T/claude-agent-flow",
+   "path": ".",
+   "url": "https://github.com/Charlie0113-T/claude-agent-flow",
+   "plain": "`/flow` opens a live tree of the session's subagents and teammates beside the transcript.",
+   "cat": "usage",
+   "by": "Charles Tao",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "subagent spawns",
+    "every tool call",
+    "classic hooks"
+   ],
+   "surfaces": [
+    "PromptHint",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 12,
+   "license": "Apache-2.0",
+   "pushed": "2026-10-09T00:40:26Z",
+   "marketplace": "claude-agent-flow",
+   "plugin": "agent-flow"
+  },
+  {
+   "key": "joshuatonga/mini-claude-mods/model-pick",
+   "name": "model-pick",
+   "repo": "joshuatonga/mini-claude-mods",
+   "path": "model-pick",
+   "url": "https://github.com/joshuatonga/mini-claude-mods/tree/main/model-pick",
+   "plain": "`/pick` fuzzy-searches a model and effort combo and applies it through `/model` and `/effort`, with favorites, typed aliases and the last five picks.",
+   "cat": "usage",
+   "by": "Joshua Tonga",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": null,
+   "pushed": "2026-10-07T02:37:35Z",
+   "marketplace": "mini-claude-mods",
+   "plugin": "model-pick"
+  },
+  {
+   "key": "OneWave-AI/claude-code-mods/burn-meter",
+   "name": "burn-meter",
+   "repo": "OneWave-AI/claude-code-mods",
+   "path": "burn-meter",
+   "url": "https://github.com/OneWave-AI/claude-code-mods/tree/main/burn-meter",
+   "plain": "Session spend as a growing fire bar above the prompt, with 5-hour and weekly plan limits and a `/burn` pane with per-turn cost.",
+   "cat": "usage",
+   "by": "OneWave AI",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:35:11Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "burn-meter"
+  },
+  {
+   "key": "OneWave-AI/claude-code-mods/session-wrapped",
+   "name": "session-wrapped",
+   "repo": "OneWave-AI/claude-code-mods",
+   "path": "session-wrapped",
+   "url": "https://github.com/OneWave-AI/claude-code-mods/tree/main/session-wrapped",
+   "plain": "`/wrapped` plays an animated recap of the session and writes a shareable PNG card, with week and month totals read from local transcripts.",
+   "cat": "usage",
+   "by": "OneWave AI",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:35:11Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "session-wrapped"
+  },
+  {
+   "key": "kongyo2/context-view/context-view",
+   "name": "context-view",
+   "repo": "kongyo2/context-view",
+   "path": ".",
+   "url": "https://github.com/kongyo2/context-view",
+   "plain": "The context window as one row above the prompt, drawn like Claude Code's own meters, with the percentage used, tokens over the window and tokens left before auto-compact, plus `/context-view` to hide or show it.",
+   "cat": "usage",
+   "by": "kongyo2",
+   "reach": 1,
+   "reachLabels": [
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-07T15:01:13Z",
+   "marketplace": "context-view",
+   "plugin": "context-view"
+  },
+  {
+   "key": "augiefra/claude-mods/token-weather-usage",
+   "name": "token-weather-usage",
+   "repo": "augiefra/claude-mods",
+   "path": "plugins/token-weather-usage",
+   "url": "https://github.com/augiefra/claude-mods/tree/main/plugins/token-weather-usage",
+   "plain": "One line above the prompt with context weather, a bar per prompt sized by the tokens it added, and 5-hour and 7-day limit gauges that hatch the gap with elapsed time.",
+   "cat": "usage",
+   "by": "Eric Cologni",
+   "reach": 1,
+   "reachLabels": [
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "Apache-2.0",
+   "pushed": "2026-10-08T07:21:02Z",
+   "marketplace": "augiefra-mods",
+   "plugin": "token-weather-usage"
+  },
+  {
+   "key": "scasella/claude-flightdeck/flightdeck",
+   "name": "flightdeck",
+   "repo": "scasella/claude-flightdeck",
+   "path": ".",
+   "url": "https://github.com/scasella/claude-flightdeck",
+   "plain": "A live agent dashboard pane with context and cost, an advisor timeline, every permission verdict, subagent cards and swimlanes, a turn receipt and a session log, watching without changing anything.",
+   "cat": "usage",
+   "by": "Stephen Casella",
+   "reach": 1,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction",
+    "every tool call",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 43,
+   "license": "MIT",
+   "pushed": "2026-10-02T21:36:52Z",
+   "marketplace": "claude-flightdeck",
+   "plugin": "flightdeck"
+  },
+  {
+   "key": "pawandeepdhall/claude-mods/usage-band",
+   "name": "usage-band",
+   "repo": "pawandeepdhall/claude-mods",
+   "path": "plugins/usage-band",
+   "url": "https://github.com/pawandeepdhall/claude-mods/tree/main/plugins/usage-band",
+   "plain": "The 5-hour and weekly limits as percentages with reset countdowns above the prompt, amber or red when on pace to run out, plus buttons for a new chat and for asking Claude to commit and push.",
+   "cat": "usage",
+   "by": "Pawandeep",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-03T02:14:21Z",
+   "marketplace": "my-claude-mods",
+   "plugin": "usage-band"
+  },
+  {
+   "key": "hoobnn/hoobnn-agent-mods/hud",
+   "name": "hud",
+   "repo": "hoobnn/hoobnn-agent-mods",
+   "path": "claude-code/hud",
+   "url": "https://github.com/hoobnn/hoobnn-agent-mods/tree/main/claude-code/hud",
+   "plain": "The claude-hud statusline as a mod above or below the prompt, with quota alerts, a usage forecast, a daily budget, a one-line task summary forked from the conversation, a detail pane and twelve themes.",
+   "cat": "usage",
+   "by": "hoobnn",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "changes config",
+    "drives Claude",
+    "reads files",
+    "reads settings",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "compaction",
+    "/\"^mcp__hud__hud_debug$\"/ calls",
+    "every tool call"
+   ],
+   "surfaces": [
+    "SessionMode",
+    "AbovePrompt",
+    "PromptHint",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T10:56:29Z",
+   "marketplace": "hoobnn-agent-mods",
+   "plugin": "hud"
+  },
+  {
+   "key": "hoobnn/hoobnn-agent-mods/todo-bar",
+   "name": "todo-bar",
+   "repo": "hoobnn/hoobnn-agent-mods",
+   "path": "claude-code/todo-bar",
+   "url": "https://github.com/hoobnn/hoobnn-agent-mods/tree/main/claude-code/todo-bar",
+   "plain": "The task list as a progress bar above the prompt, with the running task's time, read from the todo and task tools' own results.",
+   "cat": "usage",
+   "by": "hoobnn",
+   "reach": 2,
+   "reachLabels": [
+    "changes config",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "subagent spawns",
+    "every tool call",
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T10:56:29Z",
+   "marketplace": "hoobnn-agent-mods",
+   "plugin": "todo-bar"
+  },
+  {
+   "key": "hoobnn/hoobnn-agent-mods/receipt",
+   "name": "receipt",
+   "repo": "hoobnn/hoobnn-agent-mods",
+   "path": "claude-code/receipt",
+   "url": "https://github.com/hoobnn/hoobnn-agent-mods/tree/main/claude-code/receipt",
+   "plain": "One row after each turn with the files changed, lines added and removed, commands run and failed, plus a toast when the model goes in circles.",
+   "cat": "usage",
+   "by": "hoobnn",
+   "reach": 2,
+   "reachLabels": [
+    "changes config",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T10:56:29Z",
+   "marketplace": "hoobnn-agent-mods",
+   "plugin": "receipt"
+  },
+  {
+   "key": "hoobnn/hoobnn-agent-mods/ts-band",
+   "name": "ts-band",
+   "repo": "hoobnn/hoobnn-agent-mods",
+   "path": "claude-code/ts-band",
+   "url": "https://github.com/hoobnn/hoobnn-agent-mods/tree/main/claude-code/ts-band",
+   "plain": "Tailscale nodes above the prompt from `tailscale status --json`, listing only the relayed or offline ones, with a toast when a node comes up or goes down.",
+   "cat": "usage",
+   "by": "hoobnn",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "changes config",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "Bash calls"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T10:56:29Z",
+   "marketplace": "hoobnn-agent-mods",
+   "plugin": "ts-band"
+  },
+  {
+   "key": "xuanji86/claude-statuspane/statuspane",
+   "name": "statuspane",
+   "repo": "xuanji86/claude-statuspane",
+   "path": ".",
+   "url": "https://github.com/xuanji86/claude-statuspane",
+   "plain": "A floating status card above the prompt with model, effort, context, 5-hour and weekly limits, cost and branch, plus GitHub CI rows and progress bars any script or mod can feed.",
+   "cat": "usage",
+   "by": "Anji Xu",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 7,
+   "license": "MIT",
+   "pushed": "2026-10-08T16:49:03Z",
+   "marketplace": "claude-statuspane",
+   "plugin": "statuspane"
+  },
+  {
+   "key": "agentic-workbench/agent-quick-menu/agent-quick-menu",
+   "name": "agent-quick-menu",
+   "repo": "agentic-workbench/agent-quick-menu",
+   "path": ".",
+   "url": "https://github.com/agentic-workbench/agent-quick-menu",
+   "plain": "A pane and prompt band for plugin commands declared in `quick-menu.json`, plus plugin and Claude Code settings exposed through `/config`.",
+   "cat": "usage",
+   "by": "dasganni",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane",
+    "SessionMode",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-08T07:47:47Z",
+   "marketplace": null,
+   "plugin": "agent-quick-menu"
+  },
+  {
+   "key": "3dnow/claude-mods/weektoken",
+   "name": "weektoken",
+   "repo": "3dnow/claude-mods",
+   "path": "weektoken",
+   "url": "https://github.com/3dnow/claude-mods/tree/main/weektoken",
+   "plain": "Pace for the 5-hour, 7-day and per-model weekly limits such as Fable, shown as usage against elapsed time above the prompt, plus a `/weektoken` pane with a run-out forecast and a burn-up chart of past windows.",
+   "cat": "usage",
+   "by": "mj0111",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "reads files",
+    "reads env vars",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-06T18:51:58Z",
+   "marketplace": "mj0111-mods",
+   "plugin": "weektoken"
+  },
+  {
+   "key": "pinkpixel-dev/clawd-dash/clawd-dash",
+   "name": "clawd-dash",
+   "repo": "pinkpixel-dev/clawd-dash",
+   "path": ".",
+   "url": "https://github.com/pinkpixel-dev/clawd-dash",
+   "plain": "A three-column dashboard under the prompt with 5-hour, 7-day and context gauges, model, effort, cost, session stats, git status and file changes, plus an animated pixel Clawd that works, celebrates and relaxes along with the session.",
+   "cat": "usage",
+   "by": "Pink Pixel",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "PromptHint"
+   ],
+   "validated": "passed",
+   "stars": 3,
+   "license": "Apache-2.0",
+   "pushed": "2026-10-06T18:10:48Z",
+   "marketplace": "pinkpixel",
+   "plugin": "clawd-dash"
+  },
+  {
+   "key": "hamzafer/claude-code-mods/context-bar",
+   "name": "context-bar",
+   "repo": "hamzafer/claude-code-mods",
+   "path": "mods/context-bar",
+   "url": "https://github.com/hamzafer/claude-code-mods/tree/main/mods/context-bar",
+   "plain": "The context window as one stacked bar above the prompt, a color per category like `/context`, with token counts and the compaction point.",
+   "cat": "usage",
+   "by": "Hamza Zafar",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 164,
+   "license": "MIT",
+   "pushed": "2026-10-08T13:27:14Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "context-bar"
+  },
+  {
+   "key": "valeryia-piatrova/token-hamster/token-hamster",
+   "name": "token-hamster",
+   "repo": "valeryia-piatrova/token-hamster",
+   "path": ".",
+   "url": "https://github.com/valeryia-piatrova/token-hamster",
+   "plain": "An animated hamster above the prompt that eats every token in the colours of the token mix, with moods from the 5-hour and weekly limits and a reset countdown, plus a `/hamster` pane with context, pace forecast, cost per turn and usage by subagent, tool and model.",
+   "cat": "usage",
+   "by": "valeryia-piatrova",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-08T19:51:45Z",
+   "marketplace": "token-hamster",
+   "plugin": "token-hamster"
+  },
+  {
+   "key": "halluton/Mindful-Claude/mindful-claude",
+   "name": "Mindful-Claude",
+   "repo": "halluton/Mindful-Claude",
+   "path": ".",
+   "url": "https://github.com/halluton/Mindful-Claude",
+   "plain": "A guided breathing band above the prompt while a turn runs; the spinner counts the breath with you.",
+   "cat": "fun",
+   "by": "Anthony",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Spinner"
+   ],
+   "validated": "warnings",
+   "stars": 100,
+   "license": "MIT",
+   "pushed": "2026-09-14T23:01:33Z",
+   "marketplace": "mindful-claude",
+   "plugin": "mindful-claude"
+  },
+  {
+   "key": "sezaakgun/cc-arcade/cc-arcade",
+   "name": "cc-arcade",
+   "repo": "sezaakgun/cc-arcade",
+   "path": ".",
+   "url": "https://github.com/sezaakgun/cc-arcade",
+   "plain": "Nine games above the prompt, paused when Claude finishes, plus a pet fed by the tests, commits and edits Claude makes.",
+   "cat": "fun",
+   "by": "Seza Akgün",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 42,
+   "license": "MIT",
+   "pushed": "2026-09-15T00:19:51Z",
+   "marketplace": "cc-arcade",
+   "plugin": "cc-arcade"
+  },
+  {
+   "key": "plaxagoras/clawd-tales/clawd-tales",
+   "name": "clawd-tales",
+   "repo": "plaxagoras/clawd-tales",
+   "path": ".",
+   "url": "https://github.com/plaxagoras/clawd-tales",
+   "plain": "Clawd acts out every tool call above the prompt with a one-line caption, joined by subagents tinted by model, with failing tests as bugs, todos as pellets and context fill as weather, drawn locally with no model calls or network.",
+   "cat": "fun",
+   "by": "plaxagoras",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every prompt",
+    "subagent spawns",
+    "every tool call",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 4,
+   "license": "MIT",
+   "pushed": "2026-10-08T01:35:50Z",
+   "marketplace": "clawd-tales",
+   "plugin": "clawd-tales"
+  },
+  {
+   "key": "saiharsha03/clawd-spinner/clawd-spinner",
+   "name": "clawd-spinner",
+   "repo": "saiharsha03/clawd-spinner",
+   "path": ".",
+   "url": "https://github.com/saiharsha03/clawd-spinner",
+   "plain": "Clawd acts out the spinner word above the terminal spinner line while Claude works, with its own scene for each of the 189 words, drawn locally with no model calls or network.",
+   "cat": "fun",
+   "by": "Sai Rudra",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Spinner"
+   ],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:15:44Z",
+   "marketplace": "clawd-spinner",
+   "plugin": "clawd-spinner"
+  },
+  {
+   "key": "yedidyakfir/heavens-feel/heavens-feel",
+   "name": "heavens-feel",
+   "repo": "yedidyakfir/heavens-feel",
+   "path": ".",
+   "url": "https://github.com/yedidyakfir/heavens-feel",
+   "plain": "A Fate/stay night: Heaven's Feel cast for your session, with an animated pixel Sakura in a pane and above the prompt who acts out each tool call, a Servant for every subagent whose transcript opens from its card, and a Master's or Servant's face beside each reply, drawn locally with no model calls or network.",
+   "cat": "fun",
+   "by": "Yedidya Kfir",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "AssistantMessage",
+    "Pane",
+    "AbovePrompt",
+    "Spinner",
+    "CommandOutput"
+   ],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-10-05T17:45:52Z",
+   "marketplace": "heavens-feel",
+   "plugin": "heavens-feel"
+  },
+  {
+   "key": "deonmenezes/claude-mods-pokedex/cc-pokedex",
+   "name": "cc-pokedex",
+   "repo": "deonmenezes/claude-mods-pokedex",
+   "path": ".",
+   "url": "https://github.com/deonmenezes/claude-mods-pokedex",
+   "plain": "Wild creatures appear above the prompt based on where your prompt leads.",
+   "cat": "fun",
+   "by": "Deon Menezes",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Spinner",
+    "TurnDuration",
+    "InfoNotice"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": null,
+   "pushed": "2026-09-14T18:22:30Z",
+   "marketplace": "cc-pokedex",
+   "plugin": "cc-pokedex"
+  },
+  {
+   "key": "416rehman/spinlings/spinlings",
+   "name": "Spinlings",
+   "repo": "416rehman/spinlings",
+   "path": "plugin",
+   "url": "https://github.com/416rehman/spinlings",
+   "plain": "A creature card game above the Claude Code prompt with wild encounters, asynchronous player duels, trading, and online or offline play.",
+   "cat": "fun",
+   "by": "416rehman",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "PromptHint",
+    "SessionMode",
+    "Spinner"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-06T20:55:50Z",
+   "marketplace": null,
+   "plugin": "spinlings"
+  },
+  {
+   "key": "nuromirzak/nibbl/nibbl",
+   "name": "nibbl",
+   "repo": "nuromirzak/nibbl",
+   "path": "plugin",
+   "url": "https://github.com/nuromirzak/nibbl",
+   "plain": "A pixel pet above the prompt that drops a bug when a tool fails and eats it when a test, lint or build passes; syncs event types and times to its own server.",
+   "cat": "fun",
+   "by": "nibbl",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "CommandOutput"
+   ],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-10-09T02:07:59Z",
+   "marketplace": "nibbl",
+   "plugin": "nibbl"
+  },
+  {
+   "key": "SARTHAK2511/claude-combo/combo-meter",
+   "name": "combo-meter",
+   "repo": "SARTHAK2511/claude-combo",
+   "path": ".",
+   "url": "https://github.com/SARTHAK2511/claude-combo",
+   "plain": "A fighting-game combo counter above the prompt: every clean tool call is a hit and every error breaks the chain, with D to SSS ranks, special moves like a red-to-green test, a pixel-art counter, toasts, chiptune effects on macOS and an all-time record, making no network calls.",
+   "cat": "fun",
+   "by": "Sarthak Bhatore",
+   "reach": 1,
+   "reachLabels": [
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-05T19:20:33Z",
+   "marketplace": "sarthak-mods",
+   "plugin": "combo-meter"
+  },
+  {
+   "key": "OneWave-AI/claude-code-mods/boss-fight",
+   "name": "boss-fight",
+   "repo": "OneWave-AI/claude-code-mods",
+   "path": "boss-fight",
+   "url": "https://github.com/OneWave-AI/claude-code-mods/tree/main/boss-fight",
+   "plain": "Failing tests spawn a pixel boss with one HP per failure, and each run that fixes tests lands a hit.",
+   "cat": "fun",
+   "by": "OneWave AI",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:35:11Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "boss-fight"
+  },
+  {
+   "key": "jarrodwatts/intermission/intermission",
+   "name": "intermission",
+   "repo": "jarrodwatts/intermission",
+   "path": ".",
+   "url": "https://github.com/jarrodwatts/intermission",
+   "plain": "Doom deathmatch in a Ghostty or kitty pane on macOS 15+, returning you to Claude when it finishes or needs input; downloads and runs Odamex and connects to a shared game server.",
+   "cat": "fun",
+   "by": "Jarrod Watts",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Spinner",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 108,
+   "license": "MIT",
+   "pushed": "2026-10-02T04:15:08Z",
+   "marketplace": "intermission",
+   "plugin": "intermission"
+  },
+  {
+   "key": "hoobnn/hoobnn-agent-mods/spinner",
+   "name": "spinner",
+   "repo": "hoobnn/hoobnn-agent-mods",
+   "path": "claude-code/spinner",
+   "url": "https://github.com/hoobnn/hoobnn-agent-mods/tree/main/claude-code/spinner",
+   "plain": "Pixel-art scenes above the prompt while a turn runs, in fourteen themes, with a pet that follows the running tool, levels up and gets a confetti finale.",
+   "cat": "fun",
+   "by": "hoobnn",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "changes config",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "every prompt"
+   ],
+   "surfaces": [
+    "SessionMode",
+    "Spinner",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T10:56:29Z",
+   "marketplace": "hoobnn-agent-mods",
+   "plugin": "spinner"
+  },
+  {
+   "key": "hoobnn/hoobnn-agent-mods/hitokoto",
+   "name": "hitokoto",
+   "repo": "hoobnn/hoobnn-agent-mods",
+   "path": "claude-code/hitokoto",
+   "url": "https://github.com/hoobnn/hoobnn-agent-mods/tree/main/claude-code/hitokoto",
+   "plain": "A quote fetched from the Hitokoto (一言) API above the prompt with its source, refreshed on a timer, once a day, per session or per prompt.",
+   "cat": "fun",
+   "by": "hoobnn",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "changes config",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T10:56:29Z",
+   "marketplace": "hoobnn-agent-mods",
+   "plugin": "hitokoto"
+  },
+  {
+   "key": "reporails/arcade/minefield",
+   "name": "minefield",
+   "repo": "reporails/arcade",
+   "path": "minefield",
+   "url": "https://github.com/reporails/arcade/tree/main/minefield",
+   "plain": "Minesweeper in a pane beside the transcript, with big square tiles when docked, a best time and a face that follows your cursor, hooking no prompt or tool call and making no network calls.",
+   "cat": "fun",
+   "by": "Reporails",
+   "reach": 0,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-05T15:37:16Z",
+   "marketplace": "reporails-arcade",
+   "plugin": "minefield"
+  },
+  {
+   "key": "njp-coder/meanwhile/meanwhile",
+   "name": "meanwhile",
+   "repo": "njp-coder/meanwhile",
+   "path": ".",
+   "url": "https://github.com/njp-coder/meanwhile",
+   "plain": "One question a day above the prompt, written by a daily Haiku call from the Hacker News front page and new GitHub repos, with the answer after 40 seconds of Claude working or on Show answer, and `/wrapped` for a share card of the day.",
+   "cat": "fun",
+   "by": "Naga Jyothi Prakash",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "drives Claude",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-03T17:10:54Z",
+   "marketplace": "meanwhile",
+   "plugin": "meanwhile"
+  },
+  {
+   "key": "ben-rogerson/claude-counter-strike/cs-radio",
+   "name": "cs-radio",
+   "repo": "ben-rogerson/claude-counter-strike",
+   "path": ".",
+   "url": "https://github.com/ben-rogerson/claude-counter-strike",
+   "plain": "Counter-Strike 1.6 radio calls on Claude Code events, from \"Fire in the hole\" when a deploy starts to \"Bomb has been defused\" when a long turn lands, played from your own CS install or bundled soundalikes.",
+   "cat": "fun",
+   "by": "Ben Rogerson",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "reads env vars",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-04T02:41:32Z",
+   "marketplace": "cs-radio",
+   "plugin": "cs-radio"
+  },
+  {
+   "key": "dgokcin/claude-pokemon-mod/pokemon",
+   "name": "claude-pokemon",
+   "repo": "dgokcin/claude-pokemon-mod",
+   "path": ".",
+   "url": "https://github.com/dgokcin/claude-pokemon-mod",
+   "plain": "Any of the 151 gen 1 Pokémon above the prompt to feed, pet and evolve, with a Poké Ball for each running subagent and 135 animated attacks.",
+   "cat": "fun",
+   "by": "deniz gökçin",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "every skill",
+    "classic hooks",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "Spinner",
+    "AbovePrompt"
+   ],
+   "validated": "warnings",
+   "stars": 22,
+   "license": null,
+   "pushed": "2026-10-09T00:30:38Z",
+   "marketplace": "claude-pokemon",
+   "plugin": "pokemon"
+  },
+  {
+   "key": "chrisluo5311/Pixel-Play/pixel-player",
+   "name": "Pixel Play",
+   "repo": "chrisluo5311/Pixel-Play",
+   "path": ".",
+   "url": "https://github.com/chrisluo5311/Pixel-Play",
+   "plain": "A docked pane that streams a YouTube or local playlist through mpv and yt-dlp while an animated pixel-art skin of your choice dances beside the conversation.",
+   "cat": "fun",
+   "by": "chrisluo5311",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "warnings",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-06T03:22:25Z",
+   "marketplace": "pixel-play",
+   "plugin": "pixel-player"
+  },
+  {
+   "key": "twjackysu/claude-code-stock-ticker/stock-ticker",
+   "name": "stock-ticker",
+   "repo": "twjackysu/claude-code-stock-ticker",
+   "path": "plugins/stock-ticker",
+   "url": "https://github.com/twjackysu/claude-code-stock-ticker",
+   "plain": "Taiwan and US stock quotes above the prompt, fetched from TWSE MIS and Yahoo Finance every 15 seconds while the market is open and the session is on screen, with `/stock` to edit the watchlist, refresh rate, colors, alerts and language.",
+   "cat": "fun",
+   "by": "twjackysu",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-08T01:49:38Z",
+   "marketplace": "claude-code-stock-ticker",
+   "plugin": "stock-ticker"
+  },
+  {
+   "key": "somethingwentwell/cc-mod-banana-game/banana",
+   "name": "banana",
+   "repo": "somethingwentwell/cc-mod-banana-game",
+   "path": ".",
+   "url": "https://github.com/somethingwentwell/cc-mod-banana-game",
+   "plain": "A clicker pane that opens while Claude thinks, where clicks earn coins and rare banana drops that trade for $1 of LLM tokens through a sponsor server it syncs click counts with.",
+   "cat": "fun",
+   "by": "somethingwentwell",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-08T12:25:58Z",
+   "marketplace": "banana",
+   "plugin": "banana"
+  },
+  {
+   "key": "sezaakgun/cc-pr-tracker/cc-pr-tracker",
+   "name": "cc-pr-tracker",
+   "repo": "sezaakgun/cc-pr-tracker",
+   "path": ".",
+   "url": "https://github.com/sezaakgun/cc-pr-tracker",
+   "plain": "Watched pull requests as lines above the prompt, with merge state, review and required checks, and a toast when one changes.",
+   "cat": "git",
+   "by": "Seza Akgün",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "mcp__cc-pr-tracker__pr_status calls",
+    "Bash calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 5,
+   "license": "MIT",
+   "pushed": "2026-10-07T14:38:13Z",
+   "marketplace": "cc-pr-tracker",
+   "plugin": "cc-pr-tracker"
+  },
+  {
+   "key": "ray-amjad/awesome-claude-code-function-hooks/vercel-deploy-status",
+   "name": "vercel-deploy-status",
+   "repo": "ray-amjad/awesome-claude-code-function-hooks",
+   "path": "plugins/vercel-deploy-status",
+   "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/tree/main/plugins/vercel-deploy-status",
+   "plain": "The Vercel deploy queue of the linked project under the prompt, woken by a push or a merge.",
+   "cat": "git",
+   "by": "Ray Amjad",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 4,
+   "license": "MIT",
+   "pushed": "2026-09-10T15:01:57Z",
+   "marketplace": "awesome-claude-code-function-hooks",
+   "plugin": "vercel-deploy-status"
+  },
+  {
+   "key": "ippoan/gh-actions-live/pr-bridge-watch",
+   "name": "pr-bridge-watch",
+   "repo": "ippoan/gh-actions-live",
+   "path": "mods/pr-bridge-watch",
+   "url": "https://github.com/ippoan/gh-actions-live/tree/main/mods/pr-bridge-watch",
+   "plain": "Connects a new PR's CI to a live watch over a WebSocket bridge.",
+   "cat": "git",
+   "by": "ippoan",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "drives Claude",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "Bash calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 0,
+   "license": null,
+   "pushed": "2026-10-07T23:17:42Z",
+   "marketplace": "gh-actions-live",
+   "plugin": "pr-bridge-watch"
+  },
+  {
+   "key": "yash-gadodia/claude-mods/deploy-verify",
+   "name": "deploy-verify",
+   "repo": "yash-gadodia/claude-mods",
+   "path": "deploy-verify",
+   "url": "https://github.com/yash-gadodia/claude-mods/tree/main/deploy-verify",
+   "plain": "Checks configured live URLs after recognized deploy commands, waits for relevant GitHub Actions runs when present, and adds the verification result to model context.",
+   "cat": "git",
+   "by": "Yash Gadodia",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "the system prompt",
+    "Bash calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-09-22T02:02:51Z",
+   "marketplace": "claude-mods",
+   "plugin": "deploy-verify"
+  },
+  {
+   "key": "gerricchaplin/pr-pulse/pr-pulse",
+   "name": "pr-pulse",
+   "repo": "gerricchaplin/pr-pulse",
+   "path": ".",
+   "url": "https://github.com/gerricchaplin/pr-pulse",
+   "plain": "Live status, merge readiness, failed-check drill-down, review threads and change alerts for your GitHub pull requests, in a pane that collapses to a band above the prompt.",
+   "cat": "git",
+   "by": "Gerric Chaplin",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes the prompt box",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-05T21:40:34Z",
+   "marketplace": "pr-pulse",
+   "plugin": "pr-pulse"
+  },
+  {
+   "key": "MarcoCarnevali/claude-code-mods/github-issues",
+   "name": "github-issues",
+   "repo": "MarcoCarnevali/claude-code-mods",
+   "path": "github-issues",
+   "url": "https://github.com/MarcoCarnevali/claude-code-mods/tree/main/github-issues",
+   "plain": "A pane of a repository's GitHub issues as cards, with tabs, search, a label filter, linked pull requests and a picker of your repositories, plus a button that hands an issue to Claude, all read through the GitHub CLI.",
+   "cat": "git",
+   "by": "Marco Carnevali",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-08T07:48:45Z",
+   "marketplace": "marco-mods",
+   "plugin": "github-issues"
+  },
+  {
+   "key": "hamzafer/claude-code-mods/review-watch",
+   "name": "review-watch",
+   "repo": "hamzafer/claude-code-mods",
+   "path": "mods/review-watch",
+   "url": "https://github.com/hamzafer/claude-code-mods/tree/main/mods/review-watch",
+   "plain": "A live line for each running Codex review or review subagent, with its model and elapsed time, and a toast when it ends, with the findings when Codex's output has them.",
+   "cat": "git",
+   "by": "Hamza Zafar",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 164,
+   "license": "MIT",
+   "pushed": "2026-10-08T13:27:14Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "review-watch"
+  },
+  {
+   "key": "alexjacobs08/guided-mr/guided-mr",
+   "name": "guided-mr",
+   "repo": "alexjacobs08/guided-mr",
+   "path": ".",
+   "url": "https://github.com/alexjacobs08/guided-mr",
+   "plain": "Groups a GitHub PR, GitLab MR or branch diff into ordered review steps with summaries and check notes, paged through in a pane or a browser page with side-by-side diffs and a diagram.",
+   "cat": "git",
+   "by": "Alex Jacobs",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "writes the prompt box",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": null,
+   "pushed": "2026-10-07T22:19:28Z",
+   "marketplace": "guided-mr",
+   "plugin": "guided-mr"
+  },
+  {
+   "key": "SummerRiversound/review-inbox/review-inbox",
+   "name": "review-inbox",
+   "repo": "SummerRiversound/review-inbox",
+   "path": ".",
+   "url": "https://github.com/SummerRiversound/review-inbox",
+   "plain": "Pull requests awaiting your review in a band above the prompt that turns yellow, then red, as they age, each summarized by a Sonnet call, and picked ones handed to Claude as review requests in your learned review style.",
+   "cat": "git",
+   "by": "SummerRiversound",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "writes the prompt box",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-08T08:53:20Z",
+   "marketplace": "review-inbox",
+   "plugin": "review-inbox"
+  },
+  {
+   "key": "ray-amjad/awesome-claude-code-function-hooks/secret-redactor",
+   "name": "secret-redactor",
+   "repo": "ray-amjad/awesome-claude-code-function-hooks",
+   "path": "plugins/secret-redactor",
+   "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/tree/main/plugins/secret-redactor",
+   "plain": "Swaps secrets, email addresses and IPs for stable placeholders before the model reads them, and restores them on the way into a tool call.",
+   "cat": "safety",
+   "by": "Ray Amjad",
+   "reach": 0,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "the system prompt"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 4,
+   "license": "MIT",
+   "pushed": "2026-09-10T15:01:57Z",
+   "marketplace": "awesome-claude-code-function-hooks",
+   "plugin": "secret-redactor"
+  },
+  {
+   "key": "pleaseai/honmoon/honmoon-redact",
+   "name": "honmoon-redact",
+   "repo": "pleaseai/honmoon",
+   "path": "packages/claude-plugin",
+   "url": "https://github.com/pleaseai/honmoon/tree/main/packages/claude-plugin",
+   "plain": "Redacts API keys and sensitive identifiers from Read, Bash and Grep output before it reaches the model.",
+   "cat": "safety",
+   "by": "Honmoon",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "draws"
+   ],
+   "sees": [
+    "Read|Bash|Grep|WebFetch calls",
+    "every prompt"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 6,
+   "license": "Apache-2.0",
+   "pushed": "2026-09-28T19:56:51Z",
+   "marketplace": null,
+   "plugin": "honmoon-redact"
+  },
+  {
+   "key": "ray-manaloto/knowledge-base/kb-settings-guard",
+   "name": "kb-settings-guard",
+   "repo": "ray-manaloto/knowledge-base",
+   "path": ".claude/mods/kb-settings-guard",
+   "url": "https://github.com/ray-manaloto/knowledge-base/tree/main/.claude/mods/kb-settings-guard",
+   "plain": "Denies a delegated agent lane any write to the repo's Claude settings files.",
+   "cat": "safety",
+   "by": "knowledge-base",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "? calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 0,
+   "license": null,
+   "pushed": "2026-10-05T15:17:10Z",
+   "marketplace": null,
+   "plugin": "kb-settings-guard"
+  },
+  {
+   "key": "ray-manaloto/dotfiles/plugin-health",
+   "name": "plugin-health",
+   "repo": "ray-manaloto/dotfiles",
+   "path": ".claude/skills/plugin-health",
+   "url": "https://github.com/ray-manaloto/dotfiles/tree/main/.claude/skills/plugin-health",
+   "plain": "Reports at session start when plugins declared in settings are not installed or are disabled for the project.",
+   "cat": "safety",
+   "by": "Raymond Manaloto",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads env vars"
+   ],
+   "sees": [
+    "classic hooks"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 4,
+   "license": null,
+   "pushed": "2026-10-09T06:36:48Z",
+   "marketplace": null,
+   "plugin": "plugin-health"
+  },
+  {
+   "key": "OneWave-AI/claude-code-mods/launch-codes",
+   "name": "launch-codes",
+   "repo": "OneWave-AI/claude-code-mods",
+   "path": "launch-codes",
+   "url": "https://github.com/OneWave-AI/claude-code-mods/tree/main/launch-codes",
+   "plain": "Requires a one-time code and confirmation for selected risky Bash commands, including `git push --force` and `vercel --prod`.",
+   "cat": "safety",
+   "by": "OneWave AI",
+   "reach": 1,
+   "reachLabels": [
+    "plays audio",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:35:11Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "launch-codes"
+  },
+  {
+   "key": "yash-gadodia/claude-mods/scope-guard",
+   "name": "scope-guard",
+   "repo": "yash-gadodia/claude-mods",
+   "path": "scope-guard",
+   "url": "https://github.com/yash-gadodia/claude-mods/tree/main/scope-guard",
+   "plain": "Tracks recognized file edits against a configurable threshold, with a model judge and user overrides that can permit further edits.",
+   "cat": "safety",
+   "by": "Yash Gadodia",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads env vars",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "the system prompt"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-09-22T02:02:51Z",
+   "marketplace": "claude-mods",
+   "plugin": "scope-guard"
+  },
+  {
+   "key": "yash-gadodia/claude-mods/merge-gate",
+   "name": "merge-gate",
+   "repo": "yash-gadodia/claude-mods",
+   "path": "merge-gate",
+   "url": "https://github.com/yash-gadodia/claude-mods/tree/main/merge-gate",
+   "plain": "Checks merge permission for recognized Bash merge commands and selected pushes from feature branches to trunk.",
+   "cat": "safety",
+   "by": "Yash Gadodia",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads env vars",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "Bash calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-09-22T02:02:51Z",
+   "marketplace": "claude-mods",
+   "plugin": "merge-gate"
+  },
+  {
+   "key": "yash-gadodia/claude-mods/receipt",
+   "name": "receipt",
+   "repo": "yash-gadodia/claude-mods",
+   "path": "receipt",
+   "url": "https://github.com/yash-gadodia/claude-mods/tree/main/receipt",
+   "plain": "Turns the turn footer into a receipt of edits, runs and curls, never folds a destructive command into a tool group, and names an unverified claim in the spinner.",
+   "cat": "safety",
+   "by": "Yash Gadodia",
+   "reach": 1,
+   "reachLabels": [
+    "writes the prompt box",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "Spinner",
+    "TurnDuration",
+    "ToolGroup"
+   ],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-09-22T02:02:51Z",
+   "marketplace": "claude-mods",
+   "plugin": "receipt"
+  },
+  {
+   "key": "hamzafer/claude-code-mods/blast-radius",
+   "name": "blast-radius",
+   "repo": "hamzafer/claude-code-mods",
+   "path": "mods/blast-radius",
+   "url": "https://github.com/hamzafer/claude-code-mods/tree/main/mods/blast-radius",
+   "plain": "Holds recognized recursive deletes, force pushes and migrations for confirmation, previews file deletions and branch changes, and cancels if nobody answers in time.",
+   "cat": "safety",
+   "by": "Hamza Zafar",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls"
+   ],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 164,
+   "license": "MIT",
+   "pushed": "2026-10-08T13:27:14Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "blast-radius"
+  },
+  {
+   "key": "lossless-claude/lcm/lcm",
+   "name": "lcm",
+   "repo": "lossless-claude/lcm",
+   "path": ".",
+   "url": "https://github.com/lossless-claude/lcm",
+   "plain": "Lossless context management: DAG-based summarization that keeps every message reachable.",
+   "cat": "memory",
+   "by": "Pedro Almeida",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "the system prompt",
+    "every prompt",
+    "every tool call",
+    "compaction"
+   ],
+   "surfaces": [],
+   "validated": "warnings",
+   "stars": 49,
+   "license": "MIT",
+   "pushed": "2026-10-03T11:59:14Z",
+   "marketplace": null,
+   "plugin": "lcm"
+  },
+  {
+   "key": "wandercom/kindex/kindex-modern",
+   "name": "kindex-modern",
+   "repo": "wandercom/kindex",
+   "path": "src/kindex/claude_modern",
+   "url": "https://github.com/wandercom/kindex/tree/main/src/kindex/claude_modern",
+   "plain": "Repo-local memory and durable tasks that learn from your conversations.",
+   "cat": "memory",
+   "by": "Wander",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "draws"
+   ],
+   "sees": [
+    "the system prompt",
+    "every prompt",
+    "every tool call"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 35,
+   "license": "MIT",
+   "pushed": "2026-10-08T02:49:44Z",
+   "marketplace": null,
+   "plugin": "kindex-modern"
+  },
+  {
+   "key": "mahuebel/segmem/segmem",
+   "name": "segmem",
+   "repo": "mahuebel/segmem",
+   "path": ".",
+   "url": "https://github.com/mahuebel/segmem",
+   "plain": "Segmented, scoped memory in one SQLite file: wakes at session start, recalls on every prompt, nags when stale.",
+   "cat": "memory",
+   "by": "Mark Huebel",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "draws"
+   ],
+   "sees": [
+    "the system prompt",
+    "every prompt",
+    "subagent spawns",
+    "Bash calls",
+    "mcp__segmem__recall calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 1,
+   "license": null,
+   "pushed": "2026-09-30T04:18:03Z",
+   "marketplace": "segmem",
+   "plugin": "segmem"
+  },
+  {
+   "key": "noopz/commonplace/commonplace",
+   "name": "commonplace",
+   "repo": "noopz/commonplace",
+   "path": ".",
+   "url": "https://github.com/noopz/commonplace",
+   "plain": "An LLM-maintained knowledge base for Obsidian vaults that triggers on paper sharing and research questions.",
+   "cat": "memory",
+   "by": "noopz",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "/\"^(Read|Grep|Glob|NotebookRead|Bash|Write|Edit|NotebookEdit)$\"/ calls",
+    "Bash calls",
+    "Write|Edit calls",
+    "/\"^mcp__commonplace__vault_\"/ calls",
+    "subagent spawns",
+    "every skill"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "ToolUse",
+    "Spinner"
+   ],
+   "validated": "warnings",
+   "stars": 11,
+   "license": null,
+   "pushed": "2026-10-04T20:23:05Z",
+   "marketplace": null,
+   "plugin": "commonplace"
+  },
+  {
+   "key": "JayDoubleu/aside/aside",
+   "name": "aside",
+   "repo": "JayDoubleu/aside",
+   "path": ".",
+   "url": "https://github.com/JayDoubleu/aside",
+   "plain": "A read-only side chat in a pane: ask about the session so far and a tool-less fork of the transcript answers.",
+   "cat": "memory",
+   "by": "JayDoubleu",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads the transcript",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-09-14T20:15:34Z",
+   "marketplace": "aside",
+   "plugin": "aside"
+  },
+  {
+   "key": "shimo4228/harness-scope/harness-scope",
+   "name": "harness-scope",
+   "repo": "shimo4228/harness-scope",
+   "path": "plugin",
+   "url": "https://github.com/shimo4228/harness-scope",
+   "plain": "Per-repo profiles for global skills, agents, rules files and tools: a repo picks a named profile from ~/.claude and Claude sees only what it allows, with no network or model calls.",
+   "cat": "memory",
+   "by": "shimo4228",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "the system prompt",
+    "every tool call"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-08T20:44:27Z",
+   "marketplace": "harness-scope",
+   "plugin": "harness-scope"
+  },
+  {
+   "key": "ruihe774/cc-micro-compaction/micro-compaction",
+   "name": "micro-compaction",
+   "repo": "ruihe774/cc-micro-compaction",
+   "path": ".",
+   "url": "https://github.com/ruihe774/cc-micro-compaction",
+   "plain": "Adds `/compact micro`, which replaces Read results with placeholders and drops thinking without a model call, leaving every other message as it was.",
+   "cat": "memory",
+   "by": "Rui He",
+   "reach": 0,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "compaction"
+   ],
+   "surfaces": [],
+   "validated": "warnings",
+   "stars": 2,
+   "license": "Unlicense",
+   "pushed": "2026-10-08T16:53:49Z",
+   "marketplace": null,
+   "plugin": "micro-compaction"
+  },
+  {
+   "key": "sirkitree/pinboard/pinboard",
+   "name": "pinboard",
+   "repo": "sirkitree/pinboard",
+   "path": ".",
+   "url": "https://github.com/sirkitree/pinboard",
+   "plain": "A pane that keeps open decisions, the task list and links Claude creates in view while the transcript scrolls, updated through its own tool.",
+   "cat": "memory",
+   "by": "Jerad Bitner",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "draws"
+   ],
+   "sees": [
+    "mcp__pinboard__update calls",
+    "classic hooks",
+    "every tool call"
+   ],
+   "surfaces": [
+    "ToolUse",
+    "ToolResult",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 6,
+   "license": "MIT",
+   "pushed": "2026-10-07T16:47:01Z",
+   "marketplace": "pinboard",
+   "plugin": "pinboard"
+  },
+  {
+   "key": "vicmpen/mokkan/mokkan",
+   "name": "mokkan",
+   "repo": "vicmpen/mokkan",
+   "path": "claude-plugin",
+   "url": "https://github.com/vicmpen/mokkan/tree/main/claude-plugin",
+   "plain": "`/mokkan` docks a pane of todos and timed reminders beside the transcript, shared with every Claude Code, Codex and terminal session through the mokkan server (api.mokkan.dev), which emails a due reminder nobody acknowledges.",
+   "cat": "memory",
+   "by": "Victor Benetatos",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 4,
+   "license": "MIT",
+   "pushed": "2026-10-04T21:26:45Z",
+   "marketplace": "mokkan",
+   "plugin": "mokkan"
+  },
+  {
+   "key": "apolenkov/agent-compact-advisor/agent-compact-advisor",
+   "name": "agent-compact-advisor",
+   "repo": "apolenkov/agent-compact-advisor",
+   "path": ".",
+   "url": "https://github.com/apolenkov/agent-compact-advisor",
+   "plain": "A 0-100 score in the status line for how good a moment it is to `/compact`, with a ready `/compact` suggestion past a threshold and a template added to every compaction that keeps the goal, decisions and open leftovers; it never compacts by itself, and its one network call goes to a local Kev endpoint on loopback.",
+   "cat": "memory",
+   "by": "apolenkov",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "drives Claude",
+    "writes the prompt box",
+    "reads the transcript",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "compaction"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-09T07:13:49Z",
+   "marketplace": "agent-compact-advisor",
+   "plugin": "agent-compact-advisor"
+  },
+  {
+   "key": "Nachx639/context-canary/context-canary",
+   "name": "context-canary",
+   "repo": "Nachx639/context-canary",
+   "path": ".",
+   "url": "https://github.com/Nachx639/context-canary",
+   "plain": "A pixel-art canary above the prompt that dies when a final reply skips a sentinel from CLAUDE.md, then compacts the session keeping your instructions and revives.",
+   "cat": "memory",
+   "by": "Nachx639",
+   "reach": 2,
+   "reachLabels": [
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-07T21:43:19Z",
+   "marketplace": null,
+   "plugin": "context-canary"
+  },
+  {
+   "key": "zenbu-labs/terminal-browser/terminal-browser",
+   "name": "terminal-browser",
+   "repo": "zenbu-labs/terminal-browser",
+   "path": "claude-code-plugin",
+   "url": "https://github.com/zenbu-labs/terminal-browser/tree/main/claude-code-plugin",
+   "plain": "A browser beside your Claude Code conversation for websites, local HTML previews and GitHub pull requests.",
+   "cat": "rendering",
+   "by": "zenbu-labs",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "drives Claude",
+    "writes the prompt box",
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "? calls"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 3737,
+   "license": "MIT",
+   "pushed": "2026-10-07T07:57:10Z",
+   "marketplace": "terminal-browser",
+   "plugin": "terminal-browser"
+  },
+  {
+   "key": "hellosverre/claude-skins/skins",
+   "name": "skins",
+   "repo": "hellosverre/claude-skins",
+   "path": ".",
+   "url": "https://github.com/hellosverre/claude-skins",
+   "plain": "Restyles the transcript with themed tool rows, reply gutters and spinner words, and draws tables, code, diffs and shell output as animated cards on the desktop.",
+   "cat": "rendering",
+   "by": "hellosverre",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every tool call",
+    "/\"^mcp__skins__design$\"/ calls"
+   ],
+   "surfaces": [
+    "Pane",
+    "ToolUse",
+    "ToolGroup",
+    "ToolResult",
+    "UserMessage",
+    "AssistantMessage",
+    "Spinner",
+    "TurnDuration",
+    "AbovePrompt",
+    "AskUserQuestion"
+   ],
+   "validated": "passed",
+   "stars": 37,
+   "license": "MIT",
+   "pushed": "2026-10-09T07:22:57Z",
+   "marketplace": "hellosverre-mods",
+   "plugin": "skins"
+  },
+  {
+   "key": "xuanji86/claude-mdview/mdview",
+   "name": "mdview",
+   "repo": "xuanji86/claude-mdview",
+   "path": ".",
+   "url": "https://github.com/xuanji86/claude-mdview",
+   "plain": "Click a markdown path in the conversation to read the file rendered in a side pane with contents, find and pictures, or in Warp's own viewer, and point at any block to have Claude edit it.",
+   "cat": "rendering",
+   "by": "Anji Xu",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "changes config",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every tool call",
+    "mcp__mdview__show calls"
+   ],
+   "surfaces": [
+    "AssistantMessage",
+    "ToolUse",
+    "UserMessage",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 6,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:16:15Z",
+   "marketplace": "claude-mdview",
+   "plugin": "mdview"
+  },
+  {
+   "key": "briangtn/claude-gfm-render/gfm-render",
+   "name": "gfm-render",
+   "repo": "briangtn/claude-gfm-render",
+   "path": ".",
+   "url": "https://github.com/briangtn/claude-gfm-render",
+   "plain": "Draws GitHub alerts, task lists, strikethrough and Mermaid diagrams in Claude's replies, as box art in the terminal and SVG on the desktop.",
+   "cat": "rendering",
+   "by": "briangtn",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AssistantMessage"
+   ],
+   "validated": "passed",
+   "stars": 16,
+   "license": "MIT",
+   "pushed": "2026-10-05T14:29:13Z",
+   "marketplace": null,
+   "plugin": "gfm-render"
+  },
+  {
+   "key": "moduvoice/claude-code-ko-ui/ko-ui",
+   "name": "ko-ui",
+   "repo": "moduvoice/claude-code-ko-ui",
+   "path": ".",
+   "url": "https://github.com/moduvoice/claude-code-ko-ui",
+   "plain": "Shows slash-command descriptions, `/config` rows, spinner words, tool-call summaries and some transcript lines in Korean from a static dictionary, with no model calls or network.",
+   "cat": "rendering",
+   "by": "moduvoice",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "CommandOutput",
+    "InfoNotice",
+    "PromptHint",
+    "SessionMode",
+    "Spinner",
+    "ToolProgress",
+    "UserMessage",
+    "ToolGroup",
+    "TurnDuration"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-04T16:26:36Z",
+   "marketplace": null,
+   "plugin": "ko-ui"
+  },
+  {
+   "key": "Sumit189/explain-claude-mod/explain-as",
+   "name": "explain-as",
+   "repo": "Sumit189/explain-claude-mod",
+   "path": ".",
+   "url": "https://github.com/Sumit189/explain-claude-mod",
+   "plain": "`/explain` turns answers into plain ASD-STE100 prose, a Mermaid diagram or an HTML page shown as a zoomable picture in a pane (screenshot by a local headless Chrome), or a narrated canvas explainer video that plays in Chrome.",
+   "cat": "rendering",
+   "by": "Sumit Paul",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "Write calls",
+    "mcp__explain-as__show calls",
+    "Edit calls"
+   ],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 19,
+   "license": null,
+   "pushed": "2026-10-04T16:06:05Z",
+   "marketplace": "explain-as",
+   "plugin": "explain-as"
+  },
+  {
+   "key": "NahumLitvin/prismantis/prismantis",
+   "name": "prismantis",
+   "repo": "NahumLitvin/prismantis",
+   "path": ".",
+   "url": "https://github.com/NahumLitvin/prismantis",
+   "plain": "Redraws Claude's replies in a chosen colour theme, with tables, highlighted code, numbers and paths, GitHub alerts, mermaid diagrams and charts as box art, and right-to-left Hebrew and Arabic.",
+   "cat": "rendering",
+   "by": "Nahum Litvin",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "changes config",
+    "reads files",
+    "reads env vars",
+    "reads the transcript",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "ToolGroup",
+    "ToolUse",
+    "TurnDuration",
+    "CommandOutput",
+    "UserMessage",
+    "AssistantMessage"
+   ],
+   "validated": "passed",
+   "stars": 60,
+   "license": "MIT",
+   "pushed": "2026-10-09T08:15:20Z",
+   "marketplace": "prismantis",
+   "plugin": "prismantis"
+  },
+  {
+   "key": "OG-Matcha/tessera/tessera",
+   "name": "tessera",
+   "repo": "OG-Matcha/tessera",
+   "path": ".",
+   "url": "https://github.com/OG-Matcha/tessera",
+   "plain": "Previews pasted images and collapsed pasted text above the prompt in any terminal, draws replies with CJK-aligned tables and charts, and refuses recursive deletes through links and main-tree Git rewrites while agents run.",
+   "cat": "rendering",
+   "by": "OG-Matcha",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "sets env vars",
+    "changes config",
+    "drives Claude",
+    "writes the prompt box",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "Agent calls",
+    "Workflow calls",
+    "classic hooks",
+    "TaskCreate calls",
+    "TaskUpdate calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "ToolResult",
+    "ToolGroup",
+    "ToolUse",
+    "TurnDuration",
+    "CommandOutput",
+    "UserMessage",
+    "AssistantMessage"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-09T08:07:07Z",
+   "marketplace": "tessera",
+   "plugin": "tessera"
+  },
+  {
+   "key": "samox73/claude-code-latex/tex-display",
+   "name": "tex-display",
+   "repo": "samox73/claude-code-latex",
+   "path": ".",
+   "url": "https://github.com/samox73/claude-code-latex",
+   "plain": "Draws LaTeX display math in Claude's replies as typeset pictures in kitty and Ghostty and as Unicode text elsewhere, with MathJax bundled, so it runs no processes and writes no files.",
+   "cat": "rendering",
+   "by": "Samuel Recker",
+   "reach": 2,
+   "reachLabels": [
+    "changes config",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "compaction",
+    "every prompt"
+   ],
+   "surfaces": [
+    "Pane",
+    "AssistantMessage"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-06T08:37:25Z",
+   "marketplace": "claude-code-latex",
+   "plugin": "tex-display"
+  },
+  {
+   "key": "hamzafer/claude-code-mods/md-preview",
+   "name": "md-preview",
+   "repo": "hamzafer/claude-code-mods",
+   "path": "mods/md-preview",
+   "url": "https://github.com/hamzafer/claude-code-mods/tree/main/mods/md-preview",
+   "plain": "Renders the Markdown files Claude edits like GitHub does in a pane, with before and after side by side.",
+   "cat": "rendering",
+   "by": "Hamza Zafar",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 164,
+   "license": "MIT",
+   "pushed": "2026-10-08T13:27:14Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "md-preview"
+  },
+  {
+   "key": "lorenzh/rabe/rabe",
+   "name": "rabe",
+   "repo": "lorenzh/rabe",
+   "path": ".",
+   "url": "https://github.com/lorenzh/rabe",
+   "plain": "A band above the prompt and a `/rabe` pane with the session's subagents, workflows, Codex plugin jobs, background shells, monitors and cron jobs, each with live output, tokens and a stop key, plus Cost, Effects and Timeline tabs.",
+   "cat": "agents",
+   "by": "Lorenz Hilpert",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "subagent spawns",
+    "classic hooks",
+    "Edit|Write calls",
+    "Workflow calls",
+    "every prompt",
+    "Bash calls"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-09T07:31:54Z",
+   "marketplace": "rabe",
+   "plugin": "rabe"
+  },
+  {
+   "key": "apolenkov/agent-shell-watch/agent-shell-watch",
+   "name": "agent-shell-watch",
+   "repo": "apolenkov/agent-shell-watch",
+   "path": ".",
+   "url": "https://github.com/apolenkov/agent-shell-watch",
+   "plain": "A status line and a `/shell-watch` pane for every Bash call, background task and delegated agent run of the session (Codex, Pi, Devin), with elapsed time, output freshness, the current output line and errors.",
+   "cat": "agents",
+   "by": "apolenkov",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-09T07:08:05Z",
+   "marketplace": "agent-shell-watch",
+   "plugin": "agent-shell-watch"
+  },
+  {
+   "key": "apolenkov/agent-council/agent-council",
+   "name": "agent-council",
+   "repo": "apolenkov/agent-council",
+   "path": ".",
+   "url": "https://github.com/apolenkov/agent-council",
+   "plain": "`/council` runs the Codex, Pi, Devin and OpenCodeReview CLIs on the working diff in parallel, which sends the diff to their providers, and merges their findings into agreements, disagreements and unique findings.",
+   "cat": "agents",
+   "by": "apolenkov",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads the transcript",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-09T07:03:31Z",
+   "marketplace": "agent-council",
+   "plugin": "agent-council"
+  },
+  {
+   "key": "djnsty23/claude-auto-dev/autodev-core",
+   "name": "autodev-core",
+   "repo": "djnsty23/claude-auto-dev",
+   "path": "plugins/autodev-core",
+   "url": "https://github.com/djnsty23/claude-auto-dev/tree/main/plugins/autodev-core",
+   "plain": "Brainstorm, auto, iterate, audit, review and ship commands with a prd.json sprint system.",
+   "cat": "agents",
+   "by": "djnsty23",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "Bash calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 6,
+   "license": null,
+   "pushed": "2026-10-09T01:41:54Z",
+   "marketplace": "autodev",
+   "plugin": "autodev-core"
+  },
+  {
+   "key": "TransmuteLabs/Catalyst/catalyst-probes",
+   "name": "catalyst-probes",
+   "repo": "TransmuteLabs/Catalyst",
+   "path": "plugins/catalyst-probes",
+   "url": "https://github.com/TransmuteLabs/Catalyst/tree/main/plugins/catalyst-probes",
+   "plain": "A consultation and prompt engine configured by TOML tables of probes and prompts.",
+   "cat": "agents",
+   "by": "Marat Karimov",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads the transcript",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "the system prompt",
+    "every tool call",
+    "classic hooks",
+    "subagent spawns"
+   ],
+   "surfaces": [],
+   "validated": "unknown",
+   "stars": 3,
+   "license": "NOASSERTION",
+   "pushed": "2026-10-06T10:08:29Z",
+   "marketplace": "catalyst",
+   "plugin": "catalyst-probes"
+  },
+  {
+   "key": "jagreehal/autotel/autotel",
+   "name": "autotel",
+   "repo": "jagreehal/autotel",
+   "path": "packages/autotel-claude-code",
+   "url": "https://github.com/jagreehal/autotel/tree/main/packages/autotel-claude-code",
+   "plain": "OpenTelemetry for mods: adds `$.autotel` in the engine.create fold and traces every hook dispatch.",
+   "cat": "agents",
+   "by": "Jag Reehal",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "everything"
+   ],
+   "surfaces": [
+    "ToolUse"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "Apache-2.0",
+   "pushed": "2026-10-09T07:41:16Z",
+   "marketplace": null,
+   "plugin": "autotel"
+  },
+  {
+   "key": "TheSmokeDev/taskchad-os/homie-persona-cognition",
+   "name": "homie-persona-cognition",
+   "repo": "TheSmokeDev/taskchad-os",
+   "path": ".claude/plugins/persona-cognition",
+   "url": "https://github.com/TheSmokeDev/taskchad-os/tree/main/.claude/plugins/persona-cognition",
+   "plain": "Host-bound cognitive lifecycle events for a persona system.",
+   "cat": "agents",
+   "by": "TheSmokeDev",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads env vars"
+   ],
+   "sees": [
+    "every tool call",
+    "every prompt"
+   ],
+   "surfaces": [],
+   "validated": "warnings",
+   "stars": 27,
+   "license": "MIT",
+   "pushed": "2026-09-30T08:44:53Z",
+   "marketplace": null,
+   "plugin": "homie-persona-cognition"
+  },
+  {
+   "key": "OneWave-AI/claude-code-mods/agent-race",
+   "name": "agent-race",
+   "repo": "OneWave-AI/claude-code-mods",
+   "path": "agent-race",
+   "url": "https://github.com/OneWave-AI/claude-code-mods/tree/main/agent-race",
+   "plain": "Puts several sessions on one track for the same task and scores tools, edits, tests and cost per lane.",
+   "cat": "agents",
+   "by": "OneWave AI",
+   "reach": 2,
+   "reachLabels": [
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "plays audio",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 8,
+   "license": "MIT",
+   "pushed": "2026-10-03T08:35:11Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "agent-race"
+  },
+  {
+   "key": "augbastos/afkswitch/afkswitch",
+   "name": "AFKSwitch",
+   "repo": "augbastos/afkswitch",
+   "path": ".",
+   "url": "https://github.com/augbastos/afkswitch",
+   "plain": "A one-click presence switch above the terminal prompt that tells live sessions when you leave and collects their status when you return.",
+   "cat": "agents",
+   "by": "Augusto Bastos",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-02T21:10:03Z",
+   "marketplace": "afkswitch",
+   "plugin": "afkswitch"
+  },
+  {
+   "key": "ljmerza/prompt-spellcheck/prompt-spellcheck",
+   "name": "prompt-spellcheck",
+   "repo": "ljmerza/prompt-spellcheck",
+   "path": "plugins/prompt-spellcheck",
+   "url": "https://github.com/ljmerza/prompt-spellcheck/tree/main/plugins/prompt-spellcheck",
+   "plain": "Uses an extra Haiku call to correct typos before a submitted prompt reaches the model, skips fenced code, and shows changes in a toast, with a `/spellcheck` toggle.",
+   "cat": "agents",
+   "by": "Leonardo Merza",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-02T02:24:01Z",
+   "marketplace": "prompt-spellcheck",
+   "plugin": "prompt-spellcheck"
+  },
+  {
+   "key": "pawandeepdhall/claude-mods/next-steps",
+   "name": "next-steps",
+   "repo": "pawandeepdhall/claude-mods",
+   "path": "plugins/next-steps",
+   "url": "https://github.com/pawandeepdhall/claude-mods/tree/main/plugins/next-steps",
+   "plain": "After each reply, up to six Haiku-generated next steps appear above the prompt; select one or more and press Send to have Haiku compose and submit a combined prompt.",
+   "cat": "agents",
+   "by": "Pawandeep",
+   "reach": 2,
+   "reachLabels": [
+    "writes files",
+    "drives Claude",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-03T02:14:21Z",
+   "marketplace": "my-claude-mods",
+   "plugin": "next-steps"
+  },
+  {
+   "key": "xuanji86/claude-agentpane/agentpane",
+   "name": "agentpane",
+   "repo": "xuanji86/claude-agentpane",
+   "path": ".",
+   "url": "https://github.com/xuanji86/claude-agentpane",
+   "plain": "A side pane of the session's subagents with each one's current tool call and tokens, its conversation drawn in place on a click, and Stop; it opens when an agent starts and folds to a tab when they finish.",
+   "cat": "agents",
+   "by": "Anji Xu",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "reads the transcript",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 9,
+   "license": "MIT",
+   "pushed": "2026-10-04T06:11:35Z",
+   "marketplace": "claude-agentpane",
+   "plugin": "agentpane"
+  },
+  {
+   "key": "ManuelWarland/claude-codex-pane/codex-pane",
+   "name": "codex-pane",
+   "repo": "ManuelWarland/claude-codex-pane",
+   "path": "plugin",
+   "url": "https://github.com/ManuelWarland/claude-codex-pane",
+   "plain": "A `/codex` pane that follows the Codex CLI session you run in another terminal, sends the current exchange to Claude on request, or queues Claude's answer in Codex through `codex queue` after confirmation.",
+   "cat": "agents",
+   "by": "Manuel Warland",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "reads settings",
+    "reads the transcript",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-07T15:23:02Z",
+   "marketplace": "codex-pane",
+   "plugin": "codex-pane"
+  },
+  {
+   "key": "helenkwok/gsd-status-mod/gsd-status-mod",
+   "name": "gsd-status-mod",
+   "repo": "helenkwok/gsd-status-mod",
+   "path": ".",
+   "url": "https://github.com/helenkwok/gsd-status-mod",
+   "plain": "For GSD projects: shows where work stopped and a STATE.md drift warning above the prompt, adds the handoff's next action to the hint line, and offers the command it names as a Tab suggestion.",
+   "cat": "agents",
+   "by": "Helen Kwok",
+   "reach": 1,
+   "reachLabels": [
+    "writes the prompt box",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "Pane",
+    "ToolUse",
+    "AbovePrompt",
+    "PromptHint"
+   ],
+   "validated": "passed",
+   "stars": 4,
+   "license": "MIT",
+   "pushed": "2026-10-04T04:26:18Z",
+   "marketplace": "helenkwok-mods",
+   "plugin": "gsd-status-mod"
+  },
+  {
+   "key": "danzerzine/claude-council/council",
+   "name": "claude-council",
+   "repo": "danzerzine/claude-council",
+   "path": ".",
+   "url": "https://github.com/danzerzine/claude-council",
+   "plain": "A band above the prompt that brings GPT in as fresh eyes on a stuck question, with its answer, Claude's take and GPT's reply pasted into the chat, and can have Codex check every handover against the chat's spec and send gross violations back before the agent answers.",
+   "cat": "agents",
+   "by": "danzerzine",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "classic hooks"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-04T19:40:40Z",
+   "marketplace": null,
+   "plugin": "council"
+  },
+  {
+   "key": "vynnlee/mods/prompt-drafts",
+   "name": "prompt-drafts",
+   "repo": "vynnlee/mods",
+   "path": "prompt-drafts",
+   "url": "https://github.com/vynnlee/mods/tree/main/prompt-drafts",
+   "plain": "End a prompt with `;;` to keep it as a draft of the session instead of sending it, then `/drafts` puts it back in the prompt box from a sidebar with number keys, or from Claude Code's question dialog in a narrow terminal.",
+   "cat": "agents",
+   "by": "Seongbeen Lee",
+   "reach": 1,
+   "reachLabels": [
+    "writes the prompt box",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-07T06:01:10Z",
+   "marketplace": "vynnlee",
+   "plugin": "prompt-drafts"
+  },
+  {
+   "key": "hamzafer/claude-code-mods/mission-control",
+   "name": "mission-control",
+   "repo": "hamzafer/claude-code-mods",
+   "path": "mods/mission-control",
+   "url": "https://github.com/hamzafer/claude-code-mods/tree/main/mods/mission-control",
+   "plain": "A pane with every subagent and tool call live, plus a code map of the files they read and write, with a Haiku call that describes each file's changes.",
+   "cat": "agents",
+   "by": "Hamza Zafar",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "subagent spawns",
+    "every tool call"
+   ],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 164,
+   "license": "MIT",
+   "pushed": "2026-10-08T13:27:14Z",
+   "marketplace": "claude-code-mods",
+   "plugin": "mission-control"
+  },
+  {
+   "key": "danilpavlov/telescope-claude-code/session-board",
+   "name": "session-board",
+   "repo": "danilpavlov/telescope-claude-code",
+   "path": ".",
+   "url": "https://github.com/danilpavlov/telescope-claude-code",
+   "plain": "A floating tmux popup with an fzf picker of every Claude Code session running on the machine, showing which ones wait for you, a Haiku summary of each, and a jump to the tmux window of the one you pick.",
+   "cat": "agents",
+   "by": "Daniil Pavlov",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-08T15:12:10Z",
+   "marketplace": "telescope-claude-code",
+   "plugin": "session-board"
+  }
+ ]
+}

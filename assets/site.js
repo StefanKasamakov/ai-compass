@@ -1,6 +1,6 @@
 // Which AI Map — shared shell + page renderers. No framework, no build.
 const REPO = "StefanKasamakov/ai-compass";
-const page = document.body.dataset.page;
+const page = document.body.dataset.hub ? `hub-${document.body.dataset.hub}` : document.body.dataset.page;
 
 // ---------- icons (Lucide, ISC license) ----------
 const P = {
@@ -86,9 +86,10 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["start", "Start here", "start.html"], ["skills", "Skills", "skills.html"], ["explore", "Find tools", "explore.html"], ["models", "Choose AI", "models.html"], ["compare", "Compare", "compare.html"],
-  ["guides", "Guides", [["thinking", "Thinking levels", "thinking.html"], ["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"], ["local", "Local models", "local.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
-  ["news", "News", "news.html"],
+  ["start", "Start here", "start.html"], ["skills", "Skills", "skills.html"], ["mods", "Mods", "mods.html"], ["explore", "Find tools", "explore.html"],
+  ["choose", "Choose AI", [["models", "Pick a model", "models.html"], ["compare", "Compare tools", "compare.html"], ["local", "Local models", "local.html"], ["thinking", "Thinking levels", "thinking.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
+  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"]]],
+  ["newsmenu", "News", [["news", "All AI news", "news.html"], ["hub-claude", "Claude", "claude.html"], ["hub-chatgpt", "ChatGPT", "chatgpt.html"], ["hub-gemini", "Gemini", "gemini.html"], ["hub-open", "Open models", "open-models.html"]]],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
   ? `<details class="nav-group"${href.some(([sid]) => sid === page) ? " data-current" : ""}><summary>${label}${icon("chevron")}</summary><div class="nav-menu">${href.map(([sid, sl, sh]) => `<a href="${sh}"${sid === page ? ' aria-current="page"' : ""}>${sl}</a>`).join("")}</div></details>`
@@ -112,7 +113,7 @@ function shell() {
       <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
     <nav class="foot-cols" aria-label="Footer">
       <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
-      <div><div class="field-label">Learn</div><a href="thinking.html">Thinking levels</a><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
+      <div><div class="field-label">Learn</div><a href="mods.html">Claude Code mods</a><a href="thinking.html">Thinking levels</a><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
       <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
       <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
     </nav>
@@ -158,6 +159,12 @@ async function searchIndex() {
     { t: "Connect an app to Claude or ChatGPT", sub: "MCP setup", href: "mcp.html#setup", k: "guide", ic: "plug" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
     { t: "Benchmarks: what each model is good at", sub: "Charts", href: "benchmarks.html", k: "guide", ic: "trend" },
+    { t: "Claude Code mods: what they are, the well-known ones", sub: "Directory", href: "mods.html", k: "guide", ic: "puzzle" },
+    { t: "Claude news", sub: "News hub", href: "claude.html", k: "guide", ic: "news" },
+    { t: "ChatGPT news", sub: "News hub", href: "chatgpt.html", k: "guide", ic: "news" },
+    { t: "Gemini news", sub: "News hub", href: "gemini.html", k: "guide", ic: "news" },
+    { t: "Open models news (Llama, Qwen, DeepSeek, Mistral)", sub: "News hub", href: "open-models.html", k: "guide", ic: "news" },
+    { t: "Claude Dashboards and Motion, explained", sub: "Explainer", href: "claude-dashboards-motion.html", k: "guide", ic: "zap" },
     { t: "Thinking levels: Low, High, Instant, Extended, Deep Think", sub: "Cheat sheet", href: "thinking.html", k: "guide", ic: "zap" },
     { t: "New to AI? Start here", sub: "Five short lessons", href: "start.html", k: "guide", ic: "book" },
     { t: "Compare: ChatGPT vs Claude and other match-ups", sub: "Short answers", href: "compare.html", k: "guide", ic: "layout" },
@@ -301,6 +308,23 @@ const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-stor
 // this week's big launches come first, then everything by date
 const newsOrder = (items) => { const fresh = (x) => x.big && Date.now() - new Date(x.date) < 7 * 864e5; return [...items].sort((a, b) => fresh(b) - fresh(a)); };
 
+// ---------- news hubs: one page per AI family, like a club page on a football site ----------
+const HUBS = {
+  claude: { name: "Claude", file: "claude.html", p: "anthropic", logo: "claude", src: ["Anthropic"], re: /\b(claude|anthropic|opus|sonnet|haiku|fable|mythos)\b/i,
+    tools: ["claude", "anthropic/diff", "anthropic/token-weather", "pdf", "docx", "pptx"],
+    reads: [["claude-dashboards-motion.html", "Claude Dashboards and Motion, explained", "What the two October betas do, who gets them and how to try them."], ["mods.html", "Claude Code mods", "What mods are, the well-known ones, and how to install one safely."], ["skills.html", "Skills, one by one", "Ready-made skills for Claude, with what each does and how to add it."], ["chatgpt-vs-claude.html", "ChatGPT vs Claude", "The short answer, then prices and strengths side by side."]] },
+  chatgpt: { name: "ChatGPT", file: "chatgpt.html", p: "openai", logo: "lh-openai", src: ["OpenAI"], re: /\b(openai|chatgpt|gpt-?\d[\w.]*|codex|sora|dall-?e)\b/i,
+    tools: ["chatgpt", "github-copilot", "copilot"],
+    reads: [["chatgpt-vs-claude.html", "ChatGPT vs Claude", "Which one to pick, in one paragraph."], ["chatgpt-vs-gemini.html", "ChatGPT vs Gemini", "When Google's assistant is the better choice."], ["thinking.html", "Thinking levels, explained", "What Instant, Medium, High, Extra High and Pro mean."]] },
+  gemini: { name: "Gemini", file: "gemini.html", p: "google", logo: "googlegemini", src: ["Google", "DeepMind"], re: /\b(gemini|google|deepmind|gemma|notebooklm|veo|imagen)\b/i,
+    tools: ["gemini", "notebooklm"],
+    reads: [["chatgpt-vs-gemini.html", "ChatGPT vs Gemini", "When Google's assistant is the better choice."], ["claude-vs-gemini.html", "Claude vs Gemini", "Writing and code against Google's apps and price."], ["thinking.html", "Thinking levels, explained", "Standard, Extended and Deep Think in plain words."]] },
+  open: { name: "Open models", file: "open-models.html", p: "open", logo: "ollama", src: ["Hugging Face"], re: /\b(llama|qwen|deepseek|mistral|ollama|open[- ]weights?|kimi|glm|gemma|gpt-oss|hugging ?face|local models?|nemotron|granite)\b/i,
+    tools: ["lm-studio", "ollama/ollama", "janhq/jan"],
+    reads: [["local.html", "Run AI on your own computer", "Pick your computer, get the models that fit, with the command to start."], ["benchmarks.html", "Model test scores", "How the open models compare with the paid ones."]] },
+};
+const hubOf = (x) => Object.entries(HUBS).filter(([, h]) => h.src.includes(x.source) || h.re.test(`${x.title} ${x.summary || ""}`)).map(([k]) => k);
+
 // ---------- pages ----------
 const pages = {
   async index() {
@@ -357,6 +381,55 @@ const pages = {
     $("#skillSources").innerHTML = skillSources.filter((s) => s.count).sort((a, b) => b.stars - a.stars).map((s) => `<a class="card link src-card" href="explore.html?type=skill&q=${encodeURIComponent(s.repo.split("/")[1])}">
       ${avatar(s.repo, 40)}<div><h3>${esc(s.repo.split("/")[1])}</h3><small class="muted mono">by ${esc(s.by)} · ${s.count} skills · ${icon("star")}${num(s.stars)}</small></div></a>`).join("");
   },
+  async mods() {
+    const [{ all, tags, tips, mods }] = await Promise.all([catalog(), votes()]);
+    const list = all.filter((x) => x.kind === "mod");
+    const open = toolDialog(all, tags, tips);
+    $("#modCount").textContent = list.length;
+    $("#modTotal").textContent = num(mods?.total || 0);
+    const st = { cat: new URLSearchParams(location.search).get("cat") || "all", reach: "all", shown: 24 };
+    const q = $("#modQ");
+    const cats = (mods?.categories || []).filter(([id]) => list.some((x) => x.cat === id));
+    const draw = () => {
+      const pool = q.value.trim() ? rank(list, q.value) : list;
+      const shown = pool.filter((x) => (st.cat === "all" || x.cat === st.cat) && (st.reach === "all" || (st.reach === "safe" ? x.reach <= 1 : x.reach >= 2)));
+      if (!q.value.trim()) shown.sort((a, b) => b.official - a.official || (a.reach ?? 2) - (b.reach ?? 2) || b.stars - a.stars);
+      $("#modGrid").innerHTML = shown.slice(0, st.shown).map((x) => toolCard(x, tags)).join("") || `<div class="empty">Nothing matches. Try another category or word.</div>`;
+      $("#modMore").innerHTML = shown.length > st.shown ? `<button class="btn" id="moreMods">Show ${Math.min(24, shown.length - st.shown)} more</button><span class="muted mono" style="font-size:.8rem">${st.shown} of ${shown.length}</span>` : "";
+      const more = $("#moreMods"); if (more) more.onclick = () => { st.shown += 24; draw(); };
+    };
+    dropdown($("#modCat"), "Show", [["all", `All mods (${list.length})`], ...cats.map(([id, label]) => [id, `${label} (${list.filter((x) => x.cat === id).length})`])], (v) => { st.cat = v; st.shown = 24; draw(); }, st.cat);
+    dropdown($("#modReach"), "Access", [["all", "Any"], ["safe", "Only draws or reads"], ["more", "Can write, run or go online"]], (v) => { st.reach = v; st.shown = 24; draw(); }, "all");
+    q.oninput = () => { st.shown = 24; draw(); };
+    draw();
+    const hash = decodeURIComponent(location.hash.slice(1));
+    if (hash) open(hash);
+  },
+
+  async hub() {
+    const id = document.body.dataset.hub, h = HUBS[id];
+    const [n, m, { all, tags }] = await Promise.all([load("news"), load("models"), catalog()]);
+    const seenT = new Set(); // the same launch often comes in from two sources with the same title
+    const items = newsOrder((n?.items || []).filter((x) => hubOf(x).includes(id) && !seenT.has(x.title.toLowerCase()) && seenT.add(x.title.toLowerCase())));
+    $("#hubLogo").innerHTML = `<span class="logo-badge p-${h.p} hub-badge">${logo(h.logo)}</span>`;
+    $("#hubCount").textContent = `${items.length} ${items.length === 1 ? "story" : "stories"} in the last 45 days`;
+    $("#hubSwitch").innerHTML = Object.entries(HUBS).map(([k, v]) => `<a class="chip"${k === id ? ' aria-pressed="true"' : ""} href="${v.file}">${esc(v.name)}</a>`).join("") + `<a class="chip" href="news.html">All AI news</a>`;
+    let shown = 9;
+    const draw = () => {
+      const lead = items.find((x) => x.big && newsPic(x)) || items.find(newsPic) || items[0];
+      const rest = items.filter((x) => x !== lead);
+      $("#feed").innerHTML = lead ? newsCard(lead, true) + rest.slice(0, shown - 1).map((x) => newsCard(x)).join("")
+        + (rest.length > shown - 1 ? `<button class="btn news-more" id="newsMore">Show more</button>` : "") : `<div class="empty">No stories in the last few weeks.</div>`;
+      const more = $("#newsMore"); if (more) more.onclick = () => { shown += 9; draw(); };
+    };
+    draw();
+    $("#hubReads").innerHTML = h.reads.map(([href, t, d]) => `<a class="card link door" href="${href}">${icon("book")}<div><h3>${esc(t)}</h3><p>${esc(d)}</p></div>${icon("arrow")}</a>`).join("");
+    const models = (m?.models || []).filter((x) => x.p === h.p);
+    $("#hubModels").innerHTML = models.map((x) => `<div class="card hub-model"><div class="row" style="gap:.6rem;flex-wrap:nowrap">${modelLogo(x)}<div><b>${esc(x.name)}</b> ${newTag(x)}<small class="muted mono" style="display:block">${esc(x.tier)}</small></div></div><p>${esc(x.best)}</p></div>`).join("") || `<p class="muted">None listed.</p>`;
+    const tools = h.tools.map((k) => all.find((x) => x.key === k)).filter(Boolean);
+    $("#hubTools").innerHTML = tools.map((x) => toolCard(x, tags)).join("");
+  },
+
   local: () => localModels(),
   benchmarks: async () => benchmarks(await load("models")),
 
@@ -371,6 +444,7 @@ const pages = {
 
   async news() {
     const n = await load("news");
+    $("#hubChips").innerHTML = Object.values(HUBS).map((h) => `<a class="chip" href="${h.file}"><span class="logo-badge p-${h.p} chip-badge">${logo(h.logo)}</span>${esc(h.name)}</a>`).join("");
     const items = n?.items || [];
     $("#newsUpdated").textContent = n ? ago(n.updated) : "—";
     let src = "all", shown = 13;
@@ -424,7 +498,33 @@ const pages = {
 };
 
 // A repo (from explain.json) or a skill/MCP/collection (from tools.json) in one shape
-const KIND = { app: "App", repo: "Open-source project", skill: "Skill", mcp: "Connector (MCP)", collection: "Skill pack" };
+const KIND = { app: "App", repo: "Open-source project", skill: "Skill", mcp: "Connector (MCP)", collection: "Skill pack", mod: "Claude Code mod" };
+// What a mod can reach, in the scanner's four steps, said plainly
+const REACH = [
+  ["ok", "Only draws", "Shows things on screen and remembers its own settings. It does not read your files."],
+  ["ok", "Reads", "Can read files, settings or the conversation on your computer, but does not change them."],
+  ["warn", "Writes or runs", "Can change files or start programs on your computer, with your permissions."],
+  ["warn", "Uses the internet", "Can send data over the network. Check where it sends it before installing."],
+];
+const SURFACE = { AbovePrompt: "a band above the prompt", Pane: "a side pane", PromptHint: "a line under the prompt", Spinner: "the spinner", AssistantMessage: "Claude's replies", ToolUse: "tool call rows", ToolResult: "tool results", ToolGroup: "tool call rows", UserMessage: "your messages", SessionMode: "the mode line", CommandOutput: "command output", TurnDuration: "the turn timer" };
+const MOD_CAT = {}; // filled from data/mods.json categories
+const MOD_TAGS = { usage: ["monitor", "save"], fun: ["supercharge"], git: ["code"], safety: ["monitor"], memory: ["knowledge", "supercharge"], rendering: ["supercharge"], agents: ["automate", "code"], builtin: ["supercharge"], sample: ["supercharge"] };
+function modSteps(m) {
+  if (m.enable) return [`Run \`${m.enable}\` inside Claude Code.`, "It is part of Claude Code 2.1.287 or later, so there is nothing to download."];
+  if (m.builtin) return ["Nothing to install: it ships with Claude Code 2.1.287 or later.", "See it, or switch it off, under `/plugin`, tab Installed, section Built-in."];
+  if (m.sample) return ["Download Anthropic's sample mods: `git clone https://github.com/anthropics/claude-code-playground`",
+    "Add them as a marketplace: `claude plugin marketplace add ./claude-code-playground/claude-code/mods`",
+    `Install this one: \`claude plugin install ${m.name}@claude-code-playground-mods\`, then start Claude Code again.`];
+  if (m.marketplace) return [`Inside Claude Code, add the author's marketplace: \`/plugin marketplace add ${m.repo}\``,
+    `Install the mod: \`/plugin install ${m.plugin}@${m.marketplace}\``, "Run `/reload-plugins` (or restart Claude Code) to load it."];
+  return [`Download it: \`git clone https://github.com/${m.repo}\``,
+    `Try it for one session: \`claude --plugin-dir ./${m.repo.split("/")[1]}${m.path && m.path !== "." ? "/" + m.path : ""}\``,
+    "Follow the author's README to keep it installed."];
+}
+const fromMod = (m) => ({ key: m.key, kind: "mod", name: m.name, owner: m.by, repo: m.repo, path: m.path && m.path !== "." ? m.path : "", plain: m.plain, what: m.plain, caution: "",
+  useFor: m.surfaces?.length ? [`Adds ${[...new Set(m.surfaces.map((x) => SURFACE[x]).filter(Boolean))].slice(0, 3).join(", ")}`] : [], tags: MOD_TAGS[m.cat] || ["supercharge"], cat: m.cat,
+  level: "setup", alts: [], stars: m.builtin || m.sample ? 0 : m.stars, week: 0, installs: 0, updated: m.pushed, license: m.license || null,
+  checked: !!(m.builtin || m.sample), official: !!(m.builtin || m.sample), reach: m.reach, reachLabels: m.reachLabels || [], sees: m.sees || [], validated: m.validated, steps: modSteps(m), link: m.url });
 const fromApp = (a) => ({ key: a.id, kind: "app", name: a.name, owner: a.by, site: a.site, domain: a.domain, plain: a.plain, what: a.plain, caution: a.caution || "",
   steps: a.steps || [], useFor: a.useFor || [], tags: a.tags || [], level: a.level || "easy", alts: a.alts || [], stars: 0, week: 0, installs: 0, price: a.price, free: a.free });
 const iconFor = (x, size = 40) => x.kind === "app"
@@ -435,7 +535,7 @@ const iconFor = (x, size = 40) => x.kind === "app"
 let CATALOG;
 async function catalog() {
   if (CATALOG) return CATALOG;
-  const [ex, g, dl, tools, tags, tips, apps, pairs, sk] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps"), load("compare"), load("skills")]);
+  const [ex, g, dl, tools, tags, tips, apps, pairs, sk, md] = await Promise.all([load("explain"), load("github"), load("downloads"), load("tools"), load("tags"), load("tips"), load("apps"), load("compare"), load("skills"), load("mods")]);
   const srcOf = Object.fromEntries((sk?.sources || []).map((s) => [s.repo, s]));
   const skills = (sk?.skills || []).map((k) => fromSkill(k, srcOf[k.repo]));
   const indexed = new Set(skills.map((k) => k.key));
@@ -445,8 +545,9 @@ async function catalog() {
     ...Object.values(ex || {}).filter((e) => keepRepo(e, g?.repos?.[e.repo])).map((e) => fromRepo(e, g?.repos?.[e.repo], dl?.repos?.[e.repo]?.total)),
     ...(tools || []).filter((t) => (t.type === "skill" && !indexed.has(t.id)) || t.type === "mcp" || (t.type === "collection" && !inExplain.has(t.repo))).map((t) => ({ ...fromTool(t, g?.repos?.[t.repo]), checked: true, license: g?.repos?.[t.repo]?.license })),
     ...skills,
+    ...((md?.categories || []).forEach(([id, label]) => (MOD_CAT[id] = label)), md?.mods || []).map(fromMod),
   ];
-  return (CATALOG = { all, tags, tips, pairs: pairs || [], skillSources: sk?.sources || [] });
+  return (CATALOG = { all, tags, tips, pairs: pairs || [], skillSources: sk?.sources || [], mods: md });
 }
 
 // Plain-words search: prefix matching + goal words, so "summarize pdf reports" finds document tools
@@ -518,7 +619,7 @@ function toolCard(x, tags) {
   return `<button class="tool" data-open="${esc(x.key)}">
     <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${x.fromPack ? "from " : ""}${esc(x.owner)}` : ""}</small></span></span>
     <span class="tool-plain">${esc(x.plain || "")}</span>
-    <span class="tool-foot">${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}
+    <span class="tool-foot">${x.kind === "mod" ? `<span class="tag ${REACH[x.reach]?.[0] === "ok" ? "ok" : "warn"}">${esc(REACH[x.reach]?.[1] || "")}</span>${MOD_CAT[x.cat] ? `<span class="tag">${esc(MOD_CAT[x.cat])}</span>` : ""}` : `${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}`}
       <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
   </button>`;
 }
@@ -526,6 +627,18 @@ function toolCard(x, tags) {
 // What a careful person would check before installing something from GitHub, answered up front
 function trustBox(x) {
   if (x.kind === "app") return "";
+  if (x.kind === "mod") {
+    const r = REACH[x.reach] || REACH[2];
+    const rows = [
+      x.official ? ["ok", "check", "Made by Anthropic", "Part of Claude Code, or one of Anthropic's published samples."] : ["ok", "check", "On the community's well-known list", "Picked for the awesome-claude-code-mods catalogue; we did not test it ourselves."],
+      [r[0], r[0] === "ok" ? "book" : "terminal", `Access: ${r[1]}`, `${r[2]}${x.reachLabels?.length ? ` Found in its code: ${esc(x.reachLabels.slice(0, 5).join(", "))}.` : ""}`],
+      x.validated && !x.official ? [x.validated === "passed" ? "ok" : "warn", x.validated === "passed" ? "check" : "alert", x.validated === "passed" ? "Passes Claude's own check" : "Check gave warnings", x.validated === "passed" ? "claude plugin validate reads it without errors. That checks the code, not whether it is safe." : "claude plugin validate reported warnings. It may still work."] : null,
+      x.license ? ["ok", "check", `License: ${esc(x.license)}`, "You are allowed to use it under these terms."] : x.official ? null : ["warn", "alert", "No license listed", "Fine to try, but you may not have the right to reuse or change it."],
+      x.updated ? ["ok", "check", `Updated ${ago(x.updated)}`, "Mods are new, so check it works with your Claude Code version."] : null,
+    ].filter(Boolean);
+    return `<h3>Before you install</h3><ul class="trust">${rows.map(([c, ic, t, d]) => `<li class="${c}">${icon(ic)}<span><b>${t}</b><small>${d}</small></span></li>`).join("")}</ul>
+      ${x.sees?.length ? `<p class="muted" style="font-size:.86rem;margin:-.6rem 0 1.2rem">It sees: ${esc(x.sees.join(", "))}.</p>` : ""}`;
+  }
   const old = x.updated && Date.now() - new Date(x.updated) > 365 * 864e5;
   const rows = [
     x.checked ? ["ok", "check", "Checked by a person", "We read what it does before listing it."]
@@ -539,7 +652,7 @@ function trustBox(x) {
 
 function toolDetail(x, all, tags, tips) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
-  const link = x.repo ? (x.path ? `https://github.com/${x.repo}/tree/HEAD/${x.path}` : `https://github.com/${x.repo}`) : null;
+  const link = x.link || (x.repo ? (x.path ? `https://github.com/${x.repo}/tree/HEAD/${x.path}` : `https://github.com/${x.repo}`) : null);
   const alts = x.alts.map((a) => all.find((y) => y.key === a)).filter(Boolean);
   return `<div class="dlg-head">${iconFor(x, 52)}<div><p class="field-label" style="margin:0">${esc(KIND[x.kind])}${x.official ? " · official" : ""}</p><h2>${esc(x.name)}</h2>${x.owner ? `<small class="muted">by ${esc(x.owner)}</small>` : ""}</div>
       <button class="icon-btn dlg-close" aria-label="Close">${icon("x")}</button></div>
@@ -561,12 +674,30 @@ function toolDetail(x, all, tags, tips) {
       <span class="muted mono" style="font-size:.8rem">${x.stars ? `${num(x.stars)} stars` : ""}${x.installs ? ` · ${num(x.installs)} installs/month` : ""}${x.updated ? ` · updated ${ago(x.updated)}` : ""}</span></div>`;
 }
 
+// The tool details dialog: any page with #toolDlg can open a tool in place
+function toolDialog(all, tags, tips) {
+  const dlg = $("#toolDlg");
+  const open = (key) => {
+    const x = all.find((y) => y.key === key); if (!x) return;
+    $("#toolBody").innerHTML = toolDetail(x, all, tags, tips);
+    if (!dlg.open) dlg.showModal();
+    dlg.scrollTop = 0;
+    history.replaceState(null, "", `${location.pathname}${location.search}#${key}`);
+  };
+  document.addEventListener("click", (e) => {
+    const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); open(o.dataset.open); return; }
+    if (e.target.closest(".dlg-close") || e.target === dlg) dlg.close();
+  });
+  dlg.addEventListener("close", () => history.replaceState(null, "", `${location.pathname}${location.search}`));
+  return open;
+}
+
 pages.explore = async () => {
   const [{ all, tags, tips }] = await Promise.all([catalog(), votes()]);
   const params = new URLSearchParams(location.search);
   const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "easy", shown: 24 };
   const q = $("#repoQ"); q.value = params.get("q") || "";
-  const TYPES = [["all", "Everything"], ["app", "Ready-made apps"], ["repo", "Open-source projects"], ["skill", "Skills"], ["mcp", "Connectors (MCP)"]];
+  const TYPES = [["all", "Everything"], ["app", "Ready-made apps"], ["repo", "Open-source projects"], ["skill", "Skills"], ["mod", "Claude Code mods"], ["mcp", "Connectors (MCP)"]];
   const matches = (x) => (st.goal === "all" || x.tags.includes(st.goal)) && (st.level === "all" || x.level === st.level) && (st.type === "all" || x.kind === st.type || (st.type === "skill" && x.kind === "collection"));
   const sync = () => {
     const p = new URLSearchParams();
@@ -594,19 +725,7 @@ pages.explore = async () => {
   dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most stars"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; st.shown = 24; draw(); }, "easy");
   q.oninput = () => { st.shown = 24; draw(); };
 
-  const dlg = $("#toolDlg");
-  const open = (key) => {
-    const x = all.find((y) => y.key === key); if (!x) return;
-    $("#toolBody").innerHTML = toolDetail(x, all, tags, tips);
-    if (!dlg.open) dlg.showModal();
-    dlg.scrollTop = 0;
-    history.replaceState(null, "", `${location.pathname}${location.search}#${key}`);
-  };
-  document.addEventListener("click", (e) => {
-    const o = e.target.closest("[data-open]"); if (o) { e.preventDefault(); open(o.dataset.open); return; }
-    if (e.target.closest(".dlg-close") || e.target === dlg) dlg.close();
-  });
-  dlg.addEventListener("close", () => history.replaceState(null, "", `${location.pathname}${location.search}`));
+  const open = toolDialog(all, tags, tips);
   draw();
   const hash = decodeURIComponent(location.hash.slice(1));
   if (hash) open(hash);
@@ -648,7 +767,7 @@ async function askBox() {
 }
 
 // home page cards open the directory
-document.addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o && page !== "explore") location.href = `explore.html#${o.dataset.open}`; });
+document.addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o && !$("#toolDlg")) location.href = `explore.html#${o.dataset.open}`; });
 
 // ---------- benchmarks: heatmap, ranked bars, value scatter ----------
 const tip = () => $("#tip") || (document.body.insertAdjacentHTML("beforeend", `<div class="tip" id="tip" role="tooltip"></div>`), $("#tip"));
@@ -858,6 +977,12 @@ document.addEventListener("click", async (e) => {
 // ---------- boot ----------
 shell();
 $$("[data-i]").forEach((el) => (el.outerHTML = icon(el.dataset.i)));
-pages[page]?.().catch((e) => console.error(e));
+Promise.resolve(pages[document.body.dataset.page]?.()).catch((e) => console.error(e));
+// YouTube loads only when the visitor presses play
+document.addEventListener("click", (e) => {
+  const b = e.target.closest(".yt-play"); if (!b) return;
+  const box = b.closest("[data-yt]");
+  box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(box.dataset.yt)}?autoplay=1" title="Video" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+});
 const io = "IntersectionObserver" in window && new IntersectionObserver((es) => es.forEach((x) => x.isIntersecting && (x.target.classList.add("in"), io.unobserve(x.target))), { rootMargin: "0px 0px -8% 0px" });
 $$(".reveal").forEach((el) => (io ? io.observe(el) : el.classList.add("in")));

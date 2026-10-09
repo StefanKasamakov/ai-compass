@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code Mods: What They Are and the Ones Worth Knowing · Which AI Map</title>
+<meta name="description" content="Claude Code mods explained in plain English: what they change, the built-in and well-known mods, what each can reach on your computer, and how to install one.">
+<link rel="canonical" href="https://whichaimap.com/mods.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Which AI Map">
+<meta property="og:title" content="Claude Code Mods: What They Are and the Ones Worth Knowing · Which AI Map">
+<meta property="og:description" content="Claude Code mods explained in plain English: what they change, the built-in and well-known mods, what each can reach on your computer, and how to install one.">
+<meta property="og:url" content="https://whichaimap.com/mods.html">
+<meta property="og:image" content="https://whichaimap.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Claude Code Mods: What They Are and the Ones Worth Knowing · Which AI Map">
+<meta name="twitter:description" content="Claude Code mods explained in plain English: what they change, the built-in and well-known mods, what each can reach on your computer, and how to install one.">
+<meta name="twitter:image" content="https://whichaimap.com/assets/og.png">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=32">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="mods">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">Claude Code mods</div>
+    <h1>Mods change how Claude Code looks and works.</h1>
+    <p class="lead">Since October 2026, Claude Code can be extended with mods: small programs that add panes, meters, buttons, games and safety checks to the coding assistant, or change how it behaves. Here is what they are, the well-known ones, and what each one can reach on your computer.</p>
+    <div class="row" style="margin-top:1.2rem"><a class="btn primary" href="#directory"><i data-i="search"></i>Browse the mods</a><a class="btn" href="#install"><i data-i="terminal"></i>How to install one</a></div>
+  </div></header>
+
+  <section id="what"><div class="wrap lesson">
+    <div><div class="kicker">The idea</div><h2>What a mod is</h2>
+      <p class="lead">A skill changes what Claude knows. A mod changes Claude Code itself.</p></div>
+    <div>
+      <p>A mod is a plugin written in JavaScript or TypeScript that runs inside Claude Code. It is called when something happens: Claude is about to run a tool, you send a message, or part of the screen is drawn. It can watch that moment, change it, or take it over.</p>
+      <dl class="gloss" style="margin-top:1.2rem">
+        <div><dt>Draw on screen</dt><dd>A pane beside the conversation, a band above the prompt, buttons and text fields: usage meters, agent dashboards, previews, even small games.</dd></div>
+        <div><dt>Restyle Claude Code</dt><dd>Change how tool rows, the spinner or Claude's replies look. The permission prompt is the one thing a mod cannot restyle.</dd></div>
+        <div><dt>Step into an action</dt><dd>Hold a risky command until you confirm it, hide secrets before the model reads them, or send one request to another model.</dd></div>
+        <div><dt>Add commands</dt><dd>A <code>/command</code> that runs at once, even while Claude is busy, without starting a new answer.</dd></div>
+      </dl>
+      <div class="callout ok try"><i data-i="zap"></i><div><b>Where they work.</b> Claude Code 2.1.287 or later, in the terminal and in the Code tab of the Claude desktop app. In the VS Code chat panel, <code>claude -p</code> and cloud sessions a mod still runs, but nothing it draws is shown.</div></div>
+    </div>
+  </div></section>
+
+  <section id="compare"><div class="wrap">
+    <div class="kicker">Mod, skill, hook or MCP?</div>
+    <h2>Four ways to extend Claude, side by side</h2>
+    <dl class="vs-table lv-table" style="margin-top:1.2rem">
+      <div class="lv-row lv-names lv4"><dt></dt><dd>Mod</dd><dd>Skill</dd><dd>MCP connector</dd><dd>Settings hook</dd></div>
+      <div class="lv-row lv4"><dt>What it is<small>in one line</small></dt><dd data-app="Mod">Code that runs inside Claude Code</dd><dd data-app="Skill">A file of instructions Claude reads</dd><dd data-app="MCP">A plug that gives Claude new tools</dd><dd data-app="Hook">A script that runs on an event</dd></div>
+      <div class="lv-row lv4"><dt>Changes<small>what it affects</small></dt><dd data-app="Mod">The screen, commands, tool calls, prompts</dd><dd data-app="Skill">What Claude knows and how it works</dd><dd data-app="MCP">Which apps Claude can reach</dd><dd data-app="Hook">Whether an action goes ahead</dd></div>
+      <div class="lv-row lv4"><dt>Can draw<small>on screen</small></dt><dd data-app="Mod">Yes</dd><dd data-app="Skill">No</dd><dd data-app="MCP">No</dd><dd data-app="Hook">No</dd></div>
+      <div class="lv-row lv4"><dt>Pick it when<small>the job</small></dt><dd data-app="Mod">You want a pane, a meter, a button or a guard</dd><dd data-app="Skill">You keep pasting the same instructions</dd><dd data-app="MCP">Claude needs your calendar, files or database</dd><dd data-app="Hook">You want to block or log something with a script</dd></div>
+    </dl>
+    <p class="muted" style="font-size:.85rem;margin-top:.8rem">One plugin can contain all four. More on <a href="skills.html">skills</a> and <a href="mcp.html">MCP</a>.</p>
+  </div></section>
+
+  <section id="directory"><div class="wrap">
+    <div class="spread"><div><div class="kicker">The directory</div><h2><span id="modCount">100+</span> mods worth knowing</h2></div></div>
+    <p class="lead">The mods built into Claude Code, Anthropic's samples, and the community's well-known picks from about <span id="modTotal">3,000</span> public mods. For each one: what it does, what it can reach on your computer, and the exact commands to install it.</p>
+    <div class="toolbar" style="margin-top:1.4rem">
+      <label class="sr" for="modQ">Search mods</label>
+      <input id="modQ" class="hero-search" type="search" placeholder="Search: usage, git, pet, browser, secrets…">
+      <span id="modCat" class="main-pick"></span><span id="modReach"></span>
+    </div>
+    <div class="tool-grid" id="modGrid"></div>
+    <div class="row more-row" id="modMore"></div>
+    <p class="muted" style="font-size:.85rem;margin-top:1.4rem">Community list and access data from the <a href="https://github.com/karanb192/awesome-claude-code-mods" target="_blank" rel="noopener">awesome-claude-code-mods</a> catalogue, which scans public mods with Claude's own validator. Refreshed every six hours.</p>
+  </div></section>
+
+  <section id="install"><div class="wrap lesson">
+    <div><div class="kicker">Install</div><h2>Add a mod in three steps</h2>
+      <p class="lead">Mods install like any Claude Code plugin. Each mod's page in the directory gives its exact commands.</p></div>
+    <div>
+      <ol class="steps">
+        <li><h3>Add the author's marketplace</h3><p>Inside Claude Code, type <code>/plugin marketplace add owner/repo</code> with the GitHub name of the mod's repository.</p></li>
+        <li><h3>Install the mod</h3><p>Type <code>/plugin install name@marketplace</code>. To only try it once, start Claude Code with <code>claude --plugin-dir ./path-to-the-mod</code> instead.</p></li>
+        <li><h3>Load it</h3><p>Run <code>/reload-plugins</code>, or restart Claude Code. <code>/plugin</code> shows a line such as "1 mod active".</p></li>
+      </ol>
+      <h3 style="margin-top:1.8rem">Switching mods off</h3>
+      <ul class="vs-list"><li>One mod: disable or uninstall it in <code>/plugin</code>, tab Installed.</li><li>All mods for one session: start with <code>claude --safe-mode</code>.</li><li>All mods, always: set <code>"disableAllHooks": true</code> in <code>~/.claude/settings.json</code>.</li></ul>
+    </div>
+  </div></section>
+
+  <section id="trust"><div class="wrap lesson">
+    <div><div class="kicker">Before you install</div><h2>A mod runs as you</h2>
+      <p class="lead">Mods are not sandboxed. Install them only from authors you trust.</p></div>
+    <div>
+      <p>Once loaded, a mod can do anything your user account can:</p>
+      <ul class="vs-list no"><li>Read and change files anywhere you can, and start programs</li><li>Read your environment variables and settings, including API keys</li><li>See every prompt you send and every action Claude takes</li><li>Approve an action before you are asked, or send a message as if you typed it</li><li>Use the internet, and spend your plan's usage by calling a model</li></ul>
+      <h3 style="margin-top:1.6rem">Check one in a minute</h3>
+      <p class="muted">Download the mod's folder, then ask Claude Code's own validator what it does, without running it. The <code>hooks:</code> and <code>calls:</code> lines list what it listens to and what it asks for.</p>
+      <div class="term" style="margin:.8rem 0"><div class="term-bar"><i></i><i></i><i></i><span>your terminal</span><button class="copy" data-copy="claude plugin validate ./some-mod">copy</button></div><pre><code>claude plugin validate ./some-mod</code></pre></div>
+      <div class="callout try"><i data-i="shield"></i><div><b>Our access labels</b> (Only draws, Reads, Writes or runs, Uses the internet) come from that same check, run on every mod in the list. A mod that only draws is the safest kind to try first.</div></div>
+    </div>
+  </div></section>
+
+  <section id="make"><div class="wrap">
+    <div class="callout ok"><i data-i="bot"></i><div><b>Make your own.</b> You do not have to write code: in Claude Code, describe the mod you want, for example "a band above the prompt that shows how much of my 5-hour limit is left". Claude Code includes a skill for writing mods and builds it for you. <a href="https://code.claude.com/docs/en/plugins/mods/overview" target="_blank" rel="noopener">Official mods guide</a></div></div>
+  </div></section>
+
+  <dialog class="tool-dlg" id="toolDlg" aria-label="Mod details"><div id="toolBody"></div></dialog>
+</main>
+<script src="assets/site.js?v=32" defer></script>
+</body>
+</html>

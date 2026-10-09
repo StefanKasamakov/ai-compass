@@ -65,6 +65,10 @@ jobs:
         continue-on-error: true
         run: node agent/skills.mjs
 
+      - name: Mods directory (community catalogue + Anthropic's own)
+        continue-on-error: true
+        run: node agent/mods.mjs
+
       - name: Commit data
         run: |
           git config user.name "ai-compass-agent"
