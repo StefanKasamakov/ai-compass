@@ -1,6 +1,19 @@
 {
- "updated": "2026-10-09T11:29:58.302Z",
+ "updated": "2026-10-09T13:15:33.085Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "A new feature for my blog, built using my voice",
+   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/",
+   "date": "2026-10-09T12:54:06.000Z",
+   "summary": "Simon Willison shared a workflow demonstrating how to build web software hands-free using Codex voice mode.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/newsletters-card.webp"
+  },
   {
    "source": "Simon Willison",
    "title": "ttok 1.0",
@@ -53,6 +66,21 @@
    "big": true,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!q_iv!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHUDOG1Jb0AAHQ2I.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
+   "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
+   "date": "2026-10-08T07:07:34Z",
+   "discuss": "https://news.ycombinator.com/item?id=50002665",
+   "summary": "A developer used Anthropic's Claude Code CLI tool to process astronomical data and discover an exoplanet candidate.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
   },
   {
    "source": "GitHub release",
@@ -495,6 +523,20 @@
    "big": false,
    "ai": true,
    "image": "https://www.autodidacts.io/content/images/size/w1200/2026/08/ai-vibecoding-vs-coding-by-hand-thrill-learning-fun-curve-1.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "What is Codemode",
+   "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
+   "date": "2026-10-06T13:41:03Z",
+   "discuss": "https://news.ycombinator.com/item?id=49978333",
+   "summary": "An explainer exploring Codemode, a paradigm for integrating LLM code generation into automated developer workflows.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://lucumr.pocoo.org/social/2026-10-06-codemode-social.png"
   },
   {
    "source": "OpenAI",
@@ -1004,39 +1046,6 @@
    "big": false,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!wmoR!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTfV52SWgAIlX3W.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Matthew Green",
-   "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
-   "date": "2026-10-01T06:29:01.000Z",
-   "summary": "[...] Put these pieces together and you have the two halves of a worm: a payload that hijacks the agent, and an agent that will carry the payload to the next agent. Agents in separately-isolated sandboxes discovered that they could leave instructions for each other in a shared package cache, and those instructions changed what the recipients did. Replace the package cache with email, Slack and sha",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
-   "url": "https://openai.com/index/the-den-family-social",
-   "date": "2026-10-01T00:00:00.000Z",
-   "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.159.3",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.159.3",
-   "date": "2026-09-30T22:57:34Z",
-   "summary": "New release of Codex CLI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://opengraph.githubassets.com/9e27ffaede99c3e219c26ab25a4f0901a882173446898c935250dd0fd245b303/openai/codex/releases/tag/rust-v0.159.3"
   }
  ]
 }
