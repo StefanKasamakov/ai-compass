@@ -1,4 +1,89 @@
 {
- "updated": "2026-10-09T13:29:27.411Z",
- "items": []
+ "updated": "2026-10-09T22:43:07.914Z",
+ "items": [
+  {
+   "repo": "franzenzenhofer/big-arrow-on-the-screen",
+   "stars": 430,
+   "desc": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT.",
+   "created": "2026-10-08T08:39:15Z",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "claude-code",
+    "cli"
+   ],
+   "lang": "Swift",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 359,
+    "url": "https://news.ycombinator.com/item?id=50018817"
+   }
+  },
+  {
+   "repo": "strands-agents/box",
+   "stars": 285,
+   "desc": "Run AI agents in a sandbox that restricts what they can execute, read, write, and reach on the network. Box combines OS isolation with default-deny Dogwood policies and credential injection that keeps secrets outside the agent. Written in Rust. Supports macOS on Apple silicon, with Linux support planned.",
+   "created": "2026-10-02T20:34:08Z",
+   "topics": [
+    "agentic-ai",
+    "agents",
+    "ai",
+    "ai-agents"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Jakeschincariol/founder-skill",
+   "stars": 187,
+   "desc": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marketing director, a CFO, and a consumer panel of 100 buyer agents. Free, MIT.",
+   "created": "2026-10-07T01:07:13Z",
+   "topics": [
+    "business-plan",
+    "claude-code",
+    "claude-skills",
+    "startup"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "AbdoslamB/InkDoc",
+   "stars": 53,
+   "desc": "Turn any document into clean, AI-ready Markdown — locally on your machine. Desktop app for Windows, macOS & Linux powered by MarkItDown, Docling, GLM-OCR and Markit.",
+   "created": "2026-09-27T01:28:04Z",
+   "topics": [
+    "cross-platform",
+    "desktop-app",
+    "docling",
+    "document-conversion"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "professorpalmer/bonsai-ada-surgery",
+   "stars": 44,
+   "desc": "Bonsai 2 27B: 262k context (trained max) on 12 GB, 54 to 97 tok/s decode, 2x prefill, q8_0 KV recipe, grammar tool calls 9/9. Same ternary weights. Windows bundle + receipts.",
+   "created": "2026-09-19T05:38:41Z",
+   "topics": [
+    "bonsai",
+    "cuda",
+    "llama-cpp",
+    "local-llm"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  }
+ ]
 }

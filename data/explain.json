@@ -10768,5 +10768,171 @@
   "repo": "VinkyDev/vibestart",
   "at": "2026-10-09",
   "source": "trending"
+ },
+ "franzenzenhofer/big-arrow-on-the-screen": {
+  "cat": "harness",
+  "kind": "macOS Agent Skill",
+  "what": "A macOS command-line tool and agent skill that draws temporary interactive arrows, boxes, and text directly on top of your screen.",
+  "why": "AI agents often get stuck when macOS permission boxes, 2FA prompts, or OAuth screens pop up. This tool lets them visually point out exactly what button or input requires human action instead of stalling in the terminal.",
+  "level": "setup",
+  "start": "brew install franzenzenhofer/tap/bigarrow",
+  "caution": "This tool only works on macOS 14 and newer, and requires Xcode 16 or later if you build from source.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "A tool that draws temporary arrows on your Mac screen to show you where to click.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Point out permission buttons for humans to click",
+   "Display copy-paste helpers on screen for verification codes",
+   "Create interactive step-by-step visual product tours"
+  ],
+  "steps": [
+   "Install the tool with `brew install franzenzenhofer/tap/bigarrow`",
+   "Integrate it into Claude Code or Codex using `bigarrow install-skill`",
+   "Call `bigarrow point` with target application and element details to draw pointers"
+  ],
+  "repo": "franzenzenhofer/big-arrow-on-the-screen",
+  "at": "2026-10-09",
+  "source": "trending"
+ },
+ "strands-agents/box": {
+  "cat": "harness",
+  "kind": "AI agent sandbox",
+  "what": "An open-source sandbox engine that restricts what AI agents can execute, read, write, and access over the network.",
+  "why": "Autonomous agents can execute dangerous shell commands, leak credentials, or access sensitive files. Reach for Box when you want OS-level isolation and default-deny policies around an agent without exposing host secrets.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/strands-agents/box/main/download.sh | sh",
+  "caution": "Currently in preview and only supports macOS 15 or later on Apple silicon; Linux support is planned but not yet released.",
+  "alts": [
+   "NVIDIA/OpenShell",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A secure container that stops AI agents from running harmful commands, stealing secrets, or reading private files.",
+  "tags": [
+   "code",
+   "private",
+   "automate"
+  ],
+  "useFor": [
+   "Isolate coding agents from sensitive host files and networks",
+   "Inject credentials into API requests without exposing raw keys",
+   "Enforce fine-grained allow and deny policies on tool calls"
+  ],
+  "steps": [
+   "Download the binaries to a local folder: `curl -fsSL https://raw.githubusercontent.com/strands-agents/box/main/download.sh | sh`",
+   "Verify the installation by running `./box-core/box --version` in your terminal.",
+   "Define environment grants in `box.toml` and fine-grained rule policies in `policy.dw`.",
+   "Run your chosen agent application inside the sandboxed environment."
+  ],
+  "repo": "strands-agents/box",
+  "at": "2026-10-09",
+  "source": "trending"
+ },
+ "Jakeschincariol/founder-skill": {
+  "cat": "harness",
+  "kind": "Claude business-analysis skills",
+  "what": "A suite of eleven business-testing skills and Python utilities designed for Claude and Claude Code to validate startup ideas, unit economics, and target markets.",
+  "why": "It helps founders stress-test business models and find potential flaws before spending real money. Reach for it when you want to simulate consumer feedback, map competitors, and compute unit economics directly from your AI assistant.",
+  "level": "setup",
+  "start": "/plugin marketplace add Jakeschincariol/founder-skill",
+  "caution": "The consumer panel uses simulated AI buyers who tend to be highly agreeable; their purchase rates should be treated as an absolute upper bound rather than a real market forecast.",
+  "alts": [
+   "SuperClaude-Org/SuperClaude_Framework",
+   "anthropics/knowledge-work-plugins"
+  ],
+  "packages": [],
+  "plain": "Eleven free AI assistants that stress-test your business idea and calculate finances before you launch.",
+  "tags": [
+   "supercharge",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Simulate 100 virtual buyers to identify product objections",
+   "Calculate unit economics and year-one cash requirements",
+   "Generate a structured business plan from simulation data"
+  ],
+  "steps": [
+   "Install the plugin inside Claude Code using `/plugin marketplace add Jakeschincariol/founder-skill`",
+   "Or paste any skill markdown file directly into a standard Claude chat",
+   "Run the skills sequentially to build your business analysis folder"
+  ],
+  "repo": "Jakeschincariol/founder-skill",
+  "at": "2026-10-09",
+  "source": "trending"
+ },
+ "AbdoslamB/InkDoc": {
+  "cat": "memory",
+  "kind": "Desktop document converter",
+  "what": "A desktop app and local API that turns documents, PDFs, and web pages into clean Markdown for AI workflows.",
+  "why": "Raw PDFs and office files are messy and difficult to feed into AI models. Reach for this to extract text and tables locally using engines like MarkItDown and Docling.",
+  "level": "easy",
+  "start": "Download and run the installer or portable application from GitHub Releases.",
+  "caution": "The application is not code-signed, so Windows SmartScreen and macOS Gatekeeper will trigger security warnings on first launch.",
+  "alts": [
+   "microsoft/markitdown",
+   "docling-project/docling",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "A desktop app that turns PDFs and documents into clean Markdown text on your computer.",
+  "tags": [
+   "docs",
+   "knowledge",
+   "private"
+  ],
+  "useFor": [
+   "Convert PDFs, DOCX, and images into clean Markdown files",
+   "Prepare messy documents for local RAG pipelines and prompts",
+   "Extract tables and scanned text using bundled OCR engines"
+  ],
+  "steps": [
+   "Download the installer or portable app for your operating system from GitHub Releases.",
+   "Open InkDoc, allowing the unsigned app in Windows or macOS security settings if prompted.",
+   "Drag and drop files, directories, or URLs to convert them into Markdown."
+  ],
+  "repo": "AbdoslamB/InkDoc",
+  "at": "2026-10-09",
+  "source": "trending"
+ },
+ "professorpalmer/bonsai-ada-surgery": {
+  "cat": "local",
+  "kind": "Local LLM runner",
+  "what": "An optimized compilation and configuration of llama.cpp designed to run the Bonsai 2 27B model with its full 262k context on consumer GPUs.",
+  "why": "Normally, running large models with giant context windows requires expensive enterprise hardware. This setup lets you run the Bonsai 27B model on a consumer-grade 12 GB RTX 4070 by using system RAM and GPU VRAM together.",
+  "level": "setup",
+  "start": ".\\start-server.ps1",
+  "caution": "This project is highly experimental and specifically tuned for Windows and Linux systems with NVIDIA GPUs. You must manually download large GGUF model files to use it.",
+  "alts": [
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "Run a smart, long-context AI model on a standard consumer graphics card.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run the Bonsai 2 27B model on consumer GPUs",
+   "Process long documents up to 262k tokens locally",
+   "Speed up local code generation and tool calls"
+  ],
+  "steps": [
+   "Download the Windows bundle zip from the repository releases and extract it.",
+   "Download the Ternary-Bonsai GGUF model file from Hugging Face into the models folder.",
+   "Launch the local server by running `.\\start-server.ps1` in PowerShell."
+  ],
+  "repo": "professorpalmer/bonsai-ada-surgery",
+  "at": "2026-10-09",
+  "source": "trending"
  }
 }
