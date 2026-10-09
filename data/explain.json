@@ -10661,5 +10661,112 @@
   "repo": "mcpdelta/mcpdelta",
   "at": "2026-10-08",
   "source": "trending"
+ },
+ "alibaba/open-code-review": {
+  "cat": "harness",
+  "kind": "AI code reviewer",
+  "what": "Open Code Review is an AI-powered CLI code review assistant that combines deterministic pipelines with an LLM agent to inspect Git diffs and codebases with line-level accuracy.",
+  "why": "General-purpose coding agents often hallucinate line numbers, miss files in large PRs, or waste tokens. Open Code Review solves this by pairing deterministic rule filtering and file bundling with targeted LLM reviews.",
+  "level": "setup",
+  "start": "npm install -g @alibaba-group/open-code-review",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "Aider-AI/aider"
+  ],
+  "packages": [
+   "@alibaba-group/open-code-review"
+  ],
+  "plain": "An automated code reviewer that inspects git diffs and full files to find bugs with exact line numbers.",
+  "tags": [
+   "code",
+   "supercharge",
+   "save"
+  ],
+  "useFor": [
+   "Review Git pull requests with line-level accuracy",
+   "Scan entire unfamiliar codebases for vulnerabilities",
+   "Catch common defects like SQL injection and null pointer exceptions"
+  ],
+  "steps": [
+   "Install the CLI globally with `npm install -g @alibaba-group/open-code-review`.",
+   "Configure your LLM model provider by running `ocr config provider`.",
+   "Run `ocr` in any Git repository to review your current diffs."
+  ],
+  "repo": "alibaba/open-code-review",
+  "at": "2026-10-09",
+  "source": "trending"
+ },
+ "twostraws/SwiftUI-Agent-Skill": {
+  "cat": "harness",
+  "kind": "SwiftUI agent skill",
+  "what": "An agent skill that guides AI coding assistants to write modern, idiomatic SwiftUI and avoid common LLM mistakes.",
+  "why": "AI assistants frequently use deprecated SwiftUI APIs, omit VoiceOver labels, and introduce rendering performance bugs. Reach for this skill to ensure Claude Code, Codex, or Cursor generate clean, accessible Apple UI code.",
+  "level": "easy",
+  "start": "npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "google/skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A skill for AI coding tools that helps them write clean, modern SwiftUI without common mistakes.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Audit SwiftUI views for deprecated APIs",
+   "Fix VoiceOver accessibility and layout bugs",
+   "Improve SwiftUI state management and rendering performance"
+  ],
+  "steps": [
+   "Run `npx skills add https://github.com/twostraws/swiftui-agent-skill --skill swiftui-pro` to install the skill.",
+   "Choose whether to install it globally or only for your current project.",
+   "Trigger the skill in your assistant with `/swiftui-pro` or natural language."
+  ],
+  "repo": "twostraws/SwiftUI-Agent-Skill",
+  "at": "2026-10-09",
+  "source": "trending"
+ },
+ "VinkyDev/vibestart": {
+  "cat": "harness",
+  "kind": "Fullstack project scaffolding",
+  "what": "Generates verified, type-safe full-stack TypeScript projects built specifically with guidelines and strict tooling for AI coding agents.",
+  "why": "AI code generation often erodes over time due to missing boundaries and sloppy types; reach for this to bootstrap a project configured with strict linter, test, and AGENTS.md rules so agents make fewer mistakes.",
+  "level": "setup",
+  "start": "npx vibestart-cli my-app",
+  "caution": "",
+  "alts": [
+   "stackblitz-labs/bolt.diy",
+   "anthropics/claude-code",
+   "continuedev/continue"
+  ],
+  "packages": [
+   "vibestart-cli"
+  ],
+  "plain": "Build a verified full-stack TypeScript starter app tailored for AI agents to write clean code.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Scaffold full-stack TypeScript web applications with strict types",
+   "Equip Claude Code or Cursor with strict agent guidelines",
+   "Upgrade generated project templates cleanly without breaking custom code"
+  ],
+  "steps": [
+   "Run `npx vibestart-cli my-app` in your terminal to pick your framework and tools.",
+   "Alternatively, install the agent skill using `npx skills add VinkyDev/vibestart --skill vibestart` in your coding agent.",
+   "Open the generated project and let your agent follow the built-in AGENTS.md guidelines."
+  ],
+  "repo": "VinkyDev/vibestart",
+  "at": "2026-10-09",
+  "source": "trending"
  }
 }
