@@ -17,10 +17,13 @@ export function checkChanges(beforeList, afterList, catalogRaw, usedIds) {
   if (new Set(afterList.map((m) => m.id)).size !== afterList.length) problems.push("duplicate ids");
   for (const m of touched) {
     const b = before[m.id];
-    const needsProof = !b || b.name !== m.name || b.in !== m.in || b.out !== m.out;
-    if (!needsProof || m.in == null) continue; // text-only edits and open-weight "free*" models need no catalog proof
+    const newModel = !b || b.name !== m.name;
+    if (!newModel && b.in === m.in && b.out === m.out) continue; // wording-only edits need no catalog proof
     const c = catalogRaw.find((x) => !x.id.includes(":") && norm(x.name) === norm(m.name));
     if (!c) { problems.push(`"${m.name}" was not found in the OpenRouter catalog`); continue; }
+    // the "open" group is for models anyone can download: the catalog must link the weights
+    if (m.p === "open" && newModel && !c.hugging_face_id) { problems.push(`"${m.name}" has no downloadable weights listed, so it does not belong under open models`); continue; }
+    if (m.in == null) continue; // open-weight models are listed as "free*", not by API price
     const cin = usd(c.pricing.prompt), cout = usd(c.pricing.completion);
     if (Math.abs(cin - m.in) > 0.005 || Math.abs(cout - m.out) > 0.005) problems.push(`"${m.name}" price ${m.in}/${m.out} does not match the catalog ${cin}/${cout}`);
   }

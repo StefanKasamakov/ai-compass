@@ -43,6 +43,7 @@ const res = await askJSON({
     "Set changed=true only for real, data-backed changes: a new frontier/balanced/fast text model from Anthropic, OpenAI or Google; a leading new open-weight model; a price or context change; a curated model that is clearly superseded (replace it and keep its id if it is the same line, e.g. a new Sonnet replaces the old Sonnet under id 'sonnet'). " +
     "Keep ids stable (tasks reference them), keep media models (image/video/voice/music) untouched unless the catalog proves otherwise, and write 'best' in the same plain, hype-free tone. " +
     "Use the model's exact catalog name without the 'Company: ' prefix, and copy prices exactly from the catalog. " +
+    "The group p='open' is only for open-weight models people can download (the catalog lists a hugging_face_id); a successor must be the same size line (a new Small replaces Small, never Large). " +
     "released: YYYY-MM-DD from the catalog for new models, keep existing values otherwise. note: optional one-line tip (e.g. 'Pro' variants, plan availability, upcoming successor); keep existing notes unless outdated. " +
     "Aim for the same size list (about 20-25 models); this is a curated guide, not a catalog. " +
     "summary: a short markdown bullet list of every change and the catalog evidence for it; empty string if nothing changed.",

@@ -33,4 +33,17 @@ r = checkChanges([haiku4, ...filler], [haiku4, ...filler.map((m) => ({ ...m, bes
 assert.match(r.problems.join(), /changed at once/);
 r = checkChanges([haiku4, ...filler], [{ ...haiku4, best: "y" }, ...filler], catalog, used);
 assert.deepEqual(r.problems, []);
+// an "open" model swapped for one without downloadable weights is stopped (Mistral Small 4 -> Large 4, 9 Oct 2026)
+const small = { id: "mistral", p: "open", name: "Mistral Small 4", tier: "Open", best: "x", price: "free*" };
+const openCat = [
+  { id: "mistralai/mistral-large-4-0", name: "Mistral: Mistral Large 4", pricing: { prompt: 0.00000068, completion: 0.00000209 } },
+  { id: "mistralai/mistral-small-2603", name: "Mistral: Mistral Small 4", hugging_face_id: "mistralai/Mistral-Small-4-119B-2603", pricing: { prompt: 0, completion: 0 } },
+  { id: "mistralai/mistral-small-2610", name: "Mistral: Mistral Small 5", hugging_face_id: "mistralai/Mistral-Small-5", pricing: { prompt: 0, completion: 0 } },
+];
+r = checkChanges([small, ...filler], [{ ...small, name: "Mistral Large 4" }, ...filler], openCat, new Set(["mistral"]));
+assert.match(r.problems.join(), /no downloadable weights/);
+r = checkChanges([small, ...filler], [{ ...small, name: "Mistral Small 5" }, ...filler], openCat, new Set(["mistral"]));
+assert.deepEqual(r.problems, []);
+r = checkChanges([small, ...filler], [{ ...small, name: "Mistral Tiny 9" }, ...filler], openCat, new Set(["mistral"]));
+assert.match(r.problems.join(), /not found/);
 console.log("models-check: ok");
