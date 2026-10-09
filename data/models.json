@@ -62,11 +62,12 @@
    "p": "anthropic",
    "name": "Claude Haiku 5.5",
    "tier": "Fast",
-   "best": "Simple tasks at scale: classification, extraction, chatbots.",
+   "best": "Simple tasks at scale: classification, extraction, routing, chatbots. The cheapest Claude.",
    "in": 0.1,
    "out": 0.5,
    "ctx": "1M",
-   "released": "2026-10-07"
+   "released": "2026-10-07",
+   "note": "New 7 Oct: replaces Haiku 4.5 at a tenth of the price, with a 1M context window."
   },
   {
    "id": "mythos",

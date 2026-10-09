@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30",
+ "updated": "2026-10-09",
  "metrics": [
   {
    "id": "aa",
@@ -231,54 +231,9 @@
   },
   "haiku": {
    "aa": {
-    "v": 16.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "agents": {
-    "v": 3.2,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "tb40": {
-    "v": 0,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "longctx": {
-    "v": 74.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "hle": {
-    "v": 10.4,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "science": {
-    "v": 0,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "scicode": {
-    "v": 42.2,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "mmmu": {
-    "v": 58.6,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Claude 4.5 Haiku (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "arc": {
-    "v": 4,
-    "src": "https://arcprize.org/leaderboard",
-    "note": "ARC-AGI-2 Semi-Private, Thinking 32K (best variant, 4.03%)"
-   },
-   "arena": {
-    "v": 1414,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "claude-haiku-4-5-20251001, text overall (style control), rank 137, snapshot read 2026-09-29"
+    "v": 43,
+    "src": "https://artificialanalysis.ai/models/claude-haiku-5-5",
+    "note": "\"Claude Haiku 5.5 (Max)\", the only variant scored so far; other tests not published yet"
    }
   },
   "astra": {
@@ -335,54 +290,9 @@
   },
   "sol": {
    "aa": {
-    "v": 47.5,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "agents": {
-    "v": 61.6,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "tb40": {
-    "v": 43.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "longctx": {
-    "v": 83.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "hle": {
-    "v": 47.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "science": {
-    "v": 30.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "scicode": {
-    "v": 57.6,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "mmmu": {
-    "v": 83.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"GPT-6 Sol (max)\" (max effort)"
-   },
-   "arc": {
-    "v": 89.6,
-    "src": "https://arcprize.org/results/openai-gpt-6-sol",
-    "note": "ARC-AGI-2 Semi-Private, Max"
-   },
-   "arena": {
-    "v": 1457,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "gpt-6-sol-max, text overall (style control), rank 60, 4,773 votes, snapshot read 2026-09-29"
+    "v": 52,
+    "src": "https://artificialanalysis.ai/models/gpt-6-1-sol",
+    "note": "\"GPT-6.1 Sol (max)\"; other tests not published yet"
    }
   },
   "luna": {
