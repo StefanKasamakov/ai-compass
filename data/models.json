@@ -232,12 +232,11 @@
   {
    "id": "mistral",
    "p": "open",
-   "name": "Mistral Large 4",
+   "name": "Mistral Small 4",
    "tier": "Open",
-   "best": "Mistral's flagship European model with 1M context. Strong reasoning and coding.",
+   "best": "European, Apache-2.0, 256K context. Easy on a company server.",
    "price": "free*",
-   "ctx": "1M",
-   "released": "2026-10-06"
+   "ctx": "256K"
   }
  ]
 }
