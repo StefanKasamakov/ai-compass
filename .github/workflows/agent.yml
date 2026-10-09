@@ -4,7 +4,7 @@ name: agent
 on:
   schedule:
     - cron: "17 */6 * * *"   # data refresh (GitHub stats, trending, news, votes)
-    - cron: "41 4 * * *"     # daily model watch (AI opens a PR if models changed)
+    - cron: "41 4 * * *"     # daily model watch (verified changes go live, the rest become a PR)
     - cron: "7 7 * * 1"      # Monday: weekly newsletter
   push:
     branches: [main]
@@ -76,19 +76,26 @@ jobs:
           git add data feed.xml 2>/dev/null || git add data
           git diff --cached --quiet || { git commit -m "agent: refresh data" && git pull --rebase -X theirs && git push; }
 
-      - name: Model watch (AI → pull request)
+      - name: Model watch (AI, checked by code; applied directly or as a pull request)
         continue-on-error: true   # a failed model check must never block publishing fresh data
         if: (env.GEMINI_API_KEY != '' || env.ANTHROPIC_API_KEY != '') && (github.event.schedule == '41 4 * * *' || github.event_name == 'workflow_dispatch')
-        env: { PR_BODY: pr-body.md, GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+        env: { PR_BODY: pr-body.md, MODEL_RESULT: model-result.txt, GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
+          node agent/models-check.test.mjs
           node agent/models-watch.mjs
-          git diff --quiet data/models.json && exit 0
-          branch="agent/models-$(date +%F)"
-          git checkout -b "$branch"
-          git add data/models.json
-          git commit -m "agent: model lineup changes"
-          git push -f origin "$branch"
-          gh pr create --title "Model lineup update $(date +%F)" --body-file pr-body.md --base main --head "$branch" || gh pr edit "$branch" --body-file pr-body.md
+          git diff --quiet data/models.json data/benchmarks.json && exit 0
+          if [ "$(cat model-result.txt)" = "auto" ]; then
+            git add data/models.json data/benchmarks.json
+            git commit -F pr-body.md
+            git pull --rebase -X theirs && git push
+          else
+            branch="agent/models-$(date +%F)"
+            git checkout -b "$branch"
+            git add data/models.json data/benchmarks.json
+            git commit -m "agent: model lineup changes"
+            git push -f origin "$branch"
+            gh pr create --title "Model lineup update $(date +%F)" --body-file pr-body.md --base main --head "$branch" || gh pr edit "$branch" --body-file pr-body.md
+          fi
 
   deploy:
     needs: update
