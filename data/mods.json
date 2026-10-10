@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-10T10:58:43.166Z",
- "scanned": "2026-10-09T09:10:35.513Z",
- "claudeVersion": "2.1.295",
- "total": 2959,
+ "updated": "2026-10-10T12:50:30.924Z",
+ "scanned": "2026-10-10T07:02:45.292Z",
+ "claudeVersion": "2.1.296",
+ "total": 3074,
  "categories": [
   [
    "builtin",
@@ -171,7 +171,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 6,
+   "stars": 8,
    "license": "MIT",
    "pushed": "2026-10-01T18:07:18Z",
    "marketplace": "cctop",
@@ -196,7 +196,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 5,
+   "stars": 6,
    "license": null,
    "pushed": "2026-09-15T19:01:52Z",
    "marketplace": "claude-mods",
@@ -222,7 +222,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 5,
+   "stars": 6,
    "license": null,
    "pushed": "2026-09-15T19:01:52Z",
    "marketplace": "claude-mods",
@@ -247,7 +247,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 5,
+   "stars": 6,
    "license": null,
    "pushed": "2026-09-15T19:01:52Z",
    "marketplace": "claude-mods",
@@ -277,7 +277,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 12,
+   "stars": 15,
    "license": "Apache-2.0",
    "pushed": "2026-10-09T00:40:26Z",
    "marketplace": "claude-agent-flow",
@@ -334,7 +334,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 8,
+   "stars": 10,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -363,7 +363,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 8,
+   "stars": 10,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -420,9 +420,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 8,
+   "stars": 11,
    "license": "Apache-2.0",
-   "pushed": "2026-10-08T07:21:02Z",
+   "pushed": "2026-10-09T14:20:24Z",
    "marketplace": "augiefra-mods",
    "plugin": "token-weather-usage"
   },
@@ -449,7 +449,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 43,
+   "stars": 56,
    "license": "MIT",
    "pushed": "2026-10-02T21:36:52Z",
    "marketplace": "claude-flightdeck",
@@ -517,7 +517,7 @@
    "validated": "passed",
    "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-07T10:56:29Z",
+   "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "hud"
   },
@@ -549,7 +549,7 @@
    "validated": "passed",
    "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-07T10:56:29Z",
+   "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "todo-bar"
   },
@@ -581,7 +581,7 @@
    "validated": "passed",
    "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-07T10:56:29Z",
+   "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "receipt"
   },
@@ -613,7 +613,7 @@
    "validated": "passed",
    "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-07T10:56:29Z",
+   "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "ts-band"
   },
@@ -758,11 +758,53 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 164,
+   "stars": 170,
    "license": "MIT",
-   "pushed": "2026-10-08T13:27:14Z",
+   "pushed": "2026-10-09T14:29:17Z",
    "marketplace": "claude-code-mods",
    "plugin": "context-bar"
+  },
+  {
+   "key": "Antreas-Strb/glanceflow/glanceflow",
+   "name": "glanceflow",
+   "repo": "Antreas-Strb/glanceflow",
+   "path": "glanceflow",
+   "url": "https://github.com/Antreas-Strb/glanceflow",
+   "plain": "A calm checklist above the prompt with Claude's plan in plain English, each step's progress and time left, a clear Needs you, and History with a daily team report.",
+   "cat": "usage",
+   "by": "Antreas-Strb",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "writes the prompt box",
+    "reads files",
+    "reads env vars",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "subagent spawns",
+    "classic hooks",
+    "every tool call"
+   ],
+   "surfaces": [
+    "UserMessage",
+    "AssistantMessage",
+    "SessionMode",
+    "ToolUse|ToolResult|ToolGroup",
+    "ToolProgress",
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-10T01:54:24Z",
+   "marketplace": "claude-mods",
+   "plugin": "glanceflow"
   },
   {
    "key": "valeryia-piatrova/token-hamster/token-hamster",
@@ -786,11 +828,37 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "pushed": "2026-10-08T19:51:45Z",
    "marketplace": "token-hamster",
    "plugin": "token-hamster"
+  },
+  {
+   "key": "amsultan2010/clawd-minecraft/clawd-minecraft",
+   "name": "clawd-minecraft",
+   "repo": "amsultan2010/clawd-minecraft",
+   "path": ".",
+   "url": "https://github.com/amsultan2010/clawd-minecraft",
+   "plain": "The 7-day limit as hearts and armor, the 5-hour limit as an XP bar and the context window as a hunger bar above the desktop prompt, with a pixel Clawd that walks beside them and reacts to questions and finished turns.",
+   "cat": "usage",
+   "by": "Abdullah Sultan",
+   "reach": 1,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "AskUserQuestion calls"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-09T21:55:08Z",
+   "marketplace": "clawd-minecraft",
+   "plugin": "clawd-minecraft"
   },
   {
    "key": "halluton/Mindful-Claude/mindful-claude",
@@ -839,7 +907,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 42,
+   "stars": 43,
    "license": "MIT",
    "pushed": "2026-09-15T00:19:51Z",
    "marketplace": "cc-arcade",
@@ -1082,7 +1150,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 8,
+   "stars": 10,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -1151,7 +1219,7 @@
    "validated": "passed",
    "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-07T10:56:29Z",
+   "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "spinner"
   },
@@ -1182,7 +1250,7 @@
    "validated": "passed",
    "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-07T10:56:29Z",
+   "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "hitokoto"
   },
@@ -1205,7 +1273,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 2,
+   "stars": 3,
    "license": "MIT",
    "pushed": "2026-10-05T15:37:16Z",
    "marketplace": "reporails-arcade",
@@ -1236,7 +1304,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "pushed": "2026-10-03T17:10:54Z",
    "marketplace": "meanwhile",
@@ -1282,6 +1350,7 @@
    "reach": 3,
    "reachLabels": [
     "network",
+    "reads env vars",
     "persists state",
     "draws"
    ],
@@ -1297,9 +1366,9 @@
     "AbovePrompt"
    ],
    "validated": "warnings",
-   "stars": 22,
+   "stars": 25,
    "license": null,
-   "pushed": "2026-10-09T00:30:38Z",
+   "pushed": "2026-10-09T14:55:14Z",
    "marketplace": "claude-pokemon",
    "plugin": "pokemon"
   },
@@ -1385,6 +1454,73 @@
    "pushed": "2026-10-08T12:25:58Z",
    "marketplace": "banana",
    "plugin": "banana"
+  },
+  {
+   "key": "DarkVelours/claude-code-galactic-battle/galactic-battle",
+   "name": "galactic-battle",
+   "repo": "DarkVelours/claude-code-galactic-battle",
+   "path": ".",
+   "url": "https://github.com/DarkVelours/claude-code-galactic-battle",
+   "plain": "A space battle above the prompt while a turn runs: each tool that works is a rebel shot, each failure an Empire shot, each subagent one more fighter, with a double-bladed lightsaber for context and the 5-hour limit, blaster sounds and optional music.",
+   "cat": "fun",
+   "by": "Dark Velours",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "changes config",
+    "reads files",
+    "reads env vars",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call"
+   ],
+   "surfaces": [
+    "Spinner",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-09T23:01:45Z",
+   "marketplace": "galactic-battle",
+   "plugin": "galactic-battle"
+  },
+  {
+   "key": "verdantran/code-city/code-city",
+   "name": "Code City",
+   "repo": "verdantran/code-city",
+   "path": ".",
+   "url": "https://github.com/verdantran/code-city",
+   "plain": "An idle city builder that grows as you prompt, where the tokens you spend buy buildings and other Claude Code sessions show up as neighbouring cities.",
+   "cat": "fun",
+   "by": "verdantran",
+   "reach": 2,
+   "reachLabels": [
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "subagent spawns",
+    "every prompt",
+    "Edit calls",
+    "Write calls",
+    "Bash calls"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-09T06:00:56Z",
+   "marketplace": "code-city",
+   "plugin": "code-city"
   },
   {
    "key": "sezaakgun/cc-pr-tracker/cc-pr-tracker",
@@ -1586,9 +1722,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 164,
+   "stars": 170,
    "license": "MIT",
-   "pushed": "2026-10-08T13:27:14Z",
+   "pushed": "2026-10-09T14:29:17Z",
    "marketplace": "claude-code-mods",
    "plugin": "review-watch"
   },
@@ -1651,6 +1787,69 @@
    "pushed": "2026-10-08T08:53:20Z",
    "marketplace": "review-inbox",
    "plugin": "review-inbox"
+  },
+  {
+   "key": "hellosverre/redgreen/redgreen",
+   "name": "redgreen",
+   "repo": "hellosverre/redgreen",
+   "path": ".",
+   "url": "https://github.com/hellosverre/redgreen",
+   "plain": "A Tests pane for the vitest, jest, pytest, cargo, go, bun and deno runs Claude makes, with each failure's detail, a status line and the run history.",
+   "cat": "git",
+   "by": "hellosverre",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls",
+    "PowerShell calls"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-09T21:28:59Z",
+   "marketplace": "redgreen",
+   "plugin": "redgreen"
+  },
+  {
+   "key": "mertkayacs/ultramod/ultramod",
+   "name": "ultramod",
+   "repo": "mertkayacs/ultramod",
+   "path": "plugin",
+   "url": "https://github.com/mertkayacs/ultramod",
+   "plain": "Ten mods in one plugin: a limits HUD, receipts that flag unverified test claims, a guard that snapshots work before destructive Git and rm commands with `/ultra undo`, secret redaction and switchable sets.",
+   "cat": "safety",
+   "by": "Mert Kaya",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "/\"^(?:Bash|Read|Edit|MultiEdit|Write|NotebookEdit|Grep|Glob)$\"/ calls",
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt|Pane"
+   ],
+   "validated": "passed",
+   "stars": 2,
+   "license": "MIT",
+   "pushed": "2026-10-09T20:03:15Z",
+   "marketplace": "ultramod",
+   "plugin": "ultramod"
   },
   {
    "key": "ray-amjad/awesome-claude-code-function-hooks/secret-redactor",
@@ -1751,7 +1950,7 @@
    "validated": "passed",
    "stars": 4,
    "license": null,
-   "pushed": "2026-10-09T06:36:48Z",
+   "pushed": "2026-10-10T04:35:59Z",
    "marketplace": null,
    "plugin": "plugin-health"
   },
@@ -1776,7 +1975,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 8,
+   "stars": 10,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -1894,11 +2093,44 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 164,
+   "stars": 170,
    "license": "MIT",
-   "pushed": "2026-10-08T13:27:14Z",
+   "pushed": "2026-10-09T14:29:17Z",
    "marketplace": "claude-code-mods",
    "plugin": "blast-radius"
+  },
+  {
+   "key": "NMenzel/claude-devtools-mod/devtools",
+   "name": "devtools",
+   "repo": "NMenzel/claude-devtools-mod",
+   "path": ".",
+   "url": "https://github.com/NMenzel/claude-devtools-mod",
+   "plain": "Breakpoints on tools, shell commands, file paths and failures that hold a call in Claude Code's question dialog for Continue, Step or Reject, with a dim \"break on\" line under each tool row, a dashboard pane with timeline and inspector, and an Error Lens that explains failed calls as confirmed, possible or unknown causes, making no network or model calls.",
+   "cat": "safety",
+   "by": "NMenzel",
+   "reach": 2,
+   "reachLabels": [
+    "writes files",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "classic hooks"
+   ],
+   "surfaces": [
+    "Pane",
+    "ToolUse",
+    "ToolGroup",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-09T16:22:48Z",
+   "marketplace": "claude-devtools-mod",
+   "plugin": "devtools"
   },
   {
    "key": "RadTech-Solutions/modwall/modwall",
@@ -1923,6 +2155,35 @@
    "pushed": "2026-10-08T12:11:51Z",
    "marketplace": "modwall",
    "plugin": "modwall"
+  },
+  {
+   "key": "alexlifexyz/p3c-guard/p3c-guard",
+   "name": "p3c-guard",
+   "repo": "alexlifexyz/p3c-guard",
+   "path": ".",
+   "url": "https://github.com/alexlifexyz/p3c-guard",
+   "plain": "Refuses a Write or Edit to a Java file when it would add a violation of the Alibaba Java Coding Guidelines (p3c), and hands the rule, line and fix back to Claude; checks locally with PMD and downloads its rule jar from Maven Central on first use.",
+   "cat": "safety",
+   "by": "alexlifexyz",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "draws"
+   ],
+   "sees": [
+    "Write calls",
+    "Edit calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-10T07:44:37Z",
+   "marketplace": "p3c-guard",
+   "plugin": "p3c-guard"
   },
   {
    "key": "lossless-claude/lcm/lcm",
@@ -1951,7 +2212,7 @@
    ],
    "surfaces": [],
    "validated": "warnings",
-   "stars": 49,
+   "stars": 52,
    "license": "MIT",
    "pushed": "2026-10-03T11:59:14Z",
    "marketplace": null,
@@ -1981,7 +2242,7 @@
    "validated": "passed",
    "stars": 35,
    "license": "MIT",
-   "pushed": "2026-10-08T02:49:44Z",
+   "pushed": "2026-10-09T16:20:16Z",
    "marketplace": null,
    "plugin": "kindex-modern"
   },
@@ -2049,7 +2310,7 @@
    "validated": "warnings",
    "stars": 11,
    "license": null,
-   "pushed": "2026-10-04T20:23:05Z",
+   "pushed": "2026-10-09T09:03:22Z",
    "marketplace": null,
    "plugin": "commonplace"
   },
@@ -2073,7 +2334,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 2,
+   "stars": 4,
    "license": "MIT",
    "pushed": "2026-09-14T20:15:34Z",
    "marketplace": "aside",
@@ -2102,7 +2363,7 @@
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-10-08T20:44:27Z",
+   "pushed": "2026-10-09T22:12:11Z",
    "marketplace": "harness-scope",
    "plugin": "harness-scope"
   },
@@ -2155,7 +2416,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 6,
+   "stars": 9,
    "license": "MIT",
    "pushed": "2026-10-07T16:47:01Z",
    "marketplace": "pinboard",
@@ -2216,7 +2477,7 @@
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-10-09T07:13:49Z",
+   "pushed": "2026-10-09T19:32:25Z",
    "marketplace": "agent-compact-advisor",
    "plugin": "agent-compact-advisor"
   },
@@ -2247,7 +2508,7 @@
    "validated": "passed",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-07T21:43:19Z",
+   "pushed": "2026-10-10T02:09:29Z",
    "marketplace": null,
    "plugin": "context-canary"
   },
@@ -2276,7 +2537,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 3737,
+   "stars": 3763,
    "license": "MIT",
    "pushed": "2026-10-07T07:57:10Z",
    "marketplace": "terminal-browser",
@@ -2288,13 +2549,15 @@
    "repo": "hellosverre/claude-skins",
    "path": ".",
    "url": "https://github.com/hellosverre/claude-skins",
-   "plain": "Restyles the transcript with themed tool rows, reply gutters and spinner words, and draws tables, code, diffs and shell output as animated cards on the desktop.",
+   "plain": "Restyles the transcript in fifteen themes, draws tables, code, diffs, Mermaid charts and math as cards, opens tool rows onto their full input and output, and adds a terminal shell card, a calm preset that turns off motion, and a usage band above the prompt.",
    "cat": "rendering",
    "by": "hellosverre",
-   "reach": 2,
+   "reach": 3,
    "reachLabels": [
+    "network",
     "runs processes",
     "drives Claude",
+    "reads files",
     "reads env vars",
     "persists state",
     "draws"
@@ -2311,15 +2574,16 @@
     "ToolResult",
     "UserMessage",
     "AssistantMessage",
+    "CommandOutput",
     "Spinner",
     "TurnDuration",
     "AbovePrompt",
     "AskUserQuestion"
    ],
    "validated": "passed",
-   "stars": 37,
+   "stars": 72,
    "license": "MIT",
-   "pushed": "2026-10-09T07:22:57Z",
+   "pushed": "2026-10-09T22:54:56Z",
    "marketplace": "hellosverre-mods",
    "plugin": "skins"
   },
@@ -2378,7 +2642,7 @@
     "AssistantMessage"
    ],
    "validated": "passed",
-   "stars": 16,
+   "stars": 18,
    "license": "MIT",
    "pushed": "2026-10-05T14:29:13Z",
    "marketplace": null,
@@ -2448,7 +2712,7 @@
    "validated": "passed",
    "stars": 19,
    "license": null,
-   "pushed": "2026-10-04T16:06:05Z",
+   "pushed": "2026-10-10T02:01:00Z",
    "marketplace": "explain-as",
    "plugin": "explain-as"
   },
@@ -2476,15 +2740,16 @@
    "surfaces": [
     "ToolGroup",
     "ToolUse",
+    "ToolResult",
     "TurnDuration",
     "CommandOutput",
     "UserMessage",
     "AssistantMessage"
    ],
    "validated": "passed",
-   "stars": 60,
+   "stars": 70,
    "license": "MIT",
-   "pushed": "2026-10-09T08:15:20Z",
+   "pushed": "2026-10-09T14:57:42Z",
    "marketplace": "prismantis",
    "plugin": "prismantis"
   },
@@ -2523,17 +2788,17 @@
     "AbovePrompt",
     "Pane",
     "ToolResult",
+    "UserMessage",
     "ToolGroup",
     "ToolUse",
     "TurnDuration",
     "CommandOutput",
-    "UserMessage",
     "AssistantMessage"
    ],
    "validated": "passed",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-09T08:07:07Z",
+   "pushed": "2026-10-09T15:13:47Z",
    "marketplace": "tessera",
    "plugin": "tessera"
   },
@@ -2591,11 +2856,41 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 164,
+   "stars": 170,
    "license": "MIT",
-   "pushed": "2026-10-08T13:27:14Z",
+   "pushed": "2026-10-09T14:29:17Z",
    "marketplace": "claude-code-mods",
    "plugin": "md-preview"
+  },
+  {
+   "key": "MohammedSaud404/rtl-terminal/rtl-terminal",
+   "name": "rtl-terminal",
+   "repo": "MohammedSaud404/rtl-terminal",
+   "path": ".",
+   "url": "https://github.com/MohammedSaud404/rtl-terminal",
+   "plain": "Lays out Arabic, Hebrew, Persian and Urdu replies and prompts right-to-left in Windows Terminal, conhost and VS Code's integrated terminal, with right-aligned lines, bullets on the right, mirrored brackets and code and links kept left-to-right, and makes no network, process or file calls.",
+   "cat": "rendering",
+   "by": "MohammedSaud404",
+   "reach": 1,
+   "reachLabels": [
+    "reads env vars",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "AssistantMessage",
+    "UserMessage"
+   ],
+   "validated": "passed",
+   "stars": 3,
+   "license": "MIT",
+   "pushed": "2026-10-10T12:09:12Z",
+   "marketplace": "rtl-terminal",
+   "plugin": "rtl-terminal"
   },
   {
    "key": "lorenzh/rabe/rabe",
@@ -2619,17 +2914,17 @@
     "subagent spawns",
     "classic hooks",
     "Edit|Write calls",
+    "Bash calls",
     "Workflow calls",
-    "every prompt",
-    "Bash calls"
+    "every prompt"
    ],
    "surfaces": [
-    "AbovePrompt"
+    "any component"
    ],
    "validated": "passed",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-09T07:31:54Z",
+   "pushed": "2026-10-10T04:38:32Z",
    "marketplace": "rabe",
    "plugin": "rabe"
   },
@@ -2661,7 +2956,7 @@
    "validated": "passed",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-09T07:08:05Z",
+   "pushed": "2026-10-09T09:51:53Z",
    "marketplace": "agent-shell-watch",
    "plugin": "agent-shell-watch"
   },
@@ -2692,7 +2987,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 1,
+   "stars": 2,
    "license": "MIT",
    "pushed": "2026-10-09T07:03:31Z",
    "marketplace": "agent-council",
@@ -2782,7 +3077,7 @@
    "validated": "passed",
    "stars": 8,
    "license": "Apache-2.0",
-   "pushed": "2026-10-09T07:41:16Z",
+   "pushed": "2026-10-10T04:44:42Z",
    "marketplace": null,
    "plugin": "autotel"
   },
@@ -2836,7 +3131,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 8,
+   "stars": 10,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -3011,7 +3306,7 @@
     "PromptHint"
    ],
    "validated": "passed",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "pushed": "2026-10-04T04:26:18Z",
    "marketplace": "helenkwok-mods",
@@ -3075,7 +3370,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "pushed": "2026-10-07T06:01:10Z",
    "marketplace": "vynnlee",
@@ -3108,9 +3403,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 164,
+   "stars": 170,
    "license": "MIT",
-   "pushed": "2026-10-08T13:27:14Z",
+   "pushed": "2026-10-09T14:29:17Z",
    "marketplace": "claude-code-mods",
    "plugin": "mission-control"
   },
@@ -3165,7 +3460,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "pushed": "2026-10-08T15:12:10Z",
    "marketplace": "telescope-claude-code",

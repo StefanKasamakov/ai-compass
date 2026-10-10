@@ -11037,5 +11037,145 @@
   "repo": "Router0824/OpsPilot-AI",
   "at": "2026-10-10",
   "source": "trending"
+ },
+ "multica-ai/andrej-karpathy-skills": {
+  "cat": "harness",
+  "kind": "coding guidelines",
+  "what": "A curated set of instructions for Claude Code and Cursor that enforces careful, minimal, and test-verified code edits.",
+  "why": "LLMs often overcomplicate code, assume intentions silently, or edit unrelated files. Use this when you want Claude Code or Cursor to stop making speculative changes and ask clarifying questions instead.",
+  "level": "easy",
+  "start": "/plugin marketplace add forrestchang/andrej-karpathy-skills",
+  "caution": "These guidelines intentionally bias the assistant toward caution and questions, which can feel slow for trivial one-line fixes.",
+  "alts": [
+   "anthropics/claude-code",
+   "obra/superpowers",
+   "gsd-build/get-shit-done"
+  ],
+  "packages": [],
+  "plain": "A single rules file that stops AI coding tools from overcomplicating code and touching unrelated files.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Prevent Claude Code from rewriting adjacent unrelated lines",
+   "Force the assistant to ask questions instead of guessing",
+   "Enforce test-first verification on multi-step coding tasks"
+  ],
+  "steps": [
+   "Run `/plugin marketplace add forrestchang/andrej-karpathy-skills` inside Claude Code",
+   "Run `/plugin install andrej-karpathy-skills@karpathy-skills` to enable the plugin",
+   "Alternatively, download `CLAUDE.md` directly into your repository root using curl"
+  ],
+  "repo": "multica-ai/andrej-karpathy-skills",
+  "at": "2026-10-10",
+  "source": "trending"
+ },
+ "huggingface/transformers": {
+  "cat": "local",
+  "kind": "Model framework",
+  "what": "Hugging Face Transformers is an open-source Python library to download, run, and train state-of-the-art machine learning models for text, vision, and audio.",
+  "why": "Provides a standard interface to run thousands of pretrained AI models locally or in Python applications instead of writing custom model code from scratch.",
+  "level": "dev",
+  "start": "pip install \"transformers[torch]\"",
+  "caution": "Running larger models locally requires significant RAM, storage, and a dedicated GPU.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "ml-explore/mlx-lm"
+  ],
+  "packages": [
+   "transformers"
+  ],
+  "plain": "A Python toolkit to run and fine-tune thousands of open-source AI models for text, speech, and images.",
+  "tags": [
+   "code",
+   "private",
+   "media"
+  ],
+  "useFor": [
+   "Run open-source language models locally with Python pipelines",
+   "Transcribe audio using models like Whisper",
+   "Classify images and process multimodal inputs in Python code"
+  ],
+  "steps": [
+   "Create and activate a virtual environment using venv or uv.",
+   "Install the library with PyTorch support using `pip install \"transformers[torch]\"`.",
+   "Load a model task using `pipeline(task=\"text-generation\", model=\"Qwen/Qwen2.5-1.5B\")` and pass your input text."
+  ],
+  "repo": "huggingface/transformers",
+  "at": "2026-10-10",
+  "source": "trending"
+ },
+ "hugohe3/ppt-master": {
+  "cat": "harness",
+  "kind": "PowerPoint agent workflow",
+  "what": "An AI agent workflow that turns documents or prompts into fully native, editable PowerPoint slide decks.",
+  "why": "Most AI slide generators create flat images or rigid templates. PPT Master builds native PowerPoint shapes, charts, and animations you can inspect and edit.",
+  "level": "setup",
+  "start": "",
+  "caution": "The repository includes several affiliate referral links for third-party AI API relay platforms.",
+  "alts": [
+   "dream-num/univer",
+   "addyosmani/agent-skills",
+   "anthropics/knowledge-work-plugins"
+  ],
+  "packages": [],
+  "plain": "Creates real, fully editable PowerPoint slides with charts and animations from documents using your AI agent.",
+  "tags": [
+   "docs",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Turn documents and notes into native PowerPoint presentation decks",
+   "Generate data-backed charts and vector shapes inside PPTX files",
+   "Build custom presentations adhering to your existing slide master templates"
+  ],
+  "steps": [
+   "Load the PPT Master workflow into your agent-capable AI tool",
+   "Provide your source topic, PDF, DOCX file, or outline",
+   "Let the agent construct slide narrative, native shapes, and charts",
+   "Download the generated .pptx file and edit directly in PowerPoint"
+  ],
+  "repo": "hugohe3/ppt-master",
+  "at": "2026-10-10",
+  "source": "trending"
+ },
+ "ranxianglei/billion-context": {
+  "cat": "tokens",
+  "kind": "Context compression proxy",
+  "what": "An API proxy and CLI tool that sits between coding agents and model providers to dynamically compress conversation history while preserving cache hit rates.",
+  "why": "Long agent sessions hit token limits and cost significant money; this lets sessions run across millions of tokens by letting the model compress, search, and decompress earlier conversation ranges.",
+  "level": "setup",
+  "start": "npm install -g billion-context --prefix=~/.local",
+  "caution": "The repository license is unasserted (NOASSERTION); review license terms in the source before commercial deployment.",
+  "alts": [
+   "microsoft/LLMLingua",
+   "mksglu/context-mode",
+   "bgts-ai-org/bgts-context-engine"
+  ],
+  "packages": [
+   "billion-context"
+  ],
+  "plain": "Compresses conversation histories on the fly so coding agents can run longer sessions on fewer tokens.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Shrink token bills on multi-day coding sessions",
+   "Fit long agent conversations into smaller context windows",
+   "Maintain prefix cache rates while compressing old messages"
+  ],
+  "steps": [
+   "Install globally using `npm install -g billion-context --prefix=~/.local`.",
+   "Launch your preferred coding agent through the proxy CLI (such as `bili opencode` or `bili pi`).",
+   "Point your agent base URL to the local billion-context proxy address."
+  ],
+  "repo": "ranxianglei/billion-context",
+  "at": "2026-10-10",
+  "source": "trending"
  }
 }
