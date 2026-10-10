@@ -1,6 +1,47 @@
 {
- "updated": "2026-10-09T22:43:07.914Z",
+ "updated": "2026-10-10T05:59:33.118Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot weekly releases — October 5",
+   "url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5",
+   "date": "2026-10-09T22:58:23.000Z",
+   "summary": "GitHub Copilot updated its weekly release with granular permission controls for coding agents and smoother multi-account management. It allows developers to better restrict what tools and files their agents can access.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/667724435-138fc0bf-2da0-4dfa-98c8-671bf744ac7f.jpg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.162.1",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.162.1",
+   "date": "2026-10-09T19:44:51Z",
+   "summary": "OpenAI published Codex CLI version rust-v0.162.1. It provides maintenance updates and performance tweaks for developers using Codex from the terminal.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/66e18f25dd3ae262730148ccb499ba9c11591a3c335b8038584783404c57b627/openai/codex/releases/tag/rust-v0.162.1"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.296",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
+   "date": "2026-10-09T19:28:59Z",
+   "summary": "Anthropic released Claude Code v2.1.296 with incremental fixes and enhancements. It keeps the command-line coding assistant up to date for terminal-based developers.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/d62f2246da963b4a9e47318fa942b33e3f9a0f8c0a37f82c7597a51716210c8d/anthropics/claude-code/releases/tag/v2.1.296"
+  },
   {
    "source": "Simon Willison",
    "title": "A new feature for my blog, built using my voice",
@@ -13,6 +54,22 @@
    "big": false,
    "ai": true,
    "image": "https://static.simonwillison.net/static/2026/newsletters-card.webp"
+  },
+  {
+   "source": "Hacker News",
+   "title": "MXC - a sandboxed code execution system",
+   "url": "https://github.com/microsoft/mxc",
+   "date": "2026-10-09T05:51:29Z",
+   "discuss": "https://news.ycombinator.com/item?id=50016489",
+   "summary": "MXC is an open sandboxed code execution environment designed to safely run agent-generated programs. It provides developers a secure boundary when letting coding agents test and execute script outputs.",
+   "tags": [
+    "coding",
+    "agents",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/513e67630b27db1fcedabcc49d94b97e42ace7f65ad89dbde0ff4feba7a60dc0/microsoft/mxc"
   },
   {
    "source": "Simon Willison",
@@ -996,57 +1053,6 @@
    "big": false,
    "ai": false,
    "image": ""
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Albertsons Companies is reimagining retail from the inside out",
-   "url": "https://openai.com/index/albertsons-reimagining-retail",
-   "date": "2026-10-01T16:00:00.000Z",
-   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": ""
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/barclays-scales-claude",
-   "date": "2026-10-01T15:19:00.000Z",
-   "title": "Barclays scales Claude to upgrade operations and improve client experience",
-   "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Figma restricts MCP access to whitelisted clients, excluding Pi",
-   "url": "https://twitter.com/GayaniFigma/status/2105295629941350454",
-   "date": "2026-10-01T15:10:46Z",
-   "discuss": "https://news.ycombinator.com/item?id=49922729",
-   "summary": "Figma restricts Model Context Protocol (MCP) access to whitelisted clients.",
-   "tags": [
-    "mcp",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://pbs.twimg.com/card_img/2104075374120652800/TjKz8L6F?format=webp&name=medium"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Introducing Olmo-core 3: Open, scalable training infrastructure for large MoEs",
-   "url": "https://huggingface.co/blog/allenai/olmocore3",
-   "date": "2026-10-01T15:01:43.000Z",
-   "summary": "Hugging Face introduces Olmo-core 3 for scalable training of Mixture of Experts models.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/uKnK93gjkKbmJmSx94WO2.png"
   }
  ]
 }

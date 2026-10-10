@@ -10934,5 +10934,39 @@
   "repo": "professorpalmer/bonsai-ada-surgery",
   "at": "2026-10-09",
   "source": "trending"
+ },
+ "darshi1337/apogee": {
+  "cat": "local",
+  "kind": "Private browser summarizer",
+  "what": "Apogee is a browser extension that summarizes web pages, videos, PDFs, and text locally on your device without cloud APIs or accounts.",
+  "why": "Use it when you want fast summaries and Q&A on articles or documents while keeping your browsing data and files strictly private on your computer.",
+  "level": "easy",
+  "start": "",
+  "caution": "The initial run downloads AI model weights directly into your browser cache, which requires a stable connection and sufficient local storage or hardware.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "A private browser extension that summarizes articles, PDFs, and videos entirely on your computer.",
+  "tags": [
+   "private",
+   "docs",
+   "research"
+  ],
+  "useFor": [
+   "Summarize articles and forum threads privately in your browser",
+   "Generate clickable timestamped outlines for YouTube and Bilibili videos",
+   "Ask questions about local PDFs, DOCX, and pasted text files"
+  ],
+  "steps": [
+   "Install Apogee from the Chrome Web Store or Firefox Add-ons.",
+   "Open an article, video, or PDF file, or paste text into the extension popup.",
+   "Choose your summary format and click Summarize to download the model and run locally."
+  ],
+  "repo": "darshi1337/apogee",
+  "at": "2026-10-10",
+  "source": "trending"
  }
 }
