@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-10T12:50:30.924Z",
+ "updated": "2026-10-10T21:58:57.537Z",
  "scanned": "2026-10-10T07:02:45.292Z",
  "claudeVersion": "2.1.296",
- "total": 3074,
+ "total": 3078,
  "categories": [
   [
    "builtin",
@@ -861,6 +861,60 @@
    "plugin": "clawd-minecraft"
   },
   {
+   "key": "Ashley-Pettit/villager-hp/villager-hp",
+   "name": "villager-hp",
+   "repo": "Ashley-Pettit/villager-hp",
+   "path": ".",
+   "url": "https://github.com/Ashley-Pettit/villager-hp",
+   "plain": "The 5-hour and weekly limits as an animated villager health card above the prompt, his mood falling with your HP, with rank badges, sci-fi effects and a death screen at 0 HP, plus `/hp` to preview any level.",
+   "cat": "usage",
+   "by": "Ash",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-10T12:27:30Z",
+   "marketplace": "villager-hp",
+   "plugin": "villager-hp"
+  },
+  {
+   "key": "vihrea1337/headroom/headroom",
+   "name": "headroom",
+   "repo": "vihrea1337/headroom",
+   "path": ".",
+   "url": "https://github.com/vihrea1337/headroom",
+   "plain": "The 5-hour and weekly limits above the prompt with reset countdowns and a run-out forecast drawn on a time axis, alerts at 80 and 95% and on reset, a session budget, and a docked pane whose prompt log scrolls the chat to each prompt.",
+   "cat": "usage",
+   "by": "vihrea1337",
+   "reach": 1,
+   "reachLabels": [
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-10T17:40:13Z",
+   "marketplace": "headroom",
+   "plugin": "headroom"
+  },
+  {
    "key": "halluton/Mindful-Claude/mindful-claude",
    "name": "Mindful-Claude",
    "repo": "halluton/Mindful-Claude",
@@ -1521,6 +1575,32 @@
    "pushed": "2026-10-09T06:00:56Z",
    "marketplace": "code-city",
    "plugin": "code-city"
+  },
+  {
+   "key": "Ashley-Pettit/lgtm-flash/lgtm-flash",
+   "name": "lgtm-flash",
+   "repo": "Ashley-Pettit/lgtm-flash",
+   "path": ".",
+   "url": "https://github.com/Ashley-Pettit/lgtm-flash",
+   "plain": "After every code change the LGTM Lines container ship sails in above the prompt, the L G T M containers slam onto its deck and the camera zooms in on LOOKS GOOD TO ME, drawn locally with no model calls or network, plus `/ship` to launch it any time.",
+   "cat": "fun",
+   "by": "Ash",
+   "reach": 1,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "/\"^(Edit|MultiEdit|Write|NotebookEdit)$\"/ calls"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-10T12:27:26Z",
+   "marketplace": "lgtm-flash",
+   "plugin": "lgtm-flash"
   },
   {
    "key": "sezaakgun/cc-pr-tracker/cc-pr-tracker",
@@ -2511,6 +2591,37 @@
    "pushed": "2026-10-10T02:09:29Z",
    "marketplace": null,
    "plugin": "context-canary"
+  },
+  {
+   "key": "hellosverre/smart-compact/smart-compact",
+   "name": "smart-compact",
+   "repo": "hellosverre/smart-compact",
+   "path": ".",
+   "url": "https://github.com/hellosverre/smart-compact",
+   "plain": "Offers a one-click compact after a commit or a green test run and a minute before the prompt cache expires, and gives Claude a `request_compact` tool to ask for one with what the summary must keep.",
+   "cat": "memory",
+   "by": "hellosverre",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "draws"
+   ],
+   "sees": [
+    "mcp__smart-compact__request_compact calls",
+    "Bash calls",
+    "PowerShell calls",
+    "every prompt"
+   ],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-10T14:40:01Z",
+   "marketplace": "smart-compact",
+   "plugin": "smart-compact"
   },
   {
    "key": "zenbu-labs/terminal-browser/terminal-browser",

@@ -11177,5 +11177,75 @@
   "repo": "ranxianglei/billion-context",
   "at": "2026-10-10",
   "source": "trending"
+ },
+ "tensorflow/tensorflow": {
+  "cat": "frameworks",
+  "kind": "machine learning framework",
+  "what": "An open-source end-to-end platform for building, training, and deploying machine learning models across diverse hardware.",
+  "why": "It provides a comprehensive foundation for developing neural networks with stable APIs in Python and C++, reaching for it when you need to research or deploy production-scale ML applications.",
+  "level": "dev",
+  "start": "pip install tensorflow",
+  "caution": "",
+  "alts": [
+   "pytorch/pytorch"
+  ],
+  "packages": [
+   "tensorflow",
+   "tensorflow-cpu"
+  ],
+  "plain": "A foundational software library used to build, train, and run neural networks and machine learning systems.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Train custom deep neural networks in Python or C++",
+   "Deploy machine learning models across CPU, GPU, and mobile devices",
+   "Execute distributed machine learning workloads"
+  ],
+  "steps": [
+   "Install the core package with `pip install tensorflow` (or `pip install tensorflow-cpu` for CPU-only).",
+   "Launch Python and run `import tensorflow as tf`.",
+   "Verify installation by evaluating an operation with `tf.add(1, 2).numpy()`."
+  ],
+  "repo": "tensorflow/tensorflow",
+  "at": "2026-10-10",
+  "source": "trending"
+ },
+ "sudoingX/local-ai-on-your-gaming-rtx": {
+  "cat": "local",
+  "kind": "local model runner",
+  "what": "A tool and prebuilt runtime that optimizes and runs a 27B parameter model locally on consumer Nvidia RTX gaming graphics cards with 8 GB or more VRAM.",
+  "why": "Large language models often require expensive data-center GPUs. This provides pre-tuned serve scripts and optimized kernels so you can run a 27B model on common gaming hardware.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/sudoingX/local-ai-on-your-gaming-rtx/main/install.sh | bash",
+  "caution": "Windows support is explicitly noted as beta. Requires specific Nvidia drivers (v525+ or v570+) and compatible Linux or Windows environments.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [
+   "huggingface_hub"
+  ],
+  "plain": "Run a fast 27B AI model locally on ordinary Nvidia gaming graphics cards using a single command.",
+  "tags": [
+   "private",
+   "save",
+   "apps"
+  ],
+  "useFor": [
+   "Run a 27B AI model on consumer Nvidia GPUs with 8GB+ VRAM",
+   "Host a local OpenAI-compatible API for coding or chat tools",
+   "Test fast speculative decoding on gaming graphics cards"
+  ],
+  "steps": [
+   "Run the one-line install command in Linux bash or Windows PowerShell",
+   "Let the script detect your RTX card and download the model files",
+   "Open `http://127.0.0.1:8899` to chat or use the `/v1` endpoint"
+  ],
+  "repo": "sudoingX/local-ai-on-your-gaming-rtx",
+  "at": "2026-10-10",
+  "source": "trending"
  }
 }
