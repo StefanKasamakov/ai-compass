@@ -10968,5 +10968,74 @@
   "repo": "darshi1337/apogee",
   "at": "2026-10-10",
   "source": "trending"
+ },
+ "loulanyue/agent-control": {
+  "cat": "frameworks",
+  "kind": "agent control plane",
+  "what": "An asynchronous control plane and DAG workflow engine built on FastAPI to orchestrate and monitor fleets of autonomous AI agents.",
+  "why": "Managing multiple distributed agents, task queues, and data pipelines manually leads to dropped tasks and deadlocks. Reach for this when you need heartbeat leasing, multi-step dependency graphs, and MCP server tooling for your agent infrastructure.",
+  "level": "setup",
+  "start": "./start.sh",
+  "caution": "",
+  "alts": [
+   "langchain-ai/langgraph",
+   "crewAIInc/crewAI",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "plain": "A central control room and task scheduler for running and tracking teams of AI agents.",
+  "tags": [
+   "automate",
+   "apps",
+   "connect"
+  ],
+  "useFor": [
+   "Schedule and dispatch tasks across distributed autonomous agents",
+   "Build multi-step DAG workflows with parallel execution",
+   "Expose agent queues and database queries to Claude via MCP"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/loulanyue/agent-control.git` and enter the directory.",
+   "Run `./start.sh` to automatically configure a virtual environment and start the platform.",
+   "Open `http://localhost:8000/dashboard` to view the agent metrics and execution status."
+  ],
+  "repo": "loulanyue/agent-control",
+  "at": "2026-10-10",
+  "source": "trending"
+ },
+ "Router0824/OpsPilot-AI": {
+  "cat": "builders",
+  "kind": "operations workspace UI",
+  "what": "An open-source AI operations workspace that turns meeting notes, documents, and project activity into decisions, tasks, risks, and organizational memory.",
+  "why": "Teams often lose context across scattered meeting notes, chat, and task boards. OpsPilot connects that operating loop with human review gates before saving AI actions.",
+  "level": "setup",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "langgenius/dify",
+   "Mintplex-Labs/anything-llm",
+   "LibreChat-AI/LibreChat"
+  ],
+  "packages": [],
+  "plain": "An AI web workspace that extracts tasks, decisions, and risks from meeting notes and documents.",
+  "tags": [
+   "automate",
+   "knowledge",
+   "docs"
+  ],
+  "useFor": [
+   "Turn meeting notes into tasks, decisions, and risk lists",
+   "Search uploaded PDF and Markdown documents using hybrid retrieval",
+   "Track project health, blockers, and weekly status updates"
+  ],
+  "steps": [
+   "Clone the repository to your local machine",
+   "Run the FastAPI Python backend service",
+   "Start the Next.js web application frontend",
+   "Explore the bundled demo workspace or configure an API key for live mode"
+  ],
+  "repo": "Router0824/OpsPilot-AI",
+  "at": "2026-10-10",
+  "source": "trending"
  }
 }

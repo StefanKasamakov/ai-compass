@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T05:59:33.118Z",
+ "updated": "2026-10-10T10:47:20.592Z",
  "items": [
   {
    "source": "GitHub",
@@ -54,6 +54,20 @@
    "big": false,
    "ai": true,
    "image": "https://static.simonwillison.net/static/2026/newsletters-card.webp"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+   "url": "https://openai.com/index/asana-browser-agent",
+   "date": "2026-10-09T07:00:00.000Z",
+   "summary": "Asana reduced model costs and improved speed using GPT-6.1 Sol for browser agent tests.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
   },
   {
    "source": "Hacker News",
@@ -124,6 +138,32 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/ecd5f375c36de28d9804327dbdf3e5b7ade3c97efa418c5370f3495eb6d33d86/openai/codex/releases/tag/rust-v0.162.0"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+   "url": "https://openai.com/index/pollo-ai",
+   "date": "2026-10-08T12:00:00.000Z",
+   "summary": "Pollo AI integrates newer OpenAI models to support image and video generation tools.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "LegalOn halves Codex costs while maintaining development speed",
+   "url": "https://openai.com/index/legalon-halves-codex-costs",
+   "date": "2026-10-08T12:00:00.000Z",
+   "summary": "LegalOn successfully reduced its Codex operational costs while maintaining development velocity.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
   },
   {
    "source": "Latent Space",
@@ -352,6 +392,19 @@
    "big": false,
    "ai": false,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/67b8b0096c3182e96bf6cea1/zB6BNaB-3tiCCsnOo7gik.png"
+  },
+  {
+   "source": "Google",
+   "title": "Introducing Playground: Create and play custom games",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+   "date": "2026-10-07T12:00:00.000Z",
+   "summary": "Google released Playground, an experimental platform for creating and sharing custom games.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/THUMBNAIL_BLOG.width-1300.png"
   },
   {
    "source": "OpenAI",
@@ -1000,58 +1053,6 @@
    ],
    "big": false,
    "ai": true,
-   "image": ""
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.160.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.160.0",
-   "date": "2026-10-01T20:19:13Z",
-   "summary": "Codex CLI releases rust-v0.160.0 with new command-line updates.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/7e4a506986964616af395f79add3bdc93ec49623e77e197a0edd64947633bea1/openai/codex/releases/tag/rust-v0.160.0"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub Copilot in VS Code, September 2026 releases",
-   "url": "https://github.blog/changelog/2026-10-01-github-copilot-in-vs-code-september-2026-releases",
-   "date": "2026-10-01T19:09:10.000Z",
-   "summary": "GitHub Copilot in VS Code rolls out September updates to streamline agent-driven development and pull requests.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/661719715-a4a26b39-393a-4813-917c-e45af9d112c1.jpeg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.287",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.287",
-   "date": "2026-10-01T18:00:22Z",
-   "summary": "Claude Code releases version v2.1.287 with routine updates.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/38e4e37d33c0357b710c8c6038b064ba34ea0050a96834af61ed3857cbbb2480/anthropics/claude-code/releases/tag/v2.1.287"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "pwasm 0.2a0",
-   "url": "https://simonwillison.net/2026/Oct/1/pwasm/",
-   "date": "2026-10-01T17:10:31.000Z",
-   "summary": "Release: pwasm 0.2a0 pwasm is one of my folly projects - an entirely vibe-coded pure Python WebAssembly engine that I built in January during my first bout of AI mania . I hadn't touched it since January, so I decided to let Claude Opus 5.5 loose on it and see if it could make any significant improvements: Evaluate current state of pwasm - then consider what it would take to get the MicroPython an",
-   "tags": [],
-   "big": false,
-   "ai": false,
    "image": ""
   }
  ]
