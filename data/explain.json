@@ -11494,5 +11494,108 @@
   "repo": "sudoingX/local-ai-on-your-gaming-gpu",
   "at": "2026-10-11",
   "source": "trending"
+ },
+ "ardeyouxipianyi/workbuddy2api-hub": {
+  "cat": "gateway",
+  "kind": "account proxy gateway",
+  "what": "Converts Tencent WorkBuddy and CodeBuddy accounts into OpenAI- and Anthropic-compatible API endpoints.",
+  "why": "It pools multiple WorkBuddy and CodeBuddy accounts to route requests from coding tools like Claude Code or Codex. Reach for it when you want to aggregate quota and automate daily check-in tasks across multiple accounts.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/ardeyouxipianyi/workbuddy2api-hub/main/quick-deploy.sh | bash",
+  "caution": "Automating and pooling consumer account logins as an API proxy may violate provider terms of service and risks account bans.",
+  "alts": [
+   "router-for-me/CLIProxyAPI",
+   "songquanpeng/one-api",
+   "musistudio/claude-code-router"
+  ],
+  "packages": [],
+  "plain": "Turn Tencent WorkBuddy accounts into standard AI API endpoints for your coding tools.",
+  "tags": [
+   "save",
+   "connect",
+   "code"
+  ],
+  "useFor": [
+   "Route OpenAI or Claude Code requests through WorkBuddy accounts",
+   "Automate daily check-in tasks and account reward claims",
+   "Set account usage guardrails and token quotas"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://raw.githubusercontent.com/ardeyouxipianyi/workbuddy2api-hub/main/quick-deploy.sh | bash` or launch the startup script.",
+   "Open `http://127.0.0.1:8788/` in your web browser and log in using password admin.",
+   "Authorize your WorkBuddy accounts through OAuth and configure your API keys."
+  ],
+  "repo": "ardeyouxipianyi/workbuddy2api-hub",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "FengZhenfei/carrel": {
+  "cat": "memory",
+  "kind": "agent knowledge base",
+  "what": "A self-hosted knowledge base system that parses documents into vector, keyword, and knowledge graph indexes for AI agents.",
+  "why": "Solves the problem of giving agents up-to-date access to internal documents, manuals, and evolving files via hybrid search and graph relationships.",
+  "level": "setup",
+  "start": "./deploy.sh",
+  "caution": "",
+  "alts": [
+   "infiniflow/ragflow",
+   "microsoft/graphrag",
+   "docling-project/docling"
+  ],
+  "packages": [],
+  "plain": "A self-hosted search and knowledge graph engine that lets AI agents query your private documents.",
+  "tags": [
+   "knowledge",
+   "supercharge",
+   "connect"
+  ],
+  "useFor": [
+   "Index multi-format office and code files",
+   "Extract knowledge graph facts and relations",
+   "Serve retrieval APIs to Claude Code and Codex"
+  ],
+  "steps": [
+   "Clone repo and run `./deploy.sh` to install Docker services and dependencies.",
+   "Edit `config/knowledge-base.env` to set embedding and model endpoints.",
+   "Open `http://127.0.0.1:9800` to manage folders and enable knowledge bases."
+  ],
+  "repo": "FengZhenfei/carrel",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "kkjiangk/agent-py": {
+  "cat": "frameworks",
+  "kind": "AIOps incident platform",
+  "what": "An automated engineering incident response platform that investigates alerts using LangGraph workflows, hybrid RAG retrieval, and MCP tools.",
+  "why": "Use it when diagnosing infrastructure alerts and retrieving runbooks automatically while keeping human approval in the loop before applying fixes.",
+  "level": "setup",
+  "start": "./scripts/start-local.sh",
+  "caution": "Complex local setup requiring Docker Compose for Kafka, Redis, Milvus, and etcd, plus an external Qwen-compatible LLM endpoint. The UI is in Chinese.",
+  "alts": [
+   "langchain-ai/langgraph",
+   "Portkey-AI/gateway",
+   "openhands/openhands"
+  ],
+  "packages": [],
+  "plain": "An automated system that investigates server alerts, searches runbooks, and proposes fixes for human review.",
+  "tags": [
+   "automate",
+   "knowledge",
+   "connect"
+  ],
+  "useFor": [
+   "Investigate Prometheus alerts with AI diagnostic workflows",
+   "Retrieve incident runbooks using hybrid vector and lexical search",
+   "Queue remediation proposals for human approval"
+  ],
+  "steps": [
+   "Install dependencies with `npm ci` and uv",
+   "Copy config template files to `config/project.json` and configure API keys",
+   "Run `./scripts/start-local.sh` to launch Docker services, backend, and frontend",
+   "Open `http://127.0.0.1:5173` to access the Vue workspace"
+  ],
+  "repo": "kkjiangk/agent-py",
+  "at": "2026-10-11",
+  "source": "trending"
  }
 }
