@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-10T21:58:57.537Z",
+ "updated": "2026-10-11T06:01:25.903Z",
  "scanned": "2026-10-10T07:02:45.292Z",
  "claudeVersion": "2.1.296",
- "total": 3078,
+ "total": 3088,
  "categories": [
   [
    "builtin",
@@ -915,6 +915,35 @@
    "plugin": "headroom"
   },
   {
+   "key": "VaitaR/claude-code-limits/limits",
+   "name": "limits",
+   "repo": "VaitaR/claude-code-limits",
+   "path": ".",
+   "url": "https://github.com/VaitaR/claude-code-limits",
+   "plain": "One line above the prompt with the 5-hour and 7-day limits, context with a compaction count, minutes left on the prompt cache, session cost and running subagents, with details on hover.",
+   "cat": "usage",
+   "by": "Andrei Shivalin",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "compaction",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "warnings",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T00:17:25Z",
+   "marketplace": "claude-code-limits",
+   "plugin": "limits"
+  },
+  {
    "key": "halluton/Mindful-Claude/mindful-claude",
    "name": "Mindful-Claude",
    "repo": "halluton/Mindful-Claude",
@@ -1603,6 +1632,101 @@
    "plugin": "lgtm-flash"
   },
   {
+   "key": "varunmoka7/reddit-watch/reddit-watch",
+   "name": "reddit-watch",
+   "repo": "varunmoka7/reddit-watch",
+   "path": ".",
+   "url": "https://github.com/varunmoka7/reddit-watch",
+   "plain": "Checks subreddits you choose, has Haiku pick posts with ideas for using Claude Code better, and lists them in a side pane, off until `/reddit on`.",
+   "cat": "fun",
+   "by": "Varun Moka",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "drives Claude",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks"
+   ],
+   "surfaces": [
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T04:28:53Z",
+   "marketplace": "reddit-watch",
+   "plugin": "reddit-watch"
+  },
+  {
+   "key": "paragpandyareal/swear-slap/swear-slap",
+   "name": "swear-slap",
+   "repo": "paragpandyareal/swear-slap",
+   "path": ".",
+   "url": "https://github.com/paragpandyareal/swear-slap",
+   "plain": "Swear in a prompt and a pixel-art hand slaps the band above it instead of sending the message, then puts a polite version back in your prompt box, with a swear jar and a slap sound, drawn locally with no model calls or network.",
+   "cat": "fun",
+   "by": "Parag Pandya",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "writes the prompt box",
+    "reads env vars",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T00:44:05Z",
+   "marketplace": "swear-slap",
+   "plugin": "swear-slap"
+  },
+  {
+   "key": "i-harsha-reddy/naruto-mod/naruto",
+   "name": "naruto",
+   "repo": "i-harsha-reddy/naruto-mod",
+   "path": ".",
+   "url": "https://github.com/i-harsha-reddy/naruto-mod",
+   "plain": "A hand-drawn pixel ninja above the prompt, any of 20 from Naruto, who casts their jutsu at a training post while Claude works, summons for subagents, cheers when a turn ends and sleeps when you step away, drawn locally with no model calls or network.",
+   "cat": "fun",
+   "by": "Harsha Reddy",
+   "reach": 1,
+   "reachLabels": [
+    "writes the prompt box",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "classic hooks"
+   ],
+   "surfaces": [
+    "ToolProgress",
+    "Spinner",
+    "TurnDuration",
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 1,
+   "license": "MIT",
+   "pushed": "2026-10-10T19:14:45Z",
+   "marketplace": "naruto-mod",
+   "plugin": "naruto"
+  },
+  {
    "key": "sezaakgun/cc-pr-tracker/cc-pr-tracker",
    "name": "cc-pr-tracker",
    "repo": "sezaakgun/cc-pr-tracker",
@@ -2266,6 +2390,68 @@
    "plugin": "p3c-guard"
   },
   {
+   "key": "dot-agi/arrester/arrester",
+   "name": "arrester",
+   "repo": "dot-agi/arrester",
+   "path": ".",
+   "url": "https://github.com/dot-agi/arrester",
+   "plain": "After a hook, a deny rule or auto mode blocks a tool call, stops recognized detours to the same target through another tool or a shell rewrite, such as `head` after a blocked `cat`, and tells Claude to stop and ask you, with no network, model or process calls.",
+   "cat": "safety",
+   "by": "dot-agi",
+   "reach": 1,
+   "reachLabels": [
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every tool call"
+   ],
+   "surfaces": [],
+   "validated": "warnings",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T05:08:33Z",
+   "marketplace": "arrester",
+   "plugin": "arrester"
+  },
+  {
+   "key": "dot-agi/sandbox-tuner/sandbox-tuner",
+   "name": "sandbox-tuner",
+   "repo": "dot-agi/sandbox-tuner",
+   "path": ".",
+   "url": "https://github.com/dot-agi/sandbox-tuner",
+   "plain": "Explains the sandbox blocks it recognizes in Bash results in plain words above the prompt, counts blocked hosts and write folders across sessions, and once a target recurs offers one reviewed settings entry with Undo, writing your user settings file (`~/.claude/settings.json` by default) and a backup only when you press, with no network or process calls.",
+   "cat": "safety",
+   "by": "dot-agi",
+   "reach": 2,
+   "reachLabels": [
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "Bash calls",
+    "Monitor calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "warnings",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T05:08:39Z",
+   "marketplace": "sandbox-tuner",
+   "plugin": "sandbox-tuner"
+  },
+  {
    "key": "lossless-claude/lcm/lcm",
    "name": "lcm",
    "repo": "lossless-claude/lcm",
@@ -2622,6 +2808,30 @@
    "pushed": "2026-10-10T14:40:01Z",
    "marketplace": "smart-compact",
    "plugin": "smart-compact"
+  },
+  {
+   "key": "varunmoka7/image-shrinker/image-shrinker",
+   "name": "image-shrinker",
+   "repo": "varunmoka7/image-shrinker",
+   "path": ".",
+   "url": "https://github.com/varunmoka7/image-shrinker",
+   "plain": "Shrinks large image files before Claude reads them so they take less of the context window, and tells Claude the scale back to the original pixels.",
+   "cat": "memory",
+   "by": "Varun Moka",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes"
+   ],
+   "sees": [
+    "Read calls"
+   ],
+   "surfaces": [],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T04:43:13Z",
+   "marketplace": "image-shrinker",
+   "plugin": "image-shrinker"
   },
   {
    "key": "zenbu-labs/terminal-browser/terminal-browser",
@@ -3576,6 +3786,99 @@
    "pushed": "2026-10-08T15:12:10Z",
    "marketplace": "telescope-claude-code",
    "plugin": "session-board"
+  },
+  {
+   "key": "dot-agi/downrange/downrange",
+   "name": "downrange",
+   "repo": "dot-agi/downrange",
+   "path": ".",
+   "url": "https://github.com/dot-agi/downrange",
+   "plain": "Progress and an ETA for background shells and Monitor watches, read from their output or past run times, beside subagents, workflow runs and the pending dynamic `/loop` wakeup, in a band, a pane and a `/downrange` table that prints mid-turn, with no model calls or network and `tail` run only for outputs over 4 MiB.",
+   "cat": "agents",
+   "by": "dot-agi",
+   "reach": 2,
+   "reachLabels": [
+    "runs processes",
+    "reads files",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "Bash calls",
+    "Monitor calls",
+    "Agent calls",
+    "Workflow calls",
+    "ScheduleWakeup calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
+   "validated": "warnings",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T05:08:46Z",
+   "marketplace": "downrange",
+   "plugin": "downrange"
+  },
+  {
+   "key": "dot-agi/high-command/high-command",
+   "name": "high-command",
+   "repo": "dot-agi/high-command",
+   "path": ".",
+   "url": "https://github.com/dot-agi/high-command",
+   "plain": "One inbox for messages from agent-team teammates, named subagents and your other Claude Code sessions, grouped by peer in a pane, a band and `/highcommand`, with unread counts, sender labels, marks on suspicious wording and the reported result of each plain-text send, kept in session memory with no network, file, process or model calls.",
+   "cat": "agents",
+   "by": "dot-agi",
+   "reach": 1,
+   "reachLabels": [
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every prompt",
+    "ListAgents calls",
+    "subagent spawns"
+   ],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
+   "validated": "warnings",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T05:08:51Z",
+   "marketplace": "high-command",
+   "plugin": "high-command"
+  },
+  {
+   "key": "varunmoka7/next-steps-autopilot/next-steps-autopilot",
+   "name": "next-steps-autopilot",
+   "repo": "varunmoka7/next-steps-autopilot",
+   "path": ".",
+   "url": "https://github.com/varunmoka7/next-steps-autopilot",
+   "plain": "Suggested next prompts above the prompt box, with an optional `/auto` mode, off by default, that sends the first one after a countdown.",
+   "cat": "agents",
+   "by": "Varun Moka",
+   "reach": 2,
+   "reachLabels": [
+    "drives Claude",
+    "writes the prompt box",
+    "draws"
+   ],
+   "sees": [
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt"
+   ],
+   "validated": "passed",
+   "stars": 0,
+   "license": "MIT",
+   "pushed": "2026-10-11T04:27:24Z",
+   "marketplace": "next-steps-autopilot",
+   "plugin": "next-steps-autopilot"
   }
  ]
 }

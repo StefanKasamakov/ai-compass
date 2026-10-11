@@ -11247,5 +11247,74 @@
   "repo": "sudoingX/local-ai-on-your-gaming-rtx",
   "at": "2026-10-10",
   "source": "trending"
+ },
+ "fumingyang2004/Tulpa": {
+  "cat": "harness",
+  "kind": "desktop MCP bridge",
+  "what": "Tulpa is a Windows desktop tool and Model Context Protocol (MCP) server that lets AI coding agents read local QQ and WeChat message history and join QQ group chats as automated personas.",
+  "why": "AI assistants normally cannot access your local chat apps or files to answer questions about past discussions. Reach for this when you want an agent like Claude Code or Codex to summarize conversations, find attachments, or interact in a QQ group via OneBot.",
+  "level": "setup",
+  "start": "Tulpa/Tulpa.exe",
+  "caution": "Requires Windows 10/11 x64 and .NET Framework 4.8. Connecting chat tools via automated bots or local protocol hooks may risk account restrictions; external OneBot servers must be managed separately.",
+  "alts": [
+   "anthropics/claude-code",
+   "VoltAgent/official-mcp-servers",
+   "punkpeye/awesome-remote-mcp-servers"
+  ],
+  "packages": [],
+  "plain": "Connects your local QQ and WeChat chat history to AI assistants via MCP.",
+  "tags": [
+   "connect",
+   "supercharge",
+   "knowledge"
+  ],
+  "useFor": [
+   "Search local chat history and files using desktop AI agents",
+   "Let an AI persona read and post in QQ group chats",
+   "Summarize project chat threads with verifiable quoted sources"
+  ],
+  "steps": [
+   "Download the MCP Lite or Full ZIP release and unpack it to a local folder.",
+   "Launch `Tulpa/Tulpa.exe` and grant permissions for your local QQ or WeChat accounts.",
+   "Optionally connect a SnowLuma or OneBot server if you want active QQ group chat capabilities.",
+   "Add the Tulpa MCP endpoint to Claude Code, Codex, or your preferred desktop agent."
+  ],
+  "repo": "fumingyang2004/Tulpa",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "VecSzn/PolyStrata": {
+  "cat": "local",
+  "kind": "Local model runner",
+  "what": "PolyStrata runs large AI models locally on consumer PCs using custom inference engines that split workload between GPU and RAM.",
+  "why": "Running huge Mixture-of-Experts models usually requires expensive cloud servers. Reach for this to run models like Qwen, GLM, and Gemma privately on gaming hardware.",
+  "level": "setup",
+  "start": "python polystrata.py",
+  "caution": "Requires heavy hardware (at least 12 GB VRAM and 32–64 GB RAM), and several model backends remain experimental.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Run large AI models directly on your gaming PC without sending your data to the cloud.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Serve local models via OpenAI- and Anthropic-compatible API endpoints",
+   "Run large Mixture-of-Experts language models on consumer graphics cards",
+   "Process images and text prompts offline without cloud subscription fees"
+  ],
+  "steps": [
+   "Confirm your PC meets requirements with an NVIDIA or AMD GPU and at least 32 GB RAM.",
+   "Run the provided installer script for Windows or Linux.",
+   "Launch the server with `python polystrata.py` to download and load a supported model."
+  ],
+  "repo": "VecSzn/PolyStrata",
+  "at": "2026-10-11",
+  "source": "trending"
  }
 }
