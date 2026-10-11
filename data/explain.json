@@ -11316,5 +11316,183 @@
   "repo": "VecSzn/PolyStrata",
   "at": "2026-10-11",
   "source": "trending"
+ },
+ "lyogavin/airllm": {
+  "cat": "local",
+  "kind": "layered model loader",
+  "what": "AirLLM runs huge language models on consumer GPUs with very low VRAM by streaming and executing weights layer by layer.",
+  "why": "Massive open models usually require tens or hundreds of gigabytes of GPU memory. AirLLM solves this by trading disk streaming speed for memory capacity, letting you run 70B+ models on small hardware.",
+  "level": "dev",
+  "start": "pip install airllm",
+  "caution": "Streaming model layers from disk dramatically slows down inference speed compared to running fully in VRAM. It also requires substantial free disk space to store layer shards.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [
+   "airllm",
+   "bitsandbytes"
+  ],
+  "plain": "Run massive open AI models on everyday GPUs with very little video memory by streaming layers from disk.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run 70B parameter models on a single 4GB consumer GPU",
+   "Perform local offline inference without renting expensive high-VRAM cloud instances",
+   "Train or fine-tune massive models using layer-wise streaming"
+  ],
+  "steps": [
+   "Install the library by running `pip install airllm` in your Python environment.",
+   "Import AutoModel and load a supported model identifier, optionally specifying 4bit or 8bit compression.",
+   "Tokenize your prompt and run model generation using standard PyTorch syntax."
+  ],
+  "repo": "lyogavin/airllm",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "danyuchn/asd-ste100-skill": {
+  "cat": "harness",
+  "kind": "Claude Code skill",
+  "what": "A skill that rewrites complex or ambiguous English text into Simplified Technical English principles for AI agents to parse accurately.",
+  "why": "AI agents frequently misinterpret complex sentences, passive voice, or dense tool descriptions without humans to clarify. Use this to clarify system prompts, error messages, and agent instructions.",
+  "level": "easy",
+  "start": "npx skills add danyuchn/asd-ste100-skill",
+  "caution": "Does not include the official ASD-STE100 dictionary due to licensing, and its structural linter does not guarantee preserved semantic meaning.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "wshobson/agents"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A Claude Code add-on that rewrites instructions into plain, unambiguous English so other AI agents do not misunderstand them.",
+  "tags": [
+   "supercharge",
+   "docs",
+   "code"
+  ],
+  "useFor": [
+   "Clarify AI tool descriptions and function documentation",
+   "Rewrite complex error messages for agent readability",
+   "Simplify inter-agent communication instructions"
+  ],
+  "steps": [
+   "Install the skill with `npx skills add danyuchn/asd-ste100-skill` in your project.",
+   "Ask Claude Code to apply ASD-STE100 to an instruction or tool description.",
+   "Optionally request a diff or explanation to see which structural rules were applied."
+  ],
+  "repo": "danyuchn/asd-ste100-skill",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "jiwoochris/artex-ko": {
+  "cat": "coding",
+  "kind": "Autonomous security agent",
+  "what": "A Korean-localized autonomous multi-agent penetration testing system with a Go backend and a Next.js web dashboard.",
+  "why": "Security teams need to discover weaknesses and run coordinated recon workflows automatically. Reach for it to simulate cyberattacks and generate Korean-language vulnerability reports in authorized test labs.",
+  "level": "setup",
+  "start": "git clone https://github.com/jiwoochris/artex-ko.git",
+  "caution": "Strictly requires authorized test environments; unauthorized testing violates cybercrime laws. The upstream Docker Hub image is currently unavailable, requiring manual source compilation.",
+  "alts": [
+   "Significant-Gravitas/AutoGPT",
+   "openinterpreter/openinterpreter",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "An autonomous AI agent that tests software security and reports vulnerabilities in Korean.",
+  "tags": [
+   "automate",
+   "code",
+   "monitor"
+  ],
+  "useFor": [
+   "Run automated vulnerability assessments against authorized lab environments",
+   "Generate penetration test reports and findings translated into Korean",
+   "Inspect target assets and attack paths through an interactive graph dashboard"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/jiwoochris/artex-ko.git` and enter the directory.",
+   "Build the Next.js frontend by running `cd web && npm ci && npm run build:static && cd ..`.",
+   "Compile the Go backend with embedded UI assets and configure your PostgreSQL database connection in `config.json`.",
+   "Launch the server using `./start.sh` and configure your LLM API keys through the web dashboard at localhost:8787."
+  ],
+  "repo": "jiwoochris/artex-ko",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "charlie947/motion-graphics-skills": {
+  "cat": "harness",
+  "kind": "Claude Code skill pack",
+  "what": "A pack of 15 Claude Code and Codex skills that generate code-based motion graphics, animated charts, and launch videos.",
+  "why": "Eliminates the need for manual animation software like After Effects or generative video models by rendering exact frame-by-frame animation via code.",
+  "level": "setup",
+  "start": "npx skills add charlie947/motion-graphics-skills",
+  "caution": "Requires export tooling like HyperFrames (`heygen-com/hyperframes`) to compile code animations into MP4 video files.",
+  "alts": [
+   "heygen-com/hyperframes",
+   "howseen-ai/claude-motion-design",
+   "zhuyansen/awesome-claude-video-skills"
+  ],
+  "packages": [],
+  "plain": "Add-on skills for Claude Code that generate animated videos, charts, and product teasers entirely using code.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Create product launch teasers and Apple-style keynote videos",
+   "Animate data charts and milestone counters for social media",
+   "Generate looping promo clips and Reels without video editing software"
+  ],
+  "steps": [
+   "Install the skill pack using `npx skills add charlie947/motion-graphics-skills`.",
+   "Install the optional HyperFrames exporter with `npx skills add heygen-com/hyperframes` to render MP4 files.",
+   "Open Claude Code on Opus and run the brand intake skill by saying \"Set up my brand for motion\"."
+  ],
+  "repo": "charlie947/motion-graphics-skills",
+  "at": "2026-10-11",
+  "source": "trending"
+ },
+ "sudoingX/local-ai-on-your-gaming-gpu": {
+  "cat": "local",
+  "kind": "local model runner",
+  "what": "A pre-configured package and installer to run the 27B parameter Ternary Bonsai 2 model on consumer gaming graphics cards with 8 GB or more of VRAM.",
+  "why": "Large 27B language models usually require expensive datacenter GPUs or heavy quantizations that run slowly. Use this to run a capable 27B model at high speeds on desktop gaming hardware like RTX 3060, 40-series, 50-series, or modern Radeon cards.",
+  "level": "easy",
+  "start": "irm https://raw.githubusercontent.com/sudoingX/local-ai-on-your-gaming-gpu/main/install.ps1 | iex",
+  "caution": "Windows and AMD Radeon support are noted as beta. Hardware requirements are strict (requires compatible NVIDIA/AMD GPUs with at least 8 GB VRAM).",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "mudler/LocalAI"
+  ],
+  "packages": [
+   "huggingface_hub"
+  ],
+  "plain": "Run a fast 27-billion parameter AI model directly on your desktop gaming graphics card.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run private local AI chats on standard gaming GPUs",
+   "Serve an OpenAI-compatible local API for coding agents",
+   "Benchmark token generation speeds across consumer graphics hardware"
+  ],
+  "steps": [
+   "Run the one-line install script in PowerShell (Windows) or terminal (Linux/WSL2).",
+   "Let the script detect your card and automatically download the optimized model files.",
+   "Open `http://127.0.0.1:8899` to chat in the browser or use `/v1` as an API."
+  ],
+  "repo": "sudoingX/local-ai-on-your-gaming-gpu",
+  "at": "2026-10-11",
+  "source": "trending"
  }
 }
