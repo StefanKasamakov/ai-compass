@@ -295,7 +295,18 @@ const newsDay = (d) => new Date(d).toLocaleDateString("en-GB", { day: "numeric",
 // GitHub's auto-generated release cards are white text sheets, not pictures: show the project's logo instead
 const newsPic = (x) => (x.image && !x.image.includes("opengraph.githubassets.com") ? x.image : "");
 const newsRepo = (x) => x.url.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)/)?.[1];
-const newsCover = (x) => { const [lg, c] = NEWS_SRC[x.source] || []; const img = newsPic(x); if (!img && newsRepo(x)) return `<span class="cover-img">${avatar(newsRepo(x), 72)}</span>`; return `<span class="cover-img${c ? ` p-${c}` : ""}">${lg ? logo(lg) : `<b>${esc(x.source[0])}</b>`}${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}</span>`; };
+// No picture of its own: draw an editorial cover instead of a lone app icon. The colour and the big
+// name come from the AI the story is about (or the product, for a release); GitHub's text cards are skipped.
+const COVER_ART = { claude: ["anthropic", "claude", "Claude"], chatgpt: ["openai", "lh-openai", "OpenAI"], gemini: ["google", "googlegemini", "Google AI"], open: ["open", "ollama", "Open models"] };
+const newsArt = (x) => {
+  const rel = x.source === "GitHub release" && x.title.match(/^(.+?)\s+(?:rust-)?v?(\d[\w.-]*)$/i);
+  const hub = typeof hubOf === "function" ? hubOf(x)[0] : null;
+  const [p, lg, label] = COVER_ART[hub] || ["", NEWS_SRC[x.source]?.[0] || "", x.source];
+  const name = rel ? rel[1] : label;
+  return `<span class="cover-img cover-art${p ? ` p-${p}` : ""}" aria-hidden="true">${lg ? `<span class="art-mark">${logo(lg)}</span>` : ""}
+    <span class="art-text"><span class="art-kicker">${esc(rel ? "New release" : x.big ? "Big launch" : x.source)}</span><span class="art-name">${esc(name)}</span>${rel ? `<span class="art-ver">v${esc(rel[2])}</span>` : ""}</span></span>`;
+};
+const newsCover = (x) => { const img = newsPic(x); if (!img) return newsArt(x); return `<span class="cover-img">${newsArt(x)}<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"></span>`; };
 const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-story" : ""}">
     ${newsCover(x)}
     <div class="news-body">
@@ -416,7 +427,7 @@ const pages = {
     $("#hubSwitch").innerHTML = Object.entries(HUBS).map(([k, v]) => `<a class="chip"${k === id ? ' aria-pressed="true"' : ""} href="${v.file}">${esc(v.name)}</a>`).join("") + `<a class="chip" href="news.html">All AI news</a>`;
     let shown = 9;
     const draw = () => {
-      const lead = items.find((x) => x.big && newsPic(x)) || items.find(newsPic) || items[0];
+      const lead = items.find(newsPic) || items[0];
       const rest = items.filter((x) => x !== lead);
       $("#feed").innerHTML = lead ? newsCard(lead, true) + rest.slice(0, shown - 1).map((x) => newsCard(x)).join("")
         + (rest.length > shown - 1 ? `<button class="btn news-more" id="newsMore">Show more</button>` : "") : `<div class="empty">No stories in the last few weeks.</div>`;
@@ -451,7 +462,7 @@ const pages = {
     const draw = () => {
       const list = newsOrder(items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src)));
       // lead story: the newest big launch with a picture, else the newest with a picture
-      const lead = list.find((x) => x.big && newsPic(x)) || list.find((x) => newsPic(x)) || list[0];
+      const lead = list.find(newsPic) || list[0]; // newsOrder already puts fresh big launches first
       const rest = list.filter((x) => x !== lead);
       $("#feed").innerHTML = lead ? newsCard(lead, true) + rest.slice(0, shown - 1).map((x) => newsCard(x)).join("")
         + (rest.length > shown - 1 ? `<button class="btn news-more" id="newsMore">Show more news</button>` : "") : `<div class="empty">Nothing here yet.</div>`;

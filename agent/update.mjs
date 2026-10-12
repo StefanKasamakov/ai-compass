@@ -220,6 +220,18 @@ async function coverImage(url) {
   } catch { return ""; }
 }
 
+// Sites that block simple fetches (openai.com answers 403) still get their picture through microlink,
+// which opens the page in a real browser. Free tier: 50 calls a day, so each run spends at most 12.
+let microlinkLeft = 12;
+async function coverImageViaBrowser(url) {
+  if (microlinkLeft-- <= 0) return "";
+  try {
+    const r = await fetch(`https://api.microlink.io/?url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(30000) });
+    const img = (await r.json())?.data?.image?.url || "";
+    return img.startsWith("https://") ? img : "";
+  } catch { return ""; }
+}
+
 async function news(stats, tools) {
   const prev = await read("data/news.json", { items: [] });
   const known = new Set(prev.items.map((i) => i.url));
@@ -242,6 +254,12 @@ async function news(stats, tools) {
   const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 160);
   // cover picture: the article's own social preview image. "" = looked, none found (don't retry).
   await Promise.all(items.filter((i) => i.image === undefined).map(async (i) => { i.image = await coverImage(i.url); }));
+  // still nothing: one try through a real browser, newest first (GitHub release pages have no picture of their own)
+  for (const i of items.filter((x) => !x.image && !x.viaBrowser && x.source !== "GitHub release")) {
+    if (microlinkLeft <= 0) break;
+    i.viaBrowser = true;
+    i.image = await coverImageViaBrowser(i.url);
+  }
   console.log(`news: +${added.length} (${notes ? `summarized by ${provider}` : "no AI summaries"})`);
   return items;
 }

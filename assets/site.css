@@ -734,3 +734,23 @@ a.goal-chip { text-decoration: none; }
   .lv-row.lv4 { grid-template-columns: minmax(0, 1fr); }
   .hub-badge { width: 56px; height: 56px; }
 }
+
+/* ---------- v17: editorial covers for stories without a picture ---------- */
+.cover-art { --c: #7c5cff; overflow: hidden; place-items: end start !important; padding: 1.1rem 1.2rem;
+  background:
+    radial-gradient(120% 90% at 85% 15%, color-mix(in srgb, var(--c) 55%, transparent), transparent 60%),
+    radial-gradient(90% 80% at 10% 110%, color-mix(in srgb, var(--c) 35%, #000), transparent 70%),
+    linear-gradient(155deg, color-mix(in srgb, var(--c) 30%, #0b0f1a), #070a12) !important; }
+.cover-art.p-anthropic { --c: #d97757; } .cover-art.p-openai { --c: #10a37f; } .cover-art.p-google { --c: #4285f4; } .cover-art.p-open { --c: #e0a020; }
+.cover-art::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, .09) 1px, transparent 0) 0 0 / 16px 16px;
+  -webkit-mask-image: linear-gradient(200deg, #000, transparent 70%); mask-image: linear-gradient(200deg, #000, transparent 70%); pointer-events: none; }
+.cover-img .cover-art { position: absolute; inset: 0; }
+.art-mark { position: absolute; right: -6%; top: -12%; width: 62%; aspect-ratio: 1; color: #fff; opacity: .16; transform: rotate(-12deg); }
+.art-mark .logo { width: 100% !important; height: 100% !important; opacity: 1 !important; }
+.art-text { position: relative; z-index: 1; display: grid; gap: .3rem; color: #fff; }
+.art-kicker { font: 600 .68rem var(--mono); text-transform: uppercase; letter-spacing: .14em; opacity: .75; }
+.art-name { font: 700 clamp(1.4rem, 3.2vw, 2.1rem)/1.05 var(--mono); letter-spacing: -.02em; text-wrap: balance; text-shadow: 0 2px 18px rgba(0, 0, 0, .35); }
+.art-ver { justify-self: start; font: 700 .82rem var(--mono); padding: .2rem .55rem; border-radius: 999px; background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .28); }
+.top-story .art-name { font-size: clamp(2rem, 4.4vw, 3.4rem); }
+.top-story .cover-art { padding: 1.8rem 2rem; }
+.cover-img:has(> img) > .cover-art { display: none; } /* the drawn cover is only a fallback for a picture that fails to load */
