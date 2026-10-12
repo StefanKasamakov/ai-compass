@@ -11871,5 +11871,39 @@
   "repo": "microsoft/BitNet",
   "at": "2026-10-12",
   "source": "trending"
+ },
+ "yzg1226/mcd-party-officer": {
+  "cat": "harness",
+  "kind": "Party booking skill",
+  "what": "McParty Officer is an AI agent skill and Python tool using the McDonald's MCP server to calculate party group-buying success rates, compare private booking versus pooling, and generate invite materials.",
+  "why": "McDonald's store party rules cancel and refund bookings if participant quotas are not met 3 days before the date. Use this to find available slots, calculate group formation odds, and generate shareable recruitment cards and invitations.",
+  "level": "setup",
+  "start": "git clone https://github.com/yzg1226/mcd-party-officer.git ~/.workbuddy/skills/mcd-party-officer",
+  "caution": "Requires a free API token from McDonald's open MCP platform (open.mcd.cn/mcp). It is an independent contest submission, not an official McDonald's product.",
+  "alts": [
+   "ardeyouxipianyi/workbuddy2api-hub",
+   "modelcontextprotocol/python-sdk",
+   "n8n-io/n8n"
+  ],
+  "packages": [],
+  "plain": "A smart assistant skill that checks McDonald's party slots, calculates group-booking odds, and makes invitations.",
+  "tags": [
+   "automate",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Calculate group-buying success probability for store party bookings",
+   "Compare cost and certainty between private room booking and group pooling",
+   "Generate ready-to-send party recruitment cards and HTML invitations"
+  ],
+  "steps": [
+   "Clone the repository into your WorkBuddy skill directory or local machine",
+   "Obtain a McDonald's MCP token from open.mcd.cn/mcp and export it to `MCD_MCP_TOKEN`",
+   "Run `python scripts/demo_plus.py` or chat with WorkBuddy using the registered skill"
+  ],
+  "repo": "yzg1226/mcd-party-officer",
+  "at": "2026-10-12",
+  "source": "trending"
  }
 }
