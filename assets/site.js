@@ -522,6 +522,11 @@ const pages = {
     $$("[data-prompts]").forEach((el) => (el.innerHTML = el.dataset.prompts.split(",").map((id) => pr.prompts.find((x) => x.id === id)).filter(Boolean).map((x) => promptCard(x, cats)).join("")));
   },
 
+  async tool() {
+    const key = document.body.dataset.key, v = await votes();
+    const slot = $("#toolVote"); if (slot) slot.innerHTML = voteBtn(v, key, " Recommend");
+  },
+
   local: () => localModels(),
   benchmarks: async () => benchmarks(await load("models")),
 
@@ -590,6 +595,9 @@ const pages = {
 };
 
 // A repo (from explain.json) or a skill/MCP/collection (from tools.json) in one shape
+// ===== catalog: start (agent/pages.mjs runs this block in Node; keep it free of DOM calls) =====
+// every tool has a static page at tools/<slug>.html, so search engines see each one
+const slugOf = (x) => `${{ skill: "skill-", mod: "mod-", mcp: "mcp-", collection: "pack-" }[x.kind] || ""}${x.key.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}`;
 const KIND = { app: "App", repo: "Open-source project", skill: "Skill", mcp: "Connector (MCP)", collection: "Skill pack", mod: "Claude Code mod" };
 // What a mod can reach, in the scanner's four steps, said plainly
 const REACH = [
@@ -706,14 +714,16 @@ const fromTool = (t, s) => ({ key: t.id, kind: t.type, name: t.name, owner: t.by
   tags: t.tags || [], level: t.level, alts: [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: 0, official: t.official, mcp: t.type === "mcp" });
 const LEVEL = { easy: ["No coding", "ok"], setup: ["Some setup", ""], dev: ["For developers", "warn"] };
 
+// ===== catalog: end =====
+
 function toolCard(x, tags) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
-  return `<button class="tool" data-open="${esc(x.key)}">
+  return `<a class="tool" href="tools/${slugOf(x)}.html" data-open="${esc(x.key)}">
     <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${x.fromPack ? "from " : ""}${esc(x.owner)}` : ""}</small></span></span>
     <span class="tool-plain">${esc(x.plain || "")}</span>
     <span class="tool-foot">${x.kind === "mod" ? `<span class="tag ${REACH[x.reach]?.[0] === "ok" ? "ok" : "warn"}">${esc(REACH[x.reach]?.[1] || "")}</span>${MOD_CAT[x.cat] ? `<span class="tag">${esc(MOD_CAT[x.cat])}</span>` : ""}` : `${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}`}
       <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
-  </button>`;
+  </a>`;
 }
 
 // What a careful person would check before installing something from GitHub, answered up front
@@ -761,6 +771,7 @@ function toolDetail(x, all, tags, tips) {
     ${alts.length ? `<h3 style="margin-top:1.4rem">Similar tools</h3><div class="row">${alts.map((a) => `<button class="chip" data-open="${esc(a.key)}">${esc(a.name)}</button>`).join("")}</div>` : ""}
     <div class="row" style="margin-top:1.6rem">${voteBtn(VOTES, x.key, " Recommend")}${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">${icon("external")}Open ${esc(x.name)}</a>` : ""}${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
       ${link ? `<a class="btn" href="${link}" target="_blank" rel="noopener">${icon("github")}Open on GitHub</a>` : ""}
+      <a class="btn" href="tools/${slugOf(x)}.html">${icon("external")}Full page</a>
       <a class="btn" href="contribute.html?kind=tip&target=${encodeURIComponent(x.key)}">${icon("chat")}Share a tip</a>
       <a class="btn" href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">${icon("alert")}Report a mistake</a>
       <span class="muted mono" style="font-size:.8rem">${x.stars ? `${num(x.stars)} stars` : ""}${x.installs ? ` · ${num(x.installs)} installs/month` : ""}${x.updated ? ` · updated ${ago(x.updated)}` : ""}</span></div>`;
@@ -859,7 +870,7 @@ async function askBox() {
 }
 
 // home page cards open the directory
-document.addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o && !$("#toolDlg")) location.href = `explore.html#${o.dataset.open}`; });
+document.addEventListener("click", (e) => { const o = e.target.closest("[data-open]"); if (o && !$("#toolDlg") && o.tagName !== "A") location.href = `explore.html#${o.dataset.open}`; });
 
 // ---------- benchmarks: heatmap, ranked bars, value scatter ----------
 const tip = () => $("#tip") || (document.body.insertAdjacentHTML("beforeend", `<div class="tip" id="tip" role="tooltip"></div>`), $("#tip"));

@@ -778,3 +778,12 @@ a.goal-chip { text-decoration: none; }
 .map-tool { display: inline-flex; align-items: center; gap: .5rem; padding: .35rem .7rem .35rem .4rem; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--fg); font: 500 .88rem var(--sans); cursor: pointer; }
 .map-tool:hover { border-color: var(--c); }
 .map-tool .avatar { width: 26px; height: 26px; border-radius: 50%; }
+
+/* ---------- v19: tool pages ---------- */
+a.tool { text-decoration: none; }
+.tool-page .dlg-head { margin-bottom: .4rem; }
+.tool-page h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.crumbs { font: .8rem var(--mono); color: var(--dim); margin-bottom: 1rem; }
+.crumbs a { color: var(--muted); }
+.tool-facts { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; font: .82rem var(--mono); color: var(--dim); margin: 1rem 0 0; }
+.tool-logo { width: 64px; height: 64px; border-radius: 16px; flex: none; }
