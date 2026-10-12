@@ -37,16 +37,32 @@ const OFFICIAL = [
 
 const norm = (u = "") => u.replace(/\/+$/, "").replace(/\/tree\/[^/]+$/, "").toLowerCase();
 
+// The README's layout changes (on 10 Oct 2026 the category sections became one "Featured" list), so a section we
+// do not know is sorted into a category by its words instead of being skipped.
+const GUESS = [
+  ["rendering", /\b(render|markdown|mermaid|table|diagram|chart|image|thumbnail|file tree|preview|browser)/i],
+  ["usage", /\b(cost|token|cache|context|usage|limit|quota|dashboard|meter|spend)/i],
+  ["safety", /\b(secret|redact|guard|risky|danger|block|permission|confirm|safe)/i],
+  ["git", /\b(git|pull request|\bpr\b|ci\b|deploy|github|merge|commit)/i],
+  ["memory", /\b(memory|remember|compact|handoff|notes?|knowledge)/i],
+  ["fun", /\b(game|pet|music|play|arcade|fun)/i],
+  ["agents", /\b(agent|subagent|workflow|task|prompts?)/i],
+];
+const guessCat = (t) => GUESS.find(([, re]) => re.test(t))?.[0] || "agents";
+
 function curatedFromReadme(md) {
   const cut = md.indexOf("## Every mod the scanner found");
   const lines = (cut > 0 ? md.slice(0, cut) : md).split(/\r?\n/);
   const out = [];
-  let cat = null;
+  let section = null;
   for (const line of lines) {
     const h = line.match(/^## (.+)$/);
-    if (h) { cat = CATS[h[1].trim()] || null; continue; }
+    if (h) { section = h[1].trim(); continue; }
+    if (!section || /^(contents|use mods|building mods|contribut|related|how the scan)/i.test(section)) continue;
     const m = line.match(/^- \[([^\]]+)\]\((https:\/\/github\.com\/[^)]+)\) - (.+)$/);
-    if (m && cat) out.push({ name: m[1], url: m[2], plain: m[3].trim(), cat: cat[0] });
+    if (!m) continue;
+    const plain = m[3].replace(/\s*\[(Demo|Recording|Screenshot)\]\([^)]*\)\.?/g, "").trim();
+    out.push({ name: m[1], url: m[2], plain, cat: CATS[section]?.[0] || guessCat(`${m[1]} ${plain}`), featured: section === "Featured" });
   }
   return out;
 }
@@ -68,7 +84,10 @@ for (const m of scan.mods) if (m.kind === "mod") { const k = m.repo.toLowerCase(
 const plainLabel = (l) => l.replace(/^other: /, "");
 const mods = [];
 const seen = new Set();
-for (const c of curatedFromReadme(readme)) {
+const fromReadme = curatedFromReadme(readme);
+const known = (prev?.mods || []).filter((x) => !x.builtin && !x.sample && x.url && !fromReadme.some((c) => norm(c.url) === norm(x.url)))
+  .map((x) => ({ name: x.name, url: x.url, plain: x.plain, cat: x.cat, featured: false }));
+for (const c of [...fromReadme, ...known]) {
   let m = byUrl.get(norm(c.url));
   if (!m) { // a README link to a repo root that holds one mod
     const repo = c.url.replace("https://github.com/", "").split("/").slice(0, 2).join("/").toLowerCase();
@@ -86,8 +105,14 @@ for (const c of curatedFromReadme(readme)) {
     reach: m.reach?.level ?? 2, reachLabels: (m.reach?.labels || []).filter((l) => !l.startsWith("other:")).map(plainLabel),
     sees: (m.sees || []).slice(0, 6), surfaces: m.draws || [],
     validated: m.validate?.status || "unknown", stars: m.stars || 0, license: m.license || null, pushed: m.pushedAt || null,
-    marketplace: mk?.name || null, plugin: m.name,
+    marketplace: mk?.name || null, plugin: m.name, ...(c.featured && { featured: true }),
   });
+}
+
+// a sudden drop means the source changed shape again: keep the old list rather than publish a broken one
+if (prev && mods.length < 0.7 * prev.mods.filter((x) => !x.builtin && !x.sample).length) {
+  console.warn(`mods: only ${mods.length} matched (was ${prev.mods.length - OFFICIAL.length}), keeping the previous file`);
+  process.exit(0);
 }
 
 const out = {
