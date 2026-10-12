@@ -11838,5 +11838,38 @@
   "repo": "Sev7eEn7/dsh-sieve",
   "at": "2026-10-12",
   "source": "trending"
+ },
+ "microsoft/BitNet": {
+  "cat": "local",
+  "kind": "1-bit LLM runtime",
+  "what": "Official C++ inference framework designed to run ternary 1.58-bit language and embedding models quickly on standard CPUs and GPUs.",
+  "why": "Standard LLMs require high-end GPUs and large memory pools; bitnet.cpp slashes memory bandwidth and energy use so you can run models on everyday computer processors.",
+  "level": "dev",
+  "start": "git clone --recursive https://github.com/microsoft/BitNet.git",
+  "caution": "Only works with architectures trained specifically as 1-bit/ternary BitNet models; standard FP16 models cannot simply run here without custom retraining.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "ml-explore/mlx-lm"
+  ],
+  "packages": [],
+  "plain": "Run ultra-compact 1-bit AI models on standard computer processors using very little power.",
+  "tags": [
+   "save",
+   "private"
+  ],
+  "useFor": [
+   "Run 1.58-bit BitNet language models on standard CPU hardware",
+   "Generate text embeddings faster using low-bit embedding weights",
+   "Deploy low-power AI inference on edge devices"
+  ],
+  "steps": [
+   "Clone the repository recursively using `git clone --recursive https://github.com/microsoft/BitNet.git`.",
+   "Build the project using CMake and the target compiler for your CPU architecture (x86 or ARM).",
+   "Download an official BitNet model from Hugging Face and run the inference executable."
+  ],
+  "repo": "microsoft/BitNet",
+  "at": "2026-10-12",
+  "source": "trending"
  }
 }

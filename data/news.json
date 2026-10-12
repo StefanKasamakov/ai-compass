@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T06:06:47.229Z",
+ "updated": "2026-10-12T11:27:56.931Z",
  "items": [
   {
    "source": "GitHub",
@@ -70,6 +70,21 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/d62f2246da963b4a9e47318fa942b33e3f9a0f8c0a37f82c7597a51716210c8d/anthropics/claude-code/releases/tag/v2.1.296"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Five months treating bugs like patients and coding agents like a medical team",
+   "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
+   "date": "2026-10-09T15:26:33Z",
+   "discuss": "https://news.ycombinator.com/item?id=50021899",
+   "summary": "A developer shares practical insights from managing autonomous coding agents across multi-month production debugging tasks.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/00voh0j35590/2yOYv8dss0M8hI24SPoDQt/03144320f103f1ab7692be074951b729/Group_1__2_.jpg"
   },
   {
    "source": "Simon Willison",
@@ -234,6 +249,33 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/62f8ab0478731bfa52166354d960fb94d4683a9c55d9a72f4caf7c6f8271e099/anthropics/claude-code/releases/tag/v2.1.294"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/dashboards-and-motion",
+   "date": "2026-10-08",
+   "title": "Build live dashboards and animate explainers with Claude",
+   "summary": "Anthropic added Claude Dashboards and Motion to Claude, while graduating Docs, Slides, and Design tools to all users including the free tier.",
+   "tags": [
+    "product"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/dashboards-and-motion/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests",
+   "date": "2026-10-08",
+   "title": "How Block orchestrates Claude Fable across thousands of pull requests",
+   "summary": "Block published practical details on using Claude Fable 5 to automate large-scale code refactoring across pull requests.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests/opengraph-image/og"
   },
   {
    "source": "Simon Willison",
@@ -441,6 +483,19 @@
    "url": "https://openai.com/index/teens-learn-and-plan",
    "date": "2026-10-07T12:00:00.000Z",
    "summary": "OpenAI is bringing a college planning tool, flashcards, and quizzes to ChatGPT for Teens.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+   "url": "https://openai.com/index/radisson",
+   "date": "2026-10-07T07:00:00.000Z",
+   "summary": "Radisson launched a ChatGPT integration allowing users to search, compare, and book hotels directly within ChatGPT conversations.",
    "tags": [
     "product"
    ],
@@ -768,6 +823,19 @@
    "image": "https://opengraph.githubassets.com/744e936df1d993f3a47bf73cb014d026d7f0a0153f4db83a36a4f13c78e0c79a/anthropics/claude-code/releases/tag/v2.1.291"
   },
   {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+   "date": "2026-10-06",
+   "title": "Claude now works with Google Docs, Sheets, and Slides",
+   "summary": "Anthropic launched Claude for Google Workspace, enabling users to read, edit, and summarize Google Docs, Sheets, and Slides directly within Claude.",
+   "tags": [
+    "product"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides/opengraph-image/og"
+  },
+  {
    "source": "Simon Willison",
    "title": "Quoting Felix Rieseberg",
    "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
@@ -843,6 +911,20 @@
    "big": false,
    "ai": false,
    "image": "https://www.techspot.com/images2/news/bigimage/2026/10/2026-10-04-image-9.jpg"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk",
+   "date": "2026-10-05",
+   "title": "How Cresta turned CX expertise into an agent builder on the Claude Agent SDK",
+   "summary": "Cresta built an agent orchestration tool using Anthropic's Claude Agent SDK, illustrating patterns for developers building multi-agent systems.",
+   "tags": [
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/how-cresta-turned-cx-expertise-into-an-agent-builder-on-the-claude-agent-sdk/opengraph-image/og"
   },
   {
    "source": "Simon Willison",
@@ -1055,6 +1137,256 @@
    "big": false,
    "ai": false,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Gemini 4 Argon: GDM’s answer to Astra/Fable, with 1M output",
+   "url": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+   "date": "2026-10-01T06:45:05.000Z",
+   "summary": "Google DeepMind revealed Gemini 4 Argon with a 1M token output window, initially limited to select cybersecurity partners.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!wmoR!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTfV52SWgAIlX3W.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Matthew Green",
+   "url": "https://simonwillison.net/2026/Oct/1/matthew-green/",
+   "date": "2026-10-01T06:29:01.000Z",
+   "summary": "A security researcher warns how multi-agent AI systems sharing caches or channels can propagate autonomous malware between agents.",
+   "tags": [
+    "agents",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "DeepMind",
+   "title": "Gemini 4 Argon: our next era of frontier intelligence",
+   "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+   "date": "2026-09-30T20:01:45.000Z",
+   "summary": "Google DeepMind announced Gemini 4 Argon, its newest flagship frontier intelligence model.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU",
+   "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+   "date": "2026-09-30T05:53:10.000Z",
+   "summary": "A breakdown of OpenAI's latest DevDay announcements covering new models, agent frameworks, and enterprise APIs.",
+   "tags": [
+    "models",
+    "agents",
+    "coding",
+    "product"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/GjN3xLDuc8o"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
+   "url": "https://huggingface.co/blog/open-tts-leaderboard",
+   "date": "2026-09-30T00:00:00.000Z",
+   "summary": "Hugging Face released an open leaderboard for comparing text-to-speech models and voice cloning quality across languages.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/open-tts-leaderboard/thumbnail.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+   "date": "2026-09-29T13:07:00.000Z",
+   "summary": "Hugging Face published research on source-aware verification to help Model Context Protocol (MCP) agents cite and fact-check tools accurately.",
+   "tags": [
+    "mcp",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "DevDay 2026 Recap",
+   "url": "https://openai.com/index/devday-2026-recap",
+   "date": "2026-09-29T10:00:00.000Z",
+   "summary": "OpenAI recapped its DevDay 2026 conference, highlighting major updates to models, APIs, and developer tools.",
+   "tags": [
+    "models",
+    "coding",
+    "agents",
+    "product"
+   ],
+   "big": true,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing GPT-6.1 Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+   "date": "2026-09-29T10:00:00.000Z",
+   "summary": "OpenAI introduced GPT-6.1 Sol, a lower-cost model optimized for coding, computer use, and workflows at a fraction of Astra's price.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": true,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Opus 5.5 is good at explainer videos",
+   "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
+   "date": "2026-09-29T02:44:29.000Z",
+   "summary": "A newsletter review analyzing the multimedia video generation and diagramming capabilities of Claude Opus 5.5.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!aAiz!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHTVRIbeagAAvWK1.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Claude Code’s Next Era — Thariq Shihipar, Anthropic",
+   "url": "https://www.latent.space/p/thariq",
+   "date": "2026-09-29T01:48:18.000Z",
+   "summary": "Anthropic discussed updates to Claude Code, highlighting Claude 5.5 models alongside new modular plugins and project management tools.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!A4NZ!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F217893105%2Fc63d4f50-ca5f-459a-b368-281f73e3765e%2Ftranscoded-1790641303.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing dots",
+   "url": "https://openai.com/index/introducing-dots",
+   "date": "2026-09-29T00:00:00.000Z",
+   "summary": "OpenAI announced Dots, autonomous proactive AI agents designed to handle multi-step projects and recurring tasks in the background.",
+   "tags": [
+    "agents",
+    "product"
+   ],
+   "big": true,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Holo4: powering generalist computer-use agents",
+   "url": "https://huggingface.co/blog/Hcompany/holo4",
+   "date": "2026-09-28T09:44:05.000Z",
+   "summary": "Hugging Face released Holo4, an open model designed specifically for operating desktop interfaces and computer-use agent tasks.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/69fc7e49052f11ab9931b672/yzjxvlmlZKtjASwAYu6bN.jpeg"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Introducing Gemini 3.8 Live with Live Avatar",
+   "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+   "date": "2026-09-24T16:20:39.000Z",
+   "summary": "DeepMind launched Gemini 3.8 Live featuring Live Avatar for interactive multimodal voice and video conversations.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Slide_16_9_-_37.width-1300.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Gemini 3.8 text-to-speech says hello",
+   "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+   "date": "2026-09-23T15:25:14.000Z",
+   "summary": "DeepMind released a standalone text-to-speech engine powered by Gemini 3.8.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-audio__keyword__metacard__light.width-1300.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing MentalHealthBench",
+   "url": "https://openai.com/index/introducing-mentalhealthbench",
+   "date": "2026-09-23T10:00:00.000Z",
+   "summary": "OpenAI released MentalHealthBench, a standardized benchmark for testing AI safety and response quality during mental health conversations.",
+   "tags": [
+    "safety",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Better prompt caching for GPT-6",
+   "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+   "date": "2026-09-22T21:00:00.000Z",
+   "summary": "OpenAI released prompt caching upgrades for GPT-6, giving developers explicit controls and diagnostics to lower API latency and costs.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing GPT-6 Sol and Luna",
+   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+   "date": "2026-09-22T18:00:00.000Z",
+   "summary": "OpenAI released GPT-6 Sol and Luna, providing new frontier-tier model options balanced for different cost and speed requirements.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": ""
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Transformers now runs llama.cpp quants",
+   "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+   "date": "2026-09-22T00:00:00.000Z",
+   "summary": "Hugging Face Transformers added native support for running quantized models directly via llama.cpp formats.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/transformers_llama_cpp_quants/thumbnail.png"
   }
  ]
 }
