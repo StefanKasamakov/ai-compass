@@ -11597,5 +11597,246 @@
   "repo": "kkjiangk/agent-py",
   "at": "2026-10-11",
   "source": "trending"
+ },
+ "shader-effects-inc/shaders": {
+  "cat": "harness",
+  "kind": "UI shader toolkit",
+  "what": "A WebGPU component library and design tool for React, Vue, Svelte, and Solid with built-in MCP and agent skills.",
+  "why": "Writing raw WebGPU shaders for web user interfaces is difficult. Use this when you want visual GPU effects dropped into modern frontends with direct AI coding support.",
+  "level": "setup",
+  "start": "npm install shaders",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "google/skills"
+  ],
+  "packages": [
+   "shaders"
+  ],
+  "plain": "Adds interactive WebGPU visual effects to modern web apps, with tools for AI assistants to write them.",
+  "tags": [
+   "apps",
+   "supercharge",
+   "media"
+  ],
+  "useFor": [
+   "Add WebGPU visual effects to web apps",
+   "Equip AI coding agents with shader skills",
+   "Design visual shaders and export frontend code"
+  ],
+  "steps": [
+   "Install the core library in your project with `npm install shaders`.",
+   "Import `<Shader>` and effect components into your React, Vue, Svelte, or Solid UI.",
+   "Run `npx shaders@latest install-mcp` to let your AI agent search and install shader components."
+  ],
+  "repo": "shader-effects-inc/shaders",
+  "at": "2026-10-12",
+  "source": "trending"
+ },
+ "devswha/herdr-web-ui": {
+  "cat": "harness",
+  "kind": "mobile web interface",
+  "what": "A browser and mobile PWA client for herdr that lets you control and monitor terminal coding agents from desktop or phone.",
+  "why": "Coding agents like Claude Code run in your desktop terminal, making them difficult to track away from your desk. Reach for this to review agent responses, approve actions, or switch to live terminals remotely.",
+  "level": "setup",
+  "start": "curl -fsSL https://herdrweb.dev/install.sh | sh",
+  "caution": "Pipes an external installation script directly into your shell. Exposes local terminal sessions across your network or tailnet.",
+  "alts": [
+   "penso/herdr-gpui",
+   "siteboon/claudecodeui",
+   "hsandhu/mobilecode"
+  ],
+  "packages": [],
+  "plain": "Control and chat with coding agents on your computer from a browser or phone app.",
+  "tags": [
+   "code",
+   "supercharge",
+   "connect"
+  ],
+  "useFor": [
+   "Monitor Claude Code and Codex sessions directly from your phone",
+   "Approve agent prompts and command requests with a single tap",
+   "Switch between chat view and a full interactive terminal remotely"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://herdrweb.dev/install.sh | sh` to install dependencies and the herdr plugin",
+   "Ensure herdr is running on your machine",
+   "Open the web client in your browser or install the PWA on your phone using the Tailscale address"
+  ],
+  "repo": "devswha/herdr-web-ui",
+  "at": "2026-10-12",
+  "source": "trending"
+ },
+ "bherbruck/solidcraft": {
+  "cat": "media",
+  "kind": "Parametric 3D CAD",
+  "what": "SolidCraft is an open-source parametric 3D CAD application built in Rust with desktop, web, and MCP automation support.",
+  "why": "Proprietary CAD suites are heavy and hard to automate programmatically. Use SolidCraft when you need a fast, scriptable CAD environment that AI agents can inspect and drive directly.",
+  "level": "setup",
+  "start": "cargo run --release -p solvecraft -- --sample",
+  "caution": "The project is at an early stage of development and does not yet match the full geometric feature set of mature commercial CAD suites.",
+  "alts": [
+   "earthtojake/text-to-cad",
+   "viettranx/3dviz-pro-max"
+  ],
+  "packages": [],
+  "plain": "A parametric 3D modeling tool that runs on desktop, web, or via AI agent commands.",
+  "tags": [
+   "media",
+   "automate",
+   "apps"
+  ],
+  "useFor": [
+   "Model 3D parts using parametric sketches and constraints",
+   "Automate CAD modeling with AI agents through MCP",
+   "Export models to STEP, IGES, or STL formats"
+  ],
+  "steps": [
+   "Launch the desktop app with a sample model using `cargo run --release -p solvecraft -- --sample`.",
+   "Run headless CAD tasks or export files with `cargo run --release -p solvecraft-cli`.",
+   "Start the MCP server to let AI agents create and measure models automatically."
+  ],
+  "repo": "bherbruck/solidcraft",
+  "at": "2026-10-12",
+  "source": "trending"
+ },
+ "moritzwilksch/diffle": {
+  "cat": "coding",
+  "kind": "browser diff viewer",
+  "what": "A keyboard-driven browser diff viewer with code navigation and GitHub pull request integration.",
+  "why": "Reviewing large diffs in terminals or standard web interfaces can be clunky; reach for this to review code changes with keyboard shortcuts, language server navigation, and the ability to copy comments for AI agents or draft PR reviews.",
+  "level": "easy",
+  "start": "npx @moritzwilksch/diffle working",
+  "caution": "Language servers executed by diffle run inside your shell environment with your user permissions.",
+  "alts": [
+   "Aider-AI/aider",
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [
+   "@moritzwilksch/diffle"
+  ],
+  "plain": "A browser tool to review code diffs with keyboard shortcuts and export comments to AI or GitHub.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Review local code diffs in a browser using keyboard shortcuts",
+   "Collect review comments to pass directly to an AI coding agent",
+   "Export inline review comments as pending reviews on GitHub PRs"
+  ],
+  "steps": [
+   "Run `npx @moritzwilksch/diffle working` in your Git repository",
+   "Navigate diffs and add comments on lines or files using keyboard keys like `c`",
+   "Copy all comments with `yy` to prompt an agent or export to GitHub"
+  ],
+  "repo": "moritzwilksch/diffle",
+  "at": "2026-10-12",
+  "source": "trending"
+ },
+ "Aryanutkarsh/SeeCode": {
+  "cat": "harness",
+  "kind": "agent diagram skill",
+  "what": "An agent skill that transforms short JSON specifications or plain-text requests into animated, interactive software and architecture diagrams.",
+  "why": "Drawing system architectures and sequences by hand is tedious, and basic diagram text tools lack interactivity. Reach for this when using Claude Code, Cursor, or Codex to generate presentation-ready diagrams you can explore in HTML or export to GIF and MP4.",
+  "level": "setup",
+  "start": "npx skills add Aryanutkarsh/seecode -g",
+  "caution": "",
+  "alts": [
+   "cathrynlavery/diagram-design",
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Create interactive, animated software architecture and workflow diagrams simply by asking your AI coding agent.",
+  "tags": [
+   "docs",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate animated architecture diagrams during system design",
+   "Export interactive sequence and data flows to SVG, GIF, or MP4",
+   "Visualize database schemas and user journeys without manual drawing"
+  ],
+  "steps": [
+   "Install the skill into your agent host using `npx skills add Aryanutkarsh/seecode -g`.",
+   "Ask your coding agent in plain English to diagram a process, service flow, or database.",
+   "Open the resulting HTML file to inspect the interactive view, or export it to video and images."
+  ],
+  "repo": "Aryanutkarsh/SeeCode",
+  "at": "2026-10-12",
+  "source": "trending"
+ },
+ "LingCore/WinShun": {
+  "cat": "harness",
+  "kind": "Windows search launcher",
+  "what": "WinShun is a free, open-source file search and productivity launcher for Windows 10 and 11.",
+  "why": "It replaces multiple Windows tools by combining lightning-fast file search, full-text document search, a clipboard manager, and an AI MCP server into a single double-Ctrl hotkey interface.",
+  "level": "easy",
+  "start": "Download WinShun-version-x64-setup.exe from Releases, run the installer, and press Ctrl twice.",
+  "caution": "Requires administrator privileges to read the NTFS master file table and build search indexes.",
+  "alts": [],
+  "packages": [],
+  "plain": "A fast open-source Windows launcher that lets you find files, search document text, and connect local tools to AI apps.",
+  "tags": [
+   "knowledge",
+   "connect",
+   "automate"
+  ],
+  "useFor": [
+   "Search file names and contents using Pinyin",
+   "Manage clipboard history with OCR support",
+   "Connect local files to AI assistants via MCP"
+  ],
+  "steps": [
+   "Download the latest setup executable or portable zip from the GitHub releases page.",
+   "Run the installer or unpack the zip, then launch WinShun.",
+   "Press Ctrl twice to open the search box and start typing to find files or apps."
+  ],
+  "repo": "LingCore/WinShun",
+  "at": "2026-10-12",
+  "source": "trending"
+ },
+ "Sev7eEn7/dsh-sieve": {
+  "cat": "tokens",
+  "kind": "DeepSeek Harness Plugin",
+  "what": "A context optimization plugin for the DeepSeek Harness AI coding agent that filters tool outputs, prunes older context, and progressively discloses skills.",
+  "why": "AI coding agents waste tokens and context window space on massive tool logs, stale results, and unused skill lists. Use this to reduce token consumption and improve agent focus during long coding sessions.",
+  "level": "setup",
+  "start": "dsh plugin --profile web add dsh-sieve@0.2.0 dsh-sieve-web@0.2.0",
+  "caution": "Requires configuring a dedicated external judge model (Jev or Laya) to operate. If configured to use consumer or hosted API keys (such as OpenRouter), follow the provider's terms of service.",
+  "alts": [
+   "anthropics/claude-code",
+   "gsd-build/get-shit-done",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [
+   "dsh-sieve",
+   "dsh-sieve-web"
+  ],
+  "plain": "A plugin for AI coding agents that shrinks large build logs and hidden instruction text to save token costs.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Shrink large tool outputs and build logs to save input tokens",
+   "Prune irrelevant older context from multi-step coding sessions",
+   "Disclose skill catalogs progressively based on current task relevance"
+  ],
+  "steps": [
+   "Install the plugin package using `dsh plugin --profile web add dsh-sieve@0.2.0 dsh-sieve-web@0.2.0`",
+   "Configure a judge model by adding an API key for Jev or starting the local Laya server",
+   "Restart dsh web and verify the sieve status in your session"
+  ],
+  "repo": "Sev7eEn7/dsh-sieve",
+  "at": "2026-10-12",
+  "source": "trending"
  }
 }
