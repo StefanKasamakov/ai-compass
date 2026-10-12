@@ -69,6 +69,10 @@ jobs:
         continue-on-error: true
         run: node agent/mods.mjs
 
+      - name: Health check (opens a GitHub issue when a source breaks)
+        continue-on-error: true
+        run: node agent/health.mjs
+
       - name: Commit data
         run: |
           git config user.name "ai-compass-agent"

@@ -232,6 +232,11 @@ async function coverImageViaBrowser(url) {
   } catch { return ""; }
 }
 
+// The AI marks too much as a big launch (a how-to article about a new model is not a launch): only the companies'
+// own posts, or a title that announces something, can carry the label.
+const OFFICIAL = new Set(["Anthropic", "OpenAI", "Google", "DeepMind"]);
+const bigSource = (it) => OFFICIAL.has(it.source) || /^(\[AINews\]\s*)?(introducing|announcing|launch(ing|es)?|meet)\b/i.test(it.title);
+
 async function news(stats, tools) {
   const prev = await read("data/news.json", { items: [] });
   const known = new Set(prev.items.map((i) => i.url));
@@ -249,7 +254,7 @@ async function news(stats, tools) {
     if (n && !n.relevant) return [];
     if (!n && !RELEVANT.test(it.title + " " + it.snippet)) return [];
     const { snippet, ...rest } = it;
-    return [{ ...rest, summary: n?.summary ?? snippet, tags: n?.tags ?? [], big: n?.big ?? false, ai: !!n }];
+    return [{ ...rest, summary: n?.summary ?? snippet, tags: n?.tags ?? [], big: !!n?.big && bigSource(it), ai: !!n }];
   });
   const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 160);
   // cover picture: the article's own social preview image. "" = looked, none found (don't retry).
