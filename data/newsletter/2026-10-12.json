@@ -1,0 +1,165 @@
+{
+ "date": "2026-10-12",
+ "subject": "OpenAI rolls out GPT-6 with an interactive interface",
+ "intro": "OpenAI launched GPT-6 with interactive visual elements directly inside ChatGPT. Meanwhile, Anthropic connected Claude to Google Workspace and added interactive dashboards to its web workspace. These releases focus on making everyday assistant workflows faster and more visual without requiring technical setup.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "GPT-6 and Intelligent UI for everyone",
+     "url": "https://openai.com/index/gpt-6-for-everyone",
+     "blurb": "OpenAI has rolled out GPT-6 with a new interactive user interface. Users get faster responses and visual, interactive elements directly in ChatGPT.",
+     "meta": "OpenAI"
+    },
+    {
+     "title": "Build live dashboards and animate explainers with Claude",
+     "url": "https://claude.com/resources/articles/dashboards-and-motion",
+     "blurb": "Anthropic added Claude Dashboards and Motion to Claude, while graduating Docs, Slides, and Design tools to all users including the free tier.",
+     "meta": "Anthropic"
+    },
+    {
+     "title": "Claude now works with Google Docs, Sheets, and Slides",
+     "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+     "blurb": "Anthropic launched Claude for Google Workspace, enabling users to read, edit, and summarize Google Docs, Sheets, and Slides directly within Claude.",
+     "meta": "Anthropic"
+    },
+    {
+     "title": "[AINews] Claude Haiku 5.5 — better than GPT-6 Luna at the same pricing",
+     "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+     "blurb": "Anthropic announced Claude Haiku 5.5, improving processing speeds and lightweight reasoning at low price tiers.",
+     "meta": "Latent Space"
+    },
+    {
+     "title": "Introducing Mistral Large 4: Le chonk",
+     "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
+     "blurb": "Mistral released a preview of Mistral Large 4, a 1-trillion parameter model trained on Grace Blackwell GPUs.",
+     "meta": "Simon Willison"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Claude Sonnet 5.5",
+     "url": "https://whichaimap.com/models.html#m-sonnet",
+     "blurb": "Fast and smart: writing, bug fixes, polished docs, slides and spreadsheets, high-volume apps. New 28 Sep: 30% faster than Sonnet 5, same price.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "Claude Haiku 5.5",
+     "url": "https://whichaimap.com/models.html#m-haiku",
+     "blurb": "Simple tasks at scale: classification, extraction, routing, chatbots. The cheapest Claude. New 7 Oct: replaces Haiku 4.5 at a tenth of the price, with a 1M context window.",
+     "meta": "$0.1 / $0.5 per 1M tokens"
+    },
+    {
+     "title": "GPT-6.1 Sol",
+     "url": "https://whichaimap.com/models.html#m-sol",
+     "blurb": "Strong reasoning for complex professional work at a mid-tier price. In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode.",
+     "meta": "$2 / $10 per 1M tokens"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "Ebony-Vinyl/dsh-our-free-model",
+     "url": "https://whichaimap.com/explore.html#Ebony-Vinyl/dsh-our-free-model",
+     "blurb": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts. Heads-up: Relies entirely on a free third-party routing gateway (opencode.ai), which may experience downtime, change its terms of service, or stop working unexpectedly.",
+     "meta": "DeepSeek Harness plugin"
+    },
+    {
+     "title": "XiaoPuOuO/openchatx-mcp",
+     "url": "https://whichaimap.com/explore.html#XiaoPuOuO/openchatx-mcp",
+     "blurb": "Turn ChatGPT into a local agent runtime that can run shell commands, edit files, and control your computer using OpenAI's official secure tunnel. Heads-up: Gives an AI agent direct read and write access to your local computer and file system using your user permissions.",
+     "meta": "Desktop App"
+    },
+    {
+     "title": "msitarzewski/agency-agents",
+     "url": "https://whichaimap.com/explore.html#msitarzewski/agency-agents",
+     "blurb": "A collection of specialized AI agent profiles and workflow configurations designed for coding assistants like Claude Code and Cursor. Heads-up: Some platforms like OpenCode have internal limits and may silently drop agents if you try to import too many at once.",
+     "meta": "Agent persona pack"
+    },
+    {
+     "title": "Gaurav-Gosain/tuios",
+     "url": "https://whichaimap.com/explore.html#Gaurav-Gosain/tuios",
+     "blurb": "A terminal window manager and multiplexer that tracks coding agent states across panes and collects approvals into a single inbox.",
+     "meta": "Terminal agent multiplexer"
+    },
+    {
+     "title": "penso/herdr-gpui",
+     "url": "https://whichaimap.com/explore.html#penso/herdr-gpui",
+     "blurb": "A native desktop client for the Herdr developer daemon, built with Rust and GPUI. Heads-up: This is an unofficial, unaffiliated project. Windows support is experimental, and you must install the Herdr daemon separately.",
+     "meta": "Agent workspace GUI"
+    },
+    {
+     "title": "amontlabs/lcu",
+     "url": "https://whichaimap.com/explore.html#amontlabs/lcu",
+     "blurb": "LCU exposes Codex's desktop computer-use runtime to coding harnesses like Claude Code, Pi, and Codex CLI without requiring Codex authentication. Heads-up: Requires the official ChatGPT desktop app installed locally to supply the runtime. Reusing consumer desktop app runtimes outside the app may break provider terms.",
+     "meta": "desktop automation harness"
+    }
+   ]
+  },
+  {
+   "title": "Rising on GitHub this week",
+   "items": [
+    {
+     "title": "feder-cr/dots",
+     "url": "https://github.com/feder-cr/dots",
+     "blurb": "An AI-powered web assistant that uses a custom, anti-detect Firefox engine to browse and interact with websites without getting blocked.",
+     "meta": "+29k stars this week"
+    },
+    {
+     "title": "mattpocock/skills",
+     "url": "https://github.com/mattpocock/skills",
+     "blurb": "A collection of engineering skills and workflows that plug into AI coding agents like Claude Code and Codex.",
+     "meta": "+11k stars this week"
+    },
+    {
+     "title": "Ebony-Vinyl/dsh-our-free-model",
+     "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+     "blurb": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts.",
+     "meta": "+10k stars this week"
+    },
+    {
+     "title": "zouyuxuan122/dsh-our-free-model",
+     "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+     "blurb": "This is a free model plugin for dsh that adds frontier models like Muse Spark 1.3 and MiMo V2.6 with zero configuration, no sign-up, and no API keys required.",
+     "meta": "+10k stars this week"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio",
+     "blurb": "VoiceStudio is an open-source, fully-local voice cloning, text-to-speech, transcription, and video dubbing tool.",
+     "meta": "+6k stars this week"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://whichaimap.com/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "235.2M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://whichaimap.com/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "123.0M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "openai/codex",
+     "url": "https://whichaimap.com/explore.html#openai/codex",
+     "blurb": "Codex CLI is OpenAI's coding agent that runs locally in your terminal. It is also available as an IDE extension and a desktop app.",
+     "meta": "97.9M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}

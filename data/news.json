@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T15:38:05.147Z",
+ "updated": "2026-10-12T16:40:25.005Z",
  "items": [
   {
    "source": "GitHub",
@@ -874,6 +874,21 @@
   },
   {
    "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+   "date": "2026-10-06",
+   "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+   "summary": "Anthropic detailed how enterprise security teams tested Claude Mythos models to identify complex exploit chains across large codebases. This highlights new capabilities for automated code security audits.",
+   "tags": [
+    "coding",
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
    "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build",
    "date": "2026-10-06",
    "title": "We’re expanding the Claude Startups program to help founders build",
@@ -1171,6 +1186,20 @@
    "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/AdqLEBgtQnaDXKLdylC3l.png"
   },
   {
+   "source": "Google",
+   "title": "The latest AI news we announced in September 2026",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+   "date": "2026-10-02T15:00:00.000Z",
+   "summary": "Google published a consolidated overview of its AI product updates and feature releases from September. This provides a single checklist for tracking changes across Google's developer and consumer AI tools.",
+   "tags": [
+    "product",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/September_AI_Recap_hero.width-1300.png"
+  },
+  {
    "source": "Latent Space",
    "title": "Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience",
    "url": "https://www.latent.space/p/airbnb",
@@ -1249,6 +1278,21 @@
    "big": true,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Introducing SynthID Bio",
+   "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+   "date": "2026-09-30T15:03:07.000Z",
+   "summary": "Google DeepMind introduced SynthID Bio, a technique to embed digital watermarks into synthetic proteins without affecting biological function. This helps researchers trace and verify laboratory-generated biological sequences.",
+   "tags": [
+    "research",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://lh3.googleusercontent.com/wNhpZFcXYLXFb6alIt0H5NRvEoso2ONZDhPKz6MYEcGltHPbDeHddzkvv5GXl3abW1PZ5ci1Y9lKoYOIjMuHLxATXfWp88-Al6eEmDENrpejIFeimw=w1200-h630-n-nu-rw",
+   "viaBrowser": true
   },
   {
    "source": "Latent Space",
@@ -1410,6 +1454,35 @@
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Slide_16_9_-_37.width-1300.png"
   },
   {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+   "date": "2026-09-23T16:06:00.000Z",
+   "title": "Claude discovers a novel enzyme system",
+   "summary": "Anthropic reported that autonomous Claude research agents successfully identified a novel biological enzyme system. This demonstrates practical progress in using agentic AI systems for scientific discovery.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/394de337d8a5d8db93a1c048fa1cb53e16a09625-2048x1240.jpg"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Advancing Private AI Compute with secure, server-side memory",
+   "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+   "date": "2026-09-23T16:00:57.000Z",
+   "summary": "Google DeepMind added server-side secure memory protections to its Private AI Compute platform. This helps ensure personal data remains protected from outside access during cloud model inference.",
+   "tags": [
+    "product",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
    "source": "DeepMind",
    "title": "Gemini 3.8 text-to-speech says hello",
    "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
@@ -1480,6 +1553,21 @@
    "ai": true,
    "image": "",
    "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "How UK AISI and EvalEval Are Making Benchmark Results Reproducible",
+   "url": "https://huggingface.co/blog/evaleval-aisi",
+   "date": "2026-09-22T00:00:00.000Z",
+   "summary": "The UK AI Safety Institute and EvalEval partnered to standardize AI evaluation frameworks. This helps developers reproduce benchmark claims and make more reliable comparisons when selecting models.",
+   "tags": [
+    "models",
+    "research",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/evaleval-aisi/thumbnail.png"
   },
   {
    "source": "Hugging Face",
