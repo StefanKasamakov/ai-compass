@@ -313,10 +313,18 @@ const newsArt = (x) => {
     <span class="art-text"><span class="art-kicker">${esc(rel ? "New release" : x.big ? "Big launch" : x.source)}</span><span class="art-name">${esc(name)}</span>${rel ? `<span class="art-ver">v${esc(rel[2])}</span>` : ""}</span></span>`;
 };
 const newsCover = (x) => { const img = newsPic(x); if (!img) return newsArt(x); return `<span class="cover-img">${newsArt(x)}<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()"></span>`; };
+// "New" on stories that came in since the visitor's previous visit; the time stays in this browser only.
+// The previous visit is kept for the whole tab session, so reloading does not wipe the badges.
+const lastVisit = (() => { try {
+  let v = sessionStorage.getItem("prevVisit");
+  if (v === null) { v = localStorage.getItem("lastVisit") || "0"; sessionStorage.setItem("prevVisit", v); localStorage.setItem("lastVisit", Date.now()); }
+  return +v;
+} catch { return 0; } })();
+const sinceVisit = (x) => lastVisit > 0 && new Date(x.date) > lastVisit;
 const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-story" : ""}">
     ${newsCover(x)}
     <div class="news-body">
-      <div class="news-meta"><span class="src">${esc(x.source)}</span><time datetime="${esc(x.date)}">${newsDay(x.date)} · ${ago(x.date)}</time>${x.big ? `<span class="tag ok">Big launch</span>` : ""}</div>
+      <div class="news-meta"><span class="src">${esc(x.source)}</span><time datetime="${esc(x.date)}">${newsDay(x.date)} · ${ago(x.date)}</time>${sinceVisit(x) ? `<span class="tag new">New</span>` : ""}${x.big ? `<span class="tag ok">Big launch</span>` : ""}</div>
       <h3>${esc(x.title)}</h3>
       ${x.summary ? `<p>${esc(x.summary)}</p>` : ""}
       <div class="news-foot above">${x.tags.slice(0, 3).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}${x.discuss ? `<a href="${esc(x.discuss)}" target="_blank" rel="noopener">Discussion</a>` : ""}</div>

@@ -116,7 +116,7 @@ jobs:
       - name: Build one page per tool (tools/, not committed)
         run: node agent/pages.mjs
       - name: Build site folder
-        run: mkdir _site && cp -r *.html assets data tools _site/ && cp sitemap.xml robots.txt CNAME _site/ && (cp feed.xml _site/ 2>/dev/null || true)
+        run: mkdir _site && cp -r *.html assets data tools _site/ && cp sitemap.xml robots.txt CNAME _site/ && cp feed*.xml _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with: { path: _site }

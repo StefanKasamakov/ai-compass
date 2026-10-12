@@ -134,3 +134,19 @@ for (const x of all) {
 const urls = [...seen].map((s) => `  <url><loc>${SITE}/tools/${s}.html</loc><changefreq>weekly</changefreq></url>`).join("\n");
 await fs.writeFile(new URL("tools/sitemap.xml", ROOT), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
 console.log(`pages: ${n} tool pages and tools/sitemap.xml`);
+
+// ---------- one RSS feed per news hub (feed-claude.xml ...), with the same story filter the hub pages use ----------
+const h0 = src.indexOf("const HUBS = {"), h1 = src.indexOf("\n", src.indexOf("const hubOf ="));
+const { HUBS, hubOf } = vm.runInContext(`${src.slice(h0, h1)}\n;({ HUBS, hubOf })`, vm.createContext({}));
+const news = JSON.parse(await read("data/news.json")).items || [];
+for (const [id, h] of Object.entries(HUBS)) {
+  const seenT = new Set(), items = news.filter((x) => hubOf(x).includes(id) && !seenT.has(x.title.toLowerCase()) && seenT.add(x.title.toLowerCase())).slice(0, 40);
+  await fs.writeFile(new URL(`feed-${id}.xml`, ROOT), `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>${esc(h.name)} news · Which AI Map</title><link>${SITE}/${h.file}</link>
+<description>What changed in ${esc(h.name)}, in plain English.</description>
+${items.map((x) => `<item><title>${esc(x.title)}</title><link>${esc(x.url)}</link><guid>${esc(x.url)}</guid><pubDate>${new Date(x.date).toUTCString()}</pubDate><source url="${SITE}/${h.file}">${esc(x.source)}</source><description>${esc(x.summary || "")}</description></item>`).join("\n")}
+</channel></rss>
+`);
+}
+console.log(`feeds: ${Object.keys(HUBS).map((k) => `feed-${k}.xml`).join(", ")}`);

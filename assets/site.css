@@ -794,3 +794,4 @@ body:not(:has(> .top)) { padding-top: 63px; }
 .tool-grid:empty, .prompt-grid:empty, .feed:empty { min-height: 70vh; }
 .goal-chips:empty { min-height: 82px; }
 #picker:empty { min-height: 100vh; }.news-foot a { display: inline-flex; align-items: center; min-height: 28px; padding: 0 .3rem; }
+.tag.new { color: var(--fg); border-color: var(--accent); }
