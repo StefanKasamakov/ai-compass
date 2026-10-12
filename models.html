@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=36">
+<link rel="stylesheet" href="assets/site.css?v=37">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="models">
@@ -32,10 +32,10 @@
     <p class="lead">Answer two questions and get one clear pick, where to use it and what it costs. Every company sells a smartest model, a balanced one and a cheap fast one; the right choice depends on the job, not the brand.</p>
   </div></header>
 
-  <section><div class="wrap"><div id="picker"></div></div></section>
+  <section><div class="wrap"><h2 class="sr">Pick your task</h2><div id="picker"></div></div></section>
 
   <section><div class="wrap">
-    <div class="spread"><div><div class="kicker">Every model</div><h2>The full lineup</h2></div><span class="muted mono" style="font-size:.8rem">checked <span id="modelsUpdated"></span> · model-watch agent opens a PR on changes</span></div>
+    <div class="spread"><div><div class="kicker">Every model</div><h2>The full lineup</h2></div><span class="muted mono" style="font-size:.8rem">checked <span id="modelsUpdated"></span>, kept up to date automatically</span></div>
     <div class="chips" id="provChips" aria-label="Filter by company"></div>
     <div class="table-wrap cards-sm"><table>
       <thead><tr><th>Model</th><th>Tier</th><th>Best for</th><th class="num">In $/1M</th><th class="num">Out $/1M</th><th class="num">Context</th></tr></thead>
@@ -63,6 +63,6 @@
     </dl>
   </div></section>
 </main>
-<script src="assets/site.js?v=36" defer></script>
+<script src="assets/site.js?v=37" defer></script>
 </body>
 </html>
