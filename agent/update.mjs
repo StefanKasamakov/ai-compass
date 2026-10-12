@@ -140,12 +140,16 @@ function parseFeed(xml, source) {
   }));
 }
 
+// Anthropic has no feed: company news is on anthropic.com/news, product launches (models, apps) on claude.com/resources/articles
 async function anthropicNews(known) {
+  const pages = [];
   const html = await text("https://www.anthropic.com/news");
-  const slugs = [...new Set([...html.matchAll(/href="\/news\/([a-z0-9-]+)"/g)].map((m) => m[1]))].slice(0, 12);
+  for (const m of html.matchAll(/href="\/news\/([a-z0-9-]+)"/g)) pages.push(`https://www.anthropic.com/news/${m[1]}`);
+  const claude = await safe("claude.com articles", () => text("https://claude.com/resources/articles"), "");
+  for (const m of claude.matchAll(/href="(?:https:\/\/claude\.com)?\/(?:resources\/articles|blog)\/([a-z0-9-]+)"/g)) pages.push(`https://claude.com/resources/articles/${m[1]}`);
+  const urls = [...new Set(pages)];
   const items = [];
-  for (const slug of slugs) {
-    const url = `https://www.anthropic.com/news/${slug}`;
+  for (const url of [...urls.filter((u) => u.includes("anthropic.com")).slice(0, 12), ...urls.filter((u) => u.includes("claude.com")).slice(0, 12)]) {
     if (known.has(url)) continue;
     const page = await safe(url, () => text(url));
     if (!page) continue;
@@ -153,7 +157,7 @@ async function anthropicNews(known) {
     if (!date) continue;
     items.push({
       source: "Anthropic", url, date,
-      title: unxml(page.match(/<title>([^<]*)<\/title>/)?.[1]).replace(/\s*\\\s*Anthropic$/, ""),
+      title: unxml(page.match(/<title>([^<]*)<\/title>/)?.[1]).replace(/\s*[|\\]\s*(Claude by Anthropic|Anthropic)$/, ""),
       snippet: unxml(page.match(/<meta name="description" content="([^"]*)"/)?.[1]).slice(0, 400),
     });
   }
@@ -235,7 +239,7 @@ async function news(stats, tools) {
     const { snippet, ...rest } = it;
     return [{ ...rest, summary: n?.summary ?? snippet, tags: n?.tags ?? [], big: n?.big ?? false, ai: !!n }];
   });
-  const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 80);
+  const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 160);
   // cover picture: the article's own social preview image. "" = looked, none found (don't retry).
   await Promise.all(items.filter((i) => i.image === undefined).map(async (i) => { i.image = await coverImage(i.url); }));
   console.log(`news: +${added.length} (${notes ? `summarized by ${provider}` : "no AI summaries"})`);

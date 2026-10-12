@@ -305,8 +305,8 @@ const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-stor
       <div class="news-foot above">${x.tags.slice(0, 3).map((t) => `<span class="tag">${esc(t)}</span>`).join("")}${x.discuss ? `<a href="${esc(x.discuss)}" target="_blank" rel="noopener">Discussion</a>` : ""}</div>
     </div>
     <a class="cover" href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="${esc(x.title)}"></a></article>`;
-// this week's big launches come first, then everything by date
-const newsOrder = (items) => { const fresh = (x) => x.big && Date.now() - new Date(x.date) < 7 * 864e5; return [...items].sort((a, b) => fresh(b) - fresh(a)); };
+// big launches of the last 3 days come first, then everything by date
+const newsOrder = (items) => { const fresh = (x) => x.big && Date.now() - new Date(x.date) < 3 * 864e5; return [...items].sort((a, b) => fresh(b) - fresh(a)); };
 
 // ---------- news hubs: one page per AI family, like a club page on a football site ----------
 const HUBS = {
