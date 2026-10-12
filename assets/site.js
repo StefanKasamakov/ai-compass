@@ -1,6 +1,6 @@
 // Which AI Map — shared shell + page renderers. No framework, no build.
 const REPO = "StefanKasamakov/ai-compass";
-const page = document.body.dataset.hub ? `hub-${document.body.dataset.hub}` : document.body.dataset.page;
+const page = document.body.dataset.hub ? `hub-${document.body.dataset.hub}` : document.body.dataset.guide ? `guide-${document.body.dataset.guide}` : document.body.dataset.page;
 
 // ---------- icons (Lucide, ISC license) ----------
 const P = {
@@ -86,7 +86,7 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["start", "Start here", "start.html"], ["skills", "Skills", "skills.html"], ["mods", "Mods", "mods.html"], ["explore", "Find tools", "explore.html"],
+  ["learn", "Start here", [["start", "New to AI? Start here", "start.html"], ["map", "The AI map", "map.html"], ["prompts", "Prompt library", "prompts.html"], ["guide-students", "AI for students", "ai-for-students.html"], ["guide-business", "AI for small business", "ai-for-small-business.html"], ["guide-marketing", "AI for marketing", "ai-for-marketing.html"], ["guide-developers", "AI for developers", "ai-for-developers.html"]]], ["skills", "Skills", "skills.html"], ["mods", "Mods", "mods.html"], ["explore", "Find tools", "explore.html"],
   ["choose", "Choose AI", [["models", "Pick a model", "models.html"], ["compare", "Compare tools", "compare.html"], ["local", "Local models", "local.html"], ["thinking", "Thinking levels", "thinking.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
   ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"]]],
   ["newsmenu", "News", [["news", "All AI news", "news.html"], ["hub-claude", "Claude", "claude.html"], ["hub-chatgpt", "ChatGPT", "chatgpt.html"], ["hub-gemini", "Gemini", "gemini.html"], ["hub-open", "Open models", "open-models.html"]]],
@@ -112,7 +112,7 @@ function shell() {
       <p style="max-width:40ch">A plain-English guide to AI models and tools, for people who just want to get things done. Independent, no ads.</p>
       <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
     <nav class="foot-cols" aria-label="Footer">
-      <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
+      <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="map.html">The AI map</a><a href="prompts.html">Prompt library</a><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
       <div><div class="field-label">Learn</div><a href="mods.html">Claude Code mods</a><a href="thinking.html">Thinking levels</a><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
       <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
       <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
@@ -167,6 +167,12 @@ async function searchIndex() {
     { t: "Claude Dashboards and Motion, explained", sub: "Explainer", href: "claude-dashboards-motion.html", k: "guide", ic: "zap" },
     { t: "Thinking levels: Low, High, Instant, Extended, Deep Think", sub: "Cheat sheet", href: "thinking.html", k: "guide", ic: "zap" },
     { t: "New to AI? Start here", sub: "Five short lessons", href: "start.html", k: "guide", ic: "book" },
+    { t: "Prompt library: ready-to-copy prompts", sub: "Prompts", href: "prompts.html", k: "guide", ic: "chat" },
+    { t: "The AI map: every kind of AI tool", sub: "Map", href: "map.html", k: "guide", ic: "layout" },
+    { t: "AI for students", sub: "Guide", href: "ai-for-students.html", k: "guide", ic: "book" },
+    { t: "AI for small business", sub: "Guide", href: "ai-for-small-business.html", k: "guide", ic: "book" },
+    { t: "AI for marketing and content", sub: "Guide", href: "ai-for-marketing.html", k: "guide", ic: "book" },
+    { t: "AI for developers", sub: "Guide", href: "ai-for-developers.html", k: "guide", ic: "book" },
     { t: "Compare: ChatGPT vs Claude and other match-ups", sub: "Short answers", href: "compare.html", k: "guide", ic: "layout" },
     { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
     { t: "Is this GitHub project safe?", sub: "Guide", href: "github.html#judge", k: "guide", ic: "shield" },
@@ -319,6 +325,48 @@ const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-stor
 // big launches of the last 3 days come first, then everything by date
 const newsOrder = (items) => { const fresh = (x) => x.big && Date.now() - new Date(x.date) < 3 * 864e5; return [...items].sort((a, b) => fresh(b) - fresh(a)); };
 
+// ---------- newsletter sign-up: kept in Supabase until a mail service sends the issues ----------
+const signupForm = (src) => `<form class="row signup" data-signup="${esc(src)}" style="max-width:560px">
+    <label class="sr" for="su-${esc(src)}">Email address</label>
+    <input id="su-${esc(src)}" class="hero-search" style="height:48px;flex:1;min-width:220px" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
+    <button class="btn primary" type="submit">${icon("news")}Get the Monday email</button></form>
+  <p class="muted signup-msg" style="font-size:.85rem;margin-top:.6rem">Free, one email a week, unsubscribe any time. We use your address only for this. <a href="about.html#privacy">Privacy</a> · or follow the <a href="feed.xml">RSS feed</a>.</p>`;
+document.addEventListener("submit", async (e) => {
+  const f = e.target.closest("[data-signup]"); if (!f) return;
+  e.preventDefault();
+  const cfg = await load("site"), btn = $("button", f), msg = f.nextElementSibling;
+  btn.disabled = true;
+  try {
+    const r = await fetch(`${cfg.supabaseUrl}/rest/v1/rpc/subscribe`, { method: "POST", headers: { apikey: cfg.supabaseAnonKey, "content-type": "application/json" }, body: JSON.stringify({ addr: f.email.value, src: f.dataset.signup }) });
+    if (!r.ok) throw new Error((await r.json()).message || "Could not sign you up.");
+    f.innerHTML = `<p class="callout ok" style="margin:0">${icon("check")}<span><b>You are on the list.</b> The first email comes on a Monday. Thank you.</span></p>`;
+    if (msg) msg.remove();
+  } catch (err) { btn.disabled = false; if (msg) msg.textContent = err.message; }
+});
+
+// ---------- prompts and the AI map ----------
+const promptCard = (x, cats) => `<article class="card prompt-card" id="p-${esc(x.id)}">
+    <div class="head"><h3>${esc(x.title)}</h3><span class="tag">${esc(cats[x.cat] || "")}</span></div>
+    <pre class="prompt-text">${esc(x.text).replace(/\[([^\]]+)\]/g, '<mark>[$1]</mark>')}</pre>
+    ${x.tip ? `<p class="prompt-tip">${icon("zap")}<span>${esc(x.tip)}</span></p>` : ""}
+    <div class="row" style="margin-top:auto"><button class="btn sm primary" data-copy="${esc(x.text)}">${icon("copy")}copy</button><span class="muted" style="font-size:.8rem;align-self:center">fill in the [brackets], then paste</span></div>
+  </article>`;
+const MAP_LABEL = { "anthropics/claude-code": "Claude Code", "openai/codex": "Codex", "ollama/ollama": "Ollama", "janhq/jan": "Jan" };
+const AI_MAP = [
+  ["Chat assistants", "Ask anything, write, summarize, reason. Most people start here.", "#7c5cff", ["chatgpt", "claude", "gemini", "copilot"]],
+  ["Search and research", "Answers with sources you can check.", "#3987e5", ["perplexity", "notebooklm", "consensus", "elicit"]],
+  ["Writing and language", "Fix, rewrite and translate text.", "#16a34a", ["grammarly", "quillbot", "deepl", "notion-ai"]],
+  ["Slides and design", "Presentations, posts and layouts from a description.", "#db2777", ["gamma", "canva-ai", "beautiful-ai", "microsoft-designer"]],
+  ["Images", "Pictures, logos and illustrations from words.", "#ea580c", ["midjourney", "ideogram", "adobe-firefly", "leonardo-ai", "krea"]],
+  ["Video", "Generate, edit and clip videos, or presenters that speak.", "#dc2626", ["runway", "kling-ai", "capcut", "descript", "opus-clip", "heygen", "synthesia"]],
+  ["Voice and music", "Voice-overs, cloned voices and whole songs.", "#9333ea", ["elevenlabs", "suno", "udio"]],
+  ["Meetings", "Transcripts, notes and action items, automatically.", "#0891b2", ["otter", "fireflies", "granola"]],
+  ["Build apps and websites", "Describe it, get a working site or app.", "#d97706", ["lovable", "bolt-new", "v0", "replit"]],
+  ["Coding", "Assistants and agents that write and fix code.", "#0d9488", ["cursor", "github-copilot", "windsurf", "anthropics/claude-code", "openai/codex"]],
+  ["Automation and agents", "Connect apps and let work happen on its own.", "#65a30d", ["zapier", "make", "manus"]],
+  ["Run it yourself", "Free models on your own computer, offline.", "#c98500", ["lm-studio", "ollama/ollama", "janhq/jan"]],
+];
+
 // ---------- news hubs: one page per AI family, like a club page on a football site ----------
 const HUBS = {
   claude: { name: "Claude", file: "claude.html", p: "anthropic", logo: "claude", src: ["Anthropic"], re: /\b(claude|anthropic|opus|sonnet|haiku|fable|mythos)\b/i,
@@ -439,6 +487,39 @@ const pages = {
     $("#hubModels").innerHTML = models.map((x) => `<div class="card hub-model"><div class="row" style="gap:.6rem;flex-wrap:nowrap">${modelLogo(x)}<div><b>${esc(x.name)}</b> ${newTag(x)}<small class="muted mono" style="display:block">${esc(x.tier)}</small></div></div><p>${esc(x.best)}</p></div>`).join("") || `<p class="muted">None listed.</p>`;
     const tools = h.tools.map((k) => all.find((x) => x.key === k)).filter(Boolean);
     $("#hubTools").innerHTML = tools.map((x) => toolCard(x, tags)).join("");
+  },
+
+  async prompts() {
+    const d = await load("prompts");
+    const cats = Object.fromEntries(d.categories);
+    const q = $("#promptQ"), st = { cat: new URLSearchParams(location.search).get("cat") || "all" };
+    const draw = () => {
+      const words = q.value.toLowerCase().split(/\s+/).filter(Boolean);
+      const list = d.prompts.filter((x) => (st.cat === "all" || x.cat === st.cat) && words.every((w) => `${x.title} ${x.text} ${cats[x.cat]}`.toLowerCase().includes(w)));
+      $("#promptGrid").innerHTML = list.map((x) => promptCard(x, cats)).join("") || `<div class="empty">No prompt matches. Try another word.</div>`;
+    };
+    dropdown($("#promptCat"), "Show", [["all", `All prompts (${d.prompts.length})`], ...d.categories.map(([id, l]) => [id, `${l} (${d.prompts.filter((x) => x.cat === id).length})`])], (v) => { st.cat = v; draw(); }, st.cat);
+    q.oninput = draw;
+    draw();
+    const hash = location.hash.slice(1); if (hash) document.getElementById(`p-${hash}`)?.scrollIntoView({ block: "center" });
+  },
+
+  async map() {
+    const { all, tags, tips } = await catalog();
+    toolDialog(all, tags, tips);
+    $("#mapModels").innerHTML = ["anthropic", "openai", "google", "open"].map((p) => `<span class="logo-badge p-${p}">${logo(p === "open" ? "ollama" : LOGOS[p])}</span>`).join("");
+    $("#mapGrid").innerHTML = AI_MAP.map(([title, hint, color, keys]) => {
+      const tools = keys.map((k) => all.find((x) => x.key === k)).filter(Boolean);
+      return `<section class="map-cell" style="--c:${color}"><h2>${esc(title)}</h2><p>${esc(hint)}</p><div class="map-tools">${tools.map((x) => `<button class="map-tool" data-open="${esc(x.key)}">${iconFor(x, 28)}<span>${esc(MAP_LABEL[x.key] || shortName(x.name))}</span></button>`).join("")}</div></section>`;
+    }).join("");
+  },
+
+  async guide() {
+    const [{ all, tags, tips }, pr] = await Promise.all([catalog(), load("prompts")]);
+    toolDialog(all, tags, tips);
+    $$("[data-tools]").forEach((el) => (el.innerHTML = el.dataset.tools.split(",").map((k) => all.find((x) => x.key === k)).filter(Boolean).map((x) => toolCard(x, tags)).join("")));
+    const cats = Object.fromEntries(pr.categories);
+    $$("[data-prompts]").forEach((el) => (el.innerHTML = el.dataset.prompts.split(",").map((id) => pr.prompts.find((x) => x.id === id)).filter(Boolean).map((x) => promptCard(x, cats)).join("")));
   },
 
   local: () => localModels(),
@@ -909,7 +990,7 @@ pages.newsletter = async () => {
         <input id="nlEmail" class="hero-search" style="height:48px;flex:1;min-width:220px" type="email" name="email" required placeholder="you@example.com" autocomplete="email">
         <button class="btn primary" type="submit">${icon("news")}Subscribe</button></form>
        <p class="muted" style="font-size:.85rem;margin-top:.6rem">Free. One email on Mondays. Unsubscribe with one click. Or follow the <a href="feed.xml">RSS feed</a>.</p>`
-    : `<div class="row"><a class="btn primary" href="feed.xml">${icon("news")}Follow via RSS</a><span class="muted" style="font-size:.9rem">Email sign-up opens soon.</span></div>`;
+    : site?.supabaseUrl ? signupForm("newsletter") : `<div class="row"><a class="btn primary" href="feed.xml">${icon("news")}Follow via RSS</a></div>`;
   $("#issues").innerHTML = issues.map((i) => `<a href="?issue=${esc(i.date)}" data-issue="${esc(i.date)}"><b>${esc(i.subject)}</b><small>${esc(new Date(i.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }))}</small></a>`).join("") || `<p class="muted">First issue lands on Monday.</p>`;
   const show = async (date) => {
     const x = date && (await load(`newsletter/${date}`));
@@ -984,6 +1065,9 @@ document.addEventListener("click", async (e) => {
   const b = e.target.closest("[data-copy]"); if (!b) return;
   try { await navigator.clipboard.writeText(b.dataset.copy); b.innerHTML = `${icon("check")}copied`; setTimeout(() => (b.innerHTML = `${icon("copy")}copy`), 1600); } catch { b.textContent = "select & copy"; }
 });
+
+// Visit counts: Cloudflare Web Analytics, no cookies and no personal data. On only once a token is set in data/site.json.
+load("site").then((c) => { if (!c?.cfBeacon) return; const t = document.createElement("script"); t.defer = true; t.src = "https://static.cloudflareinsights.com/beacon.min.js"; t.dataset.cfBeacon = JSON.stringify({ token: c.cfBeacon }); document.head.appendChild(t); });
 
 // ---------- boot ----------
 shell();

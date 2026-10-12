@@ -754,3 +754,27 @@ a.goal-chip { text-decoration: none; }
 .top-story .art-name { font-size: clamp(2rem, 4.4vw, 3.4rem); }
 .top-story .cover-art { padding: 1.8rem 2rem; }
 .cover-img:has(> img) > .cover-art { display: none; } /* the drawn cover is only a fallback for a picture that fails to load */
+
+/* ---------- v18: prompts, the AI map, guides ---------- */
+.prompt-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); margin-top: 1rem; }
+.prompt-card { display: flex; flex-direction: column; gap: .7rem; }
+.prompt-card .head { margin: 0; }
+.prompt-card h3 { font: 700 1rem var(--sans); }
+.prompt-text { margin: 0; white-space: pre-wrap; word-break: break-word; font: .88rem/1.55 var(--sans); color: var(--fg); background: var(--bg-2); border: 1px solid var(--line); border-radius: 10px; padding: .8rem .9rem; max-height: 14rem; overflow: auto; }
+.prompt-text mark { background: var(--accent-soft); color: var(--accent); border-radius: 4px; padding: 0 .15em; }
+.prompt-tip { display: flex; gap: .5rem; font-size: .85rem !important; }
+.prompt-tip svg { flex: none; width: 15px; height: 15px; margin-top: .2rem; color: var(--accent); }
+.map-core { display: grid; justify-items: center; gap: .7rem; text-align: center; padding: 1.6rem; margin-bottom: 16px; text-decoration: none; color: var(--fg);
+  background: radial-gradient(80% 140% at 50% 0%, var(--accent-soft), transparent 70%), var(--card); }
+.map-core-label { font: 700 .74rem var(--mono); text-transform: uppercase; letter-spacing: .14em; color: var(--accent); }
+.map-core-logos { display: flex; gap: .6rem; }
+.map-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.map-cell { border: 1px solid var(--line); border-radius: var(--r); padding: 1.1rem 1.2rem 1.2rem; position: relative; overflow: hidden;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--c) 16%, var(--card)), var(--card) 60%); }
+.map-cell::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--c); }
+.map-cell h2 { font: 700 1.15rem var(--mono); margin: 0 0 .25rem; }
+.map-cell p { margin: 0 0 .9rem; color: var(--muted); font-size: .9rem; }
+.map-tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.map-tool { display: inline-flex; align-items: center; gap: .5rem; padding: .35rem .7rem .35rem .4rem; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--fg); font: 500 .88rem var(--sans); cursor: pointer; }
+.map-tool:hover { border-color: var(--c); }
+.map-tool .avatar { width: 26px; height: 26px; border-radius: 50%; }

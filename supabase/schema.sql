@@ -160,3 +160,32 @@ revoke all on function public.vote(text) from public;
 revoke all on function public.vote_counts() from public;
 grant execute on function public.vote(text) to anon, authenticated;
 grant execute on function public.vote_counts() to anon, authenticated;
+-- ---------- newsletter sign-ups (until a mail service is connected) ----------
+-- Visitors can only add an address through subscribe(); nobody but the service role can read the list.
+create table if not exists public.subscribers (
+  email text primary key check (email ~* '^[^@\s]+@[^@\s]+\.[^@\s]+$' and char_length(email) <= 254),
+  created_at timestamptz not null default now(),
+  ip_hash text,
+  source text check (char_length(source) <= 40)
+);
+alter table public.subscribers enable row level security;
+revoke all on public.subscribers from anon, authenticated;
+create index if not exists subscribers_ip_idx on public.subscribers (ip_hash, created_at desc);
+
+create or replace function public.subscribe(addr text, src text default null) returns text
+language plpgsql security definer set search_path = public as $$
+declare
+  ip text := split_part(coalesce(current_setting('request.headers', true)::json ->> 'x-forwarded-for', ''), ',', 1);
+  h text := encode(extensions.digest(ip || 'ai-compass', 'sha256'), 'hex');
+  e text := lower(trim(addr));
+begin
+  if e !~* '^[^@\s]+@[^@\s]+\.[^@\s]+$' or char_length(e) > 254 then raise exception 'That does not look like an email address.'; end if;
+  if (select count(*) from public.subscribers where ip_hash = h and created_at > now() - interval '1 hour') >= 5 then
+    raise exception 'Too many sign-ups from your network. Please try again later.';
+  end if;
+  insert into public.subscribers (email, ip_hash, source) values (e, h, left(src, 40)) on conflict (email) do nothing;
+  return 'ok';
+end $$;
+revoke all on function public.subscribe(text, text) from public;
+grant execute on function public.subscribe(text, text) to anon, authenticated;
+

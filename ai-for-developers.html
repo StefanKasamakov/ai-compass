@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for Developers · Which AI Map</title>
+<meta name="description" content="AI for developers: coding assistants, agents that work across a codebase, skills, MCP connectors and Claude Code mods, with what to watch out for.">
+<link rel="canonical" href="https://whichaimap.com/ai-for-developers.html">
+<meta name="theme-color" content="#0a0e17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Which AI Map">
+<meta property="og:title" content="AI for Developers · Which AI Map">
+<meta property="og:description" content="AI for developers: coding assistants, agents that work across a codebase, skills, MCP connectors and Claude Code mods, with what to watch out for.">
+<meta property="og:url" content="https://whichaimap.com/ai-for-developers.html">
+<meta property="og:image" content="https://whichaimap.com/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI for Developers · Which AI Map">
+<meta name="twitter:description" content="AI for developers: coding assistants, agents that work across a codebase, skills, MCP connectors and Claude Code mods, with what to watch out for.">
+<meta name="twitter:image" content="https://whichaimap.com/assets/og.png">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css?v=35">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
+</head>
+<body data-page="guide" data-guide="developers">
+<main id="main">
+  <header class="page-head"><div class="wrap">
+    <div class="kicker">For developers</div>
+    <h1>From autocomplete to agents that ship.</h1>
+    <p class="lead">Coding is where AI changed the most: assistants now plan, edit many files, run tests and open pull requests. The skill is in giving them good context and checking what they did.</p>
+    <div class="chips" style="margin-top:1.4rem"><a class="chip" href="ai-for-students.html">For students</a><a class="chip" href="ai-for-small-business.html">For small business</a><a class="chip" href="ai-for-marketing.html">For marketing and content</a><a class="chip" aria-pressed="true" href="ai-for-developers.html">For developers</a></div>
+  </div></header>
+
+  <section><div class="wrap">
+    <div class="kicker">The tools</div>
+    <h2>What to use</h2>
+    <h3 style="margin-top:1.6rem">Coding assistants</h3>
+    <div class="tool-grid" data-tools="cursor,github-copilot,windsurf,replit"></div>
+    <h3 style="margin-top:1.6rem">Build without boilerplate</h3>
+    <div class="tool-grid" data-tools="v0,bolt-new,lovable"></div>
+    <div class="grid door-grid" style="margin-top:2rem">
+      <a class="card link door" href="skills.html"><i data-i="puzzle"></i><div><h3>Skills</h3><p>376 skills for Claude Code, Codex and the Claude app, one by one.</p></div><i data-i="arrow"></i></a>
+      <a class="card link door" href="mods.html"><i data-i="terminal"></i><div><h3>Claude Code mods</h3><p>Panes, meters and guards for Claude Code, with what each can reach.</p></div><i data-i="arrow"></i></a>
+      <a class="card link door" href="mcp.html"><i data-i="plug"></i><div><h3>Connect apps (MCP)</h3><p>Give your assistant your database, browser or tickets, with the exact config.</p></div><i data-i="arrow"></i></a>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="spread"><div><div class="kicker">Copy and use</div><h2>Prompts that work</h2></div><a class="btn sm" href="prompts.html">All prompts <i data-i="arrow"></i></a></div>
+    <div class="prompt-grid" data-prompts="code-review,fix-error,small-script,excel-formula" style="margin-top:1.2rem"></div>
+  </div></section>
+
+  <section><div class="wrap lesson">
+    <div><div class="kicker">Watch out</div><h2>Four rules</h2></div>
+    <div><ol class="steps"><li><h3>Review everything it writes</h3><p>Treat AI code like code from a fast new colleague: read it, run the tests, and do not merge what you do not understand.</p></li><li><h3>Keep secrets out of prompts</h3><p>API keys and passwords in a prompt can end up in logs. Use environment variables and secret managers.</p></li><li><h3>Extensions run as you</h3><p>MCP servers, skills with scripts and Claude Code mods can read and change your files. Install only what you trust; check what each can reach.</p></li><li><h3>Watch licences</h3><p>Generated code can resemble existing code. Most tools have a setting that blocks matches with public code; turn it on for work projects.</p></li></ol></div>
+  </div></section>
+  <dialog class="tool-dlg" id="toolDlg" aria-label="Tool details"><div id="toolBody"></div></dialog>
+</main>
+<script src="assets/site.js?v=35" defer></script>
+</body>
+</html>
