@@ -40,7 +40,7 @@
 
 ### Typography
 
-- **Heading Font:** JetBrains Mono
+- **Heading Font:** IBM Plex Sans 700 (changed 13.10.2026: mono headings read as "for programmers"; JetBrains Mono stays for code, labels and numbers)
 - **Body Font:** IBM Plex Sans
 - **Mood:** code, developer, technical, precise, functional, hacker
 - **Google Fonts:** [JetBrains Mono + IBM Plex Sans](https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap)

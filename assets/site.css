@@ -795,3 +795,11 @@ body:not(:has(> .top)) { padding-top: 63px; }
 .goal-chips:empty { min-height: 82px; }
 #picker:empty { min-height: 100vh; }.news-foot a { display: inline-flex; align-items: center; min-height: 28px; padding: 0 .3rem; }
 .tag.new { color: var(--fg); border-color: var(--accent); }
+
+/* ---------- v21: plain sans headings (the mono look read as "for programmers"), shorter pages on phones ---------- */
+h1, h2, h3, h4 { font-family: var(--sans); letter-spacing: -.025em; }
+@media (max-width: 620px) {
+  section { padding: 40px 0; }
+  .hero { padding: 44px 0 36px; }
+  .page-head { padding: 36px 0 26px; }
+}

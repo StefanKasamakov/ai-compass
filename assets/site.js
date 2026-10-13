@@ -86,9 +86,9 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["learn", "Start here", [["start", "New to AI? Start here", "start.html"], ["map", "The AI map", "map.html"], ["prompts", "Prompt library", "prompts.html"], ["guide-students", "AI for students", "ai-for-students.html"], ["guide-business", "AI for small business", "ai-for-small-business.html"], ["guide-marketing", "AI for marketing", "ai-for-marketing.html"], ["guide-developers", "AI for developers", "ai-for-developers.html"]]], ["skills", "Skills", "skills.html"], ["mods", "Mods", "mods.html"], ["explore", "Find tools", "explore.html"],
-  ["choose", "Choose AI", [["models", "Pick a model", "models.html"], ["compare", "Compare tools", "compare.html"], ["local", "Local models", "local.html"], ["thinking", "Thinking levels", "thinking.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
-  ["guides", "Guides", [["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"]]],
+  ["learn", "Learn", [["start", "New to AI? Start here", "start.html"], ["map", "The AI map", "map.html"], ["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"], ["thinking", "Thinking levels", "thinking.html"]]], ["skills", "Skills", "skills.html"], ["mods", "Mods", "mods.html"], ["explore", "Find tools", "explore.html"],
+  ["choose", "Choose AI", [["models", "Pick a model", "models.html"], ["compare", "Compare tools", "compare.html"], ["local", "Local models", "local.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
+  ["foryou", "For you", [["guide-students", "AI for students", "ai-for-students.html"], ["guide-business", "AI for small business", "ai-for-small-business.html"], ["guide-marketing", "AI for marketing", "ai-for-marketing.html"], ["guide-developers", "AI for developers", "ai-for-developers.html"], ["prompts", "Prompt library", "prompts.html"]]],
   ["newsmenu", "News", [["news", "All AI news", "news.html"], ["hub-claude", "Claude", "claude.html"], ["hub-chatgpt", "ChatGPT", "chatgpt.html"], ["hub-gemini", "Gemini", "gemini.html"], ["hub-open", "Open models", "open-models.html"]]],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
@@ -149,7 +149,7 @@ function shell() {
 }
 
 async function searchIndex() {
-  const [m, tools, tasks, n, ex, tags] = await Promise.all([load("models"), load("tools"), load("tasks"), load("news"), load("explain"), load("tags")]);
+  const [m, tasks, n, tags, pr, cat] = await Promise.all([load("models"), load("tasks"), load("news"), load("tags"), load("prompts"), catalog()]);
   const pagesList = NAV.flatMap(([id, label, href]) => (Array.isArray(href) ? href.map(([, l, h]) => [l, h]) : [[label, href]]));
   return [
     ...pagesList.map(([label, href]) => ({ t: label, sub: "Page", href, k: "page", ic: "arrow" })),
@@ -177,8 +177,8 @@ async function searchIndex() {
     { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
     { t: "Is this GitHub project safe?", sub: "Guide", href: "github.html#judge", k: "guide", ic: "shield" },
     ...(m?.models || []).map((x) => ({ t: x.name, sub: `${m.providers[x.p].name} · ${x.tier}`, href: `models.html#m-${x.id}`, k: "model", ic: "cpu" })),
-    ...(tools || []).filter((x) => x.type !== "client").map((x) => ({ t: x.name, sub: x.plain || x.d, href: `explore.html#${x.id}`, k: x.type, ic: x.type === "mcp" ? "plug" : "puzzle", extra: x.d })),
-    ...Object.values(ex || {}).map((x) => ({ t: x.repo.split("/")[1], sub: x.plain || x.kind, href: `explore.html#${x.repo}`, k: "tool", ic: "github", extra: `${x.repo} ${x.what} ${x.kind}` })),
+    ...cat.all.map((x) => ({ t: x.name, sub: x.plain, href: `tools/${slugOf(x)}.html`, k: KIND[x.kind] || x.kind, ic: { app: "zap", repo: "github", mcp: "plug" }[x.kind] || "puzzle", extra: `${x.owner || ""} ${x.repo || ""} ${x.what || ""}` })),
+    ...(pr?.prompts || []).map((x) => ({ t: x.title, sub: "Ready-to-copy prompt", href: `prompts.html#${x.id}`, k: "Prompt", ic: "chat", extra: x.text })),
     ...(n?.items || []).slice(0, 30).map((x) => ({ t: x.title, sub: x.source, href: x.url, k: "news", ic: "news" })),
   ];
 }
@@ -186,7 +186,8 @@ let INDEX;
 async function runSearch(q) {
   INDEX ??= await searchIndex();
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
-  const hits = INDEX.filter((x) => words.every((w) => `${x.t} ${x.sub} ${x.extra || ""}`.toLowerCase().includes(w))).slice(0, 40);
+  const hits = INDEX.filter((x) => words.every((w) => `${x.t} ${x.sub} ${x.extra || ""}`.toLowerCase().includes(w)))
+    .map((x, i) => ({ x, i, name: words.every((w) => x.t.toLowerCase().includes(w)) })).sort((a, b) => b.name - a.name || a.i - b.i).slice(0, 40).map((h) => h.x);
   $("#pres").innerHTML = hits.length
     ? hits.map((x, i) => `<li role="option" aria-selected="${i === 0}"><a href="${esc(x.href)}">${icon(x.ic)}<span>${esc(x.t)} <em>${esc(x.sub)}</em></span><small>${esc(x.k)}</small></a></li>`).join("")
     : `<li class="empty" style="margin:.6rem">No matches. Try "excel", "private", "images" or "cheap".</li>`;
