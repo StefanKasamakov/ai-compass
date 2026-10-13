@@ -91,9 +91,25 @@ async function admin() {
       </article>`).join("") || `<div class="empty">Nothing here.</div>`;
     },
     async social() {
-      const { data, error } = await sb.from("social_posts").select("*").eq("status", "draft").order("created_at", { ascending: false });
+      const { data, error } = await sb.from("social_posts").select("*").in("status", ["draft", "approved", "failed"]).order("created_at", { ascending: false });
       if (error) return `<div class="empty">${esc(error.message)}</div>`;
+      // the next 18:30 in the reviewer's own time zone, as a datetime-local value
+      const slot = new Date(); slot.setHours(18, 30, 0, 0); if (slot < new Date()) slot.setDate(slot.getDate() + 1);
+      const local = (d) => new Date(d - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 16);
       return data.map((p) => {
+        if (p.channel === "instagram") return `<article class="card sub" data-ig="${p.id}">
+          <div class="head"><div><span class="tag ok">Instagram + Facebook</span> <span class="tag${p.status === "failed" ? " warn" : ""}">${esc(p.status)}</span></div><small class="muted mono">${ago(p.created_at)}</small></div>
+          <h3>${esc(p.title || "")}</h3>
+          <div class="ig-strip">${(p.images || []).map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener"><img src="${esc(u)}" alt="Slide ${i + 1}" loading="lazy"></a>`).join("")}</div>
+          <label class="field-label" for="cap-${p.id}" style="margin-top:.8rem">Caption (you can edit it)</label>
+          <textarea id="cap-${p.id}" class="note" rows="7" style="width:100%">${esc(p.body)}</textarea>
+          ${p.error ? `<p style="color:var(--warn)">${esc(p.error)}</p>` : ""}
+          <div class="row" style="margin-top:.8rem">
+            <label class="sel"><span>Post at</span><input type="datetime-local" value="${p.publish_at ? local(new Date(p.publish_at)) : local(slot)}"></label>
+            <button class="btn sm primary" data-ig-act="approved">${icon("check")}${p.status === "draft" ? "Approve" : "Save and approve again"}</button>
+            <button class="btn sm" data-ig-act="discarded">${icon("x")}Discard</button></div>
+          <p class="muted" style="font-size:.82rem;margin-top:.6rem">Approved posts go out within an hour of the time you pick, on Instagram and the Facebook Page. Link for the bio: ${esc(p.link || "")}</p>
+        </article>`;
         const text = p.link ? `${p.body}\n\n${p.link}` : p.body;
         const open = p.channel === "reddit"
           ? `https://www.reddit.com/${p.community || "r/artificial"}/submit?type=TEXT&title=${encodeURIComponent(p.title || "")}&text=${encodeURIComponent(text)}`
@@ -133,6 +149,17 @@ async function admin() {
       const { error } = await sb.from("submissions").update({ status: act.dataset.act, review_note: note || null }).eq("id", card.dataset.id);
       if (error) { card.insertAdjacentHTML("beforeend", `<p style="color:var(--warn)">${esc(error.message)}</p>`); return; }
       card.remove();
+    }
+    const ig = e.target.closest("[data-ig-act]");
+    if (ig) {
+      const card = ig.closest("[data-ig]"), at = card.querySelector("input[type=datetime-local]").value;
+      const patch = ig.dataset.igAct === "approved"
+        ? { status: "approved", body: card.querySelector("textarea").value, publish_at: new Date(at).toISOString(), error: null, handled_at: new Date().toISOString() }
+        : { status: "discarded", handled_at: new Date().toISOString() };
+      const { error } = await sb.from("social_posts").update(patch).eq("id", card.dataset.ig);
+      if (error) { card.insertAdjacentHTML("beforeend", `<p style="color:var(--warn)">${esc(error.message)}</p>`); return; }
+      if (patch.status === "discarded") card.remove();
+      else { card.querySelector(".head .tag:nth-child(2)").textContent = "approved"; ig.textContent = "Approved"; }
     }
     if (post) {
       const card = post.closest("[data-post]");

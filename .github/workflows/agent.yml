@@ -73,11 +73,15 @@ jobs:
         continue-on-error: true
         run: node agent/health.mjs
 
+      - name: Instagram drafts (new model, Monday digest, weekly skill; the owner approves each in admin.html)
+        continue-on-error: true
+        run: node agent/social.mjs
+
       - name: Commit data
         run: |
           git config user.name "ai-compass-agent"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data feed.xml 2>/dev/null || git add data
+          git add data; [ -d social ] && git add social; [ -f feed.xml ] && git add feed.xml; true
           git diff --cached --quiet || { git commit -m "agent: refresh data" && git pull --rebase -X theirs && git push; }
 
       - name: Model watch (AI, checked by code; applied directly or as a pull request)
@@ -116,7 +120,7 @@ jobs:
       - name: Build one page per tool (tools/, not committed)
         run: node agent/pages.mjs
       - name: Build site folder
-        run: mkdir _site && cp -r *.html assets data tools _site/ && cp sitemap.xml robots.txt CNAME _site/ && cp feed*.xml _site/
+        run: mkdir _site && mkdir -p social && cp -r *.html assets data tools social _site/ && cp sitemap.xml robots.txt CNAME _site/ && cp feed*.xml _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with: { path: _site }

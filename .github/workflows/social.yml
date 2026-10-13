@@ -1,0 +1,24 @@
+# Posts approved Instagram drafts at their time: every hour, one post per run (agent/social-publish.mjs).
+name: social
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+permissions: { contents: read }
+concurrency: { group: social }
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 24 }
+      - run: npm ci --prefix agent --omit=dev
+      - run: node agent/social-publish.mjs
