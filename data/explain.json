@@ -12040,5 +12040,180 @@
   "repo": "Geramy/LemonSeed-Studio",
   "at": "2026-10-13",
   "source": "trending"
+ },
+ "vercel-labs/skills": {
+  "cat": "harness",
+  "kind": "agent skills manager",
+  "what": "A command-line tool that installs, shares, and updates skill instructions across coding agents like Claude Code, OpenCode, and Cursor.",
+  "why": "Coding agents require custom skills and markdown instructions that are often siloed or manually copied. Reach for this tool to discover and install community skills across multiple agents with a single command.",
+  "level": "setup",
+  "start": "npx skills add vercel-labs/agent-skills",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Install and manage ready-made AI skills and instructions for your coding agents.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Install prompt skills into coding agents",
+   "Manage and update skills across multiple tools",
+   "Test specific agent skills without permanently installing them"
+  ],
+  "steps": [
+   "Run `npx skills add vercel-labs/agent-skills` to install skills into your coding agent.",
+   "Target specific agents using flags like `-a claude-code` or install globally with `-g`.",
+   "View your installed agent skills anytime with `npx skills list`."
+  ],
+  "repo": "vercel-labs/skills",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "leemysw/yovoice": {
+  "cat": "media",
+  "kind": "Local AI audio studio",
+  "what": "An open-source desktop application for local text-to-speech, voice cloning, and AI music generation on macOS and Windows.",
+  "why": "Cloud voice services charge subscriptions and send private voice recordings to external servers. Reach for yovoice to generate speech, custom voice clones, and complete songs offline on your own hardware with no API fees.",
+  "level": "easy",
+  "start": "Download and run the installer for macOS (.dmg) or Windows (.exe) from the repository releases.",
+  "caution": "Some bundled models like Breeze TTS 2 and OmniVoice carry non-commercial licenses, and generating full songs requires up to 12 GB of VRAM.",
+  "alts": [
+   "coqui-ai/TTS",
+   "openai/whisper",
+   "resemble-ai/chatterbox"
+  ],
+  "packages": [],
+  "plain": "A free app that generates speech, voice clones, and full songs completely offline on your computer.",
+  "tags": [
+   "media",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Generate speech audio and dub stories completely offline",
+   "Clone custom voices using reference audio clips without cloud services",
+   "Create complete songs with lyrics and export multi-track audio"
+  ],
+  "steps": [
+   "Download the yovoice installer for macOS or Windows from the official release page.",
+   "Open the app and download a voice model in Settings, such as Kokoro-82M.",
+   "Create a project, enter text or lyrics, and configure style or character settings.",
+   "Select Generate to create, preview, compare, and export your audio."
+  ],
+  "repo": "leemysw/yovoice",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "onehumanbeing/esp32-iphone-agent": {
+  "cat": "coding",
+  "kind": "iPhone automation agent",
+  "what": "Controls a physical iPhone using an ESP32 microcontroller as a USB mouse and AirPlay for screen vision.",
+  "why": "Standard iOS automation requires a Mac, Xcode, and Apple developer certificates. Reach for this to automate any iPhone app or game using vision models without jailbreaking or developer setups.",
+  "level": "setup",
+  "start": "hardware/flash.sh",
+  "caution": "Requires purchasing an ESP32-S3 board, Wi-Fi configuration, and turning on AssistiveTouch on the target phone.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "browser-use/browser-use",
+   "To3akaRin/mac-computer-use"
+  ],
+  "packages": [],
+  "plain": "Lets an AI see and tap your real iPhone without jailbreaking or needing a Mac developer account.",
+  "tags": [
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Automate repetitive tasks inside native iPhone apps and settings",
+   "Test mobile app interfaces by executing automated visual workflows",
+   "Interact with mobile games or drawing apps lacking software APIs"
+  ],
+  "steps": [
+   "Configure Wi-Fi settings in `secrets.h` and flash your ESP32-S3 board using `hardware/flash.sh`.",
+   "Install UxPlay on macOS or Linux and start the Python server with your vision API keys.",
+   "Turn on AssistiveTouch on your iPhone, plug in the flashed board, and mirror the screen via AirPlay.",
+   "Open the web dashboard at port 8890, calibrate the pointer, and enter task goals."
+  ],
+  "repo": "onehumanbeing/esp32-iphone-agent",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "prabanta-dev/janas": {
+  "cat": "local",
+  "kind": "local inference engine",
+  "what": "Janas is an experimental, pure C inference engine designed to stream large mixture-of-experts (MoE) LLMs directly from an NVMe SSD so models larger than system RAM can run locally.",
+  "why": "Reach for it when you want to run massive MoE models (such as an 80B model) on consumer hardware with limited RAM, reading weights from disk rather than keeping everything in memory.",
+  "level": "setup",
+  "start": "curl -LO https://github.com/prabanta-dev/janas/releases/latest/download/janas-linux-x86_64.tar.gz",
+  "caution": "Experimental project developed on a single hardware configuration. It streams aggressively with O_DIRECT and fills RAM, which may freeze desktops or cause GPU driver resets.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "sgl-project/sglang"
+  ],
+  "packages": [],
+  "plain": "Run massive AI models on a normal laptop by streaming model weights directly from an NVMe drive.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run large mixture-of-experts models on laptops with low RAM",
+   "Stream model weights directly from fast NVMe SSD storage",
+   "Benchmark local LLM prompt and token generation speeds"
+  ],
+  "steps": [
+   "Download the release archive using `curl -LO https://github.com/prabanta-dev/janas/releases/latest/download/janas-linux-x86_64.tar.gz`",
+   "Unpack the archive and enter directory with `tar xf janas-linux-x86_64.tar.gz && cd janas`",
+   "Launch the interactive chat interface by running `./janas-chat`"
+  ],
+  "repo": "prabanta-dev/janas",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "crow-hq/llm-wiki-v2": {
+  "cat": "memory",
+  "kind": "AI markdown wiki",
+  "what": "An AI-powered knowledge base that organizes uploaded documents into a structured Markdown wiki and answers questions with citations.",
+  "why": "Searching and filing scattered documents manually is slow. Reach for this to build a transparent, local-first second brain stored in plain Markdown without vendor lock-in.",
+  "level": "setup",
+  "start": "uv tool install \"llmw2[server] @ git+https://github.com/crow-hq/llm-wiki-v2\"",
+  "caution": "Licensed under AGPL-3.0; scanned PDFs require separate OCR processing beforehand because image-only files cannot be ingested directly.",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "infiniflow/ragflow",
+   "open-webui/open-webui"
+  ],
+  "packages": [
+   "llmw2"
+  ],
+  "plain": "Converts your documents into an organized Markdown wiki and answers your questions with exact citations.",
+  "tags": [
+   "knowledge",
+   "private",
+   "docs"
+  ],
+  "useFor": [
+   "Organize text files and PDFs into linked Markdown notes",
+   "Ask questions across documents with clickable source citations",
+   "Run a private knowledge base locally using Ollama"
+  ],
+  "steps": [
+   "Install the tool with `uv tool install \"llmw2[server] @ git+https://github.com/crow-hq/llm-wiki-v2\"`.",
+   "Launch the web application by running `llmwiki2` in your terminal.",
+   "Choose an AI provider like Ollama or OpenRouter and enter your credentials.",
+   "Drag and drop text, Markdown, or PDF files into the web UI."
+  ],
+  "repo": "crow-hq/llm-wiki-v2",
+  "at": "2026-10-13",
+  "source": "trending"
  }
 }

@@ -1,36 +1,43 @@
 {
- "updated": "2026-10-13T00:47:22.676Z",
+ "updated": "2026-10-13T12:08:39.574Z",
  "items": [
   {
-   "repo": "SaarthurR/atticus-mac",
-   "stars": 66,
-   "desc": "Fast, free voice assistant for your Mac. No API key: runs on your Claude Pro or Max plan. Remembers you and learns your shortcuts. Hold ⌃⌥Space and talk.",
-   "created": "2026-10-10T01:07:04Z",
-   "topics": [
-    "claude",
-    "claude-code",
-    "macos",
-    "menubar-app"
-   ],
-   "lang": "Python",
+   "repo": "vercel-labs/skills",
+   "stars": 34148,
+   "desc": "The open agent skills tool - npx skills",
+   "created": "2026-01-14T21:31:18Z",
+   "topics": [],
+   "lang": "TypeScript",
    "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 62,
-    "url": "https://news.ycombinator.com/item?id=50049588"
-   }
+    "GitHub Trending (daily)"
+   ]
   },
   {
-   "repo": "Harvil1/codeAgent",
-   "stars": 304,
-   "desc": "CodeAgent is an open-source coding agent that lives in your terminal. It understands your repository, plans multi-step changes, writes and edits files, runs commands and tests, and iterates until the task is done — all with a transparent, extensible tool loop.",
-   "created": "2026-10-02T05:15:41Z",
+   "repo": "leemysw/yovoice",
+   "stars": 1238,
+   "desc": "Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees.",
+   "created": "2026-09-15T15:18:35Z",
    "topics": [
-    "agent",
+    "ai-music",
+    "audio",
+    "desktop-app",
+    "local-ai"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "onehumanbeing/esp32-iphone-agent",
+   "stars": 1189,
+   "desc": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+   "created": "2026-10-11T19:10:25Z",
+   "topics": [
     "ai-agent",
-    "cli",
-    "coding-agent"
+    "airplay",
+    "automation",
+    "computer-use"
    ],
    "lang": "Python",
    "sources": [
@@ -38,33 +45,33 @@
    ]
   },
   {
-   "repo": "ANDRETRIPOL/OpenGhost",
-   "stars": 264,
-   "desc": "Open desktop AI agent for Windows, macOS and Linux, written from scratch: its own agent engine, its own browser tooling and its own drawing engine that shows what it explains.",
-   "created": "2026-09-25T12:32:32Z",
+   "repo": "prabanta-dev/janas",
+   "stars": 233,
+   "desc": "37 tok/s from Qwen3-Next-80B (48 GB) on a 32 GB laptop, 24 without drafts vs 2.8 for llama.cpp; reading 62 vs 16 tok/s. Faster than llama.cpp on all 13 models compared in Q4_K_M. LLMs bigger than your RAM, pure C, CPU or GPU.",
+   "created": "2026-09-20T09:55:09Z",
    "topics": [
-    "ai-agent",
-    "ai-assistant",
-    "anthropic",
-    "claude"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Geramy/LemonSeed-Studio",
-   "stars": 48,
-   "desc": "An iPad IDE with local LLM inference on an AMD GPU over Thunderbolt: the upstream Linux amdgpu driver embedded as DriverKit, LemonSeed Engine, and live GPU telemetry.",
-   "created": "2026-10-03T06:17:19Z",
-   "topics": [
-    "amdgpu",
-    "code-editor",
-    "driverkit",
-    "egpu"
+    "avx2",
+    "c",
+    "cpu-inference",
+    "gguf"
    ],
    "lang": "C",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "crow-hq/llm-wiki-v2",
+   "stars": 209,
+   "desc": "Turn your documents into a Markdown wiki that answers with citations. Runs locally with Ollama or any LLM provider. CROW classifier routing: 89% right note vs 62%, 2.1× faster ingest, 68% fewer tokens.",
+   "created": "2026-09-24T19:50:19Z",
+   "topics": [
+    "citations",
+    "knowledge-base",
+    "llm",
+    "llm-wiki"
+   ],
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
