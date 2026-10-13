@@ -11905,5 +11905,140 @@
   "repo": "yzg1226/mcd-party-officer",
   "at": "2026-10-12",
   "source": "trending"
+ },
+ "SaarthurR/atticus-mac": {
+  "cat": "harness",
+  "kind": "macOS voice assistant",
+  "what": "Atticus is a macOS menu bar voice assistant that controls your system, moves windows, and reads your screen using Claude Code.",
+  "why": "It lets you control macOS tasks by voice without paying for extra API keys by leveraging your existing Claude Pro or Max subscription through Claude Code.",
+  "level": "setup",
+  "start": "xcode-select --install",
+  "caution": "Reuses your consumer Claude Pro/Max subscription via Claude Code, which may conflict with Anthropic usage policies or terms. Also requires a future macOS version (macOS 26).",
+  "alts": [
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter",
+   "To3akaRin/mac-computer-use"
+  ],
+  "packages": [],
+  "plain": "Talk to your Mac to control windows, search files, and summarize screens using Claude Code.",
+  "tags": [
+   "automate",
+   "supercharge",
+   "save"
+  ],
+  "useFor": [
+   "Arrange windows across displays using voice commands",
+   "Transcribe meetings and generate action summaries",
+   "Inspect screens and search local files hands-free"
+  ],
+  "steps": [
+   "Install command line tools with `xcode-select --install`.",
+   "Ensure you have a paid Claude plan and run the provided setup script.",
+   "Grant Accessibility and Screen Recording permissions when prompted.",
+   "Hold Control+Option+Space and speak your request."
+  ],
+  "repo": "SaarthurR/atticus-mac",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "Harvil1/codeAgent": {
+  "cat": "coding",
+  "kind": "terminal coding agent",
+  "what": "An open-source terminal coding assistant built in Python featuring Claude Code-inspired interactions, task planning, and permission controls.",
+  "why": "Reach for it when you want a transparent, extensible CLI coding agent powered by DeepSeek or other OpenAI-compatible endpoints with safety guardrails.",
+  "level": "setup",
+  "start": "uv run python main.py",
+  "caution": "Windows-first project; macOS is not thoroughly verified. The agent can modify local files and execute system shell commands.",
+  "alts": [
+   "anthropics/claude-code",
+   "Aider-AI/aider",
+   "QwenLM/qwen-code"
+  ],
+  "packages": [],
+  "plain": "A terminal coding agent that plans tasks, edits files, and runs commands with interactive approvals.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Navigate codebases, plan multi-step changes, and edit files in your terminal",
+   "Execute terminal commands and run automated tests with interactive approval prompts",
+   "Integrate external MCP tools and custom sub-agents using DeepSeek or Anthropic"
+  ],
+  "steps": [
+   "Clone the repository and install dependencies with `uv sync`",
+   "Set your model API key like `DEEPSEEK_API_KEY` or `OPENAI_API_KEY`",
+   "Start the interactive terminal session by running `uv run python main.py`"
+  ],
+  "repo": "Harvil1/codeAgent",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "ANDRETRIPOL/OpenGhost": {
+  "cat": "coding",
+  "kind": "desktop AI agent",
+  "what": "OpenGhost is an open-source desktop AI assistant for Windows, macOS, and Linux that runs terminal commands, manages files, automates a built-in browser, and renders interactive custom diagrams.",
+  "why": "Use OpenGhost when you want a visual, standalone desktop agent that can execute shell commands, edit files, and drive web pages while showing concepts with interactive diagrams and live charts.",
+  "level": "easy",
+  "start": "Download the installer for Windows, macOS, or Linux from the releases page and launch the app.",
+  "caution": "The desktop agent can run terminal commands, modify files, and operate logged-in browser accounts; supervise its actions and permission settings carefully.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "OpenHands/OpenHands",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "plain": "A desktop assistant that runs commands, browses the web, and draws interactive charts to explain answers.",
+  "tags": [
+   "automate",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Automate tasks in a built-in browser across logged-in accounts",
+   "Visualize concepts and workflows with interactive live drawings",
+   "Run terminal commands, manage git repositories, and edit local files"
+  ],
+  "steps": [
+   "Download the OpenGhost installer for your operating system from the GitHub releases page.",
+   "Launch OpenGhost and enter your API key (Anthropic, OpenAI, or local endpoint like Ollama).",
+   "Start a chat, assign a task, and let the agent browse, run tools, or draw diagrams."
+  ],
+  "repo": "ANDRETRIPOL/OpenGhost",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "Geramy/LemonSeed-Studio": {
+  "cat": "local",
+  "kind": "iPad eGPU IDE",
+  "what": "An iPad code editor that runs local AI models on an external AMD graphics card connected via Thunderbolt.",
+  "why": "Apple iPads normally lack external GPU compute drivers and cannot run heavy local AI models. Reach for this if you want to develop and run offline AI inference directly on iPad hardware using an external AMD GPU enclosure.",
+  "level": "dev",
+  "start": "git clone --recurse-submodules https://github.com/Geramy/LemonSeed-Studio.git",
+  "caution": "Requires custom DriverKit setup, specific external AMD GPU hardware over Thunderbolt, and building from source in Xcode.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "zed-industries/zed"
+  ],
+  "packages": [],
+  "plain": "An iPad code editor that runs local AI models using an external AMD graphics card.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Run local models on an iPad using an external AMD GPU",
+   "Write code on an iPad with offline AI assistance",
+   "Monitor live external GPU telemetry while generating text"
+  ],
+  "steps": [
+   "Clone the repository recursively with `git clone --recurse-submodules <repository>`.",
+   "Open the project in Xcode to compile the DriverKit extensions and iPad app.",
+   "Connect your AMD GPU in a Thunderbolt enclosure to the iPad and run."
+  ],
+  "repo": "Geramy/LemonSeed-Studio",
+  "at": "2026-10-13",
+  "source": "trending"
  }
 }
