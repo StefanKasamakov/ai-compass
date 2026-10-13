@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-13T13:24:47.618Z",
+ "updated": "2026-10-13T14:19:48.310Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Geoffrey Huntley",
+   "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
+   "date": "2026-10-13T13:32:00.000Z",
+   "summary": "If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library. All of a sudden it's ten out of ten. &md",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model",
@@ -44,6 +56,41 @@
    "image": "https://substackcdn.com/image/fetch/$s_!1dow!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdda42c05-6ce1-4e54-b544-f7d1557f04b2_1280x720.jpeg"
   },
   {
+   "source": "Hacker News",
+   "title": "AI coding agents generate more code, but not more software",
+   "url": "https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/",
+   "date": "2026-10-12T17:14:01Z",
+   "discuss": "https://news.ycombinator.com/item?id=50059523",
+   "summary": "346 points, 290 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "web-edit 0.1a0",
+   "url": "https://simonwillison.net/2026/Oct/12/web-edit/",
+   "date": "2026-10-12T15:54:36.000Z",
+   "summary": "Release: web-edit 0.1a0 I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to be run over Tailscale, so I can have an a",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/web-edit-card.jpg"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Python 3.15.0 added to actions/python-versions",
+   "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
+   "date": "2026-10-10T23:58:04.000Z",
+   "summary": "Python 3.15.0 added to actions/python-versions Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it: Clone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it Now that this has landed, you can add \"3.15\" to a GitHub Actions testing matrix to run tests against the new Py",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
    "source": "GitHub",
    "title": "New controls and chat improvements in Copilot for JetBrains",
    "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
@@ -57,6 +104,17 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Building AI for Reliable Execution: Lessons From Industrial Robotics",
+   "url": "https://www.latent.space/p/standard-bots",
+   "date": "2026-10-10T14:04:11.000Z",
+   "summary": "Inside Standard Bots’ AI stack, pretrained models learn factory tasks from demonstrations and improve through corrections from real deployments.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://substackcdn.com/image/fetch/$s_!yzyh!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe58f7268-94a0-42f5-b0fc-9ecf300bb03d_2560x1440.png"
   },
   {
    "source": "Simon Willison",
@@ -86,6 +144,18 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/10/667724435-138fc0bf-2da0-4dfa-98c8-671bf744ac7f.jpg"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Deno is joining Cloudflare",
+   "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare/",
+   "date": "2026-10-09T22:48:37.000Z",
+   "summary": "Deno is joining Cloudflare The Deno team released the first version of celld back in August - their open source implementation of the Durable Objects pattern from Cloudflare Workers. Today, Cloudflare are acquiring Deno outright, with the goal of building on celld to \"make workerd self-hosting a first-class supported way to build and run apps using the Workers programming model\" (see the Cloudflar",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "GitHub release",
@@ -141,6 +211,18 @@
    "big": false,
    "ai": true,
    "image": "https://static.simonwillison.net/static/2026/newsletters-card.webp"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+   "url": "https://openai.com/index/sophos",
+   "date": "2026-10-09T07:00:00.000Z",
+   "summary": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4pg31JOD6Z3cO31LCR6GYq/8c1cedfd2e85c6dd80d2ea8c5ea0c9a1/sophos-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "OpenAI",
@@ -245,6 +327,29 @@
   },
   {
    "source": "OpenAI",
+   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
+   "url": "https://openai.com/index/oracle",
+   "date": "2026-10-08T16:00:00.000Z",
+   "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/1SCqCm9UJXrGxUgBvYjlpb/e26c9003845454505088b39effc72e8d/oracle-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+   "date": "2026-10-08T13:00:00.000Z",
+   "title": "Building on our commitment to American scientific discovery",
+   "summary": "Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20DoubleHelix&backgroundColor=heather"
+  },
+  {
+   "source": "OpenAI",
    "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
    "url": "https://openai.com/index/pollo-ai",
    "date": "2026-10-08T12:00:00.000Z",
@@ -270,6 +375,17 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/2P8XYqMKsOiY9IUl1H3YfF/d737379b5aebd51ab8cf5962a82ac429/legalon-codex-customer-story-seo-open-graph-1920x1080.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+   "date": "2026-10-08T09:04:16.632Z",
+   "title": "Introducing the Anthropic Cyber Mission",
+   "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2af4f6715cbe9766a47430a24420cfca0a2c588-1200x630.jpg"
   },
   {
    "source": "Latent Space",
@@ -312,6 +428,29 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/62f8ab0478731bfa52166354d960fb94d4683a9c55d9a72f4caf7c6f8271e099/anthropics/claude-code/releases/tag/v2.1.294"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Disrupting AI-enabled “false front” operations",
+   "url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations",
+   "date": "2026-10-08T00:00:00.000Z",
+   "summary": "OpenAI disrupted two AI-enabled influence operations that used false-front journalists and a think tank to spread geopolitical messaging.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/59gWIyg4DMtitwWO9AW6Af/9c66b1544d2b8d55f98703da82eeb5cf/false-front-operations-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "The model that didn't exist, so you made it yourself",
+   "url": "https://huggingface.co/blog/building-with-ml-intern",
+   "date": "2026-10-08T00:00:00.000Z",
+   "summary": "",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://huggingface.co/blog/assets/building-with-ml-intern/thumbnail.png"
   },
   {
    "source": "Anthropic",
@@ -1281,6 +1420,41 @@
    "image": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png"
   },
   {
+   "source": "OpenAI",
+   "title": "Chatham scales its capital markets expertise with OpenAI",
+   "url": "https://openai.com/index/chatham-financial",
+   "date": "2026-10-02T00:00:00.000Z",
+   "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5YyV7pXaAJJDcGDHvPniAF/4f73936c51d46e5bf8941e13f06987b2/chatham-financial-social-getty-texture.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "How Albertsons Companies is reimagining retail from the inside out",
+   "url": "https://openai.com/index/albertsons-reimagining-retail",
+   "date": "2026-10-01T16:00:00.000Z",
+   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6sZopZBu8aHeeYeb8H6IS1/945a5ed2fcd3a837554c8ac49a38cdf6/how-albertsons-companies-is-reimagining-retail-from-the-inside-out-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/barclays-scales-claude",
+   "date": "2026-10-01T15:19:00.000Z",
+   "title": "Barclays scales Claude to upgrade operations and improve client experience",
+   "summary": "Barclays, the British universal bank, is expanding its strategic collaboration with Anthropic to integrate secure, enterprise-grade AI systems across its global operations.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+  },
+  {
    "source": "Latent Space",
    "title": "[AINews] Gemini 4 Argon: GDM’s answer to Astra/Fable, with 1M output",
    "url": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
@@ -1309,6 +1483,29 @@
    "viaBrowser": true
   },
   {
+   "source": "OpenAI",
+   "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+   "url": "https://openai.com/index/the-den-family-social",
+   "date": "2026-10-01T00:00:00.000Z",
+   "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/2LBeQvZxob9E44kvUBuP4u/bf9887c20e840ecd0362d8e93e98c31d/og.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Why Dwarkesh is Wrong about Computer Use + How OpenAI shipped its Jev competitor in 1 Week",
+   "url": "https://www.latent.space/p/devday-2026",
+   "date": "2026-09-30T22:23:40.000Z",
+   "summary": "Our DevDay coverage - the first pod on the DevDay lineup - dives in with the leaders of OpenAI’s CUA team and API platform.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://substackcdn.com/image/fetch/$s_!6k0o!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F218243619%2Fbf1dd45c-cca3-4c2c-8bd6-b825ecb451ab%2Ftranscoded-1790802162.png"
+  },
+  {
    "source": "DeepMind",
    "title": "Gemini 4 Argon: our next era of frontier intelligence",
    "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
@@ -1334,6 +1531,30 @@
    "big": false,
    "ai": true,
    "image": "https://lh3.googleusercontent.com/wNhpZFcXYLXFb6alIt0H5NRvEoso2ONZDhPKz6MYEcGltHPbDeHddzkvv5GXl3abW1PZ5ci1Y9lKoYOIjMuHLxATXfWp88-Al6eEmDENrpejIFeimw=w1200-h630-n-nu-rw",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Disrupting a coordinated model-distillation campaign",
+   "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+   "date": "2026-09-30T10:30:00.000Z",
+   "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/7MP5Bq8wKRpAAnnhqfdA8o/3ca1f00ae7ec16c5a569eb6195e24c90/disrupting-a-coordinated-model-distillation-campaign-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Helping small businesses put AI to work",
+   "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+   "date": "2026-09-30T10:00:00.000Z",
+   "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/1rewZcU5SqdsiUKj7Q6fCx/e82271bc1df80e3f2d5f9cfcd82a91fa/helping-small-businesses-put-ai-to-work-seo.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   },
   {
@@ -1454,6 +1675,18 @@
    "viaBrowser": true
   },
   {
+   "source": "OpenAI",
+   "title": "How we will do better for Australia",
+   "url": "https://openai.com/index/how-we-will-do-better-for-australia",
+   "date": "2026-09-28T19:00:00.000Z",
+   "summary": "OpenAI apologises for incidents involving Australian government websites and outlines stronger safeguards and support to strengthen Australia’s cyber defences.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/27qbrKJfTn2i8yoYkoNM3M/976d3d86067d405f4b43d93cb6dc632e/how_we_will_do_better_for_australia.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
    "source": "Hugging Face",
    "title": "Holo4: powering generalist computer-use agents",
    "url": "https://huggingface.co/blog/Hcompany/holo4",
@@ -1468,6 +1701,39 @@
    "image": "https://cdn-uploads.huggingface.co/production/uploads/69fc7e49052f11ab9931b672/yzjxvlmlZKtjASwAYu6bN.jpeg"
   },
   {
+   "source": "OpenAI",
+   "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+   "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+   "date": "2026-09-28T07:00:00.000Z",
+   "summary": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Are you a Codex Original?",
+   "url": "https://openai.com/form/codex-originals",
+   "date": "2026-09-28T00:00:00.000Z",
+   "summary": "We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+   "url": "https://openai.com/index/basis-tax-workbook-with-astra",
+   "date": "2026-09-28T00:00:00.000Z",
+   "summary": "GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in real-world use.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
    "source": "Hugging Face",
    "title": "Welcome RL Environments to the hub",
    "url": "https://huggingface.co/blog/rl-environments",
@@ -1480,6 +1746,39 @@
    "big": false,
    "ai": true,
    "image": "https://huggingface.co/blog/assets/datasets-filters/thumbnail.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+   "url": "https://openai.com/index/proaction",
+   "date": "2026-09-25T19:00:00.000Z",
+   "summary": "With Codex, GPT-Live-1, and GPT-6 Astra, Proaction builds, operates, and sells modern fleet management faster.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Lowe’s answers millions of home improvement questions with OpenAI",
+   "url": "https://openai.com/index/lowes",
+   "date": "2026-09-25T07:00:00.000Z",
+   "summary": "Lowe’s uses OpenAI models to power Mylow and Mylow Companion, helping customers and associates answer 25M+ questions and move home improvement projects forward.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Wayfair boosts catalog accuracy and support speed with OpenAI",
+   "url": "https://openai.com/index/wayfair",
+   "date": "2026-09-25T00:00:00.000Z",
+   "summary": "Wayfair uses OpenAI models to improve ecommerce support and product catalog accuracy, automating ticket triage and enhancing millions of product attributes at scale.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
   },
   {
    "source": "DeepMind",
@@ -1525,6 +1824,17 @@
    "viaBrowser": true
   },
   {
+   "source": "OpenAI",
+   "title": "Two years of OpenAI Academy",
+   "url": "https://openai.com/index/two-years-of-openai-academy",
+   "date": "2026-09-23T16:00:00.000Z",
+   "summary": "Marking two years of OpenAI Academy and bringing AI skills to even more communities.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
    "source": "DeepMind",
    "title": "Gemini 3.8 text-to-speech says hello",
    "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
@@ -1536,6 +1846,61 @@
    "big": false,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-audio__keyword__metacard__light.width-1300.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+   "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+   "date": "2026-09-23T13:00:00.000Z",
+   "summary": "OpenAI is extending access to its Daybreak program to the Government of Ukraine to support the cyber defense of civilian infrastructure.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Ringg’s AI agents resolve up to 65% of customer calls with OpenAI",
+   "url": "https://openai.com/index/ringg",
+   "date": "2026-09-23T12:00:00.000Z",
+   "summary": "Using GPT-5.6, Ringg powers multilingual agents across voice, chat, WhatsApp, and web for 90% less cost vs. GPT-4.1.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "How invideo improves color grading 3x with GPT‑6 Astra",
+   "url": "https://openai.com/index/invideo-builds-with-gpt-6-astra",
+   "date": "2026-09-23T12:00:00.000Z",
+   "summary": "With GPT‑6 Astra, invideo plans edits with greater precision, improves color correction and grading threefold, and produces 50 custom effects in one day.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Harvey turns legal context into stronger drafts with GPT-6 Astra",
+   "url": "https://openai.com/index/harvey-from-context-to-confidence-with-astra",
+   "date": "2026-09-23T12:00:00.000Z",
+   "summary": "GPT-6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Sam Altman’s remarks at the United Nations Security Council",
+   "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+   "date": "2026-09-23T12:00:00.000Z",
+   "summary": "OpenAI CEO Sam Altman discusses AI safety, human control, and international cooperation in remarks to the United Nations Security Council.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
   },
   {
    "source": "OpenAI",
@@ -1566,6 +1931,28 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/7FJ6xwUhzfqnyoSn9ciPcS/2f477db82efadb6e10ace70da6498bb3/chatgpt-ads-expands-to-southeast-asia-and-taiwan-seo.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Airbnb widens access to GPT-6 Astra and OpenAI frontier models",
+   "url": "https://openai.com/index/airbnb-gpt-6-astra",
+   "date": "2026-09-23T01:00:00.000Z",
+   "summary": "Learn how Airbnb is expanding access to GPT-6 Astra and OpenAI frontier models to help engineering teams solve bugs, design systems, and ship faster.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
+  },
+  {
+   "source": "OpenAI",
+   "title": "Grab and OpenAI bring practical AI skills to Southeast Asia",
+   "url": "https://openai.com/index/grab-openai-ai-skills-southeast-asia",
+   "date": "2026-09-23T00:00:00.000Z",
+   "summary": "OpenAI and Grab launch GO Forward with AI, a regional programme helping 30,000 partners build practical AI skills across Southeast Asia.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": ""
   },
   {
    "source": "OpenAI",
