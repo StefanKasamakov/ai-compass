@@ -12215,5 +12215,101 @@
   "repo": "crow-hq/llm-wiki-v2",
   "at": "2026-10-13",
   "source": "trending"
+ },
+ "zhuyansen/new-term-radar": {
+  "cat": "evals",
+  "kind": "AI trend tracker",
+  "what": "A daily report that catches new AI models, products, and repos from X, Hugging Face, GitHub, and sitemaps before keyword tools list them.",
+  "why": "To discover emerging AI names and tools the day they appear rather than weeks later, helping content creators and SEO professionals track new trends early.",
+  "level": "setup",
+  "start": "uvx new-term-radar",
+  "caution": "Relies on external paid API keys (AIsa) for full functionality, and some features may require third-party service tokens.",
+  "alts": [],
+  "packages": [],
+  "plain": "A daily research tool that finds newly trending AI products and models before they show up in standard search keyword lists.",
+  "tags": [
+   "research",
+   "automate",
+   "monitor"
+  ],
+  "useFor": [
+   "Discover new AI models and tools before keyword tools list them",
+   "Track trending GitHub repositories and X discussions automatically",
+   "Generate daily keyword and search trend reports for new products"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Configure your API keys in the settings or environment variables.",
+   "Run the radar script from your command line to generate daily reports."
+  ],
+  "repo": "zhuyansen/new-term-radar",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "sno-ai/sno-station": {
+  "cat": "harness",
+  "kind": "multi-agent squad manager",
+  "what": "Sno Station connects Codex, Claude Code, Cursor, Hermes Agent, and OpenClaw so they share memory, pass work between each other, and review each other's work.",
+  "why": "Helps you switch between different AI coding tools without losing context when one hits a rate limit, and improves their skills overnight.",
+  "level": "setup",
+  "start": "sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf \"%s\\n\" \"$sno_installer_body\" | sh' && ~/.local/bin/sno setup",
+  "caution": "Some modes upload your session data to Sno's cloud for nightly processing and skill reviews, though it can be turned off in settings.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "Unite your different AI coding tools into a single squad that shares memory and reviews each other's work.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Switch to another AI agent when one hits a rate limit",
+   "Get a second opinion from a different AI agent",
+   "Improve agent skills automatically with nightly reflections"
+  ],
+  "steps": [
+   "Run the installation command in your terminal to set up Sno Station.",
+   "Say 'Sno onboard' inside any supported AI agent conversation.",
+   "Type 'sno reach call' when your current agent hits a rate limit to continue in another agent."
+  ],
+  "repo": "sno-ai/sno-station",
+  "at": "2026-10-13",
+  "source": "trending"
+ },
+ "hujjun/mcd-saver-strategist": {
+  "cat": "harness",
+  "kind": "McDonald's coupon optimizer",
+  "what": "An AI agent skill that fetches McDonald's menus and coupons to calculate the cheapest food ordering combinations.",
+  "why": "Calculating the best combination of fast food coupons and menu items is complex and prone to math errors by language models. Reach for this to automate savings when ordering from McDonald's.",
+  "level": "setup",
+  "start": "git clone https://github.com/hujjun/mcd-saver-strategist.git && cp -r mcd-saver-strategist/skills/mcd-saver-strategist ~/.workbuddy/skills/",
+  "caution": "This tool interacts with a third-party commercial platform and requires a personal user token, which may breach the provider's terms of service. Last updated more than 4 months ago.",
+  "alts": [
+   "wshobson/agents"
+  ],
+  "packages": [],
+  "plain": "Finds the cheapest combination of McDonald's menu items and coupons automatically.",
+  "tags": [
+   "automate",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Find the cheapest meal combination using available coupons",
+   "Calculate meals within a strict budget constraint",
+   "Find low-calorie meals that match your budget"
+  ],
+  "steps": [
+   "Get a McDonald's MCP token from the open platform.",
+   "Configure your MCP connection settings in WorkBuddy.",
+   "Copy the skill directory into your WorkBuddy user skills folder."
+  ],
+  "repo": "hujjun/mcd-saver-strategist",
+  "at": "2026-10-13",
+  "source": "trending"
  }
 }
