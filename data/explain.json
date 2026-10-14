@@ -12644,5 +12644,38 @@
   "repo": "0xBakeer/TandemLLM",
   "at": "2026-10-14",
   "source": "trending"
+ },
+ "shawnshekari/strixite": {
+  "cat": "local",
+  "kind": "AMD inference engine",
+  "what": "An LLM inference engine written from scratch in HIP for AMD Strix Halo.",
+  "why": "Run large language models locally with high performance on specific AMD hardware. Reach for it when deploying models on an AMD Strix Halo system.",
+  "level": "dev",
+  "start": "git clone https://github.com/shawnshekari/strixite && cd strixite",
+  "caution": "Requires specific AMD Strix Halo hardware with 128 GB memory, Linux, and a significant amount of free NVMe storage.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "An inference engine built for AMD Strix Halo to run large models locally.",
+  "tags": [
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Run large language models locally",
+   "Host an OpenAI-compatible server on AMD hardware"
+  ],
+  "steps": [
+   "Raise the GPU memory limit via kernel parameters and reboot.",
+   "Install the required ROCm toolchain, CMake, Ninja, and a GCC C++ standard library.",
+   "Build the project using the provided CMake presets.",
+   "Download the model weights and start the server."
+  ],
+  "repo": "shawnshekari/strixite",
+  "at": "2026-10-14",
+  "source": "trending"
  }
 }
