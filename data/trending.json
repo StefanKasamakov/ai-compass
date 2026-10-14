@@ -1,87 +1,52 @@
 {
- "updated": "2026-10-14T05:00:22.936Z",
+ "updated": "2026-10-14T12:01:34.656Z",
  "items": [
   {
-   "repo": "jiwoochris/artex-global",
-   "stars": 1454,
-   "desc": "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크(upstream: Autumn-27/ARTEX, AGPL-3.0)",
-   "created": "2026-10-03T14:49:48Z",
+   "repo": "K-Dense-AI/scientific-agent-skills",
+   "stars": 48867,
+   "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+   "created": "2025-10-19T20:54:15Z",
    "topics": [
-    "ai-agent",
-    "autonomous-agents",
-    "blue-team",
-    "cybersecurity"
+    "agent-skills",
+    "ai-scientist",
+    "bioinformatics",
+    "chemoinformatics"
    ],
-   "lang": "Go",
+   "lang": "Python",
    "sources": [
-    "new on GitHub"
+    "GitHub Trending (daily)"
    ]
   },
   {
-   "repo": "Folkbench/folkbench",
-   "stars": 847,
-   "desc": "AI API 中转站评测排行与切换工具：实测可用率、延迟与价格 · Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
-   "created": "2026-10-02T09:50:45Z",
+   "repo": "vxcontrol/pentagi",
+   "stars": 28706,
+   "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+   "created": "2025-01-06T22:22:48Z",
    "topics": [
+    "ai-agents",
+    "ai-security-tool",
+    "anthropic",
+    "autonomous-agents"
+   ],
+   "lang": "Go",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "ifixai-ai/iFixAi",
+   "stars": 26602,
+   "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+   "created": "2026-04-27T13:02:34Z",
+   "topics": [
+    "agent-evaluation",
     "ai",
-    "api-relay",
-    "api-relay-pricing",
-    "benchmark"
+    "ai-alignment",
+    "ai-evaluation"
    ],
-   "lang": "Rust",
+   "lang": "Python",
    "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "mw00/project-maya",
-   "stars": 763,
-   "desc": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible API, quant tools.",
-   "created": "2026-10-06T22:55:13Z",
-   "topics": [
-    "cuda",
-    "glm",
-    "glm-5",
-    "llm"
-   ],
-   "lang": "C++",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "p10node/k10s",
-   "stars": 316,
-   "desc": "Kubernetes TUI you can click. Instant search, logs/exec/port-forward, 7 themes, context-aware AI. Single Go binary.",
-   "created": "2026-08-26T04:37:57Z",
-   "topics": [
-    "cli",
-    "k8s",
-    "tui"
-   ],
-   "lang": "Go",
-   "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 69,
-    "url": "https://news.ycombinator.com/item?id=50009904"
-   }
-  },
-  {
-   "repo": "techysy/CreditDaddy",
-   "stars": 82,
-   "desc": "AI 编程工具多账号本地管理 + 每日积分自动签到：Qoder / WorkBuddy(CodeBuddy) / ZCode，接入 10Router 看额度、同步用量。Windows 托盘桌面版 + 飞牛 fnOS fpk，数据只留本机，零依赖。",
-   "created": "2026-09-23T08:50:53Z",
-   "topics": [
-    "10router",
-    "account-manager",
-    "ai-coding",
-    "codebuddy"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
+    "GitHub Trending (daily)"
    ]
   }
  ]

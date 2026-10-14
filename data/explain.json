@@ -12478,5 +12478,103 @@
   "repo": "techysy/CreditDaddy",
   "at": "2026-10-14",
   "source": "trending"
+ },
+ "K-Dense-AI/scientific-agent-skills": {
+  "cat": "harness",
+  "kind": "Scientific research skills",
+  "what": "A library of 177 procedural science and research skills that teach AI coding agents how to work with specialized biology, chemistry, and physics tools.",
+  "why": "Extends AI coding agents with domain-specific knowledge, validation checks, and curated documentation for scientific tasks.",
+  "level": "easy",
+  "start": "git clone https://github.com/K-Dense-AI/scientific-agent-skills.git",
+  "caution": "None",
+  "alts": [],
+  "packages": [],
+  "plain": "A massive collection of science rules and instructions to help AI agents assist with biology, chemistry, and physics research.",
+  "tags": [
+   "research",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Analyze genomic and proteomic sequences",
+   "Run cheminformatics and drug discovery pipelines",
+   "Process scientific datasets and generate figures"
+  ],
+  "steps": [
+   "Clone this repository to your local machine.",
+   "Point your AI coding agent or supported assistant to the skills folder."
+  ],
+  "repo": "K-Dense-AI/scientific-agent-skills",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "vxcontrol/pentagi": {
+  "cat": "coding",
+  "kind": "Autonomous Pentesting Agents",
+  "what": "PentAGI is a self-hosted multi-agent system that performs autonomous penetration testing using professional security tools inside an isolated Docker sandbox.",
+  "why": "When you need to automate security assessments and vulnerability discovery using AI agents running on your own infrastructure.",
+  "level": "setup",
+  "start": "git clone https://github.com/vxcontrol/pentagi.git",
+  "caution": "Executing automated penetration testing tools and granting AI agents sandbox access carries inherent security and operational risks; ensure you have explicit authorization before testing any targets.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Aider-AI/aider",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "plain": "An autonomous multi-agent system for running penetration testing tasks inside an isolated Docker sandbox.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Automate penetration testing tasks",
+   "Run security tools in sandboxes",
+   "Generate vulnerability reports"
+  ],
+  "steps": [
+   "Clone the repository locally",
+   "Configure your chosen LLM provider API keys",
+   "Run the interactive installer or Docker Compose setup"
+  ],
+  "repo": "vxcontrol/pentagi",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "ifixai-ai/iFixAi": {
+  "cat": "evals",
+  "kind": "AI agent auditing",
+  "what": "Audits AI agents to check if they are meeting business goals and following organizational rules.",
+  "why": "Standard testing tools only check technical metrics like speed or token use, but this tool answers whether the agent is actually doing its assigned job correctly.",
+  "level": "setup",
+  "start": "pip install \"ifixai[openai]\"",
+  "caution": "Reuses existing LLM provider accounts and API keys.",
+  "alts": [
+   "promptfoo/promptfoo",
+   "Arize-ai/phoenix",
+   "confident-ai/deepeval"
+  ],
+  "packages": [
+   "ifixai"
+  ],
+  "plain": "A tool that tests whether your AI agent is doing what it is supposed to do.",
+  "tags": [
+   "monitor",
+   "code"
+  ],
+  "useFor": [
+   "Run security and alignment checks on AI agents",
+   "Generate audit reports and scorecards for agent behavior",
+   "Test agents against specific business scenarios and KPIs"
+  ],
+  "steps": [
+   "Install the package with pip install \"ifixai[openai]\"",
+   "Run the setup wizard using ifixai setup",
+   "Execute the audit using ifixai run"
+  ],
+  "repo": "ifixai-ai/iFixAi",
+  "at": "2026-10-14",
+  "source": "trending"
  }
 }
