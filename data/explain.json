@@ -12576,5 +12576,73 @@
   "repo": "ifixai-ai/iFixAi",
   "at": "2026-10-14",
   "source": "trending"
+ },
+ "marclou/mailcheap": {
+  "cat": "builders",
+  "kind": "Self-hosted newsletter platform",
+  "what": "An open-source newsletter platform with a web dashboard, REST API, and MCP server that lets humans and AI agents publish emails.",
+  "why": "Standard newsletter tools charge steep recurring fees per subscriber rather than per email sent. Use this when you want to slash costs using Amazon SES and give AI agents tools to manage campaigns.",
+  "level": "setup",
+  "start": "openssl rand -base64 48",
+  "caution": "The maintainer offers no support, issues are disabled, and setup requires configuring third-party services like MongoDB Atlas, Upstash QStash, and Amazon SES DNS records.",
+  "alts": [
+   "n8n-io/n8n",
+   "activepieces/activepieces",
+   "PrefectHQ/fastmcp"
+  ],
+  "packages": [],
+  "plain": "A self-hosted newsletter tool that lets you or an AI agent write, manage, and send emails cheaply.",
+  "tags": [
+   "automate",
+   "connect",
+   "save"
+  ],
+  "useFor": [
+   "Send newsletters cheaply through your own Amazon SES account",
+   "Allow AI agents to compose and manage email campaigns via MCP",
+   "Host a public issue archive and collect newsletter subscribers"
+  ],
+  "steps": [
+   "Create a free MongoDB Atlas database cluster and permit connections from any IP address.",
+   "Deploy the repository to Vercel and create an auth secret with `openssl rand -base64 48`.",
+   "Set up your Amazon SES or PostShiba credentials and verify your domain DNS records."
+  ],
+  "repo": "marclou/mailcheap",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "0xBakeer/TandemLLM": {
+  "cat": "local",
+  "kind": "DGX Spark AI Engine",
+  "what": "A local AI engine and server optimized for NVIDIA DGX Spark hardware, running specific Qwen and LiquidAI models.",
+  "why": "Provides high-speed local inference with custom kernels and persistent caching when you need to run large models on dedicated hardware.",
+  "level": "setup",
+  "start": "./install.sh --setup",
+  "caution": "Requires specialized NVIDIA DGX Spark hardware.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "ggerganov/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "A high-speed local AI server for specialized NVIDIA hardware.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run Qwen and LiquidAI models locally",
+   "Accelerate local token generation with custom kernels",
+   "Serve models via an OpenAI-compatible API"
+  ],
+  "steps": [
+   "Run `install.sh --setup` on your DGX Spark box.",
+   "Run `use-profile.sh <profile> --dry-run` to inspect downloads.",
+   "Run `use-profile.sh <profile>` to start the engine."
+  ],
+  "repo": "0xBakeer/TandemLLM",
+  "at": "2026-10-14",
+  "source": "trending"
  }
 }
