@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-13T22:51:07.747Z",
+ "updated": "2026-10-14T05:00:22.936Z",
  "items": [
   {
    "repo": "jiwoochris/artex-global",
-   "stars": 1434,
+   "stars": 1454,
    "desc": "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크(upstream: Autumn-27/ARTEX, AGPL-3.0)",
    "created": "2026-10-03T14:49:48Z",
    "topics": [
@@ -18,49 +18,68 @@
    ]
   },
   {
-   "repo": "zhuyansen/new-term-radar",
-   "stars": 857,
-   "desc": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
-   "created": "2026-10-12T07:11:01Z",
+   "repo": "Folkbench/folkbench",
+   "stars": 847,
+   "desc": "AI API 中转站评测排行与切换工具：实测可用率、延迟与价格 · Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
+   "created": "2026-10-02T09:50:45Z",
    "topics": [
-    "agent-skills",
     "ai",
-    "aisa",
-    "claude-code"
+    "api-relay",
+    "api-relay-pricing",
+    "benchmark"
    ],
-   "lang": "Python",
+   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "sno-ai/sno-station",
-   "stars": 685,
-   "desc": "Turn the agents you already use into a squad. Codex, Claude Code, Cursor, Hermes Agent and OpenClaw use one encrypted memory, pass work to each other, review each other's work, and dream every night to wake up a little better. Open source. Runs on your computer.",
-   "created": "2026-09-19T06:55:24Z",
+   "repo": "mw00/project-maya",
+   "stars": 763,
+   "desc": "Project Maya - run GLM-5.3-Flash (321B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible API, quant tools.",
+   "created": "2026-10-06T22:55:13Z",
    "topics": [
-    "agent-memory",
-    "agent-skills",
-    "ai-agents",
-    "claude-code"
+    "cuda",
+    "glm",
+    "glm-5",
+    "llm"
    ],
-   "lang": "TypeScript",
+   "lang": "C++",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "hujjun/mcd-saver-strategist",
-   "stars": 151,
-   "desc": "麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨无霸套餐 ¥47 → ¥21.9（省 53%）。McDonalds MCP（麦当劳 MCP）coupon optimizer · McDonalds China MCP Server · Agent Skill for WorkBuddy · 麦当劳程序员创意开发大赛参赛作品",
-   "created": "2026-10-09T03:21:52Z",
+   "repo": "p10node/k10s",
+   "stars": 316,
+   "desc": "Kubernetes TUI you can click. Instant search, logs/exec/port-forward, 7 themes, context-aware AI. Single Go binary.",
+   "created": "2026-08-26T04:37:57Z",
    "topics": [
-    "agent-skill",
-    "ai-agent",
-    "coupon-optimizer",
-    "coupons"
+    "cli",
+    "k8s",
+    "tui"
    ],
-   "lang": "Python",
+   "lang": "Go",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 69,
+    "url": "https://news.ycombinator.com/item?id=50009904"
+   }
+  },
+  {
+   "repo": "techysy/CreditDaddy",
+   "stars": 82,
+   "desc": "AI 编程工具多账号本地管理 + 每日积分自动签到：Qoder / WorkBuddy(CodeBuddy) / ZCode，接入 10Router 看额度、同步用量。Windows 托盘桌面版 + 飞牛 fnOS fpk，数据只留本机，零依赖。",
+   "created": "2026-09-23T08:50:53Z",
+   "topics": [
+    "10router",
+    "account-manager",
+    "ai-coding",
+    "codebuddy"
+   ],
+   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]

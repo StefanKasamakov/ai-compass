@@ -12311,5 +12311,172 @@
   "repo": "hujjun/mcd-saver-strategist",
   "at": "2026-10-13",
   "source": "trending"
+ },
+ "jiwoochris/artex-global": {
+  "cat": "coding",
+  "kind": "AI security tester",
+  "what": "An autonomous penetration-testing system driven by multiple AI agents that break down goals and execute security tools.",
+  "why": "To automate security assessments and vulnerability discovery in isolated test environments. Reach for it when you need to research and verify network defenses.",
+  "level": "setup",
+  "start": "docker compose up -d",
+  "caution": "This tool performs automated offensive security actions and can be dangerous if misused. Only run it against systems you explicitly own or have written authorization to test. Reusing consumer subscription logins may violate provider terms.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Aider-AI/aider",
+   "significant-gravitas/autogpt"
+  ],
+  "packages": [],
+  "plain": "An autonomous AI security testing tool that runs penetration tests and reports vulnerabilities in multiple languages.",
+  "tags": [
+   "code",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Run automated security scans on isolated test environments",
+   "Inspect discovered assets and vulnerabilities in a dashboard",
+   "Generate penetration-testing reports in English, Korean, Chinese, or Spanish"
+  ],
+  "steps": [
+   "Ensure Docker and Docker Compose are installed on your system.",
+   "Clone the repository and configure your LLM API keys.",
+   "Run `docker compose up -d` to start the application and database.",
+   "Open the web interface in your browser to configure settings and launch scans."
+  ],
+  "repo": "jiwoochris/artex-global",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "Folkbench/folkbench": {
+  "cat": "gateway",
+  "kind": "Relay Benchmark & Switcher",
+  "what": "Test, rank, and switch between AI API relay providers and endpoints for coding assistants.",
+  "why": "To compare the availability, speed, and pricing of different third-party AI relay stations and instantly sync your credentials across tools like Claude Code and Codex.",
+  "level": "easy",
+  "start": "Download the Folkbench Switch desktop app from the GitHub releases page.",
+  "caution": "Using third-party API relay stations and consumer subscription wrappers may violate the upstream providers' terms of service and risk your accounts.",
+  "alts": [
+   "songquanpeng/one-api",
+   "QuantumNous/new-api",
+   "router-for-me/CLIProxyAPI"
+  ],
+  "packages": [],
+  "plain": "A tool to benchmark AI API providers and quickly switch between them in your coding assistants.",
+  "tags": [
+   "code",
+   "save",
+   "connect"
+  ],
+  "useFor": [
+   "Compare availability, latency, and pricing across AI relay stations",
+   "Switch API base URLs and keys for Claude Code and Codex",
+   "Estimate local token usage and costs"
+  ],
+  "steps": [
+   "Download and install the Folkbench Switch desktop application.",
+   "Open the app to view live benchmark rankings of various AI relay stations.",
+   "Save your preferred service provider credentials and click to apply them to your target coding tools."
+  ],
+  "repo": "Folkbench/folkbench",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "mw00/project-maya": {
+  "cat": "local",
+  "kind": "Local AI Model Runner",
+  "what": "Run the massive 321-billion-parameter GLM-5.3-Flash model privately on your own GPUs.",
+  "why": "Runs a datacenter-class model locally on local hardware with zero data leaving your machine, providing an OpenAI- and Anthropic-compatible API for your local tools and coding agents.",
+  "level": "setup",
+  "start": "./setup.sh",
+  "caution": "Pushed over 4 months ago. Requires heavy hardware (high VRAM, fast NVMe SSD, and lots of RAM) and takes substantial setup time.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "Run a massive 321B AI model locally on your own graphics cards without sending data to the cloud.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Chat privately with a large local AI model",
+   "Host a local OpenAI-compatible API for coding agents",
+   "Monitor GPU and memory usage during local model inference"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/mw00/project-maya.git && cd project-maya`",
+   "Run `./setup.sh` and follow the prompts to install dependencies and download the model",
+   "Open `http://127.0.0.1:8080` in your browser to use the chat and live monitor"
+  ],
+  "repo": "mw00/project-maya",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "p10node/k10s": {
+  "cat": "coding",
+  "kind": "Kubernetes Terminal UI",
+  "what": "A click-enabled Kubernetes terminal interface with context-aware AI.",
+  "why": "Navigating Kubernetes clusters via terminal is tedious and requires memorizing keys. Reach for this when you need a fast, point-and-click dashboard for your cluster that can explain errors using AI based on your active screen.",
+  "level": "easy",
+  "start": "curl -fsSL https://p10node.com/k10s/install.sh | sh",
+  "caution": "This tool interacts directly with live Kubernetes clusters; running write operations or delete commands without caution can affect production infrastructure.",
+  "alts": [
+   "kubernetes/kubernetes"
+  ],
+  "packages": [],
+  "plain": "A point-and-click dashboard for your Kubernetes cluster that runs in your terminal and includes built-in AI help.",
+  "tags": [
+   "code",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Inspect Kubernetes pods and logs interactively",
+   "Search cluster resources using a single search box",
+   "Troubleshoot cluster issues using context-aware AI"
+  ],
+  "steps": [
+   "Run the install script in your terminal to download and install k10s.",
+   "Type `k10s demo` to try out the built-in sample cluster without connecting to a real one.",
+   "Type `k10s` to connect to your current Kubernetes context from your kubeconfig."
+  ],
+  "repo": "p10node/k10s",
+  "at": "2026-10-14",
+  "source": "trending"
+ },
+ "techysy/CreditDaddy": {
+  "cat": "harness",
+  "kind": "AI account manager",
+  "what": "Local multi-account manager and daily automated check-in tool for AI coding assistants.",
+  "why": "To easily manage multiple accounts, check remaining credits, and automate daily check-ins across tools like Qoder, WorkBuddy, and ZCode without leaking data.",
+  "level": "setup",
+  "start": "npm i -g creditdaddy",
+  "caution": "None",
+  "alts": [],
+  "packages": [
+   "creditdaddy"
+  ],
+  "plain": "Manage multiple AI coding tool accounts and automatically claim daily points locally.",
+  "tags": [
+   "automate",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Manage multiple AI tool accounts locally",
+   "Automate daily check-ins and point claims",
+   "Sync usage data with 10Router"
+  ],
+  "steps": [
+   "Install the tool globally using npm i -g creditdaddy.",
+   "Launch the application or start the local daemon.",
+   "Import your local client credentials securely through the dashboard."
+  ],
+  "repo": "techysy/CreditDaddy",
+  "at": "2026-10-14",
+  "source": "trending"
  }
 }
