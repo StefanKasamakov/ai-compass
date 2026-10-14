@@ -4,7 +4,7 @@ name: agent
 on:
   schedule:
     - cron: "17 */6 * * *"   # data refresh (GitHub stats, trending, news, votes)
-    - cron: "41 4 * * *"     # daily model watch (verified changes go live, the rest become a PR)
+    - cron: "41 4 * * *"     # extra run; the model watch runs on every scheduled run, since GitHub sometimes drops one
     - cron: "7 7 * * 1"      # Monday: weekly newsletter
   push:
     branches: [main]
@@ -86,7 +86,7 @@ jobs:
 
       - name: Model watch (AI, checked by code; applied directly or as a pull request)
         continue-on-error: true   # a failed model check must never block publishing fresh data
-        if: (env.GEMINI_API_KEY != '' || env.ANTHROPIC_API_KEY != '') && (github.event.schedule == '41 4 * * *' || github.event_name == 'workflow_dispatch')
+        if: (env.GEMINI_API_KEY != '' || env.ANTHROPIC_API_KEY != '') && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
         env: { PR_BODY: pr-body.md, MODEL_RESULT: model-result.txt, GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
         run: |
           node agent/models-check.test.mjs
