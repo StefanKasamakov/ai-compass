@@ -1,6 +1,47 @@
 {
- "updated": "2026-10-15T17:07:17.075Z",
+ "updated": "2026-10-15T21:29:21.839Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+   "date": "2026-10-15T20:34:01.000Z",
+   "summary": "IBM released Granite Switch 4.1, a single endpoint model handling chat, decision-making, and speech processing.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/gltB0o--PV_Jh0D3aDm8-.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+   "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+   "date": "2026-10-15T19:35:13.000Z",
+   "summary": "GitHub announced that select older models in GitHub Copilot will be deprecated on November 16, 2026.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/645867806-878ea927-48c9-4765-a896-4a5f3d7b8f2e.jpg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.301",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
+   "date": "2026-10-15T19:22:06Z",
+   "summary": "Anthropic updated the Claude Code command-line tool to version 2.1.301 with minor fixes.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/320b6490de42374d99ccc5201a9e44d68b796444a013218ca10bea6e20c91cc9/anthropics/claude-code/releases/tag/v2.1.301"
+  },
   {
    "source": "GitHub",
    "title": "Agentic autofix for code scanning alerts general availability",
@@ -23,6 +64,59 @@
    "ai": false,
    "image": "",
    "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Apertus 1.5 Release Notes",
+   "url": "https://huggingface.co/blog/swiss-ai/apertus-v15-release-notes",
+   "date": "2026-10-15T09:08:45.000Z",
+   "summary": "Apertus 1.5 release notes were published, updating the open-source model family.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/61f1877a168a0b52fda88455/2mHXxCtfos6CgwFSNKFVi.jpeg"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Welcome Muse Spark Open: open-weight frontier multimodal mixture-of-experts model from Meta",
+   "url": "https://huggingface.co/blog/meta-muse-spark-open",
+   "date": "2026-10-15T00:00:00.000Z",
+   "summary": "Meta released Muse Spark Open, an open-weight multimodal mixture-of-experts model on Hugging Face.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/meta-muse-spark-open/thumbnail.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Welcome FLUX.3 Image Klein in Diffusers",
+   "url": "https://huggingface.co/blog/flux-3",
+   "date": "2026-10-15T00:00:00.000Z",
+   "summary": "FLUX.3 Image Klein has been integrated into Hugging Face's Diffusers library for local image generation.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/flux3/thumbnail.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/code-review-is-now-generally-available",
+   "date": "2026-10-15",
+   "title": "Code Review is now generally available",
+   "summary": "Anthropic made its automated Code Review tool generally available for Claude Team and Enterprise tiers.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/code-review-is-now-generally-available/opengraph-image/og"
   },
   {
    "source": "Latent Space",
@@ -2053,105 +2147,6 @@
    "big": true,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/g4_30-09-26_key-art_blog.width-1300.png"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Introducing SynthID Bio",
-   "url": "https://deepmind.google/blog/introducing-synthid-bio/",
-   "date": "2026-09-30T15:03:07.000Z",
-   "summary": "Google DeepMind introduced SynthID Bio, a technique to embed digital watermarks into synthetic proteins without affecting biological function. This helps researchers trace and verify laboratory-generated biological sequences.",
-   "tags": [
-    "research",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://lh3.googleusercontent.com/wNhpZFcXYLXFb6alIt0H5NRvEoso2ONZDhPKz6MYEcGltHPbDeHddzkvv5GXl3abW1PZ5ci1Y9lKoYOIjMuHLxATXfWp88-Al6eEmDENrpejIFeimw=w1200-h630-n-nu-rw",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Disrupting a coordinated model-distillation campaign",
-   "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
-   "date": "2026-09-30T10:30:00.000Z",
-   "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7MP5Bq8wKRpAAnnhqfdA8o/3ca1f00ae7ec16c5a569eb6195e24c90/disrupting-a-coordinated-model-distillation-campaign-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Helping small businesses put AI to work",
-   "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
-   "date": "2026-09-30T10:00:00.000Z",
-   "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1rewZcU5SqdsiUKj7Q6fCx/e82271bc1df80e3f2d5f9cfcd82a91fa/helping-small-businesses-put-ai-to-work-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] OpenAI DevDay 2026: Dots, 6.1 Sol, Ultrafast, Decisions API, Agents API, Spaces, Marketplace, and 1.2 Billion ChatGPT WAU",
-   "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
-   "date": "2026-09-30T05:53:10.000Z",
-   "summary": "A breakdown of OpenAI's latest DevDay announcements covering new models, agent frameworks, and enterprise APIs.",
-   "tags": [
-    "models",
-    "agents",
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/GjN3xLDuc8o"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Open TTS Leaderboard: Scalable Evaluation for Multilingual Text-to-Speech and Voice Cloning",
-   "url": "https://huggingface.co/blog/open-tts-leaderboard",
-   "date": "2026-09-30T00:00:00.000Z",
-   "summary": "Hugging Face released an open leaderboard for comparing text-to-speech models and voice cloning quality across languages.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/open-tts-leaderboard/thumbnail.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
-   "url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
-   "date": "2026-09-29T13:07:00.000Z",
-   "summary": "Hugging Face published research on source-aware verification to help Model Context Protocol (MCP) agents cite and fact-check tools accurately.",
-   "tags": [
-    "mcp",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/668e37fd9c9aa124a3c867e8/phhhj_BLOJbvnTFhVaZ5y.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "DevDay 2026 Recap",
-   "url": "https://openai.com/index/devday-2026-recap",
-   "date": "2026-09-29T10:00:00.000Z",
-   "summary": "OpenAI recapped its DevDay 2026 conference, highlighting major updates to models, APIs, and developer tools.",
-   "tags": [
-    "models",
-    "coding",
-    "agents",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
   }
  ]
 }
