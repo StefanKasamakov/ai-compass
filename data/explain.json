@@ -12747,5 +12747,75 @@
   "repo": "cablate/ctx-handoff-mod",
   "at": "2026-10-15",
   "source": "trending"
+ },
+ "xerj-org/xerj": {
+  "cat": "memory",
+  "kind": "AI Search Engine",
+  "what": "XERJ is a local AI search engine that automatically indexes folders of code, docs, logs, and PDFs for search, RAG, and agent memory.",
+  "why": "It reduces token waste by letting coding agents search indexed passages rather than grepping through whole files, saving tokens and speeding up tasks.",
+  "level": "setup",
+  "start": "curl -fsSL https://xerj.org/get | sh",
+  "caution": "The default configuration disables TLS and auth when using the insecure flag, meaning local callers have full read and write access.",
+  "alts": [
+   "chroma-core/chroma",
+   "qdrant/qdrant",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "A fast local search engine that helps AI coding agents find code and documents using significantly fewer tokens.",
+  "tags": [
+   "knowledge",
+   "code",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Index codebases and documents automatically",
+   "Search code with file and line number results",
+   "Provide long-term memory for AI agents"
+  ],
+  "steps": [
+   "Download and install XERJ using the install script.",
+   "Start the XERJ server with your data directory.",
+   "Run `xerj autoindex` on your project folder.",
+   "Search your indexed files using the command line."
+  ],
+  "repo": "xerj-org/xerj",
+  "at": "2026-10-15",
+  "source": "trending"
+ },
+ "lightseekorg/tokenspeed": {
+  "cat": "local",
+  "kind": "LLM inference engine",
+  "what": "A high-performance open-source LLM inference engine optimized for agentic workloads on modern accelerator hardware.",
+  "why": "Standard inference runtimes can face latency bottlenecks during agent loops. Reach for it to maximize generation throughput and token generation speed on enterprise GPUs.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires high-end modern server hardware (such as NVIDIA Blackwell or AMD Instinct GPUs) to realize the advertised performance benchmarks.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "Run large language models at ultra-fast speeds on high-end GPUs for AI agent workloads.",
+  "tags": [
+   "save",
+   "apps",
+   "private"
+  ],
+  "useFor": [
+   "Serve open-source LLMs with high throughput",
+   "Power latency-sensitive multi-step AI agent loops",
+   "Host models on enterprise NVIDIA and AMD accelerators"
+  ],
+  "steps": [
+   "Check the installation requirements in the official getting started documentation.",
+   "Configure your GPU drivers and runtime environment for your accelerator platform.",
+   "Launch the AsyncLLM server using the recommended model recipe for your deployment."
+  ],
+  "repo": "lightseekorg/tokenspeed",
+  "at": "2026-10-15",
+  "source": "trending"
  }
 }
