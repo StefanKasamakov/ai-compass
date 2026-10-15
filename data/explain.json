@@ -12677,5 +12677,41 @@
   "repo": "shawnshekari/strixite",
   "at": "2026-10-14",
   "source": "trending"
+ },
+ "yakuikai/tokentab": {
+  "cat": "tokens",
+  "kind": "Token Usage Tracker",
+  "what": "Local-first CLI and web dashboard that reads Claude Code, Codex and Gemini CLI session logs and shows token usage and cost.",
+  "why": "Helps you track and audit how many tokens and dollars you are spending across various AI coding tools without sending any data to the cloud.",
+  "level": "setup",
+  "start": "pip install .",
+  "caution": "None",
+  "alts": [
+   "ccusage",
+   "Maciek-roboblog/Claude-Code-Usage-Monitor"
+  ],
+  "packages": [
+   "rich"
+  ],
+  "plain": "See token usage and costs for local AI coding tools in your terminal or a web dashboard.",
+  "tags": [
+   "save",
+   "monitor",
+   "private"
+  ],
+  "useFor": [
+   "Check token usage and costs by model or project",
+   "View token spending trends in a local web dashboard",
+   "Export token usage data in JSON format for analysis"
+  ],
+  "steps": [
+   "Clone the repository and enter the project directory.",
+   "Install the package using pip install .",
+   "Run python cli.py to view your recent token usage in the terminal.",
+   "Run python cli.py -web to open the local browser dashboard."
+  ],
+  "repo": "yakuikai/tokentab",
+  "at": "2026-10-15",
+  "source": "trending"
  }
 }
