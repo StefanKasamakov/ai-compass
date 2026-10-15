@@ -12713,5 +12713,39 @@
   "repo": "yakuikai/tokentab",
   "at": "2026-10-15",
   "source": "trending"
+ },
+ "cablate/ctx-handoff-mod": {
+  "cat": "harness",
+  "kind": "Claude Code mod",
+  "what": "ctx-handoff-mod is a plugin for Claude Code that automatically manages context limits, keeps prompt caches warm during breaks, and saves learned instructions into project notes.",
+  "why": "Long AI coding sessions often hit memory limits, waste cache savings after stepping away, or forget previously given instructions. Reach for this plugin to handle conversation resets automatically, maintain persistent project rules across chats, and save costs on long coding tasks.",
+  "level": "setup",
+  "start": "claude plugin marketplace add cablate/ctx-handoff-mod",
+  "caution": "Automatically refreshes cache using consumer subscriptions during idle periods, which may risk violating Anthropic's terms of service.",
+  "alts": [
+   "anthropics/claude-code",
+   "thedotmack/claude-mem",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A plugin for Claude Code that saves memory, refreshes long chat sessions, and keeps project notes automatically.",
+  "tags": [
+   "supercharge",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Summarize and transfer context when Claude conversations reach context limits",
+   "Keep prompt caches warm during breaks to avoid full input prices",
+   "Convert repeated instructions into permanent project notes and rules"
+  ],
+  "steps": [
+   "Add the marketplace source using `claude plugin marketplace add cablate/ctx-handoff-mod`.",
+   "Install the plugin by running `claude plugin install ctx-handoff@ctx-handoff-mod`.",
+   "Start a new Claude Code session and run `/handoff` to verify the installation."
+  ],
+  "repo": "cablate/ctx-handoff-mod",
+  "at": "2026-10-15",
+  "source": "trending"
  }
 }
