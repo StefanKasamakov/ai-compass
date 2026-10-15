@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-15T11:45:18.003Z",
+ "updated": "2026-10-15T17:29:02.760Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 181273,
+   "stars": 181345,
    "license": null,
    "pushed": "2026-10-09T18:45:52Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 299445,
+   "stars": 299682,
    "license": "MIT",
    "pushed": "2026-10-10T03:03:30Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 106852,
+   "stars": 106948,
    "license": "MIT",
    "pushed": "2026-10-13T20:24:07Z",
    "by": "addyosmani",
@@ -27,7 +27,7 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 292070,
+   "stars": 292480,
    "license": "MIT",
    "pushed": "2026-10-13T08:46:40Z",
    "by": "mattpocock",
@@ -35,7 +35,7 @@
   },
   {
    "repo": "openai/skills",
-   "stars": 28085,
+   "stars": 28087,
    "license": null,
    "pushed": "2026-09-08T20:35:26Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 32459,
+   "stars": 32475,
    "license": null,
    "pushed": "2026-10-14T17:58:45Z",
    "by": "vercel-labs",
@@ -51,9 +51,9 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 38275,
+   "stars": 38699,
    "license": "Apache-2.0",
-   "pushed": "2026-10-15T07:40:14Z",
+   "pushed": "2026-10-15T16:36:37Z",
    "by": "anthropics",
    "count": 33
   },
@@ -67,7 +67,7 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 28225,
+   "stars": 28231,
    "license": "MIT",
    "pushed": "2026-08-30T09:46:16Z",
    "by": "alirezarezvani",
@@ -75,25 +75,25 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25536,
+   "stars": 25540,
    "license": "MIT",
-   "pushed": "2026-10-15T06:08:38Z",
+   "pushed": "2026-10-15T17:12:04Z",
    "by": "EveryInc",
    "count": 37
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 81425,
+   "stars": 81541,
    "license": "Apache-2.0",
-   "pushed": "2026-10-15T09:26:05Z",
+   "pushed": "2026-10-15T17:19:32Z",
    "by": "pbakaus",
    "count": 21
   },
   {
    "repo": "wshobson/agents",
-   "stars": 40829,
+   "stars": 40845,
    "license": "MIT",
-   "pushed": "2026-10-14T21:06:13Z",
+   "pushed": "2026-10-15T15:11:55Z",
    "by": "wshobson",
    "count": 80
   }
@@ -5600,7 +5600,7 @@
    "path": "plugins/accessibility-compliance/skills/screen-reader-testing",
    "desc": "Test web applications with screen readers including VoiceOver, NVDA, and JAWS. Use when validating screen reader compatibility, debugging accessibility issues, or ensuring assistive technology support.",
    "scripts": false,
-   "files": 0,
+   "files": 4,
    "tags": [
     "code"
    ],
@@ -6398,6 +6398,19 @@
    "example": "Help me follow the testing steps for this new task."
   },
   {
+   "key": "wshobson/agents/social-evidence-research",
+   "name": "social-evidence-research",
+   "repo": "wshobson/agents",
+   "path": "plugins/content-marketing/skills/social-evidence-research",
+   "desc": "Research public discussion on social platforms and keep every report claim tied to the source material that supports it. Use when researching or comparing how a product, event, or topic is discussed across social platforms or supplied social exports, when turning search results into a cited report, or when auditing a social research report for discovery-only evidence, double-counted reposts, misattributed comments, claims that go beyond the sample, or hidden access gaps.",
+   "scripts": false,
+   "files": 3,
+   "tags": [
+    "docs",
+    "research"
+   ]
+  },
+  {
    "key": "wshobson/agents/airflow-dag-patterns",
    "name": "airflow-dag-patterns",
    "repo": "wshobson/agents",
@@ -6524,7 +6537,7 @@
    "path": "plugins/developer-essentials/skills/code-review-excellence",
    "desc": "Master effective code review practices to provide constructive feedback, catch bugs early, and foster knowledge sharing while maintaining team morale. Use when reviewing pull requests, establishing review standards, or mentoring developers.",
    "scripts": false,
-   "files": 0,
+   "files": 2,
    "tags": [
     "code"
    ],
@@ -6542,7 +6555,7 @@
    "path": "plugins/developer-essentials/skills/debugging-strategies",
    "desc": "Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use when investigating bugs, performance issues, or unexpected behavior.",
    "scripts": false,
-   "files": 0,
+   "files": 1,
    "tags": [
     "code",
     "research"
@@ -6728,7 +6741,7 @@
    "path": "plugins/documentation-generation/skills/architecture-decision-records",
    "desc": "Write and maintain Architecture Decision Records (ADRs) following best practices for technical decision documentation. Use when documenting significant technical decisions, reviewing past architectural choices, or establishing decision processes.",
    "scripts": false,
-   "files": 0,
+   "files": 2,
    "tags": [
     "docs"
    ],
@@ -7026,25 +7039,6 @@
     "Optimize game performance"
    ],
    "example": "Set up a basic ECS system in Unity DOTS."
-  },
-  {
-   "key": "wshobson/agents/hermes-tweet",
-   "name": "hermes-tweet",
-   "repo": "wshobson/agents",
-   "path": "plugins/hermes-tweet/skills/hermes-tweet",
-   "desc": "Install and operate Hermes Tweet, a Hermes Agent plugin for X/Twitter research, timeline reading, tweet analysis, and approval-gated private or state-changing operations. Use this skill when installing Hermes Tweet, researching X/Twitter accounts, monitoring launch signals, investigating mentions, auditing giveaways, or preparing gated X operations. Use proactively when a Hermes Agent workflow needs current X/Twitter context. Requires XQUIK_API_KEY for read and action tools.",
-   "scripts": false,
-   "files": 2,
-   "tags": [
-    "research",
-    "automate"
-   ],
-   "plain": "Research X accounts, monitor launch signals, and manage social media operations securely.",
-   "useFor": [
-    "Research X accounts",
-    "Monitor launch signals"
-   ],
-   "example": "Search X for recent mentions of our product launch."
   }
  ]
 }

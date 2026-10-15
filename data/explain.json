@@ -12817,5 +12817,76 @@
   "repo": "lightseekorg/tokenspeed",
   "at": "2026-10-15",
   "source": "trending"
+ },
+ "deeplethe/solid-glass": {
+  "cat": "builders",
+  "kind": "AI UI design system",
+  "what": "A tactile, glass-inspired design system and shadcn/ui component kit tailored for AI agent workspaces and chat apps.",
+  "why": "AI applications constantly stream tokens, run background tools, and request human feedback, which easily clutters screens. Reach for this to give agent interfaces a clean, structured physical aesthetic without redoing existing shadcn code.",
+  "level": "dev",
+  "start": "npx shadcn@latest add deeplethe/solid-glass/solid-glass",
+  "caution": "Requires a project running React 19, Tailwind CSS v4, and shadcn/ui; you must manually adjust stylesheet imports to replace default color tokens.",
+  "alts": [
+   "oil-oil/oil-ui",
+   "vercel/ai",
+   "siteboon/claudecodeui"
+  ],
+  "packages": [
+   "shadcn"
+  ],
+  "plain": "A clean, glass-style visual theme and ready-made components for building AI agent interfaces.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Style AI chat and agent dashboards with tactile glass surfaces",
+   "Display reasoning steps, tool usage, and context indicators cleanly",
+   "Add prebuilt agent workspace layouts to shadcn React projects"
+  ],
+  "steps": [
+   "Initialize a compatible project using `npx shadcn@latest init`.",
+   "Add the core theme via `npx shadcn@latest add deeplethe/solid-glass/solid-glass`.",
+   "Import `./solid-glass.css` after Tailwind and remove the default shadcn color variables.",
+   "Add individual agent components using `npx shadcn@latest add deeplethe/solid-glass/status-glyph`."
+  ],
+  "repo": "deeplethe/solid-glass",
+  "at": "2026-10-15",
+  "source": "trending"
+ },
+ "RayenMlayeh/jevcrawl": {
+  "cat": "harness",
+  "kind": "website crawling tool",
+  "what": "A web crawler and Model Context Protocol server built for AI agents to find specific answers across multi-page websites.",
+  "why": "Browsing websites for specific information can burn through thousands of tokens and cost dollars when done with a general-purpose LLM. This tool uses a small decision model to pick links and passages, saving time and money.",
+  "level": "easy",
+  "start": "claude mcp add jevcrawl -e TYPESAFE_API_KEY=<your key> -- uvx jevcrawl",
+  "caution": "Requires a paid Jev API key from console.typesafe.ai.",
+  "alts": [
+   "unclecode/crawl4ai",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "jevcrawl"
+  ],
+  "plain": "An AI-powered web crawler that digs through multi-page websites to find exact answers without wasting tokens.",
+  "tags": [
+   "research",
+   "supercharge",
+   "connect"
+  ],
+  "useFor": [
+   "Crawl websites to find specific answers",
+   "Extract relevant passages from documentation",
+   "Map website URLs using a goal"
+  ],
+  "steps": [
+   "Install uv if you do not have it yet.",
+   "Run the Claude MCP command with your Jev API key.",
+   "Ask your assistant to find information on a website using jevcrawl."
+  ],
+  "repo": "RayenMlayeh/jevcrawl",
+  "at": "2026-10-15",
+  "source": "trending"
  }
 }
