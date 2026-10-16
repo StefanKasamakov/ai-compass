@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-16T11:38:58.760Z",
+ "updated": "2026-10-16T11:48:32.273Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 181495,
+   "stars": 181498,
    "license": null,
    "pushed": "2026-10-09T18:45:52Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 300347,
+   "stars": 300357,
    "license": "MIT",
    "pushed": "2026-10-10T03:03:30Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 107223,
+   "stars": 107224,
    "license": "MIT",
    "pushed": "2026-10-13T20:24:07Z",
    "by": "addyosmani",
@@ -27,7 +27,7 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 293494,
+   "stars": 293503,
    "license": "MIT",
    "pushed": "2026-10-13T08:46:40Z",
    "by": "mattpocock",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 32508,
+   "stars": 32509,
    "license": null,
    "pushed": "2026-10-14T17:58:45Z",
    "by": "vercel-labs",
@@ -51,7 +51,7 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 39785,
+   "stars": 39794,
    "license": "Apache-2.0",
    "pushed": "2026-10-16T07:36:29Z",
    "by": "anthropics",
@@ -83,7 +83,7 @@
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 81811,
+   "stars": 81813,
    "license": "Apache-2.0",
    "pushed": "2026-10-16T07:19:51Z",
    "by": "pbakaus",
@@ -790,7 +790,7 @@
     "Define type contracts between modules"
    ],
    "example": "Help me design a new REST API endpoint.",
-   "installs": 54700
+   "installs": 54800
   },
   {
    "key": "addyosmani/agent-skills/browser-testing-with-devtools",
@@ -801,9 +801,9 @@
    "scripts": false,
    "files": 0,
    "tags": [
-    "media",
     "code",
-    "research"
+    "research",
+    "automate"
    ],
    "plain": "Test web pages inside real browsers to inspect elements and catch errors.",
    "useFor": [
@@ -961,7 +961,7 @@
     "Record system design choices"
    ],
    "example": "Document our architectural decision for using this database.",
-   "installs": 56100
+   "installs": 56200
   },
   {
    "key": "addyosmani/agent-skills/doubt-driven-development",
@@ -1119,7 +1119,7 @@
     "Improve page load times"
    ],
    "example": "Help me fix these slow database queries.",
-   "installs": 57100
+   "installs": 57200
   },
   {
    "key": "addyosmani/agent-skills/planning-and-task-breakdown",
@@ -1239,7 +1239,7 @@
     "Adding new logic safely"
    ],
    "example": "Please fix this bug using tests first.",
-   "installs": 54400
+   "installs": 54500
   },
   {
    "key": "addyosmani/agent-skills/using-agent-skills",
@@ -1426,8 +1426,8 @@
    "files": 2,
    "tags": [
     "docs",
-    "media",
-    "apps"
+    "apps",
+    "code"
    ],
    "plain": "Scan your codebase for architecture improvements and present visual reports.",
    "useFor": [
@@ -2495,7 +2495,6 @@
    "files": 3,
    "tags": [
     "docs",
-    "media",
     "code"
    ],
    "plain": "Read, create, and review PDF documents while ensuring accurate layout and visual rendering.",
@@ -4494,7 +4493,6 @@
    "scripts": false,
    "files": 7,
    "tags": [
-    "media",
     "automate",
     "connect"
    ],
@@ -4612,9 +4610,7 @@
    "desc": "Design and implement parallax scrolling and scrollytelling data visualizations. Use when the user asks for parallax scrolling, scrollytelling, scroll-driven timelines, sticky graphics, Scrollama, ScrollTrigger, ScrollTimeline, view timelines, rich-media timelines, moviescrollers, scroll-scrubbed charts, staged narrative reveals, or interactive visual stories where scrolling changes a data visualization or media scene.",
    "scripts": false,
    "files": 4,
-   "tags": [
-    "media"
-   ],
+   "tags": [],
    "plain": "Create scrolling visual stories where graphics change as readers scroll.",
    "useFor": [
     "Build scroll stories",
@@ -5534,9 +5530,7 @@
    "desc": "Build a throwaway prototype to answer how something should work, feel, or read. Use when committing the wrong answer would be expensive to unravel and a cheap sketch cannot settle it. Not a rough visual probe during brainstorming, not for deciding what to build, not polishing a feature that already works, not implementing the real thing.",
    "scripts": true,
    "files": 9,
-   "tags": [
-    "media"
-   ],
+   "tags": [],
    "plain": "Build a disposable prototype to test and clarify how a feature should behave or feel.",
    "useFor": [
     "Testing interaction behavior quickly",

@@ -23,8 +23,8 @@ const SKIP = /(^|\/)(node_modules|\.git|test|tests|fixtures|examples?|templates?
 
 const GOALS = {
   docs: /\b(docx|word|excel|xlsx|spreadsheet|pptx|powerpoint|slides?|presentation|pdf|document|report|writing|write|copy|email|blog|article|translate|proofread|memo)\b/i,
-  // bare "design" is not media: "a plan or design" is about thinking, not pictures
-  media: /\b(image|video|audio|(?:graphic|visual|web|ui|logo|brand|slide) design|design system|logo|poster|art|animation|gif|diagram|chart|visual|brand|theme|ui|ux|frontend|css|figma|canvas|music|voice)\b/i,
+  // bare "design" is not media ("a plan or design" is about thinking), nor are "visual reports" or charts of code
+  media: /\b(image|video|audio|(?:graphic|visual|web|ui|logo|brand|slide) design|design system|logo|poster|art|animation|gif|diagram|brand|theme|ui|ux|frontend|css|figma|canvas|music|voice)\b/i,
   apps: /\b(website|web app|landing page|react|next\.?js|frontend|deploy|vercel|html)\b/i,
   code: /\b(code|coding|debug|test|testing|refactor|git|commit|pull request|review|ci|api|typescript|python|sql|bug|repository|codebase)\b/i,
   research: /\b(research|search|sources?|citations?|literature|analysis|analy[sz]e|market|competitor)\b/i,

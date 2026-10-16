@@ -715,6 +715,7 @@ function rank(all, q) {
     x.tags.forEach((t, i) => { if (goalHits[t]) score += (i === 0 ? 3 : 1.5) * goalHits[t]; });
     if (score > 0 && x.level === "easy") score += 0.6;
     if (score > 0 && x.kind === "app") score += 0.4;
+    if (score > 0 && x.kind === "skill" && x.installs < 100) score -= 1; // a skill almost nobody installed should not top a beginner's answer
     if (noCode && (x.tags[0] === "code" || x.level === "dev")) score -= 4;
     return { x, score };
   }).filter((r) => r.score >= 2).sort((a, b) => b.score - a.score || b.x.stars - a.x.stars).map((r) => r.x);
@@ -891,9 +892,10 @@ async function askBox() {
     if (q.length < 3) { out.innerHTML = ""; return; }
     const hits = rank(all, q);
     // home visitors are mostly non-technical: a ready-made app near the top beats a skill or repo
-    const best = hits.slice(0, 3).find((x) => x.kind === "app") || hits[0];
+    const best = hits.slice(0, 5).find((x) => x.kind === "app") || hits[0];
     const easy = hits.slice(0, 8).find((x) => x !== best && x.level === "easy" && x.kind === "app") || hits.find((x) => x !== best && x.level === "easy");
-    const free = hits.find((x) => x !== best && x !== easy && (x.free || x.kind !== "app"));
+    const okFree = (x) => x !== best && x !== easy && (x.free || x.kind !== "app");
+    const free = hits.find((x) => okFree(x) && (x.kind !== "skill" || x.installs >= 1000)) || hits.find(okFree);
     const picks = [[best, "Best match"], [easy, "Easiest to start"], [free, "Free option"]].filter(([x]) => x);
     out.innerHTML = picks.length
       ? `<div class="ask-grid">${picks.map(([x, label]) => `<div class="ask-pick"><span class="field-label">${label}</span>${toolCard(x, tags)}</div>`).join("")}</div>
