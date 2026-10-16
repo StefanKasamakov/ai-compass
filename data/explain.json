@@ -13025,5 +13025,42 @@
   "repo": "dagoSte/squadra",
   "at": "2026-10-16",
   "source": "trending"
+ },
+ "MadsLorentzen/ai-job-search": {
+  "cat": "harness",
+  "kind": "Claude Code job harness",
+  "what": "A complete job search and application framework built on Claude Code to evaluate postings, tailor CVs, draft cover letters, and prepare for interviews.",
+  "why": "Applying to dozens of jobs requires tedious customization and company research. Reach for this when you want an automated assistant to scan job boards, generate formatted resumes, and run mock interviews.",
+  "level": "setup",
+  "start": "gh repo fork MadsLorentzen/ai-job-search --clone",
+  "caution": "Forking publicly exposes personal resume data and salary targets stored in tracked files; use a private repository instead. Requires paid Claude Code access, Bun, and a local LaTeX installation.",
+  "alts": [
+   "gilgameshcc/ai-native-jobhunt",
+   "anthropics/claude-code",
+   "gsd-build/get-shit-done"
+  ],
+  "packages": [
+   "pypdf"
+  ],
+  "plain": "An assistant that scans job boards, scores how well you fit, and writes tailored CVs and cover letters.",
+  "tags": [
+   "automate",
+   "docs",
+   "supercharge"
+  ],
+  "useFor": [
+   "Scrape and rank job board postings matching your professional profile",
+   "Generate tailored LaTeX CVs and cover letters reviewed by AI",
+   "Prepare for interviews with company research and practice questions"
+  ],
+  "steps": [
+   "Clone or make a private repository clone using `gh repo fork MadsLorentzen/ai-job-search --clone`.",
+   "Install portal search dependencies by running `python3 tools/install_portal_clis.py`.",
+   "Launch Claude Code with `claude` and run `/setup` to build your profile.",
+   "Search matching openings with `/scrape` or apply directly with `/apply <url>`."
+  ],
+  "repo": "MadsLorentzen/ai-job-search",
+  "at": "2026-10-16",
+  "source": "trending"
  }
 }
