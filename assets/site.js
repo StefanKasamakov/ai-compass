@@ -648,7 +648,7 @@ function modSteps(m) {
 const fromMod = (m) => ({ key: m.key, kind: "mod", name: m.name, owner: m.by, repo: m.repo, path: m.path && m.path !== "." ? m.path : "", plain: m.plain, what: m.plain, caution: "",
   useFor: m.surfaces?.length ? [`Adds ${[...new Set(m.surfaces.map((x) => SURFACE[x]).filter(Boolean))].slice(0, 3).join(", ")}`] : [], tags: MOD_TAGS[m.cat] || ["supercharge"], cat: m.cat,
   level: "setup", alts: [], stars: m.builtin || m.sample ? 0 : m.stars, week: 0, installs: 0, updated: m.pushed, license: m.license || null,
-  checked: !!(m.builtin || m.sample), official: !!(m.builtin || m.sample), reach: m.reach, reachLabels: m.reachLabels || [], sees: m.sees || [], validated: m.validated, steps: modSteps(m), link: m.url });
+  checked: !!(m.builtin || m.sample), official: !!(m.builtin || m.sample), reach: m.reach, reachLabels: m.reachLabels || [], sees: m.sees || [], validated: m.validated, steps: modSteps(m), link: m.url, media: m.media || null });
 const fromApp = (a) => ({ key: a.id, kind: "app", name: a.name, owner: a.by, site: a.site, domain: a.domain, plain: a.plain, what: a.plain, caution: a.caution || "",
   steps: a.steps || [], useFor: a.useFor || [], tags: a.tags || [], level: a.level || "easy", alts: a.alts || [], stars: 0, week: 0, installs: 0, price: a.price, free: a.free });
 const iconFor = (x, size = 40) => x.kind === "app"
@@ -741,11 +741,16 @@ const LEVEL = { easy: ["No coding", "ok"], setup: ["Some setup", ""], dev: ["For
 
 // ===== catalog: end =====
 
+// a mod's own screenshot or demo clip, from its README. Cards skip big GIFs so a grid of them stays light.
+const shot = (x, cls) => !x.media || (cls === "tool-shot" && x.media.kb > 2000) ? ""
+  : x.media.type === "video" ? `<video class="${cls}" src="${esc(x.media.src)}" autoplay muted loop playsinline preload="metadata" aria-label="${esc(x.name)} in use"></video>`
+  : `<img class="${cls}" src="${esc(x.media.src)}" alt="${esc(x.name)} in use" loading="lazy" decoding="async" onerror="this.remove()">`;
+
 function toolCard(x, tags) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
   return `<a class="tool" href="tools/${slugOf(x)}.html" data-open="${esc(x.key)}">
     <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${x.fromPack ? "from " : ""}${esc(x.owner)}` : ""}</small></span></span>
-    <span class="tool-plain">${esc(x.plain || "")}</span>
+    ${shot(x, "tool-shot")}<span class="tool-plain">${esc(x.plain || "")}</span>
     <span class="tool-foot">${x.kind === "mod" ? `<span class="tag ${REACH[x.reach]?.[0] === "ok" ? "ok" : "warn"}">${esc(REACH[x.reach]?.[1] || "")}</span>${MOD_CAT[x.cat] ? `<span class="tag">${esc(MOD_CAT[x.cat])}</span>` : ""}` : `${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}`}
       <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${popular(x.stars) ? `${icon("star")}${popular(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}${x.kind === "skill" ? " installs" : "/mo"}` : ""}`}</span></span>
   </a>`;
@@ -784,6 +789,7 @@ function toolDetail(x, all, tags, tips) {
   return `<div class="dlg-head">${iconFor(x, 52)}<div><p class="field-label" style="margin:0">${esc(KIND[x.kind])}${x.official ? " · official" : ""}</p><h2>${esc(x.name)}</h2>${x.owner ? `<small class="muted">by ${esc(x.owner)}</small>` : ""}</div>
       <button class="icon-btn dlg-close" aria-label="Close">${icon("x")}</button></div>
     <p class="lead" style="margin:1rem 0">${md(x.plain || x.what || "")}</p>
+    ${shot(x, "shot-big")}
     <div class="row" style="margin-bottom:1.4rem">${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0])}</span>` : ""}${x.tags.map((t) => goals[t] ? `<a class="tag" href="explore.html?goal=${t}">${esc(goals[t].label)}</a>` : "").join("")}</div>
     ${x.price ? `<p class="price-line">${icon("coins")}<span><b>Cost:</b> ${esc(x.price)}</span></p>` : x.kind !== "app" ? `<p class="price-line">${icon("coins")}<span><b>Cost:</b> free and open source${x.kind === "repo" ? "; you may pay for the AI model it uses" : ""}.</span></p>` : ""}
     ${trustBox(x)}

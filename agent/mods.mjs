@@ -62,7 +62,8 @@ function curatedFromReadme(md) {
     const m = line.match(/^- \[([^\]]+)\]\((https:\/\/github\.com\/[^)]+)\) - (.+)$/);
     if (!m) continue;
     const plain = m[3].replace(/\s*\[(Demo|Recording|Screenshot)\]\([^)]*\)\.?/g, "").trim();
-    out.push({ name: m[1], url: m[2], plain, cat: CATS[section]?.[0] || guessCat(`${m[1]} ${plain}`), featured: section === "Featured" });
+    const demo = m[3].match(/\[(?:Demo|Recording|Screenshot)\]\(([^)\s]+)\)/)?.[1];
+    out.push({ name: m[1], url: m[2], plain, demo, cat: CATS[section]?.[0] || guessCat(`${m[1]} ${plain}`), featured: section === "Featured" });
   }
   return out;
 }
@@ -105,9 +106,53 @@ for (const c of [...fromReadme, ...known]) {
     reach: m.reach?.level ?? 2, reachLabels: (m.reach?.labels || []).filter((l) => !l.startsWith("other:")).map(plainLabel),
     sees: (m.sees || []).slice(0, 6), surfaces: m.draws || [],
     validated: m.validate?.status || "unknown", stars: m.stars || 0, license: m.license || null, pushed: m.pushedAt || null,
-    marketplace: mk?.name || null, plugin: m.name, ...(c.featured && { featured: true }),
+    marketplace: mk?.name || null, plugin: m.name, ...(c.featured && { featured: true }), ...(c.demo && { demo: c.demo }),
   });
 }
+
+// a picture or short clip of each mod, so people can see it before installing: the catalogue's Demo link first,
+// then the first real image in the mod's own README (badges, logos and icons skipped). Checked to load before listing.
+const TOKEN = process.env.GITHUB_TOKEN;
+const GH = { "user-agent": "whichaimap-agent (+https://whichaimap.com)", accept: "application/vnd.github.raw+json", ...(TOKEN && { authorization: `Bearer ${TOKEN}` }) };
+const PIC = /!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]+src=["']([^"']+)|<video[^>]+src=["']([^"']+)|<source[^>]+src=["']([^"']+)|^\s*(https:\/\/github\.com\/user-attachments\/assets\/[\w-]+)\s*$/gim;
+const NOT_DEMO = /shields\.io|badge|badgen|\/workflows\/|codecov|star-history|contrib\.rocks|\.svg(\?|#|$)|icon|logo|brand|banner|avatar|sponsor|buymeacoffee|ko-fi/i;
+const toRaw = (u, repo, dir) => {
+  u = u.replace(/[?#].*$/, (q) => (/raw=true/.test(q) ? "" : q));
+  const gh = u.match(/^https:\/\/github\.com\/([^/]+\/[^/]+)\/(?:blob|raw)\/(.+)$/);
+  if (gh) return `https://raw.githubusercontent.com/${gh[1]}/${gh[2]}`;
+  if (/^https?:\/\//.test(u)) return u;
+  const base = `https://raw.githubusercontent.com/${repo}/HEAD/`;
+  return u.startsWith("/") ? base + u.slice(1) : new URL(u.replace(/^\.\//, ""), base + (dir ? `${dir}/` : "")).href;
+};
+const pics = (md) => [...md.matchAll(PIC)].map((m) => m.slice(1).find(Boolean)).filter((u) => u && !NOT_DEMO.test(u));
+async function check(src) { // must really be an image or a video, and not something huge
+  try {
+    const r = await fetch(src, { method: "HEAD", redirect: "follow", headers: { "user-agent": GH["user-agent"] } });
+    const type = r.headers.get("content-type") || "", kb = Math.round(+(r.headers.get("content-length") || 0) / 1024);
+    if (!r.ok || /svg/.test(type) || !/^(image|video)\//.test(type) || kb > 15000) return null;
+    return { src, type: type.startsWith("video") ? "video" : "image", ...(kb && { kb }) };
+  } catch { return null; }
+}
+const prevMedia = new Map((prev?.mods || []).filter((x) => x.media).map((x) => [x.key, x.media]));
+for (const x of mods) {
+  const tries = [];
+  let reached = false; // false = GitHub did not answer, so keep the picture we had
+  if (x.demo) tries.push(toRaw(x.demo, x.repo, ""));
+  for (const dir of [...new Set([x.path && x.path !== "." ? x.path : null, ""])].filter((d) => d !== null)) {
+    const r = await fetch(`https://api.github.com/repos/${x.repo}/readme${dir ? `/${dir}` : ""}`, { headers: GH }).catch(() => null);
+    if (r?.ok || r?.status === 404) reached = true;
+    // a repo holding several mods: its front-page picture shows one of them (or none), so take only a picture named after this mod
+    const shared = !dir && mods.filter((y) => y.repo === x.repo).length > 1, own = x.name.toLowerCase().replace(/\s+/g, "-");
+    if (r?.ok) tries.push(...pics(await r.text()).filter((u) => !shared || u.toLowerCase().includes(own)).map((u) => toRaw(u, x.repo, dir)));
+    if (tries.length) break;
+  }
+  let media = null;
+  for (const src of tries.slice(0, 4)) if ((media = await check(src))) break;
+  delete x.demo;
+  if (media) x.media = media;
+  else if (!reached && prevMedia.has(x.key)) x.media = prevMedia.get(x.key);
+}
+console.log(`mods: a picture or clip for ${mods.filter((x) => x.media).length} of ${mods.length}`);
 
 // a sudden drop means the source changed shape again: keep the old list rather than publish a broken one
 if (prev && mods.length < 0.7 * prev.mods.filter((x) => !x.builtin && !x.sample).length) {

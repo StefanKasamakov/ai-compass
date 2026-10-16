@@ -107,6 +107,7 @@ function page(x) {
   </div></header>
 
   <section><div class="wrap article">
+    ${x.media ? (x.media.type === "video" ? `<video class="shot-big" src="${esc(x.media.src)}" autoplay muted loop playsinline preload="metadata" aria-label="${esc(x.name)} in use"></video>` : `<img class="shot-big" src="${esc(x.media.src)}" alt="${esc(x.name)} in use" loading="lazy" decoding="async">`) : ""}
     ${x.price ? `<h2>What it costs</h2><p>${esc(x.price)}</p>` : x.kind !== "app" ? `<h2>What it costs</h2><p>Free and open source${x.kind === "repo" ? "; you may pay for the AI model it uses" : ""}.</p>` : ""}
     ${x.useFor?.length ? `<h2>Use it to</h2><ul class="vs-list">${x.useFor.map((u) => `<li>${md(u)}</li>`).join("")}</ul>` : ""}
     ${x.steps?.length ? `<h2>How to start</h2><ol class="steps">${x.steps.map((s) => `<li><p>${md(s)}</p></li>`).join("")}</ol>` : ""}

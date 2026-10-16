@@ -388,6 +388,8 @@ td .mname .logo-badge .logo { width: 17px; height: 17px; }
 .tool-name { min-width: 0; }
 .tool-name b { display: block; font: 600 1rem var(--sans); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tool-name small { color: var(--dim); font: .75rem var(--mono); }
+.tool-shot { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; border-radius: 10px; border: 1px solid var(--line); background: #0d0d10; }
+.shot-big { display: block; width: 100%; max-height: 62vh; object-fit: contain; border-radius: 12px; border: 1px solid var(--line); background: #0d0d10; margin: 0 0 1.4rem; }
 .tool-plain { color: var(--muted); font-size: .93rem; line-height: 1.5; flex: 1; }
 .tool-foot { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; }
 .tool-stats { margin-left: auto; font: .75rem var(--mono); color: var(--dim); display: inline-flex; gap: .3rem; align-items: center; }

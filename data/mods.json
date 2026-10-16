@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T11:38:59.521Z",
+ "updated": "2026-10-16T11:40:44.864Z",
  "scanned": "2026-10-15T06:15:28.072Z",
  "claudeVersion": "2.1.300",
  "total": 4321,
@@ -173,7 +173,12 @@
    "pushed": "2026-10-04T12:18:37Z",
    "marketplace": null,
    "plugin": "cache-tax",
-   "featured": true
+   "featured": true,
+   "media": {
+    "src": "https://raw.githubusercontent.com/karanb192/cache-tax/main/site/assets/refusal.gif",
+    "type": "image",
+    "kb": 1134
+   }
   },
   {
    "key": "jarrodwatts/claude-image-view/image-view",
@@ -201,7 +206,12 @@
    "pushed": "2026-10-12T10:02:19Z",
    "marketplace": "claude-image-view",
    "plugin": "image-view",
-   "featured": true
+   "featured": true,
+   "media": {
+    "src": "https://raw.githubusercontent.com/jarrodwatts/claude-image-view/main/claude-image-view.png",
+    "type": "image",
+    "kb": 361
+   }
   },
   {
    "key": "NahumLitvin/prismantis/prismantis",
@@ -239,7 +249,12 @@
    "pushed": "2026-10-14T20:03:25Z",
    "marketplace": null,
    "plugin": "prismantis",
-   "featured": true
+   "featured": true,
+   "media": {
+    "src": "https://raw.githubusercontent.com/NahumLitvin/prismantis/main/docs/compare.gif",
+    "type": "image",
+    "kb": 1698
+   }
   },
   {
    "key": "scasella/claude-flightdeck/flightdeck",
@@ -269,7 +284,12 @@
    "pushed": "2026-10-12T14:20:14Z",
    "marketplace": "claude-flightdeck",
    "plugin": "flightdeck",
-   "featured": true
+   "featured": true,
+   "media": {
+    "src": "https://raw.githubusercontent.com/scasella/claude-flightdeck/main/docs/media/demo.gif",
+    "type": "image",
+    "kb": 2388
+   }
   },
   {
    "key": "data-goblin/claude-code-filetree/filetree",
@@ -303,7 +323,12 @@
    "pushed": "2026-10-15T06:09:21Z",
    "marketplace": "claude-code-filetree",
    "plugin": "filetree",
-   "featured": true
+   "featured": true,
+   "media": {
+    "src": "https://raw.githubusercontent.com/data-goblin/claude-code-filetree/main/media/filetree-shimmer.gif",
+    "type": "image",
+    "kb": 311
+   }
   },
   {
    "key": "oikon48/prompt-rail/prompt-rail",
@@ -340,7 +365,12 @@
    "pushed": "2026-10-03T07:42:13Z",
    "marketplace": "oikon48",
    "plugin": "prompt-rail",
-   "featured": true
+   "featured": true,
+   "media": {
+    "src": "https://raw.githubusercontent.com/oikon48/prompt-rail/main/docs/demo.gif",
+    "type": "image",
+    "kb": 7255
+   }
   },
   {
    "key": "tomstagl/cctop/cctop",
@@ -399,7 +429,12 @@
    "license": null,
    "pushed": "2026-09-15T19:01:52Z",
    "marketplace": "claude-mods",
-   "plugin": "token-ledger"
+   "plugin": "token-ledger",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Arunjay4213/claude-mods/HEAD/plugins/token-ledger/docs/token-ledger.png",
+    "type": "image",
+    "kb": 63
+   }
   },
   {
    "key": "Arunjay4213/claude-mods/context-lens",
@@ -425,7 +460,12 @@
    "license": null,
    "pushed": "2026-09-15T19:01:52Z",
    "marketplace": "claude-mods",
-   "plugin": "context-lens"
+   "plugin": "context-lens",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Arunjay4213/claude-mods/HEAD/plugins/context-lens/docs/context-lens.png",
+    "type": "image",
+    "kb": 111
+   }
   },
   {
    "key": "Arunjay4213/claude-mods/quota-meter",
@@ -450,7 +490,12 @@
    "license": null,
    "pushed": "2026-09-15T19:01:52Z",
    "marketplace": "claude-mods",
-   "plugin": "quota-meter"
+   "plugin": "quota-meter",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Arunjay4213/claude-mods/HEAD/plugins/quota-meter/docs/quota-meter.png",
+    "type": "image",
+    "kb": 81
+   }
   },
   {
    "key": "icedevil2001/auto-continue/auto-continue",
@@ -536,7 +581,12 @@
    "license": null,
    "pushed": "2026-10-07T02:37:35Z",
    "marketplace": "mini-claude-mods",
-   "plugin": "model-pick"
+   "plugin": "model-pick",
+   "media": {
+    "src": "https://raw.githubusercontent.com/joshuatonga/mini-claude-mods/HEAD/model-pick/docs/picker.png",
+    "type": "image",
+    "kb": 91
+   }
   },
   {
    "key": "OneWave-AI/claude-code-mods/burn-meter",
@@ -564,7 +614,12 @@
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
-   "plugin": "burn-meter"
+   "plugin": "burn-meter",
+   "media": {
+    "src": "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/HEAD/screenshots/burn-meter.png",
+    "type": "image",
+    "kb": 255
+   }
   },
   {
    "key": "OneWave-AI/claude-code-mods/session-wrapped",
@@ -593,7 +648,12 @@
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
-   "plugin": "session-wrapped"
+   "plugin": "session-wrapped",
+   "media": {
+    "src": "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/HEAD/screenshots/session-wrapped.png",
+    "type": "image",
+    "kb": 2374
+   }
   },
   {
    "key": "kongyo2/context-view/context-view",
@@ -654,7 +714,12 @@
    "license": "Apache-2.0",
    "pushed": "2026-10-13T11:01:43Z",
    "marketplace": "augiefra-mods",
-   "plugin": "token-weather-usage"
+   "plugin": "token-weather-usage",
+   "media": {
+    "src": "https://raw.githubusercontent.com/augiefra/claude-mods/main/docs/band-story.gif",
+    "type": "image",
+    "kb": 183
+   }
   },
   {
    "key": "pawandeepdhall/claude-mods/usage-band",
@@ -680,7 +745,12 @@
    "license": "MIT",
    "pushed": "2026-10-03T02:14:21Z",
    "marketplace": "my-claude-mods",
-   "plugin": "usage-band"
+   "plugin": "usage-band",
+   "media": {
+    "src": "https://raw.githubusercontent.com/pawandeepdhall/claude-mods/HEAD/docs/usage-band.png",
+    "type": "image",
+    "kb": 8
+   }
   },
   {
    "key": "hoobnn/hoobnn-agent-mods/hud",
@@ -720,7 +790,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
-   "plugin": "hud"
+   "plugin": "hud",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/HEAD/claude-code/hud/assets/themes/neon.png",
+    "type": "image",
+    "kb": 143
+   }
   },
   {
    "key": "hoobnn/hoobnn-agent-mods/todo-bar",
@@ -752,7 +827,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
-   "plugin": "todo-bar"
+   "plugin": "todo-bar",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/HEAD/claude-code/todo-bar/assets/preview.png",
+    "type": "image",
+    "kb": 80
+   }
   },
   {
    "key": "hoobnn/hoobnn-agent-mods/receipt",
@@ -784,7 +864,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
-   "plugin": "receipt"
+   "plugin": "receipt",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/HEAD/claude-code/receipt/assets/preview.png",
+    "type": "image",
+    "kb": 75
+   }
   },
   {
    "key": "hoobnn/hoobnn-agent-mods/ts-band",
@@ -816,7 +901,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
-   "plugin": "ts-band"
+   "plugin": "ts-band",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/HEAD/claude-code/ts-band/assets/preview.png",
+    "type": "image",
+    "kb": 59
+   }
   },
   {
    "key": "xuanji86/claude-statuspane/statuspane",
@@ -878,7 +968,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T14:04:09Z",
    "marketplace": null,
-   "plugin": "agent-quick-menu"
+   "plugin": "agent-quick-menu",
+   "media": {
+    "src": "https://raw.githubusercontent.com/agentic-workbench/agent-quick-menu/HEAD/docs/screenshot.png",
+    "type": "image",
+    "kb": 76
+   }
   },
   {
    "key": "3dnow/claude-mods/weektoken",
@@ -909,7 +1004,12 @@
    "license": "MIT",
    "pushed": "2026-10-06T18:51:58Z",
    "marketplace": "mj0111-mods",
-   "plugin": "weektoken"
+   "plugin": "weektoken",
+   "media": {
+    "src": "https://raw.githubusercontent.com/3dnow/claude-mods/HEAD/weektoken/screenshots/band-dark.png",
+    "type": "image",
+    "kb": 91
+   }
   },
   {
    "key": "pinkpixel-dev/clawd-dash/clawd-dash",
@@ -936,7 +1036,12 @@
    "license": "Apache-2.0",
    "pushed": "2026-10-06T18:10:48Z",
    "marketplace": "pinkpixel",
-   "plugin": "clawd-dash"
+   "plugin": "clawd-dash",
+   "media": {
+    "src": "https://raw.githubusercontent.com/pinkpixel-dev/clawd-dash/refs/heads/main/demo.gif",
+    "type": "image",
+    "kb": 2473
+   }
   },
   {
    "key": "hamzafer/claude-code-mods/context-bar",
@@ -963,7 +1068,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T05:46:46Z",
    "marketplace": "claude-code-mods",
-   "plugin": "context-bar"
+   "plugin": "context-bar",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hamzafer/claude-code-mods/HEAD/images/context-bar.png",
+    "type": "image",
+    "kb": 53
+   }
   },
   {
    "key": "Antreas-Strb/glanceflow/glanceflow",
@@ -1005,7 +1115,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T16:42:48Z",
    "marketplace": "claude-mods",
-   "plugin": "glanceflow"
+   "plugin": "glanceflow",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Antreas-Strb/glanceflow/HEAD/docs/glance-demo.gif",
+    "type": "image",
+    "kb": 2053
+   }
   },
   {
    "key": "valeryia-piatrova/token-hamster/token-hamster",
@@ -1033,7 +1148,12 @@
    "license": "MIT",
    "pushed": "2026-10-08T19:51:45Z",
    "marketplace": "token-hamster",
-   "plugin": "token-hamster"
+   "plugin": "token-hamster",
+   "media": {
+    "src": "https://raw.githubusercontent.com/valeryia-piatrova/token-hamster/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 522
+   }
   },
   {
    "key": "amsultan2010/clawd-minecraft/clawd-minecraft",
@@ -1059,7 +1179,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T14:57:54Z",
    "marketplace": "clawd-minecraft",
-   "plugin": "clawd-minecraft"
+   "plugin": "clawd-minecraft",
+   "media": {
+    "src": "https://raw.githubusercontent.com/amsultan2010/clawd-minecraft/HEAD/screenshot.webp",
+    "type": "image",
+    "kb": 25
+   }
   },
   {
    "key": "Ashley-Pettit/villager-hp/villager-hp",
@@ -1084,7 +1209,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T00:03:22Z",
    "marketplace": "villager-hp",
-   "plugin": "villager-hp"
+   "plugin": "villager-hp",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Ashley-Pettit/villager-hp/HEAD/assets/screenshot-healthy.png",
+    "type": "image",
+    "kb": 137
+   }
   },
   {
    "key": "vihrea1337/headroom/headroom",
@@ -1113,7 +1243,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T17:40:13Z",
    "marketplace": "headroom",
-   "plugin": "headroom"
+   "plugin": "headroom",
+   "media": {
+    "src": "https://raw.githubusercontent.com/vihrea1337/headroom/HEAD/docs/media/pane.png",
+    "type": "image",
+    "kb": 252
+   }
   },
   {
    "key": "VaitaR/claude-code-limits/limits",
@@ -1143,7 +1278,12 @@
    "license": "MIT",
    "pushed": "2026-10-12T21:06:50Z",
    "marketplace": "claude-code-limits",
-   "plugin": "limits"
+   "plugin": "limits",
+   "media": {
+    "src": "https://raw.githubusercontent.com/VaitaR/claude-code-limits/HEAD/docs/media/demo.gif",
+    "type": "image",
+    "kb": 1587
+   }
   },
   {
    "key": "halluton/Mindful-Claude/mindful-claude",
@@ -1169,7 +1309,12 @@
    "license": "MIT",
    "pushed": "2026-09-14T23:01:33Z",
    "marketplace": "mindful-claude",
-   "plugin": "mindful-claude"
+   "plugin": "mindful-claude",
+   "media": {
+    "src": "https://raw.githubusercontent.com/halluton/Mindful-Claude/HEAD/demo.gif",
+    "type": "image",
+    "kb": 1445
+   }
   },
   {
    "key": "sezaakgun/cc-arcade/cc-arcade",
@@ -1196,7 +1341,12 @@
    "license": "MIT",
    "pushed": "2026-09-15T00:19:51Z",
    "marketplace": "cc-arcade",
-   "plugin": "cc-arcade"
+   "plugin": "cc-arcade",
+   "media": {
+    "src": "https://raw.githubusercontent.com/sezaakgun/cc-arcade/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 114
+   }
   },
   {
    "key": "plaxagoras/clawd-tales/clawd-tales",
@@ -1227,7 +1377,12 @@
    "license": "MIT",
    "pushed": "2026-10-08T01:35:50Z",
    "marketplace": "clawd-tales",
-   "plugin": "clawd-tales"
+   "plugin": "clawd-tales",
+   "media": {
+    "src": "https://raw.githubusercontent.com/plaxagoras/clawd-tales/HEAD/assets/demo.gif",
+    "type": "image",
+    "kb": 2702
+   }
   },
   {
    "key": "saiharsha03/clawd-spinner/clawd-spinner",
@@ -1287,7 +1442,12 @@
    "license": "MIT",
    "pushed": "2026-10-05T17:45:52Z",
    "marketplace": "heavens-feel",
-   "plugin": "heavens-feel"
+   "plugin": "heavens-feel",
+   "media": {
+    "src": "https://raw.githubusercontent.com/yedidyakfir/heavens-feel/HEAD/art/preview.gif",
+    "type": "image",
+    "kb": 596
+   }
   },
   {
    "key": "deonmenezes/claude-mods-pokedex/cc-pokedex",
@@ -1318,7 +1478,12 @@
    "license": null,
    "pushed": "2026-09-14T18:22:30Z",
    "marketplace": "cc-pokedex",
-   "plugin": "cc-pokedex"
+   "plugin": "cc-pokedex",
+   "media": {
+    "src": "https://raw.githubusercontent.com/deonmenezes/claude-mods-pokedex/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 1570
+   }
   },
   {
    "key": "416rehman/spinlings/spinlings",
@@ -1352,7 +1517,12 @@
    "license": "MIT",
    "pushed": "2026-10-06T20:55:50Z",
    "marketplace": null,
-   "plugin": "spinlings"
+   "plugin": "spinlings",
+   "media": {
+    "src": "https://raw.githubusercontent.com/416rehman/spinlings/HEAD/docs/media/desktop-player-duel-2026-10-06.png",
+    "type": "image",
+    "kb": 66
+   }
   },
   {
    "key": "nuromirzak/nibbl/nibbl",
@@ -1383,7 +1553,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T14:51:34Z",
    "marketplace": "nibbl",
-   "plugin": "nibbl"
+   "plugin": "nibbl",
+   "media": {
+    "src": "https://raw.githubusercontent.com/nuromirzak/nibbl/HEAD/docs/assets/hero.gif",
+    "type": "image",
+    "kb": 65
+   }
   },
   {
    "key": "SARTHAK2511/claude-combo/combo-meter",
@@ -1438,7 +1613,12 @@
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
-   "plugin": "boss-fight"
+   "plugin": "boss-fight",
+   "media": {
+    "src": "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/HEAD/screenshots/boss-fight.png",
+    "type": "image",
+    "kb": 193
+   }
   },
   {
    "key": "jarrodwatts/intermission/intermission",
@@ -1471,7 +1651,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T05:05:17Z",
    "marketplace": "intermission",
-   "plugin": "intermission"
+   "plugin": "intermission",
+   "media": {
+    "src": "https://raw.githubusercontent.com/jarrodwatts/intermission/HEAD/intermission-preview.png",
+    "type": "image",
+    "kb": 985
+   }
   },
   {
    "key": "hoobnn/hoobnn-agent-mods/spinner",
@@ -1506,7 +1691,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
-   "plugin": "spinner"
+   "plugin": "spinner",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/HEAD/claude-code/spinner/assets/clawd.gif",
+    "type": "image",
+    "kb": 109
+   }
   },
   {
    "key": "hoobnn/hoobnn-agent-mods/hitokoto",
@@ -1537,7 +1727,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T03:07:28Z",
    "marketplace": "hoobnn-agent-mods",
-   "plugin": "hitokoto"
+   "plugin": "hitokoto",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hoobnn/hoobnn-agent-mods/HEAD/claude-code/hitokoto/assets/preview.png",
+    "type": "image",
+    "kb": 64
+   }
   },
   {
    "key": "reporails/arcade/minefield",
@@ -1562,7 +1757,12 @@
    "license": "MIT",
    "pushed": "2026-10-05T15:37:16Z",
    "marketplace": "reporails-arcade",
-   "plugin": "minefield"
+   "plugin": "minefield",
+   "media": {
+    "src": "https://raw.githubusercontent.com/reporails/arcade/main/docs/minefield.png",
+    "type": "image",
+    "kb": 138
+   }
   },
   {
    "key": "njp-coder/meanwhile/meanwhile",
@@ -1656,7 +1856,12 @@
    "license": null,
    "pushed": "2026-10-14T15:21:12Z",
    "marketplace": "claude-pokemon",
-   "plugin": "pokemon"
+   "plugin": "pokemon",
+   "media": {
+    "src": "https://raw.githubusercontent.com/dgokcin/claude-pokemon-mod/HEAD/gifs/bulbasaur-pet-feed.gif",
+    "type": "image",
+    "kb": 433
+   }
   },
   {
    "key": "chrisluo5311/Pixel-Play/pixel-player",
@@ -1685,7 +1890,12 @@
    "license": "MIT",
    "pushed": "2026-10-06T03:22:25Z",
    "marketplace": "pixel-play",
-   "plugin": "pixel-player"
+   "plugin": "pixel-player",
+   "media": {
+    "src": "https://raw.githubusercontent.com/chrisluo5311/Pixel-Play/HEAD/assets/demo/demo.gif",
+    "type": "image",
+    "kb": 2842
+   }
   },
   {
    "key": "BjoernSchotte/ccmod-amp/cliamp",
@@ -1718,7 +1928,12 @@
    "license": "Apache-2.0",
    "pushed": "2026-10-11T11:28:15Z",
    "marketplace": "ccmod-amp",
-   "plugin": "cliamp"
+   "plugin": "cliamp",
+   "media": {
+    "src": "https://raw.githubusercontent.com/BjoernSchotte/ccmod-amp/HEAD/docs/screenshots/01-sidebar.png",
+    "type": "image",
+    "kb": 238
+   }
   },
   {
    "key": "twjackysu/claude-code-stock-ticker/stock-ticker",
@@ -1744,7 +1959,12 @@
    "license": "MIT",
    "pushed": "2026-10-08T01:49:38Z",
    "marketplace": "claude-code-stock-ticker",
-   "plugin": "stock-ticker"
+   "plugin": "stock-ticker",
+   "media": {
+    "src": "https://raw.githubusercontent.com/twjackysu/claude-code-stock-ticker/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 500
+   }
   },
   {
    "key": "somethingwentwell/cc-mod-banana-game/banana",
@@ -1772,7 +1992,12 @@
    "license": "MIT",
    "pushed": "2026-10-08T12:25:58Z",
    "marketplace": "banana",
-   "plugin": "banana"
+   "plugin": "banana",
+   "media": {
+    "src": "https://raw.githubusercontent.com/somethingwentwell/cc-mod-banana-game/HEAD/docs/hero.png",
+    "type": "image",
+    "kb": 210
+   }
   },
   {
    "key": "DarkVelours/claude-code-galactic-battle/galactic-battle",
@@ -1805,7 +2030,12 @@
    "license": "MIT",
    "pushed": "2026-10-11T09:26:23Z",
    "marketplace": "galactic-battle",
-   "plugin": "galactic-battle"
+   "plugin": "galactic-battle",
+   "media": {
+    "src": "https://raw.githubusercontent.com/DarkVelours/claude-code-galactic-battle/HEAD/docs/real-capture.png",
+    "type": "image",
+    "kb": 7
+   }
   },
   {
    "key": "verdantran/code-city/code-city",
@@ -1839,7 +2069,12 @@
    "license": "MIT",
    "pushed": "2026-10-09T06:00:56Z",
    "marketplace": "code-city",
-   "plugin": "code-city"
+   "plugin": "code-city",
+   "media": {
+    "src": "https://raw.githubusercontent.com/verdantran/code-city/HEAD/docs/street.gif",
+    "type": "image",
+    "kb": 1584
+   }
   },
   {
    "key": "Ashley-Pettit/lgtm-flash/lgtm-flash",
@@ -1865,7 +2100,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T00:03:14Z",
    "marketplace": "lgtm-flash",
-   "plugin": "lgtm-flash"
+   "plugin": "lgtm-flash",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Ashley-Pettit/lgtm-flash/HEAD/assets/screenshot-wide.png",
+    "type": "image",
+    "kb": 70
+   }
   },
   {
    "key": "varunmoka7/reddit-watch/reddit-watch",
@@ -1925,7 +2165,12 @@
    "license": "MIT",
    "pushed": "2026-10-11T00:44:05Z",
    "marketplace": "swear-slap",
-   "plugin": "swear-slap"
+   "plugin": "swear-slap",
+   "media": {
+    "src": "https://raw.githubusercontent.com/paragpandyareal/swear-slap/HEAD/docs/images/cover.png",
+    "type": "image",
+    "kb": 65
+   }
   },
   {
    "key": "i-harsha-reddy/naruto-mod/naruto",
@@ -1960,7 +2205,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T19:14:45Z",
    "marketplace": "naruto-mod",
-   "plugin": "naruto"
+   "plugin": "naruto",
+   "media": {
+    "src": "https://raw.githubusercontent.com/i-harsha-reddy/naruto-mod/HEAD/media/hero.gif",
+    "type": "image",
+    "kb": 185
+   }
   },
   {
    "key": "sezaakgun/cc-pr-tracker/cc-pr-tracker",
@@ -1994,7 +2244,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T15:53:07Z",
    "marketplace": "cc-pr-tracker",
-   "plugin": "cc-pr-tracker"
+   "plugin": "cc-pr-tracker",
+   "media": {
+    "src": "https://raw.githubusercontent.com/sezaakgun/cc-pr-tracker/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 77
+   }
   },
   {
    "key": "ray-amjad/awesome-claude-code-function-hooks/vercel-deploy-status",
@@ -2112,7 +2367,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T20:45:01Z",
    "marketplace": "pr-pulse",
-   "plugin": "pr-pulse"
+   "plugin": "pr-pulse",
+   "media": {
+    "src": "https://raw.githubusercontent.com/gerricchaplin/pr-pulse/HEAD/assets/pr-pulse.png",
+    "type": "image",
+    "kb": 146
+   }
   },
   {
    "key": "MarcoCarnevali/claude-code-mods/github-issues",
@@ -2139,7 +2399,12 @@
    "license": "MIT",
    "pushed": "2026-10-08T07:48:45Z",
    "marketplace": "marco-mods",
-   "plugin": "github-issues"
+   "plugin": "github-issues",
+   "media": {
+    "src": "https://raw.githubusercontent.com/MarcoCarnevali/claude-code-mods/HEAD/github-issues/docs/issues.png",
+    "type": "image",
+    "kb": 206
+   }
   },
   {
    "key": "hamzafer/claude-code-mods/review-watch",
@@ -2168,7 +2433,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T05:46:46Z",
    "marketplace": "claude-code-mods",
-   "plugin": "review-watch"
+   "plugin": "review-watch",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hamzafer/claude-code-mods/HEAD/images/review-watch.png",
+    "type": "image",
+    "kb": 27
+   }
   },
   {
    "key": "alexjacobs08/guided-mr/guided-mr",
@@ -2228,7 +2498,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T23:59:28Z",
    "marketplace": "review-inbox",
-   "plugin": "review-inbox"
+   "plugin": "review-inbox",
+   "media": {
+    "src": "https://raw.githubusercontent.com/SummerRiversound/review-inbox/HEAD/docs/images/en/overview.gif",
+    "type": "image",
+    "kb": 1813
+   }
   },
   {
    "key": "hellosverre/redgreen/redgreen",
@@ -2256,7 +2531,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T14:39:58Z",
    "marketplace": "redgreen",
-   "plugin": "redgreen"
+   "plugin": "redgreen",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hellosverre/redgreen/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 110
+   }
   },
   {
    "key": "mertkayacs/ultramod/ultramod",
@@ -2291,7 +2571,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T01:54:57Z",
    "marketplace": "ultramod",
-   "plugin": "ultramod"
+   "plugin": "ultramod",
+   "media": {
+    "src": "https://raw.githubusercontent.com/mertkayacs/ultramod/media/trailer-hero.gif",
+    "type": "image",
+    "kb": 1472
+   }
   },
   {
    "key": "ray-amjad/awesome-claude-code-function-hooks/secret-redactor",
@@ -2421,7 +2706,12 @@
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
-   "plugin": "launch-codes"
+   "plugin": "launch-codes",
+   "media": {
+    "src": "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/HEAD/screenshots/launch-codes.png",
+    "type": "image",
+    "kb": 209
+   }
   },
   {
    "key": "yash-gadodia/claude-mods/scope-guard",
@@ -2570,7 +2860,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T05:46:46Z",
    "marketplace": "claude-code-mods",
-   "plugin": "blast-radius"
+   "plugin": "blast-radius",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hamzafer/claude-code-mods/HEAD/images/gallery/blast-radius.png",
+    "type": "image",
+    "kb": 20
+   }
   },
   {
    "key": "NMenzel/claude-devtools-mod/devtools",
@@ -2605,7 +2900,12 @@
    "license": "MIT",
    "pushed": "2026-10-12T09:39:25Z",
    "marketplace": "claude-devtools-mod",
-   "plugin": "devtools"
+   "plugin": "devtools",
+   "media": {
+    "src": "https://raw.githubusercontent.com/NMenzel/claude-devtools-mod/HEAD/docs/media/demo.gif",
+    "type": "image",
+    "kb": 612
+   }
   },
   {
    "key": "RadTech-Solutions/modwall/modwall",
@@ -2658,7 +2958,12 @@
    "license": "MIT",
    "pushed": "2026-10-11T01:46:36Z",
    "marketplace": "p3c-guard",
-   "plugin": "p3c-guard"
+   "plugin": "p3c-guard",
+   "media": {
+    "src": "https://raw.githubusercontent.com/alexlifexyz/p3c-guard/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 618
+   }
   },
   {
    "key": "dot-agi/arrester/arrester",
@@ -2686,7 +2991,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T03:22:37Z",
    "marketplace": "arrester",
-   "plugin": "arrester"
+   "plugin": "arrester",
+   "media": {
+    "src": "https://raw.githubusercontent.com/dot-agi/arrester/HEAD/docs/images/header.png",
+    "type": "image",
+    "kb": 926
+   }
   },
   {
    "key": "dot-agi/sandbox-tuner/sandbox-tuner",
@@ -2720,7 +3030,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T03:23:00Z",
    "marketplace": "sandbox-tuner",
-   "plugin": "sandbox-tuner"
+   "plugin": "sandbox-tuner",
+   "media": {
+    "src": "https://raw.githubusercontent.com/dot-agi/sandbox-tuner/HEAD/docs/images/header.png",
+    "type": "image",
+    "kb": 831
+   }
   },
   {
    "key": "lossless-claude/lcm/lcm",
@@ -2957,7 +3272,12 @@
    "license": "MIT",
    "pushed": "2026-10-07T16:47:01Z",
    "marketplace": "pinboard",
-   "plugin": "pinboard"
+   "plugin": "pinboard",
+   "media": {
+    "src": "https://raw.githubusercontent.com/sirkitree/pinboard/HEAD/docs/board-in-progress.png",
+    "type": "image",
+    "kb": 455
+   }
   },
   {
    "key": "vicmpen/mokkan/mokkan",
@@ -3047,7 +3367,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T02:09:29Z",
    "marketplace": null,
-   "plugin": "context-canary"
+   "plugin": "context-canary",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Nachx639/context-canary/HEAD/media/demo.gif",
+    "type": "image",
+    "kb": 275
+   }
   },
   {
    "key": "hellosverre/smart-compact/smart-compact",
@@ -3080,7 +3405,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T14:34:46Z",
    "marketplace": "smart-compact",
-   "plugin": "smart-compact"
+   "plugin": "smart-compact",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hellosverre/smart-compact/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 46
+   }
   },
   {
    "key": "varunmoka7/image-shrinker/image-shrinker",
@@ -3179,7 +3509,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T15:27:45Z",
    "marketplace": "hellosverre-mods",
-   "plugin": "skins"
+   "plugin": "skins",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hellosverre/claude-skins/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 5524
+   }
   },
   {
    "key": "xuanji86/claude-mdview/mdview",
@@ -3240,7 +3575,12 @@
    "license": "MIT",
    "pushed": "2026-10-05T14:29:13Z",
    "marketplace": null,
-   "plugin": "gfm-render"
+   "plugin": "gfm-render",
+   "media": {
+    "src": "https://raw.githubusercontent.com/briangtn/claude-gfm-render/HEAD/docs/hero.png",
+    "type": "image",
+    "kb": 786
+   }
   },
   {
    "key": "moduvoice/claude-code-ko-ui/ko-ui",
@@ -3308,7 +3648,12 @@
    "license": null,
    "pushed": "2026-10-10T02:01:00Z",
    "marketplace": "explain-as",
-   "plugin": "explain-as"
+   "plugin": "explain-as",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Sumit189/explain-claude-mod/HEAD/assets/transformer-html.png",
+    "type": "image",
+    "kb": 1144
+   }
   },
   {
    "key": "OG-Matcha/tessera/tessera",
@@ -3357,7 +3702,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T03:05:12Z",
    "marketplace": "og-matcha",
-   "plugin": "tessera"
+   "plugin": "tessera",
+   "media": {
+    "src": "https://raw.githubusercontent.com/OG-Matcha/tessera/HEAD/docs/demo.gif",
+    "type": "image",
+    "kb": 655
+   }
   },
   {
    "key": "samox73/claude-code-latex/tex-display",
@@ -3389,7 +3739,12 @@
    "license": "MIT",
    "pushed": "2026-10-12T08:10:23Z",
    "marketplace": "claude-code-latex",
-   "plugin": "tex-display"
+   "plugin": "tex-display",
+   "media": {
+    "src": "https://raw.githubusercontent.com/samox73/claude-code-latex/HEAD/assets/screenshot-after.png",
+    "type": "image",
+    "kb": 86
+   }
   },
   {
    "key": "hamzafer/claude-code-mods/md-preview",
@@ -3419,7 +3774,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T05:46:46Z",
    "marketplace": "claude-code-mods",
-   "plugin": "md-preview"
+   "plugin": "md-preview",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hamzafer/claude-code-mods/HEAD/images/md-preview.png",
+    "type": "image",
+    "kb": 250
+   }
   },
   {
    "key": "paragpandyareal/lazy-panda-panel/lazy-panda-panel",
@@ -3457,7 +3817,12 @@
    "license": "MIT",
    "pushed": "2026-10-10T04:16:41Z",
    "marketplace": "lazy-panda-panel",
-   "plugin": "lazy-panda-panel"
+   "plugin": "lazy-panda-panel",
+   "media": {
+    "src": "https://raw.githubusercontent.com/paragpandyareal/lazy-panda-panel/HEAD/docs/panda.png",
+    "type": "image",
+    "kb": 1
+   }
   },
   {
    "key": "AlexeyHRDesign/colorwheel/colorwheel",
@@ -3489,7 +3854,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T09:59:25Z",
    "marketplace": "colorwheel",
-   "plugin": "colorwheel"
+   "plugin": "colorwheel",
+   "media": {
+    "src": "https://raw.githubusercontent.com/AlexeyHRDesign/colorwheel/HEAD/docs/images/band-demo.gif",
+    "type": "image",
+    "kb": 132
+   }
   },
   {
    "key": "MohammedSaud404/rtl-terminal/rtl-terminal",
@@ -3519,7 +3889,12 @@
    "license": "MIT",
    "pushed": "2026-10-11T10:47:34Z",
    "marketplace": "rtl-terminal",
-   "plugin": "rtl-terminal"
+   "plugin": "rtl-terminal",
+   "media": {
+    "src": "https://raw.githubusercontent.com/MohammedSaud404/rtl-terminal/HEAD/docs/images/hero.png",
+    "type": "image",
+    "kb": 112
+   }
   },
   {
    "key": "helenkwok/open-links/open-links",
@@ -3549,7 +3924,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T00:52:29Z",
    "marketplace": null,
-   "plugin": "open-links"
+   "plugin": "open-links",
+   "media": {
+    "src": "https://raw.githubusercontent.com/helenkwok/open-links/HEAD/docs/before.png",
+    "type": "image",
+    "kb": 41
+   }
   },
   {
    "key": "lorenzh/rabe/rabe",
@@ -3583,7 +3963,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T02:25:27Z",
    "marketplace": "rabe",
-   "plugin": "rabe"
+   "plugin": "rabe",
+   "media": {
+    "src": "https://raw.githubusercontent.com/lorenzh/rabe/HEAD/docs/assets/demo.gif",
+    "type": "image",
+    "kb": 1019
+   }
   },
   {
    "key": "apolenkov/agent-shell-watch/agent-shell-watch",
@@ -3792,7 +4177,12 @@
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
-   "plugin": "agent-race"
+   "plugin": "agent-race",
+   "media": {
+    "src": "https://raw.githubusercontent.com/OneWave-AI/claude-code-mods/HEAD/screenshots/agent-race.png",
+    "type": "image",
+    "kb": 161
+   }
   },
   {
    "key": "augbastos/afkswitch/afkswitch",
@@ -3822,7 +4212,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T15:43:14Z",
    "marketplace": "afkswitch",
-   "plugin": "afkswitch"
+   "plugin": "afkswitch",
+   "media": {
+    "src": "https://raw.githubusercontent.com/augbastos/afkswitch/HEAD/assets/readme/hero-light.png",
+    "type": "image",
+    "kb": 26
+   }
   },
   {
    "key": "ljmerza/prompt-spellcheck/prompt-spellcheck",
@@ -3934,7 +4329,12 @@
    "license": "MIT",
    "pushed": "2026-10-07T15:23:02Z",
    "marketplace": "codex-pane",
-   "plugin": "codex-pane"
+   "plugin": "codex-pane",
+   "media": {
+    "src": "https://raw.githubusercontent.com/ManuelWarland/claude-codex-pane/HEAD/docs/pane.png",
+    "type": "image",
+    "kb": 110
+   }
   },
   {
    "key": "helenkwok/gsd-status-mod/gsd-status-mod",
@@ -3968,7 +4368,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T02:36:47Z",
    "marketplace": "helenkwok-mods",
-   "plugin": "gsd-status-mod"
+   "plugin": "gsd-status-mod",
+   "media": {
+    "src": "https://raw.githubusercontent.com/helenkwok/gsd-status-mod/HEAD/docs/screenshots/demo-blocker.gif",
+    "type": "image",
+    "kb": 187
+   }
   },
   {
    "key": "danzerzine/claude-council/council",
@@ -4003,7 +4408,12 @@
    "license": "MIT",
    "pushed": "2026-10-04T19:40:40Z",
    "marketplace": null,
-   "plugin": "council"
+   "plugin": "council",
+   "media": {
+    "src": "https://raw.githubusercontent.com/danzerzine/claude-council/HEAD/docs/band.png",
+    "type": "image",
+    "kb": 18
+   }
   },
   {
    "key": "vynnlee/mods/prompt-drafts",
@@ -4032,7 +4442,12 @@
    "license": "MIT",
    "pushed": "2026-10-07T06:01:10Z",
    "marketplace": "vynnlee",
-   "plugin": "prompt-drafts"
+   "plugin": "prompt-drafts",
+   "media": {
+    "src": "https://raw.githubusercontent.com/vynnlee/mods/HEAD/prompt-drafts/docs/demo.gif",
+    "type": "image",
+    "kb": 578
+   }
   },
   {
    "key": "hamzafer/claude-code-mods/mission-control",
@@ -4065,7 +4480,12 @@
    "license": "MIT",
    "pushed": "2026-10-15T05:46:46Z",
    "marketplace": "claude-code-mods",
-   "plugin": "mission-control"
+   "plugin": "mission-control",
+   "media": {
+    "src": "https://raw.githubusercontent.com/hamzafer/claude-code-mods/HEAD/images/gallery/mission-control.png",
+    "type": "image",
+    "kb": 28
+   }
   },
   {
    "key": "RadTech-Solutions/agent-pager/agent-pager",
@@ -4157,7 +4577,12 @@
    "license": "MIT",
    "pushed": "2026-10-14T18:11:30Z",
    "marketplace": "downrange",
-   "plugin": "downrange"
+   "plugin": "downrange",
+   "media": {
+    "src": "https://raw.githubusercontent.com/dot-agi/downrange/HEAD/docs/images/header.png",
+    "type": "image",
+    "kb": 667
+   }
   },
   {
    "key": "dot-agi/high-command/high-command",
@@ -4187,7 +4612,12 @@
    "license": "MIT",
    "pushed": "2026-10-12T09:45:38Z",
    "marketplace": "high-command",
-   "plugin": "high-command"
+   "plugin": "high-command",
+   "media": {
+    "src": "https://raw.githubusercontent.com/dot-agi/high-command/HEAD/docs/images/header.png",
+    "type": "image",
+    "kb": 493
+   }
   },
   {
    "key": "varunmoka7/next-steps-autopilot/next-steps-autopilot",
@@ -4258,7 +4688,12 @@
    "license": "MIT",
    "pushed": "2026-10-13T08:16:46Z",
    "marketplace": "control-room",
-   "plugin": "project-sentinel"
+   "plugin": "project-sentinel",
+   "media": {
+    "src": "https://raw.githubusercontent.com/Arjun0014/project-sentinel/HEAD/docs/images/desktop-overview.png",
+    "type": "image",
+    "kb": 89
+   }
   }
  ]
 }
