@@ -12991,5 +12991,39 @@
   "repo": "steventsvik/Tellurion",
   "at": "2026-10-16",
   "source": "trending"
+ },
+ "dagoSte/squadra": {
+  "cat": "harness",
+  "kind": "Agent squad coordinator",
+  "what": "Squadra is a team coordination toolkit for Claude Code, Codex, and Cursor that coordinates multiple AI assistant windows with shared tasks, prechecks, and verified code reviews.",
+  "why": "Managing multiple AI coding sessions manually makes it hard to track active tasks, token costs, and quality control. Reach for Squadra when you want AI agents to assign tasks to each other, run test prechecks, track spend across models, and enforce independent peer reviews locally.",
+  "level": "setup",
+  "start": "/plugin",
+  "caution": "Requires Python 3.12 or newer and operates on macOS or Linux systems.",
+  "alts": [
+   "smtg-ai/claude-squad",
+   "anthropics/claude-code",
+   "ruvnet/ruflo"
+  ],
+  "packages": [],
+  "plain": "A tool that helps multiple AI coding assistants work together as a team on your computer.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Coordinate multiple AI coding windows on shared tasks",
+   "Track token usage across agent sessions",
+   "Enforce independent code reviews and test proofs"
+  ],
+  "steps": [
+   "Install Squadra in Claude Code or Codex using `/plugin`",
+   "Open multiple AI assistant windows to form your coding squad",
+   "Check task status and active waits using `squadra status`"
+  ],
+  "repo": "dagoSte/squadra",
+  "at": "2026-10-16",
+  "source": "trending"
  }
 }
