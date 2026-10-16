@@ -12888,5 +12888,137 @@
   "repo": "RayenMlayeh/jevcrawl",
   "at": "2026-10-15",
   "source": "trending"
+ },
+ "LosaLosSantos/aurelio-finance": {
+  "cat": "builders",
+  "kind": "Personal Finance App",
+  "what": "Aurelio is an open-source personal finance and wealth management app that runs locally with an optional AI advisor.",
+  "why": "Track your net worth, investments, ETFs, cash, and debts privately on your own computer while getting AI-driven portfolio insights.",
+  "level": "setup",
+  "start": "git clone https://github.com/LosaLosSantos/aurelio-finance.git",
+  "caution": "Requires an external OpenRouter API key and sends your financial records to the chosen LLM provider when using the AI features.",
+  "alts": [
+   "open-webui/open-webui",
+   "LibreChat-AI/LibreChat",
+   "dify-ai/dify"
+  ],
+  "packages": [],
+  "plain": "Track your net worth and investments locally with an AI financial advisor.",
+  "tags": [
+   "knowledge",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Track net worth and investments",
+   "Analyze ETF overlap and asset allocation",
+   "Chat with an AI advisor about your finances"
+  ],
+  "steps": [
+   "Clone the repository to your computer",
+   "Run the demo start script to test the app using `./start.sh --demo`",
+   "Configure your OpenRouter API key in the backend environment file"
+  ],
+  "repo": "LosaLosSantos/aurelio-finance",
+  "at": "2026-10-16",
+  "source": "trending"
+ },
+ "feder-cr/open_scion": {
+  "cat": "coding",
+  "kind": "Version control system",
+  "what": "Open-source implementation of Anthropic's Scion version control system built specifically for coding agents.",
+  "why": "Classic Git hosting struggles when thousands of short-lived coding agents try to read, write, and land code concurrently. Reach for this when managing large-scale autonomous agent workflows that need fast server-side operations and conflict resolution.",
+  "level": "setup",
+  "start": "make build",
+  "caution": "Version 0.1.0 with potential interface changes before 1.0; requires Go 1.26, a C toolchain, Meson, and Ninja to build.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A version control system designed for AI coding agents instead of human developers.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Coordinate concurrent code changes made by multiple coding agents",
+   "Handle automated conflict resolution using AI providers",
+   "Stream changeset logs and monitor agent updates live"
+  ],
+  "steps": [
+   "Clone the repository and enter its directory.",
+   "Run `make build` to compile the server, CLI, and tools.",
+   "Execute `examples/graft/quickstart.sh` to test a server and agents in a temporary directory."
+  ],
+  "repo": "feder-cr/open_scion",
+  "at": "2026-10-16",
+  "source": "trending"
+ },
+ "Seokwoooo/lucian-uxui-prompt": {
+  "cat": "harness",
+  "kind": "UI component prompts",
+  "what": "A gallery of interactive UI elements that you can try live, then copy as AI prompts or raw code for your projects.",
+  "why": "When you want to build websites and need production-ready interface elements that an AI coding agent can adapt to your project's styling and framework.",
+  "level": "easy",
+  "start": "git clone https://github.com/Seokwoooo/lucian-uxui-prompt.git",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A collection of interactive interface designs you can preview and send to AI coding tools to build websites faster.",
+  "tags": [
+   "apps",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Browse interactive UI components in a live gallery",
+   "Copy AI prompts to port UI elements into your project",
+   "Run the build script locally with Node.js"
+  ],
+  "steps": [
+   "Open the live gallery and test elements interactively.",
+   "Click Copy prompt to get the component code and porting instructions.",
+   "Paste the prompt into your AI coding agent to add the element to your project."
+  ],
+  "repo": "Seokwoooo/lucian-uxui-prompt",
+  "at": "2026-10-16",
+  "source": "trending"
+ },
+ "steventsvik/Tellurion": {
+  "cat": "coding",
+  "kind": "macOS agent terminal",
+  "what": "A macOS terminal based on Ghostty that tracks and displays live activity, edits, and status for multiple AI coding agents.",
+  "why": "When running multiple coding agents across different projects, it provides a centralized control room to watch them work, undo mistakes, and review changes. Reach for it when managing multiple AI coding CLI tools at once.",
+  "level": "easy",
+  "start": "curl -fsSL https://raw.githubusercontent.com/steventsvik/Tellurion/custom/install.sh | bash",
+  "caution": "This is an unofficial terminal fork that hooks into various AI CLI tools on your Mac.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "A custom terminal for Mac that watches your AI coding assistants work and lets you undo their changes.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Monitor multiple AI coding agents working across projects",
+   "Undo unwanted file changes made by coding agents",
+   "Review diffs and manage agent approvals in one interface"
+  ],
+  "steps": [
+   "Download and install the terminal using the install script in your terminal.",
+   "Open the app and run your preferred AI coding tools inside it.",
+   "Use the sidebar and mission control view to monitor and manage active agents."
+  ],
+  "repo": "steventsvik/Tellurion",
+  "at": "2026-10-16",
+  "source": "trending"
  }
 }
