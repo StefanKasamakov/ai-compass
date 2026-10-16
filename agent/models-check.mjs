@@ -4,6 +4,26 @@
 const norm = (s = "") => s.toLowerCase().replace(/^[^:]+:\s*/, "").replace(/[^a-z0-9.]+/g, " ").trim();
 const usd = (perToken) => +(perToken * 1e6).toFixed(2);
 
+// The AI only sees and returns the fields it is asked for (aiKeys). For a model it kept (same id and name), carry over
+// the curated extras it never saw (lockPrice, src), and with lockPrice keep the official price over the catalog's.
+export function keepCurated(beforeList, aiKeys, afterList) {
+  const before = Object.fromEntries(beforeList.map((m) => [m.id, m]));
+  const locked = [];
+  const clean = afterList.map((m) => {
+    const b = before[m.id];
+    if (!b || b.name !== m.name) return m;
+    // keep the curated key order, so an unchanged model also serializes unchanged
+    const keys = [...new Set([...Object.keys(b), ...Object.keys(m)])].filter((k) => k in m || !aiKeys.includes(k));
+    const out = Object.fromEntries(keys.map((k) => [k, k in m ? m[k] : b[k]]));
+    if (b.lockPrice && ["in", "out", "price"].some((k) => out[k] !== b[k])) {
+      for (const k of ["in", "out", "price"]) if (k in b) out[k] = b[k]; else delete out[k];
+      locked.push(b.name);
+    }
+    return out;
+  });
+  return { clean, locked };
+}
+
 export function checkChanges(beforeList, afterList, catalogRaw, usedIds) {
   const before = Object.fromEntries(beforeList.map((m) => [m.id, m]));
   const after = Object.fromEntries(afterList.map((m) => [m.id, m]));

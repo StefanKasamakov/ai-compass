@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=41">
+<link rel="stylesheet" href="assets/site.css?v=42">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="local">
@@ -34,9 +34,10 @@
 
   <section id="local"><div class="wrap">
     <ol class="steps local-steps">
-      <li><h3>Install Ollama</h3><p>A free app for Windows, Mac and Linux that downloads and runs models. Get it from <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com</a>.</p></li>
-      <li><h3>Pick a model below</h3><p>Copy its command and paste it into the Terminal (Mac) or PowerShell (Windows). The first run downloads the model.</p></li>
-      <li><h3>Start chatting</h3><p>Type your question right there, or use the Ollama app window. Prefer buttons to commands? <a href="explore.html?goal=private">See easy apps like LM Studio and Jan</a>.</p></li>
+      <li><h3>Easiest: an app with buttons</h3><p><a href="tools/lm-studio.html">LM Studio</a> or <a href="tools/janhq-jan.html">Jan</a> let you search for a model below by name, download it and chat, no typing commands. Free for Windows, Mac and Linux.</p></li>
+      <li><h3>Or install Ollama</h3><p>A free app that downloads and runs models from a short command. Get it from <a href="https://ollama.com/download" target="_blank" rel="noopener">ollama.com</a>.</p></li>
+      <li><h3>With Ollama: pick a model below</h3><p>Copy its command and paste it into the Terminal (Mac) or PowerShell (Windows). The first run downloads the model.</p></li>
+      <li><h3>Start chatting</h3><p>Type your question right there, or use the Ollama app window. <a href="explore.html?goal=private">More private, offline apps</a>.</p></li>
     </ol>
     <div class="toolbar"><span id="hwPick" class="main-pick"></span><span id="usePick"></span></div>
     <p class="muted" id="hwHint" style="margin:-.4rem 0 1rem;font-size:.9rem"></p>
@@ -45,6 +46,6 @@
   </div></section>
 
 </main>
-<script src="assets/site.js?v=41" defer></script>
+<script src="assets/site.js?v=42" defer></script>
 </body>
 </html>

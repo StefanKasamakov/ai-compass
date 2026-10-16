@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -67,7 +67,8 @@
    "out": 0.5,
    "ctx": "1M",
    "released": "2026-10-07",
-   "note": "New 7 Oct: replaces Haiku 4.5 at a tenth of the price, with a 1M context window."
+   "note": "New 7 Oct: replaces Haiku 4.5 at a tenth of the price. Prompts longer than 100K tokens cost 5x more ($0.50 / $2.50).",
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
   },
   {
    "id": "mythos",
@@ -135,14 +136,16 @@
    "out": 10,
    "ctx": "1M",
    "released": "2026-10-13",
-   "note": "New 13 Oct. Launch price until 30 Nov 2026, then $4 / $20. In the Gemini app with Google AI Pro or Ultra."
+   "note": "New 13 Oct. Launch price until 30 Nov 2026, then $4 / $20. In the Gemini app with Google AI Pro or Ultra.",
+   "lockPrice": true,
+   "src": "https://ai.google.dev/gemini-api/docs/pricing"
   },
   {
    "id": "gpro",
    "p": "google",
    "name": "Gemini 3.1 Pro",
-   "tier": "Frontier",
-   "best": "Hard problems and true multimodal input: text, images, video and audio together.",
+   "tier": "Older",
+   "best": "Still a preview, and now replaced by Gemini 4 Argon as Google's flagship. Pick Argon for new work.",
    "in": 2,
    "out": 12,
    "ctx": "1M"
@@ -153,21 +156,25 @@
    "name": "Gemini 3.8 Flash",
    "tier": "Balanced",
    "best": "Smartest Flash yet: coding, agents, workflows. Great price/performance.",
-   "in": 0.83,
-   "out": 4.13,
+   "in": 0.75,
+   "out": 3.75,
    "ctx": "1M",
-   "released": "2026-09-02"
+   "released": "2026-09-02",
+   "lockPrice": true,
+   "src": "https://ai.google.dev/gemini-api/docs/pricing",
+   "note": "Launch price until 31 Dec 2026. From 1 Jan 2027 it doubles to $1.50 / $7.50."
   },
   {
    "id": "glite",
    "p": "google",
    "name": "Gemini 3.5 Flash-Lite",
    "tier": "Fast",
-   "best": "Cheapest, fastest Gemini for bulk work.",
+   "best": "Cheap and fast Gemini for bulk work. The older 3.1 Flash-Lite costs even less ($0.25 / $1.50).",
    "in": 0.3,
    "out": 2.5,
    "ctx": "1M",
-   "released": "2026-07-21"
+   "released": "2026-07-21",
+   "src": "https://ai.google.dev/gemini-api/docs/pricing"
   },
   {
    "id": "nano",
@@ -175,11 +182,11 @@
    "name": "Nano Banana 2.1",
    "tier": "Image",
    "best": "Image generation and photo editing. Pro does 4K and crisp in-image text.",
-   "in": 1.5,
-   "out": 7.5,
-   "price": "~$0.13 / image",
+   "price": "$0.03–0.11 / image",
    "ctx": "64K",
-   "released": "2026-10-06"
+   "released": "2026-10-06",
+   "note": "Price depends on size: about $0.03 (1K), $0.05 (2K) or $0.11 (4K) per image.",
+   "src": "https://ai.google.dev/gemini-api/docs/pricing"
   },
   {
    "id": "veo",
@@ -216,26 +223,30 @@
   {
    "id": "qwen",
    "p": "open",
-   "name": "Qwen3.8 (Max / 27B)",
+   "name": "Qwen3.8 (2.4T / 27B)",
    "tier": "Open",
-   "best": "Top open-weight model. The 27B version is the practical pick for one workstation.",
-   "price": "free*"
+   "best": "Alibaba's free-to-download line. The big 2.4T model needs a server with many graphics cards; the 27B version fits one strong workstation.",
+   "price": "free*",
+   "note": "Qwen3.8 Max, the version in Alibaba's own app, is not downloadable.",
+   "src": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
   },
   {
    "id": "glm",
    "p": "open",
    "name": "GLM-5.3",
    "tier": "Open",
-   "best": "Strongest open-weight model for coding.",
-   "price": "free*"
+   "best": "Strongest open-weight model for coding. At about 753B parameters it needs a server with several graphics cards.",
+   "price": "free*",
+   "src": "https://huggingface.co/zai-org/GLM-5.3"
   },
   {
    "id": "deepseek",
    "p": "open",
-   "name": "DeepSeek V4 (Pro / Flash)",
+   "name": "DeepSeek V4 Pro / V4.1 Flash",
    "tier": "Open",
-   "best": "Near-frontier quality; Flash runs on 2 GPUs.",
-   "price": "free*"
+   "best": "Near-frontier quality you can download. Even the newer V4.1 Flash (about 763B parameters) needs a server with several graphics cards.",
+   "price": "free*",
+   "src": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
   },
   {
    "id": "kimi",

@@ -208,7 +208,7 @@ td.why { color: var(--muted); min-width: 260px; }
 /* ---------- configurator ---------- */
 .cfg { display: grid; gap: 14px; grid-template-columns: 300px 1fr; }
 @media (max-width: 860px) { .cfg { grid-template-columns: 1fr; } }
-.cfg-list { display: grid; gap: 6px; align-content: start; max-height: 520px; overflow: auto; padding-right: 4px; }
+.cfg-list { display: grid; gap: 6px; align-content: start; }
 .opt { display: flex; gap: .7rem; align-items: center; text-align: left; width: 100%; padding: .7rem .8rem; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer; font: 500 .92rem var(--sans); min-height: 48px; transition: all .15s; }
 .opt small { display: block; color: var(--dim); font: .72rem var(--mono); }
 .opt:hover { border-color: var(--line-2); }
@@ -804,3 +804,15 @@ h1, h2, h3, h4 { font-family: var(--sans); letter-spacing: -.025em; }
   .page-head { padding: 36px 0 26px; }
 }.ig-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: .4rem; margin-top: .6rem; }
 .ig-strip img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); }
+
+/* ---------- 16.10 review fixes ---------- */
+/* touch screens have no Esc key */
+@media (hover: none) { .palette kbd, .search-btn kbd { display: none; } }
+/* mobile menu: dim the page behind it */
+@media (max-width: 1060px) { body.nav-open::after { content: ""; position: fixed; inset: 0; background: rgba(3, 6, 12, .55); z-index: 40; } }
+/* monospace only for real commands and code: labels and stats read better in the body font */
+.kicker, .tag, .field-label, .status, .tool-stats, .tile-title, .mini-feed small, .story time, .src, .pick .rank, .pick .price { font-family: var(--sans); letter-spacing: .02em; }
+.kicker, .field-label, .tile-title { text-transform: none; font-weight: 600; }
+.lineup > summary { font-weight: 600; }
+.lineup[open] > summary { margin-bottom: 1rem; }
+.faq { display: grid; gap: 8px; max-width: 760px; margin-top: 1.2rem; }

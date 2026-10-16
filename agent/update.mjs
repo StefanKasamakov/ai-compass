@@ -8,6 +8,7 @@
 import fs from "node:fs/promises";
 import { z } from "zod";
 import { askJSON, provider } from "./llm.mjs";
+import { OFFICIAL, isDev, dedupeStories } from "./news-filter.mjs";
 
 const ROOT = new URL("../", import.meta.url);
 const read = (f, fallback) => fs.readFile(new URL(f, ROOT), "utf8").then(JSON.parse, () => fallback);
@@ -234,7 +235,6 @@ async function coverImageViaBrowser(url) {
 
 // The AI marks too much as a big launch (a how-to article about a new model is not a launch): only the companies'
 // own posts, or a title that announces something, can carry the label.
-const OFFICIAL = new Set(["Anthropic", "OpenAI", "Google", "DeepMind"]);
 const bigSource = (it) => OFFICIAL.has(it.source) || /^(\[AINews\]\s*)?(introducing|announcing|launch(ing|es)?|meet)\b/i.test(it.title);
 
 async function news(stats, tools) {
@@ -246,7 +246,10 @@ async function news(stats, tools) {
     ...(await hackerNews()),
     ...releaseNews(stats, tools),
   ].filter((i) => i.url && i.title && !known.has(i.url) && new Date(i.date) > daysAgo(21));
-  const unique = [...new Map(fresh.map((i) => [i.url, i])).values()];
+  // the same story from several sources is shown once (official post first); dropped duplicates are never sent to the AI
+  const stories = dedupeStories([...new Map(fresh.map((i) => [i.url, i])).values(), ...prev.items]);
+  const unique = stories.filter((i) => !known.has(i.url));
+  const prevKept = stories.filter((i) => known.has(i.url));
 
   const notes = await safe("AI summaries", () => summarize(unique), null);
   const added = unique.flatMap((it, i) => {
@@ -256,7 +259,9 @@ async function news(stats, tools) {
     const { snippet, ...rest } = it;
     return [{ ...rest, summary: n?.summary ?? snippet, tags: n?.tags ?? [], big: !!n?.big && bigSource(it), ai: !!n }];
   });
-  const items = [...added, ...prev.items].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 160);
+  const items = [...added, ...prevKept].filter((i) => new Date(i.date) > daysAgo(45)).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 160);
+  // release notes, papers and newsletters: kept, but the site hides them from beginners by default
+  for (const i of items) if (isDev(i)) i.audience = "dev"; else delete i.audience;
   // cover picture: the article's own social preview image. "" = looked, none found (don't retry).
   await Promise.all(items.filter((i) => i.image === undefined).map(async (i) => { i.image = await coverImage(i.url); }));
   // still nothing: one try through a real browser, newest first (GitHub release pages have no picture of their own)
@@ -309,7 +314,9 @@ async function explainRepos(trendingItems) {
         "start: the first command or step from the README, or empty. caution: privacy, maturity, complexity, license or maintenance caveat (pushed_at over 4 months ago = say so), or empty. " +
         "Always add a caution when the tool reuses consumer subscription logins (Claude, ChatGPT, Gemini, Copilot apps) as an API or pools free tiers: that may break the provider's terms and risk the account. Mention affiliate links if present. " +
         "packages: npm or PyPI package names the README tells people to install (e.g. from npx, npm i, pip install, uvx), or empty. " +
-        "The site is for people who DON'T understand AI tooling. plain: one jargon-free sentence, max 20 words. tags: 1-3 goal ids, most relevant first. " +
+        "The site is for people who DON'T understand AI tooling. plain: one jargon-free sentence, max 20 words, that a person who has never used a terminal understands. " +
+        "In plain, never use these words unless you explain them in brackets right after: tokens, self-hosted, endpoint, API, SDK, CLI, MCP, repo/repository, LLM, GPU, inference, embeddings. " +
+        "Say it in everyday words instead, e.g. 'runs on your own server' not 'self-hosted', 'uses less text, so it costs less' not 'saves tokens', 'graphics card' not 'GPU'. tags: 1-3 goal ids, most relevant first. " +
         "level: easy = download or one line and use without code; setup = several commands or config but no programming; dev = you write code with it. " +
         "useFor: 2-3 concrete things a person would do with it, verb first, max 12 words each. steps: 2-4 plain getting-started steps from the README, max 22 words each, at most one command in backticks. No emoji. " +
         "Goals: " + goals.map((g) => `${g.id} = ${g.label} (${g.hint})`).join("; ") + ". " +
@@ -320,7 +327,8 @@ async function explainRepos(trendingItems) {
     }), null);
     if (!ex) continue;
     done++;
-    known[meta.full_name] = { ...ex, repo: meta.full_name, at: day(NOW), source: q.source };
+    const alts = [...new Set(ex.alts.filter((a) => a.toLowerCase() !== meta.full_name.toLowerCase()))]; // never "see also: itself"
+    known[meta.full_name] = { ...ex, alts, repo: meta.full_name, at: day(NOW), source: q.source };
     if (q.hint) delete hints[q.repo];
   }
   console.log(`explain: +${done} (${provider ?? "no AI key"}), ${Math.max(0, queue.length - done)} waiting`);

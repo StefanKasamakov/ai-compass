@@ -1,6 +1,6 @@
 // node agent/models-check.test.mjs
 import assert from "node:assert/strict";
-import { checkChanges } from "./models-check.mjs";
+import { checkChanges, keepCurated } from "./models-check.mjs";
 
 const filler = Array.from({ length: 16 }, (_, i) => ({ id: `m${i}`, p: "open", name: `Open ${i}`, tier: "Open", best: "x", price: "free*" }));
 const haiku4 = { id: "haiku", p: "anthropic", name: "Claude Haiku 4.5", tier: "Fast", best: "x", in: 1, out: 5 };
@@ -46,4 +46,21 @@ r = checkChanges([small, ...filler], [{ ...small, name: "Mistral Small 5" }, ...
 assert.deepEqual(r.problems, []);
 r = checkChanges([small, ...filler], [{ ...small, name: "Mistral Tiny 9" }, ...filler], openCat, new Set(["mistral"]));
 assert.match(r.problems.join(), /not found/);
+
+// lockPrice keeps the official price over the catalog's and survives the AI round trip, in the same key order
+const AI_KEYS = ["id", "p", "name", "tier", "best", "in", "out", "price", "ctx", "released", "note"];
+const flash = { id: "gflash", p: "google", name: "Gemini 3.8 Flash", tier: "Balanced", best: "x", in: 0.75, out: 3.75, lockPrice: true, src: "https://ai.google.dev/gemini-api/docs/pricing", note: "n" };
+const { lockPrice, src, ...fromAI } = flash;
+let k = keepCurated([flash], AI_KEYS, [{ ...fromAI, in: 0.83, out: 4.13 }]);
+assert.deepEqual(k.locked, ["Gemini 3.8 Flash"]);
+assert.equal(JSON.stringify(k.clean[0]), JSON.stringify(flash));
+k = keepCurated([flash], AI_KEYS, [fromAI]);
+assert.deepEqual(k.locked, []);
+assert.equal(JSON.stringify(k.clean[0]), JSON.stringify(flash));
+// a field the AI dropped on purpose stays dropped; a renamed (new) model gets no lock
+k = keepCurated([flash], AI_KEYS, [{ ...fromAI, note: undefined }].map(({ note, ...m }) => m));
+assert.equal(k.clean[0].note, undefined);
+k = keepCurated([flash], AI_KEYS, [{ ...fromAI, name: "Gemini 4 Flash", in: 1, out: 5 }]);
+assert.equal(k.clean[0].in, 1);
+assert.equal(k.clean[0].lockPrice, undefined);
 console.log("models-check: ok");

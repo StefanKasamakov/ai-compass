@@ -86,10 +86,13 @@ const newTag = (m) => (isNew(m) ? `<span class="tag ok">new</span>` : "");
 
 // ---------- shell ----------
 const NAV = [
-  ["learn", "Learn", [["start", "New to AI? Start here", "start.html"], ["map", "The AI map", "map.html"], ["mcp", "Connect apps (MCP)", "mcp.html"], ["github", "GitHub 101", "github.html"], ["thinking", "Thinking levels", "thinking.html"]]], ["skills", "Skills", "skills.html"], ["mods", "Mods", "mods.html"], ["explore", "Find tools", "explore.html"],
-  ["choose", "Choose AI", [["models", "Pick a model", "models.html"], ["compare", "Compare tools", "compare.html"], ["local", "Local models", "local.html"], ["benchmarks", "Model test scores", "benchmarks.html"]]],
+  ["start", "Start here", "start.html"],
+  ["choose", "Which AI to use", [["models", "Which AI to use", "models.html"], ["compare", "Compare tools", "compare.html"], ["local", "Run AI on your computer", "local.html"], ["benchmarks", "Test scores", "benchmarks.html"]]],
+  ["explore", "Find tools", "explore.html"],
   ["foryou", "For you", [["guide-students", "AI for students", "ai-for-students.html"], ["guide-business", "AI for small business", "ai-for-small-business.html"], ["guide-marketing", "AI for marketing", "ai-for-marketing.html"], ["guide-developers", "AI for developers", "ai-for-developers.html"], ["prompts", "Prompt library", "prompts.html"]]],
-  ["newsmenu", "News", [["news", "All AI news", "news.html"], ["hub-claude", "Claude", "claude.html"], ["hub-chatgpt", "ChatGPT", "chatgpt.html"], ["hub-gemini", "Gemini", "gemini.html"], ["hub-open", "Open models", "open-models.html"]]],
+  ["learn", "Learn", [["map", "The AI map", "map.html"], ["thinking", "Thinking levels", "thinking.html"], ["github", "Is a GitHub project safe?", "github.html"]]],
+  ["addons", "Add-ons", [["skills", "Skills", "skills.html"], ["mcp", "Connect apps (MCP)", "mcp.html"], ["mods", "Claude Code mods", "mods.html"]]],
+  ["newsmenu", "News", [["news", "All AI news", "news.html"], ["hub-claude", "Claude", "claude.html"], ["hub-chatgpt", "ChatGPT", "chatgpt.html"], ["hub-gemini", "Gemini", "gemini.html"], ["hub-open", "Open models", "open-models.html"], ["newsletter", "Weekly email", "newsletter.html"]]],
 ];
 const navLinks = () => NAV.map(([id, label, href]) => Array.isArray(href)
   ? `<details class="nav-group"${href.some(([sid]) => sid === page) ? " data-current" : ""}><summary>${label}${icon("chevron")}</summary><div class="nav-menu">${href.map(([sid, sl, sh]) => `<a href="${sh}"${sid === page ? ' aria-current="page"' : ""}>${sl}</a>`).join("")}</div></details>`
@@ -98,7 +101,7 @@ function shell() {
   document.body.insertAdjacentHTML("afterbegin", `
   <a class="sr" href="#main">Skip to content</a>
   <header class="top"><div class="wrap">
-    <a class="brand" href="./">${icon("compass")}whichaimap</a>
+    <a class="brand" href="./">${icon("compass")}Which AI Map</a>
     <nav class="nav" id="nav" aria-label="Main">${navLinks()}</nav>
     <div class="top-actions">
       <button class="icon-btn search-btn" data-open-search aria-label="Search">${icon("search")}<span>Search…</span><kbd>Ctrl K</kbd></button>
@@ -108,12 +111,12 @@ function shell() {
   </div></header>`);
   document.body.insertAdjacentHTML("beforeend", `
   <footer class="foot"><div class="wrap">
-    <div><div class="brand" style="margin-bottom:.6rem">${icon("compass")}whichaimap</div>
-      <p style="max-width:40ch">A plain-English guide to AI models and tools, for people who just want to get things done. Independent, no ads.</p>
+    <div><div class="brand" style="margin-bottom:.6rem">${icon("compass")}Which AI Map</div>
+      <p style="max-width:40ch">A plain-English guide to AI models and tools, for people who just want to get things done. Made by Stefan Kasamakov. Independent: no ads, no affiliate links, nobody pays to be listed.</p>
       <p class="mono" style="font-size:.76rem;margin-top:.8rem" id="footUpdated"></p></div>
     <nav class="foot-cols" aria-label="Footer">
-      <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="map.html">The AI map</a><a href="prompts.html">Prompt library</a><a href="models.html">Choose an AI</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Local models</a><a href="benchmarks.html">Model test scores</a></div>
-      <div><div class="field-label">Learn</div><a href="mods.html">Claude Code mods</a><a href="thinking.html">Thinking levels</a><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">GitHub 101</a><a href="news.html">News</a><a href="newsletter.html">Weekly digest</a></div>
+      <div><div class="field-label">Use AI</div><a href="start.html">New to AI? Start here</a><a href="map.html">The AI map</a><a href="prompts.html">Prompt library</a><a href="models.html">Which AI to use</a><a href="explore.html">Find tools</a><a href="compare.html">Compare tools</a><a href="local.html">Run AI on your computer</a><a href="benchmarks.html">Test scores</a></div>
+      <div><div class="field-label">Learn</div><a href="mods.html">Claude Code mods</a><a href="thinking.html">Thinking levels</a><a href="mcp.html">Connect apps (MCP)</a><a href="skills.html">Skills</a><a href="github.html">Is a GitHub project safe?</a><a href="news.html">News</a><a href="newsletter.html">Weekly email</a></div>
       <div><div class="field-label">Community</div><a href="leaderboard.html">Rankings and votes</a><a href="contribute.html">Suggest a tool</a><a href="contribute.html?kind=fix">Report a mistake</a><a href="contribute.html?kind=volunteer">Volunteer</a></div>
       <div><div class="field-label">About</div><a href="about.html">Who makes this</a><a href="about.html#privacy">Privacy</a><a href="feed.xml">RSS</a></div>
     </nav>
@@ -128,7 +131,7 @@ function shell() {
   setTheme(store.get("theme") || "dark");
   $("#themeBtn").onclick = () => setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
   document.addEventListener("click", (e) => $$(".nav-group[open]").forEach((d) => !d.contains(e.target) && d.removeAttribute("open")));
-  $("#menuBtn").onclick = (e) => { const open = $("#nav").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); };
+  $("#menuBtn").onclick = (e) => { const open = $("#nav").classList.toggle("open"); e.currentTarget.setAttribute("aria-expanded", open); e.currentTarget.innerHTML = icon(open ? "x" : "menu"); document.body.classList.toggle("nav-open", open); };
 
   // command palette
   const dlg = $("#palette"), q = $("#pq");
@@ -150,11 +153,12 @@ function shell() {
 
 async function searchIndex() {
   const [m, tasks, n, tags, pr, cat] = await Promise.all([load("models"), load("tasks"), load("news"), load("tags"), load("prompts"), catalog()]);
+  CAT_ALL = cat.all;
   const pagesList = NAV.flatMap(([id, label, href]) => (Array.isArray(href) ? href.map(([, l, h]) => [l, h]) : [[label, href]]));
   return [
     ...pagesList.map(([label, href]) => ({ t: label, sub: "Page", href, k: "page", ic: "arrow" })),
     ...(tags?.goals || []).map((g) => ({ t: `I want to: ${g.label}`, sub: g.hint, href: `explore.html?goal=${g.id}`, k: "tools", ic: g.icon })),
-    ...(tasks?.tasks || []).map((t) => ({ t: `Which AI to ${t.label.toLowerCase()}`, sub: "Choose AI", href: `models.html#task=${t.id}`, k: "model", ic: t.icon })),
+    ...(tasks?.tasks || []).map((t) => ({ t: `Which AI to ${t.label.toLowerCase()}`, sub: "Which AI to use", href: `models.html#task=${t.id}`, k: "model", ic: t.icon, extra: Object.values(t.picks || {}).flat().map((p) => p[1]).join(" ") })),
     { t: "What is MCP?", sub: "Guide", href: "mcp.html#what", k: "guide", ic: "book" },
     { t: "Connect an app to Claude or ChatGPT", sub: "MCP setup", href: "mcp.html#setup", k: "guide", ic: "plug" },
     { t: "What is a skill?", sub: "Guide", href: "skills.html#what", k: "guide", ic: "book" },
@@ -177,17 +181,21 @@ async function searchIndex() {
     { t: "Local models: run AI on your own computer", sub: "Free, offline", href: "local.html", k: "guide", ic: "lock" },
     { t: "Is this GitHub project safe?", sub: "Guide", href: "github.html#judge", k: "guide", ic: "shield" },
     ...(m?.models || []).map((x) => ({ t: x.name, sub: `${m.providers[x.p].name} · ${x.tier}`, href: `models.html#m-${x.id}`, k: "model", ic: "cpu" })),
-    ...cat.all.map((x) => ({ t: x.name, sub: x.plain, href: `tools/${slugOf(x)}.html`, k: KIND[x.kind] || x.kind, ic: { app: "zap", repo: "github", mcp: "plug" }[x.kind] || "puzzle", extra: `${x.owner || ""} ${x.repo || ""} ${x.what || ""}` })),
+    ...cat.all.map((x) => ({ key: x.key, cat: true, t: x.name, sub: x.plain, href: `tools/${slugOf(x)}.html`, k: KIND[x.kind] || x.kind, ic: { app: "zap", repo: "github", mcp: "plug" }[x.kind] || "puzzle", extra: `${x.owner || ""} ${x.repo || ""} ${x.what || ""}` })),
     ...(pr?.prompts || []).map((x) => ({ t: x.title, sub: "Ready-to-copy prompt", href: `prompts.html#${x.id}`, k: "Prompt", ic: "chat", extra: x.text })),
     ...(n?.items || []).slice(0, 30).map((x) => ({ t: x.title, sub: x.source, href: x.url, k: "news", ic: "news" })),
   ];
 }
-let INDEX;
+let INDEX, CAT_ALL = [];
+// newcomers search for apps and answers, not code: rank those first
+const SEARCH_PRI = { page: 3, guide: 3, model: 3, tools: 3, App: 3, Prompt: 2, news: 0 };
 async function runSearch(q) {
   INDEX ??= await searchIndex();
   const words = q.toLowerCase().split(/\s+/).filter(Boolean);
-  const hits = INDEX.filter((x) => words.every((w) => `${x.t} ${x.sub} ${x.extra || ""}`.toLowerCase().includes(w)))
-    .map((x, i) => ({ x, i, name: words.every((w) => x.t.toLowerCase().includes(w)) })).sort((a, b) => b.name - a.name || a.i - b.i).slice(0, 40).map((h) => h.x);
+  const toolRank = new Map(q.trim() ? rank(CAT_ALL, q).slice(0, 15).map((x, r) => [x.key, r]) : []);
+  const hits = INDEX.filter((x) => (x.cat ? toolRank.has(x.key) : words.every((w) => `${x.t} ${x.sub} ${x.extra || ""}`.toLowerCase().includes(w))))
+    .map((x, i) => ({ x, i: x.cat ? 1e5 + toolRank.get(x.key) : i, s: x.cat ? (x.k === "App" ? 2.5 : 1) : (words.every((w) => x.t.toLowerCase().includes(w)) ? 2 : 0) + (SEARCH_PRI[x.k] ?? 1) }))
+    .sort((a, b) => b.s - a.s || a.i - b.i).slice(0, 40).map((h) => h.x);
   $("#pres").innerHTML = hits.length
     ? hits.map((x, i) => `<li role="option" aria-selected="${i === 0}"><a href="${esc(x.href)}">${icon(x.ic)}<span>${esc(x.t)} <em>${esc(x.sub)}</em></span><small>${esc(x.k)}</small></a></li>`).join("")
     : `<li class="empty" style="margin:.6rem">No matches. Try "excel", "private", "images" or "cheap".</li>`;
@@ -211,6 +219,8 @@ function chips(el, items, onPick, start, role = "tab") {
   onPick(start);
 }
 
+// stars are a developer metric; say it in words
+const popular = (n) => (n >= 50000 ? "Very popular" : n >= 10000 ? "Popular" : n >= 1000 ? "Well known" : "");
 function starLine(stats, repo) {
   const s = stats?.repos?.[repo];
   if (!s) return "";
@@ -231,7 +241,7 @@ async function votes() {
 function voteBtn(v, key, label = "") {
   if (!v || v.off) return "";
   const done = votedSet().has(key);
-  return `<button class="btn sm vote" data-vote="${esc(key)}" aria-pressed="${done}" title="${done ? "You voted for this" : "Vote for this tool"}">${icon("thumb")}<span>${v.counts[key] || 0}</span>${label}</button>`;
+  return `<button class="btn sm vote" data-vote="${esc(key)}" aria-pressed="${done}" title="${done ? "You voted for this" : "Vote for this tool"}">${icon("thumb")}<span>${(v.counts[key] || 0) >= 3 ? v.counts[key] : ""}</span>${label}</button>`;
 }
 document.addEventListener("click", async (e) => {
   const b = e.target.closest("[data-vote]"); if (!b) return;
@@ -255,7 +265,7 @@ async function picker(host, startTask = "chat") {
     const met = bench?.metrics.find((x) => x.id === mid), sc = bench?.scores[id]?.[mid];
     if (!met || !sc) return "";
     const all = Object.values(bench.scores).map((s) => s[mid]?.v).filter((v) => v != null).sort((a, b) => b - a);
-    return `<span class="ev"><b>${esc(met.skill)}</b> ${met.unit === "%" ? `${+sc.v.toFixed(1)}%` : Math.round(sc.v)} <small>#${all.indexOf(sc.v) + 1} of ${all.length} (${esc(met.short)})</small></span>`;
+    return `<span class="ev" title="${esc(met.name)}: ${met.unit === "%" ? `${+sc.v.toFixed(1)}%` : Math.round(sc.v)}"><b>${esc(met.skill)}</b> <small>#${all.indexOf(sc.v) + 1} of ${all.length} models</small></span>`;
   }).filter(Boolean).join("");
   const byId = Object.fromEntries(m.models.map((x) => [x.id, x]));
   let task = t.tasks.find((x) => x.id === startTask) || t.tasks[0], prio = "best";
@@ -281,7 +291,7 @@ async function picker(host, startTask = "chat") {
         <div><span class="field-label">What it costs</span><p>${esc(cost)}</p></div>
       </div>
       ${evidence(task, x.id) ? `<div class="ev-row"><span class="field-label">What the tests say</span><div>${evidence(task, x.id)}</div></div>` : ""}
-      <p class="muted" style="font-size:.85rem;margin:0">${x.in != null ? `Developers: $${x.in} in / $${x.out} out per 1M tokens · ` : ""}<a href="benchmarks.html">See all test results</a>${prio === "private" ? ` · <a href="local.html">Which local model fits my computer?</a>` : ""}</p>
+      <p class="muted" style="font-size:.85rem;margin:0"><a href="benchmarks.html">See all test results</a>${prio === "private" ? ` · <a href="local.html">Which local model fits my computer?</a>` : ""}</p>
     </article>
     ${rest.length ? `<p class="field-label" style="margin-top:1.2rem">Also good</p><div class="alt-row">${rest.map(([id, w]) => { const y = byId[id]; return `<div class="alt p-${y.p}">${modelLogo(y)}<div><b>${esc(y.name)}</b><p>${esc(w)}</p></div></div>`; }).join("")}</div>` : ""}`;
     if (page === "models") history.replaceState(null, "", `#task=${task.id}`);
@@ -332,6 +342,7 @@ const newsCard = (x, lead) => `<article class="card news-card${lead ? " top-stor
     </div>
     <a class="cover" href="${esc(x.url)}" target="_blank" rel="noopener" aria-label="${esc(x.title)}"></a></article>`;
 // big launches of the last 3 days come first, then everything by date
+const forEveryone = (x) => x.audience !== "dev";
 const newsOrder = (items) => { const fresh = (x) => x.big && Date.now() - new Date(x.date) < 3 * 864e5; return [...items].sort((a, b) => fresh(b) - fresh(a)); };
 
 // ---------- newsletter sign-up: kept in Supabase until a mail service sends the issues ----------
@@ -399,7 +410,7 @@ const pages = {
     const [g, n, ex, m, { all, tags }] = await Promise.all([load("github"), load("news"), load("explain"), load("models"), catalog()]);
     $("#stAgent").textContent = g ? `Updated ${ago(g.updated)}` : "Updating";
     $("#stTracked").textContent = `${all.length} tools explained`;
-    $("#stNews").textContent = `${n?.items.length ?? 0} stories this month`;
+    $("#stNews").textContent = `${(n?.items || []).filter(forEveryone).length} stories this month`;
     $("#stModels").textContent = `${m?.models.length ?? 0} AI models compared`;
     $("#ctaLogos").innerHTML = ["anthropic", "openai", "google", "open"].map((p) => `<span class="logo-badge p-${p}">${logo(p === "open" ? "ollama" : LOGOS[p])}</span>`).join("");
     // the names a newcomer has heard of, not whatever is trending among developers this week
@@ -408,7 +419,7 @@ const pages = {
     $("#homeSkills").textContent = all.filter((x) => x.kind === "skill").length;
     const pairs = CATALOG.pairs.slice(0, 6), nm = (id) => shortName(all.find((y) => y.key === id)?.name || id);
     $("#homeVs").innerHTML = pairs.map((p) => `<a class="chip" href="${p.a}-vs-${p.b}.html">${esc(nm(p.a))} vs ${esc(nm(p.b))}</a>`).join("") + `<a class="chip" href="compare.html">All comparisons ${icon("arrow")}</a>`;
-    const news = newsOrder((n?.items || []).filter((x) => x.ai));
+    const news = newsOrder((n?.items || []).filter((x) => x.ai && forEveryone(x)));
     const seen = new Set(); // the same launch often arrives from two sources with the same picture
     $("#feed").innerHTML = [...news.filter(newsPic), ...news.filter((x) => !newsPic(x))].filter((x) => !x.image || (!seen.has(x.image) && seen.add(x.image))).slice(0, 3).map((x) => newsCard(x)).join("") || `<p class="muted">News is on its way.</p>`;
     askBox();
@@ -430,7 +441,7 @@ const pages = {
   async mcp() {
     const [tools, g, b] = await Promise.all([load("tools"), load("github"), votes()]);
     const servers = tools.filter((x) => x.type === "mcp");
-    let server = servers.find((x) => location.hash.includes(x.id)) || servers[0], client = "claude-code";
+    let server = servers.find((x) => location.hash.includes(x.id)) || servers[0], client = "claude-ai";
     const list = $("#srvList");
     list.innerHTML = servers.map((s) => `<button class="opt" role="option" data-id="${s.id}" aria-selected="${s === server}">${icon(s.remote ? "plug" : "terminal")}<span>${esc(s.name)}<small>${s.remote ? "remote · http" : "local · stdio"}</small></span></button>`).join("");
     list.onclick = (e) => { const o = e.target.closest(".opt"); if (!o) return; server = servers.find((s) => s.id === o.dataset.id); $$(".opt", list).forEach((x) => x.setAttribute("aria-selected", x === o)); draw(); };
@@ -478,7 +489,7 @@ const pages = {
     const id = document.body.dataset.hub, h = HUBS[id];
     const [n, m, { all, tags }] = await Promise.all([load("news"), load("models"), catalog()]);
     const seenT = new Set(); // the same launch often comes in from two sources with the same title
-    const items = newsOrder((n?.items || []).filter((x) => hubOf(x).includes(id) && !seenT.has(x.title.toLowerCase()) && seenT.add(x.title.toLowerCase())));
+    const items = newsOrder((n?.items || []).filter((x) => forEveryone(x) && hubOf(x).includes(id) && !seenT.has(x.title.toLowerCase()) && seenT.add(x.title.toLowerCase())));
     $("#hubLogo").innerHTML = `<span class="logo-badge p-${h.p} hub-badge">${logo(h.logo)}</span>`;
     $("#hubCount").textContent = `${items.length} ${items.length === 1 ? "story" : "stories"} in the last 45 days`;
     $("#hubSwitch").innerHTML = Object.entries(HUBS).map(([k, v]) => `<a class="chip"${k === id ? ' aria-pressed="true"' : ""} href="${v.file}">${esc(v.name)}</a>`).join("") + `<a class="chip" href="news.html">All AI news</a>`;
@@ -555,7 +566,7 @@ const pages = {
     $("#newsUpdated").textContent = n ? ago(n.updated) : "—";
     let src = "all", shown = 13;
     const draw = () => {
-      const list = newsOrder(items.filter((x) => src === "all" || (src === "big" ? x.big : x.source === src)));
+      const list = newsOrder(items.filter((x) => (src === "dev" ? !forEveryone(x) : forEveryone(x)) && (src === "all" || src === "dev" || (src === "big" ? x.big : x.source === src))));
       // lead story: the newest big launch with a picture, else the newest with a picture
       const lead = list.find(newsPic) || list[0]; // newsOrder already puts fresh big launches first
       const rest = list.filter((x) => x !== lead);
@@ -565,7 +576,7 @@ const pages = {
     };
     const sources = [...new Set(items.map((x) => x.source))];
     dropdown($("#srcPick"), "Source", [["all", "All sources"], ...sources.map((s) => [s, s])], (s) => { src = s; shown = 13; $$("#srcChips .chip").forEach((c) => c.setAttribute("aria-pressed", s === "all" && c.dataset.v === "all")); draw(); }, "all");
-    chips($("#srcChips"), [["all", "All news"], ["big", "Big launches", "zap"]], (s) => { src = s; shown = 13; $("#srcPick select").value = "all"; draw(); }, "all", "filter");
+    chips($("#srcChips"), [["all", "All news"], ["big", "Big launches", "zap"], ["dev", "Developer news", "code"]], (s) => { src = s; shown = 13; $("#srcPick select").value = "all"; draw(); }, "all", "filter");
   },
 
   async leaderboard() {
@@ -664,6 +675,7 @@ const STOP = new Set(["the", "and", "for", "with", "that", "this", "want", "need
 const GOAL_WORDS = {
   docs: "document doc word excel spreadsheet sheet pdf report slide presentation powerpoint deck write writing essay email letter summar translat proofread grammar",
   code: "code coding program developer bug debug script function refactor",
+  meetings: "meeting meetings transcribe transcription transcript minutes notetaker zoom teams call calls interview dictation",
   apps: "website site landing web build prototype mvp",
   automate: "automat workflow repetitive schedul zapier integrat bot",
   research: "research search source fact paper study academic citation news",
@@ -706,7 +718,7 @@ function rank(all, q) {
 
 const fromRepo = (e, s, d) => ({ key: e.repo, kind: "repo", name: e.repo.split("/")[1], owner: e.repo.split("/")[0], repo: e.repo, plain: e.plain || e.what, what: e.what, why: e.why,
   caution: e.caution, steps: e.steps || (e.start ? [`Start with: \`${e.start.replace(/`/g, "")}\``] : []), useFor: e.useFor || [], tags: e.tags || [], level: e.level && ({ beginner: "easy", intermediate: "setup", advanced: "dev" }[e.level] || e.level),
-  alts: e.alts || [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: d ?? 0, updated: s?.pushed, src: e.source, checked: e.source === "curated", license: s?.license });
+  alts: e.alts || [], stars: s?.stars ?? 0, week: s?.week ?? 0, installs: d ?? 0, updated: s?.pushed, src: e.source, checked: e.source === "curated", license: s?.license, checkedAt: e.at });
 // one skill = one SKILL.md inside a collection we trust. Everything shown comes from that file and its folder.
 const firstSentence = (t = "") => { const m = t.match(/^(.{40,190}?[.!?])(\s|$)/); return m ? m[1] : t.length > 190 ? t.slice(0, 187) + "…" : t; };
 const fromSkill = (k, src) => ({ key: k.key, kind: "skill", name: k.name, owner: k.repo.split("/")[1], repo: k.repo, path: k.path, plain: k.plain || firstSentence(k.desc), what: k.desc, caution: "",
@@ -731,7 +743,7 @@ function toolCard(x, tags) {
     <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${x.fromPack ? "from " : ""}${esc(x.owner)}` : ""}</small></span></span>
     <span class="tool-plain">${esc(x.plain || "")}</span>
     <span class="tool-foot">${x.kind === "mod" ? `<span class="tag ${REACH[x.reach]?.[0] === "ok" ? "ok" : "warn"}">${esc(REACH[x.reach]?.[1] || "")}</span>${MOD_CAT[x.cat] ? `<span class="tag">${esc(MOD_CAT[x.cat])}</span>` : ""}` : `${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}`}
-      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${x.stars ? `${icon("star")}${num(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
+      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${popular(x.stars) ? `${icon("star")}${popular(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
   </a>`;
 }
 
@@ -764,7 +776,7 @@ function trustBox(x) {
 function toolDetail(x, all, tags, tips) {
   const goals = Object.fromEntries((tags?.goals || []).map((g) => [g.id, g]));
   const link = x.link || (x.repo ? (x.path ? `https://github.com/${x.repo}/tree/HEAD/${x.path}` : `https://github.com/${x.repo}`) : null);
-  const alts = x.alts.map((a) => all.find((y) => y.key === a)).filter(Boolean);
+  const alts = x.alts.filter((a) => a !== x.key).map((a) => all.find((y) => y.key === a)).filter(Boolean);
   return `<div class="dlg-head">${iconFor(x, 52)}<div><p class="field-label" style="margin:0">${esc(KIND[x.kind])}${x.official ? " · official" : ""}</p><h2>${esc(x.name)}</h2>${x.owner ? `<small class="muted">by ${esc(x.owner)}</small>` : ""}</div>
       <button class="icon-btn dlg-close" aria-label="Close">${icon("x")}</button></div>
     <p class="lead" style="margin:1rem 0">${md(x.plain || x.what || "")}</p>
@@ -779,11 +791,11 @@ function toolDetail(x, all, tags, tips) {
     ${vsLinks(x, all)}
     ${alts.length ? `<h3 style="margin-top:1.4rem">Similar tools</h3><div class="row">${alts.map((a) => `<button class="chip" data-open="${esc(a.key)}">${esc(a.name)}</button>`).join("")}</div>` : ""}
     <div class="row" style="margin-top:1.6rem">${voteBtn(VOTES, x.key, " Recommend")}${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">${icon("external")}Open ${esc(x.name)}</a>` : ""}${x.mcp ? `<a class="btn primary" href="mcp.html#setup=${esc(x.key)}">${icon("plug")}Set it up in your app</a>` : ""}${x.kind === "skill" ? `<a class="btn primary" href="skills.html#install">${icon("puzzle")}How to install skills</a>` : ""}
-      ${link ? `<a class="btn" href="${link}" target="_blank" rel="noopener">${icon("github")}Open on GitHub</a>` : ""}
+      ${link ? `<a class="btn${x.site || x.mcp ? "" : " primary"}" href="${link}" target="_blank" rel="noopener">${icon("external")}${x.kind === "app" ? "Source" : "Get it"}</a>` : ""}
       <a class="btn" href="tools/${slugOf(x)}.html">${icon("external")}Full page</a>
       <a class="btn" href="contribute.html?kind=tip&target=${encodeURIComponent(x.key)}">${icon("chat")}Share a tip</a>
       <a class="btn" href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">${icon("alert")}Report a mistake</a>
-      <span class="muted mono" style="font-size:.8rem">${x.stars ? `${num(x.stars)} stars` : ""}${x.installs ? ` · ${num(x.installs)} installs/month` : ""}${x.updated ? ` · updated ${ago(x.updated)}` : ""}</span></div>`;
+      <span class="muted" style="font-size:.8rem">${[popular(x.stars), x.installs ? `${num(x.installs)} installs a month` : "", x.updated ? `updated ${ago(x.updated)}` : "", x.checkedAt ? `description checked ${x.checkedAt}` : ""].filter(Boolean).join(" · ")}</span></div>`;
 }
 
 // The tool details dialog: any page with #toolDlg can open a tool in place
@@ -807,13 +819,15 @@ function toolDialog(all, tags, tips) {
 pages.explore = async () => {
   const [{ all, tags, tips }] = await Promise.all([catalog(), votes()]);
   const params = new URLSearchParams(location.search);
-  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", sort: "easy", shown: 24 };
+  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", price: params.get("price") || "all", sort: "easy", shown: 24 };
   const q = $("#repoQ"); q.value = params.get("q") || "";
   const TYPES = [["all", "Everything"], ["app", "Ready-made apps"], ["repo", "Open-source projects"], ["skill", "Skills"], ["mod", "Claude Code mods"], ["mcp", "Connectors (MCP)"]];
-  const matches = (x) => (st.goal === "all" || x.tags.includes(st.goal)) && (st.level === "all" || x.level === st.level) && (st.type === "all" || x.kind === st.type || (st.type === "skill" && x.kind === "collection"));
+  const isFree = (x) => x.kind !== "app" || x.free; // open-source projects, skills and mods cost nothing to get
+  const matches = (x) => (st.goal === "all" || x.tags.includes(st.goal)) && (st.level === "all" || x.level === st.level) && (st.type === "all" || x.kind === st.type || (st.type === "skill" && x.kind === "collection"))
+    && (st.price === "all" || (st.price === "free" ? isFree(x) : !isFree(x)));
   const sync = () => {
     const p = new URLSearchParams();
-    for (const k of ["goal", "level", "type"]) if (st[k] !== "all") p.set(k, st[k]);
+    for (const k of ["goal", "level", "type", "price"]) if (st[k] !== "all") p.set(k, st[k]);
     if (q.value) p.set("q", q.value);
     history.replaceState(null, "", `${location.pathname}${p.size ? `?${p}` : ""}${location.hash}`);
   };
@@ -821,7 +835,9 @@ pages.explore = async () => {
     const LV = { easy: 0, setup: 1, dev: 2 };
     const pool = q.value.trim() ? rank(all, q.value) : all;
     const list = pool.filter(matches);
-    if (!q.value.trim() || st.sort !== "easy") list.sort((a, b) => (st.sort === "rising" ? b.week - a.week : st.sort === "installs" ? b.installs - a.installs : st.sort === "popular" ? b.stars - a.stars
+    // with a search, "Easiest first" keeps relevance order inside each level (sort is stable)
+    if (q.value.trim() && st.sort === "easy") list.sort((a, b) => (LV[a.level] ?? 1) - (LV[b.level] ?? 1) || (b.kind === "app") - (a.kind === "app"));
+    else list.sort((a, b) => (st.sort === "rising" ? b.week - a.week : st.sort === "installs" ? b.installs - a.installs : st.sort === "popular" ? b.stars - a.stars
       : (LV[a.level] ?? 1) - (LV[b.level] ?? 1) || (b.kind === "app") - (a.kind === "app") || b.stars - a.stars));
     const goal = tags.goals.find((x) => x.id === st.goal);
     $("#catWhat").innerHTML = goal ? `<div class="callout ok" style="margin-bottom:1.2rem">${icon(goal.icon)}<div><b>${esc(goal.label)}.</b> ${esc(goal.hint)}. ${list.length} tools.</div></div>` : `<p class="muted" style="margin:0 0 1rem">${list.length} tools</p>`;
@@ -834,7 +850,8 @@ pages.explore = async () => {
   dropdown($("#goalPick"), "I want to", [["all", "Anything"], ...tags.goals.map((x) => [x.id, `${x.label} (${counts(x.id)})`])], (v) => { st.goal = v; st.shown = 24; draw(); }, st.goal);
   dropdown($("#levelPick"), "Skill level", [["all", "Any level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; st.shown = 24; draw(); }, st.level);
   dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; st.shown = 24; draw(); }, st.type);
-  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most stars"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; st.shown = 24; draw(); }, "easy");
+  dropdown($("#pricePick"), "Price", [["all", "Any price"], ["free", "Free or free plan"], ["paid", "Paid only"]], (v) => { st.price = v; st.shown = 24; draw(); }, st.price);
+  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most popular"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; st.shown = 24; draw(); }, "easy");
   q.oninput = () => { st.shown = 24; draw(); };
 
   const open = toolDialog(all, tags, tips);

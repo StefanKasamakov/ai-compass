@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=41">
+<link rel="stylesheet" href="assets/site.css?v=42">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="mcp">
@@ -102,8 +102,7 @@
   </div></section>
 
   <section><div class="wrap">
-    <div class="kicker">Traps</div>
-    <h2>Things that trip everyone up</h2>
+    <details class="more"><summary>Setting it up by hand? Things that trip everyone up</summary>
     <div class="grid" style="margin-top:1.4rem">
       <div class="card"><h3>"servers" vs "mcpServers"</h3><p>VS Code's <code>.vscode/mcp.json</code> uses <code>"servers"</code>. Claude, Cursor and Gemini use <code>"mcpServers"</code>. Wrong key = silently nothing.</p></div>
       <div class="card"><h3>Restart the app</h3><p>Claude Desktop only reads its config on start. Fully quit it (tray icon too), then reopen.</p></div>
@@ -114,6 +113,7 @@
       <div class="card"><h3>Windows paths</h3><p>Inside JSON, write <code>C:\\Users\\me</code> with double backslashes, or use forward slashes.</p></div>
       <div class="card"><h3>Too many servers</h3><p>Each server adds tools the AI has to read. Ten servers slow it down and confuse it. Keep what you use.</p></div>
     </div>
+    </details>
   </div></section>
 
   <section><div class="wrap split">
@@ -142,6 +142,6 @@
     </div>
   </div></section>
 </main>
-<script src="assets/site.js?v=41" defer></script>
+<script src="assets/site.js?v=42" defer></script>
 </body>
 </html>

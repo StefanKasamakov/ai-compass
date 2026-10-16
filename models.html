@@ -21,13 +21,13 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=41">
+<link rel="stylesheet" href="assets/site.css?v=42">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="models">
 <main id="main">
   <header class="page-head"><div class="wrap">
-    <div class="kicker">Choose an AI</div>
+    <div class="kicker">Which AI to use</div>
     <h1>Which AI should you use?</h1>
     <p class="lead">Answer two questions and get one clear pick, where to use it and what it costs. Every company sells a smartest model, a balanced one and a cheap fast one; the right choice depends on the job, not the brand.</p>
   </div></header>
@@ -35,13 +35,15 @@
   <section><div class="wrap"><h2 class="sr">Pick your task</h2><div id="picker"></div></div></section>
 
   <section><div class="wrap">
-    <div class="spread"><div><div class="kicker">Every model</div><h2>The full lineup</h2></div><span class="muted mono" style="font-size:.8rem">checked <span id="modelsUpdated"></span>, kept up to date automatically</span></div>
+    <div class="spread"><div><div class="kicker">Every model</div><h2>The full lineup</h2><p class="muted" style="margin:.4rem 0 0">In the apps (ChatGPT, Claude, Gemini) you pay a monthly plan, usually about $20, or use a free plan. The prices below are for developers who pay per use.</p></div><span class="muted" style="font-size:.8rem">checked <span id="modelsUpdated"></span>, kept up to date automatically</span></div>
+    <details class="more lineup"><summary>Show every model with developer prices (pay per use)</summary>
     <div class="chips" id="provChips" aria-label="Filter by company"></div>
     <div class="table-wrap cards-sm"><table>
       <thead><tr><th>Model</th><th>Tier</th><th>Best for</th><th class="num">In $/1M</th><th class="num">Out $/1M</th><th class="num">Context</th></tr></thead>
       <tbody id="modelRows"></tbody>
     </table></div>
     <p class="muted" style="margin-top:1rem;font-size:.9rem">Prices are API prices per 1 million tokens (about 750,000 English words). In the apps (claude.ai, ChatGPT, Gemini) you pay a monthly plan instead. * Open-weight models are free to download; you pay for the hardware or a host like OpenRouter.</p>
+    </details>
   </div></section>
 
   <section><div class="wrap"><div class="grid door-grid">
@@ -63,6 +65,6 @@
     </dl>
   </div></section>
 </main>
-<script src="assets/site.js?v=41" defer></script>
+<script src="assets/site.js?v=42" defer></script>
 </body>
 </html>

@@ -45,7 +45,7 @@ const pairOf = new Map();
 for (const p of pairs || []) for (const id of [p.a, p.b]) (pairOf.get(id) || pairOf.set(id, []).get(id)).push(p);
 
 function similar(x) {
-  const named = (x.alts || []).map((k) => all.find((y) => y.key === k)).filter(Boolean);
+  const named = (x.alts || []).filter((k) => k !== x.key).map((k) => all.find((y) => y.key === k)).filter(Boolean);
   const same = all.filter((y) => y !== x && y.kind === x.kind && y.tags[0] && y.tags[0] === x.tags[0] && !named.includes(y))
     .sort((a, b) => (b.kind === "app") - (a.kind === "app") || b.stars - a.stars);
   return [...named, ...same].slice(0, 6);
@@ -100,10 +100,10 @@ function page(x) {
     <p class="lead" style="margin-top:1rem">${md(x.plain || x.what || "")}</p>
     <div class="row" style="margin-top:1.2rem">
       ${x.site ? `<a class="btn primary" href="${esc(x.site)}" target="_blank" rel="noopener">Open ${esc(x.name)}</a>` : ""}
-      ${link ? `<a class="btn${x.site ? "" : " primary"}" href="${esc(link)}" target="_blank" rel="noopener">${x.kind === "app" ? "Source" : "Open on GitHub"}</a>` : ""}
+      ${link ? `<a class="btn${x.site ? "" : " primary"}" href="${esc(link)}" target="_blank" rel="noopener">${x.kind === "app" ? "Source" : "Get it"}</a>` : ""}
       <span id="toolVote"></span>
     </div>
-    <p class="tool-facts">${x.level && LEVEL[x.level] ? `<span>${esc(LEVEL[x.level][0])}</span>` : ""}${x.stars ? `<span>${x.stars.toLocaleString("en")} GitHub stars</span>` : ""}${x.installs ? `<span>${x.installs.toLocaleString("en")} installs a month</span>` : ""}${x.price ? `<span>${x.free ? "Free plan" : "Paid"}</span>` : ""}</p>
+    <p class="tool-facts">${x.level && LEVEL[x.level] ? `<span>${esc(LEVEL[x.level][0])}</span>` : ""}${x.stars >= 1000 ? `<span>${x.stars >= 50000 ? "Very popular" : x.stars >= 10000 ? "Popular" : "Well known"}</span>` : ""}${x.installs ? `<span>${x.installs.toLocaleString("en")} installs a month</span>` : ""}${x.price ? `<span>${x.free ? "Free plan" : "Paid"}</span>` : ""}</p>
   </div></header>
 
   <section><div class="wrap article">
@@ -115,7 +115,7 @@ function page(x) {
     ${x.why ? `<h2>More detail</h2><p>${md(x.what || "")}</p><p>${md(x.why)}</p>` : ""}
     ${vs.length ? `<h2>Compare</h2><div class="chips">${vs.map((p) => `<a class="chip" href="${p.a}-vs-${p.b}.html">${esc((all.find((y) => y.key === p.a)?.name || p.a).replace(/\s*\(.*\)$/, ""))} vs ${esc((all.find((y) => y.key === p.b)?.name || p.b).replace(/\s*\(.*\)$/, ""))}</a>`).join("")}</div>` : ""}
     ${sim.length ? `<h2>Similar tools</h2><div class="chips">${sim.map((y) => `<a class="chip" href="tools/${slugOf(y)}.html">${esc(y.name)}</a>`).join("")}</div>` : ""}
-    <p class="muted" style="margin-top:2.4rem;font-size:.86rem">Descriptions are written in plain English from each project's own documentation and refreshed by our agent. <a href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">Spotted a mistake?</a> · <a href="explore.html#${esc(x.key)}">Open in Find tools</a> · © ${year} Which AI Map</p>
+    <p class="muted" style="margin-top:2.4rem;font-size:.86rem">Descriptions are written in plain English from each project's own documentation and refreshed by our agent${x.checkedAt ? `; this one was last checked ${x.checkedAt}` : ""}. <a href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">Spotted a mistake?</a> · <a href="explore.html#${esc(x.key)}">Open in Find tools</a> · © ${year} Which AI Map</p>
   </div></section>
   <script type="application/ld+json">${JSON.stringify(ld).replace(/</g, "\\u003c")}</script>
 ` + TAIL;
@@ -140,7 +140,7 @@ const h0 = src.indexOf("const HUBS = {"), h1 = src.indexOf("\n", src.indexOf("co
 const { HUBS, hubOf } = vm.runInContext(`${src.slice(h0, h1)}\n;({ HUBS, hubOf })`, vm.createContext({}));
 const news = JSON.parse(await read("data/news.json")).items || [];
 for (const [id, h] of Object.entries(HUBS)) {
-  const seenT = new Set(), items = news.filter((x) => hubOf(x).includes(id) && !seenT.has(x.title.toLowerCase()) && seenT.add(x.title.toLowerCase())).slice(0, 40);
+  const seenT = new Set(), items = news.filter((x) => x.audience !== "dev" && hubOf(x).includes(id) && !seenT.has(x.title.toLowerCase()) && seenT.add(x.title.toLowerCase())).slice(0, 40);
   await fs.writeFile(new URL(`feed-${id}.xml`, ROOT), `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
 <title>${esc(h.name)} news · Which AI Map</title><link>${SITE}/${h.file}</link>

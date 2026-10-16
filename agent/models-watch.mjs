@@ -6,7 +6,7 @@
 import fs from "node:fs/promises";
 import { z } from "zod";
 import { askJSON, provider } from "./llm.mjs";
-import { checkChanges } from "./models-check.mjs";
+import { checkChanges, keepCurated } from "./models-check.mjs";
 
 const FILE = new URL("../data/models.json", import.meta.url);
 const BENCH = new URL("../data/benchmarks.json", import.meta.url);
@@ -55,7 +55,7 @@ ${JSON.stringify(catalog)}`,
 });
 const { changed, summary, models } = res;
 if (!changed) { console.log("models: no changes"); process.exit(0); }
-const clean = models.map((m) => Object.fromEntries(Object.entries(m).filter(([, v]) => v !== null)));
+const { clean, locked } = keepCurated(current.models, Object.keys(Model.shape), models.map((m) => Object.fromEntries(Object.entries(m).filter(([, v]) => v !== null))));
 
 // ---------- the checks that decide whether this goes live without a human ----------
 const tasks = JSON.parse(await fs.readFile(TASKS, "utf8"));
@@ -71,7 +71,7 @@ if (renamed.length) {
   await write(BENCH, b);
 }
 
-const changes = `${summary}${renamed.length ? `\n- Removed the old test scores of ${renamed.map((m) => m.name).join(", ")}: they belonged to the previous model under the same id.` : ""}`;
+const changes = `${summary}${locked.length ? `\n- Kept the official price of ${locked.join(", ")} (lockPrice): it differs from what OpenRouter lists.` : ""}${renamed.length ? `\n- Removed the old test scores of ${renamed.map((m) => m.name).join(", ")}: they belonged to the previous model under the same id.` : ""}`;
 if (problems.length) {
   await fs.writeFile(process.env.PR_BODY || "pr-body.md",
     `The model-watch agent (${provider}) found changes against the live OpenRouter catalog:\n\n${changes}\n\n` +

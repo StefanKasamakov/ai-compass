@@ -182,7 +182,7 @@
   ],
   "at": "2026-09-29",
   "source": "curated",
-  "plain": "An add-on rule that makes AI coding helpers reply in very short sentences to use fewer tokens.",
+  "plain": "An add-on rule that makes AI coding helpers reply in very short sentences, so each answer costs less.",
   "tags": [
    "save",
    "supercharge"
@@ -280,7 +280,7 @@
   ],
   "at": "2026-09-29",
   "source": "curated",
-  "plain": "A small tool that shows how many tokens and dollars your AI coding tools have used.",
+  "plain": "A small tool that shows how much text and how many dollars your AI coding tools have used.",
   "tags": [
    "save",
    "monitor"
@@ -1754,7 +1754,6 @@
   "start": "npx skills add bmad-code-org/BMAD-METHOD",
   "caution": "",
   "alts": [
-   "bmad-code-org/BMAD-METHOD",
    "anthropics/claude-code",
    "openai/codex"
   ],
@@ -1823,8 +1822,7 @@
   "start": "/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode",
   "caution": "Named autopilot stage profiles currently require Linux with the flock utility.",
   "alts": [
-   "anthropic/claude-code",
-   "Yeachan-Heo/oh-my-claudecode"
+   "anthropic/claude-code"
   ],
   "packages": [
    "oh-my-claude-sisyphus"
@@ -1859,8 +1857,7 @@
   "caution": "The project claims automatic off-plan observation and free trial periods that automatically fall back to your Anthropic plan, which may have privacy or cost implications depending on your setup.",
   "alts": [
    "mem0ai/mem0",
-   "getzep/graphiti",
-   "thedotmack/claude-mem"
+   "getzep/graphiti"
   ],
   "packages": [
    "claude-mem"
@@ -1961,14 +1958,13 @@
   "caution": "Must change the default root password (123456) immediately upon first login.",
   "alts": [
    "diegosouzapw/OmniRoute",
-   "BerriAI/litellm",
-   "songquanpeng/one-api"
+   "BerriAI/litellm"
   ],
   "packages": [],
   "repo": "songquanpeng/one-api",
   "at": "2026-09-29",
   "source": "curated",
-  "plain": "A self-hosted hub that puts many AI services behind one key, so you can manage and share access.",
+  "plain": "A hub you run on your own server that puts many AI services behind one key, so you can manage and share access.",
   "tags": [
    "save",
    "connect"
@@ -2002,7 +1998,7 @@
   "repo": "QuantumNous/new-api",
   "at": "2026-09-29",
   "source": "curated",
-  "plain": "A self-hosted hub that combines many AI services into one address and one set of keys.",
+  "plain": "A hub you run on your own server that combines many AI services into one address and one set of keys.",
   "tags": [
    "save",
    "connect"
@@ -2027,7 +2023,6 @@
   "start": "",
   "caution": "It works by signing in with your CLI or subscription accounts (OAuth) and re-exposing them as an API. Check each provider's terms first: using a consumer subscription as a general-purpose API may not be allowed and can get the account limited. The README also contains affiliate links.",
   "alts": [
-   "router-for-me/CLIProxyAPI",
    "BerriAI/litellm",
    "songquanpeng/one-api"
   ],
@@ -2061,7 +2056,6 @@
   "start": "brew install rtk\nrtk init -g",
   "caution": "The repository claims up to 90% bash output reduction, but this refers strictly to shell output size, not your total API bill. Token counts are approximated using bytes/4 rather than a precise tokenizer.",
   "alts": [
-   "rtk-ai/rtk",
    "Maciek-roboblog/Claude-Code-Usage-Monitor"
   ],
   "packages": [
@@ -2070,7 +2064,7 @@
   "repo": "rtk-ai/rtk",
   "at": "2026-09-29",
   "source": "curated",
-  "plain": "A small helper that trims long terminal output before your AI coding tool reads it, saving tokens.",
+  "plain": "A small helper that trims long terminal output before your AI coding tool reads it, so you pay for less text.",
   "tags": [
    "save",
    "code"
@@ -2094,9 +2088,7 @@
   "level": "dev",
   "start": "pip install llmlingua",
   "caution": "",
-  "alts": [
-   "microsoft/LLMLingua"
-  ],
+  "alts": [],
   "packages": [
    "llmlingua"
   ],
@@ -2126,9 +2118,7 @@
   "level": "easy",
   "start": "uv tool install claude-monitor",
   "caution": "",
-  "alts": [
-   "Maciek-roboblog/Claude-Code-Usage-Monitor"
-  ],
+  "alts": [],
   "packages": [
    "claude-monitor"
   ],
@@ -2360,7 +2350,6 @@
   "caution": "Self-hosting requires Docker, configuration, and your own model API keys, while the hosted platform is a paid service.",
   "alts": [
    "OpenHands/OpenHands",
-   "Significant-Gravitas/AutoGPT",
    "n8n-io/n8n"
   ],
   "packages": [],
@@ -2428,8 +2417,7 @@
   "caution": "Complex ecosystem with multiple separate packages for graphs, evals, and observability.",
   "alts": [
    "langchain-ai/langgraph",
-   "crewAIInc/crewAI",
-   "pydantic/pydantic-ai"
+   "crewAIInc/crewAI"
   ],
   "packages": [
    "pydantic-ai"
@@ -2743,7 +2731,6 @@
   "caution": "Requires external LLM API keys and relies on computer vision models, which can be computationally intensive or prone to occasional visual misinterpretation.",
   "alts": [
    "browser-use/browser-use",
-   "Skyvern-AI/skyvern",
    "OpenHands/OpenHands"
   ],
   "packages": [
@@ -2777,7 +2764,6 @@
   "start": "uv run exo",
   "caution": "Linux support currently runs on CPU and GPU support is under active development.",
   "alts": [
-   "exo-explore/exo",
    "ollama/ollama",
    "mudler/LocalAI"
   ],
@@ -2983,8 +2969,7 @@
   "start": "pip install chromadb",
   "caution": "",
   "alts": [
-   "qdrant/qdrant",
-   "chroma-core/chroma"
+   "qdrant/qdrant"
   ],
   "packages": [
    "chromadb"
@@ -3018,7 +3003,6 @@
   "caution": "Running the default Docker container starts an insecure deployment without authentication; secure your instance before production use.",
   "alts": [
    "chroma-core/chroma",
-   "qdrant/qdrant",
    "milvus-io/milvus"
   ],
   "packages": [
@@ -3052,7 +3036,6 @@
   "start": "pip install lightrag-hku",
   "caution": "The project integrates many external services like MinerU, Docling, and various vector and graph databases, which can add complexity to your setup.",
   "alts": [
-   "HKUDS/LightRAG",
    "microsoft/graphrag",
    "run-llama/llama_index"
   ],
@@ -3157,7 +3140,6 @@
   "caution": "Requires installing a headless browser environment via setup commands to handle dynamic JavaScript-heavy web pages.",
   "alts": [
    "firecrawl/firecrawl",
-   "unclecode/crawl4ai",
    "browserbase/stagehand"
   ],
   "packages": [
@@ -3191,8 +3173,7 @@
   "start": "from firecrawl import Firecrawl\n\napp = Firecrawl(api_key=\"fc-YOUR_API_KEY\")\n\nresult = app.scrape('firecrawl.dev')",
   "caution": "Requires an API key from firecrawl.dev and relies on a hosted cloud service for its primary functionality.",
   "alts": [
-   "unclecode/crawl4ai",
-   "firecrawl/firecrawl"
+   "unclecode/crawl4ai"
   ],
   "packages": [
    "firecrawl",
@@ -3302,7 +3283,7 @@
   "repo": "LibreChat-AI/LibreChat",
   "at": "2026-09-29",
   "source": "curated",
-  "plain": "A free, self-hosted ChatGPT-style app your team can share, working with dozens of AI providers.",
+  "plain": "A free ChatGPT-style app you run on your own server for your team, working with dozens of AI providers.",
   "tags": [
    "private",
    "connect",
@@ -3327,11 +3308,7 @@
   "level": "easy",
   "start": "Get an OpenAI API Key, then click the Deploy on Vercel button in the README to instantly spin up your own web app.",
   "caution": "None",
-  "alts": [
-   "ChatGPTNextWeb/NextChat",
-   "ChatGPTNextWeb/NextChat",
-   "ChatGPTNextWeb/NextChat"
-  ],
+  "alts": [],
   "packages": [],
   "repo": "ChatGPTNextWeb/NextChat",
   "at": "2026-09-29",
@@ -3565,7 +3542,6 @@
   "caution": "Self-hosting the full server platform requires managing backend infrastructure alongside the client SDK.",
   "alts": [
    "Arize-ai/phoenix",
-   "comet-ml/opik",
    "langfuse/langfuse"
   ],
   "packages": [
@@ -3633,8 +3609,7 @@
   "caution": "Complex graph configurations and community custom nodes can sometimes break or cause compatibility issues during weekly updates.",
   "alts": [
    "AUTOMATIC1111/stable-diffusion-webui",
-   "lllyasviel/Fooocus",
-   "Comfy-Org/ComfyUI"
+   "lllyasviel/Fooocus"
   ],
   "packages": [],
   "repo": "Comfy-Org/ComfyUI",
@@ -3733,7 +3708,6 @@
   "start": "pip install -U openai-whisper",
   "caution": "Requires external dependencies like ffmpeg and Python packaging tools; the repository has not received updates recently.",
   "alts": [
-   "openai/whisper",
    "hacksider/Deep-Live-Cam"
   ],
   "packages": [
@@ -3744,6 +3718,7 @@
   "source": "curated",
   "plain": "A free AI from OpenAI that turns spoken audio into text in many languages.",
   "tags": [
+   "meetings",
    "media",
    "private"
   ],
@@ -3779,6 +3754,7 @@
   "source": "curated",
   "plain": "A faster, lighter version of OpenAI's Whisper that turns speech recordings into text on your computer.",
   "tags": [
+   "meetings",
    "media",
    "private"
   ],
@@ -3837,10 +3813,7 @@
   "level": "setup",
   "start": "git clone --depth 1 https://github.com/hacksider/Deep-Live-Cam.git",
   "caution": "Requires technical skills for manual installation, or downloading pre-built packages. The project includes content checks for inappropriate media, and users are expected to comply with legal and ethical standards regarding consent and deepfakes.",
-  "alts": [
-   "hacksider/Deep-Live-Cam",
-   "hacksider/Deep-Live-Cam"
-  ],
+  "alts": [],
   "packages": [],
   "repo": "hacksider/Deep-Live-Cam",
   "at": "2026-09-29",
@@ -3941,7 +3914,7 @@
   "repo": "KKKKhazix/AIHOT",
   "at": "2026-09-29",
   "source": "trending",
-  "plain": "A self-hosted website that collects AI news, lets AI pick the important stories, and writes daily briefings.",
+  "plain": "A website you run yourself that collects AI news, lets AI pick the important stories, and writes daily briefings.",
   "tags": [
    "research",
    "automate"
@@ -4506,7 +4479,7 @@
   "repo": "LockedinLabs-AI/agent-console",
   "at": "2026-09-29",
   "source": "trending",
-  "plain": "A local dashboard that shows how many tokens and how much money your Claude Code and Codex sessions use.",
+  "plain": "A dashboard on your computer that shows how much your Claude Code and Codex sessions use and cost.",
   "tags": [
    "save",
    "monitor"
@@ -5217,7 +5190,7 @@
   "packages": [
    "octop"
   ],
-  "plain": "A private, self-hosted AI assistant with multiple specialized agents, team collaboration features, and messaging app integrations.",
+  "plain": "A private AI assistant you run on your own servers, with several specialized helpers, team features and messaging app links.",
   "tags": [
    "private",
    "connect",
@@ -6108,7 +6081,7 @@
   "packages": [
    "glyd"
   ],
-  "plain": "Compresses AI model weights in GPU memory bit-for-bit to use 33% less memory.",
+  "plain": "Squeezes AI models in graphics card memory without losing any detail, using about a third less memory.",
   "tags": [
    "private",
    "code",
@@ -6175,7 +6148,7 @@
    "langgenius/dify"
   ],
   "packages": [],
-  "plain": "A self-hosted workspace and admin panel that packages AI agents and document search for enterprise teams.",
+  "plain": "A workspace and admin panel you run on your own servers that bundles AI helpers and document search for company teams.",
   "tags": [
    "knowledge",
    "automate",
@@ -6512,7 +6485,7 @@
    "Aider-AI/aider"
   ],
   "packages": [],
-  "plain": "A self-hosted coding and terminal assistant driven by Google Gemini that runs on your local machine.",
+  "plain": "A coding and terminal assistant powered by Google Gemini that runs on your own computer.",
   "tags": [
    "code",
    "automate",
@@ -6981,9 +6954,7 @@
   "level": "easy",
   "start": "",
   "caution": "",
-  "alts": [
-   "yibie/awesome-jev"
-  ],
+  "alts": [],
   "packages": [],
   "plain": "A collection of links to tools, code projects, and discussions using Jev for typed decisions.",
   "tags": [
@@ -7017,7 +6988,7 @@
    "crewAIInc/crewAI"
   ],
   "packages": [],
-  "plain": "A complete, structured Chinese tutorial and learning path for developers entering AI and LLM engineering.",
+  "plain": "A complete, step-by-step Chinese course for programmers who want to build with AI language models.",
   "tags": [
    "code",
    "knowledge"
@@ -7106,7 +7077,7 @@
    "modelcontextprotocol/python-sdk"
   ],
   "packages": [],
-  "plain": "A directory of online MCP endpoints you can plug straight into your AI client via URL.",
+  "plain": "A list of online add-ons (MCP servers) you can connect to your AI app just by pasting a web address.",
   "tags": [
    "connect",
    "supercharge"
@@ -8400,7 +8371,7 @@
   "caution": "Reuses consumer or third-party API keys and providers which may risk your account or violate provider terms.",
   "alts": [],
   "packages": [],
-  "plain": "A feature-rich Android chat app that runs character cards, saves token costs, and handles memory.",
+  "plain": "A feature-rich Android chat app for role-play characters that keeps AI costs down and remembers past chats.",
   "tags": [
    "apps",
    "connect"
@@ -8433,7 +8404,7 @@
    "anthropics/claude-code"
   ],
   "packages": [],
-  "plain": "Run Claude Code and Codex in your browser via a self-hosted server with file editors, terminals, and session management.",
+  "plain": "Use Claude Code and Codex from your web browser through a server you run yourself, with file editors and terminals.",
   "tags": [
    "code",
    "connect",
@@ -8694,7 +8665,7 @@
   "caution": "Using free model pool plugins that bypass authentication or mirror public gateway endpoints may violate upstream terms of service and risk unexpected service blocks.",
   "alts": [],
   "packages": [],
-  "plain": "A dsh plugin providing free access to multiple frontier AI models without accounts or API keys.",
+  "plain": "A plugin for the dsh tool that gives free access to several top AI models without accounts or paid access keys.",
   "tags": [
    "code",
    "save",
@@ -8827,7 +8798,7 @@
   "packages": [
    "jev-browser"
   ],
-  "plain": "Let your AI assistant browse web pages and fill out forms reliably while using fewer tokens.",
+  "plain": "Lets your AI assistant browse web pages and fill out forms reliably while reading less text, so it costs less.",
   "tags": [
    "automate",
    "connect",
@@ -8895,7 +8866,7 @@
    "microsoft/graphrag"
   ],
   "packages": [],
-  "plain": "Search through massive PDF documents without using a vector database or embeddings.",
+  "plain": "Search through huge PDF documents without setting up a special AI search database first.",
   "tags": [
    "knowledge",
    "research",
@@ -8929,7 +8900,7 @@
    "ollama/ollama"
   ],
   "packages": [],
-  "plain": "Run a fast 320B AI model locally on four CMP 170HX GPUs through an OpenAI-compatible API.",
+  "plain": "Step-by-step guide to run a fast 320B AI model on four CMP 170HX graphics cards and use it from other AI apps.",
   "tags": [
    "private",
    "save",
@@ -9942,7 +9913,7 @@
   "packages": [
    "mu-agent"
   ],
-  "plain": "A smart coding assistant that offloads routine checks to a tiny judge model to save time and tokens.",
+  "plain": "A coding assistant that hands routine checks to a tiny second model to save time and money.",
   "tags": [
    "code",
    "supercharge",
@@ -10642,7 +10613,7 @@
    "modelcontextprotocol/python-sdk"
   ],
   "packages": [],
-  "plain": "A free desktop application that groups your AI's tool steps together to save money on tokens.",
+  "plain": "A free desktop app that groups your AI's tool steps together so it uses less text and costs less.",
   "tags": [
    "save",
    "supercharge",
@@ -11158,7 +11129,7 @@
   "packages": [
    "billion-context"
   ],
-  "plain": "Compresses conversation histories on the fly so coding agents can run longer sessions on fewer tokens.",
+  "plain": "Shrinks long chat histories as it goes, so AI coding helpers can work longer for less money.",
   "tags": [
    "save",
    "code",
@@ -11262,7 +11233,7 @@
    "punkpeye/awesome-remote-mcp-servers"
   ],
   "packages": [],
-  "plain": "Connects your local QQ and WeChat chat history to AI assistants via MCP.",
+  "plain": "Connects your QQ and WeChat chat history on your computer to AI assistants, through an MCP add-on (a standard plug for AI apps).",
   "tags": [
    "connect",
    "supercharge",
@@ -11509,7 +11480,7 @@
    "musistudio/claude-code-router"
   ],
   "packages": [],
-  "plain": "Turn Tencent WorkBuddy accounts into standard AI API endpoints for your coding tools.",
+  "plain": "Turns Tencent WorkBuddy accounts into a standard connection your AI coding tools can use.",
   "tags": [
    "save",
    "connect",
@@ -11543,7 +11514,7 @@
    "docling-project/docling"
   ],
   "packages": [],
-  "plain": "A self-hosted search and knowledge graph engine that lets AI agents query your private documents.",
+  "plain": "A search engine you run on your own server that lets AI helpers look things up in your private documents.",
   "tags": [
    "knowledge",
    "supercharge",
@@ -11819,7 +11790,7 @@
    "dsh-sieve",
    "dsh-sieve-web"
   ],
-  "plain": "A plugin for AI coding agents that shrinks large build logs and hidden instruction text to save token costs.",
+  "plain": "A plugin for AI coding helpers that shrinks long build logs and hidden instructions, so they cost less to read.",
   "tags": [
    "save",
    "code",
@@ -12361,7 +12332,7 @@
    "router-for-me/CLIProxyAPI"
   ],
   "packages": [],
-  "plain": "A tool to benchmark AI API providers and quickly switch between them in your coding assistants.",
+  "plain": "A tool to test AI providers against each other and quickly switch between them in your coding assistant.",
   "tags": [
    "code",
    "save",
@@ -12522,7 +12493,7 @@
    "browser-use/browser-use"
   ],
   "packages": [],
-  "plain": "An autonomous multi-agent system for running penetration testing tasks inside an isolated Docker sandbox.",
+  "plain": "A team of AI helpers that runs security tests on systems (finding ways in, like a hacker would) inside a sealed-off sandbox.",
   "tags": [
    "code",
    "automate",
@@ -12591,7 +12562,7 @@
    "PrefectHQ/fastmcp"
   ],
   "packages": [],
-  "plain": "A self-hosted newsletter tool that lets you or an AI agent write, manage, and send emails cheaply.",
+  "plain": "A newsletter tool you run on your own server that lets you or an AI helper write, manage and send emails cheaply.",
   "tags": [
    "automate",
    "connect",
@@ -12659,7 +12630,7 @@
    "vllm-project/vllm"
   ],
   "packages": [],
-  "plain": "An inference engine built for AMD Strix Halo to run large models locally.",
+  "plain": "A program that runs large AI models on your own computer, made for AMD Strix Halo chips.",
   "tags": [
    "private",
    "code"
@@ -12693,7 +12664,7 @@
   "packages": [
    "rich"
   ],
-  "plain": "See token usage and costs for local AI coding tools in your terminal or a web dashboard.",
+  "plain": "See how much your AI coding tools on your computer use and cost, in the terminal or a web page.",
   "tags": [
    "save",
    "monitor",
@@ -12762,7 +12733,7 @@
    "infiniflow/ragflow"
   ],
   "packages": [],
-  "plain": "A fast local search engine that helps AI coding agents find code and documents using significantly fewer tokens.",
+  "plain": "A fast search tool on your computer that helps AI coding helpers find code and documents while reading much less text.",
   "tags": [
    "knowledge",
    "code",
@@ -12869,7 +12840,7 @@
   "packages": [
    "jevcrawl"
   ],
-  "plain": "An AI-powered web crawler that digs through multi-page websites to find exact answers without wasting tokens.",
+  "plain": "An AI web crawler that digs through websites page by page to find exact answers without reading more than it needs.",
   "tags": [
    "research",
    "supercharge",

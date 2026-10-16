@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-16",
  "metrics": [
   {
    "id": "aa",
@@ -347,6 +347,18 @@
     "note": "gpt-6-luna-max, text overall (style control), rank 86, 4,792 votes, snapshot read 2026-09-29"
    }
   },
+  "argon": {
+   "aa": {
+    "v": 53,
+    "src": "https://artificialanalysis.ai/models/gemini-4-argon",
+    "note": "\"Gemini 4 Argon (High)\", the only variant scored so far; other tests not published yet, read 2026-10-16"
+   },
+   "arc": {
+    "v": 91.2,
+    "src": "https://arcprize.org/results/google-gemini-4-argon",
+    "note": "ARC-AGI-2 Semi-Private, High reasoning (the Verified table shows 91.3%), read 2026-10-16"
+   }
+  },
   "gpro": {
    "aa": {
     "v": 29.7,
@@ -505,49 +517,9 @@
   },
   "qwen": {
    "aa": {
-    "v": 45.4,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "agents": {
-    "v": 56.2,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "tb40": {
-    "v": 38.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "longctx": {
-    "v": 80.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "hle": {
-    "v": 43.1,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "science": {
-    "v": 17.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "scicode": {
-    "v": 52.1,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "mmmu": {
-    "v": 82.8,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Qwen3.8 Max (0902)\" (only/highest variant AA lists)"
-   },
-   "arena": {
-    "v": 1479,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "qwen3.8-max, text overall (style control), rank 25, snapshot read 2026-09-29"
+    "v": 40,
+    "src": "https://artificialanalysis.ai/models/qwen3-8-2-4t-a95b",
+    "note": "\"Qwen3.8 2.4T A95B\", the open-weight model; other tests not published yet, read 2026-10-16. (The closed Qwen3.8 Max scores 45.)"
    }
   },
   "glm": {
@@ -738,16 +710,16 @@
   "qwen": {
    "in": 2,
    "out": 6,
-   "note": "Qwen3.8 Max (0902) via OpenRouter"
+   "note": "Qwen3.8 2.4T A95B via OpenRouter"
   },
   "glm": {
-   "in": 1.4,
-   "out": 4.4,
+   "in": 0.08,
+   "out": 4.8,
    "note": "via OpenRouter"
   },
   "deepseek": {
-   "in": 0.48,
-   "out": 4.2,
+   "in": 1.32,
+   "out": 3.96,
    "note": "V4 Pro 0813 via OpenRouter"
   },
   "kimi": {
