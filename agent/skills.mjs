@@ -23,12 +23,13 @@ const SKIP = /(^|\/)(node_modules|\.git|test|tests|fixtures|examples?|templates?
 
 const GOALS = {
   docs: /\b(docx|word|excel|xlsx|spreadsheet|pptx|powerpoint|slides?|presentation|pdf|document|report|writing|write|copy|email|blog|article|translate|proofread|memo)\b/i,
-  media: /\b(image|video|audio|design|logo|poster|art|animation|gif|diagram|chart|visual|brand|theme|ui|ux|frontend|css|figma|canvas|music|voice)\b/i,
+  // bare "design" is not media: "a plan or design" is about thinking, not pictures
+  media: /\b(image|video|audio|(?:graphic|visual|web|ui|logo|brand|slide) design|design system|logo|poster|art|animation|gif|diagram|chart|visual|brand|theme|ui|ux|frontend|css|figma|canvas|music|voice)\b/i,
   apps: /\b(website|web app|landing page|react|next\.?js|frontend|deploy|vercel|html)\b/i,
   code: /\b(code|coding|debug|test|testing|refactor|git|commit|pull request|review|ci|api|typescript|python|sql|bug|repository|codebase)\b/i,
   research: /\b(research|search|sources?|citations?|literature|analysis|analy[sz]e|market|competitor)\b/i,
   automate: /\b(automat|workflow|schedule|pipeline|scrap|crawl|browser)\b/i,
-  connect: /\b(mcp|connector|integration|slack|notion|jira|github)\b/i,
+  connect: /\b(mcp|connector|slack|notion|jira|github)\b/i, // "integration tests" is not connecting apps
   monitor: /\b(security|audit|threat|vulnerab|monitor|observab|eval)\b/i,
 };
 
@@ -106,6 +107,25 @@ const merged = skills.filter((s) => !seen.has(s.key) && seen.add(s.key)).map((s)
   if (p?.plain && p.desc === s.desc) return { ...s, plain: p.plain, useFor: p.useFor, example: p.example };
   return s;
 });
+
+// how many people installed each skill, from skills.sh (the open skills directory): the honest popularity signal,
+// because GitHub stars belong to the whole collection, not to one skill
+const count = (t) => { const m = String(t).replace(/,/g, "").match(/([\d.]+)\s*([KM]?)/i); return m ? Math.round(+m[1] * ({ K: 1e3, M: 1e6 }[m[2].toUpperCase()] || 1)) : 0; };
+const page = (u) => fetch(u, { headers: { "user-agent": H["user-agent"] }, redirect: "follow" }).then((r) => (r.ok ? r.text() : "")).catch(() => "");
+const installs = new Map();
+const home = (await page("https://www.skills.sh/")).replace(/\\"/g, '"'); // exact numbers for the top 600
+for (const m of home.matchAll(/"source":"([^"]+)","skillId":"([^"]+)","name":"[^"]+","installs":(\d+)/g)) installs.set(`${m[1]}/${m[2]}`.toLowerCase(), +m[3]);
+for (const repo of SOURCES) { // rounded numbers ("88.3K") for every skill in our collections
+  const html = await page(`https://www.skills.sh/${repo}`);
+  const re = new RegExp(`href="/${repo.replace(/[.]/g, "\\.")}/([^"/]+)"[\\s\\S]{0,500}?font-mono text-sm text-foreground">([\\d.,]+\\s*[KM]?)<`, "gi");
+  for (const m of html.matchAll(re)) { const k = `${repo}/${m[1]}`.toLowerCase(); if (!installs.has(k)) installs.set(k, count(m[2])); }
+}
+for (const s of merged) {
+  const n = installs.get(`${s.repo}/${s.name}`.toLowerCase()) ?? installs.get(`${s.repo}/${(s.path || "").split("/").pop()}`.toLowerCase());
+  if (n) s.installs = n;
+  else if (!installs.size && prevBy[s.key]?.installs) s.installs = prevBy[s.key].installs; // skills.sh down: keep the last numbers
+}
+console.log(`skills: install counts for ${merged.filter((s) => s.installs).length} of ${merged.length} (skills.sh)`);
 
 // plain-English rewrite, in batches, only for skills that do not have one yet
 const LIMIT = Number(process.env.SKILLS_LLM_LIMIT ?? 120);

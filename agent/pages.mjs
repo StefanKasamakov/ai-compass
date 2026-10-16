@@ -103,7 +103,7 @@ function page(x) {
       ${link ? `<a class="btn${x.site ? "" : " primary"}" href="${esc(link)}" target="_blank" rel="noopener">${x.kind === "app" ? "Source" : "Get it"}</a>` : ""}
       <span id="toolVote"></span>
     </div>
-    <p class="tool-facts">${x.level && LEVEL[x.level] ? `<span>${esc(LEVEL[x.level][0])}</span>` : ""}${x.stars >= 1000 ? `<span>${x.stars >= 50000 ? "Very popular" : x.stars >= 10000 ? "Popular" : "Well known"}</span>` : ""}${x.installs ? `<span>${x.installs.toLocaleString("en")} installs a month</span>` : ""}${x.price ? `<span>${x.free ? "Free plan" : "Paid"}</span>` : ""}</p>
+    <p class="tool-facts">${x.level && LEVEL[x.level] ? `<span>${esc(LEVEL[x.level][0])}</span>` : ""}${x.stars >= 1000 ? `<span>${x.stars >= 50000 ? "Very popular" : x.stars >= 10000 ? "Popular" : "Well known"}</span>` : ""}${x.installs ? `<span>${x.kind === "skill" ? `Installed ${x.installs.toLocaleString("en")} times` : `${x.installs.toLocaleString("en")} installs a month`}</span>` : ""}${x.price ? `<span>${x.free ? "Free plan" : "Paid"}</span>` : ""}</p>
   </div></header>
 
   <section><div class="wrap article">

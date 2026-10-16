@@ -457,8 +457,12 @@ const pages = {
     $("#skillCount").textContent = skills.length;
     const goals = tags.goals.map((g) => [g, skills.filter((x) => x.tags.includes(g.id)).length]).filter(([, n]) => n > 2).sort((a, b) => b[1] - a[1]);
     $("#skillGoals").innerHTML = goals.map(([g, n]) => `<a class="goal-chip" href="explore.html?type=skill&goal=${g.id}">${icon(g.icon)}<span>${esc(g.label)}</span><small>${n}</small></a>`).join("");
-    $("#skillSources").innerHTML = skillSources.filter((s) => s.count).sort((a, b) => b.stars - a.stars).map((s) => `<a class="card link src-card" href="explore.html?type=skill&q=${encodeURIComponent(s.repo.split("/")[1])}">
-      ${avatar(s.repo, 40)}<div><h3>${esc(s.repo.split("/")[1])}</h3><small class="muted mono">by ${esc(s.by)} · ${s.count} skills · ${icon("star")}${num(s.stars)}</small></div></a>`).join("");
+    const top = skills.filter((x) => x.installs).sort((a, b) => b.installs - a.installs).slice(0, 8);
+    $("#popSkills").innerHTML = top.map((x) => toolCard(x, tags)).join("");
+    $("#popSkillsWrap").hidden = !top.length;
+    const inst = (repo) => skills.filter((x) => x.repo === repo).reduce((n, x) => n + x.installs, 0);
+    $("#skillSources").innerHTML = skillSources.filter((s) => s.count).sort((a, b) => inst(b.repo) - inst(a.repo) || b.stars - a.stars).map((s) => `<a class="card link src-card" href="explore.html?type=skill&q=${encodeURIComponent(s.repo.split("/")[1])}">
+      ${avatar(s.repo, 40)}<div><h3>${esc(s.repo.split("/")[1])}</h3><small class="muted">by ${esc(s.by)} · ${s.count} skills${inst(s.repo) ? ` · ${num(inst(s.repo))} installs` : ""}</small></div></a>`).join("");
   },
   async mods() {
     const [{ all, tags, tips, mods }] = await Promise.all([catalog(), votes()]);
@@ -722,7 +726,7 @@ const fromRepo = (e, s, d) => ({ key: e.repo, kind: "repo", name: e.repo.split("
 // one skill = one SKILL.md inside a collection we trust. Everything shown comes from that file and its folder.
 const firstSentence = (t = "") => { const m = t.match(/^(.{40,190}?[.!?])(\s|$)/); return m ? m[1] : t.length > 190 ? t.slice(0, 187) + "…" : t; };
 const fromSkill = (k, src) => ({ key: k.key, kind: "skill", name: k.name, owner: k.repo.split("/")[1], repo: k.repo, path: k.path, plain: k.plain || firstSentence(k.desc), what: k.desc, caution: "",
-  useFor: k.useFor || [], tags: k.tags?.length ? k.tags : ["supercharge"], level: k.level || "setup", alts: [], stars: 0, week: 0, installs: 0, updated: src?.pushed, license: src?.license,
+  useFor: k.useFor || [], tags: k.tags?.length ? k.tags : ["supercharge"], level: k.level || "setup", alts: [], stars: 0, week: 0, installs: k.installs || 0, updated: src?.pushed, license: src?.license,
   checked: !!k.checked, scripts: k.scripts, example: k.example, fromPack: true,
   steps: ["Open the skill's folder on GitHub and skim `SKILL.md`, so you know what it will do.",
     "Add the folder to your assistant. Claude Code: copy it into `~/.claude/skills/`. Codex: into `.agents/skills/`. Claude app: zip the folder and upload it under Settings, Capabilities, Skills.",
@@ -743,7 +747,7 @@ function toolCard(x, tags) {
     <span class="tool-head">${iconFor(x)}<span class="tool-name"><b>${esc(x.name)}</b><small>${esc(KIND[x.kind])}${x.owner ? ` · ${x.fromPack ? "from " : ""}${esc(x.owner)}` : ""}</small></span></span>
     <span class="tool-plain">${esc(x.plain || "")}</span>
     <span class="tool-foot">${x.kind === "mod" ? `<span class="tag ${REACH[x.reach]?.[0] === "ok" ? "ok" : "warn"}">${esc(REACH[x.reach]?.[1] || "")}</span>${MOD_CAT[x.cat] ? `<span class="tag">${esc(MOD_CAT[x.cat])}</span>` : ""}` : `${x.level ? `<span class="tag ${LEVEL[x.level]?.[1] || ""}">${esc(LEVEL[x.level]?.[0] || x.level)}</span>` : ""}${x.tags.slice(0, 2).map((t) => goals[t] ? `<span class="tag">${esc(goals[t].label)}</span>` : "").join("")}`}
-      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${popular(x.stars) ? `${icon("star")}${popular(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}/mo` : ""}`}</span></span>
+      <span class="tool-stats">${x.kind === "app" ? esc(x.free ? "Free plan" : "Paid") : `${x.checked ? `<span class="chk" title="Checked by a person">${icon("check")}</span>` : ""}${popular(x.stars) ? `${icon("star")}${popular(x.stars)}` : ""}${x.installs ? ` ${icon("trend")}${num(x.installs)}${x.kind === "skill" ? " installs" : "/mo"}` : ""}`}</span></span>
   </a>`;
 }
 
@@ -795,7 +799,7 @@ function toolDetail(x, all, tags, tips) {
       <a class="btn" href="tools/${slugOf(x)}.html">${icon("external")}Full page</a>
       <a class="btn" href="contribute.html?kind=tip&target=${encodeURIComponent(x.key)}">${icon("chat")}Share a tip</a>
       <a class="btn" href="contribute.html?kind=fix&target=${encodeURIComponent(x.key)}">${icon("alert")}Report a mistake</a>
-      <span class="muted" style="font-size:.8rem">${[popular(x.stars), x.installs ? `${num(x.installs)} installs a month` : "", x.updated ? `updated ${ago(x.updated)}` : "", x.checkedAt ? `description checked ${x.checkedAt}` : ""].filter(Boolean).join(" · ")}</span></div>`;
+      <span class="muted" style="font-size:.8rem">${[popular(x.stars), x.installs ? (x.kind === "skill" ? `installed ${num(x.installs)} times` : `${num(x.installs)} installs a month`) : "", x.updated ? `updated ${ago(x.updated)}` : "", x.checkedAt ? `description checked ${x.checkedAt}` : ""].filter(Boolean).join(" · ")}</span></div>`;
 }
 
 // The tool details dialog: any page with #toolDlg can open a tool in place
@@ -819,7 +823,10 @@ function toolDialog(all, tags, tips) {
 pages.explore = async () => {
   const [{ all, tags, tips }] = await Promise.all([catalog(), votes()]);
   const params = new URLSearchParams(location.search);
-  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", price: params.get("price") || "all", sort: "easy", shown: 24 };
+  const st = { goal: params.get("goal") || "all", level: params.get("level") || "all", type: params.get("type") || "all", price: params.get("price") || "all", sort: params.get("sort") || (params.get("type") === "skill" ? "popular" : "easy"), shown: 24 };
+  // skills have no stars of their own (those belong to the collection): use how often they were installed.
+  // ponytail: rough 10 installs = 1 star when skills and other tools are mixed in one list
+  const pop = (x) => (x.kind === "skill" ? x.installs / 10 : x.stars);
   const q = $("#repoQ"); q.value = params.get("q") || "";
   const TYPES = [["all", "Everything"], ["app", "Ready-made apps"], ["repo", "Open-source projects"], ["skill", "Skills"], ["mod", "Claude Code mods"], ["mcp", "Connectors (MCP)"]];
   const isFree = (x) => x.kind !== "app" || x.free; // open-source projects, skills and mods cost nothing to get
@@ -837,7 +844,7 @@ pages.explore = async () => {
     const list = pool.filter(matches);
     // with a search, "Easiest first" keeps relevance order inside each level (sort is stable)
     if (q.value.trim() && st.sort === "easy") list.sort((a, b) => (LV[a.level] ?? 1) - (LV[b.level] ?? 1) || (b.kind === "app") - (a.kind === "app"));
-    else list.sort((a, b) => (st.sort === "rising" ? b.week - a.week : st.sort === "installs" ? b.installs - a.installs : st.sort === "popular" ? b.stars - a.stars
+    else list.sort((a, b) => (st.sort === "rising" ? b.week - a.week : st.sort === "installs" ? b.installs - a.installs : st.sort === "popular" ? (a.kind === "collection") - (b.kind === "collection") || pop(b) - pop(a)
       : (LV[a.level] ?? 1) - (LV[b.level] ?? 1) || (b.kind === "app") - (a.kind === "app") || b.stars - a.stars));
     const goal = tags.goals.find((x) => x.id === st.goal);
     $("#catWhat").innerHTML = goal ? `<div class="callout ok" style="margin-bottom:1.2rem">${icon(goal.icon)}<div><b>${esc(goal.label)}.</b> ${esc(goal.hint)}. ${list.length} tools.</div></div>` : `<p class="muted" style="margin:0 0 1rem">${list.length} tools</p>`;
@@ -849,9 +856,9 @@ pages.explore = async () => {
   const counts = (id) => all.filter((x) => x.tags.includes(id)).length;
   dropdown($("#goalPick"), "I want to", [["all", "Anything"], ...tags.goals.map((x) => [x.id, `${x.label} (${counts(x.id)})`])], (v) => { st.goal = v; st.shown = 24; draw(); }, st.goal);
   dropdown($("#levelPick"), "Skill level", [["all", "Any level"], ...tags.levels.map((l) => [l.id, l.label])], (v) => { st.level = v; st.shown = 24; draw(); }, st.level);
-  dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; st.shown = 24; draw(); }, st.type);
+  dropdown($("#typePick"), "Show", TYPES, (v) => { st.type = v; st.shown = 24; if (v === "skill" && st.sort === "easy") { st.sort = "popular"; $("#sortPick select").value = "popular"; } draw(); }, st.type);
   dropdown($("#pricePick"), "Price", [["all", "Any price"], ["free", "Free or free plan"], ["paid", "Paid only"]], (v) => { st.price = v; st.shown = 24; draw(); }, st.price);
-  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most popular"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; st.shown = 24; draw(); }, "easy");
+  dropdown($("#sortPick"), "Sort", [["easy", "Easiest first"], ["popular", "Most popular"], ["rising", "Rising"], ["installs", "Most installed"]], (v) => { st.sort = v; st.shown = 24; draw(); }, st.sort);
   q.oninput = () => { st.shown = 24; draw(); };
 
   const open = toolDialog(all, tags, tips);

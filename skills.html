@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=42">
+<link rel="stylesheet" href="assets/site.css?v=44">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem("theme")||"dark"}catch(e){}</script>
 </head>
 <body data-page="skills">
@@ -34,8 +34,11 @@
   </div></header>
 
   <section id="directory"><div class="wrap">
-    <div class="spread"><div><div class="kicker">The directory</div><h2><span id="skillCount">Hundreds of</span> skills, each explained</h2></div><a class="btn primary" href="explore.html?type=skill"><i data-i="search"></i>Browse all skills</a></div>
+    <div class="spread"><div><div class="kicker">The directory</div><h2><span id="skillCount">Hundreds of</span> skills, each explained</h2></div><a class="btn primary" href="explore.html?type=skill&sort=popular"><i data-i="search"></i>Browse all skills</a></div>
     <p class="lead">Taken one by one from the collections people trust most. For every skill you see what it does, where it comes from, whether it only contains instructions or also runs scripts, and how to add it.</p>
+    <div id="popSkillsWrap" hidden><p class="field-label" style="margin-top:1.6rem">Most popular skills</p>
+    <div class="grid" id="popSkills"></div>
+    <p class="muted" style="font-size:.85rem;margin-top:.6rem">Ranked by how many times people installed them, from <a href="https://skills.sh" target="_blank" rel="noopener">skills.sh</a>. <a href="explore.html?type=skill">See all skills, most popular first</a></p></div>
     <p class="field-label" style="margin-top:1.6rem">Skills by what you want to do</p>
     <div class="goal-chips" id="skillGoals"></div>
     <p class="field-label" style="margin-top:1.2rem">The collections they come from</p>
@@ -111,6 +114,6 @@
   </div></section>
 
 </main>
-<script src="assets/site.js?v=42" defer></script>
+<script src="assets/site.js?v=44" defer></script>
 </body>
 </html>
