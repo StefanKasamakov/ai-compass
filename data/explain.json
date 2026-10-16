@@ -13062,5 +13062,105 @@
   "repo": "MadsLorentzen/ai-job-search",
   "at": "2026-10-16",
   "source": "trending"
+ },
+ "feder-cr/git-ai": {
+  "cat": "coding",
+  "kind": "Agent Git server",
+  "what": "An open-source Git server and tool designed for hundreds of AI coding agents to read, write, and land code changes concurrently.",
+  "why": "Standard Git creates bottlenecks for coding agents due to full repository clones and slow merge queues. Reach for this when managing fleets of coding agents working simultaneously on the same branches.",
+  "level": "dev",
+  "start": "`git clone https://github.com/feder-cr/git-ai.git`",
+  "caution": "Early v0.1.0 release with an evolving interface, complex build dependencies (Go 1.26, Meson, Ninja, C toolchain), and missing features like pack garbage collection.",
+  "alts": [
+   "feder-cr/open_scion",
+   "anthropics/claude-code",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A special code-storage server that lets dozens of automated programming assistants save code changes together without crashing.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Coordinate hundreds of coding agents editing the same branch concurrently",
+   "Download only the exact files an automated worker needs",
+   "Resolve code conflicts automatically on the server during branch updates"
+  ],
+  "steps": [
+   "Clone the repository and compile the binaries using `make build`.",
+   "Test a local server and simulated agents with `examples/graft/quickstart.sh`.",
+   "Configure storage settings and launch the server using `_build/bin/gitaly serve config.toml`."
+  ],
+  "repo": "feder-cr/git-ai",
+  "at": "2026-10-16",
+  "source": "trending"
+ },
+ "davidondrej/cloudroom-core": {
+  "cat": "harness",
+  "kind": "Agent cloud runtime",
+  "what": "An open-source Rust service that runs coding agents like Claude Code, Codex, and Pi on your own Linux server.",
+  "why": "Running coding agents locally can drain your laptop battery and stop when your machine goes to sleep. Reach for this to run agent tasks continuously in an isolated remote sandbox.",
+  "level": "setup",
+  "start": "cargo build --locked --release",
+  "caution": "Agents use your personal subscription logins, which may violate AI provider terms and risk account suspension. Agents also run commands without approval prompts.",
+  "alts": [
+   "anthropics/claude-code",
+   "siteboon/claudecodeui",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A program that lets AI coding assistants run continuously on a remote computer instead of your personal laptop.",
+  "tags": [
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Run Claude Code and Codex tasks on a remote Linux server",
+   "Persist agent conversations and execution logs in a PostgreSQL database",
+   "Control background coding agents from a Mac desktop application"
+  ],
+  "steps": [
+   "Set up a dedicated PostgreSQL database and apply the provided SQL schemas.",
+   "Build the binary on Ubuntu 24.04 with `cargo build --locked --release` or download a release binary.",
+   "Connect your desktop app using your server URL and secret authentication token."
+  ],
+  "repo": "davidondrej/cloudroom-core",
+  "at": "2026-10-16",
+  "source": "trending"
+ },
+ "hanzohanzhe/Grandet": {
+  "cat": "tokens",
+  "kind": "API price comparison skill",
+  "what": "Finds the lowest priced official and third-party API providers for any model and connects them directly to your coding tools.",
+  "why": "Model pricing varies widely across official hosts and relay providers, making cost optimization tedious. Reach for this to find the best rates or free credit tiers and automatically update your coding agent settings.",
+  "level": "easy",
+  "start": "Install Grandet Skill for me: https://grandet.ai/download.md",
+  "caution": "Third-party relay providers listed in the directory may carry uptime, privacy, or stability risks compared to official hosts.",
+  "alts": [
+   "ccusage/ccusage",
+   "BerriAI/litellm",
+   "songquanpeng/one-api"
+  ],
+  "packages": [],
+  "plain": "An assistant skill that finds the cheapest places to buy access to AI models and sets them up.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Compare prices across official and third-party model providers",
+   "Find free trial credits and tiers that need no credit card",
+   "Configure coding agents to switch to cheaper providers automatically"
+  ],
+  "steps": [
+   "Tell your agent: Install Grandet Skill for me: https://grandet.ai/download.md",
+   "Ask your agent to find the cheapest provider for your desired model",
+   "Say connect it to let the tool safely update your app configuration"
+  ],
+  "repo": "hanzohanzhe/Grandet",
+  "at": "2026-10-16",
+  "source": "trending"
  }
 }
