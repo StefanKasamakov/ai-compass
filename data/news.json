@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T21:17:49.786Z",
+ "updated": "2026-10-17T04:36:27.902Z",
  "items": [
   {
    "source": "GitHub release",
@@ -15,6 +15,50 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/641b684b9ce7bce5b2dfe5e170f4946863eec5c5feecd047d2bb35fc8858c8e1/anthropics/claude-code/releases/tag/v2.1.302"
+  },
+  {
+   "source": "Hacker News",
+   "title": "How the Claude Code team does code review",
+   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+   "date": "2026-10-16T19:04:47Z",
+   "discuss": "https://news.ycombinator.com/item?id=50122951",
+   "summary": "Anthropic engineers shared their internal workflow and practices for conducting code reviews using Claude Code.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.dev/blog/solving-code-review-at-anthropic/og.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+   "url": "https://github.com/cobanov/PS5LM",
+   "date": "2026-10-16T18:32:35Z",
+   "discuss": "https://news.ycombinator.com/item?id=50122431",
+   "summary": "Developers successfully ported llama.cpp to jailbroken PS5 consoles, allowing local execution of GGUF quantized models on gaming hardware.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/17b738f049c093124bdd4ceb7fc8e263b472c5af34b45279533e7892e6715af2/cobanov/PS5LM"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: Gemini 4 Argon plays StarCraft",
+   "url": "https://starskirmish.com/bench/v0-2/",
+   "date": "2026-10-16T14:18:44Z",
+   "discuss": "https://news.ycombinator.com/item?id=50118688",
+   "summary": "A demonstration showing Google DeepMind's Gemini 4 Argon playing StarCraft via computer-use capabilities.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://starskirmish.com/assets/og.png"
   },
   {
    "source": "Latent Space",
@@ -45,6 +89,22 @@
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/68d2fec8856b85d927e44d32/x0aObe_0mduBjWFuKBGoV.png",
    "audience": "dev"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+   "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+   "date": "2026-10-16T00:00:00.000Z",
+   "summary": "Stack Overflow launched an agent integration and ChatGPT plugin built with Codex to streamline developer queries.",
+   "tags": [
+    "agents",
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4HTc2pk7XGFhzDU8RX0Ivg/ff2b922fa1914350c9d800da622ebe04/stack-overflow-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Hugging Face",
@@ -2144,61 +2204,6 @@
    "big": false,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/September_AI_Recap_hero.width-1300.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Inside-Out AI: Rebuilding Airbnb Behind the Scenes and Across the Guest Experience",
-   "url": "https://www.latent.space/p/airbnb",
-   "date": "2026-10-02T14:04:49.000Z",
-   "summary": "Ahmad Al-Dahle discusses how Airbnb is rebuilding its internal development and guest experiences with AI.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!-kaR!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1ac92b22-c007-487c-b80f-f031f36596db_2560x1440.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
-   "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata",
-   "date": "2026-10-02T04:01:31.000Z",
-   "summary": "Hugging Face highlights AutoSynthData for generating training data for enterprise agents.",
-   "tags": [
-    "agents",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/68642da9885da181fde1ad70/8kSzlHLOdu5hchCtPnK8D.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Chatham scales its capital markets expertise with OpenAI",
-   "url": "https://openai.com/index/chatham-financial",
-   "date": "2026-10-02T00:00:00.000Z",
-   "summary": "Chatham Financial reports using Codex and GPT-5.6 to speed up trade validation workflows.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5YyV7pXaAJJDcGDHvPniAF/4f73936c51d46e5bf8941e13f06987b2/chatham-financial-social-getty-texture.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Albertsons Companies is reimagining retail from the inside out",
-   "url": "https://openai.com/index/albertsons-reimagining-retail",
-   "date": "2026-10-01T16:00:00.000Z",
-   "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6sZopZBu8aHeeYeb8H6IS1/945a5ed2fcd3a837554c8ac49a38cdf6/how-albertsons-companies-is-reimagining-retail-from-the-inside-out-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }

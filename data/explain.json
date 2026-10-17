@@ -13162,5 +13162,36 @@
   "repo": "hanzohanzhe/Grandet",
   "at": "2026-10-16",
   "source": "trending"
+ },
+ "anujasid/mcp-for-blender-pro": {
+  "cat": "media",
+  "kind": "Blender AI assistant",
+  "what": "An AI add-on and visual workspace for Blender that builds 3D scenes, edits materials, and automates workflows through chat.",
+  "why": "Building 3D scenes in Blender can involve tedious manual edits and complex Python scripting. Reach for this tool when you want to generate layouts, search asset libraries, and automate multi-step 3D workflows using natural language prompts.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip from the latest releases page and install it in Blender.",
+  "caution": "The prebuilt release bundle currently targets Windows x64 with Blender 4.2 or later, and the Python code validator does not act as a security sandbox.",
+  "alts": [],
+  "packages": [],
+  "plain": "An add-on for Blender that lets you generate 3D objects and scenes using simple chat prompts.",
+  "tags": [
+   "media",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Build 3D product layouts and assign materials using chat prompts",
+   "Inspect Blender scenes and search external asset libraries automatically",
+   "Automate multi-step scene edits with structured AI workflows"
+  ],
+  "steps": [
+   "Download mcp-for-blender-pro.zip from the latest releases page",
+   "In Blender, go to Edit -> Preferences -> Get Extensions and choose Install from Disk",
+   "Enable mcp-for-blender-pro and open MCP Pro in the 3D Viewport sidebar",
+   "Choose your AI provider, enter your key, and open the chat workspace"
+  ],
+  "repo": "anujasid/mcp-for-blender-pro",
+  "at": "2026-10-17",
+  "source": "trending"
  }
 }
