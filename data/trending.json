@@ -1,18 +1,50 @@
 {
- "updated": "2026-10-17T15:41:08.484Z",
+ "updated": "2026-10-17T20:41:10.282Z",
  "items": [
   {
-   "repo": "1115714829/llama.cpp-v100",
-   "stars": 40,
-   "desc": "llama.cpp optimized for NVIDIA Tesla V100 (Volta, SM70): 2–6 GPU tensor parallelism, Qwen3.8-27B Q8_0/Q4 with DFlash2 speculative decoding, up to 512K context, multimodal (image/PDF/video) and concurrent serving.",
-   "created": "2026-09-21T07:18:27Z",
+   "repo": "Tejashmakwana/motionmaxxing",
+   "stars": 832,
+   "desc": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
+   "created": "2026-10-06T18:18:49Z",
    "topics": [
-    "cuda",
-    "gguf",
-    "llama-cpp",
-    "llm-inference"
+    "agent-skills",
+    "ai",
+    "claude-code",
+    "gsap"
    ],
-   "lang": "C++",
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "openfilm/openfilm",
+   "stars": 829,
+   "desc": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
+   "created": "2026-10-04T09:29:07Z",
+   "topics": [
+    "ai-video",
+    "claude-code",
+    "codex",
+    "coding-agents"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Graphicle-AI/graphicle",
+   "stars": 254,
+   "desc": "Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client.",
+   "created": "2026-10-14T12:25:36Z",
+   "topics": [
+    "agent-memory",
+    "ai-agents",
+    "claude-code",
+    "code-analysis"
+   ],
+   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]

@@ -13363,5 +13363,110 @@
   "repo": "1115714829/llama.cpp-v100",
   "at": "2026-10-17",
   "source": "trending"
+ },
+ "Tejashmakwana/motionmaxxing": {
+  "cat": "harness",
+  "kind": "motion graphics skill",
+  "what": "A motion graphics skill for Claude Code and compatible agents that creates product promo animations and launch films from HTML.",
+  "why": "AI-generated promo videos often default to dull slide-deck layouts with flat fades. Reach for this when you want an agent to build brand animations with professional pacing and automated visual linting.",
+  "level": "setup",
+  "start": "",
+  "caution": "Early release. Requires Node 22 or higher, Google Chrome, and ffmpeg installed on your computer to render videos.",
+  "alts": [
+   "heygen-com/hyperframes",
+   "charlie947/motion-graphics-skills",
+   "howseen-ai/claude-motion-design"
+  ],
+  "packages": [],
+  "plain": "An add-on for coding assistants that turns simple web code into professional product promo animations.",
+  "tags": [
+   "media",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Generate product launch films and brand teasers from web code",
+   "Lint animations to eliminate generic AI slide-deck patterns",
+   "Animate kinetic typography with measured professional easing"
+  ],
+  "steps": [
+   "Install Node 22 or higher along with Google Chrome and ffmpeg on your machine.",
+   "Add the skill file or project folder to your Claude Code agent setup.",
+   "Prompt your agent with a website or design brief to generate and render the animation."
+  ],
+  "repo": "Tejashmakwana/motionmaxxing",
+  "at": "2026-10-17",
+  "source": "trending"
+ },
+ "openfilm/openfilm": {
+  "cat": "media",
+  "kind": "AI video agent",
+  "what": "An open-source tool and browser-based editor that lets coding agents create, edit, and render videos constructed from HTML, CSS, and web graphics.",
+  "why": "Making automated videos using code usually requires rigid frameworks; OpenFilm lets agents generate videos using plain web tech while giving you a visual timeline editor to tweak the result.",
+  "level": "setup",
+  "start": "npx skills add openfilm/openfilm",
+  "caution": "",
+  "alts": [
+   "heygen-com/hyperframes",
+   "charlie947/motion-graphics-skills",
+   "howseen-ai/claude-motion-design"
+  ],
+  "packages": [
+   "openfilm"
+  ],
+  "plain": "Lets an AI coding assistant make videos out of web pages, with a visual editor to tweak them.",
+  "tags": [
+   "media",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Generate product launch videos using your AI coding assistant",
+   "Edit AI-generated video tracks, styles, and timing in a local visual editor",
+   "Render browser-animated web designs into MP4 video files"
+  ],
+  "steps": [
+   "Install the skill into your coding agent with `npx skills add openfilm/openfilm` (or use the desktop app).",
+   "Ensure Node.js 22.2+ and ffmpeg are installed on your computer.",
+   "Prompt your agent to create a video, for example: 'Make a 20-second launch video for my CLI, with music.'",
+   "Review and adjust layers or timing in the Studio web editor, then export the MP4."
+  ],
+  "repo": "openfilm/openfilm",
+  "at": "2026-10-17",
+  "source": "trending"
+ },
+ "Graphicle-AI/graphicle": {
+  "cat": "memory",
+  "kind": "Code graph and memory",
+  "what": "A local Rust tool that indexes code into a relationship graph and provides cited code and document context to coding agents.",
+  "why": "Coding agents frequently lose context in large codebases or make edits without understanding dependencies. Reach for Graphicle when Claude Code, Cursor, or Codex need verified line-level excerpts and persistent project memory.",
+  "level": "setup",
+  "start": "brew install graphicle-ai/tap/graphicle",
+  "caution": "Windows support is an early preview build that is not yet code-signed.",
+  "alts": [
+   "Graphify-Labs/graphify",
+   "colbymchenry/codegraph",
+   "getzep/graphiti"
+  ],
+  "packages": [],
+  "plain": "A tool on your computer that maps code connections and remembers project notes for your AI assistant.",
+  "tags": [
+   "code",
+   "knowledge",
+   "supercharge"
+  ],
+  "useFor": [
+   "Map code symbols, calls, and dependencies without calling outside models",
+   "Feed exact line-numbered code excerpts into your coding agent",
+   "Save project documentation, decisions, and past coding sessions locally"
+  ],
+  "steps": [
+   "Install the tool with `brew install graphicle-ai/tap/graphicle` or the official install script.",
+   "Navigate to your project folder and run `graphicle setup` to index files and connect agents.",
+   "Query your codebase directly from the terminal with `graphicle ask \"your question\"`."
+  ],
+  "repo": "Graphicle-AI/graphicle",
+  "at": "2026-10-17",
+  "source": "trending"
  }
 }
