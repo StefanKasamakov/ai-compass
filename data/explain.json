@@ -13193,5 +13193,142 @@
   "repo": "anujasid/mcp-for-blender-pro",
   "at": "2026-10-17",
   "source": "trending"
+ },
+ "akitaonrails/ai-memory": {
+  "cat": "memory",
+  "kind": "cross-agent memory server",
+  "what": "A git-backed markdown wiki that automatically records work from coding assistants so you can switch tools without losing context.",
+  "why": "Different coding assistants store memory separately and drop notes when switching tools or machines. Reach for this when you want Claude Code, Codex, Cursor, or your team to share one memory base without vendor lock-in.",
+  "level": "setup",
+  "start": "ai-memory run codex",
+  "caution": "Requires running and configuring a local or remote Rust-based server and lifecycle hooks across your coding tools; native Windows support is currently experimental.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "thedotmack/claude-mem"
+  ],
+  "packages": [],
+  "plain": "A shared notebook that lets different AI coding tools pick up where the other left off without forgetting anything.",
+  "tags": [
+   "supercharge",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Transfer active coding sessions seamlessly between Claude Code and Codex",
+   "Store project architecture decisions in plain markdown without cloud AI calls",
+   "Share coding knowledge and past bug fixes across a software engineering team"
+  ],
+  "steps": [
+   "Download or build the single ai-memory binary for your operating system.",
+   "Start the background memory server to host your markdown-based project memory.",
+   "Launch your coding agent with `ai-memory run <agent>` to automatically capture and hand off sessions."
+  ],
+  "repo": "akitaonrails/ai-memory",
+  "at": "2026-10-17",
+  "source": "trending"
+ },
+ "tangency-labs/solidcraft": {
+  "cat": "media",
+  "kind": "Parametric 3D CAD",
+  "what": "SolidCraft is an open-source parametric 3D CAD application built in Rust that can be run on desktop, in a browser, or driven by AI agents.",
+  "why": "It lets you sketch, constrain, and modify 3D mechanical parts with an editable parametric timeline, and exposes an MCP server so AI can build models directly.",
+  "level": "easy",
+  "start": "winget install bherbruck.SolidCraft",
+  "caution": "The desktop downloads are not digitally signed yet (triggering OS security warnings), and the geometry engine is still early and best suited for simple parts.",
+  "alts": [
+   "bherbruck/solidcraft",
+   "earthtojake/text-to-cad",
+   "anujasid/mcp-for-blender-pro"
+  ],
+  "packages": [],
+  "plain": "A free 3D design app you can use in your browser or let an AI control for you.",
+  "tags": [
+   "media",
+   "automate",
+   "apps"
+  ],
+  "useFor": [
+   "Design 3D printable parts and enclosures on desktop or in the browser",
+   "Let an AI assistant build and adjust 3D models automatically",
+   "Update dimensional parameters to automatically rebuild parts along a design timeline"
+  ],
+  "steps": [
+   "Open the web app at solidcraft.io/app or download the desktop installer for your operating system.",
+   "Draw 2D sketches, apply constraints, and extrude them into 3D shapes.",
+   "Connect your AI assistant to the built-in MCP server to generate and edit models through text commands."
+  ],
+  "repo": "tangency-labs/solidcraft",
+  "at": "2026-10-17",
+  "source": "trending"
+ },
+ "Leonxlnx/earshot": {
+  "cat": "media",
+  "kind": "Agent audio toolkit",
+  "what": "An open-source, CPU-only audio engine that lets AI agents and developers hear, critique, and synthesize sound effects through code.",
+  "why": "AI agents building games or videos cannot hear their output or check audio-video sync. Use earshot when an agent needs to evaluate audio quality, match sounds against descriptions, or generate synthetic sound effects in code.",
+  "level": "setup",
+  "start": "earshot doctor",
+  "caution": "Each standalone command-line run reloads the models and takes 20 to 40 seconds to start; use the MCP server or Python library for repeat tasks. Reference audio datasets are not bundled and must be provided locally.",
+  "alts": [
+   "resemble-ai/chatterbox",
+   "debpalash/VoiceStudio",
+   "modelcontextprotocol/python-sdk"
+  ],
+  "packages": [],
+  "plain": "Gives your computer assistant the ability to hear, analyze, and generate sound effects using code.",
+  "tags": [
+   "media",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Describe and match audio recordings using plain language descriptions",
+   "Synthesize and refine sound effects directly in code",
+   "Audit videos for sound quality and audio-visual timing sync"
+  ],
+  "steps": [
+   "Verify your local setup and model downloads by running `earshot doctor`.",
+   "Inspect any audio sample in plain words with `earshot describe <file>`.",
+   "Generate code-synthesized sound effects using `earshot forge --list`.",
+   "Run `earshot mcp` to connect audio tools directly into your coding assistant."
+  ],
+  "repo": "Leonxlnx/earshot",
+  "at": "2026-10-17",
+  "source": "trending"
+ },
+ "anujasid/blender-ai-mcp-addon": {
+  "cat": "media",
+  "kind": "Blender AI copilot",
+  "what": "An AI assistant and Model Context Protocol server for Blender that inspects 3D scenes, adds objects, modifies materials, and automates multi-step creative workflows.",
+  "why": "Manual scene assembly, lighting setup, and material adjustments in Blender can be tedious and repetitive. Reach for this when you want to prototype 3D scenes quickly or automate layout tasks using conversational prompts.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip from GitHub Releases",
+  "caution": "The release distribution targets Windows x64 with Blender 4.2 or newer, and code execution tools inside Blender are not safely sandboxed.",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "earthtojake/text-to-cad"
+  ],
+  "packages": [],
+  "plain": "Control 3D scenes in Blender by describing objects, lighting, and materials in plain everyday chat.",
+  "tags": [
+   "media",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Build 3D layouts, lights, and materials using conversational text prompts",
+   "Search and import 3D models directly from supported online asset libraries",
+   "Connect external coding tools to inspect and modify live Blender scenes"
+  ],
+  "steps": [
+   "Download `mcp-for-blender-pro.zip` from the project's Releases page.",
+   "In Blender 4.2+, open Edit, Preferences, Get Extensions, and choose Install from Disk.",
+   "Select the downloaded ZIP, enable the extension, and open 3D Viewport sidebar MCP Pro.",
+   "Add your provider API key, select a model, and send a message or launch Studio."
+  ],
+  "repo": "anujasid/blender-ai-mcp-addon",
+  "at": "2026-10-17",
+  "source": "trending"
  }
 }
