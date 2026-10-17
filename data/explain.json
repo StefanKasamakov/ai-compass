@@ -13330,5 +13330,38 @@
   "repo": "anujasid/blender-ai-mcp-addon",
   "at": "2026-10-17",
   "source": "trending"
+ },
+ "1115714829/llama.cpp-v100": {
+  "cat": "local",
+  "kind": "V100 inference runtime",
+  "what": "A specialized fork of llama.cpp optimized for multi-GPU inference on NVIDIA Tesla V100 (Volta/SM70) hardware.",
+  "why": "Stock inference engines lack deep hardware-level optimizations for older Volta GPUs, causing high memory usage and slow generation on long contexts. Reach for this if you operate 2 to 6 V100 graphics cards (including IBM AC922 servers) and want maximum throughput.",
+  "level": "setup",
+  "start": "docker pull ghcr.io/1115714829/llama.cpp-v100:2.0.0",
+  "caution": "Engineered strictly for NVIDIA V100 (SM70) servers; performance improvements and custom kernels do not apply to newer GPU architectures.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [],
+  "plain": "A tuned program for running large AI language models fast on older NVIDIA V100 graphics cards.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Serve large models across 2 to 6 V100 graphics cards",
+   "Run long-context MoE models using hybrid memory offloading",
+   "Speed up output generation with hardware-tuned speculative decoding"
+  ],
+  "steps": [
+   "Pull the Docker container `ghcr.io/1115714829/llama.cpp-v100:2.0.0` or grab precompiled Linux binaries from GitHub Releases.",
+   "Open the guide in docs/v100/ matching your hardware to find the exact startup parameters for your GPU count.",
+   "Launch the server pointing to your quantized model weights with multi-GPU tensor parallelism enabled."
+  ],
+  "repo": "1115714829/llama.cpp-v100",
+  "at": "2026-10-17",
+  "source": "trending"
  }
 }

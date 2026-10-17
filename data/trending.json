@@ -1,66 +1,18 @@
 {
- "updated": "2026-10-17T10:52:02.592Z",
+ "updated": "2026-10-17T15:41:08.484Z",
  "items": [
   {
-   "repo": "akitaonrails/ai-memory",
-   "stars": 9656,
-   "desc": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-   "created": "2026-05-21T23:23:51Z",
-   "topics": [],
-   "lang": "Rust",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "tangency-labs/solidcraft",
-   "stars": 3358,
-   "desc": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
-   "created": "2026-10-07T18:57:48Z",
+   "repo": "1115714829/llama.cpp-v100",
+   "stars": 40,
+   "desc": "llama.cpp optimized for NVIDIA Tesla V100 (Volta, SM70): 2–6 GPU tensor parallelism, Qwen3.8-27B Q8_0/Q4 with DFlash2 speculative decoding, up to 512K context, multimodal (image/PDF/video) and concurrent serving.",
+   "created": "2026-09-21T07:18:27Z",
    "topics": [
-    "3d-modeling",
-    "brep",
-    "cad",
-    "egui"
+    "cuda",
+    "gguf",
+    "llama-cpp",
+    "llm-inference"
    ],
-   "lang": "Rust",
-   "sources": [
-    "new on GitHub",
-    "Show HN"
-   ],
-   "hn": {
-    "points": 141,
-    "url": "https://news.ycombinator.com/item?id=50064840"
-   }
-  },
-  {
-   "repo": "Leonxlnx/earshot",
-   "stars": 477,
-   "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
-   "created": "2026-10-15T06:52:46Z",
-   "topics": [
-    "ai-agents",
-    "audio",
-    "claude-code",
-    "mcp"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "anujasid/blender-ai-mcp-addon",
-   "stars": 367,
-   "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-   "created": "2026-10-15T22:30:47Z",
-   "topics": [
-    "3d-modeling",
-    "ai-assistant",
-    "blender",
-    "blender-addon"
-   ],
-   "lang": "Python",
+   "lang": "C++",
    "sources": [
     "new on GitHub"
    ]
