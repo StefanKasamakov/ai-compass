@@ -13571,5 +13571,76 @@
   "repo": "Indras-Mirror/Xolotl",
   "at": "2026-10-18",
   "source": "trending"
+ },
+ "LiCinCan/blender-ai-mcp-addon": {
+  "cat": "media",
+  "kind": "Blender AI assistant",
+  "what": "An AI assistant and Model Context Protocol add-on for Blender that lets AI inspect scenes, create 3D objects, assign materials, and execute Python commands.",
+  "why": "Manual 3D modeling, lighting setup, and asset searching in Blender can be slow; this allows users to automate scene generation and edits using natural language.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip and install it via Blender's Edit > Preferences > Get Extensions menu.",
+  "caution": "The release bundle currently targets Windows x64 with Blender 4.2+. The included Python code execution is validated but not sandboxed against arbitrary code execution.",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "anujasid/blender-ai-mcp-addon",
+   "earthtojake/text-to-cad"
+  ],
+  "packages": [],
+  "plain": "Control Blender and build 3D scenes by chatting with AI assistants that inspect and edit your workspace.",
+  "tags": [
+   "media",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Create 3D objects, lighting, and cameras from text prompts",
+   "Inspect Blender scenes and search online 3D asset libraries",
+   "Automate repetitive Blender Python scripting tasks"
+  ],
+  "steps": [
+   "Download mcp-for-blender-pro.zip from the Releases section.",
+   "In Blender 4.2+, open Edit, Preferences, Get Extensions, click the menu, and choose Install from Disk.",
+   "Select the ZIP file, enable the extension, and navigate to 3D Viewport, then press N to find MCP Pro.",
+   "Enter your model API credentials and start chatting or click Open Studio Window."
+  ],
+  "repo": "LiCinCan/blender-ai-mcp-addon",
+  "at": "2026-10-18",
+  "source": "trending"
+ },
+ "IIIIIllllIIIIIlllll/Qwenox": {
+  "cat": "local",
+  "kind": "Local inference engine",
+  "what": "A specialized local inference engine designed to run the Qwen3.8-Flash-Next model on AMD Strix Halo processors on Linux and Windows.",
+  "why": "Running massive 177B mixture-of-experts models locally usually requires costly datacenter hardware. Reach for this to run Qwen3.8-Flash-Next with fast speculative decoding on 128 GB unified-memory AMD APUs.",
+  "level": "setup",
+  "start": "bash build.sh",
+  "caution": "Strictly limited to AMD Strix Halo (gfx1151) processors with at least 100 GiB available memory, and only supports the single Qwen3.8-Flash-Next model.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [
+   "huggingface_hub"
+  ],
+  "plain": "An engine to run a huge conversational AI locally on computers with specialized AMD chips.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run Qwen3.8-Flash-Next locally on 128 GB AMD APU hardware",
+   "Serve standard OpenAI and Anthropic compatible web interfaces locally",
+   "Process massive prompt contexts of up to 256K tokens"
+  ],
+  "steps": [
+   "Download required model weights into the models directory using `pip install -U huggingface_hub`.",
+   "Set model weight paths and memory settings inside service.conf.",
+   "Compile the engine by running `bash build.sh` on Linux or build_win.sh on Windows.",
+   "Start the engine with `bash start_hgn.sh` and open the local console in your browser."
+  ],
+  "repo": "IIIIIllllIIIIIlllll/Qwenox",
+  "at": "2026-10-18",
+  "source": "trending"
  }
 }
