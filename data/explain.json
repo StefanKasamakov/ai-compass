@@ -13468,5 +13468,108 @@
   "repo": "Graphicle-AI/graphicle",
   "at": "2026-10-17",
   "source": "trending"
+ },
+ "jwuthri-cloud/Tracely-ai": {
+  "cat": "evals",
+  "kind": "AI Agent Testing",
+  "what": "Trace-native CI/CD platform for AI agents that grades runs, clusters failures into issues, and turns them into replayable regression tests.",
+  "why": "Helps developers catch AI agent bugs before they reach production by turning actual failing runs into automated test cases without manual dataset writing.",
+  "level": "setup",
+  "start": "pip install tracelyai-sdk",
+  "caution": "Self-hosted stack includes Postgres, ClickHouse, Redis, and MinIO, which requires substantial infrastructure management.",
+  "alts": [
+   "Arize-ai/phoenix",
+   "comet-ml/opik",
+   "promptfoo/promptfoo"
+  ],
+  "packages": [
+   "tracelyai-sdk"
+  ],
+  "plain": "Turns failed AI runs into automated regression tests and blocks bad updates.",
+  "tags": [
+   "code",
+   "monitor"
+  ],
+  "useFor": [
+   "Grade production traces automatically",
+   "Cluster failure issues",
+   "Block pull requests with regressions"
+  ],
+  "steps": [
+   "Install the Python package using `pip install tracelyai-sdk`.",
+   "Deploy the self-hosted stack using the provided one-click deployment options.",
+   "Send traces over plain OTLP from your application."
+  ],
+  "repo": "jwuthri-cloud/Tracely-ai",
+  "at": "2026-10-18",
+  "source": "trending"
+ },
+ "shinshin86/mesh-avatar-studio": {
+  "cat": "media",
+  "kind": "2D avatar animator",
+  "what": "Turns a single 2D character illustration into an animated, face-tracked mesh avatar using a coding agent and a local visual editor.",
+  "why": "Rigging 2D avatars usually requires hours of manual image slicing and complex animation software. Reach for this when you want to convert a character portrait into a moving avatar for VTubing, streaming, or video calls.",
+  "level": "setup",
+  "start": "npx create-mesh-avatar-studio",
+  "caution": "Requires an AI coding tool like Claude Code or Codex to slice and rig the image, along with Python, uv, and Playwright Chromium for layer rebuilding.",
+  "alts": [
+   "hacksider/Deep-Live-Cam",
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "create-mesh-avatar-studio"
+  ],
+  "plain": "Turn any character drawing into a moving, talking cartoon avatar that tracks your face and voice on camera.",
+  "tags": [
+   "media"
+  ],
+  "useFor": [
+   "Animate a 2D character drawing into a moving VTuber avatar",
+   "Track your face and speech live for OBS streaming",
+   "Fine-tune eye and mouth deformation points in a visual editor"
+  ],
+  "steps": [
+   "Run `npx create-mesh-avatar-studio` to create your project directory and install dependencies.",
+   "Open Claude Code or Codex in the folder and prompt it to rig your character image.",
+   "Run `npm run dev` to open the local editor, adjust points, and launch camera tracking."
+  ],
+  "repo": "shinshin86/mesh-avatar-studio",
+  "at": "2026-10-18",
+  "source": "trending"
+ },
+ "Indras-Mirror/Xolotl": {
+  "cat": "local",
+  "kind": "MoE inference engine",
+  "what": "An inference engine and local server designed to run massive mixture-of-experts models across graphics memory, system RAM, and fast solid-state drives.",
+  "why": "Massive AI models usually require expensive data center clusters. Reach for this to run 500B+ parameter models locally on a single gaming computer with 24 GB of graphics memory.",
+  "level": "dev",
+  "start": "git clone https://github.com/Indras-Mirror/Xolotl.git xolotl && cd xolotl",
+  "caution": "Experimental research project requiring high-end hardware (NVIDIA GPU with 24 GB VRAM, 90+ GB RAM, fast NVMe), and currently requires Linux and compiling from source.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm",
+   "sergqwer/strata-nvfp4"
+  ],
+  "packages": [],
+  "plain": "Run massive AI models on a single gaming computer by splitting their memory across fast storage drives and memory.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run massive MoE models locally on a single desktop",
+   "Serve OpenAI- and Anthropic-compatible endpoints from home",
+   "Power local coding agents without cloud subscription costs"
+  ],
+  "steps": [
+   "Clone the repository and run `bash tools/xolotl/fetch-llama.sh` to grab core dependencies.",
+   "Compile the project binaries with CMake and `ninja -C build-xolotl` targeting your card architecture.",
+   "Download the quantized model files and run `python3 tools/v41/serve/serve_ds41.py` with your chosen configuration."
+  ],
+  "repo": "Indras-Mirror/Xolotl",
+  "at": "2026-10-18",
+  "source": "trending"
  }
 }
