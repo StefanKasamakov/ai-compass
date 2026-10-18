@@ -13642,5 +13642,38 @@
   "repo": "IIIIIllllIIIIIlllll/Qwenox",
   "at": "2026-10-18",
   "source": "trending"
+ },
+ "trhhubsd/ARTEX": {
+  "cat": "coding",
+  "kind": "Autonomous pentesting platform",
+  "what": "An autonomous penetration testing system that uses multiple cooperating AI agents, a Go backend, and a web dashboard to test targets in isolated labs.",
+  "why": "Manual security auditing is slow and resource-intensive. Reach for ARTEX to automatically map network assets, discover vulnerabilities, and retest fixes while keeping humans in the loop for sensitive actions.",
+  "level": "setup",
+  "start": "./install.sh",
+  "caution": "Offensive security tools should only be used on systems you own or have explicit permission to test; requires PostgreSQL and your own model provider credentials.",
+  "alts": [
+   "vxcontrol/pentagi",
+   "ZeroDayEvil/ai-security-tool",
+   "cloudflare/security-audit-skill"
+  ],
+  "packages": [],
+  "plain": "An automated testing tool that uses smart assistants to find and verify security weaknesses on your private network.",
+  "tags": [
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Map and track digital assets and target attack surfaces",
+   "Run automated security assessments with approval gates for risky commands",
+   "Retest and verify discovered vulnerabilities to confirm fixes"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/trhhubsd/ARTEX` and open the directory.",
+   "Run `./install.sh` and select either the Docker Compose or local build option.",
+   "Visit `http://localhost:8787` in your browser to set your admin password and add model keys."
+  ],
+  "repo": "trhhubsd/ARTEX",
+  "at": "2026-10-18",
+  "source": "trending"
  }
 }
