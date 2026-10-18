@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-18T11:26:36.233Z",
- "scanned": "2026-10-18T07:06:09.260Z",
+ "updated": "2026-10-18T16:01:52.974Z",
+ "scanned": "2026-10-18T14:44:13.018Z",
  "claudeVersion": "2.1.302",
- "total": 4923,
+ "total": 5274,
  "categories": [
   [
    "builtin",
@@ -156,6 +156,7 @@
    "reachLabels": [
     "drives Claude",
     "reads env vars",
+    "reads settings",
     "persists state",
     "draws"
    ],
@@ -168,7 +169,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 204,
+   "stars": 205,
    "license": "MIT",
    "pushed": "2026-10-17T15:57:06Z",
    "marketplace": null,
@@ -194,6 +195,8 @@
     "runs processes",
     "reads files",
     "reads env vars",
+    "reads the prompt box",
+    "reads mod state",
     "draws"
    ],
    "sees": [],
@@ -201,7 +204,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 238,
+   "stars": 239,
    "license": "MIT",
    "pushed": "2026-10-12T10:02:19Z",
    "marketplace": "claude-image-view",
@@ -226,9 +229,11 @@
    "reachLabels": [
     "runs processes",
     "changes config",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
     "reads the transcript",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -246,7 +251,7 @@
     "AssistantMessage"
    ],
    "validated": "passed",
-   "stars": 124,
+   "stars": 128,
    "license": "MIT",
    "pushed": "2026-10-18T05:50:59Z",
    "marketplace": null,
@@ -269,6 +274,7 @@
    "by": "Stephen Casella",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -305,8 +311,11 @@
    "reach": 2,
    "reachLabels": [
     "runs processes",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
+    "reads settings",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -320,7 +329,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 222,
+   "stars": 223,
    "license": "MIT",
    "pushed": "2026-10-16T15:23:16Z",
    "marketplace": "claude-code-filetree",
@@ -343,8 +352,10 @@
    "by": "oikon48",
    "reach": 2,
    "reachLabels": [
+    "runs processes",
     "changes config",
     "reads files",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -511,6 +522,7 @@
    "reach": 2,
    "reachLabels": [
     "drives Claude",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -569,6 +581,7 @@
    "reachLabels": [
     "drives Claude",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -601,6 +614,7 @@
    "by": "OneWave AI",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -636,6 +650,7 @@
    "reachLabels": [
     "runs processes",
     "reads env vars",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -669,6 +684,7 @@
    "reach": 1,
    "reachLabels": [
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -734,6 +750,7 @@
    "reachLabels": [
     "runs processes",
     "drives Claude",
+    "reads mod state",
     "draws"
    ],
    "sees": [],
@@ -769,6 +786,7 @@
     "drives Claude",
     "reads files",
     "reads settings",
+    "reads mod state",
     "plays audio",
     "persists state",
     "draws"
@@ -811,6 +829,7 @@
     "changes config",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -848,6 +867,7 @@
     "changes config",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -886,6 +906,7 @@
     "changes config",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -923,6 +944,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -934,7 +956,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 13,
+   "stars": 14,
    "license": "MIT",
    "pushed": "2026-10-15T00:44:49Z",
    "marketplace": "claude-statuspane",
@@ -955,6 +977,8 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -991,7 +1015,9 @@
     "runs processes",
     "reads files",
     "reads env vars",
-    "reads the transcript",
+    "reads settings",
+    "reads mod state",
+    "requests an Anthropic credential handle",
     "persists state",
     "draws"
    ],
@@ -1024,6 +1050,7 @@
    "reach": 2,
    "reachLabels": [
     "runs processes",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -1057,6 +1084,7 @@
    "reachLabels": [
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1092,8 +1120,10 @@
     "runs processes",
     "drives Claude",
     "writes the prompt box",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "plays audio",
     "persists state",
     "draws"
@@ -1136,6 +1166,7 @@
    "by": "valeryia-piatrova",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1169,6 +1200,7 @@
    "by": "Abdullah Sultan",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -1200,6 +1232,7 @@
    "by": "Ash",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1230,6 +1263,7 @@
    "by": "vihrea1337",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1265,6 +1299,7 @@
    "reach": 2,
    "reachLabels": [
     "runs processes",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -1362,6 +1397,7 @@
    "by": "plaxagoras",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1424,7 +1460,9 @@
    "reach": 2,
    "reachLabels": [
     "drives Claude",
+    "reads settings",
     "reads the transcript",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1500,6 +1538,8 @@
    "reach": 3,
    "reachLabels": [
     "network",
+    "writes the clipboard",
+    "reads mod state",
     "plays audio",
     "persists state",
     "draws"
@@ -1542,6 +1582,7 @@
     "runs processes",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state"
    ],
    "sees": [
@@ -1574,6 +1615,7 @@
    "by": "Sarthak Bhatore",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "plays audio",
     "persists state",
     "draws"
@@ -1602,6 +1644,7 @@
    "by": "OneWave AI",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1677,6 +1720,7 @@
     "reads files",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1716,6 +1760,7 @@
     "changes config",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1780,6 +1825,7 @@
    "reachLabels": [
     "network",
     "drives Claude",
+    "writes the clipboard",
     "reads files",
     "persists state",
     "draws"
@@ -1807,8 +1853,9 @@
    "plain": "Counter-Strike 1.6 radio calls on Claude Code events, from \"Fire in the hole\" when a deploy starts to \"Bomb has been defused\" when a long turn lands, played from your own CS install or bundled soundalikes.",
    "cat": "fun",
    "by": "Ben Rogerson",
-   "reach": 1,
+   "reach": 2,
    "reachLabels": [
+    "runs processes",
     "reads files",
     "reads env vars",
     "plays audio",
@@ -1822,7 +1869,7 @@
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-10-10T11:41:17Z",
+   "pushed": "2026-10-18T11:17:00Z",
    "marketplace": "cs-radio",
    "plugin": "cs-radio"
   },
@@ -1839,6 +1886,7 @@
    "reachLabels": [
     "network",
     "reads env vars",
+    "reads settings",
     "persists state",
     "draws"
    ],
@@ -1881,6 +1929,7 @@
     "writes files",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1914,7 +1963,9 @@
     "network",
     "runs processes",
     "drives Claude",
+    "writes the clipboard",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1950,6 +2001,7 @@
    "reach": 3,
    "reachLabels": [
     "network",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1982,7 +2034,9 @@
    "reachLabels": [
     "network",
     "runs processes",
+    "writes the clipboard",
     "reads files",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2017,6 +2071,7 @@
     "changes config",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "plays audio",
     "persists state",
     "draws"
@@ -2054,6 +2109,7 @@
     "writes files",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2090,6 +2146,7 @@
    "by": "Ash",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2123,6 +2180,7 @@
    "reachLabels": [
     "network",
     "drives Claude",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2189,6 +2247,7 @@
     "writes the prompt box",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2228,8 +2287,10 @@
    "reachLabels": [
     "runs processes",
     "drives Claude",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2276,9 +2337,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 72,
+   "stars": 73,
    "license": "MIT",
-   "pushed": "2026-10-18T06:39:56Z",
+   "pushed": "2026-10-18T08:36:50Z",
    "marketplace": "claude-code-mods",
    "plugin": "vercel-deploy-status"
   },
@@ -2354,6 +2415,9 @@
    "reachLabels": [
     "runs processes",
     "writes the prompt box",
+    "reads settings",
+    "reads the prompt box",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2390,6 +2454,8 @@
    "reachLabels": [
     "runs processes",
     "drives Claude",
+    "reads files",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2423,6 +2489,7 @@
     "runs processes",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2459,6 +2526,7 @@
     "writes files",
     "drives Claude",
     "writes the prompt box",
+    "reads mod state",
     "draws"
    ],
    "sees": [],
@@ -2490,6 +2558,8 @@
     "reads files",
     "reads env vars",
     "reads settings",
+    "reads the prompt box",
+    "reads mod state",
     "draws"
    ],
    "sees": [],
@@ -2521,6 +2591,7 @@
    "reach": 1,
    "reachLabels": [
     "reads files",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2558,6 +2629,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "plays audio",
     "persists state",
     "draws"
@@ -2655,7 +2727,7 @@
    "validated": "passed",
    "stars": 4,
    "license": null,
-   "pushed": "2026-10-17T22:18:31Z",
+   "pushed": "2026-10-18T14:09:16Z",
    "marketplace": null,
    "plugin": "plugin-health"
   },
@@ -2670,6 +2742,7 @@
    "by": "OneWave AI",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "plays audio",
     "draws"
    ],
@@ -2733,6 +2806,7 @@
    "reachLabels": [
     "MCP servers",
     "drives Claude",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2825,6 +2899,7 @@
     "runs processes",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2861,6 +2936,7 @@
     "reads files",
     "reads settings",
     "reads the transcript",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2898,6 +2974,7 @@
    "reach": 2,
    "reachLabels": [
     "runs processes",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2958,6 +3035,7 @@
     "reads files",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -2968,7 +3046,7 @@
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-14T03:22:37Z",
+   "pushed": "2026-10-18T11:26:18Z",
    "marketplace": "arrester",
    "plugin": "arrester",
    "media": {
@@ -2992,6 +3070,7 @@
     "reads files",
     "reads env vars",
     "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3007,7 +3086,7 @@
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-14T03:23:00Z",
+   "pushed": "2026-10-18T11:26:20Z",
    "marketplace": "sandbox-tuner",
    "plugin": "sandbox-tuner",
    "media": {
@@ -3043,7 +3122,7 @@
    ],
    "surfaces": [],
    "validated": "warnings",
-   "stars": 56,
+   "stars": 57,
    "license": "MIT",
    "pushed": "2026-10-18T06:40:32Z",
    "marketplace": null,
@@ -3122,6 +3201,7 @@
     "writes files",
     "drives Claude",
     "reads files",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3234,6 +3314,7 @@
    "reach": 2,
    "reachLabels": [
     "drives Claude",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3271,6 +3352,7 @@
    "reachLabels": [
     "runs processes",
     "reads files",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3303,6 +3385,7 @@
     "drives Claude",
     "writes the prompt box",
     "reads the transcript",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3332,6 +3415,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3366,6 +3450,7 @@
    "reachLabels": [
     "runs processes",
     "drives Claude",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3440,7 +3525,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 3919,
+   "stars": 3922,
    "license": "MIT",
    "pushed": "2026-10-17T13:34:38Z",
    "marketplace": "terminal-browser",
@@ -3460,8 +3545,11 @@
     "network",
     "runs processes",
     "drives Claude",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
+    "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3484,7 +3572,7 @@
     "AskUserQuestion"
    ],
    "validated": "passed",
-   "stars": 158,
+   "stars": 161,
    "license": "MIT",
    "pushed": "2026-10-17T08:54:09Z",
    "marketplace": "hellosverre-mods",
@@ -3511,6 +3599,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3543,6 +3632,7 @@
    "reach": 2,
    "reachLabels": [
     "runs processes",
+    "reads mod state",
     "draws"
    ],
    "sees": [],
@@ -3573,6 +3663,7 @@
    "reach": 1,
    "reachLabels": [
     "reads files",
+    "reads settings",
     "persists state",
     "draws"
    ],
@@ -3610,6 +3701,7 @@
     "writes files",
     "drives Claude",
     "reads files",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3650,10 +3742,13 @@
     "changes config",
     "drives Claude",
     "writes the prompt box",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
     "reads settings",
     "reads the transcript",
+    "reads the prompt box",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3702,6 +3797,8 @@
     "changes config",
     "drives Claude",
     "reads env vars",
+    "reads settings",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3740,6 +3837,7 @@
     "writes files",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -3777,6 +3875,8 @@
     "writes the prompt box",
     "reads files",
     "reads env vars",
+    "reads the prompt box",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3814,6 +3914,8 @@
    "by": "Aleksei Druzhkov",
    "reach": 1,
    "reachLabels": [
+    "writes the clipboard",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3852,6 +3954,7 @@
    "reach": 1,
    "reachLabels": [
     "reads env vars",
+    "reads the prompt box",
     "persists state",
     "draws"
    ],
@@ -3925,6 +4028,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3965,6 +4069,7 @@
     "reads files",
     "reads env vars",
     "reads the transcript",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -3999,6 +4104,7 @@
     "reads files",
     "reads env vars",
     "reads the transcript",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -4036,7 +4142,7 @@
    "validated": "passed",
    "stars": 6,
    "license": null,
-   "pushed": "2026-10-18T01:09:18Z",
+   "pushed": "2026-10-18T09:12:27Z",
    "marketplace": "autodev",
    "plugin": "autodev-core"
   },
@@ -4098,7 +4204,7 @@
    "validated": "passed",
    "stars": 8,
    "license": "Apache-2.0",
-   "pushed": "2026-10-17T19:57:11Z",
+   "pushed": "2026-10-18T10:56:11Z",
    "marketplace": null,
    "plugin": "autotel"
   },
@@ -4142,6 +4248,7 @@
     "writes files",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "plays audio",
     "draws"
    ],
@@ -4237,6 +4344,7 @@
    "reachLabels": [
     "writes files",
     "drives Claude",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -4265,6 +4373,7 @@
    "reachLabels": [
     "drives Claude",
     "reads the transcript",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -4297,6 +4406,7 @@
     "drives Claude",
     "reads settings",
     "reads the transcript",
+    "reads mod state",
     "draws"
    ],
    "sees": [],
@@ -4370,6 +4480,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -4406,6 +4517,8 @@
    "reach": 1,
    "reachLabels": [
     "writes the prompt box",
+    "reads the prompt box",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -4444,6 +4557,7 @@
     "drives Claude",
     "reads files",
     "reads env vars",
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -4479,6 +4593,7 @@
    "reachLabels": [
     "network",
     "drives Claude",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -4509,6 +4624,7 @@
     "writes files",
     "drives Claude",
     "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -4536,6 +4652,7 @@
    "reachLabels": [
     "runs processes",
     "reads files",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -4554,7 +4671,7 @@
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
-   "pushed": "2026-10-14T18:11:30Z",
+   "pushed": "2026-10-18T11:26:22Z",
    "marketplace": "downrange",
    "plugin": "downrange",
    "media": {
@@ -4574,6 +4691,7 @@
    "by": "dot-agi",
    "reach": 1,
    "reachLabels": [
+    "reads mod state",
     "draws"
    ],
    "sees": [
@@ -4611,6 +4729,7 @@
    "reachLabels": [
     "drives Claude",
     "writes the prompt box",
+    "reads the prompt box",
     "draws"
    ],
    "sees": [
@@ -4643,6 +4762,8 @@
     "reads files",
     "reads env vars",
     "reads settings",
+    "reads the prompt box",
+    "reads mod state",
     "persists state"
    ],
    "sees": [
