@@ -1,6 +1,36 @@
 {
- "updated": "2026-10-19T13:29:33.727Z",
+ "updated": "2026-10-19T14:35:55.190Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "llm-tools-datasette 0.1.1",
+   "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+   "date": "2026-10-18T23:43:09.000Z",
+   "summary": "A plugin update for Datasette fixes dependency breaking changes related to HTTP libraries.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm-echo 0.5",
+   "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
+   "date": "2026-10-18T23:16:16.000Z",
+   "summary": "A debug plugin for LLMs now correctly simulates token usage counts for tool calls and reasoning tokens.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.303",
@@ -78,6 +108,21 @@
   },
   {
    "source": "Hacker News",
+   "title": "Claude reveals ECDSA curve origins",
+   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+   "date": "2026-10-16T18:55:59Z",
+   "discuss": "https://news.ycombinator.com/item?id=50122800",
+   "summary": "Discussions highlight how Claude successfully helped uncover details regarding cryptographic curve origins.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d0c862c5cabd703c0fcbaad939385133f02b694c-1200x630.jpg"
+  },
+  {
+   "source": "Hacker News",
    "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
    "url": "https://github.com/cobanov/PS5LM",
    "date": "2026-10-16T18:32:35Z",
@@ -89,6 +134,21 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/17b738f049c093124bdd4ceb7fc8e263b472c5af34b45279533e7892e6715af2/cobanov/PS5LM"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Designing more efficient quantum circuits with Claude",
+   "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+   "date": "2026-10-16T18:00:18Z",
+   "discuss": "https://news.ycombinator.com/item?id=50121939",
+   "summary": "Developers are using Claude to help design and optimize more efficient quantum computing circuits.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg"
   },
   {
    "source": "Hacker News",
@@ -149,6 +209,20 @@
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/68d2fec8856b85d927e44d32/x0aObe_0mduBjWFuKBGoV.png",
    "audience": "dev"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Benefit Street Partners answers questions faster with Codex",
+   "url": "https://openai.com/index/benefit-street-partners",
+   "date": "2026-10-16T00:00:00.000Z",
+   "summary": "A financial firm is using Codex to review code and speed up development tasks.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/2Km2vOVvFRvxGl6hZqWOTQ/2073bb541740640de3d215ee6e36b28e/og.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "OpenAI",
@@ -297,6 +371,20 @@
    "big": false,
    "ai": false,
    "image": "https://github.blog/wp-content/uploads/2026/10/670061189-e9e968e1-a0ee-4e50-a0d6-32d35c7d3729.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "C++26 Contracts: Introduction to Preconditions and Postconditions",
+   "url": "https://www.cppstories.com/2026/cpp26_contracts/",
+   "date": "2026-10-15T13:11:26Z",
+   "discuss": "https://news.ycombinator.com/item?id=50103164",
+   "summary": "An introduction to incoming C++26 features for writing safer code via preconditions and postconditions.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www.cppstories.com/2026/images/contracts.png"
   },
   {
    "source": "Simon Willison",
@@ -2123,91 +2211,6 @@
    "ai": true,
    "image": "https://opengraph.githubassets.com/fc22e92caa0f81dca53e573c12b8699d165581a12ffa87f8be18ad5dc0508caa/anthropics/claude-code/releases/tag/v2.1.289",
    "audience": "dev"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "The Agent Said It Was Done. The Database Disagreed.",
-   "url": "https://huggingface.co/blog/microsoft/thinkingbox",
-   "date": "2026-10-03T22:56:48.000Z",
-   "summary": "Hugging Face examines the discrepancy between an AI agent claiming a job is done and the actual database state.",
-   "tags": [
-    "agents",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/NStwJm1AafDELVsU4KGwS.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "September sponsors-only newsletter",
-   "url": "https://simonwillison.net/2026/Oct/3/newsletter/",
-   "date": "2026-10-03T22:00:31.000Z",
-   "summary": "I just sent the September edition of my sponsors-only monthly newsletter . If you are a sponsor (or start a sponsorship now) you can access it here . This month: More Fable class models A pricing war 3D graphics, Blender, and pixel art LLMs come for mathematics So many more accidental cyberattacks The vulnapocalypse comes for Datasette What I'm using right now My software releases this month 2026 ",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true,
-   "audience": "dev"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Getting the most out of Opus 5.5 in Claude and Claude Code",
-   "url": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/",
-   "date": "2026-10-03T18:29:30Z",
-   "discuss": "https://news.ycombinator.com/item?id=49946567",
-   "summary": "Anthropic released Claude Opus 5.5 alongside updates to Claude Code, bringing frontier-class capabilities to coding and agentic workflows.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.dev/blog/getting-the-most-out-of-opus-5-5/og.png"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/claude-frontier-academy",
-   "date": "2026-10-02T23:01:00.000Z",
-   "title": "Claude Frontier Academy: $100M to train 10,000 engineers",
-   "summary": "Anthropic launched Claude Frontier Academy, committing $100 million to train 10,000 engineers on deployed AI engineering.",
-   "tags": [
-    "business",
-    "coding"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Build&backgroundColor=heather"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.288",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
-   "date": "2026-10-02T20:19:57Z",
-   "summary": "Anthropic released Claude Code v2.1.288, updating its terminal-based coding agent with stability fixes.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/a3be99ac1261695aeb8f3db7799f778ef42e65bf6fbf1a5900f5cf4806632c60/anthropics/claude-code/releases/tag/v2.1.288",
-   "audience": "dev"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: Made an open-source Lego AI generator",
-   "url": "https://github.com/anteloc/ldraw-nova",
-   "date": "2026-10-02T20:00:15Z",
-   "discuss": "https://news.ycombinator.com/item?id=49937916",
-   "summary": "A developer released an open-source Lego model generator using AI.",
-   "tags": [
-    "product",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/d57ed5a131e9cc5cad04a27c2742966f3638d85dcecd80e8b3dbc5c329341c42/anteloc/ldraw-nova"
   }
  ]
 }

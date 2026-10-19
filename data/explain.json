@@ -13884,5 +13884,39 @@
   "repo": "Leonxlnx/cinetic",
   "at": "2026-10-19",
   "source": "trending"
+ },
+ "justxor/deepseek-local-guide-ru": {
+  "cat": "local",
+  "kind": "Russian DeepSeek Guide",
+  "what": "A comprehensive Russian-language guide and course for running DeepSeek models locally on PCs, Macs, and servers.",
+  "why": "Helps users set up, run, and optimize DeepSeek models locally for privacy and offline use, providing step-by-step instructions for tools like Ollama, llama.cpp, and vLLM.",
+  "level": "setup",
+  "start": "ollama run deepseek-r1:8b",
+  "caution": "Some large DeepSeek models require massive hardware resources such as extensive graphics memory or server-grade setups to run smoothly.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "A complete step-by-step tutorial in Russian showing how to run advanced artificial intelligence models on your own computer.",
+  "tags": [
+   "private",
+   "code",
+   "docs"
+  ],
+  "useFor": [
+   "Run DeepSeek models offline on your own computer",
+   "Set up a local chat interface similar to ChatGPT",
+   "Connect local AI models to your development tools via API"
+  ],
+  "steps": [
+   "Download and install Ollama for your operating system from the official website.",
+   "Open your terminal and run the command `ollama run deepseek-r1:8b` to download and start a model.",
+   "Optionally install Open WebUI inside a Docker container for a graphical chat interface in your browser."
+  ],
+  "repo": "justxor/deepseek-local-guide-ru",
+  "at": "2026-10-19",
+  "source": "trending"
  }
 }

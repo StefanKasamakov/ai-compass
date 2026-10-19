@@ -1,0 +1,165 @@
+{
+ "date": "2026-10-19",
+ "subject": "Gemini 4 Argon release and Claude agent updates",
+ "intro": "This week brought significant new model capability releases alongside essential tooling updates for AI agents. These developments give practitioners better ways to build, monitor, and execute complex workflows in production.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "Gemini 4 Argon: Built to solve your hardest problems",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+     "blurb": "Google released Gemini 4 Argon to help solve difficult problems.",
+     "meta": "DeepMind"
+    },
+    {
+     "title": "Agent observability on the Claude Platform",
+     "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+     "blurb": "Anthropic introduced new agent observability features on the Claude Platform.",
+     "meta": "Anthropic"
+    },
+    {
+     "title": "Claude Code v2.1.303",
+     "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+     "blurb": "Anthropic released version 2.1.303 of Claude Code, its command-line tool for agentic software development.",
+     "meta": "GitHub release"
+    },
+    {
+     "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
+     "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
+     "blurb": "IBM released Granite Switch 4.1, a single endpoint model handling chat, decision-making, and speech processing.",
+     "meta": "Hugging Face"
+    },
+    {
+     "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+     "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+     "blurb": "Google DeepMind announced Google Antigravity for Science to accelerate the discovery of antimicrobial peptides.",
+     "meta": "DeepMind"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Claude Haiku 5.5",
+     "url": "https://whichaimap.com/models.html#m-haiku",
+     "blurb": "Simple tasks at scale: classification, extraction, routing, chatbots. The cheapest Claude. New 7 Oct: replaces Haiku 4.5 at a tenth of the price. Prompts longer than 100K tokens cost 5x more ($0.50 / $2.50).",
+     "meta": "$0.1 / $0.5 per 1M tokens"
+    },
+    {
+     "title": "Gemini 4 Argon",
+     "url": "https://whichaimap.com/models.html#m-argon",
+     "blurb": "Google's new flagship: deep work in coding, finance, law, security and science. Ranked #1 on the Vals Index at launch. New 13 Oct. Launch price until 30 Nov 2026, then $4 / $20. In the Gemini app with Google AI Pro or Ultra.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "Nano Banana 2.1",
+     "url": "https://whichaimap.com/models.html#m-nano",
+     "blurb": "Image generation and photo editing. Pro does 4K and crisp in-image text. Price depends on size: about $0.03 (1K), $0.05 (2K) or $0.11 (4K) per image.",
+     "meta": "$0.03–0.11 / image"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "shader-effects-inc/shaders",
+     "url": "https://whichaimap.com/explore.html#shader-effects-inc/shaders",
+     "blurb": "A WebGPU component library and design tool for React, Vue, Svelte, and Solid with built-in MCP and agent skills.",
+     "meta": "UI shader toolkit"
+    },
+    {
+     "title": "devswha/herdr-web-ui",
+     "url": "https://whichaimap.com/explore.html#devswha/herdr-web-ui",
+     "blurb": "A browser and mobile PWA client for herdr that lets you control and monitor terminal coding agents from desktop or phone. Heads-up: Pipes an external installation script directly into your shell. Exposes local terminal sessions across your network or tailnet.",
+     "meta": "mobile web interface"
+    },
+    {
+     "title": "bherbruck/solidcraft",
+     "url": "https://whichaimap.com/explore.html#bherbruck/solidcraft",
+     "blurb": "SolidCraft is an open-source parametric 3D CAD application built in Rust with desktop, web, and MCP automation support. Heads-up: The project is at an early stage of development and does not yet match the full geometric feature set of mature commercial CAD suites.",
+     "meta": "Parametric 3D CAD"
+    },
+    {
+     "title": "moritzwilksch/diffle",
+     "url": "https://whichaimap.com/explore.html#moritzwilksch/diffle",
+     "blurb": "A keyboard-driven browser diff viewer with code navigation and GitHub pull request integration. Heads-up: Language servers executed by diffle run inside your shell environment with your user permissions.",
+     "meta": "browser diff viewer"
+    },
+    {
+     "title": "Aryanutkarsh/SeeCode",
+     "url": "https://whichaimap.com/explore.html#Aryanutkarsh/SeeCode",
+     "blurb": "An agent skill that transforms short JSON specifications or plain-text requests into animated, interactive software and architecture diagrams.",
+     "meta": "agent diagram skill"
+    },
+    {
+     "title": "LingCore/WinShun",
+     "url": "https://whichaimap.com/explore.html#LingCore/WinShun",
+     "blurb": "WinShun is a free, open-source file search and productivity launcher for Windows 10 and 11. Heads-up: Requires administrator privileges to read the NTFS master file table and build search indexes.",
+     "meta": "Windows search launcher"
+    }
+   ]
+  },
+  {
+   "title": "Rising on GitHub this week",
+   "items": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea",
+     "blurb": "Reverse engineer apps, binaries, and websites with AI agents.",
+     "meta": "+189k stars this week"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio",
+     "blurb": "VoiceStudio is an open-source, fully-local voice cloning, text-to-speech, transcription, and video dubbing tool.",
+     "meta": "+17k stars this week"
+    },
+    {
+     "title": "zouyuxuan122/dsh-our-free-model",
+     "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+     "blurb": "This is a free model plugin for dsh that adds frontier models like Muse Spark 1.3 and MiMo V2.6 with zero configuration, no sign-up, and no API keys required.",
+     "meta": "+16k stars this week"
+    },
+    {
+     "title": "Ebony-Vinyl/dsh-our-free-model",
+     "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+     "blurb": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts.",
+     "meta": "+16k stars this week"
+    },
+    {
+     "title": "storytold/artcraft",
+     "url": "https://github.com/storytold/artcraft",
+     "blurb": "ArtCraft is a visual creation tool that combines 2D canvas editing, 3D scene staging, and AI models for generating images and video.",
+     "meta": "+13k stars this week"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://whichaimap.com/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "235.2M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://whichaimap.com/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "118.6M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "huggingface/transformers",
+     "url": "https://whichaimap.com/explore.html#huggingface/transformers",
+     "blurb": "Hugging Face Transformers is an open-source Python library to download, run, and train state-of-the-art machine learning models for text, vision, and audio.",
+     "meta": "96.3M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}
