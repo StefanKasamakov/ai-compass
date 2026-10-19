@@ -13746,5 +13746,73 @@
   "repo": "GroundedCore/nexusdesk",
   "at": "2026-10-19",
   "source": "trending"
+ },
+ "Sallyn0225/eidolon-sc": {
+  "cat": "builders",
+  "kind": "AI companion web app",
+  "what": "An interactive web app for real-time voice and text roleplay with The Idolmaster Shiny Colors characters, complete with Japanese speech and subtitles.",
+  "why": "Provides fans with an immersive companion system featuring 28 characters that remember past conversations, share cross-character memories, and recall original game lore.",
+  "level": "setup",
+  "start": "git clone https://github.com/Sallyn0225/eidolon-sc.git && cd eidolon-sc",
+  "caution": "This is an unofficial fan project unaffiliated with Bandai Namco; story corpus and voice assets are not bundled and must be provided separately, requiring multiple paid third-party AI keys for full features.",
+  "alts": [
+   "LibreChat-AI/LibreChat",
+   "open-webui/open-webui",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "A website where you can call or text anime idol characters with voice acting and synchronized subtitles.",
+  "tags": [
+   "media",
+   "knowledge"
+  ],
+  "useFor": [
+   "Chat by voice or text with 28 fictional idol characters",
+   "Recall canonical game events through integrated character memories",
+   "Receive contextual character photos and animated expressions during conversations"
+  ],
+  "steps": [
+   "Clone the repository and copy the environment template: `cp .env.example .env`.",
+   "Add your conversational model credentials and enable development login in `.env`.",
+   "Launch the entire web stack using `docker compose up --build`.",
+   "Open localhost:3000 in your browser and log in to start chatting."
+  ],
+  "repo": "Sallyn0225/eidolon-sc",
+  "at": "2026-10-19",
+  "source": "trending"
+ },
+ "christopherowen/dgx-spark-networking": {
+  "cat": "local",
+  "kind": "GPU networking library",
+  "what": "A networking toolkit and collective communication library designed for running distributed model inference across direct-cabled DGX Spark nodes without an expensive network switch.",
+  "why": "Provides low-latency, switchless RDMA collective communication for multi-node inference in engines like vLLM. Reach for it when connecting two to four DGX Spark nodes directly via ConnectX-7 network cards to reduce latency on small operations.",
+  "level": "dev",
+  "start": "pip install git+https://github.com/christopherowen/dgx-spark-networking@v0.4.0",
+  "caution": "Highly specialized hardware tooling specifically built for DGX Spark systems (NVIDIA GB10 with ConnectX-7). It requires low-level network setup, driver compatibility, and patched inference engines.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "tile-ai/tilelang"
+  ],
+  "packages": [],
+  "plain": "Speeds up communication between interconnected AI computers so they can run large models together without a network switch.",
+  "tags": [
+   "save",
+   "automate"
+  ],
+  "useFor": [
+   "Run distributed multi-node inference across direct-cabled DGX Spark servers",
+   "Speed up small all-reduce communication in vLLM without network switches",
+   "Validate cable topology and test RDMA connections across nodes"
+  ],
+  "steps": [
+   "Install the library with `pip install git+https://github.com/christopherowen/dgx-spark-networking@v0.4.0`.",
+   "Define your cable topology in a `nodes.json` configuration file.",
+   "Validate your network setup using `sparknet topology validate`.",
+   "Integrate the custom communicator into vLLM following the project documentation."
+  ],
+  "repo": "christopherowen/dgx-spark-networking",
+  "at": "2026-10-19",
+  "source": "trending"
  }
 }
