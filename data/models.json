@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-19",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -186,7 +186,9 @@
    "ctx": "64K",
    "released": "2026-10-06",
    "note": "Price depends on size: about $0.03 (1K), $0.05 (2K) or $0.11 (4K) per image.",
-   "src": "https://ai.google.dev/gemini-api/docs/pricing"
+   "src": "https://ai.google.dev/gemini-api/docs/pricing",
+   "in": 1.5,
+   "out": 7.5
   },
   {
    "id": "veo",
@@ -246,7 +248,9 @@
    "tier": "Open",
    "best": "Near-frontier quality you can download. Even the newer V4.1 Flash (about 763B parameters) needs a server with several graphics cards.",
    "price": "free*",
-   "src": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+   "src": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+   "in": 0.15,
+   "out": 0.6
   },
   {
    "id": "kimi",
