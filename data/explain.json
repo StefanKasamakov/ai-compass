@@ -13918,5 +13918,41 @@
   "repo": "justxor/deepseek-local-guide-ru",
   "at": "2026-10-19",
   "source": "trending"
+ },
+ "alchaincyf/huashu-motion": {
+  "cat": "harness",
+  "kind": "coding agent skill",
+  "what": "An agent skill that directs, animates, and scores commercial product launch videos using HTML code and browser rendering.",
+  "why": "Making motion graphics and launch promos usually requires video editing software and animation expertise. Reach for this to generate animated web-based videos and edit scenes by clicking on the preview frame.",
+  "level": "setup",
+  "start": "npx skills add alchaincyf/huashu-motion",
+  "caution": "Requires Node 22+, Chrome, and FFmpeg installed locally. The author notes it has only been tested on macOS.",
+  "alts": [
+   "howseen-ai/claude-motion-design",
+   "charlie947/motion-graphics-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Turns your AI coding assistant into a video director that writes animations and music you can tweak visually.",
+  "tags": [
+   "media",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Generate animated product launch videos with custom music",
+   "Turn data tables or CSV files into motion graphics",
+   "Click and annotate preview frames to direct animation revisions"
+  ],
+  "steps": [
+   "Install the skill into your coding agent using `npx skills add alchaincyf/huashu-motion`.",
+   "Verify your local setup by running `om doctor` to check for Node, Chrome, and FFmpeg.",
+   "Ask your AI agent to create a product video or run `om new` to pick a starting template."
+  ],
+  "repo": "alchaincyf/huashu-motion",
+  "at": "2026-10-19",
+  "source": "trending"
  }
 }
