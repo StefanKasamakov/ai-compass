@@ -13814,5 +13814,75 @@
   "repo": "christopherowen/dgx-spark-networking",
   "at": "2026-10-19",
   "source": "trending"
+ },
+ "shiyu-coder/Kronos": {
+  "cat": "frameworks",
+  "kind": "financial market forecasting model",
+  "what": "Kronos is an open-source autoregressive foundation model designed specifically to forecast financial candlestick (K-line) sequences.",
+  "why": "Standard time-series models often struggle with the extreme noise of financial data. Use Kronos when building quantitative trading systems or predicting future OHLCV price action across global market assets.",
+  "level": "dev",
+  "start": "pip install -r requirements.txt",
+  "caution": "Financial forecasting is inherently noisy and volatile; forecasts should never be treated as guaranteed trading or investment advice.",
+  "alts": [
+   "huggingface/transformers",
+   "pytorch/pytorch"
+  ],
+  "packages": [
+   "pandas"
+  ],
+  "plain": "An AI model trained on global stock and crypto markets to predict future candlestick price charts.",
+  "tags": [
+   "research",
+   "code"
+  ],
+  "useFor": [
+   "Forecast future financial candlestick prices",
+   "Predict batch market series simultaneously",
+   "Fine-tune custom quantitative trading models"
+  ],
+  "steps": [
+   "Install required dependencies with `pip install -r requirements.txt`.",
+   "Load pre-trained Kronos weights and tokenizer from Hugging Face.",
+   "Pass a pandas DataFrame with OHLCV data into `KronosPredictor` to generate forecasts."
+  ],
+  "repo": "shiyu-coder/Kronos",
+  "at": "2026-10-19",
+  "source": "trending"
+ },
+ "Leonxlnx/cinetic": {
+  "cat": "harness",
+  "kind": "Coding agent skill",
+  "what": "An agent skill that directs, animates, and renders code-based cinematic launch videos and motion graphics using Remotion or HyperFrames.",
+  "why": "Standard AI assistants struggle to direct cohesive video with good pacing and sound design. Reach for this when you want your coding assistant to write, animate, score, and render launch teasers or feature animations from a text brief.",
+  "level": "setup",
+  "start": "npx skills add Leonxlnx/cinetic",
+  "caution": "Requires multiple system dependencies to be installed and working locally, including Node 22+, ffmpeg 6+, Python 3.11+, and headless Chromium.",
+  "alts": [
+   "Leonxlnx/earshot",
+   "howseen-ai/claude-motion-design",
+   "charlie947/motion-graphics-skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Teach your AI coding assistant to create and render custom motion videos and product launch teasers from code.",
+  "tags": [
+   "media",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Create product launch teaser videos with synchronized sound effects",
+   "Animate vertical promotional clips for social media",
+   "Produce seamless looping feature animations and logo stings for websites"
+  ],
+  "steps": [
+   "Ensure your machine has Node 22+, ffmpeg 6+, Python 3.11+, and headless Chromium installed.",
+   "Add the skill to your agent environment by running `npx skills add Leonxlnx/cinetic`.",
+   "Ask your coding assistant to design, direct, and render a motion video from your brief."
+  ],
+  "repo": "Leonxlnx/cinetic",
+  "at": "2026-10-19",
+  "source": "trending"
  }
 }
