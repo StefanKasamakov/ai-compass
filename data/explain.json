@@ -13675,5 +13675,76 @@
   "repo": "trhhubsd/ARTEX",
   "at": "2026-10-18",
   "source": "trending"
+ },
+ "finereli/whatsapp-mcp": {
+  "cat": "memory",
+  "kind": "WhatsApp MCP server",
+  "what": "A read-only Model Context Protocol server that enables AI assistants to search and read your WhatsApp message history through Cloudflare Workers.",
+  "why": "AI assistants normally cannot view personal chat history. Reach for this when you want an agent to summarize conversations or look up message details without granting send permissions.",
+  "level": "setup",
+  "start": "git clone https://github.com/finereli/whatsapp-mcp",
+  "caution": "Uses unofficial WhatsApp Web protocols which violate WhatsApp terms of service and risk account flagging; also requires a paid Cloudflare Workers plan to import chat history.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk",
+   "VoltAgent/official-mcp-servers",
+   "topoteretes/cognee"
+  ],
+  "packages": [
+   "wrangler"
+  ],
+  "plain": "Connects your WhatsApp chat history to an AI assistant so it can safely search and summarize your past messages.",
+  "tags": [
+   "connect",
+   "knowledge",
+   "private"
+  ],
+  "useFor": [
+   "Search past WhatsApp conversations across all your chats using AI.",
+   "Summarize missed group chat messages and conversations from the past week.",
+   "Find specific details like dates, leases, or flight info in your messages."
+  ],
+  "steps": [
+   "Clone the repository and install dependencies using `npm install`.",
+   "Create an OAuth KV namespace and set your owner password using Wrangler commands.",
+   "Deploy to Cloudflare Workers with `npm run deploy`.",
+   "Open your deployment URL, scan the QR code in WhatsApp, and link your assistant."
+  ],
+  "repo": "finereli/whatsapp-mcp",
+  "at": "2026-10-19",
+  "source": "trending"
+ },
+ "GroundedCore/nexusdesk": {
+  "cat": "builders",
+  "kind": "AI customer support platform",
+  "what": "An open-source, self-hosted customer support platform where AI agents answer inquiries and draft tickets requiring human approval.",
+  "why": "It keeps all customer conversations on your own internal network using just PostgreSQL without complex infrastructure. Reach for it as a private alternative to Intercom or Zendesk.",
+  "level": "setup",
+  "start": "sh nexusdesk quickstart",
+  "caution": "The authors state the project is under active development and not yet production-ready; vector search requires setup and the quickstart uses a mock AI model.",
+  "alts": [
+   "langgenius/dify",
+   "lobehub/lobehub",
+   "FlowiseAI/Flowise"
+  ],
+  "packages": [],
+  "plain": "A private customer support helpdesk where AI drafts replies and tickets, but humans approve them before sending.",
+  "tags": [
+   "automate",
+   "private",
+   "connect"
+  ],
+  "useFor": [
+   "Answer customer inquiries using knowledge base documents",
+   "Draft support tickets for human staff review and approval",
+   "Connect chat channels including Slack, Discord, and messaging apps"
+  ],
+  "steps": [
+   "Start the two-container quickstart stack with `sh nexusdesk quickstart`.",
+   "Open https://localhost:8080 in your browser and accept the local certificate.",
+   "Select the sample conversation to test document Q&A and ticket creation."
+  ],
+  "repo": "GroundedCore/nexusdesk",
+  "at": "2026-10-19",
+  "source": "trending"
  }
 }
