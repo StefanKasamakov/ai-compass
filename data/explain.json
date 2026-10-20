@@ -13954,5 +13954,75 @@
   "repo": "alchaincyf/huashu-motion",
   "at": "2026-10-19",
   "source": "trending"
+ },
+ "Zfinix/eleven": {
+  "cat": "coding",
+  "kind": "Reverse engineering app",
+  "what": "Eleven is an agent-first desktop workbench that lets AI assistants help you decompile, analyze, and patch binary files, Android apps, and hardware code.",
+  "why": "Analyzing compiled binaries and reverse-engineering code manually is slow and complex. Reach for Eleven when you want an AI agent working alongside you to explain assembly, rename functions, and propose patches directly inside your workspace.",
+  "level": "easy",
+  "start": "curl -fsSL https://eleven.chizi.app/install.sh | bash",
+  "caution": "The macOS installer automatically bypasses download quarantine because application builds are not currently notarized.",
+  "alts": [
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "A desktop app where AI assistants help you examine and modify compiled software programs.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Decompile binaries, Android apps, and code files",
+   "Ask AI agents to explain code and rename functions",
+   "Review and apply byte patches suggested by AI"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://eleven.chizi.app/install.sh | bash` to install Eleven on macOS.",
+   "Open Eleven and follow the wizard to select a decompilation engine.",
+   "Connect your preferred AI agent to start analyzing binary code."
+  ],
+  "repo": "Zfinix/eleven",
+  "at": "2026-10-20",
+  "source": "trending"
+ },
+ "juliobsz/skills": {
+  "cat": "harness",
+  "kind": "Agent web design skill",
+  "what": "An agent skill that enables AI coding assistants to design, build, and visually audit custom websites from simple text descriptions.",
+  "why": "AI coding assistants typically generate generic web layouts and repetitive color schemes. Reach for this skill when you want your AI helper to craft unique web designs complete with custom art direction, motion, copy, and browser visual checks.",
+  "level": "setup",
+  "start": "npx skills add juliobsz/skills -g",
+  "caution": "Collects anonymous CLI usage telemetry by default (can be disabled with DISABLE_TELEMETRY=1) and requires Node 22.20+ and Playwright for browser checks.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "alirezarezvani/claude-skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A tool that teaches your AI helper to design and build custom, professional websites automatically.",
+  "tags": [
+   "apps",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Build tailored portfolios and landing pages from simple prompts",
+   "Audit and score web designs against professional quality standards",
+   "Run automated visual browser checks on generated websites"
+  ],
+  "steps": [
+   "Install the skill globally by running `npx skills add juliobsz/skills -g` in your terminal",
+   "Open a new session in your supported AI coding tool",
+   "Type `/awwwards` and describe the website you want to create"
+  ],
+  "repo": "juliobsz/skills",
+  "at": "2026-10-20",
+  "source": "trending"
  }
 }
