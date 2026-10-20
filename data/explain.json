@@ -14058,5 +14058,41 @@
   "repo": "deskmind-ai/deskmind",
   "at": "2026-10-20",
   "source": "trending"
+ },
+ "sickn33/agentic-awesome-skills": {
+  "cat": "harness",
+  "kind": "agent skills catalog",
+  "what": "A catalog and local control tool offering over 2,700 installable playbook skills for coding agents like Claude Code and Codex.",
+  "why": "Coding agents need repeatable domain instructions for specialized tasks. Reach for this to search, validate, and install curated skill playbooks directly into your agent environment.",
+  "level": "setup",
+  "start": "npm exec --yes --ignore-scripts --package=agentic-awesome-skills@19.11.0 -- aas mcp configure --host codex --scope user --config /path/to/config.toml --cache-root /path/to/cache",
+  "caution": "Automated stack application and recovery remain experimental, and installing too many skills at once can overload your agent's context window.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "agentic-awesome-skills"
+  ],
+  "plain": "A massive collection of ready-made instructions you can add to coding assistants like Claude or Codex.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Install specialized skill playbooks into coding agents",
+   "Validate and preview skill sets before adding them to projects",
+   "Equip assistants with standardized debugging and design instructions"
+  ],
+  "steps": [
+   "Configure the local server for your agent with `npm exec --yes --ignore-scripts --package=agentic-awesome-skills@19.11.0 -- aas mcp configure`",
+   "Ask your coding assistant to inspect your project and pick relevant skills",
+   "Preview the installation using the direct installer `--dry-run` flag before applying"
+  ],
+  "repo": "sickn33/agentic-awesome-skills",
+  "at": "2026-10-20",
+  "source": "trending"
  }
 }
