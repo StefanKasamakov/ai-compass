@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-20T17:16:02.239Z",
+ "updated": "2026-10-20T21:41:49.165Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.65.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0",
+   "date": "2026-10-20T21:17:57Z",
+   "summary": "Gemini CLI v0.65.0 was released, offering new command-line interactions for Gemini models.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/8aa9a0aa092157475756dfb49adf647d1c80a5a43dff7d80d6174aeeafe3f6d0/google-gemini/gemini-cli/releases/tag/v0.65.0"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.305",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
+   "date": "2026-10-20T20:46:50Z",
+   "summary": "Anthropic released Claude Code v2.1.305 with updates for terminal-based development.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/79fdcda20289413eb426b78042ede9f05bf82c27582a34f32ab82690c364ecf9/anthropics/claude-code/releases/tag/v2.1.305"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+   "date": "2026-10-20T19:34:19.000Z",
+   "summary": "A developer built a functional multiplayer RTS game entirely using Claude via vibe coding.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/battle-drones-card.webp"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+   "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+   "date": "2026-10-20T18:17:47.000Z",
+   "summary": "NVIDIA released a generative simulation model for clinical surgery on Hugging Face.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/67a4f15057fb66b9db6dac82/45XSEtdQHqTdspRe3wkYs.png"
+  },
   {
    "source": "Hugging Face",
    "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
@@ -42,6 +96,20 @@
    "big": false,
    "ai": true,
    "image": "https://huggingface.co/blog/assets/anylanguagemodel-1-0/banner.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "My obituary for programming",
+   "url": "https://simonwillison.net/2026/Oct/19/my-obituary-for-programming/",
+   "date": "2026-10-19T23:58:25.000Z",
+   "summary": "An essay reflects on how coding agents are changing the nature of software development for career programmers.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "GitHub release",
@@ -519,6 +587,20 @@
    "ai": true,
    "image": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w1200-h630-n-nu-rw",
    "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "Steam Client is now faster than Epic's new vibe coded launcher",
+   "url": "https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/",
+   "date": "2026-10-15T16:03:19Z",
+   "discuss": "https://news.ycombinator.com/item?id=50105635",
+   "summary": "A benchmark comparison shows Steam client performance against a newly released vibe-coded game launcher.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://respawnfirst.com/wp-content/uploads/2026/10/New-Steam-client-is-faster.webp"
   },
   {
    "source": "GitHub",
@@ -1213,6 +1295,19 @@
    "ai": false,
    "image": "https://static.simonwillison.net/static/2026/web-edit-card.jpg",
    "audience": "dev"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/distillation-defenses",
+   "date": "2026-10-12T00:00:00.000Z",
+   "title": "Strengthening our defenses against distillation attacks",
+   "summary": "Anthropic updated its defenses, reducing unauthorized model distillation attempts by over 90%.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a5934d1ae8428b2a97fae1963a5f427594fc7202-1200x630.jpg"
   },
   {
    "source": "Simon Willison",
@@ -2124,104 +2219,6 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/01Nd05HjeHRiEqwJXFhr6Q/5441b03dbcdabb27917814ff14b1374c/og.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Sharing AI progress in mathematics",
-   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
-   "date": "2026-10-06T12:00:00.000Z",
-   "summary": "OpenAI published new research results from an internal frontier model solving open math problems.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/3430T8Aum4BAOFwLEnHQmC/bbc034e46bc5766dc6569183e87fa6df/ai-progress-in-mathematics-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Advancing computer use with Ironclad",
-   "url": "https://openai.com/index/advancing-computer-use-with-ironclad",
-   "date": "2026-10-06T10:00:00.000Z",
-   "summary": "OpenAI and Ironclad are training AI agents to automate complex legal contracting workflows, advancing practical computer use for professional tasks.",
-   "tags": [
-    "agents",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7MHs3xHafyN62xj8ZblzjX/b0bfb5320a21766be56d761631d18899/oai_ironclad_cua_16x9.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Falcon-Emirati: When an LLM Learns the Dialect, the Culture, and the Nuance",
-   "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
-   "date": "2026-10-06T06:44:39.000Z",
-   "summary": "",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/659bc8a7b0f43ed69f0b2300/MJHJMYW3O4CkLvXvn7DOp.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Reflection Beam - 501B-A23B American Open Model",
-   "url": "https://www.latent.space/p/ainews-reflection-beam-501b-a23b",
-   "date": "2026-10-06T06:28:43.000Z",
-   "summary": "A review of Reflection Beam, a new American open model release.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/DIu7xA898go",
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.291",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
-   "date": "2026-10-06T03:55:19Z",
-   "summary": "Anthropic released version 2.1.291 of Claude Code, bringing incremental updates to its command-line coding tool.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/744e936df1d993f3a47bf73cb014d026d7f0a0153f4db83a36a4f13c78e0c79a/anthropics/claude-code/releases/tag/v2.1.291",
-   "audience": "dev"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
-   "date": "2026-10-06",
-   "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
-   "summary": "Anthropic detailed how enterprise security teams tested Claude Mythos models to identify complex exploit chains across large codebases. This highlights new capabilities for automated code security audits.",
-   "tags": [
-    "coding",
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build",
-   "date": "2026-10-06",
-   "title": "We’re expanding the Claude Startups program to help founders build",
-   "summary": "Anthropic expanded its startup program to grant qualifying teams a free year of the Claude Team plan alongside API credits and development discounts.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build/opengraph-image/og"
   }
  ]
 }
