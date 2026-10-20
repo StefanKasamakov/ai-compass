@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-20T11:46:57.956Z",
+ "updated": "2026-10-20T17:16:02.239Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
+   "date": "2026-10-20T15:19:48.000Z",
+   "summary": "Researchers introduced ALTK-Evolve, using learned memory to surpass frontier models on customer service benchmarks.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/rzXYJh7e7UdoYgCLwOZjH.jpeg"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] not much happened today",
@@ -14,6 +28,20 @@
    "ai": true,
    "audience": "dev",
    "image": "https://substackcdn.com/image/fetch/$s_!otPo!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHVBPHSjWcAAHoHt.jpg"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "date": "2026-10-20T00:00:00.000Z",
+   "summary": "AnyLanguageModel 1.0 launched, providing a unified tool to run local AI models on Apple devices.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/anylanguagemodel-1-0/banner.png"
   },
   {
    "source": "GitHub release",
@@ -161,6 +189,21 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/aa07475b3f0160fb2a6c528ab1dddcab2cefa33f6cdc8d86250c04f9ef341ce6/anthropics/claude-code/releases/tag/v2.1.303"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: WhatsApp MCP running free on Cloudflare",
+   "url": "https://github.com/finereli/whatsapp-mcp",
+   "date": "2026-10-18T21:36:10Z",
+   "discuss": "https://news.ycombinator.com/item?id=50145715",
+   "summary": "A free Model Context Protocol server for WhatsApp was launched that runs serverless on Cloudflare Workers.",
+   "tags": [
+    "mcp",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/5b9cbab5fdc998cf8126a35c863becff7ee6132fa27087686c627e197d671e15/finereli/whatsapp-mcp"
   },
   {
    "source": "Hacker News",
@@ -2179,48 +2222,6 @@
    "big": false,
    "ai": true,
    "image": "https://claude.com/resources/articles/were-expanding-the-claude-startups-program-to-help-founders-build/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
-   "date": "2026-10-06",
-   "title": "Claude now works with Google Docs, Sheets, and Slides",
-   "summary": "Anthropic launched Claude for Google Workspace, enabling users to read, edit, and summarize Google Docs, Sheets, and Slides directly within Claude.",
-   "tags": [
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides/opengraph-image/og"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Felix Rieseberg",
-   "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/",
-   "date": "2026-10-05T23:56:47.000Z",
-   "summary": "Cowork updated its architecture to move tool execution away from local VMs, addressing user concerns about local resource and battery usage.",
-   "tags": [
-    "agents",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.290",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.290",
-   "date": "2026-10-05T23:33:17Z",
-   "summary": "Anthropic released Claude Code v2.1.290, updating its official command-line tool for agentic software development.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/2ca36a122ab7f3d21337558d28cc0578e463fce12e959a50538bb3927b02654c/anthropics/claude-code/releases/tag/v2.1.290",
-   "audience": "dev"
   }
  ]
 }

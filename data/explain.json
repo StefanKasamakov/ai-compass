@@ -14094,5 +14094,72 @@
   "repo": "sickn33/agentic-awesome-skills",
   "at": "2026-10-20",
   "source": "trending"
+ },
+ "kanaworksai-hue/audio-studio-mcp": {
+  "cat": "harness",
+  "kind": "audio generation addon",
+  "what": "Generate AI background music and sound effects locally inside your coding assistant using Stable Audio 3.",
+  "why": "Useful when you need custom game audio, loops, or sound effects without paying for cloud APIs or leaving your editor.",
+  "level": "setup",
+  "start": "git clone https://github.com/kanaworksai-hue/audio-studio-mcp.git",
+  "caution": "Requires a powerful computer (Apple Silicon or an NVIDIA graphics card with enough memory) and a large download for the AI model.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [],
+  "plain": "Add local audio generation to your AI coding assistant so it can make music and sound effects on your computer.",
+  "tags": [
+   "media",
+   "private",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate background music for games",
+   "Create sound effects from plain text",
+   "Export seamless audio loops for video"
+  ],
+  "steps": [
+   "Clone the project repository using Git on your computer.",
+   "Run the install script to set up the environment and download the AI model.",
+   "Register the new tool with your AI coding assistant using the provided command."
+  ],
+  "repo": "kanaworksai-hue/audio-studio-mcp",
+  "at": "2026-10-20",
+  "source": "trending"
+ },
+ "Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX-Spark": {
+  "cat": "local",
+  "kind": "DeepSeek on DGX Spark",
+  "what": "Run DeepSeek's V4.1 Flash model on two NVIDIA DGX Spark computers with fast speed and a 1M-token context.",
+  "why": "It provides high decode and prefill speed plus agent tool-calling support on dedicated multi-computer hardware. Reach for it when you want to run a powerful local model across two specialized machines.",
+  "level": "setup",
+  "start": "cp .env.example .env",
+  "caution": "Requires two specialized NVIDIA DGX Spark computers and around 500 GB of free disk space on each.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "Runs the DeepSeek artificial intelligence model on your own hardware using two specialized computers.",
+  "tags": [
+   "private",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Run DeepSeek V4.1 Flash locally on two DGX Spark computers",
+   "Process long prompts up to one million tokens",
+   "Support tool-calling and structured outputs for AI agents"
+  ],
+  "steps": [
+   "Make your settings file by copying the example and editing your addresses and folder paths.",
+   "Download the model files and copy them to the worker computer.",
+   "Prepare the chat template and build the engine using the provided script.",
+   "Tune the memory settings on both computers, then start the server."
+  ],
+  "repo": "Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX-Spark",
+  "at": "2026-10-20",
+  "source": "trending"
  }
 }
