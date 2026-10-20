@@ -14024,5 +14024,39 @@
   "repo": "juliobsz/skills",
   "at": "2026-10-20",
   "source": "trending"
+ },
+ "deskmind-ai/deskmind": {
+  "cat": "coding",
+  "kind": "Mac computer-use agent",
+  "what": "An open-source desktop assistant for Apple Silicon Macs that reads the screen, decides actions, and controls apps using local models.",
+  "why": "Cloud-based computer-use agents are costly, slow, and prone to guessing incorrectly on ambiguous inputs. Reach for DeskMind to automate Mac desktop tasks locally with built-in user confirmation when steps are unclear.",
+  "level": "easy",
+  "start": "Download DeskMind for Mac from the GitHub releases page",
+  "caution": "Requires macOS 15 or later on Apple Silicon plus roughly 5.3 GB of disk space; struggles with large table copying and photographed receipts.",
+  "alts": [
+   "To3akaRin/mac-computer-use",
+   "openinterpreter/openinterpreter",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "plain": "A Mac app that controls your computer screen and clicks buttons locally, asking for help when unsure.",
+  "tags": [
+   "automate",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Automate repetitive macOS desktop clicks, text entry, and navigation",
+   "Ask for user clarification before making ambiguous desktop choices",
+   "Run desktop agent workflows locally on Apple Silicon hardware"
+  ],
+  "steps": [
+   "Download the signed DeskMind application from the GitHub releases page",
+   "Open the app on macOS 15+ with Apple Silicon to download local models",
+   "Grant required macOS screen recording and accessibility permissions when prompted"
+  ],
+  "repo": "deskmind-ai/deskmind",
+  "at": "2026-10-20",
+  "source": "trending"
  }
 }
