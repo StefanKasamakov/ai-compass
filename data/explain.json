@@ -14269,5 +14269,74 @@
   "repo": "AbdullahAlhariri/penmentor",
   "at": "2026-10-21",
   "source": "trending"
+ },
+ "GroundedCoreAI/nexusdesk": {
+  "cat": "builders",
+  "kind": "AI customer support platform",
+  "what": "NexusDesk is an open-source, self-hosted customer support platform where AI agents answer questions, call tools, draft tickets, and hand off tasks to humans.",
+  "why": "Teams who need customer support AI hosted entirely on their own infrastructure use NexusDesk to safely combine autonomous answers with human approvals for critical actions like ticketing.",
+  "level": "setup",
+  "start": "sh nexusdesk quickstart",
+  "caution": "The project notes it is under active development and not yet production-ready out of the box; vector search via Milvus and MCP adapters are incomplete.",
+  "alts": [
+   "langgenius/dify",
+   "activepieces/activepieces",
+   "Mintplex-Labs/anything-llm"
+  ],
+  "packages": [],
+  "plain": "A customer service chat system that runs on your own server, using AI to answer questions and draft tickets.",
+  "tags": [
+   "apps",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Answer customer questions using private company documents",
+   "Draft support tickets that require human confirmation",
+   "Connect chat widgets to Slack, Discord, and messaging channels"
+  ],
+  "steps": [
+   "Ensure Docker and Docker Compose v2 are installed and running.",
+   "Run `sh nexusdesk quickstart` to build and start the services.",
+   "Open https://localhost:8080 in your browser and log in with admin/nexusdesk.",
+   "Try sample customer queries and configure external model endpoints."
+  ],
+  "repo": "GroundedCoreAI/nexusdesk",
+  "at": "2026-10-21",
+  "source": "trending"
+ },
+ "jaikydota/BullFlow": {
+  "cat": "memory",
+  "kind": "Enterprise RAG marketing platform",
+  "what": "An open-source enterprise RAG platform that indexes company documents and uses AI agents to generate and publish marketing content across social media.",
+  "why": "Solves the disconnection between company knowledge bases, automated content creation, and multi-platform publishing without incurring search or vector retrieval fees.",
+  "level": "setup",
+  "start": "docker compose up -d",
+  "caution": "Running the complete infrastructure locally (Milvus, Elasticsearch, Redis, MySQL, OCR, and embedding models) demands substantial server memory and processing power.",
+  "alts": [
+   "infiniflow/ragflow",
+   "langgenius/dify",
+   "FlowiseAI/Flowise"
+  ],
+  "packages": [],
+  "plain": "Turn company documents into articles, graphics, and social posts, then publish them across media channels automatically.",
+  "tags": [
+   "knowledge",
+   "automate",
+   "media"
+  ],
+  "useFor": [
+   "Turn internal documents into searchable company knowledge bases",
+   "Generate marketing articles, graphics, and videos with source citations",
+   "Schedule automated content posting across multiple social platforms"
+  ],
+  "steps": [
+   "Clone the repository to your server.",
+   "Configure environment variables and required database connections.",
+   "Start the services using `docker compose up -d`."
+  ],
+  "repo": "jaikydota/BullFlow",
+  "at": "2026-10-21",
+  "source": "trending"
  }
 }
