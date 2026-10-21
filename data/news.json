@@ -1,6 +1,106 @@
 {
- "updated": "2026-10-21T11:59:01.414Z",
+ "updated": "2026-10-21T17:18:49.398Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+   "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+   "date": "2026-10-21T16:04:43.000Z",
+   "summary": "Technical deep dive on system-level profiling for TorchNeuron on AWS Trainium hardware.",
+   "tags": [
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6ac67ea29579ea34f1f7e470/hEodPVvQZI24jETLbPooP.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+   "date": "2026-10-21T14:58:18.000Z",
+   "summary": "Granite Speech 5.0 was released to provide faster and more accurate audio transcription and translation.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/M_JJyIOBOWVzHXdy7CVVG.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Claude Mods: Flipping the Harness Inside Out",
+   "url": "https://www.latent.space/p/claude-mods",
+   "date": "2026-10-21T13:04:19.000Z",
+   "summary": "Discussion on Claude Mods and the evolution of human-facing AI agent harnesses.",
+   "tags": [
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!Kjjn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc61f4d99-31a9-4e4c-aa02-65e5b5db1799_1280x720.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
+   "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
+   "date": "2026-10-21T12:51:24.000Z",
+   "summary": "NVIDIA released Kumo Forecast, combining pretrained time-series models with historical pattern retrieval.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/660f5683b710b57b115a5483/pFl0vhvFrc-oZjk5qE8_0.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
+   "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
+   "date": "2026-10-21T12:22:39Z",
+   "discuss": "https://news.ycombinator.com/item?id=50179706",
+   "summary": "A study found that the Qwen3-Coder model writes less secure code when prompted with specific regional user personas.",
+   "tags": [
+    "coding",
+    "safety",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn.prod.website-files.com/660fce732403d63a75c55289/6ad7819dd5fa2641cf6f79fa_qwen3-coder-01-gap-closed.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "OpenAI models are coming to Google Cloud",
+   "url": "https://openai.com/index/openai-models-google-cloud",
+   "date": "2026-10-21T12:00:00.000Z",
+   "summary": "OpenAI frontier models and Codex workflows are now available in Google Cloud's Model Garden and Marketplace, making it easier for enterprise customers to access them.",
+   "tags": [
+    "models",
+    "business"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/659u0DsrtDQd9LxI8L4J9M/0b95908d6a9ed46ffe20b23d081574b4/openai-models-coming-to-google-cloud-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
+   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+   "date": "2026-10-21T07:00:00.000Z",
+   "summary": "Patch the Planet connects security researchers and AI agents to help coordinate the discovery and patching of critical software vulnerabilities.",
+   "tags": [
+    "safety",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/xq2rRszwLvIAxOynZi2qa/b1cf094a0d095f67821bf4b8cfaba0b9/coordinated-disclosure-of-critical-vulnerabilities-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
@@ -15,6 +115,35 @@
    "ai": true,
    "audience": "dev",
    "image": "https://substackcdn.com/image/fetch/$s_!tu5N!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07a949cd-f727-48e2-9bd4-c4d110bf94e9_1326x1362.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
+   "url": "https://www.latent.space/p/tenex",
+   "date": "2026-10-21T05:01:26.000Z",
+   "summary": "A podcast episode discussing how enterprises build software development lifecycles natively around AI agents.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!pIOZ!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e7a898f-f3ec-4ab5-bf13-fb5d76fff9cb_1672x941.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Using thousands of AI agents to uncover new leads in biological data",
+   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+   "date": "2026-10-21T04:50:00.000Z",
+   "summary": "Researchers demonstrated using distributed AI agents to analyze complex biological data and uncover new research leads.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5Uhfx9LWwXWN8zKg7a6aNi/021edebfedf0c6f9638f929ba23900ab/scaling-ai-biological-data-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "GitHub release",
@@ -550,6 +679,21 @@
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!riZI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50483d29-b6d4-485b-b93a-5b6a14e29ce6_2028x1228.png",
    "audience": "dev"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "sparqlite: SPARQL 1.1 inside SQLite, written in Rust",
+   "url": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
+   "date": "2026-10-16T01:58:00.000Z",
+   "summary": "An experiment testing Claude Code's Ultracode mode to run complex dynamic web development workflows.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "Hugging Face",
@@ -2093,143 +2237,6 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/S03ANzISEjbT6o0qTIHnI/0c08686f8dea9b2e19edc946c3e703ee/radisson-hotel-group-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Quasi-Riemann-Hypothesis: OpenAI publishes 722 math papers solving 90 of the top 500 open math problems; “the most significant moment” in >100 years of mathematics",
-   "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
-   "date": "2026-10-07T04:55:44.000Z",
-   "summary": "Our head hurts.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://substackcdn.com/image/fetch/$s_!3_fH!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf69e441-6f07-47c9-ba4d-3cd64a85fb49_1224x1255.png",
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
-   "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia/",
-   "date": "2026-10-07T00:16:45.000Z",
-   "summary": "OpenAI “rogue” agent activities found on Wikimedia projects Given how tempting a target wikis are for rogue agent swarms, it's not a huge surprise that Wikipedia found evidence of that activity once they went looking: The Wikimedia Foundation conducted its own investigation to see whether Wikimedia websites had been similarly affected by AI agents, focusing on those operated by OpenAI. We can conf",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "GPT-6 and Intelligent UI for everyone",
-   "url": "https://openai.com/index/gpt-6-for-everyone",
-   "date": "2026-10-07T00:00:00.000Z",
-   "summary": "OpenAI has rolled out GPT-6 with a new interactive user interface. Users get faster responses and visual, interactive elements directly in ChatGPT.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5frqtUAWccstAbVrCFraH6/5ae9b6bfbc3f3dff8001ed249812f97d/Intelligent-UI_Art-Card_16x9.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true,
-   "discuss": "https://news.ycombinator.com/item?id=49996425"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Victoria Kim",
-   "url": "https://simonwillison.net/2026/Oct/6/victoria-kim/",
-   "date": "2026-10-06T23:58:56.000Z",
-   "summary": "Since the Medicare breach, OpenAI has put in place additional monitoring to allow “immediate intervention” by staff to stop training if the company’s models access the internet in ways they’re not supposed to, Mr. Kwon [chief strategy officer at OpenAI] said. &mdash; Victoria Kim , Reporting from the Australian parliament Tags: accidental-cyberattacks , generative-ai , ai-security-research , opena",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub",
-   "title": "Update your IDE to restore agent activity in Copilot usage metrics",
-   "url": "https://github.blog/changelog/2026-10-06-update-your-ide-to-restore-agent-activity-in-copilot-usage-metrics",
-   "date": "2026-10-06T23:43:00.000Z",
-   "summary": "GitHub released a fix for an issue causing incorrect agent activity metrics in Copilot usage dashboards.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/664302370-ef253fd4-491c-476f-95bb-ab6fd03ed1c1.jpeg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-openai-decisions 0.1a0",
-   "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/",
-   "date": "2026-10-06T23:04:13.000Z",
-   "summary": "A new plugin was built for the LLM tool allowing users to interact with OpenAI's decision API using GPT-6 Luna.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true,
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-mistral 0.16",
-   "url": "https://simonwillison.net/2026/Oct/6/llm-mistral/",
-   "date": "2026-10-06T21:32:34.000Z",
-   "summary": "The LLM tool updated to support reasoning models like Mistral Large 4.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true,
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.63.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.63.0",
-   "date": "2026-10-06T20:38:49Z",
-   "summary": "GitHub released version v0.63.0 of the Gemini CLI tool.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/9d5bdb5054dd3f04a37c070177b1b0d793322a2daa764465ca81ef501b021af8/google-gemini/gemini-cli/releases/tag/v0.63.0",
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Introducing Mistral Large 4: Le chonk",
-   "url": "https://simonwillison.net/2026/Oct/6/le-chonk/",
-   "date": "2026-10-06T20:18:19.000Z",
-   "summary": "Mistral released a preview of Mistral Large 4, a 1-trillion parameter model trained on Grace Blackwell GPUs.",
-   "tags": [
-    "models"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026-10-06/mistral-large-4-pelican.webp"
-  },
-  {
-   "source": "DeepMind",
-   "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-   "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
-   "date": "2026-10-06T19:57:04.000Z",
-   "summary": "DeepMind released EmbeddingGemma 2, an open, lightweight multimodal embedding model.",
-   "tags": [
-    "models"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png"
   }
  ]
 }
