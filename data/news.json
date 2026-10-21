@@ -1,6 +1,21 @@
 {
- "updated": "2026-10-21T04:57:33.348Z",
+ "updated": "2026-10-21T09:36:15.190Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
+   "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
+   "date": "2026-10-21T06:54:09.000Z",
+   "summary": "DeepSeek released DeepInfer, an open-source inference system designed to serve large models at high throughput and lower cost.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://substackcdn.com/image/fetch/$s_!tu5N!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07a949cd-f727-48e2-9bd4-c4d110bf94e9_1326x1362.png"
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.306",
@@ -2215,17 +2230,6 @@
    "big": true,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Using Parseable with Datasette for OpenTelemetry traces",
-   "url": "https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry/",
-   "date": "2026-10-06T19:07:31.000Z",
-   "summary": "TIL: Using Parseable with Datasette for OpenTelemetry traces I saw Parseable in a Show HN today - it's a new observability platform with both an open source (AGPL) Rust implementation (a single ~180MB binary), an \"Enterprise\" version with extra features and a cloud hosted option. Since Datasette 1.0a41 added OpenTelemetry support (thanks, Alex Garcia), I decided to fire up Codex and have it figure",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://raw.githubusercontent.com/simonw/til/refs/heads/main/datasette/datasette-parsable.webp"
   }
  ]
 }

@@ -1,34 +1,33 @@
 {
- "updated": "2026-10-21T04:57:33.348Z",
+ "updated": "2026-10-21T09:36:15.190Z",
  "items": [
   {
-   "repo": "eagle-hq/EAGLE-4",
-   "stars": 347,
-   "desc": "Official Inference Code of EAGLE-4",
-   "created": "2026-10-20T14:03:04Z",
-   "topics": [
-    "eagle",
-    "gpu",
-    "llm-inference",
-    "sglang"
-   ],
+   "repo": "AbdullahAlhariri/penmentor",
+   "stars": 73,
+   "desc": "AI mentor that corrects your written math visually with local harnesses.",
+   "created": "2026-10-17T13:22:22Z",
+   "topics": [],
    "lang": "Python",
    "sources": [
-    "new on GitHub"
-   ]
+    "Show HN"
+   ],
+   "hn": {
+    "points": 61,
+    "url": "https://news.ycombinator.com/item?id=50167604"
+   }
   },
   {
-   "repo": "JEen-wang/Adaptive-rag",
-   "stars": 115,
-   "desc": "按问题复杂度自动分流的电商客服 Agent：简单问题直接回答；复杂问题经过多跳检索并自我纠错；查单、退改通过工具调用完成，且高风险写操作必须先经人工确认。基于 FastAPI 和 LangGraph，混合检索并附带引用，内置离线评测与 Prometheus 指标。",
-   "created": "2026-09-29T08:31:04Z",
+   "repo": "jaikydota/BullFlow",
+   "stars": 80,
+   "desc": "推量牛 BullFlow — 开源企业级 RAG 解决方案：从企业知识库、营销内容自动化生产到全域内容分发 | Open-source enterprise RAG solution: knowledge base → automated marketing content → omnichannel publishing. 知识库全链路本地开源模型，无需付费模型；AI Agent 创作图文 / 图片 / 视频，一键发布抖音、小红书、公众号、LinkedIn、YouTube 等 17 个平台。Commercial-grade, multi-tenant, billing & admin built in. MIT",
+   "created": "2026-10-14T07:25:27Z",
    "topics": [
-    "adaptive-rag",
-    "llm-agents",
-    "rag",
-    "rag-evaluation"
+    "ai-agents",
+    "bge-m3",
+    "content-generation",
+    "elasticsearch"
    ],
-   "lang": "Python",
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]

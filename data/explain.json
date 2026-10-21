@@ -14235,5 +14235,39 @@
   "repo": "JEen-wang/Adaptive-rag",
   "at": "2026-10-21",
   "source": "trending"
+ },
+ "AbdullahAlhariri/penmentor": {
+  "cat": "harness",
+  "kind": "Handwritten math mentor harness",
+  "what": "penmentor is an AI assistant harness that visually marks handwritten math notes, provides staged hints, and creates interactive animations using existing CLI agents.",
+  "why": "It replaces the cumbersome process of manually screenshotting handwritten math notes to paste into chat windows. Reach for it when studying math with a pen tablet and you want immediate visual corrections and step-by-step nudges.",
+  "level": "setup",
+  "start": "git clone https://github.com/AbdullahAlhariri/penmentor ~/src/penmentor",
+  "caution": "Linux X11 only, requiring window tools like rofi, slop, and xdotool. It relies on your logged-in consumer subscription sessions for Claude Code, Codex, or Antigravity.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "Checks handwritten math notes directly on your screen and circles errors using your existing AI subscription.",
+  "tags": [
+   "knowledge",
+   "supercharge",
+   "media"
+  ],
+  "useFor": [
+   "Circle calculation mistakes directly on handwritten digital notebook pages",
+   "Request hints for math problems instead of revealing full answers",
+   "Generate interactive math animations using manim from written integrals"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/AbdullahAlhariri/penmentor ~/src/penmentor`.",
+   "Ensure Linux X11, PyQt6, rofi, slop, xdotool, and an agent like Claude Code or Codex are installed.",
+   "Run `~/src/penmentor/bin/penmentor --selftest` to confirm configuration.",
+   "Bind the penmentor executable to a global keyboard shortcut in your window manager."
+  ],
+  "repo": "AbdullahAlhariri/penmentor",
+  "at": "2026-10-21",
+  "source": "trending"
  }
 }
