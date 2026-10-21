@@ -1,6 +1,21 @@
 {
- "updated": "2026-10-20T21:41:49.165Z",
+ "updated": "2026-10-21T04:57:33.348Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.306",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
+   "date": "2026-10-21T03:16:31Z",
+   "summary": "Claude Code released version v2.1.306 with routine updates and bug fixes for the terminal AI coding tool.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/1cd75e454cacc7cc7c044d841d051eb36ba5921f34dcce2a40e99e9928103d95/anthropics/claude-code/releases/tag/v2.1.306"
+  },
   {
    "source": "GitHub release",
    "title": "Gemini CLI v0.65.0",
@@ -57,6 +72,20 @@
   },
   {
    "source": "Hugging Face",
+   "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+   "url": "https://huggingface.co/blog/allenai/fairstress",
+   "date": "2026-10-20T16:09:19.000Z",
+   "summary": "Hugging Face released FairStress, a tool for deep evaluation of fairness in large language model decision-making.",
+   "tags": [
+    "research",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/7zYjyTWswjO2erWsO5HNf.png"
+  },
+  {
+   "source": "Hugging Face",
    "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
    "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
    "date": "2026-10-20T15:19:48.000Z",
@@ -68,6 +97,36 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/rzXYJh7e7UdoYgCLwOZjH.jpeg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+   "url": "https://openai.com/index/ted-taylor-restaurant",
+   "date": "2026-10-20T10:00:00.000Z",
+   "summary": "A small business used ChatGPT Work to automate cash reconciliation and menu repricing, saving significant time.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6r0aKM9KAloDNT979EYd6j/958b4b872830668c232730e99caa3f9e/ted-taylor-restaurant-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+   "url": "https://openai.com/index/terminal-x",
+   "date": "2026-10-20T07:00:00.000Z",
+   "summary": "An investment firm evaluated GPT-6.1 Sol for matching senior investor judgment on financial reviews.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/7btnUEAESJNvgHmdUPxexp/ac70fe93d02f52002ca5f146af8c7caf/Terminal-X-A-SEO-social-1920x1080.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Latent Space",
@@ -82,6 +141,46 @@
    "ai": true,
    "audience": "dev",
    "image": "https://substackcdn.com/image/fetch/$s_!otPo!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHVBPHSjWcAAHoHt.jpg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "OpenAI acquires Orchestra Bio",
+   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
+   "date": "2026-10-20T00:00:00.000Z",
+   "summary": "OpenAI acquired Orchestra Bio to bring AI-powered operations to life sciences research and development.",
+   "tags": [
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/qoX4w89e0GxOOa2GsAdSm/b4a461997956908e9813e59044617416/openai-to-acquire-orchestra-bio-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
+   "url": "https://huggingface.co/blog/hf-torchtpu",
+   "date": "2026-10-20T00:00:00.000Z",
+   "summary": "Hugging Face added native support for Google TPUs in PyTorch via TorchTPU.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/hf-torchtpu/thumbnail.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "MPS in PyTorch 2.15",
+   "url": "https://huggingface.co/blog/mps-pytorch-2-15",
+   "date": "2026-10-20T00:00:00.000Z",
+   "summary": "PyTorch 2.15 added updates for Metal Performance Shaders (MPS) to improve local model execution on Apple hardware.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/mps-pytorch-2-15/thumbnail.png"
   },
   {
    "source": "Hugging Face",
@@ -334,6 +433,21 @@
    "image": "https://claude.dev/blog/solving-code-review-at-anthropic/og.png"
   },
   {
+   "source": "OpenAI",
+   "title": "How Itaú is building generative AI for its entire customer base",
+   "url": "https://openai.com/index/itau-generative-ai",
+   "date": "2026-10-16T19:00:00.000Z",
+   "summary": "Bank Itaú is implementing conversational interfaces and governance platforms for its customers and employees.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5f6g1v0mGiFwS4OuWQJpZ/ea1b571975a4668874331d6d068bfdcb/itau-social-optical-r2.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
    "source": "Hacker News",
    "title": "Claude reveals ECDSA curve origins",
    "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
@@ -544,6 +658,21 @@
    "ai": true,
    "image": "https://opengraph.githubassets.com/320b6490de42374d99ccc5201a9e44d68b796444a013218ca10bea6e20c91cc9/anthropics/claude-code/releases/tag/v2.1.301",
    "audience": "dev"
+  },
+  {
+   "source": "Hacker News",
+   "title": "SlopCodeBench 10/2026 – Opus 5.5, Astra wins overall, xhigh considered harmful",
+   "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
+   "date": "2026-10-15T19:09:34Z",
+   "discuss": "https://news.ycombinator.com/item?id=50108717",
+   "summary": "SlopCodeBench results compared coding model performance across recent benchmarks, noting top scores for Astra and Opus 5.5.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/be42207e44799dceba3e459e806d040a40b9dfddc6d9ea4fa03c5b93fcce5726/humanlayer/advanced-context-engineering-for-coding-agents"
   },
   {
    "source": "OpenAI",
@@ -2097,128 +2226,6 @@
    "big": false,
    "ai": false,
    "image": "https://raw.githubusercontent.com/simonw/til/refs/heads/main/datasette/datasette-parsable.webp"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/cyber-verification-program",
-   "date": "2026-10-06T19:00:00.000Z",
-   "title": "Expanding the Cyber Verification Program",
-   "summary": "Anthropic updated its Cyber Verification Program to let vetted security practitioners use Claude models with relaxed safety filters for defensive testing.",
-   "tags": [
-    "product",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.anthropic.com/api/opengraph-illustration?name=Hand%20Lock&backgroundColor=heather"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.292",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
-   "date": "2026-10-06T18:59:30Z",
-   "summary": "GitHub released version v2.1.292 of the Claude Code coding assistant.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/62ddbc248d3fda7cedceec7966946c6e8487ea9492943545b0c5fccdc33c5438/anthropics/claude-code/releases/tag/v2.1.292",
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Mistral Large 4",
-   "url": "https://simonwillison.net/2026/Oct/6/hn-49982139/",
-   "date": "2026-10-06T18:20:58.000Z",
-   "summary": "My comment on Mistral Large 4 &mdash; Hacker News. wren6991 : The benchmark is saturated. Frontier models are tested with an armadillo in fishnet tights jaywalking on Mars. OK well I couldn't resist this one: llm -m claude-opus-5.5 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars' llm -m gpt-6.1-sol 'Generate an SVG of an armadillo in fishnet tights jaywalking on Mars' llm -m ",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=128",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude Code’s suggested message feature: I think the real customer is the model",
-   "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
-   "date": "2026-10-06T18:00:34Z",
-   "discuss": "https://news.ycombinator.com/item?id=49981905",
-   "summary": "165 points, 88 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-   "url": "https://openai.com/index/atlassian-partnership",
-   "date": "2026-10-06T16:00:00.000Z",
-   "summary": "Atlassian and OpenAI are partnering to integrate frontier AI models into enterprise planning and knowledge tools.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6QbNTCFAGpVGjDLSMfKf9M/e571659e9694e08b73f5e73a01a0682c/atlassian-social-official.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Scrimshaw Jukebox",
-   "url": "https://simonwillison.net/2026/Oct/6/scrimshaw-jukebox/",
-   "date": "2026-10-06T15:17:39.000Z",
-   "summary": "A developer experiment demonstrates using Claude Opus 5.5 to design a text-based music format and build a playable audio artifact.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/scrimshaw-card.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Vibecoding isn't as fun as writing code by hand",
-   "url": "https://www.autodidacts.io/vibecoding-isnt-as-fun-as-writing-code-by-hand/",
-   "date": "2026-10-06T14:45:02Z",
-   "discuss": "https://news.ycombinator.com/item?id=49979306",
-   "summary": "A developer discussion reflecting on the subjective enjoyment and trade-offs of writing code by hand versus using AI coding tools.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.autodidacts.io/content/images/size/w1200/2026/08/ai-vibecoding-vs-coding-by-hand-thrill-learning-fun-curve-1.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "What is Codemode",
-   "url": "https://lucumr.pocoo.org/2026/10/6/codemode/",
-   "date": "2026-10-06T13:41:03Z",
-   "discuss": "https://news.ycombinator.com/item?id=49978333",
-   "summary": "An explainer exploring Codemode, a paradigm for integrating LLM code generation into automated developer workflows.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://lucumr.pocoo.org/social/2026-10-06-codemode-social.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Jump Trading is scaling quant research with ChatGPT",
-   "url": "https://openai.com/index/jump-trading",
-   "date": "2026-10-06T12:00:00.000Z",
-   "summary": "Jump Trading uses OpenAI to expand quantitative research. See how longer-running AI workflows combine multiple data sources with human review.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/01Nd05HjeHRiEqwJXFhr6Q/5441b03dbcdabb27917814ff14b1374c/og.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }

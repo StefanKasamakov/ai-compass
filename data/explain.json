@@ -14161,5 +14161,79 @@
   "repo": "Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX-Spark",
   "at": "2026-10-20",
   "source": "trending"
+ },
+ "eagle-hq/EAGLE-4": {
+  "cat": "local",
+  "kind": "Faster text generation",
+  "what": "Speeds up large language model text generation using speculative decoding across various batch sizes and hardware.",
+  "why": "When you want to run open AI models faster on your own graphics cards without losing output quality, you reach for this tool.",
+  "level": "setup",
+  "start": "git clone https://github.com/eagle-hq/EAGLE-4",
+  "caution": "Requires advanced setup with specific graphics card drivers, custom wheels, and high-end hardware.",
+  "alts": [
+   "vllm-project/vllm",
+   "sglang-project/sglang"
+  ],
+  "packages": [
+   "eagle-harness"
+  ],
+  "plain": "Makes AI models generate text faster [uses less text, so it costs less] on your own graphics card.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Speed up AI text generation",
+   "Run open-source models locally",
+   "Optimize hardware throughput"
+  ],
+  "steps": [
+   "Clone the repository and load the release environment variables.",
+   "Install the patched server engine and eagle-harness package.",
+   "Run the check command to verify installation hooks.",
+   "Launch the server with speculative decoding options enabled."
+  ],
+  "repo": "eagle-hq/EAGLE-4",
+  "at": "2026-10-21",
+  "source": "trending"
+ },
+ "JEen-wang/Adaptive-rag": {
+  "cat": "coding",
+  "kind": "ecommerce support agent",
+  "what": "An adaptive RAG e-commerce customer support workflow agent that dynamically routes questions based on complexity, uses hybrid search, and enforces human confirmation for high-risk write operations.",
+  "why": "It helps developers build advanced AI customer service agents that handle everything from simple greetings to multi-hop policy lookups and secure order management without hallucinating.",
+  "level": "setup",
+  "start": "pip install -e \".[dev]\"",
+  "caution": "The API currently lacks request authentication for `user_id` by default and is intended as a demonstration or reference project rather than a direct production deployment.",
+  "alts": [
+   "langflow-ai/langflow",
+   "OpenHands/OpenHands",
+   "langgraph"
+  ],
+  "packages": [
+   "fastapi",
+   "langgraph",
+   "uvicorn"
+  ],
+  "plain": "An artificially intelligent customer service assistant that automatically routes support questions, searches policy documents, and asks a human before changing orders.",
+  "tags": [
+   "knowledge",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Automate customer service responses using document search and tool calls",
+   "Route user queries by complexity to reduce unnecessary searches",
+   "Require human approval before performing high-risk actions like order cancellations"
+  ],
+  "steps": [
+   "Clone the repository and create a Python virtual environment",
+   "Install the package dependencies using `pip install -e \".[dev]\"`",
+   "Copy the environment configuration and start the API server using `uvicorn app.asgi:app --reload`",
+   "Start the web interface by running `npm ci` and `npm run dev` inside the frontend directory"
+  ],
+  "repo": "JEen-wang/Adaptive-rag",
+  "at": "2026-10-21",
+  "source": "trending"
  }
 }
