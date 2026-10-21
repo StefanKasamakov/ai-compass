@@ -14338,5 +14338,40 @@
   "repo": "jaikydota/BullFlow",
   "at": "2026-10-21",
   "source": "trending"
+ },
+ "amurgola/LumaBrowser": {
+  "cat": "local",
+  "kind": "AI browser and stack",
+  "what": "A local AI desktop app that combines a Chromium browser, a GPU-aware LLM runtime, image and voice generation, and automation tools.",
+  "why": "Replaces a pile of separate local AI tools with one desktop app, allowing you to run models, generate media, and let AI agents browse the web locally.",
+  "level": "easy",
+  "start": "npx lumabrowser start",
+  "caution": "Requires a machine with a capable graphics card for good performance, especially for larger models, video generation, and music.",
+  "alts": [
+   "ollama/ollama",
+   "OpenWebUI/open-webui",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "A web browser that runs artificial intelligence directly on your computer so your data stays private.",
+  "tags": [
+   "knowledge",
+   "media",
+   "private",
+   "automate"
+  ],
+  "useFor": [
+   "Chat with local models and search the web",
+   "Generate images, video, music, and voices",
+   "Automate browsing tasks with AI agents"
+  ],
+  "steps": [
+   "Download the app from GitHub Releases or run `npx lumabrowser start`.",
+   "Open the models tab to download or link your local AI models.",
+   "Start a chat or ask the assistant to search the web and complete tasks."
+  ],
+  "repo": "amurgola/LumaBrowser",
+  "at": "2026-10-21",
+  "source": "trending"
  }
 }

@@ -1,6 +1,34 @@
 {
- "updated": "2026-10-21T17:18:49.398Z",
+ "updated": "2026-10-21T21:47:42.288Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+   "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+   "date": "2026-10-21T18:26:30.000Z",
+   "summary": "NVIDIA unveiled Kumo Relational, a model capable of analyzing relational database tables zero-shot without custom training.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6ad8e88370f69967fafc8703/i-Flass3NMPRmc6lVfwO_.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+   "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+   "date": "2026-10-21T17:35:36.000Z",
+   "summary": "Research demonstrates that customizing token vocabularies for small language models can lower production inference costs by up to 77 percent.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/OWGtXjnbBov-7SI_04o4z.png"
+  },
   {
    "source": "Hugging Face",
    "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
@@ -159,6 +187,35 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/1cd75e454cacc7cc7c044d841d051eb36ba5921f34dcce2a40e99e9928103d95/anthropics/claude-code/releases/tag/v2.1.306"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-duet",
+   "date": "2026-10-21",
+   "title": "Introducing Claude Duet",
+   "summary": "Anthropic launched Claude Duet, a proactive desktop agent app available via waitlist for US paid subscribers.",
+   "tags": [
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-duet/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+   "date": "2026-10-21",
+   "title": "Claude Security now scans continuously and tracks fixes",
+   "summary": "Claude Security now continuously monitors codebases for vulnerabilities and connects into enterprise workflows via MCP and APIs.",
+   "tags": [
+    "coding",
+    "mcp",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes/opengraph-image/og"
   },
   {
    "source": "GitHub release",
@@ -2184,59 +2241,6 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/671a3e44cf97dc64441e170a/bJ2aGPIX6WLWagE10j5y3.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
-   "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
-   "date": "2026-10-07T12:45:31.000Z",
-   "summary": "",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/67b8b0096c3182e96bf6cea1/zB6BNaB-3tiCCsnOo7gik.png",
-   "audience": "dev"
-  },
-  {
-   "source": "Google",
-   "title": "Introducing Playground: Create and play custom games",
-   "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-   "date": "2026-10-07T12:00:00.000Z",
-   "summary": "Google released Playground, an experimental platform for creating and sharing custom games.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/THUMBNAIL_BLOG.width-1300.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Helping teens learn, plan, and shape the future of AI",
-   "url": "https://openai.com/index/teens-learn-and-plan",
-   "date": "2026-10-07T12:00:00.000Z",
-   "summary": "OpenAI is bringing a college planning tool, flashcards, and quizzes to ChatGPT for Teens.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/48q2nDNP9Gj81cxL5sCOFv/e0692d4bcad2b81fad9b62b5bea904b7/teens-learn-and-plan-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
-   "url": "https://openai.com/index/radisson",
-   "date": "2026-10-07T07:00:00.000Z",
-   "summary": "Radisson launched a ChatGPT integration allowing users to search, compare, and book hotels directly within ChatGPT conversations.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/S03ANzISEjbT6o0qTIHnI/0c08686f8dea9b2e19edc946c3e703ee/radisson-hotel-group-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }
