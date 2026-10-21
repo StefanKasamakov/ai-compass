@@ -359,58 +359,6 @@
     "note": "ARC-AGI-2 Semi-Private, High reasoning (the Verified table shows 91.3%), read 2026-10-16"
    }
   },
-  "gpro": {
-   "aa": {
-    "v": 29.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "agents": {
-    "v": 35.4,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "tb40": {
-    "v": 4,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "longctx": {
-    "v": 82,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "hle": {
-    "v": 47,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "science": {
-    "v": 17.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "scicode": {
-    "v": 58.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "mmmu": {
-    "v": 82.4,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Gemini 3.1 Pro Preview\" (only/highest variant AA lists)"
-   },
-   "arc": {
-    "v": 77.1,
-    "src": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
-    "note": "ARC-AGI-2, ARC Prize Verified (the arcprize.org data has 77.08% for Gemini 3.1 Pro Preview)"
-   },
-   "arena": {
-    "v": 1487,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "gemini-3.1-pro-preview, text overall (style control), rank 17, snapshot read 2026-09-29"
-   }
-  },
   "gflash": {
    "aa": {
     "v": 40.9,
@@ -564,53 +512,6 @@
     "note": "glm-5.3-max, text overall (style control), rank 24, snapshot read 2026-09-29"
    }
   },
-  "deepseek": {
-   "aa": {
-    "v": 36,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "agents": {
-    "v": 56.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "tb40": {
-    "v": 14.1,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "longctx": {
-    "v": 80.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "hle": {
-    "v": 41,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "science": {
-    "v": 18,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "scicode": {
-    "v": 51,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "arc": {
-    "v": 61.3,
-    "src": "https://arcprize.org/results/deepseek-v4-pro-0813",
-    "note": "ARC-AGI-2 Semi-Private, V4 Pro 0813 Max. V4 Flash 0731 Max scores 61.4%."
-   },
-   "arena": {
-    "v": 1464,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "deepseek-v4-pro-high-20260813, text overall (style control), rank 53, snapshot read 2026-09-29"
-   }
-  },
   "kimi": {
    "aa": {
     "v": 43.6,
@@ -662,48 +563,6 @@
     "src": "https://arena.ai/leaderboard/text",
     "note": "kimi-k3-max, text overall (style control), rank 16, snapshot read 2026-09-29"
    }
-  },
-  "mistral": {
-   "aa": {
-    "v": 11.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "agents": {
-    "v": 1,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "tb40": {
-    "v": 0,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "longctx": {
-    "v": 49.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "hle": {
-    "v": 9.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "science": {
-    "v": 0.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "scicode": {
-    "v": 38.8,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "mmmu": {
-    "v": 56.8,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   }
   }
  },
  "hosted": {
@@ -716,11 +575,6 @@
    "in": 0.08,
    "out": 4.8,
    "note": "via OpenRouter"
-  },
-  "deepseek": {
-   "in": 1.32,
-   "out": 3.96,
-   "note": "V4 Pro 0813 via OpenRouter"
   },
   "kimi": {
    "in": 3,
