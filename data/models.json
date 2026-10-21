@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -265,7 +265,9 @@
    "tier": "Open",
    "best": "European, Apache-2.0, 256K context. Easy on a company server.",
    "price": "free*",
-   "ctx": "256K"
+   "ctx": "256K",
+   "in": 0.15,
+   "out": 0.6
   }
  ]
 }
