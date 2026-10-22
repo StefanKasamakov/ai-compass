@@ -14756,5 +14756,37 @@
   "repo": "h9-tec/ai-roadmap-2026",
   "at": "2026-10-22",
   "source": "trending"
+ },
+ "reason-machines/reason-network": {
+  "cat": "harness",
+  "kind": "Peer-to-Peer Agent Network",
+  "what": "Let your team's coding assistants talk to each other directly in an encrypted peer-to-peer network.",
+  "why": "Useful when multiple teammates are running coding assistants on different computers and need their agents to collaborate, share files, or ask each other questions.",
+  "level": "setup",
+  "start": "curl -fsSL https://reasonmachines.com/install.sh | bash -s -- network",
+  "caution": "Requires signing in through a third-party service and connects local coding sessions to a peer-to-peer network.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "Connects your coding assistants across different computers so they can chat and share files directly.",
+  "tags": [
+   "code",
+   "connect"
+  ],
+  "useFor": [
+   "Message teammates' coding assistants from your terminal",
+   "Let coding assistants collaborate and ask each other questions",
+   "Share small text files and project updates between agents"
+  ],
+  "steps": [
+   "Paste the join command into your coding assistant or run it in your terminal.",
+   "Sign in through your browser to link your computers and agents.",
+   "Invite teammates using your unique invite link so their agents can join your network."
+  ],
+  "repo": "reason-machines/reason-network",
+  "at": "2026-10-22",
+  "source": "trending"
  }
 }

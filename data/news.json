@@ -1,6 +1,47 @@
 {
- "updated": "2026-10-22T12:01:15.269Z",
+ "updated": "2026-10-22T17:16:23.903Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "Industry comparisons in the Copilot impact dashboard",
+   "url": "https://github.blog/changelog/2026-10-22-industry-comparisons-in-the-copilot-impact-dashboard",
+   "date": "2026-10-22T16:28:24.000Z",
+   "summary": "The GitHub Copilot impact dashboard now includes industry comparisons for agentic adoption benchmarks.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/681207257-5993c03c-c523-44d2-b2bf-8ac57818dd74.jpg"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+   "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+   "date": "2026-10-22T16:11:31.000Z",
+   "summary": "OlmoEarth v1.3 provides state-of-the-art embeddings for geographic data.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/VEmSzlLjei8J3cUVNe7G6.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "You are the Team — Anekha Sokhal, Moshi",
+   "url": "https://www.latent.space/p/moshi",
+   "date": "2026-10-22T14:03:40.000Z",
+   "summary": "An interview discussing how Moshi integrates market data insights into trader workflows.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://substackcdn.com/image/fetch/$s_!U_nh!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F221404681%2F7532ee0a-716c-45b3-8a1a-8f6a791659de%2Ftranscoded-1792540372.png"
+  },
   {
    "source": "Hugging Face",
    "title": "Ensemble forecasting with IBM Granite time-series models",
@@ -15,6 +56,21 @@
    "image": "https://cdn-uploads.huggingface.co/production/uploads/6806091ee92bd22fd8ce9719/P6P8ZzHR8yL7GOOO4hQOg.png"
   },
   {
+   "source": "Latent Space",
+   "title": "[AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months",
+   "url": "https://www.latent.space/p/ainews-openais-patch-the-planet-program",
+   "date": "2026-10-22T07:42:44.000Z",
+   "summary": "OpenAI used GPT-5.6 Sol to help discover critical PHP2Shell security vulnerabilities in core PHP.",
+   "tags": [
+    "safety",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://substackcdn.com/image/fetch/$s_!Ak4o!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2f193200-5a32-4d16-8cef-d36ab44b0848_1440x1290.png"
+  },
+  {
    "source": "GitHub release",
    "title": "Claude Code v2.1.308",
    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
@@ -27,6 +83,35 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/6561fb64edb8a9b4f54d59829154601e665f1223f5add27442243561bb61c06b/anthropics/claude-code/releases/tag/v2.1.308"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Uber brings ChatGPT Work to all employees with OpenAI",
+   "url": "https://openai.com/index/uber-chatgpt-work-rollout",
+   "date": "2026-10-22T00:00:00.000Z",
+   "summary": "Uber is rolling out ChatGPT Work to over 30,000 employees for research and data analysis.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5Ggg0KhDALourCX7MklMBY/c7f06d5982895ca0867ed21a0b95d422/uber-brings-chatgpt-work-to-all-employees-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop",
+   "date": "2026-10-22",
+   "title": "Building agents: When to fold subagents into your main agent loop",
+   "summary": "Anthropic shares guidance on when developers should fold subagents directly into their main agent loop.",
+   "tags": [
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop/opengraph-image/og"
   },
   {
    "source": "Hacker News",
@@ -2162,89 +2247,6 @@
    "big": true,
    "ai": true,
    "image": "https://claude.com/resources/articles/dashboards-and-motion/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests",
-   "date": "2026-10-08",
-   "title": "How Block orchestrates Claude Fable across thousands of pull requests",
-   "summary": "Block published practical details on using Claude Fable 5 to automate large-scale code refactoring across pull requests.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/how-block-orchestrates-claude-fable-across-thousands-of-pull-requests/opengraph-image/og"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Claude Haiku 5.5",
-   "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-   "date": "2026-10-07T20:56:21.000Z",
-   "summary": "Anthropic released Claude Haiku 5.5, its new lightweight, low-cost model, priced aggressively to match competitors like GPT-6 Luna.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/claude-haiku-5-5-card.webp",
-   "discuss": "https://news.ycombinator.com/item?id=49996437"
-  },
-  {
-   "source": "GitHub",
-   "title": "Claude Haiku 5.5 in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
-   "date": "2026-10-07T20:12:18.000Z",
-   "summary": "Anthropic’s Claude Haiku 5.5 model is now generally available in GitHub Copilot for rapid, high-volume tasks like writing subagents.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/667862135-8b23d51b-0f8b-4642-97bd-f785a7211718.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Meta and Microsoft take steps to reduce employee usage of Claude AI",
-   "url": "https://www.rswebsols.com/news/meta-and-microsoft-take-steps-to-reduce-employee-usage-of-claude-ai/",
-   "date": "2026-10-07T18:49:40Z",
-   "discuss": "https://news.ycombinator.com/item?id=49997161",
-   "summary": "Tech giants Meta and Microsoft are restricting employees from using rival Anthropic's Claude AI for internal work.",
-   "tags": [
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn.rswebsols.com/wp-content/uploads/2025/10/otr1by4mkru.jpg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.293",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.293",
-   "date": "2026-10-07T18:10:20Z",
-   "summary": "Anthropic released version 2.1.293 of Claude Code, its terminal-based tool for writing, editing, and running code locally.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/b1fed6c2fe312a54f44918106e83d012a118501f051c017e7a7afe3d4455ee69/anthropics/claude-code/releases/tag/v2.1.293",
-   "audience": "dev"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Multimodal open d1 decision models for the edge",
-   "url": "https://huggingface.co/blog/LiquidAI/open-d1",
-   "date": "2026-10-07T16:54:33.000Z",
-   "summary": "Hugging Face highlighted new open multimodal d1 decision models designed for on-device edge computing.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/hLsllw4zhC04cVGiV69v0.png"
   }
  ]
 }
