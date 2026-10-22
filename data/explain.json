@@ -14373,5 +14373,73 @@
   "repo": "amurgola/LumaBrowser",
   "at": "2026-10-21",
   "source": "trending"
+ },
+ "android/skills": {
+  "cat": "harness",
+  "kind": "Android AI skills",
+  "what": "A official collection of modular, AI-optimized instruction sets that guide coding assistants on Android development best practices.",
+  "why": "AI assistants frequently make mistakes in complex or newer Android development patterns. Reach for this repository when you want your coding assistant to follow guidance from developer.android.com for edge-to-edge UI, R8 analysis, and other specific workflows.",
+  "level": "setup",
+  "start": "android skills add --all",
+  "caution": "Google note that public contributions to this repository are not accepted at this time.",
+  "alts": [
+   "google/skills",
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A collection of official Android instructions to help AI coding assistants build better mobile apps.",
+  "tags": [
+   "code",
+   "supercharge",
+   "apps"
+  ],
+  "useFor": [
+   "Add official Android development guidelines to your AI coding agent",
+   "Improve AI accuracy on complex tasks like R8 analysis and UI layout",
+   "Install skills as plugins into Claude Code, Codex, or Gemini"
+  ],
+  "steps": [
+   "Install all Android skills to your system using `android skills add --all`.",
+   "Alternatively install as a plugin within Claude Code or Codex using their plugin managers.",
+   "Ask your AI assistant to complete an Android task, and it will automatically apply the matching skill."
+  ],
+  "repo": "android/skills",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "sykyyds3739/laya-heart": {
+  "cat": "local",
+  "kind": "Couple chat copilot",
+  "what": "A local-first assistant that helps draft replies and analyze partner messages using on-device artificial intelligence.",
+  "why": "Helps you communicate thoughtfully and avoid texting mistakes without sending your private conversations to the cloud.",
+  "level": "easy",
+  "start": "double-click start.bat",
+  "caution": "Requires downloading about 4.8 GB of model files on first run and consumes around 4 GB of free memory while running.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "An application that runs entirely on your own computer to suggest text message replies to your partner.",
+  "tags": [
+   "private",
+   "knowledge"
+  ],
+  "useFor": [
+   "Draft thoughtful text message replies",
+   "Analyze incoming partner messages locally",
+   "Keep private relationship notes securely on your computer"
+  ],
+  "steps": [
+   "Download the project files from GitHub and unzip them.",
+   "Double-click start.bat on Windows, start.command on macOS, or run ./start.sh on Linux.",
+   "Click the download button in the browser page to fetch the required model files.",
+   "Paste your partner's messages into the web page to receive suggested replies."
+  ],
+  "repo": "sykyyds3739/laya-heart",
+  "at": "2026-10-22",
+  "source": "trending"
  }
 }

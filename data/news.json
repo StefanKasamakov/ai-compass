@@ -1,6 +1,35 @@
 {
- "updated": "2026-10-21T21:47:42.288Z",
+ "updated": "2026-10-22T04:58:11.409Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.308",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
+   "date": "2026-10-22T04:34:55Z",
+   "summary": "GitHub release notes show a new update for Anthropic's Claude Code command-line tool.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/6561fb64edb8a9b4f54d59829154601e665f1223f5add27442243561bb61c06b/anthropics/claude-code/releases/tag/v2.1.308"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Claude Duet",
+   "url": "https://claude.com/product/claude-duet",
+   "date": "2026-10-21T19:14:01Z",
+   "discuss": "https://news.ycombinator.com/item?id=50186037",
+   "summary": "Hacker News discussion regarding a new Anthropic release or capability named Claude Duet.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/static/claude-duet/og.jpg"
+  },
   {
    "source": "Hugging Face",
    "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
@@ -189,6 +218,35 @@
    "image": "https://opengraph.githubassets.com/1cd75e454cacc7cc7c044d841d051eb36ba5921f34dcce2a40e99e9928103d95/anthropics/claude-code/releases/tag/v2.1.306"
   },
   {
+   "source": "OpenAI",
+   "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
+   "url": "https://openai.com/index/cloudflare-cyber",
+   "date": "2026-10-21T00:00:00.000Z",
+   "summary": "Cloudflare is using OpenAI tools to find software vulnerabilities and write code fixes.",
+   "tags": [
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/7o1UbpHuhgjqnJemTCObNX/dc8b67a70b84e01b66e7d2a2be717ec6/cloudflare-cyber-woven-current-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/hcltech-joins-claude-partner-network",
+   "date": "2026-10-21",
+   "title": "HCLTech becomes a Global Premier Partner for Claude",
+   "summary": "HCLTech partners with Anthropic to deploy Claude and Claude Code across enterprise IT systems.",
+   "tags": [
+    "coding",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/hcltech-joins-claude-partner-network/opengraph-image/og"
+  },
+  {
    "source": "Anthropic",
    "url": "https://claude.com/resources/articles/claude-duet",
    "date": "2026-10-21",
@@ -270,6 +328,20 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/67a4f15057fb66b9db6dac82/45XSEtdQHqTdspRe3wkYs.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub package firewall in public preview",
+   "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+   "date": "2026-10-20T16:11:53.000Z",
+   "summary": "GitHub introduces a package firewall in public preview to protect against supply-chain malware attacks during AI agent installations.",
+   "tags": [
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/protect_endpoint_social.jpeg"
   },
   {
    "source": "Hugging Face",
@@ -2174,73 +2246,6 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/10/667174917-952bbca8-41eb-49ac-a365-d69a03a553ab.jpg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.161.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.161.0",
-   "date": "2026-10-07T15:58:45Z",
-   "summary": "OpenAI released version 0.161.0 of the Codex CLI in Rust, updating its developer-facing terminal tool.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/d332783ebec4cec54e4bd595b6f6819bbbe70df2b0885f9a019d0f8a1cdb0879/openai/codex/releases/tag/rust-v0.161.0",
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub",
-   "title": "Local sandboxing for GitHub Copilot now generally available",
-   "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
-   "date": "2026-10-07T15:46:17.000Z",
-   "summary": "GitHub has released local sandboxing for Copilot in its CLI and VS Code to provide a secure environment for running agent-generated code.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "Discover local models in GitHub Copilot CLI",
-   "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
-   "date": "2026-10-07T15:46:13.000Z",
-   "summary": "The GitHub Copilot CLI now allows developers to discover and switch to locally running models directly using a command line argument.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-improvements.jpg"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Can a Cloud-Native Harness Make Agents Reliable Beyond the Desktop?",
-   "url": "https://www.latent.space/p/stacklok",
-   "date": "2026-10-07T14:10:45.000Z",
-   "summary": "Industry leaders are designing cloud-native harnesses using Kubernetes to make AI agents more reliable for enterprise and production workflows.",
-   "tags": [
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!r55R!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1c3cd3d-2682-47cb-9be6-74302c1ca8ea_2560x1440.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Introducing Falcon ASR",
-   "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
-   "date": "2026-10-07T13:21:03.000Z",
-   "summary": "Hugging Face introduced Falcon ASR, a new open-source model specialized in automatic speech recognition.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/671a3e44cf97dc64441e170a/bJ2aGPIX6WLWagE10j5y3.png"
   }
  ]
 }
