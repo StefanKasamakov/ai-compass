@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -248,7 +248,10 @@
    "tier": "Open",
    "best": "Near-frontier quality you can download. Even the newer V4.1 Flash (about 763B parameters) needs a server with several graphics cards.",
    "price": "free*",
-   "src": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+   "src": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+   "in": 0.15,
+   "out": 0.6,
+   "released": "2026-10-17"
   },
   {
    "id": "kimi",
