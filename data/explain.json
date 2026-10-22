@@ -14441,5 +14441,42 @@
   "repo": "sykyyds3739/laya-heart",
   "at": "2026-10-22",
   "source": "trending"
+ },
+ "omnara-ai/omnara": {
+  "cat": "frameworks",
+  "kind": "managed agent platform",
+  "what": "Omnara is an open-source platform and API for running autonomous AI agents across models and remote machines with persistent state and tool management.",
+  "why": "Building reliable agent infrastructure requires sandboxed execution, crash recovery, and permission controls. Reach for Omnara when you want a self-hosted alternative to proprietary managed agent cloud APIs like OpenAI Agents.",
+  "level": "setup",
+  "start": "docker compose -f compose.yaml --profile app up -d",
+  "caution": "The default local configuration is intentionally insecure and requires additional security hardening before deploying to production.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Significant-Gravitas/AutoGPT",
+   "langchain-ai/langgraph"
+  ],
+  "packages": [
+   "@omnara/sdk",
+   "omnara"
+  ],
+  "plain": "A server to run AI assistants that safely execute tasks and commands across your computers or cloud environments.",
+  "tags": [
+   "apps",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Run persistent AI assistants with automatic crash recovery",
+   "Execute shell commands and tools inside sandboxed machines",
+   "Build custom agent workflows using a TypeScript SDK and REST API"
+  ],
+  "steps": [
+   "Start the platform locally by running `docker compose -f compose.yaml --profile app up -d`.",
+   "Open http://localhost:8000 in your browser, create an account, and configure your model provider.",
+   "Launch an agent from your terminal with `npx omnara agents launch --file agent.yaml`."
+  ],
+  "repo": "omnara-ai/omnara",
+  "at": "2026-10-22",
+  "source": "trending"
  }
 }
