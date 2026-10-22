@@ -14478,5 +14478,283 @@
   "repo": "omnara-ai/omnara",
   "at": "2026-10-22",
   "source": "trending"
+ },
+ "supabase/supabase": {
+  "cat": "memory",
+  "kind": "Postgres database platform",
+  "what": "Supabase is an open-source Postgres platform providing databases, user authentication, file storage, and vector search for web and AI apps.",
+  "why": "Building modern apps often requires stitching together separate databases, auth providers, storage, and search tools. Supabase unites these backend services into a single Postgres platform.",
+  "level": "dev",
+  "start": "Visit supabase.com to start on the hosted platform or explore supabase.com/docs",
+  "caution": "Self-hosting requires managing multiple interconnected open-source services, including Postgres, PostgREST, Envoy, and GoTrue.",
+  "alts": [
+   "chroma-core/chroma",
+   "qdrant/qdrant"
+  ],
+  "packages": [],
+  "plain": "An all-in-one database and file storage system that helps apps securely save data and run smart searches.",
+  "tags": [
+   "apps",
+   "knowledge",
+   "connect"
+  ],
+  "useFor": [
+   "Store text embeddings and run similarity search",
+   "Handle user signups, logins, and permissions",
+   "Manage app databases, file uploads, and APIs"
+  ],
+  "steps": [
+   "Create a project on supabase.com to get a cloud database without manual server installation.",
+   "Use the browser dashboard to define tables, configure storage, and enable vector search extensions.",
+   "Connect your application code using the official client libraries for JavaScript, Flutter, or Swift."
+  ],
+  "repo": "supabase/supabase",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "luongnv89/claude-howto": {
+  "cat": "harness",
+  "kind": "Tutorial And Templates",
+  "what": "A visual, example-driven guide and template collection for mastering Claude Code.",
+  "why": "Provides structured learning paths, diagrams, and copy-paste templates to help you combine advanced features like slash commands, hooks, and subagents.",
+  "level": "easy",
+  "start": "git clone https://github.com/luongnv89/claude-howto.git",
+  "caution": "Requires an existing Anthropic Claude Code subscription and access to the official tool.",
+  "alts": [
+   "anthropics/claude-code",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "Yeachan-Heo/oh-my-claudecode"
+  ],
+  "packages": [],
+  "plain": "A visual guide with copy-paste templates and tutorials to help you learn how to use Claude Code.",
+  "tags": [
+   "code",
+   "supercharge",
+   "docs"
+  ],
+  "useFor": [
+   "Learn advanced Claude Code features step by step",
+   "Copy pre-made custom commands and skills into your project",
+   "Set up automated code review and development workflows"
+  ],
+  "steps": [
+   "Clone this guide repository to your computer using `git clone https://github.com/luongnv89/claude-howto.git`.",
+   "Copy desired templates, slash commands, or skills directly into your project's configuration folder.",
+   "Use Claude Code to run and test your newly installed workflows."
+  ],
+  "repo": "luongnv89/claude-howto",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "simbasjungles/free-my-tv": {
+  "cat": "coding",
+  "kind": "Ad-free TV launcher",
+  "what": "An open-source, ad-free alternative home screen launcher for Google TV, LG, and Samsung smart TVs.",
+  "why": "Default smart TV interfaces are often cluttered with sponsored ads and heavy promos that slow down performance. Reach for it when you want a clean, lightweight home screen showing only your selected apps, weather, and recommendations.",
+  "level": "setup",
+  "start": "./build.sh",
+  "caution": "Requires turning on developer mode on your TV and signing up for a free TMDB API key for media recommendations.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "An ad-free replacement home screen for smart TVs that loads fast and shows only your selected streaming apps.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Replace default TV home screens with an ad-free interface",
+   "Customize streaming app shortcuts and view local weather updates",
+   "Reduce smart TV home screen memory usage for smoother performance"
+  ],
+  "steps": [
+   "Enable Developer Options and USB debugging on your TV and note its network IP address.",
+   "Create a free TMDB account to get an API key for content recommendations.",
+   "Build and deploy the application using `./build.sh` and ADB command line tools."
+  ],
+  "repo": "simbasjungles/free-my-tv",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "KatrielMoses/voidaccess": {
+  "cat": "memory",
+  "kind": "Dark web intel graph",
+  "what": "An automated threat intelligence platform that searches the dark web and open sources to build searchable relationship graphs and reports.",
+  "why": "Security researchers and threat intelligence teams need a streamlined way to collect indicators of compromise and actor profiles from onion sites without manual browsing.",
+  "level": "setup",
+  "start": "pip install voidaccess",
+  "caution": "Involves automated scraping of onion sites and dark-web networks, which requires careful adherence to legal boundaries and security protocols.",
+  "alts": [],
+  "packages": [
+   "voidaccess"
+  ],
+  "plain": "A tool that searches hidden websites and threat feeds to build a map of security risks.",
+  "tags": [
+   "research",
+   "knowledge",
+   "connect"
+  ],
+  "useFor": [
+   "Investigate ransomware groups and threat actors",
+   "Export threat intelligence reports in STIX or MISP format",
+   "Collect indicators of compromise across hidden web sources"
+  ],
+  "steps": [
+   "Install the package using pip install voidaccess.",
+   "Run the configuration command to set up your keys and Tor connection.",
+   "Execute an investigation query using the command-line interface."
+  ],
+  "repo": "KatrielMoses/voidaccess",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "morluto/awesome-reverse-engineering": {
+  "cat": "coding",
+  "kind": "curated tool list",
+  "what": "A curated collection of reverse-engineering tools, tutorials, and resources for binaries, apps, and firmware.",
+  "why": "To help developers and security researchers find tools and learning materials for inspecting compiled software. Reach for it when you need to understand how a binary, file format, or protocol works.",
+  "level": "easy",
+  "start": "",
+  "caution": "Some listed tools are commercial or in limited maintenance.",
+  "alts": [],
+  "packages": [],
+  "plain": "A directory of tools and guides for understanding compiled software and file formats.",
+  "tags": [
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Find tutorials for learning binary analysis and assembly",
+   "Discover disassemblers, decompilers, and debuggers",
+   "Explore tools for analyzing malware and firmware"
+  ],
+  "steps": [],
+  "repo": "morluto/awesome-reverse-engineering",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "xop01/ai_goodpractice": {
+  "cat": "harness",
+  "kind": "AI workflow guide",
+  "what": "A hand-written guide for setting up and running an agentic coding workflow.",
+  "why": "To help developers transition from manual coding to managing AI agents for faster software delivery.",
+  "level": "easy",
+  "start": "",
+  "caution": "The guide recommends reusing consumer AI subscriptions across heavy automated workflows, which may violate provider terms and risk account suspension.",
+  "alts": [],
+  "packages": [],
+  "plain": "A written guide on how to manage artificial intelligence assistants to write and build code for you.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Learn agentic coding workflows",
+   "Set up custom coding rules",
+   "Configure project instructions"
+  ],
+  "steps": [
+   "Download your preferred editor with AI integration like Cursor or VS Code.",
+   "Treat the AI as a partner and write detailed prompts with full context.",
+   "Set up rules, skills, and add-ons for your repository to prevent messy code."
+  ],
+  "repo": "xop01/ai_goodpractice",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "liuda30201/AI-Coding": {
+  "cat": "gateway",
+  "kind": "AI relay directory",
+  "what": "This repository provides a curated directory and dashboard of third-party AI relay stations, free credits, and sign-up bonuses for tools like Claude Code, Codex, and Cursor.",
+  "why": "Useful when looking for aggregated options, free sign-up tiers, and community ratings for AI model routing providers.",
+  "level": "easy",
+  "start": "python main.py",
+  "caution": "Many of these third-party relay stations and pooled subscription services may violate the terms of service of official providers (such as Anthropic, OpenAI, or Google) and risk account bans. The repository also includes affiliate links.",
+  "alts": [
+   "BerriAI/litellm",
+   "Portkey-AI/gateway"
+  ],
+  "packages": [],
+  "plain": "A directory of websites that let you use AI coding tools using shared credits, sign-up bonuses, and alternative routing services.",
+  "tags": [
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Find third-party AI relay stations with free sign-up credits",
+   "Compare community ratings and bonuses for AI routing providers",
+   "Regenerate the dashboard page using included Python tools"
+  ],
+  "steps": [
+   "Clone or download the repository files to your computer.",
+   "Run the provided Python script to generate or update the dashboard page."
+  ],
+  "repo": "liuda30201/AI-Coding",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "SandboxWorldOnline/Open-Terraria": {
+  "cat": "coding",
+  "kind": "Terraria Web Rewrite",
+  "what": "A web-based rewrite of Terraria 1.4.5.8 built entirely through AI agent collaboration.",
+  "why": "Explore an open implementation of Terraria that runs directly in the browser and supports importing original worlds and mods.",
+  "level": "setup",
+  "start": "npm install",
+  "caution": "The repository uses proprietary game assets from Re-Logic that are not covered by the MIT license.",
+  "alts": [
+   "anthropics/claude-code",
+   "OpenHands/OpenHands",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "A web version of the game Terraria built entirely by artificial intelligence.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Play Terraria in a web browser",
+   "Build and test game mods using TypeScript",
+   "Inspect an AI-generated codebase and daily devlogs"
+  ],
+  "steps": [
+   "Install project dependencies by running `npm install` in your terminal.",
+   "Start the local development server using `npm run dev` and open the local URL in your browser.",
+   "Run the test suite with `npm test` to verify all test cases."
+  ],
+  "repo": "SandboxWorldOnline/Open-Terraria",
+  "at": "2026-10-22",
+  "source": "trending"
+ },
+ "h9-tec/ai-roadmap-2026": {
+  "cat": "frameworks",
+  "kind": "Learning Path",
+  "what": "A beginner guide through five layers of AI engineering with verified free resources and mini-projects.",
+  "why": "It provides a structured way to learn modern AI engineering skills like RAG, agents, and evaluations without getting lost in endless tutorials.",
+  "level": "easy",
+  "start": "Read 00-start-here.md",
+  "caution": "",
+  "alts": [],
+  "packages": [],
+  "plain": "A structured step-by-step guide to learning how to build things with AI.",
+  "tags": [
+   "research",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Learn AI engineering step by step",
+   "Build a research agent mini-project",
+   "Practice evaluating AI system quality"
+  ],
+  "steps": [
+   "Read the start here guide to understand the curriculum.",
+   "Pick either layer by layer study or follow the sample plan.",
+   "Complete the mini-project at the end of each layer."
+  ],
+  "repo": "h9-tec/ai-roadmap-2026",
+  "at": "2026-10-22",
+  "source": "trending"
  }
 }
