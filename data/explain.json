@@ -15100,5 +15100,39 @@
   "repo": "DozenTwelve/Papermorph",
   "at": "2026-10-23",
   "source": "trending"
+ },
+ "Jakeschincariol/day-trader-skill": {
+  "cat": "harness",
+  "kind": "day trading skills pack",
+  "what": "A set of eleven Claude skills and Python tools for scanning stock charts, tracking news, backtesting setups, and calculating risk.",
+  "why": "Day traders often jump into positions without testing historical probabilities or calculating exact risk. Reach for this to automate chart scanning, simulate setup odds, and manage order sizing inside Claude.",
+  "level": "setup",
+  "start": "/plugin marketplace add Jakeschincariol/day-trader-skill",
+  "caution": "Day trading carries a high risk of financial loss. Public data sources may experience delays or rate limits, and actual trade execution requires connecting external broker services.",
+  "alts": [
+   "Jakeschincariol/founder-skill",
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A bundle of assistant skills that scan stock charts, simulate trade outcomes, and calculate risk before you buy.",
+  "tags": [
+   "automate",
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Scan thousands of stock charts for technical breakout setups",
+   "Replay past trading sessions to simulate trade odds before entry",
+   "Calculate position sizes and stop-loss limits according to your budget"
+  ],
+  "steps": [
+   "Add the plugin in Claude Code using `/plugin marketplace add Jakeschincariol/day-trader-skill` or paste the repository URL into Claude.",
+   "Add your contact info to `trader/config.json` to identify your requests when fetching public SEC filings.",
+   "Run slash commands like `/trader-scanner` to scan charts and `/trader-timemachine` to simulate outcomes."
+  ],
+  "repo": "Jakeschincariol/day-trader-skill",
+  "at": "2026-10-23",
+  "source": "trending"
  }
 }
