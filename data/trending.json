@@ -1,16 +1,48 @@
 {
- "updated": "2026-10-23T09:32:46.654Z",
+ "updated": "2026-10-23T11:46:49.004Z",
  "items": [
   {
-   "repo": "StartLuxLabs/StartLux-Prism",
-   "stars": 42,
-   "desc": "Fast, exact inference for StartLux-Decision models on NVIDIA GPUs: the released GGUF files on int8 and 4-bit tensor cores, behind the /v1/systemone API, with up to 5.3× lower latency than vLLM in FP8 and bit-identical answers.",
-   "created": "2026-10-13T17:59:09Z",
+   "repo": "OpenBMB/VoxCPM",
+   "stars": 39999,
+   "desc": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+   "created": "2025-09-16T03:41:49Z",
    "topics": [
-    "calibration",
-    "cuda",
-    "cuda-graphs",
-    "decision-making"
+    "audio",
+    "deeplearning",
+    "minicpm",
+    "multilingual"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "elie222/rakazo",
+   "stars": 5320,
+   "desc": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
+   "created": "2026-08-13T06:28:56Z",
+   "topics": [
+    "ai-agents",
+    "chatgpt",
+    "docker",
+    "electron"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "JMS1717/ming-voice",
+   "stars": 125,
+   "desc": "Low-latency local speech-to-speech voice assistant with Ming-3.0-audio-tiny on AMD Radeon GPUs (ROCm on WSL2)",
+   "created": "2026-10-21T01:08:35Z",
+   "topics": [
+    "amd",
+    "local-llm",
+    "radeon",
+    "realtime"
    ],
    "lang": "Python",
    "sources": [

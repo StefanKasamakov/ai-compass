@@ -14928,5 +14928,108 @@
   "repo": "StartLuxLabs/StartLux-Prism",
   "at": "2026-10-23",
   "source": "trending"
+ },
+ "OpenBMB/VoxCPM": {
+  "cat": "media",
+  "kind": "Speech synthesis engine",
+  "what": "VoxCPM is an open-source text-to-speech system that generates natural multilingual audio, designs voices from text descriptions, and clones voices from sample audio.",
+  "why": "Traditional text-to-speech models often sound robotic or struggle to match nuanced emotions across languages. Reach for VoxCPM when you need studio-quality 48kHz speech across 30 languages, text-prompted voice creation, or accurate voice cloning.",
+  "level": "dev",
+  "start": "pip install voxcpm",
+  "caution": "Requires a dedicated graphics card with CUDA 12.0 or higher and Python 3.10 to 3.12 to run locally.",
+  "alts": [
+   "coqui-ai/TTS",
+   "resemble-ai/chatterbox",
+   "debpalash/VoiceStudio"
+  ],
+  "packages": [
+   "voxcpm"
+  ],
+  "plain": "Turn typed text into realistic spoken audio or clone a voice using a short audio clip.",
+  "tags": [
+   "media"
+  ],
+  "useFor": [
+   "Generate spoken dialogue in 30 languages from text",
+   "Design unique synthetic voices using natural language descriptions",
+   "Clone personal voices from short reference audio files"
+  ],
+  "steps": [
+   "Install the library with `pip install voxcpm`.",
+   "Ensure you have a supported Python environment with PyTorch and CUDA enabled.",
+   "Load the model and generate audio using `VoxCPM.from_pretrained('openbmb/VoxCPM2')` in Python.",
+   "Save the generated waveform to a WAV file using soundfile."
+  ],
+  "repo": "OpenBMB/VoxCPM",
+  "at": "2026-10-23",
+  "source": "trending"
+ },
+ "elie222/rakazo": {
+  "cat": "coding",
+  "kind": "AI agent platform",
+  "what": "Rakazo is an open-source, self-hosted AI assistant and agent platform that provides persistent bots with browser, terminal, and desktop access.",
+  "why": "Cloud-based AI bots keep data locked in proprietary silos and limit execution environments. Reach for Rakazo when you want persistent AI teammates running on your own servers or local Docker sandboxes.",
+  "level": "setup",
+  "start": "mkdir -p rakazo && cd rakazo && curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh && bash install-images.sh",
+  "caution": "Rakazo is currently in beta. Note that the project README includes referral tracking links for its sponsors.",
+  "alts": [
+   "openclaw/openclaw",
+   "NousResearch/hermes-agent",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "An open personal assistant you run yourself with its own virtual computer to browse the web and automate tasks.",
+  "tags": [
+   "automate",
+   "connect",
+   "code"
+  ],
+  "useFor": [
+   "Run persistent AI teammates with automated routines and long-term memory",
+   "Automate tasks using sandboxed browser, terminal, and desktop environments",
+   "Integrate AI bots with third-party tools via external connections"
+  ],
+  "steps": [
+   "Make sure Docker Engine and the Compose plugin are installed on your machine.",
+   "Run the quick start script: `curl -fsSLO https://raw.githubusercontent.com/elie222/rakazo/main/infra/compose/install-images.sh && bash install-images.sh`.",
+   "Open http://127.0.0.1:5173 in your browser to create an account and configure your model keys."
+  ],
+  "repo": "elie222/rakazo",
+  "at": "2026-10-23",
+  "source": "trending"
+ },
+ "JMS1717/ming-voice": {
+  "cat": "local",
+  "kind": "local voice assistant",
+  "what": "A low-latency, speech-to-speech voice assistant designed to run fully locally on AMD Radeon and NVIDIA graphics cards.",
+  "why": "It replaces cloud-based voice assistants with a private, real-time voice setup that runs directly on your computer and integrates with smart home tools.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/JMS1717/ming-voice/main/install.sh | bash",
+  "caution": "Requires a high-end graphics card with at least 16 GB of video memory and around 30 GB of free disk space; NVIDIA support is marked as experimental.",
+  "alts": [
+   "SYSTRAN/faster-whisper",
+   "LostRuins/koboldcpp",
+   "coqui-ai/TTS"
+  ],
+  "packages": [],
+  "plain": "A private talking assistant that runs on your computer's graphics card, answering you out loud in real time.",
+  "tags": [
+   "media",
+   "private",
+   "automate"
+  ],
+  "useFor": [
+   "Talk to a voice assistant that answers out loud locally",
+   "Control Home Assistant devices and lights with voice commands",
+   "Set local timers, manage shopping lists, and search the web"
+  ],
+  "steps": [
+   "Run the install script in Linux or Windows PowerShell to set up prerequisites and download the 20 GB model.",
+   "Launch the app using the generated shortcut or run `./run.sh` in your terminal.",
+   "Open http://localhost:8000 in your browser or connect your phone over your local network to talk."
+  ],
+  "repo": "JMS1717/ming-voice",
+  "at": "2026-10-23",
+  "source": "trending"
  }
 }
