@@ -15031,5 +15031,74 @@
   "repo": "JMS1717/ming-voice",
   "at": "2026-10-23",
   "source": "trending"
+ },
+ "SnailSploit/Claude-Red": {
+  "cat": "harness",
+  "kind": "security skill library",
+  "what": "A collection of offensive security skill files that add structured red-teaming and penetration testing methodology to Claude.",
+  "why": "Equips Claude with deep domain techniques and tooling guidance for authorized security audits without needing custom prompt engineering.",
+  "level": "setup",
+  "start": "git clone https://github.com/SnailSploit/claude-red ~/.claude/skills/claude-red",
+  "caution": "Intended strictly for authorized penetration testing and security research; AI guardrails may still refuse certain offensive queries.",
+  "alts": [
+   "SuperClaude-Org/SuperClaude_Framework",
+   "addyosmani/agent-skills",
+   "mattpocock/skills"
+  ],
+  "packages": [],
+  "plain": "Pre-written instruction files that teach your Claude assistant how to test systems for security flaws.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Guide penetration testing for web apps and networks",
+   "Test defenses against vulnerabilities like SQL injection",
+   "Structure security research checklists and triage reports"
+  ],
+  "steps": [
+   "Clone the files into your Claude skills directory with `git clone https://github.com/SnailSploit/claude-red ~/.claude/skills/claude-red`.",
+   "Mention an offensive security topic during your conversation to automatically load the corresponding skill."
+  ],
+  "repo": "SnailSploit/Claude-Red",
+  "at": "2026-10-23",
+  "source": "trending"
+ },
+ "DozenTwelve/Papermorph": {
+  "cat": "harness",
+  "kind": "Claude Code skill",
+  "what": "A Claude Code skill that converts textbooks, PDFs, and stories into narrated, interactive web lessons and animated paper-puppet videos.",
+  "why": "Converting static educational material into interactive web content with narration and quizzes normally requires manual design and programming. Reach for this skill when you want to turn PDF textbooks or written stories into standalone web-based lessons and videos automatically.",
+  "level": "setup",
+  "start": "npx skills add DozenTwelve/Papermorph --skill papermorph --agent claude-code",
+  "caution": "Requires system utilities like ffmpeg and Playwright browsers to be installed, and painted story scenes require an image model API key.",
+  "alts": [
+   "anthropics/claude-code",
+   "howseen-ai/claude-motion-design"
+  ],
+  "packages": [
+   "playwright",
+   "numpy"
+  ],
+  "plain": "A tool that turns textbooks and stories into narrated website lessons with interactive animations and voiceovers.",
+  "tags": [
+   "supercharge",
+   "media",
+   "docs"
+  ],
+  "useFor": [
+   "Convert PDF textbooks into interactive web lessons with quizzes",
+   "Turn stories into animated paper-puppet films with voice narration",
+   "Export interactive web lessons as MP4 videos or LMS packages"
+  ],
+  "steps": [
+   "Install required system dependencies including uv, ffmpeg, and Playwright browsers on your machine.",
+   "Add the skill to your project by running `npx skills add DozenTwelve/Papermorph --skill papermorph --agent claude-code`.",
+   "Launch Claude Code in your project directory and type `/papermorph` to process your PDF textbook or story."
+  ],
+  "repo": "DozenTwelve/Papermorph",
+  "at": "2026-10-23",
+  "source": "trending"
  }
 }

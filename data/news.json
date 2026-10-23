@@ -1,6 +1,21 @@
 {
- "updated": "2026-10-23T11:46:49.004Z",
+ "updated": "2026-10-23T17:14:18.070Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "Swedish government offices to ban ChatGPT and Claude",
+   "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+   "date": "2026-10-23T11:39:54Z",
+   "discuss": "https://news.ycombinator.com/item?id=50207405",
+   "summary": "Swedish government offices are moving to ban the use of ChatGPT and Claude across departments due to security and privacy concerns. This reflects ongoing enterprise and public-sector restrictions on public AI platforms.",
+   "tags": [
+    "safety",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static-cdn.sr.se/images/83/4f267bc3-0129-4628-bd75-1e593f208dfc.jpg"
+  },
   {
    "source": "GitHub release",
    "title": "Codex CLI rust-v0.164.0",
@@ -324,6 +339,21 @@
    "big": false,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!Kjjn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc61f4d99-31a9-4e4c-aa02-65e5b5db1799_1280x720.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+   "date": "2026-10-21T13:00:00.000Z",
+   "summary": "OpenAI is expanding ChatGPT Ads to 26 new countries. Free-tier users in more regions will see sponsored products directly within conversational results.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6Fq2uj7xCpKHENjyeojn9c/d3771e7cecdfb77c28c7560de9413de1/chatgpt-ads-expands-26-new-countries-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Hugging Face",
@@ -1396,6 +1426,20 @@
   {
    "source": "Latent Space",
    "title": "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents",
+   "url": "https://latent.space/p/crossing-the-threshold/",
+   "date": "2026-10-14T21:40:52.000Z",
+   "summary": "OpenAI and Anthropic shared framework details on balancing autonomy and safety when deploying AI agents in financial workflows. It highlights emerging standards for human-in-the-loop oversight in critical industries.",
+   "tags": [
+    "agents",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/crossing-the-threshold/748c7656d5b65036ad8c6f399bed4831f274f8acdd716a5547bd6002d64641ae.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Crossing the Threshold: How OpenAI and Anthropic Approach Autonomy and Safety in Financial Agents",
    "url": "https://www.latent.space/p/crossing-the-threshold",
    "date": "2026-10-14T21:40:52.000Z",
    "summary": "Industry experts discussed balancing useful autonomy and safety controls for AI financial agents.",
@@ -2215,54 +2259,6 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/4bNHf0rdpv55WFke9YADV7/306540f0701aa79ce7cc9057f616c577/asana-blue-layered-paper-social-seo-1920x1080.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "MXC - a sandboxed code execution system",
-   "url": "https://github.com/microsoft/mxc",
-   "date": "2026-10-09T05:51:29Z",
-   "discuss": "https://news.ycombinator.com/item?id=50016489",
-   "summary": "MXC is an open sandboxed code execution environment designed to safely run agent-generated programs. It provides developers a secure boundary when letting coding agents test and execute script outputs.",
-   "tags": [
-    "coding",
-    "agents",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/513e67630b27db1fcedabcc49d94b97e42ace7f65ad89dbde0ff4feba7a60dc0/microsoft/mxc"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "ttok 1.0",
-   "url": "https://simonwillison.net/2026/Oct/9/ttok/",
-   "date": "2026-10-09T00:34:43.000Z",
-   "summary": "Simon Willison released ttok 1.0, updating the command-line token counter to default to GPT-5 and GPT-6 tokenizers.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true,
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "ttok 0.4",
-   "url": "https://simonwillison.net/2026/Oct/8/ttok/",
-   "date": "2026-10-08T23:34:28.000Z",
-   "summary": "Simon Willison updated ttok, a lightweight command-line utility for counting tokens and inspecting model context lengths.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true,
-   "audience": "dev"
   }
  ]
 }
