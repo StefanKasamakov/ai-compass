@@ -14788,5 +14788,110 @@
   "repo": "reason-machines/reason-network",
   "at": "2026-10-22",
   "source": "trending"
+ },
+ "StartLuxLabs/StartLux-Decision": {
+  "cat": "local",
+  "kind": "decision-making model engine",
+  "what": "An open decision-making model engine that returns calibrated probabilities for every option and thinks only when unsure.",
+  "why": "It gives structured probability answers and choices instead of unstructured text, making it easier for automated agents to make reliable decisions.",
+  "level": "setup",
+  "start": "pip install vllm",
+  "caution": "Requires a high-end graphics card or server hardware to run the larger models locally.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [
+   "vllm"
+  ],
+  "plain": "Runs specialized open-weight decision models on your own graphics card [graphics card] to make structured choices and calculate odds.",
+  "tags": [
+   "private",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Run open decision models locally",
+   "Calculate probabilities for automated options",
+   "Power AI agents with structured choices"
+  ],
+  "steps": [
+   "Install the required backend package like vLLM.",
+   "Download one of the open decision models from Hugging Face.",
+   "Start the inference engine and HTTP server to handle requests."
+  ],
+  "repo": "StartLuxLabs/StartLux-Decision",
+  "at": "2026-10-23",
+  "source": "trending"
+ },
+ "daoyi2026/vibe-coding-zero-to-ship": {
+  "cat": "harness",
+  "kind": "coding agent skill",
+  "what": "A beginner foundation skill for AI coding assistants that helps non-technical users build software from idea to launch.",
+  "why": "It bridges the knowledge gap between a beginner's product idea and the technical decisions (like databases, security, and deployment) that coding assistants usually assume you understand.",
+  "level": "setup",
+  "start": "git clone https://github.com/daoyi2026/vibe-coding-zero-to-ship .codex/skills/vibe-coding-zero-to-ship/",
+  "caution": "The repository was last updated more than 4 months ago.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "An add-on for coding assistants that helps beginners build software without needing to know advanced programming terms.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Build apps from a product idea without knowing code",
+   "Ask your coding assistant to explain technical setup steps simply",
+   "Guide safe deployment and data storage for beginner projects"
+  ],
+  "steps": [
+   "Clone the repository into your project or user skills folder.",
+   "Ensure the SKILL.md file is at the root of the skill directory.",
+   "Use your coding assistant as normal with the new beginner foundation rules enabled."
+  ],
+  "repo": "daoyi2026/vibe-coding-zero-to-ship",
+  "at": "2026-10-23",
+  "source": "trending"
+ },
+ "2430816465/campus-knowledge-agent": {
+  "cat": "memory",
+  "kind": "Campus Q&A Platform",
+  "what": "A campus knowledge service platform that answers questions using school documents, strict evidence tracking, and human review.",
+  "why": "To prevent AI from hallucinating university policies by grounding answers in official document archives and date filters.",
+  "level": "setup",
+  "start": "python -m venv .venv",
+  "caution": "Requires a local Ollama installation and downloaded models to function.",
+  "alts": [
+   "infiniflow/ragflow",
+   "langgenius/dify",
+   "run-llama/llama_index"
+  ],
+  "packages": [],
+  "plain": "An AI assistant that searches school documents and provides answers with exact source links.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Search campus rules and announcements",
+   "Check official document sources",
+   "Review automated answers with human oversight"
+  ],
+  "steps": [
+   "Create and activate a Python virtual environment",
+   "Install the required packages from requirements.txt",
+   "Download the local model using Ollama",
+   "Start the application server using Uvicorn"
+  ],
+  "repo": "2430816465/campus-knowledge-agent",
+  "at": "2026-10-23",
+  "source": "trending"
  }
 }

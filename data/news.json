@@ -1,6 +1,35 @@
 {
- "updated": "2026-10-22T21:42:21.043Z",
+ "updated": "2026-10-23T04:59:29.176Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot in Visual Studio — September update",
+   "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+   "date": "2026-10-23T00:17:51.000Z",
+   "summary": "Visual Studio updated its GitHub Copilot integration, letting developers bring custom AI models and inspect pull requests in chat.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "Custom skills, agents, and MCP servers in usage metrics API",
+   "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
+   "date": "2026-10-22T22:19:17.000Z",
+   "summary": "GitHub Copilot updated its metrics API to report telemetry for individual MCP servers, custom agents, and skills.",
+   "tags": [
+    "mcp",
+    "skills",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/681211665-c6d29dfe-e754-4848-b5f0-729765a433e7.jpeg"
+  },
   {
    "source": "OpenAI",
    "title": "Build more responsive apps with the Decisions API",
@@ -2223,36 +2252,6 @@
    "big": false,
    "ai": false,
    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2af4f6715cbe9766a47430a24420cfca0a2c588-1200x630.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "I think I found a planet nobody knew existed. I used Claude Code to find it",
-   "url": "https://www.reddit.com/r/ClaudeAI/s/mbe5IY2LF9",
-   "date": "2026-10-08T07:07:34Z",
-   "discuss": "https://news.ycombinator.com/item?id=50002665",
-   "summary": "A developer used Anthropic's Claude Code CLI tool to process astronomical data and discover an exoplanet candidate.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.294",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
-   "date": "2026-10-08T05:03:54Z",
-   "summary": "Anthropic rolled out Claude Code v2.1.294, providing stability updates and minor bug fixes to its terminal-based coding assistant.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/62f8ab0478731bfa52166354d960fb94d4683a9c55d9a72f4caf7c6f8271e099/anthropics/claude-code/releases/tag/v2.1.294",
-   "audience": "dev"
   }
  ]
 }
