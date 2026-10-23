@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-23T04:59:29.176Z",
+ "updated": "2026-10-23T09:32:46.654Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.164.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0",
+   "date": "2026-10-23T04:48:10Z",
+   "summary": "OpenAI published version rust-v0.164.0 of its Codex CLI tool. This release provides performance and reliability updates for developers running terminal-based code generation.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/ba656cc0bd038b25cbe4a796df2128ddddc2d520420582c4622037575b17a466/openai/codex/releases/tag/rust-v0.164.0"
+  },
   {
    "source": "GitHub",
    "title": "GitHub Copilot in Visual Studio — September update",
@@ -16,6 +30,20 @@
    "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
   },
   {
+   "source": "Hugging Face",
+   "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+   "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+   "date": "2026-10-22T22:24:34.000Z",
+   "summary": "Hugging Face shared ThinkingBox, a post-training technique that turns database grading into reinforcement learning rewards for agents. This helps developers build agents that query and manipulate databases with higher accuracy.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/64b8491203124195cd795cad/oS8I8qx7iBS8EcNIXR3q9.png"
+  },
+  {
    "source": "GitHub",
    "title": "Custom skills, agents, and MCP servers in usage metrics API",
    "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api",
@@ -29,6 +57,21 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/10/681211665-c6d29dfe-e754-4848-b5f0-729765a433e7.jpeg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.309",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.309",
+   "date": "2026-10-22T22:18:57Z",
+   "summary": "Anthropic published version 2.1.309 of Claude Code, its terminal-based coding assistant. The update delivers stability improvements and bug fixes for automated software development workflows.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/bee1aa92e21b63812e9b480ed18e7dbb603f613bea9fb7b974de0575a4b41bd2/anthropics/claude-code/releases/tag/v2.1.309"
   },
   {
    "source": "OpenAI",
@@ -257,6 +300,20 @@
   {
    "source": "Latent Space",
    "title": "Claude Mods: Flipping the Harness Inside Out",
+   "url": "https://latent.space/p/claude-mods/",
+   "date": "2026-10-21T13:04:19.000Z",
+   "summary": "Claude Mods introduces a design pattern that realigns agent interfaces around user attention rather than automated machine loops. It gives developers better oversight and steering controls when supervising Claude agents.",
+   "tags": [
+    "agents",
+    "skills"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/claude-mods/4cfacd2135def61b863cc0fe39addb016bf58b39a706d03fac09b0841200cbb0.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Claude Mods: Flipping the Harness Inside Out",
    "url": "https://www.latent.space/p/claude-mods",
    "date": "2026-10-21T13:04:19.000Z",
    "summary": "Discussion on Claude Mods and the evolution of human-facing AI agent harnesses.",
@@ -326,6 +383,21 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/xq2rRszwLvIAxOynZi2qa/b1cf094a0d095f67821bf4b8cfaba0b9/coordinated-disclosure-of-critical-vulnerabilities-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
+   "url": "https://latent.space/p/ainews-deepseek-deepinfer-open-source/",
+   "date": "2026-10-21T06:54:09.000Z",
+   "summary": "DeepSeek open-sourced DeepInfer, an inference engine optimized to serve frontier models at massive scale with lower latency. It allows infrastructure teams to reduce the cost of running large models in production.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-deepseek-deepinfer-open-source/e2ec3166004a50ebfcec2ce52cac8f66cdb76bd1a975d7ee44e0186ff4a3e426.png"
   },
   {
    "source": "Latent Space",
@@ -569,6 +641,20 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/7btnUEAESJNvgHmdUPxexp/ac70fe93d02f52002ca5f146af8c7caf/Terminal-X-A-SEO-social-1920x1080.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] not much happened today",
+   "url": "https://latent.space/p/ainews-not-much-happened-today-f09/",
+   "date": "2026-10-20T05:21:52.000Z",
+   "summary": "DeepSeek, MiniMax, and Mercury released lightweight model updates including DeepSeek V4.1 Flash. These releases offer developers cheaper and faster options for routine text generation tasks.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-not-much-happened-today-f09/525c7342dd7c0ac2675863803c0cc0d2d7bdb640f3b611cf31bc54fd60188443.png"
   },
   {
    "source": "Latent Space",
@@ -1491,6 +1577,21 @@
   {
    "source": "Latent Space",
    "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
+   "url": "https://latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon/",
+   "date": "2026-10-14T05:40:28.000Z",
+   "summary": "Google reached general availability for Gemini 4 Argon, offering verified gains across major coding and agent benchmarks. Developers can now deploy this frontier-grade model into general production workflows.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-ai-engineer-nyc-gemini-4-argon/022b64bcb6303dada3af8034e0e3aa62b8d4939cc23d599389f8b7c39eab7ad1.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
    "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
    "date": "2026-10-14T05:40:28.000Z",
    "summary": "Gemini 4 Argon is now generally available, with independent coding benchmarks showing performance matching initial claims.",
@@ -1743,6 +1844,20 @@
   {
    "source": "Latent Space",
    "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model",
+   "url": "https://latent.space/p/ainews-meta-muse-wonder-and-wonder/",
+   "date": "2026-10-13T09:37:04.000Z",
+   "summary": "Meta unveiled Muse Wonder and Wonder Full, frontier-tier models engineered to match high-end reasoning benchmarks. This adds a competitive open alternative to commercial frontier models for complex technical work.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-meta-muse-wonder-and-wonder/8e8e870f9149a82a7f5039d9279e066bdd0422b3b860f1e74c3a1d5c828e8ab4.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Meta Muse Wonder & Wonder Full: MSL’s Claude 5.5-tier Frontier Model",
    "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
    "date": "2026-10-13T09:37:04.000Z",
    "summary": "Meta's MSL introduced Muse Wonder and Wonder Full, frontier-class models positioned to rival top reasoning models.",
@@ -1813,6 +1928,20 @@
    "big": false,
    "ai": true,
    "image": "https://opengraph.githubassets.com/62597b5e657304bedc9c5d3a30da1d84134f1d33b61224a5a2fe3232f919511b/openai/codex/issues/48195"
+  },
+  {
+   "source": "Latent Space",
+   "title": "How Anthropic’s Dynamic Workflows Coordinate Claude Agents (Updated with video!)",
+   "url": "https://latent.space/p/claude-dynamic-workflows/",
+   "date": "2026-10-12T18:18:17.000Z",
+   "summary": "Anthropic shared architectural patterns for Dynamic Workflows, showing how to coordinate multiple Claude agents using Unix-style composition. This gives developers concrete patterns for handling large multi-stage agentic jobs.",
+   "tags": [
+    "agents",
+    "skills"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/claude-dynamic-workflows/a40f0e0aa70860b242da08bc7733ca504b7c498b74c6bc7fd1714e55df3cae18.png"
   },
   {
    "source": "Latent Space",
@@ -2134,124 +2263,6 @@
    "image": "",
    "viaBrowser": true,
    "audience": "dev"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.295",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.295",
-   "date": "2026-10-08T19:48:38Z",
-   "summary": "Anthropic released Claude Code v2.1.295, continuing updates for its terminal-based AI coding assistant.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/dcd85cc09c433aa3666f9ee287bfcdcee1723dae81f86e24a561ff9f76882a84/anthropics/claude-code/releases/tag/v2.1.295",
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.162.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.162.0",
-   "date": "2026-10-08T18:55:59Z",
-   "summary": "OpenAI updated its Codex CLI to version 0.162.0, providing improvements to the command-line interface for the Codex coding model.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/ecd5f375c36de28d9804327dbdf3e5b7ade3c97efa418c5370f3495eb6d33d86/openai/codex/releases/tag/rust-v0.162.0",
-   "audience": "dev"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/2026-usage-policy-update",
-   "date": "2026-10-08T17:00:00.000Z",
-   "title": "2026 Usage Policy update",
-   "summary": "Anthropic revised its Usage Policy, clarifying acceptable use rules and restrictions for developers and end users using Claude.",
-   "tags": [
-    "product",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Synthesis Superintelligence: from Semiconductors to Superconductors — Periodic Labs’ Liam Fedus and Ekin Dogus Cubuk",
-   "url": "https://www.latent.space/p/periodic",
-   "date": "2026-10-08T16:27:54.000Z",
-   "summary": "Episodic podcast discussion covering the application of AI and engineering to semiconductors and superconductors.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!RBft!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F219146438%2Fb183e86e-d343-4bee-a4ce-f24fbe1f78d7%2Ftranscoded-1791407933.png",
-   "audience": "dev"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Oracle turns days of work into minutes with ChatGPT and Codex",
-   "url": "https://openai.com/index/oracle",
-   "date": "2026-10-08T16:00:00.000Z",
-   "summary": "Across recruiting, engineering, and operations, Oracle turns specialist knowledge into fast, repeatable workflows with ChatGPT Work and Codex.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1SCqCm9UJXrGxUgBvYjlpb/e26c9003845454505088b39effc72e8d/oracle-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/genesis-mission-commitment",
-   "date": "2026-10-08T13:00:00.000Z",
-   "title": "Building on our commitment to American scientific discovery",
-   "summary": "Anthropic is committing $150 million over three years to the Genesis Mission, a federal initiative to accelerate scientific and technological discovery through AI.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www.anthropic.com/api/opengraph-illustration?name=Object%20DoubleHelix&backgroundColor=heather"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
-   "url": "https://openai.com/index/pollo-ai",
-   "date": "2026-10-08T12:00:00.000Z",
-   "summary": "Pollo AI integrates newer OpenAI models to support image and video generation tools.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6xbSXB2KZiXOp5KaOSOHGp/b064de95ee020e5a151d567f73d5e6ff/pollo-ai-customer-story-seo-image-cinema-velvet-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "LegalOn halves Codex costs while maintaining development speed",
-   "url": "https://openai.com/index/legalon-halves-codex-costs",
-   "date": "2026-10-08T12:00:00.000Z",
-   "summary": "LegalOn successfully reduced its Codex operational costs while maintaining development velocity.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/2P8XYqMKsOiY9IUl1H3YfF/d737379b5aebd51ab8cf5962a82ac429/legalon-codex-customer-story-seo-open-graph-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
-   "date": "2026-10-08T09:04:16.632Z",
-   "title": "Introducing the Anthropic Cyber Mission",
-   "summary": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2af4f6715cbe9766a47430a24420cfca0a2c588-1200x630.jpg"
   }
  ]
 }

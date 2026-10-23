@@ -14893,5 +14893,40 @@
   "repo": "2430816465/campus-knowledge-agent",
   "at": "2026-10-23",
   "source": "trending"
+ },
+ "StartLuxLabs/StartLux-Prism": {
+  "cat": "local",
+  "kind": "GPU inference engine",
+  "what": "An inference engine that serves StartLux-Decision GGUF models on NVIDIA GPUs behind a TypeSafe classification endpoint.",
+  "why": "It delivers faster speeds and exact integer calculations compared to vLLM when scoring decisions. Reach for it when you want low-latency, repeatable probability readouts from text or video on your own hardware.",
+  "level": "setup",
+  "start": "git clone https://github.com/StartLuxLabs/StartLux-Prism && cd StartLux-Prism",
+  "caution": "Requires Ampere or newer NVIDIA GPUs on Linux with CUDA drivers, has no built-in web authentication, and the model weights carry a non-commercial CC BY-NC 4.0 license.",
+  "alts": [
+   "StartLuxLabs/StartLux-Decision",
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "Runs fast decision-making AI models directly on your own computer's graphics card without changing the original files.",
+  "tags": [
+   "automate",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Classify customer support tickets into teams and urgency levels",
+   "Answer multiple structured decision questions from text or video",
+   "Serve decision models across single or multiple graphics cards"
+  ],
+  "steps": [
+   "Clone the repository and install dependencies: `pip install -r requirements.txt`",
+   "Download the StartLux-Decision GGUF and configuration files from Hugging Face.",
+   "Launch the server: `python -m startlux_prism.server --gguf <file.gguf> --model-dir <dir> --port 8092`",
+   "Send classification questions via curl to receive calibrated probabilities."
+  ],
+  "repo": "StartLuxLabs/StartLux-Prism",
+  "at": "2026-10-23",
+  "source": "trending"
  }
 }

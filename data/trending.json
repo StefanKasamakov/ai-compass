@@ -1,48 +1,16 @@
 {
- "updated": "2026-10-23T04:59:29.176Z",
+ "updated": "2026-10-23T09:32:46.654Z",
  "items": [
   {
-   "repo": "StartLuxLabs/StartLux-Decision",
-   "stars": 1334,
-   "desc": "Open decision models from 0.8B to 27B: a calibrated probability for every option in one pass, and a short thought only when unsure. Engine for vLLM, llama.cpp and MLX.",
-   "created": "2026-09-29T11:53:37Z",
+   "repo": "StartLuxLabs/StartLux-Prism",
+   "stars": 42,
+   "desc": "Fast, exact inference for StartLux-Decision models on NVIDIA GPUs: the released GGUF files on int8 and 4-bit tensor cores, behind the /v1/systemone API, with up to 5.3× lower latency than vLLM in FP8 and bit-identical answers.",
+   "created": "2026-10-13T17:59:09Z",
    "topics": [
-    "agents",
     "calibration",
-    "classification",
+    "cuda",
+    "cuda-graphs",
     "decision-making"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "daoyi2026/vibe-coding-zero-to-ship",
-   "stars": 93,
-   "desc": "A beginner foundation skill for AI coding agents — from product idea, data and Git to security, deployment and launch.",
-   "created": "2026-09-30T11:35:39Z",
-   "topics": [
-    "agent-skills",
-    "ai-coding",
-    "beginner-friendly",
-    "claude-code"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "2430816465/campus-knowledge-agent",
-   "stars": 81,
-   "desc": "校园知识服务 Agent 智能体平台：基于 FastAPI、Qwen3 与 RAG，贯通公开资料解析、时间范围检索、证据溯源及人工审核。",
-   "created": "2026-10-14T02:04:31Z",
-   "topics": [
-    "agent",
-    "document-processing",
-    "fastapi",
-    "human-in-the-loop"
    ],
    "lang": "Python",
    "sources": [
