@@ -15201,5 +15201,109 @@
   "repo": "Sam-Hui-dot/mcd-budget-meal",
   "at": "2026-10-24",
   "source": "trending"
+ },
+ "makecindy/cindy": {
+  "cat": "coding",
+  "kind": "desktop agent client",
+  "what": "Cindy is an open-source desktop and mobile client that orchestrates Claude Code, Codex, and local models to perform tasks across your computer, browser, and files.",
+  "why": "Managing different coding agent tools and subscriptions separately can be disjointed. Reach for Cindy when you want a unified GUI with shared memory, tools, and skills across multiple agent engines.",
+  "level": "easy",
+  "start": "git clone https://github.com/makecindy/cindy.git",
+  "caution": "Cindy can link existing consumer Claude Code and Codex plans; routing consumer subscription logins through third-party wrappers may violate provider terms of service. Official builds also include TapDB product analytics.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A desktop and phone app that puts AI assistants to work across your computer, browser, and project files.",
+  "tags": [
+   "code",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Run coding tasks across projects using Claude Code or Codex engines",
+   "Automate repetitive tasks across your computer, browser, and phone",
+   "Maintain shared memory and custom skills across different AI models"
+  ],
+  "steps": [
+   "Download the desktop or mobile installer from cindy.app, or clone the repository for development.",
+   "If building from source, ensure Node.js 22 and Git LFS are installed, then run `pnpm install`.",
+   "Launch the app and log in, link an existing coding subscription, or choose Skip Sign-In for local agents."
+  ],
+  "repo": "makecindy/cindy",
+  "at": "2026-10-24",
+  "source": "trending"
+ },
+ "aws/agent-toolkit-for-aws": {
+  "cat": "harness",
+  "kind": "AWS agent plugins",
+  "what": "Official AWS plugins, MCP servers, and skills that help AI coding agents build, deploy, and manage cloud applications on AWS.",
+  "why": "AI assistants often hallucinate cloud service options or lack direct AWS access; reach for this to let agents like Claude Code or Codex configure CDK, investigate incidents, and query AWS APIs.",
+  "level": "setup",
+  "start": "/plugin install aws-core@claude-plugins-official",
+  "caution": "Allowing an AI agent to execute AWS commands can incur cloud infrastructure costs or modify production resources if credentials have broad permissions.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [
+   "mcp-proxy-for-aws-cli",
+   "skills"
+  ],
+  "plain": "Gives your AI coding helper official tools and guides to build, configure, and manage Amazon Web Services apps safely.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Deploy and configure AWS cloud resources with coding agents",
+   "Search official AWS docs and validate architectures directly in chat",
+   "Investigate DevOps incidents and scan code for cloud security vulnerabilities"
+  ],
+  "steps": [
+   "In Claude Code, run `/plugin install aws-core@claude-plugins-official` to add foundational AWS tools.",
+   "Set up your local AWS credentials so your agent has access to call AWS APIs.",
+   "Prompt your coding assistant to build serverless apps, write CDK templates, or review cloud architectures."
+  ],
+  "repo": "aws/agent-toolkit-for-aws",
+  "at": "2026-10-24",
+  "source": "trending"
+ },
+ "thesysdev/open-intelligent-ui": {
+  "cat": "builders",
+  "kind": "Generative UI chat app",
+  "what": "An open-source web interface that streams AI responses as rich, interactive components like maps, charts, and forms.",
+  "why": "Standard AI chats output plain text, making complex tasks like trip planning or data analysis hard to interact with. Reach for this project to build or test web interfaces where AI responses render directly as working widgets and tools.",
+  "level": "setup",
+  "start": "cp .env.example .env",
+  "caution": "",
+  "alts": [
+   "open-webui/open-webui",
+   "lobehub/lobehub",
+   "vercel/ai"
+  ],
+  "packages": [],
+  "plain": "A web application that turns assistant replies into interactive maps, forms, charts, and mini-apps instead of plain text.",
+  "tags": [
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Build AI chat interfaces that display interactive maps and forms",
+   "Render dynamic charts and games generated directly by AI",
+   "Run interactive generative UI locally using open model tools"
+  ],
+  "steps": [
+   "Copy `.env.example` to `.env` to set up your environment variables.",
+   "Run `npm install` to install project dependencies.",
+   "Generate an key and launch the dev server with `npm run dev`."
+  ],
+  "repo": "thesysdev/open-intelligent-ui",
+  "at": "2026-10-24",
+  "source": "trending"
  }
 }
