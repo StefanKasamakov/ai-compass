@@ -15305,5 +15305,73 @@
   "repo": "thesysdev/open-intelligent-ui",
   "at": "2026-10-24",
   "source": "trending"
+ },
+ "Nutlope/hallmark": {
+  "cat": "harness",
+  "kind": "design agent skill",
+  "what": "Hallmark is an anti-AI-slop design skill for AI coding tools that enforces strict design principles, themes, and automated visual checks on generated websites.",
+  "why": "AI code generators often produce predictable, repetitive web designs with visual clichés like floating badges, identical hero sections, and broken layouts. Reach for Hallmark when you want your AI coding agent to generate polished, distinct web interfaces or audit existing pages for visual flaws.",
+  "level": "easy",
+  "start": "npx skills add nutlope/hallmark -g",
+  "caution": "Full browser visual rendering checks and screenshot audits require Google Chrome and puppeteer-core to be installed on your system.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "puppeteer-core"
+  ],
+  "plain": "Add design rules to your AI coding helper so generated websites do not look generic.",
+  "tags": [
+   "apps",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate web designs without repetitive AI visual cliches",
+   "Audit existing web pages for visual design flaws",
+   "Redesign website interfaces while preserving existing code and content"
+  ],
+  "steps": [
+   "Install the skill globally by running `npx skills add nutlope/hallmark -g`.",
+   "Optionally install puppeteer-core and Chrome to enable browser rendering checks.",
+   "Ask your AI coding assistant to build or audit a page using the hallmark command."
+  ],
+  "repo": "Nutlope/hallmark",
+  "at": "2026-10-24",
+  "source": "trending"
+ },
+ "AienTech/dossier": {
+  "cat": "coding",
+  "kind": "Job search assistant",
+  "what": "Dossier is a self-hosted job search application that manages your career profile, scores job listings, and drafts tailored resumes and cover letters.",
+  "why": "Tailoring application materials for every job opening takes time and often leads to AI inventing experience. Reach for Dossier when you want a private dashboard to manage your career history, search postings, and generate accurate resumes.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires self-hosting with Docker under an AGPL-3.0 license. If you use consumer AI subscriptions with the app, ensure compliance with provider terms.",
+  "alts": [
+   "MadsLorentzen/ai-job-search",
+   "gilgameshcc/ai-native-jobhunt"
+  ],
+  "packages": [],
+  "plain": "A program that runs on your own computer to write custom resumes and track job applications.",
+  "tags": [
+   "automate",
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Track job applications from initial draft to final offer",
+   "Generate tailored resumes and cover letters based on your profile",
+   "Search job listings and score them against your experience"
+  ],
+  "steps": [
+   "Install Docker Desktop on macOS, Windows, or Linux",
+   "Download the Docker Compose configuration file into a new folder",
+   "Start the application container and connect your preferred AI provider"
+  ],
+  "repo": "AienTech/dossier",
+  "at": "2026-10-24",
+  "source": "trending"
  }
 }

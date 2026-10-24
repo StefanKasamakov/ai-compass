@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T16:02:10.762Z",
+ "updated": "2026-10-24T20:55:33.868Z",
  "items": [
   {
    "source": "Latent Space",
@@ -14,6 +14,19 @@
    "ai": true,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-kimi-31/4da802572e7369acdf4cbdee535f934d70a599942d61e7d15b8168b70aeb7a84.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "battledrones v14: Compass Rose, a four player map",
+   "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+   "date": "2026-10-24T03:59:57.000Z",
+   "summary": "A developer added a 4-player online mode to a web game using prompts with Claude.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg"
   },
   {
    "source": "GitHub",
@@ -46,6 +59,19 @@
   },
   {
    "source": "Simon Willison",
+   "title": "Quick Study",
+   "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+   "date": "2026-10-23T21:35:13.000Z",
+   "summary": "A coding experiment demonstrated using Claude to rapidly generate canvas-based paintings from photos.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/heron-oil.webp"
+  },
+  {
+   "source": "Simon Willison",
    "title": "Introducing Kimi K3.1 Pro",
    "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
    "date": "2026-10-23T19:40:54.000Z",
@@ -70,6 +96,20 @@
    "big": false,
    "ai": true,
    "image": "https://kimi-img.kimi.ai/pub/slides/kimi-fs/managed-assets/9558f8d5-08fc-42de-8e4e-339076e03895.webp"
+  },
+  {
+   "source": "Latent Space",
+   "title": "AI Is Getting Good at Math. Here’s Why.",
+   "url": "https://latent.space/p/ai-is-getting-good-at-math/",
+   "date": "2026-10-23T15:19:48.000Z",
+   "summary": "An analysis explored the emerging patterns behind how AI models successfully solve mathematical problems.",
+   "tags": [
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ai-is-getting-good-at-math/81d5ad0c4d69fdf1e50b3e421806a0b816e1e19166d1c828fddd82ddafc35e6a.png"
   },
   {
    "source": "Hacker News",
@@ -232,6 +272,19 @@
   {
    "source": "Latent Space",
    "title": "You are the Team — Anekha Sokhal, Moshi",
+   "url": "https://latent.space/p/moshi/",
+   "date": "2026-10-22T14:03:40.000Z",
+   "summary": "An interview covered how Moshi adapts market insights to fit traders' specific workflows.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/moshi/bdcd6b8245af849c979fea8e7b4666aff707556a5062361074f68922da3382a5.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "You are the Team — Anekha Sokhal, Moshi",
    "url": "https://www.latent.space/p/moshi",
    "date": "2026-10-22T14:03:40.000Z",
    "summary": "An interview discussing how Moshi integrates market data insights into trader workflows.",
@@ -255,6 +308,21 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/6806091ee92bd22fd8ce9719/P6P8ZzHR8yL7GOOO4hQOg.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] OpenAI’s Patch the Planet program is 1 of 2 parties to discover PHP2Shell vulnerabilities in core PHP affecting 70% of the web, using GPT-5.6 Sol; coordinated response over 2 months",
+   "url": "https://latent.space/p/ainews-openais-patch-the-planet-program/",
+   "date": "2026-10-22T07:42:44.000Z",
+   "summary": "OpenAI researchers used GPT-5.6 Sol to help discover critical PHP remote code execution vulnerabilities.",
+   "tags": [
+    "safety",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-openais-patch-the-planet-program/d7ad4d2ae0cd1607eda392842b1a29d90a29dd6975b0262191ff7bceb24bdf6a.png"
   },
   {
    "source": "Latent Space",
@@ -500,6 +568,20 @@
   },
   {
    "source": "OpenAI",
+   "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
+   "url": "https://openai.com/index/building-chatgpt-ad-stack",
+   "date": "2026-10-21T07:00:00.000Z",
+   "summary": "OpenAI introduced an ad stack for ChatGPT designed to separate ads from answers while matching conversational intent.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/GsY5RrFvT4ZOnPC3oZUya/e3168194d55c5d9c8060ce5c5ba6c3ed/building-chatgpt-ad-stack-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
    "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
    "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
    "date": "2026-10-21T07:00:00.000Z",
@@ -542,6 +624,20 @@
    "ai": true,
    "audience": "dev",
    "image": "https://substackcdn.com/image/fetch/$s_!tu5N!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07a949cd-f727-48e2-9bd4-c4d110bf94e9_1326x1362.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
+   "url": "https://latent.space/p/tenex/",
+   "date": "2026-10-21T05:01:26.000Z",
+   "summary": "A discussion explored how enterprises build AI-native software development life cycles using agents.",
+   "tags": [
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/tenex/afff902de37985f8aa286fa49efcd3214df506476b9cb14802704bed04032e18.png"
   },
   {
    "source": "Latent Space",
@@ -911,6 +1007,20 @@
    "image": "https://github.blog/wp-content/uploads/2026/10/675076555-e8b71783-0511-4913-b6f3-dca3cf564538.jpg"
   },
   {
+   "source": "Hacker News",
+   "title": "Code is clay now",
+   "url": "https://www.albertodenia.com/writing/code-is-clay-now",
+   "date": "2026-10-19T15:19:45Z",
+   "discuss": "https://news.ycombinator.com/item?id=50153531",
+   "summary": "An essay discussed how generative AI changes the nature of software engineering.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www.albertodenia.com/_app/immutable/assets/code-is-clay-now-hero.D0t9h_rd.jpeg"
+  },
+  {
    "source": "OpenAI",
    "title": "Advancing coding in low‑resource programming languages",
    "url": "https://openai.com/index/low-resource-programming-languages",
@@ -1177,6 +1287,20 @@
    "big": false,
    "ai": true,
    "image": "https://starskirmish.com/assets/og.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Agents disprove Polysemanticity; greatly improve Interpretability & Alignment",
+   "url": "https://latent.space/p/ainews-agents-disprove-polysemanticity/",
+   "date": "2026-10-16T04:16:45.000Z",
+   "summary": "New claims suggest AI agents can disprove polysemanticity, potentially improving model interpretability.",
+   "tags": [
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-agents-disprove-polysemanticity/aaf6793c7e4c254a1bea346a3b2be4c273dfaf1cbcee57bd013bebeae24515f8.png"
   },
   {
    "source": "Latent Space",
@@ -1568,6 +1692,20 @@
   {
    "source": "Latent Space",
    "title": "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio",
+   "url": "https://latent.space/p/lab-in-the-loop-at-compute-speed/",
+   "date": "2026-10-14T20:35:09.000Z",
+   "summary": "Leash Bio discussed how automated lab assays generate data to train chemistry AI agents.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/lab-in-the-loop-at-compute-speed/ed46bd89f64ef5ac161322fd52e338ce053d2dd73e0af0033a25575a49e43882.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Lab-in-the-Loop at Compute Speed — Ian Quigley, Leash Bio",
    "url": "https://www.latent.space/p/lab-in-the-loop-at-compute-speed",
    "date": "2026-10-14T20:35:09.000Z",
    "summary": "How Leash Bio tamed DELs, the assay that traumatizes everyone, and used the data to catch cheating models. And why that same data is perfect for AI agents learning to think like chemists.",
@@ -1829,6 +1967,19 @@
    "ai": true,
    "image": "https://static.simonwillison.net/static/2026/gemini-4-argon-artificial-analysis.webp",
    "audience": "dev"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
+   "url": "https://latent.space/p/dyna/",
+   "date": "2026-10-13T22:25:55.000Z",
+   "summary": "Dyna Robotics discussed its work on general-purpose physical robotics agents with hour-long autonomy.",
+   "tags": [
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/dyna/cc177bf4f414b892f93e706f0078c5ecfc17a6cd7c0cb8498b22bec2918765d7.png"
   },
   {
    "source": "Latent Space",
@@ -2111,157 +2262,6 @@
    "big": false,
    "ai": false,
    "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-1152x648.jpg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Profiling web-edit with Python 3.15: flame graphs and source heatmaps",
-   "url": "https://simonwillison.net/2026/Oct/12/python-3-15-web-edit-profiling/",
-   "date": "2026-10-12T16:58:00.000Z",
-   "summary": "A developer used Python profiling tools alongside an AI model to generate performance flame graphs and heatmaps for an application.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Launch HN: Agent37 (YC F26) – Low-cost agent sandboxes for running agents",
-   "url": "https://news.ycombinator.com/item?id=50059096",
-   "date": "2026-10-12T16:46:34Z",
-   "discuss": "https://news.ycombinator.com/item?id=50059096",
-   "summary": "Agent37 launched low-cost sandboxes specifically designed for running and testing AI agents safely.",
-   "tags": [
-    "agents",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "web-edit 0.1a0",
-   "url": "https://simonwillison.net/2026/Oct/12/web-edit/",
-   "date": "2026-10-12T15:54:36.000Z",
-   "summary": "Release: web-edit 0.1a0 I was working on a project from my phone using Codex Remote when I found myself wanting to edit a credentials file without round-tripping those credentials through the LLM itself. So... I had Codex and GPT-6 Astra Extra High build this Python web app which provides a web UI for viewing and editing files in a folder. It's intended to be run over Tailscale, so I can have an a",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/web-edit-card.jpg",
-   "audience": "dev"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/distillation-defenses",
-   "date": "2026-10-12T00:00:00.000Z",
-   "title": "Strengthening our defenses against distillation attacks",
-   "summary": "Anthropic updated its defenses, reducing unauthorized model distillation attempts by over 90%.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/a5934d1ae8428b2a97fae1963a5f427594fc7202-1200x630.jpg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Python 3.15.0 added to actions/python-versions",
-   "url": "https://simonwillison.net/2026/Oct/10/python-actions/",
-   "date": "2026-10-10T23:58:04.000Z",
-   "summary": "Python 3.15.0 added to actions/python-versions Bit of a niche link, but I've been waiting for this for a couple of days - I even told ChatGPT to check for it: Clone https://github.com/actions/python-versions and git pull once an hour until they add the stable 3.15 - then tell me about it Now that this has landed, you can add \"3.15\" to a GitHub Actions testing matrix to run tests against the new Py",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true,
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub",
-   "title": "New controls and chat improvements in Copilot for JetBrains",
-   "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
-   "date": "2026-10-10T18:53:39.000Z",
-   "summary": "GitHub Copilot for JetBrains IDEs added controls for custom MCP servers and default model selection. This lets JetBrains users connect tools to Copilot using the Model Context Protocol.",
-   "tags": [
-    "mcp",
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Building AI for Reliable Execution: Lessons From Industrial Robotics",
-   "url": "https://www.latent.space/p/standard-bots",
-   "date": "2026-10-10T14:04:11.000Z",
-   "summary": "Inside Standard Bots’ AI stack, pretrained models learn factory tasks from demonstrations and improve through corrections from real deployments.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://substackcdn.com/image/fetch/$s_!yzyh!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe58f7268-94a0-42f5-b0fc-9ecf300bb03d_2560x1440.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] TypeSafe/Jev at >$100M ARR, $7.5B valuation 3 weeks after launch",
-   "url": "https://www.latent.space/p/ainews-typesafejev-at-100m-arr-75b",
-   "date": "2026-10-10T06:45:57.000Z",
-   "summary": "TypeSafe/Jev launched and quickly achieved high valuation and annual recurring revenue.",
-   "tags": [
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!JxMf!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F__ss-rehost__tw-video-preview-13_2108594586310631424.jpg",
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting The New York Times",
-   "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times/",
-   "date": "2026-10-10T02:04:12.000Z",
-   "summary": "Reports revealed Anthropic AI agents submitted automated test visa filings on US government portals.",
-   "tags": [
-    "agents",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "Why AlphaFold Didn't Solve Protein Folding — Pushmeet Kohli, Google DeepMind & Sal Candido, Biohub",
-   "url": "https://www.latent.space/p/biohub-deepmind",
-   "date": "2026-10-10T00:31:26.000Z",
-   "summary": "Google DeepMind and Biohub researchers discussed the limitations of AlphaFold and the future of AI in biology.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!em3X!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F219666029%2F99db8b7b-8501-448d-a028-45bd9d24fd84%2Ftranscoded-1791592160.png",
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub Copilot weekly releases — October 5",
-   "url": "https://github.blog/changelog/2026-10-09-github-copilot-weekly-releases-october-5",
-   "date": "2026-10-09T22:58:23.000Z",
-   "summary": "GitHub Copilot updated its weekly release with granular permission controls for coding agents and smoother multi-account management. It allows developers to better restrict what tools and files their agents can access.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/667724435-138fc0bf-2da0-4dfa-98c8-671bf744ac7f.jpg"
   }
  ]
 }
