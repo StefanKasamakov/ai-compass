@@ -15166,5 +15166,40 @@
   "repo": "kividbio/kividb",
   "at": "2026-10-24",
   "source": "trending"
+ },
+ "Sam-Hui-dot/mcd-budget-meal": {
+  "cat": "harness",
+  "kind": "meal budgeting assistant",
+  "what": "An AI agent skill that checks official McDonald's store prices to compare and assemble custom meals within your budget.",
+  "why": "Ordering fast food within a strict budget often requires tedious manual menu checking and coupon juggling; this tool connects to McDonald's China pricing tools to verify total costs before you order.",
+  "level": "setup",
+  "start": "./install.ps1",
+  "caution": "Requires your own McDonald's China API token (MCP token); it stops at menu recommendations and cannot place actual orders.",
+  "alts": [
+   "wshobson/agents",
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [],
+  "plain": "An AI assistant skill that checks real McDonald's prices and helps you build a meal within your budget.",
+  "tags": [
+   "save",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Compare McDonald's meal options against a fixed budget",
+   "Calculate actual prices when swapping combo items like drinks",
+   "Generate comparison reports showing price differences across menu combinations"
+  ],
+  "steps": [
+   "Obtain an access token from the McDonald's China developer platform.",
+   "Configure your AI client (like WorkBuddy or Cursor) to connect to the McDonald's tool server.",
+   "Install the skill into your client or run `./install.ps1`.",
+   "Tell the AI your budget, preferred items, and store location to generate meal options."
+  ],
+  "repo": "Sam-Hui-dot/mcd-budget-meal",
+  "at": "2026-10-24",
+  "source": "trending"
  }
 }
