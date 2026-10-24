@@ -15134,5 +15134,37 @@
   "repo": "Jakeschincariol/day-trader-skill",
   "at": "2026-10-23",
   "source": "trending"
+ },
+ "kividbio/kividb": {
+  "cat": "memory",
+  "kind": "In-memory vector database",
+  "what": "KiviDB is a high-performance, multi-threaded database written in Rust that acts as a drop-in replacement for Redis with built-in vector and full-text search.",
+  "why": "Single-threaded Redis setups can bottleneck under heavy traffic or require separate modules for search features. Use KiviDB when you need higher query throughput, lower latency, and built-in vector search without changing your existing Redis client code.",
+  "level": "setup",
+  "start": "docker run -d -p 6380:6380 kividb/kividb",
+  "caution": "Licensed under AGPL-3.0, which may require releasing modified source code if hosted as a network service.",
+  "alts": [
+   "qdrant/qdrant",
+   "chroma-core/chroma"
+  ],
+  "packages": [],
+  "plain": "A high-speed database that stores data in fast computer memory and quickly searches text and vector data.",
+  "tags": [
+   "knowledge",
+   "private"
+  ],
+  "useFor": [
+   "Replace Redis with a faster multi-threaded key-value store",
+   "Perform vector search using standard Redis protocol commands",
+   "Handle high-volume pipelined queries with minimal latency"
+  ],
+  "steps": [
+   "Start KiviDB in Docker with `docker run -d -p 6380:6380 kividb/kividb`.",
+   "Point your existing Redis client or command tool to port 6380.",
+   "Issue key-value commands or perform vector search using standard search queries."
+  ],
+  "repo": "kividbio/kividb",
+  "at": "2026-10-24",
+  "source": "trending"
  }
 }

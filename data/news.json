@@ -1,6 +1,21 @@
 {
- "updated": "2026-10-23T21:28:53.482Z",
+ "updated": "2026-10-24T04:44:32.542Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.310",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
+   "date": "2026-10-23T23:39:00Z",
+   "summary": "Anthropic updated Claude Code to version 2.1.310, delivering maintenance updates to its command-line AI coding agent.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/29a5b054b8870aa16af5ee813a1120bb15f4e1ff9da30bfe5a52778a7481673a/anthropics/claude-code/releases/tag/v2.1.310"
+  },
   {
    "source": "Simon Willison",
    "title": "Introducing Kimi K3.1 Pro",
@@ -13,6 +28,20 @@
    "big": true,
    "ai": true,
    "image": "https://static.simonwillison.net/static/2026/kimi-k3.1-card.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+   "date": "2026-10-23T16:59:08Z",
+   "discuss": "https://news.ycombinator.com/item?id=50212065",
+   "summary": "Moonshot AI released Kimi K3.1 Pro and a faster K3.1 Pro Highspeed version, updating its competitive reasoning model line.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://kimi-img.kimi.ai/pub/slides/kimi-fs/managed-assets/9558f8d5-08fc-42de-8e4e-339076e03895.webp"
   },
   {
    "source": "Hacker News",
@@ -2231,36 +2260,6 @@
    "ai": true,
    "image": "https://opengraph.githubassets.com/66e18f25dd3ae262730148ccb499ba9c11591a3c335b8038584783404c57b627/openai/codex/releases/tag/rust-v0.162.1",
    "audience": "dev"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.296",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.296",
-   "date": "2026-10-09T19:28:59Z",
-   "summary": "Anthropic released Claude Code v2.1.296 with incremental fixes and enhancements. It keeps the command-line coding assistant up to date for terminal-based developers.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/d62f2246da963b4a9e47318fa942b33e3f9a0f8c0a37f82c7597a51716210c8d/anthropics/claude-code/releases/tag/v2.1.296",
-   "audience": "dev"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Five months treating bugs like patients and coding agents like a medical team",
-   "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/",
-   "date": "2026-10-09T15:26:33Z",
-   "discuss": "https://news.ycombinator.com/item?id=50021899",
-   "summary": "A developer shares practical insights from managing autonomous coding agents across multi-month production debugging tasks.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/00voh0j35590/2yOYv8dss0M8hI24SPoDQt/03144320f103f1ab7692be074951b729/Group_1__2_.jpg"
   }
  ]
 }
