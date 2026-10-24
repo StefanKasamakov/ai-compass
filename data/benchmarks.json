@@ -610,100 +610,6 @@
     "src": "https://arena.ai/leaderboard/text",
     "note": "deepseek-v4-pro-high-20260813, text overall (style control), rank 53, snapshot read 2026-09-29"
    }
-  },
-  "kimi": {
-   "aa": {
-    "v": 43.6,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "agents": {
-    "v": 58.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "tb40": {
-    "v": 12.6,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "longctx": {
-    "v": 88.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "hle": {
-    "v": 46.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "science": {
-    "v": 23.4,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "scicode": {
-    "v": 59.5,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "mmmu": {
-    "v": 80.5,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Kimi K3 (max)\" (max effort)"
-   },
-   "arc": {
-    "v": 60.4,
-    "src": "https://arcprize.org/results/moonshot-kimi-k3",
-    "note": "ARC-AGI-2 Semi-Private, Max"
-   },
-   "arena": {
-    "v": 1488,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "kimi-k3-max, text overall (style control), rank 16, snapshot read 2026-09-29"
-   }
-  },
-  "mistral": {
-   "aa": {
-    "v": 11.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "agents": {
-    "v": 1,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "tb40": {
-    "v": 0,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "longctx": {
-    "v": 49.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "hle": {
-    "v": 9.9,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "science": {
-    "v": 0.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "scicode": {
-    "v": 38.8,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   },
-   "mmmu": {
-    "v": 56.8,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"Mistral Small 4 (Reasoning)\" (only/highest variant AA lists)"
-   }
   }
  },
  "hosted": {
@@ -721,11 +627,6 @@
    "in": 1.32,
    "out": 3.96,
    "note": "V4 Pro 0813 via OpenRouter"
-  },
-  "kimi": {
-   "in": 3,
-   "out": 15,
-   "note": "via OpenRouter"
   }
  }
 }
