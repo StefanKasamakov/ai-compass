@@ -15446,5 +15446,170 @@
   "repo": "JetBrains/thinkrail",
   "at": "2026-10-25",
   "source": "trending"
+ },
+ "TauricResearch/TradingAgents": {
+  "cat": "coding",
+  "kind": "multi-agent trading system",
+  "what": "A multi-agent trading framework that uses artificial intelligence to simulate real-world financial trading firms with specialized analyst and trader roles.",
+  "why": "Useful for researching financial trading strategies and automating multi-perspective market analysis using multiple specialized AI personas.",
+  "level": "setup",
+  "start": "pip install tradingagents",
+  "caution": "Version 0.7.0 claims support for running on consumer subscription plans like ChatGPT Plus or Pro, which may break provider terms of service and risk account suspension. This software is for research only and not financial advice.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph"
+  ],
+  "packages": [
+   "tradingagents"
+  ],
+  "plain": "Runs a team of virtual financial analysts that discuss market data, company news, and charts to decide on stock trades.",
+  "tags": [
+   "code",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Analyze stocks using multiple specialized AI analyst personas",
+   "Backtest trading strategies with historical market data",
+   "Simulate financial trading decisions and portfolio management"
+  ],
+  "steps": [
+   "Install the package by running `pip install tradingagents` in your terminal.",
+   "Configure your required model API keys or subscription settings in the environment variables.",
+   "Run the command-line tool with your target ticker and date, such as `--ticker AAPL`."
+  ],
+  "repo": "TauricResearch/TradingAgents",
+  "at": "2026-10-25",
+  "source": "trending"
+ },
+ "AgriciDaniel/claude-seo": {
+  "cat": "harness",
+  "kind": "SEO audit plugin",
+  "what": "A free, open-source SEO audit tool for Claude Code featuring specialist agents and sub-skills.",
+  "why": "Helps developers and marketers run comprehensive SEO audits and get action plans directly inside their coding workflow.",
+  "level": "setup",
+  "start": "/seo audit <url>",
+  "caution": "Requires Claude Code, an official assistant tool that pools consumer subscriptions, which may violate provider terms and risk your account.",
+  "alts": [
+   "anthropic/claude-code"
+  ],
+  "packages": [],
+  "plain": "A plugin that checks your website for search engine visibility issues right inside your command-line workspace.",
+  "tags": [
+   "code",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Run full website SEO audits",
+   "Generate Schema.org markup",
+   "Analyze AI search engine visibility"
+  ],
+  "steps": [
+   "Open your terminal and launch Claude Code.",
+   "Type `/seo setup` to configure the runtime.",
+   "Run `/seo audit <url>` to analyze a website."
+  ],
+  "repo": "AgriciDaniel/claude-seo",
+  "at": "2026-10-25",
+  "source": "trending"
+ },
+ "UnderleveledBuilder/awesome-short-drama-skills": {
+  "cat": "harness",
+  "kind": "AI drama skill list",
+  "what": "A curated collection of agent skills for writing, adapting, and generating storyboards or video prompts for AI short dramas.",
+  "why": "Reach for this repository when you want to equip AI assistants with step-by-step instructions for producing short drama scripts, storyboards, and AI video prompts.",
+  "level": "easy",
+  "start": "npx skills add UnderleveledBuilder/awesome-short-drama-skills",
+  "caution": "Some listed skills include executable scripts, so inspect SKILL.md files before installing individual skills.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "sickn33/agentic-awesome-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A curated list of free helper tools that turn your AI assistant into an AI short drama scriptwriter and video creator.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Find agent skills for adapting novels into AI drama scripts",
+   "Generate storyboards and prompt instructions for video models",
+   "Install specialized drama skills into your AI assistant"
+  ],
+  "steps": [
+   "Browse the curated list to choose skills for scriptwriting, storyboards, or prompts.",
+   "Install the skill finder with `npx skills add UnderleveledBuilder/awesome-short-drama-skills`.",
+   "Ask your AI agent to recommend or load the right drama skill for your project."
+  ],
+  "repo": "UnderleveledBuilder/awesome-short-drama-skills",
+  "at": "2026-10-25",
+  "source": "trending"
+ },
+ "junxchan54-maker/mcd-cn-assistant": {
+  "cat": "harness",
+  "kind": "McDonald's Agent Skill",
+  "what": "An AI assistant skill built on top of McDonald's China official tools to automate campaigns, collab alerts, best-value ordering, and group bill splitting.",
+  "why": "Ordering McDonald's efficiently across multiple people or hunting down specific limited-edition merch involves juggling dozens of tools and manual math. Use this tool when you want an AI agent to handle complex ordering, price calculation, and group splitting while enforcing safety checks before any purchase.",
+  "level": "setup",
+  "start": "幫我安裝mcd-cn-assistant這個skill：1、https://github.com/junxchan54-maker/mcd-cn-assistant/ 2、以後我說麥當勞下單相關的就調用mcd-cn-assistant這個skill 3、把倉庫里 skill/mcd-cn-assistant 夾復制到用戶級技能目錄",
+  "caution": "Requires a personal McDonald's China official MCP token and login. Pushed over 4 months ago, indicating it may be unmaintained.",
+  "alts": [],
+  "packages": [],
+  "plain": "An AI assistant skill that helps you find the best deals, split bills, and order McDonald's items automatically.",
+  "tags": [
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Find active McDonald's campaigns and daily deals",
+   "Calculate the cheapest food and coupon combinations",
+   "Split group bills and delivery fees for office orders"
+  ],
+  "steps": [
+   "Obtain your McDonald's China MCP token from the official portal.",
+   "Configure the MCP server JSON with your token in your AI client settings.",
+   "Copy the skill files into your assistant's skill directory and prompt it to use the mcd-cn-assistant skill."
+  ],
+  "repo": "junxchan54-maker/mcd-cn-assistant",
+  "at": "2026-10-25",
+  "source": "trending"
+ },
+ "3145544645/gouji": {
+  "cat": "local",
+  "kind": "C++ CUDA tool router",
+  "what": "GOUJI is a C++ and CUDA mini model engine designed for sub-millisecond, zero-parameter tool command routing on local GPUs.",
+  "why": "Standard AI agents rely on heavy Python frameworks and bulky weights to handle local actions. Reach for GOUJI when you need ultra-fast, lightweight command routing without Python dependencies.",
+  "level": "setup",
+  "start": "git clone https://github.com/3145544645/gouji.git && cd gouji",
+  "caution": "Requires CUDA 13.1, MSVC 2022, CMake, Ninja, an Nvidia GPU, and Windows; source code paths must be pure ASCII.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "A tiny tool that translates plain text commands into computer actions using your graphics card [GPU] without heavy code.",
+  "tags": [
+   "private",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Route text commands to local tool calls",
+   "Run intent classification without Python runtime overhead",
+   "Benchmark zero-parameter associative memory tool matching"
+  ],
+  "steps": [
+   "Clone the repository and open a Windows terminal in the project folder.",
+   "Compile the project by running `cmd /c build.bat` with CUDA and Ninja installed.",
+   "Verify the installation fingerprint by running `.\\build\\canticle.exe fingerprint`."
+  ],
+  "repo": "3145544645/gouji",
+  "at": "2026-10-25",
+  "source": "trending"
  }
 }
