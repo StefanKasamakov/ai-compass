@@ -15412,5 +15412,39 @@
   "repo": "ahtx/kindi",
   "at": "2026-10-25",
   "source": "trending"
+ },
+ "JetBrains/thinkrail": {
+  "cat": "coding",
+  "kind": "Agentic coding IDE",
+  "what": "A lightweight code editor and workspace manager built specifically around the pi coding agent.",
+  "why": "Standard editors make it easy for autonomous agents to overwrite active work or lose context. ThinkRail isolates AI tasks into separate branches and tracks project requirements in living specification files.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/JetBrains/thinkrail/main/install.sh | bash",
+  "caution": "This is an experimental JetBrains incubator project and requires your own AI provider credentials or a JetBrains AI account.",
+  "alts": [
+   "earendil-works/pi",
+   "cline/cline",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A code editor that lets AI helpers safely build features in separate workspaces without messing up your files.",
+  "tags": [
+   "code",
+   "apps",
+   "automate"
+  ],
+  "useFor": [
+   "Run multiple AI coding sessions across isolated project branches",
+   "Keep project requirements synced with living specification documents",
+   "Review, edit, and publish AI-generated code directly to GitHub pull requests"
+  ],
+  "steps": [
+   "Download the desktop app for your system or run the installer script in your terminal.",
+   "Open a project folder by running `thinkrail ~/code/my-repo`.",
+   "Connect your AI provider credentials or log in with JetBrains AI to start coding."
+  ],
+  "repo": "JetBrains/thinkrail",
+  "at": "2026-10-25",
+  "source": "trending"
  }
 }
