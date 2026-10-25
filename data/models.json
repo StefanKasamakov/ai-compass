@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-25",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -253,21 +253,25 @@
   {
    "id": "kimi",
    "p": "open",
-   "name": "Kimi K3",
+   "name": "Kimi K3.1 Pro",
    "tier": "Open",
    "best": "Strong all-rounder, good for agents.",
-   "price": "free*"
+   "in": 2,
+   "out": 10,
+   "price": "free*",
+   "ctx": "1M",
+   "released": "2026-10-23"
   },
   {
    "id": "mistral",
    "p": "open",
-   "name": "Mistral Small 4",
+   "name": "Mistral Large 4",
    "tier": "Open",
-   "best": "European, Apache-2.0, 256K context. Easy on a company server.",
-   "price": "free*",
-   "ctx": "256K",
-   "in": 0.15,
-   "out": 0.6
+   "best": "European, Apache-2.0, 1M context. Advanced proprietary-tier open-weight model.",
+   "in": 1.36,
+   "out": 4.18,
+   "ctx": "1M",
+   "released": "2026-10-06"
   }
  ]
 }
