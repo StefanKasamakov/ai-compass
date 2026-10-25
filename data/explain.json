@@ -15373,5 +15373,44 @@
   "repo": "AienTech/dossier",
   "at": "2026-10-24",
   "source": "trending"
+ },
+ "ahtx/kindi": {
+  "cat": "local",
+  "kind": "Local inference engine",
+  "what": "Kindi is a fast local AI inference engine optimized for running Ternary-Bonsai-2 language models on older or low-cost NVIDIA graphics cards.",
+  "why": "Standard engines like llama.cpp can run slowly on older hardware like Kepler and Maxwell cards. Reach for Kindi to get up to 13x faster text generation on low-end NVIDIA GPUs via an OpenAI-compatible server.",
+  "level": "easy",
+  "start": "curl -fsSL https://amirhusain.com/kindi/install.sh | bash",
+  "caution": "",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [
+   "cupy-cuda102",
+   "fastapi",
+   "uvicorn",
+   "pydantic"
+  ],
+  "plain": "Runs text-generating AI models fast on older or low-cost NVIDIA graphics cards on your own computer.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run AI language models on older budget NVIDIA graphics cards",
+   "Host a fast local OpenAI-compatible server for coding agents",
+   "Speed up text generation compared to running on standard tools"
+  ],
+  "steps": [
+   "Run the installer script: `curl -fsSL https://amirhusain.com/kindi/install.sh | bash`",
+   "Let the script convert the model file and build cached kernels",
+   "Connect your coding agent or chat client to port 8093"
+  ],
+  "repo": "ahtx/kindi",
+  "at": "2026-10-25",
+  "source": "trending"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T20:55:33.868Z",
+ "updated": "2026-10-25T04:51:26.256Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -821,6 +821,14 @@
     "npm:jev-browser"
    ]
   },
+  "affaan-m/ECC": {
+   "npm": 48324,
+   "pypi": 0,
+   "total": 48324,
+   "packages": [
+    "npm:ecc-universal"
+   ]
+  },
   "earthtojake/text-to-cad": {
    "npm": 0,
    "pypi": 15703,
@@ -837,6 +845,14 @@
     "npm:mu-agent"
    ]
   },
+  "morluto/rea": {
+   "npm": 634318,
+   "pypi": 0,
+   "total": 634318,
+   "packages": [
+    "npm:rea-agents"
+   ]
+  },
   "alanhuangyoo/OpenJev": {
    "npm": 0,
    "pypi": 134,
@@ -846,9 +862,9 @@
    ]
   },
   "manaflow-ai/cmux": {
-   "npm": 0,
+   "npm": 1002,
    "pypi": 741,
-   "total": 741,
+   "total": 1743,
    "packages": [
     "npm:cmux",
     "pypi:cmux"
@@ -860,6 +876,22 @@
    "total": 6941,
    "packages": [
     "npm:openqodex"
+   ]
+  },
+  "alibaba/open-code-review": {
+   "npm": 487366,
+   "pypi": 0,
+   "total": 487366,
+   "packages": [
+    "npm:@alibaba-group/open-code-review"
+   ]
+  },
+  "VinkyDev/vibestart": {
+   "npm": 1488,
+   "pypi": 0,
+   "total": 1488,
+   "packages": [
+    "npm:vibestart-cli"
    ]
   },
   "huggingface/transformers": {
@@ -903,6 +935,14 @@
     "npm:shaders"
    ]
   },
+  "moritzwilksch/diffle": {
+   "npm": 2569,
+   "pypi": 0,
+   "total": 2569,
+   "packages": [
+    "npm:@moritzwilksch/diffle"
+   ]
+  },
   "ifixai-ai/iFixAi": {
    "npm": 0,
    "pypi": 481,
@@ -935,12 +975,13 @@
     "npm:create-mesh-avatar-studio"
    ]
   },
-  "alchaincyf/huashu-motion": {
-   "npm": 830,
+  "omnara-ai/omnara": {
+   "npm": 3334,
    "pypi": 0,
-   "total": 830,
+   "total": 3334,
    "packages": [
-    "npm:huashu-motion"
+    "npm:@omnara/sdk",
+    "npm:omnara"
    ]
   },
   "OpenBMB/VoxCPM": {
