@@ -15611,5 +15611,76 @@
   "repo": "3145544645/gouji",
   "at": "2026-10-25",
   "source": "trending"
+ },
+ "sno-ai/sno-station-skills": {
+  "cat": "harness",
+  "kind": "Agent workflow skills",
+  "what": "Sno Station Skills is a collection of 37 skills that add team working habits to Claude Code and Codex AI agents.",
+  "why": "It prevents single AI agents from approving their own flawed code or stalling when usage limits run out. Reach for it to set up cross-vendor peer reviews, automatic handoffs when quota is low, and overnight task handovers.",
+  "level": "setup",
+  "start": "`sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf \"%s\\n\" \"$sno_installer_body\" | sh'`",
+  "caution": "Automating tasks across consumer subscription logins (like Claude Code and Codex) to cycle through rate limits may violate vendor terms of service and risk your accounts.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "It gives your helper programs extra team rules, like asking a second helper to review code before finishing.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Cross-review code between Claude Code and Codex",
+   "Hand over long overnight tasks when usage limits hit",
+   "Summarize daily session mistakes and create new team rules"
+  ],
+  "steps": [
+   "Run `sh -c 'sno_installer_body=$(curl -fsSL https://sno.ai/install) && printf \"%s\\n\" \"$sno_installer_body\" | sh'` in your terminal.",
+   "Run sno setup to configure skills for all detected coding agents on your machine.",
+   "Ask your coding assistant to peer-review work or set up automated task handovers."
+  ],
+  "repo": "sno-ai/sno-station-skills",
+  "at": "2026-10-26",
+  "source": "trending"
+ },
+ "YOLOW92/pagesift": {
+  "cat": "memory",
+  "kind": "Web extraction engine",
+  "what": "PageSift is a high-performance web scraping and extraction engine that turns websites, documents, and PDFs into clean text for AI workflows.",
+  "why": "Web pages and documents are filled with code and unwanted clutter that waste processing budget and confuse AI models. Reach for PageSift when you need fast, low-memory extraction of main articles, structured data, and PDFs.",
+  "level": "setup",
+  "start": "",
+  "caution": "Licensed under AGPL-3.0, which requires open-sourcing network service modifications unless you obtain a commercial license.",
+  "alts": [
+   "firecrawl/firecrawl",
+   "unclecode/crawl4ai",
+   "microsoft/markitdown"
+  ],
+  "packages": [
+   "pagesift",
+   "@pagesift/node"
+  ],
+  "plain": "A fast tool that converts websites and files into clean text for your artificial intelligence programs.",
+  "tags": [
+   "knowledge",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Convert web pages and PDFs into clean text",
+   "Crawl sites to extract structured data and articles",
+   "Process large web archives using minimal server memory"
+  ],
+  "steps": [
+   "Install pagesift using your preferred Python or Node package manager",
+   "Run `pagesift doctor` to verify your setup and default settings",
+   "Extract web pages or crawl sites directly from your command line or code"
+  ],
+  "repo": "YOLOW92/pagesift",
+  "at": "2026-10-26",
+  "source": "trending"
  }
 }
