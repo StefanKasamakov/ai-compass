@@ -1,0 +1,153 @@
+{
+ "date": "2026-10-26",
+ "subject": "OpenAI models arrive on Google Cloud, Kimi K3.1 Pro launches",
+ "intro": "OpenAI broadened its enterprise reach by making its frontier models directly available on Google Cloud, while Anthropic expanded its unified Claude Cowork workspace. Moonshot AI launched Kimi K3.1 Pro with faster inference tiers for reasoning tasks. Tooling updates also gave developers more flexibility to integrate custom models and low-cost logic into everyday workflows.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "OpenAI models are coming to Google Cloud",
+     "url": "https://openai.com/index/openai-models-google-cloud",
+     "blurb": "OpenAI frontier models and Codex workflows are now available in Google Cloud's Model Garden and Marketplace, making it easier for enterprise customers to access them.",
+     "meta": "OpenAI"
+    },
+    {
+     "title": "Introducing Kimi K3.1 Pro",
+     "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+     "blurb": "Moonshot AI launched Kimi K3.1 Pro on its API with improved reasoning and a faster high-speed tier, promising open weights by late 2026.",
+     "meta": "Simon Willison"
+    },
+    {
+     "title": "Claude Cowork and chat come together for Enterprise",
+     "url": "https://claude.com/resources/articles/unified-claude-enterprise",
+     "blurb": "Anthropic expanded its unified Claude Cowork workspace environment from Pro and Max users to Enterprise plan customers.",
+     "meta": "Anthropic"
+    },
+    {
+     "title": "Build more responsive apps with the Decisions API",
+     "url": "https://openai.com/index/decisions-api",
+     "blurb": "OpenAI released a Decisions API for low-cost, fast application logic, helping developers build more responsive apps.",
+     "meta": "OpenAI"
+    },
+    {
+     "title": "GitHub Copilot in Visual Studio — September update",
+     "url": "https://github.blog/changelog/2026-10-22-github-copilot-in-visual-studio-september-update-2",
+     "blurb": "Visual Studio updated its GitHub Copilot integration, letting developers bring custom AI models and inspect pull requests in chat.",
+     "meta": "GitHub"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Gemini 4 Argon",
+     "url": "https://whichaimap.com/models.html#m-argon",
+     "blurb": "Google's new flagship: deep work in coding, finance, law, security and science. Ranked #1 on the Vals Index at launch. New 13 Oct. Launch price until 30 Nov 2026, then $4 / $20. In the Gemini app with Google AI Pro or Ultra.",
+     "meta": "$2 / $10 per 1M tokens"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "finereli/whatsapp-mcp",
+     "url": "https://whichaimap.com/explore.html#finereli/whatsapp-mcp",
+     "blurb": "A read-only Model Context Protocol server that enables AI assistants to search and read your WhatsApp message history through Cloudflare Workers. Heads-up: Uses unofficial WhatsApp Web protocols which violate WhatsApp terms of service and risk account flagging; also requires a paid Cloudflare Workers plan to import chat history.",
+     "meta": "WhatsApp MCP server"
+    },
+    {
+     "title": "GroundedCore/nexusdesk",
+     "url": "https://whichaimap.com/explore.html#GroundedCore/nexusdesk",
+     "blurb": "An open-source, self-hosted customer support platform where AI agents answer inquiries and draft tickets requiring human approval. Heads-up: The authors state the project is under active development and not yet production-ready; vector search requires setup and the quickstart uses a mock AI model.",
+     "meta": "AI customer support platform"
+    },
+    {
+     "title": "Sallyn0225/eidolon-sc",
+     "url": "https://whichaimap.com/explore.html#Sallyn0225/eidolon-sc",
+     "blurb": "An interactive web app for real-time voice and text roleplay with The Idolmaster Shiny Colors characters, complete with Japanese speech and subtitles. Heads-up: This is an unofficial fan project unaffiliated with Bandai Namco; story corpus and voice assets are not bundled and must be provided separately, requiring multiple paid third-party AI keys for full features.",
+     "meta": "AI companion web app"
+    },
+    {
+     "title": "christopherowen/dgx-spark-networking",
+     "url": "https://whichaimap.com/explore.html#christopherowen/dgx-spark-networking",
+     "blurb": "A networking toolkit and collective communication library designed for running distributed model inference across direct-cabled DGX Spark nodes without an expensive network switch. Heads-up: Highly specialized hardware tooling specifically built for DGX Spark systems (NVIDIA GB10 with ConnectX-7). It requires low-level network setup, driver compatibility, and patched inference engines.",
+     "meta": "GPU networking library"
+    },
+    {
+     "title": "shiyu-coder/Kronos",
+     "url": "https://whichaimap.com/explore.html#shiyu-coder/Kronos",
+     "blurb": "Kronos is an open-source autoregressive foundation model designed specifically to forecast financial candlestick (K-line) sequences. Heads-up: Financial forecasting is inherently noisy and volatile; forecasts should never be treated as guaranteed trading or investment advice.",
+     "meta": "financial market forecasting model"
+    },
+    {
+     "title": "Leonxlnx/cinetic",
+     "url": "https://whichaimap.com/explore.html#Leonxlnx/cinetic",
+     "blurb": "An agent skill that directs, animates, and renders code-based cinematic launch videos and motion graphics using Remotion or HyperFrames. Heads-up: Requires multiple system dependencies to be installed and working locally, including Node 22+, ffmpeg 6+, Python 3.11+, and headless Chromium.",
+     "meta": "Coding agent skill"
+    }
+   ]
+  },
+  {
+   "title": "Rising on GitHub this week",
+   "items": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea",
+     "blurb": "Reverse engineer apps, binaries, and websites with AI agents.",
+     "meta": "+53k stars this week"
+    },
+    {
+     "title": "zouyuxuan122/dsh-our-free-model",
+     "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+     "blurb": "This is a free model plugin for dsh that adds frontier models like Muse Spark 1.3 and MiMo V2.6 with zero configuration, no sign-up, and no API keys required.",
+     "meta": "+17k stars this week"
+    },
+    {
+     "title": "Ebony-Vinyl/dsh-our-free-model",
+     "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+     "blurb": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts.",
+     "meta": "+17k stars this week"
+    },
+    {
+     "title": "cloudflare/security-audit-skill",
+     "url": "https://github.com/cloudflare/security-audit-skill",
+     "blurb": "A coding-agent skill that coordinates multi-phase security audits with isolated hunting and independent verification.",
+     "meta": "+16k stars this week"
+    },
+    {
+     "title": "debpalash/VoiceStudio",
+     "url": "https://github.com/debpalash/VoiceStudio",
+     "blurb": "VoiceStudio is an open-source, fully-local voice cloning, text-to-speech, transcription, and video dubbing tool.",
+     "meta": "+11k stars this week"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://whichaimap.com/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "235.2M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://whichaimap.com/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "112.0M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "huggingface/transformers",
+     "url": "https://whichaimap.com/explore.html#huggingface/transformers",
+     "blurb": "Hugging Face Transformers is an open-source Python library to download, run, and train state-of-the-art machine learning models for text, vision, and audio.",
+     "meta": "96.3M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}

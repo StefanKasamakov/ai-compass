@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-26T13:36:18.878Z",
+ "updated": "2026-10-26T14:20:48.378Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 183904,
+   "stars": 183911,
    "license": null,
    "pushed": "2026-10-09T18:45:52Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 305388,
+   "stars": 305408,
    "license": "MIT",
    "pushed": "2026-10-23T03:48:57Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 110670,
+   "stars": 110682,
    "license": "MIT",
    "pushed": "2026-10-13T20:24:07Z",
    "by": "addyosmani",
@@ -27,7 +27,7 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 303738,
+   "stars": 303767,
    "license": "MIT",
    "pushed": "2026-10-22T09:35:28Z",
    "by": "mattpocock",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 33036,
+   "stars": 33038,
    "license": null,
    "pushed": "2026-10-14T17:58:45Z",
    "by": "vercel-labs",
@@ -51,7 +51,7 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 44681,
+   "stars": 44684,
    "license": "Apache-2.0",
    "pushed": "2026-10-26T07:52:27Z",
    "by": "anthropics",
@@ -59,7 +59,7 @@
   },
   {
    "repo": "openai/plugins",
-   "stars": 7600,
+   "stars": 7601,
    "license": null,
    "pushed": "2026-10-08T05:21:35Z",
    "by": "openai",
@@ -75,7 +75,7 @@
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25721,
+   "stars": 25722,
    "license": "MIT",
    "pushed": "2026-10-25T22:00:16Z",
    "by": "EveryInc",
@@ -83,7 +83,7 @@
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 88538,
+   "stars": 88593,
    "license": "Apache-2.0",
    "pushed": "2026-10-26T12:46:18Z",
    "by": "pbakaus",
@@ -91,7 +91,7 @@
   },
   {
    "repo": "wshobson/agents",
-   "stars": 41752,
+   "stars": 41755,
    "license": "MIT",
    "pushed": "2026-10-26T01:08:14Z",
    "by": "wshobson",
@@ -811,7 +811,7 @@
     "Capture browser console errors"
    ],
    "example": "Check the browser console for errors on our login page.",
-   "installs": 58700
+   "installs": 58800
   },
   {
    "key": "addyosmani/agent-skills/ci-cd-and-automation",
@@ -1022,7 +1022,7 @@
     "Manage release tagging"
    ],
    "example": "Help me split my messy changes into clean atomic commits.",
-   "installs": 59700
+   "installs": 59800
   },
   {
    "key": "addyosmani/agent-skills/idea-refine",
@@ -1259,7 +1259,7 @@
     "Find relevant instructions"
    ],
    "example": "What instructions should I load for working on this bug?",
-   "installs": 59300
+   "installs": 59400
   },
   {
    "key": "mattpocock/skills/ask-matt",
@@ -5372,7 +5372,7 @@
     "Review an assistant instruction file"
    ],
    "example": "Can you review this new instruction file for accuracy?",
-   "installs": 501
+   "installs": 503
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-babysit-pr",
@@ -5392,7 +5392,7 @@
     "Track updates until merge ready"
    ],
    "example": "Please watch this open pull request until it is ready.",
-   "installs": 856
+   "installs": 858
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-bakeoff",
@@ -5409,7 +5409,7 @@
     "Compare different design options"
    ],
    "example": "Create two competing solutions for this feature brief.",
-   "installs": 311
+   "installs": 312
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-brainstorm",
@@ -5465,7 +5465,7 @@
     "Write a pull request body"
    ],
    "example": "Commit these changes and open a pull request.",
-   "installs": 3300
+   "installs": 3400
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-commit",
@@ -5562,7 +5562,7 @@
     "Review project specifications"
    ],
    "example": "Review this planning document and suggest improvements.",
-   "installs": 3600
+   "installs": 3700
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-dogfood",
@@ -5582,7 +5582,7 @@
     "Test app quality manually"
    ],
    "example": "Run a browser quality check on the active branch.",
-   "installs": 827
+   "installs": 828
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-explain",
@@ -5599,7 +5599,7 @@
     "Summarize recent work"
    ],
    "example": "Explain why this file has its current structure.",
-   "installs": 962
+   "installs": 964
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-handoff",
@@ -5618,7 +5618,7 @@
     "Resume work from previous notes"
    ],
    "example": "Create a session handoff for the next agent.",
-   "installs": 700
+   "installs": 701
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-ideate",
@@ -5655,7 +5655,7 @@
     "Make draft prose sound plain"
    ],
    "example": "Rewrite this text so it sounds more natural.",
-   "installs": 366
+   "installs": 368
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-optimize",
@@ -5807,7 +5807,7 @@
     "Answering critical workflow questions"
    ],
    "example": "Build a quick throwaway prototype to test how this checkout flow feels.",
-   "installs": 548
+   "installs": 550
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-resolve-pr-feedback",
@@ -5847,7 +5847,7 @@
     "Measuring skill performance changes"
    ],
    "example": "Retune our skill corpus for the new model using the benchmark harness.",
-   "installs": 623
+   "installs": 624
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-riffrec-feedback-analysis",
@@ -5947,7 +5947,7 @@
     "Generating work plans automatically"
    ],
    "example": "Sweep GitHub Issues and Slack for new feedback and create a plan.",
-   "installs": 793
+   "installs": 795
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-test-browser",
@@ -6069,7 +6069,7 @@
     "Simplifying difficult shared links"
    ],
    "example": "Explain that last message in plain English so I can understand it.",
-   "installs": 234
+   "installs": 235
   },
   {
    "key": "pbakaus/impeccable/impeccable",
@@ -6939,7 +6939,7 @@
     "Auditing social reports for double-counted reposts or errors"
    ],
    "example": "Create a cited report comparing how people discuss our brand across social platforms.",
-   "installs": 259
+   "installs": 261
   },
   {
    "key": "wshobson/agents/airflow-dag-patterns",
