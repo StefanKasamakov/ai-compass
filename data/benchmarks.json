@@ -564,53 +564,6 @@
     "note": "glm-5.3-max, text overall (style control), rank 24, snapshot read 2026-09-29"
    }
   },
-  "deepseek": {
-   "aa": {
-    "v": 36,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "agents": {
-    "v": 56.7,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "tb40": {
-    "v": 14.1,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "longctx": {
-    "v": 80.3,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "hle": {
-    "v": 41,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "science": {
-    "v": 18,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "scicode": {
-    "v": 51,
-    "src": "https://artificialanalysis.ai/leaderboards/models",
-    "note": "\"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)\" (max effort)"
-   },
-   "arc": {
-    "v": 61.3,
-    "src": "https://arcprize.org/results/deepseek-v4-pro-0813",
-    "note": "ARC-AGI-2 Semi-Private, V4 Pro 0813 Max. V4 Flash 0731 Max scores 61.4%."
-   },
-   "arena": {
-    "v": 1464,
-    "src": "https://arena.ai/leaderboard/text",
-    "note": "deepseek-v4-pro-high-20260813, text overall (style control), rank 53, snapshot read 2026-09-29"
-   }
-  },
   "kimi": {
    "aa": {
     "v": 43.6,
@@ -716,11 +669,6 @@
    "in": 0.08,
    "out": 4.8,
    "note": "via OpenRouter"
-  },
-  "deepseek": {
-   "in": 1.32,
-   "out": 3.96,
-   "note": "V4 Pro 0813 via OpenRouter"
   },
   "kimi": {
    "in": 3,
