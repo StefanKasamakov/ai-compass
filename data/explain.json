@@ -15682,5 +15682,202 @@
   "repo": "YOLOW92/pagesift",
   "at": "2026-10-26",
   "source": "trending"
+ },
+ "gitroomhq/postiz-app": {
+  "cat": "builders",
+  "kind": "social media scheduler",
+  "what": "Postiz is an open-source social media management app for creating, scheduling, automating, and tracking content across platforms.",
+  "why": "Managing multiple social accounts manually is slow and fragmented. Reach for this when you want a self-hosted alternative to tools like Buffer or Hootsuite with AI agent and workflow integrations.",
+  "level": "setup",
+  "start": "Follow the official quickstart guide at https://docs.postiz.com/quickstart",
+  "caution": "README contains sponsor referral links. Self-hosting requires configuring your own databases (PostgreSQL, Redis) and obtaining developer API credentials from each social platform.",
+  "alts": [
+   "n8n-io/n8n",
+   "activepieces/activepieces"
+  ],
+  "packages": [
+   "@postiz/node",
+   "n8n-nodes-postiz"
+  ],
+  "plain": "Schedule, automate, and track your social media posts across multiple platforms using an all-in-one web dashboard.",
+  "tags": [
+   "automate",
+   "connect",
+   "media"
+  ],
+  "useFor": [
+   "Schedule posts across channels like X, LinkedIn, TikTok, and Instagram",
+   "Automate social media publishing pipelines through n8n or Make",
+   "Track engagement metrics and collaborate with teammates on drafts"
+  ],
+  "steps": [
+   "Visit the Postiz documentation quickstart guide at https://docs.postiz.com/quickstart",
+   "Deploy the services using Docker Compose with your PostgreSQL and Redis configurations",
+   "Add your social platform API credentials and begin scheduling posts from the web dashboard"
+  ],
+  "repo": "gitroomhq/postiz-app",
+  "at": "2026-10-26",
+  "source": "trending"
+ },
+ "alchaincyf/huashu-design": {
+  "cat": "harness",
+  "kind": "design extension skill",
+  "what": "An add-on for coding agents that generates production-ready designs, app prototypes, presentation decks, and animations from text prompts.",
+  "why": "Useful when you need high-quality design mockups, app prototypes, or presentations directly inside your coding assistant without opening design software.",
+  "level": "setup",
+  "start": "npx skills add alchaincyf/huashu-design",
+  "caution": "Requires a compatible coding assistant that supports skills, and proper installation of all subdirectories.",
+  "alts": [
+   "alchaincyf/huashu-motion"
+  ],
+  "packages": [],
+  "plain": "A plugin for your coding assistant that builds professional websites, apps, and presentation slides from a single sentence.",
+  "tags": [
+   "docs",
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Create interactive web and app prototypes",
+   "Build editable presentation slides and decks",
+   "Generate time-based animations and video clips"
+  ],
+  "steps": [
+   "Install the skill into your coding assistant using the terminal command.",
+   "Type a prompt describing the design, presentation, or animation you need.",
+   "Review the generated options and select your preferred direction."
+  ],
+  "repo": "alchaincyf/huashu-design",
+  "at": "2026-10-26",
+  "source": "trending"
+ },
+ "NVIDIA/SkillSpector": {
+  "cat": "evals",
+  "kind": "AI Skill Scanner",
+  "what": "Security scanner for AI agent skills, detecting vulnerabilities and malicious patterns before installation.",
+  "why": "AI agent skills often run with full system access and minimal vetting, helping you spot prompt injection and data leaks before installing untrusted extensions.",
+  "level": "setup",
+  "start": "uv tool install git+https://github.com/NVIDIA/skillspector.git",
+  "caution": "Requires Python 3.12+ and optional API keys for deep semantic checks.",
+  "alts": [],
+  "packages": [
+   "skillspector"
+  ],
+  "plain": "Scans helper files and add-ons made for AI coding assistants to check if they contain hidden security risks.",
+  "tags": [
+   "code",
+   "monitor"
+  ],
+  "useFor": [
+   "Scan local skill directories for prompt injection",
+   "Check remote Git repositories for malicious patterns",
+   "Generate security reports in JSON or SARIF format"
+  ],
+  "steps": [
+   "Create and activate a Python virtual environment.",
+   "Install the tool using uv or pip.",
+   "Run the scanner on a local skill directory using `skillspector scan ./my-skill/`."
+  ],
+  "repo": "NVIDIA/SkillSpector",
+  "at": "2026-10-26",
+  "source": "trending"
+ },
+ "nightly-labs/openbot": {
+  "cat": "coding",
+  "kind": "Multi-agent desktop workspace",
+  "what": "OpenBot is a desktop workspace that lets you run and coordinate persistent AI agents across separate project folders, task queues, and web browsers.",
+  "why": "Running multiple command-line AI coding tools across different projects can be disorganized. OpenBot unifies tools like Codex and Claude Code into a single desktop interface with file sharing, background task queues, and agent-to-agent messaging.",
+  "level": "easy",
+  "start": "",
+  "caution": "This project is a preview release that grants AI agents unrestricted file, command, and web access without step-by-step approval. It is released under a non-commercial license.",
+  "alts": [
+   "smtg-ai/claude-squad",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A desktop app that lets you run multiple AI assistants together to complete tasks and manage files.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Run multiple AI coding assistants in separate project workspaces",
+   "Queue and delegate tasks between different AI agents",
+   "Allow AI agents to browse web pages and transfer local files"
+  ],
+  "steps": [
+   "Download the OpenBot installer for macOS, Windows, or Linux from GitHub Releases.",
+   "Launch OpenBot and grant explicit first-launch permission to run local agents.",
+   "Connect your AI providers and create persistent agent workspaces for your projects."
+  ],
+  "repo": "nightly-labs/openbot",
+  "at": "2026-10-26",
+  "source": "trending"
+ },
+ "morganlinton/BeautifulRust": {
+  "cat": "harness",
+  "kind": "Rust agent skills",
+  "what": "Beautiful Rust provides standard agent skills and linter configs that teach AI coding assistants to write, review, and port idiomatic Rust code.",
+  "why": "Standard AI coding tools often produce non-idiomatic Rust with unsafe patterns or incomplete documentation. Reach for this repository to automatically guide AI assistants using style rules from Google, Microsoft, and official Rust guidelines.",
+  "level": "easy",
+  "start": "npx skills add morganlinton/BeautifulRust",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "alirezarezvani/claude-skills"
+  ],
+  "packages": [],
+  "plain": "Teaches AI software helpers how to write, review, and convert code into clean, safe Rust standard practices.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Teach AI assistants to write idiomatic Rust code",
+   "Review Rust code for best practices and style",
+   "Port code from other languages into idiomatic Rust"
+  ],
+  "steps": [
+   "Install the skills into your AI assistant using `npx skills add morganlinton/BeautifulRust`.",
+   "Ask your AI coding assistant to write, review, or port Rust code as normal."
+  ],
+  "repo": "morganlinton/BeautifulRust",
+  "at": "2026-10-26",
+  "source": "trending"
+ },
+ "Bai-Cute/big-blue-fish-desktop-pet": {
+  "cat": "local",
+  "kind": "Local AI desktop pet",
+  "what": "An animated desktop companion character for Windows and Linux that uses a built-in local 4B model to react to your screen, weather, and news.",
+  "why": "It brings offline AI companionship to your desktop without sending screen contents or chat data to external servers. Reach for it if you want a fun, private desktop pet that can also connect to external agent frameworks.",
+  "level": "easy",
+  "start": "sudo apt install ./BigBlueFish-v1.0.1-Linux-x64.deb",
+  "caution": "Enabling the standard MCP bridge grants connected external agents permission to capture your screen, which could transmit screen contents outside your computer.",
+  "alts": [
+   "janhq/jan",
+   "nomic-ai/gpt4all",
+   "ollama/ollama"
+  ],
+  "packages": [],
+  "plain": "An animated whale girl character that lives on your computer screen and chats with you using built-in artificial intelligence.",
+  "tags": [
+   "private",
+   "connect"
+  ],
+  "useFor": [
+   "Add an animated AI companion to your computer desktop",
+   "Get private screen-aware comments and weather reports locally",
+   "Connect external AI desktop agents using the MCP bridge"
+  ],
+  "steps": [
+   "Download the installer for Windows or Linux from GitHub Releases.",
+   "Run the setup program or run `sudo apt install ./BigBlueFish-v1.0.1-Linux-x64.deb` on Linux.",
+   "Select your preferred local model download source during initial setup."
+  ],
+  "repo": "Bai-Cute/big-blue-fish-desktop-pet",
+  "at": "2026-10-26",
+  "source": "trending"
  }
 }
