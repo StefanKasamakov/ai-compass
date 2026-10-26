@@ -15879,5 +15879,39 @@
   "repo": "Bai-Cute/big-blue-fish-desktop-pet",
   "at": "2026-10-26",
   "source": "trending"
+ },
+ "FrigadeHQ/hob": {
+  "cat": "local",
+  "kind": "Desktop AI app",
+  "what": "Hob is a free, open-source desktop application that runs AI models directly on your computer for private and offline use.",
+  "why": "Sending sensitive files and documents to online AI services can create privacy risks. Reach for Hob when you need to analyze spreadsheets, fill out PDFs, or chat with AI completely offline without sharing your data.",
+  "level": "easy",
+  "start": "Download and run the installer for Mac, Windows, or Linux from GitHub releases.",
+  "caution": "Requires a computer with Apple silicon, Windows, or Linux and at least 8 GB of system memory to run models locally.",
+  "alts": [
+   "janhq/jan",
+   "open-webui/open-webui",
+   "nomic-ai/gpt4all"
+  ],
+  "packages": [],
+  "plain": "A desktop program that lets you chat with AI directly on your computer so your data stays private.",
+  "tags": [
+   "private",
+   "docs",
+   "knowledge"
+  ],
+  "useFor": [
+   "Analyze spreadsheets and documents without sending data online",
+   "Fill out PDF forms completely offline",
+   "Chat with open AI models running locally on your hardware"
+  ],
+  "steps": [
+   "Download the installer for Mac, Windows, or Linux",
+   "Launch the application on your computer",
+   "Let Hob automatically select and install a compatible local AI model"
+  ],
+  "repo": "FrigadeHQ/hob",
+  "at": "2026-10-26",
+  "source": "trending"
  }
 }

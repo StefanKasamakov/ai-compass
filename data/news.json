@@ -1,6 +1,35 @@
 {
- "updated": "2026-10-26T14:07:41.480Z",
+ "updated": "2026-10-26T22:43:48.964Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.311",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
+   "date": "2026-10-26T21:51:23Z",
+   "summary": "Anthropic released Claude Code v2.1.311 with updates to its command-line coding tool.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/3ef034bc77ab21a0f22bc2b9c8e4117c23d6ec2dd6e387ea8f263c059463cbd8/anthropics/claude-code/releases/tag/v2.1.311"
+  },
+  {
+   "source": "GitHub",
+   "title": "GPT-6.1 Terra in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot",
+   "date": "2026-10-26T19:15:53.000Z",
+   "summary": "OpenAI's GPT-6.1 Terra model is now available in GitHub Copilot for low-cost agentic coding and terminal tasks.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/682153766-30ae8bb0-a424-401c-80e8-bb06bec001b2.png"
+  },
   {
    "source": "Hacker News",
    "title": "PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP",
@@ -12,6 +41,21 @@
    "big": false,
    "ai": false,
    "image": "https://opengraph.githubassets.com/1fce91b7c8a4193b90168b90cf3809ac6cd4c9b7a3397b4b7a294389f598f9d8/KrushnaVardhanReddy/PaperPilot"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing GPT-6.1 Terra",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+   "date": "2026-10-26T00:00:00.000Z",
+   "summary": "OpenAI introduced GPT-6.1 Terra, a faster and lower-cost model designed for computer use and agentic workflows.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://cdn.openai.com/mdx-assets/71f084db-a08b-48c5-b96e-5fbdc21a1a00/terra-art-card-16x9.0394724b.png",
+   "viaBrowser": true
   },
   {
    "source": "Anthropic",
@@ -2187,48 +2231,6 @@
    "big": false,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon_key-art_4_lockup_light_16-9.width-1300.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "Gemini 4 Argon in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-10-13-gemini-4-argon-in-github-copilot",
-   "date": "2026-10-13T18:39:56.000Z",
-   "summary": "Google's new Gemini 4 Argon model is now generally available inside GitHub Copilot for coding tasks.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/669843404-1a20c331-b765-4da1-985b-47ce30aaa064.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
-   "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
-   "date": "2026-10-13T17:05:48.000Z",
-   "summary": "Hugging Face highlighted a new on-device model for running fast, private AI agents.",
-   "tags": [
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/YxGx9U6yV6_mumklCyMsE.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "Secret scanning blocks Anthropic keys by default, adds Salesforce",
-   "url": "https://github.blog/changelog/2026-10-13-secret-scanning-blocks-anthropic-keys-by-default-adds-salesforce",
-   "date": "2026-10-13T16:12:36.000Z",
-   "summary": "GitHub secret scanning now detects and blocks exposed Anthropic API keys by default.",
-   "tags": [
-    "safety",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/571554102-6349f5b6-b0b7-4130-9300-6d5d87e0b6e9_963b5b.jpg"
   }
  ]
 }

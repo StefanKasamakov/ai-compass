@@ -1,23 +1,23 @@
 {
- "updated": "2026-10-26T14:07:41.480Z",
+ "updated": "2026-10-26T22:43:48.964Z",
  "repos": {
   "anthropics/claude-code": {
-   "stars": 153432,
-   "week": 821,
-   "pushed": "2026-10-25T20:11:26Z",
+   "stars": 153471,
+   "week": 860,
+   "pushed": "2026-10-26T22:14:41Z",
    "license": null,
    "desc": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
    "archived": false,
    "release": {
-    "tag": "v2.1.310",
-    "date": "2026-10-23T23:39:00Z",
-    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310"
+    "tag": "v2.1.311",
+    "date": "2026-10-26T21:51:23Z",
+    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311"
    }
   },
   "openai/codex": {
-   "stars": 131003,
-   "week": 1070,
-   "pushed": "2026-10-23T18:51:12Z",
+   "stars": 131024,
+   "week": 1091,
+   "pushed": "2026-10-26T22:27:23Z",
    "license": "Apache-2.0",
    "desc": "Lightweight coding agent that runs in your terminal",
    "archived": false,
@@ -28,9 +28,9 @@
    }
   },
   "google-gemini/gemini-cli": {
-   "stars": 108403,
-   "week": 944,
-   "pushed": "2026-10-26T00:37:50Z",
+   "stars": 108552,
+   "week": 1093,
+   "pushed": "2026-10-26T21:36:34Z",
    "license": "Apache-2.0",
    "desc": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
    "archived": false,
@@ -41,9 +41,9 @@
    }
   },
   "modelcontextprotocol/modelcontextprotocol": {
-   "stars": 9535,
-   "week": 53,
-   "pushed": "2026-10-26T10:38:13Z",
+   "stars": 9539,
+   "week": 57,
+   "pushed": "2026-10-26T22:36:48Z",
    "license": null,
    "desc": "Specification and documentation for the Model Context Protocol",
    "archived": false,
@@ -54,8 +54,8 @@
    }
   },
   "microsoft/playwright-mcp": {
-   "stars": 38652,
-   "week": 274,
+   "stars": 38668,
+   "week": 290,
    "pushed": "2026-10-22T17:43:26Z",
    "license": "Apache-2.0",
    "desc": "Playwright MCP server",
@@ -63,26 +63,26 @@
    "release": null
   },
   "ChromeDevTools/chrome-devtools-mcp": {
-   "stars": 54194,
-   "week": 332,
-   "pushed": "2026-10-26T13:36:29Z",
+   "stars": 54206,
+   "week": 344,
+   "pushed": "2026-10-26T15:03:56Z",
    "license": "Apache-2.0",
    "desc": "Chrome DevTools for coding agents",
    "archived": false,
    "release": null
   },
   "upstash/context7": {
-   "stars": 63713,
-   "week": 389,
-   "pushed": "2026-10-26T13:31:30Z",
+   "stars": 63735,
+   "week": 411,
+   "pushed": "2026-10-26T19:31:25Z",
    "license": "MIT",
    "desc": "Context7 Platform -- Up-to-date docs for AI agents",
    "archived": false,
    "release": null
   },
   "github/github-mcp-server": {
-   "stars": 33976,
-   "week": 206,
+   "stars": 33987,
+   "week": 217,
    "pushed": "2026-10-23T21:21:33Z",
    "license": "MIT",
    "desc": "GitHub's official MCP Server",
@@ -90,8 +90,8 @@
    "release": null
   },
   "makenotion/notion-mcp-server": {
-   "stars": 4680,
-   "week": 11,
+   "stars": 4681,
+   "week": 12,
    "pushed": "2026-09-20T23:09:02Z",
    "license": "MIT",
    "desc": "Official Notion MCP Server",
@@ -99,9 +99,9 @@
    "release": null
   },
   "supabase/mcp": {
-   "stars": 2971,
-   "week": 9,
-   "pushed": "2026-10-26T14:00:54Z",
+   "stars": 2973,
+   "week": 11,
+   "pushed": "2026-10-26T19:07:58Z",
    "license": "Apache-2.0",
    "desc": "Connect Supabase to your AI assistants",
    "archived": false,
@@ -110,15 +110,15 @@
   "getsentry/sentry-mcp": {
    "stars": 947,
    "week": 13,
-   "pushed": "2026-10-26T13:53:15Z",
+   "pushed": "2026-10-26T21:47:20Z",
    "license": null,
    "desc": "Agentic tooling for Sentry",
    "archived": false,
    "release": null
   },
   "exa-labs/exa-mcp-server": {
-   "stars": 5170,
-   "week": 27,
+   "stars": 5173,
+   "week": 30,
    "pushed": "2026-10-19T19:23:37Z",
    "license": "MIT",
    "desc": "Exa MCP for web search and web crawling!",
@@ -126,17 +126,17 @@
    "release": null
   },
   "firecrawl/firecrawl-mcp-server": {
-   "stars": 7691,
-   "week": 51,
-   "pushed": "2026-10-26T13:57:21Z",
+   "stars": 7693,
+   "week": 53,
+   "pushed": "2026-10-26T22:09:52Z",
    "license": "MIT",
    "desc": "Official Firecrawl MCP server, the context API for AI agents: search, scrape, and interact with the web, plus parse, crawl, map, Agent and Monitor, from any MCP client.",
    "archived": false,
    "release": null
   },
   "GLips/Figma-Context-MCP": {
-   "stars": 16071,
-   "week": 58,
+   "stars": 16073,
+   "week": 60,
    "pushed": "2026-10-25T21:44:27Z",
    "license": "MIT",
    "desc": "MCP server to provide Figma layout information to AI coding agents like Cursor",
@@ -144,8 +144,8 @@
    "release": null
   },
   "modelcontextprotocol/servers": {
-   "stars": 91580,
-   "week": 199,
+   "stars": 91594,
+   "week": 213,
    "pushed": "2026-10-25T05:26:36Z",
    "license": null,
    "desc": "Model Context Protocol Servers",
@@ -153,8 +153,8 @@
    "release": null
   },
   "anthropics/skills": {
-   "stars": 183910,
-   "week": 1689,
+   "stars": 183977,
+   "week": 1756,
    "pushed": "2026-10-09T18:45:52Z",
    "license": null,
    "desc": "Public repository for Agent Skills",
@@ -162,8 +162,8 @@
    "release": null
   },
   "nextlevelbuilder/ui-ux-pro-max-skill": {
-   "stars": 140701,
-   "week": 3099,
+   "stars": 140897,
+   "week": 3295,
    "pushed": "2026-10-26T10:07:28Z",
    "license": "MIT",
    "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
@@ -171,8 +171,8 @@
    "release": null
   },
   "openai/skills": {
-   "stars": 28312,
-   "week": 143,
+   "stars": 28325,
+   "week": 156,
    "pushed": "2026-09-08T20:35:26Z",
    "license": null,
    "desc": "Skills Catalog for Codex",
@@ -180,8 +180,8 @@
    "release": null
   },
   "obra/superpowers": {
-   "stars": 305403,
-   "week": 3292,
+   "stars": 305578,
+   "week": 3467,
    "pushed": "2026-10-23T03:48:57Z",
    "license": "MIT",
    "desc": "An agentic skills framework & software development methodology that works.",
@@ -189,8 +189,8 @@
    "release": null
   },
   "addyosmani/agent-skills": {
-   "stars": 110677,
-   "week": 2072,
+   "stars": 110791,
+   "week": 2186,
    "pushed": "2026-10-13T20:24:07Z",
    "license": "MIT",
    "desc": "Production-grade engineering skills for AI coding agents.",
@@ -198,17 +198,17 @@
    "release": null
   },
   "anthropics/claude-plugins-official": {
-   "stars": 44684,
-   "week": 1523,
-   "pushed": "2026-10-26T07:52:27Z",
+   "stars": 44732,
+   "week": 1571,
+   "pushed": "2026-10-26T22:42:47Z",
    "license": "Apache-2.0",
    "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
    "archived": false,
    "release": null
   },
   "openai/plugins": {
-   "stars": 7601,
-   "week": 95,
+   "stars": 7600,
+   "week": 94,
    "pushed": "2026-10-08T05:21:35Z",
    "license": null,
    "desc": "OpenAI Plugins",
@@ -216,8 +216,8 @@
    "release": null
   },
   "punkpeye/awesome-mcp-servers": {
-   "stars": 96890,
-   "week": 264,
+   "stars": 96907,
+   "week": 281,
    "pushed": "2026-10-23T18:57:44Z",
    "license": "MIT",
    "desc": "A collection of MCP servers.",
@@ -225,17 +225,17 @@
    "release": null
   },
   "hesreallyhim/awesome-claude-code": {
-   "stars": 56581,
-   "week": 550,
-   "pushed": "2026-10-26T13:37:40Z",
+   "stars": 56618,
+   "week": 587,
+   "pushed": "2026-10-26T21:08:28Z",
    "license": null,
    "desc": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
    "archived": false,
    "release": null
   },
   "ComposioHQ/awesome-claude-skills": {
-   "stars": 77976,
-   "week": 534,
+   "stars": 78006,
+   "week": 564,
    "pushed": "2026-09-18T07:16:11Z",
    "license": null,
    "desc": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
@@ -243,35 +243,35 @@
    "release": null
   },
   "ruvnet/ruflo": {
-   "stars": 79421,
-   "week": 2285,
-   "pushed": "2026-10-26T13:59:17Z",
+   "stars": 79524,
+   "week": 2388,
+   "pushed": "2026-10-26T21:37:25Z",
    "license": "MIT",
    "desc": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
    "archived": false,
    "release": null
   },
   "diegosouzapw/OmniRoute": {
-   "stars": 81354,
-   "week": 2828,
-   "pushed": "2026-10-26T13:58:39Z",
+   "stars": 81506,
+   "week": 2980,
+   "pushed": "2026-10-26T22:43:36Z",
    "license": "MIT",
    "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 900+ contributors",
    "archived": false,
    "release": null
   },
   "BerriAI/litellm": {
-   "stars": 62065,
-   "week": 483,
-   "pushed": "2026-10-26T13:15:25Z",
+   "stars": 62081,
+   "week": 499,
+   "pushed": "2026-10-26T22:42:20Z",
    "license": null,
    "desc": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
    "archived": false,
    "release": null
   },
   "musistudio/claude-code-router": {
-   "stars": 37860,
-   "week": 102,
+   "stars": 37866,
+   "week": 108,
    "pushed": "2026-10-10T03:35:10Z",
    "license": "MIT",
    "desc": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.",
@@ -279,8 +279,8 @@
    "release": null
   },
   "Portkey-AI/gateway": {
-   "stars": 13274,
-   "week": 53,
+   "stars": 13276,
+   "week": 55,
    "pushed": "2026-05-25T13:54:51Z",
    "license": "MIT",
    "desc": "A blazing fast AI Gateway with integrated guardrails. Route to 1,600+ LLMs, 50+ AI Guardrails with 1 fast & friendly API.",
@@ -288,8 +288,8 @@
    "release": null
   },
   "JuliusBrussee/caveman": {
-   "stars": 115199,
-   "week": 1534,
+   "stars": 115292,
+   "week": 1627,
    "pushed": "2026-10-26T07:59:57Z",
    "license": "Apache-2.0",
    "desc": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
@@ -297,17 +297,17 @@
    "release": null
   },
   "headroomlabs-ai/headroom": {
-   "stars": 77891,
-   "week": 1693,
-   "pushed": "2026-10-24T19:15:37Z",
+   "stars": 77927,
+   "week": 1729,
+   "pushed": "2026-10-26T15:47:05Z",
    "license": "Apache-2.0",
    "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
    "archived": false,
    "release": null
   },
   "DietrichGebert/ponytail": {
-   "stars": 176725,
-   "week": 8682,
+   "stars": 177070,
+   "week": 9027,
    "pushed": "2026-10-18T01:55:14Z",
    "license": "MIT",
    "desc": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
@@ -315,9 +315,9 @@
    "release": null
   },
   "ccusage/ccusage": {
-   "stars": 19180,
-   "week": 110,
-   "pushed": "2026-10-26T12:41:08Z",
+   "stars": 19185,
+   "week": 115,
+   "pushed": "2026-10-26T22:27:18Z",
    "license": null,
    "desc": "npx ccusage",
    "archived": false,
@@ -342,8 +342,8 @@
    "release": null
   },
   "wshobson/agents": {
-   "stars": 41753,
-   "week": 599,
+   "stars": 41805,
+   "week": 651,
    "pushed": "2026-10-26T01:08:14Z",
    "license": "MIT",
    "desc": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
@@ -351,53 +351,53 @@
    "release": null
   },
   "davila7/claude-code-templates": {
-   "stars": 32914,
-   "week": 146,
-   "pushed": "2026-10-26T04:26:37Z",
+   "stars": 32921,
+   "week": 153,
+   "pushed": "2026-10-26T16:17:59Z",
    "license": "MIT",
    "desc": "CLI tool for configuring and monitoring Claude Code",
    "archived": false,
    "release": null
   },
   "NousResearch/hermes-agent": {
-   "stars": 257269,
-   "week": 2011,
-   "pushed": "2026-10-26T14:04:07Z",
+   "stars": 257390,
+   "week": 2132,
+   "pushed": "2026-10-26T22:43:09Z",
    "license": "MIT",
    "desc": "The agent that grows with you",
    "archived": false,
    "release": null
   },
   "anomalyco/opencode": {
-   "stars": 221789,
-   "week": 4068,
-   "pushed": "2026-10-26T14:03:13Z",
+   "stars": 221939,
+   "week": 4218,
+   "pushed": "2026-10-26T22:43:43Z",
    "license": "MIT",
    "desc": "The open source coding agent.",
    "archived": false,
    "release": null
   },
   "cline/cline": {
-   "stars": 70871,
-   "week": 306,
-   "pushed": "2026-10-26T11:54:23Z",
+   "stars": 70896,
+   "week": 331,
+   "pushed": "2026-10-26T22:42:46Z",
    "license": "Apache-2.0",
    "desc": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant.",
    "archived": false,
    "release": null
   },
   "OpenHands/OpenHands": {
-   "stars": 91895,
-   "week": 591,
-   "pushed": "2026-10-26T13:46:45Z",
+   "stars": 91923,
+   "week": 619,
+   "pushed": "2026-10-26T21:51:16Z",
    "license": "MIT",
    "desc": "🙌 OpenHands: AI-Driven Development",
    "archived": false,
    "release": null
   },
   "Aider-AI/aider": {
-   "stars": 49761,
-   "week": 117,
+   "stars": 49769,
+   "week": 125,
    "pushed": "2026-05-22T14:02:20Z",
    "license": "Apache-2.0",
    "desc": "aider is AI pair programming in your terminal",
@@ -405,26 +405,26 @@
    "release": null
   },
   "aaif-goose/goose": {
-   "stars": 55748,
-   "week": 301,
-   "pushed": "2026-10-26T12:32:04Z",
+   "stars": 55771,
+   "week": 324,
+   "pushed": "2026-10-26T18:07:29Z",
    "license": "Apache-2.0",
    "desc": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
    "archived": false,
    "release": null
   },
   "continuedev/continue": {
-   "stars": 36330,
-   "week": 63,
-   "pushed": "2026-10-26T07:34:12Z",
+   "stars": 36334,
+   "week": 67,
+   "pushed": "2026-10-26T17:42:20Z",
    "license": "Apache-2.0",
    "desc": "open-source coding agent",
    "archived": false,
    "release": null
   },
   "RooCodeInc/Roo-Code": {
-   "stars": 24262,
-   "week": -14,
+   "stars": 24261,
+   "week": -15,
    "pushed": "2026-05-15T18:08:47Z",
    "license": "Apache-2.0",
    "desc": "Roo Code gives you a whole dev team of AI agents in your code editor.",
@@ -432,44 +432,44 @@
    "release": null
   },
   "langchain-ai/langgraph": {
-   "stars": 43927,
-   "week": 403,
-   "pushed": "2026-10-26T13:56:59Z",
+   "stars": 43940,
+   "week": 416,
+   "pushed": "2026-10-26T22:13:17Z",
    "license": "MIT",
    "desc": "Build resilient agents.",
    "archived": false,
    "release": null
   },
   "crewAIInc/crewAI": {
-   "stars": 60121,
-   "week": 240,
-   "pushed": "2026-10-26T13:06:13Z",
+   "stars": 60135,
+   "week": 254,
+   "pushed": "2026-10-26T22:28:19Z",
    "license": "MIT",
    "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
    "archived": false,
    "release": null
   },
   "openai/openai-agents-python": {
-   "stars": 30297,
-   "week": 152,
-   "pushed": "2026-10-22T22:05:38Z",
+   "stars": 30303,
+   "week": 158,
+   "pushed": "2026-10-26T22:31:00Z",
    "license": "MIT",
    "desc": "A lightweight, powerful framework for multi-agent workflows",
    "archived": false,
    "release": null
   },
   "anthropics/claude-agent-sdk-python": {
-   "stars": 8355,
-   "week": 54,
-   "pushed": "2026-10-25T22:38:58Z",
+   "stars": 8357,
+   "week": 56,
+   "pushed": "2026-10-26T21:53:20Z",
    "license": "MIT",
    "desc": null,
    "archived": false,
    "release": null
   },
   "microsoft/autogen": {
-   "stars": 61573,
-   "week": 83,
+   "stars": 61576,
+   "week": 86,
    "pushed": "2026-10-16T16:14:37Z",
    "license": "CC-BY-4.0",
    "desc": "A programming framework for agentic AI",
@@ -477,125 +477,125 @@
    "release": null
   },
   "vercel/ai": {
-   "stars": 27522,
-   "week": 120,
-   "pushed": "2026-10-26T14:07:11Z",
+   "stars": 27523,
+   "week": 121,
+   "pushed": "2026-10-26T22:42:54Z",
    "license": null,
    "desc": "The AI Toolkit for TypeScript. From the creators of Next.js, the AI SDK is a free open-source library for building AI-powered applications and agents ",
    "archived": false,
    "release": null
   },
   "browser-use/browser-use": {
-   "stars": 119185,
-   "week": 644,
-   "pushed": "2026-10-24T07:23:03Z",
+   "stars": 119217,
+   "week": 676,
+   "pushed": "2026-10-26T22:18:29Z",
    "license": "MIT",
    "desc": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
    "archived": false,
    "release": null
   },
   "ollama/ollama": {
-   "stars": 184845,
-   "week": 981,
-   "pushed": "2026-10-26T04:25:58Z",
+   "stars": 184892,
+   "week": 1028,
+   "pushed": "2026-10-26T21:22:28Z",
    "license": "MIT",
    "desc": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
    "archived": false,
    "release": null
   },
   "ggml-org/llama.cpp": {
-   "stars": 132417,
-   "week": 695,
-   "pushed": "2026-10-26T13:29:06Z",
+   "stars": 132452,
+   "week": 730,
+   "pushed": "2026-10-26T22:05:25Z",
    "license": "MIT",
    "desc": "LLM inference in C/C++",
    "archived": false,
    "release": null
   },
   "open-webui/open-webui": {
-   "stars": 156807,
-   "week": 607,
-   "pushed": "2026-10-26T10:17:34Z",
+   "stars": 156850,
+   "week": 650,
+   "pushed": "2026-10-26T20:19:35Z",
    "license": null,
    "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
    "archived": false,
    "release": null
   },
   "vllm-project/vllm": {
-   "stars": 95596,
-   "week": 1438,
-   "pushed": "2026-10-26T13:45:35Z",
+   "stars": 95617,
+   "week": 1459,
+   "pushed": "2026-10-26T22:41:40Z",
    "license": "Apache-2.0",
    "desc": "A high-throughput and memory-efficient inference and serving engine for LLMs",
    "archived": false,
    "release": null
   },
   "mudler/LocalAI": {
-   "stars": 49970,
-   "week": 256,
-   "pushed": "2026-10-26T12:08:12Z",
+   "stars": 49985,
+   "week": 271,
+   "pushed": "2026-10-26T22:22:40Z",
    "license": "MIT",
    "desc": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
    "archived": false,
    "release": null
   },
   "Mintplex-Labs/anything-llm": {
-   "stars": 67579,
-   "week": 252,
-   "pushed": "2026-10-25T18:20:45Z",
+   "stars": 67597,
+   "week": 270,
+   "pushed": "2026-10-26T20:11:41Z",
    "license": "MIT",
    "desc": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience ",
    "archived": false,
    "release": null
   },
   "mem0ai/mem0": {
-   "stars": 67841,
-   "week": 373,
-   "pushed": "2026-10-23T18:38:28Z",
+   "stars": 67859,
+   "week": 391,
+   "pushed": "2026-10-26T14:51:55Z",
    "license": "Apache-2.0",
    "desc": "The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.",
    "archived": false,
    "release": null
   },
   "getzep/graphiti": {
-   "stars": 32235,
-   "week": 188,
-   "pushed": "2026-10-26T03:49:52Z",
+   "stars": 32248,
+   "week": 201,
+   "pushed": "2026-10-26T15:38:13Z",
    "license": "Apache-2.0",
    "desc": "Build Real-Time Knowledge Graphs for AI Agents",
    "archived": false,
    "release": null
   },
   "Graphify-Labs/graphify": {
-   "stars": 135809,
-   "week": 6693,
-   "pushed": "2026-10-23T17:59:28Z",
+   "stars": 136093,
+   "week": 6977,
+   "pushed": "2026-10-26T15:18:22Z",
    "license": "Apache-2.0",
    "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
    "archived": false,
    "release": null
   },
   "run-llama/llama_index": {
-   "stars": 52670,
-   "week": 101,
-   "pushed": "2026-10-23T13:51:39Z",
+   "stars": 52673,
+   "week": 104,
+   "pushed": "2026-10-26T21:25:10Z",
    "license": "MIT",
    "desc": "LlamaIndex is the document processing platform for AI",
    "archived": false,
    "release": null
   },
   "infiniflow/ragflow": {
-   "stars": 92895,
-   "week": 408,
-   "pushed": "2026-10-26T12:14:30Z",
+   "stars": 92915,
+   "week": 428,
+   "pushed": "2026-10-26T14:43:57Z",
    "license": "Apache-2.0",
    "desc": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
    "archived": false,
    "release": null
   },
   "microsoft/markitdown": {
-   "stars": 192305,
-   "week": 1189,
+   "stars": 192374,
+   "week": 1258,
    "pushed": "2026-10-23T17:04:06Z",
    "license": "MIT",
    "desc": "Python tool for converting files and office documents to Markdown.",
@@ -603,26 +603,26 @@
    "release": null
   },
   "n8n-io/n8n": {
-   "stars": 208639,
-   "week": 593,
-   "pushed": "2026-10-26T14:06:56Z",
+   "stars": 208668,
+   "week": 622,
+   "pushed": "2026-10-26T22:37:29Z",
    "license": null,
    "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
    "archived": false,
    "release": null
   },
   "langgenius/dify": {
-   "stars": 159592,
-   "week": 666,
-   "pushed": "2026-10-26T14:03:28Z",
+   "stars": 159625,
+   "week": 699,
+   "pushed": "2026-10-26T18:54:26Z",
    "license": null,
    "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
    "archived": false,
    "release": null
   },
   "FlowiseAI/Flowise": {
-   "stars": 55529,
-   "week": 17,
+   "stars": 55531,
+   "week": 19,
    "pushed": "2026-08-13T12:38:19Z",
    "license": null,
    "desc": "Build AI Agents, Visually",
@@ -630,17 +630,17 @@
    "release": null
   },
   "lobehub/lobehub": {
-   "stars": 83501,
-   "week": 165,
-   "pushed": "2026-10-26T14:03:23Z",
+   "stars": 83510,
+   "week": 174,
+   "pushed": "2026-10-26T21:42:56Z",
    "license": null,
    "desc": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
    "archived": false,
    "release": null
   },
   "bmad-code-org/BMAD-METHOD": {
-   "stars": 54573,
-   "week": 241,
+   "stars": 54588,
+   "week": 256,
    "pushed": "2026-10-20T03:24:19Z",
    "license": null,
    "desc": "Breakthrough Method for Agile Ai Driven Development",
@@ -648,17 +648,17 @@
    "release": null
   },
   "github/spec-kit": {
-   "stars": 142978,
-   "week": 1022,
-   "pushed": "2026-10-26T14:05:47Z",
+   "stars": 143023,
+   "week": 1067,
+   "pushed": "2026-10-26T22:23:41Z",
    "license": "MIT",
    "desc": "💫 Toolkit to help you get started with SDD or any other process!",
    "archived": false,
    "release": null
   },
   "smtg-ai/claude-squad": {
-   "stars": 8674,
-   "week": 46,
+   "stars": 8675,
+   "week": 47,
    "pushed": "2026-08-20T05:09:53Z",
    "license": "AGPL-3.0",
    "desc": "Manage multiple AI terminal agents like Claude Code, Codex, OpenCode, and Amp.",
@@ -675,8 +675,8 @@
    "release": null
   },
   "siteboon/claudecodeui": {
-   "stars": 14290,
-   "week": 112,
+   "stars": 14295,
+   "week": 117,
    "pushed": "2026-10-24T06:15:58Z",
    "license": "AGPL-3.0",
    "desc": "Use Claude Code, OpenCode, Cursor CLI, and Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely.",
@@ -684,53 +684,53 @@
    "release": null
   },
   "coleam00/Archon": {
-   "stars": 23772,
-   "week": 45,
-   "pushed": "2026-10-26T11:32:45Z",
+   "stars": 23778,
+   "week": 51,
+   "pushed": "2026-10-26T21:41:32Z",
    "license": "MIT",
    "desc": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
    "archived": false,
    "release": null
   },
   "Yeachan-Heo/oh-my-claudecode": {
-   "stars": 40284,
-   "week": 201,
-   "pushed": "2026-10-26T13:52:21Z",
+   "stars": 40292,
+   "week": 209,
+   "pushed": "2026-10-26T15:35:19Z",
    "license": "MIT",
    "desc": "Teams-first Multi-agent orchestration for Claude Code",
    "archived": false,
    "release": null
   },
   "thedotmack/claude-mem": {
-   "stars": 103283,
-   "week": 1482,
-   "pushed": "2026-10-26T11:34:44Z",
+   "stars": 103408,
+   "week": 1607,
+   "pushed": "2026-10-26T22:31:27Z",
    "license": "Apache-2.0",
    "desc": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
    "archived": false,
    "release": null
   },
   "EveryInc/compound-engineering-plugin": {
-   "stars": 25722,
-   "week": 109,
-   "pushed": "2026-10-25T22:00:16Z",
+   "stars": 25727,
+   "week": 114,
+   "pushed": "2026-10-26T21:09:26Z",
    "license": "MIT",
    "desc": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
    "archived": false,
    "release": null
   },
   "anthropics/claude-code-action": {
-   "stars": 9647,
-   "week": 70,
-   "pushed": "2026-10-24T18:57:40Z",
+   "stars": 9653,
+   "week": 76,
+   "pushed": "2026-10-26T21:55:17Z",
    "license": "MIT",
    "desc": null,
    "archived": false,
    "release": null
   },
   "songquanpeng/one-api": {
-   "stars": 37253,
-   "week": 49,
+   "stars": 37255,
+   "week": 51,
    "pushed": "2026-01-09T03:26:43Z",
    "license": "MIT",
    "desc": "LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.",
@@ -738,8 +738,8 @@
    "release": null
   },
   "QuantumNous/new-api": {
-   "stars": 50723,
-   "week": 454,
+   "stars": 50739,
+   "week": 470,
    "pushed": "2026-10-25T13:29:23Z",
    "license": "AGPL-3.0",
    "desc": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management.",
@@ -747,18 +747,18 @@
    "release": null
   },
   "router-for-me/CLIProxyAPI": {
-   "stars": 56348,
-   "week": 651,
-   "pushed": "2026-10-26T13:14:15Z",
+   "stars": 56434,
+   "week": 737,
+   "pushed": "2026-10-26T18:37:57Z",
    "license": "MIT",
    "desc": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
    "archived": false,
    "release": null
   },
   "rtk-ai/rtk": {
-   "stars": 84607,
-   "week": 622,
-   "pushed": "2026-10-26T13:23:34Z",
+   "stars": 84648,
+   "week": 663,
+   "pushed": "2026-10-26T16:41:15Z",
    "license": "Apache-2.0",
    "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
    "archived": false,
@@ -774,8 +774,8 @@
    "release": null
   },
   "Maciek-roboblog/Claude-Code-Usage-Monitor": {
-   "stars": 8766,
-   "week": 17,
+   "stars": 8771,
+   "week": 22,
    "pushed": "2026-07-05T04:52:21Z",
    "license": "MIT",
    "desc": "Real-time Claude Code usage monitor with predictions and warnings",
@@ -783,18 +783,18 @@
    "release": null
   },
   "Kilo-Org/kilocode": {
-   "stars": 27754,
-   "week": 92,
-   "pushed": "2026-10-26T13:20:23Z",
+   "stars": 27761,
+   "week": 99,
+   "pushed": "2026-10-26T17:03:16Z",
    "license": "MIT",
    "desc": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
    "archived": false,
    "release": null
   },
   "zed-industries/zed": {
-   "stars": 92219,
-   "week": 285,
-   "pushed": "2026-10-26T13:55:42Z",
+   "stars": 92239,
+   "week": 305,
+   "pushed": "2026-10-26T22:25:57Z",
    "license": null,
    "desc": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
    "archived": false,
@@ -803,24 +803,24 @@
   "charmbracelet/crush": {
    "stars": 28821,
    "week": 113,
-   "pushed": "2026-10-26T01:54:32Z",
+   "pushed": "2026-10-26T21:59:33Z",
    "license": null,
    "desc": "Glamourous agentic coding for all 💘",
    "archived": false,
    "release": null
   },
   "QwenLM/qwen-code": {
-   "stars": 28730,
-   "week": 144,
-   "pushed": "2026-10-26T14:03:01Z",
+   "stars": 28737,
+   "week": 151,
+   "pushed": "2026-10-26T22:36:19Z",
    "license": "Apache-2.0",
    "desc": "An open-source AI coding agent that lives in your terminal.",
    "archived": false,
    "release": null
   },
   "plandex-ai/plandex": {
-   "stars": 15791,
-   "week": 25,
+   "stars": 15806,
+   "week": 40,
    "pushed": "2025-10-03T21:49:58Z",
    "license": "MIT",
    "desc": "Open source AI coding agent. Designed for large projects and real world tasks.",
@@ -828,8 +828,8 @@
    "release": null
   },
   "openinterpreter/openinterpreter": {
-   "stars": 68675,
-   "week": 68,
+   "stars": 68683,
+   "week": 76,
    "pushed": "2026-10-11T00:56:06Z",
    "license": "Apache-2.0",
    "desc": "A coding agent for open models like Kimi K3 and GLM 5.3",
@@ -837,35 +837,35 @@
    "release": null
   },
   "Significant-Gravitas/AutoGPT": {
-   "stars": 187758,
-   "week": 97,
-   "pushed": "2026-10-26T13:57:51Z",
+   "stars": 187779,
+   "week": 118,
+   "pushed": "2026-10-26T22:42:23Z",
    "license": null,
    "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
    "archived": false,
    "release": null
   },
   "microsoft/agent-framework": {
-   "stars": 14323,
-   "week": 111,
-   "pushed": "2026-10-26T13:53:47Z",
+   "stars": 14330,
+   "week": 118,
+   "pushed": "2026-10-26T20:47:29Z",
    "license": "MIT",
    "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with support for Python and .NET.",
    "archived": false,
    "release": null
   },
   "pydantic/pydantic-ai": {
-   "stars": 20884,
-   "week": 148,
-   "pushed": "2026-10-26T14:02:02Z",
+   "stars": 20888,
+   "week": 152,
+   "pushed": "2026-10-26T22:44:07Z",
    "license": "MIT",
    "desc": "How Python does AI. Agents, realtime voice, image generation, embeddings. Every model, every interface, typed end to end.",
    "archived": false,
    "release": null
   },
   "huggingface/smolagents": {
-   "stars": 30069,
-   "week": 138,
+   "stars": 30083,
+   "week": 152,
    "pushed": "2026-10-22T13:55:07Z",
    "license": "Apache-2.0",
    "desc": "🤗 smolagents: a barebones library for agents that think in code.",
@@ -873,44 +873,44 @@
    "release": null
   },
   "agno-agi/agno": {
-   "stars": 42899,
-   "week": 80,
-   "pushed": "2026-10-26T13:39:53Z",
+   "stars": 42904,
+   "week": 85,
+   "pushed": "2026-10-26T17:39:28Z",
    "license": "Apache-2.0",
    "desc": "The self-improving agent platform",
    "archived": false,
    "release": null
   },
   "mastra-ai/mastra": {
-   "stars": 29088,
-   "week": 167,
-   "pushed": "2026-10-26T14:05:02Z",
+   "stars": 29095,
+   "week": 174,
+   "pushed": "2026-10-26T22:43:59Z",
    "license": null,
    "desc": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
    "archived": false,
    "release": null
   },
   "google/adk-python": {
-   "stars": 22013,
-   "week": 99,
-   "pushed": "2026-10-25T17:53:45Z",
+   "stars": 22016,
+   "week": 102,
+   "pushed": "2026-10-26T21:40:19Z",
    "license": "Apache-2.0",
    "desc": "An open-source, code-first Python toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
    "archived": false,
    "release": null
   },
   "modelcontextprotocol/typescript-sdk": {
-   "stars": 13655,
-   "week": 38,
-   "pushed": "2026-10-26T11:30:11Z",
+   "stars": 13657,
+   "week": 40,
+   "pushed": "2026-10-26T14:35:13Z",
    "license": null,
    "desc": "The official TypeScript SDK for Model Context Protocol servers and clients",
    "archived": false,
    "release": null
   },
   "modelcontextprotocol/python-sdk": {
-   "stars": 24674,
-   "week": 52,
+   "stars": 24677,
+   "week": 55,
    "pushed": "2026-10-25T13:05:36Z",
    "license": "MIT",
    "desc": "The official Python SDK for Model Context Protocol servers and clients",
@@ -918,35 +918,35 @@
    "release": null
   },
   "PrefectHQ/fastmcp": {
-   "stars": 28206,
-   "week": 68,
-   "pushed": "2026-10-26T13:56:42Z",
+   "stars": 28211,
+   "week": 73,
+   "pushed": "2026-10-26T22:22:57Z",
    "license": "Apache-2.0",
    "desc": "🚀 The fast, Pythonic way to build MCP servers and clients.",
    "archived": false,
    "release": null
   },
   "browserbase/stagehand": {
-   "stars": 25825,
-   "week": 82,
-   "pushed": "2026-10-23T23:57:42Z",
+   "stars": 25828,
+   "week": 85,
+   "pushed": "2026-10-26T19:07:30Z",
    "license": "MIT",
    "desc": "The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more.",
    "archived": false,
    "release": null
   },
   "Skyvern-AI/skyvern": {
-   "stars": 23279,
-   "week": 47,
-   "pushed": "2026-10-26T00:46:02Z",
+   "stars": 23281,
+   "week": 49,
+   "pushed": "2026-10-26T21:32:05Z",
    "license": "AGPL-3.0",
    "desc": "Automate browser based workflows with AI",
    "archived": false,
    "release": null
   },
   "exo-explore/exo": {
-   "stars": 48057,
-   "week": 92,
+   "stars": 48063,
+   "week": 98,
    "pushed": "2026-10-13T20:11:49Z",
    "license": "Apache-2.0",
    "desc": "Run frontier AI locally.",
@@ -954,26 +954,26 @@
    "release": null
   },
   "sgl-project/sglang": {
-   "stars": 38200,
-   "week": 754,
-   "pushed": "2026-10-26T13:52:56Z",
+   "stars": 38214,
+   "week": 768,
+   "pushed": "2026-10-26T22:41:28Z",
    "license": "Apache-2.0",
    "desc": "SGLang is a high-performance serving framework for large language models and multimodal models.",
    "archived": false,
    "release": null
   },
   "janhq/jan": {
-   "stars": 45092,
-   "week": 75,
-   "pushed": "2026-10-26T13:56:47Z",
+   "stars": 45105,
+   "week": 88,
+   "pushed": "2026-10-26T16:26:04Z",
    "license": null,
    "desc": "Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.",
    "archived": false,
    "release": null
   },
   "nomic-ai/gpt4all": {
-   "stars": 77356,
-   "week": 5,
+   "stars": 77357,
+   "week": 6,
    "pushed": "2025-05-27T20:05:19Z",
    "license": "MIT",
    "desc": "GPT4All: Run Local LLMs on Any Device. Open-source and available for commercial use.",
@@ -981,8 +981,8 @@
    "release": null
   },
   "ml-explore/mlx-lm": {
-   "stars": 7476,
-   "week": 71,
+   "stars": 7479,
+   "week": 74,
    "pushed": "2026-10-24T00:10:47Z",
    "license": "MIT",
    "desc": "Run LLMs with MLX",
@@ -990,17 +990,17 @@
    "release": null
   },
   "LostRuins/koboldcpp": {
-   "stars": 12065,
-   "week": 32,
-   "pushed": "2026-10-25T15:46:06Z",
+   "stars": 12071,
+   "week": 38,
+   "pushed": "2026-10-26T17:37:37Z",
    "license": "AGPL-3.0",
    "desc": "KoboldCpp - Run GGUF AI models locally with a KoboldAI UI. One File. Zero Install.",
    "archived": false,
    "release": null
   },
   "chroma-core/chroma": {
-   "stars": 29584,
-   "week": 50,
+   "stars": 29588,
+   "week": 54,
    "pushed": "2026-10-26T03:26:30Z",
    "license": "Apache-2.0",
    "desc": "Search infrastructure for AI",
@@ -1008,8 +1008,8 @@
    "release": null
   },
   "qdrant/qdrant": {
-   "stars": 35258,
-   "week": 118,
+   "stars": 35264,
+   "week": 124,
    "pushed": "2026-10-26T04:20:20Z",
    "license": "Apache-2.0",
    "desc": "Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also available in the cloud https://cloud.qdrant.io/",
@@ -1017,8 +1017,8 @@
    "release": null
   },
   "HKUDS/LightRAG": {
-   "stars": 40344,
-   "week": 130,
+   "stars": 40351,
+   "week": 137,
    "pushed": "2026-10-22T18:04:29Z",
    "license": "MIT",
    "desc": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
@@ -1026,8 +1026,8 @@
    "release": null
   },
   "microsoft/graphrag": {
-   "stars": 36452,
-   "week": 65,
+   "stars": 36455,
+   "week": 68,
    "pushed": "2026-10-26T07:23:59Z",
    "license": "MIT",
    "desc": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
@@ -1035,17 +1035,17 @@
    "release": null
   },
   "docling-project/docling": {
-   "stars": 69615,
-   "week": 485,
-   "pushed": "2026-10-26T13:40:08Z",
+   "stars": 69635,
+   "week": 505,
+   "pushed": "2026-10-26T16:20:38Z",
    "license": "MIT",
    "desc": "Get your documents ready for gen AI",
    "archived": false,
    "release": null
   },
   "unclecode/crawl4ai": {
-   "stars": 86294,
-   "week": 435,
+   "stars": 86322,
+   "week": 463,
    "pushed": "2026-10-26T13:15:13Z",
    "license": "Apache-2.0",
    "desc": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key. Join our Discord https://discord.gg/VuxzM8mtf",
@@ -1053,17 +1053,17 @@
    "release": null
   },
   "firecrawl/firecrawl": {
-   "stars": 195534,
-   "week": 2445,
-   "pushed": "2026-10-26T13:05:32Z",
+   "stars": 195680,
+   "week": 2591,
+   "pushed": "2026-10-26T22:32:01Z",
    "license": "AGPL-3.0",
    "desc": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
    "archived": false,
    "release": null
   },
   "letta-ai/letta": {
-   "stars": 25261,
-   "week": 67,
+   "stars": 25262,
+   "week": 68,
    "pushed": "2026-10-18T22:28:04Z",
    "license": "Apache-2.0",
    "desc": "Platform for stateful agents: AI with advanced memory that can learn and self-improve over time.",
@@ -1071,26 +1071,26 @@
    "release": null
   },
   "topoteretes/cognee": {
-   "stars": 32772,
-   "week": 221,
-   "pushed": "2026-10-26T14:06:25Z",
+   "stars": 32783,
+   "week": 232,
+   "pushed": "2026-10-26T18:59:51Z",
    "license": "Apache-2.0",
    "desc": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
    "archived": false,
    "release": null
   },
   "LibreChat-AI/LibreChat": {
-   "stars": 46343,
-   "week": 332,
-   "pushed": "2026-10-26T13:36:34Z",
+   "stars": 46354,
+   "week": 343,
+   "pushed": "2026-10-26T22:44:08Z",
    "license": "MIT",
    "desc": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
    "archived": false,
    "release": null
   },
   "ChatGPTNextWeb/NextChat": {
-   "stars": 88897,
-   "week": 25,
+   "stars": 88901,
+   "week": 29,
    "pushed": "2026-10-20T10:19:31Z",
    "license": "MIT",
    "desc": "✨ Zero-config AI chat assistant. No API key needed — sign up and instantly chat with GPT-5, Claude 4, Gemini 2.5, DeepSeek & 100+ top models. Pay-as-you-go saves you more. Available on Web, iOS, macOS, Android, Linux, Windows.",
@@ -1098,26 +1098,26 @@
    "release": null
   },
   "langflow-ai/langflow": {
-   "stars": 156030,
-   "week": 182,
-   "pushed": "2026-10-26T13:49:31Z",
+   "stars": 156039,
+   "week": 191,
+   "pushed": "2026-10-26T22:30:08Z",
    "license": "MIT",
    "desc": "Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
    "archived": false,
    "release": null
   },
   "activepieces/activepieces": {
-   "stars": 25235,
-   "week": 113,
-   "pushed": "2026-10-26T14:05:23Z",
+   "stars": 25236,
+   "week": 114,
+   "pushed": "2026-10-26T21:30:01Z",
    "license": null,
    "desc": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
    "archived": false,
    "release": null
   },
   "stackblitz-labs/bolt.diy": {
-   "stars": 19992,
-   "week": 32,
+   "stars": 19995,
+   "week": 35,
    "pushed": "2026-10-14T15:02:40Z",
    "license": "MIT",
    "desc": "Prompt, run, edit, and deploy full-stack web applications using any LLM you want!",
@@ -1125,44 +1125,44 @@
    "release": null
   },
   "langfuse/langfuse": {
-   "stars": 36520,
-   "week": 481,
-   "pushed": "2026-10-26T13:41:13Z",
+   "stars": 36540,
+   "week": 501,
+   "pushed": "2026-10-26T22:41:20Z",
    "license": null,
    "desc": "🪢 Open source agent evals & observability: Trace, evaluate, and improve LLM applications with one open platform.",
    "archived": false,
    "release": null
   },
   "promptfoo/promptfoo": {
-   "stars": 26452,
-   "week": 298,
-   "pushed": "2026-10-26T11:19:23Z",
+   "stars": 26470,
+   "week": 316,
+   "pushed": "2026-10-26T19:28:53Z",
    "license": "MIT",
    "desc": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic.",
    "archived": false,
    "release": null
   },
   "Arize-ai/phoenix": {
-   "stars": 12008,
-   "week": 97,
-   "pushed": "2026-10-26T14:05:06Z",
+   "stars": 12014,
+   "week": 103,
+   "pushed": "2026-10-26T22:24:21Z",
    "license": null,
    "desc": "AI Observability & Evaluation",
    "archived": false,
    "release": null
   },
   "comet-ml/opik": {
-   "stars": 22936,
-   "week": 188,
-   "pushed": "2026-10-26T13:59:27Z",
+   "stars": 22948,
+   "week": 200,
+   "pushed": "2026-10-26T22:32:24Z",
    "license": "Apache-2.0",
    "desc": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards.",
    "archived": false,
    "release": null
   },
   "confident-ai/deepeval": {
-   "stars": 19110,
-   "week": 146,
+   "stars": 19119,
+   "week": 155,
    "pushed": "2026-10-23T11:41:01Z",
    "license": "Apache-2.0",
    "desc": "The LLM Evaluation Framework",
@@ -1170,17 +1170,17 @@
    "release": null
   },
   "Comfy-Org/ComfyUI": {
-   "stars": 143147,
-   "week": 3510,
-   "pushed": "2026-10-26T13:50:39Z",
+   "stars": 143256,
+   "week": 3619,
+   "pushed": "2026-10-26T22:44:06Z",
    "license": "GPL-3.0",
    "desc": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
    "archived": false,
    "release": null
   },
   "AUTOMATIC1111/stable-diffusion-webui": {
-   "stars": 165151,
-   "week": 73,
+   "stars": 165152,
+   "week": 74,
    "pushed": "2026-03-02T07:00:53Z",
    "license": "AGPL-3.0",
    "desc": "Stable Diffusion web UI",
@@ -1188,8 +1188,8 @@
    "release": null
   },
   "lllyasviel/Fooocus": {
-   "stars": 53694,
-   "week": 80,
+   "stars": 53702,
+   "week": 88,
    "pushed": "2025-12-01T19:17:07Z",
    "license": "GPL-3.0",
    "desc": "Focus on prompting and generating",
@@ -1197,8 +1197,8 @@
    "release": null
   },
   "openai/whisper": {
-   "stars": 111304,
-   "week": 419,
+   "stars": 111338,
+   "week": 453,
    "pushed": "2026-08-31T17:19:19Z",
    "license": "MIT",
    "desc": "Robust Speech Recognition via Large-Scale Weak Supervision",
@@ -1206,8 +1206,8 @@
    "release": null
   },
   "SYSTRAN/faster-whisper": {
-   "stars": 26167,
-   "week": 186,
+   "stars": 26184,
+   "week": 203,
    "pushed": "2026-10-25T07:17:13Z",
    "license": "MIT",
    "desc": "Faster Whisper transcription with CTranslate2",
@@ -1215,8 +1215,8 @@
    "release": null
   },
   "resemble-ai/chatterbox": {
-   "stars": 27272,
-   "week": 184,
+   "stars": 27292,
+   "week": 204,
    "pushed": "2026-07-21T12:27:05Z",
    "license": "MIT",
    "desc": "SoTA open-source TTS",
@@ -1224,8 +1224,8 @@
    "release": null
   },
   "hacksider/Deep-Live-Cam": {
-   "stars": 97241,
-   "week": 106,
+   "stars": 97256,
+   "week": 121,
    "pushed": "2026-10-24T00:13:12Z",
    "license": "AGPL-3.0",
    "desc": "real time face swap and one-click video deepfake with only a single image",
@@ -1233,17 +1233,17 @@
    "release": null
   },
   "invoke-ai/InvokeAI": {
-   "stars": 28868,
-   "week": 102,
-   "pushed": "2026-10-26T09:48:04Z",
+   "stars": 28874,
+   "week": 108,
+   "pushed": "2026-10-26T21:56:08Z",
    "license": "Apache-2.0",
    "desc": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.",
    "archived": false,
    "release": null
   },
   "coqui-ai/TTS": {
-   "stars": 46143,
-   "week": 4,
+   "stars": 46145,
+   "week": 6,
    "pushed": "2024-08-16T12:07:14Z",
    "license": "MPL-2.0",
    "desc": "🐸💬 - a deep learning toolkit for Text-to-Speech, battle-tested in research and production",
@@ -1251,17 +1251,17 @@
    "release": null
   },
   "KKKKhazix/AIHOT": {
-   "stars": 8660,
-   "week": 575,
-   "pushed": "2026-10-24T12:10:05Z",
+   "stars": 8674,
+   "week": 589,
+   "pushed": "2026-10-26T21:19:18Z",
    "license": "MIT",
    "desc": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
    "archived": false,
    "release": null
   },
   "Vincentwei1021/anything2explainer": {
-   "stars": 2760,
-   "week": 141,
+   "stars": 2766,
+   "week": 147,
    "pushed": "2026-09-18T11:52:13Z",
    "license": null,
    "desc": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canvas motion-graphics explainer video with TTS voiceover, subtitles and a chapter progress bar. Chinese or English; every frame drawn in code with Remotion.",
@@ -1269,26 +1269,26 @@
    "release": null
   },
   "yetone/magpie": {
-   "stars": 22320,
-   "week": 5363,
-   "pushed": "2026-10-26T14:02:27Z",
+   "stars": 22551,
+   "week": 5594,
+   "pushed": "2026-10-26T22:43:18Z",
    "license": "MIT",
    "desc": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
    "archived": false,
    "release": null
   },
   "tigerless-labs/agent-memory": {
-   "stars": 4733,
-   "week": 349,
-   "pushed": "2026-10-22T16:53:05Z",
+   "stars": 4734,
+   "week": 350,
+   "pushed": "2026-10-26T16:47:06Z",
    "license": "MIT",
    "desc": "Long-term memory runtime for AI agents — plain Markdown as the source of truth, local ranked retrieval, and an independent sleep-time Manage layer. Claude Code and Codex share one store. No API key.",
    "archived": false,
    "release": null
   },
   "dzhng/jevgrep": {
-   "stars": 2908,
-   "week": 90,
+   "stars": 2911,
+   "week": 93,
    "pushed": "2026-10-21T19:35:15Z",
    "license": "MIT",
    "desc": "Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files and source context.",
@@ -1296,8 +1296,8 @@
    "release": null
   },
   "2akouwu/reverify": {
-   "stars": 1315,
-   "week": 9,
+   "stars": 1316,
+   "week": 10,
    "pushed": "2026-10-01T11:31:02Z",
    "license": "MIT",
    "desc": "Stop your AI from making things up — it proposes, deterministic tools decide, every claim checked against ground truth with evidence. Grounded facts and context survive resets. Reverse engineering is the proving ground. MCP server + CLI.",
@@ -1341,8 +1341,8 @@
    "release": null
   },
   "Jakeschincariol/linkedin-agent-skill": {
-   "stars": 2708,
-   "week": 326,
+   "stars": 2738,
+   "week": 356,
    "pushed": "2026-09-17T11:27:52Z",
    "license": "MIT",
    "desc": "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.",
@@ -1350,8 +1350,8 @@
    "release": null
   },
   "undefined-ui/second-brain-os": {
-   "stars": 1126,
-   "week": 22,
+   "stars": 1129,
+   "week": 25,
    "pushed": "2026-10-14T03:37:30Z",
    "license": "MIT",
    "desc": "An AI second brain that maintains itself. Full guide, starter vault, agent skills and scripts for a self-organizing knowledge base in Claude Code and Obsidian.",
@@ -1359,8 +1359,8 @@
    "release": null
   },
   "okf-memory/okf-agent-memory": {
-   "stars": 840,
-   "week": 13,
+   "stars": 841,
+   "week": 14,
    "pushed": "2026-10-22T12:00:34Z",
    "license": "MIT",
    "desc": "Git-native persistent memory for AI coding agents. Implements Google OKF v0.2 with sub-300µs in-memory BM25 search, embedded MCP server, and progressive disclosure. Slashes token bloat by 80% with zero external databases or dependencies. Built in pure Go.",
@@ -1368,8 +1368,8 @@
    "release": null
   },
   "dmoshehun-prog/learn-from-materials": {
-   "stars": 1176,
-   "week": 112,
+   "stars": 1180,
+   "week": 116,
    "pushed": "2026-10-19T16:34:57Z",
    "license": "MIT",
    "desc": "Turn PDFs, books and papers into interactive learning webpages｜将复杂材料转化为可追溯、可测验、可做笔记的学习网页",
@@ -1377,8 +1377,8 @@
    "release": null
   },
   "mizzlelover/gongwen-gbt9704-skill": {
-   "stars": 824,
-   "week": 14,
+   "stars": 825,
+   "week": 15,
    "pushed": "2026-09-13T00:12:46Z",
    "license": "MIT",
    "desc": "信息安全提醒：请勿上传企业禁止对外公开的文件；可在本地或企业内网部署大模型后使用。中文公文排版 Skill：按 GB/T 9704-2012 生成可编辑 DOCX。配套 CEB：https://github.com/mizzlelover/CEB",
@@ -1386,8 +1386,8 @@
    "release": null
   },
   "ethanplusai/astra-flash-orchestrator": {
-   "stars": 770,
-   "week": 6,
+   "stars": 773,
+   "week": 9,
    "pushed": "2026-10-03T16:11:18Z",
    "license": "MIT",
    "desc": "Coordinate your models from Codex. Plan, delegate, use host tools, and review work across workspaces. Formerly Astra Flash Orchestrator.",
@@ -1395,8 +1395,8 @@
    "release": null
   },
   "alexgreensh/anidoodle": {
-   "stars": 1112,
-   "week": 105,
+   "stars": 1121,
+   "week": 114,
    "pushed": "2026-10-23T17:28:38Z",
    "license": "Apache-2.0",
    "desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
@@ -1413,8 +1413,8 @@
    "release": null
   },
   "kaankiziltug/logo-design-skill": {
-   "stars": 4652,
-   "week": 885,
+   "stars": 4715,
+   "week": 948,
    "pushed": "2026-10-20T09:14:19Z",
    "license": "MIT",
    "desc": "A comprehensive logo-design skill for Claude, Gemini CLI, Codex and other AI agents: principles, process, SVG craft, testing tools and a 1,400+ logo reference library.",
@@ -1431,8 +1431,8 @@
    "release": null
   },
   "viettranx/3dviz-pro-max": {
-   "stars": 911,
-   "week": 94,
+   "stars": 919,
+   "week": 102,
    "pushed": "2026-09-11T01:01:12Z",
    "license": "MIT",
    "desc": "Agent skill for creative 3D visualization: turn an idea into a Three.js/Blender scene worth exploring. Claude Code + Codex plugin, 223 recipes, 440 knowledge records, 22 proved kits, 37 runnable studies.",
@@ -1440,8 +1440,8 @@
    "release": null
   },
   "op7418/guizang-product-video-skill": {
-   "stars": 870,
-   "week": 40,
+   "stars": 871,
+   "week": 41,
    "pushed": "2026-10-09T13:47:28Z",
    "license": "AGPL-3.0",
    "desc": "归藏 product video skill：复用真实产品组件和设计语言，用代码制作软件更新宣传片。包含分镜文案、原创配乐、动作音效与视频渲染，支持 Claude Code 和 Codex。",
@@ -1449,8 +1449,8 @@
    "release": null
   },
   "lemomo-ai/lemo-opuscar": {
-   "stars": 7881,
-   "week": 4131,
+   "stars": 8050,
+   "week": 4300,
    "pushed": "2026-10-24T09:36:32Z",
    "license": "MIT",
    "desc": "A toolbox of film styles made in code for Claude Code: 59 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：59 种现成风格，也能做出你自己的",
@@ -1467,8 +1467,8 @@
    "release": null
   },
   "ruc-datalab/EvoOntology": {
-   "stars": 1053,
-   "week": 67,
+   "stars": 1056,
+   "week": 70,
    "pushed": "2026-10-09T15:55:00Z",
    "license": "MIT",
    "desc": "EvoOntology: A Self-Evolving Ontology Layer for Data Agents ⚙️ EvoOntology插件为Claude Code/Codex 建立&进化本体层",
@@ -1476,26 +1476,26 @@
    "release": null
   },
   "paperclipai/paperclip": {
-   "stars": 107516,
-   "week": 2819,
-   "pushed": "2026-10-26T14:05:15Z",
+   "stars": 107641,
+   "week": 2944,
+   "pushed": "2026-10-26T22:41:34Z",
    "license": "MIT",
    "desc": "The open-source app everyone uses to manage agents at work",
    "archived": false,
    "release": null
   },
   "stablyai/orca": {
-   "stars": 106616,
-   "week": 8458,
-   "pushed": "2026-10-26T14:08:15Z",
+   "stars": 106998,
+   "week": 8840,
+   "pushed": "2026-10-26T22:43:38Z",
    "license": "MIT",
    "desc": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
    "archived": false,
    "release": null
   },
   "HKUDS/CLI-Anything": {
-   "stars": 57217,
-   "week": 2034,
+   "stars": 57252,
+   "week": 2069,
    "pushed": "2026-09-22T02:01:29Z",
    "license": "Apache-2.0",
    "desc": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
@@ -1503,53 +1503,53 @@
    "release": null
   },
   "debpalash/VoiceStudio": {
-   "stars": 88147,
-   "week": 10750,
-   "pushed": "2026-10-26T13:52:58Z",
+   "stars": 89090,
+   "week": 11693,
+   "pushed": "2026-10-26T21:52:40Z",
    "license": "AGPL-3.0",
    "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
    "archived": false,
    "release": null
   },
   "vectorize-io/hindsight": {
-   "stars": 54008,
-   "week": 2361,
-   "pushed": "2026-10-26T13:54:34Z",
+   "stars": 54093,
+   "week": 2446,
+   "pushed": "2026-10-26T22:37:54Z",
    "license": "MIT",
    "desc": "Hindsight: Agent Memory That Learns",
    "archived": false,
    "release": null
   },
   "VectifyAI/PageIndex": {
-   "stars": 39765,
-   "week": 459,
-   "pushed": "2026-10-26T14:00:23Z",
+   "stars": 39790,
+   "week": 484,
+   "pushed": "2026-10-26T18:06:38Z",
    "license": "MIT",
    "desc": "📑 PageIndex: Document Index for Vectorless, Reasoning-based RAG",
    "archived": false,
    "release": null
   },
   "Tencent/WeKnora": {
-   "stars": 35513,
-   "week": 785,
-   "pushed": "2026-10-26T13:43:56Z",
+   "stars": 35544,
+   "week": 816,
+   "pushed": "2026-10-26T17:04:25Z",
    "license": null,
    "desc": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
    "archived": false,
    "release": null
   },
   "trycua/cua": {
-   "stars": 31004,
-   "week": 783,
-   "pushed": "2026-10-26T13:54:38Z",
+   "stars": 31035,
+   "week": 814,
+   "pushed": "2026-10-26T22:41:09Z",
    "license": "MIT",
    "desc": "Scale computer-use 2.0 with open-source drivers, cross-OS sandboxes, and benchmarks for training, evaluation, and data generation.",
    "archived": false,
    "release": null
   },
   "cloudflare/security-audit-skill": {
-   "stars": 47954,
-   "week": 15507,
+   "stars": 48468,
+   "week": 16021,
    "pushed": "2026-09-14T19:29:02Z",
    "license": "MIT",
    "desc": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
@@ -1557,44 +1557,44 @@
    "release": null
   },
   "t8y2/dbx": {
-   "stars": 27803,
-   "week": 562,
-   "pushed": "2026-10-26T14:02:57Z",
+   "stars": 27815,
+   "week": 574,
+   "pushed": "2026-10-26T15:51:24Z",
    "license": "Apache-2.0",
    "desc": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
    "archived": false,
    "release": null
   },
   "dream-num/univer": {
-   "stars": 22721,
-   "week": 42,
-   "pushed": "2026-10-26T12:04:55Z",
+   "stars": 22728,
+   "week": 49,
+   "pushed": "2026-10-26T17:53:51Z",
    "license": "Apache-2.0",
    "desc": "The Office Harness for AI Agents — Spreadsheets, Docs, Slides, Canvas, Relational Tables, and PDF in one runtime.",
    "archived": false,
    "release": null
   },
   "NVIDIA/OpenShell": {
-   "stars": 20012,
-   "week": 3297,
-   "pushed": "2026-10-26T14:05:28Z",
+   "stars": 20081,
+   "week": 3366,
+   "pushed": "2026-10-26T22:33:58Z",
    "license": "Apache-2.0",
    "desc": "OpenShell is the safe, private runtime for autonomous AI agents.",
    "archived": false,
    "release": null
   },
   "Human-Agent-Society/reef": {
-   "stars": 7738,
-   "week": 67,
-   "pushed": "2026-10-26T13:49:10Z",
+   "stars": 7741,
+   "week": 70,
+   "pushed": "2026-10-26T16:01:36Z",
    "license": "Apache-2.0",
    "desc": "Infrastructure for continually self‑improving agents",
    "archived": false,
    "release": null
   },
   "jev-chat/jev-chat-jarvis": {
-   "stars": 8112,
-   "week": 196,
+   "stars": 8114,
+   "week": 198,
    "pushed": "2026-10-16T09:46:28Z",
    "license": "MIT",
    "desc": "The chat decision assistant: before you reply, Jev reads the chat, judges intent and risk, and drafts replies you fill in with one tap. You press send. Android · Windows · macOS · iOS | 聊天辅助决策工具：先看懂对方再回复，发不发由你。",
@@ -1602,8 +1602,8 @@
    "release": null
   },
   "TencentCloud/Octop": {
-   "stars": 11115,
-   "week": 839,
+   "stars": 11131,
+   "week": 855,
    "pushed": "2026-10-26T10:58:43Z",
    "license": "MIT",
    "desc": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
@@ -1611,8 +1611,8 @@
    "release": null
   },
   "PrismML-Eng/Bonsai-demo": {
-   "stars": 3446,
-   "week": 37,
+   "stars": 3448,
+   "week": 39,
    "pushed": "2026-10-25T21:44:09Z",
    "license": "Apache-2.0",
    "desc": "Bonsai Demo",
@@ -1620,9 +1620,9 @@
    "release": null
   },
   "mvschwarz/openrig": {
-   "stars": 8207,
-   "week": 313,
-   "pushed": "2026-10-26T13:57:47Z",
+   "stars": 8218,
+   "week": 324,
+   "pushed": "2026-10-26T22:04:31Z",
    "license": "Apache-2.0",
    "desc": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
    "archived": false,
@@ -1656,8 +1656,8 @@
    "release": null
   },
   "incoai/splash": {
-   "stars": 1839,
-   "week": 279,
+   "stars": 1846,
+   "week": 286,
    "pushed": "2026-10-26T07:56:03Z",
    "license": "Apache-2.0",
    "desc": "A local inference engine for Apple silicon, built around the model.",
@@ -1674,8 +1674,8 @@
    "release": null
   },
   "nokia-applied-research/AnyJev": {
-   "stars": 1487,
-   "week": 51,
+   "stars": 1490,
+   "week": 54,
    "pushed": "2026-10-21T20:30:58Z",
    "license": "Apache-2.0",
    "desc": "Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (continue updating, welcome any issue and PR request)",
@@ -1692,26 +1692,26 @@
    "release": null
   },
   "pytorch/pytorch": {
-   "stars": 105090,
-   "week": 168,
-   "pushed": "2026-10-26T14:04:35Z",
+   "stars": 105102,
+   "week": 180,
+   "pushed": "2026-10-26T22:43:16Z",
    "license": null,
    "desc": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
    "archived": false,
    "release": null
   },
   "pbakaus/impeccable": {
-   "stars": 88579,
-   "week": 5392,
-   "pushed": "2026-10-26T12:46:18Z",
+   "stars": 89102,
+   "week": 5915,
+   "pushed": "2026-10-26T22:43:27Z",
    "license": "Apache-2.0",
    "desc": "The design language that makes your AI harness better at design.",
    "archived": false,
    "release": null
   },
   "ARahim3/kaggle-tpu-lab": {
-   "stars": 732,
-   "week": 40,
+   "stars": 734,
+   "week": 42,
    "pushed": "2026-10-06T22:26:38Z",
    "license": "MIT",
    "desc": "Frontier-class open models on a free Kaggle TPU v5e-8: GLM-5.3-Flash 320B MoE (~165 tok/s, our own JAX engine) and Qwen3.8-27B bf16 (~130 tok/s), 262k context, prefix caching. Works with Claude Code, Codex, opencode and pi.",
@@ -1719,8 +1719,8 @@
    "release": null
   },
   "Nehanth/pooled": {
-   "stars": 612,
-   "week": 11,
+   "stars": 614,
+   "week": 13,
    "pushed": "2026-10-16T21:30:12Z",
    "license": "MIT",
    "desc": "Peer-to-peer LLM inference in the browser: pool your devices to run big open models, for chat and coding agents.",
@@ -1728,8 +1728,8 @@
    "release": null
   },
   "Oldcircle/geo-sleuth": {
-   "stars": 4241,
-   "week": 773,
+   "stars": 4253,
+   "week": 785,
    "pushed": "2026-10-23T13:05:04Z",
    "license": "MIT",
    "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
@@ -1764,8 +1764,8 @@
    "release": null
   },
   "ZeroDayEvil/ai-security-tool": {
-   "stars": 1160,
-   "week": 221,
+   "stars": 1169,
+   "week": 230,
    "pushed": "2026-10-21T19:19:12Z",
    "license": "MIT",
    "desc": "🛡️ Free open-source AI-powered security terminal & vulnerability scanner (CVE, SBOM). Supports SSH, SFTP, RDP, VNC, Serial, and 12+ autonomous AI agents (DeepSeek, OpenAI) for automated security workflows, CTF & DevSecOps. Cross-platform & Web UI.",
@@ -1775,7 +1775,7 @@
   "hsfzxjy/npunlock": {
    "stars": 75,
    "week": 5,
-   "pushed": "2026-10-26T06:59:16Z",
+   "pushed": "2026-10-26T17:03:30Z",
    "license": "Apache-2.0",
    "desc": "Write and run custom C kernels for Intel Core Ultra NPUs",
    "archived": false,
@@ -1790,8 +1790,8 @@
    "release": null
   },
   "itsmostafa/system-one-connector": {
-   "stars": 354,
-   "week": 0,
+   "stars": 353,
+   "week": -1,
    "pushed": "2026-10-25T20:59:45Z",
    "license": "MIT",
    "desc": "System One MCP connector to evaluate anything fast and cheap. Give your AI agent direct access to models like: Jev, D1, CLM and Laya",
@@ -1799,9 +1799,9 @@
    "release": null
   },
   "MichaelKinsy/PiG": {
-   "stars": 750,
-   "week": 111,
-   "pushed": "2026-10-26T12:56:12Z",
+   "stars": 751,
+   "week": 112,
+   "pushed": "2026-10-26T22:44:29Z",
    "license": "MIT",
    "desc": "PiG (Pi in Go) is a faithful Go port of upstream Pi, the TypeScript codebase behind the Pi coding agent. It is a parity-bound translation, not a rewrite: upstream behavior is the contract, and Go is the implementation language.",
    "archived": false,
@@ -1862,8 +1862,8 @@
    "release": null
   },
   "himovo/movo": {
-   "stars": 383,
-   "week": 72,
+   "stars": 391,
+   "week": 80,
    "pushed": "2026-10-25T11:41:52Z",
    "license": null,
    "desc": "Turn DeepSeek Harness into a self-hosted enterprise Agent platform with knowledge, deep research, content generation, vibe coding, browser automation, governance, and admin controls.",
@@ -1880,8 +1880,8 @@
    "release": null
   },
   "reality-opened/openreality": {
-   "stars": 476,
-   "week": 80,
+   "stars": 484,
+   "week": 88,
    "pushed": "2026-10-26T03:42:39Z",
    "license": "BSD-2-Clause",
    "desc": "Open Reality: phone video to AI-queryable 3D scenes. MCP tools for Claude/Codex/Cursor (npm openreality-mcp), the self-hostable broker, and the VGGT-SLAM library, in one repo. BSD-2-Clause.",
@@ -1907,8 +1907,8 @@
    "release": null
   },
   "feder-cr/dots": {
-   "stars": 32255,
-   "week": 83,
+   "stars": 32259,
+   "week": 87,
    "pushed": "2026-10-25T01:04:52Z",
    "license": "MIT",
    "desc": "Open-source, self-hosted alternative to OpenAI Dots, Grok Bot. Built to be undetectable by anti-bot systems.",
@@ -1988,8 +1988,8 @@
    "release": null
   },
   "dragonked2/alphacode": {
-   "stars": 474,
-   "week": 128,
+   "stars": 478,
+   "week": 132,
    "pushed": "2026-10-24T03:28:40Z",
    "license": "MIT",
    "desc": "Free MIT AI coding agent — no API key needed. Built-in free model, or bring Claude, GPT, Gemini, DeepSeek, Ollama +50 more. Swarm mode, 40+ tools, browser & desktop automation, built in Rust.",
@@ -1997,8 +1997,8 @@
    "release": null
   },
   "howseen-ai/claude-motion-design": {
-   "stars": 690,
-   "week": 98,
+   "stars": 694,
+   "week": 102,
    "pushed": "2026-10-04T05:56:51Z",
    "license": "MIT",
    "desc": "A Claude Code skill to make motion design videos in pure code: HTML + Playwright + ffmpeg. No After Effects, no Remotion license.",
@@ -2006,8 +2006,8 @@
    "release": null
   },
   "graygnatconsole/mcp-audit-tool": {
-   "stars": 543,
-   "week": 67,
+   "stars": 544,
+   "week": 68,
    "pushed": "2026-10-24T19:42:47Z",
    "license": "MIT",
    "desc": "🛡️ Security audit CLI for Model Context Protocol (MCP) servers — scan AI agent configs for tool poisoning, rug pulls, hardcoded secrets, command injection & supply-chain risks. Pure Python, SARIF + CI ready.",
@@ -2015,17 +2015,17 @@
    "release": null
   },
   "openclaw/openclaw": {
-   "stars": 393123,
-   "week": 603,
-   "pushed": "2026-10-26T14:08:22Z",
+   "stars": 393156,
+   "week": 636,
+   "pushed": "2026-10-26T22:44:26Z",
    "license": "MIT",
    "desc": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 ",
    "archived": false,
    "release": null
   },
   "mattpocock/skills": {
-   "stars": 303755,
-   "week": 6331,
+   "stars": 304041,
+   "week": 6617,
    "pushed": "2026-10-22T09:35:28Z",
    "license": "MIT",
    "desc": "Skills for Real Engineers. Straight from my .agents directory.",
@@ -2033,8 +2033,8 @@
    "release": null
   },
   "harry0703/MoneyPrinterTurbo": {
-   "stars": 135291,
-   "week": 2139,
+   "stars": 135451,
+   "week": 2299,
    "pushed": "2026-10-26T14:01:14Z",
    "license": "MIT",
    "desc": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
@@ -2042,8 +2042,8 @@
    "release": null
   },
   "colbymchenry/codegraph": {
-   "stars": 75400,
-   "week": 940,
+   "stars": 75441,
+   "week": 981,
    "pushed": "2026-10-24T02:16:34Z",
    "license": "MIT",
    "desc": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
@@ -2051,35 +2051,35 @@
    "release": null
   },
   "heygen-com/hyperframes": {
-   "stars": 72694,
-   "week": 5085,
-   "pushed": "2026-10-26T14:02:24Z",
+   "stars": 73009,
+   "week": 5400,
+   "pushed": "2026-10-26T22:34:03Z",
    "license": "Apache-2.0",
    "desc": "Write HTML. Render video. Built for agents.",
    "archived": false,
    "release": null
   },
   "alirezarezvani/claude-skills": {
-   "stars": 28748,
-   "week": 337,
-   "pushed": "2026-10-26T13:01:07Z",
+   "stars": 28780,
+   "week": 369,
+   "pushed": "2026-10-26T16:54:47Z",
    "license": "MIT",
    "desc": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
    "archived": false,
    "release": null
   },
   "mksglu/context-mode": {
-   "stars": 32373,
-   "week": 1315,
-   "pushed": "2026-10-26T14:07:12Z",
+   "stars": 32427,
+   "week": 1369,
+   "pushed": "2026-10-26T22:38:17Z",
    "license": null,
    "desc": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
    "archived": false,
    "release": null
   },
   "yibie/awesome-jev": {
-   "stars": 2471,
-   "week": 56,
+   "stars": 2472,
+   "week": 57,
    "pushed": "2026-10-26T11:31:16Z",
    "license": null,
    "desc": "A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions.",
@@ -2114,8 +2114,8 @@
    "release": null
   },
   "punkpeye/awesome-remote-mcp-servers": {
-   "stars": 1980,
-   "week": 435,
+   "stars": 2013,
+   "week": 468,
    "pushed": "2026-10-23T18:40:42Z",
    "license": "MIT",
    "desc": "A collection of remote MCP servers.",
@@ -2123,8 +2123,8 @@
    "release": null
   },
   "Louis-CFM/coucou": {
-   "stars": 6519,
-   "week": 935,
+   "stars": 6563,
+   "week": 979,
    "pushed": "2026-10-23T17:25:38Z",
    "license": "MIT",
    "desc": "A tiny friend in your Mac's notch and on your iPhone that keeps an eye on your AI coding agents: Claude Code, Codex, Cursor, Gemini CLI, Antigravity and more. Approve from the notch or your Lock Screen.",
@@ -2132,17 +2132,17 @@
    "release": null
   },
   "rehan-remade/universal-modder": {
-   "stars": 8995,
-   "week": 546,
-   "pushed": "2026-10-26T12:56:00Z",
+   "stars": 9017,
+   "week": 568,
+   "pushed": "2026-10-26T22:38:30Z",
    "license": "MIT",
    "desc": "Point Claude at any game. Skills, tools and the fal MCP that let Claude Code mod almost any PC game you own: recon, reverse engineering, fal-generated art/3D/audio, in-game testing, showcase videos.",
    "archived": false,
    "release": null
   },
   "modelscope/ms-cookbook": {
-   "stars": 505,
-   "week": 9,
+   "stars": 506,
+   "week": 10,
    "pushed": "2026-10-22T11:32:18Z",
    "license": "Apache-2.0",
    "desc": "魔搭紫皮书｜ModelScope Cookbook：面向开发者的开源模型应用实战指南，覆盖模型选型、推理、微调、评测、RAG、Agent 与 AIGC，从跑通第一个模型到构建实际应用。",
@@ -2150,8 +2150,8 @@
    "release": null
   },
   "walidboulanouar/awesome-jev-use-cases": {
-   "stars": 459,
-   "week": 17,
+   "stars": 460,
+   "week": 18,
    "pushed": "2026-09-26T20:11:29Z",
    "license": "CC0-1.0",
    "desc": "Awesome list of TypeSafe AI Jev use cases: 74 demos ranked by likes, 150+ GitHub repos, limits, cost and API examples. CC0",
@@ -2159,9 +2159,9 @@
    "release": null
   },
   "zhuyansen/awesome-claude-video-skills": {
-   "stars": 1014,
-   "week": 281,
-   "pushed": "2026-10-25T14:26:13Z",
+   "stars": 1037,
+   "week": 304,
+   "pushed": "2026-10-26T16:16:00Z",
    "license": null,
    "desc": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文.",
    "archived": false,
@@ -2213,8 +2213,8 @@
    "release": null
   },
   "Jakeschincariol/arena-skill": {
-   "stars": 991,
-   "week": 207,
+   "stars": 1003,
+   "week": 219,
    "pushed": "2026-09-27T13:20:07Z",
    "license": "MIT",
    "desc": "When Claude keeps giving you bad answers, make 100 versions of it fight to the death. Same task, 100 different strategies, a bracket, one answer left. Free Claude Code skill.",
@@ -2231,8 +2231,8 @@
    "release": null
   },
   "nanaism/yomiyasu": {
-   "stars": 2566,
-   "week": 304,
+   "stars": 2574,
+   "week": 312,
    "pushed": "2026-10-26T07:38:06Z",
    "license": "MIT",
    "desc": "AI生成の日本語を自然な日本語へ推敲するAgent Skill / Agent Skill for Refining AI-Generated Japanese into Natural Japanese",
@@ -2339,53 +2339,53 @@
    "release": null
   },
   "earendil-works/pi": {
-   "stars": 117954,
-   "week": 1545,
-   "pushed": "2026-10-26T13:28:28Z",
+   "stars": 118021,
+   "week": 1612,
+   "pushed": "2026-10-26T21:19:13Z",
    "license": "MIT",
    "desc": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
    "archived": false,
    "release": null
   },
   "cursor/plugins": {
-   "stars": 14143,
-   "week": 1108,
-   "pushed": "2026-10-26T14:01:16Z",
+   "stars": 14201,
+   "week": 1166,
+   "pushed": "2026-10-26T22:42:57Z",
    "license": null,
    "desc": "Cursor plugin specification and official plugins",
    "archived": false,
    "release": null
   },
   "agent-substrate/substrate": {
-   "stars": 5818,
-   "week": 225,
-   "pushed": "2026-10-25T15:47:27Z",
+   "stars": 5825,
+   "week": 232,
+   "pushed": "2026-10-26T17:11:14Z",
    "license": "Apache-2.0",
    "desc": "Agent Substrate: the core system",
    "archived": false,
    "release": null
   },
   "androoAGI/starnet": {
-   "stars": 1622,
-   "week": 88,
-   "pushed": "2026-10-24T23:48:54Z",
+   "stars": 1626,
+   "week": 92,
+   "pushed": "2026-10-26T19:37:26Z",
    "license": "MIT",
    "desc": "A living pixel-art station where real AI agents do real work. Local-first desktop agent harness - bring your own key, watch your crew actually run.",
    "archived": false,
    "release": null
   },
   "edenfunf/reelmimic": {
-   "stars": 197,
-   "week": -3462,
-   "pushed": "2026-10-23T15:25:38Z",
+   "stars": 208,
+   "week": -3451,
+   "pushed": "2026-10-26T15:04:29Z",
    "license": "MIT",
    "desc": "Show it a video you love. Get a new video in the same style. An AI crew (Claude Code or Codex) plans, builds and reviews it with you.",
    "archived": false,
    "release": null
   },
   "INSANE0777/Awwwards-mcp": {
-   "stars": 346,
-   "week": 114,
+   "stars": 352,
+   "week": 120,
    "pushed": "2026-10-25T16:19:46Z",
    "license": "MIT",
    "desc": "Free, open-source MCP server that gives AI coding agents (Claude Code, Codex, Cursor, OpenCode, ZCode…) design inspiration from award-winning websites — search with real screenshots, pull design DNA, capture and record live sites. A Mobbin alternative. No API key.",
@@ -2393,8 +2393,8 @@
    "release": null
   },
   "ArtificialAnalysis/aa-agentperf-local": {
-   "stars": 110,
-   "week": 3,
+   "stars": 113,
+   "week": 6,
    "pushed": "2026-10-16T02:56:31Z",
    "license": "Apache-2.0",
    "desc": "Benchmark local LLM serving by replaying real agent trajectories",
@@ -2438,9 +2438,9 @@
    "release": null
   },
   "abacusai/abacusai-bot": {
-   "stars": 353,
-   "week": 111,
-   "pushed": "2026-10-26T13:43:17Z",
+   "stars": 356,
+   "week": 114,
+   "pushed": "2026-10-26T17:59:02Z",
    "license": "MIT",
    "desc": "100% free, open-source personal agents for your messaging apps, tools, and services",
    "archived": false,
@@ -2467,7 +2467,7 @@
   "MiaoWuNYA/rikkahub-sillytavern-android": {
    "stars": 137,
    "week": 24,
-   "pushed": "2026-10-26T10:26:04Z",
+   "pushed": "2026-10-26T16:20:03Z",
    "license": "AGPL-3.0",
    "desc": "安卓AI聊天端:开箱即聊，无损导入酒馆卡，缓存强省用量，Jev 决策，专属RP模式，防空回，主动信息，前端卡支持，高定制主题，QQbot，AI群聊，插件系统，强兼容中转站。手机移动端原生支持，求 Star 收藏⭐Android AI Chatbox: lossless SillyTavern card import, aggressive cache optimization, Jev decisions, multi-dimensional memory, anti-blank-reply, proactive messages, AI group chat, SillyTavern themes, plugin system, Native mobile.RikkaHub",
    "archived": false,
@@ -2476,24 +2476,24 @@
   "devilcoolyue/agentbox": {
    "stars": 251,
    "week": -10,
-   "pushed": "2026-10-26T13:29:38Z",
+   "pushed": "2026-10-26T15:08:47Z",
    "license": "Apache-2.0",
    "desc": "Self-hosted browser workspace for Claude Code and Codex CLI, with Docker sessions, terminal, files, Git, and usage tracking.",
    "archived": false,
    "release": null
   },
   "tile-ai/tilelang": {
-   "stars": 8782,
-   "week": 126,
-   "pushed": "2026-10-26T08:54:00Z",
+   "stars": 8787,
+   "week": 131,
+   "pushed": "2026-10-26T16:12:17Z",
    "license": null,
    "desc": " Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
    "archived": false,
    "release": null
   },
   "Friedrich-M/UniMate": {
-   "stars": 2198,
-   "week": 182,
+   "stars": 2200,
+   "week": 184,
    "pushed": "2026-10-08T02:52:24Z",
    "license": "MIT",
    "desc": "[SIGGRAPH Asia 2026] UniMate: One Unified Model to Animate Diverse Skeletons",
@@ -2501,8 +2501,8 @@
    "release": null
   },
   "angel291592/Intent-Router": {
-   "stars": 62,
-   "week": -671,
+   "stars": 63,
+   "week": -670,
    "pushed": "2026-10-21T06:47:08Z",
    "license": "MIT",
    "desc": "Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, ask, or halt before routing), the input layer for routers and typed-decision models like Jev & Laya",
@@ -2510,8 +2510,8 @@
    "release": null
   },
   "Panniantong/Agent-Reach": {
-   "stars": 103032,
-   "week": 3381,
+   "stars": 103480,
+   "week": 3829,
    "pushed": "2026-10-25T04:37:26Z",
    "license": "MIT",
    "desc": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
@@ -2519,26 +2519,26 @@
    "release": null
   },
   "coreyhaines31/marketingskills": {
-   "stars": 56621,
-   "week": 1076,
-   "pushed": "2026-10-22T16:57:46Z",
+   "stars": 56685,
+   "week": 1140,
+   "pushed": "2026-10-26T19:16:55Z",
    "license": "MIT",
    "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
    "archived": false,
    "release": null
   },
   "google/skills": {
-   "stars": 21585,
-   "week": 161,
-   "pushed": "2026-10-26T10:03:10Z",
+   "stars": 21599,
+   "week": 175,
+   "pushed": "2026-10-26T20:19:29Z",
    "license": "Apache-2.0",
    "desc": "Agent Skills for Google products and technologies",
    "archived": false,
    "release": null
   },
   "google/ax": {
-   "stars": 14099,
-   "week": 114,
+   "stars": 14106,
+   "week": 121,
    "pushed": "2026-10-25T02:45:25Z",
    "license": "Apache-2.0",
    "desc": "Agent Executor (AX) is Google's open agentic orchestration runtime",
@@ -2546,17 +2546,17 @@
    "release": null
   },
   "zouyuxuan122/dsh-our-free-model": {
-   "stars": 44347,
-   "week": 16709,
-   "pushed": "2026-10-26T07:54:25Z",
+   "stars": 44779,
+   "week": 17141,
+   "pushed": "2026-10-26T15:24:56Z",
    "license": "MIT",
    "desc": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
    "archived": false,
    "release": null
   },
   "ThinkWatchProject/ThinkWatch-Lite": {
-   "stars": 316,
-   "week": -487,
+   "stars": 322,
+   "week": -481,
    "pushed": "2026-10-26T06:09:20Z",
    "license": "MIT",
    "desc": "Local gateway for Claude Code, Codex and other AI clients on macOS, Windows and Linux: switch upstreams without touching clients, keep API keys from relays, cut off malicious tool calls, trace every request.",
@@ -2564,17 +2564,17 @@
    "release": null
   },
   "anteloc/ldraw-nova": {
-   "stars": 481,
-   "week": 47,
-   "pushed": "2026-10-25T17:47:51Z",
+   "stars": 482,
+   "week": 48,
+   "pushed": "2026-10-26T20:36:15Z",
    "license": "AGPL-3.0",
    "desc": "Agent tooling for generative LEGO models building, built with Astra and Opus 5.5, powered by Jev",
    "archived": false,
    "release": null
   },
   "StayLameBro/backburner": {
-   "stars": 1121,
-   "week": 50,
+   "stars": 1123,
+   "week": 52,
    "pushed": "2026-10-13T15:35:44Z",
    "license": "MIT",
    "desc": "Your iPhone helps your Mac run a 27B model: faster prompt reading and more context over a USB-C cable",
@@ -2600,8 +2600,8 @@
    "release": null
   },
   "VectifyAI/jev-doc-search": {
-   "stars": 156,
-   "week": 1,
+   "stars": 157,
+   "week": 2,
    "pushed": "2026-10-03T14:18:16Z",
    "license": "Apache-2.0",
    "desc": "Long-document search with Jev and PageIndex",
@@ -2618,8 +2618,8 @@
    "release": null
   },
   "affaan-m/ECC": {
-   "stars": 289332,
-   "week": 5249,
+   "stars": 289774,
+   "week": 5691,
    "pushed": "2026-10-26T04:56:56Z",
    "license": "MIT",
    "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
@@ -2627,26 +2627,26 @@
    "release": null
   },
   "pingdotgg/t3code": {
-   "stars": 30372,
-   "week": 1749,
-   "pushed": "2026-10-26T14:07:07Z",
+   "stars": 30494,
+   "week": 1871,
+   "pushed": "2026-10-26T22:44:11Z",
    "license": "MIT",
    "desc": null,
    "archived": false,
    "release": null
   },
   "cloudflare/cloudflare-os": {
-   "stars": 11580,
-   "week": 98,
-   "pushed": "2026-10-26T11:47:32Z",
+   "stars": 11586,
+   "week": 104,
+   "pushed": "2026-10-26T22:37:07Z",
    "license": "Apache-2.0",
    "desc": "Agent workspace built on Cloudflare Workers for creating documents, building apps, and running agents with your company’s context and systems.",
    "archived": false,
    "release": null
   },
   "jamwithai/production-agentic-rag-course": {
-   "stars": 9981,
-   "week": 168,
+   "stars": 9984,
+   "week": 171,
    "pushed": "2026-06-05T07:23:49Z",
    "license": "MIT",
    "desc": null,
@@ -2665,15 +2665,15 @@
   "gilgameshcc/ai-native-jobhunt": {
    "stars": 101,
    "week": 4,
-   "pushed": "2026-10-03T09:35:16Z",
+   "pushed": "2026-10-26T15:20:22Z",
    "license": "MIT",
    "desc": "一套写给 agent 读的求职方法论。不是投递脚本，是每个决策点上的判断纪律。",
    "archived": false,
    "release": null
   },
   "ethanplusai/codex-on-crack": {
-   "stars": 770,
-   "week": 6,
+   "stars": 773,
+   "week": 9,
    "pushed": "2026-10-03T16:11:18Z",
    "license": "MIT",
    "desc": "Coordinate your models from Codex. Plan, delegate, use host tools, and review work across workspaces. Formerly Astra Flash Orchestrator.",
@@ -2681,8 +2681,8 @@
    "release": null
   },
   "meituan-longcat/LongCat-Video": {
-   "stars": 9260,
-   "week": 48,
+   "stars": 9264,
+   "week": 52,
    "pushed": "2026-05-27T02:51:41Z",
    "license": "MIT",
    "desc": null,
@@ -2690,8 +2690,8 @@
    "release": null
   },
   "Jakeschincariol/replica-skill": {
-   "stars": 5664,
-   "week": 2124,
+   "stars": 5778,
+   "week": 2238,
    "pushed": "2026-10-03T12:07:53Z",
    "license": "MIT",
    "desc": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
@@ -2708,8 +2708,8 @@
    "release": null
   },
   "GanyuanRan/Autoloom": {
-   "stars": 92,
-   "week": -880,
+   "stars": 93,
+   "week": -879,
    "pushed": "2026-10-23T17:47:43Z",
    "license": null,
    "desc": "AI coding with Aegis governance built into execution: baseline-aware changes, evidence-backed delivery. Free desktop client, your choice of model. 将哲科思维融入 AI 开发执行，让变更有依据、交付有证据。用创意编织现实。",
@@ -2719,24 +2719,24 @@
   "ozynautetu-create/FlowForge-Optima": {
    "stars": 56,
    "week": 0,
-   "pushed": "2026-10-26T12:38:57Z",
+   "pushed": "2026-10-26T19:06:24Z",
    "license": null,
    "desc": "AdalFlow Alternative 2026: Auto-Optimize LLM Apps Without Code",
    "archived": false,
    "release": null
   },
   "garrytan/gstack": {
-   "stars": 137787,
-   "week": 829,
-   "pushed": "2026-10-26T14:07:11Z",
+   "stars": 137832,
+   "week": 874,
+   "pushed": "2026-10-26T22:43:20Z",
    "license": "MIT",
    "desc": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
    "archived": false,
    "release": null
   },
   "calesthio/OpenMontage": {
-   "stars": 72071,
-   "week": 2166,
+   "stars": 72165,
+   "week": 2260,
    "pushed": "2026-10-24T00:49:34Z",
    "license": "AGPL-3.0",
    "desc": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
@@ -2744,8 +2744,8 @@
    "release": null
   },
   "antirez/ds4": {
-   "stars": 24095,
-   "week": 139,
+   "stars": 24104,
+   "week": 148,
    "pushed": "2026-10-23T19:43:37Z",
    "license": "MIT",
    "desc": "DeepSeek 4 Flash and PRO local inference engine for Metal, CUDA and ROCm",
@@ -2753,26 +2753,26 @@
    "release": null
   },
   "earthtojake/text-to-cad": {
-   "stars": 23250,
-   "week": 1531,
-   "pushed": "2026-10-26T11:21:20Z",
+   "stars": 23318,
+   "week": 1599,
+   "pushed": "2026-10-26T22:37:02Z",
    "license": "MIT",
    "desc": "Give your agent CAD superpowers.",
    "archived": false,
    "release": null
   },
   "michael-denyer/pstack-claude": {
-   "stars": 3465,
-   "week": 396,
-   "pushed": "2026-10-22T23:12:05Z",
+   "stars": 3476,
+   "week": 407,
+   "pushed": "2026-10-26T22:43:03Z",
    "license": "MIT",
    "desc": "Claude Code, Codex, Copilot, Pi, OpenCode, Muse, Gemini, and Prime Agent versions of Poteto's pstack. Rigorous agent workflows with Cursor primitives translated for other harnesses.",
    "archived": false,
    "release": null
   },
   "QingYunA/answer-me-with-html": {
-   "stars": 4484,
-   "week": 590,
+   "stars": 4496,
+   "week": 602,
    "pushed": "2026-10-26T08:49:51Z",
    "license": "MIT",
    "desc": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
@@ -2789,8 +2789,8 @@
    "release": null
   },
   "FavioVazquez/showtime": {
-   "stars": 296,
-   "week": 29,
+   "stars": 299,
+   "week": 32,
    "pushed": "2026-10-17T02:43:54Z",
    "license": "MIT",
    "desc": "A local video studio for your coding agent. Describe a video in one sentence: your agent directs, your machine renders. Claude Code, Codex, Cursor, Devin and more. No API keys, no uploads.",
@@ -2798,17 +2798,17 @@
    "release": null
   },
   "Ebony-Vinyl/dsh-our-free-model": {
-   "stars": 44347,
-   "week": 16709,
-   "pushed": "2026-10-26T07:54:25Z",
+   "stars": 44779,
+   "week": 17141,
+   "pushed": "2026-10-26T15:24:56Z",
    "license": "MIT",
    "desc": "在 dsh 里装上这个插件即可，无需登录、注册或填 API Key，就能使用包括 DeepSeek V4.1 Flash、Kimi K3 在内的前沿模型——完全免费，不限量。 All you do is install this plugin in dsh: no login, no sign-up, no API key — the frontier models are just there, DeepSeek V4.1 Flash and Kimi K3 among them. Completely free, with no usage cap.",
    "archived": false,
    "release": null
   },
   "XiaoPuOuO/openchatx-mcp": {
-   "stars": 350,
-   "week": 8,
+   "stars": 352,
+   "week": 10,
    "pushed": "2026-10-26T07:30:55Z",
    "license": "MIT",
    "desc": "Turn ChatGPT into a local agent runtime. Operate your computer, use local tools, discover MCP servers, and delegate work to your own models through one MCP connection.",
@@ -2816,8 +2816,8 @@
    "release": null
   },
   "msitarzewski/agency-agents": {
-   "stars": 164147,
-   "week": 2424,
+   "stars": 164251,
+   "week": 2528,
    "pushed": "2026-10-25T01:43:20Z",
    "license": "MIT",
    "desc": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
@@ -2825,26 +2825,26 @@
    "release": null
   },
   "Gaurav-Gosain/tuios": {
-   "stars": 6078,
-   "week": 574,
-   "pushed": "2026-10-26T14:01:13Z",
+   "stars": 6105,
+   "week": 601,
+   "pushed": "2026-10-26T21:35:45Z",
    "license": "MIT",
    "desc": "A terminal window manager that knows what your agents are doing. Tiling panes, workspaces, sessions that survive restarts, and one Inbox for every coding agent. Official only at tuios.dev and this repo. tuios has no X/Twitter account.",
    "archived": false,
    "release": null
   },
   "penso/herdr-gpui": {
-   "stars": 1694,
-   "week": 173,
-   "pushed": "2026-10-26T08:39:55Z",
+   "stars": 1703,
+   "week": 182,
+   "pushed": "2026-10-26T20:17:51Z",
    "license": "Apache-2.0",
    "desc": "Native client for Herdr on macOS, Linux, and Windows, built with Rust and GPUI. View terminal sessions, workspaces, Git worktrees, and agent activity through your local Herdr daemon.",
    "archived": false,
    "release": null
   },
   "amontlabs/lcu": {
-   "stars": 2230,
-   "week": 790,
+   "stars": 2236,
+   "week": 796,
    "pushed": "2026-10-25T13:58:34Z",
    "license": "MIT",
    "desc": "Codex computer use, decoupled from the app, for usage inside any harness.",
@@ -2870,8 +2870,8 @@
    "release": null
   },
   "Edwardxlai/easyread": {
-   "stars": 1038,
-   "week": 56,
+   "stars": 1039,
+   "week": 57,
    "pushed": "2026-10-25T16:38:47Z",
    "license": "MIT",
    "desc": "把英文论文读成舒服的中文：本地 PDF 论文翻译、原文对照、边读边问 AI、文献管理。Read English papers in comfortable Chinese.",
@@ -2881,7 +2881,7 @@
   "qybaihe/mu": {
    "stars": 552,
    "week": 26,
-   "pushed": "2026-10-26T09:42:48Z",
+   "pushed": "2026-10-26T17:26:45Z",
    "license": "MIT",
    "desc": "mu (μ): most of what a coding agent decides isn't code. mu hands 40 kinds of yes/no calls to a small model: fewer wasted tokens, fewer approvals on autopilot, fewer runs that stop halfway. Built on pi.",
    "archived": false,
@@ -2897,8 +2897,8 @@
    "release": null
   },
   "ayghri/i-have-adhd": {
-   "stars": 58818,
-   "week": 974,
+   "stars": 58875,
+   "week": 1031,
    "pushed": "2026-10-19T19:46:23Z",
    "license": "MIT",
    "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
@@ -2906,17 +2906,17 @@
    "release": null
   },
   "cathrynlavery/diagram-design": {
-   "stars": 61251,
-   "week": 2893,
-   "pushed": "2026-10-26T08:34:58Z",
+   "stars": 61367,
+   "week": 3009,
+   "pushed": "2026-10-26T21:42:18Z",
    "license": "MIT",
    "desc": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
    "archived": false,
    "release": null
   },
   "deepseek-ai/DeepGEMM": {
-   "stars": 9107,
-   "week": 119,
+   "stars": 9108,
+   "week": 120,
    "pushed": "2026-10-20T05:07:07Z",
    "license": "MIT",
    "desc": "DeepGEMM: clean and efficient BLAS kernel library on GPU",
@@ -2924,17 +2924,17 @@
    "release": null
   },
   "morluto/rea": {
-   "stars": 389061,
-   "week": 53018,
-   "pushed": "2026-10-26T14:03:58Z",
+   "stars": 391328,
+   "week": 55285,
+   "pushed": "2026-10-26T22:44:23Z",
    "license": "MIT",
    "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
    "archived": false,
    "release": null
   },
   "bilibili/Index-Translate": {
-   "stars": 1781,
-   "week": 79,
+   "stars": 1787,
+   "week": 85,
    "pushed": "2026-10-26T05:14:36Z",
    "license": "Apache-2.0",
    "desc": "A Multilingual, Multimodal Translation Model Family",
@@ -2942,8 +2942,8 @@
    "release": null
   },
   "VoltAgent/official-mcp-servers": {
-   "stars": 392,
-   "week": 23,
+   "stars": 393,
+   "week": 24,
    "pushed": "2026-10-25T13:20:50Z",
    "license": "MIT",
    "desc": "A curated directory of 390+ official MCP servers from the companies behind the products. No unofficial forks, no abandoned projects.",
@@ -2969,17 +2969,17 @@
    "release": null
   },
   "oil-oil/oil-ui": {
-   "stars": 2350,
-   "week": 508,
-   "pushed": "2026-10-24T16:19:43Z",
+   "stars": 2368,
+   "week": 526,
+   "pushed": "2026-10-26T16:57:23Z",
    "license": "MIT",
    "desc": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
    "archived": false,
    "release": null
   },
   "fatihaydost/brand-identity-skill": {
-   "stars": 167,
-   "week": 9,
+   "stars": 170,
+   "week": 12,
    "pushed": "2026-10-10T21:35:18Z",
    "license": "MIT",
    "desc": "A Claude Code skill that designs a brand identity as one system: logo, typography and colour palette built together from one brief, measured, compared as identity cards, and delivered as a brand guidelines kit.",
@@ -2987,17 +2987,17 @@
    "release": null
   },
   "manaflow-ai/cmux": {
-   "stars": 28516,
-   "week": 229,
-   "pushed": "2026-10-26T14:09:10Z",
+   "stars": 28530,
+   "week": 243,
+   "pushed": "2026-10-26T22:45:07Z",
    "license": null,
    "desc": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
    "archived": false,
    "release": null
   },
   "feder-cr/invisible_playwright_mcp": {
-   "stars": 882,
-   "week": -1888,
+   "stars": 883,
+   "week": -1887,
    "pushed": "2026-10-21T20:36:34Z",
    "license": "MIT",
    "desc": "Playwright MCP server undetected by anti-bots and captchas: AI agent browses the web on anti-detect stealth Firefox, Python, undetected browser automation, scraping, computer use.",
@@ -3005,9 +3005,9 @@
    "release": null
   },
   "openqodex/openqodex": {
-   "stars": 819,
-   "week": 48,
-   "pushed": "2026-10-26T14:07:13Z",
+   "stars": 820,
+   "week": 49,
+   "pushed": "2026-10-26T16:26:46Z",
    "license": "Apache-2.0",
    "desc": "Open source AI code review for coding agents. A separate reviewer checks every change your agent writes before you push, in Claude Code, Codex, Cursor and Cline. No account or key of its own.",
    "archived": false,
@@ -3023,8 +3023,8 @@
    "release": null
   },
   "nano-muse/nanoMuse": {
-   "stars": 2630,
-   "week": 1106,
+   "stars": 2639,
+   "week": 1115,
    "pushed": "2026-10-26T08:58:55Z",
    "license": "GPL-3.0",
    "desc": "nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo. On Android, iPhone and iPad, Windows / macOS / Linux and in the browser; your phone's screen and your computer as its hands.",
@@ -3032,8 +3032,8 @@
    "release": null
   },
   "sgaofen/humanizer-local-model": {
-   "stars": 542,
-   "week": 142,
+   "stars": 547,
+   "week": 147,
    "pushed": "2026-10-19T04:57:12Z",
    "license": "Apache-2.0",
    "desc": "Rewrites AI drafts so they read like a person wrote them — runs locally, keeps the facts",
@@ -3041,8 +3041,8 @@
    "release": null
   },
   "anthropics/knowledge-work-plugins": {
-   "stars": 33132,
-   "week": 2645,
+   "stars": 33193,
+   "week": 2706,
    "pushed": "2026-10-26T07:50:14Z",
    "license": "Apache-2.0",
    "desc": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
@@ -3050,8 +3050,8 @@
    "release": null
   },
   "storytold/artcraft": {
-   "stars": 36792,
-   "week": 3123,
+   "stars": 36899,
+   "week": 3230,
    "pushed": "2026-10-26T10:19:10Z",
    "license": "Apache-2.0",
    "desc": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
@@ -3077,8 +3077,8 @@
    "release": null
   },
   "alibaba/open-code-review": {
-   "stars": 48328,
-   "week": 670,
+   "stars": 48359,
+   "week": 701,
    "pushed": "2026-10-22T04:24:26Z",
    "license": "Apache-2.0",
    "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
@@ -3086,17 +3086,17 @@
    "release": null
   },
   "twostraws/SwiftUI-Agent-Skill": {
-   "stars": 6359,
-   "week": 96,
-   "pushed": "2026-10-23T07:45:35Z",
+   "stars": 6364,
+   "week": 101,
+   "pushed": "2026-10-26T16:53:18Z",
    "license": "MIT",
    "desc": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
    "archived": false,
    "release": null
   },
   "VinkyDev/vibestart": {
-   "stars": 252,
-   "week": 47,
+   "stars": 254,
+   "week": 49,
    "pushed": "2026-10-26T06:11:40Z",
    "license": "MIT",
    "desc": "Compose a full-stack TypeScript stack and get a cutting-edge, verified project made for AI coding agents, with type safety, lint, and tests built in. | 自由组合全栈 TypeScript 技术栈，得到一个前沿、经过验证、为 AI 编码智能体打造的项目，内置类型安全、lint 与测试。",
@@ -3104,26 +3104,26 @@
    "release": null
   },
   "franzenzenhofer/big-arrow-on-the-screen": {
-   "stars": 820,
-   "week": 32,
-   "pushed": "2026-10-26T13:44:12Z",
+   "stars": 822,
+   "week": 34,
+   "pushed": "2026-10-26T15:16:48Z",
    "license": "MIT",
    "desc": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT.",
    "archived": false,
    "release": null
   },
   "strands-agents/box": {
-   "stars": 476,
-   "week": 32,
-   "pushed": "2026-10-26T05:05:51Z",
+   "stars": 481,
+   "week": 37,
+   "pushed": "2026-10-26T22:43:17Z",
    "license": "Apache-2.0",
    "desc": "Run AI agents in a sandbox that restricts what they can execute, read, write, and reach on the network. Box combines OS isolation with default-deny Dogwood policies and credential injection that keeps secrets outside the agent. Written in Rust. Supports macOS on Apple silicon, with Linux support planned.",
    "archived": false,
    "release": null
   },
   "Jakeschincariol/founder-skill": {
-   "stars": 1808,
-   "week": 727,
+   "stars": 1861,
+   "week": 780,
    "pushed": "2026-10-07T01:07:17Z",
    "license": "MIT",
    "desc": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marketing director, a CFO, and a consumer panel of 100 buyer agents. Free, MIT.",
@@ -3142,7 +3142,7 @@
   "professorpalmer/bonsai-ada-surgery": {
    "stars": 93,
    "week": 13,
-   "pushed": "2026-10-26T14:03:00Z",
+   "pushed": "2026-10-26T22:43:45Z",
    "license": null,
    "desc": "Bonsai 2 27B: 262k context (trained max) on 12 GB, 54 to 97 tok/s decode, 2x prefill, q8_0 KV recipe, grammar tool calls 9/9. Same ternary weights. Windows bundle + receipts.",
    "archived": false,
@@ -3176,8 +3176,8 @@
    "release": null
   },
   "multica-ai/andrej-karpathy-skills": {
-   "stars": 224230,
-   "week": 3020,
+   "stars": 224592,
+   "week": 3382,
    "pushed": "2026-04-20T10:05:04Z",
    "license": null,
    "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
@@ -3185,17 +3185,17 @@
    "release": null
   },
   "huggingface/transformers": {
-   "stars": 168190,
-   "week": 325,
-   "pushed": "2026-10-26T14:05:23Z",
+   "stars": 168208,
+   "week": 343,
+   "pushed": "2026-10-26T19:47:39Z",
    "license": "Apache-2.0",
    "desc": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
    "archived": false,
    "release": null
   },
   "hugohe3/ppt-master": {
-   "stars": 68748,
-   "week": 4882,
+   "stars": 68889,
+   "week": 5023,
    "pushed": "2026-10-24T15:39:09Z",
    "license": "MIT",
    "desc": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
@@ -3203,18 +3203,18 @@
    "release": null
   },
   "ranxianglei/billion-context": {
-   "stars": 2924,
-   "week": 917,
-   "pushed": "2026-10-26T14:06:21Z",
+   "stars": 2957,
+   "week": 950,
+   "pushed": "2026-10-26T18:08:17Z",
    "license": null,
    "desc": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
    "archived": false,
    "release": null
   },
   "tensorflow/tensorflow": {
-   "stars": 201266,
-   "week": 66,
-   "pushed": "2026-10-26T14:04:50Z",
+   "stars": 201276,
+   "week": 76,
+   "pushed": "2026-10-26T22:45:08Z",
    "license": "Apache-2.0",
    "desc": "An Open Source Machine Learning Framework for Everyone",
    "archived": false,
@@ -3230,8 +3230,8 @@
    "release": null
   },
   "fumingyang2004/Tulpa": {
-   "stars": 464,
-   "week": 75,
+   "stars": 466,
+   "week": 77,
    "pushed": "2026-10-24T12:44:16Z",
    "license": "MIT",
    "desc": "使用MCP，让你几乎所有的Agent访问QQ/微信/B站，甚至亲自下场水群和发消息！",
@@ -3239,8 +3239,8 @@
    "release": null
   },
   "VecSzn/PolyStrata": {
-   "stars": 523,
-   "week": 246,
+   "stars": 540,
+   "week": 263,
    "pushed": "2026-10-26T07:09:58Z",
    "license": "MIT",
    "desc": "Run large AI models on your own PC: Qwen3.8-Flash-Next on Strata's engine, and GLM 5.3 Flash, DeepSeek V4 Flash, LFM2.5, Qwen3.6, Ornith 1.5, Gemma 4, Tiel Coder and MiniCPM-V on a second engine written for PolyStrata. One-click install for Windows and Linux, OpenAI/Anthropic API on localhost.",
@@ -3248,8 +3248,8 @@
    "release": null
   },
   "lyogavin/airllm": {
-   "stars": 40722,
-   "week": 1186,
+   "stars": 40785,
+   "week": 1249,
    "pushed": "2026-10-26T06:26:03Z",
    "license": "Apache-2.0",
    "desc": "AirLLM 2.8T LLM inference with single 4GB GPU",
@@ -3257,8 +3257,8 @@
    "release": null
   },
   "danyuchn/asd-ste100-skill": {
-   "stars": 5596,
-   "week": 385,
+   "stars": 5607,
+   "week": 396,
    "pushed": "2026-10-26T01:05:44Z",
    "license": "MIT",
    "desc": "ASD-STE100 Simplified Technical English rules, repurposed as a Claude Code skill for rewriting ambiguous agent-facing English.",
@@ -3266,8 +3266,8 @@
    "release": null
   },
   "jiwoochris/artex-ko": {
-   "stars": 2201,
-   "week": 488,
+   "stars": 2221,
+   "week": 508,
    "pushed": "2026-10-14T07:52:45Z",
    "license": "AGPL-3.0",
    "desc": "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크(upstream: Autumn-27/ARTEX, AGPL-3.0)",
@@ -3275,8 +3275,8 @@
    "release": null
   },
   "charlie947/motion-graphics-skills": {
-   "stars": 417,
-   "week": 71,
+   "stars": 425,
+   "week": 79,
    "pushed": "2026-10-11T08:44:11Z",
    "license": "MIT",
    "desc": "13 Claude Code skills for launch-grade motion graphics. Every frame is code. No After Effects, no video generator.",
@@ -3293,8 +3293,8 @@
    "release": null
   },
   "ardeyouxipianyi/workbuddy2api-hub": {
-   "stars": 3005,
-   "week": 1021,
+   "stars": 3021,
+   "week": 1037,
    "pushed": "2026-10-24T15:49:45Z",
    "license": "MIT",
    "desc": "WorkBuddy 国际国内多账号反代网关，支持 Codex / Claude Code / DSH与标准 OpenAI 客户端。",
@@ -3304,7 +3304,7 @@
   "FengZhenfei/carrel": {
    "stars": 643,
    "week": 331,
-   "pushed": "2026-10-26T13:33:17Z",
+   "pushed": "2026-10-26T17:42:07Z",
    "license": "MIT",
    "desc": "Ontology-Augmented Generation for AI agents. ",
    "archived": false,
@@ -3320,8 +3320,8 @@
    "release": null
   },
   "shader-effects-inc/shaders": {
-   "stars": 5495,
-   "week": 349,
+   "stars": 5503,
+   "week": 357,
    "pushed": "2026-10-21T17:33:36Z",
    "license": "MIT",
    "desc": "WebGPU components for React, Vue, Svelte, Solid, JS & Framer",
@@ -3329,18 +3329,18 @@
    "release": null
   },
   "devswha/herdr-web-ui": {
-   "stars": 1506,
-   "week": 284,
-   "pushed": "2026-10-26T13:46:08Z",
+   "stars": 1524,
+   "week": 302,
+   "pushed": "2026-10-26T22:25:02Z",
    "license": "MIT",
    "desc": "Ovis (formerly herdr web UI): free, open-source browser and phone client for herdr. Chat and live terminal for Claude Code, Codex and every agent pane, remote PCs over SSH, web push alerts",
    "archived": false,
    "release": null
   },
   "bherbruck/solidcraft": {
-   "stars": 10680,
-   "week": 3490,
-   "pushed": "2026-10-26T14:08:41Z",
+   "stars": 10806,
+   "week": 3616,
+   "pushed": "2026-10-26T22:38:09Z",
    "license": "Apache-2.0",
    "desc": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
    "archived": false,
@@ -3349,15 +3349,15 @@
   "moritzwilksch/diffle": {
    "stars": 190,
    "week": 13,
-   "pushed": "2026-10-26T13:57:13Z",
+   "pushed": "2026-10-26T14:49:41Z",
    "license": "Apache-2.0",
    "desc": "A keyboard-first diff viewer with LSP support and GitHub integration.",
    "archived": false,
    "release": null
   },
   "Aryanutkarsh/SeeCode": {
-   "stars": 729,
-   "week": 52,
+   "stars": 728,
+   "week": 51,
    "pushed": "2026-10-26T07:00:56Z",
    "license": "MIT",
    "desc": "Animated, explorable diagrams for Claude and other coding agents, from a short JSON spec.",
@@ -3365,8 +3365,8 @@
    "release": null
   },
   "LingCore/WinShun": {
-   "stars": 648,
-   "week": 197,
+   "stars": 656,
+   "week": 205,
    "pushed": "2026-10-26T10:17:39Z",
    "license": "MIT",
    "desc": "Win顺：免费开源的 Windows 快速搜索启动器。双击 Ctrl，拼音秒搜文件、全文搜索 Word/Excel/PDF、剪贴板历史（代替 Win+V）、对话框搜索、任务栏搜索、插件、AI 助手 MCP。Free Windows search launcher: pinyin file search, full-text search, clipboard history, MCP server. Everything/Listary alternative.",
@@ -3383,8 +3383,8 @@
    "release": null
   },
   "microsoft/BitNet": {
-   "stars": 41232,
-   "week": 24,
+   "stars": 41236,
+   "week": 28,
    "pushed": "2026-07-27T05:52:06Z",
    "license": "MIT",
    "desc": "Official inference framework for 1-bit LLMs",
@@ -3401,9 +3401,9 @@
    "release": null
   },
   "SaarthurR/atticus-mac": {
-   "stars": 391,
-   "week": 178,
-   "pushed": "2026-10-26T02:37:19Z",
+   "stars": 397,
+   "week": 184,
+   "pushed": "2026-10-26T22:02:48Z",
    "license": "MIT",
    "desc": "Fast, free voice assistant for your Mac. No API key: runs on your Claude Pro or Max plan. Sends background agents for big jobs, remembers you and learns your shortcuts. Hold ⌃⌥Space and talk.",
    "archived": false,
@@ -3419,8 +3419,8 @@
    "release": null
   },
   "ANDRETRIPOL/OpenGhost": {
-   "stars": 276,
-   "week": 11,
+   "stars": 277,
+   "week": 12,
    "pushed": "2026-10-22T20:52:58Z",
    "license": "MIT",
    "desc": "Open desktop AI agent for Windows, macOS and Linux, written from scratch: its own agent engine, its own browser tooling and its own drawing engine that shows what it explains.",
@@ -3437,17 +3437,17 @@
    "release": null
   },
   "vercel-labs/skills": {
-   "stars": 36633,
-   "week": 955,
-   "pushed": "2026-10-19T20:34:22Z",
+   "stars": 36696,
+   "week": 1018,
+   "pushed": "2026-10-26T20:49:44Z",
    "license": "MIT",
    "desc": "The open agent skills tool - npx skills",
    "archived": false,
    "release": null
   },
   "leemysw/yovoice": {
-   "stars": 1902,
-   "week": 195,
+   "stars": 1908,
+   "week": 201,
    "pushed": "2026-10-26T08:37:09Z",
    "license": "Apache-2.0",
    "desc": "Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees.",
@@ -3455,8 +3455,8 @@
    "release": null
   },
   "onehumanbeing/esp32-iphone-agent": {
-   "stars": 3932,
-   "week": 653,
+   "stars": 3946,
+   "week": 667,
    "pushed": "2026-10-22T05:26:44Z",
    "license": "MIT",
    "desc": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
@@ -3475,15 +3475,15 @@
   "crow-hq/llm-wiki-v2": {
    "stars": 247,
    "week": 14,
-   "pushed": "2026-10-26T13:51:41Z",
+   "pushed": "2026-10-26T20:59:56Z",
    "license": "AGPL-3.0",
    "desc": "Turn your documents into a Markdown wiki you can read, that answers with citations. Works with any LLM provider, Ollama included. CROW classifier routing: 89% right note vs 62%, 2.1× faster ingest, 68% fewer tokens.",
    "archived": false,
    "release": null
   },
   "zhuyansen/new-term-radar": {
-   "stars": 1808,
-   "week": 678,
+   "stars": 1819,
+   "week": 689,
    "pushed": "2026-10-26T13:11:01Z",
    "license": "MIT",
    "desc": "Daily radar for new AI terms: names of new models, products and repos, caught on X, Hugging Face, GitHub and sitemaps before keyword tools list them.",
@@ -3500,8 +3500,8 @@
    "release": null
   },
   "hujjun/mcd-saver-strategist": {
-   "stars": 1568,
-   "week": 870,
+   "stars": 1584,
+   "week": 886,
    "pushed": "2026-10-19T07:58:34Z",
    "license": "MIT",
    "desc": "麦当劳省钱点餐助手（麦门精算师）｜麦当劳优惠券组合优化 Skill：拉取麦当劳菜单与全部可用优惠券，算出最省的点餐组合，巨无霸套餐 ¥47 → ¥21.9（省 53%）。McDonalds MCP（麦当劳 MCP）coupon optimizer · McDonalds China MCP Server · Agent Skill for WorkBuddy · 麦当劳程序员创意开发大赛参赛作品",
@@ -3509,8 +3509,8 @@
    "release": null
   },
   "jiwoochris/artex-global": {
-   "stars": 2201,
-   "week": 488,
+   "stars": 2221,
+   "week": 508,
    "pushed": "2026-10-14T07:52:45Z",
    "license": "AGPL-3.0",
    "desc": "ARTEX 한국어판 · AI 자율 침투 테스트 프레임워크(upstream: Autumn-27/ARTEX, AGPL-3.0)",
@@ -3518,18 +3518,18 @@
    "release": null
   },
   "Folkbench/folkbench": {
-   "stars": 3728,
-   "week": 1743,
-   "pushed": "2026-10-25T09:27:52Z",
+   "stars": 3738,
+   "week": 1753,
+   "pushed": "2026-10-26T17:32:01Z",
    "license": null,
    "desc": "AI API 中转站评测排行与切换工具：实测可用率、延迟与价格 · Open-source AI API relay benchmark, rankings & switcher for Claude Code / Codex",
    "archived": false,
    "release": null
   },
   "mw00/project-maya": {
-   "stars": 1953,
-   "week": 868,
-   "pushed": "2026-10-25T18:27:22Z",
+   "stars": 1978,
+   "week": 893,
+   "pushed": "2026-10-26T17:08:31Z",
    "license": "MIT",
    "desc": "Project Maya - run GLM-5.3-Flash (321B MoE) and DeepSeek-V4.1-Flash-1017 (748B MoE) privately on your own GPU(s), from one card to 16, NVIDIA or AMD, Linux or Windows. Engine, server, dashboard, OpenAI- and Anthropic-compatible API, quant tools.",
    "archived": false,
@@ -3547,15 +3547,15 @@
   "techysy/CreditDaddy": {
    "stars": 114,
    "week": 21,
-   "pushed": "2026-10-26T12:12:49Z",
+   "pushed": "2026-10-26T16:07:14Z",
    "license": "MIT",
    "desc": "AI 编程工具多账号本地管理 + 每日积分自动签到：Qoder / WorkBuddy(CodeBuddy) / ZCode，接入 10Router 看额度、同步用量。Windows 托盘桌面版 + 飞牛 fnOS fpk，数据只留本机，零依赖。",
    "archived": false,
    "release": null
   },
   "K-Dense-AI/scientific-agent-skills": {
-   "stars": 54717,
-   "week": 1795,
+   "stars": 54769,
+   "week": 1847,
    "pushed": "2026-10-26T09:36:15Z",
    "license": "MIT",
    "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
@@ -3563,8 +3563,8 @@
    "release": null
   },
   "vxcontrol/pentagi": {
-   "stars": 32475,
-   "week": 1153,
+   "stars": 32504,
+   "week": 1182,
    "pushed": "2026-10-22T23:26:13Z",
    "license": "MIT",
    "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
@@ -3572,8 +3572,8 @@
    "release": null
   },
   "ifixai-ai/iFixAi": {
-   "stars": 34783,
-   "week": 4702,
+   "stars": 35019,
+   "week": 4938,
    "pushed": "2026-10-24T23:10:53Z",
    "license": "Apache-2.0",
    "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
@@ -3581,9 +3581,9 @@
    "release": null
   },
   "marclou/mailcheap": {
-   "stars": 1477,
-   "week": 225,
-   "pushed": "2026-10-26T08:17:50Z",
+   "stars": 1493,
+   "week": 241,
+   "pushed": "2026-10-26T18:00:44Z",
    "license": "AGPL-3.0",
    "desc": "Newsletters where you pay for the emails you send, not for dormant subscribers, at a fraction of the price of beehiiv and the like. Open source: self-host it, or use mailcheap.ai.",
    "archived": false,
@@ -3599,8 +3599,8 @@
    "release": null
   },
   "shawnshekari/strixite": {
-   "stars": 84,
-   "week": 21,
+   "stars": 85,
+   "week": 22,
    "pushed": "2026-10-24T21:51:48Z",
    "license": "AGPL-3.0",
    "desc": "LLM inference engine written from scratch in HIP for AMD Strix Halo (gfx1151) and Qwen3.8-Flash-Next - ~50 tokens/s out to 492k context",
@@ -3608,8 +3608,8 @@
    "release": null
   },
   "cablate/ctx-handoff-mod": {
-   "stars": 123,
-   "week": 4,
+   "stars": 125,
+   "week": 6,
    "pushed": "2026-10-18T09:02:58Z",
    "license": "MIT",
    "desc": "Claude Code mod: hands off to a fresh conversation when context fills up, keeps the cache warm while you're away, and turns what you teach Claude into project notes",
@@ -3617,26 +3617,26 @@
    "release": null
   },
   "xerj-org/xerj": {
-   "stars": 15756,
-   "week": 5282,
-   "pushed": "2026-10-26T12:29:24Z",
+   "stars": 16822,
+   "week": 6348,
+   "pushed": "2026-10-26T22:10:13Z",
    "license": "Apache-2.0",
    "desc": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
    "archived": false,
    "release": null
   },
   "lightseekorg/tokenspeed": {
-   "stars": 2796,
-   "week": 83,
-   "pushed": "2026-10-26T13:56:15Z",
+   "stars": 2804,
+   "week": 91,
+   "pushed": "2026-10-26T22:45:11Z",
    "license": "MIT",
    "desc": "TokenSpeed is a speed-of-light LLM inference engine.",
    "archived": false,
    "release": null
   },
   "deeplethe/solid-glass": {
-   "stars": 2250,
-   "week": -21,
+   "stars": 2252,
+   "week": -19,
    "pushed": "2026-10-22T18:35:56Z",
    "license": "MIT",
    "desc": "A design system for AI applications. Material, physical, tactile, technical.",
@@ -3653,8 +3653,8 @@
    "release": null
   },
   "LosaLosSantos/aurelio-finance": {
-   "stars": 322,
-   "week": -3647,
+   "stars": 323,
+   "week": -3646,
    "pushed": "2026-10-23T13:44:56Z",
    "license": "MIT",
    "desc": "Open-source personal finance app with an AI financial advisor: track your net worth, investments, ETFs, cash and debts on your own computer.",
@@ -3662,8 +3662,8 @@
    "release": null
   },
   "feder-cr/open_scion": {
-   "stars": 992,
-   "week": -1454,
+   "stars": 999,
+   "week": -1447,
    "pushed": "2026-10-23T11:12:35Z",
    "license": null,
    "desc": "Git designed for AI agents.",
@@ -3671,8 +3671,8 @@
    "release": null
   },
   "Seokwoooo/lucian-uxui-prompt": {
-   "stars": 247,
-   "week": 39,
+   "stars": 249,
+   "week": 41,
    "pushed": "2026-10-16T09:26:34Z",
    "license": "MIT",
    "desc": "400 interactive UI elements you can try live, then copy as an AI prompt or working code: 200 interface parts and 200 website sections and animations. Light/dark, MIT.",
@@ -3680,17 +3680,17 @@
    "release": null
   },
   "steventsvik/Tellurion": {
-   "stars": 132,
-   "week": 16,
-   "pushed": "2026-10-26T12:59:44Z",
+   "stars": 134,
+   "week": 18,
+   "pushed": "2026-10-26T22:36:48Z",
    "license": "AGPL-3.0",
    "desc": "Mission control for AI coding agents. Watch Claude Code, Codex, Gemini and a dozen more work live in one macOS terminal: live status, an editor that follows their edits, undo for any turn, approvals from your phone and local models. 20+ built-in tools, all on the site below. Built on Ghostty.",
    "archived": false,
    "release": null
   },
   "dagoSte/squadra": {
-   "stars": 631,
-   "week": 376,
+   "stars": 669,
+   "week": 414,
    "pushed": "2026-10-26T13:41:04Z",
    "license": "MIT",
    "desc": "Coordinate Claude, Codex and Cursor windows with shared tasks, acknowledgements, prechecks, parallel tests, source-bound proofs and independent review. Built-in skills recall lessons, simplify code and forecast work. Track progress, decisions and evidence in a bilingual local dashboard, with MCP plugins. Browse skills and verified security audits.",
@@ -3698,17 +3698,17 @@
    "release": null
   },
   "MadsLorentzen/ai-job-search": {
-   "stars": 66107,
-   "week": 9114,
-   "pushed": "2026-10-26T13:19:55Z",
+   "stars": 66321,
+   "week": 9328,
+   "pushed": "2026-10-26T14:56:55Z",
    "license": "MIT",
    "desc": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
    "archived": false,
    "release": null
   },
   "feder-cr/git-ai": {
-   "stars": 992,
-   "week": -1454,
+   "stars": 999,
+   "week": -1447,
    "pushed": "2026-10-23T11:12:35Z",
    "license": null,
    "desc": "Git designed for AI agents.",
@@ -3716,17 +3716,17 @@
    "release": null
   },
   "davidondrej/cloudroom-core": {
-   "stars": 1029,
-   "week": 121,
-   "pushed": "2026-10-26T06:15:45Z",
+   "stars": 1034,
+   "week": 126,
+   "pushed": "2026-10-26T22:24:45Z",
    "license": "Apache-2.0",
    "desc": "Open-source, self-hostable Rust runtime that runs Claude Code, Codex, and Pi in the cloud.",
    "archived": false,
    "release": null
   },
   "hanzohanzhe/Grandet": {
-   "stars": 815,
-   "week": 362,
+   "stars": 831,
+   "week": 378,
    "pushed": "2026-10-19T22:32:19Z",
    "license": null,
    "desc": "Find the cheapest API for any model and connect it from your AI agent: Grandet Skill and an anonymous MCP server, backed by listed prices from 1,800+ official, inference and relay providers on grandet.ai.",
@@ -3743,26 +3743,26 @@
    "release": null
   },
   "akitaonrails/ai-memory": {
-   "stars": 13685,
-   "week": 2412,
-   "pushed": "2026-10-26T05:14:00Z",
+   "stars": 13787,
+   "week": 2514,
+   "pushed": "2026-10-26T22:39:17Z",
    "license": "MIT",
    "desc": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
    "archived": false,
    "release": null
   },
   "tangency-labs/solidcraft": {
-   "stars": 10680,
-   "week": 3490,
-   "pushed": "2026-10-26T14:08:41Z",
+   "stars": 10806,
+   "week": 3616,
+   "pushed": "2026-10-26T22:38:09Z",
    "license": "Apache-2.0",
    "desc": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
    "archived": false,
    "release": null
   },
   "Leonxlnx/earshot": {
-   "stars": 2862,
-   "week": 1367,
+   "stars": 2905,
+   "week": 1410,
    "pushed": "2026-10-22T23:12:59Z",
    "license": "MIT",
    "desc": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
@@ -3779,8 +3779,8 @@
    "release": null
   },
   "1115714829/llama.cpp-v100": {
-   "stars": 55,
-   "week": 11,
+   "stars": 56,
+   "week": 12,
    "pushed": "2026-10-23T08:10:59Z",
    "license": "GPL-3.0",
    "desc": "llama.cpp optimized for NVIDIA Tesla V100 (SM70): Qwen3.8-Flash-Next with MTP (prefill 3402 tok/s at 200K context on 6x V100-16GB; also runs on 2x V100-16GB) and Qwen3.8-27B with DFlash2 (decode up to 220 tok/s); 2-6 GPUs, 262K-512K context, multimodal, concurrent serving, built-in web UI.",
@@ -3788,8 +3788,8 @@
    "release": null
   },
   "Tejashmakwana/motionmaxxing": {
-   "stars": 1055,
-   "week": 150,
+   "stars": 1065,
+   "week": 160,
    "pushed": "2026-10-06T18:20:43Z",
    "license": "Apache-2.0",
    "desc": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a motion designer.",
@@ -3797,17 +3797,17 @@
    "release": null
   },
   "openfilm/openfilm": {
-   "stars": 2972,
-   "week": 1672,
-   "pushed": "2026-10-26T13:59:56Z",
+   "stars": 3018,
+   "week": 1718,
+   "pushed": "2026-10-26T22:41:26Z",
    "license": "MIT",
    "desc": "The open source AI video agent: turns any coding agent into a video agent, with an editor to change anything it makes.",
    "archived": false,
    "release": null
   },
   "Graphicle-AI/graphicle": {
-   "stars": 361,
-   "week": 39,
+   "stars": 364,
+   "week": 42,
    "pushed": "2026-10-26T08:16:52Z",
    "license": "Apache-2.0",
    "desc": "Code graph and memory for your coding agents, in one Rust program. For Claude Code, Codex, Cursor and any MCP client.",
@@ -3815,17 +3815,17 @@
    "release": null
   },
   "jwuthri-cloud/Tracely-ai": {
-   "stars": 1183,
-   "week": 98,
-   "pushed": "2026-10-25T09:09:13Z",
+   "stars": 1190,
+   "week": 105,
+   "pushed": "2026-10-26T18:09:41Z",
    "license": "MIT",
    "desc": "Trace-native CI/CD for AI agents: grade production traces, cluster failures, freeze them into replayable regression tests, and block PRs that regress. Self-hostable.",
    "archived": false,
    "release": null
   },
   "shinshin86/mesh-avatar-studio": {
-   "stars": 1164,
-   "week": 309,
+   "stars": 1182,
+   "week": 327,
    "pushed": "2026-10-26T08:49:54Z",
    "license": "MIT",
    "desc": "Turn one illustration into an animated 2D mesh avatar with a coding agent and a local editor",
@@ -3833,8 +3833,8 @@
    "release": null
   },
   "Indras-Mirror/Xolotl": {
-   "stars": 361,
-   "week": 184,
+   "stars": 366,
+   "week": 189,
    "pushed": "2026-10-26T10:05:54Z",
    "license": "MIT",
    "desc": "Xolotl (formerly Strata-DSV4.1): run DeepSeek-V4.1-Flash, all 552B, as a local coding agent on one gaming PC (RTX 4090 + 90 GB RAM) at up to ~27 tok/s, 512K context, October 1017 builds included. Plus GLM-5.3-Flash and Qwen3.8. MoE experts tiered across VRAM, pinned RAM and NVMe; OpenAI + Anthropic API.",
@@ -3860,8 +3860,8 @@
    "release": null
   },
   "trhhubsd/ARTEX": {
-   "stars": 1958,
-   "week": 641,
+   "stars": 1988,
+   "week": 671,
    "pushed": "2026-10-19T06:31:07Z",
    "license": "AGPL-3.0",
    "desc": "ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
@@ -3869,8 +3869,8 @@
    "release": null
   },
   "finereli/whatsapp-mcp": {
-   "stars": 385,
-   "week": 101,
+   "stars": 387,
+   "week": 103,
    "pushed": "2026-10-24T13:31:54Z",
    "license": "MIT",
    "desc": "A read-only MCP server that lets your AI agent search and read your own WhatsApp messages. Use it free at whatsapp.finereli.com, or run your own copy on Cloudflare.",
@@ -3887,9 +3887,9 @@
    "release": null
   },
   "Sallyn0225/eidolon-sc": {
-   "stars": 246,
-   "week": 138,
-   "pushed": "2026-10-26T14:03:40Z",
+   "stars": 252,
+   "week": 144,
+   "pushed": "2026-10-26T20:05:52Z",
    "license": "AGPL-3.0",
    "desc": "和《偶像大师 闪耀色彩》偶像实时语音/文字对话的 AI 分身：日语原声 + 中文字幕、回忆原作剧情、跨角色共享记忆；支持 Google/GitHub 登录与自带密钥，Docker Compose 一键部署（参考 LAPLACE Eidolon）",
    "archived": false,
@@ -3905,8 +3905,8 @@
    "release": null
   },
   "shiyu-coder/Kronos": {
-   "stars": 43819,
-   "week": 2219,
+   "stars": 43860,
+   "week": 2260,
    "pushed": "2026-04-13T12:38:49Z",
    "license": "MIT",
    "desc": "Kronos: A Foundation Model for the Language of Financial Markets",
@@ -3914,8 +3914,8 @@
    "release": null
   },
   "Leonxlnx/cinetic": {
-   "stars": 888,
-   "week": 224,
+   "stars": 893,
+   "week": 229,
    "pushed": "2026-10-18T00:26:40Z",
    "license": "MIT",
    "desc": "Cinematic launch films and motion design from code, directed by your coding agent.",
@@ -3923,8 +3923,8 @@
    "release": null
   },
   "justxor/deepseek-local-guide-ru": {
-   "stars": 148,
-   "week": 33,
+   "stars": 149,
+   "week": 34,
    "pushed": "2026-10-17T13:25:10Z",
    "license": null,
    "desc": "🐋 Полный гайд на русском: как установить и запустить DeepSeek локально (V4, R1) на ПК, Mac и сервере — Ollama, llama.cpp, LM Studio, vLLM, Open WebUI, API, RAG, агенты, fine-tuning, лучшие фишки",
@@ -3932,7 +3932,7 @@
    "release": null
   },
   "alchaincyf/huashu-motion": {
-   "stars": 1717,
+   "stars": 1732,
    "week": null,
    "pushed": "2026-10-22T12:19:37Z",
    "license": "MIT",
@@ -3941,7 +3941,7 @@
    "release": null
   },
   "Zfinix/eleven": {
-   "stars": 882,
+   "stars": 884,
    "week": null,
    "pushed": "2026-10-22T19:47:08Z",
    "license": "Apache-2.0",
@@ -3950,9 +3950,9 @@
    "release": null
   },
   "juliobsz/skills": {
-   "stars": 963,
+   "stars": 967,
    "week": null,
-   "pushed": "2026-10-20T00:06:53Z",
+   "pushed": "2026-10-26T15:35:41Z",
    "license": "MIT",
    "desc": "An agent skill that builds award-caliber websites from one line",
    "archived": false,
@@ -3961,14 +3961,14 @@
   "deskmind-ai/deskmind": {
    "stars": 123,
    "week": null,
-   "pushed": "2026-10-26T14:00:32Z",
+   "pushed": "2026-10-26T19:05:07Z",
    "license": "Apache-2.0",
    "desc": "Small enough to run on your Mac. Smart enough to ask. An open-source computer use agent for macOS, with local models (MLX) that see, decide and act. 得心，应手。",
    "archived": false,
    "release": null
   },
   "sickn33/agentic-awesome-skills": {
-   "stars": 48520,
+   "stars": 48545,
    "week": null,
    "pushed": "2026-10-24T21:31:58Z",
    "license": "MIT",
@@ -3977,7 +3977,7 @@
    "release": null
   },
   "kanaworksai-hue/audio-studio-mcp": {
-   "stars": 499,
+   "stars": 503,
    "week": null,
    "pushed": "2026-10-24T03:47:37Z",
    "license": "MIT",
@@ -3995,9 +3995,9 @@
    "release": null
   },
   "eagle-hq/EAGLE-4": {
-   "stars": 1002,
+   "stars": 1007,
    "week": null,
-   "pushed": "2026-10-24T08:34:16Z",
+   "pushed": "2026-10-26T21:02:10Z",
    "license": null,
    "desc": "Official Inference Code of EAGLE-4",
    "archived": false,
@@ -4013,7 +4013,7 @@
    "release": null
   },
   "AbdullahAlhariri/penmentor": {
-   "stars": 137,
+   "stars": 139,
    "week": null,
    "pushed": "2026-10-24T13:46:30Z",
    "license": "MIT",
@@ -4031,7 +4031,7 @@
    "release": null
   },
   "jaikydota/BullFlow": {
-   "stars": 156,
+   "stars": 166,
    "week": null,
    "pushed": "2026-10-14T10:36:41Z",
    "license": "MIT",
@@ -4049,9 +4049,9 @@
    "release": null
   },
   "android/skills": {
-   "stars": 9789,
+   "stars": 9825,
    "week": null,
-   "pushed": "2026-10-23T14:35:29Z",
+   "pushed": "2026-10-26T20:27:33Z",
    "license": "Apache-2.0",
    "desc": null,
    "archived": false,
@@ -4067,43 +4067,43 @@
    "release": null
   },
   "omnara-ai/omnara": {
-   "stars": 3265,
+   "stars": 3271,
    "week": null,
-   "pushed": "2026-10-24T18:00:05Z",
+   "pushed": "2026-10-26T22:33:14Z",
    "license": "Apache-2.0",
    "desc": "The open-source managed agent platform. A self-hostable alternative to Claude Managed Agents and OpenAI's Agents API.",
    "archived": false,
    "release": null
   },
   "supabase/supabase": {
-   "stars": 113973,
+   "stars": 114028,
    "week": null,
-   "pushed": "2026-10-26T14:08:10Z",
+   "pushed": "2026-10-26T21:53:30Z",
    "license": "Apache-2.0",
    "desc": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
    "archived": false,
    "release": null
   },
   "luongnv89/claude-howto": {
-   "stars": 45221,
+   "stars": 45319,
    "week": null,
-   "pushed": "2026-10-20T12:23:14Z",
+   "pushed": "2026-10-26T20:49:07Z",
    "license": "MIT",
    "desc": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
    "archived": false,
    "release": null
   },
   "simbasjungles/free-my-tv": {
-   "stars": 4755,
+   "stars": 4850,
    "week": null,
-   "pushed": "2026-10-25T21:48:20Z",
+   "pushed": "2026-10-26T19:59:50Z",
    "license": "MIT",
    "desc": "A fast, ad-free home screen for Google TV, LG webOS and Samsung Tizen. One button to undo.",
    "archived": false,
    "release": null
   },
   "KatrielMoses/voidaccess": {
-   "stars": 932,
+   "stars": 938,
    "week": null,
    "pushed": "2026-10-21T08:53:01Z",
    "license": "MIT",
@@ -4112,7 +4112,7 @@
    "release": null
   },
   "morluto/awesome-reverse-engineering": {
-   "stars": 1264,
+   "stars": 1283,
    "week": null,
    "pushed": "2026-10-25T10:27:56Z",
    "license": "CC0-1.0",
@@ -4121,7 +4121,7 @@
    "release": null
   },
   "xop01/ai_goodpractice": {
-   "stars": 726,
+   "stars": 739,
    "week": null,
    "pushed": "2026-10-02T13:40:21Z",
    "license": null,
@@ -4130,9 +4130,9 @@
    "release": null
   },
   "liuda30201/AI-Coding": {
-   "stars": 414,
+   "stars": 433,
    "week": null,
-   "pushed": "2026-10-26T12:58:09Z",
+   "pushed": "2026-10-26T20:29:03Z",
    "license": null,
    "desc": "AI 编程福利导航：汇总 Claude Code、Codex、Cursor 中转站与公益站，整理免费额度、注册福利、签到活动和评测记录，提供可视化看板与 Python 数据采集工具。",
    "archived": false,
@@ -4148,7 +4148,7 @@
    "release": null
   },
   "h9-tec/ai-roadmap-2026": {
-   "stars": 168,
+   "stars": 170,
    "week": null,
    "pushed": "2026-10-21T12:56:31Z",
    "license": "CC-BY-4.0",
@@ -4157,16 +4157,16 @@
    "release": null
   },
   "reason-machines/reason-network": {
-   "stars": 1253,
+   "stars": 1261,
    "week": null,
-   "pushed": "2026-10-26T06:46:05Z",
+   "pushed": "2026-10-26T15:37:02Z",
    "license": "Apache-2.0",
    "desc": "Reason Network: your team's coding agents, talking to each other. The engine behind `reason network`.",
    "archived": false,
    "release": null
   },
   "StartLuxLabs/StartLux-Decision": {
-   "stars": 1579,
+   "stars": 1582,
    "week": null,
    "pushed": "2026-10-23T06:42:24Z",
    "license": "Apache-2.0",
@@ -4193,7 +4193,7 @@
    "release": null
   },
   "StartLuxLabs/StartLux-Prism": {
-   "stars": 85,
+   "stars": 93,
    "week": null,
    "pushed": "2026-10-26T06:40:36Z",
    "license": null,
@@ -4202,7 +4202,7 @@
    "release": null
   },
   "OpenBMB/VoxCPM": {
-   "stars": 40647,
+   "stars": 40672,
    "week": null,
    "pushed": "2026-10-08T03:26:41Z",
    "license": "Apache-2.0",
@@ -4211,16 +4211,16 @@
    "release": null
   },
   "elie222/rakazo": {
-   "stars": 5872,
+   "stars": 5921,
    "week": null,
-   "pushed": "2026-10-26T14:09:28Z",
+   "pushed": "2026-10-26T22:18:17Z",
    "license": "Apache-2.0",
    "desc": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
    "archived": false,
    "release": null
   },
   "JMS1717/ming-voice": {
-   "stars": 308,
+   "stars": 330,
    "week": null,
    "pushed": "2026-10-26T01:31:27Z",
    "license": "MIT",
@@ -4229,7 +4229,7 @@
    "release": null
   },
   "SnailSploit/Claude-Red": {
-   "stars": 9335,
+   "stars": 9431,
    "week": null,
    "pushed": "2026-10-12T15:02:40Z",
    "license": "MIT",
@@ -4238,16 +4238,16 @@
    "release": null
   },
   "DozenTwelve/Papermorph": {
-   "stars": 949,
+   "stars": 956,
    "week": null,
-   "pushed": "2026-10-26T13:59:17Z",
+   "pushed": "2026-10-26T21:59:15Z",
    "license": "MIT",
    "desc": "An AI skill that turns books into animated, narrated, interactive web experiences",
    "archived": false,
    "release": null
   },
   "Jakeschincariol/day-trader-skill": {
-   "stars": 1898,
+   "stars": 2036,
    "week": null,
    "pushed": "2026-10-20T14:18:00Z",
    "license": "MIT",
@@ -4256,16 +4256,16 @@
    "release": null
   },
   "kividbio/kividb": {
-   "stars": 663,
+   "stars": 685,
    "week": null,
-   "pushed": "2026-10-26T11:42:32Z",
+   "pushed": "2026-10-26T21:39:55Z",
    "license": "AGPL-3.0",
    "desc": "A fast, multi-threaded Redis® and Valkey alternative written in Rust: drop-in compatible, with full-text and vector search built in",
    "archived": false,
    "release": null
   },
   "Sam-Hui-dot/mcd-budget-meal": {
-   "stars": 1491,
+   "stars": 1504,
    "week": null,
    "pushed": "2026-10-24T05:59:35Z",
    "license": null,
@@ -4274,25 +4274,25 @@
    "release": null
   },
   "makecindy/cindy": {
-   "stars": 5841,
+   "stars": 6373,
    "week": null,
-   "pushed": "2026-10-26T14:06:22Z",
+   "pushed": "2026-10-26T17:17:47Z",
    "license": "Apache-2.0",
    "desc": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
    "archived": false,
    "release": null
   },
   "aws/agent-toolkit-for-aws": {
-   "stars": 3286,
+   "stars": 3297,
    "week": null,
-   "pushed": "2026-10-26T10:40:48Z",
+   "pushed": "2026-10-26T22:04:19Z",
    "license": "Apache-2.0",
    "desc": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
    "archived": false,
    "release": null
   },
   "thesysdev/open-intelligent-ui": {
-   "stars": 843,
+   "stars": 847,
    "week": null,
    "pushed": "2026-10-26T14:06:16Z",
    "license": "MIT",
@@ -4301,7 +4301,7 @@
    "release": null
   },
   "Nutlope/hallmark": {
-   "stars": 35330,
+   "stars": 36129,
    "week": null,
    "pushed": "2026-10-22T17:20:32Z",
    "license": "MIT",
@@ -4310,16 +4310,16 @@
    "release": null
   },
   "AienTech/dossier": {
-   "stars": 526,
+   "stars": 528,
    "week": null,
-   "pushed": "2026-10-24T10:50:19Z",
+   "pushed": "2026-10-26T18:31:51Z",
    "license": "AGPL-3.0",
    "desc": "A self-hosted job search app that writes tailored resumes and cover letters from your profile.",
    "archived": false,
    "release": null
   },
   "ahtx/kindi": {
-   "stars": 65,
+   "stars": 68,
    "week": null,
    "pushed": "2026-10-24T23:08:50Z",
    "license": "AGPL-3.0",
@@ -4328,16 +4328,16 @@
    "release": null
   },
   "JetBrains/thinkrail": {
-   "stars": 2399,
+   "stars": 2828,
    "week": null,
-   "pushed": "2026-10-26T14:05:45Z",
+   "pushed": "2026-10-26T22:27:59Z",
    "license": "Apache-2.0",
    "desc": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
    "archived": false,
    "release": null
   },
   "TauricResearch/TradingAgents": {
-   "stars": 115427,
+   "stars": 115990,
    "week": null,
    "pushed": "2026-10-16T21:38:46Z",
    "license": "Apache-2.0",
@@ -4346,7 +4346,7 @@
    "release": null
   },
   "AgriciDaniel/claude-seo": {
-   "stars": 21805,
+   "stars": 22110,
    "week": null,
    "pushed": "2026-10-22T16:47:40Z",
    "license": "MIT",
@@ -4355,7 +4355,7 @@
    "release": null
   },
   "UnderleveledBuilder/awesome-short-drama-skills": {
-   "stars": 1012,
+   "stars": 1026,
    "week": null,
    "pushed": "2026-10-26T05:34:57Z",
    "license": "CC0-1.0",
@@ -4373,7 +4373,7 @@
    "release": null
   },
   "3145544645/gouji": {
-   "stars": 69,
+   "stars": 72,
    "week": null,
    "pushed": "2026-10-18T09:17:29Z",
    "license": "MIT",
@@ -4382,7 +4382,7 @@
    "release": null
   },
   "sno-ai/sno-station-skills": {
-   "stars": 863,
+   "stars": 874,
    "week": null,
    "pushed": "2026-10-24T21:56:53Z",
    "license": "Apache-2.0",
@@ -4391,7 +4391,7 @@
    "release": null
   },
   "YOLOW92/pagesift": {
-   "stars": 96,
+   "stars": 100,
    "week": null,
    "pushed": "2026-10-26T12:38:26Z",
    "license": "AGPL-3.0",
@@ -4400,7 +4400,7 @@
    "release": null
   },
   "gitroomhq/postiz-app": {
-   "stars": 38034,
+   "stars": 38399,
    "week": null,
    "pushed": "2026-10-24T18:27:21Z",
    "license": "AGPL-3.0",
@@ -4409,7 +4409,7 @@
    "release": null
   },
   "alchaincyf/huashu-design": {
-   "stars": 26536,
+   "stars": 26702,
    "week": null,
    "pushed": "2026-10-23T15:32:08Z",
    "license": "MIT",
@@ -4418,7 +4418,7 @@
    "release": null
   },
   "NVIDIA/SkillSpector": {
-   "stars": 21797,
+   "stars": 22126,
    "week": null,
    "pushed": "2026-10-23T09:40:29Z",
    "license": "Apache-2.0",
@@ -4427,16 +4427,16 @@
    "release": null
   },
   "nightly-labs/openbot": {
-   "stars": 1167,
+   "stars": 1428,
    "week": null,
-   "pushed": "2026-10-26T14:08:38Z",
+   "pushed": "2026-10-26T22:11:47Z",
    "license": null,
    "desc": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
    "archived": false,
    "release": null
   },
   "morganlinton/BeautifulRust": {
-   "stars": 1084,
+   "stars": 1205,
    "week": null,
    "pushed": "2026-10-26T13:45:53Z",
    "license": "MIT",
@@ -4445,7 +4445,7 @@
    "release": null
   },
   "Bai-Cute/big-blue-fish-desktop-pet": {
-   "stars": 84,
+   "stars": 85,
    "week": null,
    "pushed": "2026-10-19T07:49:04Z",
    "license": "Apache-2.0",
