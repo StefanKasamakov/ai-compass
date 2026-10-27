@@ -1,6 +1,35 @@
 {
- "updated": "2026-10-26T22:43:48.964Z",
+ "updated": "2026-10-27T05:13:12.502Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "GPT-6.1 Terra",
+   "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+   "date": "2026-10-26T23:53:07.000Z",
+   "discuss": "https://news.ycombinator.com/item?id=50248124",
+   "summary": "OpenAI introduced GPT-6.1 Terra, a model emphasizing visual reasoning and computer use capabilities.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026-10-26/terra-max.webp"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Greptile takes bug detection beyond code review with GPT-6 Astra",
+   "url": "https://openai.com/index/greptile-code-review-codex-astra",
+   "date": "2026-10-26T22:00:00.000Z",
+   "summary": "Greptile integrated GPT-6 Astra for advanced bug detection and workflow testing.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/41HmEnWTxiRSX2JLf1g8IJ/86b6e146a0620d83db05f4010e6b058e/greptile-connections-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.311",
@@ -29,6 +58,36 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/10/682153766-30ae8bb0-a424-401c-80e8-bb06bec001b2.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+   "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+   "date": "2026-10-26T13:45:00.000Z",
+   "summary": "CodeRabbit adopted GPT-6.1 Sol to power its security agent for complex codebase reviews.",
+   "tags": [
+    "models",
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/1ksgDNZQ7aw2uHUY6xbaVm/0ffd141428e2cea70f4dcbf67ccd6245/gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebases-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "How Ultrafast cut incident investigation from hours to minutes at OpenAI",
+   "url": "https://openai.com/index/openai-cut-incident-investigation",
+   "date": "2026-10-26T07:00:00.000Z",
+   "summary": "OpenAI engineers used Codex Ultrafast to accelerate incident investigations and code refactoring.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6H0c65mearAtOzTfg4UZNj/28cc9c689c98e9bd68ca92f8c40d9818/oai-ultrafast-series-og-2048.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Hacker News",
@@ -67,6 +126,20 @@
    "big": false,
    "ai": false,
    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
+   "date": "2026-10-26",
+   "title": "Expanding Claude for Nonprofits",
+   "summary": "Anthropic launched a Claude for Nonprofits plugin to provide specialized operational skills to verified organizations.",
+   "tags": [
+    "product",
+    "skills"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/expanding-claude-for-nonprofits/opengraph-image/og"
   },
   {
    "source": "Latent Space",
@@ -2162,75 +2235,6 @@
    "big": false,
    "ai": true,
    "image": "https://static.simonwillison.net/static/2026/anthropic-merges-per-day.webp"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.35",
-   "url": "https://simonwillison.net/2026/Oct/13/llm-gemini/",
-   "date": "2026-10-13T22:28:54.000Z",
-   "summary": "The llm-gemini tool added support for the new Gemini 4 Argon model via API and subscription. Users can now access this latest model directly through their preferred command-line tool.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/gemini-4-argon-artificial-analysis.webp",
-   "audience": "dev"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
-   "url": "https://latent.space/p/dyna/",
-   "date": "2026-10-13T22:25:55.000Z",
-   "summary": "Dyna Robotics discussed its work on general-purpose physical robotics agents with hour-long autonomy.",
-   "tags": [
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://latent.space/og/card/post/dyna/cc177bf4f414b892f93e706f0078c5ecfc17a6cd7c0cb8498b22bec2918765d7.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Dyna-2: General Purpose Physical Agents with Hour-Long Autonomy — Jason Ma, Dyna Robotics",
-   "url": "https://www.latent.space/p/dyna",
-   "date": "2026-10-13T22:25:55.000Z",
-   "summary": "Researchers discussed physical AI agents capable of hour-long autonomy using world action models.",
-   "tags": [
-    "agents",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!MnNc!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F220234130%2Fdbc4f752-488e-4b53-bd69-73a73b8c1604%2Ftranscoded-1791913394.png"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.64.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0",
-   "date": "2026-10-13T20:44:46Z",
-   "summary": "A new release of Gemini CLI became available for developers.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/935850e8bd965b03e29feef3a58d23f7519580a79a07fd5f321707933678077a/google-gemini/gemini-cli/releases/tag/v0.64.0",
-   "audience": "dev"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Developing Gemini 4 Argon responsibly and safely",
-   "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
-   "date": "2026-10-13T19:43:07.000Z",
-   "summary": "DeepMind detailed the safety and responsibility practices used during the development of Gemini 4 Argon.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-argon_key-art_4_lockup_light_16-9.width-1300.png"
   }
  ]
 }
