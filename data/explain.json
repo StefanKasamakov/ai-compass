@@ -15913,5 +15913,71 @@
   "repo": "FrigadeHQ/hob",
   "at": "2026-10-26",
   "source": "trending"
+ },
+ "HKUDS/DeepTutor": {
+  "cat": "memory",
+  "kind": "AI tutor system",
+  "what": "DeepTutor is a lifelong personalized tutoring platform featuring agent-native interfaces, multi-agent systems, and knowledge retrieval.",
+  "why": "It is used to create an interactive, tailored learning experience backed by document reading, search, and customized study paths.",
+  "level": "setup",
+  "start": "git clone https://github.com/HKUDS/DeepTutor.git",
+  "caution": "Requires configuring external AI provider API keys and managing local Python and Next.js environments.",
+  "alts": [
+   "langgenius/dify",
+   "open-webui/open-webui",
+   "FlowiseAI/Flowise"
+  ],
+  "packages": [],
+  "plain": "A personal robotic teacher that uses your files and web searches to build custom lessons for you.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "research"
+  ],
+  "useFor": [
+   "Build custom learning paths from your documents",
+   "Chat with an AI tutor that adapts to your progress",
+   "Generate quizzes and practice questions automatically"
+  ],
+  "steps": [
+   "Clone the repository using git clone",
+   "Configure your environment variables and provider keys",
+   "Start the application services using the provided setup instructions"
+  ],
+  "repo": "HKUDS/DeepTutor",
+  "at": "2026-10-27",
+  "source": "trending"
+ },
+ "DenisSergeevitch/ex-ussr-kinship-research": {
+  "cat": "harness",
+  "kind": "Genealogy Research Skill",
+  "what": "An evidence-first genealogy skill for AI coding assistants that researches family history across the former Soviet Union and Russian Empire.",
+  "why": "Tracing ancestry across former Soviet archives requires navigating complex historical jurisdictions, name variants, and specialized record types, making it useful when you need an AI to methodically track and audit historical evidence.",
+  "level": "setup",
+  "start": "git clone https://github.com/DenisSergeevitch/ex-ussr-kinship-research ~/.codex/skills/ex-ussr-kinship-research",
+  "caution": "Requires handling sensitive historical documents, personal family records, and interacting with external archives or browsing sessions.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "An add-on for coding assistants that helps you research family history and documents from the former Soviet Union.",
+  "tags": [
+   "research",
+   "knowledge",
+   "supercharge"
+  ],
+  "useFor": [
+   "Find ancestral records across former Soviet archives",
+   "Audit historical evidence and genealogical relationships",
+   "Translate and cross-reference old vital and military records"
+  ],
+  "steps": [
+   "Clone the repository into your AI assistant's skills folder.",
+   "Initialize a new research case using the provided python script.",
+   "Add your document scans and let the assistant analyze and audit the evidence."
+  ],
+  "repo": "DenisSergeevitch/ex-ussr-kinship-research",
+  "at": "2026-10-27",
+  "source": "trending"
  }
 }
