@@ -1,6 +1,104 @@
 {
- "updated": "2026-10-27T12:21:08.905Z",
+ "updated": "2026-10-27T22:20:59.626Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot supports server-to-server authentication",
+   "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+   "date": "2026-10-27T21:36:55.000Z",
+   "summary": "GitHub Copilot added server-to-server authentication for GitHub Apps, allowing autonomous agents and backend services to make Copilot API requests directly.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.66.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0",
+   "date": "2026-10-27T20:26:28Z",
+   "summary": "Google released v0.66.0 of the Gemini CLI, bringing updates and fixes to the command-line tool for interacting with Gemini models.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/1626e35f4c5faf0a6322c19734afe250de33ce592fc7f239572cefe871190a5d/google-gemini/gemini-cli/releases/tag/v0.66.0"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.312",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
+   "date": "2026-10-27T20:24:20Z",
+   "summary": "Anthropic published release v2.1.312 of Claude Code, providing stability improvements and bug fixes for the terminal coding agent.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/fae0165df5f34b4174fbff3b1cb88ecace6db0821fcf5f379b43cc796c4306f1/anthropics/claude-code/releases/tag/v2.1.312"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.165.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+   "date": "2026-10-27T20:09:38Z",
+   "summary": "OpenAI published rust-v0.165.0 of Codex CLI, updating the command-line interface used for running OpenAI coding models.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/a1b84a1681486b7c1374942328f5d8e9d7ec8249ab48bc54a1b7173c2e682233/openai/codex/releases/tag/rust-v0.165.0"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Build specialized multimodal models with LFM3",
+   "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+   "date": "2026-10-27T17:16:52.000Z",
+   "summary": "Hugging Face released guides for LFM3, helping developers train and fine-tune specialized multimodal models.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/wEKXxH6qGa7vmHjn5KA-W.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Genie 4: A new generation of world simulation",
+   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+   "date": "2026-10-27T16:01:38.000Z",
+   "summary": "Google DeepMind announced Genie 4, a new real-time world simulation model designed to generate interactive environments.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://lh3.googleusercontent.com/i7iotPkcMbMubxRzAdriO5wsIsowROonBvjLNnmPbOaRgEb1k4LKTBqay5VrcPpZi0R4il_bYCCsPYQ0Gy_-XbAw66azAGEfE-E6_9Izz5apP0BMJVE=w1200-h630-n-nu-rw",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Coding From the Himalayas With an Offline AI Agent",
+   "url": "https://latent.space/p/offline-coding/",
+   "date": "2026-10-27T14:41:25.000Z",
+   "summary": "A guide detailing how to build a fully offline AI coding assistant using OpenCode, Ollama, and open-source models like Qwen.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/offline-coding/0e77383759fd31233d79236196b04b0826dad16a259b6a6ffbbac3aa595f1471.png"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Anthropic files for $2T IPO in 2 weeks: 1400% growth rate, 48% of revenue through cloud partners, 85% margin, $1B op profit in Q2, $134B cash in bank and $10B lifetime burn",
@@ -14,6 +112,49 @@
    "ai": true,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-anthropic-s1/688e4ae000846c5307adf1fb9a20b87c783c2df43e41746cad307c28bc888038.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+   "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+   "date": "2026-10-27T07:00:00.000Z",
+   "summary": "OpenAI is integrating Oracle's business applications into ChatGPT, allowing users to connect enterprise workflows and agents directly within the chat interface.",
+   "tags": [
+    "product",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/2NtuSxL760WPfJi1wbdQwh/c651b8dac0f73296f731f9fbe7b827d9/openai-oracle-apps-chatgpt-blue-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud",
+   "date": "2026-10-27",
+   "title": "Manage costs and demonstrate ROI for Claude Code on Google Cloud",
+   "summary": "Anthropic published cost-optimization guidance for running Claude Code on Google Cloud, helping developers monitor and reduce coding agent spend.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/how-to-manage-costs-and-demonstrate-roi-for-claude-code-on-google-cloud/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-for-financial-advisors",
+   "date": "2026-10-27",
+   "title": "Claude for Financial Advisors",
+   "summary": "Anthropic launched Claude for Financial Advisors, adding integrations with portfolio management tools and dedicated workflows tailored to wealth management.",
+   "tags": [
+    "skills",
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-for-financial-advisors/opengraph-image/og"
   },
   {
    "source": "Simon Willison",
@@ -72,6 +213,21 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/10/682153766-30ae8bb0-a424-401c-80e8-bb06bec001b2.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: Hob - Open-source, on device alternative to Claude Cowork and ChatGPT",
+   "url": "https://github.com/FrigadeHQ/hob",
+   "date": "2026-10-26T16:12:29Z",
+   "discuss": "https://news.ycombinator.com/item?id=50246238",
+   "summary": "Hob is an open-source tool that allows developers to run local, privacy-focused desktop AI agents as an alternative to cloud-hosted workspaces.",
+   "tags": [
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://repository-images.githubusercontent.com/1419901875/bef3a5ac-8f6b-4f29-8f2a-30f31c1771d7"
   },
   {
    "source": "OpenAI",
@@ -2082,160 +2238,6 @@
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
    "audience": "dev"
-  },
-  {
-   "source": "OpenAI",
-   "title": "SentinelOne cuts malware analysis from weeks to hours",
-   "url": "https://openai.com/index/sentinelone",
-   "date": "2026-10-14T12:00:00.000Z",
-   "summary": "With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6LgeCJxMCVafjSThCrAJNz/4859e929cd3c29c50f70ee81ff920dab/sentinelone-woven-texture-social-larger-logos.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Amp puts AI agents to work beyond code with OpenAI models",
-   "url": "https://openai.com/index/amp-beyond-coding",
-   "date": "2026-10-14T12:00:00.000Z",
-   "summary": "Amp released a platform showcasing new AI agent capabilities powered by OpenAI models.",
-   "tags": [
-    "agents",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/4cxTIUhXa03TEYCnkIcMCu/29e6065058ed969022021186f994dad6/amp-beyond-coding-coiled-connection-seo-open-graph-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/singapore-office-opening",
-   "date": "2026-10-14T08:30:00.000Z",
-   "title": "Singapore office and government MOU | Anthropic",
-   "summary": "Anthropic opened a new office in Singapore and partnered with the government on AI safety and evaluation.",
-   "tags": [
-    "safety",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.anthropic.com/api/opengraph-illustration?name=Node%20Globe&backgroundColor=olive"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Block is building AI-powered security with OpenAI technology",
-   "url": "https://openai.com/index/block-ai-powered-security",
-   "date": "2026-10-14T07:00:00.000Z",
-   "summary": "Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6csT9lb6PlJ3KoxJDX6p7s/c94f16d2eadb4b01cb428ce5c62db7a2/Block-AI-Powered-Security-SEO-Image-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
-   "url": "https://openai.com/index/third-moment-research",
-   "date": "2026-10-14T07:00:00.000Z",
-   "summary": "Third Moment Research demonstrated long-running AI agents built using new OpenAI models for cybersecurity tasks.",
-   "tags": [
-    "agents",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/m0YDNMUPfmBJYf8nw2LGR/202c3cb46da0506d77cce90027c1ef9c/third-moment-research-first-light-social-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
-   "url": "https://latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon/",
-   "date": "2026-10-14T05:40:28.000Z",
-   "summary": "Google reached general availability for Gemini 4 Argon, offering verified gains across major coding and agent benchmarks. Developers can now deploy this frontier-grade model into general production workflows.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-ai-engineer-nyc-gemini-4-argon/022b64bcb6303dada3af8034e0e3aa62b8d4939cc23d599389f8b7c39eab7ad1.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] AI Engineer NYC: Gemini 4 Argon, Vals AI Benchmarks",
-   "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
-   "date": "2026-10-14T05:40:28.000Z",
-   "summary": "Gemini 4 Argon is now generally available, with independent coding benchmarks showing performance matching initial claims.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/youtube/w_728,c_limit/akEqiXFo3GM",
-   "audience": "dev"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.299",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.299",
-   "date": "2026-10-14T02:49:42Z",
-   "summary": "Claude Code version 2.1.299 has been released. Developers using this coding tool should update to receive the latest bug fixes and improvements.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/8f689e27022a4a2781f8eda10fe8575b846ba8fae9b2be3f7cf6c405c6e5ab9d/anthropics/claude-code/releases/tag/v2.1.299",
-   "audience": "dev"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Google DeepMind and Singapore Government announce new AI tool to protect citizens against scams",
-   "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-   "date": "2026-10-14T02:00:14.000Z",
-   "summary": "Google DeepMind and the Singapore Government released an on-device tool using Gemma models to detect scams in chats locally. Users benefit from scam protection without their chat data leaving the device.",
-   "tags": [
-    "models",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://lh3.googleusercontent.com/m134KeViYlQXqWaac-fW1TuTvCk1ZQ2EnHF72xH6anzjd4iKukfGHvV3o5PiDTJfSytjxUF2E1rwAAHlZ4ZyCkGkOHV7Uij2ZZ3zsbVZUAFCMCccZQ=w1200-h630-n-nu-rw",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "The EU’s next chapter in AI is agentic",
-   "url": "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic",
-   "date": "2026-10-14T00:00:00.000Z",
-   "summary": "New analysis shows how agentic AI adoption is growing across EU enterprises and small businesses—and where deeper use could unlock more value.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6xrAX2ILJHXpMMsuHeU637/30512c9697f4e9214c5466e5a7ddda75/the-eus-next-chapter-in-ai-is-agentic-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
-   "date": "2026-10-14",
-   "title": "Agent observability on the Claude Platform",
-   "summary": "Anthropic introduced new agent observability features on the Claude Platform.",
-   "tags": [
-    "agents",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://assets.claude.com/f66071070c4701ea2c37fc01b3c0f83623cf29d3.jpg?w=2400&h=1260&fit=crop"
   }
  ]
 }

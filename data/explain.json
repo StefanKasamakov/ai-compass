@@ -15979,5 +15979,39 @@
   "repo": "DenisSergeevitch/ex-ussr-kinship-research",
   "at": "2026-10-27",
   "source": "trending"
+ },
+ "HelixDB/helix-foundry": {
+  "cat": "memory",
+  "kind": "Knowledge graph builder",
+  "what": "Helix Foundry turns scattered company databases, files, and SaaS data into a connected graph you can explore and query with AI.",
+  "why": "Company information is often trapped in separate databases, files, and SaaS services. Reach for Helix Foundry when you need an automated workflow to link scattered data sources into a searchable knowledge structure with cited answers.",
+  "level": "setup",
+  "start": "git clone https://github.com/helixdb/helix-foundry.git && cd helix-foundry && docker compose up -d --wait",
+  "caution": "",
+  "alts": [
+   "microsoft/graphrag",
+   "getzep/graphiti",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "Turns your documents and database records into a connected data map so you can ask questions with clear sources.",
+  "tags": [
+   "knowledge",
+   "research",
+   "private"
+  ],
+  "useFor": [
+   "Connect databases and SaaS tools together",
+   "Build structured knowledge graphs automatically",
+   "Query company files with source citations"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/helixdb/helix-foundry.git` and enter the folder.",
+   "Start the containers locally by running `docker compose up -d --wait`.",
+   "Open http://localhost:3000 in your web browser to begin connecting data sources."
+  ],
+  "repo": "HelixDB/helix-foundry",
+  "at": "2026-10-27",
+  "source": "trending"
  }
 }
