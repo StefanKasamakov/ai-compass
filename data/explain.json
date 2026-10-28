@@ -16115,5 +16115,112 @@
   "repo": "anisayari/sparky",
   "at": "2026-10-28",
   "source": "trending"
+ },
+ "jakubkrehel/skills": {
+  "cat": "harness",
+  "kind": "UI design skills",
+  "what": "A collection of agent skills that instruct AI coding tools on UI polish, typography, accessibility, and color systems.",
+  "why": "AI assistants often generate generic layouts with poor contrast, messy spacing, and missing accessibility attributes. Use this when you want your coding assistant to adhere to professional design-engineering standards.",
+  "level": "setup",
+  "start": "npx skills add jakubkrehel/skills",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "mattpocock/skills",
+   "pbakaus/impeccable"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Add-on skills that guide your AI coding assistant to create polished, accessible, and professional website designs.",
+  "tags": [
+   "supercharge",
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Audit web interfaces for accessibility, typography, and visual polish",
+   "Generate semantic color palettes and measured contrast scales",
+   "Stress test interface components across edge cases and states"
+  ],
+  "steps": [
+   "Install the skills into your workspace using `npx skills add jakubkrehel/skills`.",
+   "For Claude Code, add the marketplace source using `/plugin marketplace add jakubkrehel/skills`.",
+   "Ask your coding assistant to run skills like better-interface or better-accessibility on your components."
+  ],
+  "repo": "jakubkrehel/skills",
+  "at": "2026-10-28",
+  "source": "trending"
+ },
+ "macro-inc/macro": {
+  "cat": "builders",
+  "kind": "Team workspace app",
+  "what": "Macro is an all-in-one team workspace that combines email, chat, docs, tasks, CRM, and AI agents into a single shared interface.",
+  "why": "Teams often waste time switching context between Slack, Notion, Linear, and HubSpot. Macro unifies these tools into a connected system with shared memory for both team members and AI assistants.",
+  "level": "easy",
+  "start": "Sign up for an account at macro.com/app",
+  "caution": "The repository is licensed under AGPL-3.0, which imposes strict copyleft terms if you modify and host the project for others.",
+  "alts": [
+   "lobehub/lobehub",
+   "open-webui/open-webui",
+   "Mintplex-Labs/anything-llm"
+  ],
+  "packages": [],
+  "plain": "An all-in-one workspace combining chat, email, notes, tasks, and automated assistants for your entire team.",
+  "tags": [
+   "automate",
+   "docs",
+   "knowledge"
+  ],
+  "useFor": [
+   "Combine team chat email and docs into one view",
+   "Track customer contacts alongside daily project discussions",
+   "Give AI assistants direct context across team files and tasks"
+  ],
+  "steps": [
+   "Visit macro.com/app to create a team workspace",
+   "Connect your email accounts and invite your team members",
+   "Create tasks and notes directly inside team chat channels"
+  ],
+  "repo": "macro-inc/macro",
+  "at": "2026-10-28",
+  "source": "trending"
+ },
+ "expo/skills": {
+  "cat": "harness",
+  "kind": "Expo agent skills",
+  "what": "A collection of official AI agent skills from the Expo team for building, styling, upgrading, and deploying Expo and React Native apps.",
+  "why": "AI assistants often hallucinate deprecated mobile code or mess up project layouts. Use this to feed your AI coding assistant official rules for Expo APIs and EAS deployment.",
+  "level": "easy",
+  "start": "npx skills@latest add expo/skills --skill '*'",
+  "caution": "Several included skills involve paid Expo Application Services (EAS) features, which can incur build and cloud hosting costs.",
+  "alts": [
+   "google/skills",
+   "anthropics/claude-code",
+   "cline/cline"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Teaches your AI coding assistant the right ways to build, update, and deploy mobile apps with Expo.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Build mobile screens with correct Expo Router navigation",
+   "Automate app store deployment and EAS workflows",
+   "Upgrade Expo SDK versions and resolve broken packages"
+  ],
+  "steps": [
+   "Install skills across your coding tools with `npx skills@latest add expo/skills --skill '*'`.",
+   "Alternatively, install the official plugin inside Claude Code using `claude plugin install expo@claude-plugins-official`.",
+   "Restart your coding assistant session so it loads the new skill definitions.",
+   "Ask your assistant Expo tasks, like creating tab layouts or upgrading SDK versions."
+  ],
+  "repo": "expo/skills",
+  "at": "2026-10-28",
+  "source": "trending"
  }
 }
