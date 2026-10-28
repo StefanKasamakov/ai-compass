@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T22:20:59.626Z",
+ "updated": "2026-10-28T05:51:29.829Z",
  "items": [
   {
    "source": "GitHub",
@@ -56,6 +56,21 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/a1b84a1681486b7c1374942328f5d8e9d7ec8249ab48bc54a1b7173c2e682233/openai/codex/releases/tag/rust-v0.165.0"
+  },
+  {
+   "source": "Latent Space",
+   "title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
+   "url": "https://latent.space/p/opus55/",
+   "date": "2026-10-27T18:53:10.000Z",
+   "summary": "Anthropic engineers explained how they separate core LLM reasoning from action execution tools when building Claude platform agents.",
+   "tags": [
+    "agents",
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://latent.space/og/card/post/opus55/424ddad38742d39855425564a6d71e585315f47ab534e7bd8abe95172704d214.png"
   },
   {
    "source": "Hugging Face",
@@ -2224,20 +2239,6 @@
    "ai": true,
    "image": "",
    "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "HiRO-ACEv2: Simulating extreme weather at 3 km resolution for a fraction of the cost",
-   "url": "https://huggingface.co/blog/allenai/hiro-acev2",
-   "date": "2026-10-14T16:12:42.000Z",
-   "summary": "Hugging Face published HiRO-ACEv2 for high-resolution extreme weather simulation.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/Y8t8GnfI2lUa40iX4_sxA.png",
-   "audience": "dev"
   }
  ]
 }
