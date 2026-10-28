@@ -16222,5 +16222,76 @@
   "repo": "expo/skills",
   "at": "2026-10-28",
   "source": "trending"
+ },
+ "KnifeLemon/Droidline": {
+  "cat": "frameworks",
+  "kind": "Android automation tool",
+  "what": "Droidline automates real Android phones from code or AI agents without requiring USB cables, ADB, or root access.",
+  "why": "Testing mobile apps or automating phone workflows usually requires fragile USB debugging setups or rooted devices. Reach for this when you want to control physical Android devices via code or give AI assistants direct phone access via MCP.",
+  "level": "setup",
+  "start": "droidline serve",
+  "caution": "Requires sideloading an APK on your phone and granting powerful accessibility, notification, and background battery permissions.",
+  "alts": [
+   "browser-use/browser-use",
+   "Skyvern-AI/skyvern",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [
+   "droidline"
+  ],
+  "plain": "Let your computer or AI assistant tap, type, and control a real Android phone over Wi-Fi without cables.",
+  "tags": [
+   "automate",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Automate repetitive daily tasks and tests across real Android devices",
+   "Let AI assistants view and interact with live phone screens",
+   "Run automated testing on multi-app flows like SMS verification"
+  ],
+  "steps": [
+   "Download and run the server on your computer using `droidline serve`.",
+   "Install the Droidline APK on your Android device and grant accessibility and keyboard permissions.",
+   "Run `droidline pair` in your terminal and scan the generated QR code with your phone.",
+   "Control your phone using scripts, the command line, or an AI assistant connector."
+  ],
+  "repo": "KnifeLemon/Droidline",
+  "at": "2026-10-28",
+  "source": "trending"
+ },
+ "haydenschmitty/floorplan": {
+  "cat": "harness",
+  "kind": "Claude Code visual plugin",
+  "what": "Floorplan is a plugin for Claude Code that generates an interactive, plain-English map of your codebase in your browser.",
+  "why": "It helps developers and creators understand how different components, files, and server requests fit together without reading raw code. Reach for it when onboarding to a project, reviewing AI-generated changes, or tracing user actions across multiple code repositories.",
+  "level": "setup",
+  "start": "claude plugin marketplace add haydenschmitty/floorplan",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "obra/superpowers",
+   "mksglu/context-mode"
+  ],
+  "packages": [],
+  "plain": "Creates a clickable map in your web browser showing how different parts of your software project connect together.",
+  "tags": [
+   "code",
+   "supercharge",
+   "knowledge"
+  ],
+  "useFor": [
+   "Visualize codebase structure and connections in an interactive browser map",
+   "Trace requests step by step across frontends and backends",
+   "Identify security issues and oversized files with built-in health checks"
+  ],
+  "steps": [
+   "Add the marketplace plugin using `claude plugin marketplace add haydenschmitty/floorplan`.",
+   "Install the plugin using `claude plugin install floorplan@floorplan`.",
+   "Open your project in Claude Code and prompt Claude to make a floorplan."
+  ],
+  "repo": "haydenschmitty/floorplan",
+  "at": "2026-10-28",
+  "source": "trending"
  }
 }

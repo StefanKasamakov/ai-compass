@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-28T11:11:21.968Z",
- "scanned": "2026-10-25T21:32:51.486Z",
- "claudeVersion": "2.1.310",
- "total": 6125,
+ "updated": "2026-10-28T13:40:26.136Z",
+ "scanned": "2026-10-28T11:47:38.509Z",
+ "claudeVersion": "2.1.312",
+ "total": 6438,
  "categories": [
   [
    "builtin",
@@ -169,7 +169,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 268,
+   "stars": 296,
    "license": "MIT",
    "pushed": "2026-10-22T05:45:53Z",
    "marketplace": null,
@@ -204,7 +204,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 252,
+   "stars": 260,
    "license": "MIT",
    "pushed": "2026-10-12T10:02:19Z",
    "marketplace": "claude-image-view",
@@ -252,9 +252,9 @@
     "AssistantMessage"
    ],
    "validated": "passed",
-   "stars": 189,
+   "stars": 222,
    "license": "MIT",
-   "pushed": "2026-10-24T18:12:37Z",
+   "pushed": "2026-10-27T15:46:34Z",
    "marketplace": null,
    "plugin": "prismantis",
    "featured": true,
@@ -288,7 +288,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 160,
+   "stars": 177,
    "license": "MIT",
    "pushed": "2026-10-24T12:49:02Z",
    "marketplace": "claude-flightdeck",
@@ -322,16 +322,16 @@
    "sees": [
     "every tool call",
     "Read calls",
-    "Grep|Glob calls",
+    "? calls",
     "every prompt"
    ],
    "surfaces": [
     "Pane"
    ],
    "validated": "passed",
-   "stars": 295,
+   "stars": 310,
    "license": "MIT",
-   "pushed": "2026-10-25T13:28:20Z",
+   "pushed": "2026-10-28T08:14:08Z",
    "marketplace": "claude-code-filetree",
    "plugin": "filetree",
    "featured": true,
@@ -373,7 +373,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 45,
+   "stars": 47,
    "license": "MIT",
    "pushed": "2026-10-24T09:48:35Z",
    "marketplace": "oikon48",
@@ -438,7 +438,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 10,
+   "stars": 11,
    "license": null,
    "pushed": "2026-10-16T06:55:45Z",
    "marketplace": "claude-mods",
@@ -469,7 +469,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 10,
+   "stars": 11,
    "license": null,
    "pushed": "2026-10-16T06:55:45Z",
    "marketplace": "claude-mods",
@@ -499,7 +499,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 10,
+   "stars": 11,
    "license": null,
    "pushed": "2026-10-16T06:55:45Z",
    "marketplace": "claude-mods",
@@ -562,7 +562,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 26,
+   "stars": 27,
    "license": "Apache-2.0",
    "pushed": "2026-10-09T00:40:26Z",
    "marketplace": "claude-agent-flow",
@@ -626,7 +626,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 23,
+   "stars": 24,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -661,7 +661,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 23,
+   "stars": 24,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -726,7 +726,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 21,
+   "stars": 22,
    "license": "Apache-2.0",
    "pushed": "2026-10-22T05:49:31Z",
    "marketplace": "augiefra-mods",
@@ -806,7 +806,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-10T03:07:28Z",
+   "pushed": "2026-10-28T09:20:21Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "hud",
    "media": {
@@ -844,7 +844,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-10T03:07:28Z",
+   "pushed": "2026-10-28T09:20:21Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "todo-bar",
    "media": {
@@ -882,7 +882,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-10T03:07:28Z",
+   "pushed": "2026-10-28T09:20:21Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "receipt",
    "media": {
@@ -920,7 +920,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-10T03:07:28Z",
+   "pushed": "2026-10-28T09:20:21Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "ts-band",
    "media": {
@@ -956,7 +956,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 16,
+   "stars": 18,
    "license": "MIT",
    "pushed": "2026-10-15T00:44:49Z",
    "marketplace": "claude-statuspane",
@@ -1095,9 +1095,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 385,
+   "stars": 401,
    "license": "MIT",
-   "pushed": "2026-10-23T23:02:30Z",
+   "pushed": "2026-10-27T15:23:48Z",
    "marketplace": "claude-code-mods",
    "plugin": "context-bar",
    "media": {
@@ -1146,7 +1146,7 @@
    "validated": "passed",
    "stars": 6,
    "license": "MIT",
-   "pushed": "2026-10-23T07:14:08Z",
+   "pushed": "2026-10-27T18:36:25Z",
    "marketplace": "claude-mods",
    "plugin": "glanceflow",
    "media": {
@@ -1276,7 +1276,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 0,
+   "stars": 1,
    "license": "MIT",
    "pushed": "2026-10-10T17:40:13Z",
    "marketplace": "headroom",
@@ -1296,13 +1296,15 @@
    "plain": "One line above the prompt with the 5-hour and 7-day limits, context with a compaction count, minutes left on the prompt cache, session cost and running subagents, with details on hover.",
    "cat": "usage",
    "by": "Andrei Shivalin",
-   "reach": 2,
+   "reach": 3,
    "reachLabels": [
+    "network",
     "runs processes",
     "writes files",
     "reads files",
     "reads env vars",
     "reads mod state",
+    "requests an Anthropic credential handle",
     "draws"
    ],
    "sees": [
@@ -1317,7 +1319,7 @@
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
-   "pushed": "2026-10-20T08:32:18Z",
+   "pushed": "2026-10-27T22:45:14Z",
    "marketplace": "claude-code-limits",
    "plugin": "limits",
    "media": {
@@ -1346,7 +1348,7 @@
     "Spinner"
    ],
    "validated": "warnings",
-   "stars": 108,
+   "stars": 109,
    "license": "MIT",
    "pushed": "2026-09-14T23:01:33Z",
    "marketplace": "mindful-claude",
@@ -1559,7 +1561,7 @@
     "Spinner"
    ],
    "validated": "passed",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
    "pushed": "2026-10-24T00:23:34Z",
    "marketplace": null,
@@ -1596,9 +1598,9 @@
     "CommandOutput"
    ],
    "validated": "passed",
-   "stars": 4,
+   "stars": 5,
    "license": "MIT",
-   "pushed": "2026-10-23T02:06:49Z",
+   "pushed": "2026-10-28T04:54:17Z",
    "marketplace": "nibbl",
    "plugin": "nibbl",
    "media": {
@@ -1658,7 +1660,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 23,
+   "stars": 24,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -1696,7 +1698,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 122,
+   "stars": 123,
    "license": "MIT",
    "pushed": "2026-10-13T05:05:17Z",
    "marketplace": "intermission",
@@ -1739,7 +1741,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-10T03:07:28Z",
+   "pushed": "2026-10-28T09:20:21Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "spinner",
    "media": {
@@ -1776,7 +1778,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-10T03:07:28Z",
+   "pushed": "2026-10-28T09:20:21Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "hitokoto",
    "media": {
@@ -1906,9 +1908,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 33,
+   "stars": 35,
    "license": null,
-   "pushed": "2026-10-22T08:04:25Z",
+   "pushed": "2026-10-26T09:57:48Z",
    "marketplace": "claude-pokemon",
    "plugin": "pokemon",
    "media": {
@@ -2307,7 +2309,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 6,
+   "stars": 7,
    "license": "MIT",
    "pushed": "2026-10-10T15:53:07Z",
    "marketplace": "cc-pr-tracker",
@@ -2317,34 +2319,6 @@
     "type": "image",
     "kb": 77
    }
-  },
-  {
-   "key": "ray-amjad/awesome-claude-code-function-hooks/vercel-deploy-status",
-   "name": "vercel-deploy-status",
-   "repo": "ray-amjad/awesome-claude-code-function-hooks",
-   "path": "plugins/vercel-deploy-status",
-   "url": "https://github.com/ray-amjad/awesome-claude-code-function-hooks/tree/main/plugins/vercel-deploy-status",
-   "plain": "The Vercel deploy queue of the linked project under the prompt, woken by a push or a merge.",
-   "cat": "git",
-   "by": "Ray Amjad",
-   "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "reads files",
-    "draws"
-   ],
-   "sees": [
-    "Bash calls"
-   ],
-   "surfaces": [
-    "AbovePrompt"
-   ],
-   "validated": "passed",
-   "stars": 95,
-   "license": "MIT",
-   "pushed": "2026-10-18T08:36:50Z",
-   "marketplace": "claude-code-mods",
-   "plugin": "vercel-deploy-status"
   },
   {
    "key": "ippoan/gh-actions-live/pr-bridge-watch",
@@ -2372,7 +2346,7 @@
    "validated": "passed",
    "stars": 0,
    "license": null,
-   "pushed": "2026-10-21T03:46:59Z",
+   "pushed": "2026-10-28T04:19:10Z",
    "marketplace": "gh-actions-live",
    "plugin": "pr-bridge-watch"
   },
@@ -2435,7 +2409,7 @@
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-10-19T16:50:07Z",
+   "pushed": "2026-10-26T16:50:30Z",
    "marketplace": "pr-pulse",
    "plugin": "pr-pulse",
    "media": {
@@ -2503,9 +2477,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 385,
+   "stars": 401,
    "license": "MIT",
-   "pushed": "2026-10-23T23:02:30Z",
+   "pushed": "2026-10-27T15:23:48Z",
    "marketplace": "claude-code-mods",
    "plugin": "review-watch",
    "media": {
@@ -2573,9 +2547,9 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 2,
+   "stars": 4,
    "license": "MIT",
-   "pushed": "2026-10-23T07:52:54Z",
+   "pushed": "2026-10-28T06:20:03Z",
    "marketplace": "review-inbox",
    "plugin": "review-inbox",
    "media": {
@@ -2680,9 +2654,9 @@
    ],
    "surfaces": [],
    "validated": "passed",
-   "stars": 6,
+   "stars": 7,
    "license": "Apache-2.0",
-   "pushed": "2026-10-19T19:57:31Z",
+   "pushed": "2026-10-26T19:58:02Z",
    "marketplace": null,
    "plugin": "honmoon-redact"
   },
@@ -2732,7 +2706,7 @@
    "validated": "passed",
    "stars": 5,
    "license": null,
-   "pushed": "2026-10-25T20:59:29Z",
+   "pushed": "2026-10-28T11:07:42Z",
    "marketplace": null,
    "plugin": "plugin-health"
   },
@@ -2758,7 +2732,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 23,
+   "stars": 24,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -2915,9 +2889,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 385,
+   "stars": 401,
    "license": "MIT",
-   "pushed": "2026-10-23T23:02:30Z",
+   "pushed": "2026-10-27T15:23:48Z",
    "marketplace": "claude-code-mods",
    "plugin": "blast-radius",
    "media": {
@@ -3154,9 +3128,9 @@
    ],
    "surfaces": [],
    "validated": "passed",
-   "stars": 46,
+   "stars": 48,
    "license": "MIT",
-   "pushed": "2026-10-23T01:37:47Z",
+   "pushed": "2026-10-27T17:19:55Z",
    "marketplace": null,
    "plugin": "kindex-modern"
   },
@@ -3228,7 +3202,7 @@
    "validated": "warnings",
    "stars": 11,
    "license": "MIT",
-   "pushed": "2026-10-25T16:58:36Z",
+   "pushed": "2026-10-27T02:18:34Z",
    "marketplace": null,
    "plugin": "commonplace"
   },
@@ -3279,7 +3253,7 @@
    ],
    "surfaces": [],
    "validated": "passed",
-   "stars": 3,
+   "stars": 4,
    "license": "MIT",
    "pushed": "2026-10-09T22:12:11Z",
    "marketplace": "harness-scope",
@@ -3335,7 +3309,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 12,
+   "stars": 13,
    "license": "MIT",
    "pushed": "2026-10-07T16:47:01Z",
    "marketplace": "pinboard",
@@ -3532,9 +3506,9 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 4242,
+   "stars": 4311,
    "license": "MIT",
-   "pushed": "2026-10-21T16:55:29Z",
+   "pushed": "2026-10-28T11:29:14Z",
    "marketplace": "terminal-browser",
    "plugin": "terminal-browser"
   },
@@ -3579,7 +3553,7 @@
     "AskUserQuestion"
    ],
    "validated": "passed",
-   "stars": 208,
+   "stars": 223,
    "license": "MIT",
    "pushed": "2026-10-23T20:02:09Z",
    "marketplace": "hellosverre-mods",
@@ -3722,7 +3696,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 22,
+   "stars": 24,
    "license": null,
    "pushed": "2026-10-10T02:01:00Z",
    "marketplace": "explain-as",
@@ -3849,9 +3823,9 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 385,
+   "stars": 401,
    "license": "MIT",
-   "pushed": "2026-10-23T23:02:30Z",
+   "pushed": "2026-10-27T15:23:48Z",
    "marketplace": "claude-code-mods",
    "plugin": "md-preview",
    "media": {
@@ -4144,7 +4118,7 @@
    "validated": "passed",
    "stars": 6,
    "license": null,
-   "pushed": "2026-10-25T18:28:50Z",
+   "pushed": "2026-10-26T15:25:27Z",
    "marketplace": "autodev",
    "plugin": "autodev-core"
   },
@@ -4206,7 +4180,7 @@
    "validated": "passed",
    "stars": 8,
    "license": "Apache-2.0",
-   "pushed": "2026-10-25T14:36:20Z",
+   "pushed": "2026-10-27T18:36:52Z",
    "marketplace": null,
    "plugin": "autotel"
   },
@@ -4261,7 +4235,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 23,
+   "stars": 24,
    "license": "MIT",
    "pushed": "2026-10-03T08:35:11Z",
    "marketplace": "claude-code-mods",
@@ -4571,9 +4545,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 385,
+   "stars": 401,
    "license": "MIT",
-   "pushed": "2026-10-23T23:02:30Z",
+   "pushed": "2026-10-27T15:23:48Z",
    "marketplace": "claude-code-mods",
    "plugin": "mission-control",
    "media": {
