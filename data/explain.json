@@ -16293,5 +16293,107 @@
   "repo": "haydenschmitty/floorplan",
   "at": "2026-10-28",
   "source": "trending"
+ },
+ "Leonxlnx/taste-skill": {
+  "cat": "harness",
+  "kind": "Design agent skill",
+  "what": "An agent skill that gives AI coding tools art direction, stock imagery, and browser-based quality checks to build custom web pages.",
+  "why": "It prevents AI agents from generating generic, repetitive landing pages and app screens. Reach for it when building frontends with Claude Code or Codex that need strong visual identity and real image credits.",
+  "level": "setup",
+  "start": "`npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"`",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "bmad-code-org/BMAD-METHOD"
+  ],
+  "packages": [],
+  "plain": "It gives your AI coding helper rules and real images to design better-looking websites instead of generic pages.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Design web landing pages with real stock photos",
+   "Build app screens and dashboards with custom styles",
+   "Review web layouts automatically in a real browser"
+  ],
+  "steps": [
+   "Run `npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"` in your terminal.",
+   "Make sure you have Node 22 or newer and Chrome or Edge installed.",
+   "Ask your AI coding assistant to design a site or dashboard."
+  ],
+  "repo": "Leonxlnx/taste-skill",
+  "at": "2026-10-28",
+  "source": "trending"
+ },
+ "MiniMax-AI/mcode-stack": {
+  "cat": "harness",
+  "kind": "Agent skill pack",
+  "what": "A collection of skills and workflows used by the MiniMax team to guide AI coding assistants.",
+  "why": "AI coding agents often lose context or perform messy edits during long sessions. Reach for this to equip your agent with structured rules for code reviews, context optimization, and subtask management.",
+  "level": "setup",
+  "start": "git clone https://github.com/MiniMax-AI/mcode-stack.git ~/mcode-stack",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "bmad-code-org/BMAD-METHOD"
+  ],
+  "packages": [],
+  "plain": "It gives your AI coding helper step-by-step rules for reviewing code, breaking down tasks, and managing memory.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Add structured code review rules to AI coding tools",
+   "Optimize context usage and session memory during long runs",
+   "Guide agents on splitting complex tasks across sub-agents"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/MiniMax-AI/mcode-stack.git ~/mcode-stack`",
+   "Copy desired skill folders into your local ~/.agents/skills directory",
+   "Type /skills inside your AI coding tool to view and run them"
+  ],
+  "repo": "MiniMax-AI/mcode-stack",
+  "at": "2026-10-28",
+  "source": "trending"
+ },
+ "TheLastOxygen/mafdet": {
+  "cat": "local",
+  "kind": "Real-time local LLM chat",
+  "what": "MAFDET is a local chat application that processes and reasons through your message while you type, dramatically reducing wait times when you press Enter.",
+  "why": "Standard chat interfaces leave your computer idle while you type and only start processing text after you hit send. Reach for MAFDET when running local models on modest hardware to eliminate prompt prefill time and start generating responses faster.",
+  "level": "easy",
+  "start": "pipx install mafdet",
+  "caution": "This software is currently a prototype research project, and speculative reasoning while typing can increase background hardware usage if you rewrite prompts frequently.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "open-webui/open-webui"
+  ],
+  "packages": [
+   "mafdet"
+  ],
+  "plain": "A chat program that reads and thinks about your message while you type, so answers appear faster.",
+  "tags": [
+   "private",
+   "supercharge"
+  ],
+  "useFor": [
+   "Chat with local AI models with reduced post-send latency",
+   "Run speculative reasoning on budget graphics cards, Macs, or CPUs",
+   "Download and manage compatible GGUF models directly inside the application"
+  ],
+  "steps": [
+   "Install the package by running `pipx install mafdet` in your terminal.",
+   "Launch the app interface by typing `mafdet`.",
+   "Follow the setup guide to automatically configure llama.cpp and download optimal models for your hardware."
+  ],
+  "repo": "TheLastOxygen/mafdet",
+  "at": "2026-10-28",
+  "source": "trending"
  }
 }

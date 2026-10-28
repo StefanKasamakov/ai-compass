@@ -1,6 +1,136 @@
 {
- "updated": "2026-10-28T13:06:18.388Z",
+ "updated": "2026-10-28T22:39:55.462Z",
  "items": [
+  {
+   "source": "DeepMind",
+   "title": "Gemini 4 Carbon: Our next frontier model",
+   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+   "date": "2026-10-28T17:00:58.000Z",
+   "discuss": "https://news.ycombinator.com/item?id=50276792",
+   "summary": "Google DeepMind announced Gemini 4 Carbon, its newest frontier-class AI model.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "Route and orchestrate models with GitHub Copilot Fusion",
+   "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+   "date": "2026-10-28T16:00:00.000Z",
+   "summary": "GitHub Copilot Fusion is now generally available, automatically orchestrating and routing prompts to the best model for each task.",
+   "tags": [
+    "coding",
+    "product",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/683299408-b1d020a6-0c6d-49a5-ab57-5434d64fb7f9.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub intelligence puts your code, context, and history to work",
+   "url": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work",
+   "date": "2026-10-28T15:40:00.000Z",
+   "summary": "GitHub added contextual intelligence to Copilot, integrating repository conventions, custom skills, and team history into agent responses.",
+   "tags": [
+    "coding",
+    "skills",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/Changelog_NewRelease_Unfurl_GitHubIntelligence.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot in VS Code, Universe releases",
+   "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
+   "date": "2026-10-28T15:33:00.000Z",
+   "summary": "GitHub rolled out major updates to Copilot in VS Code, expanding model selection options and runtime environments for coding agents.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/682195464-b41a2f6c-87a4-4a31-bdb4-78c524ea0fe5.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "Generate and edit images directly in Copilot",
+   "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+   "date": "2026-10-28T15:30:55.000Z",
+   "summary": "GitHub Copilot now supports generating and editing images directly inside the editor using natural language requests.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/Changelog_NewRelease_Unfurl_GenerateImagesCopilotApp.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot Fusion now supports selection of local models",
+   "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+   "date": "2026-10-28T15:30:42.000Z",
+   "summary": "GitHub Copilot Fusion entered preview support for local models, allowing developers to route coding queries between local and cloud LLMs.",
+   "tags": [
+    "coding",
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/683227812-650111ed-c80a-46bf-836c-c5ced7ee95ff.png"
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub Agentic Workflows generally available",
+   "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+   "date": "2026-10-28T15:30:15.000Z",
+   "summary": "GitHub Agentic Workflows is now generally available, enabling developers to automate reasoning-heavy repository tasks like issue triage and CI debugging.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/10/680621053-8ccb2d63-3035-4ec2-b12d-2455b119183a.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+   "date": "2026-10-28T14:58:17.000Z",
+   "summary": "NVIDIA released Nemotron 3.5 Transcribe and Granary v2, open speech-to-text models that can be prompted and adapted across languages.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/68127936de624fb6f57d9989/3vFxCEUXz_xJVrTBr4hNr.jpeg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+   "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+   "date": "2026-10-28T13:15:00.000Z",
+   "summary": "ServiceNow is integrating OpenAI models and agent capabilities directly into enterprise workflows while connecting ServiceNow actions into ChatGPT and Codex.",
+   "tags": [
+    "agents",
+    "product",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/Gp8jNpLlW9YG0p7vG3UfM/c73fa4b5caa4ad978b022dc0123b801b/openai-servicenow-partnership-expansion-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "OpenAI",
    "title": "Legora is building the agentic operating system for legal work",
@@ -24,6 +154,33 @@
    "ai": false,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/c7f8e2dbe8139bba15d3c59987deb0b2ed5de83f9aded73244cc1febb17cee0c.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
+   "date": "2026-10-28",
+   "title": "Smart reports, surveys, and pooled group budgets for Claude Enterprise",
+   "summary": "Anthropic launched smart analytics reports, user surveys, and pooled group budgets for Claude Enterprise administrators.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+   "date": "2026-10-28",
+   "title": "Introducing artifacts for legal work with Claude",
+   "summary": "Anthropic introduced legal artifacts and third-party connectors to help legal teams draft and analyze agreements within Claude.",
+   "tags": [
+    "product",
+    "skills"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work/opengraph-image/og"
   },
   {
    "source": "GitHub",
@@ -2055,156 +2212,6 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/4HTc2pk7XGFhzDU8RX0Ivg/ff2b922fa1914350c9d800da622ebe04/stack-overflow-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
-   "url": "https://huggingface.co/blog/reflection-beam",
-   "date": "2026-10-16T00:00:00.000Z",
-   "summary": "",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://huggingface.co/blog/assets/reflection-beam/thumbnail.jpg"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day",
-   "date": "2026-10-16",
-   "title": "How an Anthropic Japan BDR runs his day with a fleet of Claude agents",
-   "summary": "How one business development representative clears his inbound queue and drafts bilingual customer emails with Claude Managed Agents and Claude Tag.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day/opengraph-image/og"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.163.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0",
-   "date": "2026-10-15T21:30:38Z",
-   "summary": "A new version of the Codex CLI tool was released on GitHub.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/8ca52016e0bcccdc63200b197368503fb71524266141e884f88114fc768c2b66/openai/codex/releases/tag/rust-v0.163.0",
-   "audience": "dev"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Granite Switch 4.1: Chat, Decisions, and Speech from One Endpoint",
-   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1",
-   "date": "2026-10-15T20:34:01.000Z",
-   "summary": "IBM released Granite Switch 4.1, a single endpoint model handling chat, decision-making, and speech processing.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/gltB0o--PV_Jh0D3aDm8-.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
-   "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
-   "date": "2026-10-15T19:35:13.000Z",
-   "summary": "GitHub announced that select older models in GitHub Copilot will be deprecated on November 16, 2026.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/645867806-878ea927-48c9-4765-a896-4a5f3d7b8f2e.jpg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.301",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.301",
-   "date": "2026-10-15T19:22:06Z",
-   "summary": "Anthropic updated the Claude Code command-line tool to version 2.1.301 with minor fixes.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/320b6490de42374d99ccc5201a9e44d68b796444a013218ca10bea6e20c91cc9/anthropics/claude-code/releases/tag/v2.1.301",
-   "audience": "dev"
-  },
-  {
-   "source": "Hacker News",
-   "title": "SlopCodeBench 10/2026 – Opus 5.5, Astra wins overall, xhigh considered harmful",
-   "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/benchmarking-new-models-on-slop-code-bench.md",
-   "date": "2026-10-15T19:09:34Z",
-   "discuss": "https://news.ycombinator.com/item?id=50108717",
-   "summary": "SlopCodeBench results compared coding model performance across recent benchmarks, noting top scores for Astra and Opus 5.5.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/be42207e44799dceba3e459e806d040a40b9dfddc6d9ea4fa03c5b93fcce5726/humanlayer/advanced-context-engineering-for-coding-agents"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Bringing GPT-Rosalind to academic research labs",
-   "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-   "date": "2026-10-15T19:00:00.000Z",
-   "summary": "OpenAI introduced an academic plan providing sponsored access to GPT-Rosalind for life sciences research labs.",
-   "tags": [
-    "models",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/g91SfQ7YxvtosiWacUxkg/47162ea17967b74890a6ef14a8c9fa78/rosalind-academic-plan-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
-   "date": "2026-10-15T17:20:00.000Z",
-   "title": "Anthropic update on independent evaluators",
-   "summary": "Anthropic announced updates regarding its framework for independent safety evaluators.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d2e351e6311a0ada8ea4a0304ce6cda39243eaf4-1200x630.jpg"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
-   "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
-   "date": "2026-10-15T16:08:03.000Z",
-   "summary": "Google DeepMind announced Google Antigravity for Science to accelerate the discovery of antimicrobial peptides.",
-   "tags": [
-    "research",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://lh3.googleusercontent.com/Xgnc_DxAUS2Fs9H2rokxsYwPnnM_KOkPyPtKm7V2C_sjZ7YS4N1-D6lD8wjYIRQoKaiSwHUXB7qmw77m6FCfHLZenWdNymO7B_JLChlB6ied6emR=w1200-h630-n-nu-rw",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Steam Client is now faster than Epic's new vibe coded launcher",
-   "url": "https://respawnfirst.com/steam-client-is-now-faster-than-epics-new-vibe-coded-launcher/",
-   "date": "2026-10-15T16:03:19Z",
-   "discuss": "https://news.ycombinator.com/item?id=50105635",
-   "summary": "A benchmark comparison shows Steam client performance against a newly released vibe-coded game launcher.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://respawnfirst.com/wp-content/uploads/2026/10/New-Steam-client-is-faster.webp"
   }
  ]
 }
