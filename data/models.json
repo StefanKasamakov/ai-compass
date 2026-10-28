@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -104,6 +104,18 @@
    "ctx": "1.05M",
    "released": "2026-09-29",
    "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode."
+  },
+  {
+   "id": "terra",
+   "p": "openai",
+   "name": "GPT-6.1 Terra",
+   "tier": "Balanced",
+   "best": "Cost-effective reasoning and general tasks at half the price of Sol.",
+   "in": 1,
+   "out": 5,
+   "ctx": "1.05M",
+   "released": "2026-10-26",
+   "note": "'Terra Pro' = same model, pro reasoning mode."
   },
   {
    "id": "luna",
