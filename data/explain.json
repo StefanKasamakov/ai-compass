@@ -16667,5 +16667,42 @@
   "repo": "AbadOrangeCat/TheALL",
   "at": "2026-10-29",
   "source": "trending"
+ },
+ "CopilotKit/OpenBot": {
+  "cat": "builders",
+  "kind": "AI coworker platform",
+  "what": "An open-source, self-hosted workspace for deploying AI coworkers that each receive their own isolated browser, files, and audited tools.",
+  "why": "Teams need private AI assistants that can safely interact with company files and web tools under strict permission rules.",
+  "level": "dev",
+  "start": "cp .env.example .env",
+  "caution": "The project is currently in beta under active development, and it requires Docker, Bun, and a CopilotKit Intelligence account or license.",
+  "alts": [
+   "open-webui/open-webui",
+   "LibreChat-AI/LibreChat",
+   "Mintplex-Labs/anything-llm"
+  ],
+  "packages": [
+   "copilotkit"
+  ],
+  "plain": "Run your own private team AI assistant where bots can safely use web browsers, files, and business tools.",
+  "tags": [
+   "automate",
+   "apps",
+   "private"
+  ],
+  "useFor": [
+   "Deploy team AI assistants on your own infrastructure.",
+   "Give agents isolated browsers and tools with permission controls.",
+   "Automate tasks like reviewing expense claims and triaging tickets."
+  ],
+  "steps": [
+   "Copy the sample settings and install dependencies with `bun install`.",
+   "Connect an intelligence project by running `npx --yes copilotkit@latest login`.",
+   "Add your model key such as OPENAI_API_KEY into `.env`.",
+   "Launch all services and containers with `bash scripts/start.sh`."
+  ],
+  "repo": "CopilotKit/OpenBot",
+  "at": "2026-10-29",
+  "source": "trending"
  }
 }

@@ -1,6 +1,80 @@
 {
- "updated": "2026-10-29T13:12:29.753Z",
+ "updated": "2026-10-29T22:49:17.642Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "API credits benefit for eligible ChatGPT subscriptions",
+   "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
+   "date": "2026-10-29T22:48:29.000Z",
+   "summary": "OpenAI now provides eligible premium ChatGPT subscribers with equivalent monthly API credits, matching a recent move by Anthropic. Subscribers can use their existing plan to experiment with developer APIs without paying extra.",
+   "tags": [
+    "product",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.166.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
+   "date": "2026-10-29T19:47:53Z",
+   "summary": "OpenAI released version 0.166.0 of the Codex CLI tool. Developers using the terminal-based assistant receive the latest updates and bug fixes for their workflow.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/85a7e5fa54c0b28bde06588dae3003e8544d58795b2c562c7132d22d88415450/openai/codex/releases/tag/rust-v0.166.0"
+  },
+  {
+   "source": "OpenAI",
+   "title": "An updated Model Spec for more capable and beneficial AI",
+   "url": "https://openai.com/index/updated-model-spec",
+   "date": "2026-10-29T17:00:00.000Z",
+   "summary": "OpenAI published an updated Model Spec outlining how its models should exercise judgment and respect human intent. This informs users and developers on the behavioral guidelines shaping future model releases.",
+   "tags": [
+    "safety",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/75veJvi069XNefheZKrGT3/524e301a9565289e83b5a666d47b3da5/model-spec-update-more-capable-beneficial-ai-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Granite Switch 4.1.1 — Update models like you update software",
+   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+   "date": "2026-10-29T13:37:07.000Z",
+   "summary": "IBM released Granite Switch 4.1.1, an incremental update to its open enterprise model family. Developers using Granite gain updated weights for self-hosting.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/az6afuuoAkyiMImufSePe.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
+   "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+   "date": "2026-10-29T12:41:56Z",
+   "discuss": "https://news.ycombinator.com/item?id=50288019",
+   "summary": "Gemini 4 Carbon claimed the top rank on the Artificial Analysis Intelligence Index v5 benchmark. Users can reference the benchmark scores to compare performance and token costs across frontier models.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn.sanity.io/images/6vfeftx9/articles/ce3b883faa25c57a8672817086d2da1d248fbbfa-1254x1254.png?w=1200&auto=format"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
@@ -45,6 +119,19 @@
    "big": false,
    "ai": true,
    "image": "https://divagr.com/qwenputer/og.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Welcome Le Chonk: Mistral Large 4 on Hugging Face",
+   "url": "https://huggingface.co/blog/mistral-large4",
+   "date": "2026-10-29T00:00:00.000Z",
+   "summary": "Mistral released Mistral Large 4 on Hugging Face, bringing its latest frontier model to open infrastructure. Users can run, test, and host Mistral's flagship model via Hugging Face.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/ml4/thumbnail.png"
   },
   {
    "source": "Hugging Face",
@@ -2126,95 +2213,6 @@
    "big": false,
    "ai": true,
    "image": "https://claude.dev/blog/solving-code-review-at-anthropic/og.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Itaú is building generative AI for its entire customer base",
-   "url": "https://openai.com/index/itau-generative-ai",
-   "date": "2026-10-16T19:00:00.000Z",
-   "summary": "Bank Itaú is implementing conversational interfaces and governance platforms for its customers and employees.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5f6g1v0mGiFwS4OuWQJpZ/ea1b571975a4668874331d6d068bfdcb/itau-social-optical-r2.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude reveals ECDSA curve origins",
-   "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
-   "date": "2026-10-16T18:55:59Z",
-   "discuss": "https://news.ycombinator.com/item?id=50122800",
-   "summary": "Discussions highlight how Claude successfully helped uncover details regarding cryptographic curve origins.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/d0c862c5cabd703c0fcbaad939385133f02b694c-1200x630.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
-   "url": "https://github.com/cobanov/PS5LM",
-   "date": "2026-10-16T18:32:35Z",
-   "discuss": "https://news.ycombinator.com/item?id=50122431",
-   "summary": "Developers successfully ported llama.cpp to jailbroken PS5 consoles, allowing local execution of GGUF quantized models on gaming hardware.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/17b738f049c093124bdd4ceb7fc8e263b472c5af34b45279533e7892e6715af2/cobanov/PS5LM"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Designing more efficient quantum circuits with Claude",
-   "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
-   "date": "2026-10-16T18:00:18Z",
-   "discuss": "https://news.ycombinator.com/item?id=50121939",
-   "summary": "Developers are using Claude to help design and optimize more efficient quantum computing circuits.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/cc389d90b468ebc86011f6642099dfad9a4a757f-2000x1125.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-   "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-   "date": "2026-10-16T17:08:38Z",
-   "discuss": "https://news.ycombinator.com/item?id=50121179",
-   "summary": "A new study reveals that 90% of US working hours involve tasks that standard AI benchmarks fail to evaluate effectively.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://www.mercor.com/mercor-logo-white.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: Gemini 4 Argon plays StarCraft",
-   "url": "https://starskirmish.com/bench/v0-2/",
-   "date": "2026-10-16T14:18:44Z",
-   "discuss": "https://news.ycombinator.com/item?id=50118688",
-   "summary": "A demonstration showing Google DeepMind's Gemini 4 Argon playing StarCraft via computer-use capabilities.",
-   "tags": [
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://starskirmish.com/assets/og.png"
   }
  ]
 }
