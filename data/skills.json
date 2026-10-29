@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-29T06:04:36.836Z",
+ "updated": "2026-10-29T11:30:32.485Z",
  "sources": [
   {
    "repo": "anthropics/skills",
-   "stars": 184569,
+   "stars": 184638,
    "license": null,
    "pushed": "2026-10-28T19:20:39Z",
    "by": "anthropics",
@@ -11,7 +11,7 @@
   },
   {
    "repo": "obra/superpowers",
-   "stars": 307647,
+   "stars": 307884,
    "license": "MIT",
    "pushed": "2026-10-23T03:48:57Z",
    "by": "obra",
@@ -19,7 +19,7 @@
   },
   {
    "repo": "addyosmani/agent-skills",
-   "stars": 111514,
+   "stars": 111592,
    "license": "MIT",
    "pushed": "2026-10-29T05:06:58Z",
    "by": "addyosmani",
@@ -27,15 +27,15 @@
   },
   {
    "repo": "mattpocock/skills",
-   "stars": 305928,
+   "stars": 306160,
    "license": "MIT",
-   "pushed": "2026-10-27T07:44:25Z",
+   "pushed": "2026-10-29T10:43:06Z",
    "by": "mattpocock",
    "count": 38
   },
   {
    "repo": "openai/skills",
-   "stars": 28377,
+   "stars": 28385,
    "license": null,
    "pushed": "2026-10-28T17:31:41Z",
    "by": "openai",
@@ -43,7 +43,7 @@
   },
   {
    "repo": "vercel-labs/agent-skills",
-   "stars": 33180,
+   "stars": 33191,
    "license": null,
    "pushed": "2026-10-28T19:17:28Z",
    "by": "vercel-labs",
@@ -51,15 +51,15 @@
   },
   {
    "repo": "anthropics/claude-plugins-official",
-   "stars": 45169,
+   "stars": 45202,
    "license": "Apache-2.0",
-   "pushed": "2026-10-28T20:28:28Z",
+   "pushed": "2026-10-29T07:31:04Z",
    "by": "anthropics",
    "count": 33
   },
   {
    "repo": "openai/plugins",
-   "stars": 7640,
+   "stars": 7649,
    "license": null,
    "pushed": "2026-10-08T05:21:35Z",
    "by": "openai",
@@ -67,15 +67,15 @@
   },
   {
    "repo": "alirezarezvani/claude-skills",
-   "stars": 28930,
+   "stars": 28948,
    "license": "MIT",
-   "pushed": "2026-10-27T09:44:05Z",
+   "pushed": "2026-10-29T07:44:34Z",
    "by": "alirezarezvani",
    "count": 13
   },
   {
    "repo": "EveryInc/compound-engineering-plugin",
-   "stars": 25760,
+   "stars": 25763,
    "license": "MIT",
    "pushed": "2026-10-29T02:33:16Z",
    "by": "EveryInc",
@@ -83,7 +83,7 @@
   },
   {
    "repo": "pbakaus/impeccable",
-   "stars": 93339,
+   "stars": 94102,
    "license": "Apache-2.0",
    "pushed": "2026-10-29T04:51:37Z",
    "by": "pbakaus",
@@ -91,7 +91,7 @@
   },
   {
    "repo": "wshobson/agents",
-   "stars": 41956,
+   "stars": 41972,
    "license": "MIT",
    "pushed": "2026-10-26T01:08:14Z",
    "by": "wshobson",
@@ -116,7 +116,7 @@
     "Explore training materials"
    ],
    "example": "How do I get started with Claude?",
-   "installs": 12900
+   "installs": 13000
   },
   {
    "key": "anthropics/skills/algorithmic-art",
@@ -136,7 +136,7 @@
     "Create algorithmic visuals"
    ],
    "example": "Make a piece of generative art using code.",
-   "installs": 90450
+   "installs": 90510
   },
   {
    "key": "brand-guidelines",
@@ -158,7 +158,7 @@
    ],
    "checked": true,
    "level": "setup",
-   "installs": 112007
+   "installs": 112130
   },
   {
    "key": "canvas-design",
@@ -180,7 +180,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 123785
+   "installs": 123868
   },
   {
    "key": "anthropics/skills/claude-api",
@@ -200,7 +200,7 @@
     "Review model parameters"
    ],
    "example": "What are the current pricing and limits for the Claude API?",
-   "installs": 75550
+   "installs": 75611
   },
   {
    "key": "anthropics/skills/discernment-nudge",
@@ -221,7 +221,7 @@
     "Check proposal assumptions"
    ],
    "example": "Review this project proposal for potential blind spots.",
-   "installs": 13300
+   "installs": 13400
   },
   {
    "key": "doc-coauthoring",
@@ -242,7 +242,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 95529
+   "installs": 95604
   },
   {
    "key": "docx",
@@ -263,7 +263,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 209120
+   "installs": 209240
   },
   {
    "key": "frontend-design",
@@ -284,7 +284,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 1046911
+   "installs": 1047665
   },
   {
    "key": "anthropics/skills/internal-comms",
@@ -303,7 +303,7 @@
     "Write team newsletters"
    ],
    "example": "Write a status report for my engineering team update.",
-   "installs": 81369
+   "installs": 81440
   },
   {
    "key": "mcp-builder",
@@ -325,7 +325,7 @@
    ],
    "checked": true,
    "level": "dev",
-   "installs": 133523
+   "installs": 133661
   },
   {
    "key": "pdf",
@@ -347,7 +347,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 219027
+   "installs": 219145
   },
   {
    "key": "pptx",
@@ -368,7 +368,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 244565
+   "installs": 244691
   },
   {
    "key": "skill-creator",
@@ -389,7 +389,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 418213
+   "installs": 418374
   },
   {
    "key": "anthropics/skills/slack-gif-creator",
@@ -409,7 +409,7 @@
     "Create Slack animations"
    ],
    "example": "Make me a GIF of a cat typing for Slack.",
-   "installs": 76451
+   "installs": 76507
   },
   {
    "key": "theme-factory",
@@ -430,7 +430,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 96547
+   "installs": 96614
   },
   {
    "key": "web-artifacts-builder",
@@ -451,7 +451,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 113748
+   "installs": 113816
   },
   {
    "key": "webapp-testing",
@@ -473,7 +473,7 @@
    ],
    "checked": true,
    "level": "setup",
-   "installs": 191559
+   "installs": 191735
   },
   {
    "key": "xlsx",
@@ -494,7 +494,7 @@
    ],
    "checked": true,
    "level": "easy",
-   "installs": 189756
+   "installs": 189868
   },
   {
    "key": "obra/superpowers/brainstorming",
@@ -512,7 +512,7 @@
     "Planning new features before building them"
    ],
    "example": "Help me brainstorm ideas and make a plan for my upcoming talk.",
-   "installs": 410035
+   "installs": 410296
   },
   {
    "key": "obra/superpowers/diagnosing-superpowers",
@@ -532,7 +532,7 @@
     "Create bug reports"
    ],
    "example": "Why did that last task take so long and fail?",
-   "installs": 23100
+   "installs": 23200
   },
   {
    "key": "obra/superpowers/dispatching-parallel-agents",
@@ -549,7 +549,7 @@
     "Process separate requests"
    ],
    "example": "Work on these two unrelated files at the same time.",
-   "installs": 222096
+   "installs": 222260
   },
   {
    "key": "obra/superpowers/executing-plans",
@@ -566,7 +566,7 @@
     "Execute code changes"
    ],
    "example": "Execute this implementation plan step by step.",
-   "installs": 247437
+   "installs": 247634
   },
   {
    "key": "obra/superpowers/finishing-a-development-branch",
@@ -583,7 +583,7 @@
     "Finalize development"
    ],
    "example": "All tests pass, how should we integrate this branch?",
-   "installs": 218351
+   "installs": 218518
   },
   {
    "key": "obra/superpowers/receiving-code-review",
@@ -602,7 +602,7 @@
     "Verify review comments"
    ],
    "example": "Review this feedback before we apply the changes.",
-   "installs": 225356
+   "installs": 225528
   },
   {
    "key": "obra/superpowers/requesting-code-review",
@@ -621,7 +621,7 @@
     "Verify requirements"
    ],
    "example": "Check if my changes meet all project requirements.",
-   "installs": 266256
+   "installs": 266445
   },
   {
    "key": "obra/superpowers/subagent-driven-development",
@@ -638,7 +638,7 @@
     "Process plan steps"
    ],
    "example": "Execute this plan using subtasks.",
-   "installs": 241964
+   "installs": 242161
   },
   {
    "key": "obra/superpowers/systematic-debugging",
@@ -657,7 +657,7 @@
     "Investigate system errors"
    ],
    "example": "Why is this test failing every time we run it?",
-   "installs": 312362
+   "installs": 312602
   },
   {
    "key": "obra/superpowers/test-driven-development",
@@ -677,7 +677,7 @@
     "Setup test-driven fixes"
    ],
    "example": "Write a test for this bug before we fix the code.",
-   "installs": 263730
+   "installs": 263932
   },
   {
    "key": "obra/superpowers/using-git-worktrees",
@@ -696,7 +696,7 @@
     "Setup git worktrees"
    ],
    "example": "Create an isolated workspace for this new feature branch.",
-   "installs": 220907
+   "installs": 221074
   },
   {
    "key": "obra/superpowers/using-superpowers",
@@ -713,7 +713,7 @@
     "Start new conversations"
    ],
    "example": "Start the session and check available skills.",
-   "installs": 274140
+   "installs": 274305
   },
   {
    "key": "obra/superpowers/verification-before-completion",
@@ -730,7 +730,7 @@
     "Confirm work completion"
    ],
    "example": "Run all verification commands before we open a pull request.",
-   "installs": 257118
+   "installs": 257332
   },
   {
    "key": "obra/superpowers/writing-plans",
@@ -750,7 +750,7 @@
     "Plan multi-step tasks"
    ],
    "example": "Write a step-by-step plan for this specification.",
-   "installs": 287537
+   "installs": 287742
   },
   {
    "key": "obra/superpowers/writing-skills",
@@ -769,7 +769,7 @@
     "Verify instruction files work"
    ],
    "example": "Please verify this new skill file works properly.",
-   "installs": 221938
+   "installs": 222127
   },
   {
    "key": "addyosmani/agent-skills/api-and-interface-design",
@@ -790,7 +790,7 @@
     "Define type contracts between modules"
    ],
    "example": "Help me design a new REST API endpoint.",
-   "installs": 64804
+   "installs": 64972
   },
   {
    "key": "addyosmani/agent-skills/browser-testing-with-devtools",
@@ -811,7 +811,7 @@
     "Capture browser console errors"
    ],
    "example": "Check the browser console for errors on our login page.",
-   "installs": 60600
+   "installs": 60800
   },
   {
    "key": "addyosmani/agent-skills/ci-cd-and-automation",
@@ -831,7 +831,7 @@
     "Configure automated test runners"
    ],
    "example": "Set up a new automated deployment pipeline.",
-   "installs": 60200
+   "installs": 60400
   },
   {
    "key": "addyosmani/agent-skills/code-review-and-quality",
@@ -850,7 +850,7 @@
     "Assess code quality dimensions"
    ],
    "example": "Review this code diff before I merge it.",
-   "installs": 75601
+   "installs": 75731
   },
   {
    "key": "addyosmani/agent-skills/code-simplification",
@@ -863,14 +863,14 @@
    "tags": [
     "code"
    ],
-   "installs": 64942,
    "plain": "Rewrite working code to make it easier to read and maintain without changing its behavior.",
    "useFor": [
     "Simplify messy functions that already work.",
     "Reduce nesting in hard-to-read code.",
     "Clean up code to make maintenance easier."
    ],
-   "example": "Please simplify this working function so it is easier to read."
+   "example": "Please simplify this working function so it is easier to read.",
+   "installs": 65100
   },
   {
    "key": "addyosmani/agent-skills/constraint-driven-development",
@@ -889,7 +889,7 @@
     "Set up rules in documents"
    ],
    "example": "Define our project quality standards and rules.",
-   "installs": 35400
+   "installs": 35600
   },
   {
    "key": "addyosmani/agent-skills/context-engineering",
@@ -906,7 +906,7 @@
     "Start a new session"
    ],
    "example": "Configure the rules files for this new project.",
-   "installs": 63684
+   "installs": 63838
   },
   {
    "key": "addyosmani/agent-skills/debugging-and-error-recovery",
@@ -923,7 +923,7 @@
     "Find root cause of bugs"
    ],
    "example": "Help me find why this test is failing.",
-   "installs": 64962
+   "installs": 65113
   },
   {
    "key": "addyosmani/agent-skills/deprecation-and-migration",
@@ -942,7 +942,7 @@
     "Migrate a database schema"
    ],
    "example": "Plan the database column migration without causing downtime.",
-   "installs": 59400
+   "installs": 59600
   },
   {
    "key": "addyosmani/agent-skills/documentation-and-adrs",
@@ -962,7 +962,7 @@
     "Record system design choices"
    ],
    "example": "Document our architectural decision for using this database.",
-   "installs": 66041
+   "installs": 66206
   },
   {
    "key": "addyosmani/agent-skills/doubt-driven-development",
@@ -982,7 +982,7 @@
     "Review assumptions carefully"
    ],
    "example": "Stress-test this security plan for hidden failure modes.",
-   "installs": 58800
+   "installs": 58900
   },
   {
    "key": "addyosmani/agent-skills/frontend-ui-engineering",
@@ -1002,7 +1002,7 @@
     "Meet accessibility requirements"
    ],
    "example": "Build an accessible navigation bar component.",
-   "installs": 69686
+   "installs": 69858
   },
   {
    "key": "addyosmani/agent-skills/git-workflow-and-versioning",
@@ -1023,7 +1023,7 @@
     "Manage release tagging"
    ],
    "example": "Help me split my messy changes into clean atomic commits.",
-   "installs": 61651
+   "installs": 61763
   },
   {
    "key": "addyosmani/agent-skills/idea-refine",
@@ -1042,7 +1042,7 @@
     "Stress-test project plans"
    ],
    "example": "Stress-test my plan for launching the new feature.",
-   "installs": 61300
+   "installs": 61433
   },
   {
    "key": "addyosmani/agent-skills/incremental-implementation",
@@ -1062,7 +1062,7 @@
     "Break down large updates"
    ],
    "example": "Implement this feature in small verifiable steps.",
-   "installs": 64013
+   "installs": 64123
   },
   {
    "key": "addyosmani/agent-skills/interview-me",
@@ -1081,7 +1081,7 @@
     "Discover underlying intentions"
    ],
    "example": "Interview me to figure out what we should build first.",
-   "installs": 59400
+   "installs": 59600
   },
   {
    "key": "addyosmani/agent-skills/observability-and-instrumentation",
@@ -1100,7 +1100,7 @@
     "Set up production metrics"
    ],
    "example": "Add logging so we can track this feature in production.",
-   "installs": 56900
+   "installs": 57000
   },
   {
    "key": "addyosmani/agent-skills/performance-optimization",
@@ -1120,7 +1120,7 @@
     "Improve page load times"
    ],
    "example": "Help me fix these slow database queries.",
-   "installs": 67460
+   "installs": 67621
   },
   {
    "key": "addyosmani/agent-skills/planning-and-task-breakdown",
@@ -1137,7 +1137,7 @@
     "Estimate project scope"
    ],
    "example": "Break this project specification into ordered tasks.",
-   "installs": 66376
+   "installs": 66489
   },
   {
    "key": "addyosmani/agent-skills/security-and-hardening",
@@ -1158,7 +1158,7 @@
     "Review third-party packages"
    ],
    "example": "Check if this login form is safe against common security threats.",
-   "installs": 72691
+   "installs": 72868
   },
   {
    "key": "addyosmani/agent-skills/shipping-and-launch",
@@ -1178,7 +1178,7 @@
     "Set up rollbacks"
    ],
    "example": "What steps do we need to take before shipping this update?",
-   "installs": 60400
+   "installs": 60600
   },
   {
    "key": "addyosmani/agent-skills/source-driven-development",
@@ -1199,7 +1199,7 @@
     "Avoid outdated coding patterns"
    ],
    "example": "Check the official documentation for the correct way to use this library.",
-   "installs": 60300
+   "installs": 60500
   },
   {
    "key": "addyosmani/agent-skills/spec-driven-development",
@@ -1220,7 +1220,7 @@
     "Clarify vague ideas"
    ],
    "example": "Write a project specification for our new user dashboard feature.",
-   "installs": 67145
+   "installs": 67308
   },
   {
    "key": "addyosmani/agent-skills/test-driven-development",
@@ -1240,7 +1240,7 @@
     "Adding new logic safely"
    ],
    "example": "Please fix this bug using tests first.",
-   "installs": 64119
+   "installs": 64236
   },
   {
    "key": "addyosmani/agent-skills/using-agent-skills",
@@ -1260,7 +1260,7 @@
     "Find relevant instructions"
    ],
    "example": "What instructions should I load for working on this bug?",
-   "installs": 61200
+   "installs": 61400
   },
   {
    "key": "mattpocock/skills/ask-matt",
@@ -1278,7 +1278,7 @@
     "Find correct instructions"
    ],
    "example": "Which skill should I use for checking my code standards?",
-   "installs": 787548
+   "installs": 788470
   },
   {
    "key": "mattpocock/skills/code-review",
@@ -1298,7 +1298,7 @@
     "Compare code to specs"
    ],
    "example": "Review the code changes made since our last release tag.",
-   "installs": 813844
+   "installs": 814932
   },
   {
    "key": "mattpocock/skills/codebase-design",
@@ -1318,7 +1318,7 @@
     "Improve software seams"
    ],
    "example": "Help me design a cleaner interface for this database module.",
-   "installs": 874654
+   "installs": 875696
   },
   {
    "key": "mattpocock/skills/diagnosing-bugs",
@@ -1338,7 +1338,7 @@
     "Diagnose error reports"
    ],
    "example": "Diagnose why this page load is failing with a server error.",
-   "installs": 859222
+   "installs": 860263
   },
   {
    "key": "mattpocock/skills/domain-modeling",
@@ -1359,7 +1359,7 @@
     "Discuss domain terminology"
    ],
    "example": "Update our glossary file with the new payment terminology.",
-   "installs": 901948
+   "installs": 903058
   },
   {
    "key": "mattpocock/skills/grill-with-docs",
@@ -1377,7 +1377,7 @@
     "Interview about designs"
    ],
    "example": "Interview me about this architecture plan to sharpen it.",
-   "installs": 1246458
+   "installs": 1247583
   },
   {
    "key": "mattpocock/skills/implement-spec",
@@ -1397,7 +1397,7 @@
     "Execute implementation plans"
    ],
    "example": "Implement the code for our approved specification tickets.",
-   "installs": 302474
+   "installs": 303337
   },
   {
    "key": "mattpocock/skills/implement",
@@ -1415,7 +1415,7 @@
     "Complete assigned tasks"
    ],
    "example": "Implement the features listed in this specification document.",
-   "installs": 796237
+   "installs": 797230
   },
   {
    "key": "mattpocock/skills/improve-codebase-architecture",
@@ -1437,7 +1437,7 @@
     "Explore deepening opportunities"
    ],
    "example": "Scan our codebase and show me potential architecture improvements.",
-   "installs": 1188481
+   "installs": 1189510
   },
   {
    "key": "mattpocock/skills/pr",
@@ -1457,7 +1457,7 @@
     "Describe code updates"
    ],
    "example": "Write a pull request summary for my latest branch changes.",
-   "installs": 187689
+   "installs": 188568
   },
   {
    "key": "mattpocock/skills/prototype",
@@ -1477,7 +1477,7 @@
     "Verify design ideas"
    ],
    "example": "Build a quick prototype to test if this user interface feels right.",
-   "installs": 1009277
+   "installs": 1010244
   },
   {
    "key": "mattpocock/skills/research",
@@ -1498,7 +1498,7 @@
     "Delegate reading tasks"
    ],
    "example": "Research the latest authentication standards and save the findings.",
-   "installs": 732204
+   "installs": 733159
   },
   {
    "key": "mattpocock/skills/retro",
@@ -1518,7 +1518,7 @@
     "Evaluate past work"
    ],
    "example": "Run a retrospective on how we handled this coding session.",
-   "installs": 295536
+   "installs": 296443
   },
   {
    "key": "mattpocock/skills/setup-matt-pocock-skills",
@@ -1536,7 +1536,7 @@
     "Set up document layouts"
    ],
    "example": "Set up this repository for the engineering skills and documentation layout.",
-   "installs": 1076780
+   "installs": 1077903
   },
   {
    "key": "mattpocock/skills/tdd",
@@ -1556,7 +1556,7 @@
     "Create integration tests"
    ],
    "example": "Let us build this new login feature using test-driven development.",
-   "installs": 1165147
+   "installs": 1166255
   },
   {
    "key": "mattpocock/skills/to-spec",
@@ -1574,7 +1574,7 @@
     "Update project tracker"
    ],
    "example": "Turn our recent chat into a formal spec and publish it.",
-   "installs": 737152
+   "installs": 738117
   },
   {
    "key": "mattpocock/skills/to-tickets",
@@ -1592,7 +1592,7 @@
     "Generate tracking tasks"
    ],
    "example": "Break this conversation into tracker tickets with blocking edges.",
-   "installs": 733425
+   "installs": 734423
   },
   {
    "key": "mattpocock/skills/triage",
@@ -1612,7 +1612,7 @@
     "Create agent-ready briefs"
    ],
    "example": "Triage the latest batch of GitHub issues and pull requests.",
-   "installs": 1011203
+   "installs": 1012115
   },
   {
    "key": "mattpocock/skills/wayfinder",
@@ -1630,7 +1630,7 @@
     "Manage multi-session work"
    ],
    "example": "Create a wayfinder map for this huge multi-week project.",
-   "installs": 739749
+   "installs": 740706
   },
   {
    "key": "mattpocock/skills/wizard",
@@ -1650,7 +1650,7 @@
     "Run system migrations"
    ],
    "example": "Generate a wizard script to help me set up my deployment secrets.",
-   "installs": 573239
+   "installs": 574127
   },
   {
    "key": "mattpocock/skills/chief-of-staff",
@@ -1668,7 +1668,7 @@
     "Manage long goals"
    ],
    "example": "Help me plan and execute my entire website launch today.",
-   "installs": 86727
+   "installs": 87379
   },
   {
    "key": "mattpocock/skills/claude-handoff",
@@ -1686,7 +1686,7 @@
     "Hand off current sessions"
    ],
    "example": "Hand this conversation off to a fresh background agent.",
-   "installs": 436056
+   "installs": 436725
   },
   {
    "key": "mattpocock/skills/loop-me",
@@ -1704,7 +1704,7 @@
     "Clarify workspace workflows"
    ],
    "example": "Loop me with questions about the workflows I want to build.",
-   "installs": 454457
+   "installs": 455113
   },
   {
    "key": "mattpocock/skills/setup-ts-deep-modules",
@@ -1724,7 +1724,7 @@
     "Organize TypeScript packages"
    ],
    "example": "Wire dependency-cruiser to enforce deep modules in this repo.",
-   "installs": 382299
+   "installs": 382931
   },
   {
    "key": "mattpocock/skills/writing-beats",
@@ -1744,7 +1744,7 @@
     "Structure narrative journeys"
    ],
    "example": "Turn these raw notes into an ordered sequence of writing beats.",
-   "installs": 497109
+   "installs": 497757
   },
   {
    "key": "mattpocock/skills/writing-fragments",
@@ -1764,7 +1764,7 @@
     "Brainstorm raw ideas"
    ],
    "example": "Mine these raw writing fragments without structuring them yet.",
-   "installs": 496042
+   "installs": 496691
   },
   {
    "key": "mattpocock/skills/writing-shape",
@@ -1784,7 +1784,7 @@
     "Refine written content"
    ],
    "example": "Shape this raw material into an article paragraph by paragraph.",
-   "installs": 496693
+   "installs": 497344
   },
   {
    "key": "mattpocock/skills/git-guardrails-claude-code",
@@ -1804,7 +1804,7 @@
     "Prevent accidental pushes"
    ],
    "example": "Set up safety hooks to block dangerous git commands like push or reset.",
-   "installs": 514340
+   "installs": 514995
   },
   {
    "key": "mattpocock/skills/migrate-to-shoehorn",
@@ -1824,7 +1824,7 @@
     "Use shoehorn for partial data"
    ],
    "example": "Migrate our test files to use shoehorn instead of type assertions.",
-   "installs": 490451
+   "installs": 491089
   },
   {
    "key": "mattpocock/skills/scaffold-exercises",
@@ -1842,7 +1842,7 @@
     "Set up new course sections"
    ],
    "example": "Scaffold the exercise structure for this new course section.",
-   "installs": 494439
+   "installs": 495078
   },
   {
    "key": "mattpocock/skills/setup-pre-commit",
@@ -1862,7 +1862,7 @@
     "Add automatic code formatting"
    ],
    "example": "Set up Husky pre-commit hooks with lint-staged in this repository.",
-   "installs": 503766
+   "installs": 504420
   },
   {
    "key": "mattpocock/skills/grill-me",
@@ -1880,7 +1880,7 @@
     "Test strategy weaknesses"
    ],
    "example": "Grill me hard on this new project plan.",
-   "installs": 1455794
+   "installs": 1457121
   },
   {
    "key": "mattpocock/skills/grilling",
@@ -1900,7 +1900,7 @@
     "Examine decision flaws"
    ],
    "example": "Grill me relentlessly about this design decision.",
-   "installs": 1009562
+   "installs": 1010906
   },
   {
    "key": "mattpocock/skills/handoff",
@@ -1920,7 +1920,7 @@
     "Prepare context for peers"
    ],
    "example": "Compact this conversation into a handoff document for another agent.",
-   "installs": 1063699
+   "installs": 1064763
   },
   {
    "key": "mattpocock/skills/teach",
@@ -1938,7 +1938,7 @@
     "Learn workspace topics"
    ],
    "example": "Teach me how this new workspace feature works.",
-   "installs": 883881
+   "installs": 884844
   },
   {
    "key": "mattpocock/skills/to-questionnaire",
@@ -1955,7 +1955,7 @@
     "Gather input from others"
    ],
    "example": "Turn this tricky choice into a questionnaire for my team.",
-   "installs": 517340
+   "installs": 518212
   },
   {
    "key": "mattpocock/skills/wait-what",
@@ -1972,7 +1972,7 @@
     "Retry an explanation"
    ],
    "example": "Stop. That message missed the mark, so re-pitch it.",
-   "installs": 468431
+   "installs": 469313
   },
   {
    "key": "mattpocock/skills/writing-for-agents",
@@ -1991,7 +1991,7 @@
     "Edit agent documentation"
    ],
    "example": "Update the AGENTS file to include our new workflow rules.",
-   "installs": 488662
+   "installs": 489614
   },
   {
    "key": "openai/skills/aspnet-core",
@@ -2546,7 +2546,7 @@
    ],
    "checked": true,
    "level": "setup",
-   "installs": 8700
+   "installs": 8800
   },
   {
    "key": "openai/skills/render-deploy",
@@ -2603,7 +2603,7 @@
     "Find security vulnerabilities"
    ],
    "example": "Run a security review on my Python code.",
-   "installs": 11400
+   "installs": 11500
   },
   {
    "key": "openai/skills/security-ownership-map",
@@ -2645,7 +2645,7 @@
    ],
    "checked": true,
    "level": "setup",
-   "installs": 8300
+   "installs": 8400
   },
   {
    "key": "openai/skills/sentry",
@@ -2858,7 +2858,7 @@
     "Build flexible component libraries"
    ],
    "example": "Refactor these components using compound component patterns.",
-   "installs": 425522
+   "installs": 425861
   },
   {
    "key": "vercel-labs/agent-skills/deploy-to-vercel",
@@ -2877,7 +2877,7 @@
     "Create a preview deployment"
    ],
    "example": "Deploy my app and give me the link.",
-   "installs": 174492
+   "installs": 174746
   },
   {
    "key": "vercel-labs/agent-skills/vercel-react-best-practices",
@@ -2898,7 +2898,7 @@
     "Improve data fetching speed"
    ],
    "example": "Review this Next.js page for performance issues.",
-   "installs": 850371
+   "installs": 850899
   },
   {
    "key": "vercel-labs/agent-skills/vercel-react-native-skills",
@@ -2917,7 +2917,7 @@
     "Implement mobile animations"
    ],
    "example": "Optimize this list performance for my React Native app.",
-   "installs": 259487
+   "installs": 259729
   },
   {
    "key": "vercel-labs/agent-skills/vercel-react-view-transitions",
@@ -2938,7 +2938,7 @@
     "Animate route changes"
    ],
    "example": "Add view transitions between these pages.",
-   "installs": 172718
+   "installs": 172968
   },
   {
    "key": "vercel-labs/agent-skills/vercel-cli-with-tokens",
@@ -2957,7 +2957,7 @@
     "Add environment variables"
    ],
    "example": "Deploy to Vercel using my access token.",
-   "installs": 139938
+   "installs": 140144
   },
   {
    "key": "vercel-labs/agent-skills/vercel-optimize",
@@ -2977,7 +2977,7 @@
     "Investigate slow routes"
    ],
    "example": "How can I reduce my Vercel hosting bill?",
-   "installs": 114964
+   "installs": 115176
   },
   {
    "key": "vercel-labs/agent-skills/web-design-guidelines",
@@ -2998,7 +2998,7 @@
     "Audit design and UX"
    ],
    "example": "Review my UI code for accessibility issues.",
-   "installs": 798580
+   "installs": 799336
   },
   {
    "key": "vercel-labs/agent-skills/writing-guidelines",
@@ -3019,7 +3019,7 @@
     "Audit documentation voice"
    ],
    "example": "Review my docs against the writing handbook.",
-   "installs": 110960
+   "installs": 111175
   },
   {
    "key": "anthropics/claude-plugins-official/access",
@@ -3076,7 +3076,7 @@
     "Optimize Claude setup"
    ],
    "example": "What Claude Code features should I use here?",
-   "installs": 9500
+   "installs": 9600
   },
   {
    "key": "anthropics/claude-plugins-official/claude-md-improver",
@@ -3096,7 +3096,7 @@
     "Fix project memory"
    ],
    "example": "Check and improve the CLAUDE.md file in this repo.",
-   "installs": 13000
+   "installs": 13100
   },
   {
    "key": "anthropics/claude-plugins-official/claude-security",
@@ -3206,7 +3206,7 @@
     "Improve existing visual layouts"
    ],
    "example": "Give this web page a more custom and intentional visual design.",
-   "installs": 17300
+   "installs": 17400
   },
   {
    "key": "anthropics/claude-plugins-official/writing-hookify-rules",
@@ -3261,7 +3261,7 @@
     "Generate a verified proof"
    ],
    "example": "/math-proof:siege solve the Riemann hypothesis.",
-   "installs": 819
+   "installs": 827
   },
   {
    "key": "anthropics/claude-plugins-official/solo",
@@ -3278,7 +3278,7 @@
     "Write a math proof"
    ],
    "example": "/math-proof:solo prove this geometry theorem.",
-   "installs": 820
+   "installs": 828
   },
   {
    "key": "anthropics/claude-plugins-official/build-mcp-app",
@@ -3358,7 +3358,7 @@
     "Build a live explorer"
    ],
    "example": "Create an interactive playground for this concept.",
-   "installs": 8100
+   "installs": 8200
   },
   {
    "key": "anthropics/claude-plugins-official/agent-development",
@@ -3593,7 +3593,7 @@
     "Update the marketplace file"
    ],
    "example": "Set up a new plugin directory for my project",
-   "installs": 295
+   "installs": 296
   },
   {
    "key": "openai/plugins/adobe-batch-edit-photos",
@@ -4073,7 +4073,7 @@
     "Bridge to AppKit"
    ],
    "example": "How do I reach an NSWindow from my SwiftUI view?",
-   "installs": 62
+   "installs": 63
   },
   {
    "key": "openai/plugins/build-run-debug",
@@ -4092,7 +4092,7 @@
     "Diagnose startup failures"
    ],
    "example": "Why is my macOS app failing to build?",
-   "installs": 62
+   "installs": 63
   },
   {
    "key": "openai/plugins/liquid-glass",
@@ -4112,7 +4112,7 @@
     "Build glass surfaces"
    ],
    "example": "How do I add glass surfaces to my Mac app?",
-   "installs": 83
+   "installs": 84
   },
   {
    "key": "openai/plugins/packaging-notarization",
@@ -4129,7 +4129,7 @@
     "Validate app packages"
    ],
    "example": "Help me get my Mac app ready for notarization.",
-   "installs": 57
+   "installs": 58
   },
   {
    "key": "openai/plugins/signing-entitlements",
@@ -4148,7 +4148,7 @@
     "Fix sandbox errors"
    ],
    "example": "Why is Gatekeeper blocking my Mac app?",
-   "installs": 61
+   "installs": 62
   },
   {
    "key": "openai/plugins/swiftpm-macos",
@@ -4167,7 +4167,7 @@
     "Run command-line tools"
    ],
    "example": "How do I run this Swift package from the terminal?",
-   "installs": 59
+   "installs": 60
   },
   {
    "key": "openai/plugins/swiftui-patterns",
@@ -4184,7 +4184,7 @@
     "Build toolbars and menus"
    ],
    "example": "How do I add a settings window to my Mac app?",
-   "installs": 60
+   "installs": 61
   },
   {
    "key": "openai/plugins/telemetry",
@@ -4201,7 +4201,7 @@
     "Inspect app logs"
    ],
    "example": "Can you add logging to track my window actions?",
-   "installs": 53
+   "installs": 54
   },
   {
    "key": "openai/plugins/test-triage",
@@ -4220,7 +4220,7 @@
     "Explain assertion errors"
    ],
    "example": "Why are my unit tests failing on macOS?",
-   "installs": 52
+   "installs": 53
   },
   {
    "key": "openai/plugins/view-refactor",
@@ -4239,7 +4239,7 @@
     "Tighten scene state"
    ],
    "example": "How do I reorganize this messy macOS view?",
-   "installs": 53
+   "installs": 54
   },
   {
    "key": "openai/plugins/window-management",
@@ -4256,7 +4256,7 @@
     "Set launch behavior"
    ],
    "example": "How do I make my macOS window borderless?",
-   "installs": 60
+   "installs": 61
   },
   {
    "key": "openai/plugins/frontend-app-builder",
@@ -4277,7 +4277,7 @@
     "Build creative websites"
    ],
    "example": "Can you build a modern landing page for my new product?",
-   "installs": 268
+   "installs": 269
   },
   {
    "key": "openai/plugins/frontend-testing-debugging",
@@ -5108,7 +5108,7 @@
     "Grade agent against a rubric"
    ],
    "example": "Build me a new customer support agent and run it on a schedule.",
-   "installs": 12
+   "installs": 13
   },
   {
    "key": "alirezarezvani/claude-skills/grade-iterate",
@@ -5336,7 +5336,7 @@
     "Analyze vendor health and spend"
    ],
    "example": "Run a BizOps review to find out where our current process bottleneck is.",
-   "installs": 358
+   "installs": 359
   },
   {
    "key": "alirezarezvani/claude-skills/capacity-planner",
@@ -5354,7 +5354,7 @@
     "Model support team utilization risk"
    ],
    "example": "Plan our Q3 support capacity and model utilization risk for the team.",
-   "installs": 297
+   "installs": 298
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-skill-work",
@@ -5373,7 +5373,7 @@
     "Review an assistant instruction file"
    ],
    "example": "Can you review this new instruction file for accuracy?",
-   "installs": 514
+   "installs": 515
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-babysit-pr",
@@ -5394,7 +5394,7 @@
     "Updating an open pull request over time"
    ],
    "example": "Watch this GitHub pull request and keep updating it until it is ready to merge.",
-   "installs": 878
+   "installs": 880
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-bakeoff",
@@ -5411,7 +5411,7 @@
     "Compare different design options"
    ],
    "example": "Create two competing solutions for this feature brief.",
-   "installs": 323
+   "installs": 326
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-brainstorm",
@@ -5584,7 +5584,7 @@
     "Test app quality manually"
    ],
    "example": "Run a browser quality check on the active branch.",
-   "installs": 840
+   "installs": 843
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-explain",
@@ -5601,7 +5601,7 @@
     "Summarize recent work"
    ],
    "example": "Explain why this file has its current structure.",
-   "installs": 981
+   "installs": 983
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-handoff",
@@ -5657,7 +5657,7 @@
     "Make draft prose sound plain"
    ],
    "example": "Rewrite this text so it sounds more natural.",
-   "installs": 381
+   "installs": 382
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-optimize",
@@ -5809,7 +5809,7 @@
     "Answering critical workflow questions"
    ],
    "example": "Build a quick throwaway prototype to test how this checkout flow feels.",
-   "installs": 564
+   "installs": 567
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-resolve-pr-feedback",
@@ -5849,7 +5849,7 @@
     "Measuring skill performance changes"
    ],
    "example": "Retune our skill corpus for the new model using the benchmark harness.",
-   "installs": 634
+   "installs": 635
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-riffrec-feedback-analysis",
@@ -5949,7 +5949,7 @@
     "Generating work plans automatically"
    ],
    "example": "Sweep GitHub Issues and Slack for new feedback and create a plan.",
-   "installs": 806
+   "installs": 807
   },
   {
    "key": "EveryInc/compound-engineering-plugin/ce-test-browser",
@@ -6093,7 +6093,7 @@
     "Audit dashboard accessibility and contrast"
    ],
    "example": "Can you review this landing page design and suggest ways to improve the layout?",
-   "installs": 369312
+   "installs": 369769
   },
   {
    "key": "wshobson/agents/screen-reader-testing",
@@ -6648,7 +6648,7 @@
     "Debug failed deployment gates"
    ],
    "example": "How can I set up a zero-downtime deployment pipeline with automated approval gates?",
-   "installs": 13900
+   "installs": 14000
   },
   {
    "key": "wshobson/agents/github-actions-templates",
@@ -6941,7 +6941,7 @@
     "Auditing social reports for double-counted reposts or errors"
    ],
    "example": "Create a cited report comparing how people discuss our brand across social platforms.",
-   "installs": 337
+   "installs": 341
   },
   {
    "key": "wshobson/agents/airflow-dag-patterns",
@@ -7049,7 +7049,7 @@
     "Build access control"
    ],
    "example": "Implement secure user authentication using OAuth2.",
-   "installs": 20000
+   "installs": 20100
   },
   {
    "key": "wshobson/agents/bazel-build-optimization",
@@ -7570,7 +7570,7 @@
     "Standardize UI patterns"
    ],
    "example": "Build a responsive button component using Tailwind CSS.",
-   "installs": 70980
+   "installs": 71005
   },
   {
    "key": "wshobson/agents/godot-gdscript-patterns",

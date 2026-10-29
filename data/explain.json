@@ -16563,5 +16563,109 @@
   "repo": "khanhtq29vn/contextcraft",
   "at": "2026-10-29",
   "source": "trending"
+ },
+ "Donchitos/Claude-Code-Game-Studios": {
+  "cat": "harness",
+  "kind": "Game dev harness",
+  "what": "An organizational harness for Claude Code that simulates a full game studio with 49 specialized AI roles and 74 workflow skills.",
+  "why": "Solves the problem of chaotic, unstructured solo game development with AI by enforcing studio hierarchies, design documents, and QA review gates. Reach for it when building complex games in Godot, Unity, or Unreal Engine and you want structured project management.",
+  "level": "setup",
+  "start": "git clone https://github.com/Donchitos/Claude-Code-Game-Studios.git",
+  "caution": "High complexity and potential AI cost: top director agents default to Opus and multi-agent reviews can consume heavy quota unless rigor mode is lowered.",
+  "alts": [
+   "anthropics/claude-code",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "obra/superpowers"
+  ],
+  "packages": [
+   "@anthropic-ai/claude-code"
+  ],
+  "plain": "Turns your AI coding helper into an entire game studio team with directors, designers, programmers, and testers.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Organize game projects across Godot, Unity, or Unreal Engine",
+   "Run structured game design and architecture review workflows",
+   "Coordinate simulated specialist agents for gameplay, audio, and testing"
+  ],
+  "steps": [
+   "Install Claude Code, Git, Python 3, and Bash on your computer.",
+   "Clone the repository to create your new game development project folder.",
+   "Configure project settings in `project.yaml` and choose your rigor level.",
+   "Launch Claude Code in your project directory and run `/start` to begin."
+  ],
+  "repo": "Donchitos/Claude-Code-Game-Studios",
+  "at": "2026-10-29",
+  "source": "trending"
+ },
+ "milind-soni/OpenMausBot": {
+  "cat": "coding",
+  "kind": "Desktop agent chat app",
+  "what": "OpenMausBot is an open-source desktop chat application that lets you manage and run multiple AI agents on your own computer.",
+  "why": "It provides a local-first alternative to cloud platforms like Grok Bot and Meta Muse by keeping chat history and credentials on your machine. Reach for it when you want a messaging interface to direct local AI agents with explicit approval over sensitive commands.",
+  "level": "easy",
+  "start": "Download and run the installer for macOS, Windows, or Linux from GitHub releases.",
+  "caution": "This tool uses your existing subscription logins for Claude, Codex, or Grok, which may violate provider terms of service and put your accounts at risk.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "A chat application that lets you talk to multiple AI assistants running directly on your own computer.",
+  "tags": [
+   "automate",
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Manage multiple AI agents in a desktop chat app",
+   "Run AI commands with manual step-by-step approval controls",
+   "Connect AI agents to cloud desktops or virtual machines"
+  ],
+  "steps": [
+   "Download the installer for macOS, Windows, or Ubuntu from the website or GitHub releases",
+   "Launch OpenMausBot on your computer",
+   "Configure your installed agent engines in Settings and start chatting with a bot"
+  ],
+  "repo": "milind-soni/OpenMausBot",
+  "at": "2026-10-29",
+  "source": "trending"
+ },
+ "AbadOrangeCat/TheALL": {
+  "cat": "coding",
+  "kind": "Desktop coding workspace",
+  "what": "TheAll is a desktop graphical app for Mac and Windows that wraps Claude Code and OpenAI Codex in tabbed workspaces with saved chat history and mobile companion access.",
+  "why": "Command-line coding agents can feel messy and lack persistent tabs or organized history. Reach for this if you want a clean desktop chat interface with model switching and phone access while running Claude Code or Codex.",
+  "level": "setup",
+  "start": "Download the app from the GitHub releases page for macOS or Windows.",
+  "caution": "Requires separate installation of Claude Code or Codex CLIs. Builds are unnotarized on macOS and unsigned on Windows, which triggers security warnings during launch.",
+  "alts": [
+   "anthropics/claude-code",
+   "siteboon/claudecodeui",
+   "Kilo-Org/kilocode"
+  ],
+  "packages": [],
+  "plain": "A visual desktop window for Claude Code and Codex that lets you manage coding chats and check them on your phone.",
+  "tags": [
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Organize coding chats with tabs and split panes",
+   "Switch AI models mid-conversation without losing context",
+   "Control and monitor desktop coding tasks from a phone"
+  ],
+  "steps": [
+   "Download and install TheAll for macOS or Windows from GitHub releases.",
+   "Install the official Claude Code or OpenAI Codex command-line tool separately.",
+   "Open TheAll, choose a project folder, enter your API key, and select a model."
+  ],
+  "repo": "AbadOrangeCat/TheALL",
+  "at": "2026-10-29",
+  "source": "trending"
  }
 }
