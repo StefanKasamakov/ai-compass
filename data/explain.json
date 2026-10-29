@@ -16395,5 +16395,173 @@
   "repo": "TheLastOxygen/mafdet",
   "at": "2026-10-28",
   "source": "trending"
+ },
+ "elayadesign/ai-design-skills": {
+  "cat": "harness",
+  "kind": "Design rule collection",
+  "what": "A set of markdown design instruction files that teach AI coding assistants how to build styled landing pages and web apps.",
+  "why": "Standard AI coding tools often create plain or generic user interfaces. Use this repository when you want your AI assistant to follow structured design systems, visual styles, and conversion layout rules.",
+  "level": "setup",
+  "start": "mkdir -p .claude/skills",
+  "caution": "",
+  "alts": [
+   "Leonxlnx/taste-skill",
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [],
+  "plain": "A collection of design rule files that teach your AI assistant how to create styled website landing pages.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Teach AI assistants how to layout and style website landing pages",
+   "Add custom typography and spacing guidelines to your AI coding tool",
+   "Generate conversion copy and page structures using Claude Code or Cursor"
+  ],
+  "steps": [
+   "Select a design skill folder from the project.",
+   "Copy the skill instruction file into your AI tool's rule directory with `mkdir -p .claude/skills`.",
+   "Prompt your AI coding tool to build a landing page using the added design skill."
+  ],
+  "repo": "elayadesign/ai-design-skills",
+  "at": "2026-10-29",
+  "source": "trending"
+ },
+ "DUNHKpcc/Claude-Guardian": {
+  "cat": "harness",
+  "kind": "account safety skill",
+  "what": "A Claude and Codex skill that audits your device, network environment, and payment options to help prevent account bans.",
+  "why": "Setting up Claude in unsupported regions or behind unstable proxy connections can trigger sudden account suspensions. Reach for this skill to evaluate your setup, pick between local, virtual machine, or cloud routes, and fix network issues safely.",
+  "level": "setup",
+  "start": "git clone https://github.com/DUNHKpcc/Claude-Guardian.git",
+  "caution": "The project contains links to third-party paid services and cannot guarantee full protection against account bans.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A tool for AI assistants that checks your computer and internet setup to prevent your account from being banned.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Audit proxy and firewall settings to avoid account bans",
+   "Compare local, virtual machine, and remote server setups",
+   "Troubleshoot Claude access errors like 403 or 429"
+  ],
+  "steps": [
+   "Copy `skills/claude-guardian` into your Codex skills folder (`~/.codex/skills/claude-guardian`).",
+   "Start a chat in Codex and type `$claude-guardian` followed by your setup context.",
+   "Answer the agent prompt questions to evaluate your network and receive personalized configuration steps."
+  ],
+  "repo": "DUNHKpcc/Claude-Guardian",
+  "at": "2026-10-29",
+  "source": "trending"
+ },
+ "Syenzzz/mcd-coupon-strategist": {
+  "cat": "harness",
+  "kind": "McDonalds ordering skill",
+  "what": "A Python-based skill using McDonald's Model Context Protocol (MCP) servers to calculate the cheapest food orders and audit expiring coupon wallets.",
+  "why": "Manual coupon calculations often miss optimal menu combinations or push users into spending extra money on bundle traps. Reach for this tool when you want real-time price optimization on McDonald's meals or want to track expiring coupons before they lose value.",
+  "level": "setup",
+  "start": "git clone https://github.com/Ayzzz123/mcd-coupon-strategist.git",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [],
+  "plain": "A helper tool that finds the cheapest McDonald's ordering options and alerts you about expiring discount coupons.",
+  "tags": [
+   "save",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Find the cheapest combo for a McDonald's meal order",
+   "Audit expiring McDonald's coupons to avoid losing discount money",
+   "Analyze personal McDonald's spending patterns and order habits"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/Ayzzz123/mcd-coupon-strategist.git`.",
+   "Enter the project folder using `cd mcd-coupon-strategist`.",
+   "Run the included offline test script with `python demo.py`."
+  ],
+  "repo": "Syenzzz/mcd-coupon-strategist",
+  "at": "2026-10-29",
+  "source": "trending"
+ },
+ "alexgaoth/awesome-reverse-engineered": {
+  "cat": "harness",
+  "kind": "Project directory & agent skill",
+  "what": "A searchable database of over 17,000 open-source projects created by reverse engineering closed apps, hardware, protocols, and file formats.",
+  "why": "It prevents developers from duplicating effort when building software for proprietary systems. Reach for it before attempting to reverse engineer a device or service yourself, or to give your AI assistant access to existing community projects.",
+  "level": "easy",
+  "start": "npx skills add alexgaoth/awesome-reverse-engineered",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [],
+  "plain": "A search directory that helps you find free open-source alternatives to locked software, hardware, and games.",
+  "tags": [
+   "supercharge",
+   "research",
+   "code"
+  ],
+  "useFor": [
+   "Search for open-source clients that replace proprietary services",
+   "Find community software that revives abandoned hardware and devices",
+   "Add a reverse-engineering project directory to your AI assistant"
+  ],
+  "steps": [
+   "Search the directory directly on the project website by vendor or protocol.",
+   "Add the index to your AI assistant with `npx skills add alexgaoth/awesome-reverse-engineered`.",
+   "Use existing open-source code instead of re-creating work from scratch."
+  ],
+  "repo": "alexgaoth/awesome-reverse-engineered",
+  "at": "2026-10-29",
+  "source": "trending"
+ },
+ "khanhtq29vn/contextcraft": {
+  "cat": "tokens",
+  "kind": "codebase context compressor",
+  "what": "ContextCraft compresses source code repositories to fit within exact AI prompt limits while preserving critical code structures.",
+  "why": "Full project files often exceed AI input limits or hide key logic inside boilerplate code. Reach for this tool when you need to feed large codebases to an AI model without exceeding context budgets.",
+  "level": "easy",
+  "start": "uvx contextcraft-ai . --budget 8k --focus \"AST elision knapsack optimizer pagerank\" -o context.md",
+  "caution": "",
+  "alts": [
+   "microsoft/LLMLingua"
+  ],
+  "packages": [
+   "contextcraft-ai"
+  ],
+  "plain": "It shrinks your computer code into a smaller file so you can feed it to AI helpers cheaply.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Compress code repositories into tight token limits for AI chats",
+   "Extract key code signatures and folder structures automatically",
+   "Format code context into XML or Markdown for Claude or ChatGPT"
+  ],
+  "steps": [
+   "Run without installing using `uvx contextcraft-ai . --budget 8k -o context.md`.",
+   "Alternatively, install the package using `pip install contextcraft-ai`.",
+   "Compress your project and copy output directly with `contextcraft . --budget 16k --format xml --copy`."
+  ],
+  "repo": "khanhtq29vn/contextcraft",
+  "at": "2026-10-29",
+  "source": "trending"
  }
 }

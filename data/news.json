@@ -1,6 +1,51 @@
 {
- "updated": "2026-10-28T22:39:55.462Z",
+ "updated": "2026-10-29T05:55:47.621Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
+   "url": "https://latent.space/p/ainews-gemini-4-carbon/",
+   "date": "2026-10-29T05:55:19.000Z",
+   "summary": "Google released Gemini 4 Carbon, a specialized frontier model variant focused on cybersecurity defense.",
+   "tags": [
+    "models",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-gemini-4-carbon/95760c867a2e9becf313c47b14f0386243bc4596c54259bb71809eb955f9dad9.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
+   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+   "date": "2026-10-29T03:33:42Z",
+   "discuss": "https://news.ycombinator.com/item?id=50284255",
+   "summary": "Users noted that the Claude Code CLI tool consumes 15 to 20 percent of prompt tokens displaying UI status lines.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
+   "url": "https://divagr.com/blog/qwenputer",
+   "date": "2026-10-29T00:25:45Z",
+   "discuss": "https://news.ycombinator.com/item?id=50282838",
+   "summary": "A developer demonstrated running a deterministic RISC-V CPU emulator directly within the Qwen3.5 model's context context.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://divagr.com/qwenputer/og.png"
+  },
   {
    "source": "DeepMind",
    "title": "Gemini 4 Carbon: Our next frontier model",
@@ -14,6 +59,21 @@
    "big": true,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "GitHub Octoverse 2026",
+   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+   "date": "2026-10-28T16:45:23.000Z",
+   "summary": "GitHub's 2026 Octoverse report highlighted a tripling of monthly merged pull requests driven by widespread adoption of AI coding agents.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/github-numbers.jpg",
+   "viaBrowser": true
   },
   {
    "source": "GitHub",
@@ -114,6 +174,20 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/68127936de624fb6f57d9989/3vFxCEUXz_xJVrTBr4hNr.jpeg"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "The October inflection point for vibe game development",
+   "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+   "date": "2026-10-28T13:55:15.000Z",
+   "summary": "Simon Willison highlights how recent capability gains in coding agents have crossed a threshold into practical automated game development.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/pumpkin-farmer.webp"
   },
   {
    "source": "OpenAI",
@@ -2142,75 +2216,6 @@
    "big": false,
    "ai": true,
    "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Scaling Indic Pretraining: 2.8 Trillion Tokens and an Open Data Generation Pipeline",
-   "url": "https://huggingface.co/blog/nvidia/scaling-indic-pretraining",
-   "date": "2026-10-16T01:44:47.000Z",
-   "summary": "Hugging Face released an open dataset and pretraining pipeline targeting Indic language models.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/68d2fec8856b85d927e44d32/x0aObe_0mduBjWFuKBGoV.png",
-   "audience": "dev"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Grupo Boticário uses AI to strengthen human connections",
-   "url": "https://openai.com/index/grupo-boticario",
-   "date": "2026-10-16T00:00:00.000Z",
-   "summary": "Almost 50 years after starting in a compounding pharmacy in Paraná, the group operates a proprietary agent platform that autonomously resolves up to 80% of resellers’ operational requests—enabling the sales force to take on an advisory role.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/626geK6h5EKqCFSWg0YLPk/f8dd261042306e6eb8a87f543103d381/grupo-boticario-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Localiza reorganized work around generative AI",
-   "url": "https://openai.com/index/localiza-generative-ai",
-   "date": "2026-10-16T00:00:00.000Z",
-   "summary": "See how Localiza uses ChatGPT Enterprise, the OpenAI API, Codex, and 60+ specialized agents to reorganize work and build AI-native mobility experiences.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/2M69iYQlxOPjrsVPY1c6Pj/9232bf2795a16d44221c4203d27713bd/localiza-directional-finish-seo-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Benefit Street Partners answers questions faster with Codex",
-   "url": "https://openai.com/index/benefit-street-partners",
-   "date": "2026-10-16T00:00:00.000Z",
-   "summary": "A financial firm is using Codex to review code and speed up development tasks.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/2Km2vOVvFRvxGl6hZqWOTQ/2073bb541740640de3d215ee6e36b28e/og.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-   "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-   "date": "2026-10-16T00:00:00.000Z",
-   "summary": "Stack Overflow launched an agent integration and ChatGPT plugin built with Codex to streamline developer queries.",
-   "tags": [
-    "agents",
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/4HTc2pk7XGFhzDU8RX0Ivg/ff2b922fa1914350c9d800da622ebe04/stack-overflow-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   }
  ]
