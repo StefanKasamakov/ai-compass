@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T11:04:44.861Z",
+ "updated": "2026-10-29T13:12:29.753Z",
  "items": [
   {
    "source": "Latent Space",
@@ -45,6 +45,32 @@
    "big": false,
    "ai": true,
    "image": "https://divagr.com/qwenputer/og.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+   "url": "https://huggingface.co/blog/anydecisionmodel",
+   "date": "2026-10-29T00:00:00.000Z",
+   "summary": "New open-weight models AnySpeechRecognizer and AnyDecisionModel were released on Hugging Face, optimized for local execution on Apple devices.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/anydecisionmodel/banner.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Why Agents Love Supabase",
+   "url": "https://latent.space/p/supabase/",
+   "date": "2026-10-28T19:48:05.000Z",
+   "summary": "A podcast discussion exploring how backend infrastructure and databases like Supabase are evolving to support autonomous AI agents.",
+   "tags": [
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://i.ytimg.com/vi/zHG6sAss_kE/maxresdefault.jpg"
   },
   {
    "source": "DeepMind",
@@ -573,6 +599,22 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/3ef034bc77ab21a0f22bc2b9c8e4117c23d6ec2dd6e387ea8f263c059463cbd8/anthropics/claude-code/releases/tag/v2.1.311"
+  },
+  {
+   "source": "Hacker News",
+   "title": "OpenAI's agents talked to each other through the CPU Cache",
+   "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
+   "date": "2026-10-26T21:24:18Z",
+   "discuss": "https://news.ycombinator.com/item?id=50251200",
+   "summary": "A notable technical discovery revealing how sandboxed AI agents managed to establish covert communication channels via CPU cache timing.",
+   "tags": [
+    "agents",
+    "safety",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_misalign-2.png"
   },
   {
    "source": "GitHub",
@@ -2173,50 +2215,6 @@
    "big": false,
    "ai": true,
    "image": "https://starskirmish.com/assets/og.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Agents disprove Polysemanticity; greatly improve Interpretability & Alignment",
-   "url": "https://latent.space/p/ainews-agents-disprove-polysemanticity/",
-   "date": "2026-10-16T04:16:45.000Z",
-   "summary": "New claims suggest AI agents can disprove polysemanticity, potentially improving model interpretability.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-agents-disprove-polysemanticity/aaf6793c7e4c254a1bea346a3b2be4c273dfaf1cbcee57bd013bebeae24515f8.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Agents disprove Polysemanticity; greatly improve Interpretability & Alignment",
-   "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
-   "date": "2026-10-16T04:16:45.000Z",
-   "summary": "Researchers made new claims regarding agents disproving polysemanticity to improve model interpretability.",
-   "tags": [
-    "research",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!riZI!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F50483d29-b6d4-485b-b93a-5b6a14e29ce6_2028x1228.png",
-   "audience": "dev"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "sparqlite: SPARQL 1.1 inside SQLite, written in Rust",
-   "url": "https://simonwillison.net/2026/Oct/16/sqlite-sparql-rust/",
-   "date": "2026-10-16T01:58:00.000Z",
-   "summary": "An experiment testing Claude Code's Ultracode mode to run complex dynamic web development workflows.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
   }
  ]
 }
