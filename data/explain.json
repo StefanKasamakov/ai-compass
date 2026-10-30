@@ -17045,5 +17045,110 @@
   "repo": "cporter202/ai-agent-data-apis",
   "at": "2026-10-30",
   "source": "trending"
+ },
+ "wangzan101/Mika": {
+  "cat": "coding",
+  "kind": "Android AI agent",
+  "what": "Mika is an on-device Android AI agent that operates mobile apps and websites in a hidden background screen.",
+  "why": "It automates repetitive phone chores like summarizing group chats, comparing products, or monitoring websites without interrupting your screen use. Reach for it when you want a personal mobile assistant to perform multi-step app actions directly on your phone.",
+  "level": "setup",
+  "start": "`adb shell sh /sdcard/Android/data/com.wangzan101.mika/files/usb-start.sh`",
+  "caution": "Logging in with consumer ChatGPT subscription accounts directly rather than using official API keys may violate provider terms of service and risk account suspension. This project is also in early public beta.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "browser-use/browser-use",
+   "Significant-Gravitas/AutoGPT"
+  ],
+  "packages": [],
+  "plain": "An app that performs tasks on your phone in the background, like reading messages or shopping.",
+  "tags": [
+   "automate",
+   "connect",
+   "research"
+  ],
+  "useFor": [
+   "Summarize daily messages from chat apps on a hidden screen",
+   "Search products and compare deals across shopping apps automatically",
+   "Set up scheduled daily tasks to check weather or websites"
+  ],
+  "steps": [
+   "Download and install the latest Mika APK onto your Android device",
+   "Complete the wireless debugging setup in app settings to enable phone automation",
+   "Add an AI provider key or sign in with your account in settings"
+  ],
+  "repo": "wangzan101/Mika",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "daveebbelaar/bama": {
+  "cat": "harness",
+  "kind": "mac application skills",
+  "what": "A set of agent skills that enable Claude Code and Codex to research, design, build, and test native macOS apps with Swift.",
+  "why": "It gives AI assistants step-by-step workflows to turn app ideas or existing designs into working macOS software without needing to click around in Xcode.",
+  "level": "setup",
+  "start": "npx skills@latest add daveebbelaar/bama",
+  "caution": "Requires macOS 26+ with Xcode installed for compiler tools. Rebuilding existing apps using computer vision requires Claude Pro or Max subscriptions.",
+  "alts": [
+   "twostraws/SwiftUI-Agent-Skill",
+   "morluto/rea",
+   "mattpocock/skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A collection of instructions that helps AI assistants design and code native Apple Mac applications.",
+  "tags": [
+   "apps",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Build native macOS apps from text descriptions",
+   "Clone existing Mac software designs into code",
+   "Snapshot and test Mac app layouts automatically"
+  ],
+  "steps": [
+   "Install the skills with `npx skills@latest add daveebbelaar/bama`",
+   "Open your AI agent in a new app folder",
+   "Type `/bama` or ask your agent to build a native Mac app"
+  ],
+  "repo": "daveebbelaar/bama",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "chatvia/chatvia": {
+  "cat": "builders",
+  "kind": "AI agent builder",
+  "what": "An open-source platform for creating custom AI chat agents that answer questions using your own documents and knowledge base.",
+  "why": "It allows organizations to deploy customer support and internal bots without sending sensitive files to third-party chat platforms. Reach for it when you need AI chat widgets on your website or messaging apps like Slack, Teams, and WhatsApp with live human handoff.",
+  "level": "setup",
+  "start": "curl -fsSL https://chatvia.ai/install.sh | bash",
+  "caution": "Uses a custom ChatVia.ai license rather than a standard open-source license.",
+  "alts": [
+   "langgenius/dify",
+   "FlowiseAI/Flowise",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "A program you install on your own server to create AI chatbots that answer questions using your documents.",
+  "tags": [
+   "knowledge",
+   "connect",
+   "docs"
+  ],
+  "useFor": [
+   "Build AI chat widgets for your website using your documents",
+   "Deploy customer support bots on Slack Teams and WhatsApp",
+   "Provide human handoff with a live inbox for customer chats"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://chatvia.ai/install.sh | bash` on your server to start installer",
+   "Answer the setup questions to finish installing ChatVia",
+   "Log in to the dashboard and upload your documents websites or files",
+   "Publish your agent to your website widget Slack or WhatsApp"
+  ],
+  "repo": "chatvia/chatvia",
+  "at": "2026-10-30",
+  "source": "trending"
  }
 }

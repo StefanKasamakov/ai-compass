@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T13:05:00.227Z",
+ "updated": "2026-10-30T22:26:58.016Z",
  "items": [
   {
    "source": "Hacker News",
@@ -33,6 +33,35 @@
    "viaBrowser": true
   },
   {
+   "source": "OpenAI",
+   "title": "Making it easier for websites to express AI training preferences",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "date": "2026-10-30T09:30:00.000Z",
+   "summary": "OpenAI introduced a shared robots.txt signal to help website operators easily manage and communicate their AI training preferences.",
+   "tags": [
+    "business",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4fvNR0KxKmPYu4fRXtEgKp/4a522ef61a6f983b0b65ad39c2a71e4c/websites-toeexpress-ai-training-preferences-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Community safety report and new protections for teens",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "date": "2026-10-30T09:00:00.000Z",
+   "summary": "OpenAI strengthened violence prevention measures in ChatGPT with expanded safeguards and earlier interventions.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4Bjdb6r2RnzPzTHsby9gGq/d1b04269dc8a4df875d201341fe6d254/51GTG8rZQTzq9iEcTVFvUi--seo-v003.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
    "source": "Latent Space",
    "title": "[AINews] Building AIE CODE: The top Coding Agent Conference",
    "url": "https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/",
@@ -43,6 +72,21 @@
    "ai": false,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-building-aie-code-the-top-coding-agent-conference/5b23d2a392473bc3aa4d9ff6d1748256231886548b7aa04537c84279d37eeb0f.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
+   "date": "2026-10-30T07:09:12Z",
+   "discuss": "https://news.ycombinator.com/item?id=50300683",
+   "summary": "A security vulnerability was discovered involving a backdoor in a Claude Code VS Code extension hosted on the Cursor Marketplace.",
+   "tags": [
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://phorion.io/images/default-social-card.png"
   },
   {
    "source": "GitHub release",
@@ -937,6 +981,20 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/1ksgDNZQ7aw2uHUY6xbaVm/0ffd141428e2cea70f4dcbf67ccd6245/gpt-6-1-sol-helps-coderabbit-strengthen-security-across-complex-codebases-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "Brown student maps the hidden global labor powering AI",
+   "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+   "date": "2026-10-26T12:58:27Z",
+   "discuss": "https://news.ycombinator.com/item?id=50242843",
+   "summary": "A research study mapped the hidden global labor force that helps train and annotate data for modern AI systems.",
+   "tags": [
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www.brown.edu/sites/default/files/styles/wide_lrg/public/2026-10/Dataworkers.jpg?h=f6430484&itok=1eq5-wXm"
   },
   {
    "source": "OpenAI",
@@ -2147,63 +2205,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/3ff3f9cbe72ac999e8c7a9ebc27fd95fb47a98253de2beee336521f03bd71c64/anthropics/claude-code/releases/tag/v2.1.304"
-  },
-  {
-   "source": "GitHub",
-   "title": "Copilot model policy API for enterprise, orgs, and teams",
-   "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
-   "date": "2026-10-19T21:32:18.000Z",
-   "summary": "GitHub launched a REST API that lets enterprise teams programmatically manage and enforce which AI models are permitted in GitHub Copilot.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-improvements.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub Copilot models deprecated on October 19, 2026",
-   "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
-   "date": "2026-10-19T21:27:10.000Z",
-   "summary": "GitHub deprecated older Copilot models across Chat, inline edits, and agent modes, requiring users to switch to newer supported models.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/675076555-e8b71783-0511-4913-b6f3-dca3cf564538.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Code is clay now",
-   "url": "https://www.albertodenia.com/writing/code-is-clay-now",
-   "date": "2026-10-19T15:19:45Z",
-   "discuss": "https://news.ycombinator.com/item?id=50153531",
-   "summary": "An essay discussed how generative AI changes the nature of software engineering.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.albertodenia.com/_app/immutable/assets/code-is-clay-now-hero.D0t9h_rd.jpeg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Advancing coding in low‑resource programming languages",
-   "url": "https://openai.com/index/low-resource-programming-languages",
-   "date": "2026-10-19T12:00:00.000Z",
-   "summary": "OpenAI expanded ChatGPT's coding evaluations and capabilities for legacy and low-resource languages such as COBOL and SQLite. This helps developers who need AI assistance when maintaining or migrating older software stacks.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1wQpFFie9sKfVWvApPYyn5/34e615a244e3eaed7819969d6d2eece3/low-resource-programming-languages-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }
