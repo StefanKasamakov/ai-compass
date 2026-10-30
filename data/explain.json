@@ -16704,5 +16704,180 @@
   "repo": "CopilotKit/OpenBot",
   "at": "2026-10-29",
   "source": "trending"
+ },
+ "outcrawlai/scout": {
+  "cat": "frameworks",
+  "kind": "browser automation agent",
+  "what": "Scout is a TypeScript library that lets AI models operate a real web browser to complete tasks, fill forms, and extract web data.",
+  "why": "Writing manual browser automation scripts breaks whenever site structures change. Reach for Scout when you want an agent to read web pages, click links, and collect structured answers from plain English prompts.",
+  "level": "dev",
+  "start": "`npm i @outcrawl/scout`",
+  "caution": "",
+  "alts": [
+   "browser-use/browser-use",
+   "browserbase/stagehand",
+   "Skyvern-AI/skyvern"
+  ],
+  "packages": [
+   "@outcrawl/scout"
+  ],
+  "plain": "It opens a web browser and completes online tasks for you based on simple text requests.",
+  "tags": [
+   "automate",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Automate website navigation and online form filling",
+   "Extract structured data from multi-page websites",
+   "Perform automated online research and data gathering"
+  ],
+  "steps": [
+   "Install the library using `npm i @outcrawl/scout` in a Node 22 project.",
+   "Configure environment variables with your Outcrawl and model keys.",
+   "Create a TypeScript script that imports Scout and calls run with your browser task."
+  ],
+  "repo": "outcrawlai/scout",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "Jakeschincariol/trader-skill": {
+  "cat": "harness",
+  "kind": "Claude trading skills",
+  "what": "A collection of 11 skills for Claude that pull financial disclosures, track news and congressional trades, and draft risk-checked portfolio orders for your approval.",
+  "why": "Researching 13F filings, tracking stock disclosures, and calculating position sizes manually takes substantial effort. Reach for this pack when you want Claude to gather public financial data and structure portfolio trades without auto-executing orders.",
+  "level": "setup",
+  "start": "/plugin marketplace add Jakeschincariol/trader-skill",
+  "caution": "Not financial advice; public filings like 13F reports and congressional disclosures are delayed, and you should manually review all proposed trades before executing them.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code",
+   "anthropics/knowledge-work-plugins"
+  ],
+  "packages": [],
+  "plain": "Eleven tools for Claude that help you research stocks, track investor portfolios, and draft trades for your approval.",
+  "tags": [
+   "automate",
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Track 13F filings to recreate portfolio weights of major investors",
+   "Monitor stock news and congressional trade disclosures automatically",
+   "Calculate budget-adjusted position sizes and check risk rules before trading"
+  ],
+  "steps": [
+   "Add the skill pack to Claude Code using `/plugin marketplace add Jakeschincariol/trader-skill`.",
+   "Set your name and email in `trader/config.json` to identify your requests to SEC EDGAR.",
+   "Run commands like `/trader-copycat` or `/trader-budget` inside your Claude chat to start researching."
+  ],
+  "repo": "Jakeschincariol/trader-skill",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "ZiChuanLan/agent-purge": {
+  "cat": "harness",
+  "kind": "Agent prompt switcher",
+  "what": "agent-purge injects or swaps system prompt personas across multiple AI coding tools using commands or a local web interface.",
+  "why": "Different AI coding agents read system instructions in different ways, making cross-tool prompt customization tedious. Reach for this to set, toggle, or append custom instructions across tools like Codex, Claude, and OpenCode from one place.",
+  "level": "setup",
+  "start": "npm i -g agent-purge",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "mksglu/context-mode"
+  ],
+  "packages": [
+   "agent-purge"
+  ],
+  "plain": "This tool lets you change the hidden instructions that guide your AI coding assistants from one local control panel.",
+  "tags": [
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Switch prompt personas across coding assistants from a local web dashboard",
+   "Inject custom behavior or rules into tools like Claude Code and Codex",
+   "Turn off or reset prompt changes across all installed coding agents"
+  ],
+  "steps": [
+   "Install the tool globally using `npm i -g agent-purge`.",
+   "Launch the local web dashboard by running `agent-purge web` in your terminal.",
+   "Open your browser to http://127.0.0.1:7788 to view and select prompt personas.",
+   "Start your coding agent with your newly assigned persona."
+  ],
+  "repo": "ZiChuanLan/agent-purge",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "ComputerUseAgent/AutoCua": {
+  "cat": "coding",
+  "kind": "Computer automation agent",
+  "what": "AutoCua is a multi-platform automation agent that operates desktop applications, web browsers, terminal shells, and iOS devices.",
+  "why": "Manual screen automation often breaks when application layouts or resolutions change. Reach for AutoCua when you need an AI agent to reliably click buttons, run shell commands, or perform web actions without relying on raw pixel coordinates.",
+  "level": "dev",
+  "start": "pip install AutoCua",
+  "caution": "Windows elevation prompts require installing a manual kernel driver and rebooting, while Linux requires additional system-level accessibility packages before running.",
+  "alts": [
+   "browser-use/browser-use",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [
+   "AutoCua"
+  ],
+  "plain": "An AI helper that controls your mouse, keyboard, web browser, and phone to complete tasks for you.",
+  "tags": [
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Automate web browsing tasks inside your browser",
+   "Control desktop applications on Mac, Windows, and Linux",
+   "Execute tasks on connected iOS devices or simulators"
+  ],
+  "steps": [
+   "Install the tool with `pip install AutoCua`.",
+   "Write a short Python script setting the agent mode and task.",
+   "Run the script to let the agent drive your screen or browser."
+  ],
+  "repo": "ComputerUseAgent/AutoCua",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "didi/helixharness": {
+  "cat": "harness",
+  "kind": "AI coding harness",
+  "what": "HelixHarness is a plugin for Claude Code and Codex that enforces project rules, business knowledge, and structured workflows during AI development.",
+  "why": "Standard AI assistants often ignore team coding standards and past architectural choices. Reach for HelixHarness when you need AI agents to follow repository-specific rules, perform structured task checks, and save learned context for future tasks.",
+  "level": "setup",
+  "start": "claude plugin marketplace add https://github.com/didi/helixharness.git",
+  "caution": "",
+  "alts": [
+   "obra/superpowers",
+   "anthropics/claude-code",
+   "gsd-build/get-shit-done"
+  ],
+  "packages": [],
+  "plain": "It adds team rules and saved knowledge to your AI coding assistant so it follows your exact software development process.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Enforce engineering rules and architecture standards in AI workflows",
+   "Retain verified project knowledge across multiple coding tasks",
+   "Guide AI agents through task planning, implementation, and review"
+  ],
+  "steps": [
+   "Install the marketplace plugin using `claude plugin marketplace add https://github.com/didi/helixharness.git`",
+   "Add the helix plugin using `claude plugin install helix@helixharness-marketplace`",
+   "Initialize HelixHarness in your project by typing `/helix:init` in your agent session",
+   "Run a feature task using `/helix:propose task-filter ./requirements/task-filter.md --loop`"
+  ],
+  "repo": "didi/helixharness",
+  "at": "2026-10-30",
+  "source": "trending"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:49:17.642Z",
+ "updated": "2026-10-30T05:57:00.080Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -293,11 +293,28 @@
     "pypi:claude-monitor"
    ]
   },
-  "QwenLM/qwen-code": {
-   "npm": 411,
+  "Kilo-Org/kilocode": {
+   "npm": 127160,
    "pypi": 0,
-   "total": 411,
+   "total": 127160,
    "packages": [
+    "npm:@kilocode/cli"
+   ]
+  },
+  "charmbracelet/crush": {
+   "npm": 48451,
+   "pypi": 0,
+   "total": 48451,
+   "packages": [
+    "npm:@charmland/crush"
+   ]
+  },
+  "QwenLM/qwen-code": {
+   "npm": 311015,
+   "pypi": 0,
+   "total": 311015,
+   "packages": [
+    "npm:@qwen-code/qwen-code",
     "npm:qwen-code"
    ]
   },
@@ -326,10 +343,11 @@
    ]
   },
   "mastra-ai/mastra": {
-   "npm": 3452618,
+   "npm": 8452839,
    "pypi": 0,
-   "total": 3452618,
+   "total": 8452839,
    "packages": [
+    "npm:@mastra/core",
     "npm:mastra"
    ]
   },
@@ -339,6 +357,19 @@
    "total": 10109331,
    "packages": [
     "pypi:google-adk"
+   ]
+  },
+  "modelcontextprotocol/typescript-sdk": {
+   "npm": 48628634,
+   "pypi": 0,
+   "total": 48628634,
+   "packages": [
+    "npm:@modelcontextprotocol/server",
+    "npm:@modelcontextprotocol/client",
+    "npm:@modelcontextprotocol/node",
+    "npm:@modelcontextprotocol/express",
+    "npm:@modelcontextprotocol/fastify",
+    "npm:@modelcontextprotocol/hono"
    ]
   },
   "modelcontextprotocol/python-sdk": {
@@ -358,10 +389,11 @@
    ]
   },
   "browserbase/stagehand": {
-   "npm": 0,
+   "npm": 6794917,
    "pypi": 1271610,
-   "total": 1271610,
+   "total": 8066527,
    "packages": [
+    "npm:@browserbasehq/stagehand",
     "pypi:stagehand"
    ]
   },
@@ -537,6 +569,7 @@
    "pypi": 50560,
    "total": 50560,
    "packages": [
+    "pypi:TTS",
     "pypi:tts"
    ]
   },
@@ -570,6 +603,14 @@
    "total": 1339,
    "packages": [
     "npm:@toddzheng024/dscode"
+   ]
+  },
+  "jianruntech/geo-score": {
+   "npm": 0,
+   "pypi": 490,
+   "total": 490,
+   "packages": [
+    "pypi:geo-score"
    ]
   },
   "HKUDS/CLI-Anything": {
@@ -1008,6 +1049,23 @@
     "npm:huashu-motion"
    ]
   },
+  "sickn33/agentic-awesome-skills": {
+   "npm": 24881,
+   "pypi": 0,
+   "total": 24881,
+   "packages": [
+    "npm:agentic-awesome-skills"
+   ]
+  },
+  "omnara-ai/omnara": {
+   "npm": 6157,
+   "pypi": 0,
+   "total": 6157,
+   "packages": [
+    "npm:@omnara/sdk",
+    "npm:omnara"
+   ]
+  },
   "OpenBMB/VoxCPM": {
    "npm": 0,
    "pypi": 57258,
@@ -1026,12 +1084,37 @@
     "pypi:pagesift"
    ]
   },
+  "KnifeLemon/Droidline": {
+   "npm": 1915,
+   "pypi": 0,
+   "total": 1915,
+   "packages": [
+    "npm:droidline",
+    "pypi:droidline"
+   ]
+  },
   "milind-soni/OpenMausBot": {
    "npm": 9069,
    "pypi": 0,
    "total": 9069,
    "packages": [
     "npm:openmausbot"
+   ]
+  },
+  "outcrawlai/scout": {
+   "npm": 77,
+   "pypi": 0,
+   "total": 77,
+   "packages": [
+    "npm:@outcrawl/scout"
+   ]
+  },
+  "ZiChuanLan/agent-purge": {
+   "npm": 2218,
+   "pypi": 0,
+   "total": 2218,
+   "packages": [
+    "npm:agent-purge"
    ]
   }
  }

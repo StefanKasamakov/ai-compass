@@ -1,6 +1,21 @@
 {
- "updated": "2026-10-29T22:49:17.642Z",
+ "updated": "2026-10-30T05:57:00.080Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.314",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
+   "date": "2026-10-30T01:06:26Z",
+   "summary": "Anthropic released Claude Code v2.1.314, updating its command-line AI coding assistant tool.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/0c9fe3616a4de8c08f13a0af292a570cd8a374438f1b511c2940ce1db74b5ac1/anthropics/claude-code/releases/tag/v2.1.314"
+  },
   {
    "source": "Simon Willison",
    "title": "API credits benefit for eligible ChatGPT subscriptions",
@@ -32,6 +47,20 @@
    "image": "https://opengraph.githubassets.com/85a7e5fa54c0b28bde06588dae3003e8544d58795b2c562c7132d22d88415450/openai/codex/releases/tag/rust-v0.166.0"
   },
   {
+   "source": "Simon Willison",
+   "title": "Building a multiplayer game world with autonomous Fable-class models",
+   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+   "date": "2026-10-29T17:00:26.000Z",
+   "summary": "Simon Willison highlighted an experiment in agentic engineering using frontier models to drive autonomous multiplayer game environments.",
+   "tags": [
+    "agents",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026-10-29/IMG_9406.webp"
+  },
+  {
    "source": "OpenAI",
    "title": "An updated Model Spec for more capable and beneficial AI",
    "url": "https://openai.com/index/updated-model-spec",
@@ -44,6 +73,35 @@
    "big": false,
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/75veJvi069XNefheZKrGT3/524e301a9565289e83b5a666d47b3da5/model-spec-update-more-capable-beneficial-ai-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Can Frontier Models See Past a Decoy? Elorian Tests Visual Reasoning",
+   "url": "https://latent.space/p/elorian/",
+   "date": "2026-10-29T16:00:00.000Z",
+   "summary": "Latent Space reviewed visual reasoning techniques designed to help multimodal AI models identify target objects despite visual decoys.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/c0263f23-d8f4-45a5-8e75-1ea88650605f/Elorian_Decoy_Feature_Image.png?t=1793221147"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Ben Hylak",
+   "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
+   "date": "2026-10-29T14:06:27.000Z",
+   "summary": "A commentary piece highlights how applications are shifting toward headless Model Context Protocol (MCP) servers managed by AI agents.",
+   "tags": [
+    "mcp",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
    "viaBrowser": true
   },
   {
@@ -74,6 +132,22 @@
    "big": false,
    "ai": true,
    "image": "https://cdn.sanity.io/images/6vfeftx9/articles/ce3b883faa25c57a8672817086d2da1d248fbbfa-1254x1254.png?w=1200&auto=format"
+  },
+  {
+   "source": "OpenAI",
+   "title": "How we detect frontier model misalignment",
+   "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+   "date": "2026-10-29T09:00:00.000Z",
+   "summary": "OpenAI detailed its layered monitoring architecture designed to detect frontier model misalignment and unauthorized agent actions before issues escalate.",
+   "tags": [
+    "safety",
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5gtjUYZjCpVMAAv0AbX0Cs/510ae35e592775228a8ef7b7f0911237/how-we-detect-frontier-model-misalignment-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Latent Space",
@@ -145,6 +219,20 @@
    "big": false,
    "ai": true,
    "image": "https://huggingface.co/blog/assets/anydecisionmodel/banner.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Ted Sanders",
+   "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/",
+   "date": "2026-10-28T23:23:21.000Z",
+   "summary": "A technical discussion notes that overall parameter count remains the single largest factor determining model capability and token price.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "Latent Space",
@@ -2127,92 +2215,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/aa07475b3f0160fb2a6c528ab1dddcab2cefa33f6cdc8d86250c04f9ef341ce6/anthropics/claude-code/releases/tag/v2.1.303"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: WhatsApp MCP running free on Cloudflare",
-   "url": "https://github.com/finereli/whatsapp-mcp",
-   "date": "2026-10-18T21:36:10Z",
-   "discuss": "https://news.ycombinator.com/item?id=50145715",
-   "summary": "A free Model Context Protocol server for WhatsApp was launched that runs serverless on Cloudflare Workers.",
-   "tags": [
-    "mcp",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/5b9cbab5fdc998cf8126a35c863becff7ee6132fa27087686c627e197d671e15/finereli/whatsapp-mcp"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping",
-   "url": "https://sphinx-six-theta.vercel.app/",
-   "date": "2026-10-18T04:33:49Z",
-   "discuss": "https://news.ycombinator.com/item?id=50137950",
-   "summary": "Sphinx is a new Git hook that tests developers on their AI-generated code before it gets committed to ensure comprehension.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/public-benefit-fund",
-   "date": "2026-10-18T00:00:00.000Z",
-   "title": "Investing in the public benefit",
-   "summary": "We’re committing a portion of Anthropic’s shares to the Anthropic Public Benefit Fund, a new entity with a structure that increases the stake as the company grows.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/85648c93880ac27347f8e6a4008650a65c12ede8-1200x630.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Codex Desktop continuously generates Crashpad pending dumps",
-   "url": "https://github.com/openai/codex/issues/25921",
-   "date": "2026-10-17T17:45:08Z",
-   "discuss": "https://news.ycombinator.com/item?id=50133231",
-   "summary": "Users report bug crashes and runaway dump files in the Codex Desktop developer application.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/ca36cd0881ef0455269ae28027ff6686ed2bae99e1f24dc416de1a72bc590b3c/openai/codex/issues/25921"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.302",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.302",
-   "date": "2026-10-16T20:53:06Z",
-   "summary": "Anthropic updated Claude Code to version 2.1.302, continuing bug fixes and refinements for its terminal coding assistant.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/641b684b9ce7bce5b2dfe5e170f4946863eec5c5feecd047d2bb35fc8858c8e1/anthropics/claude-code/releases/tag/v2.1.302"
-  },
-  {
-   "source": "Hacker News",
-   "title": "How the Claude Code team does code review",
-   "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
-   "date": "2026-10-16T19:04:47Z",
-   "discuss": "https://news.ycombinator.com/item?id=50122951",
-   "summary": "Anthropic engineers shared their internal workflow and practices for conducting code reviews using Claude Code.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.dev/blog/solving-code-review-at-anthropic/og.png"
   }
  ]
 }
