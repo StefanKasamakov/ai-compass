@@ -16879,5 +16879,171 @@
   "repo": "didi/helixharness",
   "at": "2026-10-30",
   "source": "trending"
+ },
+ "lightpanda-io/browser": {
+  "cat": "frameworks",
+  "kind": "Lightweight headless browser",
+  "what": "Lightpanda is an open-source, lightweight headless browser built from scratch in Zig specifically for web automation and AI agents.",
+  "why": "Standard headless browsers like Chrome consume massive memory and start slowly when run at scale. Lightpanda provides a fast, low-memory alternative compatible with standard browser automation protocols.",
+  "level": "dev",
+  "start": "brew install lightpanda-io/browser/lightpanda",
+  "caution": "Licensed under AGPL-3.0. There is no native Windows binary (requires WSL2), and prebuilt Linux binaries require glibc and will not work on musl-based systems like Alpine.",
+  "alts": [
+   "browser-use/browser-use",
+   "browserbase/stagehand",
+   "Skyvern-AI/skyvern"
+  ],
+  "packages": [],
+  "plain": "A super-fast, low-memory web browser without a visual window, designed for AI tools that browse the web.",
+  "tags": [
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Fetch web pages directly into text or markdown formats",
+   "Run Puppeteer scripts through a lightweight browser backend",
+   "Direct an automated agent to click buttons and extract data"
+  ],
+  "steps": [
+   "Install via Homebrew using `brew install lightpanda-io/browser/lightpanda` or download a nightly binary.",
+   "Fetch a web page in markdown format using `./lightpanda fetch --dump markdown <URL>`.",
+   "Start a background browser server with `./lightpanda serve --host 127.0.0.1 --port 9222` to connect automation scripts."
+  ],
+  "repo": "lightpanda-io/browser",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "ccch1mneyyy/dsh-Go": {
+  "cat": "coding",
+  "kind": "mobile coding agent",
+  "what": "An Android client that runs DeepSeek Harness directly on your phone or remotely controls it running on your PC.",
+  "why": "Use your phone to manage DeepSeek coding agent tasks on the go without needing a separate terminal or Termux.",
+  "level": "setup",
+  "start": "Download the latest arm64 APK from GitHub Releases",
+  "caution": "Screen control features read your display and may transmit screenshots or screen text to your configured AI provider.",
+  "alts": [
+   "Zhou-Yujing114514/deepseek-harness-linux",
+   "cline/cline",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "An Android app to run or remote-control an AI coding assistant from your phone.",
+  "tags": [
+   "code",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Run DeepSeek Harness coding sessions directly on Android",
+   "Remote-control a desktop DeepSeek Harness setup via SSH",
+   "Automate phone actions using AI screen reading and tapping"
+  ],
+  "steps": [
+   "Download and install the arm64 APK from the GitHub releases page",
+   "Open the app and choose to set up local Linux or connect remotely",
+   "Configure your model provider keys to begin chatting and task execution"
+  ],
+  "repo": "ccch1mneyyy/dsh-Go",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "qybaihe/bla": {
+  "cat": "harness",
+  "kind": "Anti-AI software shield",
+  "what": "Protects software builds and models against automated AI reverse-engineering agents by injecting decoy data and exhausting analyzer limits.",
+  "why": "AI agents can rapidly decompile and inspect compiled software to extract private logic. Reach for this to protect your production builds without altering how they run for normal users.",
+  "level": "easy",
+  "start": "npx bla-agents harden .",
+  "caution": "Requires Node.js 22.23.4+ or 24.x, and deeper native protections depend on optional external tools like Wabt or tshark.",
+  "alts": [
+   "morluto/rea",
+   "DUNHKpcc/Claude-Guardian",
+   "ZeroDayEvil/ai-security-tool"
+  ],
+  "packages": [
+   "bla-agents"
+  ],
+  "plain": "Protects your software builds so automated AI tools cannot inspect or steal your code.",
+  "tags": [
+   "code",
+   "apps",
+   "private"
+  ],
+  "useFor": [
+   "Harden Electron, WebAssembly, and JavaScript builds against AI inspection",
+   "Inject decoy structures to exhaust automated reverse-engineering tools",
+   "Audit and protect release artifacts before shipping to users"
+  ],
+  "steps": [
+   "Register tools with your assistant using `npx bla-agents setup`.",
+   "Run `npx bla-agents harden .` to discover and protect project build outputs.",
+   "Verify protected files pass runtime checks with `npx bla-agents benchmark`."
+  ],
+  "repo": "qybaihe/bla",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "johncassil/dontallow": {
+  "cat": "coding",
+  "kind": "macOS prompt dismisser",
+  "what": "A lightweight macOS background tool that automatically clicks Don't Allow on repeated local network permission popups.",
+  "why": "macOS Sequoia repeatedly asks permission for apps to scan local networks, cluttering settings for browsers with changing paths. Reach for this to dismiss those prompts automatically with zero idle battery impact.",
+  "level": "setup",
+  "start": "brew install johncassil/tap/dontallow",
+  "caution": "Requires granting macOS Accessibility permissions so it can interact with system prompts, and it currently only works on English-language systems.",
+  "alts": [],
+  "packages": [],
+  "plain": "A tiny Mac tool that automatically clicks Don't Allow on annoying popups asking to find local devices.",
+  "tags": [
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Dismiss repeated macOS local network access prompts automatically",
+   "Inspect orphan and stored local network app permissions",
+   "Temporarily pause dismissals when an app needs network access"
+  ],
+  "steps": [
+   "Install the tool with `brew install johncassil/tap/dontallow`.",
+   "Run `dontallow install` to create and start the background agent.",
+   "Grant Accessibility permissions in macOS System Settings when prompted."
+  ],
+  "repo": "johncassil/dontallow",
+  "at": "2026-10-30",
+  "source": "trending"
+ },
+ "cporter202/ai-agent-data-apis": {
+  "cat": "harness",
+  "kind": "tool catalog",
+  "what": "A curated catalog of over 2,000 Apify actors and Model Context Protocol servers to give AI assistants live web-scraping and data tools.",
+  "why": "AI assistants lack out-of-the-box access to live web data, dynamic scraping, or specialized media tools. Reach for this catalog when you want to connect Claude, Codex, or custom agents to pre-built scraping routines without writing scrapers from scratch.",
+  "level": "setup",
+  "start": "git clone https://github.com/cporter202/ai-agent-data-apis.git",
+  "caution": "The repository heavily promotes commercial services and includes affiliate links to Apify. Using many actors requires an active Apify account and paid credits past the free tier.",
+  "alts": [
+   "unclecode/crawl4ai",
+   "firecrawl/firecrawl",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "plain": "A big catalog of pre-made web scraping tools you can connect to your AI assistant to read live websites.",
+  "tags": [
+   "connect",
+   "research",
+   "automate"
+  ],
+  "useFor": [
+   "Give Claude or Codex live web-scraping abilities via Apify actors",
+   "Extract website text to build RAG search databases",
+   "Feed live web data and prices into automated agents"
+  ],
+  "steps": [
+   "Open the catalog folder to browse available tools for your use case",
+   "Sign up for an Apify account to get API access",
+   "Follow the playbook to connect Apify actors into Claude or Codex"
+  ],
+  "repo": "cporter202/ai-agent-data-apis",
+  "at": "2026-10-30",
+  "source": "trending"
  }
 }

@@ -1,6 +1,18 @@
 {
- "updated": "2026-10-30T05:57:00.080Z",
+ "updated": "2026-10-30T11:00:15.483Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Building AIE CODE: The top Coding Agent Conference",
+   "url": "https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/",
+   "date": "2026-10-30T08:24:29.000Z",
+   "summary": "Mistral’s open-weight release, frontier monitoring, and the day’s AI Twitter and Reddit recaps.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-building-aie-code-the-top-coding-agent-conference/5b23d2a392473bc3aa4d9ff6d1748256231886548b7aa04537c84279d37eeb0f.png"
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.314",
@@ -147,6 +159,18 @@
    "big": false,
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/5gtjUYZjCpVMAAv0AbX0Cs/510ae35e592775228a8ef7b7f0911237/how-we-detect-frontier-model-misalignment-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "How Ropes & Gray is developing AI for transactional diligence",
+   "url": "https://openai.com/index/ropes-gray-ai-diligence",
+   "date": "2026-10-29T07:00:00.000Z",
+   "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4lObA1HwFj5BMe9aLY4VTn/43b3536d7726d9f7b2a5ed27183a3cda/ropes-gray-ai-diligence-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   },
   {
@@ -409,6 +433,18 @@
   {
    "source": "OpenAI",
    "title": "Legora is building the agentic operating system for legal work",
+   "url": "https://openai.com/index/legora",
+   "date": "2026-10-28T09:30:00.000Z",
+   "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/3u1CdSoTYE4igNYP08r65b/3aff62c6d68495f495218a2ccbbf48f3/legora-smoked-glass-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Legora is building the agentic operating system for legal work",
    "url": "https://openai.com/index/legora-agentic-operating-system-for-legal-work",
    "date": "2026-10-28T09:30:00.000Z",
    "summary": "See how Legora uses OpenAI models, ChatGPT, and Codex to accelerate legal workflows, expand contract analysis, and free lawyers to focus on higher-value work.",
@@ -429,6 +465,17 @@
    "ai": false,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-anthropic-ends-coding-interviews-hunger-beats-tenure/c7f8e2dbe8139bba15d3c59987deb0b2ed5de83f9aded73244cc1febb17cee0c.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company",
+   "date": "2026-10-28",
+   "title": "IDC brings Quanta into Claude and adopts Claude across the company",
+   "summary": "IDC integrated Claude as part of its Quanta platform, and it has rolled Claude out across its own business",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://claude.com/resources/articles/idc-brings-quanta-into-claude-and-adopts-claude-across-the-company/opengraph-image/og"
   },
   {
    "source": "Anthropic",
@@ -2156,65 +2203,6 @@
    "big": false,
    "ai": true,
    "image": "https://crystl.dev/og.png?v=3"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-   "url": "https://huggingface.co/blog/hf-torchneuron",
-   "date": "2026-10-19T00:00:00.000Z",
-   "summary": "Hugging Face simplified the process of deploying open-source models onto AWS Trainium chips using TorchNeuron. This makes it easier and cheaper for developers to host models on specialized AWS hardware.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/hf-torchneuron/thumbnail.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-tools-datasette 0.1.1",
-   "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
-   "date": "2026-10-18T23:43:09.000Z",
-   "summary": "A plugin update for Datasette fixes dependency breaking changes related to HTTP libraries.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-echo 0.5",
-   "url": "https://simonwillison.net/2026/Oct/18/llm-echo/",
-   "date": "2026-10-18T23:16:16.000Z",
-   "summary": "A debug plugin for LLMs now correctly simulates token usage counts for tool calls and reasoning tokens.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.303",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
-   "date": "2026-10-18T22:26:54Z",
-   "summary": "Anthropic released version 2.1.303 of Claude Code, its command-line tool for agentic software development.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/aa07475b3f0160fb2a6c528ab1dddcab2cefa33f6cdc8d86250c04f9ef341ce6/anthropics/claude-code/releases/tag/v2.1.303"
   }
  ]
 }
