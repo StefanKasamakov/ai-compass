@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T12:42:36.244Z",
+ "updated": "2026-10-31T21:41:19.455Z",
  "items": [
   {
    "source": "GitHub release",
@@ -2163,6 +2163,20 @@
    "image": "https://substackcdn.com/image/fetch/$s_!otPo!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHVBPHSjWcAAHoHt.jpg"
   },
   {
+   "source": "Hugging Face",
+   "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
+   "date": "2026-10-20T00:00:00.000Z",
+   "summary": "AnyLanguageModel 1.0 was released, providing a framework to run local AI models natively across Apple platforms.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/anylanguagemodel-1-0/banner.png"
+  },
+  {
    "source": "OpenAI",
    "title": "OpenAI acquires Orchestra Bio",
    "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
@@ -2188,19 +2202,6 @@
    "big": false,
    "ai": true,
    "image": "https://huggingface.co/blog/assets/hf-torchtpu/thumbnail.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "MPS in PyTorch 2.15",
-   "url": "https://huggingface.co/blog/mps-pytorch-2-15",
-   "date": "2026-10-20T00:00:00.000Z",
-   "summary": "PyTorch 2.15 added updates for Metal Performance Shaders (MPS) to improve local model execution on Apple hardware.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/mps-pytorch-2-15/thumbnail.png"
   }
  ]
 }

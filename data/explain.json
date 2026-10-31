@@ -17293,5 +17293,112 @@
   "repo": "Orkas-AI/Orkas",
   "at": "2026-10-31",
   "source": "trending"
+ },
+ "microsoft/TokenEconomizer": {
+  "cat": "tokens",
+  "kind": "Agent token optimizer",
+  "what": "TokenEconomizer is a plugin for coding agents like Claude Code and Codex that reduces AI token usage and costs across repeated project sessions.",
+  "why": "Coding agents reload unused tools and re-learn project facts on every run, creating redundant spending. Reach for this tool when running coding agents regularly on the same codebase to automatically trim waste without modifying the underlying agent.",
+  "level": "setup",
+  "start": "git clone https://github.com/microsoft/TokenEconomizer.git",
+  "caution": "Cost savings claims are based on project research benchmarks, and actual reductions will vary depending on your workflow and project structure.",
+  "alts": [
+   "rtk-ai/rtk",
+   "microsoft/LLMLingua",
+   "ccusage/ccusage"
+  ],
+  "packages": [],
+  "plain": "A helper plugin that cuts your AI coding assistant expenses by remembering project facts and trimming unused features.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Reduce AI token expenditure during coding agent workflows",
+   "Automatically prune unused agent tools from session prompts",
+   "Detect and redirect agents when stuck in failure loops"
+  ],
+  "steps": [
+   "Clone the repository using `git clone https://github.com/microsoft/TokenEconomizer.git`",
+   "Install the plugin into your agent using `claude plugin install tokeneconomizer@tokeneconomizer`",
+   "Launch your agent in any project folder and verify setup with `/tokeneconomizer:status`"
+  ],
+  "repo": "microsoft/TokenEconomizer",
+  "at": "2026-10-31",
+  "source": "trending"
+ },
+ "dbreunig/nesformer": {
+  "cat": "local",
+  "kind": "Neural NES CPU compiler",
+  "what": "Nesformer runs Nintendo Entertainment System CPU operations compiled directly into the weight matrices of a language model.",
+  "why": "It serves as a technical proof-of-concept showing how neural network memory layers can execute machine code without traditional simulation code. Reach for it to explore experimental architecture research or run simple NES games through a neural model.",
+  "level": "setup",
+  "start": "pip install numpy scipy numba pillow",
+  "caution": "This project is an experimental research demonstration with no formal open-source license specified, and it runs extremely slowly at several seconds per frame.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "huggingface/transformers"
+  ],
+  "packages": [
+   "numpy",
+   "scipy",
+   "numba",
+   "pillow"
+  ],
+  "plain": "Runs an NES video game emulator inside the internal structure of an artificial intelligence model.",
+  "tags": [
+   "private",
+   "supercharge"
+  ],
+  "useFor": [
+   "Emulate NES games using compiled model weights",
+   "Test standard iNES mapper 0 ROMs inside a model",
+   "Generate gameplay GIFs produced by neural network operations"
+  ],
+  "steps": [
+   "Unzip the project files and pre-compiled weights into adjacent folders.",
+   "Install the required dependencies using `pip install numpy scipy numba pillow`.",
+   "Start a game session with `python -m nesformer run roms/thwaite.nes --frames 600 --show`."
+  ],
+  "repo": "dbreunig/nesformer",
+  "at": "2026-10-31",
+  "source": "trending"
+ },
+ "patch-gg/pixelfx": {
+  "cat": "media",
+  "kind": "Pixel art VFX library",
+  "what": "A library of over 240 code-based pixel art effects and character actions that can be rendered in JavaScript or exported as sprite sheets.",
+  "why": "Creating high-quality pixel art visual effects and keyframing character reactions by hand takes time. Reach for this to drop customizable pixel effects into game engines or generate new ones using AI.",
+  "level": "dev",
+  "start": "npm i github:patch-gg/pixelfx",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "pixelfx"
+  ],
+  "plain": "A collection of 240+ pixel art game effects you can customize, export, or create using an AI assistant.",
+  "tags": [
+   "media",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Add customizable pixel art visual effects to web games",
+   "Export animated sprite sheets for engines like Godot or Unity",
+   "Generate and refine custom pixel art effects with Claude Code"
+  ],
+  "steps": [
+   "Install the library with `npm i github:patch-gg/pixelfx` or copy the core effect files.",
+   "Import and render effects onto your game canvas using the built-in helper functions.",
+   "Export frame grids and JSON metadata for game engines like Godot or Unity using Node tools.",
+   "Install the skill plugin to draft, inspect, and refine custom pixel art animations."
+  ],
+  "repo": "patch-gg/pixelfx",
+  "at": "2026-10-31",
+  "source": "trending"
  }
 }
