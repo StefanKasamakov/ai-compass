@@ -17185,5 +17185,113 @@
   "repo": "drawthingsai/local-code-community",
   "at": "2026-10-31",
   "source": "trending"
+ },
+ "AstrBotDevs/AstrBot": {
+  "cat": "builders",
+  "kind": "Chatbot agent platform",
+  "what": "AstrBot is an open-source AI agent and chatbot platform that connects language models to messaging apps like Telegram, Slack, QQ, and WeChat with a web management interface.",
+  "why": "Connecting AI models to team chats and messaging channels usually requires writing custom bots and infrastructure for each app. Reach for AstrBot when you want a single self-hosted dashboard to deploy AI assistants, knowledge bases, and tools across multiple chat platforms.",
+  "level": "setup",
+  "start": "uv tool install astrbot --python 3.12",
+  "caution": "The README includes a commercial cloud affiliate referral link. Connecting automated bots to personal messaging accounts may also risk account suspension depending on platform terms.",
+  "alts": [
+   "openclaw/openclaw",
+   "lobehub/lobehub",
+   "langgenius/dify"
+  ],
+  "packages": [
+   "astrbot"
+  ],
+  "plain": "Turn AI into a smart chatbot for apps like Telegram and Slack through an easy web dashboard.",
+  "tags": [
+   "connect",
+   "apps",
+   "automate"
+  ],
+  "useFor": [
+   "Deploy AI chat assistants across Telegram, Discord, Slack, and QQ",
+   "Manage bot personas and knowledge bases through a web interface",
+   "Run isolated code and web searches inside group conversations"
+  ],
+  "steps": [
+   "Install AstrBot using uv: `uv tool install astrbot --python 3.12`.",
+   "Initialize the environment configuration by running `astrbot init` in your terminal.",
+   "Start the application by running `astrbot run` and open the web management panel."
+  ],
+  "repo": "AstrBotDevs/AstrBot",
+  "at": "2026-10-31",
+  "source": "trending"
+ },
+ "THU-MAIC/OpenMAIC": {
+  "cat": "builders",
+  "kind": "Interactive classroom builder",
+  "what": "OpenMAIC is an open-source web platform that turns topics and documents into interactive classroom lessons complete with AI teachers, slides, quizzes, and simulations.",
+  "why": "Creating engaging educational content and slide decks manually takes hours. Reach for OpenMAIC to instantly convert raw documents into multi-agent virtual lessons with voice and interactive elements.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires a PostgreSQL database and a long-running background server for persistent lesson generation.",
+  "alts": [
+   "open-webui/open-webui",
+   "LibreChat-AI/LibreChat",
+   "langgenius/dify"
+  ],
+  "packages": [
+   "@openmaic/generation"
+  ],
+  "plain": "A web app that automatically turns your documents into interactive lessons with virtual teachers, quizzes, and slides.",
+  "tags": [
+   "docs",
+   "knowledge",
+   "apps"
+  ],
+  "useFor": [
+   "Generate interactive lesson slides and quizzes from document uploads",
+   "Host virtual classroom discussions with synthetic AI teachers",
+   "Export completed lessons as presentations or offline HTML files"
+  ],
+  "steps": [
+   "Try the online live demo at open.maic.chat to test classroom generation instantly",
+   "Set up PostgreSQL and configure database settings",
+   "Deploy the server following the official Next.js deployment guide"
+  ],
+  "repo": "THU-MAIC/OpenMAIC",
+  "at": "2026-10-31",
+  "source": "trending"
+ },
+ "Orkas-AI/Orkas": {
+  "cat": "coding",
+  "kind": "desktop AI team",
+  "what": "An open-source desktop app that coordinates a main Commander agent and 16 specialists to complete multi-step goals.",
+  "why": "Useful for automating ongoing projects, scheduling repetitive tasks, and running multiple specialist agents together locally on your computer.",
+  "level": "easy",
+  "start": "Download the app for macOS or Windows from the website and open it to begin.",
+  "caution": "",
+  "alts": [
+   "OpenHands/OpenHands",
+   "Aider-AI/aider",
+   "continuedev/continue"
+  ],
+  "packages": [],
+  "plain": "A desktop program that manages a team of helpers to write code, do research, and make videos for you.",
+  "tags": [
+   "code",
+   "automate",
+   "research",
+   "knowledge",
+   "media"
+  ],
+  "useFor": [
+   "Research topics and generate reports",
+   "Create videos, voice-overs, and images",
+   "Automate tasks on a schedule"
+  ],
+  "steps": [
+   "Download and install Orkas for macOS or Windows.",
+   "Type your goal into the chat for the Commander agent.",
+   "Review finished work and let the team handle the next steps."
+  ],
+  "repo": "Orkas-AI/Orkas",
+  "at": "2026-10-31",
+  "source": "trending"
  }
 }
