@@ -17150,5 +17150,40 @@
   "repo": "chatvia/chatvia",
   "at": "2026-10-30",
   "source": "trending"
+ },
+ "drawthingsai/local-code-community": {
+  "cat": "coding",
+  "kind": "Private AI agent app",
+  "what": "Local Code is an AI agent application for Apple devices that executes commands and edits files using local models inside a sandboxed environment.",
+  "why": "It lets you run autonomous tasks, write code, and analyze documents completely offline without sharing data with cloud services. Reach for it when you need a private, built-in AI assistant for macOS and iOS.",
+  "level": "easy",
+  "start": "",
+  "caution": "Running high-end models locally requires significant device memory, with larger checkpoints needing 64 GB or more of RAM on Mac.",
+  "alts": [
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "An app for Apple devices that runs smart AI helpers directly on your computer without internet access.",
+  "tags": [
+   "private",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Run local AI models to edit code and analyze files offline",
+   "Execute Python and shell commands inside a protected sandbox",
+   "Create documents, data charts, and videos without cloud servers"
+  ],
+  "steps": [
+   "Download and install Local Code on your Apple device",
+   "Choose a recommended AI model based on your system memory",
+   "Select the workspace folder you want the agent to access",
+   "Ask the agent to generate code, analyze data, or automate tasks"
+  ],
+  "repo": "drawthingsai/local-code-community",
+  "at": "2026-10-31",
+  "source": "trending"
  }
 }
