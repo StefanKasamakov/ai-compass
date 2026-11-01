@@ -17469,5 +17469,179 @@
   "repo": "EL4CTEO/blender-skills",
   "at": "2026-11-01",
   "source": "trending"
+ },
+ "cjpais/Handy": {
+  "cat": "media",
+  "kind": "Offline dictation app",
+  "what": "Handy is an open-source desktop application that transcribes your voice completely offline and pastes the text into any active app.",
+  "why": "Cloud-based speech tools raise privacy concerns and can cost money; reach for Handy when you want fast, private speech-to-text without internet access.",
+  "level": "easy",
+  "start": "brew install --cask handy",
+  "caution": "Linux requires extra utilities like xdotool or wtype for text insertion, and macOS Bluetooth headsets may experience temporary audio degradation.",
+  "alts": [
+   "openai/whisper",
+   "SYSTRAN/faster-whisper"
+  ],
+  "packages": [],
+  "plain": "A free app that listens when you press a key and types out your spoken words completely offline.",
+  "tags": [
+   "media",
+   "private",
+   "docs"
+  ],
+  "useFor": [
+   "Dictate text directly into any desktop text field",
+   "Transcribe audio locally without sending data to the cloud",
+   "Trigger speech recording quickly with custom keyboard shortcuts"
+  ],
+  "steps": [
+   "Download and install the app for macOS, Windows, or Linux from the releases page.",
+   "Launch Handy and grant the required microphone and accessibility permissions.",
+   "Configure your keyboard shortcut in Settings, press it, and begin speaking."
+  ],
+  "repo": "cjpais/Handy",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "FlashML-org/FreeToken": {
+  "cat": "local",
+  "kind": "Local MoE engine",
+  "what": "An edge serving engine and desktop app built to run massive Mixture-of-Experts models fast on consumer hardware.",
+  "why": "Frontier-scale open models typically require expensive datacenter GPUs. FreeToken splits workloads across your consumer graphics card, processor, and system memory to run large models locally without cloud fees.",
+  "level": "easy",
+  "start": "uv pip install \"freetoken[accel]\"",
+  "caution": "Running huge models locally still requires powerful consumer hardware, such as NVIDIA RTX 30, 40, or 50 series graphics cards and ample system memory.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [
+   "freetoken[accel]"
+  ],
+  "plain": "Runs massive open AI models directly on your home gaming computer without paying for cloud subscriptions.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run massive MoE models locally on consumer gaming PCs",
+   "Serve Anthropic or OpenAI compatible endpoints for coding agents",
+   "Avoid cloud inference costs while keeping conversations entirely private"
+  ],
+  "steps": [
+   "Download the desktop app from flashml.ai for Windows or Linux, or run `uv pip install \"freetoken[accel]\"`.",
+   "Launch the desktop interface to choose your preferred open MoE model checkpoint.",
+   "Chat directly in the app or connect external coding agents using the local API."
+  ],
+  "repo": "FlashML-org/FreeToken",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "kornia/kornia": {
+  "cat": "media",
+  "kind": "computer vision library",
+  "what": "A differentiable computer vision and spatial AI library built on PyTorch for image processing and geometry directly on the GPU.",
+  "why": "Standard computer vision libraries like OpenCV force data transfers back to the CPU and cannot compute neural network gradients. Reach for Kornia when you need fast, batched image filters, camera geometry, or data augmentations on your graphics card.",
+  "level": "dev",
+  "start": "pip install kornia",
+  "caution": "",
+  "alts": [
+   "pytorch/pytorch"
+  ],
+  "packages": [
+   "kornia"
+  ],
+  "plain": "A Python toolkit for editing, transforming, and analyzing images directly on your graphics card using AI math.",
+  "tags": [
+   "media",
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Augment image datasets directly on your graphics card",
+   "Calculate camera geometry and 3D point projections",
+   "Detect and match visual features across images"
+  ],
+  "steps": [
+   "Install the library using `pip install kornia`.",
+   "Import Kornia operations into your PyTorch project.",
+   "Pass image tensors to Kornia functions to process batches on your graphics card."
+  ],
+  "repo": "kornia/kornia",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "beenuar/AiSOC": {
+  "cat": "builders",
+  "kind": "AI security operations",
+  "what": "AiSOC is an open-source, self-hostable AI security operations center that normalizes security telemetry, detects threats, and uses AI agents to triage alerts.",
+  "why": "It automates security investigation and alert correlation while keeping every agent decision and prompt fully auditable. Reach for it when you need automated threat triage across security data sources on your own infrastructure.",
+  "level": "setup",
+  "start": "git clone https://github.com/beenuar/AiSOC && cd AiSOC",
+  "caution": "Requires Docker Compose with at least 8 GB of RAM and 20 GB of free disk space, and downloads a 2 GB local AI model during initial setup.",
+  "alts": [
+   "vxcontrol/pentagi",
+   "cloudflare/security-audit-skill",
+   "n8n-io/n8n"
+  ],
+  "packages": [
+   "aisoc-sandbox"
+  ],
+  "plain": "An automated security tool that investigates cyber threats and alerts using artificial intelligence on your own server.",
+  "tags": [
+   "automate",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Triage security alerts automatically with AI reasoning",
+   "Correlate security telemetry across multiple data sources",
+   "Review auditable decision logs for threat investigations"
+  ],
+  "steps": [
+   "Clone the repository and navigate into the project directory",
+   "Run `make up` to start the services and generate credentials",
+   "Open the printed web address and log in to load test data"
+  ],
+  "repo": "beenuar/AiSOC",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "anomalyco/hex": {
+  "cat": "media",
+  "kind": "Local voice dictation app",
+  "what": "Hex is a local-first voice dictation app for desktop operating systems that transcribes your speech on-device and pastes it into whatever app you are using.",
+  "why": "It replaces cloud-based dictation services with fast, private on-device speech models whenever you want to type with your voice without sending audio off your machine.",
+  "level": "easy",
+  "start": "brew install --cask anomalyco/tap/hex",
+  "caution": "Downloading local models requires access to Hugging Face, and enabling optional OpenCode text rewriting will send your transcript and window context to external providers.",
+  "alts": [
+   "cjpais/Handy",
+   "openai/whisper",
+   "SYSTRAN/faster-whisper"
+  ],
+  "packages": [],
+  "plain": "A desktop app that turns your spoken voice into text and pastes it into any open window.",
+  "tags": [
+   "media",
+   "private",
+   "docs"
+  ],
+  "useFor": [
+   "Dictate text directly into any open application using a global hotkey",
+   "Transcribe your voice completely offline using on-device speech models",
+   "Record screen annotations and spoken instructions to share with agents"
+  ],
+  "steps": [
+   "Install the app via `brew install --cask anomalyco/tap/hex` or download the installer for your operating system.",
+   "Launch Hex and grant the requested microphone and accessibility permissions.",
+   "Download your preferred local speech transcription model in settings.",
+   "Hold the Option key, speak your thoughts, and release to paste the transcribed text."
+  ],
+  "repo": "anomalyco/hex",
+  "at": "2026-11-01",
+  "source": "trending"
  }
 }

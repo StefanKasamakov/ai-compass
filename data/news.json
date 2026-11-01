@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T06:17:25.944Z",
+ "updated": "2026-11-01T11:28:18.638Z",
  "items": [
   {
    "source": "Simon Willison",
@@ -17,6 +17,52 @@
    "viaBrowser": true
   },
   {
+   "source": "Simon Willison",
+   "title": "datasette-llm 0.1a9",
+   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+   "date": "2026-10-31T22:10:01.000Z",
+   "summary": "datasette-llm 0.1a9 now automatically uses your default LLM CLI model, letting you run Datasette Agent without extra manual configuration.",
+   "tags": [
+    "agents",
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "ChatGPT and Codex usage limits merging",
+   "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+   "date": "2026-10-31T21:49:07Z",
+   "discuss": "https://news.ycombinator.com/item?id=50320588",
+   "summary": "OpenAI is combining usage rate limits across ChatGPT and Codex, directly changing how developers budget API and web quotas.",
+   "tags": [
+    "product",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://help.openai.com/og-image.png",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+   "url": "https://latent.space/p/arca/",
+   "date": "2026-10-31T16:05:00.000Z",
+   "summary": "A deep dive on building financial AI agents with persistent memory harnesses that run multi-day autonomous workflows.",
+   "tags": [
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://i.ytimg.com/vi/KM3VQZKjpiY/maxresdefault.jpg"
+  },
+  {
    "source": "GitHub release",
    "title": "Claude Code v2.1.316",
    "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
@@ -30,6 +76,20 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/639b8a13bd385ab2d9ee43c30143012fba4a248bf301cf7af5e8bc73550fa4a3/anthropics/claude-code/releases/tag/v2.1.316"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
+   "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
+   "date": "2026-10-30T14:08:20Z",
+   "discuss": "https://news.ycombinator.com/item?id=50304122",
+   "summary": "A case report on Cisco granting an internal engineer uncapped AI token budgets to modernize legacy codebases using automated coding tools.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2270629609-e1793295597735.jpg?resize=1200,600"
   },
   {
    "source": "Hacker News",
@@ -2147,62 +2207,6 @@
    "big": false,
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/7btnUEAESJNvgHmdUPxexp/ac70fe93d02f52002ca5f146af8c7caf/Terminal-X-A-SEO-social-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] not much happened today",
-   "url": "https://latent.space/p/ainews-not-much-happened-today-f09/",
-   "date": "2026-10-20T05:21:52.000Z",
-   "summary": "DeepSeek, MiniMax, and Mercury released lightweight model updates including DeepSeek V4.1 Flash. These releases offer developers cheaper and faster options for routine text generation tasks.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-not-much-happened-today-f09/525c7342dd7c0ac2675863803c0cc0d2d7bdb640f3b611cf31bc54fd60188443.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] not much happened today",
-   "url": "https://www.latent.space/p/ainews-not-much-happened-today-f09",
-   "date": "2026-10-20T05:21:52.000Z",
-   "summary": "DeepSeek and MiniMax launched new lightweight models, V4.1 Flash and M3.1 Flash, offering faster and cheaper inference options.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://substackcdn.com/image/fetch/$s_!otPo!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHVBPHSjWcAAHoHt.jpg"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
-   "url": "https://huggingface.co/blog/anylanguagemodel-1-0",
-   "date": "2026-10-20T00:00:00.000Z",
-   "summary": "AnyLanguageModel 1.0 was released, providing a framework to run local AI models natively across Apple platforms.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/anylanguagemodel-1-0/banner.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "OpenAI acquires Orchestra Bio",
-   "url": "https://openai.com/index/openai-to-acquire-orchestra-bio",
-   "date": "2026-10-20T00:00:00.000Z",
-   "summary": "OpenAI acquired Orchestra Bio to bring AI-powered operations to life sciences research and development.",
-   "tags": [
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/qoX4w89e0GxOOa2GsAdSm/b4a461997956908e9813e59044617416/openai-to-acquire-orchestra-bio-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   }
  ]
