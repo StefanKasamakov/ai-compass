@@ -17400,5 +17400,74 @@
   "repo": "patch-gg/pixelfx",
   "at": "2026-10-31",
   "source": "trending"
+ },
+ "HeyChengC/vibe-knowledge-film": {
+  "cat": "harness",
+  "kind": "Claude Code video skill",
+  "what": "An agent skill that converts written scripts into code-driven animated knowledge videos with storyboards and sound effects.",
+  "why": "It automates creating Douyin-style motion graphic short videos directly within AI coding agents. Reach for it when you need to programmatically render stylized 2D explainer videos without manual video editing software.",
+  "level": "setup",
+  "start": "pip install -r requirements.txt",
+  "caution": "Requires separate system installations of Google Chrome and ffmpeg, and reference examples include third-party copyrighted media.",
+  "alts": [
+   "Vincentwei1021/anything2explainer",
+   "charlie947/motion-graphics-skills",
+   "op7418/guizang-product-video-skill"
+  ],
+  "packages": [],
+  "plain": "An add-on for AI coding helpers that creates styled animated short videos from your text scripts.",
+  "tags": [
+   "media",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate short animated knowledge videos from written text scripts",
+   "Create motion graphic storyboards with sound effects automatically",
+   "Render canvas animations into final video files via Playwright"
+  ],
+  "steps": [
+   "Copy the project into your agent skill directory at `~/.claude/skills/vibe-knowledge-film`.",
+   "Install Python dependencies with `pip install -r requirements.txt`.",
+   "Set up browser rendering tools by running `python -m playwright install`.",
+   "Download open fonts with `python engine/get_fonts.py`."
+  ],
+  "repo": "HeyChengC/vibe-knowledge-film",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "EL4CTEO/blender-skills": {
+  "cat": "harness",
+  "kind": "Blender agent skills",
+  "what": "A set of 28 pre-built skills for AI coding agents to automate 3D modeling, texturing, rigging, animation, and export in Blender 5.2+.",
+  "why": "Standard AI agents often write broken code for 3D tasks or use outdated Blender commands. Reach for this toolkit when you want your AI assistant to generate and export game-ready 3D assets reliably.",
+  "level": "setup",
+  "start": "git clone https://github.com/EL4CTEO/blender-skills",
+  "caution": "Requires Blender 5.2 or newer installed locally on your machine.",
+  "alts": [
+   "anujasid/blender-ai-mcp-addon",
+   "LiCinCan/blender-ai-mcp-addon",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A set of instructions that lets AI helpers create, edit, and export 3D graphics in Blender.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Automate 3D modeling and texturing tasks",
+   "Rig characters and export to game engines",
+   "Run quality checks on 3D game assets"
+  ],
+  "steps": [
+   "Clone the skills repository using `git clone https://github.com/EL4CTEO/blender-skills`.",
+   "Run `./blender-skills/install/install.sh` on macOS/Linux or the PowerShell installer on Windows.",
+   "Ask your AI coding agent to build, texture, or export 3D models in Blender."
+  ],
+  "repo": "EL4CTEO/blender-skills",
+  "at": "2026-11-01",
+  "source": "trending"
  }
 }
