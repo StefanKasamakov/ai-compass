@@ -17643,5 +17643,111 @@
   "repo": "anomalyco/hex",
   "at": "2026-11-01",
   "source": "trending"
+ },
+ "NiazMorshed2007/reanimate": {
+  "cat": "harness",
+  "kind": "Animation cloning skill",
+  "what": "A Claude Code skill that records web animations frame by frame, reproduces them in code, and verifies the copy matches the original motion.",
+  "why": "AI assistants usually struggle to recreate fluid animations from static screenshots or simple links. Reach for this when you want to clone complex web micro-interactions, loaders, or 3D canvas visuals and verify their timing.",
+  "level": "setup",
+  "start": "npx skills add NiazMorshed2007/reanimate -g",
+  "caution": "Requires Bun 1.1 or later on macOS or Linux (Windows is untested) and downloads about 250 MB of dependencies on the first run.",
+  "alts": [
+   "howseen-ai/claude-motion-design",
+   "addyosmani/agent-skills",
+   "mattpocock/skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "Records website animations frame by frame and helps an AI assistant recreate them precisely in your own project.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Clone web animations from live links, GIFs, or video recordings",
+   "Recreate canvas, CSS, and WebGL motion with matched timing",
+   "Generate animation code for Framer Motion, GSAP, or CSS"
+  ],
+  "steps": [
+   "Install Bun 1.1 or later on macOS or Linux.",
+   "Install the skill globally by running `npx skills add NiazMorshed2007/reanimate -g`.",
+   "Ask Claude Code to run `/reanimate` specifying a reference link or video and your target file."
+  ],
+  "repo": "NiazMorshed2007/reanimate",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "sahenjp/RustXNG": {
+  "cat": "memory",
+  "kind": "Local search engine",
+  "what": "RustXNG is a self-hosted web search engine that gathers search results and web page text for AI agents without external API keys.",
+  "why": "Commercial search APIs charge per request and send queries to third-party providers. Reach for RustXNG when you need fast, private web search and text grounding for local AI applications.",
+  "level": "setup",
+  "start": "docker run -p 8888:8888 ghcr.io/sahenjp/rustxng:latest",
+  "caution": "Licensed under AGPL-3.0, which requires network service operators to share source code if modified; note that Google search is currently unavailable in this build.",
+  "alts": [
+   "firecrawl/firecrawl",
+   "unclecode/crawl4ai"
+  ],
+  "packages": [],
+  "plain": "A free search engine that runs on your computer to find web pages for your AI assistant.",
+  "tags": [
+   "research",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Search the web privately without paying commercial search fees",
+   "Supply full web page content to AI assistants for facts"
+  ],
+  "steps": [
+   "Start the search server using Docker: `docker run -p 8888:8888 ghcr.io/sahenjp/rustxng:latest`",
+   "Run a web search using curl: `curl \"http://127.0.0.1:8888/search?q=tokio+runtime&format=json\"`",
+   "Fetch full web page contents by adding `&include_raw_content=1` to the search URL."
+  ],
+  "repo": "sahenjp/RustXNG",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "peterpoal134/memory-brain": {
+  "cat": "memory",
+  "kind": "AstrBot memory architecture",
+  "what": "A long-term memory, mood management, and background life loop architecture built as plugins for AstrBot.",
+  "why": "Standard chat bots forget context as soon as a chat session ends. Reach for this project to equip AstrBot characters with categorized memory, hybrid search, emotional states, and autonomous background tasks without altering core personality files.",
+  "level": "setup",
+  "start": "python life_loop.py --once",
+  "caution": "Licensed under AGPL-3.0, and memory search reverts to simple keyword matching if no embedding provider is configured.",
+  "alts": [
+   "AstrBotDevs/AstrBot",
+   "mem0ai/mem0",
+   "getzep/graphiti"
+  ],
+  "packages": [
+   "faster-whisper",
+   "pilk"
+  ],
+  "plain": "Adds long-term memory and emotional awareness to your chat bot so it remembers past events and facts.",
+  "tags": [
+   "knowledge",
+   "supercharge",
+   "private"
+  ],
+  "useFor": [
+   "Store facts and past conversations for AstrBot chat bots",
+   "Track emotional states and self-reflection in AI companions",
+   "Run autonomous background life loops for offline AI activities"
+  ],
+  "steps": [
+   "Copy the folders in plugins/ into your AstrBot/data/plugins/ directory and restart AstrBot.",
+   "Install optional voice processing dependencies with `pip install faster-whisper pilk`.",
+   "Set your embedding provider ID in the plugin configuration to enable full memory retrieval.",
+   "Test background loops by running `python life_loop.py --once` inside the life directory."
+  ],
+  "repo": "peterpoal134/memory-brain",
+  "at": "2026-11-01",
+  "source": "trending"
  }
 }

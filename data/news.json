@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T11:28:18.638Z",
+ "updated": "2026-11-01T17:57:07.732Z",
  "items": [
   {
    "source": "Simon Willison",
@@ -50,6 +50,21 @@
    "viaBrowser": true
   },
   {
+   "source": "Hacker News",
+   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
+   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
+   "date": "2026-10-31T21:07:58Z",
+   "discuss": "https://news.ycombinator.com/item?id=50320255",
+   "summary": "Anthropic implemented new guardrails to prevent Claude from being utilized to reverse-engineer closed video game binaries.",
+   "tags": [
+    "safety",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://helios-i.mashable.com/imagery/articles/00cSAXoWdRYObLNtN71MkCO/hero-image.fill.size_1200x675.v1793455880.png"
+  },
+  {
    "source": "Latent Space",
    "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
    "url": "https://latent.space/p/arca/",
@@ -76,6 +91,19 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/639b8a13bd385ab2d9ee43c30143012fba4a248bf301cf7af5e8bc73550fa4a3/anthropics/claude-code/releases/tag/v2.1.316"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "nemotron-halloween",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
+   "date": "2026-10-30T17:57:24.000Z",
+   "summary": "Hugging Face hosted the new nemotron-halloween model checkpoint for community access and fine-tuning.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6ab2a746c7d0655b3d8dfbb9/fownH6rn05tSp1jDBTz8m.png"
   },
   {
    "source": "Hacker News",
@@ -2178,36 +2206,6 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/rzXYJh7e7UdoYgCLwOZjH.jpeg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-   "url": "https://openai.com/index/ted-taylor-restaurant",
-   "date": "2026-10-20T10:00:00.000Z",
-   "summary": "A small business used ChatGPT Work to automate cash reconciliation and menu repricing, saving significant time.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6r0aKM9KAloDNT979EYd6j/958b4b872830668c232730e99caa3f9e/ted-taylor-restaurant-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
-   "url": "https://openai.com/index/terminal-x",
-   "date": "2026-10-20T07:00:00.000Z",
-   "summary": "An investment firm evaluated GPT-6.1 Sol for matching senior investor judgment on financial reviews.",
-   "tags": [
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7btnUEAESJNvgHmdUPxexp/ac70fe93d02f52002ca5f146af8c7caf/Terminal-X-A-SEO-social-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }

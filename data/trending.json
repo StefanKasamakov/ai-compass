@@ -1,84 +1,52 @@
 {
- "updated": "2026-11-01T11:28:18.638Z",
+ "updated": "2026-11-01T17:57:07.732Z",
  "items": [
   {
-   "repo": "cjpais/Handy",
-   "stars": 36033,
-   "desc": "A free, open source, and extensible speech-to-text application that works completely offline.",
-   "created": "2025-02-13T02:42:29Z",
+   "repo": "NiazMorshed2007/reanimate",
+   "stars": 682,
+   "desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
+   "created": "2026-10-29T06:20:59Z",
    "topics": [
-    "accessibility",
-    "cross-platform",
-    "speech-to-text",
-    "tauri-v2"
+    "agent-skills",
+    "animation",
+    "claude-code",
+    "claude-skills"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "sahenjp/RustXNG",
+   "stars": 239,
+   "desc": "Self-hosted, SSRF-hardened web search and grounding engine for local AI agents (AGPL-3.0-or-later)",
+   "created": "2026-10-18T03:06:52Z",
+   "topics": [
+    "agpl",
+    "ai-agents",
+    "grounding",
+    "llm"
    ],
    "lang": "Rust",
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   },
   {
-   "repo": "FlashML-org/FreeToken",
-   "stars": 15084,
-   "desc": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
-   "created": "2026-07-20T20:44:11Z",
+   "repo": "peterpoal134/memory-brain",
+   "stars": 81,
+   "desc": "给 AstrBot 的可落地 AI 记忆与生活层：五类记忆、混合检索、遗忘治理、情绪边界、自主生活循环。不覆盖人格。",
+   "created": "2026-10-28T16:08:47Z",
    "topics": [
-    "deepseek-v4",
-    "edge",
-    "glm",
-    "inference"
+    "agpl",
+    "ai-companion",
+    "astrbot",
+    "astrbot-plugin"
    ],
-   "lang": "Python",
+   "lang": "JavaScript",
    "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "kornia/kornia",
-   "stars": 11571,
-   "desc": "🐍 Geometric Computer Vision Library for Spatial AI",
-   "created": "2018-08-22T10:31:37Z",
-   "topics": [
-    "artificial-intelligence",
-    "computer-vision",
-    "deep-learning",
-    "hacktoberfest"
-   ],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "beenuar/AiSOC",
-   "stars": 5841,
-   "desc": "Open-source AI Security Operations Center: alert fusion, LLM-agent triage, MITRE ATT&CK investigation, and a replayable decision ledger for every agent step. Self-hostable, runs with no API keys, MIT licensed. Ships an MCP server for Claude, Cursor and Continue.",
-   "created": "2026-05-02T03:30:19Z",
-   "topics": [
-    "agentic-ai",
-    "ai-security",
-    "alert-triage",
-    "blue-team"
-   ],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "anomalyco/hex",
-   "stars": 2489,
-   "desc": "Local-first voice dictation for macOS. Hold a shortcut, speak, and paste into any app. Native Rust, on-device speech recognition, and a Linux beta.",
-   "created": "2026-07-17T23:48:56Z",
-   "topics": [
-    "dictation",
-    "linux",
-    "local-first",
-    "macos"
-   ],
-   "lang": "Rust",
-   "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   }
  ]
