@@ -1,32 +1,16 @@
 {
- "updated": "2026-11-01T17:57:07.732Z",
+ "updated": "2026-11-01T22:07:46.710Z",
  "items": [
   {
-   "repo": "NiazMorshed2007/reanimate",
-   "stars": 682,
-   "desc": "A Claude Code skill that reverse-engineers any animation frame by frame, then proves the copy moves the same.",
-   "created": "2026-10-29T06:20:59Z",
+   "repo": "emanuele-em/kanzo",
+   "stars": 553,
+   "desc": "Self-hosted kanban for humans and agents. One 4 MB binary, starts in 2 ms, zero setup.",
+   "created": "2026-10-25T11:14:03Z",
    "topics": [
-    "agent-skills",
-    "animation",
-    "claude-code",
-    "claude-skills"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "sahenjp/RustXNG",
-   "stars": 239,
-   "desc": "Self-hosted, SSRF-hardened web search and grounding engine for local AI agents (AGPL-3.0-or-later)",
-   "created": "2026-10-18T03:06:52Z",
-   "topics": [
-    "agpl",
     "ai-agents",
-    "grounding",
-    "llm"
+    "claude-code",
+    "cli",
+    "codex"
    ],
    "lang": "Rust",
    "sources": [
@@ -34,20 +18,24 @@
    ]
   },
   {
-   "repo": "peterpoal134/memory-brain",
-   "stars": 81,
-   "desc": "给 AstrBot 的可落地 AI 记忆与生活层：五类记忆、混合检索、遗忘治理、情绪边界、自主生活循环。不覆盖人格。",
-   "created": "2026-10-28T16:08:47Z",
+   "repo": "kerlenton/bootgpt",
+   "stars": 53,
+   "desc": "A language model that lives in a boot sector",
+   "created": "2026-10-30T21:28:17Z",
    "topics": [
-    "agpl",
-    "ai-companion",
-    "astrbot",
-    "astrbot-plugin"
+    "assembly",
+    "bootsector",
+    "demoscene",
+    "language-model"
    ],
-   "lang": "JavaScript",
+   "lang": "Python",
    "sources": [
-    "new on GitHub"
-   ]
+    "Show HN"
+   ],
+   "hn": {
+    "points": 93,
+    "url": "https://news.ycombinator.com/item?id=50315782"
+   }
   }
  ]
 }

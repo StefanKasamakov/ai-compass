@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T17:57:07.732Z",
+ "updated": "2026-11-01T22:07:46.710Z",
  "items": [
   {
    "source": "Simon Willison",
@@ -746,6 +746,20 @@
    "big": false,
    "ai": false,
    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
+   "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+   "date": "2026-10-27T20:35:09Z",
+   "discuss": "https://news.ycombinator.com/item?id=50265393",
+   "summary": "A major code-execution vulnerability was discovered in UEFI firmware affecting servers.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware.jpg"
   },
   {
    "source": "GitHub release",
@@ -2192,20 +2206,6 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/7zYjyTWswjO2erWsO5HNf.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "ALTK-Evolve: How learned memory tops the τ²-bench leaderboard on customer service tasks without a frontier model",
-   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc",
-   "date": "2026-10-20T15:19:48.000Z",
-   "summary": "Researchers introduced ALTK-Evolve, using learned memory to surpass frontier models on customer service benchmarks.",
-   "tags": [
-    "agents",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6435a1131860001f144239ea/rzXYJh7e7UdoYgCLwOZjH.jpeg"
   }
  ]
 }

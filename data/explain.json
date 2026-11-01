@@ -17749,5 +17749,72 @@
   "repo": "peterpoal134/memory-brain",
   "at": "2026-11-01",
   "source": "trending"
+ },
+ "emanuele-em/kanzo": {
+  "cat": "harness",
+  "kind": "Kanban task board",
+  "what": "A lightweight kanban board that lets you and your AI coding agents share and manage project tasks in real time.",
+  "why": "It bridges task tracking between human developers and AI assistants so agents can pick up tasks and update status directly. Reach for it when you want to assign background work to AI coding agents without leaving your workflow.",
+  "level": "easy",
+  "start": "curl -LsSf https://github.com/emanuele-em/kanzo/releases/latest/download/kanzo-installer.sh | sh",
+  "caution": "Released under the AGPL-3.0 license, which includes strong copyleft terms if you modify or redistribute the software.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "A simple digital task board where you and your AI helper can view and organize work together.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Track work alongside AI coding agents on a visual task board",
+   "Let AI agents autonomously pick up and complete todo items",
+   "Sync project tasks across multiple computers or team devices"
+  ],
+  "steps": [
+   "Install Kanzo using `curl -LsSf https://github.com/emanuele-em/kanzo/releases/latest/download/kanzo-installer.sh | sh`.",
+   "Run `kanzo` to start the app and open the board in your browser.",
+   "Connect your AI assistant by running `claude mcp add kanzo --scope user -- kanzo mcp`."
+  ],
+  "repo": "emanuele-em/kanzo",
+  "at": "2026-11-01",
+  "source": "trending"
+ },
+ "kerlenton/bootgpt": {
+  "cat": "local",
+  "kind": "Bootable AI model",
+  "what": "A tiny neural network that runs directly inside a computer's boot sector without an operating system.",
+  "why": "For demoscene experimentation and exploring the absolute limits of running neural networks on bare metal. Reach for it when you want to see an AI boot up a PC and hallucinate a Linux log from scratch.",
+  "level": "setup",
+  "start": "brew install nasm qemu",
+  "caution": "Purely an experimental art and demoscene project. Will not provide a functional operating system or general assistant capabilities.",
+  "alts": [
+   "rdmsr/sectorllm",
+   "woodrush/sectorlisp-nn",
+   "nanochess/bootOS"
+  ],
+  "packages": [],
+  "plain": "A tiny artificial intelligence that starts up your computer directly, generating fake startup logs with no operating system.",
+  "tags": [
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Boot a simulated Linux log on bare metal hardware",
+   "Experiment with tiny int8 quantized neural networks in assembly",
+   "Explore extreme size-coding and boot sector demoscene projects"
+  ],
+  "steps": [
+   "Install the required assembler and emulator tools using `brew install nasm qemu`.",
+   "Set up a Python virtual environment and install numpy.",
+   "Run the build script to generate the disk image.",
+   "Run the emulation script to watch the model boot the virtual machine."
+  ],
+  "repo": "kerlenton/bootgpt",
+  "at": "2026-11-01",
+  "source": "trending"
  }
 }
