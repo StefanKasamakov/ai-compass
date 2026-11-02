@@ -17919,5 +17919,74 @@
   "repo": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
   "at": "2026-11-02",
   "source": "trending"
+ },
+ "karpathy/nanochat": {
+  "cat": "local",
+  "kind": "Model training framework",
+  "what": "A minimal, hackable experimental harness for training, evaluating, and chatting with custom language models on a single computer node.",
+  "why": "Standard training codebases are complex and expensive; nanochat lets developers and researchers train a GPT-2 level model from scratch for under $50 in about two hours.",
+  "level": "dev",
+  "start": "uv sync --extra gpu",
+  "caution": "Requires powerful hardware such as multi-GPU (8xH100 or 8xA100) clusters with substantial VRAM (80GB) to train GPT-2 sized models effectively; running on CPU or laptops produces severely limited models.",
+  "alts": [
+   "huggingface/transformers",
+   "pytorch/pytorch",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "A simple codebase to build, train, and chat with your own AI model from scratch using graphics cards.",
+  "tags": [
+   "code",
+   "research",
+   "private"
+  ],
+  "useFor": [
+   "Train a custom GPT-2 grade model from scratch",
+   "Experiment with transformer scaling laws using depth settings",
+   "Chat with your self-trained AI model in the terminal"
+  ],
+  "steps": [
+   "Install dependencies using uv with `uv sync --extra gpu` or CPU mode.",
+   "Activate your Python virtual environment using `source .venv/bin/activate`.",
+   "Run the automated training speedrun script with `bash runs/speedrun.sh`.",
+   "Chat with your trained model by running `python -m scripts.chat_cli`."
+  ],
+  "repo": "karpathy/nanochat",
+  "at": "2026-11-02",
+  "source": "trending"
+ },
+ "modelflare-ai/AnyModelBot": {
+  "cat": "coding",
+  "kind": "Personal AI agent",
+  "what": "A local desktop assistant that runs background tasks, handles files, and connects to messaging apps using pay-as-you-go models.",
+  "why": "It replaces subscription-locked personal bots with a local-first agent that works across multiple chat apps. Reach for it when you want an automated helper on your desktop that only asks for confirmation when touching files outside its workspace.",
+  "level": "easy",
+  "start": "",
+  "caution": "Requires a Modelflare account and API balance for model access, meaning your model requests route through Modelflare's logging proxy.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "aaif-goose/goose",
+   "Significant-Gravitas/AutoGPT"
+  ],
+  "packages": [],
+  "plain": "A personal computer helper that runs tasks in the background, organizes your files, and talks through chat apps.",
+  "tags": [
+   "automate",
+   "connect",
+   "code"
+  ],
+  "useFor": [
+   "Run background file management and research tasks on your desktop",
+   "Control your local assistant remotely through WeChat, Feishu, or Slack",
+   "Schedule automated checks and rules that only notify you when needed"
+  ],
+  "steps": [
+   "Download and run the installer for Windows, macOS, or Linux from the Releases page.",
+   "Launch the app and log into Modelflare via the browser prompt to link models.",
+   "Set your bot persona and folder permissions, then assign tasks in chat."
+  ],
+  "repo": "modelflare-ai/AnyModelBot",
+  "at": "2026-11-02",
+  "source": "trending"
  }
 }

@@ -1,50 +1,56 @@
 {
- "updated": "2026-11-02T06:19:03.651Z",
+ "updated": "2026-11-02T12:50:40.422Z",
  "items": [
   {
-   "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
-   "stars": 895,
-   "desc": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
-   "created": "2026-10-13T10:13:21Z",
-   "topics": [
-    "ai-agents",
-    "cross-border-ecommerce",
-    "ecommerce",
-    "llm"
-   ],
+   "repo": "karpathy/nanochat",
+   "stars": 59640,
+   "desc": "The best ChatGPT that $100 can buy.",
+   "created": "2025-10-13T13:46:35Z",
+   "topics": [],
    "lang": "Python",
    "sources": [
-    "new on GitHub"
+    "GitHub Trending (daily)"
    ]
   },
   {
-   "repo": "caru-ini/stack-diagram",
-   "stars": 658,
-   "desc": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
-   "created": "2026-11-01T05:35:12Z",
+   "repo": "JustVugg/colibri",
+   "stars": 46193,
+   "desc": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+   "created": "2026-07-01T12:27:49Z",
+   "topics": [],
+   "lang": "C",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "vercel-labs/agent-desktop",
+   "stars": 8023,
+   "desc": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
+   "created": "2026-02-19T18:00:49Z",
    "topics": [
-    "agent-skills",
-    "architecture-diagram",
-    "claude-code",
-    "claude-skills"
+    "accessibility",
+    "accessibility-api",
+    "ai-agents",
+    "automation"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "modelflare-ai/AnyModelBot",
+   "stars": 1213,
+   "desc": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
+   "created": "2026-10-27T08:51:18Z",
+   "topics": [
+    "ai-agent",
+    "ai-assistant",
+    "chatbot",
+    "claude"
    ],
    "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
-   "stars": 80,
-   "desc": "RTX 5070 Ti Laptop 12GB 跑 Qwen3.8-27B：NInfer + KVMem、256K 逻辑上下文、RAM KV、MTP、快速缓存续接与 dsh 本地 Agent / 搜索 / 浏览器。含源码、Windows 部署及实测。",
-   "created": "2026-10-15T07:46:20Z",
-   "topics": [
-    "12gb-vram",
-    "ai-agent",
-    "cuda",
-    "deepseek-harness"
-   ],
-   "lang": "C++",
    "sources": [
     "new on GitHub"
    ]
