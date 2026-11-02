@@ -17816,5 +17816,108 @@
   "repo": "kerlenton/bootgpt",
   "at": "2026-11-01",
   "source": "trending"
+ },
+ "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit": {
+  "cat": "harness",
+  "kind": "E-commerce workflow pack",
+  "what": "A collection of standard prompts, templates, and Python scripts that turn cross-border e-commerce procedures into 7 reusable AI agent workflows.",
+  "why": "E-commerce sellers often struggle to produce consistent product listings and ad analyses with AI. Reach for this toolkit to standardise market research, listing text generation, image planning, and ad funnel diagnostics across Shopee, Mercado Livre, and Amazon.",
+  "level": "easy",
+  "start": "Copy an input template from Agents/<module>/templates/",
+  "caution": "The included reference PDF contains raw internal SOP notes with illegal tactics like fake reviews, though the repository's 7 AI agent workflows filter these out to offer compliant alternatives.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills",
+   "bmad-code-org/BMAD-METHOD"
+  ],
+  "packages": [],
+  "plain": "Ready-to-use text templates that guide AI to write online store product listings, research markets, and optimize ad campaigns.",
+  "tags": [
+   "automate",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Generate platform-compliant titles and details for Shopee and Mercado Livre",
+   "Analyze market price bands and category metrics using included scripts",
+   "Diagnose advertising performance funnels and review feedback for product updates"
+  ],
+  "steps": [
+   "Copy an input template from the templates folder of your chosen agent module.",
+   "Fill in your product information into the template file.",
+   "Paste the system prompt, task prompt, and completed template into any AI assistant.",
+   "Verify the output using the result checklist document before publishing."
+  ],
+  "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+  "at": "2026-11-02",
+  "source": "trending"
+ },
+ "caru-ini/stack-diagram": {
+  "cat": "harness",
+  "kind": "Agent skill",
+  "what": "An agent skill that turns plain English descriptions of tech stacks into architecture diagrams with official logos.",
+  "why": "Drawing architecture diagrams manually or using code-based tools can be tedious and require styling work. Use this skill when you want your AI assistant to generate clean, self-contained system diagrams with authentic brand logos.",
+  "level": "easy",
+  "start": "`npx skills add caru-ini/stack-diagram`",
+  "caution": "Requires Python 3.9+ and an internet connection to download logos, plus Playwright if exporting to PNG.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "cathrynlavery/diagram-design",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A tool for AI assistants that creates system architecture diagrams with official company logos from simple text descriptions.",
+  "tags": [
+   "docs",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Generate architecture diagrams with official logos from text descriptions",
+   "Export diagrams as standalone HTML files, PNGs, or React components",
+   "Visualize cloud setups and developer tooling directly in your workflow"
+  ],
+  "steps": [
+   "Install the skill into your AI assistant using `npx skills add caru-ini/stack-diagram`.",
+   "Ask your AI assistant to draw an architecture diagram by describing your technology stack.",
+   "Export the result as an HTML artifact, PNG image, or React component."
+  ],
+  "repo": "caru-ini/stack-diagram",
+  "at": "2026-11-02",
+  "source": "trending"
+ },
+ "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent": {
+  "cat": "local",
+  "kind": "Local model runner",
+  "what": "An optimized Windows inference engine and agent environment for running the 27B-parameter Qwen model on consumer 12GB graphics cards.",
+  "why": "It solves VRAM limitation constraints when running larger models locally by storing conversation memory in system RAM. Reach for it when you want to run local coding and web browser agents on an NVIDIA laptop GPU without cloud costs.",
+  "level": "setup",
+  "start": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\setup.ps1 -ModelPath \"D:\\Models\\qwen3.8-27b-gsq-rco-iq3-xxs.ninfer\"",
+  "caution": "Requires Windows, 32GB system RAM, and an NVIDIA RTX 30-series GPU or newer with at least 12GB VRAM. Certain included model variants use the Swift Open License with commercial revenue limitations.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "LostRuins/koboldcpp"
+  ],
+  "packages": [],
+  "plain": "A tool that runs a smart AI assistant on your Windows computer graphics card without using cloud services.",
+  "tags": [
+   "private",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Run large AI models locally on consumer laptop graphics cards",
+   "Offload long conversation history to system RAM to save memory",
+   "Execute local coding and web browser tasks privately"
+  ],
+  "steps": [
+   "Download the pre-packaged release zip or clone the source files on a Windows machine.",
+   "Run `powershell -NoProfile -ExecutionPolicy Bypass -File .\\setup.ps1 -ModelPath \"D:\\Models\\model.ninfer\"` to specify your model.",
+   "Launch the local server and web browser workspace by running `.\\start.cmd`."
+  ],
+  "repo": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+  "at": "2026-11-02",
+  "source": "trending"
  }
 }

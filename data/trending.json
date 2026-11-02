@@ -1,41 +1,53 @@
 {
- "updated": "2026-11-01T22:07:46.710Z",
+ "updated": "2026-11-02T06:19:03.651Z",
  "items": [
   {
-   "repo": "emanuele-em/kanzo",
-   "stars": 553,
-   "desc": "Self-hosted kanban for humans and agents. One 4 MB binary, starts in 2 ms, zero setup.",
-   "created": "2026-10-25T11:14:03Z",
+   "repo": "heqiangdiao-wq/AI-Cross-Border-Ecommerce-Agent-Toolkit",
+   "stars": 895,
+   "desc": "AI 跨境电商运营智能体工具箱 · 把运营 SOP 拆成 7 个可复用的 AI Agent 工作流，含 Prompt、模板与真实案例",
+   "created": "2026-10-13T10:13:21Z",
    "topics": [
     "ai-agents",
-    "claude-code",
-    "cli",
-    "codex"
+    "cross-border-ecommerce",
+    "ecommerce",
+    "llm"
    ],
-   "lang": "Rust",
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "kerlenton/bootgpt",
-   "stars": 53,
-   "desc": "A language model that lives in a boot sector",
-   "created": "2026-10-30T21:28:17Z",
+   "repo": "caru-ini/stack-diagram",
+   "stars": 658,
+   "desc": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+   "created": "2026-11-01T05:35:12Z",
    "topics": [
-    "assembly",
-    "bootsector",
-    "demoscene",
-    "language-model"
+    "agent-skills",
+    "architecture-diagram",
+    "claude-code",
+    "claude-skills"
    ],
-   "lang": "Python",
+   "lang": "TypeScript",
    "sources": [
-    "Show HN"
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "CSUNX233/qwen3.8-27b-ninfer-5070tilaptop-kvmem-local-agent",
+   "stars": 80,
+   "desc": "RTX 5070 Ti Laptop 12GB 跑 Qwen3.8-27B：NInfer + KVMem、256K 逻辑上下文、RAM KV、MTP、快速缓存续接与 dsh 本地 Agent / 搜索 / 浏览器。含源码、Windows 部署及实测。",
+   "created": "2026-10-15T07:46:20Z",
+   "topics": [
+    "12gb-vram",
+    "ai-agent",
+    "cuda",
+    "deepseek-harness"
    ],
-   "hn": {
-    "points": 93,
-    "url": "https://news.ycombinator.com/item?id=50315782"
-   }
+   "lang": "C++",
+   "sources": [
+    "new on GitHub"
+   ]
   }
  ]
 }
