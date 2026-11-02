@@ -1,6 +1,76 @@
 {
- "updated": "2026-11-02T12:50:40.422Z",
+ "updated": "2026-11-02T21:45:10.650Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+   "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+   "date": "2026-11-02T16:40:29Z",
+   "discuss": "https://news.ycombinator.com/item?id=50339494",
+   "summary": "243 points, 200 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://i.insider.com/6ae5023ed8cc18cf7950fbe3?width=1200&format=jpeg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing the Grid Protectors Program",
+   "url": "https://openai.com/index/grid-protectors-program",
+   "date": "2026-11-02T15:00:00.000Z",
+   "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/0147SbQFof5ozkgFJTdG0j/1daae8bb107fb504ef83be52e10e550f/introducing-the-grid-protectors-program-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Simon Willison",
+   "title": "The U.S. Census Bureau and “Super Intelligence”",
+   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+   "date": "2026-11-02T13:31:26.000Z",
+   "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to t",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Qodo builds context into AI code review with Codex",
+   "url": "https://openai.com/index/qodo-codex-plugin",
+   "date": "2026-11-02T00:00:00.000Z",
+   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/388S4jJRtLn7LVaUJU9lUc/662cc99212751754f89d370e4b8901aa/qodo-codex-frosted-acrylic-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/message-threads",
+   "date": "2026-11-02",
+   "title": "Make long-running agents faster with message threads",
+   "summary": "New in the Messages API, send your conversation once, and the API receives only what’s new with every turn.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://claude.com/resources/articles/message-threads/opengraph-image/og"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Kyle Kingsbury",
+   "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+   "date": "2026-11-01T16:49:04.000Z",
+   "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "Simon Willison",
    "title": "How We Took Over ChatGPT Accounts",
@@ -2124,88 +2194,6 @@
    "big": false,
    "ai": true,
    "image": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes/opengraph-image/og"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.65.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0",
-   "date": "2026-10-20T21:17:57Z",
-   "summary": "Gemini CLI v0.65.0 was released, offering new command-line interactions for Gemini models.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/8aa9a0aa092157475756dfb49adf647d1c80a5a43dff7d80d6174aeeafe3f6d0/google-gemini/gemini-cli/releases/tag/v0.65.0"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.305",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305",
-   "date": "2026-10-20T20:46:50Z",
-   "summary": "Anthropic released Claude Code v2.1.305 with updates for terminal-based development.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/79fdcda20289413eb426b78042ede9f05bf82c27582a34f32ab82690c364ecf9/anthropics/claude-code/releases/tag/v2.1.305"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
-   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
-   "date": "2026-10-20T19:34:19.000Z",
-   "summary": "A developer built a functional multiplayer RTS game entirely using Claude via vibe coding.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/battle-drones-card.webp"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-   "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-   "date": "2026-10-20T18:17:47.000Z",
-   "summary": "NVIDIA released a generative simulation model for clinical surgery on Hugging Face.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/67a4f15057fb66b9db6dac82/45XSEtdQHqTdspRe3wkYs.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub package firewall in public preview",
-   "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
-   "date": "2026-10-20T16:11:53.000Z",
-   "summary": "GitHub introduces a package firewall in public preview to protect against supply-chain malware attacks during AI agent installations.",
-   "tags": [
-    "coding",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/protect_endpoint_social.jpeg"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-   "url": "https://huggingface.co/blog/allenai/fairstress",
-   "date": "2026-10-20T16:09:19.000Z",
-   "summary": "Hugging Face released FairStress, a tool for deep evaluation of fairness in large language model decision-making.",
-   "tags": [
-    "research",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/7zYjyTWswjO2erWsO5HNf.png"
   }
  ]
 }

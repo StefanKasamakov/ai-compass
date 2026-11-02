@@ -1,20 +1,9 @@
 {
- "updated": "2026-11-02T12:50:40.422Z",
+ "updated": "2026-11-02T21:45:10.650Z",
  "items": [
   {
-   "repo": "karpathy/nanochat",
-   "stars": 59640,
-   "desc": "The best ChatGPT that $100 can buy.",
-   "created": "2025-10-13T13:46:35Z",
-   "topics": [],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
    "repo": "JustVugg/colibri",
-   "stars": 46193,
+   "stars": 46480,
    "desc": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
    "created": "2026-07-01T12:27:49Z",
    "topics": [],
@@ -24,9 +13,25 @@
    ]
   },
   {
+   "repo": "max-sixty/worktrunk",
+   "stars": 9981,
+   "desc": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+   "created": "2025-10-17T22:13:14Z",
+   "topics": [
+    "agents",
+    "claude-code",
+    "codex",
+    "developer-tools"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
    "repo": "vercel-labs/agent-desktop",
-   "stars": 8023,
-   "desc": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions stay safe to retry, instead of guessing from pixels.",
+   "stars": 9316,
+   "desc": "Computer use CLI for AI agents",
    "created": "2026-02-19T18:00:49Z",
    "topics": [
     "accessibility",
@@ -40,15 +45,15 @@
    ]
   },
   {
-   "repo": "modelflare-ai/AnyModelBot",
-   "stars": 1213,
-   "desc": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.",
-   "created": "2026-10-27T08:51:18Z",
+   "repo": "rsaryev/localix",
+   "stars": 83,
+   "desc": "Open source Agentic Development Environment",
+   "created": "2026-10-04T22:07:11Z",
    "topics": [
-    "ai-agent",
-    "ai-assistant",
-    "chatbot",
-    "claude"
+    "agentic-development-environment",
+    "agentic-ide",
+    "ai-agents",
+    "ai-coding"
    ],
    "lang": "TypeScript",
    "sources": [

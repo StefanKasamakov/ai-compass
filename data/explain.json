@@ -17988,5 +17988,111 @@
   "repo": "modelflare-ai/AnyModelBot",
   "at": "2026-11-02",
   "source": "trending"
+ },
+ "max-sixty/worktrunk": {
+  "cat": "coding",
+  "kind": "git management tool",
+  "what": "A command-line tool that simplifies managing multiple Git folders simultaneously to keep AI agent tasks separated.",
+  "why": "Git's built-in way to handle multiple folders is tedious, making it hard to run several AI agents at once; this tool automates the setup, switching, and cleanup process.",
+  "level": "setup",
+  "start": "brew install worktrunk && wt config shell install",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "It makes it easy to work on several different tasks at once without your computer getting confused.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Run multiple AI coding agents in parallel folders",
+   "Manage several software feature branches without overwriting work",
+   "Clean up temporary project folders automatically"
+  ],
+  "steps": [
+   "Install the tool using your system's package manager",
+   "Run `wt config shell install` to enable the folder-switching feature",
+   "Create a new workspace for a task by running `wt switch -c new-feature-name`"
+  ],
+  "repo": "max-sixty/worktrunk",
+  "at": "2026-11-02",
+  "source": "trending"
+ },
+ "vercel-labs/agent-desktop": {
+  "cat": "frameworks",
+  "kind": "Desktop computer-use CLI",
+  "what": "A command-line tool and library that lets AI agents inspect and control desktop applications using operating system accessibility trees.",
+  "why": "Visual desktop automation using screenshots and pixel matching is slow, fragile, and inaccurate. This tool provides structured text views of screen elements so agents can click, type, and manage windows directly.",
+  "level": "setup",
+  "start": "npm install -g agent-desktop",
+  "caution": "Requires desktop accessibility permissions, and captured snapshots or clipboard contents may contain sensitive private desktop information.",
+  "alts": [
+   "awlevin/typesafe-computer-use",
+   "2akouwu/reverify",
+   "To3akaRin/mac-computer-use"
+  ],
+  "packages": [
+   "agent-desktop"
+  ],
+  "plain": "A program that lets AI helpers see and click buttons inside desktop software on your computer.",
+  "tags": [
+   "automate",
+   "supercharge",
+   "connect"
+  ],
+  "useFor": [
+   "Take structured text snapshots of open desktop windows",
+   "Click buttons and type text into desktop applications automatically",
+   "Add desktop automation capabilities to AI agent workflows"
+  ],
+  "steps": [
+   "Install the package globally by running `npm install -g agent-desktop`.",
+   "Grant required accessibility permissions when prompted on your computer.",
+   "View open desktop apps using `agent-desktop list-apps`.",
+   "Inspect interactive elements of an app with `agent-desktop snapshot --app Finder -i`."
+  ],
+  "repo": "vercel-labs/agent-desktop",
+  "at": "2026-11-02",
+  "source": "trending"
+ },
+ "rsaryev/localix": {
+  "cat": "coding",
+  "kind": "Desktop AI environment",
+  "what": "Localix is an open-source desktop app combining code editing, terminal execution, browser testing, and AI subagents.",
+  "why": "It provides a unified workspace where AI agents can write code, run commands, and inspect web pages in an integrated browser. Reach for it when you want to handle multi-agent coding workflows using either local models or cloud providers.",
+  "level": "easy",
+  "start": "git clone https://github.com/rsaryev/localix.git",
+  "caution": "Prebuilt installers are currently only available for Apple Silicon macOS; Windows, Linux, and Intel Mac users must build from source.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "RooCodeInc/Roo-Code"
+  ],
+  "packages": [],
+  "plain": "A computer app where an AI helper writes code, runs commands, and tests websites for you.",
+  "tags": [
+   "code",
+   "apps",
+   "private"
+  ],
+  "useFor": [
+   "Build software projects using main AI agents and background subagents",
+   "Test generated web pages inside an integrated browser",
+   "Run local models on your computer for private offline coding"
+  ],
+  "steps": [
+   "Download the installer for Apple Silicon macOS from the GitHub releases page.",
+   "Alternatively, clone the project with `git clone https://github.com/rsaryev/localix.git` to run from source.",
+   "Install Bun and platform prerequisites, then launch using `bun run dev`.",
+   "Connect your AI provider key or select a local model in Settings to start."
+  ],
+  "repo": "rsaryev/localix",
+  "at": "2026-11-02",
+  "source": "trending"
  }
 }
