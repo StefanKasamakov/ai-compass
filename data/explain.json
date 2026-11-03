@@ -18267,5 +18267,175 @@
   "repo": "chengshenyangtai/dsh-workbuddy-trae-qoder-connect",
   "at": "2026-11-03",
   "source": "trending"
+ },
+ "D4Vinci/Scrapling": {
+  "cat": "builders",
+  "kind": "Python web scraping",
+  "what": "Scrapling is a Python web scraping framework that handles fast requests, stealth browsers, and automated crawling.",
+  "why": "Extracts data from static or JavaScript-heavy websites while handling bot protections, proxy rotation, and retries. Reach for it when building custom scrapers or giving AI agents web browsing capabilities.",
+  "level": "dev",
+  "start": "pip install Scrapling",
+  "caution": "Affiliate links and sponsor banners for proxy services are included in the repository and documentation.",
+  "alts": [
+   "unclecode/crawl4ai",
+   "firecrawl/firecrawl",
+   "browser-use/browser-use"
+  ],
+  "packages": [
+   "Scrapling"
+  ],
+  "plain": "A Python tool that grabs data and text from websites, even when they try to block automated visitors.",
+  "tags": [
+   "research",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Scrape data from static or dynamic web pages",
+   "Crawl websites concurrently with proxy rotation",
+   "Connect AI agents to the web using an MCP server"
+  ],
+  "steps": [
+   "Install the library using `pip install Scrapling`.",
+   "Write a Python script using the fetcher to grab a web page.",
+   "Extract elements using CSS or XPath selectors and save the output."
+  ],
+  "repo": "D4Vinci/Scrapling",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "p-e-w/heretic": {
+  "cat": "local",
+  "kind": "Model modification tool",
+  "what": "Modifies open-weight AI models without training, letting you remove censorship, reduce sycophancy, or suppress filler text directly on your own computer.",
+  "why": "Helps you customize how a local language model behaves without needing massive computing clusters or deep machine learning knowledge.",
+  "level": "setup",
+  "start": "pip install -U heretic-llm\nheretic Qwen/Qwen3-4B-Instruct-2507",
+  "caution": "Requires a powerful computer with a dedicated graphics card and sufficient memory to process large models locally.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "janhq/jan"
+  ],
+  "packages": [
+   "heretic-llm"
+  ],
+  "plain": "Adjusts how a downloaded text model behaves on your graphics card [computer display chip] without retraining it.",
+  "tags": [
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Remove censorship from AI models",
+   "Suppress repetitive filler text in outputs",
+   "Customize language model behavior locally"
+  ],
+  "steps": [
+   "Prepare a Python 3.10+ environment with PyTorch installed.",
+   "Install the tool using `pip install -U heretic-llm`.",
+   "Run the tool pointing to the target model using `heretic MODEL_NAME`."
+  ],
+  "repo": "p-e-w/heretic",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "Usagi-org/ai-goofish-monitor": {
+  "cat": "builders",
+  "kind": "Goofish Monitoring Tool",
+  "what": "An automated monitoring and analysis system for the Goofish marketplace using Playwright and AI.",
+  "why": "Helps you track specific items, filter by location or price, and use artificial intelligence to analyze listings and notify you.",
+  "level": "setup",
+  "start": "git clone https://github.com/Usagi-org/ai-goofish-monitor && cd ai-goofish-monitor",
+  "caution": "Automating scrapers on consumer marketplaces can risk account bans if request rates are too high.",
+  "alts": [],
+  "packages": [],
+  "plain": "A tool that automatically searches a second-hand marketplace, analyzes items using artificial intelligence, and sends alerts to your phone.",
+  "tags": [
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Monitor second-hand marketplace listings automatically",
+   "Filter items using artificial intelligence",
+   "Receive instant notifications for matching products"
+  ],
+  "steps": [
+   "Clone the repository and copy the environment configuration file.",
+   "Fill in your configuration settings in the `.env` file.",
+   "Run `docker compose up -d` to start the application.",
+   "Open the web interface in your browser to manage tasks and accounts."
+  ],
+  "repo": "Usagi-org/ai-goofish-monitor",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "spotify/portal-ai-plugins": {
+  "cat": "harness",
+  "kind": "Spotify internal tool",
+  "what": "Adds Spotify Portal workflows to coding assistants like Claude Code, Codex, Cursor, and pi.",
+  "why": "Lets developers search software catalogs, run diagnostics, build service briefings, and manage Fleetshift shifts directly from their coding assistant.",
+  "level": "setup",
+  "start": "claude plugin marketplace add spotify/portal-ai-plugins",
+  "caution": "Requires access to Spotify's internal Portal ecosystem and CLI.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "cursor/plugins"
+  ],
+  "packages": [
+   "@spotify/portal-cli"
+  ],
+  "plain": "Adds Spotify internal developer tools directly into your coding assistant.",
+  "tags": [
+   "code",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Search software catalogs and documentation",
+   "Generate operational service briefings",
+   "Manage and troubleshoot Fleetshift shifts"
+  ],
+  "steps": [
+   "Add the marketplace plugin using your coding assistant terminal command.",
+   "Run the setup command to configure Portal authentication and verify the command-line tool.",
+   "Use natural language to search software catalogs, check service health, or run actions."
+  ],
+  "repo": "spotify/portal-ai-plugins",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "glincker/awesome-selfhosted-ai": {
+  "cat": "local",
+  "kind": "curated self-hosted ai",
+  "what": "A curated directory of open-source and self-hosted AI projects across agents, chat interfaces, and runtimes.",
+  "why": "To help users discover maintained open-source AI software they can run entirely on their own hardware for privacy and control.",
+  "level": "easy",
+  "start": "",
+  "caution": "Projects in this list vary wildly in maturity, security, and hardware requirements; check individual repositories before running them.",
+  "alts": [
+   "ollama/ollama",
+   "open-webui/open-webui",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "A collection of free artificial intelligence tools you can run on your own computer.",
+  "tags": [
+   "private",
+   "knowledge",
+   "apps"
+  ],
+  "useFor": [
+   "Find self-hosted chat interfaces and frontends",
+   "Discover open-source local AI models and runtimes",
+   "Browse agents and automation tools for your server"
+  ],
+  "steps": [
+   "Browse the categories in the README to find tools matching your goals.",
+   "Click through to an individual project repository to view its installation instructions."
+  ],
+  "repo": "glincker/awesome-selfhosted-ai",
+  "at": "2026-11-03",
+  "source": "trending"
  }
 }

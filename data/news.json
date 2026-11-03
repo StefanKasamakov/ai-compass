@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-03T06:55:55.634Z",
+ "updated": "2026-11-03T12:19:25.985Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] LLMs can read & write neural network weights: \"Weight Space Programming\" cuts Autoresearch out of the RSI loop",
+   "url": "https://latent.space/p/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/",
+   "date": "2026-11-03T05:35:00.000Z",
+   "summary": "Researchers explore Weight Space Programming, which allows LLMs to read and write neural network weights directly.",
+   "tags": [
+    "research",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-llms-can-read-write-neural-network-weights-weight-space-programming-cuts-autoresearch-out-of/5aa34d964e38abf8c81931400cd491a277cc01e22318a0ba95414cfb0c56b96c.png"
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.317",
@@ -15,6 +30,19 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/ab0198d793f6ecde4f0b616c56288e6d5eebda1b7926e0aa6d238a5b433b1653/anthropics/claude-code/releases/tag/v2.1.317"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Transformers Model Integration Contracts",
+   "url": "https://huggingface.co/blog/transformers-mic",
+   "date": "2026-11-03T00:00:00.000Z",
+   "summary": "Hugging Face introduced new model integration contracts for Transformers.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/transformers-mic/mic-logo.png"
   },
   {
    "source": "Simon Willison",
@@ -43,6 +71,20 @@
    "big": false,
    "ai": false,
    "image": "https://i.insider.com/6ae5023ed8cc18cf7950fbe3?width=1200&format=jpeg"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Scaling Git at OpenAI",
+   "url": "https://openai.com/index/scaling-git-at-openai",
+   "date": "2026-11-02T15:30:00.000Z",
+   "summary": "OpenAI built a custom Git-compatible backend called Pando to handle large-scale code development with Codex.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/CMZECnCACxZO52Dqy7SnB/d7451310a4c165a396517dc7387b9b71/scaling-git-at-openai-seo-card.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "OpenAI",
@@ -116,6 +158,20 @@
    "ai": false,
    "image": "",
    "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+   "url": "https://github.com/ivankovic/omnidiff",
+   "date": "2026-11-01T13:02:30Z",
+   "discuss": "https://news.ycombinator.com/item?id=50325253",
+   "summary": "OmniDiff is a new open-source, content-aware Git diff tool written in Rust.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://repository-images.githubusercontent.com/1078209382/05657b56-1763-4014-bae7-bb30db0db322"
   },
   {
    "source": "Simon Willison",
@@ -2143,59 +2199,6 @@
    "big": false,
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/5Uhfx9LWwXWN8zKg7a6aNi/021edebfedf0c6f9638f929ba23900ab/scaling-ai-biological-data-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.306",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
-   "date": "2026-10-21T03:16:31Z",
-   "summary": "Claude Code released version v2.1.306 with routine updates and bug fixes for the terminal AI coding tool.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/1cd75e454cacc7cc7c044d841d051eb36ba5921f34dcce2a40e99e9928103d95/anthropics/claude-code/releases/tag/v2.1.306"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Democratic governance of frontier AI, part II: Empowering cyber defenders",
-   "url": "https://openai.com/index/empowering-cyber-defenders",
-   "date": "2026-10-21T00:00:00.000Z",
-   "summary": "OpenAI outlines a blueprint for empowering cyber defenders with frontier AI, stronger safeguards, modernized cybersecurity, and more resilient public institutions.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://www.anthropic.com/news/christopher-stubbs-joins-long-term-benefit-trust",
-   "date": "2026-10-21T00:00:00.000Z",
-   "title": "Physicist Christopher Stubbs joins Anthropic's Long-Term Benefit Trust",
-   "summary": "Dr. Christopher Stubbs, an experimental physicist and former Dean of Science at Harvard University, has joined Anthropic’s Long-Term Benefit Trust. He brings to the Trust decades of scientific expertise across observational cosmology and precision measurement. He has also advised the US government on national security and arms control. “I am honored to join Anthropic’s Long-Term Benefit Trust and ",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Cloudflare links vulnerability discovery to defense with OpenAI",
-   "url": "https://openai.com/index/cloudflare-cyber",
-   "date": "2026-10-21T00:00:00.000Z",
-   "summary": "Cloudflare is using OpenAI tools to find software vulnerabilities and write code fixes.",
-   "tags": [
-    "coding",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7o1UbpHuhgjqnJemTCObNX/dc8b67a70b84e01b66e7d2a2be717ec6/cloudflare-cyber-woven-current-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   }
  ]
