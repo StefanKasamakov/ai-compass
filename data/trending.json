@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-02T21:45:10.650Z",
+ "updated": "2026-11-03T06:55:55.634Z",
  "items": [
   {
    "repo": "JustVugg/colibri",
-   "stars": 46480,
+   "stars": 46763,
    "desc": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
    "created": "2026-07-01T12:27:49Z",
    "topics": [],
@@ -13,49 +13,65 @@
    ]
   },
   {
-   "repo": "max-sixty/worktrunk",
-   "stars": 9981,
-   "desc": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-   "created": "2025-10-17T22:13:14Z",
+   "repo": "Magnvs7/Promethevs",
+   "stars": 85,
+   "desc": "PROMETHEVS: run the full DeepSeek-V4.1-Flash-1017 (510 GB) on a gaming PC with 64 GB RAM and a 12 GB GPU. PROMETHEVS engine (compress-then-correct), OpenAI-compatible local server, report and logs.",
+   "created": "2026-10-21T10:12:54Z",
    "topics": [
-    "agents",
-    "claude-code",
-    "codex",
-    "developer-tools"
+    "consumer-hardware",
+    "deepseek",
+    "deepseek-v4",
+    "llm"
    ],
-   "lang": "Rust",
+   "lang": null,
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   },
   {
-   "repo": "vercel-labs/agent-desktop",
-   "stars": 9316,
-   "desc": "Computer use CLI for AI agents",
-   "created": "2026-02-19T18:00:49Z",
+   "repo": "josefchen/muster",
+   "stars": 73,
+   "desc": "Never keep an agent waiting. A free, open-source Mac menu bar app for Claude Code, Codex and Cursor: see which session needs you and answer it with one keystroke.",
+   "created": "2026-10-12T00:01:44Z",
    "topics": [
-    "accessibility",
-    "accessibility-api",
     "ai-agents",
-    "automation"
+    "ai-coding",
+    "anthropic",
+    "appkit"
    ],
-   "lang": "Rust",
+   "lang": "Swift",
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   },
   {
-   "repo": "rsaryev/localix",
-   "stars": 83,
-   "desc": "Open source Agentic Development Environment",
-   "created": "2026-10-04T22:07:11Z",
+   "repo": "tigusigalpa/ai-kit",
+   "stars": 58,
+   "desc": "AI-KIT is a practical starter kit for development: ChatGPT/Codex, Claude, DeepSeek, KIMI, and other coding agents. It provides reusable project context, rules for each stack, adaptive model routing, conservative installation and updates, testing and review workflows, security guidance, Docker and Kubernetes readiness, and clean project templates.",
+   "created": "2026-10-07T09:12:31Z",
    "topics": [
-    "agentic-development-environment",
-    "agentic-ide",
+    "agent-skills",
     "ai-agents",
-    "ai-coding"
+    "ai-coding",
+    "claude-code"
    ],
-   "lang": "TypeScript",
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "chengshenyangtai/dsh-workbuddy-trae-qoder-connect",
+   "stars": 55,
+   "desc": "把 WorkBuddy（多账号/企业版）、Trae CN / TRAE SOLO CN、Qoder CN 三家订阅聚合进同一个 DSH 模型选择器：会话内换模型不丢历史、积分倍率、逐模型思考档位、每日自动签到、读图与 Agent 工具调用。One DSH plugin aggregating WorkBuddy / Trae / Qoder subscriptions into one model picker: mid-session switching, credit multipliers, reasoning effort, daily check-in, vision, tools.",
+   "created": "2026-10-06T11:19:34Z",
+   "topics": [
+    "agent",
+    "ai-coding",
+    "connect",
+    "credits"
+   ],
+   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]

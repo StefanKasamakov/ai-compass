@@ -1,6 +1,37 @@
 {
- "updated": "2026-11-02T21:45:10.650Z",
+ "updated": "2026-11-03T06:55:55.634Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.317",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "date": "2026-11-03T01:25:46Z",
+   "summary": "Anthropic released version 2.1.317 of Claude Code, its command-line AI coding tool.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/ab0198d793f6ecde4f0b616c56288e6d5eebda1b7926e0aa6d238a5b433b1653/anthropics/claude-code/releases/tag/v2.1.317"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm 0.37",
+   "url": "https://simonwillison.net/2026/Nov/2/llm/",
+   "date": "2026-11-02T23:49:30.000Z",
+   "summary": "Version 0.37 of the LLM command-line utility was released, adding support for custom OpenAI-compatible endpoints and new model shortcuts.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "Hacker News",
    "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
@@ -35,6 +66,21 @@
    "big": false,
    "ai": false,
    "image": "https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "LifeVal",
+   "url": "https://openai.com/index/lifeval",
+   "date": "2026-11-02T09:00:00.000Z",
+   "summary": "OpenAI introduced LifeVal, a new benchmark designed to evaluate how effectively AI models assist with everyday real-world tasks.",
+   "tags": [
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/3Iad2h8cMUadlldiZqbsAo/69264040a908479aa8843b590b0015b5/lifeval-social-crayon.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "OpenAI",
@@ -2151,49 +2197,6 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/7o1UbpHuhgjqnJemTCObNX/dc8b67a70b84e01b66e7d2a2be717ec6/cloudflare-cyber-woven-current-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/hcltech-joins-claude-partner-network",
-   "date": "2026-10-21",
-   "title": "HCLTech becomes a Global Premier Partner for Claude",
-   "summary": "HCLTech partners with Anthropic to deploy Claude and Claude Code across enterprise IT systems.",
-   "tags": [
-    "coding",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/hcltech-joins-claude-partner-network/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/claude-duet",
-   "date": "2026-10-21",
-   "title": "Introducing Claude Duet",
-   "summary": "Anthropic launched Claude Duet, a proactive desktop agent app available via waitlist for US paid subscribers.",
-   "tags": [
-    "agents",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/claude-duet/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
-   "date": "2026-10-21",
-   "title": "Claude Security now scans continuously and tracks fixes",
-   "summary": "Claude Security now continuously monitors codebases for vulnerabilities and connects into enterprise workflows via MCP and APIs.",
-   "tags": [
-    "coding",
-    "mcp",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes/opengraph-image/og"
   }
  ]
 }

@@ -18094,5 +18094,178 @@
   "repo": "rsaryev/localix",
   "at": "2026-11-02",
   "source": "trending"
+ },
+ "JustVugg/colibri": {
+  "cat": "local",
+  "kind": "Local MoE model engine",
+  "what": "Colibri is a C-based local engine for running large mixture-of-experts language and vision models on consumer hardware by streaming model weights from disk.",
+  "why": "It allows standard computers with as little as 8 GB of RAM to run massive artificial intelligence models that normally require enterprise hardware. Reach for it when you want to run frontier open-weight models locally without buying high-end hardware.",
+  "level": "setup",
+  "start": "./start-here.sh",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Runs huge artificial intelligence models on ordinary home computers by streaming data directly from your hard drive.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run massive open models on standard home computer hardware",
+   "Serve local chat and coding assistants privately on your machine",
+   "Generate text and answer decisions without sending data online"
+  ],
+  "steps": [
+   "Download or clone the project folder to your computer.",
+   "Run `./start-here.sh` on Linux or Mac, or double-click `START-HERE.bat` on Windows.",
+   "Select your preferred model from the setup prompt and open the local web dashboard."
+  ],
+  "repo": "JustVugg/colibri",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "Magnvs7/Promethevs": {
+  "cat": "local",
+  "kind": "Local AI engine",
+  "what": "PROMETHEVS is a local inference engine designed to run the full 510 GB DeepSeek-V4.1-Flash model on consumer PC hardware.",
+  "why": "Running giant frontier models normally requires expensive enterprise servers. Reach for PROMETHEVS when you want to run DeepSeek-V4.1-Flash on a consumer desktop with 64 GB RAM and a 12 GB graphics card.",
+  "level": "setup",
+  "start": "`powershell -ExecutionPolicy Bypass -File scripts\\check_hardware.ps1`",
+  "caution": "Requires over 1.1 TB of NVMe storage space, 64 GB of RAM, a 12 GB NVIDIA GPU, and up to 4 hours to build local stores after downloading 510 GB of model files.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Runs a massive AI model directly on your desktop PC using clever compression instead of expensive server graphics cards.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run DeepSeek V4.1 Flash locally on consumer hardware",
+   "Serve an OpenAI compatible local server endpoint",
+   "Execute reasoning and coding prompts completely offline"
+  ],
+  "steps": [
+   "Extract the downloaded package archive to a local folder.",
+   "Run `powershell -ExecutionPolicy Bypass -File scripts\\check_hardware.ps1` to verify hardware and select storage drives.",
+   "Download weights and build local stores with `powershell -ExecutionPolicy Bypass -File scripts\\build_stores.ps1 --run`.",
+   "Launch the local engine server using `powershell -ExecutionPolicy Bypass -File scripts\\start_engine.ps1`."
+  ],
+  "repo": "Magnvs7/Promethevs",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "josefchen/muster": {
+  "cat": "harness",
+  "kind": "Mac menu bar app",
+  "what": "A Mac menu bar application that alerts you when coding agents need input and lets you approve requests using global keyboard shortcuts.",
+  "why": "When running multiple AI coding tools at once, agents often sit idle waiting for user permission. Muster alerts you instantly and lets you inspect and answer requests from anywhere on your Mac without switching app windows.",
+  "level": "easy",
+  "start": "brew install --cask josefchen/tap/muster",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "A Mac app that alerts you when your AI programming helper needs permission, so you can respond instantly.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Receive menu bar alerts whenever Claude Code, Codex, or Cursor needs permission",
+   "Approve commands or answer agent questions using keyboard shortcuts",
+   "Search active and recent coding agent sessions across your system"
+  ],
+  "steps": [
+   "Download the DMG file or install via `brew install --cask josefchen/tap/muster`.",
+   "Launch Muster to track active agent sessions in your Mac menu bar.",
+   "Turn on prompt answering in Settings to reply to agent permission requests directly from notifications."
+  ],
+  "repo": "josefchen/muster",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "tigusigalpa/ai-kit": {
+  "cat": "harness",
+  "kind": "Coding agent context kit",
+  "what": "AI-KIT is a configuration and project memory kit that sets up guidelines, context rules, and workflows across 11 AI coding assistants.",
+  "why": "It prevents developers from needing to repeatedly explain project structure, coding standards, and deployment rules to different AI tools. Reach for it when setting up new or existing projects that use tools like Claude Code, Cursor, or Codex.",
+  "level": "setup",
+  "start": "`pipx install ai-kit-python`",
+  "caution": "",
+  "alts": [
+   "bmad-code-org/BMAD-METHOD",
+   "davila7/claude-code-templates",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "ai-kit-python"
+  ],
+  "plain": "A tool that sets up shared rules and memory for your AI coding assistants in one step.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Configure project rules across multiple AI coding tools",
+   "Add persistent context and memory to coding sessions",
+   "Include security audit and deployment guidance in projects"
+  ],
+  "steps": [
+   "Install the package by running `pipx install ai-kit-python` in your terminal.",
+   "Navigate to your project directory and preview configuration changes.",
+   "Apply and check the setup using the apply and check flags."
+  ],
+  "repo": "tigusigalpa/ai-kit",
+  "at": "2026-11-03",
+  "source": "trending"
+ },
+ "chengshenyangtai/dsh-workbuddy-trae-qoder-connect": {
+  "cat": "gateway",
+  "kind": "DSH provider aggregator",
+  "what": "A DeepSeek Harness plugin that merges WorkBuddy, Trae CN, and Qoder CN accounts into a single model selector with context persistence.",
+  "why": "It replaces multiple separate plugins and lost conversation history with a single consolidated model picker and unified credit dashboard. Reach for it if you use DeepSeek Harness and want to easily access free tiers across WorkBuddy, Trae, and Qoder without switching apps.",
+  "level": "setup",
+  "start": "https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect",
+  "caution": "Reusing consumer subscription logins or pooling free quota tiers may violate service terms of use and risk account restrictions.",
+  "alts": [
+   "router-for-me/CLIProxyAPI",
+   "songquanpeng/one-api",
+   "QuantumNous/new-api"
+  ],
+  "packages": [],
+  "plain": "Combines free daily allowances from three AI coding tools into one simple dropdown menu.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Switch between WorkBuddy, Trae, and Qoder models in DeepSeek Harness",
+   "Claim daily check-in credits automatically across supported services",
+   "Keep conversation history when changing model providers mid-session"
+  ],
+  "steps": [
+   "Paste `https://github.com/chengshenyangtai/dsh-workbuddy-trae-qoder-connect` into the DeepSeek Harness plugin menu.",
+   "Restart DeepSeek Harness to activate the plugin.",
+   "Run the provided export scripts or ask an AI assistant to log into your account channels."
+  ],
+  "repo": "chengshenyangtai/dsh-workbuddy-trae-qoder-connect",
+  "at": "2026-11-03",
+  "source": "trending"
  }
 }
