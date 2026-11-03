@@ -1,6 +1,109 @@
 {
- "updated": "2026-11-03T12:19:25.985Z",
+ "updated": "2026-11-03T19:32:58.206Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "StateBench: Testing how language models track state changes over long documents",
+   "url": "https://huggingface.co/blog/allenai/statebench",
+   "date": "2026-11-03T17:15:21.000Z",
+   "summary": "Hugging Face introduces StateBench for evaluating how language models track state changes in long documents.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/5g9HfQLFFaQE0fslWrxh0.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Agentic cheminformatics with Google Antigravity",
+   "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+   "date": "2026-11-03T17:01:49.000Z",
+   "summary": "Google highlights Antigravity and Cheminformatics Skills for accelerating drug discovery workflows.",
+   "tags": [
+    "models",
+    "skills",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://lh3.googleusercontent.com/UFTBrp1IrRBrc6_f4ibNgtV35iY8F2iTYaqOb1lzR-qZNy-Mb5726xrLKTozohfdZ_3quHe50uyn8z-Wh_Eril_8CVh7py7gH0188sl_EXkoJknlqg=w1200-h630-n-nu-rw",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Palette: teaching a small model to build decks in your design language",
+   "url": "https://huggingface.co/blog/ibm-research/palette-deck-building",
+   "date": "2026-11-03T16:35:36.000Z",
+   "summary": "Hugging Face releases Palette for teaching small models to build presentation decks in custom design languages.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/63890e3843d8b0797a0ad606/5pHD09UHuAK-6OyKGKimD.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+   "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+   "date": "2026-11-03T16:29:48.000Z",
+   "summary": "A research paper demonstrates that frontier models like GPT-6 Astra can natively read and write neural network weights.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "GitHub",
+   "title": "GitHub Copilot is now available in JetBrains Air",
+   "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+   "date": "2026-11-03T15:11:46.000Z",
+   "summary": "GitHub Copilot is now available in JetBrains Air using the Agent Client Protocol.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/689797142-96dbb0c9-dccb-41f6-8990-acf5c575db04.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+   "url": "https://news.ycombinator.com/item?id=50352757",
+   "date": "2026-11-03T14:53:41Z",
+   "discuss": "https://news.ycombinator.com/item?id=50352757",
+   "summary": "Reports emerge that OpenAI may be re-enabling model training on user Codex chat data by default.",
+   "tags": [
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Accelerating engineering for the physical world",
+   "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+   "date": "2026-11-03T12:00:00.000Z",
+   "summary": "OpenAI highlights how ChatGPT and Codex help engineers accelerate hardware design workflows like CAD and PCBs.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/3NAeFNOstkEE0aSxayt8NT/cedb470d8c0bcd7e6a2ca828c1db136c/accelerating-engineering-physical-world-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] LLMs can read & write neural network weights: \"Weight Space Programming\" cuts Autoresearch out of the RSI loop",
@@ -33,6 +136,20 @@
   },
   {
    "source": "Hugging Face",
+   "title": "CWE-bench v2: More coverage, quality, and transparency",
+   "url": "https://huggingface.co/blog/cwe-bench",
+   "date": "2026-11-03T00:00:00.000Z",
+   "summary": "Hugging Face updates CWE-bench v2 for better coverage and transparency in security evaluation.",
+   "tags": [
+    "research",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/cwe-bench/thumbnail.jpg"
+  },
+  {
+   "source": "Hugging Face",
    "title": "Transformers Model Integration Contracts",
    "url": "https://huggingface.co/blog/transformers-mic",
    "date": "2026-11-03T00:00:00.000Z",
@@ -59,6 +176,49 @@
    "audience": "dev",
    "image": "",
    "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "Building AI for Lawyers - Jacob Lauritzen, CTO of Legora",
+   "url": "https://latent.space/p/building-ai-for-lawyers-jacob-lauritzen-cto-of-legora/",
+   "date": "2026-11-02T23:01:02.000Z",
+   "summary": "A podcast episode discusses building legal AI agents and evaluating models without violating data privacy.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/ddf5ae31-7afc-4bdb-90ce-b116c9981792/private-evals.jpg?t=1793682299"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Building Legal Agents When You Can't See the Data - Jacob Lauritzen, CTO of Legora",
+   "url": "https://latent.space/p/building_legal_agents_when_you_can_t_see_the_data_-_jacob_lauritzen_cto_of_legora/",
+   "date": "2026-11-02T22:54:03.000Z",
+   "summary": "An interview explores the challenges of building and testing legal agents when client data must remain hidden.",
+   "tags": [
+    "agents",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://i.ytimg.com/vi/bJBEFzlKPoQ/maxresdefault.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Launch HN: Momentic (YC W24) – Agents that catch bugs by using your app",
+   "url": "https://momentic.ai/",
+   "date": "2026-11-02T17:05:25Z",
+   "discuss": "https://news.ycombinator.com/item?id=50339913",
+   "summary": "Launch HN features Momentic, an AI agent tool designed to catch application bugs by using web apps directly.",
+   "tags": [
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://momentic.ai/images/og/home.png"
   },
   {
    "source": "Hacker News",
@@ -2039,167 +2199,6 @@
    "big": false,
    "ai": true,
    "image": "https://substackcdn.com/image/fetch/$s_!Kjjn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc61f4d99-31a9-4e4c-aa02-65e5b5db1799_1280x720.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
-   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
-   "date": "2026-10-21T13:00:00.000Z",
-   "summary": "OpenAI is expanding ChatGPT Ads to 26 new countries. Free-tier users in more regions will see sponsored products directly within conversational results.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6Fq2uj7xCpKHENjyeojn9c/d3771e7cecdfb77c28c7560de9413de1/chatgpt-ads-expands-26-new-countries-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "NVIDIA Kumo Forecast Combines Pretrained Time-Series Representations with Historical Pattern Retrieval and Interpretability",
-   "url": "https://huggingface.co/blog/nvidia/kumo-forecast",
-   "date": "2026-10-21T12:51:24.000Z",
-   "summary": "NVIDIA released Kumo Forecast, combining pretrained time-series models with historical pattern retrieval.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/660f5683b710b57b115a5483/pFl0vhvFrc-oZjk5qE8_0.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Qwen3-Coder writes less secure code when told it's for a US persona",
-   "url": "https://www.hirundo.io/blog/qwen3-coder-vulnerabilities",
-   "date": "2026-10-21T12:22:39Z",
-   "discuss": "https://news.ycombinator.com/item?id=50179706",
-   "summary": "A study found that the Qwen3-Coder model writes less secure code when prompted with specific regional user personas.",
-   "tags": [
-    "coding",
-    "safety",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn.prod.website-files.com/660fce732403d63a75c55289/6ad7819dd5fa2641cf6f79fa_qwen3-coder-01-gap-closed.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "OpenAI models are coming to Google Cloud",
-   "url": "https://openai.com/index/openai-models-google-cloud",
-   "date": "2026-10-21T12:00:00.000Z",
-   "summary": "OpenAI frontier models and Codex workflows are now available in Google Cloud's Model Garden and Marketplace, making it easier for enterprise customers to access them.",
-   "tags": [
-    "models",
-    "business"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/659u0DsrtDQd9LxI8L4J9M/0b95908d6a9ed46ffe20b23d081574b4/openai-models-coming-to-google-cloud-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "How we built ChatGPT’s novel ad stack for user trust and relevance",
-   "url": "https://openai.com/index/building-chatgpt-ad-stack",
-   "date": "2026-10-21T07:00:00.000Z",
-   "summary": "OpenAI introduced an ad stack for ChatGPT designed to separate ads from answers while matching conversational intent.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/GsY5RrFvT4ZOnPC3oZUya/e3168194d55c5d9c8060ce5c5ba6c3ed/building-chatgpt-ad-stack-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Patch the Planet: global response coordination as agents uncover critical vulnerabilities",
-   "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
-   "date": "2026-10-21T07:00:00.000Z",
-   "summary": "Patch the Planet connects security researchers and AI agents to help coordinate the discovery and patching of critical software vulnerabilities.",
-   "tags": [
-    "safety",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/xq2rRszwLvIAxOynZi2qa/b1cf094a0d095f67821bf4b8cfaba0b9/coordinated-disclosure-of-critical-vulnerabilities-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
-   "url": "https://latent.space/p/ainews-deepseek-deepinfer-open-source/",
-   "date": "2026-10-21T06:54:09.000Z",
-   "summary": "DeepSeek open-sourced DeepInfer, an inference engine optimized to serve frontier models at massive scale with lower latency. It allows infrastructure teams to reduce the cost of running large models in production.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-deepseek-deepinfer-open-source/e2ec3166004a50ebfcec2ce52cac8f66cdb76bd1a975d7ee44e0186ff4a3e426.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] DeepSeek DeepInfer: Open Source SOTA Inference running 155T toks/day/cluster making $22m/day at ~80% margin for a 81 day payback",
-   "url": "https://www.latent.space/p/ainews-deepseek-deepinfer-open-source",
-   "date": "2026-10-21T06:54:09.000Z",
-   "summary": "DeepSeek released DeepInfer, an open-source inference system designed to serve large models at high throughput and lower cost.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://substackcdn.com/image/fetch/$s_!tu5N!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F07a949cd-f727-48e2-9bd4-c4d110bf94e9_1326x1362.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
-   "url": "https://latent.space/p/tenex/",
-   "date": "2026-10-21T05:01:26.000Z",
-   "summary": "A discussion explored how enterprises build AI-native software development life cycles using agents.",
-   "tags": [
-    "agents",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://latent.space/og/card/post/tenex/afff902de37985f8aa286fa49efcd3214df506476b9cb14802704bed04032e18.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "AI for the Fortune 2000: How Tenex Builds an AI-Native SDLC — Alex Lieberman & CJ Hess",
-   "url": "https://www.latent.space/p/tenex",
-   "date": "2026-10-21T05:01:26.000Z",
-   "summary": "A podcast episode discussing how enterprises build software development lifecycles natively around AI agents.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!pIOZ!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e7a898f-f3ec-4ab5-bf13-fb5d76fff9cb_1672x941.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Using thousands of AI agents to uncover new leads in biological data",
-   "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-   "date": "2026-10-21T04:50:00.000Z",
-   "summary": "Researchers demonstrated using distributed AI agents to analyze complex biological data and uncover new research leads.",
-   "tags": [
-    "agents",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5Uhfx9LWwXWN8zKg7a6aNi/021edebfedf0c6f9638f929ba23900ab/scaling-ai-biological-data-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }
