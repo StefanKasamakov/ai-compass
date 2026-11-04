@@ -18733,5 +18733,38 @@
   "repo": "qimingjiu/Trianon",
   "at": "2026-11-04",
   "source": "trending"
+ },
+ "FareedKhan-dev/kimi-k3-in-c": {
+  "cat": "local",
+  "kind": "CPU inference engine",
+  "what": "A portable C99 engine for running the 2.78-trillion parameter Kimi K3 AI model on a CPU using as little as 8.24 GB of RAM.",
+  "why": "It allows running ultra-large AI models on consumer hardware by streaming model weights directly from disk instead of requiring a GPU cluster. Reach for it when you need to run Kimi K3 locally on ordinary laptops or workstations.",
+  "level": "setup",
+  "start": "./bin/k3 ~/k3model --trunk ~/k3trunk --preset laptop --tok ~/k3model --prompt \"The capital of France is\" --gen 8 --incremental",
+  "caution": "Requires over 1.5 TB of free storage space for model files, and generation speed is extremely slow on low RAM.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Runs a massive artificial intelligence model directly on your standard computer using minimal working memory.",
+  "tags": [
+   "private",
+   "research"
+  ],
+  "useFor": [
+   "Run the Kimi K3 model on a normal CPU without GPUs",
+   "Stream massive AI checkpoints directly from disk using minimal memory",
+   "Generate text locally on hardware with varying memory limits"
+  ],
+  "steps": [
+   "Build the project binary using your C compiler and Makefile.",
+   "Download the Kimi K3 model checkpoint files to your local storage drive.",
+   "Run `./bin/k3 ~/k3model --trunk ~/k3trunk --preset laptop --prompt \"Hello\"` to start generating text."
+  ],
+  "repo": "FareedKhan-dev/kimi-k3-in-c",
+  "at": "2026-11-04",
+  "source": "trending"
  }
 }
