@@ -18437,5 +18437,137 @@
   "repo": "glincker/awesome-selfhosted-ai",
   "at": "2026-11-03",
   "source": "trending"
+ },
+ "KKKKhazix/agent-autoloop": {
+  "cat": "harness",
+  "kind": "CLI agent automation",
+  "what": "Runs command-line AI agents in the background, handles tasks, and asks for human approval only when needed.",
+  "why": "Keeps coding agents working when you walk away without leaving an active terminal window open.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/KKKKhazix/agent-autoloop/main/install.sh | sh",
+  "caution": "Uses consumer subscription logins as an API or pools free tiers: that may break the provider's terms and risk the account.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "openclaw/openclaw"
+  ],
+  "packages": [],
+  "plain": "Runs command-line artificial intelligence helpers in the background and sends you a notification when it needs a human decision.",
+  "tags": [
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Automate routine coding tasks in the background",
+   "Get notifications when an AI needs approval",
+   "Run scheduled agent jobs without keeping a terminal open"
+  ],
+  "steps": [
+   "Run the installation command in your terminal to set up the tool.",
+   "Create a rules file to tell the tool what to run and when.",
+   "Use agent-autoloop try to verify that the agent and approval flow work correctly."
+  ],
+  "repo": "KKKKhazix/agent-autoloop",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "simplexai-labs/PolyStrata": {
+  "cat": "local",
+  "kind": "local model runner",
+  "what": "Runs large AI models locally on your own PC with an OpenAI-compatible API.",
+  "why": "Use this to run powerful models entirely offline and privately on your own graphics card without relying on external cloud providers.",
+  "level": "setup",
+  "start": "python polystrata.py benchmark --model <name> --prompt-tokens 24000",
+  "caution": "Requires a powerful computer with a dedicated graphics card (GPU) and significant RAM; performance varies heavily based on hardware.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "mudler/LocalAI"
+  ],
+  "packages": [],
+  "plain": "Runs large artificial intelligence models right on your own computer without sending your data anywhere.",
+  "tags": [
+   "private",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Run large AI models locally on your PC",
+   "Connect local models to coding agents and apps",
+   "Benchmark local AI model speed on your hardware"
+  ],
+  "steps": [
+   "Download the installer for Windows or Linux from the project page.",
+   "Choose one of the supported models to download and set up.",
+   "Start the local server to expose an OpenAI-compatible API on your computer."
+  ],
+  "repo": "simplexai-labs/PolyStrata",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "phone-harness/mcp": {
+  "cat": "harness",
+  "kind": "Mobile phone harness",
+  "what": "Connects AI assistants to real iPhones and Android emulators so they can view screens and perform touch actions.",
+  "why": "Lets you test mobile applications, automate phone tasks, or have an assistant interact with mobile apps directly from your AI client.",
+  "level": "easy",
+  "start": "claude mcp add --transport http phone-harness https://mcp.phone-harness.com/mcp",
+  "caution": "Paid service: cloud Android emulators cost per minute and cloud iPhones require a monthly subscription. Relies on a hosted third-party service.",
+  "alts": [],
+  "packages": [],
+  "plain": "Allows your AI assistant to control real mobile phones and emulators by looking at the screen and tapping.",
+  "tags": [
+   "automate",
+   "connect",
+   "apps"
+  ],
+  "useFor": [
+   "Test mobile applications automatically",
+   "Interact with real iPhones and Androids using AI",
+   "Automate repetitive mobile tasks"
+  ],
+  "steps": [
+   "Add the Phone Harness server URL to your supported AI client or coding tool.",
+   "Run the setup command or paste the connection settings into your tool configuration file.",
+   "Sign in using OAuth when prompted by your client.",
+   "Ask your AI assistant to start a device and begin interacting with mobile apps."
+  ],
+  "repo": "phone-harness/mcp",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "wanghao-SunSky/cs329z-chinese": {
+  "cat": "frameworks",
+  "kind": "Chinese AI Course",
+  "what": "A comprehensive Chinese tutorial and study guide for Stanford's CS329Z Engineering AI Agents course.",
+  "why": "It helps Python developers learn how to build, evaluate, and secure AI agents through 19 lessons and 4 practical exercises when they want a structured curriculum.",
+  "level": "setup",
+  "start": "node tools/build_site.mjs",
+  "caution": "",
+  "alts": [
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "plain": "A structured guide in Chinese teaching you how to build artificial intelligence assistants that can use tools and work together.",
+  "tags": [
+   "code",
+   "knowledge",
+   "automate"
+  ],
+  "useFor": [
+   "Learn how to build AI agents step by step",
+   "Study agent memory, tools, and multi-agent coordination",
+   "Read course materials offline in HTML format"
+  ],
+  "steps": [
+   "Download the repository to your computer.",
+   "Open the `html/index.html` file in your web browser to start reading.",
+   "Follow the 19 lessons and complete the practical exercises."
+  ],
+  "repo": "wanghao-SunSky/cs329z-chinese",
+  "at": "2026-11-04",
+  "source": "trending"
  }
 }

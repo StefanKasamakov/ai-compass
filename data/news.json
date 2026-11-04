@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-03T19:32:58.206Z",
+ "updated": "2026-11-04T06:36:20.305Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "BYOK and enterprise custom models in the Copilot usage API",
+   "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+   "date": "2026-11-04T00:32:19.000Z",
+   "summary": "GitHub Copilot usage API now includes bring your own key (BYOK) metrics.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/692697342-1fcb18df-03bf-4266-a109-f6f85f5e2427.jpeg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.318",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+   "date": "2026-11-04T00:01:03Z",
+   "summary": "Claude Code releases version 2.1.318 with minor updates.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/fb444ca8a63df3d86261007d4a1089268e36ab3f46a2ab0aacf2a9266caed703/anthropics/claude-code/releases/tag/v2.1.318"
+  },
+  {
+   "source": "GitHub",
+   "title": "Dependabot version updates support Agent Package Manager",
+   "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+   "date": "2026-11-03T20:24:07.000Z",
+   "summary": "Dependabot now supports Agent Package Manager to help keep AI agent skills and prompts up to date.",
+   "tags": [
+    "agents",
+    "skills",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/693547520-00166bc8-34d8-4a1b-8913-6c1e17e3ddd5.jpg"
+  },
   {
    "source": "Hugging Face",
    "title": "StateBench: Testing how language models track state changes over long documents",
@@ -408,6 +452,20 @@
    "big": false,
    "ai": true,
    "image": "https://i.ytimg.com/vi/KM3VQZKjpiY/maxresdefault.jpg"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO. AI Bear Market coming?",
+   "url": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/",
+   "date": "2026-10-31T05:00:48.000Z",
+   "summary": "Google reports that AI-driven search modes impact traditional search revenue.",
+   "tags": [
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f13715b2-ed2d-4a14-bbf6-85f184b4b202/SCR-20261030-svzc.png?t=1793423031"
   },
   {
    "source": "GitHub release",
@@ -2144,61 +2202,6 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/7A9Q6VjM9BmwoYsZ7L7toJ/4580ebfb0fa44bf3be43f5980ba0627c/att-legal-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-   "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-   "date": "2026-10-21T16:04:43.000Z",
-   "summary": "Technical deep dive on system-level profiling for TorchNeuron on AWS Trainium hardware.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6ac67ea29579ea34f1f7e470/hEodPVvQZI24jETLbPooP.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
-   "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-   "date": "2026-10-21T14:58:18.000Z",
-   "summary": "Granite Speech 5.0 was released to provide faster and more accurate audio transcription and translation.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/653fb52cbfd890805461d691/M_JJyIOBOWVzHXdy7CVVG.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Claude Mods: Flipping the Harness Inside Out",
-   "url": "https://latent.space/p/claude-mods/",
-   "date": "2026-10-21T13:04:19.000Z",
-   "summary": "Claude Mods introduces a design pattern that realigns agent interfaces around user attention rather than automated machine loops. It gives developers better oversight and steering controls when supervising Claude agents.",
-   "tags": [
-    "agents",
-    "skills"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://latent.space/og/card/post/claude-mods/4cfacd2135def61b863cc0fe39addb016bf58b39a706d03fac09b0841200cbb0.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Claude Mods: Flipping the Harness Inside Out",
-   "url": "https://www.latent.space/p/claude-mods",
-   "date": "2026-10-21T13:04:19.000Z",
-   "summary": "Discussion on Claude Mods and the evolution of human-facing AI agent harnesses.",
-   "tags": [
-    "agents",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!Kjjn!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc61f4d99-31a9-4e4c-aa02-65e5b5db1799_1280x720.png"
   }
  ]
 }
