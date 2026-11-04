@@ -18569,5 +18569,169 @@
   "repo": "wanghao-SunSky/cs329z-chinese",
   "at": "2026-11-04",
   "source": "trending"
+ },
+ "The-PR-Agent/pr-agent": {
+  "cat": "coding",
+  "kind": "AI code reviewer",
+  "what": "An automated AI agent that reviews pull requests, writes descriptions, and suggests code improvements across major code-hosting platforms.",
+  "why": "Teams want automated feedback on code changes without leaving their workflow or locking into a single commercial platform. Reach for this when you want to self-host your pull request reviewer.",
+  "level": "setup",
+  "start": "pip install \"pr-agent[github]\"",
+  "caution": "Requires external AI service API keys and handles repository source code. Setup requires configuring webhooks, environment secrets, or GitHub Actions.",
+  "alts": [
+   "Aider-AI/aider",
+   "OpenHands/OpenHands",
+   "cline/cline"
+  ],
+  "packages": [
+   "pr-agent"
+  ],
+  "plain": "An automated helper that reads your code changes on GitHub or GitLab and writes reviews or suggestions.",
+  "tags": [
+   "code",
+   "connect",
+   "automate"
+  ],
+  "useFor": [
+   "Review pull requests automatically on GitHub or GitLab",
+   "Generate pull request summaries and descriptions instantly",
+   "Ask questions about code changes in pull requests"
+  ],
+  "steps": [
+   "Install the package using pip install \"pr-agent[github]\"",
+   "Set your AI provider API key in your environment variables",
+   "Run reviews locally via the command-line interface or add it as a GitHub Action workflow file"
+  ],
+  "repo": "The-PR-Agent/pr-agent",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "Thysrael/Horizon": {
+  "cat": "builders",
+  "kind": "AI News Radar",
+  "what": "An AI-powered news aggregator that generates daily briefings in English and Chinese.",
+  "why": "Useful for staying informed on niche topics by letting AI scour sources, summarize articles, and rank daily news.",
+  "level": "setup",
+  "start": "git clone https://github.com/Thysrael/Horizon.git",
+  "caution": "Requires configuring external API keys for LLM providers and news sources, which may incur usage costs.",
+  "alts": [],
+  "packages": [],
+  "plain": "A program that reads news from around the web, summarizes it with artificial intelligence, and sends you a daily briefing.",
+  "tags": [
+   "research",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Generate daily AI-powered news briefings",
+   "Read summarized updates in English and Chinese",
+   "Track custom news sources automatically"
+  ],
+  "steps": [
+   "Clone the project repository from GitHub.",
+   "Configure your settings and news sources in the configuration files.",
+   "Run the script to fetch articles and generate your briefings."
+  ],
+  "repo": "Thysrael/Horizon",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "NVIDIA/auto-ontology": {
+  "cat": "memory",
+  "kind": "Semantic ontology layer",
+  "what": "An open context layer that compiles database metadata into an ontology to help AI agents give fewer wrong answers on enterprise data.",
+  "why": "Reliability is the main hurdle in agentic analytics; you use this when you need agents to understand database schemas, business terms, and correct joins before writing SQL.",
+  "level": "setup",
+  "start": "git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology",
+  "caution": "Requires Docker Compose v2, a local setup with multiple passwords, and an NVIDIA API key.",
+  "alts": [
+   "getzep/graphiti",
+   "run-llama/llama_index",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "A service running next to your database that gives artificial intelligence a reliable map of your business terms and data.",
+  "tags": [
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Generate an ontology from database metadata and explore it",
+   "Give agents consistent definitions per business concept",
+   "Check whether a database question is answerable before querying"
+  ],
+  "steps": [
+   "Clone the repository and copy the environment configuration file.",
+   "Start the database and run the sample data seed script using Docker.",
+   "Build and start the application stack using Docker Compose.",
+   "Open the web interface in your browser to sign in and turn on semantic compilation."
+  ],
+  "repo": "NVIDIA/auto-ontology",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "scenario-labs/skills": {
+  "cat": "harness",
+  "kind": "agent skills collection",
+  "what": "A set of agent skills that teach AI assistants how to generate and edit images, video, audio, and 3D assets.",
+  "why": "Coding assistants often lack built-in tools for generating creative media or interacting with digital design software. Reach for this when you want your AI assistant to produce game art, video clips, or control 3D tools like Blender and Unreal Engine.",
+  "level": "setup",
+  "start": "`npx skills add scenario-labs/skills`",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "vercel-labs/skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "It gives your AI coding assistant pre-made skills to create images, videos, and 3D art.",
+  "tags": [
+   "media",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate images videos and 3D assets using AI assistants",
+   "Connect AI assistants to game tools like Blender and Unreal",
+   "Maintain consistent visual styles and character designs across assets"
+  ],
+  "steps": [
+   "Install the skills with `npx skills add scenario-labs/skills`.",
+   "Connect the server using `claude mcp add --transport http scenario https://mcp.scenario.com/mcp`.",
+   "Ask your AI agent to create or edit visual media assets."
+  ],
+  "repo": "scenario-labs/skills",
+  "at": "2026-11-04",
+  "source": "trending"
+ },
+ "qimingjiu/Trianon": {
+  "cat": "builders",
+  "kind": "rococo ui concept",
+  "what": "A rococo-styled desktop user interface concept for an AI coding assistant.",
+  "why": "To explore a thematic, ornate aesthetic for AI developer tools by turning standard windows into letterheads, ticket stubs, and dossiers.",
+  "level": "easy",
+  "start": "open dist/trianon.html",
+  "caution": "This is purely a front-end concept prototype with built-in mock data and an unbridged chat timeline; it requires custom backend integration to function as a real tool.",
+  "alts": [],
+  "packages": [],
+  "plain": "A decorative, nineteenth-century French salon-themed visual concept page for an AI programming assistant, running entirely inside your internet browser.",
+  "tags": [
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Explore a rococo-themed AI assistant interface design",
+   "Preview mock chat, terminal, and browser panels",
+   "Test custom backend bridging via the provided JavaScript interface"
+  ],
+  "steps": [
+   "Download or clone the repository to your computer.",
+   "Open the pre-built file dist/trianon.html directly in a web browser like Chrome or Edge.",
+   "Append hash fragments like `#empty`, `#approval`, or `#terminal` to the URL to jump between different prototype screens."
+  ],
+  "repo": "qimingjiu/Trianon",
+  "at": "2026-11-04",
+  "source": "trending"
  }
 }
