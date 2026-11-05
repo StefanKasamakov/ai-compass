@@ -18969,5 +18969,144 @@
   "repo": "hongfaqiu/strata-manager",
   "at": "2026-11-05",
   "source": "trending"
+ },
+ "microsoft/VibeVoice": {
+  "cat": "media",
+  "kind": "Voice AI model suite",
+  "what": "VibeVoice is an open-source suite of voice models for long-form speech transcription and real-time voice synthesis.",
+  "why": "Standard speech models struggle to transcribe long audio with multiple speakers or generate low-latency speech. Reach for VibeVoice to transcribe up to hour-long recordings with speaker names and timestamps or to generate real-time voice output.",
+  "level": "dev",
+  "start": "",
+  "caution": "Microsoft removed the main multi-speaker long-form text-to-speech code from this repository due to responsible AI use concerns.",
+  "alts": [
+   "openai/whisper",
+   "SYSTRAN/faster-whisper",
+   "resemble-ai/chatterbox"
+  ],
+  "packages": [],
+  "plain": "A tool that converts long audio recordings into written text with timestamps and creates realistic spoken voices.",
+  "tags": [
+   "media",
+   "meetings"
+  ],
+  "useFor": [
+   "Transcribe hour-long meeting recordings with speaker labels and timestamps",
+   "Convert continuous text into spoken voice audio in real time",
+   "Supply custom names and technical words to improve transcription accuracy"
+  ],
+  "steps": [
+   "Try the live demo online through Microsoft Foundry or Hugging Face spaces",
+   "Select and download the speech recognition or real-time voice model weights from Hugging Face",
+   "Run transcription scripts or stream audio using Python or BitNet edge binaries"
+  ],
+  "repo": "microsoft/VibeVoice",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "vercel-labs/agent-browser": {
+  "cat": "coding",
+  "kind": "browser automation CLI",
+  "what": "A command-line tool that lets AI agents control a web browser by navigating pages, reading content, and interacting with elements.",
+  "why": "It enables AI agents to browse the web, interact with sites, and perform tasks that require a graphical interface. Use it when an agent needs to perform actions on websites that cannot be accessed via standard web requests.",
+  "level": "setup",
+  "start": "npm install -g agent-browser",
+  "caution": "Requires installing and running a browser, which consumes system resources; ensure your agent's action policies are configured to prevent unwanted interactions.",
+  "alts": [
+   "browser-use/browser-use",
+   "browserbase/stagehand",
+   "Skyvern-AI/skyvern"
+  ],
+  "packages": [
+   "agent-browser"
+  ],
+  "plain": "This tool gives an AI control of a web browser to click, type, and read websites for you.",
+  "tags": [
+   "code",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Automate website navigation and form filling",
+   "Extract data from complex dynamic web pages",
+   "Test website interactions using AI"
+  ],
+  "steps": [
+   "Run `npm install -g agent-browser` to install the tool.",
+   "Run `agent-browser install` to set up the required browser files.",
+   "Open a page with `agent-browser open example.com` and use commands to interact with it."
+  ],
+  "repo": "vercel-labs/agent-browser",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "ConardLi/garden-skills": {
+  "cat": "harness",
+  "kind": "AI agent plugins",
+  "what": "A collection of ready-to-use skill sets that extend the capabilities of AI coding agents like Claude Code or Cursor.",
+  "why": "It enables AI agents to handle specialized tasks like web design, video creation, and knowledge retrieval by adding specific functional instructions and code templates to their workflow.",
+  "level": "setup",
+  "start": "npx @garden-skills/cli install",
+  "caution": "This project is highly experimental and relies on external AI agent capabilities; it is not a standalone tool but rather an add-on for existing AI coding environments.",
+  "alts": [
+   "anthropic/claude-code",
+   "cline/cline",
+   "anthropics/knowledge-work-plugins"
+  ],
+  "packages": [
+   "@garden-skills/cli"
+  ],
+  "plain": "These are extra tool sets you add to your AI assistant to help it create videos, design websites, or search your files.",
+  "tags": [
+   "supercharge",
+   "code",
+   "media"
+  ],
+  "useFor": [
+   "Create short promotional videos and motion graphics using code",
+   "Build record-ready web presentations from scripts or documents",
+   "Search and retrieve information from your local files"
+  ],
+  "steps": [
+   "Choose a skill from the collection that fits your project needs.",
+   "Install the skill into your project using the provided CLI tool or by copying the files directly.",
+   "Follow the prompts in your AI agent to trigger the new capability."
+  ],
+  "repo": "ConardLi/garden-skills",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "freyrswift/UaStation": {
+  "cat": "harness",
+  "kind": "AI tool manager",
+  "what": "A desktop application that manages prompts and skill packages for 19 different AI coding assistants.",
+  "why": "It solves the problem of manually organizing and updating configuration files or instructions for multiple AI coding tools, providing a centralized way to install and manage them across different editors.",
+  "level": "easy",
+  "start": "Download the release package for your OS, launch the application, select your tool, and click 'Install'.",
+  "caution": "This tool is licensed for personal, non-commercial use only and is not open source. The project was last updated in November 2026, which is over 4 months ago.",
+  "alts": [
+   "anthropics/claude-code",
+   "cline/cline",
+   "continuedev/continue"
+  ],
+  "packages": [],
+  "plain": "A central control panel to organize and install helpful commands and tasks for your various AI coding assistants.",
+  "tags": [
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Install prompt instructions for AI coding assistants",
+   "Manage skill packages for editors like VS Code",
+   "Apply standardized AI workflows across different coding tools"
+  ],
+  "steps": [
+   "Download the release package for your OS and extract the files.",
+   "Launch the application and select your preferred coding tool from the list.",
+   "Click install to deploy the prompt and skill configurations.",
+   "Restart your coding editor to load the new AI instructions."
+  ],
+  "repo": "freyrswift/UaStation",
+  "at": "2026-11-05",
+  "source": "trending"
  }
 }

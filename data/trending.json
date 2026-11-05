@@ -1,98 +1,56 @@
 {
- "updated": "2026-11-05T06:56:50.869Z",
+ "updated": "2026-11-05T12:42:51.206Z",
  "items": [
   {
-   "repo": "JuneYaooo/rea-video",
-   "stars": 1440,
-   "desc": "Reverse-engineer any video, shot by shot: tells whether each shot was filmed, AI-generated or coded, how the captions, cuts and audio were made, and how to remake it. 逆向一切视频，逐镜拆出制作方式并给出复刻方案。",
-   "created": "2026-10-29T16:15:01Z",
+   "repo": "microsoft/VibeVoice",
+   "stars": 55413,
+   "desc": "Open-Source Frontier Voice AI",
+   "created": "2025-08-25T13:24:01Z",
+   "topics": [],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "vercel-labs/agent-browser",
+   "stars": 45631,
+   "desc": "Browser automation CLI for AI agents",
+   "created": "2026-01-11T05:38:15Z",
+   "topics": [],
+   "lang": "Rust",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "ConardLi/garden-skills",
+   "stars": 13955,
+   "desc": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+   "created": "2026-04-21T11:56:17Z",
+   "topics": [
+    "agent",
+    "claude",
+    "gpt-image-2",
+    "rag"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "freyrswift/UaStation",
+   "stars": 58,
+   "desc": "19 款 AI 编程工具的提示词与技能管理器 · Qt 6 / C++20 · 134 项技能 · 原生共享目录与只读 MCP · 个人非商业学习与使用",
+   "created": "2026-10-23T05:14:34Z",
    "topics": [
     "agent-skills",
-    "ai-video",
-    "aigc-detection",
+    "ai-coding",
+    "ai-tools",
     "claude-code"
    ],
    "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "N1nEmAn/sapper-v2",
-   "stars": 997,
-   "desc": "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History, let a civilization grow.",
-   "created": "2026-10-30T15:12:35Z",
-   "topics": [
-    "ai-agents",
-    "autonomous-agents",
-    "claude-code",
-    "ctf"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "lemonadesaltbagel/airlock",
-   "stars": 97,
-   "desc": "A privacy-first local coding agent that consults frontier AI models without exposing your source code.",
-   "created": "2026-10-24T23:31:51Z",
-   "topics": [
-    "ai-agents",
-    "code-privacy",
-    "data-loss-prevention",
-    "local-ai"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Capri-cmd/capri-ai",
-   "stars": 86,
-   "desc": "Capri from Cyberpunk: Edgerunners 2 living on your desktop. A local AI desktop companion: talks, remembers you, DJs your music. 100% local, no API keys.",
-   "created": "2026-10-26T10:31:11Z",
-   "topics": [
-    "ai-companion",
-    "cyberpunk",
-    "desktop-companion",
-    "desktop-pet"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "synchopate/llama-modchip",
-   "stars": 72,
-   "desc": "🐋 Run 284B DeepSeek-V4-Flash (<59GiB RAM, 44.4 tok/s pp, 9.1-14.7 tok/s) & 30B MoEs (25-111 tok/s) on a pure 64GB CPU at 256K ctx (0 GPUs). SwiGLU-H2, Stockfish-PVS L3 & 13ms Claude Code restore.",
-   "created": "2026-10-29T10:17:33Z",
-   "topics": [
-    "ai-agents",
-    "apple-silicon",
-    "avx512",
-    "claude-code"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "hongfaqiu/strata-manager",
-   "stars": 51,
-   "desc": "Strata Manager makes Niko1221/Strata, the local LLM inference engine, easier to set up and use. Manage local models and services, monitor hardware and API usage, chat and tune inference. Open-source desktop app for Windows / Linux x64.",
-   "created": "2026-10-10T13:16:52Z",
-   "topics": [
-    "llm-inference",
-    "local-llm",
-    "model-management",
-    "model-monitoring"
-   ],
-   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]
