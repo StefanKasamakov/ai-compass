@@ -19108,5 +19108,37 @@
   "repo": "freyrswift/UaStation",
   "at": "2026-11-05",
   "source": "trending"
+ },
+ "jackwener/DSH-Android": {
+  "cat": "coding",
+  "kind": "Android phone agent",
+  "what": "An Android app that runs DeepSeek Harness directly on your phone without needing root or Termux.",
+  "why": "To let an AI assistant operate your apps, organize files, and automate tasks right on your mobile device.",
+  "level": "easy",
+  "start": "Download the APK from the releases page and install it on an Android 10+ device.",
+  "caution": "Requires providing an AI provider API key or logging into an AI account. Screen reading and device automation features request broad accessibility permissions.",
+  "alts": [
+   "deepseek-ai/deepseek-harness"
+  ],
+  "packages": [],
+  "plain": "An app that lets an artificial intelligence assistant control your phone screen, manage files, and automate tasks.",
+  "tags": [
+   "automate",
+   "private",
+   "connect"
+  ],
+  "useFor": [
+   "Operate mobile apps and click buttons automatically",
+   "Organize, search, and compress files on your phone",
+   "Change system settings like brightness, volume, and Wi-Fi"
+  ],
+  "steps": [
+   "Download and install the APK on an Android 10 or newer device.",
+   "Log into your DeepSeek account or enter your API key in settings.",
+   "Tell the assistant what task to perform or let it guide you through permission setup."
+  ],
+  "repo": "jackwener/DSH-Android",
+  "at": "2026-11-05",
+  "source": "trending"
  }
 }
