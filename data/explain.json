@@ -18766,5 +18766,208 @@
   "repo": "FareedKhan-dev/kimi-k3-in-c",
   "at": "2026-11-04",
   "source": "trending"
+ },
+ "JuneYaooo/rea-video": {
+  "cat": "harness",
+  "kind": "video analysis agent",
+  "what": "An assistant that breaks down any video into a step-by-step production plan, identifying how each shot was created and how to recreate it.",
+  "why": "Useful for understanding how complex videos are made or if you need a structural blueprint to replicate a specific visual style.",
+  "level": "setup",
+  "start": "Install https://github.com/JuneYaooo/rea-video, then break down this video: /path/to/video.mp4",
+  "caution": "Requires external dependencies like ffmpeg and Python 3.10+, and works best when you provide an image-capable AI service key for higher accuracy. The project has not been updated in over 4 months.",
+  "alts": [
+   "JuneYaooo/cheap-claude-video",
+   "microsoft/markitdown"
+  ],
+  "packages": [],
+  "plain": "An AI tool that scans a video to explain exactly how it was filmed, edited, or digitally generated.",
+  "tags": [
+   "media",
+   "supercharge",
+   "research"
+  ],
+  "useFor": [
+   "Reverse-engineer how a video was produced",
+   "Create a step-by-step plan to remake a video",
+   "Analyze whether video elements are real or AI-generated"
+  ],
+  "steps": [
+   "Ensure you have Python 3.10 or higher and the tool ffmpeg installed on your computer.",
+   "Tell your AI coding assistant to install the repository.",
+   "Run the command to analyze your video file and generate a detailed report."
+  ],
+  "repo": "JuneYaooo/rea-video",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "N1nEmAn/sapper-v2": {
+  "cat": "frameworks",
+  "kind": "multi-agent pentest harness",
+  "what": "An autonomous multi-agent framework that orchestrates teams of AI agents using a shared fact-intent graph for competitive penetration testing.",
+  "why": "To coordinate multiple AI coding assistants or chat models to work in parallel on complex, long-running tasks without human micromanagement.",
+  "level": "dev",
+  "start": "git clone https://github.com/N1nEmAn/nvwabase",
+  "caution": "Authorized security testing only. Running multi-agent loops can consume significant tokens and incur high API costs quickly.",
+  "alts": [
+   "crewAIInc/crewAI",
+   "langchain-ai/langgraph",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "plain": "An organizer that lets different artificial intelligence tools talk to each other and divide tasks automatically.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Coordinate multiple AI agents on a shared project",
+   "Run automated security assessments in controlled environments",
+   "Manage long-horizon autonomous coding tasks"
+  ],
+  "steps": [
+   "Clone the nvwabase foundation repository",
+   "Run the installation script to set up the environment",
+   "Configure your goals and assigned models using the command-line tool"
+  ],
+  "repo": "N1nEmAn/sapper-v2",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "lemonadesaltbagel/airlock": {
+  "cat": "coding",
+  "kind": "Private coding agent",
+  "what": "A privacy-first local coding agent that asks cloud AI models for help without exposing your source code.",
+  "why": "When you want powerful cloud AI assistance but need to ensure your proprietary source code never leaves your computer.",
+  "level": "setup",
+  "start": "git clone https://github.com/lemonadesaltbagel/Airlock.git && cd Airlock && npm install && npm run build",
+  "caution": "Project status is preview. The sandbox and gateway are in place, but it has not finished outside review.",
+  "alts": [
+   "cline/cline",
+   "RooCodeInc/Roo-Code",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "A local coding assistant that cleans your questions to protect secrets before asking larger cloud AI models for help.",
+  "tags": [
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Fix bugs locally",
+   "Consult cloud AI safely",
+   "Protect sensitive source code"
+  ],
+  "steps": [
+   "Clone the repository and run `npm install` and `npm run build`.",
+   "Run `airlock doctor` to check the sandbox on your machine.",
+   "Navigate to your project and run `node /path/to/Airlock/apps/airlock/dist/main.js init`.",
+   "Run `airlock run \"your task\"` to start the coding agent."
+  ],
+  "repo": "lemonadesaltbagel/airlock",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "Capri-cmd/capri-ai": {
+  "cat": "local",
+  "kind": "desktop ai pet",
+  "what": "An animated desktop companion that talks, listens, reads your screen, and runs entirely on your local computer.",
+  "why": "To add a helpful, interactive AI character to your desktop without needing internet subscriptions or cloud accounts.",
+  "level": "easy",
+  "start": "",
+  "caution": "Requires downloading large AI model files (6-8 GB) and works best with a dedicated graphics card.",
+  "alts": [
+   "ollama/ollama",
+   "open-webui/open-webui",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "An interactive digital character that runs locally on your computer and talks to you.",
+  "tags": [
+   "private",
+   "media"
+  ],
+  "useFor": [
+   "Chat with an interactive desktop companion",
+   "Save clips of your screen using voice commands",
+   "Run an AI assistant entirely on your local hardware"
+  ],
+  "steps": [
+   "Download and run the installer on Windows.",
+   "Follow the setup wizard to choose your AI model and preferences.",
+   "Click the character on your desktop to start chatting."
+  ],
+  "repo": "Capri-cmd/capri-ai",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "synchopate/llama-modchip": {
+  "cat": "local",
+  "kind": "CPU model runner",
+  "what": "A specialized tool that optimizes high-capacity AI models to run on ordinary home computers without needing a graphics card.",
+  "why": "It allows you to run large, advanced models that would normally crash due to memory limits by using advanced compression and processing techniques that fit them into standard RAM.",
+  "level": "setup",
+  "start": "git clone https://github.com/synchopate/llama-modchip.git",
+  "caution": "This tool focuses on high-performance optimization and experimental techniques; it may be complex to configure if you are not comfortable with terminal commands, and it has not been updated in over 4 months.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "This program lets your regular computer run very large, smart AI models without buying expensive graphics equipment.",
+  "tags": [
+   "private",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Run massive AI models on your own home computer",
+   "Save money by skipping expensive cloud AI subscriptions",
+   "Keep all your data and work strictly on your machine"
+  ],
+  "steps": [
+   "Download the project files by running the git command in your terminal.",
+   "Move into the folder using the change directory command.",
+   "Start the interactive chat mode with `./modchip chat`."
+  ],
+  "repo": "synchopate/llama-modchip",
+  "at": "2026-11-05",
+  "source": "trending"
+ },
+ "hongfaqiu/strata-manager": {
+  "cat": "local",
+  "kind": "Desktop App",
+  "what": "A desktop workspace for managing the Strata local language model inference engine.",
+  "why": "It simplifies setting up local AI models, downloading weights, monitoring your graphics card and system memory, and controlling local API services without using the command line.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "ollama/ollama",
+   "janhq/jan",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "An application to run artificial intelligence models directly on your own computer without sending data to the internet.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Download and manage local AI model files",
+   "Monitor graphics card and system memory usage",
+   "Chat with local models securely"
+  ],
+  "steps": [
+   "Download the Strata Manager app for your operating system.",
+   "Open the app and follow the setup guide to check your environment.",
+   "Choose a model from the catalog and download it.",
+   "Start the service and begin chatting."
+  ],
+  "repo": "hongfaqiu/strata-manager",
+  "at": "2026-11-05",
+  "source": "trending"
  }
 }

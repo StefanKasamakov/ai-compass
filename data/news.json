@@ -1,6 +1,35 @@
 {
- "updated": "2026-11-04T19:51:01.862Z",
+ "updated": "2026-11-05T06:56:50.869Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] It's Swapping Season",
+   "url": "https://latent.space/p/ainews-it-s-swapping-season/",
+   "date": "2026-11-05T06:24:09.000Z",
+   "summary": "Latent Space highlighted recent model releases, including open weights for Kimi K3.1 Pro and Ricursive's Ripple-65B.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-it-s-swapping-season/efe7d0a1e2a39ea0481b4a1bba789d599c143dede92092e1dacb89175201e4c4.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.67.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0",
+   "date": "2026-11-04T20:27:11Z",
+   "summary": "Google released Gemini CLI version 0.67.0 with updates for developers building command-line workflows.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/41d7c9906538896184cdfb77461b056d36f6b5c5f32db8540faeeb44358dce6f/google-gemini/gemini-cli/releases/tag/v0.67.0"
+  },
   {
    "source": "Hugging Face",
    "title": "Dharma Field Extractor: Any Document In, Structured Fields in JSON Out",
@@ -59,6 +88,22 @@
    "big": false,
    "ai": true,
    "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "A thousand fewer paths to root",
+   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root",
+   "date": "2026-11-04T08:00:00.000Z",
+   "summary": "OpenAI built an autonomous AI agent pipeline that identified and generated fixes for nearly 1,000 local privilege-escalation vulnerabilities in the Linux kernel.",
+   "tags": [
+    "agents",
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/400PQ4WTCOvXwwvk1OMOHv/03970ddeafd22fdbc9832669deacc59c/a-thousand-fewer-paths-to-root-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   },
   {
@@ -122,6 +167,21 @@
    "image": "https://opengraph.githubassets.com/fb444ca8a63df3d86261007d4a1089268e36ab3f46a2ab0aacf2a9266caed703/anthropics/claude-code/releases/tag/v2.1.318"
   },
   {
+   "source": "OpenAI",
+   "title": "Introducing Images 2.6",
+   "url": "https://openai.com/index/introducing-images-2-6",
+   "date": "2026-11-04T00:00:00.000Z",
+   "summary": "OpenAI released Images 2.6, adding faster image generation, native GIF creation, and finer controls in ChatGPT and the API.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6EYvL2y5CLXFr8E1pqoVUK/064e0d73b10087e20967b69ef0a06678/images-2-6-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
    "source": "Anthropic",
    "url": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
    "date": "2026-11-04",
@@ -149,6 +209,22 @@
    "ai": true,
    "audience": "dev",
    "image": "https://static.simonwillison.net/static/2026/datasette-agent-panel.webp"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm 0.37.1",
+   "url": "https://simonwillison.net/2026/Nov/3/llm/",
+   "date": "2026-11-03T21:41:42.000Z",
+   "summary": "Simon Willison released version 0.37.1 of the llm command-line tool, delivering bug fixes for running local and API models.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "GitHub",
@@ -2153,71 +2229,6 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/10/681207257-5993c03c-c523-44d2-b2bf-8ac57818dd74.jpg"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-   "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-   "date": "2026-10-22T16:11:31.000Z",
-   "summary": "OlmoEarth v1.3 provides state-of-the-art embeddings for geographic data.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/VEmSzlLjei8J3cUVNe7G6.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Armin Ronacher",
-   "url": "https://simonwillison.net/2026/Oct/22/armin-ronacher/",
-   "date": "2026-10-22T15:34:13.000Z",
-   "summary": "As fun as AI is, we built so much bad software over the last 30 years, and now the universe is punishing us for our sins. &mdash; Armin Ronacher Tags: security , generative-ai , armin-ronacher , ai , ai-security-research , llms",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "You are the Team — Anekha Sokhal, Moshi",
-   "url": "https://latent.space/p/moshi/",
-   "date": "2026-10-22T14:03:40.000Z",
-   "summary": "An interview covered how Moshi adapts market insights to fit traders' specific workflows.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://latent.space/og/card/post/moshi/bdcd6b8245af849c979fea8e7b4666aff707556a5062361074f68922da3382a5.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "You are the Team — Anekha Sokhal, Moshi",
-   "url": "https://www.latent.space/p/moshi",
-   "date": "2026-10-22T14:03:40.000Z",
-   "summary": "An interview discussing how Moshi integrates market data insights into trader workflows.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://substackcdn.com/image/fetch/$s_!U_nh!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-video.s3.amazonaws.com%2Fvideo_upload%2Fpost%2F221404681%2F7532ee0a-716c-45b3-8a1a-8f6a791659de%2Ftranscoded-1792540372.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Ensemble forecasting with IBM Granite time-series models",
-   "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
-   "date": "2026-10-22T07:51:31.000Z",
-   "summary": "Hugging Face published a guide on using IBM Granite foundation models for time-series forecasting.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6806091ee92bd22fd8ce9719/P6P8ZzHR8yL7GOOO4hQOg.png"
   }
  ]
 }
