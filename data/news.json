@@ -1,6 +1,18 @@
 {
- "updated": "2026-11-06T06:56:28.400Z",
+ "updated": "2026-11-06T12:25:53.103Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Inkling 2 Small: 17A-594B trained in 68 hours on 12T tokens, beating Muse Spark",
+   "url": "https://latent.space/p/ainews-inkling-2-small-17a-594b-trained-in-68-hours-on-12t-tokens-beating-muse-spark/",
+   "date": "2026-11-06T10:35:21.000Z",
+   "summary": "November 5, 2026 — Inside Inkling 2 Small’s training run and METR’s study of AI research at Anthropic.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/0b4283eb-1bca-4f20-a474-648eae34f704/Smol_Screenshot_2026-11-06_02.26.38-7ec1786ced3a658a.png?t=1793961438"
+  },
   {
    "source": "GitHub release",
    "title": "Codex CLI rust-v0.167.0",
@@ -70,6 +82,18 @@
    "big": true,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Australian universities are creating AI-native graduates",
+   "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+   "date": "2026-11-05T17:00:00.000Z",
+   "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/7mnhGajDx1KzwFEHEltZwB/1c108b90ec9cc84d0c309b9a1ad4fbe0/australian-universities-ai-native-graduates-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Hacker News",
@@ -156,6 +180,30 @@
    "big": false,
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/3tfG1ium2HchPnPJartCV6/bd2d0a4c101b0a41440cc45adefa35cd/setting-a-new-standard-for-responsible-ai-infrastructure-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Flipsnack grows product signups with conversion optimization",
+   "url": "https://openai.com/ads/customers/flipsnack",
+   "date": "2026-11-05T00:45:15.000Z",
+   "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn.openai.com/mdx-assets/67bd281e-a14e-4cb9-94f8-96bd17b694f6/flipsnack-printed-motion-open-graph.94ba6cde.png",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Franklin Templeton uses OpenAI to support investment research",
+   "url": "https://openai.com/index/franklin-templeton",
+   "date": "2026-11-05T00:00:00.000Z",
+   "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/74o0UUnMZMTeekQbCQPueA/470bb73b32ea24fa27a993e7111c15e5/franklin-templeton-seo.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   },
   {
@@ -2171,62 +2219,6 @@
    "big": false,
    "ai": true,
    "image": "https://claude.com/resources/articles/expanding-claude-for-nonprofits/opengraph-image/og"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
-   "url": "https://latent.space/p/ainews-kimi-31/",
-   "date": "2026-10-24T07:18:29.000Z",
-   "summary": "Moonshot AI announced Kimi 3.1 Pro, an open-weights model family accompanied by a high-speed inference API. Users get access to a fast, open model capable of competitive reasoning benchmarks.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-kimi-31/4da802572e7369acdf4cbdee535f934d70a599942d61e7d15b8168b70aeb7a84.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "battledrones v14: Compass Rose, a four player map",
-   "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
-   "date": "2026-10-24T03:59:57.000Z",
-   "summary": "A developer added a 4-player online mode to a web game using prompts with Claude.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://raw.githubusercontent.com/simonw/battledrones/v14/progress-shots/v14/compass-rose.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "Usage metrics API adds usage from tools like OpenCode",
-   "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode",
-   "date": "2026-10-23T23:42:03.000Z",
-   "summary": "GitHub Copilot's metrics API now tracks developer usage across third-party coding tools like OpenCode.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/682164468-bde58abd-ebed-4a21-983d-e7ea362b9ed5.jpeg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.310",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.310",
-   "date": "2026-10-23T23:39:00Z",
-   "summary": "Anthropic updated Claude Code to version 2.1.310, delivering maintenance updates to its command-line AI coding agent.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/29a5b054b8870aa16af5ee813a1120bb15f4e1ff9da30bfe5a52778a7481673a/anthropics/claude-code/releases/tag/v2.1.310"
   }
  ]
 }
