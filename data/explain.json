@@ -19140,5 +19140,106 @@
   "repo": "jackwener/DSH-Android",
   "at": "2026-11-05",
   "source": "trending"
+ },
+ "HeyChengC/wallstreet-explainer": {
+  "cat": "harness",
+  "kind": "Short video skill",
+  "what": "An add-on for coding assistants that creates Wall Street-style financial and tech explainer short videos.",
+  "why": "It automates the tedious parts of making explainer videos, including scriptwriting, finding media, clipping, voiceovers, rendering, and mixing, when you want to produce financial or tech content.",
+  "level": "setup",
+  "start": "git clone https://github.com/HeyChengC/wallstreet-explainer.git ~/.claude/skills/wallstreet-explainer",
+  "caution": "Requires external dependencies like ffmpeg, manually downloaded fonts, and Playwright installed separately.",
+  "alts": [],
+  "packages": [],
+  "plain": "An add-on for your AI coding assistant that turns a topic into a Wall Street-style financial video.",
+  "tags": [
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Write scripts and find video materials automatically",
+   "Generate voices and render financial short videos",
+   "Create dynamic text and graphical overlays"
+  ],
+  "steps": [
+   "Clone the repository into your assistant's skill folder.",
+   "Install the required Python packages using pip.",
+   "Install Node modules and Playwright chromium.",
+   "Ask your coding assistant to create a video based on a topic."
+  ],
+  "repo": "HeyChengC/wallstreet-explainer",
+  "at": "2026-11-06",
+  "source": "trending"
+ },
+ "AGGIB/Stroq": {
+  "cat": "harness",
+  "kind": "security firewall",
+  "what": "Security guard for AI coding assistants that scans past sessions for leaked secrets and blocks risky commands.",
+  "why": "To prevent AI coding tools from leaking API keys or running dangerous commands spawned from untrusted text they read.",
+  "level": "easy",
+  "start": "npx @stroq/cli",
+  "caution": "Runs local security hooks on your machine; inspect rules before applying them to ensure they do not disrupt your development workflow.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [
+   "@stroq/cli"
+  ],
+  "plain": "Checks your coding assistant for leaked passwords and blocks it from running dangerous commands.",
+  "tags": [
+   "code",
+   "private",
+   "supercharge"
+  ],
+  "useFor": [
+   "Scan past agent sessions for leaked keys",
+   "Block risky commands and unauthorized data leaks",
+   "Inspect agent behavior via a local web console"
+  ],
+  "steps": [
+   "Open your terminal and run the command to view your recent agent activity card.",
+   "Run initialization to set up local security hooks for your coding agent.",
+   "Launch the local web console to review decisions and live actions."
+  ],
+  "repo": "AGGIB/Stroq",
+  "at": "2026-11-06",
+  "source": "trending"
+ },
+ "RustingStudio/RustingStrata": {
+  "cat": "local",
+  "kind": "Rust MoE Engine",
+  "what": "A pure-Rust inference engine for Qwen model families using GGUF format with CPU and GPU hybrid expert placement.",
+  "why": "It runs large mixture-of-experts models efficiently on limited VRAM by offloading excess experts to the CPU and providing an OpenAI-compatible server.",
+  "level": "setup",
+  "start": "cargo build --release",
+  "caution": "The project license is unspecified (NOASSERTION) and it is experimental software.",
+  "alts": [
+   "ollama/ollama",
+   "vllm-project/vllm",
+   "LostRuins/koboldcpp"
+  ],
+  "packages": [],
+  "plain": "Runs large artificial intelligence models on your own computer, using both your graphics card and regular memory.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run large open-weight Qwen models locally",
+   "Host an OpenAI-compatible local server",
+   "Chat with local models using a browser UI"
+  ],
+  "steps": [
+   "Clone or download the repository to your computer.",
+   "Install Rust (2024 edition) and an NVIDIA graphics driver with NVRTC or a Vulkan driver.",
+   "Run `cargo build --release` in your terminal.",
+   "Start the server with `cargo run --release -- serve --model path/to/model.gguf --gpu`."
+  ],
+  "repo": "RustingStudio/RustingStrata",
+  "at": "2026-11-06",
+  "source": "trending"
  }
 }

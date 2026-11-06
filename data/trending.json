@@ -1,18 +1,54 @@
 {
- "updated": "2026-11-05T20:02:16.233Z",
+ "updated": "2026-11-06T06:56:28.400Z",
  "items": [
   {
-   "repo": "jackwener/DSH-Android",
-   "stars": 832,
-   "desc": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku",
-   "created": "2026-10-27T19:26:12Z",
+   "repo": "HeyChengC/wallstreet-explainer",
+   "stars": 602,
+   "desc": "华尔街式财经/科技解读短片 skill：设计思路、风格语言，以及找片、截图、配音、渲染和混音工具。",
+   "created": "2026-10-18T09:33:56Z",
    "topics": [
-    "ai-agent",
-    "android",
-    "deepseek",
-    "deepseek-harness"
+    "agent-skills",
+    "ai-video",
+    "claude-code",
+    "claude-skills"
    ],
-   "lang": "Kotlin",
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "AGGIB/Stroq",
+   "stars": 128,
+   "desc": "Find known secrets in your AI coding agent sessions (Claude Code, Codex, Cursor), then guard the next one with local hooks that trace risky commands to the content that dictated them. Open source, no telemetry.",
+   "created": "2026-09-04T06:35:26Z",
+   "topics": [
+    "agent-security",
+    "ai-agents",
+    "ai-security",
+    "claude-code"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 81,
+    "url": "https://news.ycombinator.com/item?id=50380704"
+   }
+  },
+  {
+   "repo": "RustingStudio/RustingStrata",
+   "stars": 81,
+   "desc": "Pure-Rust MoE inference engine for Qwen3.5/3.6/3.8 GGUF. CPU+GPU hybrid experts, NVRTC CUDA kernels, OpenAI-compatible server. 2x llama.cpp prefill and decode on a 12 GB RTX 3060.",
+   "created": "2026-10-10T10:42:11Z",
+   "topics": [
+    "cuda",
+    "gguf",
+    "inference",
+    "llama-cpp"
+   ],
+   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]

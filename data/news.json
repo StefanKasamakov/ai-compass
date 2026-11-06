@@ -1,6 +1,49 @@
 {
- "updated": "2026-11-05T20:02:16.233Z",
+ "updated": "2026-11-06T06:56:28.400Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.167.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+   "date": "2026-11-06T01:40:00Z",
+   "summary": "A new release of the Codex CLI (rust-v0.167.0) is now available.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/7523025ed8317d6dba3b8f2424edd66ab8b0679c6b4ef53b464c771e106c2697/openai/codex/releases/tag/rust-v0.167.0"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Claude Code sends your email address to websites",
+   "url": "https://github.com/anthropics/claude-code/issues/107757",
+   "date": "2026-11-05T22:17:15Z",
+   "discuss": "https://news.ycombinator.com/item?id=50385272",
+   "summary": "Users discovered an issue where Claude Code sent email addresses to visited websites.",
+   "tags": [
+    "coding",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/0c48835c89d5d74c4e9aa66e789bdfa1563c57c42fd4edc2ea6ba2c6fe4fa926/anthropics/claude-code/issues/107757"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Cult.fit builds operational muscle with Codex",
+   "url": "https://openai.com/index/cultfit-builds-with-codex",
+   "date": "2026-11-05T20:00:00.000Z",
+   "summary": "Cult.fit is using Codex to accelerate internal tool development across teams.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/jGREsWDV2hRUdMMneD8CA/7b49d70f93e4b4d70623efd535a79a2d/og.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "Hugging Face",
    "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
@@ -56,6 +99,21 @@
    "big": false,
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/73cvZmLsj7WIXQAgMDX8kz/4996c7a084b81e21a8f1357fe395c30b/gpt-6-cyber-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Merge builds product and business tools with OpenAI technology",
+   "url": "https://openai.com/index/merge-builds-with-openai",
+   "date": "2026-11-05T08:00:00.000Z",
+   "summary": "Merge uses OpenAI models and Codex for code review and business workflows.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/1ioOJt6IEab7sdVSiBFTET/fb2a79d20b4639407ca0b35af68a443c/og.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   },
   {
@@ -2169,58 +2227,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/29a5b054b8870aa16af5ee813a1120bb15f4e1ff9da30bfe5a52778a7481673a/anthropics/claude-code/releases/tag/v2.1.310"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quick Study",
-   "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
-   "date": "2026-10-23T21:35:13.000Z",
-   "summary": "A coding experiment demonstrated using Claude to rapidly generate canvas-based paintings from photos.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/heron-oil.webp"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Introducing Kimi K3.1 Pro",
-   "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-   "date": "2026-10-23T19:40:54.000Z",
-   "summary": "Moonshot AI launched Kimi K3.1 Pro on its API with improved reasoning and a faster high-speed tier, promising open weights by late 2026.",
-   "tags": [
-    "models"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/kimi-k3.1-card.jpg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-   "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-   "date": "2026-10-23T17:00:00.000Z",
-   "summary": "Learn how OpenAI scaled Habitat with reliable multi-tenancy, global caching, and Azure Cosmos DB to deliver 12× faster reads for ChatGPT.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1p8WL4wct7MU8nnw6609WL/6ae794fe4cc93d37cc095d4d45730669/scaling-storage-one-billion-users-part-two-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-   "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-   "date": "2026-10-23T16:59:08Z",
-   "discuss": "https://news.ycombinator.com/item?id=50212065",
-   "summary": "Moonshot AI released Kimi K3.1 Pro and a faster K3.1 Pro Highspeed version, updating its competitive reasoning model line.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://kimi-img.kimi.ai/pub/slides/kimi-fs/managed-assets/9558f8d5-08fc-42de-8e4e-339076e03895.webp"
   }
  ]
 }

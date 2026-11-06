@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T20:02:16.233Z",
+ "updated": "2026-11-06T06:56:28.400Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -935,6 +935,22 @@
     "npm:openqodex"
    ]
   },
+  "alibaba/open-code-review": {
+   "npm": 554324,
+   "pypi": 0,
+   "total": 554324,
+   "packages": [
+    "npm:@alibaba-group/open-code-review"
+   ]
+  },
+  "VinkyDev/vibestart": {
+   "npm": 2168,
+   "pypi": 0,
+   "total": 2168,
+   "packages": [
+    "npm:vibestart-cli"
+   ]
+  },
   "huggingface/transformers": {
    "npm": 0,
    "pypi": 96323619,
@@ -993,14 +1009,6 @@
     "npm:dsh-sieve-web"
    ]
   },
-  "vercel-labs/skills": {
-   "npm": 17707265,
-   "pypi": 0,
-   "total": 17707265,
-   "packages": [
-    "npm:skills"
-   ]
-  },
   "ifixai-ai/iFixAi": {
    "npm": 0,
    "pypi": 481,
@@ -1033,22 +1041,6 @@
     "npm:create-mesh-avatar-studio"
    ]
   },
-  "alchaincyf/huashu-motion": {
-   "npm": 3049,
-   "pypi": 0,
-   "total": 3049,
-   "packages": [
-    "npm:huashu-motion"
-   ]
-  },
-  "sickn33/agentic-awesome-skills": {
-   "npm": 20210,
-   "pypi": 0,
-   "total": 20210,
-   "packages": [
-    "npm:agentic-awesome-skills"
-   ]
-  },
   "OpenBMB/VoxCPM": {
    "npm": 0,
    "pypi": 57258,
@@ -1057,13 +1049,14 @@
     "pypi:voxcpm"
    ]
   },
-  "KnifeLemon/Droidline": {
-   "npm": 2302,
+  "YOLOW92/pagesift": {
+   "npm": 5388,
    "pypi": 0,
-   "total": 2302,
+   "total": 5388,
    "packages": [
-    "npm:droidline",
-    "pypi:droidline"
+    "npm:pagesift",
+    "npm:@pagesift/node",
+    "pypi:pagesift"
    ]
   },
   "milind-soni/OpenMausBot": {
@@ -1080,14 +1073,6 @@
    "total": 94,
    "packages": [
     "npm:@outcrawl/scout"
-   ]
-  },
-  "ZiChuanLan/agent-purge": {
-   "npm": 4687,
-   "pypi": 0,
-   "total": 4687,
-   "packages": [
-    "npm:agent-purge"
    ]
   },
   "qybaihe/bla": {
@@ -1186,6 +1171,14 @@
    "total": 7458359,
    "packages": [
     "npm:agent-browser"
+   ]
+  },
+  "AGGIB/Stroq": {
+   "npm": 1316,
+   "pypi": 0,
+   "total": 1316,
+   "packages": [
+    "npm:@stroq/cli"
    ]
   }
  }
