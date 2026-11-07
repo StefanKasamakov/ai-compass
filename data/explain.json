@@ -19484,5 +19484,173 @@
   "repo": "kindlingai/gr8",
   "at": "2026-11-07",
   "source": "trending"
+ },
+ "meta/astryx": {
+  "cat": "frameworks",
+  "kind": "React design system",
+  "what": "A React 19 UI design system featuring over 150 customizable components structured for both human developers and AI coding agents.",
+  "why": "It provides accessible, themeable React components with transparent styling using StyleX and standard CSS custom properties. Reach for it when building modern web applications where human developers and AI assistants write code from the same design specification.",
+  "level": "dev",
+  "start": "`npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex`",
+  "caution": "",
+  "alts": [
+   "vercel/ai"
+  ],
+  "packages": [
+   "@astryxdesign/core",
+   "@astryxdesign/theme-neutral",
+   "@stylexjs/stylex",
+   "@astryxdesign/cli"
+  ],
+  "plain": "A collection of pre-made web elements like buttons and menus that humans and AI tools use to build apps.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Build web app interfaces using React 19 components",
+   "Style application interfaces with customizable theme overrides",
+   "Generate consistent UI code using AI coding assistants"
+  ],
+  "steps": [
+   "Install core packages using `npm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex`.",
+   "Optionally install developer tools using `npm install -D @astryxdesign/cli`.",
+   "Import the stylesheet into your project and wrap your layout with the theme provider."
+  ],
+  "repo": "meta/astryx",
+  "at": "2026-11-07",
+  "source": "trending"
+ },
+ "reacher-z/Awesome-REA": {
+  "cat": "coding",
+  "kind": "Curated resource directory",
+  "what": "A structured catalog of tools, case studies, and research papers for reverse engineering software, games, hardware, and network protocols.",
+  "why": "Reach for it when you need verified tools, guides, or papers to analyze, decompile, or reconstruct software and hardware systems.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "morluto/awesome-reverse-engineering",
+   "alexgaoth/awesome-reverse-engineered"
+  ],
+  "packages": [],
+  "plain": "A organized library of links, tools, and research for studying how software, games, and hardware work inside.",
+  "tags": [
+   "research",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Find reverse engineering tools and research",
+   "Discover case studies for software decompilation",
+   "Locate AI tools for website inspection"
+  ],
+  "steps": [
+   "Visit the project website or browse the main guide",
+   "Select a category like Website, Game, App, or Protocol",
+   "Review curated tools, papers, and real-world case studies"
+  ],
+  "repo": "reacher-z/Awesome-REA",
+  "at": "2026-11-07",
+  "source": "trending"
+ },
+ "didilili/mianstack": {
+  "cat": "memory",
+  "kind": "Interview Question Bank",
+  "what": "MianStack is an open-source interview question bank with categorized questions, real company interview experiences, and detailed answer breakdowns.",
+  "why": "Job seekers waste time searching for fragmented study materials across different websites. MianStack organizes high-frequency technical questions and ties them directly to real company interview reports.",
+  "level": "easy",
+  "start": "",
+  "caution": "The repository content and answers are written primarily in Chinese.",
+  "alts": [
+   "youngyangyang04/llm-master",
+   "crow-hq/llm-wiki-v2"
+  ],
+  "packages": [],
+  "plain": "A free collection of practice questions and real job interview experiences for software developers.",
+  "tags": [
+   "knowledge",
+   "code",
+   "docs"
+  ],
+  "useFor": [
+   "Practice real developer interview questions grouped by company",
+   "Study detailed technical solutions for AI engineering and software topics",
+   "Review high-frequency questions before job interviews"
+  ],
+  "steps": [
+   "Open the INDEX.md file to view the main menu",
+   "Select a topic area like AI engineering or software development",
+   "Read through questions and sample answers to prepare"
+  ],
+  "repo": "didilili/mianstack",
+  "at": "2026-11-07",
+  "source": "trending"
+ },
+ "liangjianshu/multimodal-image-retrieval": {
+  "cat": "memory",
+  "kind": "Multimodal search toolkit",
+  "what": "A multimodal search toolkit that combines text intent parsing with vector search to find matching images in product databases or photo collections.",
+  "why": "It provides a practical blueprint for building text-to-image and image-to-image search pipelines. Reach for it when you need to add visual retrieval or custom product search into your software without relying on closed proprietary services.",
+  "level": "dev",
+  "start": "git clone https://github.com/liangjianshu/multimodal-image-retrieval.git",
+  "caution": "Fine-tuned model weights are not distributed with the repository, so you must use public base models or train your own weights.",
+  "alts": [
+   "chroma-core/chroma",
+   "qdrant/qdrant"
+  ],
+  "packages": [],
+  "plain": "A tool that lets you search through your picture collection using words or sample images.",
+  "tags": [
+   "knowledge",
+   "media",
+   "apps"
+  ],
+  "useFor": [
+   "Search product catalogs using text descriptions or reference photos",
+   "Build visual search features for custom applications",
+   "Fine-tune visual retrieval models on your own images"
+  ],
+  "steps": [
+   "Clone the project repository to your computer",
+   "Install Python dependencies with `pip install -e '.[hybrid]'`",
+   "Run `python3 examples/quickstart.py` to test the included demo"
+  ],
+  "repo": "liangjianshu/multimodal-image-retrieval",
+  "at": "2026-11-07",
+  "source": "trending"
+ },
+ "supercli-site/awesome-coding-plan": {
+  "cat": "tokens",
+  "kind": "Pricing comparison table",
+  "what": "A price comparison guide and dataset comparing subscription plans and usage pricing for AI coding tools.",
+  "why": "Navigating fixed monthly subscription limits versus pay-as-you-go pricing for AI coding services can be confusing. Reach for this resource to compare official provider quotas, rates, and cost efficiency before purchasing.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "rtk-ai/rtk",
+   "microsoft/TokenEconomizer",
+   "songquanpeng/one-api"
+  ],
+  "packages": [],
+  "plain": "A web guide and price chart comparing monthly fees and usage costs for AI coding assistants.",
+  "tags": [
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Compare subscription fees for AI coding tools",
+   "Check pay-as-you-go pricing across different AI providers",
+   "Find cost-effective plans for heavy coding workloads"
+  ],
+  "steps": [
+   "Visit the web page at plan.supercli.site or read the tables in the project.",
+   "Compare monthly plan quotas against pay-as-you-go pricing models for your usage.",
+   "Click official provider links in the tables to check current rates and terms."
+  ],
+  "repo": "supercli-site/awesome-coding-plan",
+  "at": "2026-11-07",
+  "source": "trending"
  }
 }

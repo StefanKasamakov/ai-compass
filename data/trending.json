@@ -1,48 +1,43 @@
 {
- "updated": "2026-11-07T06:07:51.806Z",
+ "updated": "2026-11-07T11:18:33.244Z",
  "items": [
   {
-   "repo": "yjid/kensaku",
-   "stars": 1188,
-   "desc": "Search inside documents, code, and even screenshots - instantly and locally. A free, open-source file launcher with OCR, semantic search, and MCP agent access.",
-   "created": "2026-10-24T21:00:26Z",
+   "repo": "meta/astryx",
+   "stars": 14109,
+   "desc": "An open source design system that's fully customizable and agent ready",
+   "created": "2026-01-09T16:20:32Z",
+   "topics": [],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "reacher-z/Awesome-REA",
+   "stars": 1227,
+   "desc": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+   "created": "2026-10-16T00:42:04Z",
    "topics": [
+    "agent-skills",
     "ai-agents",
-    "desktop",
-    "desktop-search",
-    "file-search"
+    "android-reverse-engineering",
+    "awesome"
    ],
-   "lang": "Rust",
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "Sandflow-ai/sand3d",
-   "stars": 848,
-   "desc": "3D modeling in Python, built for LLMs.",
-   "created": "2026-11-03T08:23:03Z",
+   "repo": "didilili/mianstack",
+   "stars": 126,
+   "desc": "🚀 面栈 MianStack｜程序员面试题库天花板！Java、Python、数据库、算法、大模型、AI Agent、RAG 一栈备齐。真实面经关联高频考点，按公司、岗位定向备考；图文题解、精华专题、项目源码拆解，全系标配。面试官出题，面栈出招！免费开源，持续更新。",
+   "created": "2026-11-02T02:48:03Z",
    "topics": [
-    "3d",
-    "blender",
-    "cad",
-    "llm"
-   ],
-   "lang": "HTML",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "andyhuo520/vibe-knowledge",
-   "stars": 551,
-   "desc": "Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格 · 代码逐帧成片）",
-   "created": "2026-10-28T09:37:45Z",
-   "topics": [
-    "chinese",
-    "claude-code",
-    "claude-skills",
-    "explainer-video"
+    "agent",
+    "agentic-ai",
+    "ai-agent",
+    "ai-engineering"
    ],
    "lang": "JavaScript",
    "sources": [
@@ -50,15 +45,15 @@
    ]
   },
   {
-   "repo": "zaxiu88888/issue-rag",
-   "stars": 107,
-   "desc": "RAG over GitHub issues, with a hand-reviewed eval set and an audit of the judge itself. Reports the interval, not just the best number.",
-   "created": "2026-11-01T11:32:25Z",
+   "repo": "liangjianshu/multimodal-image-retrieval",
+   "stars": 118,
+   "desc": "多模态检索实战：意图识别、Prompt 工程、Qwen LoRA、EmbeddingGemma 2 与 InfoNCE 对比学习。含真实演示、自有数据接入、训练评测及 RAG 检索组件学习指南。",
+   "created": "2026-11-02T14:22:10Z",
    "topics": [
-    "evaluation",
-    "github-issues",
-    "llm",
-    "llm-as-judge"
+    "agent-tools",
+    "clip",
+    "contrastive-learning",
+    "ecommerce"
    ],
    "lang": "Python",
    "sources": [
@@ -66,49 +61,17 @@
    ]
   },
   {
-   "repo": "Mafdet-AI/mafdet",
-   "stars": 80,
-   "desc": "You type. It already knows. Local LLMs that read and think while you type.",
-   "created": "2026-10-21T08:37:56Z",
+   "repo": "supercli-site/awesome-coding-plan",
+   "stars": 102,
+   "desc": "TokenPlan：AI 编程套餐与 API 价格对比，涵盖云厂商 Coding / Token Plan、缓存与峰谷计费、模型性价比及官方购买入口。 / AI coding plans, API pricing and model value comparisons.",
+   "created": "2026-11-03T09:39:37Z",
    "topics": [
-    "deep-learning",
-    "framework",
-    "large-language-models",
-    "llm-inference"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "erensrtky/cogit",
-   "stars": 68,
-   "desc": " Git for the intent behind agent-written code. Records what your coding agent decided and why, and links every commit to it.",
-   "created": "2026-10-27T22:38:30Z",
-   "topics": [
+    "ai-agents",
     "ai-coding",
-    "claude",
-    "claude-code",
-    "claude-code-plugin"
+    "ai-models",
+    "api-pricing"
    ],
    "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "kindlingai/gr8",
-   "stars": 61,
-   "desc": "A from-scratch CUDA inference engine for 1-6 DGX Sparks (GB10): GLM-5.3, GLM-5.3-Flash and DeepSeek-V4.1-Flash",
-   "created": "2026-10-10T16:50:01Z",
-   "topics": [
-    "cuda",
-    "deepseek",
-    "dgx-spark",
-    "gb10"
-   ],
-   "lang": "Cuda",
    "sources": [
     "new on GitHub"
    ]
