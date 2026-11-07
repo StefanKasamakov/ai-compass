@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T13:12:53.833Z",
+ "updated": "2026-11-07T21:56:43.136Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -902,14 +902,6 @@
     "npm:mu-agent"
    ]
   },
-  "morluto/rea": {
-   "npm": 1841891,
-   "pypi": 0,
-   "total": 1841891,
-   "packages": [
-    "npm:rea-agents"
-   ]
-  },
   "alanhuangyoo/OpenJev": {
    "npm": 0,
    "pypi": 134,
@@ -919,9 +911,9 @@
    ]
   },
   "manaflow-ai/cmux": {
-   "npm": 1038,
+   "npm": 0,
    "pypi": 741,
-   "total": 1779,
+   "total": 741,
    "packages": [
     "npm:cmux",
     "pypi:cmux"
@@ -935,28 +927,20 @@
     "npm:openqodex"
    ]
   },
-  "alibaba/open-code-review": {
-   "npm": 618043,
-   "pypi": 0,
-   "total": 618043,
-   "packages": [
-    "npm:@alibaba-group/open-code-review"
-   ]
-  },
-  "VinkyDev/vibestart": {
-   "npm": 2297,
-   "pypi": 0,
-   "total": 2297,
-   "packages": [
-    "npm:vibestart-cli"
-   ]
-  },
   "huggingface/transformers": {
    "npm": 0,
    "pypi": 96323619,
    "total": 96323619,
    "packages": [
     "pypi:transformers"
+   ]
+  },
+  "ranxianglei/billion-context": {
+   "npm": 3108830,
+   "pypi": 0,
+   "total": 3108830,
+   "packages": [
+    "npm:billion-context"
    ]
   },
   "tensorflow/tensorflow": {
@@ -990,15 +974,6 @@
    "total": 3300,
    "packages": [
     "npm:@moritzwilksch/diffle"
-   ]
-  },
-  "Sev7eEn7/dsh-sieve": {
-   "npm": 1455,
-   "pypi": 0,
-   "total": 1455,
-   "packages": [
-    "npm:dsh-sieve",
-    "npm:dsh-sieve-web"
    ]
   },
   "ifixai-ai/iFixAi": {
@@ -1065,14 +1040,6 @@
    "total": 584,
    "packages": [
     "npm:@outcrawl/scout"
-   ]
-  },
-  "ZiChuanLan/agent-purge": {
-   "npm": 5647,
-   "pypi": 0,
-   "total": 5647,
-   "packages": [
-    "npm:agent-purge"
    ]
   },
   "qybaihe/bla": {
@@ -1197,6 +1164,14 @@
     "npm:@astryxdesign/core",
     "npm:@astryxdesign/theme-neutral",
     "npm:@astryxdesign/cli"
+   ]
+  },
+  "Ebony-Vinyl/EAC-design-world": {
+   "npm": 7281,
+   "pypi": 0,
+   "total": 7281,
+   "packages": [
+    "npm:eac-design-world"
    ]
   }
  }

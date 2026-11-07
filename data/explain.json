@@ -19652,5 +19652,106 @@
   "repo": "supercli-site/awesome-coding-plan",
   "at": "2026-11-07",
   "source": "trending"
+ },
+ "Ebony-Vinyl/EAC-design-world": {
+  "cat": "harness",
+  "kind": "Video design harness plugin",
+  "what": "A local video editing, motion graphics, and design studio plugin for DeepSeek Harness and Codex.",
+  "why": "Coding agents typically lack visual timelines, media preview canvases, and video rendering engines. Reach for this when you want an AI assistant to script, cut, color-grade, and export finished video projects on your machine.",
+  "level": "setup",
+  "start": "node scripts/install-harness.mjs",
+  "caution": "Requires Node.js 22+, FFmpeg 7+ in PATH, and Chrome or Edge; desktop recording is Windows-only, and speech transcription requires supplying your own local models.",
+  "alts": [
+   "howseen-ai/claude-motion-design",
+   "heygen-com/hyperframes",
+   "openfilm/openfilm"
+  ],
+  "packages": [
+   "eac-design-world"
+  ],
+  "plain": "An add-on that lets an AI assistant edit videos, create motion graphics, and design web pages on your computer.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Assemble multi-track videos with subtitles, voiceover, and color grading",
+   "Create motion graphics and HTML slides with live frame previews",
+   "Export video projects to CapCut, Premiere, or DaVinci Resolve formats"
+  ],
+  "steps": [
+   "Ensure Node.js 22+, FFmpeg 7+, and Chrome or Edge are installed on your machine.",
+   "Install dependencies without development packages using `npm ci --omit=dev`.",
+   "Run `node scripts/install-harness.mjs` to register the plugin into your DeepSeek Harness environment.",
+   "Alternatively, run `npm start` to launch the standalone creative workbench at port 4173."
+  ],
+  "repo": "Ebony-Vinyl/EAC-design-world",
+  "at": "2026-11-07",
+  "source": "trending"
+ },
+ "Dongbumlee/ontosmith": {
+  "cat": "memory",
+  "kind": "knowledge graph builder",
+  "what": "OntoSmith extracts structured entity and relationship facts from text documents into a governed Neo4j graph with traceable evidence.",
+  "why": "Standard text retrieval can miss complex connections across large document sets. OntoSmith enforces a flat schema and verification step so every extracted link is grounded in source quotes.",
+  "level": "setup",
+  "start": "`pip install ontosmith`",
+  "caution": "",
+  "alts": [
+   "microsoft/graphrag",
+   "HKUDS/LightRAG",
+   "docling-project/docling"
+  ],
+  "packages": [
+   "ontosmith"
+  ],
+  "plain": "Turns your text files into an organized network of facts and connections that an assistant can search.",
+  "tags": [
+   "knowledge",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Convert documents into structured knowledge graphs",
+   "Verify extracted facts against original text evidence",
+   "Store relationship graphs in Neo4j for deep querying"
+  ],
+  "steps": [
+   "Install the package with `pip install ontosmith`",
+   "Profile sample text files keyless using `ontosmith profile examples/corpus --family demo`",
+   "Start Neo4j, set your key, and run `ontosmith quickstart your-file.txt` to build"
+  ],
+  "repo": "Dongbumlee/ontosmith",
+  "at": "2026-11-07",
+  "source": "trending"
+ },
+ "UponNuclearastro/claude-resocket-plugin": {
+  "cat": "harness",
+  "kind": "Claude Code plugin",
+  "what": "A Claude Code plugin that compares built web pages against Figma design frames so Claude can fix visual differences.",
+  "why": "Verifying that coded UI matches design files manually is slow and detailed. Reach for this when using Claude Code to automate design quality assurance and fix spacing or layout bugs.",
+  "level": "setup",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A tool for an AI coding assistant that checks web pages against Figma design files and fixes visual differences.",
+  "tags": [
+   "code",
+   "supercharge",
+   "apps"
+  ],
+  "useFor": [
+   "Compare built web interfaces against Figma designs",
+   "Fix visual UI differences using Claude Code",
+   "Automate design quality checks during web development"
+  ],
+  "steps": [],
+  "repo": "UponNuclearastro/claude-resocket-plugin",
+  "at": "2026-11-07",
+  "source": "trending"
  }
 }
