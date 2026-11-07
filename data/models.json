@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -279,13 +279,13 @@
   {
    "id": "mistral",
    "p": "open",
-   "name": "Mistral Small 4",
+   "name": "Mistral Large 4",
    "tier": "Open",
-   "best": "European, Apache-2.0, 256K context. Easy on a company server.",
-   "ctx": "256K",
-   "in": 0.15,
-   "out": 0.6,
-   "released": "2026-03-16"
+   "best": "European, Apache-2.0, 1M context. Powerful flagship open model.",
+   "in": 0.7,
+   "out": 2.1,
+   "ctx": "1M",
+   "released": "2026-10-06"
   }
  ]
 }
