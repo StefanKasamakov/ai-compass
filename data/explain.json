@@ -19753,5 +19753,39 @@
   "repo": "UponNuclearastro/claude-resocket-plugin",
   "at": "2026-11-07",
   "source": "trending"
+ },
+ "Video-Rebirth/hyperflow-h3-flash": {
+  "cat": "media",
+  "kind": "Video and audio generator",
+  "what": "HyperFlow H3 Flash is a compressed AI model that generates synchronized video clips and stereo audio in 4 to 8 steps.",
+  "why": "It creates short videos with matching soundtracks using less memory and fewer steps than the full MiniMax-H3 model. Reach for it when generating video and sound on consumer or server graphics cards.",
+  "level": "setup",
+  "start": "pip install git+https://github.com/Video-Rebirth/hyperflow-h3-flash",
+  "caution": "Requires an NVIDIA graphics card and large downloads of up to 90 GB for initial model weights.",
+  "alts": [
+   "Comfy-Org/ComfyUI"
+  ],
+  "packages": [
+   "hyperflow-h3-flash"
+  ],
+  "plain": "Creates short videos with sound using AI directly on your computer.",
+  "tags": [
+   "media",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Generate video clips with stereo soundtracks from text prompts",
+   "Animate videos starting from a single image or keyframe",
+   "Run fast video generation workflows inside ComfyUI"
+  ],
+  "steps": [
+   "Install the package with `pip install git+https://github.com/Video-Rebirth/hyperflow-h3-flash`",
+   "Generate a video using `hyperflow-h3-flash --prompt \"A chef slides a steaming bowl of ramen.\" --output ramen.mp4`",
+   "Optionally load GGUF model files into ComfyUI for interactive visual workflows"
+  ],
+  "repo": "Video-Rebirth/hyperflow-h3-flash",
+  "at": "2026-11-08",
+  "source": "trending"
  }
 }
