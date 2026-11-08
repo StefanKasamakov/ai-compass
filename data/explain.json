@@ -19821,5 +19821,209 @@
   "repo": "nace-ai/kapitsa",
   "at": "2026-11-08",
   "source": "trending"
+ },
+ "blader/humanizer": {
+  "cat": "harness",
+  "kind": "Writing agent skill",
+  "what": "An agent skill that rewrites AI-generated text to remove robotic writing patterns and sound natural.",
+  "why": "AI text generators often produce cliché phrases, exaggerated claims, and repetitive patterns that sound artificial. Reach for this tool when polishing blog posts, emails, or documentation drafted by AI before publishing.",
+  "level": "setup",
+  "start": "npx skills add blader/humanizer --global --agent claude-code",
+  "caution": "It is designed to improve readability for real people, not to bypass automated AI detectors, which will still flag most output.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "An add-on for AI assistants that cleans up stiff or repetitive AI text to make it sound human.",
+  "tags": [
+   "docs",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Rewrite AI drafts to remove cliché phrases and artificial structures",
+   "Clean prose in documentation files without altering code or links",
+   "Match rewritten prose to your writing voice using sample paragraphs"
+  ],
+  "steps": [
+   "Install the skill into your assistant with `npx skills add blader/humanizer --global --agent claude-code`",
+   "Run `/humanizer` in your assistant prompt and paste the text you want to edit",
+   "Include a sample of your own writing if you want the output to match your voice"
+  ],
+  "repo": "blader/humanizer",
+  "at": "2026-11-08",
+  "source": "trending"
+ },
+ "anthropics/claude-quickstarts": {
+  "cat": "frameworks",
+  "kind": "Claude API starter templates",
+  "what": "A collection of example projects showing how to build deployable applications using Anthropic's Claude API and AI agents.",
+  "why": "Setting up custom AI agents, browser automation, and computer-use tools from scratch can be complex. Reach for this project when you need official, working reference code to jumpstart building AI features.",
+  "level": "dev",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-agent-sdk-python",
+   "davila7/claude-code-templates",
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [],
+  "plain": "A collection of ready-to-use starter code for software developers building applications with Anthropic's AI services.",
+  "tags": [
+   "apps",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Learn browser and desktop computer automation with Claude",
+   "Build customer support and financial analyst chatbots",
+   "Deploy background AI agents for Slack or Sentry"
+  ],
+  "steps": [
+   "Create a free developer account at console.anthropic.com to get your key",
+   "Browse the repository subfolders to find a quickstart project for your use case",
+   "Follow the setup guide inside your chosen project subfolder"
+  ],
+  "repo": "anthropics/claude-quickstarts",
+  "at": "2026-11-08",
+  "source": "trending"
+ },
+ "voyager-so/vork": {
+  "cat": "media",
+  "kind": "Headless 3D rendering engine",
+  "what": "vork is a headless 3D and VFX rendering engine built for AI agents to create and refine 3D scenes through code.",
+  "why": "Traditional 3D software relies on visual user interfaces that AI agents cannot easily operate. Reach for vork when you want an automated agent to generate 3D graphics, liquid simulations, or video visual effects purely via code.",
+  "level": "setup",
+  "start": "vork init my-shot",
+  "caution": "Currently in research preview with a custom source-available license. Rendering requires Apple Silicon or an NVIDIA graphics card with hardware ray query support.",
+  "alts": [
+   "earthtojake/text-to-cad"
+  ],
+  "packages": [
+   "vork"
+  ],
+  "plain": "A tool that lets software agents create, simulate, and render 3D graphics and visual effects using code.",
+  "tags": [
+   "media",
+   "code"
+  ],
+  "useFor": [
+   "Render 3D graphics and animations directly from code",
+   "Add 3D visual effects and relighting to video footage",
+   "Run particle and fluid simulations inside agent workflows"
+  ],
+  "steps": [
+   "Create a new project by running `vork init my-shot`.",
+   "Navigate into your new project folder with `cd my-shot`.",
+   "Render a draft preview image with `vork render scene.json --profile std/draft --out render.png`.",
+   "Inspect the render.png output and adjust scene settings in scene.json."
+  ],
+  "repo": "voyager-so/vork",
+  "at": "2026-11-08",
+  "source": "trending"
+ },
+ "yzlin286-wq/Deepscient": {
+  "cat": "harness",
+  "kind": "scientific research workstation",
+  "what": "Deepscient is an AI research workbench built on DeepSeek Harness that guides users through a 12-stage scientific workflow with reproducible results and evidence chains.",
+  "why": "Standard chat tools tend to fabricate facts and lack structured experiment tracking. Reach for Deepscient when conducting literature reviews, organizing data analysis, and writing academic papers with verifiable audit trails.",
+  "level": "easy",
+  "start": "git clone https://github.com/yzlin286-wq/Deepscient.git",
+  "caution": "macOS desktop builds are unsigned and require manually bypassing Gatekeeper security checks.",
+  "alts": [
+   "K-Dense-AI/scientific-agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A desktop program that helps researchers plan studies, analyze data, and write papers with full proof of results.",
+  "tags": [
+   "research",
+   "docs",
+   "supercharge"
+  ],
+  "useFor": [
+   "Track scientific research across twelve structured phase gates",
+   "Search academic literature and manage paper citations",
+   "Draft research manuscripts with full evidence and data traceability"
+  ],
+  "steps": [
+   "Download and extract the desktop release package for your operating system",
+   "Run `DeepScient 启动.cmd` on Windows or open DeepScient.app on macOS",
+   "Open http://127.0.0.1:3081 in your browser to complete initial setup"
+  ],
+  "repo": "yzlin286-wq/Deepscient",
+  "at": "2026-11-08",
+  "source": "trending"
+ },
+ "divagr18/qwenputer": {
+  "cat": "local",
+  "kind": "In-weights virtual computer",
+  "what": "Qwenputer compiles a 32-bit RISC-V CPU directly into the weights of the Qwen3.5-4B language model.",
+  "why": "It enables exact arithmetic and deterministic program execution directly inside a model's forward pass without relying on external code sandboxes. Reach for it when researching neural network interpretability or compiled weight architectures.",
+  "level": "dev",
+  "start": "git clone https://github.com/divagr18/qwenputer && cd qwenputer/experimental/riscv && uv sync --extra hf",
+  "caution": "This is an experimental research project requiring substantial graphics hardware (like an NVIDIA L4 GPU) to execute effectively. The repository has no specified license.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "This experimental tool builds a virtual mini-computer directly into an AI model's internal memory to run exact calculations.",
+  "tags": [
+   "research",
+   "code",
+   "private"
+  ],
+  "useFor": [
+   "Run C and MicroPython code directly inside model forward passes",
+   "Execute exact multi-digit math without external software sandboxes",
+   "Research compiled virtual hardware built inside neural network weights"
+  ],
+  "steps": [
+   "Clone the repository and install dependencies using `git clone https://github.com/divagr18/qwenputer && cd qwenputer/experimental/riscv && uv sync --extra hf`.",
+   "Download the compiled model weights using `hf download divagr1925/Qwen3.5-4B-Qwenputer --local-dir qwenputer-rv`.",
+   "Run an arithmetic query using `uv run python -m chipformer.rv.chat qwenputer-rv --firmware tests/data/rv/calc-bridge.elf --ask \"Use calc: what is 123456789 * 987654321?\"`."
+  ],
+  "repo": "divagr18/qwenputer",
+  "at": "2026-11-08",
+  "source": "trending"
+ },
+ "andrewboldi/tmux-restore": {
+  "cat": "harness",
+  "kind": "tmux session plugin",
+  "what": "A tmux plugin that saves terminal layouts and reopens AI coding agent conversations after system reboots.",
+  "why": "System restarts wipe terminal layouts and interrupt active AI coding workflows. Reach for this to automatically restore tmux windows, scrollback history, and mid-chat agent prompts.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/andrewboldi/tmux-restore/main/install.sh | bash",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "google-gemini/gemini-cli"
+  ],
+  "packages": [],
+  "plain": "Restores terminal window arrangements and picks up AI assistant chats right where you left off after your computer restarts.",
+  "tags": [
+   "supercharge",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Restore tmux sessions after reboot",
+   "Resume AI agent chats automatically",
+   "Save terminal history and layouts"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://raw.githubusercontent.com/andrewboldi/tmux-restore/main/install.sh | bash` in your terminal",
+   "Use your terminal AI coding tools inside tmux windows as usual",
+   "Start tmux after rebooting to resume your layout and active chats"
+  ],
+  "repo": "andrewboldi/tmux-restore",
+  "at": "2026-11-08",
+  "source": "trending"
  }
 }
