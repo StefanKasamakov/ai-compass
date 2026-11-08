@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -262,8 +262,8 @@
    "name": "DeepSeek V4.1 Flash 1017",
    "tier": "Open",
    "best": "Near-frontier quality you can download. Even the newer V4.1 Flash (about 763B parameters) needs a server with several graphics cards.",
-   "in": 0.15,
-   "out": 0.6,
+   "in": 0.01,
+   "out": 0.5,
    "price": "free*",
    "ctx": "1M",
    "released": "2026-10-17"
