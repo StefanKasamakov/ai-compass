@@ -19787,5 +19787,39 @@
   "repo": "Video-Rebirth/hyperflow-h3-flash",
   "at": "2026-11-08",
   "source": "trending"
+ },
+ "nace-ai/kapitsa": {
+  "cat": "local",
+  "kind": "Mac AI inference engine",
+  "what": "An inference engine optimized for Apple Silicon to run local models with OpenAI and Anthropic API compatibility.",
+  "why": "It maximizes generation speed on Apple Silicon Macs and allows coding tools like Claude Code and Goose to run on local hardware.",
+  "level": "setup",
+  "start": "`brew install nace-ai/tap/kapitsa`",
+  "caution": "Requires an Apple Silicon Mac (M1 or newer) running macOS 14 Sonoma or later; Linux and Windows are not supported.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "ml-explore/mlx-lm"
+  ],
+  "packages": [],
+  "plain": "Runs artificial intelligence models quickly on your Mac computer so you can use coding assistants completely offline.",
+  "tags": [
+   "private",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Run local models fast on Apple Silicon Macs",
+   "Connect coding assistants to local models offline",
+   "Serve OpenAI and Anthropic compatible local servers"
+  ],
+  "steps": [
+   "Install Kapitsa on your Mac using `brew install nace-ai/tap/kapitsa`.",
+   "Launch a coding agent connected to a local model with `kapitsa opencode --model 35b`.",
+   "Serve OpenAI and Anthropic compatible local endpoints using `kapitsa serve`."
+  ],
+  "repo": "nace-ai/kapitsa",
+  "at": "2026-11-08",
+  "source": "trending"
  }
 }
