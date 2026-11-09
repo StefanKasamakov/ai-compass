@@ -20129,5 +20129,281 @@
   "repo": "davide-troiani/moeshift",
   "at": "2026-11-09",
   "source": "trending"
+ },
+ "ruvnet/RuView": {
+  "cat": "local",
+  "kind": "WiFi spatial intelligence",
+  "what": "Turns standard WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection using low-cost hardware.",
+  "why": "Enables camera-free room monitoring, breathing tracking, and fall detection through walls using ordinary router waves. Reach for it when you want privacy-focused smart home sensing.",
+  "level": "setup",
+  "start": "npx @ruvnet/ruview@0.9.1 doctor",
+  "caution": "Requires external ESP32 hardware nodes and precise physical calibration. Pose estimation claims are experimental and synthetic until validated with real data.",
+  "alts": [
+   "ollama/ollama",
+   "open-webui/open-webui",
+   "janhq/jan"
+  ],
+  "packages": [
+   "@ruvnet/ruview"
+  ],
+  "plain": "Turns normal WiFi router signals into room monitoring and breathing detection without using any cameras.",
+  "tags": [
+   "private",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Detect presence and occupancy through walls without cameras",
+   "Monitor breathing rate and heart rate contactless",
+   "Integrate wireless sensing data into Home Assistant"
+  ],
+  "steps": [
+   "Run a doctor check using `npx @ruvnet/ruview@0.9.1 doctor` to verify your local setup.",
+   "Check connected hardware and live sensor streams using `npx @ruvnet/ruview@0.9.1 devices`.",
+   "Stream live wireless signal data from your ESP32 nodes into the processing pipeline."
+  ],
+  "repo": "ruvnet/RuView",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "ZhuLinsen/daily_stock_analysis": {
+  "cat": "builders",
+  "kind": "Stock analysis assistant",
+  "what": "An automated multi-market stock analysis system that gathers market data, news, and technical indicators to produce AI decision reports.",
+  "why": "It saves time on manual market research by analyzing watchlist stocks and sending daily summaries directly to chat tools. Reach for it when you want automated stock research and decision dashboards without manual daily effort.",
+  "level": "setup",
+  "start": "`git clone https://github.com/ZhuLinsen/daily_stock_analysis.git`",
+  "caution": "Contains affiliate links for AI model and search service providers. AI-generated financial reports are for reference only and do not constitute financial advice.",
+  "alts": [
+   "Jakeschincariol/day-trader-skill",
+   "Jakeschincariol/trader-skill",
+   "n8n-io/n8n"
+  ],
+  "packages": [],
+  "plain": "An automated program that analyzes your favorite stocks daily and sends summary reports to your chat apps.",
+  "tags": [
+   "automate",
+   "research",
+   "knowledge"
+  ],
+  "useFor": [
+   "Automate daily stock market analysis across global markets",
+   "Send automated stock updates to WeChat, Feishu, or Telegram",
+   "Interrogate stocks using built-in technical and fundamental prompts"
+  ],
+  "steps": [
+   "Fork the repository on GitHub and open the Settings tab",
+   "Configure your AI model API key and search API key under repository secrets",
+   "Set your watchlist stock codes in the STOCK_LIST secret",
+   "Run the workflow manually under Actions or let it run daily automatically"
+  ],
+  "repo": "ZhuLinsen/daily_stock_analysis",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "garrytan/gbrain": {
+  "cat": "memory",
+  "kind": "AI Agent Memory",
+  "what": "Stores explicit facts and notes with sources so multiple AI assistants can share the same long-term memory.",
+  "why": "Prevents AI assistants from forgetting past conversations, meetings, and documents between sessions, and lets you query your own notes effortlessly.",
+  "level": "setup",
+  "start": "bun install -g github:garrytan/gbrain#stable",
+  "caution": "This project reuses consumer subscription logins or external cloud endpoints, and requires self-hosting compute and API keys for full background enrichment.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "letta-ai/letta"
+  ],
+  "packages": [],
+  "plain": "Gives your AI assistant a shared memory bank across different apps so it remembers what you told it before.",
+  "tags": [
+   "knowledge",
+   "connect",
+   "private"
+  ],
+  "useFor": [
+   "Prepare for meetings by pulling past notes automatically",
+   "Share long-term memory across different AI assistants",
+   "Search through your personal notes and documents with cited answers"
+  ],
+  "steps": [
+   "Install the command-line tool using Bun.",
+   "Expose your brain over your network using the command `gbrain mcp expose`.",
+   "Connect your AI assistant to your local memory server."
+  ],
+  "repo": "garrytan/gbrain",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "homeassistant-ai/ha-mcp": {
+  "cat": "frameworks",
+  "kind": "Home Assistant MCP",
+  "what": "Configure and automate Home Assistant using AI assistants like Claude and ChatGPT.",
+  "why": "Connects your smart home setup directly to artificial intelligence tools so you can control devices and write routines using plain language.",
+  "level": "setup",
+  "start": "Install the HA-MCP integration through HACS or the Home Assistant Marketplace.",
+  "caution": "Reusing consumer subscription logins as an API or pooling free tiers may break the provider's terms and risk the account.",
+  "alts": [],
+  "packages": [],
+  "plain": "Control your smart home with artificial intelligence by connecting your assistant to your home server.",
+  "tags": [
+   "automate",
+   "connect",
+   "knowledge"
+  ],
+  "useFor": [
+   "Control home devices using natural language",
+   "Automate routines and triggers with AI",
+   "Manage your home server settings through chat"
+  ],
+  "steps": [
+   "Install the HA-MCP integration through HACS or the Home Assistant Marketplace.",
+   "Restart Home Assistant.",
+   "Go to Settings, Devices and Services, and add the HA-MCP Server integration.",
+   "Copy the connect URL from the configuration screen and paste it into your AI assistant."
+  ],
+  "repo": "homeassistant-ai/ha-mcp",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "shinyobjectz/raea": {
+  "cat": "media",
+  "kind": "AI video engine",
+  "what": "Raea is a GPU-accelerated rendering engine that turns React and TypeScript code into videos, motion graphics, 3D scenes, and playable games.",
+  "why": "Creating motion graphics programmatically usually requires heavy desktop video tools or slow cloud services. Reach for raea when you want AI coding assistants or custom scripts to render animated videos, 3D graphics, and games locally on your machine.",
+  "level": "setup",
+  "start": "curl -fsSL https://raea.io/install | sh",
+  "caution": "The software is in canary status with frequent breaking changes, and uses a Functional Source License (FSL-1.1-ALv2) rather than standard open source.",
+  "alts": [
+   "howseen-ai/claude-motion-design",
+   "charlie947/motion-graphics-skills",
+   "harry0703/MoneyPrinterTurbo"
+  ],
+  "packages": [
+   "raea"
+  ],
+  "plain": "A visual renderer that allows AI tools to create videos, 3D graphics, and simple games from code.",
+  "tags": [
+   "media",
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Render React code into video animations and MP4 files",
+   "Provide skills for AI coding agents to create and verify graphics",
+   "Build and play interactive 3D graphics and lightweight games"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://raea.io/install | sh` to install the engine and agent skills.",
+   "Write a React composition defining your animation frames and scene layout.",
+   "Render your composition into an MP4 file using `raea render hello.tsx -o hello.mp4`."
+  ],
+  "repo": "shinyobjectz/raea",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "OmniJev/Flide": {
+  "cat": "local",
+  "kind": "Decision inference engine",
+  "what": "Flide is an inference engine designed to speed up decision models by using state forking to evaluate multiple questions at once.",
+  "why": "It dramatically reduces processing latency when running structured choices and evaluations against an AI model. Reach for it when serving high-throughput decision workflows on your own graphics cards.",
+  "level": "setup",
+  "start": "flide serve --model OmniJev/OneJev1.6-0.8B",
+  "caution": "",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "ollama/ollama"
+  ],
+  "packages": [
+   "flide",
+   "torchvision"
+  ],
+  "plain": "A tool that runs AI decision models on your own server fast by asking multiple questions at once.",
+  "tags": [
+   "private",
+   "automate",
+   "save"
+  ],
+  "useFor": [
+   "Serve structured decision models locally via an API",
+   "Speed up decision evaluations across multiple choices",
+   "Run fast batch AI decision workflows on Nvidia GPUs"
+  ],
+  "steps": [
+   "Create and activate a Python virtual environment",
+   "Install Flide by running `uv pip install flide torchvision`",
+   "Start serving a model with `flide serve --model OmniJev/OneJev1.6-0.8B`"
+  ],
+  "repo": "OmniJev/Flide",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "jammaru/sakutto": {
+  "cat": "local",
+  "kind": "On-device translation extension",
+  "what": "Sakutto is a Chrome extension that translates web pages and typed text directly on your computer using a local AI model.",
+  "why": "Traditional web translation services send your page content and text inputs to external servers. Reach for Sakutto when you need private, browser-based translations without sharing data over the internet.",
+  "level": "easy",
+  "start": "",
+  "caution": "Initial translation requires downloading model files into your browser, which consumes storage space and requires adequate computer performance to run smoothly.",
+  "alts": [
+   "ollama/ollama",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "Translate web pages and typed text privately inside your browser without sending data to any server.",
+  "tags": [
+   "private",
+   "docs"
+  ],
+  "useFor": [
+   "Translate full web pages directly inside your browser",
+   "Translate text you are typing into web forms using shortcuts",
+   "Translate selected text on a webpage instantly"
+  ],
+  "steps": [
+   "Install Sakutto from the Chrome Web Store",
+   "Press `Alt+A` or `Option+A` to translate the active web page",
+   "Press `Alt+T` or `Option+T` to preview translations while typing"
+  ],
+  "repo": "jammaru/sakutto",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "cacheMon/PrefixSim": {
+  "cat": "evals",
+  "kind": "LLM cache simulator",
+  "what": "PrefixSim is a fast C++ simulator that replays request traces to benchmark eviction policies in LLM KV-block prefix caches.",
+  "why": "LLM serving engines keep key-value caches to reuse prompt prefixes, but need efficient eviction policies when memory is full. Reach for PrefixSim to simulate trace replays and optimize prefill compute savings before deploying to production.",
+  "level": "setup",
+  "start": "git clone --recursive https://github.com/cacheMon/PrefixSim.git",
+  "caution": "",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [
+   "huggingface_hub"
+  ],
+  "plain": "A tool for testing how much computing power AI servers save by storing parts of previous conversations in memory.",
+  "tags": [
+   "save",
+   "monitor"
+  ],
+  "useFor": [
+   "Compare cache eviction strategies on production request traces",
+   "Calculate prefill compute savings across various cache sizes",
+   "Convert custom JSONL logs into binary simulator traces"
+  ],
+  "steps": [
+   "Clone the repository and run the dependency installation script.",
+   "Build the binary with `cmake -G Ninja -B _build -DCMAKE_BUILD_TYPE=Release && ninja -C _build`.",
+   "Download the production trace files from Hugging Face.",
+   "Run `./_build/bin/prefixsim --trace traces/freeinference.lcp.zst --cache-size 64k --algo lru,sieve` to execute the simulation."
+  ],
+  "repo": "cacheMon/PrefixSim",
+  "at": "2026-11-09",
+  "source": "trending"
  }
 }

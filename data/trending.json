@@ -1,48 +1,128 @@
 {
- "updated": "2026-11-09T06:46:12.555Z",
+ "updated": "2026-11-09T17:23:17.919Z",
  "items": [
   {
-   "repo": "chutingyean/Agent-Cockpit",
-   "stars": 465,
-   "desc": "Evidence-chain whiteboard + MCP server for AI research agents: every claim traces back to the run and code that produced it. 讓 AI agent 做研究時，每個結論都能追到產生它的程式碼。Claude Code · Codex · Cursor · Gemini CLI",
-   "created": "2026-10-26T18:44:46Z",
+   "repo": "ruvnet/RuView",
+   "stars": 103296,
+   "desc": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+   "created": "2025-06-07T04:32:30Z",
    "topics": [
-    "ai-agents",
+    "claude",
     "claude-code",
-    "code-review",
-    "codex"
+    "esp32",
+    "firmware"
    ],
-   "lang": "JavaScript",
+   "lang": "Rust",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "ZhuLinsen/daily_stock_analysis",
+   "stars": 68656,
+   "desc": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+   "created": "2026-01-10T06:43:20Z",
+   "topics": [
+    "a-stock",
+    "ai-agent",
+    "aigc",
+    "llm"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "garrytan/gbrain",
+   "stars": 32001,
+   "desc": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+   "created": "2026-04-05T14:40:56Z",
+   "topics": [],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "homeassistant-ai/ha-mcp",
+   "stars": 5734,
+   "desc": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+   "created": "2025-09-14T13:23:45Z",
+   "topics": [
+    "ai",
+    "claude",
+    "hacs",
+    "home-assistant"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "shinyobjectz/raea",
+   "stars": 1370,
+   "desc": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeScript, rendered on your own GPU. Rust + Bevy, macOS, Linux and Windows.",
+   "created": "2026-10-18T18:08:48Z",
+   "topics": [
+    "3d",
+    "agent-skills",
+    "ai-agents",
+    "ai-video"
+   ],
+   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "shanselman/sandbox-mcp",
-   "stars": 343,
-   "desc": "Fresh, throwaway Windows machines for testing your apps: an MCP server and CLI that automate Windows Sandbox",
-   "created": "2026-11-06T19:02:14Z",
+   "repo": "OmniJev/Flide",
+   "stars": 242,
+   "desc": "🔥🔥 The extremely fast inference engine for decision model",
+   "created": "2026-10-24T12:34:07Z",
    "topics": [
     "ai-agents",
-    "mcp",
-    "mcp-server",
-    "testing"
+    "cuda",
+    "decision-making",
+    "deterministic-inference"
    ],
-   "lang": "JavaScript",
+   "lang": "Python",
+   "sources": [
+    "new on GitHub",
+    "Show HN"
+   ],
+   "hn": {
+    "points": 99,
+    "url": "https://news.ycombinator.com/item?id=50421155"
+   }
+  },
+  {
+   "repo": "jammaru/sakutto",
+   "stars": 109,
+   "desc": "A browser extension for easy on-device translation with a local LLM (PLaMo). Private, free, no server needed.",
+   "created": "2026-11-05T19:00:10Z",
+   "topics": [
+    "browser-extension",
+    "chrome-extension",
+    "firefox-extension",
+    "japanese"
+   ],
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "davide-troiani/moeshift",
-   "stars": 49,
-   "desc": "Memory efficient and high performance Mixture-of-Experts inference for Apple Silicon",
-   "created": "2026-10-21T15:20:34Z",
+   "repo": "cacheMon/PrefixSim",
+   "stars": 66,
+   "desc": "A simulator for LLM Inference prefix cache",
+   "created": "2026-11-04T21:22:34Z",
    "topics": [
-    "apple-silicon",
-    "llama-cpp",
+    "cache",
+    "llm",
     "llm-inference",
-    "local-llm"
+    "llm-serving"
    ],
    "lang": "C++",
    "sources": [
