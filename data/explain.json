@@ -20025,5 +20025,109 @@
   "repo": "andrewboldi/tmux-restore",
   "at": "2026-11-08",
   "source": "trending"
+ },
+ "chutingyean/Agent-Cockpit": {
+  "cat": "harness",
+  "kind": "Agent research dashboard",
+  "what": "An MCP server and local whiteboard that tracks code changes, experiment runs, and research claims made by AI coding agents.",
+  "why": "AI research agents often alter scripts without updating dependent results, leading to silent errors. Reach for this tool to automatically link claims to exact script executions and code hashes on a visual board.",
+  "level": "setup",
+  "start": "npx -y @tingyen/agent-cockpit init",
+  "caution": "Uses the AGPL-3.0 open-source license, requires Node.js 22.13+, and installs pre-commit hooks directly into your local git configuration.",
+  "alts": [
+   "Graphify-Labs/graphify",
+   "alibaba/open-code-review",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "@tingyen/agent-cockpit"
+  ],
+  "plain": "A local visual board that makes sure your computer helper's research findings always match the code used.",
+  "tags": [
+   "research",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Track research claims and experiment code dependencies automatically",
+   "Catch unreported code changes made by AI assistants in real time",
+   "Pause research workflows to answer decisions requested by AI agents"
+  ],
+  "steps": [
+   "Navigate to your research project folder in your command line.",
+   "Run `npx -y @tingyen/agent-cockpit init` to create the configuration and helper hooks.",
+   "Launch the server by running `npx -y @tingyen/agent-cockpit serve`.",
+   "Open http://127.0.0.1:4180 in your web browser to view the evidence whiteboard."
+  ],
+  "repo": "chutingyean/Agent-Cockpit",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "shanselman/sandbox-mcp": {
+  "cat": "harness",
+  "kind": "Windows Sandbox agent tool",
+  "what": "Automates disposable Windows Sandbox virtual machines for AI agents to deploy and test desktop applications.",
+  "why": "Desktop applications often fail on clean user computers because of missing background components. Reach for this when you need an AI agent to safely test software and capture crash reports on a fresh Windows setup.",
+  "level": "setup",
+  "start": "`sbx deps app.exe`",
+  "caution": "Requires Windows Pro or Enterprise with Windows Sandbox enabled, and can only run one sandbox machine at a time.",
+  "alts": [
+   "awlevin/typesafe-computer-use",
+   "browser-use/browser-use"
+  ],
+  "packages": [],
+  "plain": "Gives your AI assistant a temporary Windows computer to safely run apps and check for missing files.",
+  "tags": [
+   "automate",
+   "code",
+   "monitor"
+  ],
+  "useFor": [
+   "Test desktop apps on a clean Windows system",
+   "Diagnose missing application dependencies automatically",
+   "Capture screenshot evidence and crash reports"
+  ],
+  "steps": [
+   "Download the release package and extract the tool files.",
+   "Run `sbx deps app.exe` to check your application for missing background files.",
+   "Configure the optional adapter if your AI assistant requires it."
+  ],
+  "repo": "shanselman/sandbox-mcp",
+  "at": "2026-11-09",
+  "source": "trending"
+ },
+ "davide-troiani/moeshift": {
+  "cat": "local",
+  "kind": "Mac model runner",
+  "what": "A memory-efficient engine for running large Mixture-of-Experts AI models locally on Apple Silicon Macs.",
+  "why": "Standard local runners require massive amounts of unified memory to run large models. Reach for MoEShift to run 125B parameter models on a Mac using under 10 GB of memory so your computer stays responsive.",
+  "level": "easy",
+  "start": "`brew install davide-troiani/moeshift/moeshift`",
+  "caution": "This is an early alpha release that requires an Apple Silicon Mac and up to 120 GB of fast SSD space for model files.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "LostRuins/koboldcpp"
+  ],
+  "packages": [],
+  "plain": "Runs huge artificial intelligence models on your Mac computer using very little memory.",
+  "tags": [
+   "private",
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Run large Mixture of Experts models on Apple Silicon",
+   "Keep Mac memory usage low while running local AI",
+   "Connect chat or coding apps to a local model server"
+  ],
+  "steps": [
+   "Install MoEShift on your Mac by running `brew install davide-troiani/moeshift/moeshift` in Terminal.",
+   "Run `moeshift` to launch the interactive setup wizard and download a model.",
+   "Connect your chat or coding application to the local server address."
+  ],
+  "repo": "davide-troiani/moeshift",
+  "at": "2026-11-09",
+  "source": "trending"
  }
 }

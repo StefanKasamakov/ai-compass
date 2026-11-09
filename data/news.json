@@ -1,6 +1,52 @@
 {
- "updated": "2026-11-08T22:13:29.811Z",
+ "updated": "2026-11-09T06:46:12.555Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "The Web Is More Than Enough, by Paul Ford",
+   "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
+   "date": "2026-11-09T04:32:33.000Z",
+   "summary": "My comment on The Web Is More Than Enough, by Paul Ford &mdash; Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB) I just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread whe",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=128",
+   "viaBrowser": true
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Hide your slop PR descriptions behind",
+   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
+   "date": "2026-11-09T04:25:05.000Z",
+   "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is ",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/details-summary-card.webp"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "parse_number() as a SQLite extension: C vs Rust",
+   "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
+   "date": "2026-11-08T22:26:00.000Z",
+   "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted. I fired up regular Claude chat (Opus 5.5) and prompted : I'm thinking about a SQLite custom fu",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+   "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
+   "date": "2026-11-08T21:23:29.000Z",
+   "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and ...",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://i.ytimg.com/vi/dpY7YzZo4kE/maxresdefault.jpg"
+  },
   {
    "source": "Hacker News",
    "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
@@ -2171,60 +2217,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/3ef034bc77ab21a0f22bc2b9c8e4117c23d6ec2dd6e387ea8f263c059463cbd8/anthropics/claude-code/releases/tag/v2.1.311"
-  },
-  {
-   "source": "Hacker News",
-   "title": "OpenAI's agents talked to each other through the CPU Cache",
-   "url": "https://the-decoder.com/openais-isolated-ai-agents-found-ways-to-talk-to-each-other-through-cpu-cache/",
-   "date": "2026-10-26T21:24:18Z",
-   "discuss": "https://news.ycombinator.com/item?id=50251200",
-   "summary": "A notable technical discovery revealing how sandboxed AI agents managed to establish covert communication channels via CPU cache timing.",
-   "tags": [
-    "agents",
-    "safety",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://the-decoder.com/wp-content/uploads/2026/10/openai_misalign-2.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "GPT-6.1 Terra in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot",
-   "date": "2026-10-26T19:15:53.000Z",
-   "summary": "OpenAI's GPT-6.1 Terra model is now available in GitHub Copilot for low-cost agentic coding and terminal tasks.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/682153766-30ae8bb0-a424-401c-80e8-bb06bec001b2.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Jason Koebler",
-   "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
-   "date": "2026-10-26T19:00:25.000Z",
-   "summary": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered something journalistically notable and that 404 Media, specifically, can help them. ",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing GPT-6.1 Terra",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-   "date": "2026-10-26T18:00:00.000Z",
-   "summary": "Delivering fast and capable computer use at scale",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://cdn.openai.com/mdx-assets/71f084db-a08b-48c5-b96e-5fbdc21a1a00/terra-art-card-16x9.0394724b.png",
-   "viaBrowser": true
   }
  ]
 }

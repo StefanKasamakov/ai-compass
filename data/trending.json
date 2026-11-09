@@ -1,59 +1,16 @@
 {
- "updated": "2026-11-08T22:13:29.811Z",
+ "updated": "2026-11-09T06:46:12.555Z",
  "items": [
   {
-   "repo": "blader/humanizer",
-   "stars": 66439,
-   "desc": "Agent skill that removes signs of AI-generated writing from text",
-   "created": "2026-01-18T05:30:15Z",
+   "repo": "chutingyean/Agent-Cockpit",
+   "stars": 465,
+   "desc": "Evidence-chain whiteboard + MCP server for AI research agents: every claim traces back to the run and code that produced it. 讓 AI agent 做研究時，每個結論都能追到產生它的程式碼。Claude Code · Codex · Cursor · Gemini CLI",
+   "created": "2026-10-26T18:44:46Z",
    "topics": [
-    "agent-skills",
-    "ai-humanizer",
-    "ai-writing",
-    "chatgpt"
-   ],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "anthropics/claude-quickstarts",
-   "stars": 19371,
-   "desc": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-   "created": "2024-08-29T19:52:32Z",
-   "topics": [],
-   "lang": "Python",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "voyager-so/vork",
-   "stars": 1108,
-   "desc": "Headless 3D and VFX engine for agents. Research preview.",
-   "created": "2026-11-05T22:37:07Z",
-   "topics": [
-    "3d",
     "ai-agents",
-    "gpu",
-    "metal"
-   ],
-   "lang": "Rust",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "yzlin286-wq/Deepscient",
-   "stars": 956,
-   "desc": "让 AI 与人类一起攻克真正的科学难题 —— 12 阶段 55 门 · 36 工具 · 98 条技能 · 证据链与可复现",
-   "created": "2026-10-21T07:44:10Z",
-   "topics": [
-    "agent-skills",
-    "cordis",
-    "deepseek-harness",
-    "literature-review"
+    "claude-code",
+    "code-review",
+    "codex"
    ],
    "lang": "JavaScript",
    "sources": [
@@ -61,40 +18,36 @@
    ]
   },
   {
-   "repo": "divagr18/qwenputer",
-   "stars": 750,
-   "desc": "A computer, compiled into the weights of a language model. An exact CPU inside Qwen3.5-4B, with Gated DeltaNet state as RAM.",
-   "created": "2026-10-19T11:48:10Z",
+   "repo": "shanselman/sandbox-mcp",
+   "stars": 343,
+   "desc": "Fresh, throwaway Windows machines for testing your apps: an MCP server and CLI that automate Windows Sandbox",
+   "created": "2026-11-06T19:02:14Z",
    "topics": [
-    "compiled-weights",
-    "gated-deltanet",
-    "interpretability",
-    "llm"
+    "ai-agents",
+    "mcp",
+    "mcp-server",
+    "testing"
    ],
-   "lang": "Python",
+   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "andrewboldi/tmux-restore",
-   "stars": 70,
-   "desc": "Reboot-proof tmux: every session, layout and scrollback comes back, and Claude Code, Codex, Gemini CLI, opencode and pi reopen the conversations they were in.",
-   "created": "2026-10-31T23:01:38Z",
+   "repo": "davide-troiani/moeshift",
+   "stars": 49,
+   "desc": "Memory efficient and high performance Mixture-of-Experts inference for Apple Silicon",
+   "created": "2026-10-21T15:20:34Z",
    "topics": [
-    "claude-code",
-    "codex",
-    "coding-agents",
-    "gemini-cli"
+    "apple-silicon",
+    "llama-cpp",
+    "llm-inference",
+    "local-llm"
    ],
-   "lang": "Shell",
+   "lang": "C++",
    "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 62,
-    "url": "https://news.ycombinator.com/item?id=50355009"
-   }
+    "new on GitHub"
+   ]
   }
  ]
 }
