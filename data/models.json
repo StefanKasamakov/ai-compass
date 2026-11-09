@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -26,13 +26,13 @@
   {
    "id": "fable",
    "p": "anthropic",
-   "name": "Claude Fable 5.1",
+   "name": "Claude Fable 5.2",
    "tier": "Frontier",
    "best": "The hardest work: long autonomous agent runs, science, deep analysis. Slow and pricey.",
-   "in": 10,
-   "out": 50,
+   "in": 8,
+   "out": 40,
    "ctx": "1M",
-   "released": "2026-09-01"
+   "released": "2026-11-09"
   },
   {
    "id": "opus",
