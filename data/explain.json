@@ -20405,5 +20405,39 @@
   "repo": "cacheMon/PrefixSim",
   "at": "2026-11-09",
   "source": "trending"
+ },
+ "Vibha-Ramprakash/claude-video-effects": {
+  "cat": "harness",
+  "kind": "Claude Code video skill",
+  "what": "A set of 51 video effects for Claude Code that automatically adds graphics, overlays, and face tracking to short videos.",
+  "why": "Adding animated visual effects and face-tracked overlays usually requires manual work in complex editing software. Reach for this skill to generate social media video edits by typing simple requests.",
+  "level": "setup",
+  "start": "git clone https://github.com/Vibha-Ramprakash/claude-video-effects ~/.claude/skills/effects",
+  "caution": "The repository includes promotional links for the author's paid Hop Studio service. These free versions do not include sound effects or automated captions.",
+  "alts": [
+   "anthropics/claude-code",
+   "howseen-ai/claude-motion-design",
+   "charlie947/motion-graphics-skills"
+  ],
+  "packages": [],
+  "plain": "Add motion graphics and face-tracked visual effects to your short videos using simple text commands.",
+  "tags": [
+   "media",
+   "supercharge"
+  ],
+  "useFor": [
+   "Add face-tracked graphics and overlays behind talking-head video clips",
+   "Edit Instagram Reels, TikToks, and YouTube Shorts using plain text commands",
+   "Apply timed animations and visual widgets to short clips"
+  ],
+  "steps": [
+   "Clone the project into your local skills folder: `git clone https://github.com/Vibha-Ramprakash/claude-video-effects ~/.claude/skills/effects`",
+   "Restart Claude Code to load the newly installed video skill.",
+   "Drag your talking-head video into the chat window.",
+   "Type your request, such as `/effects orbit from 3 to 6 seconds`."
+  ],
+  "repo": "Vibha-Ramprakash/claude-video-effects",
+  "at": "2026-11-09",
+  "source": "trending"
  }
 }
