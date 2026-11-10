@@ -1,6 +1,53 @@
 {
- "updated": "2026-11-10T07:26:43.362Z",
+ "updated": "2026-11-10T12:56:58.780Z",
  "items": [
+  {
+   "source": "Google",
+   "title": "Google Cloud launches Gemini for healthcare.",
+   "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/",
+   "date": "2026-11-10T13:00:00.000Z",
+   "summary": "Google Cloud launches Gemini for healthcare to unify clinical data and automate workflows. Reduce administrative burnout. See how it works.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/social_share_NWQpgus.max-1440x810.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "date": "2026-11-10T12:02:28.000Z",
+   "summary": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://lh3.googleusercontent.com/hn6AiI6lYFo6chi1mL6uJ9nOW9UXfsAKnSyOApiie2urHNU2tmSPUmGn0hNfWyYLRcsWCGjCIrBZSCt1ihZmvW-LDJPfyolsr5w-yvzlknZVzmaH=w1200-h630-n-nu-rw",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Helping caregivers use AI in everyday life",
+   "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+   "date": "2026-11-10T12:00:00.000Z",
+   "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5hU7ON7hfir24W1E1vtQLV/8eb49679510e09c2d19d0ad918229de4/helping-caregivers-use-ai-in-everyday-life-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Closing the AI guidance gap in education",
+   "url": "https://openai.com/index/closing-ai-guidance-gap-education",
+   "date": "2026-11-10T09:00:00.000Z",
+   "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/31dARlakgeBjEGDjdpJO19/7f707711c640f606dafacb1854d2a673/closing-the-ai-guidance-gap-in-education-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "Simon Willison",
    "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
@@ -58,6 +105,17 @@
    "ai": false,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/f2af3ea69c9dfb0d5db39045af3edef9af425f5ce3e146a419d65058355ef655/anthropics/claude-code/releases/tag/v2.1.322"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/roadshow-launch",
+   "date": "2026-11-10T00:00:00.000Z",
+   "title": "Anthropic launches roadshow for proposed initial public offering",
+   "summary": "Today Anthropic, PBC launched the roadshow for its proposed initial public offering of its Class A common stock.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg"
   },
   {
    "source": "Simon Willison",
@@ -2123,73 +2181,6 @@
    "big": false,
    "ai": false,
    "image": "https://www-cdn.anthropic.com/images/4zrzovbb/website/6a50f5ba4c0931f8d2c411f26d860955c1efeae7-1200x630.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Code-execution flaw in UEFI firmware threatens most servers on planet Earth",
-   "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
-   "date": "2026-10-27T20:35:09Z",
-   "discuss": "https://news.ycombinator.com/item?id=50265393",
-   "summary": "A major code-execution vulnerability was discovered in UEFI firmware affecting servers.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn.arstechnica.net/wp-content/uploads/2024/04/malware.jpg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.66.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.66.0",
-   "date": "2026-10-27T20:26:28Z",
-   "summary": "Google released v0.66.0 of the Gemini CLI, bringing updates and fixes to the command-line tool for interacting with Gemini models.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/1626e35f4c5faf0a6322c19734afe250de33ce592fc7f239572cefe871190a5d/google-gemini/gemini-cli/releases/tag/v0.66.0"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.312",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.312",
-   "date": "2026-10-27T20:24:20Z",
-   "summary": "Anthropic published release v2.1.312 of Claude Code, providing stability improvements and bug fixes for the terminal coding agent.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/fae0165df5f34b4174fbff3b1cb88ecace6db0821fcf5f379b43cc796c4306f1/anthropics/claude-code/releases/tag/v2.1.312"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.165.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
-   "date": "2026-10-27T20:09:38Z",
-   "summary": "OpenAI published rust-v0.165.0 of Codex CLI, updating the command-line interface used for running OpenAI coding models.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/a1b84a1681486b7c1374942328f5d8e9d7ec8249ab48bc54a1b7173c2e682233/openai/codex/releases/tag/rust-v0.165.0"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Game Boy Color on My Conference Badge",
-   "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
-   "date": "2026-10-27T19:34:18.000Z",
-   "summary": "Game Boy Color on My Conference Badge I'm at GitHub Universe this week and, similar to last year , the conference badge is a full-blown color screen computer. I've been hacking around with it again, and then I ran into with Steve Francia... who worked with Gemini to get a full NES emulator working on it, and then went a step further and deployed an emulator for both the Game Boy and the Game Boy C",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/zelda-card.jpg"
   }
  ]
 }
