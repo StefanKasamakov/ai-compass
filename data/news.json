@@ -1,6 +1,87 @@
 {
- "updated": "2026-11-09T22:27:49.931Z",
+ "updated": "2026-11-10T07:26:43.362Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
+   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
+   "date": "2026-11-10T07:28:21.000Z",
+   "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing. For shorter prompts it's priced th",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/muse-ember.webp"
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins",
+   "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
+   "date": "2026-11-10T06:34:44.000Z",
+   "summary": "November 9, 2026 — Claude Fable 5.2 and Mythos 5.2 arrive on Anthropic’s IPO roadshow day. How much thinking is worth paying for?",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/79cc3bf60b8254ca3df43668071877f25f7ce42399c0808daf10ea0aa906733b.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Prompting Claude Fable 5.2",
+   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
+   "date": "2026-11-10T05:34:14.000Z",
+   "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...] If you want the model to improve the structure as it works, say that the c",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Yonkers Rises",
+   "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
+   "date": "2026-11-10T03:53:04.000Z",
+   "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed it's location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, us",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/yonkers.webp"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.322",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+   "date": "2026-11-10T02:29:43Z",
+   "summary": "New release of Claude Code.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/f2af3ea69c9dfb0d5db39045af3edef9af425f5ce3e146a419d65058355ef655/anthropics/claude-code/releases/tag/v2.1.322"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm-anthropic 0.31",
+   "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+   "date": "2026-11-09T23:58:46.000Z",
+   "summary": "Release: llm-anthropic 0.31 Anthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis . Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious! I've added the new models to llm-anthropic , so you can now run prompts through Fable 5.2 like this: uv tool install llm",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://static.simonwillison.net/static/2026/fable-5.2-xhigh.avif"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Locating the source of a mysterious beep with Claude",
+   "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+   "date": "2026-11-09T23:57:21.000Z",
+   "summary": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in the room and trying to determine the source of the noise was frustrating, and I really didn't want to dig through every one of those boxes. So I had Claude Code build Beep Locator , ",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/beep-locator-card.jpg"
+  },
   {
    "source": "Hacker News",
    "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
@@ -60,6 +141,17 @@
    "big": false,
    "ai": false,
    "image": "https://opengraph.githubassets.com/d36e3792dff63ca76c50f0289dcb89497dc0ad851ca037d011721387369c9d52/thisisme6598/gemini_files"
+  },
+  {
+   "source": "GitHub",
+   "title": "Claude Fable 5.2 in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot",
+   "date": "2026-11-09T16:46:43.000Z",
+   "summary": "Claude Fable 5.2, Anthropic’s newest Fable model, is now generally available in GitHub Copilot. You can use it for complex, multistep coding tasks across large codebases. In early testing, Fable&#8230; The post Claude Fable 5.2 in GitHub Copilot appeared first on The GitHub Blog .",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://github.blog/wp-content/uploads/2026/11/github-copilot-social-card-4.png"
   },
   {
    "source": "OpenAI",
@@ -2098,109 +2190,6 @@
    "big": false,
    "ai": false,
    "image": "https://static.simonwillison.net/static/2026/zelda-card.jpg"
-  },
-  {
-   "source": "Latent Space",
-   "title": "How Anthropic ships Claude with Claude: Separating the Brain from the Hands",
-   "url": "https://latent.space/p/opus55/",
-   "date": "2026-10-27T18:53:10.000Z",
-   "summary": "Anthropic engineers explained how they separate core LLM reasoning from action execution tools when building Claude platform agents.",
-   "tags": [
-    "agents",
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://latent.space/og/card/post/opus55/424ddad38742d39855425564a6d71e585315f47ab534e7bd8abe95172704d214.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "How Anthropic ships the #1 LLM in the World safely: Separating the Brain from the Hands",
-   "url": "https://latent.space/p/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/",
-   "date": "2026-10-27T18:40:19.000Z",
-   "summary": "Katelyn Lesse and Angela Jiang join Latent Space to explain the engineering behind the Claude Platform: launching Opus 5.5, separating the model’s “brain” from the agent’s “hands,” scaling APIs, and building reliable managed agents. A new introduction ...",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://latent.space/og/card/post/how_anthropic_ships_the_1_llm_in_the_world_safely_separating_the_brain_from_the_hands/8075155d5daa11ae848bcad3d4266d599f27e99b16b880820046e5ab01a8a040.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Build specialized multimodal models with LFM3",
-   "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-   "date": "2026-10-27T17:16:52.000Z",
-   "summary": "Hugging Face released guides for LFM3, helping developers train and fine-tune specialized multimodal models.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/644249b08443bce4c9890a0f/wEKXxH6qGa7vmHjn5KA-W.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Can we trust LLMs to judge whether a research idea is novel?",
-   "url": "https://huggingface.co/blog/allenai/novelty-bench",
-   "date": "2026-10-27T16:12:42.000Z",
-   "summary": "",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/ZrKpGOLkSf0LmAf3bnJIX.png"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Genie 4: A new generation of world simulation",
-   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-   "date": "2026-10-27T16:01:38.000Z",
-   "summary": "Google DeepMind announced Genie 4, a new real-time world simulation model designed to generate interactive environments.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://lh3.googleusercontent.com/i7iotPkcMbMubxRzAdriO5wsIsowROonBvjLNnmPbOaRgEb1k4LKTBqay5VrcPpZi0R4il_bYCCsPYQ0Gy_-XbAw66azAGEfE-E6_9Izz5apP0BMJVE=w1200-h630-n-nu-rw",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Anthropic trained Claude on illegally obtained Stanford professors' books",
-   "url": "https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/",
-   "date": "2026-10-27T15:28:26Z",
-   "discuss": "https://news.ycombinator.com/item?id=50260814",
-   "summary": "525 points, 275 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://stanforddaily.com/wp-content/uploads/2026/10/Green-Library.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Retell uses OpenAI models to help power 100M monthly calls",
-   "url": "https://openai.com/index/retell-ai",
-   "date": "2026-10-27T15:00:00.000Z",
-   "summary": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5uWhs4tBhdZ4XPHsi9IaMG/06f4b61c4303de24a65075b3eaf500b2/retell-ai-customer-story-open-graph-acoustic-fabric.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "Coding From the Himalayas With an Offline AI Agent",
-   "url": "https://latent.space/p/offline-coding/",
-   "date": "2026-10-27T14:41:25.000Z",
-   "summary": "A guide detailing how to build a fully offline AI coding assistant using OpenCode, Ollama, and open-source models like Qwen.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://latent.space/og/card/post/offline-coding/0e77383759fd31233d79236196b04b0826dad16a259b6a6ffbbac3aa595f1471.png"
   }
  ]
 }
