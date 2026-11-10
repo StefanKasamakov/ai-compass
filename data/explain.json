@@ -20539,5 +20539,102 @@
   "repo": "effect-atlas/effect-atlas",
   "at": "2026-11-10",
   "source": "trending"
+ },
+ "GoogleChrome/modern-web-guidance": {
+  "cat": "harness",
+  "kind": "Agent skill guidance",
+  "what": "A tool and skill library that feeds modern web platform standards and browser guidelines to AI coding assistants.",
+  "why": "AI tools often write outdated or bloated web code because their training data contains older web patterns. Reach for this when you want your AI assistant to produce clean, fast, and modern HTML, CSS, and browser code.",
+  "level": "easy",
+  "start": "`npx modern-web-guidance@latest install`",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "modern-web-guidance"
+  ],
+  "plain": "Teaches your AI coding helper to write modern web code instead of outdated practices.",
+  "tags": [
+   "code",
+   "supercharge",
+   "apps"
+  ],
+  "useFor": [
+   "Update AI coding agents with modern web standards",
+   "Scan projects for legacy browser code patterns",
+   "Search modern web platform capabilities and guides"
+  ],
+  "steps": [
+   "Run `npx modern-web-guidance@latest install` to launch the installation wizard.",
+   "Search for specific guides with `npx modern-web-guidance@latest search \"query\"`.",
+   "Check your current project files with `npx modern-web-guidance@latest legacy-scan .`."
+  ],
+  "repo": "GoogleChrome/modern-web-guidance",
+  "at": "2026-11-10",
+  "source": "trending"
+ },
+ "RunanywhereAI/trnrt": {
+  "cat": "local",
+  "kind": "Trainium inference engine",
+  "what": "TrnRT is an open LLM inference engine designed to serve large language models on AWS Trainium hardware.",
+  "why": "Deploying high-performance language models on AWS Trainium usually requires complex hardware optimizations. Use TrnRT to serve open-weight models on AWS Trainium2 instances with high throughput and an OpenAI-compatible API.",
+  "level": "setup",
+  "start": "docker build -f docker/Dockerfile --build-arg TRNRT_VERSION=$(python3 -c 'import trnrt; print(trnrt.__version__)') --build-arg TRNRT_REVISION=$(git rev-parse HEAD) -t trnrt .",
+  "caution": "Requires AWS Trainium2 hardware (trn2.48xlarge), and initial offline compilation takes hours.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "An open tool to run large language models on Amazon AI chips with high speed.",
+  "tags": [
+   "save",
+   "private"
+  ],
+  "useFor": [
+   "Serve open-weight language models on AWS Trainium hardware",
+   "Provide an OpenAI-compatible chat service for applications",
+   "Run GLM models with long context windows"
+  ],
+  "steps": [
+   "Clone the repository and build the Docker container.",
+   "Build the compilation cache on an x86 host to prepare the model.",
+   "Start serving on a Trainium2 instance with `docker run --rm --privileged --network host -e NEURON_LIBTORCH_CACHE_ROOT=/cache trnrt serve --model /model --port 8000`."
+  ],
+  "repo": "RunanywhereAI/trnrt",
+  "at": "2026-11-10",
+  "source": "trending"
+ },
+ "Zleap-AI/SAG-Wiki": {
+  "cat": "memory",
+  "kind": "desktop knowledge base",
+  "what": "A lightweight knowledge base for people and agents that indexes local files and retrieves precise passages without embeddings.",
+  "why": "To search local documents and codebases quickly with exact source citations and connect local knowledge directly to AI coding tools.",
+  "level": "easy",
+  "start": "Download the latest desktop release for macOS or Windows from GitHub.",
+  "caution": "The project uses external LLM and Jev services for Q&A and semantic retrieval, which may send document context to third parties depending on your configuration.",
+  "alts": [],
+  "packages": [],
+  "plain": "An app that lets you search your local files instantly and ask questions with exact source citations.",
+  "tags": [
+   "knowledge",
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Search local files and folders",
+   "Ask questions across your documents",
+   "Give coding assistants access to your codebase"
+  ],
+  "steps": [
+   "Download the desktop release for your operating system.",
+   "Open the app and switch the sidebar to Folders.",
+   "Click the plus button to add the folder you want to search."
+  ],
+  "repo": "Zleap-AI/SAG-Wiki",
+  "at": "2026-11-10",
+  "source": "trending"
  }
 }
