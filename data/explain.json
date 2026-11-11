@@ -20636,5 +20636,142 @@
   "repo": "Zleap-AI/SAG-Wiki",
   "at": "2026-11-10",
   "source": "trending"
+ },
+ "expo/exact": {
+  "cat": "frameworks",
+  "kind": "cross platform app runtime",
+  "what": "A cross-platform application runtime that lets humans and AI coding agents build, inspect, and test native web, macOS, iOS, and Linux apps from a single codebase.",
+  "why": "Building native apps for multiple operating systems requires distinct toolchains and testing pipelines that AI agents struggle to inspect. Reach for Exact when you want AI coding agents to autonomously generate, render, and test native user interfaces across multiple platforms.",
+  "level": "setup",
+  "start": "bun scripts/exact.mjs setup",
+  "caution": "This project is pre-1.0 experimental software that changes daily without API stability or backward compatibility guarantees.",
+  "alts": [
+   "anthropics/claude-code",
+   "OpenHands/OpenHands",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A software toolkit that lets AI helpers design and test apps across web browsers, iPhones, and desktop computers.",
+  "tags": [
+   "apps",
+   "code",
+   "automate"
+  ],
+  "useFor": [
+   "Build native web, iOS, macOS, and Linux apps from one blueprint",
+   "Let AI agents control and inspect cross-platform app UIs automatically",
+   "Write declarative user interfaces using Contract with TypeScript or Rust"
+  ],
+  "steps": [
+   "Clone the repository and install dependencies.",
+   "Run `bun scripts/exact.mjs setup` once to initialize host bundles.",
+   "Run platform tests across web and mobile using `bun scripts/agent.mjs`."
+  ],
+  "repo": "expo/exact",
+  "at": "2026-11-11",
+  "source": "trending"
+ },
+ "JosssphZhou/poki": {
+  "cat": "coding",
+  "kind": "iPhone control agent",
+  "what": "Let AI agents operate a real iPhone using a local server.",
+  "why": "Automates tasks on a physical iOS device without jailbreaking, when you want an agent to interact with real mobile apps.",
+  "level": "setup",
+  "start": "./bin/setup",
+  "caution": "Reuses consumer subscription logins or apps as an API or pools free tiers, which may break the provider's terms and risk the account. Controls real device actions like sending messages and payments.",
+  "alts": [
+   "browser-use/browser-use",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "Let an artificial intelligence control your iPhone to complete tasks automatically.",
+  "tags": [
+   "automate",
+   "connect",
+   "private"
+  ],
+  "useFor": [
+   "Automate tasks on an iPhone",
+   "Search the web in mobile apps",
+   "Control phone features using an assistant"
+  ],
+  "steps": [
+   "Clone the repository and move into the folder using git clone.",
+   "Run the setup script using `./bin/setup`.",
+   "Start the server using `npm start`."
+  ],
+  "repo": "JosssphZhou/poki",
+  "at": "2026-11-11",
+  "source": "trending"
+ },
+ "muaaz9329/cheap-ag": {
+  "cat": "harness",
+  "kind": "coding agent helper",
+  "what": "An add-on for coding assistants that offwrites repetitive coding and testing tasks to a much cheaper model.",
+  "why": "Helps you save on subscription limits and API costs by having a budget-friendly model do the heavy typing while your main model oversees.",
+  "level": "setup",
+  "start": "npx cheap-agent",
+  "caution": "Reuses third-party API keys and consumer developer tools; be mindful of provider rate limits and subscription terms.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [
+   "cheap-agent"
+  ],
+  "plain": "An add-on that sends routine coding work to a cheaper AI model so you do not run out of your main assistant allowance.",
+  "tags": [
+   "code",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Write code cheaper with budget models",
+   "Save your main subscription limits",
+   "Automate coding sub-tasks securely"
+  ],
+  "steps": [
+   "Run `npx cheap-agent` in your terminal and select your preferred provider.",
+   "Paste your API key when prompted.",
+   "Open your project session and run the allow command for your coding tool."
+  ],
+  "repo": "muaaz9329/cheap-ag",
+  "at": "2026-11-11",
+  "source": "trending"
+ },
+ "splashxmoon/friday": {
+  "cat": "coding",
+  "kind": "multi-agent coding team",
+  "what": "Coordinates multiple AI coding tools to work together as a team on your project.",
+  "why": "When a single AI assistant isn't enough to handle a large coding task, you can have multiple tools split the work, review each other's code, and coordinate in one shared session.",
+  "level": "setup",
+  "start": "npx github:splashxmoon/friday",
+  "caution": "Reuses consumer subscription logins from multiple third-party coding tools to orchestrate actions, which may break provider terms of service and risk account suspension.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "An app that lets different AI coding helpers talk to each other and share a task list.",
+  "tags": [
+   "code",
+   "automate",
+   "save"
+  ],
+  "useFor": [
+   "Split a large coding task across multiple different AI assistants",
+   "Have one AI tool write code and another review the changes",
+   "Automatically switch to a backup tool when one runs out of usage"
+  ],
+  "steps": [
+   "Sign in to at least one coding tool you already use on your computer.",
+   "Run the install command in your terminal using Node.js.",
+   "Open Friday, select the coding tools it found, and start a session in your project."
+  ],
+  "repo": "splashxmoon/friday",
+  "at": "2026-11-11",
+  "source": "trending"
  }
 }

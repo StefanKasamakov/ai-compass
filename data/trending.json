@@ -1,49 +1,66 @@
 {
- "updated": "2026-11-10T19:49:14.292Z",
+ "updated": "2026-11-11T06:37:37.349Z",
  "items": [
   {
-   "repo": "GoogleChrome/modern-web-guidance",
-   "stars": 2802,
-   "desc": "Keep your coding agent up to date with the latest web best practices",
-   "created": "2026-03-23T17:49:14Z",
-   "topics": [],
-   "lang": null,
-   "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 75,
-    "url": "https://news.ycombinator.com/item?id=50443812"
-   }
-  },
-  {
-   "repo": "RunanywhereAI/trnrt",
-   "stars": 1010,
-   "desc": "The open LLM inference engine for AWS Trainium: NKI megakernels, 1M-token context, OpenAI-compatible API. By RunAnywhere.",
-   "created": "2026-10-30T18:30:04Z",
+   "repo": "expo/exact",
+   "stars": 2386,
+   "desc": "Write an app once. It runs natively on the web, macOS, iOS, and Linux, and an AI agent can build it, run it, see it, and test it on every one of them.",
+   "created": "2026-11-02T01:29:01Z",
    "topics": [
-    "aws",
-    "glm",
-    "inference",
-    "llm"
+    "ai-agents",
+    "appkit",
+    "coding-agents",
+    "cross-platform"
    ],
-   "lang": "Python",
+   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "Zleap-AI/SAG-Wiki",
-   "stars": 824,
-   "desc": "A lightweight knowledge base for people and agents, with fast indexing and precise retrieval.",
-   "created": "2026-10-18T14:51:30Z",
+   "repo": "JosssphZhou/poki",
+   "stars": 939,
+   "desc": "Let AI agents operate a real iPhone. Local MCP server and agent, no jailbreak, no extra hardware.",
+   "created": "2026-11-05T15:04:31Z",
    "topics": [
-    "knowledge-base",
-    "knowledge-graph",
-    "rag",
-    "rust"
+    "ai-agents",
+    "automation",
+    "ios",
+    "iphone"
    ],
-   "lang": "Rust",
+   "lang": "Swift",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "muaaz9329/cheap-ag",
+   "stars": 327,
+   "desc": "50x your usage with cheap-ag. Opus/Astra plans, a dirt-cheap model writes every line, and tests decide what ships. Your $20 plan stops hitting limits. One MCP server for Claude Code & Codex.",
+   "created": "2026-10-28T22:26:18Z",
+   "topics": [
+    "agentic-coding",
+    "ai-agents",
+    "anthropic",
+    "cheap-llm"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "splashxmoon/friday",
+   "stars": 62,
+   "desc": "Your coding agents, working together as one team. Claude Code, Codex, Cursor and 13 more talk to each other, split the work on a shared board and check each other's work, each in its own git worktree. Free, open source, on your own plans and your own computer. macOS, Windows, Linux.",
+   "created": "2026-10-26T04:31:26Z",
+   "topics": [
+    "agent-communication",
+    "agent-orchestration",
+    "agentic-coding",
+    "ai-agent-orchestration"
+   ],
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]

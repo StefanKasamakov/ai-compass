@@ -1,6 +1,93 @@
 {
- "updated": "2026-11-10T19:49:14.292Z",
+ "updated": "2026-11-11T06:37:37.349Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+   "url": "https://huggingface.co/blog/qvac/botpsy",
+   "date": "2026-11-11T05:01:16.000Z",
+   "summary": "Researchers released BotPsy, a sub-billion-parameter open model optimized to run agentic personal assistants directly on local devices.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6468b319b2321e47d3267049/Emr86qw6NAueYLdIEiTTD.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+   "url": "https://latent.space/p/codex-work/",
+   "date": "2026-11-11T04:49:48.000Z",
+   "summary": "OpenAI showcased upcoming Codex developer capabilities, including voice steering and cloud execution handoffs.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/27ce2150-3717-4122-ac3a-37dd0e8ce18f/openai-aiecode-feature.png?t=1794370546"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.167.1",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.1",
+   "date": "2026-11-10T21:32:01Z",
+   "summary": "OpenAI updated the Codex CLI to v0.167.1 with stability updates for command-line coding workflows.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/f087b023a043d453ce2278e6b49aeccda7e1f16eb651ed676a8c8fba79938b14/openai/codex/releases/tag/rust-v0.167.1"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.68.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0",
+   "date": "2026-11-10T21:17:07Z",
+   "summary": "Google updated the Gemini CLI tool to version 0.68.0 with bug fixes and feature enhancements.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/0643d860cc28a30764fb21e91c508019813ab45197b7a5db9f5bf85390b7a910/google-gemini/gemini-cli/releases/tag/v0.68.0"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm-gemini 0.36",
+   "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+   "date": "2026-11-10T20:09:44.000Z",
+   "summary": "Google launched Gemini 4 Carbon to general availability, providing high-end coding and reasoning capabilities starting at $2 per million input tokens.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://static.simonwillison.net/static/2026/carbon-pelican.webp"
+  },
+  {
+   "source": "GitHub",
+   "title": "Gemini 4 Carbon in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
+   "date": "2026-11-10T19:26:51.000Z",
+   "summary": "GitHub Copilot added general availability support for Gemini 4 Carbon to handle complex programming and agentic coding workflows.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/700374691-69ca0c74-ac8e-4638-82f6-46417790e655.png"
+  },
   {
    "source": "Google",
    "title": "Gemini Intelligence: New features, on more devices",
@@ -11,6 +98,35 @@
    "big": false,
    "ai": false,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Intelligence_Signature27_Hero_2784x156.width-1300.jpg"
+  },
+  {
+   "source": "Latent Space",
+   "title": "NaiveAI Promises 2,100 Tokens per Second. How Well Does It Code?",
+   "url": "https://latent.space/p/naiveai/",
+   "date": "2026-11-10T18:56:32.000Z",
+   "summary": "Tests show NaiveAI achieving 2,100 tokens per second while keeping code quality competitive with top coding models.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f3b4fd9f-a330-4090-a922-a912d25dcd7c/naiveai-feature2.png?t=1793721927"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+   "url": "https://github.com/GoogleChrome/modern-web-guidance",
+   "date": "2026-11-10T18:01:15Z",
+   "discuss": "https://news.ycombinator.com/item?id=50443812",
+   "summary": "A new open tool helps update developer context so coding agents generate modern JavaScript primitives instead of outdated syntax.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/aa72be684b0c805b3d4ff86c23dd7860fd71192555f6544d2928e01017078122/GoogleChrome/modern-web-guidance"
   },
   {
    "source": "GitHub",
@@ -185,6 +301,19 @@
    "big": false,
    "ai": false,
    "image": "https://github.blog/wp-content/uploads/2026/11/700374691-69ca0c74-ac8e-4638-82f6-46417790e655.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Pay for Hugging Face Hub with your Google Cloud Account",
+   "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+   "date": "2026-11-10T00:00:00.000Z",
+   "summary": "Hugging Face now supports paying for Hub subscriptions and services directly through Google Cloud accounts.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/hub-gcp-marketplace/thumbnail.jpg"
   },
   {
    "source": "Hugging Face",
@@ -2027,136 +2156,6 @@
    "ai": true,
    "image": "",
    "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "Why Agents Love Supabase",
-   "url": "https://latent.space/p/supabase/",
-   "date": "2026-10-28T19:48:05.000Z",
-   "summary": "A podcast discussion exploring how backend infrastructure and databases like Supabase are evolving to support autonomous AI agents.",
-   "tags": [
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://i.ytimg.com/vi/zHG6sAss_kE/maxresdefault.jpg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Evernote turns AI-driven discovery into paid subscriptions",
-   "url": "https://openai.com/ads/customers/evernote",
-   "date": "2026-10-28T19:40:49.000Z",
-   "summary": "Evernote used ChatGPT advertising features to target users and track conversions to paid subscriptions.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn.openai.com/mdx-assets/8d4159ab-7f99-40bb-8511-058aa7473e23/evernote-folded-paper-open-graph.d8a6d636.png",
-   "viaBrowser": true
-  },
-  {
-   "source": "DeepMind",
-   "title": "Gemini 4 Carbon: Our next frontier model",
-   "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
-   "date": "2026-10-28T17:00:58.000Z",
-   "discuss": "https://news.ycombinator.com/item?id=50276792",
-   "summary": "Google DeepMind announced Gemini 4 Carbon, its newest frontier-class AI model.",
-   "tags": [
-    "models"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini_carbon_102726_social_share.width-1300.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "GitHub Octoverse 2026",
-   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
-   "date": "2026-10-28T16:45:23.000Z",
-   "summary": "GitHub's 2026 Octoverse report highlighted a tripling of monthly merged pull requests driven by widespread adoption of AI coding agents.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026/github-numbers.jpg",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub",
-   "title": "Route and orchestrate models with GitHub Copilot Fusion",
-   "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
-   "date": "2026-10-28T16:00:00.000Z",
-   "summary": "GitHub Copilot Fusion is now generally available, automatically orchestrating and routing prompts to the best model for each task.",
-   "tags": [
-    "coding",
-    "product",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/11/683299408-b1d020a6-0c6d-49a5-ab57-5434d64fb7f9.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub intelligence puts your code, context, and history to work",
-   "url": "https://github.blog/changelog/2026-10-28-github-intelligence-puts-your-code-context-and-history-to-work",
-   "date": "2026-10-28T15:40:00.000Z",
-   "summary": "GitHub added contextual intelligence to Copilot, integrating repository conventions, custom skills, and team history into agent responses.",
-   "tags": [
-    "coding",
-    "skills",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/11/Changelog_NewRelease_Unfurl_GitHubIntelligence.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub Copilot in VS Code, Universe releases",
-   "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-vs-code-universe-releases",
-   "date": "2026-10-28T15:33:00.000Z",
-   "summary": "GitHub rolled out major updates to Copilot in VS Code, expanding model selection options and runtime environments for coding agents.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/682195464-b41a2f6c-87a4-4a31-bdb4-78c524ea0fe5.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "Generate and edit images directly in Copilot",
-   "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
-   "date": "2026-10-28T15:30:55.000Z",
-   "summary": "GitHub Copilot now supports generating and editing images directly inside the editor using natural language requests.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/Changelog_NewRelease_Unfurl_GenerateImagesCopilotApp.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub Copilot Fusion now supports selection of local models",
-   "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
-   "date": "2026-10-28T15:30:42.000Z",
-   "summary": "GitHub Copilot Fusion entered preview support for local models, allowing developers to route coding queries between local and cloud LLMs.",
-   "tags": [
-    "coding",
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/10/683227812-650111ed-c80a-46bf-836c-c5ced7ee95ff.png"
   }
  ]
 }
