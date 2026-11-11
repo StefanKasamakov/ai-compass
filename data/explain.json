@@ -20773,5 +20773,112 @@
   "repo": "splashxmoon/friday",
   "at": "2026-11-11",
   "source": "trending"
+ },
+ "herdrdev/herdr": {
+  "cat": "harness",
+  "kind": "terminal agent multiplexer",
+  "what": "A terminal workspace manager and multiplexer built in Rust specifically for orchestrating multiple coding agents across local and remote machines.",
+  "why": "Running several coding agents simultaneously often clutters windows and loses state on disconnects. Herdr maintains persistent background sessions, tracks whether each agent is working or blocked, and lets agents communicate with one another.",
+  "level": "setup",
+  "start": "curl -fsSL https://herdr.dev/install.sh | sh",
+  "caution": "",
+  "alts": [
+   "smtg-ai/claude-squad",
+   "manaflow-ai/cmux"
+  ],
+  "packages": [],
+  "plain": "A command-line workspace that keeps multiple AI coding assistants running and organized in the background across your machines.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Keep coding agents running in the background when closing terminal windows",
+   "Monitor multiple agents to see which ones are working or waiting for input",
+   "Manage local and remote SSH agent sessions in one unified screen"
+  ],
+  "steps": [
+   "Install herdr using `curl -fsSL https://herdr.dev/install.sh | sh` or Homebrew with `brew install herdr`.",
+   "Launch the workspace by running `herdr` in your project directory.",
+   "Start your preferred coding agents, split panes, and detach safely anytime with Ctrl+B Q."
+  ],
+  "repo": "herdrdev/herdr",
+  "at": "2026-11-11",
+  "source": "trending"
+ },
+ "duyunzhoudyz/dyz-gongwen-skills": {
+  "cat": "harness",
+  "kind": "Official document skills",
+  "what": "A suite of 22 modular agent skills for drafting, proofreading, removing AI buzzwords, and formatting Chinese official documents according to national standards.",
+  "why": "Standard AI assistants often fabricate data, sound generic, and produce unstructured text. Reach for this to ensure strict factual fidelity, avoid leaks, and output ready-to-sign GB/T 9704 Word documents.",
+  "level": "setup",
+  "start": "bash install.sh",
+  "caution": "Strictly forbids submitting classified government materials to cloud-based models; uses a noncommercial PolyForm license.",
+  "alts": [
+   "mizzlelover/gongwen-gbt9704-skill",
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [
+   "python-docx",
+   "openpyxl"
+  ],
+  "plain": "A toolkit that helps your AI draft official Chinese documents and format them into standard Word files.",
+  "tags": [
+   "docs",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Draft official administrative notices, meeting minutes, and inspection reports",
+   "Remove generic AI buzzwords while preserving factual data and formal tone",
+   "Generate Word documents formatted to GB/T 9704 government standards"
+  ],
+  "steps": [
+   "Clone or download the project folder to your local computer.",
+   "Run `bash install.sh` or the PowerShell script to install skills into your AI tools.",
+   "Install document formatting dependencies by running `pip install python-docx openpyxl`.",
+   "Or copy text from the prompts folder directly into web chat models without installing anything."
+  ],
+  "repo": "duyunzhoudyz/dyz-gongwen-skills",
+  "at": "2026-11-11",
+  "source": "trending"
+ },
+ "gogoymh/auto-ontology-mcp": {
+  "cat": "memory",
+  "kind": "Semantic layer MCP server",
+  "what": "An MCP server that provides a semantic layer for accurate database queries and compiles documents into an Obsidian-ready personal knowledge base.",
+  "why": "AI text-to-SQL often invents incorrect joins or filters without error messages, and raw document stores lack structured relations. Reach for this when you want your assistant to validate database queries before running them and maintain structured records with source quotes.",
+  "level": "setup",
+  "start": "auto-ontology-mcp demo",
+  "caution": "",
+  "alts": [
+   "NVIDIA/auto-ontology",
+   "HKUDS/LightRAG",
+   "topoteretes/cognee"
+  ],
+  "packages": [
+   "auto-ontology-mcp"
+  ],
+  "plain": "Helps your AI assistant query databases accurately and turn your notes into an organized, connected knowledge base.",
+  "tags": [
+   "knowledge",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Query databases using AI-validated SQL joins and terms",
+   "Turn unstructured notes and documents into linked Obsidian vaults",
+   "Check if questions are answerable before running database queries"
+  ],
+  "steps": [
+   "Install and launch the test environment by running `auto-ontology-mcp demo`.",
+   "Add the server to your assistant configuration using stdio or streamable HTTP.",
+   "Ask your AI assistant to model your database schema or save notes into the knowledge store."
+  ],
+  "repo": "gogoymh/auto-ontology-mcp",
+  "at": "2026-11-11",
+  "source": "trending"
  }
 }
