@@ -1,6 +1,42 @@
 {
- "updated": "2026-11-11T12:07:48.518Z",
+ "updated": "2026-11-11T19:41:07.563Z",
  "items": [
+  {
+   "source": "Google",
+   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "date": "2026-11-11T18:00:00.000Z",
+   "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini__decisions__blog-header_2784x1566.width-1300.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm 0.37.2",
+   "url": "https://simonwillison.net/2026/Nov/11/llm/",
+   "date": "2026-11-11T17:19:52.000Z",
+   "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from other providers. Daniel reported two ways this could accidentally send your configured OpenAI API key to",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Anthropic's IPO roadshow video",
+   "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
+   "date": "2026-11-11T15:11:59.000Z",
+   "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs. I'm not sure why ",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Mercor $750m Series D at $20B valuation, $3B run rate",
@@ -52,6 +88,17 @@
    "big": false,
    "ai": true,
    "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/27ce2150-3717-4122-ac3a-37dd0e8ce18f/openai-aiecode-feature.png?t=1794370546"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+   "url": "https://huggingface.co/blog/token-pooling",
+   "date": "2026-11-11T00:00:00.000Z",
+   "summary": "",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png"
   },
   {
    "source": "GitHub release",
@@ -2092,63 +2139,6 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/5gtjUYZjCpVMAAv0AbX0Cs/510ae35e592775228a8ef7b7f0911237/how-we-detect-frontier-model-misalignment-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Ropes & Gray is developing AI for transactional diligence",
-   "url": "https://openai.com/index/ropes-gray-ai-diligence",
-   "date": "2026-10-29T07:00:00.000Z",
-   "summary": "Ropes & Gray is developing AI for transactional diligence with OpenAI. Lawyers review grouped documents, summaries, and reports before advising clients.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/4lObA1HwFj5BMe9aLY4VTn/43b3536d7726d9f7b2a5ed27183a3cda/ropes-gray-ai-diligence-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Gemini 4 Carbon tops leaderboards, launches for cyber defenders",
-   "url": "https://latent.space/p/ainews-gemini-4-carbon/",
-   "date": "2026-10-29T05:55:19.000Z",
-   "summary": "Google released Gemini 4 Carbon, a specialized frontier model variant focused on cybersecurity defense.",
-   "tags": [
-    "models",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-gemini-4-carbon/95760c867a2e9becf313c47b14f0386243bc4596c54259bb71809eb955f9dad9.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude Code burns ~15–20% of your tokens on a 3-word status line",
-   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-   "date": "2026-10-29T03:33:42Z",
-   "discuss": "https://news.ycombinator.com/item?id=50284255",
-   "summary": "Users noted that the Claude Code CLI tool consumes 15 to 20 percent of prompt tokens displaying UI status lines.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5",
-   "url": "https://divagr.com/blog/qwenputer",
-   "date": "2026-10-29T00:25:45Z",
-   "discuss": "https://news.ycombinator.com/item?id=50282838",
-   "summary": "A developer demonstrated running a deterministic RISC-V CPU emulator directly within the Qwen3.5 model's context context.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://divagr.com/qwenputer/og.png"
   }
  ]
 }

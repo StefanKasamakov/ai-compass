@@ -1,25 +1,9 @@
 {
- "updated": "2026-11-11T12:07:48.518Z",
+ "updated": "2026-11-11T19:41:07.563Z",
  "items": [
   {
-   "repo": "herdrdev/herdr",
-   "stars": 50144,
-   "desc": "the runtime your coding agents live on",
-   "created": "2026-03-27T17:54:33Z",
-   "topics": [
-    "agent",
-    "agent-orchestration",
-    "ai",
-    "ai-agents"
-   ],
-   "lang": "Rust",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
    "repo": "openai/codex-security",
-   "stars": 11404,
+   "stars": 11601,
    "desc": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
    "created": "2026-07-13T22:00:13Z",
    "topics": [
@@ -35,7 +19,7 @@
   },
   {
    "repo": "shadcn/improve",
-   "stars": 10415,
+   "stars": 10707,
    "desc": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
    "created": "2026-06-10T11:06:58Z",
    "topics": [],
@@ -45,33 +29,37 @@
    ]
   },
   {
-   "repo": "duyunzhoudyz/dyz-gongwen-skills",
-   "stars": 705,
-   "desc": "公文写作 Skills｜AI 公文写作助手：防编造、守保密、GB/T 9704 一键排版，覆盖 22 种文书，支持 Claude Code / Codex / Cursor",
-   "created": "2026-10-15T19:34:19Z",
+   "repo": "FrigadeHQ/yogurt",
+   "stars": 198,
+   "desc": "Private AI meeting notes. Free and open source.",
+   "created": "2026-11-10T20:01:01Z",
    "topics": [
-    "agent-skills",
-    "ai-writing",
-    "ai-writing-tool",
-    "chinese-official-document"
+    "electron",
+    "linux",
+    "llama-cpp",
+    "local-ai"
    ],
-   "lang": "Python",
+   "lang": "TypeScript",
    "sources": [
-    "new on GitHub"
-   ]
+    "Show HN"
+   ],
+   "hn": {
+    "points": 82,
+    "url": "https://news.ycombinator.com/item?id=50454625"
+   }
   },
   {
-   "repo": "gogoymh/auto-ontology-mcp",
-   "stars": 349,
-   "desc": "NVIDIA Auto Ontology's semantic layer and a personal knowledge base as an MCP server for Claude, ChatGPT and other MCP clients. No LLM API key needed.",
-   "created": "2026-11-06T12:09:07Z",
+   "repo": "Glen-Web-App/best-memory-plugins",
+   "stars": 124,
+   "desc": "Best Memory Plugins for AI coding agents: Claude Code, Codex, Cursor, OpenCode, Cline and more. Glen, claude-mem, Supermemory, Hindsight, agentmemory, Mem0, Cognee, MemPalace and others ranked on automatic capture vs tool calls, local vs hosted, team sharing, privacy and install steps, plus built-in agent memory compared.",
+   "created": "2026-11-05T01:24:29Z",
    "topics": [
-    "chatgpt",
-    "claude",
-    "mcp",
-    "mcp-server"
+    "agent-memory",
+    "ai-coding",
+    "ai-memory",
+    "awesome"
    ],
-   "lang": "Python",
+   "lang": null,
    "sources": [
     "new on GitHub"
    ]
