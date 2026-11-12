@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -260,8 +260,8 @@
    "name": "DeepSeek V4.1 Flash 1017",
    "tier": "Open",
    "best": "Near-frontier quality you can download. Even the newer V4.1 Flash (about 763B parameters) needs a server with several graphics cards.",
-   "in": 0.01,
-   "out": 0.5,
+   "in": 0.3,
+   "out": 1.2,
    "price": "free*",
    "ctx": "1M",
    "released": "2026-10-17"
@@ -272,8 +272,8 @@
    "name": "Kimi K3.1 Pro",
    "tier": "Open",
    "best": "Strong all-rounder, good for agents.",
-   "in": 2,
-   "out": 10,
+   "in": 0.24,
+   "out": 8.41,
    "ctx": "1M",
    "released": "2026-10-23"
   },
