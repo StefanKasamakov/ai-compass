@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-11T19:41:07.563Z",
+ "updated": "2026-11-12T07:20:09.418Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.167.2",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.2",
+   "date": "2026-11-11T22:44:46Z",
+   "summary": "OpenAI released version 0.167.2 of the Codex CLI developer command-line tool.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/cd63c5250a6bcf0f1bbb84f16e31b063f605f21621635a6b580769c6aa3c6a72/openai/codex/releases/tag/rust-v0.167.2"
+  },
   {
    "source": "Google",
    "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
@@ -24,6 +38,20 @@
    "audience": "dev",
    "image": "",
    "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
+   "url": "https://github.com/FrigadeHQ/yogurt",
+   "date": "2026-11-11T15:33:06Z",
+   "discuss": "https://news.ycombinator.com/item?id=50454625",
+   "summary": "Yogurt is a free and open-source, self-hosted alternative to Granola for local AI meeting transcripts and notes.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://repository-images.githubusercontent.com/1453132706/355ef15b-b53b-4211-bd76-47cdaad9ef5b"
   },
   {
    "source": "Simon Willison",
@@ -2108,37 +2136,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/az6afuuoAkyiMImufSePe.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
-   "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
-   "date": "2026-10-29T12:41:56Z",
-   "discuss": "https://news.ycombinator.com/item?id=50288019",
-   "summary": "Gemini 4 Carbon claimed the top rank on the Artificial Analysis Intelligence Index v5 benchmark. Users can reference the benchmark scores to compare performance and token costs across frontier models.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn.sanity.io/images/6vfeftx9/articles/ce3b883faa25c57a8672817086d2da1d248fbbfa-1254x1254.png?w=1200&auto=format"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How we detect frontier model misalignment",
-   "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
-   "date": "2026-10-29T09:00:00.000Z",
-   "summary": "OpenAI detailed its layered monitoring architecture designed to detect frontier model misalignment and unauthorized agent actions before issues escalate.",
-   "tags": [
-    "safety",
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5gtjUYZjCpVMAAv0AbX0Cs/510ae35e592775228a8ef7b7f0911237/how-we-detect-frontier-model-misalignment-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }

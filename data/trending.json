@@ -1,65 +1,81 @@
 {
- "updated": "2026-11-11T19:41:07.563Z",
+ "updated": "2026-11-12T07:20:09.418Z",
  "items": [
   {
-   "repo": "openai/codex-security",
-   "stars": 11601,
-   "desc": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-   "created": "2026-07-13T22:00:13Z",
+   "repo": "XiaoyeCodes/code-animation-prompts",
+   "stars": 985,
+   "desc": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+   "created": "2026-10-29T10:45:47Z",
    "topics": [
-    "ai-security",
-    "application-security",
-    "cli",
-    "code-scanning"
+    "agent-skills",
+    "animation",
+    "claude-code",
+    "codex"
    ],
-   "lang": "TypeScript",
+   "lang": "HTML",
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   },
   {
-   "repo": "shadcn/improve",
-   "stars": 10707,
-   "desc": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
-   "created": "2026-06-10T11:06:58Z",
+   "repo": "wici-ai/inferssd",
+   "stars": 617,
+   "desc": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
+   "created": "2026-10-22T10:40:45Z",
+   "topics": [
+    "apple-silicon",
+    "cuda",
+    "gguf",
+    "inference"
+   ],
+   "lang": "C++",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "SAOS-3624/dsh-see-now",
+   "stars": 597,
+   "desc": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
+   "created": "2026-11-01T13:32:34Z",
+   "topics": [
+    "ai-agent",
+    "dsh",
+    "dsh-plugin",
+    "ffmpeg"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "klad-app/klad",
+   "stars": 140,
+   "desc": "A drawing app built for agent/human collaboration",
+   "created": "2026-11-04T15:19:25Z",
    "topics": [],
-   "lang": null,
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "FrigadeHQ/yogurt",
-   "stars": 198,
-   "desc": "Private AI meeting notes. Free and open source.",
-   "created": "2026-11-10T20:01:01Z",
-   "topics": [
-    "electron",
-    "linux",
-    "llama-cpp",
-    "local-ai"
-   ],
-   "lang": "TypeScript",
+   "lang": "Rust",
    "sources": [
     "Show HN"
    ],
    "hn": {
-    "points": 82,
-    "url": "https://news.ycombinator.com/item?id=50454625"
+    "points": 79,
+    "url": "https://news.ycombinator.com/item?id=50454951"
    }
   },
   {
-   "repo": "Glen-Web-App/best-memory-plugins",
-   "stars": 124,
-   "desc": "Best Memory Plugins for AI coding agents: Claude Code, Codex, Cursor, OpenCode, Cline and more. Glen, claude-mem, Supermemory, Hindsight, agentmemory, Mem0, Cognee, MemPalace and others ranked on automatic capture vs tool calls, local vs hosted, team sharing, privacy and install steps, plus built-in agent memory compared.",
-   "created": "2026-11-05T01:24:29Z",
+   "repo": "Bil0000/Hill-Climb",
+   "stars": 69,
+   "desc": "Make your coding agent prove \"done\". Each change is kept only if a locked test or benchmark scores it better. Claude Code and Codex skill.",
+   "created": "2026-11-02T20:15:32Z",
    "topics": [
-    "agent-memory",
+    "agent-skills",
+    "ai-agents",
     "ai-coding",
-    "ai-memory",
-    "awesome"
+    "autonomous-agents"
    ],
-   "lang": null,
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]

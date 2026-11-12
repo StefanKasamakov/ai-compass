@@ -21018,5 +21018,179 @@
   "repo": "Glen-Web-App/best-memory-plugins",
   "at": "2026-11-11",
   "source": "trending"
+ },
+ "XiaoyeCodes/code-animation-prompts": {
+  "cat": "harness",
+  "kind": "Code animation skill",
+  "what": "A collection of 341 animation style prompts, reference stills, and an offline visual picker packaged as an add-on for Claude Code and Codex.",
+  "why": "It simplifies creating code-driven graphics, video intros, and interactive particle effects by providing structured style prompts and automated HTML-to-MP4 video export tools. Reach for it when you want to build tailored animations using AI coding assistants.",
+  "level": "setup",
+  "start": "`git clone https://github.com/XiaoyeCodes/code-animation-prompts.git`",
+  "caution": "Exporting HTML animations into MP4 video files requires installing Python, Playwright, Chromium, and FFmpeg locally.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "playwright"
+  ],
+  "plain": "A library of 341 visual styles that helps your AI assistant generate web animations and videos.",
+  "tags": [
+   "media",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Generate animated web intros with Claude Code",
+   "Browse 341 visual prompt styles in a browser",
+   "Export HTML animations into MP4 video files"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/XiaoyeCodes/code-animation-prompts.git`",
+   "Run `python scripts/install_skill.py --target claude` to install the skill",
+   "Open `skills/code-animation-prompts/assets/library/风格挑选.html` in your browser to browse styles",
+   "Ask your AI assistant to generate an animation using your chosen style code"
+  ],
+  "repo": "XiaoyeCodes/code-animation-prompts",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "wici-ai/inferssd": {
+  "cat": "local",
+  "kind": "SSD model engine",
+  "what": "InferSSD is a local model engine based on llama.cpp that streams large Mixture-of-Experts AI models directly from your computer's SSD.",
+  "why": "It enables running AI models larger than your available RAM or graphics memory without buying high-end server hardware. Reach for it when you want to run massive open models locally on standard consumer computers.",
+  "level": "setup",
+  "start": "`curl -fsSL https://github.com/wici-ai/inferssd/releases/latest/download/install.sh | sh`",
+  "caution": "Requires hundreds of gigabytes of fast SSD storage and puts heavy read traffic on your drive, and the server API mode lacks built-in authentication.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "LostRuins/koboldcpp"
+  ],
+  "packages": [],
+  "plain": "Runs huge artificial intelligence models from your computer's solid-state drive when your memory is too small.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run massive MoE models on standard desktop hardware",
+   "Serve an OpenAI-compatible web API from your local drive",
+   "Chat with large open models directly in your terminal"
+  ],
+  "steps": [
+   "Run the installation script in your terminal: `curl -fsSL https://github.com/wici-ai/inferssd/releases/latest/download/install.sh | sh`",
+   "Start terminal chat or serve a model with `inferssd serve -hf mrfakename/DeepSeek-V4.1-Flash-1017-GGUF`",
+   "Open http://127.0.0.1:8080 in your web browser to start chatting"
+  ],
+  "repo": "wici-ai/inferssd",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "SAOS-3624/dsh-see-now": {
+  "cat": "harness",
+  "kind": "DSH screen vision plugin",
+  "what": "A real-time vision plugin for DSH that captures screen activity, filters out identical frames, and packs multiple frames into a single image to lower model costs.",
+  "why": "Continuous screen capturing sends repetitive images that quickly consume model token context and budget. Reach for this tool when you want an AI assistant to watch your screen, video playback, or presentation slides efficiently.",
+  "level": "setup",
+  "start": "`dsh plugin --profile web add dsh-see-now`",
+  "caution": "Requires system screen recording permissions on macOS and additional GStreamer/Python dependencies on Linux. Long sessions with frequent frame updates may eventually trigger host image-trimming behavior.",
+  "alts": [
+   "zhou-yujing114514/deepseek-harness-linux",
+   "sev7een7/dsh-sieve",
+   "chengshenyangtai/dsh-workbuddy-trae-qoder-connect"
+  ],
+  "packages": [
+   "dsh-see-now"
+  ],
+  "plain": "A tool that lets your AI assistant see your screen without wasting money on unchanged pictures.",
+  "tags": [
+   "save",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Filter unchanged screen frames before sending images to your AI assistant",
+   "Stitch multiple screen frames into one grid image to lower costs",
+   "Enable AI screen monitoring for presentations and video playback"
+  ],
+  "steps": [
+   "Install the plugin using `dsh plugin --profile web add dsh-see-now`.",
+   "Restart your DSH client to load the plugin into your workspace.",
+   "Type `/seenow` in your session chat to start screen capture and monitoring."
+  ],
+  "repo": "SAOS-3624/dsh-see-now",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "klad-app/klad": {
+  "cat": "media",
+  "kind": "2D painting app",
+  "what": "A 2D painting and animation app that lets humans and AI assistants paint and edit on the same canvas together in real time.",
+  "why": "Standard AI image generators return flat pixel images that are hard to edit. Reach for Klad when you want an AI assistant to paint editable vector-like brush strokes, layers, and character animations for games or art.",
+  "level": "setup",
+  "start": "git clone https://github.com/klad-app/klad && cd klad",
+  "caution": "Source-available license; free for personal use and companies earning under 500,000 euros yearly. This is an early project you must build from source.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "Comfy-Org/ComfyUI"
+  ],
+  "packages": [],
+  "plain": "A digital art app where you and an AI helper can draw and animate pictures on the same screen together.",
+  "tags": [
+   "media",
+   "automate",
+   "apps"
+  ],
+  "useFor": [
+   "Paint and edit 2D game graphics with an AI assistant",
+   "Animate 2D characters frame by frame",
+   "Export sprite sheets and graphics directly to game engines"
+  ],
+  "steps": [
+   "Download the files: `git clone https://github.com/klad-app/klad && cd klad`",
+   "Compile the app: `just compile`",
+   "Launch the painting editor window: `target/release/klad open`",
+   "Set up helper tools for your coding agent: `target/release/klad install`"
+  ],
+  "repo": "klad-app/klad",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "Bil0000/Hill-Climb": {
+  "cat": "harness",
+  "kind": "Agent verification skill",
+  "what": "Hill Climb is an agent skill and Python script that scores AI coding changes against locked tests, committing wins and rolling back regressions.",
+  "why": "Coding agents often claim tasks are finished even when they break existing features or alter test files to pass. Reach for this tool when you want your agent to prove every code edit passes locked benchmarks before committing.",
+  "level": "setup",
+  "start": "/plugin marketplace add Bil0000/Hill-Climb",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "An add-on for AI coding helpers that automatically cancels code edits if automated tests fail or get worse.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Force AI coding tools to prove bug fixes pass tests",
+   "Automatically undo bad code changes during multi-step tasks",
+   "Prevent AI tools from altering test files to falsely report success"
+  ],
+  "steps": [
+   "Add the plugin marketplace by running `/plugin marketplace add Bil0000/Hill-Climb`.",
+   "Install the skill with `/plugin install hill-climb@hill-climb`.",
+   "Prompt your assistant with `/hill-climb keep going until every test passes`."
+  ],
+  "repo": "Bil0000/Hill-Climb",
+  "at": "2026-11-12",
+  "source": "trending"
  }
 }
