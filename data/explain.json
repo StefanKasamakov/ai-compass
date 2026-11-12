@@ -21192,5 +21192,74 @@
   "repo": "Bil0000/Hill-Climb",
   "at": "2026-11-12",
   "source": "trending"
+ },
+ "Alishahryar1/free-claude-code": {
+  "cat": "gateway",
+  "kind": "coding agent proxy",
+  "what": "Free Claude Code is a local proxy server that routes terminal and IDE coding agents to over 60 AI providers and free model tiers.",
+  "why": "It enables developers to use alternative model providers and free quotas with agents like Claude Code, Codex, and Aider. Reach for it to prevent service disruption using automatic fallback providers and lower AI costs.",
+  "level": "setup",
+  "start": "curl -fsSL \"https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.sh\" | sh",
+  "caution": "Using consumer subscription logins or free-tier pooling through proxies may violate provider terms of service and risk account suspension.",
+  "alts": [
+   "musistudio/claude-code-router",
+   "router-for-me/CLIProxyAPI",
+   "BerriAI/litellm"
+  ],
+  "packages": [],
+  "plain": "This tool lets you use free and cheaper AI services inside popular automated coding assistants.",
+  "tags": [
+   "save",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Route terminal coding assistants to free or cheaper model providers",
+   "Set up automatic fallback models when your main provider fails",
+   "Control coding tools from a local admin dashboard or browser session"
+  ],
+  "steps": [
+   "Run the installation script in your terminal: `curl -fsSL \"https://raw.githubusercontent.com/Alishahryar1/free-claude-code/main/scripts/install.sh\" | sh`.",
+   "Launch the desktop app or run `fcc-server` to start the local proxy server.",
+   "Add your provider keys in the Admin UI and select your default model.",
+   "Launch your preferred coding assistant using commands like `fcc-claude` or `fcc-codex`."
+  ],
+  "repo": "Alishahryar1/free-claude-code",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "globalmpc/vibe-preflight": {
+  "cat": "harness",
+  "kind": "Pre-flight audit skill",
+  "what": "A skill for AI coding tools like Claude Code and Codex that audits your application for security flaws, cost traps, and missing setup before deployment.",
+  "why": "AI assistants often leave behind secret keys, fake dependencies, or misconfigured server files. Reach for this right before publishing an AI-built project to catch hidden launch risks.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/globalmpc/vibe-preflight/main/install.sh | bash",
+  "caution": "The scan relies on AI analysis and standard package checks, so it does not replace a professional human security audit.",
+  "alts": [
+   "anthropics/claude-code",
+   "graygnatconsole/mcp-audit-tool",
+   "ZeroDayEvil/ai-security-tool"
+  ],
+  "packages": [],
+  "plain": "A safety checklist tool for coding assistants that finds security flaws and hidden costs before launching your website.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Check apps for leaked secrets and exposed routes",
+   "Detect fake packages and unfinished code stubs",
+   "Audit server setup and container configuration"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://raw.githubusercontent.com/globalmpc/vibe-preflight/main/install.sh | bash` in your terminal.",
+   "Open Claude Code, Codex, or OpenCode inside your project folder.",
+   "Type `/vibe-preflight` in the assistant to run the automated safety check."
+  ],
+  "repo": "globalmpc/vibe-preflight",
+  "at": "2026-11-12",
+  "source": "trending"
  }
 }

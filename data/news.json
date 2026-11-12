@@ -1,6 +1,53 @@
 {
- "updated": "2026-11-12T07:20:09.418Z",
+ "updated": "2026-11-12T13:13:39.948Z",
  "items": [
+  {
+   "source": "OpenAI",
+   "title": "Holiday Extras is rethinking what it can build with Codex",
+   "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
+   "date": "2026-11-12T09:30:00.000Z",
+   "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/YQ7iIOI0bWh6X0QxSJfhc/52dfd3404ac0611fbab3c54ed6178bce/holiday-extras-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] D-Day (Decision Models Day)",
+   "url": "https://latent.space/p/ainews-d-day-decision-models-day/",
+   "date": "2026-11-12T05:26:54.000Z",
+   "summary": "November 11, 2026 — Google enters the decision model market. At AI Engineer, Cloudflare showed which parts of a build failure a classifier could handle. TypeSafe AI showed off their production customers.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-d-day-decision-models-day/d2600d673d83d2c42c810a6c57c6e5942326283dfe350801c137d18f262c4f90.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
+   "url": "https://latent.space/p/jev-revolution/",
+   "date": "2026-11-12T05:08:20.000Z",
+   "summary": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b4181d5a-0460-4828-b350-07feca728023/jevalution-feature.jpg?t=1794458692"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Supporting research on AI and children’s safety",
+   "url": "https://openai.com/index/children-first-declaration",
+   "date": "2026-11-12T00:00:00.000Z",
+   "summary": "OpenAI commits $2 million to research on AI and children’s safety. The work supports shared tools to measure risks and opportunities for young people.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4Sf0H3Wms7pT8ElWHCBqtC/dc443a9424134ea7518258ed6bdd9ffa/supporting-research-on-ai-and-childrens-safety-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
   {
    "source": "GitHub release",
    "title": "Codex CLI rust-v0.167.2",
@@ -14,6 +61,18 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/cd63c5250a6bcf0f1bbb84f16e31b063f605f21621635a6b580769c6aa3c6a72/openai/codex/releases/tag/rust-v0.167.2"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "aws-emulator",
+   "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+   "date": "2026-11-11T21:18:30.000Z",
+   "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog. It currently req",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "Google",
@@ -2064,78 +2123,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/85a7e5fa54c0b28bde06588dae3003e8544d58795b2c562c7132d22d88415450/openai/codex/releases/tag/rust-v0.166.0"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Building a multiplayer game world with autonomous Fable-class models",
-   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-   "date": "2026-10-29T17:00:26.000Z",
-   "summary": "Simon Willison highlighted an experiment in agentic engineering using frontier models to drive autonomous multiplayer game environments.",
-   "tags": [
-    "agents",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://static.simonwillison.net/static/2026-10-29/IMG_9406.webp"
-  },
-  {
-   "source": "OpenAI",
-   "title": "An updated Model Spec for more capable and beneficial AI",
-   "url": "https://openai.com/index/updated-model-spec",
-   "date": "2026-10-29T17:00:00.000Z",
-   "summary": "OpenAI published an updated Model Spec outlining how its models should exercise judgment and respect human intent. This informs users and developers on the behavioral guidelines shaping future model releases.",
-   "tags": [
-    "safety",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/75veJvi069XNefheZKrGT3/524e301a9565289e83b5a666d47b3da5/model-spec-update-more-capable-beneficial-ai-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "Can Frontier Models See Past a Decoy? Elorian Tests Visual Reasoning",
-   "url": "https://latent.space/p/elorian/",
-   "date": "2026-10-29T16:00:00.000Z",
-   "summary": "Latent Space reviewed visual reasoning techniques designed to help multimodal AI models identify target objects despite visual decoys.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/c0263f23-d8f4-45a5-8e75-1ea88650605f/Elorian_Decoy_Feature_Image.png?t=1793221147"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Ben Hylak",
-   "url": "https://simonwillison.net/2026/Oct/29/ben-hylak/",
-   "date": "2026-10-29T14:06:27.000Z",
-   "summary": "A commentary piece highlights how applications are shifting toward headless Model Context Protocol (MCP) servers managed by AI agents.",
-   "tags": [
-    "mcp",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Granite Switch 4.1.1 — Update models like you update software",
-   "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
-   "date": "2026-10-29T13:37:07.000Z",
-   "summary": "IBM released Granite Switch 4.1.1, an incremental update to its open enterprise model family. Developers using Granite gain updated weights for self-hosting.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/662836b742709fe826510597/az6afuuoAkyiMImufSePe.png"
   }
  ]
 }

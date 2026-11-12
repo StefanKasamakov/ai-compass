@@ -1,81 +1,61 @@
 {
- "updated": "2026-11-12T07:20:09.418Z",
+ "updated": "2026-11-12T13:13:39.948Z",
  "items": [
   {
-   "repo": "XiaoyeCodes/code-animation-prompts",
-   "stars": 985,
-   "desc": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
-   "created": "2026-10-29T10:45:47Z",
-   "topics": [
-    "agent-skills",
-    "animation",
-    "claude-code",
-    "codex"
-   ],
-   "lang": "HTML",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "wici-ai/inferssd",
-   "stars": 617,
-   "desc": "Run models larger than your RAM or VRAM by streaming MoE experts from SSD. Built on llama.cpp.",
-   "created": "2026-10-22T10:40:45Z",
-   "topics": [
-    "apple-silicon",
-    "cuda",
-    "gguf",
-    "inference"
-   ],
-   "lang": "C++",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "SAOS-3624/dsh-see-now",
-   "stars": 597,
-   "desc": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token",
-   "created": "2026-11-01T13:32:34Z",
-   "topics": [
-    "ai-agent",
-    "dsh",
-    "dsh-plugin",
-    "ffmpeg"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "klad-app/klad",
-   "stars": 140,
-   "desc": "A drawing app built for agent/human collaboration",
-   "created": "2026-11-04T15:19:25Z",
+   "repo": "Alishahryar1/free-claude-code",
+   "stars": 68895,
+   "desc": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+   "created": "2026-01-28T19:02:30Z",
    "topics": [],
-   "lang": "Rust",
+   "lang": "Python",
    "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 79,
-    "url": "https://news.ycombinator.com/item?id=50454951"
-   }
+    "GitHub Trending (daily)"
+   ]
   },
   {
-   "repo": "Bil0000/Hill-Climb",
-   "stars": 69,
-   "desc": "Make your coding agent prove \"done\". Each change is kept only if a locked test or benchmark scores it better. Claude Code and Codex skill.",
-   "created": "2026-11-02T20:15:32Z",
+   "repo": "ashhart/TensorFold",
+   "stars": 1838,
+   "desc": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+   "created": "2026-06-19T20:27:39Z",
+   "topics": [
+    "ai",
+    "ai-tools",
+    "llm",
+    "llm-inference"
+   ],
+   "lang": "Zig",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "agentes-chat/agentes-chat",
+   "stars": 822,
+   "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+   "created": "2026-11-09T00:50:28Z",
+   "topics": [
+    "agentic-ai",
+    "ai-agents",
+    "browser-automation",
+    "chat"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "globalmpc/vibe-preflight",
+   "stars": 65,
+   "desc": null,
+   "created": "2026-11-05T04:29:48Z",
    "topics": [
     "agent-skills",
-    "ai-agents",
     "ai-coding",
-    "autonomous-agents"
+    "claude-code",
+    "claude-code-skill"
    ],
-   "lang": "Python",
+   "lang": "Shell",
    "sources": [
     "new on GitHub"
    ]
