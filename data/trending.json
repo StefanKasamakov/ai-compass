@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-12T13:13:39.948Z",
+ "updated": "2026-11-12T20:01:55.860Z",
  "items": [
   {
-   "repo": "Alishahryar1/free-claude-code",
-   "stars": 68895,
-   "desc": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-   "created": "2026-01-28T19:02:30Z",
+   "repo": "GoogleChrome/modern-web-guidance-src",
+   "stars": 2682,
+   "desc": "Keep your coding agent up to date with the latest web best practices",
+   "created": "2026-01-27T20:22:24Z",
    "topics": [],
-   "lang": "Python",
+   "lang": "TypeScript",
    "sources": [
     "GitHub Trending (daily)"
    ]
   },
   {
    "repo": "ashhart/TensorFold",
-   "stars": 1838,
+   "stars": 1902,
    "desc": "LLM Inference Engine for Metal, CUDA and Vulkan.",
    "created": "2026-06-19T20:27:39Z",
    "topics": [
@@ -30,7 +30,7 @@
   },
   {
    "repo": "agentes-chat/agentes-chat",
-   "stars": 822,
+   "stars": 1075,
    "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
    "created": "2026-11-09T00:50:28Z",
    "topics": [
@@ -45,17 +45,53 @@
    ]
   },
   {
-   "repo": "globalmpc/vibe-preflight",
-   "stars": 65,
-   "desc": null,
-   "created": "2026-11-05T04:29:48Z",
+   "repo": "artemnovitckii/claude-animation-skills",
+   "stars": 691,
+   "desc": "Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph.",
+   "created": "2026-11-01T02:53:31Z",
    "topics": [
-    "agent-skills",
-    "ai-coding",
+    "animation",
     "claude-code",
-    "claude-code-skill"
+    "claude-skills",
+    "hyperframes"
    ],
-   "lang": "Shell",
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "simpsoka/zigzag",
+   "stars": 99,
+   "desc": "Free, open-source embroidery software for Mac and Windows. Turn SVG artwork into machine embroidery, edit stitches visually, and create designs with AI agents via MCP.",
+   "created": "2026-10-30T01:53:39Z",
+   "topics": [
+    "brother-skitch",
+    "embroidery",
+    "embroidery-digitizing",
+    "embroidery-software"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 92,
+    "url": "https://news.ycombinator.com/item?id=50470488"
+   }
+  },
+  {
+   "repo": "simplexai-labs/linger",
+   "stars": 115,
+   "desc": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+   "created": "2026-11-10T03:50:38Z",
+   "topics": [
+    "agent-teams",
+    "local-llm",
+    "memory",
+    "personal-agent"
+   ],
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]

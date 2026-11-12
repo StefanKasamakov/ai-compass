@@ -21261,5 +21261,208 @@
   "repo": "globalmpc/vibe-preflight",
   "at": "2026-11-12",
   "source": "trending"
+ },
+ "GoogleChrome/modern-web-guidance-src": {
+  "cat": "harness",
+  "kind": "coding agent skills",
+  "what": "A collection of curated web guidelines and skills that teach AI coding agents how to use modern browser features.",
+  "why": "AI models often output outdated JavaScript libraries because legacy code dominates their training data. Reach for this tool to feed token-efficient guidelines on native web standards, performance, and accessibility directly into your AI coding assistant.",
+  "level": "setup",
+  "start": "npx modern-web-guidance@latest install",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code",
+   "google/skills"
+  ],
+  "packages": [
+   "modern-web-guidance"
+  ],
+  "plain": "Gives your AI coding tool guidelines so it writes modern web code instead of outdated routines.",
+  "tags": [
+   "code",
+   "supercharge",
+   "apps"
+  ],
+  "useFor": [
+   "Guide AI agents on modern web standards",
+   "Scan codebases for legacy web patterns",
+   "Retrieve token-efficient browser guidelines for AI"
+  ],
+  "steps": [
+   "Run the interactive setup tool using `npx modern-web-guidance@latest install`.",
+   "Search for specific web design guides using `npx modern-web-guidance@latest search \"animate a dialog modal backdrop\"`.",
+   "Scan your project for outdated web patterns using `npx modern-web-guidance@latest legacy-scan .`."
+  ],
+  "repo": "GoogleChrome/modern-web-guidance-src",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "ashhart/TensorFold": {
+  "cat": "local",
+  "kind": "Native AI model server",
+  "what": "TensorFold is a native language model engine written in Zig that serves open-weight models on Apple Silicon and NVIDIA GPUs.",
+  "why": "Running AI models locally usually requires heavy Python environments and complex runtime setups. Reach for TensorFold when you want a single fast binary to serve open models locally with standard network interfaces.",
+  "level": "setup",
+  "start": "brew install ashhart/tensorfold/tensorfold",
+  "caution": "Requires Apple Silicon or an NVIDIA GPU with modern driver releases (CUDA 13+); experimental features like Living Weights can affect accuracy.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Runs AI models directly on your graphics card [GPU] without requiring Python.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Serve open-weight AI models locally on Mac or Linux",
+   "Run a local AI server compatible with standard apps",
+   "Chat with local models via an optional desktop app"
+  ],
+  "steps": [
+   "Install TensorFold on macOS by running `brew install ashhart/tensorfold/tensorfold`.",
+   "Download a model checkpoint using `tensorfold pull mlx-community/Qwen3.5-2B-MLX-4bit`.",
+   "Start the server with `tensorfold serve mlx-community/Qwen3.5-2B-MLX-4bit --name local-model`."
+  ],
+  "repo": "ashhart/TensorFold",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "agentes-chat/agentes-chat": {
+  "cat": "builders",
+  "kind": "Team AI chat platform",
+  "what": "An open-source, self-hosted team chat application where humans and AI agents collaborate in channels, direct messages, and automated workflows.",
+  "why": "Standard team chat tools lack deep AI agent integration, computer usage, and permission controls. Use this project when your organization wants a private Slack alternative where AI teammates can run code, browse websites, and manage scheduled routines with human oversight.",
+  "level": "setup",
+  "start": "curl -fsSL https://agentes.chat/install | sh",
+  "caution": "Running agents using signed-in desktop consumer plans for Claude Code or Codex instead of API keys may violate provider terms of service and risk your account.",
+  "alts": [
+   "paperclipai/paperclip",
+   "openclaw/openclaw",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A team chat app where people and AI helpers work together in channels on your own server.",
+  "tags": [
+   "automate",
+   "private",
+   "connect"
+  ],
+  "useFor": [
+   "Collaborate with AI agents in shared team channels and direct messages",
+   "Automate scheduled tasks like code reviews and project status reports",
+   "Require human approval before agents execute sensitive commands"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://agentes.chat/install | sh` on a Linux server.",
+   "Add your model provider key in the workspace settings.",
+   "Create AI agents with specific roles and invite them to team channels."
+  ],
+  "repo": "agentes-chat/agentes-chat",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "artemnovitckii/claude-animation-skills": {
+  "cat": "harness",
+  "kind": "Claude animation skills",
+  "what": "Six Claude Code skills that make animations for reels without needing footage.",
+  "why": "Use this when you want to create social media video explainers, maps, graphs, and line art directly from text commands inside Claude Code.",
+  "level": "setup",
+  "start": "git clone https://github.com/artemnovitckii/claude-animation-skills.git ~/claude-animation-skills",
+  "caution": "Requires local setup with ffmpeg, Node.js, and Python, plus downloading model files for voice timing.",
+  "alts": [
+   "heygen-com/hyperframes",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Adds new commands to your coding assistant so it can generate video animations like 3D maps and charts.",
+  "tags": [
+   "code",
+   "media",
+   "supercharge"
+  ],
+  "useFor": [
+   "Create 3D cartoon explainers with voiceovers",
+   "Generate animated map routes for travel videos",
+   "Build minimal line graphs and data visualizations"
+  ],
+  "steps": [
+   "Install ffmpeg and Node.js on your computer if you do not already have them.",
+   "Clone the repository to your home folder using git clone.",
+   "Run the installation script in the folder to link the skills to Claude Code."
+  ],
+  "repo": "artemnovitckii/claude-animation-skills",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "simpsoka/zigzag": {
+  "cat": "media",
+  "kind": "Embroidery editor & MCP server",
+  "what": "ZigZag is an open-source embroidery editor and Model Context Protocol server that turns SVG vector graphics into machine embroidery files.",
+  "why": "Proprietary embroidery digitizing software can be expensive and difficult to automate. Reach for ZigZag when you want to turn SVG graphics into embroidery formats on Mac or Windows, adjust stitch types visually, or let AI assistants generate patterns.",
+  "level": "easy",
+  "start": "`cargo build --release`",
+  "caution": "Windows SmartScreen warns on un-signed binaries on first launch, and sending designs to a Brother Skitch machine requires granting Bluetooth permissions.",
+  "alts": [
+   "modelcontextprotocol/typescript-sdk",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A free program for Mac and Windows that turns vector graphics into files for embroidery machines.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Convert SVG vector artwork into embroidery files like PES or DST",
+   "Connect AI tools to generate and modify embroidery patterns",
+   "Send embroidery designs to a Brother Skitch machine over Bluetooth"
+  ],
+  "steps": [
+   "Download ZigZag for Mac or Windows from the latest GitHub releases page.",
+   "Launch ZigZag to import SVG artwork and tweak stitch settings visually.",
+   "Connect your AI assistant to the included server binary to build designs."
+  ],
+  "repo": "simpsoka/zigzag",
+  "at": "2026-11-12",
+  "source": "trending"
+ },
+ "simplexai-labs/linger": {
+  "cat": "coding",
+  "kind": "Local personal agent",
+  "what": "An open-source personal AI assistant that runs on your local computer to process files, manage tasks, and coordinate agent teams.",
+  "why": "It keeps your personal data completely on your device while automating work across connected apps. Reach for it when you want a proactive private assistant without relying on third-party cloud services.",
+  "level": "easy",
+  "start": "Download the installer for your operating system from GitHub Releases.",
+  "caution": "Requires substantial computer memory and processing power to run larger AI models smoothly. The repository license is unspecified.",
+  "alts": [
+   "janhq/jan",
+   "ollama/ollama",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "A private AI helper that runs on your computer to handle tasks across your apps and files.",
+  "tags": [
+   "private",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Search across local files emails and calendar events",
+   "Coordinate sub-agent teams for research and writing",
+   "Automate routine daily work and task follow-ups privately"
+  ],
+  "steps": [
+   "Download the installer package for macOS, Windows, or Linux from GitHub Releases.",
+   "Open the application and run Quick Install to set up the local server.",
+   "Authorize your local apps and files to let the agent manage your tasks."
+  ],
+  "repo": "simplexai-labs/linger",
+  "at": "2026-11-12",
+  "source": "trending"
  }
 }

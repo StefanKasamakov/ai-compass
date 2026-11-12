@@ -1,6 +1,46 @@
 {
- "updated": "2026-11-12T13:13:39.948Z",
+ "updated": "2026-11-12T20:01:55.860Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+   "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+   "date": "2026-11-12T19:07:35.000Z",
+   "summary": "IBM released Granite 4.1 3B and 8B models featuring LLMON, an LLM-native markup language for structured generation.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6484ca4d5ff9a3d2ee52a83b/6KFZDHIJkxpICiErHLqAw.gif"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Introducing Gemini 4 Hydrogen",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+   "date": "2026-11-12T18:00:50.000Z",
+   "summary": "Google DeepMind announced Gemini 4 Hydrogen, its newest flagship model powering Search and developer tools.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg"
+  },
+  {
+   "source": "Google",
+   "title": "Google Search gets a major upgrade with Gemini 4 Hydrogen",
+   "url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
+   "date": "2026-11-12T18:00:00.000Z",
+   "summary": "Google is integrating its new Gemini 4 Hydrogen model into Google Search globally for more visual and intuitive search responses.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/HydrogenUI_socialshare.width-1300.png"
+  },
   {
    "source": "OpenAI",
    "title": "Holiday Extras is rethinking what it can build with Codex",
@@ -47,6 +87,32 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/4Sf0H3Wms7pT8ElWHCBqtC/dc443a9424134ea7518258ed6bdd9ffa/supporting-research-on-ai-and-childrens-safety-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+   "date": "2026-11-12",
+   "title": "Operate Claude Managed Agents inside your security perimeter",
+   "summary": "Anthropic released self-hosted Claude Managed Agents in private beta, allowing companies to run agents within their private cloud or on-premise infrastructure.",
+   "tags": [
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/self-hosted-claude-managed-agents/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-for-manufacturing",
+   "date": "2026-11-12",
+   "title": "Claude for Manufacturing: AI plugin for plant teams",
+   "summary": "Anthropic launched Claude for Manufacturing, a specialized plugin designed to automate quotes and plant documentation.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-for-manufacturing/opengraph-image/og"
   },
   {
    "source": "GitHub release",
@@ -2051,78 +2117,6 @@
    "ai": false,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-building-aie-code-the-top-coding-agent-conference/5b23d2a392473bc3aa4d9ff6d1748256231886548b7aa04537c84279d37eeb0f.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
-   "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
-   "date": "2026-10-30T07:09:12Z",
-   "discuss": "https://news.ycombinator.com/item?id=50300683",
-   "summary": "A security vulnerability was discovered involving a backdoor in a Claude Code VS Code extension hosted on the Cursor Marketplace.",
-   "tags": [
-    "coding",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://phorion.io/images/default-social-card.png"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.314",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314",
-   "date": "2026-10-30T01:06:26Z",
-   "summary": "Anthropic released Claude Code v2.1.314, updating its command-line AI coding assistant tool.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/0c9fe3616a4de8c08f13a0af292a570cd8a374438f1b511c2940ce1db74b5ac1/anthropics/claude-code/releases/tag/v2.1.314"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Fair use benefits everyone",
-   "url": "https://openai.com/index/fair-use-benefits-everyone",
-   "date": "2026-10-30T00:00:00.000Z",
-   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/40dN0khAbqCa0KpP5e4879/5d3e710f50e44711bc40ca55c175726a/fair-use-benefits-everyone-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "API credits benefit for eligible ChatGPT subscriptions",
-   "url": "https://simonwillison.net/2026/Oct/29/api-credits/",
-   "date": "2026-10-29T22:48:29.000Z",
-   "summary": "OpenAI now provides eligible premium ChatGPT subscribers with equivalent monthly API credits, matching a recent move by Anthropic. Subscribers can use their existing plan to experiment with developer APIs without paying extra.",
-   "tags": [
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.166.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.166.0",
-   "date": "2026-10-29T19:47:53Z",
-   "summary": "OpenAI released version 0.166.0 of the Codex CLI tool. Developers using the terminal-based assistant receive the latest updates and bug fixes for their workflow.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/85a7e5fa54c0b28bde06588dae3003e8544d58795b2c562c7132d22d88415450/openai/codex/releases/tag/rust-v0.166.0"
   }
  ]
 }
