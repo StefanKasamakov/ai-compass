@@ -1,6 +1,51 @@
 {
- "updated": "2026-11-13T12:35:06.241Z",
+ "updated": "2026-11-13T19:49:10.030Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "Gemini 4 Hydrogen in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+   "date": "2026-11-13T18:23:48.000Z",
+   "summary": "Google's Gemini 4 Hydrogen model is now generally available in GitHub Copilot, giving developers a fast option optimized for agentic coding and multi-step tasks.",
+   "tags": [
+    "coding",
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/703838156-68e44341-f202-4a1d-8cec-072b5e8d1027.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing ChatGPT Wallet",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "date": "2026-11-13T15:00:00.000Z",
+   "summary": "OpenAI introduced ChatGPT Wallet, enabling AI agents in ChatGPT and Codex to complete purchases with user approval. This allows users to let autonomous agents handle payment transactions safely.",
+   "tags": [
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/2xTvIZkcQhKk3VNFioQ4CR/4efb84a6adbddb41311f6b18158fad8b/introducing-chatgpt-wallet-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+   "date": "2026-11-13T14:05:22.000Z",
+   "summary": "Local AI runtime llama.cpp reached version 1.0.0, establishing a stable v1 baseline for running open models on local hardware. This brings improved stability and performance for developers running open-source models offline.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png"
+  },
   {
    "source": "Hacker News",
    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
@@ -56,6 +101,21 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/5070529f7dde975d157de505b433eba975a0c1a22ea4fd5cac3121300489a94b/openai/codex/releases/tag/rust-v0.168.0"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/building-always-on-agents",
+   "date": "2026-11-13",
+   "title": "Building always-on agents",
+   "summary": "Anthropic published a architecture guide for building always-on AI agents that operate continuously across multiple sessions. This provides developers with practical patterns for constructing long-running autonomous workflows.",
+   "tags": [
+    "agents",
+    "coding",
+    "skills"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/building-always-on-agents/opengraph-image/og"
   },
   {
    "source": "Simon Willison",
@@ -2069,56 +2129,6 @@
    "big": false,
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/0147SbQFof5ozkgFJTdG0j/1daae8bb107fb504ef83be52e10e550f/introducing-the-grid-protectors-program-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "The U.S. Census Bureau and “Super Intelligence”",
-   "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
-   "date": "2026-11-02T13:31:26.000Z",
-   "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to t",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026-11-01/5821A414-FAF6-4E61-B037-952C1FD80D39.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "LifeVal",
-   "url": "https://openai.com/index/lifeval",
-   "date": "2026-11-02T09:00:00.000Z",
-   "summary": "OpenAI introduced LifeVal, a new benchmark designed to evaluate how effectively AI models assist with everyday real-world tasks.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/3Iad2h8cMUadlldiZqbsAo/69264040a908479aa8843b590b0015b5/lifeval-social-crayon.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-   "url": "https://openai.com/index/dan-driscoll-joins-openai",
-   "date": "2026-11-02T00:00:00.000Z",
-   "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Qodo builds context into AI code review with Codex",
-   "url": "https://openai.com/index/qodo-codex-plugin",
-   "date": "2026-11-02T00:00:00.000Z",
-   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/388S4jJRtLn7LVaUJU9lUc/662cc99212751754f89d370e4b8901aa/qodo-codex-frosted-acrylic-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
   }
  ]

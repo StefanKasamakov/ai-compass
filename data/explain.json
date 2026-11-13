@@ -21700,5 +21700,209 @@
   "repo": "tradermonty/claude-trading-skills",
   "at": "2026-11-13",
   "source": "trending"
+ },
+ "google/elephant-goldfish-model": {
+  "cat": "harness",
+  "kind": "AI design plugin",
+  "what": "An open-source plugin for coding assistants that uses isolated AI reviewers to draft and critique software specifications.",
+  "why": "It prevents missed assumptions and flawed plans during software design by pairing a long-context assistant with fresh, context-free AI reviewers. Reach for it when drafting complex technical specifications before writing code.",
+  "level": "setup",
+  "start": "`claude plugin install egm@egm`",
+  "caution": "Requires a supported coding assistant session capable of spawning fresh sub-agent context windows for reviewer passes.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "github/spec-kit"
+  ],
+  "packages": [],
+  "plain": "An add-on for software helpers that uses isolated review passes to catch missing assumptions in project plans.",
+  "tags": [
+   "code",
+   "docs",
+   "supercharge"
+  ],
+  "useFor": [
+   "Brainstorm software features and write concept briefs with AI review",
+   "Draft and inspect technical design documents using context-free reviewers",
+   "Check existing project documentation against live source code to find drift"
+  ],
+  "steps": [
+   "Install the EGM plugin in your coding assistant using `claude plugin install egm@egm` or your environment's plugin manager.",
+   "Start a session and run `/egm-brainstorm` to explore feature requirements and construct a brief.",
+   "Draft the technical plan with `/egm-draft` and inspect it for blind spots using `/egm-review design_draft.md`."
+  ],
+  "repo": "google/elephant-goldfish-model",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "DIYgod/pinky": {
+  "cat": "harness",
+  "kind": "Phone control AI harness",
+  "what": "Pinky is a desktop and mobile app that lets AI assistants like Claude Code and Codex safely control your iPhone or Android device.",
+  "why": "Automating phone tasks with AI assistants can be risky without explicit safety guardrails. Reach for Pinky when you want AI to perform actions on your smartphone while ensuring sensitive operations like payments and message sends require human approval.",
+  "level": "easy",
+  "start": "`brew install --cask diygod/tap/pinky`",
+  "caution": "This project is currently in early pre-alpha status with experimental support across different phone operating systems.",
+  "alts": [
+   "phone-harness/mcp",
+   "To3akaRin/mac-computer-use",
+   "openinterpreter/openinterpreter"
+  ],
+  "packages": [],
+  "plain": "Lets smart computer assistants safely use your iPhone or Android phone to perform tasks for you.",
+  "tags": [
+   "connect",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Allow AI assistants to navigate and use your mobile apps",
+   "Require human approval before AI sends messages or processes payments",
+   "Run automated phone workflows from your desktop or phone"
+  ],
+  "steps": [
+   "Download Pinky for your Mac, Windows, or Linux system from the releases page.",
+   "Connect your Android or iPhone device using a USB cable.",
+   "Navigate to Settings then Agents in Pinky to link your preferred AI agent."
+  ],
+  "repo": "DIYgod/pinky",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "mdiri-ai/SoduWork": {
+  "cat": "harness",
+  "kind": "Multi-agent team workspace",
+  "what": "SoduWork is a desktop and server workspace platform that orchestrates multiple AI coding agents with human review and team collaboration features.",
+  "why": "It helps teams assign tasks to different AI coding tools, set quality criteria, automatically review outputs, and require team member sign-offs before completing work.",
+  "level": "setup",
+  "start": "git clone https://github.com/mdiri-ai/SoduWork",
+  "caution": "The project is in public beta and should be evaluated before using it for critical production workflows.",
+  "alts": [
+   "smtg-ai/claude-squad",
+   "bmad-code-org/BMAD-METHOD",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A desktop application that lets teams assign tasks to AI tools, review work, and approve final results.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Assign AI agents tasks with automated criteria checks",
+   "Review and verify code changes across different AI models",
+   "Share custom agent workflows and plugins across your team"
+  ],
+  "steps": [
+   "Clone the repository to your computer: `git clone https://github.com/mdiri-ai/SoduWork`",
+   "Run `sh start.sh --desktop` on macOS or Linux to launch the application.",
+   "Open the desktop app, log in, and configure your AI model settings."
+  ],
+  "repo": "mdiri-ai/SoduWork",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "dansugc/reverse-engineer-marketing": {
+  "cat": "harness",
+  "kind": "Marketing intelligence tool",
+  "what": "Reverse Engineer Marketing generates evidence-backed reports detailing a competitor's paid ads, SEO strategy, social media activity, and sales funnel from a single link.",
+  "why": "Analyzing a competitor's marketing strategy usually requires manually searching multiple ad libraries, sitemaps, and social profiles. Reach for this tool when you want an automated breakdown of how a company acquires customers and positions its product.",
+  "level": "easy",
+  "start": "`npx reverse-engineer-marketing demo`",
+  "caution": "Reusing consumer subscription logins (Claude Code or Codex) to run reports may violate provider terms of service and risk account actions. Contains affiliate and promotional links for creator video services.",
+  "alts": [
+   "morluto/rea",
+   "firecrawl/firecrawl",
+   "anthropics/claude-code"
+  ],
+  "packages": [
+   "reverse-engineer-marketing"
+  ],
+  "plain": "Paste any website link to automatically inspect and report on a competitor's online ads and marketing strategy.",
+  "tags": [
+   "research",
+   "automate"
+  ],
+  "useFor": [
+   "Extract active and winning paid ad creative strategies across platforms",
+   "Inspect competitor sitemaps and programmatic search optimization structures",
+   "Track historical website homepage positioning changes using web archives"
+  ],
+  "steps": [
+   "Run an instant web app demo without setting up keys using `npx reverse-engineer-marketing demo`.",
+   "Analyze any company domain by running `npx reverse-engineer-marketing targetdomain.com`.",
+   "Launch the local browser interface anytime by running `npx reverse-engineer-marketing web`."
+  ],
+  "repo": "dansugc/reverse-engineer-marketing",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "Picom-code/pico-dgx-ds4": {
+  "cat": "local",
+  "kind": "Local inference engine",
+  "what": "A high-speed server for running the DeepSeek V4.1 Flash AI model across four connected hardware units.",
+  "why": "It increases text generation speed and handles high multi-user traffic on dedicated hardware setups. Reach for it when running DeepSeek models locally for multiple team members or heavy workloads.",
+  "level": "setup",
+  "start": "`python tools/bench/bench.py`",
+  "caution": "Requires specialized hardware consisting of four NVIDIA DGX Spark units connected over a fast network switch.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "Accelerates text and image generation on multi-graphics card systems for multiple users simultaneously.",
+  "tags": [
+   "private",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Serve DeepSeek V4.1 Flash locally to multiple concurrent users",
+   "Process large text prompts with long context windows",
+   "Handle combined text and image generation requests"
+  ],
+  "steps": [
+   "Connect four DGX Spark systems over a high-speed network switch",
+   "Launch the inference engine using your local configuration settings",
+   "Run performance tests with `python tools/bench/bench.py`"
+  ],
+  "repo": "Picom-code/pico-dgx-ds4",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "afdEP/afdEP-comm": {
+  "cat": "local",
+  "kind": "GPU communication library",
+  "what": "A specialized CUDA communication library for Attention-FFN disaggregation in Mixture-of-Experts model serving.",
+  "why": "Standard DeepEP M2N introduces unnecessary wait barriers and symmetric buffers between Attention and FFN GPUs. Reach for this when serving disaggregated models on Hopper GPU clusters to reduce round-trip communication latency.",
+  "level": "dev",
+  "start": "",
+  "caution": "Requires specialized hardware setups with NVIDIA Hopper GPUs (H100 or H200) connected via NVLink or NCCL GIN.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "deepseek-ai/DeepGEMM"
+  ],
+  "packages": [],
+  "plain": "This tool speeds up data sharing between graphics cards [GPUs] when running large AI models across multiple chips.",
+  "tags": [
+   "save",
+   "private"
+  ],
+  "useFor": [
+   "Speed up token dispatch and combine latency across NVLink GPU domains",
+   "Optimize expert-parallel communication for disaggregated model serving",
+   "Benchmark GPU communication overhead against standard DeepEP M2N baselines"
+  ],
+  "steps": [
+   "Set up an Attention-FFN disaggregated GPU environment with NVIDIA Hopper hardware",
+   "Integrate afdEP-comm into your disaggregated model serving pipeline",
+   "Run `benchmarks/fastafd.py` to compare latency gains against standard DeepEP M2N"
+  ],
+  "repo": "afdEP/afdEP-comm",
+  "at": "2026-11-13",
+  "source": "trending"
  }
 }

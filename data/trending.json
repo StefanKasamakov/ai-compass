@@ -1,31 +1,100 @@
 {
- "updated": "2026-11-13T12:35:06.241Z",
+ "updated": "2026-11-13T19:49:10.030Z",
  "items": [
   {
-   "repo": "backnotprop/plannotator",
-   "stars": 10263,
-   "desc": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click. ",
-   "created": "2025-12-28T02:09:40Z",
+   "repo": "google/elephant-goldfish-model",
+   "stars": 18540,
+   "desc": "Open-source plugin for designing and reviewing software with agents",
+   "created": "2026-09-13T16:31:06Z",
    "topics": [
-    "agents",
+    "agent-skills",
+    "ai-agents",
+    "antigravity",
+    "claude-code"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "DIYgod/pinky",
+   "stars": 2078,
+   "desc": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+   "created": "2026-11-06T16:53:14Z",
+   "topics": [
+    "ai-agent",
+    "android",
     "claude-code",
-    "code-review",
+    "ios"
+   ],
+   "lang": "Go",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "mdiri-ai/SoduWork",
+   "stars": 662,
+   "desc": "The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+   "created": "2026-10-29T02:43:14Z",
+   "topics": [
+    "agent-harness",
+    "agent-orchestration",
+    "agent-workflows",
+    "ai-agents"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "dansugc/reverse-engineer-marketing",
+   "stars": 422,
+   "desc": "Paste a link, get the whole marketing machine behind it: paid ads, organic social, SEO, Reddit, founders, funnel — evidence-cited. CLI, MCP server and a local web app that uses your Claude Code or Codex plan.",
+   "created": "2026-10-18T14:30:57Z",
+   "topics": [
+    "ad-library",
+    "ai-agents",
+    "claude-code",
     "codex"
    ],
    "lang": "TypeScript",
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   },
   {
-   "repo": "tradermonty/claude-trading-skills",
-   "stars": 3886,
-   "desc": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-   "created": "2025-10-19T16:37:29Z",
-   "topics": [],
+   "repo": "Picom-code/pico-dgx-ds4",
+   "stars": 105,
+   "desc": "DeepSeek V4.1 Flash on 4x DGX Spark: 90/144 tok/s chat/code single-user, 376 tok/s at 16 distinct users, 1M context, images. Fork of blaesus/dsgx10.",
+   "created": "2026-11-05T14:44:32Z",
+   "topics": [
+    "cuda",
+    "deepseek",
+    "dgx-spark",
+    "inference-engine"
+   ],
+   "lang": "Cuda",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "afdEP/afdEP-comm",
+   "stars": 98,
+   "desc": "Expert-parallel communication for Attention–FFN Disaggregation (AFD), built on DeepEP V2",
+   "created": "2026-10-22T14:11:16Z",
+   "topics": [
+    "cuda",
+    "deepep",
+    "expert-parallelism",
+    "hopper"
+   ],
    "lang": "Python",
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   }
  ]
