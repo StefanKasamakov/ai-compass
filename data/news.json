@@ -1,6 +1,47 @@
 {
- "updated": "2026-11-13T06:53:00.433Z",
+ "updated": "2026-11-13T12:35:06.241Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "url": "https://status.claude.com/incidents/nn11wk485zfn",
+   "date": "2026-11-13T10:18:13Z",
+   "discuss": "https://news.ycombinator.com/item?id=50481187",
+   "summary": "Users experienced elevated error rates across claude.ai, Claude Code, and Anthropic's developer platform.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://dka575ofm4ao0.cloudfront.net/assets/logos/favicon-2b86ed00cfa6258307d4a3d0c482fd733c7973f82de213143b24fc062c540367.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.169.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+   "date": "2026-11-13T08:37:05Z",
+   "summary": "Codex CLI version rust-v0.169.0 has been released.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/02a97479389cf18d651dbdc5b23188e7801125d21dac1db75b043b35f474cf98/openai/codex/releases/tag/rust-v0.169.0"
+  },
+  {
+   "source": "Latent Space",
+   "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+   "url": "https://latent.space/p/artcraft/",
+   "date": "2026-11-13T04:17:25.000Z",
+   "summary": "ArtCraft used AI to rewrite Photoshop as an open-source software alternative.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/e61b607b-f9a5-4a6d-846b-f8792dd0a549/take-back-internet2.jpg?t=1794543381"
+  },
   {
    "source": "GitHub release",
    "title": "Codex CLI rust-v0.168.0",
@@ -45,6 +86,22 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/a7057a66b0fb85c1be2633a3200c824cb71fe02f96225ae71f9c803e7c7f8934/anthropics/claude-code/releases/tag/v2.1.323"
+  },
+  {
+   "source": "OpenAI",
+   "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+   "url": "https://openai.com/business/customer-stories/amplitude",
+   "date": "2026-11-12T20:00:00.000Z",
+   "summary": "Amplitude uses OpenAI models and coding agents to ship product updates in 1 to 2 days.",
+   "tags": [
+    "models",
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/7xyAtQVA8C5CZGHW7aQidr/a71aedc6e0ed7395f081f75411af6d03/amplitude-wave-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Hugging Face",
@@ -117,6 +174,20 @@
   },
   {
    "source": "OpenAI",
+   "title": "Gondola doubles revenue as its team builds more with Codex",
+   "url": "https://openai.com/business/customer-stories/gondola",
+   "date": "2026-11-12T12:00:00.000Z",
+   "summary": "Gondola doubled revenue by using OpenAI's Codex to increase its lead engineer's productivity by 50%.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/2gyH3WDalGtGbAK3JBzNl2/29480242d3537e70529f699d9662e99c/Gondola-Option-A-SEO-1920x1080.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
    "title": "Holiday Extras is rethinking what it can build with Codex",
    "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
    "date": "2026-11-12T09:30:00.000Z",
@@ -161,6 +232,19 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/4Sf0H3Wms7pT8ElWHCBqtC/dc443a9424134ea7518258ed6bdd9ffa/supporting-research-on-ai-and-childrens-safety-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-tag-guide-for-startups",
+   "date": "2026-11-12",
+   "title": "The Claude Tag guide for startups",
+   "summary": "Anthropic released a guide for startups on how to integrate Claude into Slack workspaces.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-tag-guide-for-startups/opengraph-image/og"
   },
   {
    "source": "Anthropic",
@@ -550,6 +634,34 @@
    "viaBrowser": true
   },
   {
+   "source": "Hacker News",
+   "title": "AI usage generates a fragile codebase",
+   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+   "date": "2026-11-10T10:25:58Z",
+   "discuss": "https://news.ycombinator.com/item?id=50438318",
+   "summary": "Developers discuss the risks of fragile codebases resulting from heavy AI code generation.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://www.evanxmerz.com/images/ai-codebases-are-a-house-of-cards.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Socratic Tutor",
+   "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
+   "date": "2026-11-10T10:18:22Z",
+   "discuss": "https://news.ycombinator.com/item?id=50438261",
+   "summary": "An AI-powered Socratic tutor tool designed to help students learn by asking guiding questions.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://opengraph.githubassets.com/a7b8c4e2e239113273646f44422d9964593825178eb9fb91acbf8b312067bca8/janestreet/agent_skills"
+  },
+  {
    "source": "OpenAI",
    "title": "Introducing Businesses in ChatGPT",
    "url": "https://openai.com/index/introducing-businesses-chatgpt",
@@ -779,6 +891,21 @@
    "big": false,
    "ai": false,
    "image": "https://static.simonwillison.net/static/2026/beep-locator-card.jpg"
+  },
+  {
+   "source": "Hacker News",
+   "title": "A year after the 100% AI mandate nobody understands our code",
+   "url": "https://www.reddit.com/r/ClaudeCode/comments/1xq2n3t/a_year_after_the_100_ai_mandate_nobody/",
+   "date": "2026-11-09T22:19:12Z",
+   "discuss": "https://news.ycombinator.com/item?id=50433079",
+   "summary": "A developer discussion on the long-term maintainability challenges of codebases built under 100% AI generation mandates.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "Hacker News",
@@ -1993,133 +2120,6 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/388S4jJRtLn7LVaUJU9lUc/662cc99212751754f89d370e4b8901aa/qodo-codex-frosted-acrylic-seo-image-1920x1080.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/message-threads",
-   "date": "2026-11-02",
-   "title": "Make long-running agents faster with message threads",
-   "summary": "New in the Messages API, send your conversation once, and the API receives only what’s new with every turn.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://claude.com/resources/articles/message-threads/opengraph-image/og"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Kyle Kingsbury",
-   "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
-   "date": "2026-11-01T16:49:04.000Z",
-   "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
-   "url": "https://github.com/ivankovic/omnidiff",
-   "date": "2026-11-01T13:02:30Z",
-   "discuss": "https://news.ycombinator.com/item?id=50325253",
-   "summary": "OmniDiff is a new open-source, content-aware Git diff tool written in Rust.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://repository-images.githubusercontent.com/1078209382/05657b56-1763-4014-bae7-bb30db0db322"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "How We Took Over ChatGPT Accounts",
-   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
-   "date": "2026-10-31T23:15:22.000Z",
-   "summary": "Security researchers found a vulnerability in ChatGPT's HTML preview feature that could allow unauthorized account access.",
-   "tags": [
-    "safety",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-llm 0.1a9",
-   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
-   "date": "2026-10-31T22:10:01.000Z",
-   "summary": "datasette-llm 0.1a9 now automatically uses your default LLM CLI model, letting you run Datasette Agent without extra manual configuration.",
-   "tags": [
-    "agents",
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "ChatGPT and Codex usage limits merging",
-   "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
-   "date": "2026-10-31T21:49:07Z",
-   "discuss": "https://news.ycombinator.com/item?id=50320588",
-   "summary": "OpenAI is combining usage rate limits across ChatGPT and Codex, directly changing how developers budget API and web quotas.",
-   "tags": [
-    "product",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://help.openai.com/og-image.png",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Anthropic takes steps to block Claude from reverse-engineering video games",
-   "url": "https://mashable.com/tech/anthropic-takes-steps-to-block-video-game-cloning-and-reverse-engineering",
-   "date": "2026-10-31T21:07:58Z",
-   "discuss": "https://news.ycombinator.com/item?id=50320255",
-   "summary": "Anthropic implemented new guardrails to prevent Claude from being utilized to reverse-engineer closed video game binaries.",
-   "tags": [
-    "safety",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://helios-i.mashable.com/imagery/articles/00cSAXoWdRYObLNtN71MkCO/hero-image.fill.size_1200x675.v1793455880.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
-   "url": "https://latent.space/p/arca/",
-   "date": "2026-10-31T16:05:00.000Z",
-   "summary": "A deep dive on building financial AI agents with persistent memory harnesses that run multi-day autonomous workflows.",
-   "tags": [
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://i.ytimg.com/vi/KM3VQZKjpiY/maxresdefault.jpg"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Google admits AI Mode hurts Search revenue; -15% $500B drop worst since 2004 IPO. AI Bear Market coming?",
-   "url": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/",
-   "date": "2026-10-31T05:00:48.000Z",
-   "summary": "Google reports that AI-driven search modes impact traditional search revenue.",
-   "tags": [
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f13715b2-ed2d-4a14-bbf6-85f184b4b202/SCR-20261030-svzc.png?t=1793423031"
   }
  ]
 }

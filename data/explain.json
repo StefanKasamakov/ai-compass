@@ -21633,5 +21633,72 @@
   "repo": "dodo-labs-ai/mem-forge",
   "at": "2026-11-13",
   "source": "trending"
+ },
+ "backnotprop/plannotator": {
+  "cat": "harness",
+  "kind": "Agent review workspace",
+  "what": "Plannotator is a local browser-based review application that lets you annotate AI agent plans, HTML mockups, and code diffs to send feedback back to the agent.",
+  "why": "AI agents frequently run tasks autonomously without a clear visual review step. Reach for Plannotator when you want to review, comment on, and approve agent plans or code changes in your browser before letting the agent continue.",
+  "level": "setup",
+  "start": "plannotator inbox",
+  "caution": "The app automatically connects to GitHub when loaded to check for software updates, and this check currently cannot be disabled.",
+  "alts": [
+   "anthropics/claude-code",
+   "siteboon/claudecodeui",
+   "The-PR-Agent/pr-agent"
+  ],
+  "packages": [],
+  "plain": "A visual web app that lets you review and leave notes on AI helper plans and code changes.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Review AI-generated plans and code diffs before execution",
+   "Annotate rendered HTML pages and specs with inline notes",
+   "Send structured feedback back to AI coding helpers from your browser"
+  ],
+  "steps": [
+   "Launch the central review workspace by running `plannotator inbox`.",
+   "Connect your preferred coding agent like Claude Code or Codex using plugins.",
+   "Inspect plans or code diffs in your browser and click send to return feedback."
+  ],
+  "repo": "backnotprop/plannotator",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "tradermonty/claude-trading-skills": {
+  "cat": "harness",
+  "kind": "Claude trading skills pack",
+  "what": "A toolkit of custom Claude skills and workflows for stock market checking, trade sizing, and investment journaling.",
+  "why": "It helps individual investors build structured habits around risk management and trade reviews without outsourcing final decisions to AI. Reach for it when you want to run disciplined daily market checks or weekly portfolio reviews inside Claude.",
+  "level": "setup",
+  "start": "",
+  "caution": "This tool is for process planning only and is not financial advice. AI analysis does not guarantee future market results.",
+  "alts": [
+   "anthropics/claude-code",
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [],
+  "plain": "A set of custom tools for Claude that help you review stock markets, calculate trade sizes, and keep a journal.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Run a daily 15-minute stock market regime check using public data",
+   "Calculate position sizes and maintain local trade decision journals",
+   "Review weekly portfolio performance and refine investment rules"
+  ],
+  "steps": [
+   "Download pre-built skill package files from the latest GitHub release",
+   "Upload the desired skill files into the Skills tab of your Claude web app",
+   "Follow a workflow manifest to run daily market checks or weekly reviews"
+  ],
+  "repo": "tradermonty/claude-trading-skills",
+  "at": "2026-11-13",
+  "source": "trending"
  }
 }
