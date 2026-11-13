@@ -1,97 +1,81 @@
 {
- "updated": "2026-11-12T20:01:55.860Z",
+ "updated": "2026-11-13T06:53:00.433Z",
  "items": [
   {
-   "repo": "GoogleChrome/modern-web-guidance-src",
-   "stars": 2682,
-   "desc": "Keep your coding agent up to date with the latest web best practices",
-   "created": "2026-01-27T20:22:24Z",
+   "repo": "vercel-labs/ui",
+   "stars": 2273,
+   "desc": "A library of behaviors for agents to build the next generation of user interfaces.",
+   "created": "2026-10-26T17:39:27Z",
+   "topics": [
+    "accessibility",
+    "agent",
+    "agents",
+    "aria"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Parcha-ai/agentrun",
+   "stars": 676,
+   "desc": "AgentRun is an open-source platform that supercharges your agents. It adds self-improvement, durable execution and a control plane on top of your favorite agent harness. Your agents become smarter, more fault tolerant and use fewer tokens with every run.",
+   "created": "2026-09-23T00:27:34Z",
    "topics": [],
-   "lang": "TypeScript",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "ashhart/TensorFold",
-   "stars": 1902,
-   "desc": "LLM Inference Engine for Metal, CUDA and Vulkan.",
-   "created": "2026-06-19T20:27:39Z",
-   "topics": [
-    "ai",
-    "ai-tools",
-    "llm",
-    "llm-inference"
-   ],
-   "lang": "Zig",
-   "sources": [
-    "GitHub Trending (daily)"
-   ]
-  },
-  {
-   "repo": "agentes-chat/agentes-chat",
-   "stars": 1075,
-   "desc": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
-   "created": "2026-11-09T00:50:28Z",
-   "topics": [
-    "agentic-ai",
-    "ai-agents",
-    "browser-automation",
-    "chat"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "artemnovitckii/claude-animation-skills",
-   "stars": 691,
-   "desc": "Six Claude Code skills that make animations for reels, no footage needed: 3D cartoon explainer, stick figure, minimal line art, 3D map route, exploded view, line graph.",
-   "created": "2026-11-01T02:53:31Z",
-   "topics": [
-    "animation",
-    "claude-code",
-    "claude-skills",
-    "hyperframes"
-   ],
    "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "simpsoka/zigzag",
-   "stars": 99,
-   "desc": "Free, open-source embroidery software for Mac and Windows. Turn SVG artwork into machine embroidery, edit stitches visually, and create designs with AI agents via MCP.",
-   "created": "2026-10-30T01:53:39Z",
-   "topics": [
-    "brother-skitch",
-    "embroidery",
-    "embroidery-digitizing",
-    "embroidery-software"
-   ],
-   "lang": "Rust",
    "sources": [
     "Show HN"
    ],
    "hn": {
-    "points": 92,
-    "url": "https://news.ycombinator.com/item?id=50470488"
+    "points": 91,
+    "url": "https://news.ycombinator.com/item?id=50471650"
    }
   },
   {
-   "repo": "simplexai-labs/linger",
-   "stars": 115,
-   "desc": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
-   "created": "2026-11-10T03:50:38Z",
+   "repo": "hyperionaidev/smolmaxxing",
+   "stars": 371,
+   "desc": "maxxing the ability to run different LLMs on the smallest devices possible",
+   "created": "2026-11-04T07:09:41Z",
    "topics": [
-    "agent-teams",
-    "local-llm",
-    "memory",
-    "personal-agent"
+    "edge-ai",
+    "llama-cpp",
+    "llama-cpp-alternative",
+    "llm"
+   ],
+   "lang": "C",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "SonicloudTech/mouse-mcp",
+   "stars": 341,
+   "desc": "Hardware mouse MCP server for AI agents on Windows x64. USB HID control and voice dictation; requires compatible uMouse hardware and firmware. 面向 AI 智能体的硬件鼠标 MCP：USB HID 控制与语音听写，需要兼容的 uMouse 设备与固件。",
+   "created": "2026-10-20T06:04:56Z",
+   "topics": [
+    "ai-agents",
+    "computer-use",
+    "desktop-automation",
+    "hardware"
    ],
    "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "dodo-labs-ai/mem-forge",
+   "stars": 103,
+   "desc": "Give every agent your team's brain on day one. The memory layer for AI agents. Everything your team knows. Cited, and always up to date.",
+   "created": "2026-10-26T15:48:37Z",
+   "topics": [
+    "agent-memory",
+    "claude-code",
+    "codex",
+    "knowledge-base"
+   ],
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]

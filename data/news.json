@@ -1,6 +1,51 @@
 {
- "updated": "2026-11-12T20:01:55.860Z",
+ "updated": "2026-11-13T06:53:00.433Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.168.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.168.0",
+   "date": "2026-11-13T03:54:29Z",
+   "summary": "OpenAI released update rust-v0.168.0 for its Codex CLI coding tool.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/5070529f7dde975d157de505b433eba975a0c1a22ea4fd5cac3121300489a94b/openai/codex/releases/tag/rust-v0.168.0"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "llm-gemini 0.37",
+   "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+   "date": "2026-11-12T22:55:19.000Z",
+   "summary": "Simon Willison detailed the launch and confusing multi-tier pricing structure of Google's new Gemini 4 Hydrogen model.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://static.simonwillison.net/static/2026/gemini-4-card.jpg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.323",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "date": "2026-11-12T22:12:13Z",
+   "summary": "Anthropic released version 2.1.323 of Claude Code, updating its command-line coding agent tool.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/a7057a66b0fb85c1be2633a3200c824cb71fe02f96225ae71f9c803e7c7f8934/anthropics/claude-code/releases/tag/v2.1.323"
+  },
   {
    "source": "Hugging Face",
    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
@@ -13,6 +58,35 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/6484ca4d5ff9a3d2ee52a83b/6KFZDHIJkxpICiErHLqAw.gif"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Gemini 4 Hydrogen and Orchestrator",
+   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
+   "date": "2026-11-12T18:52:01Z",
+   "discuss": "https://news.ycombinator.com/item?id=50472260",
+   "summary": "Google announced Orchestrator alongside Gemini 4 Hydrogen to manage complex multi-agent execution flows.",
+   "tags": [
+    "models",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://antigravity.google/assets/image/blog/4-Hydrogen---Wide.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Gemini 4 Hydrogen",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "date": "2026-11-12T18:01:48Z",
+   "discuss": "https://news.ycombinator.com/item?id=50471431",
+   "summary": "Google released Gemini 4 Hydrogen, bringing higher speeds and lower API pricing to its model line.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg"
   },
   {
    "source": "DeepMind",
@@ -87,6 +161,34 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/4Sf0H3Wms7pT8ElWHCBqtC/dc443a9424134ea7518258ed6bdd9ffa/supporting-research-on-ai-and-childrens-safety-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-meetings",
+   "date": "2026-11-12",
+   "title": "Introducing Claude Meetings, now in beta",
+   "summary": "Anthropic launched Claude Meetings in beta, allowing users to bring Claude into video calls to summarize discussions and write documents.",
+   "tags": [
+    "product",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/claude-meetings/opengraph-image/og"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work",
+   "date": "2026-11-12",
+   "title": "Which Claude model is best to use for knowledge work",
+   "summary": "Anthropic published an overview comparing Opus 5.5 with its other models to help users pick the best option for complex knowledge work.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work/opengraph-image/og"
   },
   {
    "source": "Anthropic",
@@ -188,6 +290,21 @@
    "big": false,
    "ai": false,
    "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "DeepMind",
+   "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+   "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+   "date": "2026-11-11T15:00:15.000Z",
+   "summary": "Google DeepMind released AlphaGenome 2, a specialized model that predicts how genomic variations affect specific human cell types.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://lh3.googleusercontent.com/VPOhADdGu1T7kK_gWBiGzyVawQbKCjpL3-B0L0wxpYCyr8cHxviYmo9Hghy4f1laeIo2YKwuz8E07TR9HWWk2b0EONi0uvju-8TDLHX6YWHG4dXe3w=w1200-h630-n-nu-rw",
    "viaBrowser": true
   },
   {
@@ -2003,120 +2120,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f13715b2-ed2d-4a14-bbf6-85f184b4b202/SCR-20261030-svzc.png?t=1793423031"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.316",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.316",
-   "date": "2026-10-31T01:01:35Z",
-   "summary": "Anthropic released version 2.1.316 of the Claude Code command-line coding assistant.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/639b8a13bd385ab2d9ee43c30143012fba4a248bf301cf7af5e8bc73550fa4a3/anthropics/claude-code/releases/tag/v2.1.316"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "nemotron-halloween",
-   "url": "https://huggingface.co/blog/nvidia/nemotron-halloween",
-   "date": "2026-10-30T17:57:24.000Z",
-   "summary": "Hugging Face hosted the new nemotron-halloween model checkpoint for community access and fine-tuning.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6ab2a746c7d0655b3d8dfbb9/fownH6rn05tSp1jDBTz8m.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Cisco gives engineer unlimited AI tokens to rewrite legacy code",
-   "url": "https://fortune.com/2026/10/30/cisco-president-jeetu-patel-gen-z-27-year-old-unlimited-ai-tokens-rewrite-legacy-code-entry-level-jobs/",
-   "date": "2026-10-30T14:08:20Z",
-   "discuss": "https://news.ycombinator.com/item?id=50304122",
-   "summary": "A case report on Cisco granting an internal engineer uncapped AI token budgets to modernize legacy codebases using automated coding tools.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://fortune.com/img-assets/wp-content/uploads/2026/10/GettyImages-2270629609-e1793295597735.jpg?resize=1200,600"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Backdoors in official Claude Code extensions",
-   "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
-   "date": "2026-10-30T11:05:53Z",
-   "discuss": "https://news.ycombinator.com/item?id=50302334",
-   "summary": "Security researchers identified backdoor vulnerabilities in official extensions for the Claude Code tool. Users of Claude Code should check their installed extensions to prevent unauthorized code execution.",
-   "tags": [
-    "coding",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Anthropic hacked to deliver remote access trojan",
-   "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
-   "date": "2026-10-30T10:22:51Z",
-   "discuss": "https://news.ycombinator.com/item?id=50301983",
-   "summary": "Reports surfaced showing compromise attempts abusing Anthropic infrastructure to deliver a remote access trojan. Users and administrators should review their Anthropic API connections and integrations for suspicious activity.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://miro.medium.com/v2/resize:fit:1200/0*_23N459qQLUZcQJ7.jpeg",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Making it easier for websites to express AI training preferences",
-   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-   "date": "2026-10-30T09:30:00.000Z",
-   "summary": "OpenAI introduced a shared robots.txt signal to help website operators easily manage and communicate their AI training preferences.",
-   "tags": [
-    "business",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/4fvNR0KxKmPYu4fRXtEgKp/4a522ef61a6f983b0b65ad39c2a71e4c/websites-toeexpress-ai-training-preferences-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Community safety report and new protections for teens",
-   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-   "date": "2026-10-30T09:00:00.000Z",
-   "summary": "OpenAI strengthened violence prevention measures in ChatGPT with expanded safeguards and earlier interventions.",
-   "tags": [
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/4Bjdb6r2RnzPzTHsby9gGq/d1b04269dc8a4df875d201341fe6d254/51GTG8rZQTzq9iEcTVFvUi--seo-v003.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Building AIE CODE: The top Coding Agent Conference",
-   "url": "https://latent.space/p/ainews-building-aie-code-the-top-coding-agent-conference/",
-   "date": "2026-10-30T08:24:29.000Z",
-   "summary": "Mistral’s open-weight release, frontier monitoring, and the day’s AI Twitter and Reddit recaps.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-building-aie-code-the-top-coding-agent-conference/5b23d2a392473bc3aa4d9ff6d1748256231886548b7aa04537c84279d37eeb0f.png"
   }
  ]
 }

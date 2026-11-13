@@ -21464,5 +21464,174 @@
   "repo": "simplexai-labs/linger",
   "at": "2026-11-12",
   "source": "trending"
+ },
+ "vercel-labs/ui": {
+  "cat": "frameworks",
+  "kind": "agent UI framework",
+  "what": "A headless UI library that gives coding agents reusable interface behaviors like focus management, selection, and keyboard navigation across web frameworks.",
+  "why": "Building accessible user interfaces with AI code generators often produces broken focus states or missing screen-reader attributes. Reach for this when you want AI agents to construct reliable UI components in React, Vue, Svelte, or Solid.",
+  "level": "dev",
+  "start": "`npm install @ui-sdk/react @ui-sdk/core`",
+  "caution": "The project is currently in beta, so APIs and component structures may change before final release.",
+  "alts": [
+   "vercel/ai",
+   "CopilotKit/OpenBot"
+  ],
+  "packages": [
+   "@ui-sdk/core",
+   "@ui-sdk/react"
+  ],
+  "plain": "A set of building blocks that helps AI tools construct accessible web buttons, menus, and search boxes.",
+  "tags": [
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Generate accessible UI components using AI coding tools",
+   "Add keyboard navigation and focus management to web apps",
+   "Build cross-framework UI primitives for React, Vue, or Svelte"
+  ],
+  "steps": [
+   "Install the core package and framework adapter with `npm install @ui-sdk/react @ui-sdk/core`",
+   "Add the UI skill to your AI helper with `npx skills add vercel-labs/ui --skill ui-sdk`",
+   "Ask your AI tool to generate accessible components using UI SDK primitives"
+  ],
+  "repo": "vercel-labs/ui",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "Parcha-ai/agentrun": {
+  "cat": "harness",
+  "kind": "Agent execution platform",
+  "what": "AgentRun is an open-source control plane and execution platform that adds learning, fault tolerance, and cost tracking to AI agents.",
+  "why": "AI agents often repeat the exact same search steps on every run, wasting money. Reach for AgentRun when you want your agents to save learned skills across runs, survive server restarts, and remain under human approval controls.",
+  "level": "setup",
+  "start": "npx @parcha/agentrun",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "anomalyco/opencode"
+  ],
+  "packages": [
+   "@parcha/agentrun"
+  ],
+  "plain": "A visual control panel that runs AI helpers, tracks spending, and lets them remember past work.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "save"
+  ],
+  "useFor": [
+   "Track agent spending across multiple frameworks",
+   "Save learned skills and notes for future runs",
+   "Pause execution for human approvals during workflow runs"
+  ],
+  "steps": [
+   "Start the platform in your terminal with `npx @parcha/agentrun`.",
+   "Open the web interface in your browser and add your model provider key in Settings.",
+   "Select a prebuilt template in the dashboard to launch your first agent run."
+  ],
+  "repo": "Parcha-ai/agentrun",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "hyperionaidev/smolmaxxing": {
+  "cat": "local",
+  "kind": "Low-RAM model runner",
+  "what": "smolmaxxing provides custom patches for llama.cpp that enable text-generating AI models to run on low-memory hardware like TV boxes and old tablets.",
+  "why": "Most AI model engines require gigabytes of system memory and high-end processors to run locally. Reach for smolmaxxing when you want to run AI models on low-spec hardware by reading model data directly from device storage.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires custom-patched builds of llama.cpp and specially reformatted model files; standard llama.cpp tools cannot open these models.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "LostRuins/koboldcpp"
+  ],
+  "packages": [],
+  "plain": "Run text-generating AI models on low-power devices like TV boxes and old tablets by saving hardware memory.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run AI models on older tablets and Android TV boxes",
+   "Stream model parameters from device storage to bypass memory limits",
+   "Benchmark custom compressed model formats on low-spec processors"
+  ],
+  "steps": [
+   "Download ready-made custom model files from Hugging Face",
+   "Build or install the custom patched version of llama.cpp for your target device",
+   "Follow the specific setup guides for your Android TV box or jailbroken iOS device"
+  ],
+  "repo": "hyperionaidev/smolmaxxing",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "SonicloudTech/mouse-mcp": {
+  "cat": "harness",
+  "kind": "hardware mouse control",
+  "what": "Allows AI coding assistants to control a physical USB mouse and receive voice input on Windows.",
+  "why": "Connects AI desktop automation agents to actual hardware mouse movement and speech-to-text when specialized physical uMouse devices are available.",
+  "level": "setup",
+  "start": "node mcp/scripts/install-agents.mjs claude",
+  "caution": "Requires specific proprietary uMouse hardware and firmware, runs only on Windows x64, and uses native SDK binaries with separate license terms.",
+  "alts": [],
+  "packages": [],
+  "plain": "Lets an artificial intelligence assistant move your computer's real mouse and listen to your voice using special hardware.",
+  "tags": [
+   "connect",
+   "automate"
+  ],
+  "useFor": [
+   "Control a physical mouse with AI agents",
+   "Dictate voice input into any active window",
+   "Automate desktop tasks using hardware coordinates"
+  ],
+  "steps": [
+   "Install Node.js 22 on Windows x64 and connect your compatible uMouse USB hardware.",
+   "Extract the downloaded release folder to a permanent location on your computer.",
+   "Run the installation script in your terminal to register the server with your chosen AI assistant.",
+   "Restart your AI assistant app and ask it to check the hardware connection status."
+  ],
+  "repo": "SonicloudTech/mouse-mcp",
+  "at": "2026-11-13",
+  "source": "trending"
+ },
+ "dodo-labs-ai/mem-forge": {
+  "cat": "memory",
+  "kind": "AI Agent Memory",
+  "what": "A memory layer that syncs wikis, tickets, and chat into precise, cited facts for coding assistants.",
+  "why": "Coding assistants often only see local code and miss team decisions, docs, or bug trackers. Use this to give agents access to up-to-date team knowledge without blowing up their context window.",
+  "level": "setup",
+  "start": "git clone https://github.com/dodo-labs-ai/mem-forge.git && cd mem-forge",
+  "caution": "Beta software. APIs, storage formats, and packaging may change.",
+  "alts": [
+   "mem0ai/mem0",
+   "getzep/graphiti",
+   "letta-ai/letta"
+  ],
+  "packages": [],
+  "plain": "Turns your team docs and notes into searchable memories so coding assistants stop guessing and follow team rules.",
+  "tags": [
+   "knowledge",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Sync team wikis and tickets into agent memory",
+   "Check team conventions and decisions before writing code",
+   "Cite source documents automatically for every agent suggestion"
+  ],
+  "steps": [
+   "Clone the repository and start it using Docker Compose.",
+   "Open the admin panel in your browser to configure your model keys and connect a documentation source.",
+   "Install the plugin in your coding assistant.",
+   "Ask your coding assistant to check team memory before making changes."
+  ],
+  "repo": "dodo-labs-ai/mem-forge",
+  "at": "2026-11-13",
+  "source": "trending"
  }
 }
