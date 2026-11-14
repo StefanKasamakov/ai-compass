@@ -21904,5 +21904,137 @@
   "repo": "afdEP/afdEP-comm",
   "at": "2026-11-13",
   "source": "trending"
+ },
+ "Likely7/Veyra-NRVideo": {
+  "cat": "media",
+  "kind": "Windows video enhancer",
+  "what": "Veyra is a real-time GPU-accelerated Windows video player and capture tool that applies AI upscaling, denoising, and frame generation to live video feeds.",
+  "why": "It improves low-resolution or noisy video streams from local files, capture cards, and game consoles. Reach for it when you want real-time video enhancement using your NVIDIA or AMD graphics card on Windows.",
+  "level": "easy",
+  "start": "Download and extract the latest release package from GitHub Releases, then run the Veyra executable.",
+  "caution": "The repository headline claims DLSS 5 and 120FPS console streaming; actual performance and frame rate boosts depend strictly on your local hardware capabilities and setup.",
+  "alts": [],
+  "packages": [],
+  "plain": "A Windows app that uses your graphics card [GPU] to sharpen videos and create smoother motion in real time.",
+  "tags": [
+   "media",
+   "private"
+  ],
+  "useFor": [
+   "Upscale video files and capture card feeds in real time",
+   "Reduce noise and restore HDR content on Windows PCs",
+   "Increase playback smoothness using GPU frame generation"
+  ],
+  "steps": [
+   "Download the portable ZIP package from the official GitHub Releases page.",
+   "Extract the ZIP archive to a folder on your Windows computer.",
+   "Launch the main application executable to start playing and enhancing video."
+  ],
+  "repo": "Likely7/Veyra-NRVideo",
+  "at": "2026-11-14",
+  "source": "trending"
+ },
+ "EricJujianZou/rederive": {
+  "cat": "harness",
+  "kind": "Agent coding skill",
+  "what": "An agent skill that teaches you a codebase's architecture by making you re-derive its design choices yourself.",
+  "why": "Memorizing code structure does not build deep technical understanding of design tradeoffs. Reach for this when you want to learn how a software project works from first principles using Socratic questions.",
+  "level": "setup",
+  "start": "npx skills add EricJujianZou/rederive",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A tool for AI coding helpers that teaches you how software works by asking you step-by-step design questions.",
+  "tags": [
+   "code",
+   "supercharge",
+   "knowledge"
+  ],
+  "useFor": [
+   "Learn a codebase through guided Socratic design questions",
+   "Understand architectural choices in software projects",
+   "Identify your own system design knowledge gaps"
+  ],
+  "steps": [
+   "Install the skill into your coding assistant by running `npx skills add EricJujianZou/rederive`.",
+   "Open your coding assistant in a project directory and type `/rederive`.",
+   "Answer the interactive questions to work through the project's core design decisions."
+  ],
+  "repo": "EricJujianZou/rederive",
+  "at": "2026-11-14",
+  "source": "trending"
+ },
+ "phuryn/product-engineering": {
+  "cat": "harness",
+  "kind": "agent skill pack",
+  "what": "A collection of 44 agent skills designed for Claude Code, Codex, and other coding tools to plan, build, review, and ship software products.",
+  "why": "Building real products with AI assistants requires coordination across planning, user interface design, code review, and deployment. Reach for this when you want structured workflows and guidelines for your AI tools from ideation to launch.",
+  "level": "setup",
+  "start": "claude plugin marketplace add phuryn/product-engineering",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "bmad-code-org/BMAD-METHOD",
+   "obra/superpowers"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A set of step-by-step instructions that teach AI helper tools how to design, test, and release software.",
+  "tags": [
+   "supercharge",
+   "apps",
+   "code"
+  ],
+  "useFor": [
+   "Guide AI assistants from product idea to final launch",
+   "Automate code reviews and pre-release checks across multiple tools",
+   "Design screens and user flows using structured prompt instructions"
+  ],
+  "steps": [
+   "Ask your AI assistant in chat to install skills from phuryn/product-engineering in your project.",
+   "Or install manually using `claude plugin marketplace add phuryn/product-engineering` in your terminal.",
+   "Start a session and tell the agent what you want to build."
+  ],
+  "repo": "phuryn/product-engineering",
+  "at": "2026-11-14",
+  "source": "trending"
+ },
+ "affifuddin-hazam/ghost-infer": {
+  "cat": "local",
+  "kind": "Local LLM engine",
+  "what": "ghost-infer is a fast local AI model engine and server optimized for running GGUF models on a single consumer NVIDIA graphics card.",
+  "why": "It enables individual users to run large AI models—including models that exceed GPU memory capacity—faster than standard tools like llama.cpp or Ollama. Reach for it when you want high performance, long context processing, and a local OpenAI-compatible server without complex setup.",
+  "level": "easy",
+  "start": "git clone https://github.com/affifuddin-hazam/ghost-infer",
+  "caution": "Requires an NVIDIA graphics card with CUDA support.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "A lightweight program that lets you run smart AI models quickly on your own computer's graphics card.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run large open-source models on consumer graphics cards",
+   "Serve a local AI connection for standard editor plugins",
+   "Chat with AI using local files and voice commands"
+  ],
+  "steps": [
+   "Download and run GhostSetup for Windows from the releases page.",
+   "Select or download a GGUF model file when prompted by the application.",
+   "Chat in the desktop app or connect external plugins to `http://127.0.0.1:8080/v1`."
+  ],
+  "repo": "affifuddin-hazam/ghost-infer",
+  "at": "2026-11-14",
+  "source": "trending"
  }
 }

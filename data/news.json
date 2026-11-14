@@ -1,6 +1,35 @@
 {
- "updated": "2026-11-13T19:49:10.030Z",
+ "updated": "2026-11-14T06:37:05.515Z",
  "items": [
+  {
+   "source": "GitHub",
+   "title": "Upcoming deprecation of selected GitHub Copilot models in December",
+   "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+   "date": "2026-11-13T20:40:05.000Z",
+   "summary": "GitHub announced the retirement of selected older models across GitHub Copilot Chat, inline edits, and agent modes on December 14, 2026.",
+   "tags": [
+    "coding",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/645867806-878ea927-48c9-4765-a896-4a5f3d7b8f2e.jpg"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.325",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+   "date": "2026-11-13T20:40:01Z",
+   "summary": "Anthropic released Claude Code version 2.1.325, updating its terminal-based AI coding tool.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/ca414a63fb742e07df3b58de50ceef171f71b798d2612e6065dc31ed18aad7f5/anthropics/claude-code/releases/tag/v2.1.325"
+  },
   {
    "source": "GitHub",
    "title": "Gemini 4 Hydrogen in GitHub Copilot",
@@ -45,6 +74,21 @@
    "ai": true,
    "audience": "dev",
    "image": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Claude Is Down",
+   "url": "https://status.claude.com/history",
+   "date": "2026-11-13T10:20:09Z",
+   "discuss": "https://news.ycombinator.com/item?id=50481220",
+   "summary": "Claude experienced a temporary service disruption affecting active users.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/362807/NEW_claude_status_banner-183284a4-558d-4835-b3a4-a601e0a4daa8.png",
+   "viaBrowser": true
   },
   {
    "source": "Hacker News",
@@ -2092,44 +2136,6 @@
    "big": false,
    "ai": true,
    "image": "https://momentic.ai/images/og/home.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-   "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
-   "date": "2026-11-02T16:40:29Z",
-   "discuss": "https://news.ycombinator.com/item?id=50339494",
-   "summary": "243 points, 200 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://i.insider.com/6ae5023ed8cc18cf7950fbe3?width=1200&format=jpeg"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Scaling Git at OpenAI",
-   "url": "https://openai.com/index/scaling-git-at-openai",
-   "date": "2026-11-02T15:30:00.000Z",
-   "summary": "OpenAI built a custom Git-compatible backend called Pando to handle large-scale code development with Codex.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/CMZECnCACxZO52Dqy7SnB/d7451310a4c165a396517dc7387b9b71/scaling-git-at-openai-seo-card.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing the Grid Protectors Program",
-   "url": "https://openai.com/index/grid-protectors-program",
-   "date": "2026-11-02T15:00:00.000Z",
-   "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/0147SbQFof5ozkgFJTdG0j/1daae8bb107fb504ef83be52e10e550f/introducing-the-grid-protectors-program-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
   }
  ]
 }
