@@ -22036,5 +22036,36 @@
   "repo": "affifuddin-hazam/ghost-infer",
   "at": "2026-11-14",
   "source": "trending"
+ },
+ "0xdeadf1sh/T1DMAI": {
+  "cat": "local",
+  "kind": "Glucose forecasting model zoo",
+  "what": "Benchmarks and runs lightweight machine learning and transformer models to predict blood glucose levels two hours ahead.",
+  "why": "Anticipating blood sugar shifts helps manage diabetes, but models need strict validation. Reach for this to compare classical and neural forecasters.",
+  "level": "dev",
+  "start": "",
+  "caution": "Research and educational use only; not a medical device, lacks clinical validation, and must never be used to make treatment decisions or dose insulin.",
+  "alts": [
+   "pytorch/pytorch"
+  ],
+  "packages": [],
+  "plain": "A research project comparing AI models that predict blood sugar levels two hours in advance for diabetes management.",
+  "tags": [
+   "research",
+   "private"
+  ],
+  "useFor": [
+   "Compare blood glucose forecasting models across multiple time horizons",
+   "Train lightweight transformer models on simulated glucose monitoring data",
+   "Benchmark predictions on personal and public diabetes datasets"
+  ],
+  "steps": [
+   "Review documentation to understand the model architecture and quantile loss functions.",
+   "Inspect the pre-trained checkpoints in the models folder for simulator and fine-tuned weights.",
+   "Evaluate forecasting accuracy across different horizons against your own data or MetaboNet."
+  ],
+  "repo": "0xdeadf1sh/T1DMAI",
+  "at": "2026-11-14",
+  "source": "trending"
  }
 }
