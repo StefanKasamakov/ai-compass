@@ -1,11 +1,67 @@
 {
- "updated": "2026-11-15T12:14:01.702Z",
+ "updated": "2026-11-15T18:55:46.494Z",
  "items": [
   {
-   "repo": "zovulrira1974/blender-ai-copilot-assets",
-   "stars": 451,
-   "desc": "An asset-savvy AI copilot for Blender—search Poly Haven, Sketchfab and Poly Pizza mid-conversation, check what fits, import after your confirmation, with 27 scene tools and a built-in MCP server alongside. · blender-ai-copilot-assets · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
-   "created": "2026-11-12T19:39:54Z",
+   "repo": "ggml-org/ggml",
+   "stars": 15858,
+   "desc": "Tensor library for machine learning",
+   "created": "2022-09-18T17:07:19Z",
+   "topics": [
+    "machine-learning"
+   ],
+   "lang": "C++",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "google-labs-code/stitch-skills",
+   "stars": 9187,
+   "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+   "created": "2026-01-16T17:17:17Z",
+   "topics": [],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "elementalsouls/Claude-BugHunter",
+   "stars": 6182,
+   "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+   "created": "2026-05-05T11:22:32Z",
+   "topics": [
+    "ai-security",
+    "anthropic",
+    "application-security",
+    "bug-bounty"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "NVIDIA/SkillEvaluator",
+   "stars": 1503,
+   "desc": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+   "created": "2026-06-24T02:32:26Z",
+   "topics": [
+    "agent-evaluation",
+    "agent-plugins",
+    "agent-security",
+    "agent-skills"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "tiobeharxi1987/blender-ai-copilot-flow",
+   "stars": 503,
+   "desc": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
+   "created": "2026-11-12T19:38:53Z",
    "topics": [
     "3d-automation",
     "3d-modeling",
@@ -13,54 +69,6 @@
     "blender-addon"
    ],
    "lang": null,
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "racdeufindurch198812/Blender-AI-MCP-Studio",
-   "stars": 450,
-   "desc": "Blender AI MCP Studio is an AI assistant and built-in Model Context Protocol MCP server for Blender that turns plain-language briefs into inspected, approved and reversible 3D scene operations — with a visual chat workspace, multi-agent teams and your choice of AI models. · blender ai mcp studio · mcp-for-blender · mcp for blender pro",
-   "created": "2026-11-12T19:28:20Z",
-   "topics": [
-    "3d-automation",
-    "3d-modeling",
-    "blender",
-    "blender-addon"
-   ],
-   "lang": null,
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "credoksopho1984/blender-ai-copilot-studio",
-   "stars": 448,
-   "desc": "An AI copilot and MCP server for Blender that turns plain-language briefs into scene operations—inside a visual chat studio with multi-agent teams, your choice of AI models, and 27 built-in scene tools. · blender-ai-copilot-studio · blender ai · ai for blender · blender copilot · blender ai copilot · blender ai assistant · blender mcp server",
-   "created": "2026-11-12T19:30:32Z",
-   "topics": [
-    "3d-automation",
-    "3d-modeling",
-    "blender",
-    "blender-addon"
-   ],
-   "lang": null,
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "CapriChooms/CapriCore",
-   "stars": 125,
-   "desc": "Capri — an AI desktop companion for Windows with local/API models, Hugging Face, optional voice, memory and permission-based desktop tools.",
-   "created": "2026-11-08T17:17:24Z",
-   "topics": [
-    "ai-assistant",
-    "cyberpunk",
-    "desktop-automation",
-    "desktop-companion"
-   ],
-   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]

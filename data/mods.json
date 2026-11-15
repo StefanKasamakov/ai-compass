@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-15T12:34:02.829Z",
- "scanned": "2026-11-14T07:59:18.853Z",
+ "updated": "2026-11-15T19:19:50.938Z",
+ "scanned": "2026-11-15T08:11:43.070Z",
  "claudeVersion": "2.1.325",
- "total": 8616,
+ "total": 8700,
  "categories": [
   [
    "builtin",
@@ -165,9 +165,11 @@
     "every prompt",
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
-   "stars": 395,
+   "stars": 399,
    "license": "MIT",
    "pushed": "2026-11-12T18:31:41Z",
    "marketplace": null,
@@ -198,7 +200,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 286,
    "license": "MIT",
@@ -221,9 +225,14 @@
    "plain": "Renders tables, code, Mermaid diagrams and charts in the transcript, with copy buttons. Its default diagram hints add about 190 tokens per prompt and can be disabled.",
    "cat": "rendering",
    "by": "Nahum Litvin",
-   "reach": 1,
+   "reach": 2,
    "reachLabels": [
+    "runs processes",
+    "changes config",
     "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads the transcript",
     "reads mod state",
     "draws"
    ],
@@ -235,7 +244,7 @@
     "?"
    ],
    "validated": "passed",
-   "stars": 355,
+   "stars": 412,
    "license": "MIT",
    "pushed": "2026-11-13T13:06:20Z",
    "marketplace": null,
@@ -267,9 +276,11 @@
     "every tool call",
     "subagent spawns"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
-   "stars": 268,
+   "stars": 292,
    "license": "MIT",
    "pushed": "2026-11-07T14:33:03Z",
    "marketplace": "claude-flightdeck",
@@ -291,11 +302,31 @@
    "cat": "rendering",
    "by": "Kurt Buhler",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
-   "stars": 424,
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "changes config",
+    "drives Claude",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every tool call",
+    "Read calls",
+    "? calls",
+    "every prompt"
+   ],
+   "surfaces": [
+    "AssistantMessage",
+    "Pane"
+   ],
+   "validated": "passed",
+   "stars": 430,
    "license": "MIT",
    "pushed": "2026-11-11T14:56:47Z",
    "marketplace": "claude-code-filetree",
@@ -335,12 +366,15 @@
     "ToolUse",
     "ToolResult",
     "ToolGroup",
+    "Pane",
+    "AbovePrompt",
+    "AbovePromptList",
     "PromptHint"
    ],
    "validated": "warnings",
    "stars": 68,
    "license": "MIT",
-   "pushed": "2026-11-13T11:30:52Z",
+   "pushed": "2026-11-14T09:34:33Z",
    "marketplace": "oikon48",
    "plugin": "prompt-rail",
    "featured": true,
@@ -367,17 +401,20 @@
     "draws"
    ],
    "sees": [
+    "subagent spawns",
     "every tool call",
     "classic hooks",
     "every prompt",
     "every skill",
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
-   "stars": 759,
+   "stars": 844,
    "license": "MIT",
-   "pushed": "2026-11-13T21:15:05Z",
+   "pushed": "2026-11-15T01:41:20Z",
    "marketplace": "lot-map",
    "plugin": "lot-map",
    "featured": true,
@@ -396,8 +433,14 @@
    "plain": "A btop-style pane with context fill, tokens, cost, cache hit ratio, rate limits, per-tool latency and subagents.",
    "cat": "usage",
    "by": "Thomas Stagl",
-   "reach": 0,
+   "reach": 2,
    "reachLabels": [
+    "runs processes",
+    "writes files",
+    "writes the prompt box",
+    "reads files",
+    "reads env vars",
+    "persists state",
     "draws"
    ],
    "sees": [
@@ -405,7 +448,9 @@
     "every tool call",
     "the cctop skill"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 16,
    "license": "MIT",
@@ -428,7 +473,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 11,
    "license": null,
@@ -457,7 +504,9 @@
    "sees": [
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 11,
    "license": null,
@@ -485,7 +534,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 11,
    "license": null,
@@ -516,7 +567,9 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -544,7 +597,8 @@
     "classic hooks"
    ],
    "surfaces": [
-    "PromptHint"
+    "PromptHint",
+    "Pane"
    ],
    "validated": "warnings",
    "stars": 30,
@@ -573,7 +627,9 @@
    "sees": [
     "classic hooks"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 1,
    "license": null,
@@ -604,7 +660,10 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 30,
    "license": "MIT",
@@ -637,7 +696,9 @@
     "every prompt",
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 30,
    "license": "MIT",
@@ -672,7 +733,9 @@
     "every prompt",
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -699,11 +762,13 @@
    "sees": [
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "passed",
    "stars": 28,
    "license": "Apache-2.0",
-   "pushed": "2026-11-10T23:28:59Z",
+   "pushed": "2026-11-14T08:18:30Z",
    "marketplace": "augiefra-mods",
    "plugin": "token-weather-usage",
    "media": {
@@ -729,7 +794,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
@@ -767,18 +834,18 @@
    ],
    "sees": [
     "every prompt",
-    "compaction",
-    "/\"^mcp__hud__hud_debug$\"/ calls",
-    "every tool call"
+    "compaction"
    ],
    "surfaces": [
     "SessionMode",
-    "PromptHint"
+    "AbovePrompt",
+    "PromptHint",
+    "Pane"
    ],
    "validated": "warnings",
    "stars": 8,
    "license": "MIT",
-   "pushed": "2026-11-14T05:19:36Z",
+   "pushed": "2026-11-15T03:32:06Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "hud",
    "media": {
@@ -801,20 +868,22 @@
     "changes config",
     "reads env vars",
     "reads settings",
+    "reads the transcript",
     "reads mod state",
     "persists state",
     "draws"
    ],
    "sees": [
-    "subagent spawns",
-    "every tool call",
+    "classic hooks",
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "passed",
    "stars": 8,
    "license": "MIT",
-   "pushed": "2026-11-14T05:19:36Z",
+   "pushed": "2026-11-15T03:32:06Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "todo-bar",
    "media": {
@@ -837,19 +906,22 @@
     "changes config",
     "reads env vars",
     "reads settings",
+    "reads the transcript",
     "reads mod state",
     "persists state",
     "draws"
    ],
    "sees": [
-    "every tool call",
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 8,
    "license": "MIT",
-   "pushed": "2026-11-14T05:19:36Z",
+   "pushed": "2026-11-15T03:32:06Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "receipt",
    "media": {
@@ -878,14 +950,15 @@
     "draws"
    ],
    "sees": [
-    "every prompt",
-    "Bash calls"
+    "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "passed",
    "stars": 8,
    "license": "MIT",
-   "pushed": "2026-11-14T05:19:36Z",
+   "pushed": "2026-11-15T03:32:06Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "ts-band",
    "media": {
@@ -917,7 +990,9 @@
     "Bash calls",
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 19,
    "license": "MIT",
@@ -934,13 +1009,22 @@
    "plain": "A pane and prompt band for plugin commands declared in `quick-menu.json`, plus plugin and Claude Code settings exposed through `/config`.",
    "cat": "usage",
    "by": "dasganni",
-   "reach": 0,
+   "reach": 2,
    "reachLabels": [
+    "changes config",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
+    "persists state",
     "draws"
    ],
    "sees": [],
    "surfaces": [
-    "SessionMode"
+    "Pane",
+    "SessionMode",
+    "AbovePrompt"
    ],
    "validated": "passed",
    "stars": 2,
@@ -976,7 +1060,10 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -1042,11 +1129,14 @@
    "sees": [
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "AbovePromptList"
+   ],
    "validated": "passed",
-   "stars": 477,
+   "stars": 481,
    "license": "MIT",
-   "pushed": "2026-11-11T21:33:05Z",
+   "pushed": "2026-11-14T19:05:14Z",
    "marketplace": "claude-code-mods",
    "plugin": "context-bar",
    "media": {
@@ -1066,13 +1156,33 @@
    "by": "Antreas-Strb",
    "reach": 2,
    "reachLabels": [
+    "runs processes",
     "drives Claude",
+    "writes the prompt box",
     "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "plays audio",
     "persists state",
     "draws"
    ],
-   "sees": [],
-   "surfaces": [],
+   "sees": [
+    "every prompt",
+    "subagent spawns",
+    "classic hooks",
+    "compaction",
+    "every tool call"
+   ],
+   "surfaces": [
+    "UserMessage",
+    "AssistantMessage",
+    "SessionMode",
+    "ToolUse|ToolResult|ToolGroup",
+    "ToolProgress",
+    "Pane",
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 10,
    "license": "MIT",
@@ -1103,7 +1213,10 @@
    "sees": [
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 1,
    "license": "MIT",
@@ -1133,7 +1246,9 @@
    "sees": [
     "AskUserQuestion calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -1162,7 +1277,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -1194,7 +1311,10 @@
     "classic hooks",
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -1234,7 +1354,9 @@
     "compaction",
     "subagent spawns"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -1263,10 +1385,11 @@
    ],
    "sees": [],
    "surfaces": [
+    "AbovePrompt",
     "Spinner"
    ],
    "validated": "warnings",
-   "stars": 110,
+   "stars": 111,
    "license": "MIT",
    "pushed": "2026-09-14T23:01:33Z",
    "marketplace": "mindful-claude",
@@ -1294,7 +1417,9 @@
    "sees": [
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 47,
    "license": "MIT",
@@ -1329,7 +1454,9 @@
     "every tool call",
     "compaction"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 4,
    "license": "MIT",
@@ -1392,6 +1519,8 @@
    ],
    "surfaces": [
     "AssistantMessage",
+    "Pane",
+    "AbovePrompt",
     "Spinner",
     "CommandOutput"
    ],
@@ -1426,6 +1555,7 @@
     "every tool call"
    ],
    "surfaces": [
+    "AbovePrompt",
     "Spinner",
     "TurnDuration",
     "InfoNotice"
@@ -1451,11 +1581,30 @@
    "plain": "A creature card game above the Claude Code prompt with wild encounters, asynchronous player duels, trading, and online or offline play.",
    "cat": "fun",
    "by": "416rehman",
-   "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "writes files",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "PromptHint",
+    "SessionMode",
+    "Spinner"
+   ],
+   "validated": "warnings",
    "stars": 6,
    "license": "MIT",
    "pushed": "2026-11-14T00:23:11Z",
@@ -1476,8 +1625,13 @@
    "plain": "A pixel pet above the prompt that drops a bug when a tool fails and eats it when a test, lint or build passes; syncs event types and times to its own server.",
    "cat": "fun",
    "by": "nibbl",
-   "reach": 0,
+   "reach": 3,
    "reachLabels": [
+    "network",
+    "runs processes",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -1485,6 +1639,7 @@
     "every tool call"
    ],
    "surfaces": [
+    "AbovePrompt",
     "CommandOutput"
    ],
    "validated": "passed",
@@ -1518,7 +1673,9 @@
    "sees": [
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -1544,7 +1701,9 @@
    "sees": [
     "Bash calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 30,
    "license": "MIT",
@@ -1579,10 +1738,12 @@
     "every tool call"
    ],
    "surfaces": [
-    "Spinner"
+    "AbovePrompt",
+    "Spinner",
+    "Pane"
    ],
    "validated": "passed",
-   "stars": 128,
+   "stars": 129,
    "license": "MIT",
    "pushed": "2026-10-13T05:05:17Z",
    "marketplace": "intermission",
@@ -1614,17 +1775,18 @@
     "draws"
    ],
    "sees": [
-    "every tool call",
+    "classic hooks",
     "every prompt"
    ],
    "surfaces": [
     "SessionMode",
-    "Spinner"
+    "Spinner",
+    "AbovePrompt"
    ],
    "validated": "passed",
    "stars": 8,
    "license": "MIT",
-   "pushed": "2026-11-14T05:19:36Z",
+   "pushed": "2026-11-15T03:32:06Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "spinner",
    "media": {
@@ -1655,11 +1817,13 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "passed",
    "stars": 8,
    "license": "MIT",
-   "pushed": "2026-11-14T05:19:36Z",
+   "pushed": "2026-11-15T03:32:06Z",
    "marketplace": "hoobnn-agent-mods",
    "plugin": "hitokoto",
    "media": {
@@ -1683,7 +1847,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 6,
    "license": "MIT",
@@ -1717,7 +1883,10 @@
    "sees": [
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 1,
    "license": "MIT",
@@ -1763,8 +1932,12 @@
    "plain": "Any of the 151 gen 1 Pokémon above the prompt to feed, pet and evolve, with a Poké Ball for each running subagent and 135 animated attacks.",
    "cat": "fun",
    "by": "deniz gökçin",
-   "reach": 0,
+   "reach": 3,
    "reachLabels": [
+    "network",
+    "reads env vars",
+    "reads settings",
+    "persists state",
     "draws"
    ],
    "sees": [
@@ -1775,7 +1948,9 @@
     "subagent spawns"
    ],
    "surfaces": [
-    "Spinner"
+    "Spinner",
+    "AbovePrompt",
+    "Pane"
    ],
    "validated": "warnings",
    "stars": 36,
@@ -1809,7 +1984,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -1846,7 +2023,10 @@
     "mcp__cliamp__radio calls",
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 1,
    "license": "Apache-2.0",
@@ -1876,7 +2056,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 3,
    "license": "MIT",
@@ -1909,7 +2091,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -1946,7 +2130,8 @@
     "every tool call"
    ],
    "surfaces": [
-    "Spinner"
+    "Spinner",
+    "AbovePrompt"
    ],
    "validated": "warnings",
    "stars": 2,
@@ -1985,7 +2170,9 @@
     "Write calls",
     "Bash calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
@@ -2015,7 +2202,9 @@
    "sees": [
     "/\"^(Edit|MultiEdit|Write|NotebookEdit)$\"/ calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -2027,34 +2216,6 @@
     "type": "image",
     "kb": 70
    }
-  },
-  {
-   "key": "varunmoka7/reddit-watch/reddit-watch",
-   "name": "reddit-watch",
-   "repo": "varunmoka7/reddit-watch",
-   "path": ".",
-   "url": "https://github.com/varunmoka7/reddit-watch",
-   "plain": "Checks subreddits you choose, has Haiku pick posts with ideas for using Claude Code better, and lists them in a side pane, off until `/reddit on`.",
-   "cat": "fun",
-   "by": "Varun Moka",
-   "reach": 3,
-   "reachLabels": [
-    "network",
-    "drives Claude",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "classic hooks"
-   ],
-   "surfaces": [],
-   "validated": "warnings",
-   "stars": 0,
-   "license": "MIT",
-   "pushed": "2026-10-22T05:14:58Z",
-   "marketplace": "reddit-watch",
-   "plugin": "reddit-watch"
   },
   {
    "key": "paragpandyareal/swear-slap/swear-slap",
@@ -2077,7 +2238,9 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -2099,11 +2262,27 @@
    "plain": "A hand-drawn pixel ninja above the prompt, any of 20 from Naruto, who casts their jutsu at a training post while Claude works, summons for subagents, cheers when a turn ends and sleeps when you step away, drawn locally with no model calls or network.",
    "cat": "fun",
    "by": "Harsha Reddy",
-   "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reach": 1,
+   "reachLabels": [
+    "writes the prompt box",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "classic hooks"
+   ],
+   "surfaces": [
+    "ToolProgress",
+    "Spinner",
+    "TurnDuration",
+    "AbovePrompt"
+   ],
+   "validated": "warnings",
    "stars": 2,
    "license": "MIT",
    "pushed": "2026-10-10T19:14:45Z",
@@ -2140,7 +2319,10 @@
     "mcp__cc-pr-tracker__pr_status calls",
     "Bash calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 9,
    "license": "MIT",
@@ -2176,7 +2358,9 @@
     "every tool call",
     "Bash calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": null,
@@ -2236,7 +2420,10 @@
     "every prompt",
     "classic hooks"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
@@ -2268,7 +2455,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 3,
    "license": "MIT",
@@ -2302,11 +2491,14 @@
     "Bash calls",
     "subagent spawns"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "AbovePromptList"
+   ],
    "validated": "passed",
-   "stars": 477,
+   "stars": 481,
    "license": "MIT",
-   "pushed": "2026-11-11T21:33:05Z",
+   "pushed": "2026-11-14T19:05:14Z",
    "marketplace": "claude-code-mods",
    "plugin": "review-watch",
    "media": {
@@ -2334,7 +2526,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 0,
    "license": null,
@@ -2353,9 +2547,16 @@
    "by": "SummerRiversound",
    "reach": 2,
    "reachLabels": [
+    "runs processes",
+    "writes files",
+    "changes config",
     "drives Claude",
+    "writes the prompt box",
+    "reads files",
+    "reads env vars",
     "reads settings",
     "reads the transcript",
+    "reads the prompt box",
     "reads mod state",
     "draws"
    ],
@@ -2363,7 +2564,10 @@
     "every prompt",
     "? calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 9,
    "license": "MIT",
@@ -2395,7 +2599,9 @@
     "Bash calls",
     "PowerShell calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
@@ -2418,10 +2624,26 @@
    "cat": "safety",
    "by": "Mert Kaya",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "/\"^(?:Bash|Read|Edit|MultiEdit|Write|NotebookEdit|Grep|Glob)$\"/ calls",
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt|Pane"
+   ],
+   "validated": "warnings",
    "stars": 8,
    "license": "MIT",
    "pushed": "2026-11-13T08:54:20Z",
@@ -2503,7 +2725,9 @@
    "sees": [
     "Bash calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 30,
    "license": "MIT",
@@ -2566,7 +2790,9 @@
     "/\"^mcp__.*(roblox|studio).*__[a-z_]+$\"/i calls"
    ],
    "surfaces": [
-    "CommandOutput"
+    "Pane",
+    "CommandOutput",
+    "AbovePrompt"
    ],
    "validated": "passed",
    "stars": 0,
@@ -2655,11 +2881,15 @@
    "sees": [
     "Bash calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt",
+    "AbovePromptList"
+   ],
    "validated": "passed",
-   "stars": 477,
+   "stars": 481,
    "license": "MIT",
-   "pushed": "2026-11-11T21:33:05Z",
+   "pushed": "2026-11-14T19:05:14Z",
    "marketplace": "claude-code-mods",
    "plugin": "blast-radius",
    "media": {
@@ -2692,8 +2922,10 @@
     "classic hooks"
    ],
    "surfaces": [
+    "Pane",
     "ToolUse",
-    "ToolGroup"
+    "ToolGroup",
+    "AbovePrompt"
    ],
    "validated": "warnings",
    "stars": 3,
@@ -2809,8 +3041,13 @@
    "plain": "Explains the sandbox blocks it recognizes in Bash results in plain words above the prompt, counts blocked hosts and write folders across sessions, and once a target recurs offers one reviewed settings entry with Undo, writing your user settings file (`~/.claude/settings.json` by default) and a backup only when you press, with no network or process calls.",
    "cat": "safety",
    "by": "dot-agi",
-   "reach": 0,
+   "reach": 2,
    "reachLabels": [
+    "writes files",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
     "persists state",
     "draws"
    ],
@@ -2819,7 +3056,10 @@
     "Bash calls",
     "Monitor calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -2841,8 +3081,13 @@
    "plain": "Lossless context management: DAG-based summarization that keeps every message reachable.",
    "cat": "memory",
    "by": "Pedro Almeida",
-   "reach": 0,
+   "reach": 3,
    "reachLabels": [
+    "network",
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads env vars",
     "draws"
    ],
    "sees": [
@@ -2882,7 +3127,7 @@
    ],
    "surfaces": [],
    "validated": "passed",
-   "stars": 50,
+   "stars": 51,
    "license": "NOASSERTION",
    "pushed": "2026-11-13T19:12:48Z",
    "marketplace": null,
@@ -2929,10 +3174,31 @@
    "by": "noopz",
    "reach": 2,
    "reachLabels": [
+    "network",
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "persists state",
     "draws"
    ],
-   "sees": [],
-   "surfaces": [],
+   "sees": [
+    "/\"^(Read|Grep|Glob|NotebookRead|Bash|Write|Edit|NotebookEdit)$\"/ calls",
+    "Bash calls",
+    "Write|Edit calls",
+    "Read calls",
+    "WebFetch calls",
+    "every skill"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "ToolUse",
+    "Spinner",
+    "AssistantMessage",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 11,
    "license": "MIT",
@@ -2956,7 +3222,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 7,
    "license": "MIT",
@@ -3037,7 +3305,8 @@
    ],
    "surfaces": [
     "ToolUse",
-    "ToolResult"
+    "ToolResult",
+    "Pane"
    ],
    "validated": "passed",
    "stars": 15,
@@ -3074,7 +3343,9 @@
     "Bash calls",
     "classic hooks"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 4,
    "license": "MIT",
@@ -3135,7 +3406,9 @@
    "sees": [
     "classic hooks"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "passed",
    "stars": 1,
    "license": "MIT",
@@ -3171,7 +3444,10 @@
     "every prompt",
     "classic hooks"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 4,
    "license": "MIT",
@@ -3183,30 +3459,6 @@
     "type": "image",
     "kb": 46
    }
-  },
-  {
-   "key": "varunmoka7/image-shrinker/image-shrinker",
-   "name": "image-shrinker",
-   "repo": "varunmoka7/image-shrinker",
-   "path": ".",
-   "url": "https://github.com/varunmoka7/image-shrinker",
-   "plain": "Shrinks large image files before Claude reads them so they take less of the context window, and tells Claude the scale back to the original pixels.",
-   "cat": "memory",
-   "by": "Varun Moka",
-   "reach": 2,
-   "reachLabels": [
-    "runs processes"
-   ],
-   "sees": [
-    "Read calls"
-   ],
-   "surfaces": [],
-   "validated": "warnings",
-   "stars": 0,
-   "license": "MIT",
-   "pushed": "2026-10-22T05:14:53Z",
-   "marketplace": "image-shrinker",
-   "plugin": "image-shrinker"
   },
   {
    "key": "zenbu-labs/terminal-browser/terminal-browser",
@@ -3229,11 +3481,13 @@
    "sees": [
     "? calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
-   "stars": 4636,
+   "stars": 4648,
    "license": "MIT",
-   "pushed": "2026-11-14T02:24:42Z",
+   "pushed": "2026-11-14T16:01:28Z",
    "marketplace": "terminal-browser",
    "plugin": "terminal-browser"
   },
@@ -3246,12 +3500,39 @@
    "plain": "Restyles the transcript in fifteen themes, draws tables, code, diffs, Mermaid charts and math as cards, opens tool rows onto their full input and output, and adds a terminal shell card, a calm preset that turns off motion, and a usage band above the prompt.",
    "cat": "rendering",
    "by": "hellosverre",
-   "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
-   "stars": 296,
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "drives Claude",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every tool call",
+    "/\"^mcp__skins__design$\"/ calls"
+   ],
+   "surfaces": [
+    "Pane",
+    "ToolUse",
+    "ToolGroup",
+    "ToolResult",
+    "UserMessage",
+    "AssistantMessage",
+    "CommandOutput",
+    "Spinner",
+    "TurnDuration",
+    "AbovePrompt",
+    "AskUserQuestion"
+   ],
+   "validated": "warnings",
+   "stars": 301,
    "license": "MIT",
    "pushed": "2026-11-01T18:21:15Z",
    "marketplace": "hellosverre-mods",
@@ -3289,7 +3570,8 @@
    "surfaces": [
     "AssistantMessage",
     "ToolUse",
-    "UserMessage"
+    "UserMessage",
+    "Pane"
    ],
    "validated": "passed",
    "stars": 7,
@@ -3388,7 +3670,10 @@
     "mcp__explain-as__show calls",
     "Edit calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 23,
    "license": null,
@@ -3411,10 +3696,42 @@
    "cat": "rendering",
    "by": "OG-Matcha",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "runs processes",
+    "sets env vars",
+    "changes config",
+    "drives Claude",
+    "writes the prompt box",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads the transcript",
+    "reads the prompt box",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "Bash calls",
+    "PowerShell calls",
+    "TaskStop calls",
+    "every tool call",
+    "Agent calls",
+    "Workflow calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "ToolResult",
+    "UserMessage",
+    "CommandOutput",
+    "ToolGroup",
+    "ToolUse",
+    "TurnDuration",
+    "AssistantMessage"
+   ],
+   "validated": "passed",
    "stars": 0,
    "license": "MIT",
    "pushed": "2026-11-04T06:14:52Z",
@@ -3449,6 +3766,7 @@
     "every prompt"
    ],
    "surfaces": [
+    "Pane",
     "AssistantMessage",
     "CommandOutput"
    ],
@@ -3485,11 +3803,13 @@
    "sees": [
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
-   "stars": 477,
+   "stars": 481,
    "license": "MIT",
-   "pushed": "2026-11-11T21:33:05Z",
+   "pushed": "2026-11-14T19:05:14Z",
    "marketplace": "claude-code-mods",
    "plugin": "md-preview",
    "media": {
@@ -3528,7 +3848,9 @@
     "Write calls",
     "Edit calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 1,
    "license": "MIT",
@@ -3563,8 +3885,10 @@
     "classic hooks"
    ],
    "surfaces": [
+    "AbovePrompt",
     "AssistantMessage",
-    "CommandOutput"
+    "CommandOutput",
+    "Pane"
    ],
    "validated": "passed",
    "stars": 3,
@@ -3598,6 +3922,7 @@
     "every prompt"
    ],
    "surfaces": [
+    "AbovePrompt",
     "AssistantMessage",
     "UserMessage"
    ],
@@ -3658,13 +3983,34 @@
    "cat": "agents",
    "by": "Lorenz Hilpert",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "subagent spawns",
+    "classic hooks",
+    "Edit|Write calls",
+    "Bash calls",
+    "Workflow calls",
+    "every prompt"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "PromptHint",
+    "TurnDuration"
+   ],
+   "validated": "passed",
    "stars": 3,
    "license": "MIT",
-   "pushed": "2026-11-08T02:43:30Z",
+   "pushed": "2026-11-15T02:43:28Z",
    "marketplace": "rabe",
    "plugin": "rabe",
    "media": {
@@ -3762,7 +4108,7 @@
    "validated": "passed",
    "stars": 1,
    "license": null,
-   "pushed": "2026-11-11T20:27:28Z",
+   "pushed": "2026-11-15T00:59:16Z",
    "marketplace": "autodev",
    "plugin": "autodev-core"
   },
@@ -3824,7 +4170,7 @@
    "validated": "warnings",
    "stars": 8,
    "license": "Apache-2.0",
-   "pushed": "2026-11-13T21:40:19Z",
+   "pushed": "2026-11-14T23:23:20Z",
    "marketplace": null,
    "plugin": "autotel"
   },
@@ -3875,7 +4221,9 @@
    "sees": [
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 30,
    "license": "MIT",
@@ -3908,11 +4256,13 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-11-13T22:23:44Z",
+   "pushed": "2026-11-14T17:58:41Z",
    "marketplace": "afkswitch",
    "plugin": "afkswitch",
    "media": {
@@ -3966,7 +4316,9 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
@@ -3994,7 +4346,10 @@
     "every tool call",
     "subagent spawns"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 12,
    "license": "MIT",
@@ -4021,7 +4376,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 0,
    "license": "MIT",
@@ -4055,8 +4412,10 @@
     "subagent spawns"
    ],
    "surfaces": [
+    "Pane",
     "ToolUse",
     "AssistantMessage",
+    "AbovePrompt",
     "PromptHint"
    ],
    "validated": "warnings",
@@ -4096,7 +4455,10 @@
     "every tool call",
     "classic hooks"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
@@ -4129,7 +4491,10 @@
    "sees": [
     "every prompt"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 2,
    "license": "MIT",
@@ -4165,11 +4530,15 @@
     "subagent spawns",
     "every tool call"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt",
+    "AbovePromptList"
+   ],
    "validated": "passed",
-   "stars": 477,
+   "stars": 481,
    "license": "MIT",
-   "pushed": "2026-11-11T21:33:05Z",
+   "pushed": "2026-11-14T19:05:14Z",
    "marketplace": "claude-code-mods",
    "plugin": "mission-control",
    "media": {
@@ -4227,7 +4596,9 @@
     "draws"
    ],
    "sees": [],
-   "surfaces": [],
+   "surfaces": [
+    "Pane"
+   ],
    "validated": "passed",
    "stars": 1,
    "license": "MIT",
@@ -4260,7 +4631,10 @@
     "Workflow calls",
     "ScheduleWakeup calls"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -4293,7 +4667,10 @@
     "ListAgents calls",
     "subagent spawns"
    ],
-   "surfaces": [],
+   "surfaces": [
+    "Pane",
+    "AbovePrompt"
+   ],
    "validated": "warnings",
    "stars": 0,
    "license": "MIT",
@@ -4307,33 +4684,6 @@
    }
   },
   {
-   "key": "varunmoka7/next-steps-autopilot/next-steps-autopilot",
-   "name": "next-steps-autopilot",
-   "repo": "varunmoka7/next-steps-autopilot",
-   "path": ".",
-   "url": "https://github.com/varunmoka7/next-steps-autopilot",
-   "plain": "Suggested next prompts above the prompt box, with an optional `/auto` mode, off by default, that sends the first one after a countdown.",
-   "cat": "agents",
-   "by": "Varun Moka",
-   "reach": 2,
-   "reachLabels": [
-    "drives Claude",
-    "writes the prompt box",
-    "reads the prompt box",
-    "draws"
-   ],
-   "sees": [
-    "every prompt"
-   ],
-   "surfaces": [],
-   "validated": "warnings",
-   "stars": 1,
-   "license": "MIT",
-   "pushed": "2026-10-22T05:14:48Z",
-   "marketplace": "next-steps-autopilot",
-   "plugin": "next-steps-autopilot"
-  },
-  {
    "key": "Arjun0014/project-sentinel/project-sentinel",
    "name": "project-sentinel",
    "repo": "Arjun0014/project-sentinel",
@@ -4343,10 +4693,37 @@
    "cat": "agents",
    "by": "Project Sentinel contributors",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "writes the prompt box",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads the prompt box",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction",
+    "every prompt",
+    "the system prompt",
+    "/\"^mcp__project-sentinel__milestones$\"/ calls",
+    "/\"^mcp__project-sentinel__decision_request$\"/ calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "ToolUse",
+    "ToolResult",
+    "ToolGroup",
+    "Spinner",
+    "SessionMode"
+   ],
+   "validated": "warnings",
    "stars": 58,
    "license": "MIT",
    "pushed": "2026-10-13T08:16:46Z",

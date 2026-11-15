@@ -22382,5 +22382,177 @@
   "repo": "CapriChooms/CapriCore",
   "at": "2026-11-15",
   "source": "trending"
+ },
+ "ggml-org/ggml": {
+  "cat": "local",
+  "kind": "C/C++ tensor library",
+  "what": "A portable, dependency-free C/C++ tensor library built to run machine learning models efficiently on CPUs and hardware accelerators.",
+  "why": "Standard machine learning frameworks are bloated and difficult to embed in standalone applications. Reach for this low-level library when building custom inference engines or running compressed models across everyday consumer hardware.",
+  "level": "dev",
+  "start": "git clone https://github.com/ggml-org/ggml",
+  "caution": "This is a low-level development library requiring C/C++ compilation, not a ready-to-run chatbot. Active development and core contributions are steered through llama.cpp.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "LostRuins/koboldcpp"
+  ],
+  "packages": [],
+  "plain": "A low-level software engine that helps computers run artificial intelligence models using basic hardware.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Build custom machine learning engines in pure C and C++",
+   "Run quantized models on consumer processors and graphics cards",
+   "Embed machine learning execution directly into native desktop or web applications"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/ggml-org/ggml` and navigate into it.",
+   "Create and move to a build directory using `mkdir build && cd build`.",
+   "Configure the project with `cmake ..`.",
+   "Compile the binaries with `cmake --build . --config Release -j 8`."
+  ],
+  "repo": "ggml-org/ggml",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "google-labs-code/stitch-skills": {
+  "cat": "harness",
+  "kind": "UI design skills",
+  "what": "A library of agent skills that connect coding assistants to Google Stitch for UI design and frontend code generation.",
+  "why": "It bridges coding assistants with Google Stitch to convert running web code into design mockups and design mockups back into React components.",
+  "level": "setup",
+  "start": "npx plugins add google-labs-code/stitch-skills --scope project --target claude-code",
+  "caution": "Requires a running Google Stitch MCP server setup with valid Google credentials before the skills can function.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills",
+   "shadcn/improve"
+  ],
+  "packages": [],
+  "plain": "Adds skills to your coding assistant to generate app screens and turn designs into code using Google Stitch.",
+  "tags": [
+   "apps",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Generate app UI screens and design variants from text prompts",
+   "Convert existing frontend code into Google Stitch designs",
+   "Turn Stitch designs directly into React or React Native components"
+  ],
+  "steps": [
+   "Configure and run the Stitch MCP server according to Google Stitch setup instructions.",
+   "Add the skills to Claude Code using `npx plugins add google-labs-code/stitch-skills --scope project --target claude-code`.",
+   "Ask your coding assistant to generate screens, build design systems, or export React components."
+  ],
+  "repo": "google-labs-code/stitch-skills",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "elementalsouls/Claude-BugHunter": {
+  "cat": "harness",
+  "kind": "security skill bundle",
+  "what": "A skill and command bundle that adds bug bounty workflows, vulnerability patterns, and external red-team techniques to coding assistants.",
+  "why": "General AI assistants lack structured methodologies, payload patterns, and scope discipline for ethical hacking. Use this to turn your coding assistant into an expert web penetration testing partner.",
+  "level": "setup",
+  "start": "/plugin marketplace add elementalsouls/Claude-BugHunter",
+  "caution": "Intended strictly for authorized penetration testing and bug hunting. Using offensive security patterns against systems without explicit permission is illegal.",
+  "alts": [
+   "openai/codex-security",
+   "graygnatconsole/mcp-audit-tool",
+   "cloudflare/security-audit-skill"
+  ],
+  "packages": [],
+  "plain": "Adds over 80 ethical hacking and security testing skills directly into your AI coding assistant.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Audit web applications for vulnerabilities like IDOR, SSRF, or SQL injection",
+   "Perform external attack surface reconnaissance and OSINT mapping",
+   "Draft structured bug bounty vulnerability reports with evidence"
+  ],
+  "steps": [
+   "Add the marketplace in Claude Code: `/plugin marketplace add elementalsouls/Claude-BugHunter`",
+   "Install the plugin: `/plugin install claude-bughunter@elementalsouls`",
+   "Describe your in-scope target in Claude Code to automatically trigger the relevant hunting skill"
+  ],
+  "repo": "elementalsouls/Claude-BugHunter",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "NVIDIA/SkillEvaluator": {
+  "cat": "evals",
+  "kind": "Agent skill evaluator",
+  "what": "SkillEvaluator is an evaluation framework that tests AI agent skills for quality, security compliance, duplication, and measurable performance impacts.",
+  "why": "Skills given to AI coding agents can contain syntax errors, security flaws, or contradictory instructions that degrade task success. Reach for this when building, auditing, or adding continuous integration checks for agent skills.",
+  "level": "setup",
+  "start": "pip install skillevaluator",
+  "caution": "Full live agent evaluation requires a running container sandbox such as Docker and model provider credentials that can incur API usage costs.",
+  "alts": [
+   "NVIDIA/SkillSpector",
+   "promptfoo/promptfoo",
+   "confident-ai/deepeval"
+  ],
+  "packages": [
+   "skillevaluator"
+  ],
+  "plain": "Tests custom instructions and tools for AI helpers to make sure they work safely and improve results.",
+  "tags": [
+   "monitor",
+   "supercharge"
+  ],
+  "useFor": [
+   "Validate agent skill formatting and security before publishing",
+   "Detect duplicate or overlapping guidance across skill libraries",
+   "Benchmark live agent performance with and without a skill"
+  ],
+  "steps": [
+   "Install the tool with `pip install skillevaluator`.",
+   "Run basic static checks without any model keys using `skillevaluator validate ./my-skill --tiers 1`.",
+   "Configure model keys and a Docker sandbox to measure actual agent task performance gains."
+  ],
+  "repo": "NVIDIA/SkillEvaluator",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "tiobeharxi1987/blender-ai-copilot-flow": {
+  "cat": "media",
+  "kind": "Blender AI copilot addon",
+  "what": "An extension for Blender that executes AI edits sequentially with human approval, cancellation, and named undo checkpoints.",
+  "why": "It prevents AI from accidentally breaking production 3D scenes. Reach for it when you want AI scene editing and automation without silent background changes or uncontrollable scripts.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip from the Releases page and install it in Blender under Edit → Preferences → Get Extensions.",
+  "caution": "Tool validation catches disallowed operations but is not a security sandbox; executed code still runs directly inside your local Blender session.",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "anujasid/blender-ai-mcp-addon",
+   "LiCinCan/blender-ai-mcp-addon"
+  ],
+  "packages": [],
+  "plain": "A Blender add-on where an AI helper proposes 3D edits one step at a time for your approval.",
+  "tags": [
+   "media",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Add lights and cameras to 3D scenes one approved step at a time",
+   "Run supervised Python scripts inside Blender with named undo checkpoints",
+   "Connect external AI assistants to Blender using a built-in server"
+  ],
+  "steps": [
+   "Download mcp-for-blender-pro.zip from GitHub Releases",
+   "In Blender, go to Edit → Preferences → Get Extensions and choose Install from Disk",
+   "Open the sidebar in the 3D Viewport under N → MCP Pro and configure your model provider",
+   "Send a prompt in Blender or launch the Studio Window to review and approve proposals"
+  ],
+  "repo": "tiobeharxi1987/blender-ai-copilot-flow",
+  "at": "2026-11-15",
+  "source": "trending"
  }
 }
