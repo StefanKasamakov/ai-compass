@@ -22243,5 +22243,144 @@
   "repo": "paul-nameless/agweb",
   "at": "2026-11-15",
   "source": "trending"
+ },
+ "zovulrira1974/blender-ai-copilot-assets": {
+  "cat": "media",
+  "kind": "Blender AI extension",
+  "what": "A Blender extension that brings an AI assistant into your 3D viewport to search online asset libraries, check licenses, and import models.",
+  "why": "Finding 3D models and HDRIs usually requires jumping between browser tabs and manually tracking licensing terms. Reach for this when you want an AI in Blender to search Poly Haven, Sketchfab, and Poly Pizza and place assets directly into your scene upon confirmation.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires your own API keys for AI model providers and third-party asset libraries like Sketchfab.",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "LiCinCan/blender-ai-mcp-addon",
+   "EL4CTEO/blender-skills"
+  ],
+  "packages": [],
+  "plain": "An AI assistant inside Blender that finds free 3D models and lights and imports them into your scene.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Search and preview 3D models and HDRIs across free libraries",
+   "Import approved 3D assets with license terms clearly displayed",
+   "Arrange, light, and texture Blender scenes through chat"
+  ],
+  "steps": [
+   "Download the extension ZIP file from the repository releases page.",
+   "In Blender, open Edit > Preferences > Get Extensions and choose Install from Disk.",
+   "Select the ZIP file, enable the add-on, and open the 3D Viewport sidebar panel.",
+   "Select an AI model provider, enter your connection details, and start chatting."
+  ],
+  "repo": "zovulrira1974/blender-ai-copilot-assets",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "racdeufindurch198812/Blender-AI-MCP-Studio": {
+  "cat": "media",
+  "kind": "Blender AI extension",
+  "what": "An AI assistant and Model Context Protocol server inside Blender that builds, edits, and checks 3D scenes from text prompts.",
+  "why": "It replaces manual scene setup, material tuning, and asset hunting by giving an AI full context to inspect and manipulate Blender scenes with your approval.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip from GitHub Releases and install it via Blender's Get Extensions menu",
+  "caution": "Requires Blender 4.2+ on Windows x64. Python tool validation acts as a guardrail rather than an isolated security sandbox.",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "anujasid/blender-ai-mcp-addon",
+   "LiCinCan/blender-ai-mcp-addon"
+  ],
+  "packages": [],
+  "plain": "Control Blender using simple chat prompts to build, light, texture, and inspect 3D scenes step-by-step.",
+  "tags": [
+   "media",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Generate 3D stage setups with lighting and materials via chat",
+   "Search and import 3D assets directly from Poly Haven and Sketchfab",
+   "Connect external coding tools to Blender through an MCP server"
+  ],
+  "steps": [
+   "Download the mcp-for-blender-pro.zip file from the repository releases page.",
+   "In Blender 4.2+, open Edit, Preferences, Get Extensions, and select Install from Disk.",
+   "Open the 3D Viewport sidebar with the N key and locate the MCP Pro tab.",
+   "Configure your AI provider credentials and choose a model to start prompting."
+  ],
+  "repo": "racdeufindurch198812/Blender-AI-MCP-Studio",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "credoksopho1984/blender-ai-copilot-studio": {
+  "cat": "media",
+  "kind": "Blender AI copilot",
+  "what": "An AI assistant and MCP server extension for Blender that turns text prompts into 3D scene edits, lighting, and materials.",
+  "why": "Eliminates repetitive manual clicks and Python scripting in Blender by letting an AI model inspect scenes, build layouts, and assign materials with named undo support.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip from the Releases page on GitHub",
+  "caution": "",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "LiCinCan/blender-ai-mcp-addon",
+   "anujasid/blender-ai-mcp-addon"
+  ],
+  "packages": [],
+  "plain": "Control Blender with plain English to build 3D scenes, set up lights, and apply materials automatically.",
+  "tags": [
+   "media",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Build 3D layouts, lights, and cameras from a single text brief",
+   "Duplicate and arrange scene objects across your Blender viewport",
+   "Connect external AI tools to Blender using a local MCP server"
+  ],
+  "steps": [
+   "Download the extension ZIP file from the GitHub releases page.",
+   "In Blender 4.2+, open Edit → Preferences → Get Extensions and choose Install from Disk.",
+   "Enable the addon, open the MCP Pro panel in the 3D Viewport sidebar, and enter your AI provider credentials.",
+   "Click Open Studio Window or send a chat prompt to modify your scene."
+  ],
+  "repo": "credoksopho1984/blender-ai-copilot-studio",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "CapriChooms/CapriCore": {
+  "cat": "coding",
+  "kind": "desktop AI companion",
+  "what": "An animated Windows desktop assistant powered by OpenClaw that supports local models, voice, memory, and desktop control.",
+  "why": "Reach for it when you want an interactive desktop companion with custom animations, voice chat, and local system automation without relying entirely on cloud services.",
+  "level": "easy",
+  "start": "Download and run the CapriSetup executable from the latest release.",
+  "caution": "The installer is currently unsigned, and computer control features are in beta with broad desktop access permissions.",
+  "alts": [
+   "openclaw/openclaw",
+   "openinterpreter/openinterpreter",
+   "Significant-Gravitas/AutoGPT"
+  ],
+  "packages": [],
+  "plain": "An animated desktop character for Windows that talks, answers questions, remembers facts, and helps control your PC.",
+  "tags": [
+   "automate",
+   "private",
+   "media"
+  ],
+  "useFor": [
+   "Control desktop apps and workflows with permission prompts",
+   "Chat through text or voice using local or cloud AI models",
+   "Query local documents using built-in searchable desktop memory"
+  ],
+  "steps": [
+   "Download the latest CapriSetup installer from GitHub releases",
+   "Run the setup wizard to choose between local models or cloud API mode",
+   "Launch Capri.exe to interact with the companion on your desktop"
+  ],
+  "repo": "CapriChooms/CapriCore",
+  "at": "2026-11-15",
+  "source": "trending"
  }
 }
