@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-14T22:32:09.201Z",
+ "updated": "2026-11-15T06:43:34.356Z",
  "items": [
   {
    "repo": "ag-ui-protocol/ag-ui",
-   "stars": 17330,
+   "stars": 17458,
    "desc": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
    "created": "2025-05-07T12:49:37Z",
    "topics": [
@@ -18,8 +18,23 @@
    ]
   },
   {
+   "repo": "Vaibhaav-Tiwari/deepseek-v3-jax",
+   "stars": 146,
+   "desc": "DeepSeek V3 (MLA, DeepSeekMoE, aux-loss-free balancing, MTP) in 190 lines of pure JAX, trained on a MacBook Air. Write-up: vaibhaav.in/writing/deepseek-v3-jax",
+   "created": "2026-11-13T14:59:13Z",
+   "topics": [],
+   "lang": "Python",
+   "sources": [
+    "Show HN"
+   ],
+   "hn": {
+    "points": 217,
+    "url": "https://news.ycombinator.com/item?id=50497589"
+   }
+  },
+  {
    "repo": "Tencent/LoopForge",
-   "stars": 864,
+   "stars": 1010,
    "desc": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
    "created": "2026-07-28T03:51:01Z",
    "topics": [
@@ -34,23 +49,34 @@
    ]
   },
   {
-   "repo": "0xdeadf1sh/T1DMAI",
-   "stars": 65,
-   "desc": "A model zoo of blood glucose forecasters trained & tested on my own data",
-   "created": "2026-07-29T05:07:53Z",
+   "repo": "huaxialucaicaizi/ai-startup-skills",
+   "stars": 926,
+   "desc": "创业公司做 AI 产品的 7 步 Agent Skill 合集：验证 → BP → 政策 → 路演 → 获客 → 定价 → 注册。",
+   "created": "2026-10-22T10:23:29Z",
    "topics": [
-    "benchmark",
-    "benchmarking",
-    "blood-glucose",
-    "blood-glucose-forecasting"
+    "agent-skills",
+    "ai",
+    "business-plan",
+    "claude-code"
    ],
    "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "paul-nameless/agweb",
+   "stars": 191,
+   "desc": " A browser built for agents - no focus stealing, a tiny footprint, all tabs in one view.",
+   "created": "2026-11-11T17:08:07Z",
+   "topics": [],
+   "lang": "Swift",
    "sources": [
     "Show HN"
    ],
    "hn": {
-    "points": 96,
-    "url": "https://news.ycombinator.com/item?id=50444761"
+    "points": 93,
+    "url": "https://news.ycombinator.com/item?id=50497147"
    }
   }
  ]

@@ -22067,5 +22067,181 @@
   "repo": "0xdeadf1sh/T1DMAI",
   "at": "2026-11-14",
   "source": "trending"
+ },
+ "ag-ui-protocol/ag-ui": {
+  "cat": "frameworks",
+  "kind": "Agent UI protocol",
+  "what": "An open event-based protocol for connecting AI agent backends to web application frontend interfaces.",
+  "why": "Connecting agent backends to web apps requires building custom streaming and state synchronization systems. AG-UI standardizes message streaming, state sync, generative UI, and human feedback across major agent frameworks.",
+  "level": "dev",
+  "start": "`npx create-ag-ui-app my-agent-app`",
+  "caution": "",
+  "alts": [
+   "vercel/ai",
+   "CopilotKit/OpenBot",
+   "langchain-ai/langgraph"
+  ],
+  "packages": [
+   "@ag-ui/core",
+   "create-ag-ui-app"
+  ],
+  "plain": "A standardized tool that helps web applications display real-time interactive responses and controls from smart AI assistants.",
+  "tags": [
+   "apps",
+   "connect",
+   "code"
+  ],
+  "useFor": [
+   "Connect backend AI agents to frontend user interfaces",
+   "Stream generative UI components and structured messages to users",
+   "Sync state in real time between web apps and AI agents"
+  ],
+  "steps": [
+   "Create a starter application by running `npx create-ag-ui-app my-agent-app`.",
+   "Connect your backend agent framework such as LangGraph or CrewAI.",
+   "Use AG-UI components to stream events and handle user interactions in your web interface."
+  ],
+  "repo": "ag-ui-protocol/ag-ui",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "Vaibhaav-Tiwari/deepseek-v3-jax": {
+  "cat": "local",
+  "kind": "DeepSeek-V3 JAX code",
+  "what": "A 190-line pure JAX implementation of the DeepSeek-V3 architecture built to train small models on a MacBook Air.",
+  "why": "It isolates key DeepSeek-V3 ideas like Multi-head Latent Attention and Mixture-of-Experts into readable code without external frameworks. Reach for it when studying modern model architectures or experimenting with local training.",
+  "level": "setup",
+  "start": "git clone https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax.git && cd deepseek-v3-jax",
+  "caution": "This is an architectural demonstration rather than a powerful language model, and model checkpoints use Python pickle files which can execute untrusted code if loaded from unknown sources.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "A simple set of code files to build and train a small AI model on an Apple Mac.",
+  "tags": [
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Study DeepSeek-V3 architectural components in clear code",
+   "Pretrain a small custom model on Apple Silicon",
+   "Generate text samples from trained checkpoint files"
+  ],
+  "steps": [
+   "Clone the repository and set up your virtual environment with `uv pip install -r requirements.txt`.",
+   "Prepare the text corpus by running `python prepare_data.py`.",
+   "Train the model locally by running `python train.py`.",
+   "Generate text prompts from a checkpoint using `python sample.py --prompt \"The fog came in off the\"`."
+  ],
+  "repo": "Vaibhaav-Tiwari/deepseek-v3-jax",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "Tencent/LoopForge": {
+  "cat": "harness",
+  "kind": "Agent workflow platform",
+  "what": "Self-hosted web platform and workflow engine for orchestrating AI coding tools with human approval gates.",
+  "why": "It enforces consistent development processes by combining AI coding tools, scripts, and human reviews into repeatable workflows in Docker sandboxes. Reach for it when your team needs structured, observable AI code generation on your own infrastructure.",
+  "level": "setup",
+  "start": "git clone https://github.com/Tencent/LoopForge.git && cd LoopForge && ./start.sh",
+  "caution": "The repository metadata marks the license as NOASSERTION, though the README references an MIT license. Requires setting up Docker and your own model API keys.",
+  "alts": [
+   "gsd-build/get-shit-done",
+   "OpenHands/OpenHands",
+   "Aider-AI/aider"
+  ],
+  "packages": [
+   "loopforge-cli"
+  ],
+  "plain": "A system you run on your own server to guide AI coders through step-by-step tasks and human approvals.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Orchestrate coding agents",
+   "Automate multi-step software SOPs",
+   "Require human review before merging"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/Tencent/LoopForge.git`",
+   "Enter the directory with `cd LoopForge`",
+   "Start the services with `./start.sh`",
+   "Open the web interface in your browser to create an admin account"
+  ],
+  "repo": "Tencent/LoopForge",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "huaxialucaicaizi/ai-startup-skills": {
+  "cat": "harness",
+  "kind": "Startup agent skill pack",
+  "what": "A collection of seven AI agent skills that guide solo founders through validating, pitching, pricing, and registering an AI startup.",
+  "why": "Building an AI product alone requires handling validation, business planning, pricing, and registration without guidance. Reach for this when you want structured, step-by-step startup coaching directly inside your AI coding tool.",
+  "level": "setup",
+  "start": "git clone https://github.com/huaxialucaicaizi/ai-startup-skills.git",
+  "caution": "Uses a custom non-commercial license that prohibits commercial use, and policy/registration skills are tailored specifically to mainland China.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "bmad-code-org/BMAD-METHOD",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A setup that gives your smart helper step-by-step guidance for planning, pricing, and launching a new business.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "docs"
+  ],
+  "useFor": [
+   "Guide an AI product from initial validation to company registration",
+   "Generate business plans, pitch scripts, and pricing strategies with AI",
+   "Identify government subsidies and incubation policies for solo AI founders"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/huaxialucaicaizi/ai-startup-skills.git`.",
+   "Copy the skills folder into your local AI coding tool skills directory.",
+   "Prompt your AI assistant to evaluate your current startup step and guide you."
+  ],
+  "repo": "huaxialucaicaizi/ai-startup-skills",
+  "at": "2026-11-15",
+  "source": "trending"
+ },
+ "paul-nameless/agweb": {
+  "cat": "harness",
+  "kind": "Agent web browser",
+  "what": "agweb is a background web browser for macOS that allows automated AI agents to browse pages live without stealing keyboard focus or popping up windows.",
+  "why": "Standard automated browsers steal your screen focus or get blocked by websites. Reach for agweb when running multiple AI coding tools that need to inspect pages, share logged-in profiles, and run silently in the background.",
+  "level": "setup",
+  "start": "agweb -w task open en.wikipedia.org/wiki/WebKit",
+  "caution": "Requires macOS 26 or higher and uses Safari's WebKit engine, so Chrome-specific extensions and debugging tools are not supported.",
+  "alts": [
+   "browser-use/browser-use",
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "A Mac web browser that lets AI helpers search and read websites in the background without jumping onto your screen.",
+  "tags": [
+   "automate",
+   "code",
+   "research"
+  ],
+  "useFor": [
+   "Let AI tools browse web pages without taking over screen focus",
+   "Share logged-in website profiles across multiple AI helpers at once",
+   "Record demo videos of automated web browsing with visible mouse clicks"
+  ],
+  "steps": [
+   "Download Agweb.dmg from Releases and move it to your Mac Applications folder.",
+   "Open Agweb and click Help to install the command line tool and agent skill.",
+   "Run `agweb -w task open en.wikipedia.org/wiki/WebKit` to open a page in a workspace."
+  ],
+  "repo": "paul-nameless/agweb",
+  "at": "2026-11-15",
+  "source": "trending"
  }
 }

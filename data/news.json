@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-14T22:32:09.201Z",
+ "updated": "2026-11-15T06:43:34.356Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "datasette-llm 0.1a11",
+   "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+   "date": "2026-11-14T23:59:28.000Z",
+   "summary": "Datasette-llm now supports OpenAI-compatible API endpoints, allowing users to connect Datasette to any local or custom LLM server.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://static.simonwillison.net/static/2026/lmstudio-datasette-agent.webp"
+  },
   {
    "source": "GitHub",
    "title": "Upcoming deprecation of selected GitHub Copilot models in December",
@@ -44,6 +59,20 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/11/703838156-68e44341-f202-4a1d-8cec-072b5e8d1027.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "XYBench: Helping with the problem behind the question",
+   "url": "https://huggingface.co/blog/allenai/xybench",
+   "date": "2026-11-13T17:02:35.000Z",
+   "summary": "XYBench is a new benchmark built to evaluate how well AI models understand implicit user intent behind prompts.",
+   "tags": [
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png"
   },
   {
    "source": "OpenAI",
@@ -1429,6 +1458,20 @@
    "image": "https://opengraph.githubassets.com/7523025ed8317d6dba3b8f2424edd66ab8b0679c6b4ef53b464c771e106c2697/openai/codex/releases/tag/rust-v0.167.0"
   },
   {
+   "source": "Hugging Face",
+   "title": "Egyptian and Nigerian English join the Open ASR Leaderboard",
+   "url": "https://huggingface.co/blog/open-asr-leaderboard-liva",
+   "date": "2026-11-06T00:00:00.000Z",
+   "summary": "The Open ASR Leaderboard added support for Egyptian and Nigerian English speech recognition benchmarks.",
+   "tags": [
+    "research",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/open-asr-leaderboard-liva/thumbnail.png"
+  },
+  {
    "source": "OpenAI",
    "title": "Measuring how AI agents handle everyday wet-lab science",
    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
@@ -2088,45 +2131,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/ab0198d793f6ecde4f0b616c56288e6d5eebda1b7926e0aa6d238a5b433b1653/anthropics/claude-code/releases/tag/v2.1.317"
-  },
-  {
-   "source": "OpenAI",
-   "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
-   "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
-   "date": "2026-11-03T00:00:00.000Z",
-   "summary": "Jill Hazelbaker will join OpenAI as Chief Corporate Affairs Officer, leading the company’s global communications and corporate positioning.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/12cWiOrhEJBVjJpSKoRNzC/62cac2e1b99cd5ba56661755d6945157/jill-hazelbaker-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "CWE-bench v2: More coverage, quality, and transparency",
-   "url": "https://huggingface.co/blog/cwe-bench",
-   "date": "2026-11-03T00:00:00.000Z",
-   "summary": "Hugging Face updates CWE-bench v2 for better coverage and transparency in security evaluation.",
-   "tags": [
-    "research",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/cwe-bench/thumbnail.jpg"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Transformers Model Integration Contracts",
-   "url": "https://huggingface.co/blog/transformers-mic",
-   "date": "2026-11-03T00:00:00.000Z",
-   "summary": "Hugging Face introduced new model integration contracts for Transformers.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/transformers-mic/mic-logo.png"
   }
  ]
 }
