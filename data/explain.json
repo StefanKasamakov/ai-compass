@@ -22554,5 +22554,142 @@
   "repo": "tiobeharxi1987/blender-ai-copilot-flow",
   "at": "2026-11-15",
   "source": "trending"
+ },
+ "hitkeeen/blender-ai-mcp-addon": {
+  "cat": "media",
+  "kind": "Blender AI extension",
+  "what": "An AI assistant and Model Context Protocol server addon for Blender that inspects 3D scenes, builds objects, edits materials, and automates multi-step visual workflows.",
+  "why": "Manual 3D scene setup and asset manipulation in Blender can be time-consuming. Reach for this addon when you want to control Blender through natural language prompts, run autonomous agent teams, or automate complex 3D workflows.",
+  "level": "setup",
+  "start": "",
+  "caution": "The release package targets Windows x64 with Blender 4.2 or later, and the built-in Python tool validation is not a security sandbox.",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "LiCinCan/blender-ai-mcp-addon",
+   "EL4CTEO/blender-skills"
+  ],
+  "packages": [],
+  "plain": "An add-on for Blender that lets AI assistants create objects, edit scenes, and automate 3D design tasks.",
+  "tags": [
+   "media",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Inspect and edit Blender 3D scenes using AI prompt commands",
+   "Automate material assignments and object layout in Blender",
+   "Connect external AI tools to Blender using built-in server features"
+  ],
+  "steps": [
+   "Download the mcp-for-blender-pro.zip file from the repository releases page.",
+   "In Blender, go to Edit, Preferences, Get Extensions, and select Install from Disk.",
+   "Enable the extension and open the MCP Pro panel in the 3D Viewport sidebar.",
+   "Select an AI provider, enter your credentials, and start sending requests."
+  ],
+  "repo": "hitkeeen/blender-ai-mcp-addon",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "ersinkoc/phonebox": {
+  "cat": "harness",
+  "kind": "Android desk control panel",
+  "what": "PhoneBox converts an old Android phone into a touch control deck and desk display for computer stats, media, and AI coding session details.",
+  "why": "It gives you a dedicated external touchscreen for PC monitoring and approving AI agent prompts without taking up screen real estate. Reach for it when you want a hardware dashboard for system metrics and AI coding quota tracking.",
+  "level": "setup",
+  "start": "irm https://raw.githubusercontent.com/ersinkoc/phonebox/main/setup.ps1 | iex",
+  "caution": "Windows desktop agent builds are currently unsigned and may trigger antivirus or SmartScreen warnings.",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "ccusage/ccusage",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Turns an old Android phone into a touch screen desk display for system status and AI helper updates.",
+  "tags": [
+   "monitor",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Monitor system metrics and AI coding quotas on an Android phone",
+   "Approve Claude Code permission requests directly from a touch display",
+   "Trigger computer shortcuts and media controls with custom buttons"
+  ],
+  "steps": [
+   "Run `irm https://raw.githubusercontent.com/ersinkoc/phonebox/main/setup.ps1 | iex` on Windows or the bash installer on Linux and macOS.",
+   "Connect your Android phone using a USB cable or pair it over Wi-Fi by scanning the setup QR code.",
+   "Navigate to http://127.0.0.1:8765 in your browser to customize your desk panel widgets and pages."
+  ],
+  "repo": "ersinkoc/phonebox",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "dabingfy-dot/solo-to-team-skills": {
+  "cat": "harness",
+  "kind": "Multi-agent team framework",
+  "what": "A toolkit of roles, review templates, and platform-specific skills for running multi-agent workflows with human oversight.",
+  "why": "It prevents confusion when coordinating multiple AI roles by defining strict job descriptions, approval chains, and evidence checks. Reach for it when you want a structured multi-agent team setup on platforms like DeepSeek, Grok, or WorkBuddy.",
+  "level": "setup",
+  "start": "Download your platform ZIP package from the README table and open START-HERE.md.",
+  "caution": "Early version (v0.2.0); full native integration across all four target platforms is not fully verified, and role names do not provide true data isolation between agents.",
+  "alts": [
+   "bmad-code-org/BMAD-METHOD",
+   "obra/superpowers",
+   "gsd-build/get-shit-done"
+  ],
+  "packages": [],
+  "plain": "A collection of guides and templates that help you run multiple AI assistants like an organized project team.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "code"
+  ],
+  "useFor": [
+   "Coordinate multi-agent workflows across platforms like DeepSeek and Grok",
+   "Set up defined roles for AI content creation and peer reviewing",
+   "Organize solo projects using structured handoff templates"
+  ],
+  "steps": [
+   "Download the ZIP package corresponding to your platform from the README.",
+   "Extract the archive and open `START-HERE.md` for platform instructions.",
+   "Provide `TASK-MATERIALS.zip` to your platform assistant and execute a sample task."
+  ],
+  "repo": "dabingfy-dot/solo-to-team-skills",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "Kimberlying/ai-engineering-interview-100": {
+  "cat": "coding",
+  "kind": "Interview study guide",
+  "what": "A collection of 100 production-focused interview questions, diagnostic playbooks, and system design architectures for AI engineering.",
+  "why": "Theoretical interview questions fail to test how engineers handle production outages or sudden cost spikes. Reach for this repository when preparing for AI engineering job interviews or learning how to troubleshoot real-world system failures.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "youngyangyang04/llm-master",
+   "h9-tec/ai-roadmap-2026",
+   "liuda30201/AI-Coding"
+  ],
+  "packages": [],
+  "plain": "A study guide with 100 practical questions and answers to help software developers prepare for AI job interviews.",
+  "tags": [
+   "code",
+   "research",
+   "supercharge"
+  ],
+  "useFor": [
+   "Prepare for AI engineering job interviews with real production scenarios",
+   "Learn diagnostic paths for common AI outages and cost spikes",
+   "Study end-to-end system architectures for AI agents and retrieval systems"
+  ],
+  "steps": [
+   "Open the repository README file in your web browser.",
+   "Select a section from the table of contents like RAG or AI Agents.",
+   "Expand answer sections to study core concepts and system design breakdowns."
+  ],
+  "repo": "Kimberlying/ai-engineering-interview-100",
+  "at": "2026-11-16",
+  "source": "trending"
  }
 }
