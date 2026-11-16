@@ -1,0 +1,165 @@
+{
+ "date": "2026-11-16",
+ "subject": "Google launches Gemini 4 Hydrogen as OpenAI unveils ChatGPT Wallet",
+ "intro": "Google launched its new flagship model Gemini 4 Hydrogen across Search and developer tools, while OpenAI introduced ChatGPT Wallet to let agents complete purchases safely. Additionally, Nvidia CEO Jensen Huang announced his resignation, and local AI tool llama.cpp reached version 1.0.0.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "Introducing Gemini 4 Hydrogen",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+     "blurb": "Google DeepMind announced Gemini 4 Hydrogen, its newest flagship model powering Search and developer tools.",
+     "meta": "DeepMind"
+    },
+    {
+     "title": "Introducing ChatGPT Wallet",
+     "url": "https://openai.com/index/introducing-chatgpt-wallet",
+     "blurb": "OpenAI introduced ChatGPT Wallet, enabling AI agents in ChatGPT and Codex to complete purchases with user approval. This allows users to let autonomous agents handle payment transactions safely.",
+     "meta": "OpenAI"
+    },
+    {
+     "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+     "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
+     "blurb": "NVIDIA CEO Jensen Huang announced his resignation after 33 years leading the company, with CFO Colette Kress taking over as interim CEO.",
+     "meta": "Latent Space"
+    },
+    {
+     "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+     "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+     "blurb": "Local AI runtime llama.cpp reached version 1.0.0, establishing a stable v1 baseline for running open models on local hardware. This brings improved stability and performance for developers running open-source models offline.",
+     "meta": "Hugging Face"
+    },
+    {
+     "title": "Building always-on agents",
+     "url": "https://claude.com/resources/articles/building-always-on-agents",
+     "blurb": "Anthropic published a architecture guide for building always-on AI agents that operate continuously across multiple sessions. This provides developers with practical patterns for constructing long-running autonomous workflows.",
+     "meta": "Anthropic"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Claude Fable 5.2",
+     "url": "https://whichaimap.com/models.html#m-fable",
+     "blurb": "The hardest work: long autonomous agent runs, science, deep analysis. Slow and pricey.",
+     "meta": "$8 / $40 per 1M tokens"
+    },
+    {
+     "title": "Gemini 4 Hydrogen",
+     "url": "https://whichaimap.com/models.html#m-argon",
+     "blurb": "Google's new flagship: deep work in coding, finance, law, security and science. Google's latest flagship model.",
+     "meta": "$1.5 / $7.5 per 1M tokens"
+    },
+    {
+     "title": "Gemini Omni 1.2 Flash",
+     "url": "https://whichaimap.com/models.html#m-omni",
+     "blurb": "Fast conversational video generation and editing.",
+     "meta": "$1.5 / $9 per 1M tokens"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "chutingyean/Agent-Cockpit",
+     "url": "https://whichaimap.com/explore.html#chutingyean/Agent-Cockpit",
+     "blurb": "An MCP server and local whiteboard that tracks code changes, experiment runs, and research claims made by AI coding agents. Heads-up: Uses the AGPL-3.0 open-source license, requires Node.js 22.13+, and installs pre-commit hooks directly into your local git configuration.",
+     "meta": "Agent research dashboard"
+    },
+    {
+     "title": "shanselman/sandbox-mcp",
+     "url": "https://whichaimap.com/explore.html#shanselman/sandbox-mcp",
+     "blurb": "Automates disposable Windows Sandbox virtual machines for AI agents to deploy and test desktop applications. Heads-up: Requires Windows Pro or Enterprise with Windows Sandbox enabled, and can only run one sandbox machine at a time.",
+     "meta": "Windows Sandbox agent tool"
+    },
+    {
+     "title": "davide-troiani/moeshift",
+     "url": "https://whichaimap.com/explore.html#davide-troiani/moeshift",
+     "blurb": "A memory-efficient engine for running large Mixture-of-Experts AI models locally on Apple Silicon Macs. Heads-up: This is an early alpha release that requires an Apple Silicon Mac and up to 120 GB of fast SSD space for model files.",
+     "meta": "Mac model runner"
+    },
+    {
+     "title": "ruvnet/RuView",
+     "url": "https://whichaimap.com/explore.html#ruvnet/RuView",
+     "blurb": "Turns standard WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection using low-cost hardware. Heads-up: Requires external ESP32 hardware nodes and precise physical calibration. Pose estimation claims are experimental and synthetic until validated with real data.",
+     "meta": "WiFi spatial intelligence"
+    },
+    {
+     "title": "ZhuLinsen/daily_stock_analysis",
+     "url": "https://whichaimap.com/explore.html#ZhuLinsen/daily_stock_analysis",
+     "blurb": "An automated multi-market stock analysis system that gathers market data, news, and technical indicators to produce AI decision reports. Heads-up: Contains affiliate links for AI model and search service providers. AI-generated financial reports are for reference only and do not constitute financial advice.",
+     "meta": "Stock analysis assistant"
+    },
+    {
+     "title": "garrytan/gbrain",
+     "url": "https://whichaimap.com/explore.html#garrytan/gbrain",
+     "blurb": "Stores explicit facts and notes with sources so multiple AI assistants can share the same long-term memory. Heads-up: This project reuses consumer subscription logins or external cloud endpoints, and requires self-hosting compute and API keys for full background enrichment.",
+     "meta": "AI Agent Memory"
+    }
+   ]
+  },
+  {
+   "title": "Rising on GitHub this week",
+   "items": [
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea",
+     "blurb": "Reverse engineer apps, binaries, and websites with AI agents.",
+     "meta": "+17k stars this week"
+    },
+    {
+     "title": "zouyuxuan122/dsh-our-free-model",
+     "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+     "blurb": "This is a free model plugin for dsh that adds frontier models like Muse Spark 1.3 and MiMo V2.6 with zero configuration, no sign-up, and no API keys required.",
+     "meta": "+10k stars this week"
+    },
+    {
+     "title": "Ebony-Vinyl/dsh-our-free-model",
+     "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+     "blurb": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts.",
+     "meta": "+10k stars this week"
+    },
+    {
+     "title": "meta/astryx",
+     "url": "https://github.com/meta/astryx",
+     "blurb": "A React 19 UI design system featuring over 150 customizable components structured for both human developers and AI coding agents.",
+     "meta": "+10k stars this week"
+    },
+    {
+     "title": "pingdotgg/t3code",
+     "url": "https://github.com/pingdotgg/t3code",
+     "blurb": "An open-source desktop, web, and mobile control surface that lets you remotely manage coding agents running on your machine.",
+     "meta": "+8k stars this week"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://whichaimap.com/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "314.0M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://whichaimap.com/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "167.7M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "huggingface/transformers",
+     "url": "https://whichaimap.com/explore.html#huggingface/transformers",
+     "blurb": "Hugging Face Transformers is an open-source Python library to download, run, and train state-of-the-art machine learning models for text, vision, and audio.",
+     "meta": "116.7M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}

@@ -1,14 +1,76 @@
 {
- "updated": "2026-11-16T06:42:42.461Z",
+ "updated": "2026-11-16T16:56:18.794Z",
  "items": [
   {
-   "repo": "hitkeeen/blender-ai-mcp-addon",
-   "stars": 1798,
-   "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
-   "created": "2026-11-12T14:32:15Z",
+   "repo": "mvanhorn/last30days-skill",
+   "stars": 67950,
+   "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+   "created": "2026-01-23T20:37:37Z",
    "topics": [
+    "ai-prompts",
+    "ai-skill",
+    "bluesky",
+    "claude"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "kajisho5/ffmpeg-skill",
+   "stars": 6405,
+   "desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+   "created": "2026-09-03T14:33:38Z",
+   "topics": [
+    "agent-skills",
     "ai-agents",
-    "ai-assistant",
+    "audio-processing",
+    "captions"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "google-research/paper-orchestra",
+   "stars": 1219,
+   "desc": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+   "created": "2026-05-01T18:07:52Z",
+   "topics": [
+    "ai-research-assistant",
+    "multi-agent-systems"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "RustXNG/RustXNG",
+   "stars": 978,
+   "desc": "Self-hosted metasearch and grounding engine for AI agents, based on SearXNG. Rust, JSON API, optional page text.",
+   "created": "2026-10-18T03:06:52Z",
+   "topics": [
+    "agpl",
+    "ai-agents",
+    "grounding",
+    "llm"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Doug-218/blender-ai-copilot-forge",
+   "stars": 508,
+   "desc": "A scene-forging AI copilot for Blender—describe the layout and watch primitives, cameras, lights, materials and parenting assemble in ordered steps, with approvals, named undo and a built-in MCP server. · blender-ai-copilot-forge · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
+   "created": "2026-11-12T19:35:10Z",
+   "topics": [
+    "3d-automation",
+    "3d-modeling",
     "blender",
     "blender-addon"
    ],
@@ -18,47 +80,15 @@
    ]
   },
   {
-   "repo": "ersinkoc/phonebox",
-   "stars": 1420,
-   "desc": "Turn an old Android phone into a customizable desk panel and touch control deck for Windows, Linux and macOS. 115 widgets for system stats, AI coding, media and automation. USB or paired Wi-Fi. No cloud required.",
-   "created": "2026-11-07T16:45:16Z",
+   "repo": "AI4XE/Parallax",
+   "stars": 110,
+   "desc": "A hands-off development plugin for AI coding agents (Claude Code, DeepSeek Harness, GitHub Copilot and more)",
+   "created": "2026-11-15T10:31:00Z",
    "topics": [
-    "android",
-    "claude-code",
-    "codex",
-    "dashboard"
-   ],
-   "lang": "C#",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "dabingfy-dot/solo-to-team-skills",
-   "stars": 936,
-   "desc": "Human-led MAS toolkit: 16 roles, 6 group templates, four platform bundles, evidence-based review and handoff. 一人成队：一个人统筹多智能体协作。",
-   "created": "2026-11-07T01:36:28Z",
-   "topics": [
-    "agent-skills",
+    "agent-orchestration",
     "ai-agents",
-    "collaboration",
-    "human-in-the-loop"
-   ],
-   "lang": "HTML",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Kimberlying/ai-engineering-interview-100",
-   "stars": 108,
-   "desc": "100 Questions That Haunt AI Engineering Interviews in 2026: From production incidents to system designs, featuring diagnostic playbooks & 7 end-to-end architectures.",
-   "created": "2026-10-28T12:17:45Z",
-   "topics": [
-    "ai-agents",
-    "ai-engineering",
-    "interview-questions",
-    "llm"
+    "ai-coding",
+    "ai4e"
    ],
    "lang": "Python",
    "sources": [
