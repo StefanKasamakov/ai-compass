@@ -22691,5 +22691,209 @@
   "repo": "Kimberlying/ai-engineering-interview-100",
   "at": "2026-11-16",
   "source": "trending"
+ },
+ "mvanhorn/last30days-skill": {
+  "cat": "harness",
+  "kind": "search agent skill",
+  "what": "An AI agent skill that searches social platforms, news, market odds, and transcripts from the last 30 days to synthesize grounded summaries.",
+  "why": "Standard AI search often relies on editor-curated web pages or outdated training data. Use this skill when you need real-time community sentiment, social trends, or background research on people and companies before meetings.",
+  "level": "setup",
+  "start": "npx skills add mvanhorn/last30days-skill -g",
+  "caution": "Full platform coverage requires configuring API keys or active browser sessions for walled-garden services like X and YouTube.",
+  "alts": [
+   "anthropics/claude-code",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A tool for AI assistants to search recent posts, videos, and comments from social media and news sites.",
+  "tags": [
+   "research",
+   "supercharge",
+   "knowledge"
+  ],
+  "useFor": [
+   "Research executives or companies before sales calls and meetings",
+   "Track real-time community feedback and discussions on tech topics",
+   "Gather market odds and video transcripts across multiple web sources"
+  ],
+  "steps": [
+   "Install the skill into your assistant with `npx skills add mvanhorn/last30days-skill -g`.",
+   "Run `/last30days TopicName` inside your AI agent to begin searching Reddit, Hacker News, and web sources.",
+   "Follow the prompt setup to optionally connect extra platform credentials like X or YouTube."
+  ],
+  "repo": "mvanhorn/last30days-skill",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "kajisho5/ffmpeg-skill": {
+  "cat": "harness",
+  "kind": "AI video editing skill",
+  "what": "A collection of 42 local FFmpeg tools and a tool server that give coding agents full video and audio editing capabilities.",
+  "why": "Coding agents frequently guess incorrect FFmpeg settings or fail to verify their output files. Reach for this when you want your AI assistant to reliably cut clips, remove silences, resize videos, and adjust audio on your local machine.",
+  "level": "easy",
+  "start": "`npx ffmpeg-skill`",
+  "caution": "Requires local installations of FFmpeg and Python 3 on your system.",
+  "alts": [
+   "anthropics/claude-code",
+   "modelcontextprotocol/typescript-sdk"
+  ],
+  "packages": [
+   "ffmpeg-skill"
+  ],
+  "plain": "Gives your AI helper tools to crop, trim, add subtitles, and fix audio in video files on your computer.",
+  "tags": [
+   "media",
+   "supercharge",
+   "private"
+  ],
+  "useFor": [
+   "Trim silences and cut video clips locally with AI assistance",
+   "Add animated captions and subtitles to videos",
+   "Reframe widescreen footage into vertical videos for social media"
+  ],
+  "steps": [
+   "Ensure FFmpeg and Python 3 are installed on your computer.",
+   "Run `npx ffmpeg-skill` to connect the editing tools to your AI agent."
+  ],
+  "repo": "kajisho5/ffmpeg-skill",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "google-research/paper-orchestra": {
+  "cat": "frameworks",
+  "kind": "Academic paper generator",
+  "what": "PaperOrchestra uses multiple specialized AI agents to convert rough research ideas and experimental logs into complete LaTeX paper drafts.",
+  "why": "Formatting notes into a full scientific paper with literature reviews and charts takes significant effort. Reach for this tool when you want an automated system to draft paper outlines, write sections, find relevant citations, and build charts.",
+  "level": "setup",
+  "start": "./paper_writing_cli.sh",
+  "caution": "Requires setup of external key credentials for models and search services, and is an experimental repository that is not an officially supported Google product.",
+  "alts": [
+   "vaelkeep/hermes-paper-agent"
+  ],
+  "packages": [],
+  "plain": "A tool that uses multiple specialized AI assistants to turn your rough project notes into formatted research paper drafts.",
+  "tags": [
+   "docs",
+   "research",
+   "automate"
+  ],
+  "useFor": [
+   "Draft complete academic papers from raw notes and experiment logs",
+   "Synthesize literature reviews automatically from reference sources",
+   "Generate code-based plots and diagrams for paper submission"
+  ],
+  "steps": [
+   "Set up a Python 3.11 environment and install dependencies from the requirements file",
+   "Create a `.env` file and enter your required service key credentials",
+   "Run `./paper_writing_cli.sh` to start generating a paper from your raw notes"
+  ],
+  "repo": "google-research/paper-orchestra",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "RustXNG/RustXNG": {
+  "cat": "memory",
+  "kind": "Metasearch AI engine",
+  "what": "RustXNG is a fast metasearch engine written in Rust that aggregates web search results and extracts clean page text for AI agents.",
+  "why": "AI assistants often need live web search and webpage text to answer questions accurately. Reach for RustXNG when you want a self-run search backend that respects privacy, supports local document indexes, and exposes standard tool protocol integrations.",
+  "level": "setup",
+  "start": "cargo install --git https://github.com/sahenjp/RustXNG.git --tag v0.31.2 --locked",
+  "caution": "Full search profiles enable web scraping sources that may violate provider terms of service. Fetched web text is untrusted input and must be sanitized before passing to AI models.",
+  "alts": [
+   "unclecode/crawl4ai",
+   "firecrawl/firecrawl"
+  ],
+  "packages": [],
+  "plain": "A web search tool you run on your own computer to give AI assistants live web results.",
+  "tags": [
+   "research",
+   "knowledge",
+   "private"
+  ],
+  "useFor": [
+   "Provide web search results to local AI agents",
+   "Extract clean text from websites for document reference",
+   "Search local offline indexes without external web queries"
+  ],
+  "steps": [
+   "Install the binary using `cargo install --git https://github.com/sahenjp/RustXNG.git --tag v0.31.2 --locked`.",
+   "Start the search service with `rustxng --bind 127.0.0.1 --port 29483`.",
+   "Connect your AI client using the HTTP search endpoint or by running `rustxng mcp`."
+  ],
+  "repo": "RustXNG/RustXNG",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "edgerunners2/capri-ai-desktop": {
+  "cat": "coding",
+  "kind": "Visual desktop companion",
+  "what": "Capri is a cyberpunk-themed Windows desktop companion and visual interface for AI coding assistants and local models.",
+  "why": "It replaces command-line terminals with an interactive desktop character that automates screen tasks, controls media, and participates in voice calls. Reach for it when you want an overlay voice assistant to control Windows apps without typing commands.",
+  "level": "easy",
+  "start": "",
+  "caution": "Reusing consumer subscription logins with third-party tools may violate provider terms of service and risk account suspension. The project has no explicit license file.",
+  "alts": [
+   "anthropics/claude-code",
+   "openinterpreter/openinterpreter",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "An animated cyberpunk desktop assistant for Windows that listens to voice commands, controls apps, and joins voice calls.",
+  "tags": [
+   "automate",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Automate Windows screen tasks and launch games with voice commands",
+   "Bring an interactive AI companion into Discord voice calls",
+   "Control coding tools and local models through a visual screen character"
+  ],
+  "steps": [
+   "Download Capri-Portable.zip from the latest GitHub releases page.",
+   "Extract the zip archive to any folder on Windows 10 or 11.",
+   "Launch Capri and sign in or connect your AI service."
+  ],
+  "repo": "edgerunners2/capri-ai-desktop",
+  "at": "2026-11-16",
+  "source": "trending"
+ },
+ "AI4XE/Parallax": {
+  "cat": "harness",
+  "kind": "Coding agent plugin",
+  "what": "Parallax is an enhancement plugin for AI coding assistants that manages multi-agent planning, context resetting, and independent code review.",
+  "why": "Complex tasks often fail when an AI assistant loses context or approves its own buggy changes. Reach for Parallax when you want AI assistants to research requirements, undergo independent plan checks, and execute multi-step coding work automatically.",
+  "level": "setup",
+  "start": "git clone https://github.com/AI4XE/Parallax.git",
+  "caution": "Platform support varies across tools, and full compatibility on macOS is currently untested.",
+  "alts": [
+   "anthropics/claude-code",
+   "SuperClaude-Org/SuperClaude_Framework",
+   "bmad-code-org/BMAD-METHOD"
+  ],
+  "packages": [
+   "parallax-dsh"
+  ],
+  "plain": "An add-on for coding AI assistants that automatically plans, reviews, and completes complex programming tasks for you.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Orchestrate multi-agent coding workflows with automatic review gates",
+   "Hand off complex software development tasks to clean AI sessions",
+   "Enforce independent plan reviews before executing code changes"
+  ],
+  "steps": [
+   "Clone the repository to get the installer scripts and plugin files.",
+   "Run the installer script, such as `bash Parallax/install.sh /path/to/your-project` for Claude Code.",
+   "Type qstart or wish in your AI assistant chat to start planning and building."
+  ],
+  "repo": "AI4XE/Parallax",
+  "at": "2026-11-16",
+  "source": "trending"
  }
 }
