@@ -32,7 +32,8 @@
    "in": 8,
    "out": 40,
    "ctx": "1M",
-   "released": "2026-11-09"
+   "released": "2026-11-09",
+   "price": "$8 / $40"
   },
   {
    "id": "opus",
@@ -43,7 +44,8 @@
    "in": 4,
    "out": 20,
    "ctx": "1M",
-   "released": "2026-09-22"
+   "released": "2026-09-22",
+   "price": "$4 / $20"
   },
   {
    "id": "sonnet",
@@ -55,7 +57,8 @@
    "out": 10,
    "ctx": "1M",
    "released": "2026-09-28",
-   "note": "New 28 Sep: 30% faster than Sonnet 5, same price."
+   "note": "New 28 Sep: 30% faster than Sonnet 5, same price.",
+   "price": "$2 / $10"
   },
   {
    "id": "haiku",
@@ -67,8 +70,9 @@
    "out": 0.5,
    "ctx": "1M",
    "released": "2026-10-07",
-   "note": "New 7 Oct: replaces Haiku 4.5 at a tenth of the price. Prompts longer than 100K tokens cost 5x more ($0.50 / $2.50).",
-   "src": "https://platform.claude.com/docs/en/about-claude/pricing"
+   "note": "New 7 Oct: replaces Haiku 4.5 at a tenth of the price.",
+   "src": "https://platform.claude.com/docs/en/about-claude/pricing",
+   "price": "$0.10 / $0.50"
   },
   {
    "id": "mythos",
@@ -79,7 +83,8 @@
    "in": 10,
    "out": 50,
    "ctx": "1M",
-   "released": "2026-09-01"
+   "released": "2026-09-01",
+   "price": "$10 / $50"
   },
   {
    "id": "astra",
@@ -91,7 +96,8 @@
    "out": 50,
    "ctx": "1.05M",
    "released": "2026-09-04",
-   "note": "'Astra Pro' is the same model with reasoning mode set to pro: thinks longer, better on hard tasks."
+   "note": "'Astra Pro' is the same model with reasoning mode set to pro.",
+   "price": "$10 / $50"
   },
   {
    "id": "sol",
@@ -103,7 +109,8 @@
    "out": 10,
    "ctx": "1.05M",
    "released": "2026-09-29",
-   "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode."
+   "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode.",
+   "price": "$2 / $10"
   },
   {
    "id": "terra",
@@ -115,7 +122,8 @@
    "out": 5,
    "ctx": "1.05M",
    "released": "2026-10-26",
-   "note": "'Terra Pro' = same model, pro reasoning mode."
+   "note": "'Terra Pro' = same model, pro reasoning mode.",
+   "price": "$1 / $5"
   },
   {
    "id": "luna",
@@ -127,7 +135,8 @@
    "out": 0.5,
    "ctx": "1.05M",
    "released": "2026-09-22",
-   "note": "The model free ChatGPT users get. 'Luna Pro' = same model, pro reasoning mode."
+   "note": "The model free ChatGPT users get.",
+   "price": "$0.10 / $0.50"
   },
   {
    "id": "gptimage",
@@ -141,13 +150,14 @@
   {
    "id": "argon",
    "p": "google",
-   "name": "Gemini 4 Hydrogen",
+   "name": "Gemini 4 Argon",
    "tier": "Frontier",
    "best": "Google's new flagship: deep work in coding, finance, law, security and science.",
-   "in": 1.5,
-   "out": 7.5,
+   "in": 2,
+   "out": 10,
+   "price": "$2 / $10",
    "ctx": "1M",
-   "released": "2026-11-12",
+   "released": "2026-10-13",
    "note": "Google's latest flagship model."
   },
   {
@@ -155,10 +165,12 @@
    "p": "google",
    "name": "Gemini 3.1 Pro",
    "tier": "Older",
-   "best": "Still a preview, and now replaced by Gemini 4 Hydrogen as Google's flagship. Pick Hydrogen for new work.",
+   "best": "Still a preview, and now replaced by Gemini 4 Hydrogen as Google's flagship.",
    "in": 2,
    "out": 12,
-   "ctx": "1M"
+   "ctx": "1M",
+   "price": "$2 / $12",
+   "released": "2026-02-19"
   },
   {
    "id": "gflash",
@@ -172,30 +184,31 @@
    "released": "2026-09-02",
    "lockPrice": true,
    "src": "https://ai.google.dev/gemini-api/docs/pricing",
-   "note": "Launch price until 31 Dec 2026. From 1 Jan 2027 it doubles to $1.50 / $7.50."
+   "note": "Launch price."
   },
   {
    "id": "glite",
    "p": "google",
    "name": "Gemini 3.5 Flash-Lite",
    "tier": "Fast",
-   "best": "Cheap and fast Gemini for bulk work. The older 3.1 Flash-Lite costs even less ($0.25 / $1.50).",
+   "best": "Cheap and fast Gemini for bulk work.",
    "in": 0.3,
    "out": 2.5,
    "ctx": "1M",
    "released": "2026-07-21",
-   "src": "https://ai.google.dev/gemini-api/docs/pricing"
+   "src": "https://ai.google.dev/gemini-api/docs/pricing",
+   "price": "$0.30 / $2.50"
   },
   {
    "id": "nano",
    "p": "google",
    "name": "Nano Banana 2.1",
    "tier": "Image",
-   "best": "Image generation and photo editing. Pro does 4K and crisp in-image text.",
-   "price": "$0.03–0.11 / image",
+   "best": "Image generation and photo editing.",
+   "price": "$1.50 / $7.50",
    "ctx": "64K",
    "released": "2026-10-06",
-   "note": "Price depends on size: about $0.03 (1K), $0.05 (2K) or $0.11 (4K) per image.",
+   "note": "Price depends on size.",
    "src": "https://ai.google.dev/gemini-api/docs/pricing",
    "in": 1.5,
    "out": 7.5
@@ -206,7 +219,8 @@
    "name": "Veo 3.1",
    "tier": "Video",
    "best": "Cinematic video with synced audio.",
-   "price": "$0.05–0.60 / sec"
+   "price": "$0.05–$0.60 / sec",
+   "released": "2026-06-01"
   },
   {
    "id": "omni",
@@ -217,7 +231,8 @@
    "in": 1.5,
    "out": 9,
    "ctx": "131K",
-   "released": "2026-11-05"
+   "released": "2026-11-05",
+   "price": "$1.50 / $9"
   },
   {
    "id": "live",
@@ -225,7 +240,8 @@
    "name": "Gemini 3.8 Live",
    "tier": "Voice",
    "best": "Real-time voice conversation and voice agents.",
-   "price": "API"
+   "price": "API",
+   "released": "2026-09-01"
   },
   {
    "id": "lyria",
@@ -233,36 +249,39 @@
    "name": "Lyria 3.5",
    "tier": "Music",
    "best": "Full songs with verse/chorus structure.",
-   "price": "API"
+   "price": "API",
+   "released": "2026-03-30"
   },
   {
    "id": "qwen",
    "p": "open",
    "name": "Qwen3.8 (2.4T / 27B)",
    "tier": "Open",
-   "best": "Alibaba's free-to-download line. The big 2.4T model needs a server with many graphics cards; the 27B version fits one strong workstation.",
+   "best": "Alibaba's free-to-download line.",
    "price": "free*",
-   "note": "Qwen3.8 Max, the version in Alibaba's own app, is not downloadable.",
-   "src": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+   "note": "Max version is not downloadable.",
+   "src": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+   "released": "2026-08-12"
   },
   {
    "id": "glm",
    "p": "open",
    "name": "GLM-5.3",
    "tier": "Open",
-   "best": "Strongest open-weight model for coding. At about 753B parameters it needs a server with several graphics cards.",
+   "best": "Strongest open-weight model for coding.",
    "price": "free*",
-   "src": "https://huggingface.co/zai-org/GLM-5.3"
+   "src": "https://huggingface.co/zai-org/GLM-5.3",
+   "released": "2026-08-18"
   },
   {
    "id": "deepseek",
    "p": "open",
    "name": "DeepSeek V4.1 Flash 1017",
    "tier": "Open",
-   "best": "Near-frontier quality you can download. Even the newer V4.1 Flash (about 763B parameters) needs a server with several graphics cards.",
+   "best": "Near-frontier quality you can download.",
    "in": 0.04,
    "out": 0.5,
-   "price": "free*",
+   "price": "$0.04 / $0.50",
    "ctx": "1M",
    "released": "2026-10-17"
   },
@@ -275,7 +294,8 @@
    "in": 0.24,
    "out": 8.4,
    "ctx": "1M",
-   "released": "2026-10-23"
+   "released": "2026-10-23",
+   "price": "$0.24 / $8.40"
   },
   {
    "id": "mistral",
@@ -286,7 +306,8 @@
    "in": 0.7,
    "out": 2.1,
    "ctx": "1M",
-   "released": "2026-10-06"
+   "released": "2026-10-06",
+   "price": "$0.70 / $2.10"
   }
  ]
 }
