@@ -84,25 +84,25 @@
   {
    "id": "astra",
    "p": "openai",
-   "name": "GPT-6 Astra",
+   "name": "GPT-6.2 Astra",
    "tier": "Frontier",
    "best": "OpenAI's strongest: coding, computer and browser use, science, professional work.",
-   "in": 10,
-   "out": 50,
+   "in": 8,
+   "out": 40,
    "ctx": "1.05M",
-   "released": "2026-09-04",
+   "released": "2026-11-17",
    "note": "'Astra Pro' is the same model with reasoning mode set to pro: thinks longer, better on hard tasks."
   },
   {
    "id": "sol",
    "p": "openai",
-   "name": "GPT-6.1 Sol",
+   "name": "GPT-6.2 Sol",
    "tier": "Balanced",
    "best": "Strong reasoning for complex professional work at a mid-tier price.",
    "in": 2,
    "out": 10,
    "ctx": "1.05M",
-   "released": "2026-09-29",
+   "released": "2026-11-17",
    "note": "In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode."
   },
   {
