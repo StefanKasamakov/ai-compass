@@ -22998,5 +22998,76 @@
   "repo": "Timaga/noda-local-ai-notes",
   "at": "2026-11-17",
   "source": "trending"
+ },
+ "jingyaogong/minimind": {
+  "cat": "local",
+  "kind": "Tiny LLM training framework",
+  "what": "MiniMind is an open-source codebase for training, fine-tuning, and running extremely lightweight language models from scratch.",
+  "why": "Standard AI models require expensive cloud setups and rely on heavy wrapper libraries that hide internal details. MiniMind provides pure PyTorch code to train small models quickly on consumer graphics cards for minimal cost.",
+  "level": "setup",
+  "start": "git clone --depth 1 https://github.com/jingyaogong/minimind",
+  "caution": "Training models locally requires a dedicated graphics card with PyTorch and proper CUDA drivers configured.",
+  "alts": [
+   "karpathy/nanochat",
+   "ggml-org/llama.cpp",
+   "ollama/ollama"
+  ],
+  "packages": [
+   "streamlit"
+  ],
+  "plain": "A step-by-step tool for building and training your own small artificial intelligence on your computer.",
+  "tags": [
+   "code",
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Train lightweight language models on personal computers",
+   "Learn AI model architecture using plain PyTorch code",
+   "Run local text generation and simple chat bots"
+  ],
+  "steps": [
+   "Clone the repository using `git clone --depth 1 https://github.com/jingyaogong/minimind`",
+   "Install required dependencies with `pip install -r requirements.txt`",
+   "Download model weights using `modelscope download --model gongjy/minimind-3 --local_dir ./minimind-3`",
+   "Start interactive model testing with `python eval_llm.py --load_from ./minimind-3`"
+  ],
+  "repo": "jingyaogong/minimind",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "8hjkkwikl8/ai-portfolio": {
+  "cat": "memory",
+  "kind": "AI engineering portfolio",
+  "what": "A collection of three runnable Python AI projects featuring traceable document search, prompt evaluation, and safe text-to-SQL data analysis.",
+  "why": "It demonstrates production-ready AI engineering patterns that work offline without requiring external API keys by default. Reach for it to learn how to build verifiable document search, test prompt changes, and run safe database queries.",
+  "level": "setup",
+  "start": "python -m pip install -r requirements.txt",
+  "caution": "",
+  "alts": [
+   "promptfoo/promptfoo",
+   "run-llama/llama_index",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "A set of three code examples showing how to search documents, test AI prompts, and query databases safely.",
+  "tags": [
+   "knowledge",
+   "private",
+   "monitor"
+  ],
+  "useFor": [
+   "Run local document question answering with verified quote references",
+   "Evaluate prompt template performance with offline deterministic reports",
+   "Convert plain text questions into read-only SQL database queries securely"
+  ],
+  "steps": [
+   "Install the required Python dependencies with `python -m pip install -r requirements.txt`.",
+   "Start the web services by running `python start_all.py`.",
+   "Run automated verification tests across all projects using `python verify_all.py`."
+  ],
+  "repo": "8hjkkwikl8/ai-portfolio",
+  "at": "2026-11-17",
+  "source": "trending"
  }
 }
