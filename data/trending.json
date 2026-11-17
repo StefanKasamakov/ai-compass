@@ -1,30 +1,80 @@
 {
- "updated": "2026-11-17T13:49:31.560Z",
+ "updated": "2026-11-17T21:01:14.969Z",
  "items": [
   {
-   "repo": "jingyaogong/minimind",
-   "stars": 65696,
-   "desc": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
-   "created": "2024-07-27T04:34:12Z",
+   "repo": "erkamyaman/rust-anything",
+   "stars": 999,
+   "desc": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
+   "created": "2026-11-16T12:10:36Z",
    "topics": [
-    "artificial-intelligence",
-    "large-language-model"
+    "agent-skills",
+    "claude-code",
+    "cli",
+    "code-migration"
    ],
-   "lang": "Python",
+   "lang": "Rust",
    "sources": [
-    "GitHub Trending (daily)"
+    "new on GitHub"
    ]
   },
   {
-   "repo": "8hjkkwikl8/ai-portfolio",
-   "stars": 105,
-   "desc": "三个可运行的 AI 工程项目：可追溯 RAG、提示词评测与受守护的 NL2SQL 分析",
-   "created": "2026-11-11T05:28:14Z",
+   "repo": "sybil-solutions/inference-optimisation-skill",
+   "stars": 863,
+   "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
+   "created": "2026-11-16T18:40:04Z",
    "topics": [
-    "ai",
-    "fastapi",
-    "llm",
-    "nl2sql"
+    "agent-skill",
+    "benchmarking",
+    "claude-code",
+    "inference"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "precygtrucqui1981/blender-ai-copilot-lab",
+   "stars": 507,
+   "desc": "An AI lab for Blender where manager–worker–reviewer agent teams run multi-step scene briefs as supervised experiments—a live task board, review findings, one correction attempt per blocked task, named undo, and a built-in MCP server. · blender-ai-copilot-lab · blender · blender 3d · blender addon · blender plugin · blender extension",
+   "created": "2026-11-12T19:33:16Z",
+   "topics": [
+    "3d-automation",
+    "3d-modeling",
+    "blender",
+    "blender-addon"
+   ],
+   "lang": null,
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Nihongo-editor/crypto-accumulation-scanner",
+   "stars": 153,
+   "desc": "Community-driven crypto accumulation scanner for Discord and Telegram rich",
+   "created": "2026-11-15T19:41:23Z",
+   "topics": [
+    "asyncio",
+    "ats",
+    "booking-system",
+    "conversational-ai"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Leonccaa/ReVolta",
+   "stars": 63,
+   "desc": "Stable, high-throughput inference server for multi-GPU NVIDIA V100 (SM70): Qwen3.8 Flash-Next with AWQ / NVFP4, multimodal input, CPU/disk KV offload, and MTP or DFlash2 speculative decoding.",
+   "created": "2026-10-20T02:25:47Z",
+   "topics": [
+    "awq",
+    "flash-next",
+    "kv-cache-offloading",
+    "llm-inference"
    ],
    "lang": "Python",
    "sources": [

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-17T14:11:21.234Z",
- "scanned": "2026-11-17T00:04:23.702Z",
- "claudeVersion": "2.1.325",
- "total": 8840,
+ "updated": "2026-11-17T21:17:47.048Z",
+ "scanned": "2026-11-17T11:25:09.192Z",
+ "claudeVersion": "2.1.326",
+ "total": 8898,
  "categories": [
   [
    "builtin",
@@ -169,9 +169,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 416,
+   "stars": 421,
    "license": "MIT",
-   "pushed": "2026-11-16T12:48:52Z",
+   "pushed": "2026-11-17T07:07:43Z",
    "marketplace": null,
    "plugin": "cache-tax",
    "featured": true,
@@ -244,7 +244,7 @@
     "?"
    ],
    "validated": "passed",
-   "stars": 443,
+   "stars": 451,
    "license": "MIT",
    "pushed": "2026-11-16T18:07:40Z",
    "marketplace": null,
@@ -280,7 +280,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 311,
+   "stars": 315,
    "license": "MIT",
    "pushed": "2026-11-07T14:33:03Z",
    "marketplace": "claude-flightdeck",
@@ -306,7 +306,7 @@
    "sees": [],
    "surfaces": [],
    "validated": "unknown",
-   "stars": 440,
+   "stars": 448,
    "license": "MIT",
    "pushed": "2026-11-16T13:43:22Z",
    "marketplace": "claude-code-filetree",
@@ -354,7 +354,7 @@
    "validated": "warnings",
    "stars": 75,
    "license": "MIT",
-   "pushed": "2026-11-14T09:34:33Z",
+   "pushed": "2026-11-17T06:53:34Z",
    "marketplace": "oikon48",
    "plugin": "prompt-rail",
    "featured": true,
@@ -392,9 +392,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 923,
+   "stars": 960,
    "license": "MIT",
-   "pushed": "2026-11-16T16:54:37Z",
+   "pushed": "2026-11-17T01:05:47Z",
    "marketplace": "lot-map",
    "plugin": "lot-map",
    "featured": true,
@@ -973,10 +973,10 @@
    "surfaces": [
     "AbovePrompt"
    ],
-   "validated": "warnings",
+   "validated": "passed",
    "stars": 19,
    "license": "MIT",
-   "pushed": "2026-10-15T00:44:49Z",
+   "pushed": "2026-11-17T10:12:25Z",
    "marketplace": "claude-statuspane",
    "plugin": "statuspane"
   },
@@ -1114,9 +1114,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 492,
+   "stars": 494,
    "license": "MIT",
-   "pushed": "2026-11-16T14:14:41Z",
+   "pushed": "2026-11-17T00:04:33Z",
    "marketplace": "claude-code-mods",
    "plugin": "context-bar",
    "media": {
@@ -1561,11 +1561,30 @@
    "plain": "A creature card game above the Claude Code prompt with wild encounters, asynchronous player duels, trading, and online or offline play.",
    "cat": "fun",
    "by": "416rehman",
-   "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "writes files",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "PromptHint",
+    "SessionMode",
+    "Spinner"
+   ],
+   "validated": "warnings",
    "stars": 6,
    "license": "MIT",
    "pushed": "2026-11-14T00:23:11Z",
@@ -2441,9 +2460,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 492,
+   "stars": 494,
    "license": "MIT",
-   "pushed": "2026-11-16T14:14:41Z",
+   "pushed": "2026-11-17T00:04:33Z",
    "marketplace": "claude-code-mods",
    "plugin": "review-watch",
    "media": {
@@ -2569,10 +2588,26 @@
    "cat": "safety",
    "by": "Mert Kaya",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "plays audio",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "/\"^(?:Bash|Read|Edit|MultiEdit|Write|NotebookEdit|Grep|Glob)$\"/ calls",
+    "every tool call"
+   ],
+   "surfaces": [
+    "AbovePrompt|Pane"
+   ],
+   "validated": "warnings",
    "stars": 8,
    "license": "MIT",
    "pushed": "2026-11-15T13:45:32Z",
@@ -2816,9 +2851,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 492,
+   "stars": 494,
    "license": "MIT",
-   "pushed": "2026-11-16T14:14:41Z",
+   "pushed": "2026-11-17T00:04:33Z",
    "marketplace": "claude-code-mods",
    "plugin": "blast-radius",
    "media": {
@@ -3102,13 +3137,36 @@
    "cat": "memory",
    "by": "noopz",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "writes files",
+    "drives Claude",
+    "reads files",
+    "reads env vars",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "/\"^(Read|Grep|Glob|NotebookRead|Bash|Write|Edit|NotebookEdit)$\"/ calls",
+    "Bash calls",
+    "Write|Edit calls",
+    "Read calls",
+    "WebFetch calls",
+    "every skill"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "ToolUse",
+    "Spinner",
+    "AssistantMessage",
+    "Pane"
+   ],
+   "validated": "warnings",
    "stars": 11,
    "license": "MIT",
-   "pushed": "2026-11-02T04:20:22Z",
+   "pushed": "2026-11-17T06:27:51Z",
    "marketplace": null,
    "plugin": "commonplace"
   },
@@ -3391,9 +3449,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 4688,
+   "stars": 4696,
    "license": "MIT",
-   "pushed": "2026-11-16T17:34:24Z",
+   "pushed": "2026-11-16T22:12:12Z",
    "marketplace": "terminal-browser",
    "plugin": "terminal-browser"
   },
@@ -3406,12 +3464,39 @@
    "plain": "Restyles the transcript in fifteen themes, draws tables, code, diffs, Mermaid charts and math as cards, opens tool rows onto their full input and output, and adds a terminal shell card, a calm preset that turns off motion, and a usage band above the prompt.",
    "cat": "rendering",
    "by": "hellosverre",
-   "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
-   "stars": 303,
+   "reach": 3,
+   "reachLabels": [
+    "network",
+    "runs processes",
+    "drives Claude",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "every tool call",
+    "/\"^mcp__skins__design$\"/ calls"
+   ],
+   "surfaces": [
+    "Pane",
+    "ToolUse",
+    "ToolGroup",
+    "ToolResult",
+    "UserMessage",
+    "AssistantMessage",
+    "CommandOutput",
+    "Spinner",
+    "TurnDuration",
+    "AbovePrompt",
+    "AskUserQuestion"
+   ],
+   "validated": "warnings",
+   "stars": 306,
    "license": "MIT",
    "pushed": "2026-11-01T18:21:15Z",
    "marketplace": "hellosverre-mods",
@@ -3436,6 +3521,8 @@
     "runs processes",
     "changes config",
     "drives Claude",
+    "writes the prompt box",
+    "writes the clipboard",
     "reads files",
     "reads env vars",
     "reads mod state",
@@ -3455,7 +3542,7 @@
    "validated": "passed",
    "stars": 7,
    "license": "MIT",
-   "pushed": "2026-10-15T00:44:53Z",
+   "pushed": "2026-11-17T10:22:39Z",
    "marketplace": "claude-mdview",
    "plugin": "mdview"
   },
@@ -3654,9 +3741,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 492,
+   "stars": 494,
    "license": "MIT",
-   "pushed": "2026-11-16T14:14:41Z",
+   "pushed": "2026-11-17T00:04:33Z",
    "marketplace": "claude-code-mods",
    "plugin": "md-preview",
    "media": {
@@ -3996,7 +4083,7 @@
    "validated": "warnings",
    "stars": 8,
    "license": "Apache-2.0",
-   "pushed": "2026-11-15T10:32:10Z",
+   "pushed": "2026-11-17T10:03:22Z",
    "marketplace": null,
    "plugin": "autotel"
   },
@@ -4048,6 +4135,7 @@
    "reach": 2,
    "reachLabels": [
     "runs processes",
+    "drives Claude",
     "reads files",
     "reads env vars",
     "persists state",
@@ -4062,7 +4150,7 @@
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-11-16T20:24:33Z",
+   "pushed": "2026-11-16T23:19:55Z",
    "marketplace": "afkswitch",
    "plugin": "afkswitch",
    "media": {
@@ -4150,10 +4238,10 @@
     "Pane",
     "AbovePrompt"
    ],
-   "validated": "warnings",
+   "validated": "passed",
    "stars": 12,
    "license": "MIT",
-   "pushed": "2026-10-15T00:44:41Z",
+   "pushed": "2026-11-17T10:12:27Z",
    "marketplace": "claude-agentpane",
    "plugin": "agentpane"
   },
@@ -4336,9 +4424,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 492,
+   "stars": 494,
    "license": "MIT",
-   "pushed": "2026-11-16T14:14:41Z",
+   "pushed": "2026-11-17T00:04:33Z",
    "marketplace": "claude-code-mods",
    "plugin": "mission-control",
    "media": {

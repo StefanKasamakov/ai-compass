@@ -23069,5 +23069,178 @@
   "repo": "8hjkkwikl8/ai-portfolio",
   "at": "2026-11-17",
   "source": "trending"
+ },
+ "erkamyaman/rust-anything": {
+  "cat": "harness",
+  "kind": "Rust migration agent skill",
+  "what": "An AI agent tool and workflow helper that guides coding assistants through rewriting software into Rust while continuously testing against recorded outputs.",
+  "why": "Rewriting code in Rust to improve speed is risky and hard to verify function by function. Reach for this when you want an AI agent to profile slow hot paths in TypeScript, Python, Go, C, Java, or Ruby, generate Rust wrappers, and verify identical behavior.",
+  "level": "setup",
+  "start": "cargo install rust-anything",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "addyosmani/agent-skills",
+   "openai/codex"
+  ],
+  "packages": [
+   "rust-anything"
+  ],
+  "plain": "Helps AI assistants rewrite code from other languages into Rust while verifying that everything still works correctly.",
+  "tags": [
+   "code",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Port slow application code to Rust using AI coding assistants",
+   "Record existing application outputs to verify Rust rewrite accuracy",
+   "Benchmark Rust code performance against original Python or TypeScript code"
+  ],
+  "steps": [
+   "Install the tool by running `cargo install rust-anything`.",
+   "Connect it to your AI agent by running `rust-anything setup`.",
+   "Ask your AI assistant to profile and port slow code loops into Rust."
+  ],
+  "repo": "erkamyaman/rust-anything",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "sybil-solutions/inference-optimisation-skill": {
+  "cat": "harness",
+  "kind": "LLM tuning skill",
+  "what": "An agent skill and benchmarking toolkit that systematically tunes local AI model server speeds across various hardware setups.",
+  "why": "Manual AI model optimization is often slow and prone to random measurement noise. Reach for this tool when you want an AI coding agent to systematically test, benchmark, and maximize local model performance without breaking stability.",
+  "level": "setup",
+  "start": "git clone https://github.com/sybil-solutions/inference-optimisation-skill",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "A guide and tool that helps your computer answer text questions much faster when running AI locally.",
+  "tags": [
+   "supercharge",
+   "save",
+   "private"
+  ],
+  "useFor": [
+   "Calculate theoretical maximum speed for your hardware setup",
+   "Tune local model server settings automatically using an AI agent",
+   "Benchmark server response speed and memory consumption"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Copy the skill directory to your Claude Code skills folder using `cp -r inference-optimisation-skill/skills/inference-optimisation ~/.claude/skills/`.",
+   "Ask your AI agent to optimize the speed of your running local model server."
+  ],
+  "repo": "sybil-solutions/inference-optimisation-skill",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "precygtrucqui1981/blender-ai-copilot-lab": {
+  "cat": "media",
+  "kind": "Blender AI agent extension",
+  "what": "An AI extension for Blender that coordinates manager, worker, and reviewer agents to execute multi-step 3D scene creation tasks.",
+  "why": "Complex 3D scene prompts often lose context or skip failed steps in single chat threads. Reach for this project to run structured, multi-step scene edits with automatic review checks, named undo steps, and live task tracking inside Blender.",
+  "level": "easy",
+  "start": "Download mcp-for-blender-pro.zip from the latest release and install it via Blender's Edit > Preferences > Get Extensions menu.",
+  "caution": "",
+  "alts": [
+   "anujasid/blender-ai-mcp-addon",
+   "anujasid/mcp-for-blender-pro",
+   "racdeufindurch198812/Blender-AI-MCP-Studio"
+  ],
+  "packages": [],
+  "plain": "An extension that adds an AI team inside Blender to create 3D scenes step by step.",
+  "tags": [
+   "media",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Build 3D scenes using structured manager and worker agent teams",
+   "Review 3D scene modifications automatically before approving changes",
+   "Expose Blender controls to external tools through a built-in server"
+  ],
+  "steps": [
+   "Download `mcp-for-blender-pro.zip` from the latest release page.",
+   "In Blender, open Edit, Preferences, Get Extensions, and select Install from Disk.",
+   "Enable the extension, open the 3D Viewport sidebar, and select your AI provider and model."
+  ],
+  "repo": "precygtrucqui1981/blender-ai-copilot-lab",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "Nihongo-editor/crypto-accumulation-scanner": {
+  "cat": "frameworks",
+  "kind": "Crypto market scanner bot",
+  "what": "Crypto Accumulation Scanner is an automated market tool that detects flat price setups in cryptocurrencies and delivers ranked watchlist alerts to Telegram.",
+  "why": "Searching through hundreds of cryptocurrency charts manually for emerging breakout patterns is time-consuming. Reach for this tool when you want automated price base analysis, catalyst news checks, and scheduled market digests sent directly to your chat app.",
+  "level": "setup",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "tradermonty/claude-trading-skills",
+   "Jakeschincariol/trader-skill"
+  ],
+  "packages": [],
+  "plain": "A chat bot that tracks cryptocurrency price trends and sends you market summary reports.",
+  "tags": [
+   "automate",
+   "research",
+   "connect"
+  ],
+  "useFor": [
+   "Scan crypto markets for flat price patterns before potential breakouts",
+   "Receive scheduled cryptocurrency watchlist digests directly in Telegram chats",
+   "Check technical factors and news headlines for specific crypto coins"
+  ],
+  "steps": [
+   "Open PowerShell on Windows 10 or 11 with internet access.",
+   "Copy the template configuration file and add your Telegram bot token.",
+   "Customize your coin watchlist, blacklist, and scan schedule in the config file.",
+   "Run the bot script or enable the scheduled Windows installer task."
+  ],
+  "repo": "Nihongo-editor/crypto-accumulation-scanner",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "Leonccaa/ReVolta": {
+  "cat": "local",
+  "kind": "V100 inference server",
+  "what": "ReVolta is a high-throughput inference server optimized for running Qwen3.8 Flash-Next AI models on multi-GPU NVIDIA V100 systems.",
+  "why": "It enables utilizing older NVIDIA V100 graphics cards to serve large text, image, and video models with memory offloading. Reach for it when you want to turn multi-V100 hardware into a high-capacity local AI service.",
+  "level": "setup",
+  "start": "pip install revolta==0.1.5",
+  "caution": "Requires four or more NVIDIA V100 32 GB GPUs, CUDA 12.8 drivers, and substantial system memory (up to 128 GiB).",
+  "alts": [
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp",
+   "ollama/ollama"
+  ],
+  "packages": [
+   "revolta"
+  ],
+  "plain": "Runs large artificial intelligence models efficiently on servers equipped with multiple older NVIDIA graphics cards.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Host large multimodal AI models on older hardware",
+   "Serve OpenAI-compatible text and image generation requests",
+   "Cache conversation memory on system RAM or SSD"
+  ],
+  "steps": [
+   "Create and activate a Python 3.12 virtual environment.",
+   "Install the ReVolta package using `pip install revolta==0.1.5`.",
+   "Download model weights and launch the server using standard vllm commands."
+  ],
+  "repo": "Leonccaa/ReVolta",
+  "at": "2026-11-17",
+  "source": "trending"
  }
 }
