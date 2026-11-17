@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-16T22:14:32.389Z",
+ "updated": "2026-11-17T08:02:00.557Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "llm 0.37.3",
+   "url": "https://simonwillison.net/2026/Nov/16/llm/",
+   "date": "2026-11-16T23:57:26.000Z",
+   "summary": "Simon Willison released version 0.37.3 of the llm command-line utility, patching a logging bug caused by Homebrew's latest SQLite update. Users running llm via Homebrew should update to prevent database write errors.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "GitHub release",
    "title": "Claude Code v2.1.326",
@@ -44,6 +60,20 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/11/708090845-dba83c99-f90a-44f8-b5dc-ea4d634a8dee.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "VS Code retires the Local harness in February 2027",
+   "url": "https://github.blog/changelog/2026-11-16-vs-code-retires-the-local-harness-in-february-2027",
+   "date": "2026-11-16T19:22:56.000Z",
+   "summary": "GitHub announced that VS Code will retire its legacy Local harness for Copilot in February 2027. Developers building Copilot agent extensions should migrate to the updated context and tool coordination APIs.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/704252268-e600c177-84f0-438a-adfa-2b71cd22ea43.png"
   },
   {
    "source": "OpenAI",
@@ -2072,36 +2102,6 @@
    "big": false,
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/5kxMZV1Js4071yUAa9rsyx/2ac76c7318411b493ec032afb3d7aaf9/daybreak-red-aws-govcloud-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub",
-   "title": "BYOK and enterprise custom models in the Copilot usage API",
-   "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
-   "date": "2026-11-04T00:32:19.000Z",
-   "summary": "GitHub Copilot usage API now includes bring your own key (BYOK) metrics.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/11/692697342-1fcb18df-03bf-4266-a109-f6f85f5e2427.jpeg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "datasette-apps 0.3a0",
-   "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/",
-   "date": "2026-11-04T00:29:36.000Z",
-   "summary": "Datasette Apps 0.3a0 adds support for hosting and editing custom HTML applications created by LLMs via Datasette Agent.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "",
    "viaBrowser": true
   }
  ]

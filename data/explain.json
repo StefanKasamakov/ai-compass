@@ -22895,5 +22895,108 @@
   "repo": "AI4XE/Parallax",
   "at": "2026-11-16",
   "source": "trending"
+ },
+ "liuhaisi2026212-maker/taishang-laojun": {
+  "cat": "harness",
+  "kind": "short video creation skill",
+  "what": "A skill and prompt framework that turns raw personal stories or trending videos into authentic, natural-sounding short video scripts for Douyin and Xiaohongshu.",
+  "why": "Helps creators who struggle with topic ideas, hook writing, or overly generic AI-sounding scripts by grounding every script in their actual experience and proven pacing principles.",
+  "level": "setup",
+  "start": "npx -y skills add liuhaisi2026212-maker/taishang-laojun -g --all",
+  "caution": "Non-commercial license (CC BY-NC 4.0). Requires specific agent runtimes or manually pasting prompt files into chat bots.",
+  "alts": [
+   "google/skills",
+   "addyosmani/agent-skills",
+   "blader/humanizer"
+  ],
+  "packages": [],
+  "plain": "Helps your AI write natural, spoken short-video scripts using your own real-life stories instead of robotic copy.",
+  "tags": [
+   "supercharge",
+   "docs",
+   "media"
+  ],
+  "useFor": [
+   "Turn real personal stories into spoken short video scripts",
+   "Analyze competitor viral videos to extract workable hooks and pacing",
+   "Strip generic AI cliches out of existing video drafts"
+  ],
+  "steps": [
+   "Run `npx -y skills add liuhaisi2026212-maker/taishang-laojun -g --all` or copy prompt files to your chat bot",
+   "Tell your AI: 'Use the furnace, I want to film a video but do not know what to film'",
+   "Answer the AI's diagnostic questions to create your creator profile and generate scripts"
+  ],
+  "repo": "liuhaisi2026212-maker/taishang-laojun",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "Doug-218/blender-ai-copilot-forge": {
+  "cat": "media",
+  "kind": "Blender AI copilot",
+  "what": "An AI copilot extension for Blender that generates 3D layouts, primitives, lighting, and materials from text descriptions with step-by-step approvals.",
+  "why": "Blocking out 3D scenes requires repetitive menu navigation and manual transform arithmetic. Reach for this to automatically forge initial scenes, lighting rigs, and duplicate grids through guided AI prompts.",
+  "level": "setup",
+  "start": "Download mcp-for-blender-pro.zip from Releases, then install it via Blender's Edit > Preferences > Get Extensions menu.",
+  "caution": "",
+  "alts": [
+   "anujasid/mcp-for-blender-pro",
+   "anujasid/blender-ai-mcp-addon",
+   "LiCinCan/blender-ai-mcp-addon"
+  ],
+  "packages": [],
+  "plain": "An AI assistant inside Blender that builds 3D scenes, lights, and materials from your written instructions.",
+  "tags": [
+   "media",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Generate full 3D layouts and lighting rigs from text briefs",
+   "Create neat duplicate rows of objects without doing math",
+   "Assign and adjust materials step by step with undo support"
+  ],
+  "steps": [
+   "Download the extension ZIP file from the GitHub releases page.",
+   "In Blender, open Edit > Preferences > Get Extensions > Install from Disk and choose the ZIP.",
+   "Open the 3D Viewport sidebar under MCP Pro to enter your AI provider credentials and start forging."
+  ],
+  "repo": "Doug-218/blender-ai-copilot-forge",
+  "at": "2026-11-17",
+  "source": "trending"
+ },
+ "Timaga/noda-local-ai-notes": {
+  "cat": "memory",
+  "kind": "local AI notes app",
+  "what": "Noda is a local-first Windows note-taking desktop app that manages Markdown files with AI tagging, a knowledge graph, and chat with source citations.",
+  "why": "It gives you an offline, private second brain where your notes stay in regular text files and an AI helps connect and query your personal knowledge.",
+  "level": "easy",
+  "start": "Download and run Noda-Setup-<version>-x64.exe from the GitHub Releases page.",
+  "caution": "Windows x64 only. The installer is currently unsigned. Uses the PolyForm Noncommercial License, so commercial use is prohibited.",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "janhq/jan",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "A private Windows notes app that uses offline AI to organize your text notes and answer questions from them.",
+  "tags": [
+   "knowledge",
+   "private",
+   "docs"
+  ],
+  "useFor": [
+   "Quickly capture thoughts and let offline AI suggest titles and tags",
+   "Explore connections and backlinks between Markdown notes in a visual graph",
+   "Chat with your personal notes and receive answers with clickable source citations"
+  ],
+  "steps": [
+   "Download and run the installer executable from GitHub Releases.",
+   "Open Noda, create a project folder or link an existing Markdown folder.",
+   "Allow the app to download local runtime files and search models over the internet.",
+   "Create your first note or press Ctrl + Shift + Space for quick capture."
+  ],
+  "repo": "Timaga/noda-local-ai-notes",
+  "at": "2026-11-17",
+  "source": "trending"
  }
 }

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T22:26:25.849Z",
- "scanned": "2026-11-16T06:21:02.520Z",
+ "updated": "2026-11-17T08:12:10.327Z",
+ "scanned": "2026-11-17T00:04:23.702Z",
  "claudeVersion": "2.1.325",
- "total": 8769,
+ "total": 8838,
  "categories": [
   [
    "builtin",
@@ -169,9 +169,9 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 412,
+   "stars": 416,
    "license": "MIT",
-   "pushed": "2026-11-16T05:24:36Z",
+   "pushed": "2026-11-16T12:48:52Z",
    "marketplace": null,
    "plugin": "cache-tax",
    "featured": true,
@@ -244,9 +244,9 @@
     "?"
    ],
    "validated": "passed",
-   "stars": 434,
+   "stars": 443,
    "license": "MIT",
-   "pushed": "2026-11-15T14:53:37Z",
+   "pushed": "2026-11-16T18:07:40Z",
    "marketplace": null,
    "plugin": "prismantis",
    "featured": true,
@@ -280,7 +280,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 302,
+   "stars": 311,
    "license": "MIT",
    "pushed": "2026-11-07T14:33:03Z",
    "marketplace": "claude-flightdeck",
@@ -302,33 +302,13 @@
    "cat": "rendering",
    "by": "Kurt Buhler",
    "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "writes files",
-    "changes config",
-    "drives Claude",
-    "writes the clipboard",
-    "reads files",
-    "reads env vars",
-    "reads settings",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "every tool call",
-    "Read calls",
-    "? calls",
-    "every prompt"
-   ],
-   "surfaces": [
-    "AssistantMessage",
-    "Pane"
-   ],
-   "validated": "passed",
-   "stars": 436,
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
+   "stars": 440,
    "license": "MIT",
-   "pushed": "2026-11-11T14:56:47Z",
+   "pushed": "2026-11-16T13:43:22Z",
    "marketplace": "claude-code-filetree",
    "plugin": "filetree",
    "featured": true,
@@ -372,7 +352,7 @@
     "PromptHint"
    ],
    "validated": "warnings",
-   "stars": 73,
+   "stars": 75,
    "license": "MIT",
    "pushed": "2026-11-14T09:34:33Z",
    "marketplace": "oikon48",
@@ -412,9 +392,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 899,
+   "stars": 923,
    "license": "MIT",
-   "pushed": "2026-11-15T16:15:15Z",
+   "pushed": "2026-11-16T16:54:37Z",
    "marketplace": "lot-map",
    "plugin": "lot-map",
    "featured": true,
@@ -1134,9 +1114,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 488,
+   "stars": 492,
    "license": "MIT",
-   "pushed": "2026-11-15T21:20:42Z",
+   "pushed": "2026-11-16T14:14:41Z",
    "marketplace": "claude-code-mods",
    "plugin": "context-bar",
    "media": {
@@ -1581,30 +1561,11 @@
    "plain": "A creature card game above the Claude Code prompt with wild encounters, asynchronous player duels, trading, and online or offline play.",
    "cat": "fun",
    "by": "416rehman",
-   "reach": 3,
-   "reachLabels": [
-    "network",
-    "writes files",
-    "writes the clipboard",
-    "reads files",
-    "reads env vars",
-    "reads mod state",
-    "plays audio",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "classic hooks",
-    "compaction"
-   ],
-   "surfaces": [
-    "AbovePrompt",
-    "Pane",
-    "PromptHint",
-    "SessionMode",
-    "Spinner"
-   ],
-   "validated": "warnings",
+   "reach": 2,
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 6,
    "license": "MIT",
    "pushed": "2026-11-14T00:23:11Z",
@@ -2262,27 +2223,11 @@
    "plain": "A hand-drawn pixel ninja above the prompt, any of 20 from Naruto, who casts their jutsu at a training post while Claude works, summons for subagents, cheers when a turn ends and sleeps when you step away, drawn locally with no model calls or network.",
    "cat": "fun",
    "by": "Harsha Reddy",
-   "reach": 1,
-   "reachLabels": [
-    "writes the prompt box",
-    "reads env vars",
-    "reads settings",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "every prompt",
-    "every tool call",
-    "classic hooks"
-   ],
-   "surfaces": [
-    "ToolProgress",
-    "Spinner",
-    "TurnDuration",
-    "AbovePrompt"
-   ],
-   "validated": "warnings",
+   "reach": 2,
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 2,
    "license": "MIT",
    "pushed": "2026-10-10T19:14:45Z",
@@ -2427,7 +2372,7 @@
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-11-09T16:46:57Z",
+   "pushed": "2026-11-16T16:47:13Z",
    "marketplace": "pr-pulse",
    "plugin": "pr-pulse",
    "media": {
@@ -2496,9 +2441,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 488,
+   "stars": 492,
    "license": "MIT",
-   "pushed": "2026-11-15T21:20:42Z",
+   "pushed": "2026-11-16T14:14:41Z",
    "marketplace": "claude-code-mods",
    "plugin": "review-watch",
    "media": {
@@ -2624,26 +2569,10 @@
    "cat": "safety",
    "by": "Mert Kaya",
    "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "writes files",
-    "drives Claude",
-    "reads files",
-    "reads env vars",
-    "reads mod state",
-    "plays audio",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "classic hooks",
-    "/\"^(?:Bash|Read|Edit|MultiEdit|Write|NotebookEdit|Grep|Glob)$\"/ calls",
-    "every tool call"
-   ],
-   "surfaces": [
-    "AbovePrompt|Pane"
-   ],
-   "validated": "warnings",
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 8,
    "license": "MIT",
    "pushed": "2026-11-15T13:45:32Z",
@@ -2887,9 +2816,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 488,
+   "stars": 492,
    "license": "MIT",
-   "pushed": "2026-11-15T21:20:42Z",
+   "pushed": "2026-11-16T14:14:41Z",
    "marketplace": "claude-code-mods",
    "plugin": "blast-radius",
    "media": {
@@ -3129,7 +3058,7 @@
    "validated": "passed",
    "stars": 51,
    "license": "NOASSERTION",
-   "pushed": "2026-11-13T19:12:48Z",
+   "pushed": "2026-11-16T18:38:16Z",
    "marketplace": null,
    "plugin": "kindex-modern"
   },
@@ -3173,33 +3102,10 @@
    "cat": "memory",
    "by": "noopz",
    "reach": 2,
-   "reachLabels": [
-    "network",
-    "runs processes",
-    "writes files",
-    "drives Claude",
-    "reads files",
-    "reads env vars",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "/\"^(Read|Grep|Glob|NotebookRead|Bash|Write|Edit|NotebookEdit)$\"/ calls",
-    "Bash calls",
-    "Write|Edit calls",
-    "Read calls",
-    "WebFetch calls",
-    "every skill"
-   ],
-   "surfaces": [
-    "AbovePrompt",
-    "ToolUse",
-    "Spinner",
-    "AssistantMessage",
-    "Pane"
-   ],
-   "validated": "warnings",
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 11,
    "license": "MIT",
    "pushed": "2026-11-02T04:20:22Z",
@@ -3485,9 +3391,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 4673,
+   "stars": 4688,
    "license": "MIT",
-   "pushed": "2026-11-16T05:34:18Z",
+   "pushed": "2026-11-16T17:34:24Z",
    "marketplace": "terminal-browser",
    "plugin": "terminal-browser"
   },
@@ -3500,38 +3406,11 @@
    "plain": "Restyles the transcript in fifteen themes, draws tables, code, diffs, Mermaid charts and math as cards, opens tool rows onto their full input and output, and adds a terminal shell card, a calm preset that turns off motion, and a usage band above the prompt.",
    "cat": "rendering",
    "by": "hellosverre",
-   "reach": 3,
-   "reachLabels": [
-    "network",
-    "runs processes",
-    "drives Claude",
-    "writes the clipboard",
-    "reads files",
-    "reads env vars",
-    "reads settings",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "classic hooks",
-    "every tool call",
-    "/\"^mcp__skins__design$\"/ calls"
-   ],
-   "surfaces": [
-    "Pane",
-    "ToolUse",
-    "ToolGroup",
-    "ToolResult",
-    "UserMessage",
-    "AssistantMessage",
-    "CommandOutput",
-    "Spinner",
-    "TurnDuration",
-    "AbovePrompt",
-    "AskUserQuestion"
-   ],
-   "validated": "warnings",
+   "reach": 2,
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 303,
    "license": "MIT",
    "pushed": "2026-11-01T18:21:15Z",
@@ -3696,42 +3575,10 @@
    "cat": "rendering",
    "by": "OG-Matcha",
    "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "sets env vars",
-    "changes config",
-    "drives Claude",
-    "writes the prompt box",
-    "writes the clipboard",
-    "reads files",
-    "reads env vars",
-    "reads settings",
-    "reads the transcript",
-    "reads the prompt box",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "Bash calls",
-    "PowerShell calls",
-    "TaskStop calls",
-    "every tool call",
-    "Agent calls",
-    "Workflow calls"
-   ],
-   "surfaces": [
-    "AbovePrompt",
-    "Pane",
-    "ToolResult",
-    "UserMessage",
-    "CommandOutput",
-    "ToolGroup",
-    "ToolUse",
-    "TurnDuration",
-    "AssistantMessage"
-   ],
-   "validated": "passed",
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 0,
    "license": "MIT",
    "pushed": "2026-11-04T06:14:52Z",
@@ -3807,9 +3654,9 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 488,
+   "stars": 492,
    "license": "MIT",
-   "pushed": "2026-11-15T21:20:42Z",
+   "pushed": "2026-11-16T14:14:41Z",
    "marketplace": "claude-code-mods",
    "plugin": "md-preview",
    "media": {
@@ -3983,31 +3830,10 @@
    "cat": "agents",
    "by": "Lorenz Hilpert",
    "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "drives Claude",
-    "writes the clipboard",
-    "reads files",
-    "reads env vars",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "subagent spawns",
-    "classic hooks",
-    "Edit|Write calls",
-    "Bash calls",
-    "Workflow calls",
-    "every prompt"
-   ],
-   "surfaces": [
-    "AbovePrompt",
-    "Pane",
-    "PromptHint",
-    "TurnDuration"
-   ],
-   "validated": "passed",
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 3,
    "license": "MIT",
    "pushed": "2026-11-15T02:43:28Z",
@@ -4175,32 +4001,6 @@
    "plugin": "autotel"
   },
   {
-   "key": "TheSmokeDev/taskchad-os/homie-persona-cognition",
-   "name": "homie-persona-cognition",
-   "repo": "TheSmokeDev/taskchad-os",
-   "path": ".claude/plugins/persona-cognition",
-   "url": "https://github.com/TheSmokeDev/taskchad-os/tree/main/.claude/plugins/persona-cognition",
-   "plain": "Host-bound cognitive lifecycle events for a persona system.",
-   "cat": "agents",
-   "by": "TheSmokeDev",
-   "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "reads env vars"
-   ],
-   "sees": [
-    "every tool call",
-    "every prompt"
-   ],
-   "surfaces": [],
-   "validated": "warnings",
-   "stars": 28,
-   "license": "MIT",
-   "pushed": "2026-09-30T08:44:53Z",
-   "marketplace": null,
-   "plugin": "homie-persona-cognition"
-  },
-  {
    "key": "OneWave-AI/claude-code-mods/agent-race",
    "name": "agent-race",
    "repo": "OneWave-AI/claude-code-mods",
@@ -4247,7 +4047,7 @@
    "by": "Augusto Bastos",
    "reach": 2,
    "reachLabels": [
-    "drives Claude",
+    "runs processes",
     "reads files",
     "reads env vars",
     "persists state",
@@ -4262,7 +4062,7 @@
    "validated": "warnings",
    "stars": 2,
    "license": "MIT",
-   "pushed": "2026-11-14T17:58:41Z",
+   "pushed": "2026-11-16T20:24:33Z",
    "marketplace": "afkswitch",
    "plugin": "afkswitch",
    "media": {
@@ -4536,9 +4336,9 @@
     "AbovePromptList"
    ],
    "validated": "passed",
-   "stars": 488,
+   "stars": 492,
    "license": "MIT",
-   "pushed": "2026-11-15T21:20:42Z",
+   "pushed": "2026-11-16T14:14:41Z",
    "marketplace": "claude-code-mods",
    "plugin": "mission-control",
    "media": {
@@ -4693,40 +4493,13 @@
    "cat": "agents",
    "by": "Project Sentinel contributors",
    "reach": 2,
-   "reachLabels": [
-    "runs processes",
-    "drives Claude",
-    "writes the prompt box",
-    "writes the clipboard",
-    "reads files",
-    "reads env vars",
-    "reads settings",
-    "reads the prompt box",
-    "reads mod state",
-    "persists state",
-    "draws"
-   ],
-   "sees": [
-    "classic hooks",
-    "compaction",
-    "every prompt",
-    "the system prompt",
-    "/\"^mcp__project-sentinel__milestones$\"/ calls",
-    "/\"^mcp__project-sentinel__decision_request$\"/ calls"
-   ],
-   "surfaces": [
-    "AbovePrompt",
-    "Pane",
-    "ToolUse",
-    "ToolResult",
-    "ToolGroup",
-    "Spinner",
-    "SessionMode"
-   ],
-   "validated": "warnings",
+   "reachLabels": [],
+   "sees": [],
+   "surfaces": [],
+   "validated": "unknown",
    "stars": 59,
    "license": "MIT",
-   "pushed": "2026-10-13T08:16:46Z",
+   "pushed": "2026-11-16T18:27:47Z",
    "marketplace": "control-room",
    "plugin": "project-sentinel",
    "media": {
