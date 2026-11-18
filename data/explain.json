@@ -23315,5 +23315,75 @@
   "repo": "mhfed/vn-law-check",
   "at": "2026-11-18",
   "source": "trending"
+ },
+ "openvinotoolkit/openvino": {
+  "cat": "local",
+  "kind": "AI inference engine",
+  "what": "OpenVINO is an open-source toolkit for converting, optimizing, and deploying deep learning models across CPUs, GPUs, and NPUs.",
+  "why": "Standard AI models can be slow and resource-heavy on consumer or edge hardware. OpenVINO optimizes models from PyTorch, TensorFlow, and ONNX to deliver maximum speed, especially on Intel chips.",
+  "level": "dev",
+  "start": "pip install -U openvino",
+  "caution": "While it supports ARM and other platforms, its deepest optimizations and hardware accelerations are specifically tailored for Intel processors and NPUs.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [
+   "openvino"
+  ],
+  "plain": "A free toolkit that makes AI models run faster and smoother on everyday computer chips.",
+  "tags": [
+   "private",
+   "apps",
+   "save"
+  ],
+  "useFor": [
+   "Accelerate PyTorch and TensorFlow models on standard processors",
+   "Run vision, speech, and chat models locally on edge devices",
+   "Deploy compressed models to Intel laptops, servers, and accelerators"
+  ],
+  "steps": [
+   "Install the package using `pip install -U openvino`.",
+   "Convert your PyTorch, TensorFlow, or ONNX model using the openvino conversion utilities.",
+   "Compile the converted model for your target hardware and run inference in Python or C++."
+  ],
+  "repo": "openvinotoolkit/openvino",
+  "at": "2026-11-18",
+  "source": "trending"
+ },
+ "CrommaAI/crommacode": {
+  "cat": "coding",
+  "kind": "gamified coding ide",
+  "what": "CrommaCode is a native desktop application that visually gamifies the actions of AI coding assistants running in your terminal.",
+  "why": "It helps you monitor what your AI coding assistant is doing in real time through games and visualizations, and lets you manage multiple sub-agents when tasks get large.",
+  "level": "easy",
+  "start": "Download and open the app from cromma.ai/code, then run your coding assistant in its terminal.",
+  "caution": "This tool reuses consumer subscription logins or API keys from third-party AI assistants, which may break provider terms of service and risk your account.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "An app that turns your programming assistant's work into a game so you can watch what it is doing.",
+  "tags": [
+   "code",
+   "supercharge",
+   "private"
+  ],
+  "useFor": [
+   "Watch AI coding assistants work through games",
+   "Run and manage multiple sub-agents simultaneously",
+   "Track token usage across coding assistants locally"
+  ],
+  "steps": [
+   "Download and install CrommaCode for your operating system",
+   "Open a coding assistant in the built-in terminal",
+   "Watch the assistant's actions play out in Game View"
+  ],
+  "repo": "CrommaAI/crommacode",
+  "at": "2026-11-18",
+  "source": "trending"
  }
 }
