@@ -23385,5 +23385,38 @@
   "repo": "CrommaAI/crommacode",
   "at": "2026-11-18",
   "source": "trending"
+ },
+ "KettuAI/Kettu": {
+  "cat": "coding",
+  "kind": "desktop agent manager",
+  "what": "Manage and run multiple coding agents side by side in a single desktop window.",
+  "why": "It solves the chaos of juggling different coding assistant windows by bringing them together into one parallel workspace, useful when working with tools like Claude Code and Codex simultaneously.",
+  "level": "easy",
+  "start": "",
+  "caution": "This tool pools or wraps consumer subscription logins and third-party coding agents like Claude Code or Codex, which may break the provider's terms and risk your account.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "An app that lets you run and control multiple AI coding assistants side by side on your computer.",
+  "tags": [
+   "code",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Run multiple coding agents side by side in parallel",
+   "Approve or deny agent file changes with one key",
+   "Access your coding sessions from an iPhone or iPad"
+  ],
+  "steps": [
+   "Download the installer for your operating system from the GitHub releases page.",
+   "Open the application and connect your preferred coding agents."
+  ],
+  "repo": "KettuAI/Kettu",
+  "at": "2026-11-18",
+  "source": "trending"
  }
 }

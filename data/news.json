@@ -1,6 +1,74 @@
 {
- "updated": "2026-11-18T13:24:16.983Z",
+ "updated": "2026-11-18T20:38:51.374Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+   "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+   "date": "2026-11-18T19:54:56.000Z",
+   "summary": "DaisyRose-27B was released, pushing new efficiency frontiers in post-training techniques for open models.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6aeabf9f2efd990530425e58/faP4Su889q_DIgN3wmU9M.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Genie 4 is now available",
+   "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+   "date": "2026-11-18T18:13:42.000Z",
+   "summary": "DeepMind released Genie 4, offering new capabilities for generative interactive environments.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/resized_ProjectGenie_Thumbnail_v02.width-1300.png"
+  },
+  {
+   "source": "Google",
+   "title": "The Gemini app is now available on lower-memory Android devices.",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/",
+   "date": "2026-11-18T17:00:00.000Z",
+   "summary": "Google made its Gemini app available on lower-end Android devices, bringing Gemini Live and image generation to more users.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_app_Android_social_share.max-1440x810.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Daniel Stenberg",
+   "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/",
+   "date": "2026-11-18T15:58:27.000Z",
+   "summary": "A developer case study detailed how AI coding agents successfully converted 185,000 lines of C code into Rust while managing hundreds of commits.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Time-Series Models in the Streamhouse: A New Frontier and Use Cases",
+   "url": "https://huggingface.co/blog/ibm-research/time-series-powered-streamhouse",
+   "date": "2026-11-18T15:00:23.000Z",
+   "summary": "Hugging Face highlighted new architectural frontiers and enterprise use cases for time-series forecasting models.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/64e8143f6de557454220921e/yf6E9vJHIkGHG_toGSasb.gif"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
@@ -16,6 +84,35 @@
    "image": "https://latent.space/og/card/post/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/d54e18a56681771d00f9af81d7e4a5b70fa4952861990442511933f8ff963105.png"
   },
   {
+   "source": "OpenAI",
+   "title": "Inside the Codex sandbox",
+   "url": "https://openai.com/index/inside-the-codex-sandbox",
+   "date": "2026-11-18T08:00:00.000Z",
+   "summary": "OpenAI detailed how its Codex sandbox securely runs commands on local machines using strict filesystem and network limits across major operating systems.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/1PnylD7lJwgUw7jYNP8wLh/7fa5553001136f3982e8d4db44146de3/inside-the-codex-sandbox-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Managing frontier AI risk: From training to deployment",
+   "url": "https://openai.com/index/managing-frontier-ai-risk",
+   "date": "2026-11-18T06:00:00.000Z",
+   "summary": "OpenAI published an overview of its risk management practices for frontier AI models, covering alignment, sandboxing, and monitoring from training to deployment.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/62zvkDv3unaiLBblzJHY4f/d61ad5ec9ebc02f033d0efac3807be3e/managing-frontier-ai-risk-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
    "source": "Hacker News",
    "title": "Why is Gemini 4 Carbon taking so long?",
    "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/",
@@ -28,6 +125,21 @@
    "image": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/og.png"
   },
   {
+   "source": "Hacker News",
+   "title": "Claude was trained on protein sequences at scale",
+   "url": "http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/",
+   "date": "2026-11-18T03:47:43Z",
+   "discuss": "https://news.ycombinator.com/item?id=50541619",
+   "summary": "Discussions revealed that Anthropic trained certain Claude model variants on large-scale protein sequence datasets.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://xinmingtu.cn/assets/img/llm-bioseq-probe/social_card.png"
+  },
+  {
    "source": "GitHub release",
    "title": "Codex CLI rust-v0.170.0",
    "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
@@ -38,6 +150,46 @@
    "ai": false,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/f558a5f554fe1b077a534f82044fd2a5d202f2eeb0f5121d88192f6a94c5eda5/openai/codex/releases/tag/rust-v0.170.0"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Advancing chip design with OpenAI models",
+   "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+   "date": "2026-11-18T00:00:00.000Z",
+   "summary": "OpenAI models were used to optimize circuit layouts and RISC‑V core designs, showcasing new capabilities in AI-assisted hardware engineering.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/658zg0FHAg7zuL73DTFCfC/fff21fd18c260ce64a10a14ee8d4e851/advancing-chip-design-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hugging Face",
+   "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+   "url": "https://huggingface.co/blog/moe-expert-streaming",
+   "date": "2026-11-18T00:00:00.000Z",
+   "summary": "Technical documentation explored techniques for running large 180B parameter Mixture-of-Experts models efficiently within 32GB of RAM.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/moe-expert-streaming/thumbnail.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Rumble-2-Flash: an open 0.5B speech model for 40+ languages",
+   "url": "https://huggingface.co/blog/rumble-2-flash",
+   "date": "2026-11-18T00:00:00.000Z",
+   "summary": "Rumble-2-Flash, a lightweight 0.5B open speech model supporting over 40 languages, was released on Hugging Face.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/rumble-2-flash/thumbnail.png"
   },
   {
    "source": "OpenAI",
@@ -354,6 +506,20 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/3040c3eaaedb0b2acd5bd42cdca9f7589df49c04f85cc0eeac6e357c6c6e8013/anthropics/claude-code/releases/tag/v2.1.326"
+  },
+  {
+   "source": "Latent Space",
+   "title": "Building Visual Intelligence — Andreas Blattmann & Dustin Podell, Black Forest Labs",
+   "url": "https://latent.space/p/bfl/",
+   "date": "2026-11-16T21:38:03.000Z",
+   "summary": "Black Forest Labs researchers discussed their approach to training visual intelligence models on pixels, motion, and sound.",
+   "tags": [
+    "research",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://i.ytimg.com/vi/8cGfJOU3AlQ/maxresdefault.jpg"
   },
   {
    "source": "GitHub",
@@ -1909,168 +2075,6 @@
    "big": false,
    "ai": false,
    "image": "https://static.simonwillison.net/static/2026/details-summary-card.webp"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How VistaPrint helps small businesses get the word out",
-   "url": "https://openai.com/ads/customers/vistaprint",
-   "date": "2026-11-09T00:00:00.000Z",
-   "summary": "Small business owners preparing for a launch or an event often know what they want to accomplish before they know what to print. VistaPrint uses ChatGPT Ads to show how products like signs and branded merchandise can help them get the word out.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://cdn.openai.com/mdx-assets/f32d69a9-d632-4e98-83f6-8a4fd7f7e940/vistaprint-ink-sweep-open-graph.5c817c07.png",
-   "viaBrowser": true
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
-   "date": "2026-11-09",
-   "title": "JPMorganChase expands Claude Code to more employees",
-   "summary": "JPMorganChase is rolling out Claude across the firm, to more employees beyond engineers.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code/opengraph-image/og"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "parse_number() as a SQLite extension: C vs Rust",
-   "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/",
-   "date": "2026-11-08T22:26:00.000Z",
-   "summary": "Research: parse_number() as a SQLite extension: C vs Rust I was out walking the dog when I got curious about how easy/difficult it would be to write a SQLite C extension that adds a parse_number() function for turning strings like -$1,234.56 or '12.5%' into numeric values that could be summed and sorted. I fired up regular Claude chat (Opus 5.5) and prompted : I'm thinking about a SQLite custom fu",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[One Million AI Engineer Special] How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
-   "url": "https://latent.space/p/one_million_ai_engineer_special_how_stanford_teaches_ai-native_engineering_mihail_eric_monaco/",
-   "date": "2026-11-08T21:23:29.000Z",
-   "summary": "What do you assign when a coding agent can finish last year’s homework in one prompt? In the second run of Stanford’s CS146S, Mihail Eric brought open-source maintainers into the course. Students have to learn an unfamiliar repo, propose a change, and ...",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://i.ytimg.com/vi/dpY7YzZo4kE/maxresdefault.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
-   "url": "https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers",
-   "date": "2026-11-08T18:16:07Z",
-   "discuss": "https://news.ycombinator.com/item?id=50415628",
-   "summary": "Goldman Sachs reportedly restricted internal use of Anthropic's Claude Code tool among its trading and banking staff.",
-   "tags": [
-    "coding",
-    "product",
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.thestateofai.com/media/uploads/33f913ce812c4074d207c01b6df1858a692e6bc3229dadbfcd4f56b61722a538.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Goodbye Claude, Hello Pi",
-   "url": "https://caleb.software/posts/claude-to-pi.html",
-   "date": "2026-11-08T03:11:48Z",
-   "discuss": "https://news.ycombinator.com/item?id=50410107",
-   "summary": "354 points, 217 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://caleb.software/assets/img/claude-to-pi/vsc-disconnected.png",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-   "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-   "date": "2026-11-07T20:45:32Z",
-   "discuss": "https://news.ycombinator.com/item?id=50407882",
-   "summary": "A security report revealed that Claude Code's auto-approval setting contributed to hardcoded passwords being committed to over 1,000 public GitHub repositories.",
-   "tags": [
-    "coding",
-    "safety",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://apiiro.com/images/public/6991bfdc25eeb87584b7bd76/4c929ea91_Group11274.svg",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Anthropic IPO: Whither Now?",
-   "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/",
-   "date": "2026-11-07T03:04:53.000Z",
-   "summary": "November 6, 2026 — ARC Prize tests Inkling 2 Small, and Thinking Machines explains how it caught early checkpoints bypassing guardrails.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-anthropic-ipo-whither-now/a988e7348ab7aaeea30f4fae450c8e83699ed9386342a65eec69e71a86326ee1.png"
-  },
-  {
-   "source": "GitHub",
-   "title": "Copilot impact dashboard adds chat and VS Code agent usage",
-   "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
-   "date": "2026-11-06T22:17:28.000Z",
-   "summary": "GitHub expanded the Copilot impact dashboard to track usage of Copilot Chat and VS Code AI agents.",
-   "tags": [
-    "coding",
-    "agents",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/11/696879380-eb0b2c93-698d-46a2-a934-02bbf6d7fa36.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "GitHub Copilot weekly releases — November 2",
-   "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
-   "date": "2026-11-06T21:00:26.000Z",
-   "summary": "GitHub Copilot added support for JetBrains Air and Xcode, alongside tools for managing agent sessions.",
-   "tags": [
-    "coding",
-    "agents",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/11/649772462-cd2b8dcf-4eac-422d-81a2-5e9ef2709240.jpg"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Nilay Patel",
-   "url": "https://simonwillison.net/2026/Nov/6/nilay-patel/",
-   "date": "2026-11-06T17:13:12.000Z",
-   "summary": "The products aren't good enough to sell people on the costs. You cannot tell people that you have to listen to the whine of a data center in their backyard for AI overviews and some of the most hilarious deep fake slop in history. It's not worth it. It just isn't worth it to anyone. And agents aren't real and they might not be being used the way that anyone wants them to yet. All these companies a",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.319",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
-   "date": "2026-11-06T17:04:01Z",
-   "summary": "Anthropic released Claude Code v2.1.319 with performance updates for its command-line coding assistant.",
-   "tags": [
-    "coding",
-    "agents",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/3bd638a75ca0f900947b08b9a5b0467ff908ac6cbb38da671ae8df9474a9e573/anthropics/claude-code/releases/tag/v2.1.319"
   }
  ]
 }
