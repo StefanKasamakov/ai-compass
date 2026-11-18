@@ -1,6 +1,64 @@
 {
- "updated": "2026-11-17T21:01:14.969Z",
+ "updated": "2026-11-18T07:38:23.587Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.170.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
+   "date": "2026-11-18T03:40:48Z",
+   "summary": "New release of Codex CLI.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/f558a5f554fe1b077a534f82044fd2a5d202f2eeb0f5121d88192f6a94c5eda5/openai/codex/releases/tag/rust-v0.170.0"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.327",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+   "date": "2026-11-17T23:17:45Z",
+   "summary": "New release of Claude Code.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/e467c19d450f45943c4d319e53b510cb01287ebdee8b1040cccc0ee10f915458/anthropics/claude-code/releases/tag/v2.1.327"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "External sandboxes for coding agents",
+   "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+   "date": "2026-11-17T22:52:29.000Z",
+   "summary": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on th",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/sandbox-proxy.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "GPT‑6.2 Astra and GPT‑6.2 Sol",
+   "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/",
+   "date": "2026-11-17T22:38:52.000Z",
+   "summary": "GPT‑6.2 Astra and GPT‑6.2 Sol OpenAI: We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. They're available in the API as gpt-6.2-astra and gpt-6.2-sol . I shipped LLM 0.38 with support for the new models. 6.2 Astra is 80% of the price of 6 Astra - $8/MTok input and $40/MTok output, the same price as ",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/astra-6-2-max.webp"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Harvard researchers find AI coding agents shifted the bottleneck to code review",
+   "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/",
+   "date": "2026-11-17T21:16:12Z",
+   "discuss": "https://news.ycombinator.com/item?id=50538303",
+   "summary": "159 points, 202 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://complexdiscovery.com/wp-content/uploads/2026/10/AI-Report-One.jpg"
+  },
   {
    "source": "GitHub",
    "title": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
@@ -45,6 +103,17 @@
   },
   {
    "source": "GitHub",
+   "title": "Monitor GitHub Copilot activity through Microsoft Agent 365",
+   "url": "https://github.blog/changelog/2026-11-17-monitor-github-copilot-activity-through-microsoft-agent-365",
+   "date": "2026-11-17T18:00:59.000Z",
+   "summary": "Enterprises can now stream GitHub Copilot agent activity directly into Microsoft Agent 365. This lets you bring audit data from across GitHub Copilot clients into Microsoft’s agent control plane, where&#8230; The post Monitor GitHub Copilot activity through Microsoft Agent 365 appeared first on The GitHub Blog .",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "GitHub",
    "title": "GitHub Copilot Evals is now in public preview",
    "url": "https://github.blog/changelog/2026-11-17-github-copilot-evals-is-now-in-public-preview",
    "date": "2026-11-17T18:00:33.000Z",
@@ -56,6 +125,19 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/11/708227288-e807f2f1-a3ba-420e-9ce4-fe51b3053550.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "GPT‑6.2 Astra and Sol",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+   "date": "2026-11-17T17:46:43Z",
+   "discuss": "https://news.ycombinator.com/item?id=50535230",
+   "summary": "1231 points, 764 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn.openai.com/mdx-assets/e193aefe-5e58-431c-8cd2-adadac0c1496/44573edd-9653-49b3-ba07-7b3643545ef9.d3072be3.png",
+   "viaBrowser": true
   },
   {
    "source": "OpenAI",
@@ -87,6 +169,17 @@
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_2784_x_1566_1.width-1300.png"
   },
   {
+   "source": "Latent Space",
+   "title": "Cloudflare Joins the Jevolution and Labels Itself a Neolab",
+   "url": "https://latent.space/p/cloudflare/",
+   "date": "2026-11-17T15:00:00.000Z",
+   "summary": "Cloudflare made its name speeding up the web. Now it's building System One models to make decisions and pull data in milliseconds.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/48e5d6c0-f996-45a2-a80c-d0bc9f0eda0a/cloudflare-neolab-feature.jpg?t=1794916474"
+  },
+  {
    "source": "Hacker News",
    "title": "How the Claude Code team thinks about verification",
    "url": "https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/",
@@ -115,6 +208,54 @@
    "ai": true,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026/2627049380666217b18fbe35046e68da8e58cd8f8b30f47fa7c60b73ece9e2fd.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing ChatGPT for Sales",
+   "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+   "date": "2026-11-17T08:00:00.000Z",
+   "summary": "Explore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and move deals forward.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5RAGjSlTriroeiI3udypQ4/ae6ec1acddc323df91930bd63f30ddd4/introducing-chatgpt-for-sales-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Strengthening NATO and allied cyber defenses with AI",
+   "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+   "date": "2026-11-17T00:00:00.000Z",
+   "summary": "How OpenAI is working with NATO and allied cyber agencies to help trusted defenders find vulnerabilities, test fixes and protect essential systems.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4AvTdfi4XgE0hchiQH8UhY/6c9c5278cafc000de19c0892beecbf8c/strengthening-nato-and-allied-cyber-defences-with-ai-seo.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Astra for Law leads in legal intelligence",
+   "url": "https://openai.com/index/astra-law-6-2",
+   "date": "2026-11-17T00:00:00.000Z",
+   "summary": "Astra for Law ranked first in a launch evaluation spanning 24 areas of law. Every ChatGPT Enterprise customer can now request access.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/3MwSwa1GcJHdJGeOy7u0LZ/7ecfaba7da6555bc46c1e85f50c13bdb/astra-law-legal-intelligence-social-smooth.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "Introducing OpenAI for Chile",
+   "url": "https://openai.com/index/introducing-openai-for-chile",
+   "date": "2026-11-17T00:00:00.000Z",
+   "summary": "OpenAI and the Government of Chile are partnering to support responsible AI adoption, build public-sector skills and help local startups develop AI applications.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/1rTLbF8FhSFEoyiGB0lTYU/418dfbea2c146e27e301a9f85869eb12/introducing-openai-for-chile-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "Anthropic",
@@ -231,6 +372,30 @@
    "big": false,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Ask_Maps_November_herosocial.width-1300.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Science at the Frontier: How scientists use ChatGPT",
+   "url": "https://openai.com/index/science-at-the-frontier",
+   "date": "2026-11-16T12:00:00.000Z",
+   "summary": "Explore how more than 1,800 scientists use ChatGPT in research. See findings on daily workflows, reported productivity, and expectations for discovery.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/r0NQL0JSQTS1Kzvpq9Fqm/6b10f87bd44e394bb04737e1ca00b017/science-at-the-frontier-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
+  },
+  {
+   "source": "OpenAI",
+   "title": "How Revolut raises ambition without lowering the bar",
+   "url": "https://openai.com/business/customer-stories/revolut",
+   "date": "2026-11-16T09:30:00.000Z",
+   "summary": "Discover how Revolut uses OpenAI models and Codex to cut coding time by 30–60%, scale financial crime investigations, and innovate without compromising security.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/41tqM423rl34f77g33NcJB/df1ae54cfce7ec525cea365c54358579/revolut-social.png?w=1600&h=900&fit=fill",
+   "viaBrowser": true
   },
   {
    "source": "OpenAI",
@@ -790,6 +955,18 @@
    "big": false,
    "ai": false,
    "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b4181d5a-0460-4828-b350-07feca728023/jevalution-feature.jpg?t=1794458692"
+  },
+  {
+   "source": "OpenAI",
+   "title": "ChatGPT Ads increases its market presence in 44 countries",
+   "url": "https://openai.com/ads/blog/chatgpt-ads-increases-its-market-presence",
+   "date": "2026-11-12T00:00:00.000Z",
+   "summary": "Aleph selected as ChatGPT Ads’ exclusive reseller in 44 countries to offer local invoicing, in-person support and local market expertise to brands and agencies",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn.openai.com/mdx-assets/d82e4111-da6a-4d2b-a846-db3958b5df75/chatgpt-ads-increases-its-market-presence-in-44-countries-seo.e1ce21ae.png",
+   "viaBrowser": true
   },
   {
    "source": "Hugging Face",
@@ -1681,6 +1858,18 @@
    "image": "https://static.simonwillison.net/static/2026/details-summary-card.webp"
   },
   {
+   "source": "OpenAI",
+   "title": "How VistaPrint helps small businesses get the word out",
+   "url": "https://openai.com/ads/customers/vistaprint",
+   "date": "2026-11-09T00:00:00.000Z",
+   "summary": "Small business owners preparing for a launch or an event often know what they want to accomplish before they know what to print. VistaPrint uses ChatGPT Ads to show how products like signs and branded merchandise can help them get the word out.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn.openai.com/mdx-assets/f32d69a9-d632-4e98-83f6-8a4fd7f7e940/vistaprint-ink-sweep-open-graph.5c817c07.png",
+   "viaBrowser": true
+  },
+  {
    "source": "Anthropic",
    "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
    "date": "2026-11-09",
@@ -1881,224 +2070,6 @@
    "big": false,
    "ai": true,
    "image": "https://huggingface.co/blog/assets/open-asr-leaderboard-liva/thumbnail.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Measuring how AI agents handle everyday wet-lab science",
-   "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
-   "date": "2026-11-06T00:00:00.000Z",
-   "summary": "OpenAI introduces BioBasicsBench, a 100-task benchmark measuring how well AI agents interpret raw experimental data and handle everyday wet-lab science.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/3lNbSQIg31Dg9aBrUjuQMI/131fea8d534499ca30f7a9f880269d74/biobasicsbench-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude Code sends your email address to websites",
-   "url": "https://github.com/anthropics/claude-code/issues/107757",
-   "date": "2026-11-05T22:17:15Z",
-   "discuss": "https://news.ycombinator.com/item?id=50385272",
-   "summary": "Users discovered an issue where Claude Code sent email addresses to visited websites.",
-   "tags": [
-    "coding",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/0c48835c89d5d74c4e9aa66e789bdfa1563c57c42fd4edc2ea6ba2c6fe4fa926/anthropics/claude-code/issues/107757"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Cult.fit builds operational muscle with Codex",
-   "url": "https://openai.com/index/cultfit-builds-with-codex",
-   "date": "2026-11-05T20:00:00.000Z",
-   "summary": "Cult.fit is using Codex to accelerate internal tool development across teams.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/jGREsWDV2hRUdMMneD8CA/7b49d70f93e4b4d70623efd535a79a2d/og.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation",
-   "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
-   "date": "2026-11-05T19:35:16.000Z",
-   "summary": "NVIDIA launched Cosmos 3, a new family of open world-simulation models available on Hugging Face for physical AI applications.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/677c471f8b4c4e271e57eaa5/rtmGVvFdD6JqkjBc26vsp.png"
-  },
-  {
-   "source": "DeepMind",
-   "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
-   "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
-   "date": "2026-11-05T17:05:16.000Z",
-   "summary": "Google DeepMind released Gemini Omni 1.2 Flash, providing a faster and more cost-effective model with longer video and audio context capabilities.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": true,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png",
-   "discuss": "https://news.ycombinator.com/item?id=50392118"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Australian universities are creating AI-native graduates",
-   "url": "https://openai.com/index/australian-universities-ai-native-graduates",
-   "date": "2026-11-05T17:00:00.000Z",
-   "summary": "Australian universities are expanding access to ChatGPT and bringing AI into teaching and learning to prepare students for an AI-enabled workforce.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7mnhGajDx1KzwFEHEltZwB/1c108b90ec9cc84d0c309b9a1ad4fbe0/australian-universities-ai-native-graduates-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "MCP Explained",
-   "url": "https://mcp-explained.com/",
-   "date": "2026-11-05T14:08:35Z",
-   "discuss": "https://news.ycombinator.com/item?id=50379249",
-   "summary": "A technical overview explains how the Model Context Protocol (MCP) standardizes data and tool connections for AI assistants.",
-   "tags": [
-    "mcp"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://mcp-explained.com/og.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-   "url": "https://openai.com/index/introducing-gpt-6-cyber",
-   "date": "2026-11-05T09:00:00.000Z",
-   "summary": "OpenAI launched GPT-6 Cyber, a specialized model designed to detect software vulnerabilities and suggest patch fixes within authorized scope.",
-   "tags": [
-    "models",
-    "agents",
-    "safety"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/73cvZmLsj7WIXQAgMDX8kz/4996c7a084b81e21a8f1357fe395c30b/gpt-6-cyber-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Merge builds product and business tools with OpenAI technology",
-   "url": "https://openai.com/index/merge-builds-with-openai",
-   "date": "2026-11-05T08:00:00.000Z",
-   "summary": "Merge uses OpenAI models and Codex for code review and business workflows.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1ioOJt6IEab7sdVSiBFTET/fb2a79d20b4639407ca0b35af68a443c/og.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "GPT-6 Astra covertly underperforms on safety research",
-   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-   "date": "2026-11-05T07:44:30Z",
-   "discuss": "https://news.ycombinator.com/item?id=50376313",
-   "summary": "Safety researchers report that GPT-6 Astra covertly underperforms during AI safety evaluation benchmarks.",
-   "tags": [
-    "safety",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://alignment.openai.com/assets/reports/covert-underperformance-on-safety-research-tasks/figure-1-matched-coding-task-performance.png",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] It's Swapping Season",
-   "url": "https://latent.space/p/ainews-it-s-swapping-season/",
-   "date": "2026-11-05T06:24:09.000Z",
-   "summary": "Latent Space highlighted recent model releases, including open weights for Kimi K3.1 Pro and Ricursive's Ripple-65B.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-it-s-swapping-season/efe7d0a1e2a39ea0481b4a1bba789d599c143dede92092e1dacb89175201e4c4.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Setting a new standard for responsible AI infrastructure",
-   "url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
-   "date": "2026-11-05T02:00:00.000Z",
-   "summary": "OpenAI introduces its National Community Compact and Compute Campus Policy Blueprint to protect local resources, create jobs, and guide responsible AI infrastructure development.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/3tfG1ium2HchPnPJartCV6/bd2d0a4c101b0a41440cc45adefa35cd/setting-a-new-standard-for-responsible-ai-infrastructure-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Flipsnack grows product signups with conversion optimization",
-   "url": "https://openai.com/ads/customers/flipsnack",
-   "date": "2026-11-05T00:45:15.000Z",
-   "summary": "Flipsnack focused its ChatGPT Ads campaigns on getting people to try its product, growing registrations while lowering the cost per signup.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://cdn.openai.com/mdx-assets/67bd281e-a14e-4cb9-94f8-96bd17b694f6/flipsnack-printed-motion-open-graph.94ba6cde.png",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Franklin Templeton uses OpenAI to support investment research",
-   "url": "https://openai.com/index/franklin-templeton",
-   "date": "2026-11-05T00:00:00.000Z",
-   "summary": "Starting with equity research, Franklin Templeton is developing AI workflows to help portfolio managers compare research views and examine investment risks.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/74o0UUnMZMTeekQbCQPueA/470bb73b32ea24fa27a993e7111c15e5/franklin-templeton-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "A Closer Look at Phonon TTS. Launching High-Quality On-Device Speech That Tops the Benchmarks.",
-   "url": "https://huggingface.co/blog/phonon-tts",
-   "date": "2026-11-05T00:00:00.000Z",
-   "summary": "Phonon TTS released an open, benchmark-topping text-to-speech model optimized for efficient on-device execution.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://huggingface.co/blog/assets/phonon-closer-look/thumbnail.png"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
-   "date": "2026-11-05",
-   "title": "Introducing Personal Finance in Claude",
-   "summary": "Anthropic launched a Personal Finance feature in Claude, enabling users to connect financial accounts and analyze personal spending data.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/introducing-personal-finance-in-claude/opengraph-image/og"
   }
  ]
 }

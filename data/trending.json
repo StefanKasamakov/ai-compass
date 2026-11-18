@@ -1,82 +1,50 @@
 {
- "updated": "2026-11-17T21:01:14.969Z",
+ "updated": "2026-11-18T07:38:23.587Z",
  "items": [
   {
-   "repo": "erkamyaman/rust-anything",
-   "stars": 999,
-   "desc": "Rewrite your whole app in Rust, one piece at a time, checked against the original's recorded behavior at every step. CLIs, HTTP servers and libraries in TypeScript, Python, C, Go, Ruby and Java.",
-   "created": "2026-11-16T12:10:36Z",
+   "repo": "kubai087/kubai-icons",
+   "stars": 979,
+   "desc": "An agent skill that draws animated icons in one consistent style, for Claude Code, Codex and other coding agents. Comes with 2,600+ open-source icons for React, Vue and SVG, and a website to browse them.",
+   "created": "2026-11-03T09:52:39Z",
    "topics": [
     "agent-skills",
-    "claude-code",
-    "cli",
-    "code-migration"
+    "ai-agents",
+    "animated-icons",
+    "animation"
    ],
-   "lang": "Rust",
+   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "sybil-solutions/inference-optimisation-skill",
-   "stars": 863,
-   "desc": "Agent skill for hill-climbing local LLM serving speed (decode, speculative decoding, prefill, KV, startup, TTFT) on any hardware and quantization",
-   "created": "2026-11-16T18:40:04Z",
-   "topics": [
-    "agent-skill",
-    "benchmarking",
-    "claude-code",
-    "inference"
-   ],
-   "lang": "Python",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "precygtrucqui1981/blender-ai-copilot-lab",
+   "repo": "mhfed/vn-law-check",
    "stars": 507,
-   "desc": "An AI lab for Blender where manager–worker–reviewer agent teams run multi-step scene briefs as supervised experiments—a live task board, review findings, one correction attempt per blocked task, named undo, and a built-in MCP server. · blender-ai-copilot-lab · blender · blender 3d · blender addon · blender plugin · blender extension",
-   "created": "2026-11-12T19:33:16Z",
+   "desc": "Audit pháp lý website theo luật Việt Nam (BVDLCN 91/2025, TMĐT 122/2025, ANM 116/2025, AI 134/2025) cho Claude Code, Cursor, Copilot, Windsurf, Cline",
+   "created": "2026-11-02T09:22:02Z",
    "topics": [
-    "3d-automation",
-    "3d-modeling",
-    "blender",
-    "blender-addon"
+    "agent-md",
+    "agent-skills",
+    "claude-code",
+    "claude-plugin"
+   ],
+   "lang": "Shell",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "CrommaAI/crommacode",
+   "stars": 76,
+   "desc": "CrommaCode — the gamified IDE for coding agents. Watch Claude Code, Codex, Gemini CLI, Cursor CLI or OpenCode work as a game, and send a swarm of worker agents. Free for macOS, Windows and Linux.",
+   "created": "2026-11-12T04:02:00Z",
+   "topics": [
+    "agent",
+    "agent-client-protocol",
+    "ai-coding",
+    "claude-code"
    ],
    "lang": null,
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Nihongo-editor/crypto-accumulation-scanner",
-   "stars": 153,
-   "desc": "Community-driven crypto accumulation scanner for Discord and Telegram rich",
-   "created": "2026-11-15T19:41:23Z",
-   "topics": [
-    "asyncio",
-    "ats",
-    "booking-system",
-    "conversational-ai"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Leonccaa/ReVolta",
-   "stars": 63,
-   "desc": "Stable, high-throughput inference server for multi-GPU NVIDIA V100 (SM70): Qwen3.8 Flash-Next with AWQ / NVFP4, multimodal input, CPU/disk KV offload, and MTP or DFlash2 speculative decoding.",
-   "created": "2026-10-20T02:25:47Z",
-   "topics": [
-    "awq",
-    "flash-next",
-    "kv-cache-offloading",
-    "llm-inference"
-   ],
-   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]

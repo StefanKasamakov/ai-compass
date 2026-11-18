@@ -23242,5 +23242,78 @@
   "repo": "Leonccaa/ReVolta",
   "at": "2026-11-17",
   "source": "trending"
+ },
+ "kubai087/kubai-icons": {
+  "cat": "harness",
+  "kind": "coding agent skill",
+  "what": "An agent skill and 2,800+ animated icon library that lets coding agents design consistent, interactive SVG icons for React, Vue, and the web.",
+  "why": "Generating icons with AI often leads to mismatched visual styles and messy code; this repository enforces uniform geometry, two-state hover animations, and automated self-checks across your design system.",
+  "level": "easy",
+  "start": "git clone https://github.com/kubai087/kubai-icons.git ~/.claude/skills/kubai-icons",
+  "caution": "",
+  "alts": [
+   "google/skills",
+   "vercel-labs/skills",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "kubai-icons-react",
+   "kubai-icons-vue",
+   "kubai-icons",
+   "kubai-icons-static"
+  ],
+  "plain": "An add-on for coding assistants that draws animated web icons in one consistent design style.",
+  "tags": [
+   "apps",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Generate matching animated SVG icons for features",
+   "Install animated icon packages in React or Vue",
+   "Export customized SVG graphics for web design tools"
+  ],
+  "steps": [
+   "Clone the repository into your skills directory with `git clone https://github.com/kubai087/kubai-icons.git ~/.claude/skills/kubai-icons`",
+   "Restart Claude Code or Codex to load the new skill",
+   "Ask your coding agent to draw dynamic icons for your features in plain words",
+   "Install the generated component packages with `npm i kubai-icons-react`"
+  ],
+  "repo": "kubai087/kubai-icons",
+  "at": "2026-11-18",
+  "source": "trending"
+ },
+ "mhfed/vn-law-check": {
+  "cat": "harness",
+  "kind": "legal audit skill",
+  "what": "A compliance audit skill for AI coding assistants to check websites and mobile apps against Vietnamese privacy and internet regulations.",
+  "why": "Websites collecting user data in Vietnam face strict legal regulations like personal data protection and e-commerce rules. Reach for this to catch missing consent forms, improper trackers, and policy flaws before launching.",
+  "level": "setup",
+  "start": "/plugin marketplace add mhfed/vn-law-check",
+  "caution": "This tool provides preliminary, automated AI checks and does not replace professional legal counsel.",
+  "alts": [
+   "cloudflare/security-audit-skill",
+   "anthropics/knowledge-work-plugins"
+  ],
+  "packages": [],
+  "plain": "An AI assistant add-on that checks if your website follows Vietnamese internet privacy and consumer data laws.",
+  "tags": [
+   "docs",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Audit website forms, tracking scripts, and cookies against Vietnamese regulations",
+   "Generate initial privacy policy drafts tailored to project code and data collection",
+   "Check mobile app permissions, SDK tracking, and account deletion options"
+  ],
+  "steps": [
+   "Install the plugin inside Claude Code using `/plugin marketplace add mhfed/vn-law-check` or run the installer script for Cursor.",
+   "Open your project or pass your website URL to the assistant.",
+   "Prompt your assistant with `audit pháp lý website này theo luật Việt Nam` to generate a prioritized compliance report."
+  ],
+  "repo": "mhfed/vn-law-check",
+  "at": "2026-11-18",
+  "source": "trending"
  }
 }
