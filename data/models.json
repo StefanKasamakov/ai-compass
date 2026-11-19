@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-19",
  "providers": {
   "anthropic": {
    "name": "Anthropic",
@@ -141,13 +141,13 @@
   {
    "id": "argon",
    "p": "google",
-   "name": "Gemini 4 Hydrogen",
+   "name": "Gemini 4 Neon",
    "tier": "Frontier",
    "best": "Google's new flagship: deep work in coding, finance, law, security and science.",
-   "in": 1.5,
-   "out": 7.5,
+   "in": 3,
+   "out": 15,
    "ctx": "1M",
-   "released": "2026-11-12",
+   "released": "2026-11-18",
    "note": "Google's latest flagship model."
   },
   {
@@ -155,7 +155,7 @@
    "p": "google",
    "name": "Gemini 3.1 Pro",
    "tier": "Older",
-   "best": "Still a preview, and now replaced by Gemini 4 Hydrogen as Google's flagship. Pick Hydrogen for new work.",
+   "best": "Still a preview, and now replaced by Gemini 4 Neon as Google's flagship. Pick Neon for new work.",
    "in": 2,
    "out": 12,
    "ctx": "1M"
