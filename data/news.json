@@ -1,6 +1,91 @@
 {
- "updated": "2026-11-18T20:38:51.374Z",
+ "updated": "2026-11-19T07:34:06.077Z",
  "items": [
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.69.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0",
+   "date": "2026-11-19T01:45:47Z",
+   "summary": "Google released Gemini CLI v0.69.0, updating its terminal tool for interacting with Gemini models.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/eda2c1a0c40c70c1e6adf05f66d1968aebbc216f6ee2495545d9815609ce6905/google-gemini/gemini-cli/releases/tag/v0.69.0"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.328",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+   "date": "2026-11-19T01:14:04Z",
+   "summary": "Anthropic released Claude Code v2.1.328 with performance improvements and bug fixes for its terminal AI assistant.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/cb956e0313e453d1ba5080e2bb2510ad156dcebf68610b6ec5e7618b48f0d4e6/anthropics/claude-code/releases/tag/v2.1.328"
+  },
+  {
+   "source": "GitHub",
+   "title": "Wait for pull request events with GitHub CLI",
+   "url": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli",
+   "date": "2026-11-19T00:00:13.000Z",
+   "summary": "GitHub CLI v2.105.0 added event streams, letting developer agents wait on pull request updates directly without polling.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-new-releases.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "Connect Supabase, Box, Calendly, and more to Copilot",
+   "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
+   "date": "2026-11-18T22:04:50.000Z",
+   "summary": "GitHub Copilot added eight new verified MCP server connectors, enabling integrations with services like Supabase, Box, and Calendly.",
+   "tags": [
+    "mcp",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/themes/github-2021-child/dist/img/social-v3-improvements.jpg"
+  },
+  {
+   "source": "GitHub",
+   "title": "Gemini 4 Neon in GitHub Copilot",
+   "url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot",
+   "date": "2026-11-18T21:49:21.000Z",
+   "summary": "GitHub integrated Gemini 4 Neon into Copilot as an available model choice for coding and agent workflows.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/710810976-7eb80d08-78b7-4fbe-b584-0995e1de504f.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Introducing Gemini 4 Neon",
+   "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+   "date": "2026-11-18T21:35:43.000Z",
+   "summary": "Google DeepMind launched Gemini 4 Neon, a model optimized for agentic coding, multi-step tool usage, and complex reasoning tasks.",
+   "tags": [
+    "models"
+   ],
+   "big": true,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-neon__blog-header__sm.width-1300.png"
+  },
   {
    "source": "Hugging Face",
    "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
@@ -2003,78 +2088,6 @@
    "big": false,
    "ai": false,
    "image": "https://github.blog/wp-content/uploads/2026/11/github-copilot-social-card-4.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
-   "url": "https://openai.com/index/control-room",
-   "date": "2026-11-09T13:00:00.000Z",
-   "summary": "Learn how OpenAI’s Control Room tracks model workloads across our research infrastructure and can rapidly stop them when safety or security concerns arise.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7CRGR1hiay1UfPVqjUSdAk/da9d8e1e61347fdae6d40e0a72962731/introducing-control-room-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "ChatGPT Desktop forwards your SSH agent to remote machines",
-   "url": "https://news.ycombinator.com/item?id=50422628",
-   "date": "2026-11-09T08:17:49Z",
-   "discuss": "https://news.ycombinator.com/item?id=50422628",
-   "summary": "163 points, 52 comments",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "CodeRabbit scales agentic software development and ships 20x more",
-   "url": "https://openai.com/index/coderabbit-codex-daybreak",
-   "date": "2026-11-09T08:00:00.000Z",
-   "summary": "CodeRabbit uses OpenAI models to govern and trust AI-generated code and Codex to ship 20 times more software with the same engineering team.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5TAanXWCpBQ0R0n2AFa89t/34f319750f5ffc9ebc78901cb054b866/coderabbit-seo-1920x1080.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Kuken Industries searches 70 years of drawings in minutes",
-   "url": "https://openai.com/index/kuken",
-   "date": "2026-11-09T08:00:00.000Z",
-   "summary": "Kuken Industries uses the OpenAI API to search 70 years of cooling tower drawings. Engineers can find the drawing for a repair in 4.5 minutes, down from nearly an hour.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/R7jAHAGqWOWrYCWsKdqvh/ae1842d55734f243d187c8c3e3a93c19/kuken-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "The Web Is More Than Enough, by Paul Ford",
-   "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/",
-   "date": "2026-11-09T04:32:33.000Z",
-   "summary": "My comment on The Web Is More Than Enough, by Paul Ford &mdash; Hacker News. OK, this comment convinced me to give that a shot. Here's a thing I made in Three.js this morning - a Nudibranch themed Faberge Egg: https://static.simonwillison.net/static/2026/Hidden-Reef-Egg... (77KB) I just asked Claude (Opus 5.5 Medium running in regular Claude Chat) to port that to Vanilla JS, in the same thread whe",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://www.google.com/s2/favicons?domain=news.ycombinator.com&sz=128",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Hide your slop PR descriptions behind",
-   "url": "https://simonwillison.net/2026/Nov/9/details-summary/",
-   "date": "2026-11-09T04:25:05.000Z",
-   "summary": "Most of the changes I make to my projects these days come in the form of PRs opened for me by Claude Code or Codex. The PR is my unit of work - I use them to bundle commits together, iterating on them until a feature is complete, document decisions and then merge the finished result. Today's coding agents are great at writing PR descriptions. They're too good at describing the work The problem is ",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/details-summary-card.webp"
   }
  ]
 }

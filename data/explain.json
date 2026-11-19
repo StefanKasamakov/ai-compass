@@ -23418,5 +23418,137 @@
   "repo": "KettuAI/Kettu",
   "at": "2026-11-18",
   "source": "trending"
+ },
+ "aryamandarda/tamserve": {
+  "cat": "media",
+  "kind": "Multi-camera video tracking engine",
+  "what": "tamserve is a serving engine for SAM 2 and EdgeTAM vision models that tracks objects across multiple live video streams using a single model on your graphics card.",
+  "why": "Standard AI video tracking runs a separate copy of the model for every camera, which wastes graphics memory and slows down live feeds. Reach for tamserve when you need fast object tracking across multiple live camera streams on a single GPU.",
+  "level": "dev",
+  "start": "pip install tamserve",
+  "caution": "",
+  "alts": [],
+  "packages": [
+   "tamserve"
+  ],
+  "plain": "A program that tracks moving objects across multiple live camera feeds using your graphics card.",
+  "tags": [
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Track objects across multiple live camera feeds simultaneously",
+   "Locate and follow named items or selected boxes on screen",
+   "Cut graphics memory requirements when processing parallel video streams"
+  ],
+  "steps": [
+   "Install tamserve with `pip install tamserve`",
+   "Initialize the Engine with EdgeTAM or SAM 2 model",
+   "Pass live camera frames into engine.step to track outlined objects"
+  ],
+  "repo": "aryamandarda/tamserve",
+  "at": "2026-11-19",
+  "source": "trending"
+ },
+ "appariciojunior/video-editor-skills": {
+  "cat": "harness",
+  "kind": "video editing skills",
+  "what": "Skills that teach Claude Code to be a first-pass video editor in DaVinci Resolve.",
+  "why": "To automate tedious video editing tasks like cutting retakes, syncing B-roll, and adding captions. Reach for this when you want an AI assistant to handle the rough cut of your YouTube videos or classes inside DaVinci Resolve.",
+  "level": "setup",
+  "start": "/plugin install <path-or-git-url-to-this-folder>",
+  "caution": "Non-commercial use only (CC BY-NC 4.0). Requires DaVinci Resolve Studio for external scripting and third-party API keys.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Teaches your AI coding assistant how to edit videos and cut clips inside your video editing software.",
+  "tags": [
+   "media",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Cut retakes and dead air from raw footage",
+   "Sync and place B-roll based on the story",
+   "Export optimized video files for YouTube"
+  ],
+  "steps": [
+   "Install the plugin using `/plugin install <path-or-git-url-to-this-folder>` or copy the skills into your user folder.",
+   "Open Claude Code in your editing workspace and say set up my video editor.",
+   "Drop your raw video into the project folder and tell Claude to edit the new video."
+  ],
+  "repo": "appariciojunior/video-editor-skills",
+  "at": "2026-11-19",
+  "source": "trending"
+ },
+ "better-vault/better-vault": {
+  "cat": "memory",
+  "kind": "NotebookLM alternative",
+  "what": "An open-source alternative to NotebookLM that lets you chat with your sources, create study materials, and build mind maps using your own API keys or local models.",
+  "why": "Useful when you want to research documents, generate quizzes, and summarize notes privately without relying on a single vendor's hosted platform.",
+  "level": "setup",
+  "start": "git clone https://github.com/better-vault/better-vault.git",
+  "caution": "Requires bringing your own API keys or running local model software on your computer.",
+  "alts": [
+   "infiniflow/ragflow",
+   "Mintplex-Labs/anything-llm",
+   "LibreChat-AI/LibreChat"
+  ],
+  "packages": [],
+  "plain": "A private notebook app that reads your documents and answers questions using an artificial intelligence model [computer brain] you choose.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Chat with PDF documents and web pages",
+   "Generate flashcards and quizzes from notes",
+   "Create mind maps and slide decks locally"
+  ],
+  "steps": [
+   "Clone the repository to your computer using git.",
+   "Install the required dependencies by running `npm install` in your terminal.",
+   "Start the development server with `npm run dev` and open the app in your browser."
+  ],
+  "repo": "better-vault/better-vault",
+  "at": "2026-11-19",
+  "source": "trending"
+ },
+ "oriliz/agent-crop": {
+  "cat": "harness",
+  "kind": "coding agent metrics",
+  "what": "Local timing and metrics collector that tracks coding agent activity and forces reflection loops.",
+  "why": "Helps debug why an AI coding assistant is taking too long or getting stuck by tracking time sinks and requiring structured self-improvement.",
+  "level": "setup",
+  "start": "dsh plugin --profile <你的 profile> add agent-crop-dsh",
+  "caution": "Data is stored locally; the tool relies on plugin integration with DeepSeek Harness or Claude Code and is currently in development.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex"
+  ],
+  "packages": [
+   "agent-crop-dsh"
+  ],
+  "plain": "Tracks how much time your AI coding assistant spends on tasks and makes it review its own mistakes.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Track time spent by coding assistants",
+   "Force AI agents to reflect on failures",
+   "Analyze friction and bottlenecks in local AI workflows"
+  ],
+  "steps": [
+   "Add the plugin to your development harness using your profile command.",
+   "Run status checks or health inspections in your terminal to view local logs.",
+   "Review tracked sessions and AI self-reflections locally."
+  ],
+  "repo": "oriliz/agent-crop",
+  "at": "2026-11-19",
+  "source": "trending"
  }
 }
