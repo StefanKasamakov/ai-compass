@@ -23550,5 +23550,105 @@
   "repo": "oriliz/agent-crop",
   "at": "2026-11-19",
   "source": "trending"
+ },
+ "Tracer-Cloud/opensre": {
+  "cat": "coding",
+  "kind": "CI reliability agent",
+  "what": "An open-source agent that diagnoses broken CI/CD pipelines, pinpoints root causes, and prepares code fixes for review.",
+  "why": "Broken builds often leave developers guessing or repeatedly hitting rerun instead of identifying underlying issues. Reach for this tool to automatically inspect error logs, distinguish flaky infrastructure from code bugs, and draft fixes.",
+  "level": "setup",
+  "start": "curl -fsSL https://install.opensre.com | bash -s -- -gh",
+  "caution": "Currently in public alpha with evolving workflows, and launching the interactive shell requires an active account sign-in.",
+  "alts": [
+   "The-PR-Agent/pr-agent",
+   "OpenHands/OpenHands",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "An assistant that finds out why your software tests failed and suggests fixes to get them working again.",
+  "tags": [
+   "code",
+   "monitor",
+   "automate"
+  ],
+  "useFor": [
+   "Diagnose broken CI/CD pipeline runs and pinpoint root causes",
+   "Generate and push code fixes for failing automated checks",
+   "Investigate service slowdowns and incident alerts from the terminal"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://install.opensre.com | bash -s -- -gh` to install the tool on macOS or Linux.",
+   "Open your code folder and run `opensre` to authenticate and start the interactive shell.",
+   "Run `opensre ask \"why is checkout-api slow?\"` to troubleshoot issues non-interactively."
+  ],
+  "repo": "Tracer-Cloud/opensre",
+  "at": "2026-11-19",
+  "source": "trending"
+ },
+ "zhouxiaoka/autoclip": {
+  "cat": "media",
+  "kind": "AI video clipper",
+  "what": "AutoClip is an open-source desktop app that automatically turns long podcasts, interviews, and courses into short video clips.",
+  "why": "Repurposing long-form video into clips for platforms like TikTok, Shorts, and Xiaohongshu requires hours of tedious editing. AutoClip automates highlight extraction, face tracking, subtitle generation, and post captions in one desktop tool.",
+  "level": "easy",
+  "start": "Download the desktop app from GitHub releases and paste a video link.",
+  "caution": "The desktop application is free and open-source, but cloud model processing requires your own paid API keys.",
+  "alts": [
+   "harry0703/MoneyPrinterTurbo",
+   "bilibili/Index-Translate"
+  ],
+  "packages": [],
+  "plain": "Turn long videos into short clips with subtitles and captions by pasting a single web link.",
+  "tags": [
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Turn long podcasts into short clips for social media",
+   "Generate automatic subtitles cover images and post captions",
+   "Crop interview videos automatically for vertical short-form platforms"
+  ],
+  "steps": [
+   "Download the desktop app from the GitHub releases page",
+   "Paste a link to a long video or podcast",
+   "Choose your target platform to create short clips and subtitles"
+  ],
+  "repo": "zhouxiaoka/autoclip",
+  "at": "2026-11-19",
+  "source": "trending"
+ },
+ "mjmirza/app-store-compliance": {
+  "cat": "harness",
+  "kind": "pre-submission compliance guard",
+  "what": "An automated audit tool and playbook that catches iOS and Android rejection risks before submitting to app stores.",
+  "why": "App Store and Google Play rejections can cause weeks of delay and vague reviewer feedback. Reach for this to automatically check privacy manifests, permissions, and compliance rules before uploading your mobile build.",
+  "level": "setup",
+  "start": "bash ~/repositories/app-store-compliance/agent-os/hooks/app-store-compliance-guard.sh \"/path/to/your/app\"",
+  "caution": "Uses the OpenRoots ORA 2.3 license (NOASSERTION in metadata). Modifies agent settings files during automated script installation.",
+  "alts": [
+   "google/skills",
+   "addyosmani/agent-skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Catches Apple and Google mobile store rejection risks in your app code before you submit.",
+  "tags": [
+   "apps",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Scan iOS and Android projects for app store rejection risks",
+   "Install submission compliance hooks into AI coding agents",
+   "Audit privacy declarations and required permissions before release"
+  ],
+  "steps": [
+   "Clone the repository to your local machine using git clone",
+   "Run `bash agent-os/hooks/app-store-compliance-guard.sh \"/path/to/your/app\"` to scan your app folder",
+   "Install into coding tools with `bash scripts/install.sh --tool all` to block unsafe submit commands"
+  ],
+  "repo": "mjmirza/app-store-compliance",
+  "at": "2026-11-19",
+  "source": "trending"
  }
 }

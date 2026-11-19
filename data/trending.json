@@ -1,68 +1,64 @@
 {
- "updated": "2026-11-19T07:34:06.077Z",
+ "updated": "2026-11-19T13:51:34.145Z",
  "items": [
   {
-   "repo": "aryamandarda/tamserve",
-   "stars": 154,
-   "desc": "Live, multi-camera object tracking with SAM3, SAM 2 and EdgeTAM, on one GPU or many. One model per GPU serves every camera: faster than the original code, about 4x less GPU memory, identical masks.",
-   "created": "2026-11-11T08:25:48Z",
+   "repo": "Tracer-Cloud/opensre",
+   "stars": 12933,
+   "desc": "The open-source agent for CI/CD reliability.",
+   "created": "2026-01-13T00:04:47Z",
    "topics": [
-    "batching",
-    "computer-vision",
-    "edgetam",
-    "gpu"
+    "alerting",
+    "ci-cd",
+    "cli",
+    "datadog"
    ],
    "lang": "Python",
    "sources": [
-    "Show HN"
-   ],
-   "hn": {
-    "points": 78,
-    "url": "https://news.ycombinator.com/item?id=50523377"
-   }
-  },
-  {
-   "repo": "appariciojunior/video-editor-skills",
-   "stars": 465,
-   "desc": "Skills that teach Claude Code to be a first-pass video editor in DaVinci Resolve: transcript cuts, vlog pacing, B-roll, music & SFX, clean captions, motion graphics, YouTube export. CC BY-NC 4.0 (no commercial use).",
-   "created": "2026-10-23T07:51:02Z",
-   "topics": [
-    "claude-code",
-    "claude-skills",
-    "davinci-resolve",
-    "remotion"
-   ],
-   "lang": null,
-   "sources": [
-    "new on GitHub"
+    "GitHub Trending (daily)"
    ]
   },
   {
-   "repo": "better-vault/better-vault",
-   "stars": 106,
-   "desc": "Open-source NotebookLM alternative. Chat with your sources with citations, and turn them into reports, flashcards, quizzes, mind maps and slide decks, with your own OpenAI, Anthropic or Gemini key or local Ollama / LM Studio models. Local-first, no account.",
-   "created": "2026-10-23T14:02:12Z",
+   "repo": "zhouxiaoka/autoclip",
+   "stars": 10943,
+   "desc": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+   "created": "2025-07-08T04:51:15Z",
    "topics": [
-    "ai",
-    "ai-sdk",
-    "anthropic",
-    "byok"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "oriliz/agent-crop",
-   "stars": 81,
-   "desc": "给 AI 编程助手一根马鞭：本地记录时间去向，把复盘写回 agent 指令/技能/工具；改没改好，用数据说话。 | A whip for coding agents: local timing, red-line nudges, and an evidence-backed, auditable self-improvement loop. DSH / Claude Code / Codex.",
-   "created": "2026-11-14T07:36:17Z",
-   "topics": [
-    "agent-evaluation",
-    "agent-observability",
     "ai-agent",
-    "ai-coding"
+    "ai-video-editor",
+    "content-repurposing",
+    "desktop-app"
+   ],
+   "lang": "Python",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "mjmirza/app-store-compliance",
+   "stars": 1550,
+   "desc": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+   "created": "2026-06-06T11:29:45Z",
+   "topics": [
+    "accessibility",
+    "ai-agents",
+    "android",
+    "app-review-guidelines"
+   ],
+   "lang": "Shell",
+   "sources": [
+    "GitHub Trending (daily)"
+   ]
+  },
+  {
+   "repo": "hanxiao/DeepSeek-V4.1-Flash-1017-FP8-abliterated-4x-RTX-PRO-6000",
+   "stars": 62,
+   "desc": "Abliterated DeepSeek-V4.1-Flash-1017 (FP8 dense, FP4 experts) on 4x RTX PRO 6000 with vLLM-Moet r21, DSpark + FLy verification and top_p 1.0: 463 tok/s single-stream agent decode at 30k-120k context, 1082 tok/s over 8 streams, 1M context, Flex-start GCE VM",
+   "created": "2026-10-23T03:12:45Z",
+   "topics": [
+    "abliterated",
+    "blackwell",
+    "deepseek",
+    "deepseek-v4"
    ],
    "lang": "Python",
    "sources": [
