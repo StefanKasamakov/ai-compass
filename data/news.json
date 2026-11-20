@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-20T07:25:34.532Z",
+ "updated": "2026-11-20T13:33:47.861Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+   "url": "https://architectlabs.com/blog/frostbite",
+   "date": "2026-11-20T10:01:41Z",
+   "discuss": "https://news.ycombinator.com/item?id=50572503",
+   "summary": "Researchers created Frostbite, an experimental CPU architecture entirely designed, discovered, and verified using AI models.",
+   "tags": [
+    "research",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://main--gleeful-begonia-6bb5f3.netlify.app/_next/static/media/frostbite-cover.3n9ytugnquhlr.jpg"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Anthropic successfully completes largest IPO in history, valued at $1.5T",
@@ -36,6 +51,33 @@
    "ai": false,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/073a65751744d9bcb748b6930fec8f225ffd3daef997fc2da7cc378b7fe32f3d/openai/codex/releases/tag/rust-v0.171.0"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Introducing harness adapters: adapt your favorite model to your harness to improve performance and cost",
+   "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+   "date": "2026-11-20T00:00:00.000Z",
+   "summary": "Hugging Face released harness adapters to help developers connect AI models to testing benchmarks to compare model performance and efficiency.",
+   "tags": [
+    "product",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/harness-adapters-at-scale/thumbnail.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://www.anthropic.com/news/ipo-close",
+   "date": "2026-11-20T00:00:00.000Z",
+   "title": "Anthropic announces closing of initial public offering, including full exercise of underwriters’ option to purchase additional shares, and closing of concurrent private placement",
+   "summary": "Anthropic completed its initial public offering, raising public market funds to expand its operations.",
+   "tags": [
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://assets.claude.com/6d4a0d28992ade92d6fa63646fd9c9d318245c6c.jpg"
   },
   {
    "source": "Latent Space",
@@ -299,6 +341,22 @@
    "big": false,
    "ai": true,
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_app_Android_social_share.max-1440x810.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Show HN: Mastra Factory, the open-source software factory we use to build Mastra",
+   "url": "https://news.ycombinator.com/item?id=50548660",
+   "date": "2026-11-18T16:53:42Z",
+   "discuss": "https://news.ycombinator.com/item?id=50548660",
+   "summary": "Mastra released Mastra Factory, an open-source tool designed to orchestrate software development workflows using autonomous AI agents.",
+   "tags": [
+    "agents",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
   },
   {
    "source": "Simon Willison",
@@ -1873,6 +1931,21 @@
    "image": "https://opengraph.githubassets.com/aa72be684b0c805b3d4ff86c23dd7860fd71192555f6544d2928e01017078122/GoogleChrome/modern-web-guidance"
   },
   {
+   "source": "Hacker News",
+   "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
+   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+   "date": "2026-11-10T17:55:07Z",
+   "discuss": "https://news.ycombinator.com/item?id=50443716",
+   "summary": "Anthropic launched Whiteboards, Sheets, and Data tools inside Claude, adding visual canvases and spreadsheets for interactive AI collaboration.",
+   "tags": [
+    "product",
+    "skills"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og"
+  },
+  {
    "source": "GitHub",
    "title": "C++ language server now auto-configures MSBuild builds",
    "url": "https://github.blog/changelog/2026-11-10-c-language-server-now-auto-configures-msbuild-builds",
@@ -2039,64 +2112,6 @@
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/6uOuGMP8uXe0QmAClG9qAN/692ade63f2f37280ed6b8ffb00f9f53b/ai-effect-on-freelance-work-social.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Fable 5.2 retakes World #1 LLM spot as $ANT IPO roadshow begins",
-   "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
-   "date": "2026-11-10T06:34:44.000Z",
-   "summary": "November 9, 2026 — Claude Fable 5.2 and Mythos 5.2 arrive on Anthropic’s IPO roadshow day. How much thinking is worth paying for?",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/79cc3bf60b8254ca3df43668071877f25f7ce42399c0808daf10ea0aa906733b.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Quoting Prompting Claude Fable 5.2",
-   "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/",
-   "date": "2026-11-10T05:34:14.000Z",
-   "summary": "Claude Fable 5.2 responds closely to what the prompt says about who owns the code it works on. In Anthropic’s testing on small coding tasks, when a prompt said nothing about ownership or presented the code base as someone else’s, the model tended to add to the existing structure, even when that repeated existing code. [...] If you want the model to improve the structure as it works, say that the c",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Yonkers Rises",
-   "url": "https://simonwillison.net/2026/Nov/10/yonkers-rises/",
-   "date": "2026-11-10T03:53:04.000Z",
-   "summary": "Tool: Yonkers Rises I realized I didn't know where Yonkers was, so I looked it up on Google Maps and then, to help embed it's location and shape in my head (and to try out Claude Fable 5.2's 3D modeling and animation skills), I prompted Fable 5.2 Medium to: Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and átomos around manhattan and queens and Brooklyn, us",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/yonkers.webp"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.322",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
-   "date": "2026-11-10T02:29:43Z",
-   "summary": "New release of Claude Code.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/f2af3ea69c9dfb0d5db39045af3edef9af425f5ce3e146a419d65058355ef655/anthropics/claude-code/releases/tag/v2.1.322"
-  },
-  {
-   "source": "GitHub",
-   "title": "Gemini 4 Carbon in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-11-09-gemini-4-carbon-in-github-copilot",
-   "date": "2026-11-10T02:26:51.000Z",
-   "summary": "Gemini 4 Carbon, Google’s latest model, is now generally available in GitHub Copilot. It is designed for complex coding, agentic, and reasoning tasks, with a focus on secure code generation&#8230; The post Gemini 4 Carbon in GitHub Copilot appeared first on The GitHub Blog .",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://github.blog/wp-content/uploads/2026/11/700374691-69ca0c74-ac8e-4638-82f6-46417790e655.png"
   }
  ]
 }
