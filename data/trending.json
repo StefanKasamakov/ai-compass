@@ -1,32 +1,128 @@
 {
- "updated": "2026-11-19T20:44:20.838Z",
+ "updated": "2026-11-20T07:25:34.532Z",
  "items": [
   {
-   "repo": "felipebasurto/unslop-ui",
-   "stars": 553,
-   "desc": "Agent skill that cuts AI tells from UI copy, charts and dashboards: eyebrows, numbering, botsplaining, decorative icons, badges and status dots. Opt-in surface rules.",
-   "created": "2026-10-27T13:00:12Z",
+   "repo": "Bodila51/gtavi-claudecode",
+   "stars": 1033,
+   "desc": "Claude Code plugin that turns GTA 6 streams into paid vertical clips: live campaigns, trending videos, best moments, 9:16 cuts with hooks, captions and credits.",
+   "created": "2026-11-18T17:54:29Z",
    "topics": [
     "agent-skills",
-    "ai-slop",
     "claude-code",
-    "claude-skills"
+    "clipping",
+    "gta6"
    ],
-   "lang": "HTML",
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "hanxiao/DeepSeek-V4.1-Flash-1017-FP8-abliterated-4x-RTX-PRO-6000",
-   "stars": 62,
-   "desc": "Abliterated DeepSeek-V4.1-Flash-1017 (FP8 dense, FP4 experts) on 4x RTX PRO 6000 with vLLM-Moet r21, DSpark + FLy verification and top_p 1.0: 463 tok/s single-stream agent decode at 30k-120k context, 1082 tok/s over 8 streams, 1M context, Flex-start GCE VM",
-   "created": "2026-10-23T03:12:45Z",
+   "repo": "bookwjitchieni1986/blender-ai-mcp-addon",
+   "stars": 910,
+   "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode. Blender AI addon, copilot for 3D, bpy Python scripting, MCP integration.",
+   "created": "2026-11-19T14:43:10Z",
    "topics": [
-    "abliterated",
-    "blackwell",
-    "deepseek",
-    "deepseek-v4"
+    "ai-agents",
+    "ai-assistant",
+    "blender",
+    "blender-addon"
+   ],
+   "lang": null,
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "manuelgscom/inside-llm",
+   "stars": 107,
+   "desc": "See inside any GGUF: where two quantizations part ways, token by token, and what each sampler cuts. Live in your browser, powered by llama.cpp (CUDA or Vulkan).",
+   "created": "2026-11-15T18:46:30Z",
+   "topics": [
+    "cpp",
+    "cuda",
+    "gguf",
+    "interpretability"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "ewhacc/tandem.cpp",
+   "stars": 103,
+   "desc": "llama.cpp patch: faster MoE offload for models that don't fit in VRAM",
+   "created": "2026-11-01T10:04:25Z",
+   "topics": [
+    "gguf",
+    "inference-engine",
+    "llama-cpp",
+    "local-llm"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "kenzz-devv/open-webui-talora-ai-workspace",
+   "stars": 94,
+   "desc": "Streamlined workspace for organizing and running AI workflows in one place.",
+   "created": "2026-11-18T14:18:51Z",
+   "topics": [
+    "chat",
+    "chatbot",
+    "generative-ai",
+    "gguf"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "thejarasal780-ship-it/ollama-local-ai-offline",
+   "stars": 94,
+   "desc": "Ollama Local AI Offline: Run Local LLMs Fully Offline on Desktop",
+   "created": "2026-11-17T23:15:50Z",
+   "topics": [
+    "llm-inference",
+    "local-ai",
+    "local-llm",
+    "local-models"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "senickimoro-art/pinokio-olvara-ai-workspace",
+   "stars": 93,
+   "desc": "A modular desktop workspace for configuring and running local AI models.",
+   "created": "2026-11-18T14:19:25Z",
+   "topics": [
+    "automation",
+    "chat",
+    "chatbot",
+    "chatbots"
+   ],
+   "lang": "Dockerfile",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Tencent-Hunyuan/FlashTopK",
+   "stars": 56,
+   "desc": "Fast, exact fused top-k selection for learned sparse attention training and inference, from HyScale (Tencent Hy & University of Edinburgh).",
+   "created": "2026-11-05T10:38:09Z",
+   "topics": [
+    "cuda",
+    "cute-dsl",
+    "deepseek-sparse-attention",
+    "hyscale"
    ],
    "lang": "Python",
    "sources": [

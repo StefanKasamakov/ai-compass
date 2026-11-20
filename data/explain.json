@@ -23714,5 +23714,244 @@
   "repo": "hanxiao/DeepSeek-V4.1-Flash-1017-FP8-abliterated-4x-RTX-PRO-6000",
   "at": "2026-11-19",
   "source": "trending"
+ },
+ "Bodila51/gtavi-claudecode": {
+  "cat": "harness",
+  "kind": "Claude Code plugin",
+  "what": "A Claude Code plugin and script toolkit that finds, clips, and edits gaming stream highlights into vertical short-form videos.",
+  "why": "It automates tracking live streams, finding loud or viral moments, and rendering vertical edits with captions and hooks. Reach for it when you want an automated workflow for editing and formatting gaming video clips.",
+  "level": "setup",
+  "start": "/plugin marketplace add Bodila51/gtavi-claudecode",
+  "caution": "Financial payout claims rely on third-party campaign rules and view counts which are not guaranteed. Requires setting up external media processing dependencies like ffmpeg.",
+  "alts": [
+   "anthropics/claude-code",
+   "harry0703/MoneyPrinterTurbo"
+  ],
+  "packages": [
+   "yt-dlp",
+   "faster-whisper"
+  ],
+  "plain": "A tool for an AI helper [Claude Code] that auto-cuts viral game streams into vertical video clips.",
+  "tags": [
+   "media",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Find trending live streams and viral gaming videos",
+   "Generate vertical clips with captions and custom hook text",
+   "Check short videos against submission rules before posting"
+  ],
+  "steps": [
+   "Add the plugin to Claude Code with `/plugin marketplace add Bodila51/gtavi-claudecode`.",
+   "Install the plugin using `/plugin install gtavi-claudecode@gtavi-claudecode`.",
+   "Prompt Claude Code to set up your folder, locate streams, and cut vertical clips."
+  ],
+  "repo": "Bodila51/gtavi-claudecode",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "bookwjitchieni1986/blender-ai-mcp-addon": {
+  "cat": "harness",
+  "kind": "Blender AI MCP extension",
+  "what": "An AI assistant and Model Context Protocol server for Blender that enables direct scene inspection, editing, object creation, and multi-agent workflow automation.",
+  "why": "Manually performing repetitive 3D modeling and scene setup tasks in Blender can be slow. Reach for this tool to edit 3D scenes with conversational prompts, connect various AI models, and run automated workflows directly inside Blender.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires Windows x64 and Blender 4.2 or higher. Built-in Python tool validation provides basic safety checks but is not a full security sandbox.",
+  "alts": [
+   "anujasid/blender-ai-mcp-addon",
+   "LiCinCan/blender-ai-mcp-addon",
+   "EL4CTEO/blender-skills"
+  ],
+  "packages": [],
+  "plain": "An add-on that lets AI inspect 3D scenes, build objects, and adjust materials directly inside Blender.",
+  "tags": [
+   "connect",
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Inspect and edit 3D scenes using conversational prompts",
+   "Automate object layout and material creation in Blender",
+   "Connect external AI agents to control Blender workflows"
+  ],
+  "steps": [
+   "Download mcp-for-blender-pro.zip from the latest release page.",
+   "In Blender, go to Edit, then Preferences, then Get Extensions, and click Install from Disk.",
+   "Select the downloaded ZIP file, enable mcp-for-blender-pro, and open 3D Viewport N panel.",
+   "Choose an AI provider, configure your connection details, and select a model."
+  ],
+  "repo": "bookwjitchieni1986/blender-ai-mcp-addon",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "manuelgscom/inside-llm": {
+  "cat": "local",
+  "kind": "GGUF model visualizer",
+  "what": "inside-llm is a desktop tool that visualizes how local AI models choose words and compares output differences between model versions.",
+  "why": "It helps you see token probabilities, sampler cuts, and divergence between two quantizations or fine-tunes in a browser interface. Reach for it when analyzing model behavior or evaluating quantization trade-offs.",
+  "level": "setup",
+  "start": "`./inside-llm`",
+  "caution": "Requires a dedicated graphics card with CUDA or Vulkan support for fast generation, as running on integrated hardware falls back to slow CPU execution.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "This tool lets you visually compare how two open-source AI models make decisions word by word in your browser.",
+  "tags": [
+   "private",
+   "research",
+   "monitor"
+  ],
+  "useFor": [
+   "Compare two model quantizations token by token",
+   "Inspect sampler filtering stages and layer predictions",
+   "Explore interactive branching paths during model generation"
+  ],
+  "steps": [
+   "Download and extract the binary release package for your operating system.",
+   "Run `./inside-llm` in your terminal to launch the server.",
+   "Open http://localhost:8642 in your web browser to pick your GGUF files and compare."
+  ],
+  "repo": "manuelgscom/inside-llm",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "ewhacc/tandem.cpp": {
+  "cat": "local",
+  "kind": "llama.cpp offload patch",
+  "what": "A patch set for llama.cpp that speeds up running large mixture-of-experts models on computers where the model cannot fit entirely inside graphics card memory.",
+  "why": "Running massive open models on consumer hardware often causes slow generation when offloading to system RAM or storage. Reach for this project if you run large MoE models like Qwen or DeepSeek on a personal desktop with limited VRAM.",
+  "level": "setup",
+  "start": "",
+  "caution": "The repository does not specify an open-source license. It is an independent patch set targeting a specific commit of llama.cpp.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "It speeds up large AI models on standard home computers by sharing work between your graphics card and computer memory.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run large mixture of experts models on single consumer graphics cards",
+   "Speed up text decoding when model sizes exceed available graphics memory",
+   "Cache high-frequency model layers in fast memory while streaming the rest"
+  ],
+  "steps": [
+   "Clone the specified llama.cpp base commit",
+   "Apply the tandem.cpp patch set to the codebase",
+   "Build llama.cpp and run your preferred mixture-of-experts model"
+  ],
+  "repo": "ewhacc/tandem.cpp",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "thejarasal780-ship-it/ollama-local-ai-offline": {
+  "cat": "local",
+  "kind": "desktop ai client",
+  "what": "Ollama Local AI Offline is a cross-platform desktop client that provides a fully self-contained runtime for executing large language models on local hardware without network dependency.",
+  "why": "It solves the problem of running AI models completely offline and privately on your own computer, which is ideal when you need to keep your data secure or work without internet access.",
+  "level": "easy",
+  "start": "",
+  "caution": "The project lists donation cryptocurrency addresses and includes download buttons pointing to external web assets, so verify files carefully.",
+  "alts": [
+   "ollama/ollama",
+   "open-webui/open-webui",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "Runs AI models directly on your computer without needing an internet connection.",
+  "tags": [
+   "private",
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Chat with AI models completely offline",
+   "Manage locally stored artificial intelligence models",
+   "Organize reusable prompt templates and chat history"
+  ],
+  "steps": [
+   "Download and run the desktop application for Windows 10 or 11.",
+   "Select a local model from your library to set it as active.",
+   "Type your message into the chat workspace and receive responses locally."
+  ],
+  "repo": "thejarasal780-ship-it/ollama-local-ai-offline",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "senickimoro-art/pinokio-olvara-ai-workspace": {
+  "cat": "local",
+  "kind": "Desktop AI workspace",
+  "what": "A Windows desktop application that lets you configure, orchestrate, and run local AI models and pipelines on your machine.",
+  "why": "Running multiple local AI backends and tools can cause resource conflicts and setup headaches. Use this when you want a unified Windows interface to manage local runtimes, memory limits, and prompt workflows.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires Windows 10 or 11 with PowerShell 5.1 or higher.",
+  "alts": [
+   "janhq/jan",
+   "open-webui/open-webui",
+   "ollama/ollama"
+  ],
+  "packages": [],
+  "plain": "A Windows program to set up, run, and organize private AI models directly on your computer.",
+  "tags": [
+   "private",
+   "automate",
+   "knowledge"
+  ],
+  "useFor": [
+   "Configure and launch local AI runtimes on Windows",
+   "Manage memory and hardware limits for background AI tasks",
+   "Create multi-step workflows linking prompt inputs with local models"
+  ],
+  "steps": [
+   "Ensure you are running Windows 10 or 11 with PowerShell 5.1 or newer",
+   "Click the PowerShell Setup button on the project site to run the installer",
+   "Open the desktop workspace interface to configure runtimes and resource allocations"
+  ],
+  "repo": "senickimoro-art/pinokio-olvara-ai-workspace",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "Tencent-Hunyuan/FlashTopK": {
+  "cat": "local",
+  "kind": "CUDA top-k kernel",
+  "what": "FlashTopK is a fast GPU top-k selection library for learned sparse attention during model training and inference.",
+  "why": "Standard attention scoring slows down when processing long context windows on large models. Reach for FlashTopK to accelerate token selection on NVIDIA GPUs with exact and deterministic results.",
+  "level": "dev",
+  "start": "pip install -e .",
+  "caution": "",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [],
+  "plain": "FlashTopK speeds up finding the most important words when generating text on high-end graphics cards [GPUs].",
+  "tags": [
+   "private",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Accelerate sparse attention key selection",
+   "Filter top-k tokens during model inference",
+   "Train long-context models using context parallelism"
+  ],
+  "steps": [
+   "Install dependencies and FlashTopK using `pip install -e .`",
+   "Import flashtopk and prepare your query and key-value GPU tensors",
+   "Call `flashtopk.select()` to retrieve the indices of the highest scoring keys"
+  ],
+  "repo": "Tencent-Hunyuan/FlashTopK",
+  "at": "2026-11-20",
+  "source": "trending"
  }
 }
