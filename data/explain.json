@@ -23953,5 +23953,107 @@
   "repo": "Tencent-Hunyuan/FlashTopK",
   "at": "2026-11-20",
   "source": "trending"
+ },
+ "kenzz-devv/open-webui-talora-ai-workspace": {
+  "cat": "builders",
+  "kind": "Self-hosted chat UI",
+  "what": "A customizable web interface for managing AI chats, document context, prompt templates, and team access across multiple models.",
+  "why": "It replaces fragmented chat tools with a unified workspace where teams can organize AI conversations, upload reference files, and manage prompt templates. Reach for it when you want a clean, self-contained web client for your AI models on Windows.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires Windows 10 or 11 with PowerShell 5.1 or newer to run the setup script.",
+  "alts": [
+   "open-webui/open-webui",
+   "LibreChat-AI/LibreChat",
+   "ChatGPTNextWeb/NextChat"
+  ],
+  "packages": [],
+  "plain": "An all-in-one web screen to chat with AI models, organize notes, save prompt templates, and manage team access.",
+  "tags": [
+   "knowledge",
+   "private",
+   "connect"
+  ],
+  "useFor": [
+   "Organize chats and reference files into named project workspaces",
+   "Save and reuse prompt templates for recurring team tasks",
+   "Switch between different AI models within a single chat interface"
+  ],
+  "steps": [
+   "Ensure you are using Windows 10 or 11 with PowerShell 5.1 or newer.",
+   "Run the PowerShell setup script from the project download page.",
+   "Open the web app and connect your preferred AI model provider."
+  ],
+  "repo": "kenzz-devv/open-webui-talora-ai-workspace",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "leonxger/deepseek-colab": {
+  "cat": "local",
+  "kind": "Colab model runner",
+  "what": "deepseek-colab launches an optimized DeepSeek model on Google Colab hardware and connects it to your computer as a standard AI endpoint.",
+  "why": "Running massive AI models requires expensive hardware you may not own. Reach for this tool to stream responses from a fast DeepSeek model using cloud subscription units instead of purchasing expensive graphics cards.",
+  "level": "setup",
+  "start": "git clone https://github.com/leonxger/deepseek-colab.git deepseek-colab && cd deepseek-colab",
+  "caution": "Reusing consumer subscriptions like Google Colab to host continuous model endpoints may violate the provider's terms of service and risk account suspension.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "Runs a powerful AI model on Google's online hardware so you can chat without buying expensive equipment.",
+  "tags": [
+   "save",
+   "private",
+   "code"
+  ],
+  "useFor": [
+   "Run DeepSeek models using Google Colab compute units",
+   "Connect external coding tools to a private model endpoint",
+   "Process long documents and images without local hardware"
+  ],
+  "steps": [
+   "Clone the repository and change into the project directory.",
+   "Run `python3 llm.py up` to sign into Google and launch the remote graphics engine.",
+   "Copy the provided connection address and key into your AI client application."
+  ],
+  "repo": "leonxger/deepseek-colab",
+  "at": "2026-11-20",
+  "source": "trending"
+ },
+ "CYFARE/Mariana-Studio": {
+  "cat": "local",
+  "kind": "Local AI workbench",
+  "what": "Mariana Studio is a unified desktop interface for training, fine-tuning, chatting with, and exporting custom AI models.",
+  "why": "It combines data inspection, model training, agent workflows, and export tools into a single local program. Reach for it when you want to train or fine-tune models on consumer hardware without relying on cloud services.",
+  "level": "setup",
+  "start": "git clone https://github.com/CYFARE/Mariana-Studio.git && cd Mariana-Studio",
+  "caution": "Licensed under AGPL-3.0, which requires you to open-source any modifications if you host the software over a network.",
+  "alts": [
+   "ollama/ollama",
+   "open-webui/open-webui",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "A desktop application that lets you build, train, and chat with custom AI models directly on your computer.",
+  "tags": [
+   "private",
+   "code",
+   "apps"
+  ],
+  "useFor": [
+   "Train custom models on consumer hardware",
+   "Fine-tune existing models locally",
+   "Export models to GGUF and ONNX formats"
+  ],
+  "steps": [
+   "Clone the project using `git clone https://github.com/CYFARE/Mariana-Studio.git && cd Mariana-Studio`",
+   "Run `python mariana.py setup` to install dependencies into a Python virtual environment",
+   "Open the studio by running `python mariana.py studio`"
+  ],
+  "repo": "CYFARE/Mariana-Studio",
+  "at": "2026-11-20",
+  "source": "trending"
  }
 }
