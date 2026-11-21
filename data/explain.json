@@ -24264,5 +24264,40 @@
   "repo": "zadazddq/lm-studio-private-ai",
   "at": "2026-11-21",
   "source": "trending"
+ },
+ "iamajmeena/neonclipping": {
+  "cat": "media",
+  "kind": "AI video clipper",
+  "what": "An open-source desktop tool that turns long videos or streams into vertical 9:16 short clips with animated captions.",
+  "why": "Cloud clipping tools charge subscriptions or impose upload limits on multi-hour streams. Reach for this when you want free, private clipping of YouTube, Twitch, or local gaming recordings directly on your PC.",
+  "level": "setup",
+  "start": "Run install.sh or download the one-click Windows setup",
+  "caution": "Deep video analysis and local speech recognition run locally and can be slow without a modern graphics card.",
+  "alts": [
+   "harry0703/MoneyPrinterTurbo",
+   "openfilm/openfilm",
+   "threerocks/article2media"
+  ],
+  "packages": [],
+  "plain": "Turn long streams and YouTube videos into captioned vertical clips automatically on your own computer without monthly fees.",
+  "tags": [
+   "media",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Convert long gaming streams into captioned TikTok and Shorts clips",
+   "Extract exciting video highlights using audio spikes and dialogue cues",
+   "Customize vertical layouts with split screens and facecam positioning"
+  ],
+  "steps": [
+   "Download the one-click Windows installer or run the setup script on Mac or Linux.",
+   "Paste a YouTube, Twitch, or Kick URL, or upload a local MP4 file.",
+   "Select your desired clip length, caption style, and facecam layout.",
+   "Click Make clips to review, edit, and export your vertical videos."
+  ],
+  "repo": "iamajmeena/neonclipping",
+  "at": "2026-11-21",
+  "source": "trending"
  }
 }
