@@ -1,6 +1,78 @@
 {
- "updated": "2026-11-20T20:28:21.765Z",
+ "updated": "2026-11-21T07:19:26.131Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Riemann Hypothesis proved...twice independently",
+   "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+   "date": "2026-11-21T05:02:13.000Z",
+   "summary": "Reports surfaced regarding independent AI-assisted proofs of the Riemann Hypothesis.",
+   "tags": [
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-riemann-hypothesis-proved-twice-independently/e5a84487c10f6433d047c718980d15e3da91212ba6d34d2720d3eb1a90a457ba.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.330",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "date": "2026-11-20T22:32:56Z",
+   "summary": "Anthropic released Claude Code v2.1.330 with minor fixes and updates.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/039682c0eddced240ab97c729ba18cf64b6d2a8143b2f64e8694fb42caf41007/anthropics/claude-code/releases/tag/v2.1.330"
+  },
+  {
+   "source": "Latent Space",
+   "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+   "url": "https://latent.space/p/formal-verification/",
+   "date": "2026-11-20T21:18:41.000Z",
+   "summary": "Formal verification tools using AI and Lean are increasingly helping automate software correctness proofs.",
+   "tags": [
+    "coding",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b6f560cd-a37a-4d62-8d6b-da5b59cf4790/formal-verification-feature.png?t=1795207886"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Quoting Levent Alpöge",
+   "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+   "date": "2026-11-20T16:30:48.000Z",
+   "summary": "A researcher claimed to use Claude to discover a proof for the Riemann Hypothesis and formalize the arguments.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "If you stop writing code, you also get worse at reviewing it",
+   "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+   "date": "2026-11-20T12:41:38Z",
+   "discuss": "https://news.ycombinator.com/item?id=50573886",
+   "summary": "A discussion on how reducing hands-on coding can negatively impact a developer's code review skills.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://codimg.alwaysdata.net/code.svg?input=%7B-%0A+++++++++++_+++++++++++++++++++++++++++++++++++_+_+++_+++++++++++_+++++++++++_+++++++%0A++++++++++%7C+%7C+++++++++++++++++++++++++++++++++%28_%29+%7C+%7C+%7C+++++++++%7C+%7C+++++++++%28_%29++++++%0A+++___+___%7C+%7C+___+__+___+_+__+___+++++++++__+_+_%7C+%7C_%7C+%7C__++_+++_%7C+%7C__++++++++_++___++%0A++%2F+__%2F+_+%5C+%7C%2F+%2F+%27__%2F+_+%5C+%27_+%60+_+%5C+++++++%2F+_%60+%7C+%7C+__%7C+%27_+%5C%7C+%7C+%7C+%7C+%27_+%5C++++++%7C+%7C%2F+_+%5C+%0A+%7C+%28_%7C++__%2F+++%3C%7C+%7C+%7C++__%2F+%7C+%7C+%7C+%7C+%7C++_++%7C+%28_%7C+%7C+%7C+%7C_%7C+%7C+%7C+%7C+%7C_%7C+%7C+%7C_%29+%7C++_++%7C+%7C+%28_%29+%7C%0A++%5C___%5C___%7C_%7C%5C_%5C_%7C++%5C___%7C_%7C+%7C_%7C+%7C_%7C+%28_%29++%5C__%2C+%7C_%7C%5C__%7C_%7C+%7C_%7C%5C__%2C_%7C_.__%2F++%28_%29+%7C_%7C%5C___%2F+%0A++++++++++++++++++++++++++++++++++++++++++__%2F+%7C++++++++++++++++++++++++++++++++++++++%0A+++++++++++++++++++++++++++++++++++++++++%7C___%2F+++++++++++++++++++++++++++++++++++++++%0A%0A+++cekrem.github.io%2Fposts%2Fif-you-stop-writing-code-you-also-get-worse-at-reviewing-it%0A-%7D%0A%0Atitle+%3A+String%0Atitle+%3D+%22If+you+stop+writing+code%2C+you+also+get+worse+at+reviewing+it%22%0A%0Adescription+%3A+String%0Adescription+%3D%0A++++%22Before+2022+10%2F10+engineers+would+agree+wholeheartedly.+%22%0A++++++++%2B%2B+%22Somehow+it+changed.%28%3F%21%29%22&lang=elm"
+  },
   {
    "source": "Hacker News",
    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
@@ -51,6 +123,20 @@
    "ai": false,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/073a65751744d9bcb748b6930fec8f225ffd3daef997fc2da7cc378b7fe32f3d/openai/codex/releases/tag/rust-v0.171.0"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+   "url": "https://openai.com/business/customer-stories/hebbia",
+   "date": "2026-11-20T00:00:00.000Z",
+   "summary": "Hebbia previewed GPT-6 Astra for financial research, showing improved citation relevance.",
+   "tags": [
+    "models",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/70gWqYyqb096it9EoD7OqI/5df8cad1c7fdf2a4e942c3183a10f405/hebbia-smoked-depth-social.png?w=1600&h=900&fit=fill"
   },
   {
    "source": "Hugging Face",
@@ -1105,6 +1191,21 @@
    "viaBrowser": true
   },
   {
+   "source": "Hacker News",
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "date": "2026-11-15T14:46:58Z",
+   "discuss": "https://news.ycombinator.com/item?id=50507303",
+   "summary": "A community debate discussing whether all AI-generated code should be open source.",
+   "tags": [
+    "coding",
+    "business"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://jakub.jankiewicz.org/img/en/ai-code-open-source.png"
+  },
+  {
    "source": "Simon Willison",
    "title": "datasette-apps 0.4a0",
    "url": "https://simonwillison.net/2026/Nov/15/datasette-apps/",
@@ -1147,6 +1248,21 @@
    "ai": true,
    "audience": "dev",
    "image": "https://static.simonwillison.net/static/2026/lmstudio-datasette-agent.webp"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Formalizing US Tax Code (Using Lean)",
+   "url": "https://lexifina.com/blog/formalizing-the-us-tax-code",
+   "date": "2026-11-14T15:41:20Z",
+   "discuss": "https://news.ycombinator.com/item?id=50497900",
+   "summary": "Developers used the Lean theorem prover to formalize portions of the US Tax Code.",
+   "tags": [
+    "coding",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://lexifina.com/social-preview-v3.png?v=20261018"
   },
   {
    "source": "Hacker News",
@@ -2014,105 +2130,6 @@
    "ai": false,
    "image": "https://lh3.googleusercontent.com/hn6AiI6lYFo6chi1mL6uJ9nOW9UXfsAKnSyOApiie2urHNU2tmSPUmGn0hNfWyYLRcsWCGjCIrBZSCt1ihZmvW-LDJPfyolsr5w-yvzlknZVzmaH=w1200-h630-n-nu-rw",
    "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Helping caregivers use AI in everyday life",
-   "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
-   "date": "2026-11-10T12:00:00.000Z",
-   "summary": "OpenAI Academy is bringing free, hands-on ChatGPT workshops to caregivers in five U.S. cities, helping them build practical AI skills for everyday life.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/5hU7ON7hfir24W1E1vtQLV/8eb49679510e09c2d19d0ad918229de4/helping-caregivers-use-ai-in-everyday-life-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "DeepMind",
-   "title": "Opening the datasets behind our AI weather models",
-   "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
-   "date": "2026-11-10T11:13:04.000Z",
-   "summary": "Foundational precipitation and geostationary satellite datasets to observe the planet clearly.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://lh3.googleusercontent.com/ggsqfaBnOayx-i7z9Kj8AeZruz8BSo0N7tsnqwH8Z3REnHcDKBt-QSA3DR4UUM8lcwklWihSARoEN2AyQFhoRFGFlk2-0-xGuKt_rtGoFwpJg8LHVQ=w1200-h630-n-nu-rw",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "AI usage generates a fragile codebase",
-   "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
-   "date": "2026-11-10T10:25:58Z",
-   "discuss": "https://news.ycombinator.com/item?id=50438318",
-   "summary": "Developers discuss the risks of fragile codebases resulting from heavy AI code generation.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://www.evanxmerz.com/images/ai-codebases-are-a-house-of-cards.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Socratic Tutor",
-   "url": "https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md",
-   "date": "2026-11-10T10:18:22Z",
-   "discuss": "https://news.ycombinator.com/item?id=50438261",
-   "summary": "An AI-powered Socratic tutor tool designed to help students learn by asking guiding questions.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/a7b8c4e2e239113273646f44422d9964593825178eb9fb91acbf8b312067bca8/janestreet/agent_skills"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing Businesses in ChatGPT",
-   "url": "https://openai.com/index/introducing-businesses-chatgpt",
-   "date": "2026-11-10T10:00:00.000Z",
-   "summary": "Manage your business information, get insights about how your business shows up, and turn interest into action in ChatGPT.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7Eicp7g84HA3PCzyVJTfbT/d423890d5a1a863bf69a57bcbbbf6e99/business-agents-blog-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Closing the AI guidance gap in education",
-   "url": "https://openai.com/index/closing-ai-guidance-gap-education",
-   "date": "2026-11-10T09:00:00.000Z",
-   "summary": "New ThinkYoung research and lessons from OpenAI’s EMEA education partnerships on supporting teachers, AI literacy, and independent learning.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/31dARlakgeBjEGDjdpJO19/7f707711c640f606dafacb1854d2a673/closing-the-ai-guidance-gap-in-education-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Singapore Airlines elevates travel & work with OpenAI technology",
-   "url": "https://openai.com/index/singapore-airlines-travel-work",
-   "date": "2026-11-10T08:00:00.000Z",
-   "summary": "Discover how Singapore Airlines uses OpenAI models and API to enhance customer support, travel discovery, and employee productivity, doubling CSAT for its Kris chatbot.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6geJn9bNCJzHk6tuvkrIIJ/68eaf731ef9d75adb5f7f8c15f6cf867/singapore-airlines-curved-satin-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
-   "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
-   "date": "2026-11-10T07:28:21.000Z",
-   "summary": "Introducing Our Smallest, Most Efficient Model: Muse Ember Meta AI just launched their entry in the Claude Haiku/GPT Luna category: Muse Ember, which they describe as: [...] our smallest and most efficient model designed for complex reasoning execution and the work agents repeat all day: tool calls, coding subtasks, routing, extraction, and long document parsing. For shorter prompts it's priced th",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://static.simonwillison.net/static/2026/muse-ember.webp"
   }
  ]
 }

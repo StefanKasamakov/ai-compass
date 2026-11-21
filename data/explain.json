@@ -24055,5 +24055,214 @@
   "repo": "CYFARE/Mariana-Studio",
   "at": "2026-11-20",
   "source": "trending"
+ },
+ "mankidev/antialgorithm": {
+  "cat": "harness",
+  "kind": "creative agent skill",
+  "what": "An agent skill that pushes AI assistants away from average, cliché choices during creative visual and naming tasks.",
+  "why": "AI models often default to predictable tropes and repetitive concepts. Reach for this tool when you want distinct SVG artwork, UI designs, or less generic brand names.",
+  "level": "setup",
+  "start": "npx skills add mankidev/antialgorithm",
+  "caution": "Requires Python 3 and image processing libraries like Pillow or cairosvg to run the SVG visual checking scripts.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills",
+   "vercel-labs/skills"
+  ],
+  "packages": [
+   "numpy",
+   "Pillow",
+   "cairosvg"
+  ],
+  "plain": "An add-on for digital AI helpers that forces them to give more original design and naming suggestions.",
+  "tags": [
+   "supercharge",
+   "media"
+  ],
+  "useFor": [
+   "Avoid generic AI logo and poster designs",
+   "Generate distinct creative names and writing concepts",
+   "Check generated SVG files for text contrast issues"
+  ],
+  "steps": [
+   "Install the skill by running `npx skills add mankidev/antialgorithm`.",
+   "Alternatively install in Claude Code with `/plugin install antialgorithm`.",
+   "Ask your AI assistant to create designs, names, or posters as usual."
+  ],
+  "repo": "mankidev/antialgorithm",
+  "at": "2026-11-21",
+  "source": "trending"
+ },
+ "threerocks/article2media": {
+  "cat": "harness",
+  "kind": "Content repurposing skill",
+  "what": "A suite of Claude Code and Codex skills that turns articles or videos into Xiaohongshu cards, long images, WeChat articles, and AI voiceover videos.",
+  "why": "Formatting content across multiple social media platforms manually takes hours of editing, layout, and voiceover work. Reach for this to automatically transform text or video URLs into formatted social graphics, WeChat articles, or narrated video clips.",
+  "level": "setup",
+  "start": "claude plugin marketplace add threerocks/article2media",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/knowledge-work-plugins",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Turn any web link or video into social media graphics, WeChat posts, and narrated videos automatically.",
+  "tags": [
+   "supercharge",
+   "media",
+   "automate"
+  ],
+  "useFor": [
+   "Turn articles and videos into Xiaohongshu cards and infographics",
+   "Format articles for WeChat Official Accounts with custom themes",
+   "Generate short AI voiceover videos with synchronized subtitles"
+  ],
+  "steps": [
+   "Add the plugin marketplace using `claude plugin marketplace add threerocks/article2media`.",
+   "Install the plugin using `claude plugin install article2media@article2media`.",
+   "Run `/article2media https://example.com/post` inside Claude Code to process a link."
+  ],
+  "repo": "threerocks/article2media",
+  "at": "2026-11-21",
+  "source": "trending"
+ },
+ "INK-Q/agy-fast": {
+  "cat": "harness",
+  "kind": "Antigravity accelerator plugin",
+  "what": "A local Model Context Protocol plugin for Google Antigravity that speeds up coding tasks and reduces token usage by batching searches, edits, and test checks.",
+  "why": "Google Antigravity can take many slow separate turns and upload large tool outputs when exploring or editing projects. Reach for agy-fast to batch local actions, cut down round trips, and reduce billable model quota without breaking native interface features.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/INK-Q/agy-fast/main/install.sh | sh",
+  "caution": "",
+  "alts": [
+   "rtk-ai/rtk",
+   "microsoft/TokenEconomizer",
+   "SuperClaude-Org/SuperClaude_Framework"
+  ],
+  "packages": [],
+  "plain": "A tool that makes your AI coding assistant work faster and use less text, saving you time and money.",
+  "tags": [
+   "code",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Batch file searches and edits into single steps",
+   "Inject workspace summaries at session startup",
+   "Reduce billable model text usage and round-trip time"
+  ],
+  "steps": [
+   "Run the installer script `curl -fsSL https://raw.githubusercontent.com/INK-Q/agy-fast/main/install.sh | sh` in your terminal.",
+   "Open Customizations inside Google Antigravity and confirm agy-fast is enabled.",
+   "Start a new session to load the background startup tools."
+  ],
+  "repo": "INK-Q/agy-fast",
+  "at": "2026-11-21",
+  "source": "trending"
+ },
+ "han938/open-webui-private-ai-desk": {
+  "cat": "builders",
+  "kind": "Local AI chat workspace",
+  "what": "A self-hosted web interface for chatting with local AI models and your private documents.",
+  "why": "It keeps all your conversations, prompts, and reference documents on your own hardware without sending data to external servers. Reach for it when your team needs a private alternative to ChatGPT.",
+  "level": "setup",
+  "start": "",
+  "caution": "Requires Windows 10 or 11 and running a PowerShell setup script.",
+  "alts": [
+   "open-webui/open-webui",
+   "janhq/jan",
+   "LibreChat-AI/LibreChat"
+  ],
+  "packages": [],
+  "plain": "A web app to chat with AI models and your own documents completely offline on your computer.",
+  "tags": [
+   "private",
+   "knowledge",
+   "docs"
+  ],
+  "useFor": [
+   "Chat with private AI models on your own machine",
+   "Upload reference documents to answer questions grounded in your files",
+   "Manage team accounts and permissions for a shared private workspace"
+  ],
+  "steps": [
+   "Ensure you are running Windows 10 or 11 with PowerShell 5.1 or newer.",
+   "Download and run the PowerShell setup script from the project site.",
+   "Connect the web interface to your local model backend.",
+   "Open the chat desk in your browser to start asking questions."
+  ],
+  "repo": "han938/open-webui-private-ai-desk",
+  "at": "2026-11-21",
+  "source": "trending"
+ },
+ "chase1225/anythingllm-verona-document-chat": {
+  "cat": "memory",
+  "kind": "Windows document chat",
+  "what": "A Windows desktop application for chatting with local documents using customizable workspaces and AI model providers.",
+  "why": "It provides a desktop interface to load local files, search through them, and answer questions with exact citations. Reach for it when you need offline document Q&A on Windows without uploading sensitive files to cloud services.",
+  "level": "setup",
+  "start": "",
+  "caution": "Script-based install buttons and crypto wallet addresses are prominent in the repository documentation.",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "open-webui/open-webui",
+   "infiniflow/ragflow"
+  ],
+  "packages": [],
+  "plain": "Chat with your private documents on a Windows computer using AI without sending files to the internet.",
+  "tags": [
+   "knowledge",
+   "private",
+   "docs"
+  ],
+  "useFor": [
+   "Ask questions about your local documents",
+   "Inspect inline citations for generated answers",
+   "Organize files into isolated project workspaces"
+  ],
+  "steps": [
+   "Open Windows PowerShell on a Windows 10 or 11 system.",
+   "Run the quick install script to install the desktop client.",
+   "Create a workspace and import your document collection.",
+   "Select your AI provider and start asking questions."
+  ],
+  "repo": "chase1225/anythingllm-verona-document-chat",
+  "at": "2026-11-21",
+  "source": "trending"
+ },
+ "zadazddq/lm-studio-private-ai": {
+  "cat": "local",
+  "kind": "desktop application",
+  "what": "A desktop application that lets you run and chat with open-source language models directly on your Windows PC.",
+  "why": "It keeps your prompts, conversation history, and documents on your own device without sending data to external cloud services. Reach for it when you need a private offline chat interface or a local server for open-weight models.",
+  "level": "easy",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "janhq/jan",
+   "ollama/ollama",
+   "nomic-ai/gpt4all"
+  ],
+  "packages": [],
+  "plain": "A Windows desktop program that lets you download and chat with artificial intelligence models directly on your computer.",
+  "tags": [
+   "private",
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Chat with open-source AI models completely offline",
+   "Host a local server to connect other apps to local models",
+   "Customize model memory usage and response parameters"
+  ],
+  "steps": [
+   "Launch the desktop application on your Windows computer",
+   "Browse or import compatible open-source model files",
+   "Load a model to start an offline chat session"
+  ],
+  "repo": "zadazddq/lm-studio-private-ai",
+  "at": "2026-11-21",
+  "source": "trending"
  }
 }
