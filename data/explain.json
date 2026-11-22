@@ -24299,5 +24299,254 @@
   "repo": "iamajmeena/neonclipping",
   "at": "2026-11-21",
   "source": "trending"
+ },
+ "XinaTian/MROffice": {
+  "cat": "builders",
+  "kind": "Browser office editors",
+  "what": "MR Office provides open-source browser-based editors for documents, spreadsheets, presentations, PDFs, handwriting, and code.",
+  "why": "It allows developers to embed office document editors into web applications or connect AI agents to document manipulation tools.",
+  "level": "dev",
+  "start": "npx mroffice-embed init",
+  "caution": "Native Microsoft Office format support (.docx, .xlsx, .pptx) requires using the hosted embed service or a commercial license, and the self-hosted editors are licensed under AGPL-3.0.",
+  "alts": [],
+  "packages": [
+   "mroffice-embed",
+   "mroffice-mcp",
+   "mroffice-docs",
+   "mroffice-core"
+  ],
+  "plain": "A web-based set of editors for writing documents, editing spreadsheets, creating presentations, and viewing PDFs.",
+  "tags": [
+   "docs",
+   "apps",
+   "connect"
+  ],
+  "useFor": [
+   "Embed document, spreadsheet, and slide editors into web applications",
+   "Connect AI assistants to document tools through an integration server",
+   "View and mark up PDF files directly within a web browser"
+  ],
+  "steps": [
+   "Run `npx mroffice-embed init` in your project folder to generate application keys.",
+   "Generate a session token on your backend server to securely authorize file access.",
+   "Call the open method on your webpage to embed the document editor."
+  ],
+  "repo": "XinaTian/MROffice",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "Moh4696/cinematic-skill": {
+  "cat": "harness",
+  "kind": "Coding agent skill",
+  "what": "An agent skill that enables AI coding assistants to research, write, voice, and render narrated documentary videos directly from code.",
+  "why": "Creating narrated motion-graphic videos manually requires complex video editing software and tedious audio-timeline synchronization. Reach for this tool when you want an AI agent to turn text prompts into code-built explainer films with custom camera moves and voiceovers.",
+  "level": "setup",
+  "start": "npx skills add Moh4696/cinematic-skill",
+  "caution": "",
+  "alts": [
+   "howseen-ai/claude-motion-design",
+   "charlie947/motion-graphics-skills",
+   "harry0703/MoneyPrinterTurbo"
+  ],
+  "packages": [
+   "skia-python",
+   "numpy",
+   "pillow"
+  ],
+  "plain": "An add-on for AI coding tools that creates narrated explainer videos from text using code.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Generate narrated documentaries and explainer videos using AI agents",
+   "Animate maps, photos, and cards with code-driven camera moves",
+   "Render videos synchronized with voice narration and sound effects"
+  ],
+  "steps": [
+   "Install the skill into your coding agent using `npx skills add Moh4696/cinematic-skill`.",
+   "Install the required Python packages for video rendering.",
+   "Ensure ffmpeg is installed and available on your system path.",
+   "Ask your coding assistant to create a narrated video on your chosen topic."
+  ],
+  "repo": "Moh4696/cinematic-skill",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "op7418/guizang-game-skill": {
+  "cat": "harness",
+  "kind": "3D game builder skill",
+  "what": "An agent skill that equips Claude Code and Codex with a step-by-step workflow for building playable 3D web action games.",
+  "why": "Standard AI prompts often produce generic, non-functional 3D placeholders. Reach for this when you want an AI assistant to guide visual asset generation, fine-tune combat controls, self-verify rendering, and bundle the game into a single web page.",
+  "level": "setup",
+  "start": "git clone https://github.com/op7418/guizang-game-skill ~/.claude/skills/guizang-game-skill",
+  "caution": "Licensed under AGPL-3.0. Full 3D model and audio generation requires external services such as Tripo, Suno, or JiMeng.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "An add-on for AI coding helpers that guides them to build playable 3D browser games from scratch.",
+  "tags": [
+   "apps",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Guide AI tools to create 3D browser games",
+   "Optimize game combat feel and self-testing",
+   "Bundle 3D web games into single web files"
+  ],
+  "steps": [
+   "Clone the repository to your skills folder using `git clone https://github.com/op7418/guizang-game-skill ~/.claude/skills/guizang-game-skill`.",
+   "Prompt your AI assistant to build a 3D action game with your preferred theme.",
+   "Playtest the generated build and provide feedback for combat tuning."
+  ],
+  "repo": "op7418/guizang-game-skill",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "sous-labs/songe": {
+  "cat": "local",
+  "kind": "Local model fine-tuner",
+  "what": "An engine that automatically fine-tunes local models on your computer using idle processing power based on your agent interactions.",
+  "why": "Standard local models do not adapt to your specific tool habits or corrections over time. Use Songe to automatically train small model updates in the background without sending any data to the cloud.",
+  "level": "setup",
+  "start": "`uv tool install songe`",
+  "caution": "Training models requires a compatible graphics processor (such as Apple Silicon or NVIDIA) and a running local model server like LM Studio or vLLM.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [
+   "songe"
+  ],
+  "plain": "It automatically trains your local AI model on your own computer when you are not using it.",
+  "tags": [
+   "private",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Fine-tune local models on agent interactions automatically",
+   "Improve local AI agent tool use and preference adherence",
+   "Evaluate and safely roll back model updates automatically"
+  ],
+  "steps": [
+   "Install Songe with `uv tool install songe` or Homebrew.",
+   "Run `songe init` to connect your local model server and agents.",
+   "Choose a `songe/` model in your agent tool to start learning."
+  ],
+  "repo": "sous-labs/songe",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "Domush/antigravity-plugin-context-mode": {
+  "cat": "tokens",
+  "kind": "Antigravity context optimizer",
+  "what": "A local plugin for the Google Antigravity App that intercepts large files and log dumps to reduce prompt size.",
+  "why": "Unfiltered terminal logs and big source files flood conversation history, causing agent memory loss and hitting context limits quickly. Reach for this to keep agent responses focused and cut token consumption.",
+  "level": "easy",
+  "start": "`npx antigravity-plugin-context-mode install`",
+  "caution": "",
+  "alts": [
+   "mksglu/context-mode",
+   "microsoft/TokenEconomizer",
+   "rtk-ai/rtk"
+  ],
+  "packages": [
+   "antigravity-plugin-context-mode"
+  ],
+  "plain": "A tool for the Antigravity coding app that keeps large files from overloading your AI helper's memory.",
+  "tags": [
+   "save",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Intercept build logs and terminal output from flooding chat",
+   "Search codebase files locally using fast keyword matching",
+   "Track token savings in real time with the sidecar dashboard"
+  ],
+  "steps": [
+   "Run `npx antigravity-plugin-context-mode install` in your terminal",
+   "Restart or open the Google Antigravity App to activate Context Mode",
+   "Adjust file read cutoffs using the sidecar dashboard dropdown"
+  ],
+  "repo": "Domush/antigravity-plugin-context-mode",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "Soulmate-Halo/HaloLab-Yee": {
+  "cat": "tokens",
+  "kind": "Inference decoding accelerator",
+  "what": "HaloLab Yee is a speculative decoding plugin that caches and reuses past text tokens across model inference engines to speed up text generation without changing the output.",
+  "why": "Generating text with open-source AI models can be slow when processing repeated queries or context. Use Yee when running servers like SGLang, vLLM, or llama.cpp to speed up repeated text generation.",
+  "level": "setup",
+  "start": "python -m yee doctor",
+  "caution": "Only speeds up responses when queries share matching context with past history, and some engines require specific flags or code patches to work.",
+  "alts": [
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp",
+   "sgl-project/sglang"
+  ],
+  "packages": [
+   "yee"
+  ],
+  "plain": "Speeds up AI text generation on your own server by reusing matching text from past answers.",
+  "tags": [
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Accelerate text generation on SGLang or vLLM servers",
+   "Diagnose engine configuration using built-in doctor checks",
+   "Reuse matching history tokens to reduce model decoding steps"
+  ],
+  "steps": [
+   "Install Yee into your model server environment with `pip install yee-4.3.0-py3-none-any.whl`.",
+   "Run `python -m yee doctor` to scan running model engines and see required configuration settings.",
+   "Restart your model server engine to let Yee automatically attach and accelerate outputs."
+  ],
+  "repo": "Soulmate-Halo/HaloLab-Yee",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "alesha-pro/inference-optimization-playbook": {
+  "cat": "harness",
+  "kind": "Inference optimization playbook",
+  "what": "A collection of over 100 tested techniques and an agent skill for speeding up large local AI models on consumer graphics cards.",
+  "why": "It helps developers and AI coding agents quickly find effective optimization strategies for offloading model weights to memory without spending weeks testing failed ideas.",
+  "level": "easy",
+  "start": "git clone https://github.com/alesha-pro/inference-optimization-playbook ~/.claude/skills/inference-optimization-playbook",
+  "caution": "Optimization findings and benchmark numbers were recorded on a specific multi-GPU rig and may differ on other hardware configurations.",
+  "alts": [
+   "sybil-solutions/inference-optimisation-skill",
+   "shtjww/llm-inference-capacity-handbook",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "A guide and AI skill detailing proven methods to speed up large AI models on standard graphics cards.",
+  "tags": [
+   "private",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Look up hardware optimization techniques for running large models locally",
+   "Add a skill to Claude Code for auto-diagnosing local inference bottlenecks",
+   "Simulate model memory offloading and expert routing strategies"
+  ],
+  "steps": [
+   "Clone the repo into your agent skill folder using `git clone https://github.com/alesha-pro/inference-optimization-playbook ~/.claude/skills/inference-optimization-playbook`",
+   "Ask your coding assistant how to tune model inference for your specific hardware setup",
+   "Read playbook/00-start-here.md to find optimization findings grouped by symptom or setup"
+  ],
+  "repo": "alesha-pro/inference-optimization-playbook",
+  "at": "2026-11-22",
+  "source": "trending"
  }
 }

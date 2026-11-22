@@ -1,20 +1,117 @@
 {
- "updated": "2026-11-21T19:24:00.880Z",
+ "updated": "2026-11-22T07:00:05.679Z",
  "items": [
   {
-   "repo": "diggerhq/opencomputer",
-   "stars": 1041,
-   "desc": "An open-source, faster Devin alternative",
-   "created": "2025-12-09T23:35:00Z",
-   "topics": [],
+   "repo": "XinaTian/MROffice",
+   "stars": 1809,
+   "desc": "MR Office: open-source document, spreadsheet, presentation, PDF, handwriting and code editors. https://mroffice.ai",
+   "created": "2026-11-10T17:54:07Z",
+   "topics": [
+    "ai",
+    "collaboration",
+    "document-editor",
+    "docx"
+   ],
    "lang": "TypeScript",
    "sources": [
-    "Show HN"
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Moh4696/cinematic-skill",
+   "stars": 888,
+   "desc": "Agent skill for narrated cinematic films built entirely from code: one continuous camera over photos, maps and cards, timed to the voice. Claude Code, Codex, Cursor, Gemini CLI.",
+   "created": "2026-11-09T07:58:11Z",
+   "topics": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "documentary"
    ],
-   "hn": {
-    "points": 112,
-    "url": "https://news.ycombinator.com/item?id=50581403"
-   }
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "op7418/guizang-game-skill",
+   "stars": 432,
+   "desc": "歸藏 Game Skill：让 AI 从零做出能在浏览器里玩的 3D 动作游戏，附可玩演示《雾锁山门》。Agent skill for Claude Code / Codex that builds a playable browser 3D action game with AI-generated assets (three.js, single-HTML). Playable demo included.",
+   "created": "2026-11-11T16:28:54Z",
+   "topics": [
+    "3d-game",
+    "action-game",
+    "agent-skills",
+    "ai-agents"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "sous-labs/songe",
+   "stars": 191,
+   "desc": "A training engine for your local model, using your idle compute",
+   "created": "2026-11-20T11:01:20Z",
+   "topics": [
+    "coding-agents",
+    "distillation",
+    "fine-tuning",
+    "llm"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Domush/antigravity-plugin-context-mode",
+   "stars": 116,
+   "desc": "Reduce context size by 90%+ *and* make your agent smarter. Antigravity Context Mode is a local-first plugin built specifically for the Google Antigravity App. It prevents terminal commands, build logs, and multi-megabyte files from flooding your conversation history, saving thousands of tokens per turn and stopping \"agent amnesia\" in its tracks.",
+   "created": "2026-11-14T19:48:07Z",
+   "topics": [
+    "agy",
+    "agy-plugin",
+    "agy-skill",
+    "antigravity"
+   ],
+   "lang": "JavaScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "Soulmate-Halo/HaloLab-Yee",
+   "stars": 71,
+   "desc": "SGLang decode(D) 端 Recall 投机草稿加速模块：token ID 历史召回，输出与不装时逐字相同",
+   "created": "2026-11-10T06:59:54Z",
+   "topics": [
+    "decode-acceleration",
+    "llm-inference",
+    "recall",
+    "sglang"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "alesha-pro/inference-optimization-playbook",
+   "stars": 61,
+   "desc": "97 tested hypotheses on making huge MoE LLMs fast on consumer GPUs (4x RTX 3090 + experts in RAM): what worked, what failed and why. A playbook for people and a ready skill for coding agents.",
+   "created": "2026-11-20T22:17:50Z",
+   "topics": [
+    "agent-skills",
+    "llama-cpp",
+    "llm-inference",
+    "local-llm"
+   ],
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
   }
  ]
 }
