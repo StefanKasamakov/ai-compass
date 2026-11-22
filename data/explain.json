@@ -24548,5 +24548,143 @@
   "repo": "alesha-pro/inference-optimization-playbook",
   "at": "2026-11-22",
   "source": "trending"
+ },
+ "diggerhq/opencomputer": {
+  "cat": "coding",
+  "kind": "Slack AI coding agent",
+  "what": "OpenComputer is an open-source AI software developer that takes task requests in Slack, performs coding work in isolated environments, and creates pull requests.",
+  "why": "It gives software teams a cloud-based or self-hosted AI developer that works directly inside Slack threads, allowing teammates to monitor and steer code creation together.",
+  "level": "setup",
+  "start": "",
+  "caution": "Reusing consumer ChatGPT or Codex subscriptions as an API may violate provider terms of service and risk account suspension. Speed and performance numbers are presented as claims made by the project maintainers.",
+  "alts": [
+   "OpenHands/OpenHands",
+   "anthropics/claude-code",
+   "Aider-AI/aider"
+  ],
+  "packages": [],
+  "plain": "A virtual teammate inside Slack that writes code on its own computer and submits finished work for review.",
+  "tags": [
+   "code",
+   "automate",
+   "connect"
+  ],
+  "useFor": [
+   "Assign coding tasks to an AI assistant directly inside Slack",
+   "Generate pull requests automatically for software bugs and features",
+   "Self-host an isolated AI software developer on your cloud infrastructure"
+  ],
+  "steps": [
+   "Sign up for an account at app.opencomputer.dev",
+   "Connect your code repositories and install the OpenComputer app in Slack",
+   "Mention @Computer in a Slack thread with your instructions"
+  ],
+  "repo": "diggerhq/opencomputer",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "EL4CTEO/fast-anything": {
+  "cat": "harness",
+  "kind": "Rust optimization agent plugin",
+  "what": "Fast-anything profiles slow functions in your app and uses an AI helper to rewrite just those hot paths in Rust.",
+  "why": "Rewriting an entire project in Rust takes months and creates huge build overhead. Reach for this tool when your Python, JavaScript, Ruby, or Go app has bottleneck functions that need Rust speeds without a complete rewrite.",
+  "level": "setup",
+  "start": "`npm i -g @el4cteo/fast-anything`",
+  "caution": "Requires a functional Rust compiler and toolchain (rustup) installed on your system to compile optimized functions.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "rtk-ai/rtk"
+  ],
+  "packages": [
+   "@el4cteo/fast-anything"
+  ],
+  "plain": "Finds the slowest parts of your program and has an AI assistant write fast replacements in Rust.",
+  "tags": [
+   "code",
+   "automate",
+   "supercharge"
+  ],
+  "useFor": [
+   "Profile application execution to detect slow functions",
+   "Port slow bottleneck functions to Rust automatically",
+   "Verify and benchmark Rust code against original functions"
+  ],
+  "steps": [
+   "Install the tool by running `npm i -g @el4cteo/fast-anything` in your terminal.",
+   "Ensure you have a working Rust compiler installed via rustup.",
+   "Run `fast-anything go --agent claude -- python app.py` to profile and optimize your application."
+  ],
+  "repo": "EL4CTEO/fast-anything",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "ngocanhnckh/renderlint": {
+  "cat": "evals",
+  "kind": "UI visual linter",
+  "what": "Renders your web application in a real browser to find visual defects like overflowing text, poor contrast, and overlapping elements.",
+  "why": "AI coding agents frequently write code that builds cleanly but renders broken or unreadable layouts. Reach for renderlint to catch visual bugs automatically across desktop, tablet, and mobile viewports before shipping.",
+  "level": "setup",
+  "start": "npx -y @yitec/renderlint init",
+  "caution": "",
+  "alts": [
+   "promptfoo/promptfoo",
+   "confident-ai/deepeval",
+   "langfuse/langfuse"
+  ],
+  "packages": [
+   "@yitec/renderlint"
+  ],
+  "plain": "Checks your web pages in a browser to find visual mistakes like unreadable text or broken layouts.",
+  "tags": [
+   "apps",
+   "code",
+   "monitor"
+  ],
+  "useFor": [
+   "Detect layout and overflow defects across screen sizes",
+   "Prevent broken UI when building web apps with AI",
+   "Check color contrast and text readability automatically"
+  ],
+  "steps": [
+   "Initialize configuration by running `npx -y @yitec/renderlint init`.",
+   "Run `npx renderlint` to inspect your app in a browser for layout errors."
+  ],
+  "repo": "ngocanhnckh/renderlint",
+  "at": "2026-11-22",
+  "source": "trending"
+ },
+ "Sunghwan0112/spritecast": {
+  "cat": "harness",
+  "kind": "Claude Code plugin",
+  "what": "A Claude Code plugin that converts single character drawings into 8-direction walking sprites, actions, and pixel-art props matching your game's camera angle.",
+  "why": "Standard image generators struggle to keep characters consistent across walk frames or match specific camera angles. Reach for this when developing isometric or 2D games with Claude Code to generate matching character animations, shadows, and props.",
+  "level": "setup",
+  "start": "claude plugin marketplace add Sunghwan0112/spritecast",
+  "caution": "Requires third-party API keys for OpenAI and Tripo, which incur per-use generation costs ranging from a few cents for props to around $3 for full walk cycles.",
+  "alts": [
+   "anthropics/claude-code",
+   "Comfy-Org/ComfyUI"
+  ],
+  "packages": [],
+  "plain": "A tool for Claude Code that turns single character pictures into moving 8-direction game sprites.",
+  "tags": [
+   "media",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Generate 8-direction walking character sprites from one drawing",
+   "Create isometric props and pixel art aligned to your game camera",
+   "Export animated sprite sheets ready for Phaser or Godot"
+  ],
+  "steps": [
+   "Add the plugin marketplace by running `claude plugin marketplace add Sunghwan0112/spritecast`.",
+   "Install the plugin by running `claude plugin install spritecast@spritecast`.",
+   "Provide a character picture to Claude Code and ask it to create an 8-direction walk cycle."
+  ],
+  "repo": "Sunghwan0112/spritecast",
+  "at": "2026-11-22",
+  "source": "trending"
  }
 }

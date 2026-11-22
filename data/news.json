@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-22T12:50:45.002Z",
+ "updated": "2026-11-22T19:47:02.857Z",
  "items": [
+  {
+   "source": "OpenAI",
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "date": "2026-11-22T00:00:00.000Z",
+   "summary": "OpenAI published an overview on perplexity, explaining how the metric measures AI model progress and helps establish standardized benchmarks.",
+   "tags": [
+    "research",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6rIIhCRSKrhIfe385Onmcz/aca2d190553c62fd5d49efb5d5ce1eb6/perplexity-and-intelligence-social.png?w=1600&h=900&fit=fill"
+  },
   {
    "source": "Latent Space",
    "title": "[AINews] Riemann Hypothesis proved...twice independently",
@@ -363,6 +377,33 @@
   },
   {
    "source": "OpenAI",
+   "title": "Deploying Daybreak Red",
+   "url": "https://openai.com/business/learn/deploying-daybreak-red",
+   "date": "2026-11-19T00:00:00.000Z",
+   "summary": "OpenAI detailed a reference architecture for Daybreak Red, showing enterprise security teams how to run supervised AI investigations with built-in safety controls.",
+   "tags": [
+    "product",
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/3oYqbsFOI2UIoDU3S2uqWu/0611437db2ca3c09777cb5ef36c2a812/deploying-daybreak-red-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Get started with Daybreak Blue",
+   "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+   "date": "2026-11-19T00:00:00.000Z",
+   "summary": "OpenAI shared a walkthrough and setup guide for Daybreak Blue to help users onboard and configure the platform.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/3oycdkFjJTGZs3kPmqJXJx/e793dee688314652562a63782e000e77/daybreak-blue-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "source": "OpenAI",
    "title": "See PR scans in action",
    "url": "https://openai.com/business/learn/pr-scans-demo",
    "date": "2026-11-19T00:00:00.000Z",
@@ -464,6 +505,21 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/6aeabf9f2efd990530425e58/faP4Su889q_DIgN3wmU9M.png"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Why your fine-tuning job takes longer than the FLOPs say",
+   "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+   "date": "2026-11-18T18:53:43.000Z",
+   "summary": "Hugging Face published an analysis detailing hardware bottlenecks and communication overheads that affect actual model fine-tuning speeds.",
+   "tags": [
+    "research",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6a725daa5ca641a21ab61956/J6DIf4Len_31Tj-CQlQXY.png"
   },
   {
    "source": "DeepMind",
@@ -1090,6 +1146,19 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/11/704252268-e600c177-84f0-438a-adfa-2b71cd22ea43.png"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Strengthening the fight against online child sexual abuse with new tools and support",
+   "url": "https://openai.com/index/strengthening-online-child-safety",
+   "date": "2026-11-16T17:00:00.000Z",
+   "summary": "OpenAI announced new safety tools, best practices, and partner initiatives focused on preventing online child sexual abuse.",
+   "tags": [
+    "safety"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/48yJpyhKNBj3OvZAAEeLWN/5a888045c242da8cc8f8dc539f5f92fe/strengthening-online-child-safety-social.png?w=1600&h=900&fit=fill"
   },
   {
    "source": "OpenAI",
@@ -2003,6 +2072,20 @@
    "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/27ce2150-3717-4122-ac3a-37dd0e8ce18f/openai-aiecode-feature.png?t=1794370546"
   },
   {
+   "source": "OpenAI",
+   "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
+   "url": "https://openai.com/index/jiostar-vijay-seshadri",
+   "date": "2026-11-11T00:00:00.000Z",
+   "summary": "JioStar shared architectural guidance on deploying AI guardrails and evals at a scale of 500 million users.",
+   "tags": [
+    "product",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/6yXeyZ5Lph5wYnDiSxL1Rf/fe6264331b54720f59b3c7e90a05b2b8/EF_Ep20_16.9.png?w=1600&h=900&fit=fill"
+  },
+  {
    "source": "Hugging Face",
    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
    "url": "https://huggingface.co/blog/token-pooling",
@@ -2057,86 +2140,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://static.simonwillison.net/static/2026/carbon-pelican.webp"
-  },
-  {
-   "source": "Latent Space",
-   "title": "Designing for Agents — Zeno Rocha, Resend",
-   "url": "https://latent.space/p/resend/",
-   "date": "2026-11-10T20:05:17.000Z",
-   "summary": "Where does answer engine optimization (AEO) end and agent experience begin? Inside Resend, from the docs that help Claude Code pick an email API to the tools it uses to send.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://i.ytimg.com/vi/bdIoODXsu8k/maxresdefault.jpg"
-  },
-  {
-   "source": "GitHub",
-   "title": "Gemini 4 Carbon in GitHub Copilot",
-   "url": "https://github.blog/changelog/2026-11-10-gemini-4-carbon-in-github-copilot",
-   "date": "2026-11-10T19:26:51.000Z",
-   "summary": "GitHub Copilot added general availability support for Gemini 4 Carbon to handle complex programming and agentic coding workflows.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://github.blog/wp-content/uploads/2026/11/700374691-69ca0c74-ac8e-4638-82f6-46417790e655.png"
-  },
-  {
-   "source": "Google",
-   "title": "Gemini Intelligence: New features, on more devices",
-   "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
-   "date": "2026-11-10T19:00:00.000Z",
-   "summary": "Gemini Intelligence is rolling out to more devices. See how expanded capabilities across these devices help you do more.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Intelligence_Signature27_Hero_2784x156.width-1300.jpg"
-  },
-  {
-   "source": "Latent Space",
-   "title": "NaiveAI Promises 2,100 Tokens per Second. How Well Does It Code?",
-   "url": "https://latent.space/p/naiveai/",
-   "date": "2026-11-10T18:56:32.000Z",
-   "summary": "Tests show NaiveAI achieving 2,100 tokens per second while keeping code quality competitive with top coding models.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/f3b4fd9f-a330-4090-a922-a912d25dcd7c/naiveai-feature2.png?t=1793721927"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-   "url": "https://github.com/GoogleChrome/modern-web-guidance",
-   "date": "2026-11-10T18:01:15Z",
-   "discuss": "https://news.ycombinator.com/item?id=50443812",
-   "summary": "A new open tool helps update developer context so coding agents generate modern JavaScript primitives instead of outdated syntax.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://opengraph.githubassets.com/aa72be684b0c805b3d4ff86c23dd7860fd71192555f6544d2928e01017078122/GoogleChrome/modern-web-guidance"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
-   "date": "2026-11-10T17:55:07Z",
-   "discuss": "https://news.ycombinator.com/item?id=50443716",
-   "summary": "Anthropic launched Whiteboards, Sheets, and Data tools inside Claude, adding visual canvases and spreadsheets for interactive AI collaboration.",
-   "tags": [
-    "product",
-    "skills"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/sheets-whiteboards-data/opengraph-image/og"
   }
  ]
 }
