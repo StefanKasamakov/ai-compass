@@ -1,65 +1,33 @@
 {
- "updated": "2026-11-22T19:47:02.857Z",
+ "updated": "2026-11-23T07:49:38.426Z",
  "items": [
   {
-   "repo": "diggerhq/opencomputer",
-   "stars": 1513,
-   "desc": "An open-source, faster Devin alternative",
-   "created": "2025-12-09T23:35:00Z",
+   "repo": "gulivan/worker755",
+   "stars": 163,
+   "desc": "A browser game where an AI manager thinks you are its subagent. Play at worker755.com",
+   "created": "2026-11-11T20:35:22Z",
    "topics": [],
    "lang": "TypeScript",
    "sources": [
     "Show HN"
    ],
    "hn": {
-    "points": 123,
-    "url": "https://news.ycombinator.com/item?id=50581403"
+    "points": 309,
+    "url": "https://news.ycombinator.com/item?id=50599762"
    }
   },
   {
-   "repo": "EL4CTEO/fast-anything",
-   "stars": 1662,
-   "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
-   "created": "2026-11-21T14:40:27Z",
+   "repo": "Minglink/dsh-jailbreak-workflow",
+   "stars": 1218,
+   "desc": "Visual soft-workflow plugin for DeepSeek Harness (dsh-workflow-lite 0.11.0): canvas-to-plan-prompt engine paired with Minglink/dsh-workflows for LLM red-teaming & safety research.",
+   "created": "2026-11-01T04:50:41Z",
    "topics": [
-    "agent-skills",
     "ai-agents",
-    "claude-code",
-    "claude-code-plugin"
+    "ai-safety",
+    "arxiv-research",
+    "deepseek"
    ],
-   "lang": "Rust",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "ngocanhnckh/renderlint",
-   "stars": 687,
-   "desc": "Lint the rendered UI: catches overflowing text, low contrast, overlaps, broken responsive layouts, emoji icons and more in any web framework. Built for AI coding agents.",
-   "created": "2026-10-25T15:54:22Z",
-   "topics": [
-    "a11y",
-    "accessibility",
-    "ai-agents",
-    "ai-coding"
-   ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "Sunghwan0112/spritecast",
-   "stars": 446,
-   "desc": "Claude Code plugin: game sprites at your game's exact camera angle, drawn in your art style - props, 8-direction walking characters, characters seated on your own chairs (3D-guided)",
-   "created": "2026-11-03T21:16:10Z",
-   "topics": [
-    "agent-skills",
-    "claude-code",
-    "claude-code-plugin",
-    "claude-skills"
-   ],
-   "lang": "Python",
+   "lang": "TypeScript",
    "sources": [
     "new on GitHub"
    ]

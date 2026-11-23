@@ -24686,5 +24686,74 @@
   "repo": "Sunghwan0112/spritecast",
   "at": "2026-11-22",
   "source": "trending"
+ },
+ "gulivan/worker755": {
+  "cat": "coding",
+  "kind": "AI manager terminal game",
+  "what": "A terminal-based browser game where an AI manager assigns tasks to you as if you were its subagent.",
+  "why": "It simulates working under an AI orchestrator that monitors your terminal work and files performance reviews. Reach for it when you want an interactive command-line puzzle game powered by language models.",
+  "level": "setup",
+  "start": "npm run setup",
+  "caution": "Playing with external AI models requires providing your own API key, which will incur small charges per shift.",
+  "alts": [
+   "openinterpreter/openinterpreter",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A web game where an artificial intelligence acts as your boss and gives you computer tasks to solve.",
+  "tags": [
+   "code",
+   "private",
+   "automate"
+  ],
+  "useFor": [
+   "Play a browser game managed by an AI boss",
+   "Solve terminal command challenges under a countdown clock",
+   "Connect local AI models to run as the game manager"
+  ],
+  "steps": [
+   "Install server and web app dependencies with `npm run setup`.",
+   "Build the web application by running `npm run build`.",
+   "Start the local game server using `npm start` and open your browser."
+  ],
+  "repo": "gulivan/worker755",
+  "at": "2026-11-23",
+  "source": "trending"
+ },
+ "Minglink/dsh-jailbreak-workflow": {
+  "cat": "harness",
+  "kind": "Visual workflow plugin",
+  "what": "A visual flowchart editor plugin for DeepSeek Harness that converts step-by-step diagrams into execution plans for AI assistants.",
+  "why": "It enables non-coders and researchers to visually design complex multi-step AI tasks, loops, and safety red-teaming pipelines. Reach for it when you want to sequence long AI tasks visually instead of writing prompt files by hand.",
+  "level": "setup",
+  "start": "`dsh plugin --profile web add @minglink/dsh-jailbreak-workflow`",
+  "caution": "The plugin is in an experimental state with breaking data format changes expected, and it currently requires DeepSeek Harness version 0.2.x.",
+  "alts": [
+   "Zhou-Yujing114514/deepseek-harness-linux",
+   "anthropics/claude-code",
+   "gsd-build/get-shit-done"
+  ],
+  "packages": [
+   "@minglink/dsh-jailbreak-workflow"
+  ],
+  "plain": "A visual flowchart editor that converts step-by-step diagrams into clear plans for your AI assistant to run.",
+  "tags": [
+   "supercharge",
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Design visual step-by-step flowcharts for AI execution plans",
+   "Automate complex AI safety and security red-teaming workflows",
+   "Track task progress and output files in real time on a canvas"
+  ],
+  "steps": [
+   "Install the plugin with `dsh plugin --profile web add @minglink/dsh-jailbreak-workflow` and restart DeepSeek Harness.",
+   "Download a `.wflite.zip` workflow pack and click Import in the Workflow Center.",
+   "Configure required execution parameters like target model ID and click Run."
+  ],
+  "repo": "Minglink/dsh-jailbreak-workflow",
+  "at": "2026-11-23",
+  "source": "trending"
  }
 }
