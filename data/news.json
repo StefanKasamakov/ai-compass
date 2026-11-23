@@ -1,6 +1,29 @@
 {
- "updated": "2026-11-23T07:49:38.426Z",
+ "updated": "2026-11-23T15:19:23.668Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "How to build and maintain an agentic evaluation",
+   "url": "https://huggingface.co/blog/agentic-evals",
+   "date": "2026-11-23T00:00:00.000Z",
+   "summary": "",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Select Styling Specimens",
+   "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+   "date": "2026-11-22T19:45:06.000Z",
+   "summary": "Tool: Select Styling Specimens I got frustrated at how HTML boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser After some exper",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://static.simonwillison.net/static/2026/select-firefox-safari-chrome.webp",
+   "viaBrowser": true
+  },
   {
    "source": "OpenAI",
    "title": "Perplexity and Intelligence",
@@ -2110,36 +2133,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/f087b023a043d453ce2278e6b49aeccda7e1f16eb651ed676a8c8fba79938b14/openai/codex/releases/tag/rust-v0.167.1"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Gemini CLI v0.68.0",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.68.0",
-   "date": "2026-11-10T21:17:07Z",
-   "summary": "Google updated the Gemini CLI tool to version 0.68.0 with bug fixes and feature enhancements.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/0643d860cc28a30764fb21e91c508019813ab45197b7a5db9f5bf85390b7a910/google-gemini/gemini-cli/releases/tag/v0.68.0"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.36",
-   "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
-   "date": "2026-11-10T20:09:44.000Z",
-   "summary": "Google launched Gemini 4 Carbon to general availability, providing high-end coding and reasoning capabilities starting at $2 per million input tokens.",
-   "tags": [
-    "models",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://static.simonwillison.net/static/2026/carbon-pelican.webp"
   }
  ]
 }

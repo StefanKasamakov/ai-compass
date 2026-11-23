@@ -1,33 +1,66 @@
 {
- "updated": "2026-11-23T07:49:38.426Z",
+ "updated": "2026-11-23T15:19:23.668Z",
  "items": [
   {
-   "repo": "gulivan/worker755",
-   "stars": 163,
-   "desc": "A browser game where an AI manager thinks you are its subagent. Play at worker755.com",
-   "created": "2026-11-11T20:35:22Z",
-   "topics": [],
-   "lang": "TypeScript",
-   "sources": [
-    "Show HN"
+   "repo": "pierridotite/mobile-agent-testers",
+   "stars": 1265,
+   "desc": "20 AI testers on 20 different phones, in parallel, on GitHub's free runners: Claude Code agents on iOS Simulators and Android emulators that find broken flows, translation, layout and accessibility bugs",
+   "created": "2026-11-16T19:11:44Z",
+   "topics": [
+    "accessibility-testing",
+    "ai-agents",
+    "ai-testing",
+    "android"
    ],
-   "hn": {
-    "points": 309,
-    "url": "https://news.ycombinator.com/item?id=50599762"
-   }
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
   },
   {
-   "repo": "Minglink/dsh-jailbreak-workflow",
-   "stars": 1218,
-   "desc": "Visual soft-workflow plugin for DeepSeek Harness (dsh-workflow-lite 0.11.0): canvas-to-plan-prompt engine paired with Minglink/dsh-workflows for LLM red-teaming & safety research.",
-   "created": "2026-11-01T04:50:41Z",
+   "repo": "21stware/bowel",
+   "stars": 625,
+   "desc": "Native mihomo (Clash Meta) client for macOS, Windows, Linux & Android: GPU-rendered Go UI, no Electron or WebView. Rules, TUN, gateway mode, CLI/TUI and a built-in MCP server.",
+   "created": "2026-11-07T17:45:52Z",
    "topics": [
-    "ai-agents",
-    "ai-safety",
-    "arxiv-research",
-    "deepseek"
+    "android",
+    "clash",
+    "clash-meta",
+    "flutter"
    ],
-   "lang": "TypeScript",
+   "lang": "Go",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "gulucaptain/Best-Paper-Writing-Skill",
+   "stars": 577,
+   "desc": "[Writing] Claude / Codex skill for drafting abstracts, introductions, methods and experiments in the style of CVPR/ICCV/NeurIPS best papers, distilled from 60 award-winning papers.",
+   "created": "2026-10-28T02:18:51Z",
+   "topics": [
+    "academic-writing",
+    "agent-skills",
+    "claude-skills",
+    "codex"
+   ],
+   "lang": "TeX",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "OpenBitSys/BitDecoding-FP4",
+   "stars": 60,
+   "desc": "Accurate, fast FP4 KV-cache decoding through algorithm-system co-design.",
+   "created": "2026-11-03T15:46:32Z",
+   "topics": [
+    "cuda",
+    "kv-cache-quantization",
+    "llm-inference",
+    "low-bit-quantization"
+   ],
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
