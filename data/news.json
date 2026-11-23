@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-23T15:19:23.668Z",
+ "updated": "2026-11-23T19:10:03.763Z",
  "items": [
+  {
+   "source": "Google",
+   "title": "A more tailored Google Search that’s uniquely yours",
+   "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+   "date": "2026-11-23T17:00:00.000Z",
+   "summary": "Google Search can now connect to personal data in Drive, Wallet, and Gemini to provide more personalized and relevant responses.",
+   "tags": [
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Blog_pContext_Drive_1118.width-1300.png"
+  },
+  {
+   "source": "DeepMind",
+   "title": "Finding faster quantum algorithms with agents and formal verification",
+   "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+   "date": "2026-11-23T16:59:40.000Z",
+   "summary": "Using agent teams and formal verification to improve quantum algorithms for fusion and chemistry.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w1200-h630-n-nu-rw",
+   "viaBrowser": true
+  },
   {
    "source": "Hugging Face",
    "title": "How to build and maintain an agentic evaluation",
@@ -11,6 +36,20 @@
    "big": false,
    "ai": false,
    "image": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards",
+   "date": "2026-11-23",
+   "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
+   "summary": "Anthropic's Enterprise Frontier Safeguards are now in beta, offering misuse detection while ensuring no client data is retained.",
+   "tags": [
+    "safety",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards/opengraph-image/og"
   },
   {
    "source": "Simon Willison",
@@ -2093,46 +2132,6 @@
    "big": false,
    "ai": true,
    "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/27ce2150-3717-4122-ac3a-37dd0e8ce18f/openai-aiecode-feature.png?t=1794370546"
-  },
-  {
-   "source": "OpenAI",
-   "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-   "url": "https://openai.com/index/jiostar-vijay-seshadri",
-   "date": "2026-11-11T00:00:00.000Z",
-   "summary": "JioStar shared architectural guidance on deploying AI guardrails and evals at a scale of 500 million users.",
-   "tags": [
-    "product",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/6yXeyZ5Lph5wYnDiSxL1Rf/fe6264331b54720f59b3c7e90a05b2b8/EF_Ep20_16.9.png?w=1600&h=900&fit=fill"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
-   "url": "https://huggingface.co/blog/token-pooling",
-   "date": "2026-11-11T00:00:00.000Z",
-   "summary": "",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://huggingface.co/blog/assets/train-sentence-transformers/st-hf-thumbnail.png"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.167.1",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.1",
-   "date": "2026-11-10T21:32:01Z",
-   "summary": "OpenAI updated the Codex CLI to v0.167.1 with stability updates for command-line coding workflows.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/f087b023a043d453ce2278e6b49aeccda7e1f16eb651ed676a8c8fba79938b14/openai/codex/releases/tag/rust-v0.167.1"
   }
  ]
 }

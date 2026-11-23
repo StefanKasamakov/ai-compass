@@ -24755,5 +24755,166 @@
   "repo": "Minglink/dsh-jailbreak-workflow",
   "at": "2026-11-23",
   "source": "trending"
+ },
+ "pierridotite/mobile-agent-testers": {
+  "cat": "coding",
+  "kind": "mobile testing agents",
+  "what": "A framework that spins up dozens of virtual smartphones on GitHub to automatically explore your app and find bugs.",
+  "why": "It catches unexpected bugs like layout issues, broken flows, or translation errors that standard scripted tests miss because it explores the app like a real human would instead of following rigid, pre-programmed steps.",
+  "level": "setup",
+  "start": "gh repo create my-testers --public --template pierridotite/mobile-agent-testers --clone",
+  "caution": "This tool requires a Claude API key and runs on GitHub, so you may incur costs per run based on model usage; results can vary between runs because the agents explore freely.",
+  "alts": [
+   "browser-use/browser-use",
+   "anthropics/claude-code",
+   "microsoft/autogen"
+  ],
+  "packages": [],
+  "plain": "An automated system that gives your mobile app to dozens of AI testers to find crashes and bugs.",
+  "tags": [
+   "code",
+   "automate",
+   "private"
+  ],
+  "useFor": [
+   "Find bugs without writing manual test scripts",
+   "Check app layout across different languages and device sizes",
+   "Test specific features by giving the AI simple written instructions"
+  ],
+  "steps": [
+   "Run the setup script in your terminal to configure your keys and secrets.",
+   "Launch the test workflow via GitHub Actions to start the agents on virtual devices.",
+   "Use the collection script to decrypt and group the bug reports found by the agents."
+  ],
+  "repo": "pierridotite/mobile-agent-testers",
+  "at": "2026-11-23",
+  "source": "trending"
+ },
+ "21stware/bowel": {
+  "cat": "harness",
+  "kind": "proxy client harness",
+  "what": "A native proxy client for managing traffic routes, subscriptions, and network connections with built-in agent support.",
+  "why": "It organizes complex proxy configurations, routes specific traffic like AI services or development tools, and lets coding assistants check connection status safely.",
+  "level": "easy",
+  "start": "brew install --cask 21stware/tap/bowel",
+  "caution": "The app includes an extension mechanism for coding assistants, which requires caution regarding what the assistant is permitted to modify on your system.",
+  "alts": [],
+  "packages": [],
+  "plain": "A desktop app that routes internet traffic through proxies, manages developer mirrors, and lets coding assistants check connection statuses.",
+  "tags": [
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Route internet traffic through different proxy nodes",
+   "Switch developer package mirrors like npm and pip",
+   "Let coding assistants check network troubleshooting states"
+  ],
+  "steps": [
+   "Download and install the application for your operating system.",
+   "Add your subscription URL, node link, or configuration file.",
+   "Turn on system proxy takeover to begin routing traffic."
+  ],
+  "repo": "21stware/bowel",
+  "at": "2026-11-23",
+  "source": "trending"
+ },
+ "gulucaptain/Best-Paper-Writing-Skill": {
+  "cat": "harness",
+  "kind": "Academic writing assistant",
+  "what": "A skill collection for Claude and Codex that drafts research papers based on the style and structure of 60 award-winning papers.",
+  "why": "It prevents the generic, repetitive writing style typical of AI by enforcing specific structural and evidence-based rules used in top-tier computer science conferences.",
+  "level": "setup",
+  "start": "./install.sh all",
+  "caution": "The tool uses external research paper templates and style rules; while it helps draft content, you must manually verify all citations and facts as it leaves placeholders for missing data.",
+  "alts": [
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "This tool helps you write research papers by automatically following the professional style used in winning scientific studies.",
+  "tags": [
+   "docs",
+   "supercharge"
+  ],
+  "useFor": [
+   "Draft abstracts and introductions for academic papers",
+   "Plan figure layouts and diagrams for research findings",
+   "Check paper drafts for repetitive or low-quality AI writing"
+  ],
+  "steps": [
+   "Clone the repository to your computer.",
+   "Run the install script to add the skill to your agent.",
+   "Fill out the provided HTML form with your research details.",
+   "Ask your agent to write the paper sections using your form data."
+  ],
+  "repo": "gulucaptain/Best-Paper-Writing-Skill",
+  "at": "2026-11-23",
+  "source": "trending"
+ },
+ "HimanshuMohanty-Git24/gitaviswa": {
+  "cat": "memory",
+  "kind": "Interactive knowledge graph",
+  "what": "GitaViśva is a 3D interface for exploring the Bhagavad Gita that links verses to concepts, classical commentaries, and your own personal reflections.",
+  "why": "It is for users who want to study the Gita through a structured, visual map of interconnected ideas and cross-referenced historical commentaries rather than just reading plain text.",
+  "level": "easy",
+  "start": "git clone https://github.com/HimanshuMohanty-Git24/gitaviswa",
+  "caution": "The project uses your own API key for AI-generated answers, which can cost money. It does not require an account, but standard web privacy applies if you visit the public site.",
+  "alts": [
+   "infiniflow/ragflow",
+   "Mintplex-Labs/anything-llm",
+   "microsoft/graphrag"
+  ],
+  "packages": [],
+  "plain": "An interactive digital map of a sacred text that shows how different ideas and chapters connect together.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Navigate verses using a 3D visual graph",
+   "Compare classical commentaries from different traditions",
+   "Write personal reflections linked to specific verses"
+  ],
+  "steps": [
+   "Download the project code from the repository page.",
+   "Install the required software tools on your computer.",
+   "Follow the setup instructions in the README to launch the map."
+  ],
+  "repo": "HimanshuMohanty-Git24/gitaviswa",
+  "at": "2026-11-23",
+  "source": "trending"
+ },
+ "OpenBitSys/BitDecoding-FP4": {
+  "cat": "local",
+  "kind": "FP4 KV Cache",
+  "what": "Delivers high-performance text generation through FP4 KV-cache quantization and native FP4 attention kernels integrated into vLLM.",
+  "why": "It reduces memory usage and speeds up text generation for large language models, making it useful when serving models with massive context windows on newer NVIDIA hardware.",
+  "level": "setup",
+  "start": "bash tools/bootstrap_env.sh",
+  "caution": "Requires specialized hardware (NVIDIA B200 or B300 GPU) and newer software versions (CUDA 13.0+, Python 3.12).",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang"
+  ],
+  "packages": [],
+  "plain": "Compresses memory used during text generation to make the system run faster on modern graphics cards.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Speed up large language model text generation",
+   "Reduce memory used for storing recent chat history",
+   "Run performance benchmarks on custom attention kernels"
+  ],
+  "steps": [
+   "Download the project repository including submodules using git clone with the recursive flag.",
+   "Open the newly created project folder in your terminal.",
+   "Run the bootstrap script to set up the environment and install dependencies."
+  ],
+  "repo": "OpenBitSys/BitDecoding-FP4",
+  "at": "2026-11-23",
+  "source": "trending"
  }
 }

@@ -1,0 +1,171 @@
+{
+ "date": "2026-11-23",
+ "subject": "OpenAI and Google launch new flagship models",
+ "intro": "This week saw major model releases from both OpenAI and Google, alongside new tooling updates for developers. These updates focus on improving reasoning capabilities and reducing costs for daily workflows.",
+ "sections": [
+  {
+   "title": "Top stories",
+   "items": [
+    {
+     "title": "Introducing GPT-6.2 Astra and Sol",
+     "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+     "blurb": "OpenAI launched GPT-6.2 Astra and Sol, offering stronger professional performance, coding capabilities, and computer use at lower costs.",
+     "meta": "OpenAI"
+    },
+    {
+     "title": "Introducing Gemini 4 Neon",
+     "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+     "blurb": "Google DeepMind launched Gemini 4 Neon, a model optimized for agentic coding, multi-step tool usage, and complex reasoning tasks.",
+     "meta": "DeepMind"
+    },
+    {
+     "title": "Introducing Tool Retrieval in the Gemini API",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+     "blurb": "Google introduced Tool Retrieval in preview for the Gemini API, enabling agents to dynamically select from hundreds of tools while cutting token usage.",
+     "meta": "Google"
+    },
+    {
+     "title": "Zero data retention with Enterprise Frontier Safeguards is now in beta",
+     "url": "https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards",
+     "blurb": "Anthropic's Enterprise Frontier Safeguards are now in beta, offering misuse detection while ensuring no client data is retained.",
+     "meta": "Anthropic"
+    },
+    {
+     "title": "A more tailored Google Search that’s uniquely yours",
+     "url": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+     "blurb": "Google Search can now connect to personal data in Drive, Wallet, and Gemini to provide more personalized and relevant responses.",
+     "meta": "Google"
+    }
+   ]
+  },
+  {
+   "title": "Model moves",
+   "items": [
+    {
+     "title": "Claude Fable 5.2",
+     "url": "https://whichaimap.com/models.html#m-fable",
+     "blurb": "The hardest work: long autonomous agent runs, science, deep analysis. Slow and pricey.",
+     "meta": "$8 / $40 per 1M tokens"
+    },
+    {
+     "title": "GPT-6.2 Astra",
+     "url": "https://whichaimap.com/models.html#m-astra",
+     "blurb": "OpenAI's strongest: coding, computer and browser use, science, professional work. 'Astra Pro' is the same model with reasoning mode set to pro: thinks longer, better on hard tasks.",
+     "meta": "$8 / $40 per 1M tokens"
+    },
+    {
+     "title": "GPT-6.2 Sol",
+     "url": "https://whichaimap.com/models.html#m-sol",
+     "blurb": "Strong reasoning for complex professional work at a mid-tier price. In ChatGPT on Plus and up. 'Sol Pro' = same model, pro reasoning mode.",
+     "meta": "$2 / $10 per 1M tokens"
+    },
+    {
+     "title": "Gemini 4 Neon",
+     "url": "https://whichaimap.com/models.html#m-argon",
+     "blurb": "Google's new flagship: deep work in coding, finance, law, security and science. Google's latest flagship model.",
+     "meta": "$3 / $15 per 1M tokens"
+    }
+   ]
+  },
+  {
+   "title": "New repos worth a look",
+   "items": [
+    {
+     "title": "hitkeeen/blender-ai-mcp-addon",
+     "url": "https://whichaimap.com/explore.html#hitkeeen/blender-ai-mcp-addon",
+     "blurb": "An AI assistant and Model Context Protocol server addon for Blender that inspects 3D scenes, builds objects, edits materials, and automates multi-step visual workflows. Heads-up: The release package targets Windows x64 with Blender 4.2 or later, and the built-in Python tool validation is not a security sandbox.",
+     "meta": "Blender AI extension"
+    },
+    {
+     "title": "ersinkoc/phonebox",
+     "url": "https://whichaimap.com/explore.html#ersinkoc/phonebox",
+     "blurb": "PhoneBox converts an old Android phone into a touch control deck and desk display for computer stats, media, and AI coding session details. Heads-up: Windows desktop agent builds are currently unsigned and may trigger antivirus or SmartScreen warnings.",
+     "meta": "Android desk control panel"
+    },
+    {
+     "title": "dabingfy-dot/solo-to-team-skills",
+     "url": "https://whichaimap.com/explore.html#dabingfy-dot/solo-to-team-skills",
+     "blurb": "A toolkit of roles, review templates, and platform-specific skills for running multi-agent workflows with human oversight. Heads-up: Early version (v0.2.0); full native integration across all four target platforms is not fully verified, and role names do not provide true data isolation between agents.",
+     "meta": "Multi-agent team framework"
+    },
+    {
+     "title": "Kimberlying/ai-engineering-interview-100",
+     "url": "https://whichaimap.com/explore.html#Kimberlying/ai-engineering-interview-100",
+     "blurb": "A collection of 100 production-focused interview questions, diagnostic playbooks, and system design architectures for AI engineering.",
+     "meta": "Interview study guide"
+    },
+    {
+     "title": "mvanhorn/last30days-skill",
+     "url": "https://whichaimap.com/explore.html#mvanhorn/last30days-skill",
+     "blurb": "An AI agent skill that searches social platforms, news, market odds, and transcripts from the last 30 days to synthesize grounded summaries. Heads-up: Full platform coverage requires configuring API keys or active browser sessions for walled-garden services like X and YouTube.",
+     "meta": "search agent skill"
+    },
+    {
+     "title": "kajisho5/ffmpeg-skill",
+     "url": "https://whichaimap.com/explore.html#kajisho5/ffmpeg-skill",
+     "blurb": "A collection of 42 local FFmpeg tools and a tool server that give coding agents full video and audio editing capabilities. Heads-up: Requires local installations of FFmpeg and Python 3 on your system.",
+     "meta": "AI video editing skill"
+    }
+   ]
+  },
+  {
+   "title": "Rising on GitHub this week",
+   "items": [
+    {
+     "title": "elementalsouls/Claude-BugHunter",
+     "url": "https://github.com/elementalsouls/Claude-BugHunter",
+     "blurb": "A skill and command bundle that adds bug bounty workflows, vulnerability patterns, and external red-team techniques to coding assistants.",
+     "meta": "+12k stars this week"
+    },
+    {
+     "title": "pingdotgg/t3code",
+     "url": "https://github.com/pingdotgg/t3code",
+     "blurb": "An open-source desktop, web, and mobile control surface that lets you remotely manage coding agents running on your machine.",
+     "meta": "+12k stars this week"
+    },
+    {
+     "title": "morluto/rea",
+     "url": "https://github.com/morluto/rea",
+     "blurb": "Reverse engineer apps, binaries, and websites with AI agents.",
+     "meta": "+11k stars this week"
+    },
+    {
+     "title": "zouyuxuan122/dsh-our-free-model",
+     "url": "https://github.com/zouyuxuan122/dsh-our-free-model",
+     "blurb": "This is a free model plugin for dsh that adds frontier models like Muse Spark 1.3 and MiMo V2.6 with zero configuration, no sign-up, and no API keys required.",
+     "meta": "+8k stars this week"
+    },
+    {
+     "title": "Ebony-Vinyl/dsh-our-free-model",
+     "url": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
+     "blurb": "A zero-configuration plugin for DeepSeek Harness (dsh) that provides free, unlimited access to advanced AI models without requiring API keys or accounts.",
+     "meta": "+8k stars this week"
+    }
+   ]
+  },
+  {
+   "title": "Most installed this month",
+   "items": [
+    {
+     "title": "modelcontextprotocol/python-sdk",
+     "url": "https://whichaimap.com/explore.html#modelcontextprotocol/python-sdk",
+     "blurb": "The official Python SDK for building Model Context Protocol servers and clients.",
+     "meta": "324.9M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "vercel/ai",
+     "url": "https://whichaimap.com/explore.html#vercel/ai",
+     "blurb": "The AI SDK is Vercel's free TypeScript library for adding AI to web apps. It gives one API across OpenAI, Anthropic, Google and others, plus UI hooks for building chat interfaces in React, Next.js, Svelte and Vue.",
+     "meta": "189.0M installs (npm + PyPI, 30 days)"
+    },
+    {
+     "title": "huggingface/transformers",
+     "url": "https://whichaimap.com/explore.html#huggingface/transformers",
+     "blurb": "Hugging Face Transformers is an open-source Python library to download, run, and train state-of-the-art machine learning models for text, vision, and audio.",
+     "meta": "118.7M installs (npm + PyPI, 30 days)"
+    }
+   ]
+  }
+ ],
+ "by": "gemini"
+}
