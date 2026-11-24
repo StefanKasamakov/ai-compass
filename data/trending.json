@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-24T15:14:14.295Z",
+ "updated": "2026-11-24T22:32:59.872Z",
  "items": [
   {
    "repo": "boringmarketer/boring-marketing-skills",
-   "stars": 832,
+   "stars": 844,
    "desc": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
    "created": "2026-11-16T15:09:46Z",
    "topics": [
@@ -19,7 +19,7 @@
   },
   {
    "repo": "KIvanow/sessionly",
-   "stars": 169,
+   "stars": 187,
    "desc": "Lab-neutral, local-first ledger for Claude Code, Codex, Cursor and Grok sessions: what they did, what it cost, what survived.",
    "created": "2026-11-13T16:40:16Z",
    "topics": [
@@ -29,6 +29,54 @@
     "cli"
    ],
    "lang": "TypeScript",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "yzsind/mydb",
+   "stars": 104,
+   "desc": "A high-performance MySQL-compatible database for HTAP and AI agents  Mixed transactional and analytical workloads, with native AI retrieval.",
+   "created": "2026-11-16T22:52:44Z",
+   "topics": [
+    "agent",
+    "data",
+    "database",
+    "mysql"
+   ],
+   "lang": "Rust",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "dangxingyu/megakernel-zoo",
+   "stars": 62,
+   "desc": "Model-specific megakernel inference engines for LLM decoding, written by coding agents. OpenAI-compatible server, evaluation suite, and the kit to build your own.",
+   "created": "2026-11-16T17:37:12Z",
+   "topics": [
+    "ai-agents",
+    "cuda",
+    "gpu",
+    "inference-engine"
+   ],
+   "lang": "Cuda",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "sunxiaohui2025/AI-Infra-Handbook",
+   "stars": 55,
+   "desc": "AI-Infra交互式课程，从矩阵乘法讲到分布式推理，每讲一个技术点并配可交互组件，附手写迷你推理引擎与从零实现的 GPT。",
+   "created": "2026-11-05T02:42:03Z",
+   "topics": [
+    "ai",
+    "astro",
+    "distributed-systems",
+    "education"
+   ],
+   "lang": "MDX",
    "sources": [
     "new on GitHub"
    ]

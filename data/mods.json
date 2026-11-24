@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-24T15:27:20.880Z",
- "scanned": "2026-11-24T06:16:02.580Z",
+ "updated": "2026-11-24T22:53:22.270Z",
+ "scanned": "2026-11-24T11:19:11.491Z",
  "claudeVersion": "2.1.331",
- "total": 9131,
+ "total": 9268,
  "categories": [
   [
    "builtin",
@@ -169,7 +169,7 @@
     "AbovePrompt"
    ],
    "validated": "passed",
-   "stars": 456,
+   "stars": 458,
    "license": "MIT",
    "pushed": "2026-11-17T16:42:53Z",
    "marketplace": null,
@@ -244,7 +244,7 @@
     "?"
    ],
    "validated": "passed",
-   "stars": 493,
+   "stars": 494,
    "license": "MIT",
    "pushed": "2026-11-23T13:02:21Z",
    "marketplace": null,
@@ -275,7 +275,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 343,
+   "stars": 344,
    "license": "MIT",
    "pushed": "2026-11-19T00:45:25Z",
    "marketplace": "claude-flightdeck",
@@ -323,7 +323,7 @@
    "validated": "passed",
    "stars": 481,
    "license": "MIT",
-   "pushed": "2026-11-17T13:57:26Z",
+   "pushed": "2026-11-24T10:21:34Z",
    "marketplace": "claude-code-filetree",
    "plugin": "filetree",
    "featured": true,
@@ -367,7 +367,7 @@
     "PromptHint"
    ],
    "validated": "warnings",
-   "stars": 81,
+   "stars": 82,
    "license": "MIT",
    "pushed": "2026-11-17T06:53:34Z",
    "marketplace": "oikon48",
@@ -407,7 +407,7 @@
     "Pane"
    ],
    "validated": "passed",
-   "stars": 1143,
+   "stars": 1148,
    "license": "MIT",
    "pushed": "2026-11-22T21:02:21Z",
    "marketplace": "lot-map",
@@ -1093,7 +1093,7 @@
     "PromptHint"
    ],
    "validated": "warnings",
-   "stars": 5,
+   "stars": 6,
    "license": "Apache-2.0",
    "pushed": "2026-10-06T18:10:48Z",
    "marketplace": "pinkpixel",
@@ -2257,11 +2257,27 @@
    "plain": "A hand-drawn pixel ninja above the prompt, any of 20 from Naruto, who casts their jutsu at a training post while Claude works, summons for subagents, cheers when a turn ends and sleeps when you step away, drawn locally with no model calls or network.",
    "cat": "fun",
    "by": "Harsha Reddy",
-   "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reach": 1,
+   "reachLabels": [
+    "writes the prompt box",
+    "reads env vars",
+    "reads settings",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "every prompt",
+    "every tool call",
+    "classic hooks"
+   ],
+   "surfaces": [
+    "ToolProgress",
+    "Spinner",
+    "TurnDuration",
+    "AbovePrompt"
+   ],
+   "validated": "warnings",
    "stars": 3,
    "license": "MIT",
    "pushed": "2026-10-10T19:14:45Z",
@@ -3464,7 +3480,7 @@
     "Pane"
    ],
    "validated": "warnings",
-   "stars": 4770,
+   "stars": 4774,
    "license": "MIT",
    "pushed": "2026-11-24T03:01:06Z",
    "marketplace": "terminal-browser",
@@ -4130,7 +4146,7 @@
    "validated": "warnings",
    "stars": 8,
    "license": "Apache-2.0",
-   "pushed": "2026-11-23T10:07:12Z",
+   "pushed": "2026-11-24T09:25:46Z",
    "marketplace": null,
    "plugin": "autotel"
   },
@@ -4628,10 +4644,37 @@
    "cat": "agents",
    "by": "Project Sentinel contributors",
    "reach": 2,
-   "reachLabels": [],
-   "sees": [],
-   "surfaces": [],
-   "validated": "unknown",
+   "reachLabels": [
+    "runs processes",
+    "drives Claude",
+    "writes the prompt box",
+    "writes the clipboard",
+    "reads files",
+    "reads env vars",
+    "reads settings",
+    "reads the prompt box",
+    "reads mod state",
+    "persists state",
+    "draws"
+   ],
+   "sees": [
+    "classic hooks",
+    "compaction",
+    "every prompt",
+    "the system prompt",
+    "/\"^mcp__project-sentinel__milestones$\"/ calls",
+    "/\"^mcp__project-sentinel__decision_request$\"/ calls"
+   ],
+   "surfaces": [
+    "AbovePrompt",
+    "Pane",
+    "ToolUse",
+    "ToolResult",
+    "ToolGroup",
+    "Spinner",
+    "SessionMode"
+   ],
+   "validated": "passed",
    "stars": 59,
    "license": "MIT",
    "pushed": "2026-11-16T18:27:47Z",

@@ -24950,5 +24950,175 @@
   "repo": "zou172866/Antigravity-agy-dart",
   "at": "2026-11-24",
   "source": "trending"
+ },
+ "boringmarketer/boring-marketing-skills": {
+  "cat": "harness",
+  "kind": "AI marketing skills pack",
+  "what": "A collection of 32 marketing and SEO workflows designed for AI coding assistants like Claude Code, Codex, and Cursor.",
+  "why": "It provides structured prompts for market research, local SEO, direct-response copywriting, and ad campaign planning. Reach for it when you want your AI assistant to generate brand-aligned marketing assets without paid third-party tools.",
+  "level": "setup",
+  "start": "npx skills add boringmarketer/boring-marketing-skills",
+  "caution": "Contains self-promotional product links and creator services embedded throughout the documentation.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "A set of 32 step-by-step instructions for AI coding tools to perform marketing research and write copy.",
+  "tags": [
+   "supercharge",
+   "research",
+   "docs"
+  ],
+  "useFor": [
+   "Research target audiences and competitor reviews to create brand positioning",
+   "Generate location-based service pages, ad headlines, and email sequences",
+   "Audit website search visibility and check mobile landing page layout"
+  ],
+  "steps": [
+   "Run `npx skills add boringmarketer/boring-marketing-skills` to install the skills package.",
+   "Type `/start-here` in your AI assistant prompt and provide your business name.",
+   "Wait three minutes while it analyzes your website to generate brand files."
+  ],
+  "repo": "boringmarketer/boring-marketing-skills",
+  "at": "2026-11-24",
+  "source": "trending"
+ },
+ "KIvanow/sessionly": {
+  "cat": "evals",
+  "kind": "Agent session ledger",
+  "what": "A local-first ledger tool that tracks session logs, costs, and code survival rates across AI coding agents like Claude Code, Codex, Cursor, and Grok.",
+  "why": "AI coding tools generate code and incur costs, but it is hard to track total spend or see how much generated code actually survives review. Use this to monitor costs and code retention locally across multiple coding assistants.",
+  "level": "setup",
+  "start": "cargo install sessionly",
+  "caution": "",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "ccusage/ccusage"
+  ],
+  "packages": [],
+  "plain": "A tool that tracks how much money your coding assistant spent and how many lines of written code stayed.",
+  "tags": [
+   "monitor",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Track total spending across Claude Code, Codex, Cursor, and Grok",
+   "Measure how much AI-generated code survives pull request review",
+   "Search and filter past coding assistant sessions locally"
+  ],
+  "steps": [
+   "Install the binary using `cargo install sessionly`.",
+   "Set up session capture hooks by running `sessionly install`.",
+   "Import previous session logs with `sessionly import`.",
+   "View spend summaries and session metrics using `sessionly summary`."
+  ],
+  "repo": "KIvanow/sessionly",
+  "at": "2026-11-24",
+  "source": "trending"
+ },
+ "yzsind/mydb": {
+  "cat": "memory",
+  "kind": "MySQL-compatible AI database",
+  "what": "MyDB is a high-performance database built in Rust that combines regular transactional data, analytics, and vector search in one engine.",
+  "why": "It allows AI software and traditional applications to query structured business records and searchable vector data using standard SQL or direct connections. Reach for it when you want to avoid running separate relational and vector databases.",
+  "level": "setup",
+  "start": "./mydb --data-dir ./data",
+  "caution": "This software is currently in public preview for evaluation and testing, so it should not be relied on for critical production systems.",
+  "alts": [
+   "chroma-core/chroma",
+   "qdrant/qdrant"
+  ],
+  "packages": [],
+  "plain": "A fast database that stores standard business tables and searchable AI data together in one place.",
+  "tags": [
+   "knowledge",
+   "apps",
+   "connect"
+  ],
+  "useFor": [
+   "Store structured database tables and search vectors in one engine",
+   "Query vector search results alongside business records using standard SQL",
+   "Connect AI agents directly to database data using built-in protocol servers"
+  ],
+  "steps": [
+   "Download the prebuilt package for your operating system and extract the binary file.",
+   "Start the server in your terminal using `./mydb --data-dir ./data`.",
+   "Connect to the server on port 8738 using any standard MySQL client."
+  ],
+  "repo": "yzsind/mydb",
+  "at": "2026-11-24",
+  "source": "trending"
+ },
+ "dangxingyu/megakernel-zoo": {
+  "cat": "local",
+  "kind": "Custom GPU inference engines",
+  "what": "Model-specific CUDA megakernel inference engines optimized for fast text decoding on high-end NVIDIA GPUs.",
+  "why": "Standard AI servers waste time repeatedly starting separate GPU instructions for every word generated. Reach for this project when you need ultra-low-latency text generation on supported enterprise hardware.",
+  "level": "setup",
+  "start": "`mkserve serve thinkingmachines/Inkling-2-Mini --track C`",
+  "caution": "Requires specialized enterprise hardware like NVIDIA H100 or B200 GPUs, and engines only support specific listed model checkpoints.",
+  "alts": [
+   "vllm-project/vllm",
+   "sgl-project/sglang",
+   "ggml-org/llama.cpp"
+  ],
+  "packages": [],
+  "plain": "A fast tool for running specific AI language models on high-performance graphics cards [GPUs].",
+  "tags": [
+   "private",
+   "save",
+   "supercharge"
+  ],
+  "useFor": [
+   "Run ultra-fast text generation for supported open AI models",
+   "Serve compatible API requests with minimal delay on enterprise hardware",
+   "Benchmark custom megakernel performance against standard serving frameworks"
+  ],
+  "steps": [
+   "Ensure your machine has Python 3.10 and an NVIDIA H100 or B200 GPU.",
+   "Start the serving server using your desired model and track:",
+   "`mkserve serve thinkingmachines/Inkling-2-Mini --track C`"
+  ],
+  "repo": "dangxingyu/megakernel-zoo",
+  "at": "2026-11-24",
+  "source": "trending"
+ },
+ "sunxiaohui2025/AI-Infra-Handbook": {
+  "cat": "local",
+  "kind": "interactive handbook",
+  "what": "An interactive Chinese-language course and website explaining large language model inference infrastructure from basic math to distributed GPU serving.",
+  "why": "It explains how modern model inference works under the hood through visual calculators and step-by-step breakdown of memory, scheduling, and kernels. Reach for it when you want to understand GPU memory requirements, vLLM scheduling, quantization, and tensor parallelism.",
+  "level": "easy",
+  "start": "npm install && npm run dev",
+  "caution": "The course content is written entirely in Simplified Chinese.",
+  "alts": [
+   "shtjww/llm-inference-capacity-handbook",
+   "youngyangyang04/llm-master",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "An interactive website and ebook that explains how artificial intelligence programs process text and calculate answers step by step.",
+  "tags": [
+   "knowledge",
+   "code",
+   "save"
+  ],
+  "useFor": [
+   "Learn how GPU memory and model inference work",
+   "Study vLLM scheduling and continuous batching",
+   "Explore interactive math and attention visualization models"
+  ],
+  "steps": [
+   "Read the interactive handbook directly online or download the PDF edition",
+   "Clone the repository to view the website source code",
+   "Run `npm install` and `npm run dev` to host the textbook locally"
+  ],
+  "repo": "sunxiaohui2025/AI-Infra-Handbook",
+  "at": "2026-11-24",
+  "source": "trending"
  }
 }
