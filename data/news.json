@@ -1,6 +1,68 @@
 {
- "updated": "2026-11-23T23:59:30.842Z",
+ "updated": "2026-11-24T10:01:21.524Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "datasette-charts 0.2a0",
+   "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/",
+   "date": "2026-11-24T04:24:29.000Z",
+   "summary": "Release: datasette-charts 0.2a0 I introduced this new charting plugin for Datasette yesterday . Today it's gained integration with Datasette Agent , so now you can ask chat for a chart and it will create one for you using the same underlying chart suggestion and generation tools. Here's a demo video, recorded on agent.datasette.io where you can sign in with GitHub to try the plugin yourself: Downl",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Jensen Is Back! and OpenAI Shows Its Pretraining Curve, joined by Microsoft",
+   "url": "https://latent.space/p/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/",
+   "date": "2026-11-24T04:14:16.000Z",
+   "summary": "November 23, 2026 — Nvidia reinstates its founder, and OpenAI publishes its internal loss curve and proposes a shared training limit.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-jensen-is-back-and-openai-shows-its-pretraining-curve-joined-by-microsoft/61bd4f7b88db330282f3164cc381940e0d45c69d877e1c8c04da1be405b9c254.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Gemini CLI v0.71.1",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1",
+   "date": "2026-11-24T03:50:24Z",
+   "summary": "New release of Gemini CLI.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/86678b05d40f3d862973860efc385778051502b72bb7fcceedaa66bef9f4e4b7/google-gemini/gemini-cli/releases/tag/v0.71.1"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-agent 0.7a1",
+   "url": "https://simonwillison.net/2026/Nov/24/datasette-agent/",
+   "date": "2026-11-24T03:45:57.000Z",
+   "summary": "Release: datasette-agent 0.7a1 I small improvement to Datasette Agent : chat sessions can open an iframe side panel, and that panel can then navigate to different pages. This version improves navigation by fragment hashes, for deeper integration with other Datasette plugins that update fragment hashes when the user interacts with the plugin in a way that changes state. I built this in order to fix",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
+  {
+   "source": "GitHub release",
+   "title": "Codex CLI rust-v0.172.0",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+   "date": "2026-11-24T00:03:55Z",
+   "summary": "New release of Codex CLI.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/5b0227cd27c481fa506dae2af50ff0a248d998e45104f60947c9c7cf6c3a23f2/openai/codex/releases/tag/rust-v0.172.0"
+  },
   {
    "source": "Simon Willison",
    "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
@@ -29,6 +91,17 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/024b07707ad2eebad60c40b7aa2fa7d9bae5b770f3d2f6f73ce77b08ec266bd2/anthropics/claude-code/releases/tag/v2.1.331"
+  },
+  {
+   "source": "OpenAI",
+   "title": "OpenAI and Cisco introduce Shirudo",
+   "url": "https://openai.com/index/introducing-shirudo",
+   "date": "2026-11-23T21:20:00.000Z",
+   "summary": "OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/5K7gFDr3r8vgjdIcsW6RVY/aba5325ce7902e5d1499b907f8e78f0b/shirudo-partner-logos-landscape-2x.png?w=1600&h=900&fit=fill"
   },
   {
    "source": "GitHub",
@@ -71,6 +144,40 @@
    "viaBrowser": true
   },
   {
+   "source": "OpenAI",
+   "title": "Connected intelligence for in-house legal",
+   "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+   "date": "2026-11-23T08:00:00.000Z",
+   "summary": "Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/40q0vnGDp1zwWuJrVjXtu6/79ebb13b84e11ce1711a27adfd6ffafe/connected-intelligence-for-in-house-legal-cover.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "source": "OpenAI",
+   "title": "Richpanel helps companies automate 50% of support in 30 days",
+   "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+   "date": "2026-11-23T08:00:00.000Z",
+   "summary": "Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/4aVhQ1EicxWg7i6lIkBrLQ/cdabc180f7e5f780dbb43c302e7163d8/richpanel-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-charts 0.1a0",
+   "url": "https://simonwillison.net/2026/Nov/23/datasette-charts/",
+   "date": "2026-11-23T00:37:20.000Z",
+   "summary": "Release: datasette-charts 0.1a0 I've been thinking about this problem for over a year now, but on Sunday I finally fired up Claude Fable 5.2 to build an initial prototype. The prototype went so well that this is now a full plugin. You can try it out in Datasette Lite here . It looks like this: The new charts plugin works against any table or arbitrary SQL query in Datasette. It defines several dif",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "audience": "dev",
+   "image": "https://static.simonwillison.net/static/2026/datasette-charts-0.1a0.webp"
+  },
+  {
    "source": "Hugging Face",
    "title": "How to build and maintain an agentic evaluation",
    "url": "https://huggingface.co/blog/agentic-evals",
@@ -80,6 +187,17 @@
    "big": false,
    "ai": false,
    "image": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+   "date": "2026-11-23",
+   "title": "The enterprise guide to securing coding agents",
+   "summary": "How security and technical leaders can scope and bound coding agent risk: AI-specific risks, Claude Code’s layered defenses, and centrally enforced policy.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents/opengraph-image/og"
   },
   {
    "source": "Anthropic",
@@ -2009,136 +2127,6 @@
    "big": false,
    "ai": true,
    "image": "https://claude.com/resources/articles/using-claude-opus-5-5-as-your-daily-driver-for-knowledge-work/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
-   "date": "2026-11-12",
-   "title": "Operate Claude Managed Agents inside your security perimeter",
-   "summary": "Anthropic released self-hosted Claude Managed Agents in private beta, allowing companies to run agents within their private cloud or on-premise infrastructure.",
-   "tags": [
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/self-hosted-claude-managed-agents/opengraph-image/og"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/claude-for-manufacturing",
-   "date": "2026-11-12",
-   "title": "Claude for Manufacturing: AI plugin for plant teams",
-   "summary": "Anthropic launched Claude for Manufacturing, a specialized plugin designed to automate quotes and plant documentation.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/claude-for-manufacturing/opengraph-image/og"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.167.2",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.2",
-   "date": "2026-11-11T22:44:46Z",
-   "summary": "OpenAI released version 0.167.2 of the Codex CLI developer command-line tool.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/cd63c5250a6bcf0f1bbb84f16e31b063f605f21621635a6b580769c6aa3c6a72/openai/codex/releases/tag/rust-v0.167.2"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "aws-emulator",
-   "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
-   "date": "2026-11-11T21:18:30.000Z",
-   "summary": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog. It currently req",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Google",
-   "title": "Gemini Decisions API: Fast, calibrated multimodal decisions",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-   "date": "2026-11-11T18:00:00.000Z",
-   "summary": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini__decisions__blog-header_2784x1566.width-1300.png"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm 0.37.2",
-   "url": "https://simonwillison.net/2026/Nov/11/llm/",
-   "date": "2026-11-11T17:19:52.000Z",
-   "summary": "Release: llm 0.37.2 Fixes a security issue reported by Daniel de Araujo in GHSA-v9h7-jj4g-f862 and GHSA-r639-rr7r-x72w . LLM has a mechanism called extra-openai-models.yaml - now managed by the new-in-0.37 llm openai endpoint add command - for using LLM with OpenAI-compatible API endpoints from other providers. Daniel reported two ways this could accidentally send your configured OpenAI API key to",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Google",
-   "title": "Try Tabletop: Customizable, collaborative spaces for groups to plan, play and do more together.",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/",
-   "date": "2026-11-11T16:00:00.000Z",
-   "summary": "Google introduced Tabletop, an experimental workspace in Google Labs designed for real-time collaborative group planning.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/labs_tabletop_blog_image_2784x1566.max-1440x810.jpg"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Show HN: Yogurt – Free, private, open-source alternative to Granola",
-   "url": "https://github.com/FrigadeHQ/yogurt",
-   "date": "2026-11-11T15:33:06Z",
-   "discuss": "https://news.ycombinator.com/item?id=50454625",
-   "summary": "Yogurt is a free and open-source, self-hosted alternative to Granola for local AI meeting transcripts and notes.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://repository-images.githubusercontent.com/1453132706/355ef15b-b53b-4211-bd76-47cdaad9ef5b"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "Anthropic's IPO roadshow video",
-   "url": "https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/",
-   "date": "2026-11-11T15:11:59.000Z",
-   "summary": "Anthropic's IPO roadshow video Anthropic kicked off their IPO roadshow yesterday, and their roadshow video has some previously unreleased information about how their business works. The section on \"Approach to compute\" with co-founder Tom Brown is particularly interesting, describing how Anthropic train and serve Claude across AWS Trainium, Google TPUs, NVIDIA GPUs, and AMD GPUs. I'm not sure why ",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "DeepMind",
-   "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
-   "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-   "date": "2026-11-11T15:00:15.000Z",
-   "summary": "Google DeepMind released AlphaGenome 2, a specialized model that predicts how genomic variations affect specific human cell types.",
-   "tags": [
-    "models",
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://lh3.googleusercontent.com/VPOhADdGu1T7kK_gWBiGzyVawQbKCjpL3-B0L0wxpYCyr8cHxviYmo9Hghy4f1laeIo2YKwuz8E07TR9HWWk2b0EONi0uvju-8TDLHX6YWHG4dXe3w=w1200-h630-n-nu-rw",
-   "viaBrowser": true
   }
  ]
 }

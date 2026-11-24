@@ -24916,5 +24916,39 @@
   "repo": "OpenBitSys/BitDecoding-FP4",
   "at": "2026-11-23",
   "source": "trending"
+ },
+ "zou172866/Antigravity-agy-dart": {
+  "cat": "harness",
+  "kind": "Context management plugin",
+  "what": "A plugin for Google Antigravity, Claude Code, and Codex that optimizes context windows and cuts token overhead.",
+  "why": "Coding assistants often stall, crash, or blow through context limits when processing massive test logs and repeated file reads. Reach for this to keep long coding sessions warm, filter out terminal noise, and resume work after crashes.",
+  "level": "setup",
+  "start": "curl -fsSL https://raw.githubusercontent.com/zou172866/Antigravity-agy-dart/v1.7.1/install.sh | sh",
+  "caution": "Requires Node.js 22.16+ or 24+ with FTS5 SQLite support. Enabling the automatic keepalive feature sends periodic pings that consume model inputs and may increase your usage costs.",
+  "alts": [
+   "mksglu/context-mode",
+   "thedotmack/claude-mem",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "A helper that stops your AI coding tool from running out of memory or wasting text on long logs.",
+  "tags": [
+   "save",
+   "supercharge",
+   "code"
+  ],
+  "useFor": [
+   "Trim large log files before sending them to the AI",
+   "Monitor context usage and cache health in a sidebar",
+   "Rescue crashed or stuck AI coding sessions"
+  ],
+  "steps": [
+   "Run `curl -fsSL https://raw.githubusercontent.com/zou172866/Antigravity-agy-dart/v1.7.1/install.sh | sh` in your terminal.",
+   "Restart your AI editor host such as Google Antigravity.",
+   "Open a new conversation to start using the sidebar context panel."
+  ],
+  "repo": "zou172866/Antigravity-agy-dart",
+  "at": "2026-11-24",
+  "source": "trending"
  }
 }
