@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-23T19:10:03.763Z",
+ "updated": "2026-11-23T23:59:30.842Z",
  "items": [
+  {
+   "source": "Simon Willison",
+   "title": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+   "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+   "date": "2026-11-23T23:40:49.000Z",
+   "summary": "Z.ai released GLM-5.4, a coding model featuring a loop transformer architecture that reuses layer weights across multiple refinement passes.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://static.simonwillison.net/static/2026/glm-family-4.webp"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.331",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+   "date": "2026-11-23T21:34:41Z",
+   "summary": "Anthropic released Claude Code v2.1.331 with minor updates and bug fixes for its terminal-based coding assistant.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/024b07707ad2eebad60c40b7aa2fa7d9bae5b770f3d2f6f73ce77b08ec266bd2/anthropics/claude-code/releases/tag/v2.1.331"
+  },
+  {
+   "source": "GitHub",
+   "title": "Issue statuses and repository boards are in public preview",
+   "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview",
+   "date": "2026-11-23T20:37:11.000Z",
+   "summary": "GitHub released explicit issue statuses and repository boards in public preview, providing structured workflow context for teams and AI agents.",
+   "tags": [
+    "coding",
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://github.blog/wp-content/uploads/2026/11/716292665-b61bd263-dd28-430c-a147-fa22594ac67f.png"
+  },
   {
    "source": "Google",
    "title": "A more tailored Google Search that’s uniquely yours",
@@ -36,6 +80,21 @@
    "big": false,
    "ai": false,
    "image": "https://huggingface.co/blog/assets/agentic-evals/thumbnail.png"
+  },
+  {
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/introducing-claude-ship",
+   "date": "2026-11-23",
+   "title": "Introducing Claude Ship",
+   "summary": "Anthropic introduced Claude Ship, an automated agent designed to review, fix, and approve pull requests within developer workflows.",
+   "tags": [
+    "agents",
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://claude.com/resources/articles/introducing-claude-ship/opengraph-image/og"
   },
   {
    "source": "Anthropic",
@@ -2080,58 +2139,6 @@
    "ai": true,
    "image": "https://lh3.googleusercontent.com/VPOhADdGu1T7kK_gWBiGzyVawQbKCjpL3-B0L0wxpYCyr8cHxviYmo9Hghy4f1laeIo2YKwuz8E07TR9HWWk2b0EONi0uvju-8TDLHX6YWHG4dXe3w=w1200-h630-n-nu-rw",
    "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Mercor $750m Series D at $20B valuation, $3B run rate",
-   "url": "https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/",
-   "date": "2026-11-11T09:34:28.000Z",
-   "summary": "November 10, 2026 — Google GA's Gemini 4 Carbon.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/0a6ebbfe98ad97a5127fc1c24df129ccd58884d32c867036ad2d48f36fe03fee.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "ChatGPT Plus for veterans and servicemembers",
-   "url": "https://openai.com/index/chatgpt-plus-for-veterans",
-   "date": "2026-11-11T08:00:00.000Z",
-   "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1xM6UVTcHLBSPyEgaezNtb/9e28e813c1d3f25564da209e17526702/chatgpt-plus-for-veterans-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
-   "url": "https://huggingface.co/blog/qvac/botpsy",
-   "date": "2026-11-11T05:01:16.000Z",
-   "summary": "Researchers released BotPsy, a sub-billion-parameter open model optimized to run agentic personal assistants directly on local devices.",
-   "tags": [
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6468b319b2321e47d3267049/Emr86qw6NAueYLdIEiTTD.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
-   "url": "https://latent.space/p/codex-work/",
-   "date": "2026-11-11T04:49:48.000Z",
-   "summary": "OpenAI showcased upcoming Codex developer capabilities, including voice steering and cloud execution handoffs.",
-   "tags": [
-    "coding",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/27ce2150-3717-4122-ac3a-37dd0e8ce18f/openai-aiecode-feature.png?t=1794370546"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T19:10:03.763Z",
+ "updated": "2026-11-23T23:59:30.842Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -992,13 +992,29 @@
     "npm:shaders"
    ]
   },
-  "Sev7eEn7/dsh-sieve": {
-   "npm": 682,
+  "moritzwilksch/diffle": {
+   "npm": 2859,
    "pypi": 0,
-   "total": 682,
+   "total": 2859,
+   "packages": [
+    "npm:@moritzwilksch/diffle"
+   ]
+  },
+  "Sev7eEn7/dsh-sieve": {
+   "npm": 1318,
+   "pypi": 0,
+   "total": 1318,
    "packages": [
     "npm:dsh-sieve",
     "npm:dsh-sieve-web"
+   ]
+  },
+  "vercel-labs/skills": {
+   "npm": 22963078,
+   "pypi": 0,
+   "total": 22963078,
+   "packages": [
+    "npm:skills"
    ]
   },
   "crow-hq/llm-wiki-v2": {
@@ -1081,6 +1097,14 @@
     "npm:huashu-motion"
    ]
   },
+  "sickn33/agentic-awesome-skills": {
+   "npm": 20198,
+   "pypi": 0,
+   "total": 20198,
+   "packages": [
+    "npm:agentic-awesome-skills"
+   ]
+  },
   "kanaworksai-hue/audio-studio-mcp": {
    "npm": 0,
    "pypi": 1208,
@@ -1090,9 +1114,9 @@
    ]
   },
   "omnara-ai/omnara": {
-   "npm": 3724,
+   "npm": 13702,
    "pypi": 0,
-   "total": 3724,
+   "total": 13702,
    "packages": [
     "npm:@omnara/sdk",
     "npm:omnara"
@@ -1107,9 +1131,9 @@
    ]
   },
   "YOLOW92/pagesift": {
-   "npm": 9474,
+   "npm": 0,
    "pypi": 11197,
-   "total": 20671,
+   "total": 11197,
    "packages": [
     "npm:pagesift",
     "npm:@pagesift/node",
@@ -1149,14 +1173,6 @@
     "npm:openmausbot"
    ]
   },
-  "outcrawlai/scout": {
-   "npm": 75,
-   "pypi": 0,
-   "total": 75,
-   "packages": [
-    "npm:@outcrawl/scout"
-   ]
-  },
   "ComputerUseAgent/AutoCua": {
    "npm": 0,
    "pypi": 1579,
@@ -1166,14 +1182,6 @@
     "pypi:autocua"
    ]
   },
-  "qybaihe/bla": {
-   "npm": 36248,
-   "pypi": 0,
-   "total": 36248,
-   "packages": [
-    "npm:bla-agents"
-   ]
-  },
   "AstrBotDevs/AstrBot": {
    "npm": 0,
    "pypi": 62772,
@@ -1181,6 +1189,14 @@
    "packages": [
     "pypi:AstrBot",
     "pypi:astrbot"
+   ]
+  },
+  "THU-MAIC/OpenMAIC": {
+   "npm": 7416,
+   "pypi": 0,
+   "total": 7416,
+   "packages": [
+    "npm:@openmaic/generation"
    ]
   },
   "FlashML-org/FreeToken": {
@@ -1314,14 +1330,6 @@
     "npm:@astryxdesign/cli"
    ]
   },
-  "Ebony-Vinyl/EAC-design-world": {
-   "npm": 13036,
-   "pypi": 0,
-   "total": 13036,
-   "packages": [
-    "npm:eac-design-world"
-   ]
-  },
   "Dongbumlee/ontosmith": {
    "npm": 0,
    "pypi": 1774,
@@ -1338,18 +1346,10 @@
     "pypi:vork"
    ]
   },
-  "chutingyean/Agent-Cockpit": {
-   "npm": 582,
-   "pypi": 0,
-   "total": 582,
-   "packages": [
-    "npm:@tingyen/agent-cockpit"
-   ]
-  },
   "ruvnet/RuView": {
-   "npm": 1708,
+   "npm": 0,
    "pypi": 1800,
-   "total": 3508,
+   "total": 1800,
    "packages": [
     "npm:@ruvnet/ruview",
     "pypi:wifi-densepose",
@@ -1420,56 +1420,6 @@
     "npm:@openai/codex-security"
    ]
   },
-  "SAOS-3624/dsh-see-now": {
-   "npm": 34975,
-   "pypi": 0,
-   "total": 34975,
-   "packages": [
-    "npm:dsh-see-now"
-   ]
-  },
-  "GoogleChrome/modern-web-guidance-src": {
-   "npm": 821457,
-   "pypi": 0,
-   "total": 821457,
-   "packages": [
-    "npm:modern-web-guidance"
-   ]
-  },
-  "vercel-labs/ui": {
-   "npm": 880470,
-   "pypi": 0,
-   "total": 880470,
-   "packages": [
-    "npm:@ui-sdk/core",
-    "npm:@ui-sdk/react"
-   ]
-  },
-  "Parcha-ai/agentrun": {
-   "npm": 5888,
-   "pypi": 0,
-   "total": 5888,
-   "packages": [
-    "npm:@parcha/agentrun"
-   ]
-  },
-  "ag-ui-protocol/ag-ui": {
-   "npm": 24679845,
-   "pypi": 0,
-   "total": 24679845,
-   "packages": [
-    "npm:@ag-ui/core",
-    "npm:create-ag-ui-app"
-   ]
-  },
-  "Tencent/LoopForge": {
-   "npm": 1198,
-   "pypi": 0,
-   "total": 1198,
-   "packages": [
-    "npm:loopforge-cli"
-   ]
-  },
   "NVIDIA/SkillEvaluator": {
    "npm": 0,
    "pypi": 8095,
@@ -1484,22 +1434,6 @@
    "total": 49995,
    "packages": [
     "npm:ffmpeg-skill"
-   ]
-  },
-  "AI4XE/Parallax": {
-   "npm": 1078,
-   "pypi": 0,
-   "total": 1078,
-   "packages": [
-    "npm:parallax-dsh"
-   ]
-  },
-  "erkamyaman/rust-anything": {
-   "npm": 4713,
-   "pypi": 0,
-   "total": 4713,
-   "packages": [
-    "npm:rust-anything"
    ]
   },
   "Leonccaa/ReVolta": {
@@ -1537,14 +1471,6 @@
     "pypi:tamserve"
    ]
   },
-  "oriliz/agent-crop": {
-   "npm": 1930,
-   "pypi": 0,
-   "total": 1930,
-   "packages": [
-    "npm:agent-crop-dsh"
-   ]
-  },
   "Tracer-Cloud/opensre": {
    "npm": 0,
    "pypi": 220,
@@ -1561,16 +1487,6 @@
     "pypi:autoclip-mcp"
    ]
   },
-  "XinaTian/MROffice": {
-   "npm": 617,
-   "pypi": 0,
-   "total": 617,
-   "packages": [
-    "npm:mroffice-mcp",
-    "npm:mroffice-docs",
-    "npm:mroffice-core"
-   ]
-  },
   "sous-labs/songe": {
    "npm": 0,
    "pypi": 1132,
@@ -1585,14 +1501,6 @@
    "total": 2400,
    "packages": [
     "npm:antigravity-plugin-context-mode"
-   ]
-  },
-  "EL4CTEO/fast-anything": {
-   "npm": 1955,
-   "pypi": 0,
-   "total": 1955,
-   "packages": [
-    "npm:@el4cteo/fast-anything"
    ]
   },
   "ngocanhnckh/renderlint": {
