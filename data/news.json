@@ -1,6 +1,17 @@
 {
- "updated": "2026-11-25T14:54:50.034Z",
+ "updated": "2026-11-25T21:47:25.745Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "Where scientists draw the line on AI agents",
+   "url": "https://huggingface.co/blog/allenai/where-scientists-draw-the-line-on-ai-agents",
+   "date": "2026-11-25T18:52:55.000Z",
+   "summary": "",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/F32BgZC_rj0kg99apJlto.png"
+  },
   {
    "source": "Hugging Face",
    "title": "An Indic Voice Agent with CUGA",
@@ -93,6 +104,18 @@
    "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Gemini_1.max-1440x810.jpg"
   },
   {
+   "source": "DeepMind",
+   "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+   "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+   "date": "2026-11-24T13:07:53.000Z",
+   "summary": "Mass Spec Skills empowers scientists using Google Antigravity to interpret tandem mass spectra.",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://lh3.googleusercontent.com/CtAfS_JWygw2R9cuDNty3xd0S4WFRzVew1vtNDiPaN1ZOGa88hCwTiCLxtgCtpSFER2t3jFO-moRkPnQYPjXziNgMvKHVc0wkOkzBTdGRoOYL3Ld=w1200-h630-n-nu-rw",
+   "viaBrowser": true
+  },
+  {
    "source": "OpenAI",
    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
@@ -114,6 +137,19 @@
    "big": false,
    "ai": false,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/318YLaAKlMKQFzOdMutjeX/8b6e4e516fd1a7894c97318838f43a0f/searching-for-distant-planets-with-astra-social.png?w=1600&h=900&fit=fill"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Porting Rockbox to an undocumented $9 AliExpress 'YP3' MP3 player with LLMs",
+   "url": "https://jayd.ml/2026/11/14/rockbox-on-yp3.html",
+   "date": "2026-11-24T06:22:36Z",
+   "discuss": "https://news.ycombinator.com/item?id=50624446",
+   "summary": "176 points, 73 comments",
+   "tags": [],
+   "big": false,
+   "ai": false,
+   "image": "https://jayd.ml/assets/posts/2026-11-14-rockbox-on-yp3/listing.png",
+   "viaBrowser": true
   },
   {
    "source": "Simon Willison",
@@ -176,6 +212,19 @@
    "ai": false,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/5b0227cd27c481fa506dae2af50ff0a248d998e45104f60947c9c7cf6c3a23f2/openai/codex/releases/tag/rust-v0.172.0"
+  },
+  {
+   "source": "OpenAI",
+   "title": "How Intentful uses dots to make more time for growth",
+   "url": "https://openai.com/business/customer-stories/intentful-dots",
+   "date": "2026-11-24T00:00:00.000Z",
+   "summary": "OpenAI is demonstrating how 'dots'—autonomous agentic tools—can proactively handle research, flagging issues, and task management for professionals.",
+   "tags": [
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/2DH2aby1xmlzvADCraI7Xi/bbe8b8956578492f2c3fd7326ecbd9e1/intentful-dots-social-c.png?w=1600&h=900&fit=fill"
   },
   {
    "source": "OpenAI",
@@ -2062,64 +2111,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/a7057a66b0fb85c1be2633a3200c824cb71fe02f96225ae71f9c803e7c7f8934/anthropics/claude-code/releases/tag/v2.1.323"
-  },
-  {
-   "source": "OpenAI",
-   "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
-   "url": "https://openai.com/business/customer-stories/amplitude",
-   "date": "2026-11-12T20:00:00.000Z",
-   "summary": "Amplitude uses OpenAI models and coding agents to ship product updates in 1 to 2 days.",
-   "tags": [
-    "models",
-    "agents",
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/7xyAtQVA8C5CZGHW7aQidr/a71aedc6e0ed7395f081f75411af6d03/amplitude-wave-seo.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
-   "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
-   "date": "2026-11-12T19:07:35.000Z",
-   "summary": "IBM released Granite 4.1 3B and 8B models featuring LLMON, an LLM-native markup language for structured generation.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/6484ca4d5ff9a3d2ee52a83b/6KFZDHIJkxpICiErHLqAw.gif"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Gemini 4 Hydrogen and Orchestrator",
-   "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/",
-   "date": "2026-11-12T18:52:01Z",
-   "discuss": "https://news.ycombinator.com/item?id=50472260",
-   "summary": "Google announced Orchestrator alongside Gemini 4 Hydrogen to manage complex multi-agent execution flows.",
-   "tags": [
-    "models",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://antigravity.google/assets/image/blog/4-Hydrogen---Wide.png"
-  },
-  {
-   "source": "Hacker News",
-   "title": "Gemini 4 Hydrogen",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "date": "2026-11-12T18:01:48Z",
-   "discuss": "https://news.ycombinator.com/item?id=50471431",
-   "summary": "Google released Gemini 4 Hydrogen, bringing higher speeds and lower API pricing to its model line.",
-   "tags": [
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-4-hydrogen__key-art__lockup__16-9.width-1300.jpg"
   }
  ]
 }

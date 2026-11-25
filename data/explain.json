@@ -25192,5 +25192,73 @@
   "repo": "opensetlabs/openset-llm",
   "at": "2026-11-25",
   "source": "trending"
+ },
+ "n8n-io/nod": {
+  "cat": "coding",
+  "kind": "personal AI agent",
+  "what": "An open source personal agent that runs on your computer with its own browser to handle tasks across apps and websites.",
+  "why": "To automate repetitive everyday computer work like chasing invoices and prepping for meetings while asking for your permission before taking actions.",
+  "level": "easy",
+  "start": "Download the app for your operating system from the official GitHub releases page and open it.",
+  "caution": "Using consumer subscription logins as an API may break the provider's terms and risk the account.",
+  "alts": [
+   "browser-use/browser-use",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [],
+  "plain": "A personal assistant program that browses websites and uses your apps for you, while running on your own computer.",
+  "tags": [
+   "automate",
+   "connect",
+   "private"
+  ],
+  "useFor": [
+   "Chase invoices and payments across websites",
+   "Prepare one-page call briefs from messages and calendar",
+   "Draft messages and emails for your approval"
+  ],
+  "steps": [
+   "Download the installer for macOS, Windows, or Linux from the releases page.",
+   "Install and open the application on your computer.",
+   "Choose your preferred AI model or sign in to connect an account."
+  ],
+  "repo": "n8n-io/nod",
+  "at": "2026-11-25",
+  "source": "trending"
+ },
+ "saksham10arora-dotcom/everything-claude-codex": {
+  "cat": "harness",
+  "kind": "multi-agent team setup",
+  "what": "Allows Claude Code and Codex to share a single memory, search your notes, check their own health, and work with your phone while your laptop is shut.",
+  "why": "Stops you from having to repeat context between different coding assistants and bridges your local notes with cloud mobile apps. Reach for it when you want your coding agents to act as a coordinated team rather than isolated windows.",
+  "level": "setup",
+  "start": "git clone https://github.com/saksham10arora-dotcom/everything-claude-codex ~/ecx && cd ~/ecx && ./install.sh",
+  "caution": "Pushed over 4 months ago. This project reuses consumer AI subscription apps (like Claude and ChatGPT mobile apps) as a bridge, which might break provider terms of service and risk your account.",
+  "alts": [
+   "anthropics/claude-code",
+   "openai/codex",
+   "gsd-build/get-shit-done"
+  ],
+  "packages": [],
+  "plain": "Links two different coding assistants together so they share notes, remember past conversations, and work from your phone.",
+  "tags": [
+   "code",
+   "knowledge",
+   "connect",
+   "supercharge"
+  ],
+  "useFor": [
+   "Share memory between Claude Code and Codex",
+   "Search your notes and screenshots by meaning",
+   "Continue coding and taking notes from your phone"
+  ],
+  "steps": [
+   "Clone the repository to your computer using git clone",
+   "Run the installation script in your terminal",
+   "Open your notes vault and type `/boot` in Claude Code"
+  ],
+  "repo": "saksham10arora-dotcom/everything-claude-codex",
+  "at": "2026-11-25",
+  "source": "trending"
  }
 }
