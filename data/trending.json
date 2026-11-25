@@ -1,16 +1,32 @@
 {
- "updated": "2026-11-25T08:45:33.577Z",
+ "updated": "2026-11-25T14:54:50.034Z",
  "items": [
   {
-   "repo": "KaelLee335/enterprise-support-agent-v2",
-   "stars": 142,
-   "desc": "面向电商售后场景的 Python Agent 全栈演示：FastAPI、SQLite、LangChain/LangGraph、Chroma RAG、Vue 与 Langfuse。涵盖租户权限、人工审批、MockShop/物流集成与评估。",
-   "created": "2026-11-16T02:40:22Z",
+   "repo": "n8n-io/nod",
+   "stars": 3437,
+   "desc": "Open source personal agent with its own computer. It chases invoices, preps your calls and cancels trials on real websites, and asks before it acts. Runs on your machine with the model you choose. By n8n.",
+   "created": "2026-09-25T13:46:42Z",
    "topics": [
+    "agents",
     "ai-agent",
-    "chroma",
-    "customer-support",
-    "docker"
+    "ai-assistant",
+    "anthropic"
+   ],
+   "lang": "TypeScript",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "saksham10arora-dotcom/everything-claude-codex",
+   "stars": 107,
+   "desc": "Claude Code and Codex working as one team: one shared memory (voice included), each sees the other's latest messages. Plus searchable notes, self health checks, and phone access with the laptop shut.",
+   "created": "2026-10-28T18:01:34Z",
+   "topics": [
+    "agent-memory",
+    "ai-agents",
+    "claude",
+    "claude-code"
    ],
    "lang": "Python",
    "sources": [
@@ -18,17 +34,17 @@
    ]
   },
   {
-   "repo": "opensetlabs/openset-llm",
-   "stars": 58,
-   "desc": "Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server.",
-   "created": "2026-11-13T12:45:59Z",
+   "repo": "yijiejiang/kaogong-school",
+   "stars": 107,
+   "desc": "本地优先的考公（公务员考试 / 国考 / 省考）多智能体 AI 学习系统：资料解析、知识挖掘、技能地图、RAG 问答、AI 出卷改卷与学情闭环。Self-hosted AI tutor for Chinese civil service exam prep.",
+   "created": "2026-11-16T10:01:26Z",
    "topics": [
-    "ai",
-    "avx512",
-    "cpu-inference",
-    "edge-ai"
+    "ai-agents",
+    "ai-tutor",
+    "civil-service-exam",
+    "deepseek"
    ],
-   "lang": "C++",
+   "lang": "Python",
    "sources": [
     "new on GitHub"
    ]
