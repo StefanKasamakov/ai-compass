@@ -25120,5 +25120,77 @@
   "repo": "sunxiaohui2025/AI-Infra-Handbook",
   "at": "2026-11-24",
   "source": "trending"
+ },
+ "KaelLee335/enterprise-support-agent-v2": {
+  "cat": "frameworks",
+  "kind": "Full-stack agent template",
+  "what": "An end-to-end Python customer support agent demo featuring FastAPI, LangGraph, Chroma RAG, human-in-the-loop approvals, and a Vue 3 dashboard.",
+  "why": "Shows how to structure an enterprise customer service AI with strict tenant boundaries, policy search, mock logistics, and manual approval pauses instead of raw chatbots.",
+  "level": "dev",
+  "start": "uv sync --locked --extra dev",
+  "caution": "",
+  "alts": [
+   "langchain-ai/langgraph",
+   "langgenius/dify",
+   "FlowiseAI/Flowise"
+  ],
+  "packages": [
+   "uv"
+  ],
+  "plain": "A complete starter app for an online store customer service assistant with human review and document search.",
+  "tags": [
+   "apps",
+   "knowledge",
+   "automate"
+  ],
+  "useFor": [
+   "Build tenant-isolated customer support workflows with LangGraph",
+   "Add human-in-the-loop review for sensitive tasks like refund requests",
+   "Index and query company policies using Chroma RAG"
+  ],
+  "steps": [
+   "Copy `.env.example` to `.env` and configure your API keys.",
+   "Install project dependencies with `uv sync --locked --extra dev`.",
+   "Build the vector index using `python scripts/index_policies.py`.",
+   "Start the API server with `uv run --locked uvicorn support_agent.main:app --reload --app-dir src`."
+  ],
+  "repo": "KaelLee335/enterprise-support-agent-v2",
+  "at": "2026-11-25",
+  "source": "trending"
+ },
+ "opensetlabs/openset-llm": {
+  "cat": "local",
+  "kind": "CPU inference engine",
+  "what": "openset-llm is an inference engine built to run large AI models at high speed on standard CPUs without a graphics card.",
+  "why": "Large AI models typically require expensive graphics cards or 24 GB+ RAM setups. Reach for this project to run 27B parameter models locally on a 8 GB RAM machine using AVX-512 instructions.",
+  "level": "setup",
+  "start": "`git clone https://github.com/opensetlabs/openset-llm && cd openset-llm && ./start`",
+  "caution": "Requires a Linux operating system (or Windows WSL2) and an x86 processor with AVX-512 support, such as Intel Ice Lake or AMD Zen 4 or newer.",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama",
+   "vllm-project/vllm"
+  ],
+  "packages": [
+   "openai"
+  ],
+  "plain": "Runs large AI text models fast on ordinary computer processors without needing an expensive graphics card.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run large AI text models on everyday computers without graphics cards",
+   "Serve an OpenAI-compatible web server locally for developer apps",
+   "Chat with local AI models through an included browser interface"
+  ],
+  "steps": [
+   "Install build tools using `sudo apt install -y build-essential cmake git` on Linux",
+   "Run `git clone https://github.com/opensetlabs/openset-llm && cd openset-llm && ./start` in your terminal",
+   "Wait for the engine to build and download the model, then open `http://127.0.0.1:8080` in your browser"
+  ],
+  "repo": "opensetlabs/openset-llm",
+  "at": "2026-11-25",
+  "source": "trending"
  }
 }

@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-24T22:32:59.872Z",
+ "updated": "2026-11-25T08:45:33.577Z",
  "items": [
   {
-   "repo": "boringmarketer/boring-marketing-skills",
-   "stars": 844,
-   "desc": "32 free marketing skills for your AI agent: research, positioning, copy, pages, SEO, AI search, ads, email and content, plus a deep local-business pack. MIT.",
-   "created": "2026-11-16T15:09:46Z",
+   "repo": "KaelLee335/enterprise-support-agent-v2",
+   "stars": 142,
+   "desc": "面向电商售后场景的 Python Agent 全栈演示：FastAPI、SQLite、LangChain/LangGraph、Chroma RAG、Vue 与 Langfuse。涵盖租户权限、人工审批、MockShop/物流集成与评估。",
+   "created": "2026-11-16T02:40:22Z",
    "topics": [
-    "agent-skills",
-    "ai-agents",
-    "claude-code",
-    "codex"
+    "ai-agent",
+    "chroma",
+    "customer-support",
+    "docker"
    ],
    "lang": "Python",
    "sources": [
@@ -18,65 +18,17 @@
    ]
   },
   {
-   "repo": "KIvanow/sessionly",
-   "stars": 187,
-   "desc": "Lab-neutral, local-first ledger for Claude Code, Codex, Cursor and Grok sessions: what they did, what it cost, what survived.",
-   "created": "2026-11-13T16:40:16Z",
-   "topics": [
-    "ai-agents",
-    "ai-coding",
-    "claude-code",
-    "cli"
-   ],
-   "lang": "TypeScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "yzsind/mydb",
-   "stars": 104,
-   "desc": "A high-performance MySQL-compatible database for HTAP and AI agents  Mixed transactional and analytical workloads, with native AI retrieval.",
-   "created": "2026-11-16T22:52:44Z",
-   "topics": [
-    "agent",
-    "data",
-    "database",
-    "mysql"
-   ],
-   "lang": "Rust",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "dangxingyu/megakernel-zoo",
-   "stars": 62,
-   "desc": "Model-specific megakernel inference engines for LLM decoding, written by coding agents. OpenAI-compatible server, evaluation suite, and the kit to build your own.",
-   "created": "2026-11-16T17:37:12Z",
-   "topics": [
-    "ai-agents",
-    "cuda",
-    "gpu",
-    "inference-engine"
-   ],
-   "lang": "Cuda",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "sunxiaohui2025/AI-Infra-Handbook",
-   "stars": 55,
-   "desc": "AI-Infra交互式课程，从矩阵乘法讲到分布式推理，每讲一个技术点并配可交互组件，附手写迷你推理引擎与从零实现的 GPT。",
-   "created": "2026-11-05T02:42:03Z",
+   "repo": "opensetlabs/openset-llm",
+   "stars": 58,
+   "desc": "Fast local LLM inference on plain CPUs. No GPU, 8 GB of RAM. OpenAI-compatible server.",
+   "created": "2026-11-13T12:45:59Z",
    "topics": [
     "ai",
-    "astro",
-    "distributed-systems",
-    "education"
+    "avx512",
+    "cpu-inference",
+    "edge-ai"
    ],
-   "lang": "MDX",
+   "lang": "C++",
    "sources": [
     "new on GitHub"
    ]

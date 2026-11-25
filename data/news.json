@@ -1,6 +1,51 @@
 {
- "updated": "2026-11-24T22:32:59.872Z",
+ "updated": "2026-11-25T08:45:33.577Z",
  "items": [
+  {
+   "source": "Latent Space",
+   "title": "[AINews] Gemini 4 Neon marks GDM's full return as a Frontier Lab",
+   "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+   "date": "2026-11-25T04:29:07.000Z",
+   "summary": "Google DeepMind revealed Gemini 4 Neon, a frontier model delivering significant speed and score gains on coding benchmarks.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://latent.space/og/card/post/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/cbe347eb1fb1cb87c986d8fbe2e2206521e0bdecbfd20fbb16e0c4595e118daa.png"
+  },
+  {
+   "source": "GitHub release",
+   "title": "Claude Code v2.1.332",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+   "date": "2026-11-25T01:32:14Z",
+   "summary": "Anthropic released Claude Code v2.1.332, introducing minor updates and fixes to its command-line coding assistant.",
+   "tags": [
+    "coding",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://opengraph.githubassets.com/919324041eedcaf4a424c836139814d4046b4da5b938e45291280317bc14f2e0/anthropics/claude-code/releases/tag/v2.1.332"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "Three LLM inflection points in twelve months",
+   "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+   "date": "2026-11-24T23:02:07.000Z",
+   "summary": "Simon Willison published an analysis outlining three major capability jumps in LLMs and AI coding agents over the past year.",
+   "tags": [
+    "coding",
+    "agents",
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://img.youtube.com/vi/9RKrSF9d2SE/maxresdefault.jpg"
+  },
   {
    "source": "Simon Willison",
    "title": "GPT 6.2 Astra Solves a Historical Mystery",
@@ -33,7 +78,8 @@
    "tags": [],
    "big": false,
    "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill"
+   "image": "https://images.ctfassets.net/kftzwdyauwt9/Eg5mCwwaA3KqnznOVCh0n/8e6deaef25fd508d9853ff86a95187c1/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities-social.png?w=1600&h=900&fit=fill",
+   "discuss": "https://news.ycombinator.com/item?id=50634658"
   },
   {
    "source": "OpenAI",
@@ -220,6 +266,21 @@
    "ai": false,
    "image": "https://lh3.googleusercontent.com/jIoM2lo98EDqLMQjIaXBlXPmXgPbUPpM2GgtXcDsGekZBOPUY41IjBsnuZIhLac7MSOuRkklNBsp20a5M25oDz-xTIY0BIqoBxUqmmXvEHwlM3MJJw=w1200-h630-n-nu-rw",
    "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+   "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+   "date": "2026-11-23T13:42:38Z",
+   "discuss": "https://news.ycombinator.com/item?id=50611402",
+   "summary": "NariQ released a high-precision quantization format that fits the Qwen3.8-27B model into a 10 GB footprint for local execution.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/nari-labs/Qwen3.8-27B-NariQ-GGUF.png"
   },
   {
    "source": "OpenAI",
@@ -2066,57 +2127,6 @@
    "ai": true,
    "image": "https://images.ctfassets.net/kftzwdyauwt9/2gyH3WDalGtGbAK3JBzNl2/29480242d3537e70529f699d9662e99c/Gondola-Option-A-SEO-1920x1080.png?w=1600&h=900&fit=fill",
    "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Holiday Extras is rethinking what it can build with Codex",
-   "url": "https://openai.com/business/customer-stories/holidays-extras-codex",
-   "date": "2026-11-12T09:30:00.000Z",
-   "summary": "With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/YQ7iIOI0bWh6X0QxSJfhc/52dfd3404ac0611fbab3c54ed6178bce/holiday-extras-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Claude Code and Codex reverse engineered my 1994 Jeep's ECU over a $3 Arduino [video]",
-   "url": "https://www.youtube.com/watch?v=WPj3aQ-xxpI",
-   "date": "2026-11-12T05:29:24Z",
-   "discuss": "https://news.ycombinator.com/item?id=50463399",
-   "summary": "A developer successfully used Claude Code and OpenAI Codex to reverse engineer a legacy automotive engine control unit protocol using an inexpensive microcontroller interface.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] D-Day (Decision Models Day)",
-   "url": "https://latent.space/p/ainews-d-day-decision-models-day/",
-   "date": "2026-11-12T05:26:54.000Z",
-   "summary": "November 11, 2026 — Google enters the decision model market. At AI Engineer, Cloudflare showed which parts of a build failure a classifier could handle. TypeSafe AI showed off their production customers.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-d-day-decision-models-day/d2600d673d83d2c42c810a6c57c6e5942326283dfe350801c137d18f262c4f90.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
-   "url": "https://latent.space/p/jev-revolution/",
-   "date": "2026-11-12T05:08:20.000Z",
-   "summary": "At AI Engineer Code Summit, lead Jev creator Diogo Almeida called on developers to automate everything. Also, Glean and others showed how they’re using Jev.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/b4181d5a-0460-4828-b350-07feca728023/jevalution-feature.jpg?t=1794458692"
   }
  ]
 }
