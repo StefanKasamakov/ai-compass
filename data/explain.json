@@ -25327,5 +25327,103 @@
   "repo": "nevertoday/xxd-pstack",
   "at": "2026-11-26",
   "source": "trending"
+ },
+ "qianyiai/kurocat": {
+  "cat": "harness",
+  "kind": "Desktop Typing Cat",
+  "what": "A free, open-source 3D/2D desktop typing companion and AI coding partner that reacts to your keystrokes.",
+  "why": "It keeps you company while coding or typing, visualizes your keys and mouse clicks, and lets AI tools control your desktop pet.",
+  "level": "easy",
+  "start": "brew install --cask qianyiai/tap/kurocat",
+  "caution": "Requires global keyboard and mouse monitoring permissions to animate keystrokes, which may trigger security warnings on some operating systems.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "An animated cat on your screen that moves its paws when you type on your keyboard.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Watch an animated cat type along with your keyboard inputs",
+   "Connect AI coding assistants to customize and control your desktop pet",
+   "Stream your typing live with a transparent OBS overlay"
+  ],
+  "steps": [
+   "Download and install KuroCat for your operating system.",
+   "Launch the application to display the desktop pet.",
+   "Type on your keyboard to watch the pet react in real time."
+  ],
+  "repo": "qianyiai/kurocat",
+  "at": "2026-11-26",
+  "source": "trending"
+ },
+ "wangbingnan136/agy-max": {
+  "cat": "harness",
+  "kind": "Antigravity Workbench Addon",
+  "what": "It is an all-in-one enhancement plugin and workbench for Google Antigravity that adds themes, usage dashboards, speed accelerators, and workflow controls.",
+  "why": "Use this when you want to customize your Antigravity development environment with better context tracking, account switching, and workflow accelerators.",
+  "level": "setup",
+  "start": "sh ./install.sh",
+  "caution": "Reuses Google and Antigravity accounts, which may risk provider terms violation if pooled or abused.",
+  "alts": [
+   "WhiteBr1ck/agy-powertools",
+   "INK-Q/agy-fast"
+  ],
+  "packages": [],
+  "plain": "An extension that upgrades your Google Antigravity coding application with better dashboards, search, and speed boosts.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Manage multiple Google accounts and check usage quotas",
+   "Search local and SSH session history quickly",
+   "Speed up agent tasks with built-in workflow accelerators"
+  ],
+  "steps": [
+   "Download the latest release ZIP from the repository or clone it.",
+   "Run `sh ./install.sh` in your terminal for macOS or Linux.",
+   "Restart Antigravity and open the new Antigravity Max section in the sidebar."
+  ],
+  "repo": "wangbingnan136/agy-max",
+  "at": "2026-11-26",
+  "source": "trending"
+ },
+ "tuan3w/qwen-warp": {
+  "cat": "local",
+  "kind": "Fast Model Runner",
+  "what": "High-performance code library for running open-weight AI models locally on a single graphics card.",
+  "why": "It speeds up text generation on consumer hardware by compiling model checkpoints into custom graphics card routines. Reach for this when you want maximum speed for local AI models on an RTX 3090.",
+  "level": "dev",
+  "start": "cd warpc",
+  "caution": "Currently being rewritten; the HTTP server was removed and it is currently a low-level library requiring development work to integrate.",
+  "alts": [
+   "vllm-project/vllm",
+   "ggml-org/llama.cpp",
+   "ollama/ollama"
+  ],
+  "packages": [],
+  "plain": "A high-speed tool to run large AI models directly on your own computer's graphics card.",
+  "tags": [
+   "private",
+   "save",
+   "code"
+  ],
+  "useFor": [
+   "Run open-weight AI models on local hardware",
+   "Achieve faster text generation speeds",
+   "Process long documents using custom graph compilation"
+  ],
+  "steps": [
+   "Clone the repository to your local machine.",
+   "Navigate to the warpc directory.",
+   "Use the provided tools and scripts to benchmark or run supported models."
+  ],
+  "repo": "tuan3w/qwen-warp",
+  "at": "2026-11-26",
+  "source": "trending"
  }
 }

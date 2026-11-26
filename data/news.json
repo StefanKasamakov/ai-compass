@@ -1,6 +1,19 @@
 {
- "updated": "2026-11-26T08:30:27.541Z",
+ "updated": "2026-11-26T14:24:15.428Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+   "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+   "date": "2026-11-26T11:37:17.000Z",
+   "summary": "Hugging Face introduces a llama.cpp benchmark dashboard specifically optimized for AMD hardware.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/67289c93ff90038d9a6e5675/tbIvyMSISXCm64WYP3atl.png"
+  },
   {
    "source": "Hugging Face",
    "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
@@ -30,6 +43,33 @@
    "big": false,
    "ai": true,
    "image": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_400x400.jpg"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Swarms, Flocks, Gangs: How to build, train, and evaluate multi-agent systems",
+   "url": "https://huggingface.co/blog/training-swarms",
+   "date": "2026-11-26T00:00:00.000Z",
+   "summary": "Hugging Face publishes guides and architectural approaches for building and evaluating multi-agent systems.",
+   "tags": [
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/training-swarms/thumbnail.png"
+  },
+  {
+   "source": "Latent Space",
+   "title": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+   "url": "https://latent.space/p/the_revolution_vs_the_renaissance_thariq_shihipar_openai/",
+   "date": "2026-11-25T22:28:01.000Z",
+   "summary": "OpenAI's Thariq Shihipar discusses how AI lowers the cost of software production while giving developers more time for creative refinement.",
+   "tags": [
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://i.ytimg.com/vi/Qe9d9dWyED0/maxresdefault.jpg"
   },
   {
    "source": "Hugging Face",
@@ -109,6 +149,19 @@
    "ai": true,
    "audience": "dev",
    "image": "https://opengraph.githubassets.com/919324041eedcaf4a424c836139814d4046b4da5b938e45291280317bc14f2e0/anthropics/claude-code/releases/tag/v2.1.332"
+  },
+  {
+   "source": "Hugging Face",
+   "title": "Hill-climbing Inkling 2 Mini inference on one RTX PRO 6000",
+   "url": "https://huggingface.co/blog/inkling-2-mini-inference-hillclimb",
+   "date": "2026-11-25T00:00:00.000Z",
+   "summary": "Hugging Face explores running mini inference workloads on single workstation GPUs.",
+   "tags": [
+    "models"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://huggingface.co/blog/assets/inkling-2-mini-inference-hillclimb/thumbnail.png"
   },
   {
    "source": "Simon Willison",
@@ -2061,57 +2114,6 @@
    "ai": true,
    "audience": "dev",
    "image": "https://latent.space/og/card/post/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/00b682fceec70ac5a963728725400ee392556ea7e0495837c1282ebea0220b21.png"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.169.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
-   "date": "2026-11-13T08:37:05Z",
-   "summary": "Codex CLI version rust-v0.169.0 has been released.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/02a97479389cf18d651dbdc5b23188e7801125d21dac1db75b043b35f474cf98/openai/codex/releases/tag/rust-v0.169.0"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Our first phase of embedded assessments",
-   "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
-   "date": "2026-11-13T08:00:00.000Z",
-   "summary": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/1KkjAzVSr4nz5D67tGCxVH/8a47206051b698db4cbdad829eff241b/embedded-assessments-neutral-023-social-revised.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "OpenAI",
-   "title": "Shield helps technicians hand off legacy portal work with OpenAI",
-   "url": "https://openai.com/business/customer-stories/shield",
-   "date": "2026-11-13T08:00:00.000Z",
-   "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.",
-   "tags": [],
-   "big": false,
-   "ai": false,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/2k2eu0bdwRQBf4AXMBdKfl/44d9a8963dee51ba8283d49a0cfa4721/og.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Latent Space",
-   "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
-   "url": "https://latent.space/p/artcraft/",
-   "date": "2026-11-13T04:17:25.000Z",
-   "summary": "ArtCraft used AI to rewrite Photoshop as an open-source software alternative.",
-   "tags": [
-    "coding"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/e61b607b-f9a5-4a6d-846b-f8792dd0a549/take-back-internet2.jpg?t=1794543381"
   }
  ]
 }
