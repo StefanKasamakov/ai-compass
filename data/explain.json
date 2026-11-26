@@ -25260,5 +25260,72 @@
   "repo": "saksham10arora-dotcom/everything-claude-codex",
   "at": "2026-11-25",
   "source": "trending"
+ },
+ "yijiejiang/kaogong-school": {
+  "cat": "memory",
+  "kind": "AI exam tutor",
+  "what": "A local-first AI tutoring system for Chinese civil service exam prep that turns study materials into practice tests and skill maps.",
+  "why": "It solves the problem of scattered study notes and generic practice questions by indexing your own files, generating targeted quizzes, and auto-grading answers. Reach for it when studying for Chinese national or provincial civil service exams using your own documents.",
+  "level": "setup",
+  "start": "`git clone https://github.com/yijiejiang/kaogong-school.git`",
+  "caution": "",
+  "alts": [
+   "Mintplex-Labs/anything-llm",
+   "infiniflow/ragflow",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "A private study helper for Chinese civil service exams that turns your notes into practice tests.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "private"
+  ],
+  "useFor": [
+   "Turn PDFs, videos, and articles into searchable study notes",
+   "Generate custom practice tests based on specific weak topics",
+   "Track civil service exam topic mastery and score trends"
+  ],
+  "steps": [
+   "Clone the repository with `git clone https://github.com/yijiejiang/kaogong-school.git` and enter the folder",
+   "Install Python and Node dependencies by running `make install`",
+   "Start the application with `make start` and open http://localhost:3000 in your browser"
+  ],
+  "repo": "yijiejiang/kaogong-school",
+  "at": "2026-11-26",
+  "source": "trending"
+ },
+ "nevertoday/xxd-pstack": {
+  "cat": "harness",
+  "kind": "pstack tutorial guide",
+  "what": "A plain-language multilingual guide and tutorial for the pstack coding agent skills framework.",
+  "why": "Helps you make your coding assistant verify its own work and provide proof before claiming a bug is fixed. Reach for it when your AI keeps saying it fixed something that is still broken.",
+  "level": "easy",
+  "start": "npx skills add backnotprop/pstack",
+  "caution": "pstack invokes multiple sub-agents and checks, which makes tasks run slower and use more text, costing more.",
+  "alts": [
+   "backnotprop/pstack",
+   "cursor/plugins",
+   "cline/cline"
+  ],
+  "packages": [],
+  "plain": "A beginner guide to make your coding assistant test its own work before saying it is done.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Learn how to use pstack with Claude Code, Cursor, and Codex",
+   "Read beginner tutorials and guides in ten different languages",
+   "Copy ready-made prompts for bug fixing, feature adding, and refactoring"
+  ],
+  "steps": [
+   "Choose your tool and install the pstack plugin using its marketplace command",
+   "Run the setup command in a new chat and choose to generate verification skills",
+   "Give the AI a task with clear completion standards and evidence requirements"
+  ],
+  "repo": "nevertoday/xxd-pstack",
+  "at": "2026-11-26",
+  "source": "trending"
  }
 }

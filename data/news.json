@@ -1,6 +1,36 @@
 {
- "updated": "2026-11-25T21:47:25.745Z",
+ "updated": "2026-11-26T08:30:27.541Z",
  "items": [
+  {
+   "source": "Hugging Face",
+   "title": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+   "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+   "date": "2026-11-26T05:05:36.000Z",
+   "summary": "Hugging Face shared tools, open datasets, and guides for fine-tuning and accelerating inference on Nvidia's Nemotron 3.5 Parse model.",
+   "tags": [
+    "models",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://cdn-uploads.huggingface.co/production/uploads/6365c3f398da81987e2753f2/zArpuP9uLsLz9luMW0K2g.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+   "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+   "date": "2026-11-26T03:36:58Z",
+   "discuss": "https://news.ycombinator.com/item?id=50651117",
+   "summary": "OpenAI lowered rate limits for its GPT-6.2 models, causing users to reach usage caps faster for Astra and Sol models.",
+   "tags": [
+    "models",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://pbs.twimg.com/profile_images/2093807917833281537/2yBgpwVV_400x400.jpg"
+  },
   {
    "source": "Hugging Face",
    "title": "Where scientists draw the line on AI agents",
@@ -11,6 +41,21 @@
    "big": false,
    "ai": false,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/F32BgZC_rj0kg99apJlto.png"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-charts 0.3a0",
+   "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+   "date": "2026-11-25T18:16:50.000Z",
+   "summary": "Datasette Charts 0.3a0 added chart annotations, enabling users or Datasette Agent to automatically label rendered charts.",
+   "tags": [
+    "coding",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "https://static.simonwillison.net/static/2026/chart-annotate.gif"
   },
   {
    "source": "Hugging Face",
@@ -460,6 +505,22 @@
    "big": false,
    "ai": false,
    "image": "https://static.simonwillison.net/static/2026/select-firefox-safari-chrome.webp",
+   "viaBrowser": true
+  },
+  {
+   "source": "Hacker News",
+   "title": "GPT-6.2 Astra is the first model to beat Googlers' code golf records",
+   "url": "https://bjin.github.io/go-codegolf-benchmark/#leaderboard",
+   "date": "2026-11-22T16:44:48Z",
+   "discuss": "https://news.ycombinator.com/item?id=50601280",
+   "summary": "OpenAI's GPT-6.2 Astra set new performance records on competitive code golf tasks.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
    "viaBrowser": true
   },
   {
@@ -2051,66 +2112,6 @@
    "big": false,
    "ai": true,
    "image": "https://beehiiv-images-production.s3.amazonaws.com/uploads/asset/file/e61b607b-f9a5-4a6d-846b-f8792dd0a549/take-back-internet2.jpg?t=1794543381"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Codex CLI rust-v0.168.0",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.168.0",
-   "date": "2026-11-13T03:54:29Z",
-   "summary": "OpenAI released update rust-v0.168.0 for its Codex CLI coding tool.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/5070529f7dde975d157de505b433eba975a0c1a22ea4fd5cac3121300489a94b/openai/codex/releases/tag/rust-v0.168.0"
-  },
-  {
-   "source": "Anthropic",
-   "url": "https://claude.com/resources/articles/building-always-on-agents",
-   "date": "2026-11-13",
-   "title": "Building always-on agents",
-   "summary": "Anthropic published a architecture guide for building always-on AI agents that operate continuously across multiple sessions. This provides developers with practical patterns for constructing long-running autonomous workflows.",
-   "tags": [
-    "agents",
-    "coding",
-    "skills"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://claude.com/resources/articles/building-always-on-agents/opengraph-image/og"
-  },
-  {
-   "source": "Simon Willison",
-   "title": "llm-gemini 0.37",
-   "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
-   "date": "2026-11-12T22:55:19.000Z",
-   "summary": "Simon Willison detailed the launch and confusing multi-tier pricing structure of Google's new Gemini 4 Hydrogen model.",
-   "tags": [
-    "models",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://static.simonwillison.net/static/2026/gemini-4-card.jpg"
-  },
-  {
-   "source": "GitHub release",
-   "title": "Claude Code v2.1.323",
-   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
-   "date": "2026-11-12T22:12:13Z",
-   "summary": "Anthropic released version 2.1.323 of Claude Code, updating its command-line coding agent tool.",
-   "tags": [
-    "coding",
-    "agents"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://opengraph.githubassets.com/a7057a66b0fb85c1be2633a3200c824cb71fe02f96225ae71f9c803e7c7f8934/anthropics/claude-code/releases/tag/v2.1.323"
   }
  ]
 }
