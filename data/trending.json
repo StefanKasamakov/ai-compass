@@ -1,9 +1,41 @@
 {
- "updated": "2026-11-26T14:24:15.428Z",
+ "updated": "2026-11-26T21:40:14.089Z",
  "items": [
   {
-   "repo": "qianyiai/kurocat",
-   "stars": 1287,
+   "repo": "obsidianmd/obsidian-skills",
+   "stars": 53964,
+   "desc": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
+   "created": "2026-01-02T21:45:11Z",
+   "topics": [
+    "agents",
+    "agentskills",
+    "bases",
+    "chatgpt"
+   ],
+   "lang": "Shell",
+   "sources": [
+    "GitHub Trending (weekly)"
+   ]
+  },
+  {
+   "repo": "alesha-pro/llm.asm",
+   "stars": 1420,
+   "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
+   "created": "2026-11-25T07:28:51Z",
+   "topics": [
+    "assembly",
+    "avx2",
+    "bare-metal",
+    "llm"
+   ],
+   "lang": "Assembly",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "qianyiai/KuroCat",
+   "stars": 1331,
    "desc": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/Linux/Android)｜开源3D桌面打字小黑猫与AI伴侣",
    "created": "2026-11-21T15:49:31Z",
    "topics": [
@@ -18,33 +50,17 @@
    ]
   },
   {
-   "repo": "wangbingnan136/agy-max",
-   "stars": 84,
-   "desc": "Antigravity Max (agy-max): All-in-one flagship workbench for Google Antigravity 2.0 - built-in agy-fast accelerator, Codex-style search/Git/goals workflow, Prism optics, context & quota dashboard, multi-account & no-TUN proxy | Antigravity 2.0 满血全能增强工作台",
-   "created": "2026-11-24T15:14:02Z",
+   "repo": "DA3M0/Cheetah",
+   "stars": 60,
+   "desc": "An ultra-lean local LLM inference engine. Native Safetensors support, dual CPU/Vulkan backends, and a modular operator ecosystem with custom Shader extensions. Built for Agents and edge computing.",
+   "created": "2026-10-30T11:12:03Z",
    "topics": [
-    "agy",
-    "ai-coding",
-    "antigravity",
-    "codex"
+    "agent-backend",
+    "agentic-ai",
+    "api-gateway",
+    "llm"
    ],
-   "lang": "JavaScript",
-   "sources": [
-    "new on GitHub"
-   ]
-  },
-  {
-   "repo": "tuan3w/qwen-warp",
-   "stars": 51,
-   "desc": "Fast Qwen3.8-27B for one RTX 3090. 200k context, 100+ tok/s. Custom CUDA decode engine, OpenAI-compatible API.",
-   "created": "2026-11-01T15:21:04Z",
-   "topics": [
-    "autoresearch",
-    "cuda",
-    "deltanet",
-    "int4"
-   ],
-   "lang": "Python",
+   "lang": "Rust",
    "sources": [
     "new on GitHub"
    ]

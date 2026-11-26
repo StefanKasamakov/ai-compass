@@ -1,6 +1,22 @@
 {
- "updated": "2026-11-26T14:24:15.428Z",
+ "updated": "2026-11-26T21:40:14.089Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "AMD Specific Patches for Llama.cpp",
+   "url": "https://devnull.land/amd-specific-llama-cpp",
+   "date": "2026-11-26T17:11:29Z",
+   "discuss": "https://news.ycombinator.com/item?id=50657265",
+   "summary": "Developers released specialized optimization patches for Llama.cpp to improve model inference speeds on AMD hardware.",
+   "tags": [
+    "models",
+    "coding"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "Hugging Face",
    "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
@@ -13,6 +29,21 @@
    "big": false,
    "ai": true,
    "image": "https://cdn-uploads.huggingface.co/production/uploads/67289c93ff90038d9a6e5675/tbIvyMSISXCm64WYP3atl.png"
+  },
+  {
+   "source": "Hacker News",
+   "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+   "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+   "date": "2026-11-26T09:44:23Z",
+   "discuss": "https://news.ycombinator.com/item?id=50653477",
+   "summary": "Community discussions revealed Google is creating Model Context Protocol servers for its ecosystem, though early implementations like Gmail lack sending capabilities.",
+   "tags": [
+    "mcp",
+    "agents"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://techstackups.com/img/articles/google-workspace-agent-api/cover.jpg"
   },
   {
    "source": "Hugging Face",
@@ -2086,34 +2117,6 @@
    "ai": true,
    "image": "https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/362807/NEW_claude_status_banner-183284a4-558d-4835-b3a4-a601e0a4daa8.png",
    "viaBrowser": true
-  },
-  {
-   "source": "Hacker News",
-   "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-   "url": "https://status.claude.com/incidents/nn11wk485zfn",
-   "date": "2026-11-13T10:18:13Z",
-   "discuss": "https://news.ycombinator.com/item?id=50481187",
-   "summary": "Users experienced elevated error rates across claude.ai, Claude Code, and Anthropic's developer platform.",
-   "tags": [
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://dka575ofm4ao0.cloudfront.net/assets/logos/favicon-2b86ed00cfa6258307d4a3d0c482fd733c7973f82de213143b24fc062c540367.png"
-  },
-  {
-   "source": "Latent Space",
-   "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
-   "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
-   "date": "2026-11-13T09:04:13.000Z",
-   "summary": "NVIDIA CEO Jensen Huang announced his resignation after 33 years leading the company, with CFO Colette Kress taking over as interim CEO.",
-   "tags": [
-    "business"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://latent.space/og/card/post/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/00b682fceec70ac5a963728725400ee392556ea7e0495837c1282ebea0220b21.png"
   }
  ]
 }

@@ -25425,5 +25425,138 @@
   "repo": "tuan3w/qwen-warp",
   "at": "2026-11-26",
   "source": "trending"
+ },
+ "obsidianmd/obsidian-skills": {
+  "cat": "harness",
+  "kind": "Obsidian agent skills",
+  "what": "A set of official skills that teach AI assistants to read, write, and manage Obsidian notes, databases, and visual canvas files.",
+  "why": "Reach for this pack when you want your AI coding or chat assistant to interact directly with your Obsidian vault without damaging links or custom syntax. It automates note formatting, mindmap creation, vault syncing, and web page clipping.",
+  "level": "setup",
+  "start": "`claude plugin marketplace add obsidianmd/obsidian-skills`",
+  "caution": "",
+  "alts": [
+   "addyosmani/agent-skills",
+   "google/skills",
+   "scenario-labs/skills"
+  ],
+  "packages": [],
+  "plain": "Teaches your digital assistant how to read and edit your Obsidian notes, charts, and file vaults.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "supercharge"
+  ],
+  "useFor": [
+   "Create and edit Obsidian notes with links and metadata properties",
+   "Build interactive visual mindmaps and canvas layouts using simple commands",
+   "Turn web pages into clean Markdown notes inside your vault"
+  ],
+  "steps": [
+   "Add the skill plugin to your favorite AI assistant tool or plugin directory.",
+   "Or run `npx skills add https://github.com/obsidianmd/obsidian-skills` in your terminal.",
+   "Prompt your assistant to read, update, or create notes inside your Obsidian vault."
+  ],
+  "repo": "obsidianmd/obsidian-skills",
+  "at": "2026-11-26",
+  "source": "trending"
+ },
+ "alesha-pro/llm.asm": {
+  "cat": "local",
+  "kind": "Assembly AI engine",
+  "what": "Three tiny, zero-dependency x86-64 assembly programs for running Qwen models, booting a bare-metal AI operating system, and training a small GPT model.",
+  "why": "It eliminates operating system overhead and standard programming runtimes to achieve extreme efficiency on CPUs. Reach for it when studying low-level optimization for neural networks or running language models directly on bare-metal hardware.",
+  "level": "setup",
+  "start": "make all",
+  "caution": "",
+  "alts": [
+   "ggml-org/llama.cpp",
+   "ollama/ollama"
+  ],
+  "packages": [],
+  "plain": "A set of tiny programs written in low-level computer code for running AI models without standard software tools.",
+  "tags": [
+   "private",
+   "save"
+  ],
+  "useFor": [
+   "Run Qwen models on CPU using tiny assembly binaries",
+   "Boot a bare-metal operating system that runs AI models directly",
+   "Train a small GPT model from scratch without Python frameworks"
+  ],
+  "steps": [
+   "Clone the repository and compile all components using `make all`.",
+   "Export model weights using `python3 scripts/export_weights.py --model-dir models/qwen3-0.6b-bf16 --out models/qwen3-0.6b-q8_0.asmbin --scale-dtype fp16`.",
+   "Start interactive chat mode using `./build/asm-llm -m models/qwen3-0.6b-q8_0.asmbin --chat -t 16`."
+  ],
+  "repo": "alesha-pro/llm.asm",
+  "at": "2026-11-26",
+  "source": "trending"
+ },
+ "qianyiai/KuroCat": {
+  "cat": "coding",
+  "kind": "Desktop Pet & Assistant",
+  "what": "An open-source 3D/2D desktop typing cat and whale companion that visualizes keystrokes and integrates with coding assistants.",
+  "why": "Brings an interactive animated pet to your desktop that reacts to your typing, protects passwords, and links with AI coding tools like Claude Code and Codex.",
+  "level": "easy",
+  "start": "brew install --cask qianyiai/tap/kurocat",
+  "caution": "Unofficial third-party clones may distribute malware; ensure downloads are strictly from the official repository or kurocat.org.",
+  "alts": [
+   "anthropic/claude-code",
+   "openai/codex"
+  ],
+  "packages": [],
+  "plain": "A cute animated cat on your screen that moves when you type and connects to coding assistants.",
+  "tags": [
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Visualize keyboard and mouse activity on screen",
+   "Interact with AI coding assistants visually",
+   "Hide passwords automatically when typing sensitive data"
+  ],
+  "steps": [
+   "Download and install KuroCat for your operating system.",
+   "Launch the application to display the desktop pet.",
+   "Enable the MCP extension in the menu to connect with your coding assistant."
+  ],
+  "repo": "qianyiai/KuroCat",
+  "at": "2026-11-26",
+  "source": "trending"
+ },
+ "DA3M0/Cheetah": {
+  "cat": "local",
+  "kind": "local LLM engine",
+  "what": "An ultra-lean local language-model CLI and OpenAI-compatible API gateway written in Rust and C.",
+  "why": "Runs AI models locally with tier-based memory controls and custom memory-saving options, useful when you want to run models without sending data to cloud services.",
+  "level": "setup",
+  "start": "cargo build --release",
+  "caution": "Requires compiling source code and preparing model files manually; no GGUF support.",
+  "alts": [
+   "ollama/ollama",
+   "ggml-org/llama.cpp",
+   "vllm-project/vllm"
+  ],
+  "packages": [],
+  "plain": "An offline AI runner that operates entirely on your own computer without using cloud services.",
+  "tags": [
+   "private",
+   "code",
+   "knowledge"
+  ],
+  "useFor": [
+   "Run small AI models locally",
+   "Serve local models via an OpenAI-compatible API",
+   "Chat with AI models in the terminal"
+  ],
+  "steps": [
+   "Install the Rust toolchain, a C compiler, and Git on your system.",
+   "Clone the repository and build the engine using `cargo build --release`.",
+   "Prepare a Hugging Face model directory using the initialization command.",
+   "Run the local chat interface or start the API server with your prepared model."
+  ],
+  "repo": "DA3M0/Cheetah",
+  "at": "2026-11-26",
+  "source": "trending"
  }
 }
