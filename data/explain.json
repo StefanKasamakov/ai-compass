@@ -25662,5 +25662,41 @@
   "repo": "erkamyaman/unslop-anything",
   "at": "2026-11-27",
   "source": "trending"
+ },
+ "nexu-io/opengame": {
+  "cat": "harness",
+  "kind": "AI game studio harness",
+  "what": "OpenGame extends AI coding agents with game templates and workflow tools to generate, remix, and publish 3D and web games.",
+  "why": "It gives coding assistants 25 ready-to-play game templates and specialized tools for rapid game development. Reach for it when you want to prompt your local AI agent to build or re-style 3D and browser mini-games.",
+  "level": "setup",
+  "start": "npx skills add https://github.com/nexu-io/opengame/tree/skills --skill opengame",
+  "caution": "Includes promotional and referral links to OpenDesign Go subscription services.",
+  "alts": [
+   "vercel-labs/skills",
+   "anthropics/claude-code",
+   "OpenHands/OpenHands"
+  ],
+  "packages": [
+   "skills"
+  ],
+  "plain": "This tool lets AI helpers build and publish playable 3D and phone games based on your plain text prompts.",
+  "tags": [
+   "apps",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Remix existing pre-built game templates into custom 3D or mobile titles",
+   "Generate character art, gameplay logic, and levels using AI assistants",
+   "Export browser mini-games for web platforms like TikTok and WeChat"
+  ],
+  "steps": [
+   "Add the OpenGame skill to your assistant using `npx skills add https://github.com/nexu-io/opengame/tree/skills --skill opengame`.",
+   "Clone the repository with Git LFS and install dependencies using `npm ci`.",
+   "Build and launch the local Game Studio using `npm start`."
+  ],
+  "repo": "nexu-io/opengame",
+  "at": "2026-11-27",
+  "source": "trending"
  }
 }

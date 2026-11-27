@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T14:17:34.556Z",
+ "updated": "2026-11-27T21:25:09.279Z",
  "window": "last 30 days",
  "repos": {
   "ruvnet/ruflo": {
@@ -935,22 +935,6 @@
     "npm:openqodex"
    ]
   },
-  "alibaba/open-code-review": {
-   "npm": 836468,
-   "pypi": 0,
-   "total": 836468,
-   "packages": [
-    "npm:@alibaba-group/open-code-review"
-   ]
-  },
-  "VinkyDev/vibestart": {
-   "npm": 1608,
-   "pypi": 0,
-   "total": 1608,
-   "packages": [
-    "npm:vibestart-cli"
-   ]
-  },
   "huggingface/transformers": {
    "npm": 0,
    "pypi": 122332657,
@@ -998,15 +982,6 @@
    "total": 2537,
    "packages": [
     "npm:@moritzwilksch/diffle"
-   ]
-  },
-  "Sev7eEn7/dsh-sieve": {
-   "npm": 1240,
-   "pypi": 0,
-   "total": 1240,
-   "packages": [
-    "npm:dsh-sieve",
-    "npm:dsh-sieve-web"
    ]
   },
   "crow-hq/llm-wiki-v2": {
@@ -1081,12 +1056,37 @@
     "npm:create-mesh-avatar-studio"
    ]
   },
+  "alchaincyf/huashu-motion": {
+   "npm": 7068,
+   "pypi": 0,
+   "total": 7068,
+   "packages": [
+    "npm:huashu-motion"
+   ]
+  },
+  "sickn33/agentic-awesome-skills": {
+   "npm": 18253,
+   "pypi": 0,
+   "total": 18253,
+   "packages": [
+    "npm:agentic-awesome-skills"
+   ]
+  },
   "kanaworksai-hue/audio-studio-mcp": {
    "npm": 0,
    "pypi": 1570,
    "total": 1570,
    "packages": [
     "pypi:audio-studio-mcp"
+   ]
+  },
+  "omnara-ai/omnara": {
+   "npm": 13308,
+   "pypi": 0,
+   "total": 13308,
+   "packages": [
+    "npm:@omnara/sdk",
+    "npm:omnara"
    ]
   },
   "OpenBMB/VoxCPM": {
@@ -1156,6 +1156,14 @@
     "npm:@outcrawl/scout"
    ]
   },
+  "ZiChuanLan/agent-purge": {
+   "npm": 8945,
+   "pypi": 0,
+   "total": 8945,
+   "packages": [
+    "npm:agent-purge"
+   ]
+  },
   "ComputerUseAgent/AutoCua": {
    "npm": 0,
    "pypi": 1451,
@@ -1163,6 +1171,14 @@
    "packages": [
     "pypi:AutoCua",
     "pypi:autocua"
+   ]
+  },
+  "qybaihe/bla": {
+   "npm": 44085,
+   "pypi": 0,
+   "total": 44085,
+   "packages": [
+    "npm:bla-agents"
    ]
   },
   "AstrBotDevs/AstrBot": {
@@ -1435,6 +1451,40 @@
     "npm:modern-web-guidance"
    ]
   },
+  "vercel-labs/ui": {
+   "npm": 1553183,
+   "pypi": 0,
+   "total": 1553183,
+   "packages": [
+    "npm:@ui-sdk/core",
+    "npm:@ui-sdk/react"
+   ]
+  },
+  "Parcha-ai/agentrun": {
+   "npm": 8560,
+   "pypi": 0,
+   "total": 8560,
+   "packages": [
+    "npm:@parcha/agentrun"
+   ]
+  },
+  "ag-ui-protocol/ag-ui": {
+   "npm": 27811014,
+   "pypi": 0,
+   "total": 27811014,
+   "packages": [
+    "npm:@ag-ui/core",
+    "npm:create-ag-ui-app"
+   ]
+  },
+  "Tencent/LoopForge": {
+   "npm": 1363,
+   "pypi": 0,
+   "total": 1363,
+   "packages": [
+    "npm:loopforge-cli"
+   ]
+  },
   "NVIDIA/SkillEvaluator": {
    "npm": 0,
    "pypi": 13027,
@@ -1486,6 +1536,14 @@
     "pypi:tamserve"
    ]
   },
+  "oriliz/agent-crop": {
+   "npm": 2162,
+   "pypi": 0,
+   "total": 2162,
+   "packages": [
+    "npm:agent-crop-dsh"
+   ]
+  },
   "Tracer-Cloud/opensre": {
    "npm": 0,
    "pypi": 206,
@@ -1502,6 +1560,16 @@
     "pypi:autoclip-mcp"
    ]
   },
+  "XinaTian/MROffice": {
+   "npm": 784,
+   "pypi": 0,
+   "total": 784,
+   "packages": [
+    "npm:mroffice-mcp",
+    "npm:mroffice-docs",
+    "npm:mroffice-core"
+   ]
+  },
   "sous-labs/songe": {
    "npm": 0,
    "pypi": 1452,
@@ -1516,6 +1584,30 @@
    "total": 2818,
    "packages": [
     "npm:antigravity-plugin-context-mode"
+   ]
+  },
+  "EL4CTEO/fast-anything": {
+   "npm": 4736,
+   "pypi": 0,
+   "total": 4736,
+   "packages": [
+    "npm:@el4cteo/fast-anything"
+   ]
+  },
+  "ngocanhnckh/renderlint": {
+   "npm": 441,
+   "pypi": 0,
+   "total": 441,
+   "packages": [
+    "npm:@yitec/renderlint"
+   ]
+  },
+  "erkamyaman/unslop-anything": {
+   "npm": 593,
+   "pypi": 0,
+   "total": 593,
+   "packages": [
+    "npm:unslop-anything"
    ]
   }
  }
