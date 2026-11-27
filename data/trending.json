@@ -1,48 +1,32 @@
 {
- "updated": "2026-11-26T21:40:14.089Z",
+ "updated": "2026-11-27T08:44:29.022Z",
  "items": [
   {
-   "repo": "obsidianmd/obsidian-skills",
-   "stars": 53964,
-   "desc": "Teach your agent to use Obsidian and open formats including Markdown, Bases, JSON Canvas.",
-   "created": "2026-01-02T21:45:11Z",
+   "repo": "WhiteBr1ck/agy-powertools",
+   "stars": 1644,
+   "desc": "Antigravity 2.0 原生界面增强插件：界面汉化、类 Codex 紧凑排版与阶段汇报、上下文与缓存监控、会话分支及本地用量面板",
+   "created": "2026-11-16T21:35:31Z",
    "topics": [
-    "agents",
-    "agentskills",
-    "bases",
-    "chatgpt"
+    "antigravity",
+    "antigravity-plugin",
+    "codex",
+    "telemetry"
    ],
-   "lang": "Shell",
-   "sources": [
-    "GitHub Trending (weekly)"
-   ]
-  },
-  {
-   "repo": "alesha-pro/llm.asm",
-   "stars": 1420,
-   "desc": "Qwen3-0.6B inference (12 KB), bare-metal bootable OS (22 KB), and from-scratch Mini-GPT trainer with live Braille TUI (32 KB) in 100% pure x86-64 NASM assembly. Zero C, zero libc, zero dependencies.",
-   "created": "2026-11-25T07:28:51Z",
-   "topics": [
-    "assembly",
-    "avx2",
-    "bare-metal",
-    "llm"
-   ],
-   "lang": "Assembly",
+   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]
   },
   {
-   "repo": "qianyiai/KuroCat",
-   "stars": 1331,
-   "desc": "KuroCat — Free open-source 3D/2D desktop typing cat & AI coding companion (Bongo Cat alternative · Tauri v2 + Rust + MCP · Claude/Codex/DeepSeek/OBS · Win/Mac/Linux/Android)｜开源3D桌面打字小黑猫与AI伴侣",
-   "created": "2026-11-21T15:49:31Z",
+   "repo": "nexu-io/opengame",
+   "stars": 1577,
+   "desc": "The Super Game Agent — the Unity & Unreal for AI agents, with 100+ viral games to remix. Turn 20+ coding agents (Claude Code, Codex, DeepSeek, etc.) into a full-stack AI game studio. Build and publish 3D & mini-games to WeChat, Douyin, TikTok, Telegram, itch.io, and more.",
+   "created": "2026-11-25T10:35:45Z",
    "topics": [
-    "3d",
-    "ai-companion",
-    "android",
-    "bongo-cat"
+    "agent-skills",
+    "ai-agents",
+    "ai-game-generator",
+    "claude-code"
    ],
    "lang": "TypeScript",
    "sources": [
@@ -50,17 +34,33 @@
    ]
   },
   {
-   "repo": "DA3M0/Cheetah",
-   "stars": 60,
-   "desc": "An ultra-lean local LLM inference engine. Native Safetensors support, dual CPU/Vulkan backends, and a modular operator ecosystem with custom Shader extensions. Built for Agents and edge computing.",
-   "created": "2026-10-30T11:12:03Z",
+   "repo": "ScottDuncanAI/PID-to-Knowledge-Graph",
+   "stars": 439,
+   "desc": "P&ID to Knowledge Graph: a Claude skill that turns P&ID PDFs (digital or scanned) into a process knowledge graph of flow, instruments and control loops.",
+   "created": "2026-11-08T18:58:21Z",
    "topics": [
-    "agent-backend",
-    "agentic-ai",
-    "api-gateway",
-    "llm"
+    "chemical-engineering",
+    "claude-skills",
+    "isa-5-1",
+    "knowledge-graph"
    ],
-   "lang": "Rust",
+   "lang": "Python",
+   "sources": [
+    "new on GitHub"
+   ]
+  },
+  {
+   "repo": "erkamyaman/unslop-anything",
+   "stars": 389,
+   "desc": "Your app looks AI-generated. Vincent Van Gogh noticed. An agent skill that finds and fixes AI-looking UI and UX in mobile apps, web apps, and websites.",
+   "created": "2026-11-09T19:42:33Z",
+   "topics": [
+    "accessibility",
+    "agent-skills",
+    "agent-skills-tools",
+    "agents"
+   ],
+   "lang": "JavaScript",
    "sources": [
     "new on GitHub"
    ]

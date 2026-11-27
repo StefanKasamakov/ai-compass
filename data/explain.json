@@ -25558,5 +25558,109 @@
   "repo": "DA3M0/Cheetah",
   "at": "2026-11-26",
   "source": "trending"
+ },
+ "WhiteBr1ck/agy-powertools": {
+  "cat": "harness",
+  "kind": "Antigravity UI plugin",
+  "what": "A native UI enhancement plugin for Antigravity 2.0 that adds Chinese translation, context tracking, usage monitoring, compact layout, and session branching.",
+  "why": "Antigravity users who need localized menus or detailed context metrics often struggle with default settings. Reach for this plugin to monitor context window burn, track model quotas, edit prompt history, and streamline sidebar layouts.",
+  "level": "setup",
+  "start": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1",
+  "caution": "The optional multi-account switching feature manages consumer login accounts, which may break provider terms of service and risk accounts.",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "mksglu/context-mode",
+   "ccusage/ccusage"
+  ],
+  "packages": [],
+  "plain": "An add-on for the Antigravity assistant that adds Chinese language support, usage graphs, and layout controls.",
+  "tags": [
+   "supercharge",
+   "monitor",
+   "save"
+  ],
+  "useFor": [
+   "Translate Antigravity 2.0 interface into Chinese",
+   "Monitor real-time context usage and remaining model quotas",
+   "Branch conversations and edit sent prompt messages"
+  ],
+  "steps": [
+   "Install and launch Antigravity at least once on your computer.",
+   "Download and extract the latest release ZIP from GitHub.",
+   "Run `powershell -NoProfile -ExecutionPolicy Bypass -File .\\install.ps1` on Windows or `sh ./install.sh` on macOS/Linux.",
+   "Restart Antigravity to access the Powertools panel in the sidebar."
+  ],
+  "repo": "WhiteBr1ck/agy-powertools",
+  "at": "2026-11-27",
+  "source": "trending"
+ },
+ "ScottDuncanAI/PID-to-Knowledge-Graph": {
+  "cat": "harness",
+  "kind": "Claude Code skill",
+  "what": "A Claude Code skill that reads piping and instrumentation diagrams from PDFs and converts them into a process knowledge graph of equipment, flows, and control loops.",
+  "why": "Manually tracing complex engineering drawings to build plant context is tedious and prone to errors. Reach for this when you need an AI-queryable graph, DuckDB database, or DEXPI XML file extracted automatically from digital or scanned P&IDs.",
+  "level": "setup",
+  "start": "Copy the skills/pid-to-kg folder into your .claude/skills/ directory",
+  "caution": "",
+  "alts": [
+   "anthropics/claude-code",
+   "obsidianmd/obsidian-skills"
+  ],
+  "packages": [],
+  "plain": "A tool for an AI helper [Claude Code] that reads factory drawing PDFs and maps out equipment and pipes.",
+  "tags": [
+   "knowledge",
+   "docs",
+   "automate"
+  ],
+  "useFor": [
+   "Convert P&ID PDFs into structured knowledge graphs",
+   "Query process equipment upstream and downstream relationships",
+   "Export engineering diagrams into DEXPI XML and DuckDB"
+  ],
+  "steps": [
+   "Download the ZIP file from GitHub and extract the contents.",
+   "Copy the `pid-to-kg` folder into your hidden `.claude/skills/` directory.",
+   "Open your project folder in Claude Code and ask Claude to convert your P&ID PDF."
+  ],
+  "repo": "ScottDuncanAI/PID-to-Knowledge-Graph",
+  "at": "2026-11-27",
+  "source": "trending"
+ },
+ "erkamyaman/unslop-anything": {
+  "cat": "harness",
+  "kind": "UI cleanup agent skill",
+  "what": "A tool for AI coding assistants that detects and redesigns generic, AI-looking visual elements and bad interface patterns in apps.",
+  "why": "AI coding assistants often generate repetitive user interfaces filled with purple gradients, fake data counters, and broken navigation. Reach for this tool to run automated visual design and user experience reviews on your app code.",
+  "level": "setup",
+  "start": "npx unslop-anything",
+  "caution": "Contains affiliate or sponsored links for CodeRabbit.",
+  "alts": [
+   "addyosmani/agent-skills",
+   "anthropics/claude-code",
+   "felipebasurto/unslop-ui"
+  ],
+  "packages": [
+   "unslop-anything"
+  ],
+  "plain": "An add-on for coding helpers that cleans up generic and hard-to-use screens in your software.",
+  "tags": [
+   "code",
+   "apps",
+   "supercharge"
+  ],
+  "useFor": [
+   "Audit app code for generic AI design patterns",
+   "Redesign web and mobile screens automatically with AI",
+   "Fix user experience and interface navigation flaws"
+  ],
+  "steps": [
+   "Run `npx unslop-anything` in your project folder.",
+   "Open your AI coding assistant like Claude Code or Cursor.",
+   "Ask your AI assistant to review your app with unslop-anything."
+  ],
+  "repo": "erkamyaman/unslop-anything",
+  "at": "2026-11-27",
+  "source": "trending"
  }
 }
