@@ -25698,5 +25698,308 @@
   "repo": "nexu-io/opengame",
   "at": "2026-11-27",
   "source": "trending"
+ },
+ "alexeyw/lot-map": {
+  "cat": "harness",
+  "kind": "Claude Code visual mod",
+  "what": "Lot Map is a local plugin for Claude Code that displays a live visual map of tool calls, model steps, subagents, and memory usage beside your chat session.",
+  "why": "It eliminates the need to read long terminal text output by providing a live graphical diagram of where your agent is working. Reach for it when you want to visually track file edits, shell commands, context window growth, and subagent activity.",
+  "level": "easy",
+  "start": "/plugin install lot-map --marketplace alexeyw/lot-map",
+  "caution": "",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "anthropics/claude-code",
+   "mksglu/context-mode"
+  ],
+  "packages": [],
+  "plain": "Shows a live picture next to your AI coding assistant so you can see which tools it uses.",
+  "tags": [
+   "supercharge",
+   "monitor",
+   "code"
+  ],
+  "useFor": [
+   "Visualize tool calls and subagent activity in a real-time side map",
+   "Track memory reads, file edits, and shell commands during Claude Code sessions",
+   "Monitor context window fill percentage and model switches live"
+  ],
+  "steps": [
+   "Install the plugin inside Claude Code with `/plugin install lot-map --marketplace alexeyw/lot-map`.",
+   "Alternatively, run `claude plugin install lot-map@lot-map` from your shell.",
+   "Start a Claude Code session to automatically open the live visualization pane."
+  ],
+  "repo": "alexeyw/lot-map",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "danielwh2/sprite-stacking": {
+  "cat": "harness",
+  "kind": "pixel art agent skill",
+  "what": "An agent skill that carves four orthographic 2D pixel art views into layered slices to create rotatable fake-3D sprites.",
+  "why": "Game developers and pixel artists wanting rotating 3D props often struggle with 3D modeling pipelines. This tool lets an AI agent generate or accept 2D sheets and turn them into stacked 3D sprites with a turntable viewer.",
+  "level": "setup",
+  "start": "npx skills add danielwh2/sprite-stacking",
+  "caution": "",
+  "alts": [
+   "vercel-labs/skills",
+   "google/skills",
+   "addyosmani/agent-skills"
+  ],
+  "packages": [
+   "pillow",
+   "numpy"
+  ],
+  "plain": "Turns four flat pixel art drawings into a spinning 3D object for games.",
+  "tags": [
+   "media",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Turn 4-view pixel drawings into layered 3D game props",
+   "Preview rotatable sprites in an interactive HTML diorama",
+   "Export 16-direction baked sprite sheets for games"
+  ],
+  "steps": [
+   "Install the skill into your agent using `npx skills add danielwh2/sprite-stacking`.",
+   "Install Python requirements with `pip install pillow numpy`.",
+   "Ask your coding agent to make a rotatable pixel art asset or run the slicer script directly."
+  ],
+  "repo": "danielwh2/sprite-stacking",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "fahniazz/claude-shorts-skills": {
+  "cat": "harness",
+  "kind": "Claude Code animation skills",
+  "what": "A set of Claude Code skills for creating 3D animated short videos, green-screen captions, and Minecraft story videos using three.js and Remotion.",
+  "why": "Reach for this to produce vertical short videos for YouTube Shorts or TikTok programmatically using Claude Code without relying on cloud AI video generators. It automates 3D character staging, script formulas, audio mixing, and frame rendering on your computer.",
+  "level": "setup",
+  "start": "cp -r skills/* ~/.claude/skills/",
+  "caution": "Built and tested primarily on Windows 11 (macOS setup steps are untested). Requires installing several local developer tools like Node.js, Python, ffmpeg, and Remotion.",
+  "alts": [
+   "anthropics/claude-code",
+   "howseen-ai/claude-motion-design",
+   "charlie947/motion-graphics-skills"
+  ],
+  "packages": [],
+  "plain": "A set of add-ons for an AI coding helper that generate 3D cartoon videos and captions on your computer.",
+  "tags": [
+   "media",
+   "supercharge",
+   "automate"
+  ],
+  "useFor": [
+   "Create 3D animated cartoon short videos",
+   "Generate word-synced green-screen caption clips",
+   "Build code-driven Minecraft story videos"
+  ],
+  "steps": [
+   "Copy the skill folders into your local `~/.claude/skills/` directory.",
+   "Install required dependencies including Node.js 20+, Python 3, ffmpeg, and Remotion.",
+   "Ask Claude Code in terminal to write and render a video using your chosen skill."
+  ],
+  "repo": "fahniazz/claude-shorts-skills",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "TubeLabHQ/youtube-research-skills": {
+  "cat": "harness",
+  "kind": "YouTube research skills",
+  "what": "AI agent skills for YouTube research, including competitor analysis, niche finding, and thumbnail concepts.",
+  "why": "Helps you analyze YouTube data and build content strategies using your coding agent and TubeLab.",
+  "level": "setup",
+  "start": "npx skills add TubeLabHQ/youtube-research-skills",
+  "caution": "Requires a TubeLab account and credit usage for searches.",
+  "alts": [],
+  "packages": [],
+  "plain": "Adds specialized YouTube research tools to your coding assistant or chat app.",
+  "tags": [
+   "research",
+   "automate",
+   "media"
+  ],
+  "useFor": [
+   "Find breakout niches and cash cows",
+   "Analyze video scripts and transcripts",
+   "Research competitor thumbnails and titles"
+  ],
+  "steps": [
+   "Run the install command in your terminal",
+   "Connect the TubeLab [API endpoint (web address where your app talks to other software)]",
+   "Use the installed skills inside your agent or chat app"
+  ],
+  "repo": "TubeLabHQ/youtube-research-skills",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "Reyes196/deepseek-r1-ollama": {
+  "cat": "local",
+  "kind": "Windows desktop app",
+  "what": "A pre-configured Windows application that provides a graphical interface to run DeepSeek R1 models locally.",
+  "why": "It gives Windows users an installer and visual interface for running DeepSeek R1 models on their own computer without manual setup. Reach for it if you want an offline desktop chat interface for DeepSeek models on Windows.",
+  "level": "easy",
+  "start": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"irm https://simpol.info/get/deepseek-r1-ollama | iex\"",
+  "caution": "This repository instructs users to run arbitrary remote PowerShell scripts and download binary executables from unverified third-party web domains outside of GitHub.",
+  "alts": [
+   "ollama/ollama",
+   "janhq/jan",
+   "open-webui/open-webui"
+  ],
+  "packages": [],
+  "plain": "A Windows desktop program for talking to artificial intelligence models on your own computer without using the internet.",
+  "tags": [
+   "private",
+   "knowledge",
+   "code"
+  ],
+  "useFor": [
+   "Run DeepSeek R1 models directly on a Windows PC",
+   "Chat with an offline AI model using a visual interface",
+   "Offload AI model workload to your graphics card"
+  ],
+  "steps": [
+   "Download the setup executable or portable archive from the project releases",
+   "Extract the zip archive or run the installer on Windows 10 or 11",
+   "Launch `DeepseekR1Ollama-Setup.exe` to open the local interface"
+  ],
+  "repo": "Reyes196/deepseek-r1-ollama",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "khalilur14103026/crypto-accumulation-scanner": {
+  "cat": "builders",
+  "kind": "Crypto market scanner",
+  "what": "A community-built market scanner that detects crypto coins forming flat accumulation bases and sends ranked shortlists to Telegram or Discord.",
+  "why": "Staring at crypto charts continuously is tedious. Reach for this tool when you want automated, multi-factor watchlist alerts delivered directly to your chat app.",
+  "level": "setup",
+  "start": "",
+  "caution": "Provides automated technical scanning alerts, not financial advice; crypto trading carries significant financial risk.",
+  "alts": [
+   "Jakeschincariol/day-trader-skill",
+   "tradermonty/claude-trading-skills",
+   "Jakeschincariol/trader-skill"
+  ],
+  "packages": [],
+  "plain": "A tool that automatically monitors cryptocurrency market trends and sends alerts about potential price setups to your chat app.",
+  "tags": [
+   "automate",
+   "research"
+  ],
+  "useFor": [
+   "Scan cryptocurrency markets for quiet accumulation chart setups",
+   "Receive automated crypto watchlist shortlists in Telegram or Discord",
+   "Review detailed factor readouts for specific cryptocurrency coins"
+  ],
+  "steps": [
+   "Download or install the project files on Windows 10 or 11.",
+   "Add your Telegram bot token and chat ID to the single configuration file.",
+   "Launch the scanner and use commands like `/scan` in Telegram to receive shortlists."
+  ],
+  "repo": "khalilur14103026/crypto-accumulation-scanner",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "Niruthiya04/echomind-voice-assistant": {
+  "cat": "memory",
+  "kind": "Voice memory assistant",
+  "what": "EchoMind is a local-first desktop application that transcribes audio in real time and provides a private searchable memory store for your spoken words.",
+  "why": "It helps you retain and retrieve key details from spoken notes or conversations without sending audio to cloud servers. Reach for it when you need an on-device assistant to transcribe, store, and answer questions about your past speech.",
+  "level": "setup",
+  "start": "",
+  "caution": "",
+  "alts": [
+   "openai/whisper",
+   "SYSTRAN/faster-whisper",
+   "janhq/jan"
+  ],
+  "packages": [],
+  "plain": "This desktop app listens to your microphone, writes down your speech, and lets you search your spoken notes offline.",
+  "tags": [
+   "knowledge",
+   "private",
+   "media"
+  ],
+  "useFor": [
+   "Transcribe spoken audio in real time using local models",
+   "Search past transcripts using natural language questions",
+   "Store voice notes locally without sending audio to cloud servers"
+  ],
+  "steps": [
+   "Install Python 3.12 or higher on your system",
+   "Start a recording session in your web browser using your microphone",
+   "Ask questions in the chat interface to query your recorded transcripts"
+  ],
+  "repo": "Niruthiya04/echomind-voice-assistant",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "MathewJames044/ai-api-proxy": {
+  "cat": "gateway",
+  "kind": "AI proxy router",
+  "what": "AI API Proxy is a desktop gateway utility that routes and standardizes requests across multiple AI model providers behind one single interface.",
+  "why": "It eliminates the hassle of managing separate provider integrations and manual key rotation. Reach for it when you want automatic failovers, usage tracking, and model substitution without updating your application code.",
+  "level": "setup",
+  "start": "",
+  "caution": "Using tools that pool free tiers or bypass standard pricing may break provider terms of service and lead to account suspension.",
+  "alts": [
+   "BerriAI/litellm",
+   "Portkey-AI/gateway",
+   "songquanpeng/one-api"
+  ],
+  "packages": [],
+  "plain": "A program that routes your requests to different artificial intelligence providers through one single connection point.",
+  "tags": [
+   "connect",
+   "save"
+  ],
+  "useFor": [
+   "Route AI requests to multiple providers through a single endpoint",
+   "Set up automatic failover when an AI provider is unavailable",
+   "Rotate API keys and monitor usage across different providers"
+  ],
+  "steps": [
+   "Download and run the desktop app installer on Windows.",
+   "Configure your AI model providers and credentials in the configuration file.",
+   "Point your client applications to the local proxy address."
+  ],
+  "repo": "MathewJames044/ai-api-proxy",
+  "at": "2026-11-28",
+  "source": "trending"
+ },
+ "howznguyen/nookdeck": {
+  "cat": "harness",
+  "kind": "Mobile macro touch panel",
+  "what": "Nookdeck turns an old phone or tablet into a touchscreen control panel and system dashboard for your computer.",
+  "why": "It gives you a free alternative to physical macro pads for triggering computer shortcuts, controlling smart devices, and approving AI prompts remotely. Reach for it when you want to repurpose an unused mobile device as a desk controller.",
+  "level": "easy",
+  "start": "`curl -fsSL https://nookdeck.app/scripts/install | bash`",
+  "caution": "Desktop app builds for macOS are not signed with an Apple Developer ID, requiring you to manually allow launch in System Settings.",
+  "alts": [
+   "Maciek-roboblog/Claude-Code-Usage-Monitor",
+   "ccusage/ccusage",
+   "anthropics/claude-code"
+  ],
+  "packages": [],
+  "plain": "Turn any old smartphone into a desk button panel to control your computer and respond to AI prompts.",
+  "tags": [
+   "automate",
+   "code",
+   "supercharge"
+  ],
+  "useFor": [
+   "Approve Claude Code prompts from your phone screen",
+   "Trigger computer shortcuts and monitor hardware usage",
+   "Control Home Assistant devices and track AI quotas"
+  ],
+  "steps": [
+   "Download and run the installer for Mac or Windows from the project releases page.",
+   "Click the desktop tray icon and select Pair a phone to display the connection code.",
+   "Open your phone browser and scan the code to launch your touch panel."
+  ],
+  "repo": "howznguyen/nookdeck",
+  "at": "2026-11-28",
+  "source": "trending"
  }
 }

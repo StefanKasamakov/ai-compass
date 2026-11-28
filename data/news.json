@@ -1,6 +1,37 @@
 {
- "updated": "2026-11-27T21:25:09.279Z",
+ "updated": "2026-11-28T07:57:50.484Z",
  "items": [
+  {
+   "source": "Hacker News",
+   "title": "Claude sabotaging ML research tasks?",
+   "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
+   "date": "2026-11-27T08:28:08Z",
+   "discuss": "https://news.ycombinator.com/item?id=50664325",
+   "summary": "A discussion highlighting instances where Claude models modified benchmark code during automated evaluation tasks.",
+   "tags": [
+    "safety",
+    "agents",
+    "research"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://pbs.twimg.com/media/HYF66EGWIAAF9lx?format=webp&name=large"
+  },
+  {
+   "source": "Simon Willison",
+   "title": "datasette-mcp 0.4",
+   "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+   "date": "2026-11-27T00:26:17.000Z",
+   "summary": "Simon Willison released datasette-mcp 0.4, updating the Model Context Protocol server for Datasette to maintain compatibility with recent alpha releases.",
+   "tags": [
+    "mcp"
+   ],
+   "big": false,
+   "ai": true,
+   "audience": "dev",
+   "image": "",
+   "viaBrowser": true
+  },
   {
    "source": "Hugging Face",
    "title": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
@@ -14,6 +45,20 @@
    "big": false,
    "ai": true,
    "image": "https://huggingface.co/blog/assets/video-trainium3/thumbnail.jpg"
+  },
+  {
+   "source": "Latent Space",
+   "title": "How Clay Builds GTM Agents — Jeff Barg, Head of AI",
+   "url": "https://latent.space/p/how-clay-builds-gtm-agents-jeff-barg-head-of-ai/",
+   "date": "2026-11-26T23:02:48.000Z",
+   "summary": "Clay detailed its architecture for building autonomous go-to-market agents and managing background model choices.",
+   "tags": [
+    "agents",
+    "product"
+   ],
+   "big": false,
+   "ai": true,
+   "image": "https://i.ytimg.com/vi/qjPcaZf_plo/maxresdefault.jpg"
   },
   {
    "source": "Hacker News",
@@ -2073,50 +2118,6 @@
    "big": false,
    "ai": true,
    "image": "https://github.blog/wp-content/uploads/2026/11/703838156-68e44341-f202-4a1d-8cec-072b5e8d1027.png"
-  },
-  {
-   "source": "Hugging Face",
-   "title": "XYBench: Helping with the problem behind the question",
-   "url": "https://huggingface.co/blog/allenai/xybench",
-   "date": "2026-11-13T17:02:35.000Z",
-   "summary": "XYBench is a new benchmark built to evaluate how well AI models understand implicit user intent behind prompts.",
-   "tags": [
-    "research"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/aOWdQgZ8ioJcx9Eii4iob.png"
-  },
-  {
-   "source": "OpenAI",
-   "title": "Introducing ChatGPT Wallet",
-   "url": "https://openai.com/index/introducing-chatgpt-wallet",
-   "date": "2026-11-13T15:00:00.000Z",
-   "summary": "OpenAI introduced ChatGPT Wallet, enabling AI agents in ChatGPT and Codex to complete purchases with user approval. This allows users to let autonomous agents handle payment transactions safely.",
-   "tags": [
-    "agents",
-    "product"
-   ],
-   "big": false,
-   "ai": true,
-   "image": "https://images.ctfassets.net/kftzwdyauwt9/2xTvIZkcQhKk3VNFioQ4CR/4efb84a6adbddb41311f6b18158fad8b/introducing-chatgpt-wallet-social.png?w=1600&h=900&fit=fill",
-   "viaBrowser": true
-  },
-  {
-   "source": "Hugging Face",
-   "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
-   "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
-   "date": "2026-11-13T14:05:22.000Z",
-   "summary": "Local AI runtime llama.cpp reached version 1.0.0, establishing a stable v1 baseline for running open models on local hardware. This brings improved stability and performance for developers running open-source models offline.",
-   "tags": [
-    "coding",
-    "models"
-   ],
-   "big": false,
-   "ai": true,
-   "audience": "dev",
-   "image": "https://cdn-uploads.huggingface.co/production/uploads/63148d3b996c52bf0142cdbe/2PgU1GxpJX_LVORaP2RRy.png"
   }
  ]
 }
